@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Everything Else — Film Vault</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/styles/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <h1><a href="/">← Film Vault</a> / Everything Else</h1>
+            <p>Miscellaneous projects and ideas workspace</p>
+        </header>
+
+        <section class="section">
+            <h2>Notes</h2>
+            <div data-notes></div>
+        </section>
+
+        <section class="section">
+            <h2>Ideas</h2>
+            <div data-ideas></div>
+        </section>
+
+        <section class="section">
+            <h2>Files</h2>
+            <div data-files></div>
+        </section>
+
+        <section class="section">
+            <h2>Bookmarks</h2>
+            <div data-bookmarks></div>
+        </section>
+
+        <footer>
+            <p>Private. Static. Yours.</p>
+        </footer>
+
+        <script src="/scripts/vault.js"></script>
+        <script>
+    hydrateSection('everything-else');
+  </script>
+    </body>
+</html>
