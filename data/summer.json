@@ -27,5 +27,57 @@
       "lastUpdated": "2025-01-24"
     }
   ],
-  "bookmarks": []
+  "bookmarks": [],
+  "gallery": [
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(1).jpg",
+      "title": "Location #2 - Select 1",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(2).jpg",
+      "title": "Location #2 - Select 2",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(3).jpg",
+      "title": "Location #2 - Select 3",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(4).jpg",
+      "title": "Location #2 - Select 4",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(5).jpg",
+      "title": "Location #2 - Select 5",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(6).jpg",
+      "title": "Location #2 - Select 6",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(7).jpg",
+      "title": "Location #2 - Select 7",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(8).jpg",
+      "title": "Location #2 - Select 8",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(9).jpg",
+      "title": "Location #2 - Select 9",
+      "description": "Location scout select from 9.20.25"
+    },
+    {
+      "url": "https://storage.googleapis.com/sea-monster/location-scouts/Location%20%232%20-%20Selects%20-%209.20.25%20(10).jpg",
+      "title": "Location #2 - Select 10",
+      "description": "Location scout select from 9.20.25"
+    }
+  ]
 }

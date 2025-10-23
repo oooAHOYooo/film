@@ -272,6 +272,80 @@ function closeGalleryModal() {
   document.body.style.overflow = '';
 }
 
+function openVideoModal(videoUrl, title) {
+  // Create video modal if it doesn't exist
+  if (!document.querySelector('.video-modal')) {
+    createVideoModal();
+  }
+  
+  const modal = document.querySelector('.video-modal');
+  const video = modal.querySelector('video');
+  const titleEl = modal.querySelector('.video-modal-title');
+  
+  video.src = videoUrl;
+  video.alt = title || 'Video';
+  titleEl.textContent = title || 'Video';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function createVideoModal() {
+  const modal = document.createElement('div');
+  modal.className = 'video-modal';
+  
+  const content = document.createElement('div');
+  content.className = 'video-modal-content';
+  
+  const title = document.createElement('h3');
+  title.className = 'video-modal-title';
+  title.textContent = 'Video';
+  
+  const video = document.createElement('video');
+  video.controls = true;
+  video.preload = 'metadata';
+  video.style.width = '100%';
+  video.style.maxHeight = '80vh';
+  video.style.borderRadius = '8px';
+  
+  const closeBtn = document.createElement('button');
+  closeBtn.className = 'video-modal-close';
+  closeBtn.innerHTML = '×';
+  closeBtn.addEventListener('click', closeVideoModal);
+  
+  content.appendChild(title);
+  content.appendChild(video);
+  content.appendChild(closeBtn);
+  modal.appendChild(content);
+  
+  // Close modal when clicking outside
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeVideoModal();
+    }
+  });
+  
+  // Close modal with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeVideoModal();
+    }
+  });
+  
+  document.body.appendChild(modal);
+}
+
+function closeVideoModal() {
+  const modal = document.querySelector('.video-modal');
+  const video = modal.querySelector('video');
+  
+  // Pause video when closing
+  video.pause();
+  video.currentTime = 0;
+  
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
 async function hydrateSection(key) {
   const data = await loadJson(`/data/${key}.json`);
   renderList(document.querySelector('[data-notes]'), data.notes);
