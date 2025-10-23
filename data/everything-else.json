@@ -2,5 +2,52 @@
   "notes": [],
   "ideas": [],
   "files": [],
-  "bookmarks": []
+  "bookmarks": [],
+  "gallery": [
+    {
+      "url": "https://i.pinimg.com/736x/4e/05/10/4e0510e2f132939017f99639895350c4.jpg",
+      "title": "Inspiration 1",
+      "description": "Creative visual reference"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/c8/a9/72/c8a97206bdd0b15f37e0a64add86f170.jpg",
+      "title": "Inspiration 2",
+      "description": "Creative visual reference"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/ee/2a/35/ee2a35bf79947388473457f9f269ff69.jpg",
+      "title": "Inspiration 3",
+      "description": "Creative visual reference"
+    },
+    {
+      "url": "https://i.pinimg.com/1200x/75/78/ab/7578ab4b5895502f9d942728de97a058.jpg",
+      "title": "Inspiration 4",
+      "description": "Creative visual reference"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/2b/39/5f/2b395f90c4aa8b014391bd55fb0a4dfc.jpg",
+      "title": "Inspiration 5",
+      "description": "Creative visual reference"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/54/e3/6a/54e36a1577624846150ba3766a0aef5e.jpg",
+      "title": "Inspiration 6",
+      "description": "Creative visual reference"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/7c/44/f5/7c44f5f9f6c4a37f727bd0ad3a7b0e63.jpg",
+      "title": "Inspiration 7",
+      "description": "Creative visual reference"
+    },
+    {
+      "url": "https://i.ebayimg.com/images/g/MWQAAOSwoXVhHAGN/s-l1600.webp",
+      "title": "Inspiration 8",
+      "description": "Creative visual reference"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/73/7a/c5/737ac594f3cdcb124b93155cfc569782.jpg",
+      "title": "Inspiration 9",
+      "description": "Creative visual reference"
+    }
+  ]
 }

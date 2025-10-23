@@ -155,10 +155,112 @@ function renderBookmarks(el, bookmarks) {
   el.appendChild(ul);
 }
 
+function renderGallery(el, gallery) {
+  if (!el) return;
+  el.innerHTML = '';
+  if (!gallery || !gallery.length) { el.innerHTML = '<em>No images yet.</em>'; return; }
+  
+  const galleryDiv = document.createElement('div');
+  galleryDiv.className = 'gallery';
+  
+  gallery.forEach((item, index) => {
+    const galleryItem = document.createElement('div');
+    galleryItem.className = 'gallery-item';
+    galleryItem.setAttribute('data-index', index);
+    
+    const img = document.createElement('img');
+    img.src = item.url;
+    img.alt = item.title || 'Gallery image';
+    img.loading = 'lazy';
+    
+    const info = document.createElement('div');
+    info.className = 'gallery-item-info';
+    
+    const title = document.createElement('h4');
+    title.textContent = item.title || 'Untitled';
+    
+    const description = document.createElement('p');
+    description.textContent = item.description || '';
+    
+    info.appendChild(title);
+    if (item.description) {
+      info.appendChild(description);
+    }
+    
+    galleryItem.appendChild(img);
+    galleryItem.appendChild(info);
+    
+    // Add click handler for modal
+    galleryItem.addEventListener('click', () => openGalleryModal(item.url, item.title));
+    
+    galleryDiv.appendChild(galleryItem);
+  });
+  
+  el.appendChild(galleryDiv);
+  
+  // Create modal if it doesn't exist
+  if (!document.querySelector('.gallery-modal')) {
+    createGalleryModal();
+  }
+}
+
+function createGalleryModal() {
+  const modal = document.createElement('div');
+  modal.className = 'gallery-modal';
+  
+  const content = document.createElement('div');
+  content.className = 'gallery-modal-content';
+  
+  const img = document.createElement('img');
+  img.alt = 'Gallery image';
+  
+  const closeBtn = document.createElement('button');
+  closeBtn.className = 'gallery-modal-close';
+  closeBtn.innerHTML = '×';
+  closeBtn.addEventListener('click', closeGalleryModal);
+  
+  content.appendChild(img);
+  content.appendChild(closeBtn);
+  modal.appendChild(content);
+  
+  // Close modal when clicking outside
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeGalleryModal();
+    }
+  });
+  
+  // Close modal with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeGalleryModal();
+    }
+  });
+  
+  document.body.appendChild(modal);
+}
+
+function openGalleryModal(imageUrl, title) {
+  const modal = document.querySelector('.gallery-modal');
+  const img = modal.querySelector('img');
+  
+  img.src = imageUrl;
+  img.alt = title || 'Gallery image';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeGalleryModal() {
+  const modal = document.querySelector('.gallery-modal');
+  modal.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
 async function hydrateSection(key) {
   const data = await loadJson(`/data/${key}.json`);
   renderList(document.querySelector('[data-notes]'), data.notes);
   renderList(document.querySelector('[data-ideas]'), data.ideas);
   renderFiles(document.querySelector('[data-files]'), data.files);
   renderBookmarks(document.querySelector('[data-bookmarks]'), data.bookmarks);
+  renderGallery(document.querySelector('[data-gallery]'), data.gallery);
 }
