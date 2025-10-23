@@ -109,17 +109,33 @@ function renderFiles(el, files) {
       
       // Link cell
       const linkCell = document.createElement('td');
-      const link = document.createElement('a');
-      link.href = f.path;
-      link.textContent = 'Open';
-      link.target = '_blank';
-      link.className = 'btn';
-      link.style.display = 'inline-block';
-      link.style.padding = '6px 12px';
-      link.style.fontSize = '14px';
-      link.style.textDecoration = 'none';
-      linkCell.appendChild(link);
       linkCell.style.padding = '12px 16px';
+      
+      // Check if it's a video file
+      const isVideo = f.path && (f.path.includes('.mov') || f.path.includes('.mp4') || f.path.includes('.webm') || f.path.includes('.avi') || f.path.includes('.mkv'));
+      
+      if (isVideo) {
+        const playBtn = document.createElement('button');
+        playBtn.textContent = 'Play';
+        playBtn.className = 'btn';
+        playBtn.style.display = 'inline-block';
+        playBtn.style.padding = '6px 12px';
+        playBtn.style.fontSize = '14px';
+        playBtn.style.textDecoration = 'none';
+        playBtn.addEventListener('click', () => openVideoModal(f.path, f.label));
+        linkCell.appendChild(playBtn);
+      } else {
+        const link = document.createElement('a');
+        link.href = f.path;
+        link.textContent = 'Open';
+        link.target = '_blank';
+        link.className = 'btn';
+        link.style.display = 'inline-block';
+        link.style.padding = '6px 12px';
+        link.style.fontSize = '14px';
+        link.style.textDecoration = 'none';
+        linkCell.appendChild(link);
+      }
       
       row.appendChild(nameCell);
       row.appendChild(updatedCell);
