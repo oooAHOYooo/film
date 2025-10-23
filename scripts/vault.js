@@ -337,14 +337,26 @@ function createVideoModal() {
   video.setAttribute('preload', 'none');
   video.muted = false;
   
+  // Fullscreen support
+  video.setAttribute('webkitallowfullscreen', 'true');
+  video.setAttribute('mozallowfullscreen', 'true');
+  video.setAttribute('allowfullscreen', 'true');
+  
   const closeBtn = document.createElement('button');
   closeBtn.className = 'video-modal-close';
   closeBtn.innerHTML = '×';
   closeBtn.addEventListener('click', closeVideoModal);
   
+  const fullscreenBtn = document.createElement('button');
+  fullscreenBtn.className = 'video-modal-fullscreen';
+  fullscreenBtn.innerHTML = '⛶';
+  fullscreenBtn.title = 'Toggle Fullscreen';
+  fullscreenBtn.addEventListener('click', toggleFullscreen);
+  
   content.appendChild(title);
   content.appendChild(video);
   content.appendChild(closeBtn);
+  content.appendChild(fullscreenBtn);
   modal.appendChild(content);
   
   // Close modal when clicking outside
@@ -354,19 +366,67 @@ function createVideoModal() {
     }
   });
   
-  // Close modal with Escape key
+  // Close modal with Escape key and fullscreen with F key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeVideoModal();
+      if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement) {
+        exitFullscreen();
+      } else {
+        closeVideoModal();
+      }
+    }
+    if (e.key === 'f' || e.key === 'F') {
+      if (modal.classList.contains('active')) {
+        e.preventDefault();
+        toggleFullscreen();
+      }
     }
   });
   
   document.body.appendChild(modal);
 }
 
+function toggleFullscreen() {
+  const modal = document.querySelector('.video-modal');
+  const video = modal.querySelector('video');
+  
+  if (!document.fullscreenElement && !document.webkitFullscreenElement && !document.mozFullScreenElement) {
+    // Enter fullscreen
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.webkitRequestFullscreen) {
+      video.webkitRequestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+      video.mozRequestFullScreen();
+    } else if (video.msRequestFullscreen) {
+      video.msRequestFullscreen();
+    }
+  } else {
+    // Exit fullscreen
+    exitFullscreen();
+  }
+}
+
+function exitFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+
 function closeVideoModal() {
   const modal = document.querySelector('.video-modal');
   const video = modal.querySelector('video');
+  
+  // Exit fullscreen if active
+  if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement) {
+    exitFullscreen();
+  }
   
   // Pause video when closing
   video.pause();
