@@ -379,6 +379,10 @@ footer {
     max-width: 100%;
     max-height: 70vh;
     border-radius: var(--soft);
+    /* Mobile optimizations */
+    -webkit-playsinline: true;
+    playsinline: true;
+    webkit-playsinline: true;
 }
 
 .video-modal-close {
@@ -459,5 +463,26 @@ footer {
 
     .gallery-item img {
         height: 180px;
+    }
+
+    /* Mobile video optimizations */
+    .video-modal-content {
+        max-width: 95vw;
+        max-height: 95vh;
+        padding: 16px;
+        margin: 10px;
+    }
+
+    .video-modal video {
+        max-height: 60vh;
+        width: 100%;
+    }
+
+    .video-modal-close {
+        top: 8px;
+        right: 8px;
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
     }
 }

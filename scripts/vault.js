@@ -282,11 +282,30 @@ function openVideoModal(videoUrl, title) {
   const video = modal.querySelector('video');
   const titleEl = modal.querySelector('.video-modal-title');
   
+  // Mobile optimizations
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  
   video.src = videoUrl;
   video.alt = title || 'Video';
   titleEl.textContent = title || 'Video';
+  
+  // Mobile-specific loading strategy
+  if (isMobile) {
+    video.load(); // Force load on mobile
+    video.addEventListener('loadeddata', () => {
+      // Video is ready to play
+    }, { once: true });
+  }
+  
   modal.classList.add('active');
   document.body.style.overflow = 'hidden';
+  
+  // Prevent iOS Safari from going fullscreen automatically
+  if (isMobile) {
+    video.addEventListener('play', () => {
+      video.style.objectFit = 'contain';
+    });
+  }
 }
 
 function createVideoModal() {
@@ -306,6 +325,17 @@ function createVideoModal() {
   video.style.width = '100%';
   video.style.maxHeight = '80vh';
   video.style.borderRadius = '8px';
+  
+  // Mobile optimizations
+  video.setAttribute('playsinline', 'true');
+  video.setAttribute('webkit-playsinline', 'true');
+  video.setAttribute('x5-playsinline', 'true');
+  video.setAttribute('x5-video-player-type', 'h5');
+  video.setAttribute('x5-video-player-fullscreen', 'true');
+  
+  // Optimize for mobile performance
+  video.setAttribute('preload', 'none');
+  video.muted = false;
   
   const closeBtn = document.createElement('button');
   closeBtn.className = 'video-modal-close';
