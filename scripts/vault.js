@@ -40,12 +40,28 @@ function renderFiles(el, files) {
   Object.keys(categories).sort().forEach(category => {
     const categoryDiv = document.createElement('div');
     categoryDiv.style.marginBottom = '32px';
-    
-    const categoryTitle = document.createElement('h3');
-    categoryTitle.textContent = category;
-    categoryTitle.style.marginBottom = '16px';
-    categoryTitle.style.color = '#75c0ff';
-    categoryDiv.appendChild(categoryTitle);
+    const isDrafts = /draft/i.test(category);
+
+    // For Script Drafts, create collapsible container
+    let containerEl = categoryDiv;
+    if (isDrafts) {
+      const details = document.createElement('details');
+      const summary = document.createElement('summary');
+      summary.textContent = category;
+      summary.style.cursor = 'pointer';
+      summary.style.color = '#75c0ff';
+      summary.style.fontWeight = '600';
+      summary.style.marginBottom = '12px';
+      details.appendChild(summary);
+      categoryDiv.appendChild(details);
+      containerEl = details;
+    } else {
+      const categoryTitle = document.createElement('h3');
+      categoryTitle.textContent = category;
+      categoryTitle.style.marginBottom = '16px';
+      categoryTitle.style.color = '#75c0ff';
+      categoryDiv.appendChild(categoryTitle);
+    }
     
     // Create table
     const table = document.createElement('table');
@@ -75,7 +91,7 @@ function renderFiles(el, files) {
     updatedHeader.style.fontWeight = '600';
     
     const linkHeader = document.createElement('th');
-    linkHeader.textContent = 'Link';
+    linkHeader.textContent = isDrafts ? 'Download' : 'Link';
     linkHeader.style.padding = '12px 16px';
     linkHeader.style.textAlign = 'left';
     linkHeader.style.borderBottom = '1px solid #1e2530';
@@ -114,7 +130,7 @@ function renderFiles(el, files) {
       // Check if it's a video file
       const isVideo = f.path && (f.path.includes('.mov') || f.path.includes('.mp4') || f.path.includes('.webm') || f.path.includes('.avi') || f.path.includes('.mkv'));
       
-      if (isVideo) {
+      if (isVideo && !isDrafts) {
         const playBtn = document.createElement('button');
         playBtn.textContent = 'Play';
         playBtn.className = 'btn';
@@ -127,13 +143,17 @@ function renderFiles(el, files) {
       } else {
         const link = document.createElement('a');
         link.href = f.path;
-        link.textContent = 'Open';
+        link.textContent = isDrafts ? 'Download' : 'Open';
         link.target = '_blank';
         link.className = 'btn';
         link.style.display = 'inline-block';
         link.style.padding = '6px 12px';
         link.style.fontSize = '14px';
         link.style.textDecoration = 'none';
+        if (isDrafts) {
+          link.setAttribute('download', '');
+          link.rel = 'noopener';
+        }
         linkCell.appendChild(link);
       }
       
@@ -144,7 +164,8 @@ function renderFiles(el, files) {
     });
     
     table.appendChild(tbody);
-    categoryDiv.appendChild(table);
+    // Append table to appropriate container (details for drafts, div otherwise)
+    (containerEl || categoryDiv).appendChild(table);
     el.appendChild(categoryDiv);
   });
 }
