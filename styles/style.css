@@ -451,6 +451,26 @@ footer {
     border-radius: 0;
 }
 
+/* Creatures section styles */
+.creature-insp {
+    max-width: 100%;
+    border-radius: var(--soft);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.creature-insp:hover {
+    transform: scale(1.05);
+}
+
+.creature-caption {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    background: rgba(0,0,0,0.6);
+    border-radius: var(--soft);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header {

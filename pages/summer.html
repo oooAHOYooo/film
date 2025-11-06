@@ -37,6 +37,31 @@
             <div data-gallery></div>
         </section>
 
+        <section class="section">
+            <h2>Creatures in the Tall Grass</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Inspiration</h3>
+                    <p>Explore the mysterious creatures lurking amidst tall grass...</p>
+                    <div class="gallery-item" onclick="openGalleryModal(this)">
+                        <img src="https://i.pinimg.com/1200x/7c/33/3f/7c333fd38a7b059256198992c4d21142.jpg" alt="Creature Inspiration" class="creature-insp" />
+                        <div class="gallery-item-info creature-caption">
+                            <h4>A Creature in the Mist</h4>
+                            <p>An intriguing look into the biodiversity hidden in the foliage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Include modal structure for gallery view -->
+            <div class="gallery-modal" id="creatureGalleryModal">
+                <div class="gallery-modal-content">
+                    <span class="gallery-modal-close" onclick="closeGalleryModal()">×</span>
+                    <img src="https://i.pinimg.com/1200x/7c/33/3f/7c333fd38a7b059256198992c4d21142.jpg" alt="Creature Inspiration Full View">
+                </div>
+            </div>
+        </section>
+
         <footer>
             <p>Private. Static. Yours.</p>
         </footer>
