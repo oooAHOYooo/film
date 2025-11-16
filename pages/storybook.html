@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Storybook of Film — Creatures in the Tall Grass</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/styles/style.css">
+        <style>
+            .storybook-container {
+                max-width: 1400px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .storybook-header {
+                text-align: center;
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid var(--glass-border);
+            }
+
+            .storybook-header h1 {
+                font-size: 2.5rem;
+                margin: 0 0 8px 0;
+                color: #79c0ff;
+            }
+
+            .storybook-header .subtitle {
+                color: var(--text-secondary);
+                font-size: 1.1rem;
+                margin: 0;
+            }
+
+            .storybook-header .meta {
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                margin-top: 8px;
+            }
+
+            .version-selector {
+                display: flex;
+                justify-content: center;
+                gap: 12px;
+                margin-bottom: 30px;
+                padding: 16px;
+                background: var(--glass-bg);
+                border: 1px solid var(--glass-border);
+                border-radius: var(--soft);
+                backdrop-filter: blur(10px);
+            }
+
+            .version-btn {
+                background: transparent;
+                color: var(--text-secondary);
+                border: 1px solid var(--glass-border);
+                border-radius: 8px;
+                padding: 10px 20px;
+                font-size: 0.9rem;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                font-weight: 500;
+            }
+
+            .version-btn:hover {
+                border-color: var(--accent);
+                color: var(--text-primary);
+            }
+
+            .version-btn.active {
+                background: var(--accent);
+                color: white;
+                border-color: var(--accent);
+            }
+
+            .slides-viewer {
+                position: relative;
+                min-height: 600px;
+                margin-bottom: 80px;
+            }
+
+            .slides-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                margin-bottom: 40px;
+            }
+
+            .slide {
+                background: var(--glass-bg);
+                border: 1px solid var(--glass-border);
+                border-radius: var(--soft);
+                padding: 32px;
+                backdrop-filter: blur(10px);
+                min-height: 500px;
+                display: flex;
+                flex-direction: column;
+                transition: all 0.3s ease;
+            }
+
+            .slide:hover {
+                border-color: var(--accent);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            }
+
+            .slide-header {
+                margin-bottom: 20px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid var(--glass-border);
+            }
+
+            .slide-header h2 {
+                font-size: 1.5rem;
+                margin: 0 0 8px 0;
+                color: var(--accent);
+            }
+
+            .slide-header .duration {
+                color: var(--text-muted);
+                font-size: 0.9rem;
+            }
+
+            .slide-content {
+                flex: 1;
+                color: var(--text-primary);
+                line-height: 1.7;
+                font-size: 0.95rem;
+            }
+
+            .slide-content p {
+                margin: 0 0 16px 0;
+            }
+
+            .slide-content p:last-child {
+                margin-bottom: 0;
+            }
+
+            .slide-content strong {
+                color: var(--accent);
+                font-weight: 600;
+            }
+
+            .controls {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: var(--glass-bg);
+                border-top: 1px solid var(--glass-border);
+                padding: 20px;
+                backdrop-filter: blur(10px);
+                z-index: 100;
+            }
+
+            .controls-inner {
+                max-width: 1400px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .control-btn {
+                background: var(--accent);
+                color: white;
+                border: none;
+                border-radius: 8px;
+                padding: 10px 20px;
+                font-size: 0.9rem;
+                cursor: pointer;
+                transition: all 0.2s ease;
+                font-weight: 500;
+            }
+
+            .control-btn:hover:not(:disabled) {
+                background: var(--accent-hover);
+                transform: translateY(-1px);
+            }
+
+            .control-btn:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            .page-info {
+                color: var(--text-secondary);
+                font-size: 0.9rem;
+                min-width: 120px;
+                text-align: center;
+            }
+
+            .jump-controls {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .jump-input {
+                background: rgba(110, 118, 129, 0.1);
+                border: 1px solid var(--glass-border);
+                color: var(--text-primary);
+                padding: 8px 12px;
+                border-radius: 6px;
+                width: 60px;
+                text-align: center;
+                font-size: 0.9rem;
+            }
+
+            .jump-input:focus {
+                outline: none;
+                border-color: var(--accent);
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            @media (max-width: 1024px) {
+                .slides-container {
+                    grid-template-columns: 1fr;
+                }
+
+                .slide {
+                    min-height: auto;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .storybook-header h1 {
+                    font-size: 2rem;
+                }
+
+                .slides-viewer {
+                    margin-bottom: 100px;
+                }
+
+                .controls {
+                    padding: 12px 16px;
+                }
+
+                .controls-inner {
+                    flex-direction: row;
+                    gap: 8px;
+                    flex-wrap: nowrap;
+                }
+
+                .control-btn {
+                    padding: 8px 12px;
+                    font-size: 0.85rem;
+                    flex: 1;
+                    min-width: 0;
+                }
+
+                .page-info {
+                    font-size: 0.8rem;
+                    min-width: 80px;
+                    flex-shrink: 0;
+                }
+
+                .jump-controls {
+                    display: none;
+                }
+
+                .version-selector {
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+                .version-btn {
+                    width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1><a href="/pages/summer.html">← Summer Film</a> / Storybook of Film</h1>
+            <p>Creatures in the Tall Grass — Film Treatment</p>
+        </header>
+
+        <div class="storybook-container">
+            <div class="storybook-header">
+                <h1>Creatures in the Tall Grass</h1>
+                <p class="subtitle">Film Treatment</p>
+                <p class="meta">Treatment Based off of Creatures Draft 12 (Last updated Nov 14)</p>
+            </div>
+
+            <div class="version-selector">
+                <button class="version-btn active" id="enhancedBtn" onclick="switchVersion('enhanced')">Enhanced Version</button>
+                <button class="version-btn" id="originalBtn" onclick="switchVersion('original')">Original AG Text</button>
+            </div>
+
+            <div class="slides-viewer">
+                <div class="slides-container" id="slidesContainer">
+                    <!-- Slides will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="controls-inner">
+                <button class="control-btn" id="prevBtn" onclick="previousPage()">← Previous</button>
+                <div class="page-info">
+                    <span id="pageInfo">Page 1 of 1</span>
+                </div>
+                <button class="control-btn" id="nextBtn" onclick="nextPage()">Next →</button>
+                <div class="jump-controls">
+                    <label for="jumpInput" style="color: var(--text-secondary);">Jump to:</label>
+                    <input type="number" id="jumpInput" class="jump-input" min="1" value="1" onchange="jumpToPage(parseInt(this.value))">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let currentVersion = 'enhanced';
+
+            // Original AG text version - verbatim
+            const originalTreatmentData = [
+                {
+                    act: "ACT I",
+                    title: "The Dark Hum",
+                    duration: "15 minutes",
+                    content: [
+                        "Movie starts with a group of scientists looking at people who have studied a very certain topic** (help)",
+                        "",
+                        "A lone car winds down a backcountry road at dusk. Dallas, a withdrawn meteorologist with a new job at Yale, arrives at an old cottage on the edge of a sprawling tall grass field. The air is heavy, silent. He unloads a few boxes and delicate weather instruments, slaps a faded Yale parking pass onto the windshield, and disappears inside. He was called to come here by a professor to investigate the sounds of the town.",
+                        "",
+                        "Inside, he moves through the house switching on lights one by one — warm glows piercing the dark silence. Domestic sounds hum faintly under the distant wind. In the study, he sets a framed photo of his late wife on a desk. When his fingers brush the frame, a low vibration rumbles through his weather sensors — an unnatural hum outside that lingers long after he steps away.",
+                        "",
+                        "That night, the grass ripples though the air is still. A flicker of light pulses deep in the marsh, followed by a strange animalistic roar echoing from the salt flats. Dallas watches from his porch and walks away - a bit put off - he locks the door.",
+                        "",
+                        "At dawn, Dallas walks miles through sidewalks and costal marsh into town. As he approaches he begins to notice that the locals are unsettled — even the dogs are off. One man, Dominic, struggles to control a nervous mutt and asks Dallas if he heard that sound too. A news van blares headlines about \"rogue lightning\" and \"seasonal atmospheric anomalies.\" Meteorologists dismiss the hum as hurricane interference, but no one believes it.",
+                        "",
+                        "Later that day, in a church basement, the local grief committee meets. Dominic ropes Dallas into helping unload muffins and breakfast, while Elena, a soft-spoken organizer of the event, quietly observes him. At the meeting's edge, Mr. Mike, a gentle older man, stares out the window — humming a pitch identical to Dallas's earlier vibration.",
+                        "",
+                        "That night, Dallas installs more instruments around the cottage. The hum pulses faintly through the walls. As he drifts to sleep, a garbage can tips over outside. A faint, almost human cry rises from the grass. The hum deepens — like a foghorn calling from beneath the earth."
+                    ]
+                },
+                {
+                    act: "ACT II",
+                    title: "Rumblings",
+                    duration: "15 minutes",
+                    content: [
+                        "On his morning walk, Dallas finds Dominic setting raccoon traps along the roadside. Dominic insists the problem isn't wild animals but people — \"folks getting lazy, leaving trash out.\" He offers Dallas a ride into town. Inside his beat-up truck, Dominic shares stories about storms and loss — a wife gone too young, a home destroyed. \"She loved the woods,\" he says, \"even when they scared me.\"",
+                        "",
+                        "Days blur. Dallas works on instruments while Dominic checks traps — two men circling grief in silence. A quiet understanding forms.",
+                        "",
+                        "At the next church gathering, Elena joins Dallas for coffee and recounts her grandfather's storm tales — \"lights in the grass… things hunting them.\" Their conversation is interrupted by Karen Peck, who insists she knows a man who can \"get rid of whatever's out there.\"",
+                        "",
+                        "Enter Preston, a hulking, offbeat exterminator. He studies the marshland, uneasy. His instruments flicker, and he mutters, \"Something's not right about that grass.\" He leaves abruptly, unnerved.",
+                        "",
+                        "Dominic's sister Janice visits with her kids, teasing Dallas into dog-sitting for the weekend. As he walks home, the Long Island Sound roars against the Branford rocks, and his portable reader spikes violently near the field. Missing pet signs multiply. Storm alerts light up his little portable hand-radios. The hum grows denser, deeper, everywhere.",
+                        "",
+                        "That night, Dallas stands at the window, staring into the rippling field. A tall shadow moves against the wind. He touches his wife's photo. The hum stops. The world holds its breath."
+                    ]
+                },
+                {
+                    act: "ACT III",
+                    title: "The Tiny Dying Creature",
+                    duration: "15 minutes",
+                    content: [
+                        "Dawn. The storm approaches. Janice drops off her dog before rushing to work at the museum, where she's helping secure artwork before the hurricane hits.",
+                        "",
+                        "Dallas and the dog step into a long trail around their neighborhood - and stops by the field behind his house. The readings spike — and in a hollow, he discovers a small glowing creature, faintly pulsing. It's fragile, birdlike, covered in downy fur, with long rabbit-like ears and a dim, flickering glow beneath its neck.",
+                        "",
+                        "He carries the whimpering creature, wraps it in a blanket. When he brings it into his kitchen - His instruments begin to pulse and Dallas discovers that they pulse in sync with its heartbeat.. Dallas hides the creature - especially from the dog, but when it cries, the outside world echoes. The hum floods the town. Windows rattle, cars stall, power grids flicker.",
+                        "",
+                        " Janice and Dominic arrive — and panic when they glimpse it. Elena appears on the porch with coffee. She spots the creature and, without fear, kneels to clean its wound. Its glow brightens under her touch. Janice's kids crowd the door; Dominic yells for calm. The creature begins to heal itself when Dallas switches on his machine.",
+                        "",
+                        "As the storm nears, the group resolves to return it to the field before the weather breaks. Dominic and Janice lock up the kids and the dogs - Janice stays behind as Dominic and Dallas go together to bring this creature. Dominic watches Dallas' back who is determined to bring it back where he found it - to his dying mother.",
+                        "",
+                        "At they approach field line, thunder churns overhead and the winds howl. A elongated shadow moves through the grass toward them.. The shape recoils — but doesn't fall. In the marsh, dozens of faint, perching figures emerge — feather-light, whispering across the grass like ghosts. A larger entity stirs beyond the trees. The crew retreats to Dallas's house, terrified.",
+                        "",
+                        "In the process - they drop the creature - and the shadows engulf it - the creature escapes the shadows and rolls back into Dallas's hands - barely alive.",
+                        "",
+                        "Outside, Elena is outside with Mr. Mike - asking if they could spend the night as it is their grief meeting here and the weather. Mr. Mike hums softly — the same low pitch as before.",
+                        "",
+                        "Elena's eye's widen when she sees the creature."
+                    ]
+                },
+                {
+                    act: "ACT IV",
+                    title: "Siege",
+                    duration: "20 minutes",
+                    content: [
+                        "It is now - Dominic, Dallas, Janice, the two Kids, Elena and Mr Mike inside Dominics house. ** (or should it be Dallas' house)?*",
+                        "",
+                        "The storm builds like a living thing. Clouds spiral without rain. Wind chimes tremble. Dominic boards up the cottage, muttering through his nerves about that he can't believe what is going on - and tries to rationalize himself away. Elena lights candles. Janice is inside with the kids asking her to help bring down supplies from the basement - cans and beans - they lay them all on the table. But the kids are fixated on the small creature on the table - who is breathing lightly. Each breath feels like it is connected to the wind.",
+                        "",
+                        "Outside: scratching. Whispers. Shifting shapes in the tall grass.",
+                        "",
+                        "Through the window, silhouettes circle the house — tall, thin, cloaked in moss and mud. Their movements are deliberate, almost human. Every time the lanterns flicker, they're closer.",
+                        "",
+                        "Dominic tightens his grip on a hammer. \"They're hunting,\" he whispers.",
+                        "Elena replies softly, \"They always have.\"",
+                        "",
+                        "Dallas's machines scream with interference. He reaches for his recorder, then hesitates. He shuts it off — and with it, the hum ceases. Outside, the predators pause, unsure. A deeper calm replaces the tension — until thunder splits the night."
+                    ]
+                },
+                {
+                    act: "ACT V",
+                    title: "Veil Lifted",
+                    duration: "15 minutes",
+                    content: [
+                        "The next morning, Dallas leads the group through the storm to return the creature. It's weak, glowing faintly. When they lay it in the grass, it emits one final pulse — and dies.",
+                        "",
+                        "Moments later, more lights appear. Dozens of glows rise like lanterns in the distant mist. All around them, predators emerge — the same tall hunters cloaked in weeping moss. \"",
+                        "",
+                        "Dallas steps forward. His proximity amplifies the guardians' light — the hum transforms into a soft, harmonic tone. The predators recoil, retreating into the forest.",
+                        "",
+                        "For a fleeting moment, the veil lifts. Across town, people see the field alight — soft, golden flickers dancing like stars on the ground. The storm clears. Silence returns."
+                    ]
+                },
+                {
+                    act: "ACT VI",
+                    title: "Aftermath",
+                    duration: "10 minutes",
+                    content: [
+                        " Dallas watches the crew walk away from his porch - The marsh is still. The hum is gone.",
+                        "",
+                        "Dallas walks to church again. Townsfolk debate what they saw — some call it mass hysteria, others say miracle. Dominic's traps rust in the sun. Elena writes the story as a \"folk tale\" in the church bulletin.",
+                        "",
+                        "Dominic and Janice arrive at Dallas' house - as they continue their grief consueling. The crew is silent. Mr. Mike hums faintly, unchanged.",
+                        "",
+                        "Back home - in still an empty house - Dallas touches his wife's photo. This time, there's no vibration, only peace. Outside, the tall grass ripples once — as if breathing.",
+                        "",
+                        "Fade out."
+                    ]
+                }
+            ];
+
+            // Enhanced treatment content - broken into slides
+            const treatmentData = [
+                {
+                    act: "ACT I",
+                    title: "The Dark Hum",
+                    duration: "15 minutes",
+                    content: [
+                        "Dallas, a meteorologist, arrives at an old cottage on the edge of a tall grass field. He carries weather instruments and a few boxes. The place is silent, hollow.",
+                        "Inside, he turns on lights one by one. Soft domestic sounds mix with distant wind. He sets up his equipment, checking readings that don't make sense.",
+                        "That night, a low hum begins—deep, resonant, coming from the tall grass. It's not mechanical. It's alive. Dallas records it, but his instruments can't categorize the frequency.",
+                        "The next morning, he meets Dominic, a local who runs raccoon traps near the field. Dominic is friendly but guarded. He mentions the hum has been there for years. 'Some say it's the grass itself,' he tells Dallas cryptically.",
+                        "Dallas also encounters Elena, who lives nearby with her daughter Makayla. Elena seems to know more than she's saying. She warns Dallas about going into the tall grass, especially at night.",
+                        "As dusk falls, the hum grows louder. Dallas sees movement in the grass—something large, shifting. He hears what sounds like an animalistic roar, but it's wrong. Too intelligent. Too deliberate."
+                    ]
+                },
+                {
+                    act: "ACT II",
+                    title: "The Investigation",
+                    duration: "20 minutes",
+                    content: [
+                        "Dallas becomes obsessed with documenting the phenomenon. He sets up cameras, microphones, and weather stations around the perimeter of the tall grass field.",
+                        "He visits Mr. Mike, an elderly local who's lived there for decades. Mr. Mike tells stories of people who went into the grass and never came back. 'The grass remembers,' he says. 'It watches.'",
+                        "Dominic shows Dallas his raccoon traps—some have been torn apart by something much larger than a raccoon. The metal is bent, twisted. 'Whatever's in there, it's smart,' Dominic warns.",
+                        "Dallas discovers Preston, a teenager who's been exploring the field. Preston shows Dallas photos on his phone—blurry images of something glowing in the darkness. 'I've seen them,' Preston whispers. 'They're not animals.'",
+                        "Elena reveals that her husband disappeared in the tall grass years ago. She's been waiting, hoping. But she's also afraid. The creatures—if that's what they are—seem to be getting bolder.",
+                        "One evening, Dallas sees a small glowing creature near the edge of the field. It's humanoid but wrong—too thin, too graceful. It watches him before disappearing into the grass. Dallas realizes he's not just studying weather anomalies. He's studying something that shouldn't exist."
+                    ]
+                },
+                {
+                    act: "ACT III",
+                    title: "The Encounter",
+                    duration: "18 minutes",
+                    content: [
+                        "Dallas decides he needs to go into the tall grass. He prepares carefully—cameras, recording equipment, a blanket for warmth. He tells no one.",
+                        "As he enters the field, the hum becomes overwhelming. It's not just sound—it's vibration. The grass itself seems to respond to his presence, shifting around him.",
+                        "He finds the small glowing creature again. It's injured, or maybe just young. It doesn't flee. Instead, it approaches Dallas cautiously. Dallas realizes it's not hostile—it's curious.",
+                        "The creature leads Dallas deeper into the field. He follows, recording everything. They come to a clearing where the grass has been flattened. In the center, there's something that looks like a nest, or maybe a shrine.",
+                        "Suddenly, elongated shadows appear around the clearing. Perching figures watch from the tall grass. They're the predators—larger, more dangerous versions of the small creature. They've been waiting.",
+                        "Dallas realizes he's been led into a trap. The small creature wasn't leading him to safety—it was leading him to them. The predators begin to move, their silhouettes cutting through the grass like blades."
+                    ]
+                },
+                {
+                    act: "ACT IV",
+                    title: "The Storm",
+                    duration: "22 minutes",
+                    content: [
+                        "A storm rolls in over the Long Island Sound. Lightning illuminates the field, revealing the true nature of the creatures—they're not just in the grass, they are the grass. Part plant, part animal, part something else entirely.",
+                        "Dallas runs, but the field seems to shift around him. He's lost. The predators are herding him, driving him deeper. The small creature follows, conflicted.",
+                        "Dominic and Elena realize Dallas is missing. They gather others from the town—Preston, Mr. Mike, a few others who've seen things. They form a search party, but they're afraid to enter the field.",
+                        "Inside the field, Dallas discovers the truth: the creatures are guardians. They protect something—or someone. He finds evidence of other people who've been here, some recently. The field is a place of transformation, not death.",
+                        "The storm intensifies. The creatures become more active, more visible. Dallas sees them fully for the first time—tall, graceful, with eyes that reflect the lightning. They're beautiful and terrifying.",
+                        "The search party enters the field, calling for Dallas. The creatures react defensively, but the small creature intervenes. It communicates somehow—through the hum, through movement. The predators back off, allowing the humans to find Dallas.",
+                        "Together, they make their way out of the field as the storm reaches its peak. The creatures watch them go, returning to the depths of the tall grass."
+                    ]
+                },
+                {
+                    act: "ACT V",
+                    title: "The Revelation",
+                    duration: "15 minutes",
+                    content: [
+                        "Back at the cottage (or should it be Dallas' house?), the group processes what they've seen. Dallas's recordings are corrupted—the electromagnetic field in the grass interferes with technology.",
+                        "Elena reveals the full story: her husband didn't disappear. He chose to stay. The creatures offered him something—peace, understanding, a connection to something greater. He became one of them.",
+                        "Mr. Mike tells his own story: he's been watching the field for fifty years. He's seen people go in and come out changed. Some stay. Some leave. The creatures don't force anyone—they offer a choice.",
+                        "Dallas realizes the hum isn't a threat—it's a call. An invitation. The creatures are trying to communicate, to share their existence with those who are ready to understand.",
+                        "Preston shows them more photos he's taken over the years. The creatures have been appearing more frequently. Something is changing. The veil between their world and ours is thinning.",
+                        "Dallas makes a decision: he'll stay. Not to become one of them, but to learn. To document. To bridge the gap between the human world and whatever exists in the tall grass. The small creature seems to approve, appearing at the edge of the field as if waiting."
+                    ]
+                },
+                {
+                    act: "ACT VI",
+                    title: "The Veil Lifts",
+                    duration: "10 minutes",
+                    content: [
+                        "Months later, the town has changed. Some people have left, unable to accept what they've seen. Others have stayed, drawn to the mystery of the tall grass.",
+                        "Dallas has set up a permanent research station. He's learned to communicate with the creatures, at least partially. They show him things—patterns in the weather, connections in nature, a way of seeing the world that transcends human understanding.",
+                        "Elena has found peace. She knows her husband is still there, in a way. The creatures care for those who join them. It's not death—it's transformation.",
+                        "The veil lifts. Not just for Dallas, but for the whole town. The creatures become more visible, more present. Some people call it a miracle. Others call it mass hysteria. But those who've been in the field know the truth.",
+                        "The tall grass continues to grow, spreading slowly. The hum becomes a constant, comforting presence. The town learns to live with the mystery, to accept that some things can't be explained, only experienced.",
+                        "Dallas stands at the edge of the field, watching. The small creature appears, now larger, more confident. It's grown. They've both grown. The story doesn't end here—it's just beginning.",
+                        "Fade out."
+                    ]
+                }
+            ];
+
+            let currentPage = 0;
+            const slidesPerPage = 2;
+            let slides = [];
+
+            // Create slides from treatment data
+            function createSlides() {
+                slides = [];
+                const data = currentVersion === 'original' ? originalTreatmentData : treatmentData;
+                data.forEach((act, index) => {
+                    const slide = {
+                        act: act.act,
+                        title: act.title,
+                        duration: act.duration,
+                        content: act.content,
+                        actIndex: index
+                    };
+                    slides.push(slide);
+                });
+            }
+
+            function switchVersion(version) {
+                currentVersion = version;
+                currentPage = 0;
+                
+                // Update button states
+                document.getElementById('enhancedBtn').classList.toggle('active', version === 'enhanced');
+                document.getElementById('originalBtn').classList.toggle('active', version === 'original');
+                
+                // Recreate slides and render
+                createSlides();
+                renderPage();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            // Render current page
+            function renderPage() {
+                const container = document.getElementById('slidesContainer');
+                container.innerHTML = '';
+
+                const startIndex = currentPage * slidesPerPage;
+                const endIndex = Math.min(startIndex + slidesPerPage, slides.length);
+
+                for (let i = startIndex; i < endIndex; i++) {
+                    if (i < slides.length) {
+                        const slide = slides[i];
+                        const slideEl = document.createElement('div');
+                        slideEl.className = 'slide';
+
+                        const header = document.createElement('div');
+                        header.className = 'slide-header';
+                        header.innerHTML = `
+                            <h2>${slide.act} — ${slide.title}</h2>
+                            <div class="duration">${slide.duration}</div>
+                        `;
+
+                        const content = document.createElement('div');
+                        content.className = 'slide-content';
+                        slide.content.forEach(paragraph => {
+                            const p = document.createElement('p');
+                            // Bold key terms (only for enhanced version)
+                            let text = paragraph;
+                            if (currentVersion === 'enhanced') {
+                                text = text.replace(/\b(Dallas|Dominic|Elena|Mr\. Mike|Preston|Makayla|cottage|tall grass|hum|animalistic roar|raccoon traps|Long Island Sound|small glowing creature|blanket|elongated shadow|perching figures|silhouettes|predators|veil lifts)\b/g, '<strong>$1</strong>');
+                            }
+                            // Preserve original formatting - empty paragraphs create spacing
+                            if (text === '') {
+                                p.innerHTML = '&nbsp;';
+                                p.style.marginBottom = '8px';
+                            } else {
+                                p.innerHTML = text;
+                            }
+                            content.appendChild(p);
+                        });
+
+                        slideEl.appendChild(header);
+                        slideEl.appendChild(content);
+                        container.appendChild(slideEl);
+                    }
+                }
+
+                // Update controls
+                updateControls();
+            }
+
+            function updateControls() {
+                const totalPages = Math.ceil(slides.length / slidesPerPage);
+                document.getElementById('pageInfo').textContent = `Page ${currentPage + 1} of ${totalPages}`;
+                
+                document.getElementById('prevBtn').disabled = currentPage === 0;
+                document.getElementById('nextBtn').disabled = currentPage >= totalPages - 1;
+                
+                const jumpInput = document.getElementById('jumpInput');
+                jumpInput.max = totalPages;
+                jumpInput.value = currentPage + 1;
+            }
+
+            function nextPage() {
+                const totalPages = Math.ceil(slides.length / slidesPerPage);
+                if (currentPage < totalPages - 1) {
+                    currentPage++;
+                    renderPage();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }
+
+            function previousPage() {
+                if (currentPage > 0) {
+                    currentPage--;
+                    renderPage();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }
+
+            function jumpToPage(page) {
+                const totalPages = Math.ceil(slides.length / slidesPerPage);
+                if (page >= 1 && page <= totalPages) {
+                    currentPage = page - 1;
+                    renderPage();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    previousPage();
+                } else if (e.key === 'ArrowRight') {
+                    nextPage();
+                }
+            });
+
+            // Initialize
+            createSlides();
+            renderPage();
+        </script>
+    </body>
+</html>
+
