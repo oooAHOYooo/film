@@ -192,6 +192,10 @@ function renderBookmarks(el, bookmarks) {
   el.appendChild(ul);
 }
 
+let __currentGalleryList = [];
+let __currentGalleryIndex = 0;
+let __lastFocusedElement = null;
+
 function renderGallery(el, gallery) {
   if (!el) return;
   el.innerHTML = '';
@@ -227,8 +231,8 @@ function renderGallery(el, gallery) {
     galleryItem.appendChild(img);
     galleryItem.appendChild(info);
     
-    // Add click handler for modal
-    galleryItem.addEventListener('click', () => openGalleryModal(item.url, item.title));
+    // Add click handler for modal with navigation
+    galleryItem.addEventListener('click', () => openGalleryModalWithList(gallery, index));
     
     galleryDiv.appendChild(galleryItem);
   });
@@ -244,20 +248,45 @@ function renderGallery(el, gallery) {
 function createGalleryModal() {
   const modal = document.createElement('div');
   modal.className = 'gallery-modal';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.setAttribute('aria-label', 'Image viewer');
   
   const content = document.createElement('div');
   content.className = 'gallery-modal-content';
   
   const img = document.createElement('img');
   img.alt = 'Gallery image';
+  img.setAttribute('role', 'img');
+  // Scroll container for the image
+  const scroll = document.createElement('div');
+  scroll.className = 'gallery-modal-scroll';
+  scroll.appendChild(img);
   
   const closeBtn = document.createElement('button');
   closeBtn.className = 'gallery-modal-close';
   closeBtn.innerHTML = '×';
   closeBtn.addEventListener('click', closeGalleryModal);
+  closeBtn.setAttribute('aria-label', 'Close viewer');
   
-  content.appendChild(img);
+  const prevBtn = document.createElement('button');
+  prevBtn.className = 'gallery-modal-prev';
+  prevBtn.innerHTML = '‹';
+  prevBtn.title = 'Previous (Left Arrow)';
+  prevBtn.addEventListener('click', showPrevImage);
+  prevBtn.setAttribute('aria-label', 'Previous image');
+  
+  const nextBtn = document.createElement('button');
+  nextBtn.className = 'gallery-modal-next';
+  nextBtn.innerHTML = '›';
+  nextBtn.title = 'Next (Right Arrow / Space)';
+  nextBtn.addEventListener('click', showNextImage);
+  nextBtn.setAttribute('aria-label', 'Next image');
+  
+  content.appendChild(scroll);
   content.appendChild(closeBtn);
+  content.appendChild(prevBtn);
+  content.appendChild(nextBtn);
   modal.appendChild(content);
   
   // Close modal when clicking outside
@@ -267,10 +296,42 @@ function createGalleryModal() {
     }
   });
   
-  // Close modal with Escape key
+  // Keyboard controls
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
+    if (!modal.classList.contains('active')) return;
+    if (e.key === 'Escape') {
       closeGalleryModal();
+      return;
+    }
+    if (e.key === 'ArrowRight' || e.key === ' ') {
+      e.preventDefault();
+      showNextImage();
+      return;
+    }
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      showPrevImage();
+      return;
+    }
+  });
+  
+  // Trap focus within modal content
+  content.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab') return;
+    const focusables = Array.from(content.querySelectorAll('button')).filter(el => !el.disabled);
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      }
+    } else {
+      if (document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     }
   });
   
@@ -291,6 +352,46 @@ function closeGalleryModal() {
   const modal = document.querySelector('.gallery-modal');
   modal.classList.remove('active');
   document.body.style.overflow = '';
+  if (__lastFocusedElement && typeof __lastFocusedElement.focus === 'function') {
+    __lastFocusedElement.focus();
+  }
+  __lastFocusedElement = null;
+}
+
+function openGalleryModalWithList(list, index) {
+  __currentGalleryList = Array.isArray(list) ? list : [];
+  __currentGalleryIndex = typeof index === 'number' ? index : 0;
+  __lastFocusedElement = document.activeElement || null;
+  const modal = document.querySelector('.gallery-modal');
+  const img = modal.querySelector('img');
+  const nextBtn = modal.querySelector('.gallery-modal-next');
+  const item = __currentGalleryList[__currentGalleryIndex] || {};
+  img.src = item.url || '';
+  img.alt = item.title || 'Gallery image';
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  if (nextBtn) nextBtn.focus();
+}
+
+function showNextImage() {
+  if (!__currentGalleryList.length) return;
+  __currentGalleryIndex = (__currentGalleryIndex + 1) % __currentGalleryList.length;
+  updateModalImage();
+}
+
+function showPrevImage() {
+  if (!__currentGalleryList.length) return;
+  __currentGalleryIndex = (__currentGalleryIndex - 1 + __currentGalleryList.length) % __currentGalleryList.length;
+  updateModalImage();
+}
+
+function updateModalImage() {
+  const modal = document.querySelector('.gallery-modal');
+  if (!modal || !modal.classList.contains('active')) return;
+  const img = modal.querySelector('img');
+  const item = __currentGalleryList[__currentGalleryIndex] || {};
+  img.src = item.url || '';
+  img.alt = item.title || 'Gallery image';
 }
 
 function openVideoModal(videoUrl, title) {
@@ -464,4 +565,5 @@ async function hydrateSection(key) {
   renderFiles(document.querySelector('[data-files]'), data.files);
   renderBookmarks(document.querySelector('[data-bookmarks]'), data.bookmarks);
   renderGallery(document.querySelector('[data-gallery]'), data.gallery);
+  renderGallery(document.querySelector('[data-inspiration]'), data.inspiration);
 }

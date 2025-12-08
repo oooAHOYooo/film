@@ -116,5 +116,52 @@
       "title": "Location #2 - Select 10",
       "description": "Location scout select from 9.20.25"
     }
+  ],
+  "inspiration": [
+    {
+      "url": "/assets/summer/inspo-imgs/seam3.jpg",
+      "title": "Seam3",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/inspo-imgs/seam2.jpg",
+      "title": "Seam2",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/inspo-imgs/seaM1.jpg",
+      "title": "SeaM1",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/inspo-imgs/seam4.jpg",
+      "title": "Seam4",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/inspo-imgs/seam3 copy.jpg",
+      "title": "Seam3 Copy",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/inspo-imgs/seam2 copy.jpg",
+      "title": "Seam2 Copy",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/inspo-imgs/d0b413429934cc7ccc23bef98a7c9d82.jpg",
+      "title": "D0b413429934cc7ccc23bef98a7c9d82",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/inspo-imgs/seam-inspo.jpg",
+      "title": "Seam Inspo",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/inspo-imgs/1ad07eb04ccd80ef85bbb53b51e8a4cd.jpg",
+      "title": "1ad07eb04ccd80ef85bbb53b51e8a4cd",
+      "description": ""
+    }
   ]
 }
