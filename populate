@@ -1,0 +1,33 @@
+// Usage:
+//   node populate images
+//
+// Shortcut wrapper to run gallery/image population tasks.
+const { execFileSync } = require('child_process');
+const path = require('path');
+
+const args = process.argv.slice(2);
+const task = (args[0] || 'images').toLowerCase();
+
+function runNodeScript(relPath, extraArgs = []) {
+  const scriptPath = path.resolve(__dirname, relPath);
+  execFileSync(process.execPath, [scriptPath, ...extraArgs], { stdio: 'inherit' });
+}
+
+try {
+  switch (task) {
+    case 'images':
+    case 'inspiration':
+    case 'gallery':
+      runNodeScript('scripts/generate-inspo-manifests.js');
+      break;
+    default:
+      console.error('Unknown task:', task);
+      console.error('Try: node populate images');
+      process.exit(1);
+  }
+} catch (err) {
+  console.error('Populate failed:', err?.message || err);
+  process.exit(1);
+}
+
+
