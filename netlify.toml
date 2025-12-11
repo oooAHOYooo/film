@@ -2,3 +2,7 @@
   command = "node scripts/generate-inspo-manifests.js"
   publish = "."
 
+
+
+
+
