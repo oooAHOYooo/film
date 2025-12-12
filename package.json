@@ -1,0 +1,11 @@
+{
+  "name": "film-vault",
+  "version": "1.0.0",
+  "description": "Film project workspace",
+  "scripts": {
+    "populate": "node populate",
+    "generate": "node scripts/generate-inspo-manifests.js"
+  },
+  "dependencies": {}
+}
+

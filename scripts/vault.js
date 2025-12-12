@@ -566,4 +566,5 @@ async function hydrateSection(key) {
   renderBookmarks(document.querySelector('[data-bookmarks]'), data.bookmarks);
   renderGallery(document.querySelector('[data-gallery]'), data.gallery);
   renderGallery(document.querySelector('[data-inspiration]'), data.inspiration);
+  renderGallery(document.querySelector('[data-stills]'), data.stills);
 }

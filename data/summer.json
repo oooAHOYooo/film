@@ -333,5 +333,27 @@
       "title": "257eb6ec10f4d6ccfdedc516d7a57354",
       "description": ""
     }
+  ],
+  "stills": [
+    {
+      "url": "/assets/summer/summer-stills/1.jpg",
+      "title": "1",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/summer-stills/2.jpg",
+      "title": "2",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/summer-stills/3.jpg",
+      "title": "3",
+      "description": ""
+    },
+    {
+      "url": "/assets/summer/summer-stills/4.jpg",
+      "title": "4",
+      "description": ""
+    }
   ]
 }

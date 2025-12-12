@@ -18,12 +18,15 @@ try {
     case 'images':
     case 'inspiration':
     case 'gallery':
+    case 'manifest':
       runNodeScript('scripts/generate-inspo-manifests.js');
       break;
     default:
-      console.error('Unknown task:', task);
-      console.error('Try: node populate images');
-      process.exit(1);
+      // Default behavior if no argument or unknown argument is passed: run the manifest script
+      // This makes `node populate` work immediately without arguments
+      console.log('Running default task: generate-inspo-manifests...');
+      runNodeScript('scripts/generate-inspo-manifests.js');
+      break;
   }
 } catch (err) {
   console.error('Populate failed:', err?.message || err);
