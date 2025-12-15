@@ -39,29 +39,21 @@ function renderFiles(el, files) {
   // Render each category
   Object.keys(categories).sort().forEach(category => {
     const categoryDiv = document.createElement('div');
-    categoryDiv.style.marginBottom = '32px';
+    categoryDiv.style.marginBottom = '20px';
     const isDrafts = /draft/i.test(category);
 
-    // For Script Drafts, create collapsible container
-    let containerEl = categoryDiv;
-    if (isDrafts) {
-      const details = document.createElement('details');
-      const summary = document.createElement('summary');
-      summary.textContent = category;
-      summary.style.cursor = 'pointer';
-      summary.style.color = '#75c0ff';
-      summary.style.fontWeight = '600';
-      summary.style.marginBottom = '12px';
-      details.appendChild(summary);
-      categoryDiv.appendChild(details);
-      containerEl = details;
-    } else {
-      const categoryTitle = document.createElement('h3');
-      categoryTitle.textContent = category;
-      categoryTitle.style.marginBottom = '16px';
-      categoryTitle.style.color = '#75c0ff';
-      categoryDiv.appendChild(categoryTitle);
-    }
+    const details = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.textContent = category;
+    summary.style.cursor = 'pointer';
+    summary.style.color = '#75c0ff';
+    summary.style.fontWeight = '600';
+    summary.style.fontSize = '1.2rem';
+    summary.style.marginBottom = '12px';
+    details.appendChild(summary);
+    
+    categoryDiv.appendChild(details);
+    const containerEl = details;
     
     // Create table
     const table = document.createElement('table');
@@ -164,8 +156,8 @@ function renderFiles(el, files) {
     });
     
     table.appendChild(tbody);
-    // Append table to appropriate container (details for drafts, div otherwise)
-    (containerEl || categoryDiv).appendChild(table);
+    // Append table to details container
+    containerEl.appendChild(table);
     el.appendChild(categoryDiv);
   });
 }
