@@ -158,9 +158,11 @@ a:hover {
     gap: 8px;
     border-radius: 8px;
     padding: 8px 16px;
-    background: var(--accent);
-    color: #ffffff;
-    border: none;
+    background: rgba(88, 166, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: var(--accent);
+    border: 1px solid rgba(88, 166, 255, 0.2);
     font-size: 0.9rem;
     font-weight: 500;
     text-decoration: none;
@@ -169,10 +171,12 @@ a:hover {
 }
 
 .btn:hover {
-    background: var(--accent-hover);
+    background: rgba(88, 166, 255, 0.25);
+    border-color: var(--accent);
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(88, 166, 255, 0.3);
     text-decoration: none;
+    color: var(--accent-hover);
 }
 
 .btn::after {

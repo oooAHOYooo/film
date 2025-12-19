@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 
 const IMAGE_EXTENSIONS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif']);
-const SEASONS = ['summer', 'winter', 'autumn'];
+const SEASONS = ['summer', 'winter', 'autumn', 'spring'];
 
 function humanizeFilename(filename) {
   const name = filename.replace(/\.[^.]+$/, '');
@@ -145,20 +145,45 @@ function updateSeasonManifest(repoRoot, season, inspoGallery, stillsGallery) {
   const dataFile = path.join(repoRoot, 'data', `${season}.json`);
   const existing = readJsonSafe(dataFile);
   
-  // Inspiration logic
+  // Inspiration logic - merge and sort by mtimeMs (newest first)
   const existingInspiration = Array.isArray(existing.inspiration) ? existing.inspiration : [];
-  // Preserve existing inspiration items, append new local images de-duped by URL.
   const existingUrls = new Set(existingInspiration.map((g) => g && g.url).filter(Boolean));
   const newItems = (inspoGallery || []).filter((g) => g && g.url && !existingUrls.has(g.url));
-  const mergedInspiration = existingInspiration.concat(newItems);
+  
+  // For existing items, try to get mtimeMs from file system
+  const allInspiration = existingInspiration.map(item => {
+    if (item && item.url && item.url.startsWith('/assets/')) {
+      const filePath = path.join(repoRoot, item.url);
+      const mtimeMs = getFileMtimeMsSafe(filePath);
+      return { ...item, mtimeMs };
+    }
+    return { ...item, mtimeMs: 0 };
+  }).concat(newItems);
+  
+  // Sort by mtimeMs descending (newest first), then reverse to put newest at the beginning
+  const mergedInspiration = allInspiration.sort((a, b) => (b.mtimeMs || 0) - (a.mtimeMs || 0));
 
-  // Stills logic
+  // Stills logic - same approach
   const existingStills = Array.isArray(existing.stills) ? existing.stills : [];
   const existingStillsUrls = new Set(existingStills.map((g) => g && g.url).filter(Boolean));
   const newStillsItems = (stillsGallery || []).filter((g) => g && g.url && !existingStillsUrls.has(g.url));
-  const mergedStills = existingStills.concat(newStillsItems);
+  
+  const allStills = existingStills.map(item => {
+    if (item && item.url && item.url.startsWith('/assets/')) {
+      const filePath = path.join(repoRoot, item.url);
+      const mtimeMs = getFileMtimeMsSafe(filePath);
+      return { ...item, mtimeMs };
+    }
+    return { ...item, mtimeMs: 0 };
+  }).concat(newStillsItems);
+  
+  const mergedStills = allStills.sort((a, b) => (b.mtimeMs || 0) - (a.mtimeMs || 0));
 
-  const updated = { ...existing, inspiration: mergedInspiration, stills: mergedStills };
+  // Remove mtimeMs from final output (it's just for sorting)
+  const cleanedInspiration = mergedInspiration.map(({ mtimeMs, ...item }) => item);
+  const cleanedStills = mergedStills.map(({ mtimeMs, ...item }) => item);
+
+  const updated = { ...existing, inspiration: cleanedInspiration, stills: cleanedStills };
   writeJsonPretty(dataFile, updated);
 }
 
