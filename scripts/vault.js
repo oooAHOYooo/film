@@ -560,3 +560,7 @@ async function hydrateSection(key) {
   renderGallery(document.querySelector('[data-inspiration]'), data.inspiration);
   renderGallery(document.querySelector('[data-stills]'), data.stills);
 }
+
+// Expose functions globally for use in other scripts
+window.openGalleryModalWithList = openGalleryModalWithList;
+window.openVideoModal = openVideoModal;

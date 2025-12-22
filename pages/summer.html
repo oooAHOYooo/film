@@ -2,183 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Summer Film — Film Vault</title>
+        <title>Creatures in the Tall Grass — Executive Production Hub</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href="/styles/style.css">
-        <style>
-            .summer-nav {
-                position: sticky;
-                top: 0;
-                z-index: 100;
-                background: rgba(13, 17, 23, 0.95);
-                backdrop-filter: blur(20px);
-                -webkit-backdrop-filter: blur(20px);
-                border-bottom: 1px solid var(--glass-border);
-                box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
-                transition: all 0.3s ease;
-            }
-            .summer-nav.scrolled {
-                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-            }
-            .nav-container {
-                max-width: var(--maxw);
-                margin: 0 auto;
-                padding: 0 var(--gap);
-            }
-            .nav-content {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 16px 0;
-                gap: 24px;
-            }
-            .nav-brand {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-                text-decoration: none;
-                color: var(--text-primary);
-            }
-            .nav-brand:hover {
-                text-decoration: none;
-            }
-            .nav-brand h2 {
-                margin: 0;
-                font-size: 1.25rem;
-                font-weight: 600;
-                background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-            }
-            .nav-links {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                flex-wrap: wrap;
-            }
-            .nav-link-item {
-                position: relative;
-                padding: 10px 16px;
-                color: var(--text-secondary);
-                text-decoration: none;
-                font-size: 0.9rem;
-                font-weight: 500;
-                border-radius: 8px;
-                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                white-space: nowrap;
-                display: flex;
-                align-items: center;
-                gap: 6px;
-            }
-            .nav-link-item:hover {
-                color: var(--accent);
-                background: rgba(88, 166, 255, 0.12);
-                text-decoration: none;
-                transform: translateY(-1px);
-            }
-            .nav-link-item.active {
-                color: var(--accent);
-                background: rgba(88, 166, 255, 0.18);
-                box-shadow: 0 2px 8px rgba(88, 166, 255, 0.2);
-            }
-            .nav-link-item.active::before {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 3px;
-                height: 60%;
-                background: var(--accent);
-                border-radius: 0 2px 2px 0;
-            }
-            .nav-icon {
-                width: 18px;
-                height: 18px;
-                display: inline-block;
-                opacity: 0.8;
-                transition: all 0.3s ease;
-                flex-shrink: 0;
-            }
-            .nav-icon svg {
-                width: 100%;
-                height: 100%;
-                fill: currentColor;
-            }
-            .nav-link-item:hover .nav-icon,
-            .nav-link-item.active .nav-icon {
-                opacity: 1;
-                transform: scale(1.1);
-            }
-            .mobile-nav-toggle {
-                display: none;
-                background: rgba(88, 166, 255, 0.1);
-                border: 1px solid rgba(88, 166, 255, 0.2);
-                color: var(--accent);
-                padding: 10px 14px;
-                border-radius: 8px;
-                cursor: pointer;
-                font-size: 1.3rem;
-                transition: all 0.2s ease;
-            }
-            .mobile-nav-toggle:hover {
-                background: rgba(88, 166, 255, 0.2);
-                border-color: var(--accent);
-            }
-            .section-anchor {
-                scroll-margin-top: 100px;
-            }
-            .scroll-progress {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 0%;
-                height: 3px;
-                background: linear-gradient(90deg, var(--accent) 0%, var(--accent-hover) 100%);
-                z-index: 101;
-                transition: width 0.1s ease;
-                box-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
-            }
-            .nav-brand h2 {
-                transition: all 0.3s ease;
-            }
-            .nav-brand:hover h2 {
-                transform: translateX(-2px);
-            }
-            @media (max-width: 768px) {
-                .mobile-nav-toggle {
-                    display: block;
-                }
-                .nav-links {
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    right: 0;
-                    background: rgba(13, 17, 23, 0.98);
-                    backdrop-filter: blur(20px);
-                    flex-direction: column;
-                    padding: 16px var(--gap);
-                    border-bottom: 1px solid var(--glass-border);
-                    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-                    display: none;
-                    gap: 4px;
-                }
-                .nav-links.open {
-                    display: flex;
-                }
-                .nav-link-item {
-                    width: 100%;
-                    padding: 12px 16px;
-                }
-                .nav-content {
-                    position: relative;
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="/styles/summer.css">
     </head>
     <body>
         <div class="scroll-progress" id="scrollProgress"></div>
+        
+        <!-- Sticky Navigation -->
         <nav class="summer-nav" id="summerNav">
             <div class="nav-container">
                 <div class="nav-content">
@@ -194,23 +26,17 @@
                             </span>
                             <span>Overview</span>
                         </a>
-                        <a href="#stills" class="nav-link-item">
+                        <a href="#story" class="nav-link-item">
+                            <span class="nav-icon">
+                                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+                            </span>
+                            <span>Story</span>
+                        </a>
+                        <a href="#visuals" class="nav-link-item">
                             <span class="nav-icon">
                                 <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="2.5"/><path d="M21 15l-5-5L5 21"/></svg>
                             </span>
-                            <span>Stills</span>
-                        </a>
-                        <a href="#locations" class="nav-link-item">
-                            <span class="nav-icon">
-                                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                            </span>
-                            <span>Locations</span>
-                        </a>
-                        <a href="#inspiration" class="nav-link-item">
-                            <span class="nav-icon">
-                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                            </span>
-                            <span>Inspiration</span>
+                            <span>Visuals</span>
                         </a>
                         <a href="#production" class="nav-link-item">
                             <span class="nav-icon">
@@ -218,11 +44,11 @@
                             </span>
                             <span>Production</span>
                         </a>
-                        <a href="#files" class="nav-link-item">
+                        <a href="#vault" class="nav-link-item">
                             <span class="nav-icon">
                                 <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
                             </span>
-                            <span>Files</span>
+                            <span>Vault</span>
                         </a>
                         <a href="#bookmarks" class="nav-link-item">
                             <span class="nav-icon">
@@ -235,171 +61,132 @@
             </div>
         </nav>
 
-        <header class="header" style="padding-top: 60px;">
-            <h1>Creatures in the Tall Grass</h1>
-            <p>Summer film project workspace</p>
-        </header>
-
-        <section class="section section-anchor" id="overview" style="margin-top: 20px;">
-            <div class="card"
-                style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.15) 0%, rgba(88, 166, 255, 0.05) 100%); border-color: var(--accent);">
-                <div
-                    style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-                    <div>
-                        <h3
-                            style="margin: 0 0 8px 0; color: var(--accent); font-size: 1.5rem;">
-                            Interactive Treatment</h3>
-                        <p
-                            style="margin: 0; color: var(--text-secondary);">Read the full treatment and explore the story</p>
-                    </div>
-                    <a class="btn" href="/pages/storybook.html"
-                        style="font-size: 1rem; padding: 12px 24px;">Open
-                        Treatment →</a>
+        <!-- A) HERO / PROJECT OVERVIEW -->
+        <section class="hero section-anchor" id="overview">
+            <div class="hero-content">
+                <h1 class="hero-title">Creatures in the Tall Grass</h1>
+          
+            
+                
+                <div class="hero-status">
+                    <span class="status-badge status-pre-production">Pre-Production</span>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="/pages/summer/storybook.html" class="btn btn-primary">Open Treatment →</a>
+                    <a href="/pages/summer/production.html" class="btn btn-primary">View Production →</a>
+                    <a href="#vault" class="btn btn-secondary">Jump to Vault ↓</a>
                 </div>
             </div>
         </section>
 
-        <section class="section section-anchor" id="stills">
-            <h2>Stills</h2>
-            <div data-stills></div>
+        <!-- B) STORY & INTENT -->
+        <section class="section section-anchor" id="story">
+            <h2>Story & Intent</h2>
+            <div class="story-content">
+                <p>Creatures in the Tall Grass is an atmospheric exploration of isolation, memory, and the uncanny. Set against the backdrop of a remote wilderness location, the film follows a protagonist whose perception of reality begins to fracture as they confront both external threats and internal demons.</p>
+                <p>The visual language draws from natural textures, shifting light, and the tension between vast landscapes and claustrophobic interiors. The narrative structure weaves together past and present, blurring the lines between what is remembered, what is imagined, and what is truly happening.</p>
+                <p>Through careful attention to sound design, cinematography, and performance, the film aims to create an immersive experience that challenges the audience's own sense of perception and reality.</p>
+                <div class="story-action">
+                    <a href="/pages/summer/storybook.html" class="btn">Read Full Treatment →</a>
+                </div>
+            </div>
         </section>
 
-        <section class="section section-anchor" id="locations">
-            <h2>Location Scout Gallery</h2>
-            <div data-gallery></div>
+        <!-- C) VISUAL LANGUAGE -->
+        <section class="section section-anchor" id="visuals">
+            <h2>Visual Language</h2>
+            
+            <!-- Look / Stills -->
+            <div class="visual-subsection">
+                <div class="subsection-header">
+                    <h3>Look / Stills</h3>
+                    <button class="btn-expand" id="expandStills" aria-label="View all stills">View all stills</button>
+                </div>
+                <div class="stills-preview" id="stillsPreview" data-stills></div>
+                <div class="stills-full" id="stillsFull" data-stills-full style="display: none;"></div>
+            </div>
+
+            <!-- Locations -->
+            <div class="visual-subsection">
+                <h3>Locations</h3>
+                
+                <div class="location-group">
+                    <h4>Scout Selects</h4>
+                    <div class="location-gallery" data-gallery></div>
+                </div>
+                
+                <div class="location-group">
+                    <h4>Locked Locations</h4>
+                    <div class="empty-state">
+                        <p>No locked locations yet.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inspiration -->
+            <div class="visual-subsection">
+                <div class="subsection-header">
+                    <h3>Inspiration</h3>
+                    <button class="btn-expand" id="expandInspiration" aria-label="Open all inspiration">Open all inspiration</button>
+                </div>
+                
+                <div class="inspiration-filters" id="inspirationFilters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="sea">Sea</button>
+                    <button class="filter-btn" data-filter="antenna">Antenna</button>
+                    <button class="filter-btn" data-filter="textures">Textures</button>
+                    <button class="filter-btn" data-filter="palette">Palette</button>
+                    <button class="filter-btn" data-filter="tech">Tech</button>
+                </div>
+                
+                <details class="inspiration-accordion" id="inspirationAccordion">
+                    <summary>View Inspiration Gallery</summary>
+                    <div class="inspiration-gallery" data-inspiration></div>
+                </details>
+            </div>
         </section>
 
-        <section class="section section-anchor" id="inspiration">
-            <h2>Inspiration Gallery</h2>
-            <div data-inspiration></div>
-        </section>
-
+        <!-- D) PRODUCTION CENTER -->
         <section class="section section-anchor" id="production">
-            <div class="card"
-                style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.15) 0%, rgba(88, 166, 255, 0.05) 100%); border-color: var(--accent);">
-                <div
-                    style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
-                    <div>
-                        <h3
-                            style="margin: 0 0 8px 0; color: var(--accent); font-size: 1.5rem;">
-                            Production</h3>
-                        <p
-                            style="margin: 0; color: var(--text-secondary);">Scene breakdown, production notes, and shooting schedule</p>
-                    </div>
-                    <a class="btn" href="/pages/summer/production.html"
-                        style="font-size: 1rem; padding: 12px 24px;">View
-                        Production →</a>
-                </div>
+            <h2>Production Center</h2>
+            <div class="production-card">
+                <p class="production-description">Scene breakdown, notes, schedule, deliverables.</p>
+                <a href="/pages/summer/production.html" class="btn btn-primary">View Production →</a>
             </div>
         </section>
 
-        <section class="section section-anchor" id="files">
-            <h2>Files</h2>
+        <!-- E) PRODUCTION VAULT (renamed from Files) -->
+        <section class="section section-anchor" id="vault">
+            <h2>Production Vault</h2>
             <div data-files></div>
         </section>
 
+        <!-- F) BOOKMARKS -->
         <section class="section section-anchor" id="bookmarks">
-            <details>
-                <summary style="cursor: pointer; color: #75c0ff; font-weight: 600; font-size: 1.2rem; margin-bottom: 12px;">Bookmarks</summary>
+            <div class="bookmarks-header">
+                <h2>Bookmarks</h2>
+                <button class="btn btn-secondary" id="addBookmarkBtn">Add Bookmark</button>
+            </div>
+            <div class="bookmarks-content">
                 <div data-bookmarks></div>
-            </details>
+            </div>
         </section>
 
         <footer>
             <p>Barnacle Film Studio Company ©2025</p>
         </footer>
 
+        <!-- Bookmark Modal -->
+        <div class="modal" id="bookmarkModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <div class="modal-content">
+                <h3 id="modalTitle">Add Bookmark</h3>
+                <p>Coming soon: Bookmark functionality will be available in a future update.</p>
+                <button class="btn" onclick="closeBookmarkModal()">Close</button>
+            </div>
+        </div>
+
         <script src="/scripts/vault.js"></script>
-        <script>
-            hydrateSection('summer');
-
-            // Navigation functionality
-            const nav = document.getElementById('summerNav');
-            const mobileToggle = document.getElementById('mobileNavToggle');
-            const navLinks = document.getElementById('navLinks');
-            const navLinkItems = document.querySelectorAll('.nav-link-item');
-
-            // Mobile menu toggle
-            if (mobileToggle) {
-                mobileToggle.addEventListener('click', () => {
-                    navLinks.classList.toggle('open');
-                });
-            }
-
-            // Close mobile menu when clicking a link
-            navLinkItems.forEach(link => {
-                link.addEventListener('click', () => {
-                    navLinks.classList.remove('open');
-                });
-            });
-
-            // Smooth scroll for anchor links
-            navLinkItems.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    const href = this.getAttribute('href');
-                    if (href.startsWith('#')) {
-                        e.preventDefault();
-                        const target = document.querySelector(href);
-                        if (target) {
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
-                        }
-                    }
-                });
-            });
-
-            // Active link highlighting based on scroll position
-            const sections = document.querySelectorAll('.section-anchor');
-            
-            function updateActiveNav() {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    const sectionHeight = section.clientHeight;
-                    if (window.pageYOffset >= sectionTop - 120) {
-                        current = section.getAttribute('id');
-                    }
-                });
-
-                navLinkItems.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === '#' + current) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-
-            // Scroll progress indicator
-            const scrollProgress = document.getElementById('scrollProgress');
-            const updateScrollProgress = () => {
-                const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                const scrolled = (window.pageYOffset / windowHeight) * 100;
-                scrollProgress.style.width = scrolled + '%';
-            };
-
-            // Scroll effect on nav
-            let lastScroll = 0;
-            window.addEventListener('scroll', () => {
-                const currentScroll = window.pageYOffset;
-                
-                if (currentScroll > 50) {
-                    nav.classList.add('scrolled');
-                } else {
-                    nav.classList.remove('scrolled');
-                }
-
-                updateActiveNav();
-                updateScrollProgress();
-                lastScroll = currentScroll;
-            });
-
-            // Initial scroll progress
-            updateScrollProgress();
-
-            // Initial active state
-            updateActiveNav();
-        </script>
+        <script src="/scripts/summer.js"></script>
     </body>
 </html>
