@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Simple wrapper to update treatment from anywhere
+# Usage: update-treatment
+
+cd "$(dirname "$0")/pages/summer" || exit 1
+./update-treat.js "$@"
+
