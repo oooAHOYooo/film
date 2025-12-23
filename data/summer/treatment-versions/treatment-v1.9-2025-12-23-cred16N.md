@@ -1,8 +1,8 @@
 # Creatures in the Tall Grass - Film Treatment
 
-**Version:** 1.10  
+**Version:** 1.9  
 **Last Updated:** 2025-12-23
-**Status:** cred16O
+**Status:** cred16N
 
 ---
 
@@ -111,7 +111,6 @@ Makayla and Asher are busy building little devices of their own. As they think t
 ## Version History
 
 | Version | Date | Changes | Author |
-| 1.10 | 2025-12-23 | cred16O - Minor edits and spellchecks | AG |
 | 1.9 | 2025-12-23 | cred16N - Minor edits and spellchecks | AG |
 | 1.8 | 2025-12-23 | cred16M - Minor edits and spellchecks | AG |
 | 1.7 | 2025-12-23 | cred16L - Minor edits and spellchecks | AG |
