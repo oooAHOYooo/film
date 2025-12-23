@@ -5,7 +5,9 @@
 From anywhere in your project:
 
 ```bash
-update-treatment
+# Either of these work:
+node update-treatment
+./update-treatment
 ```
 
 That's it! The script automatically:
