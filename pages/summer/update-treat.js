@@ -142,49 +142,73 @@ function generateVersionNotes(currentInfo, newCredVersion, oldContent, newConten
     const addedSentences = [];
     const removedSentences = [];
     
+    // Helper to split text into meaningful chunks (sentences, clauses, phrases)
+    const splitIntoChunks = (text) => {
+        // Split by periods, exclamation, question marks, and em dashes
+        const chunks = text.split(/[.!?–—]+/).map(s => s.trim()).filter(s => s.length > 5);
+        return chunks;
+    };
+    
     contentChanges.forEach(c => {
-        // Extract sentences that were removed
-        const oldSentences = c.old.split(/[.!?]+/).filter(s => {
-            const trimmed = s.trim();
-            return trimmed.length > 10 && !isMetadataChange(trimmed);
-        });
-        oldSentences.forEach(s => {
-            const trimmed = s.trim();
-            if (!c.new.includes(trimmed)) {
-                removedSentences.push(trimmed);
+        const oldChunks = splitIntoChunks(c.old);
+        const newChunks = splitIntoChunks(c.new);
+        
+        // Find chunks that were removed (in old but not in new)
+        oldChunks.forEach(chunk => {
+            if (chunk.length > 5 && !isMetadataChange(chunk)) {
+                // Check if this chunk (or a very similar one) exists in new text
+                const existsInNew = newChunks.some(newChunk => {
+                    // Check for exact match or very high similarity
+                    return newChunk === chunk || 
+                           newChunk.includes(chunk.substring(0, Math.min(20, chunk.length))) ||
+                           chunk.includes(newChunk.substring(0, Math.min(20, newChunk.length)));
+                });
+                if (!existsInNew) {
+                    removedSentences.push(chunk);
+                }
             }
         });
         
-        // Extract sentences that were added
-        const newSentences = c.new.split(/[.!?]+/).filter(s => {
-            const trimmed = s.trim();
-            return trimmed.length > 10 && !isMetadataChange(trimmed);
-        });
-        newSentences.forEach(s => {
-            const trimmed = s.trim();
-            if (!c.old.includes(trimmed)) {
-                addedSentences.push(trimmed);
+        // Find chunks that were added (in new but not in old)
+        newChunks.forEach(chunk => {
+            if (chunk.length > 5 && !isMetadataChange(chunk)) {
+                // Check if this chunk (or a very similar one) exists in old text
+                const existsInOld = oldChunks.some(oldChunk => {
+                    // Check for exact match or very high similarity
+                    return oldChunk === chunk || 
+                           oldChunk.includes(chunk.substring(0, Math.min(20, chunk.length))) ||
+                           chunk.includes(oldChunk.substring(0, Math.min(20, oldChunk.length)));
+                });
+                if (!existsInOld) {
+                    addedSentences.push(chunk);
+                }
             }
         });
     });
     
-    // Add sentences from pure additions
+    // Add chunks from pure additions
     contentAdditions.forEach(a => {
-        const sentences = a.text.split(/[.!?]+/).filter(s => {
-            const trimmed = s.trim();
-            return trimmed.length > 10 && !isMetadataChange(trimmed);
+        const chunks = splitIntoChunks(a.text);
+        chunks.forEach(chunk => {
+            if (chunk.length > 5 && !isMetadataChange(chunk)) {
+                addedSentences.push(chunk);
+            }
         });
-        addedSentences.push(...sentences.map(s => s.trim()));
     });
     
-    // Add sentences from pure deletions
+    // Add chunks from pure deletions
     contentDeletions.forEach(d => {
-        const sentences = d.text.split(/[.!?]+/).filter(s => {
-            const trimmed = s.trim();
-            return trimmed.length > 10 && !isMetadataChange(trimmed);
+        const chunks = splitIntoChunks(d.text);
+        chunks.forEach(chunk => {
+            if (chunk.length > 5 && !isMetadataChange(chunk)) {
+                removedSentences.push(chunk);
+            }
         });
-        removedSentences.push(...sentences.map(s => s.trim()));
     });
+    
+    // Remove duplicates
+    const uniqueAdded = [...new Set(addedSentences)];
+    const uniqueRemoved = [...new Set(removedSentences)];
     
     const notes = `# Notes on ${currentInfo.status} → ${newCredVersion}
 
@@ -195,11 +219,11 @@ function generateVersionNotes(currentInfo, newCredVersion, oldContent, newConten
 
 ## Added
 
-${addedSentences.length > 0 ? addedSentences.map(s => `- ${s}`).join('\n') : '*No content additions*'}
+${uniqueAdded.length > 0 ? uniqueAdded.map(s => `- ${s}`).join('\n') : '*No content additions*'}
 
 ## Removed
 
-${removedSentences.length > 0 ? removedSentences.map(s => `- ${s}`).join('\n') : '*No content removed*'}
+${uniqueRemoved.length > 0 ? uniqueRemoved.map(s => `- ${s}`).join('\n') : '*No content removed*'}
 
 `;
 
