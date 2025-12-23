@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 
 /**
- * Update Treatment - Simple Publishing Pipeline
+ * Automated Treatment Publishing Pipeline
  * 
- * Usage: ./update-treat <cred-version>
- * Example: ./update-treat cred16G
+ * This script:
+ * 1. Archives the current treatment version
+ * 2. Updates treatment.md with new version info
+ * 3. Updates storybook.html with the new version
+ * 4. Optionally commits and pushes to git
+ * 5. Maintains the latest + previous 3 versions in storybook
  * 
- * Options:
- *   --no-git    Skip git commit/push
- *   --no-push   Commit but don't push
+ * Usage: node publish-treatment.js <cred-version> [--no-git] [--no-push]
+ * Example: node publish-treatment.js cred16G
  */
 
 const fs = require('fs');
@@ -17,9 +20,7 @@ const { execSync } = require('child_process');
 
 const TREATMENT_FILE = path.join(__dirname, 'treatment.md');
 const STORYBOOK_FILE = path.join(__dirname, 'storybook.html');
-const DATA_DIR = path.join(__dirname, '..', '..', 'data', 'summer');
-const VERSIONS_DIR = path.join(DATA_DIR, 'treatment-versions');
-const NOTES_DIR = path.join(VERSIONS_DIR, 'notes');
+const VERSIONS_DIR = path.join(__dirname, 'treatment-versions');
 
 // Parse command line arguments
 const args = process.argv.slice(2);
@@ -27,30 +28,11 @@ const credVersion = args.find(arg => !arg.startsWith('--'));
 const noGit = args.includes('--no-git');
 const noPush = args.includes('--no-push');
 
-// Auto-increment cred version if not provided
-function getNextCredVersion(currentStatus) {
-    if (credVersion) {
-        return credVersion;
-    }
-    
-    // Auto-increment: cred16F -> cred16G, cred16G -> cred16H, etc.
-    const match = currentStatus.match(/cred(\d+)([A-Z])/);
-    if (match) {
-        const number = match[1];
-        const letter = match[2];
-        const nextLetter = String.fromCharCode(letter.charCodeAt(0) + 1);
-        return `cred${number}${nextLetter}`;
-    }
-    
-    // Fallback: just increment number
-    const numMatch = currentStatus.match(/cred(\d+)/);
-    if (numMatch) {
-        const num = parseInt(numMatch[1]) + 1;
-        return `cred${num}`;
-    }
-    
-    // Default fallback
-    return 'cred17';
+if (!credVersion) {
+    console.error('❌ Error: Please provide a cred version');
+    console.log('Usage: node publish-treatment.js <cred-version> [--no-git] [--no-push]');
+    console.log('Example: node publish-treatment.js cred16G');
+    process.exit(1);
 }
 
 // Get current treatment info
@@ -73,163 +55,6 @@ function getNextVersion(currentVersion) {
     return `${major}.${minor + 1}`;
 }
 
-// Simple text diff function
-function generateDiff(oldText, newText) {
-    const oldLines = oldText.split('\n');
-    const newLines = newText.split('\n');
-    
-    const additions = [];
-    const deletions = [];
-    const changes = [];
-    
-    // Simple line-by-line comparison
-    const maxLen = Math.max(oldLines.length, newLines.length);
-    
-    for (let i = 0; i < maxLen; i++) {
-        const oldLine = oldLines[i] || '';
-        const newLine = newLines[i] || '';
-        
-        if (oldLine !== newLine) {
-            if (oldLine && !newLine) {
-                deletions.push({ line: i + 1, text: oldLine.trim() });
-            } else if (!oldLine && newLine) {
-                additions.push({ line: i + 1, text: newLine.trim() });
-            } else {
-                changes.push({ 
-                    line: i + 1, 
-                    old: oldLine.trim(), 
-                    new: newLine.trim() 
-                });
-            }
-        }
-    }
-    
-    return { additions, deletions, changes };
-}
-
-// Generate notes for a version
-function generateVersionNotes(currentInfo, newCredVersion, oldContent, newContent) {
-    // Ensure notes directory exists
-    if (!fs.existsSync(NOTES_DIR)) {
-        fs.mkdirSync(NOTES_DIR, { recursive: true });
-    }
-    
-    const diff = generateDiff(oldContent, newContent);
-    const noteFileName = `notes-${currentInfo.status}.md`;
-    const notePath = path.join(NOTES_DIR, noteFileName);
-    
-    // Filter out metadata changes (version numbers, status, version history table)
-    const isMetadataChange = (line) => {
-        const trimmed = line.trim();
-        return trimmed.startsWith('**Version:**') ||
-               trimmed.startsWith('**Status:**') ||
-               trimmed.match(/^\| \d+\.\d+ \|/) || // Version history table rows
-               trimmed.match(/^\|---------/); // Table separators
-    };
-    
-    // Filter additions - only keep actual content
-    const contentAdditions = diff.additions.filter(a => !isMetadataChange(a.text));
-    
-    // Filter deletions - only keep actual content
-    const contentDeletions = diff.deletions.filter(d => !isMetadataChange(d.text));
-    
-    // Filter changes - only keep actual content changes
-    const contentChanges = diff.changes.filter(c => 
-        !isMetadataChange(c.old) && !isMetadataChange(c.new)
-    );
-    
-    // Extract actual sentences/words from changes
-    const addedSentences = [];
-    const removedSentences = [];
-    
-    contentChanges.forEach(c => {
-        // Extract sentences that were removed
-        const oldSentences = c.old.split(/[.!?]+/).filter(s => {
-            const trimmed = s.trim();
-            return trimmed.length > 10 && !isMetadataChange(trimmed);
-        });
-        oldSentences.forEach(s => {
-            const trimmed = s.trim();
-            if (!c.new.includes(trimmed)) {
-                removedSentences.push(trimmed);
-            }
-        });
-        
-        // Extract sentences that were added
-        const newSentences = c.new.split(/[.!?]+/).filter(s => {
-            const trimmed = s.trim();
-            return trimmed.length > 10 && !isMetadataChange(trimmed);
-        });
-        newSentences.forEach(s => {
-            const trimmed = s.trim();
-            if (!c.old.includes(trimmed)) {
-                addedSentences.push(trimmed);
-            }
-        });
-    });
-    
-    // Add sentences from pure additions
-    contentAdditions.forEach(a => {
-        const sentences = a.text.split(/[.!?]+/).filter(s => {
-            const trimmed = s.trim();
-            return trimmed.length > 10 && !isMetadataChange(trimmed);
-        });
-        addedSentences.push(...sentences.map(s => s.trim()));
-    });
-    
-    // Add sentences from pure deletions
-    contentDeletions.forEach(d => {
-        const sentences = d.text.split(/[.!?]+/).filter(s => {
-            const trimmed = s.trim();
-            return trimmed.length > 10 && !isMetadataChange(trimmed);
-        });
-        removedSentences.push(...sentences.map(s => s.trim()));
-    });
-    
-    const notes = `# Notes on ${currentInfo.status} → ${newCredVersion}
-
-**Date:** ${new Date().toISOString().split('T')[0]}
-**Version:** ${currentInfo.version} → ${getNextVersion(currentInfo.version)}
-
----
-
-## Added
-
-${addedSentences.length > 0 ? addedSentences.map(s => `- ${s}`).join('\n') : '*No content additions*'}
-
-## Removed
-
-${removedSentences.length > 0 ? removedSentences.map(s => `- ${s}`).join('\n') : '*No content removed*'}
-
-`;
-
-    fs.writeFileSync(notePath, notes, 'utf8');
-    console.log(`✅ Generated notes: ${noteFileName}`);
-    return notePath;
-}
-
-// Generate a simple full diff
-function generateFullDiff(oldText, newText) {
-    const oldLines = oldText.split('\n');
-    const newLines = newText.split('\n');
-    const maxLen = Math.max(oldLines.length, newLines.length);
-    const diffLines = [];
-    
-    for (let i = 0; i < maxLen; i++) {
-        const oldLine = oldLines[i];
-        const newLine = newLines[i];
-        
-        if (oldLine === newLine) {
-            diffLines.push(`  ${oldLine || ''}`);
-        } else {
-            if (oldLine) diffLines.push(`- ${oldLine}`);
-            if (newLine) diffLines.push(`+ ${newLine}`);
-        }
-    }
-    
-    return diffLines.join('\n');
-}
-
 // Archive current version
 function archiveCurrentVersion(currentInfo) {
     const archiveName = `treatment-v${currentInfo.version}-${currentInfo.date}-${currentInfo.status}.md`;
@@ -240,13 +65,9 @@ function archiveCurrentVersion(currentInfo) {
         fs.mkdirSync(VERSIONS_DIR, { recursive: true });
     }
     
-    // Read current content before archiving
-    const currentContent = fs.readFileSync(TREATMENT_FILE, 'utf8');
-    
     fs.copyFileSync(TREATMENT_FILE, archivePath);
     console.log(`✅ Archived to: ${archiveName}`);
-    
-    return { archiveName, archivePath, currentContent };
+    return archiveName;
 }
 
 // Update treatment.md header
@@ -456,35 +277,20 @@ function gitCommitAndPush(credVersion) {
     }
     
     try {
-        // Find git root (go up from script location)
-        const gitRoot = execSync('git rev-parse --show-toplevel', { encoding: 'utf8' }).trim();
-        const scriptDir = __dirname;
-        const relativePath = path.relative(gitRoot, scriptDir);
+        // Check if we're in a git repo
+        execSync('git rev-parse --git-dir', { stdio: 'ignore' });
         
-        // Stage files using relative paths from git root
-        const treatmentPath = path.join(relativePath, 'treatment.md');
-        const storybookPath = path.join(relativePath, 'storybook.html');
-        const dataPath = path.join('data', 'summer');
-        
-        execSync(`git add "${treatmentPath}" "${storybookPath}" "${dataPath}"`, { 
-            cwd: gitRoot,
-            stdio: 'inherit' 
-        });
+        // Stage files
+        execSync('git add pages/summer/treatment.md pages/summer/storybook.html pages/summer/treatment-versions/', { stdio: 'inherit' });
         
         // Commit
         const commitMessage = `Update treatment to ${credVersion}`;
-        execSync(`git commit -m "${commitMessage}"`, { 
-            cwd: gitRoot,
-            stdio: 'inherit' 
-        });
+        execSync(`git commit -m "${commitMessage}"`, { stdio: 'inherit' });
         console.log(`✅ Committed: ${commitMessage}`);
         
         // Push (unless --no-push)
         if (!noPush) {
-            execSync('git push', { 
-                cwd: gitRoot,
-                stdio: 'inherit' 
-            });
+            execSync('git push', { stdio: 'inherit' });
             console.log('✅ Pushed to remote');
         } else {
             console.log('⏭️  Skipping push (--no-push flag)');
@@ -496,33 +302,29 @@ function gitCommitAndPush(credVersion) {
 
 // Main execution
 function main() {
+    console.log(`\n🚀 Publishing treatment: ${credVersion}\n`);
+    
     const currentInfo = getCurrentTreatmentInfo();
-    const newCredVersion = getNextCredVersion(currentInfo.status);
+    console.log(`Current: v${currentInfo.version} (${currentInfo.status})`);
+    
     const newVersion = getNextVersion(currentInfo.version);
     const newDate = new Date().toISOString().split('T')[0];
     
-    console.log(`\n🚀 Updating treatment\n`);
-    console.log(`Current: v${currentInfo.version} (${currentInfo.status})`);
-    console.log(`New: v${newVersion} (${newCredVersion})\n`);
+    console.log(`New: v${newVersion} (${credVersion})\n`);
     
-    // Step 1: Archive current (and get old content for diff)
-    const { currentContent } = archiveCurrentVersion(currentInfo);
+    // Step 1: Archive current
+    archiveCurrentVersion(currentInfo);
     
     // Step 2: Update treatment.md
-    updateTreatmentHeader(newVersion, newDate, newCredVersion);
+    updateTreatmentHeader(newVersion, newDate, credVersion);
     
-    // Step 3: Read new content and generate notes
-    const newContent = fs.readFileSync(TREATMENT_FILE, 'utf8');
-    generateVersionNotes(currentInfo, newCredVersion, currentContent, newContent);
+    // Step 3: Update storybook
+    updateStorybook(newVersion, newDate, credVersion);
     
-    // Step 4: Update storybook
-    updateStorybook(newVersion, newDate, newCredVersion);
+    // Step 4: Git operations
+    gitCommitAndPush(credVersion);
     
-    // Step 5: Git operations
-    gitCommitAndPush(newCredVersion);
-    
-    console.log(`\n✅ Done! Treatment ${newCredVersion} is now live in the storybook.`);
-    console.log(`📝 Check data/summer/treatment-versions/notes/ for detailed change notes.\n`);
+    console.log(`\n✅ Done! Treatment ${credVersion} is now live in the storybook.\n`);
 }
 
 main();
