@@ -17,8 +17,9 @@ const { execSync } = require('child_process');
 
 const TREATMENT_FILE = path.join(__dirname, 'treatment.md');
 const STORYBOOK_FILE = path.join(__dirname, 'storybook.html');
-const VERSIONS_DIR = path.join(__dirname, 'treatment-versions');
-const NOTES_DIR = path.join(__dirname, 'treatment-versions', 'notes');
+const DATA_DIR = path.join(__dirname, '..', '..', 'data', 'summer');
+const VERSIONS_DIR = path.join(DATA_DIR, 'treatment-versions');
+const NOTES_DIR = path.join(VERSIONS_DIR, 'notes');
 
 // Parse command line arguments
 const args = process.argv.slice(2);
@@ -433,9 +434,9 @@ function gitCommitAndPush(credVersion) {
         // Stage files using relative paths from git root
         const treatmentPath = path.join(relativePath, 'treatment.md');
         const storybookPath = path.join(relativePath, 'storybook.html');
-        const versionsPath = path.join(relativePath, 'treatment-versions');
+        const dataPath = path.join('data', 'summer');
         
-        execSync(`git add "${treatmentPath}" "${storybookPath}" "${versionsPath}"`, { 
+        execSync(`git add "${treatmentPath}" "${storybookPath}" "${dataPath}"`, { 
             cwd: gitRoot,
             stdio: 'inherit' 
         });
@@ -491,7 +492,7 @@ function main() {
     gitCommitAndPush(newCredVersion);
     
     console.log(`\n✅ Done! Treatment ${newCredVersion} is now live in the storybook.`);
-    console.log(`📝 Check treatment-versions/notes/ for detailed change notes.\n`);
+    console.log(`📝 Check data/summer/treatment-versions/notes/ for detailed change notes.\n`);
 }
 
 main();
