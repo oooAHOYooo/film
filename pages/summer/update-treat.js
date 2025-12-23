@@ -122,9 +122,6 @@ function generateVersionNotes(currentInfo, newCredVersion, oldContent, newConten
     const newWordCount = newContent.split(/\s+/).length;
     const wordDiff = newWordCount - oldWordCount;
     
-    // Analyze content for suggestions
-    const suggestions = generateSuggestions(newContent, diff);
-    
     const notes = `# Notes on ${currentInfo.status} → ${newCredVersion}
 
 **Date:** ${new Date().toISOString().split('T')[0]}
@@ -141,110 +138,43 @@ function generateVersionNotes(currentInfo, newCredVersion, oldContent, newConten
 
 ---
 
-## Additions
+## Changed Sentences
 
-${diff.additions.length > 0 ? diff.additions.slice(0, 20).map(a => `- **Line ${a.line}:** ${a.text.substring(0, 100)}${a.text.length > 100 ? '...' : ''}`).join('\n') : '*No additions*'}
-
-${diff.additions.length > 20 ? `\n*... and ${diff.additions.length - 20} more additions*` : ''}
-
----
-
-## Deletions
-
-${diff.deletions.length > 0 ? diff.deletions.slice(0, 20).map(d => `- **Line ${d.line}:** ${d.text.substring(0, 100)}${d.text.length > 100 ? '...' : ''}`).join('\n') : '*No deletions*'}
-
-${diff.deletions.length > 20 ? `\n*... and ${diff.deletions.length - 20} more deletions*` : ''}
-
----
-
-## Changes
-
-${diff.changes.length > 0 ? diff.changes.slice(0, 10).map(c => `- **Line ${c.line}:**
-  - Old: ${c.old.substring(0, 80)}${c.old.length > 80 ? '...' : ''}
-  - New: ${c.new.substring(0, 80)}${c.new.length > 80 ? '...' : ''}`).join('\n\n') : '*No changes*'}
-
-${diff.changes.length > 10 ? `\n*... and ${diff.changes.length - 10} more changes*` : ''}
+${diff.changes.length > 0 ? diff.changes.map(c => {
+    // Extract sentences from the changed lines
+    const oldSentences = c.old.split(/[.!?]+/).filter(s => s.trim().length > 10);
+    const newSentences = c.new.split(/[.!?]+/).filter(s => s.trim().length > 10);
+    
+    if (oldSentences.length > 0 || newSentences.length > 0) {
+        let result = `**Line ${c.line}:**\n`;
+        if (oldSentences.length > 0) {
+            result += `  - **Old:** ${oldSentences[0].trim().substring(0, 150)}${oldSentences[0].length > 150 ? '...' : ''}\n`;
+        }
+        if (newSentences.length > 0) {
+            result += `  - **New:** ${newSentences[0].trim().substring(0, 150)}${newSentences[0].length > 150 ? '...' : ''}`;
+        }
+        return result;
+    }
+    return `**Line ${c.line}:**\n  - **Old:** ${c.old.substring(0, 100)}${c.old.length > 100 ? '...' : ''}\n  - **New:** ${c.new.substring(0, 100)}${c.new.length > 100 ? '...' : ''}`;
+}).join('\n\n') : '*No changes*'}
 
 ---
 
-## Suggestions for Next Steps
+## Added Content
 
-${suggestions.map(s => `- ${s}`).join('\n')}
+${diff.additions.length > 0 ? diff.additions.map(a => `- **Line ${a.line}:** ${a.text.substring(0, 200)}${a.text.length > 200 ? '...' : ''}`).join('\n') : '*No additions*'}
 
 ---
 
-## Full Diff
+## Removed Content
 
-<details>
-<summary>Click to expand full diff</summary>
+${diff.deletions.length > 0 ? diff.deletions.map(d => `- **Line ${d.line}:** ${d.text.substring(0, 200)}${d.text.length > 200 ? '...' : ''}`).join('\n') : '*No deletions*'}
 
-\`\`\`
-${generateFullDiff(oldContent, newContent)}
-\`\`\`
-
-</details>
 `;
 
     fs.writeFileSync(notePath, notes, 'utf8');
     console.log(`✅ Generated notes: ${noteFileName}`);
     return notePath;
-}
-
-// Generate suggestions based on content analysis
-function generateSuggestions(content, diff) {
-    const suggestions = [];
-    
-    // Check for common issues
-    const typos = content.match(/\b(Dallaszzza|Dallaszzz|Dallass)\b/gi);
-    if (typos) {
-        suggestions.push('🔍 **Spellcheck needed:** Found potential typos in character names');
-    }
-    
-    // Check for incomplete sentences
-    const incompleteSentences = content.match(/[^.!?]\s*$/gm);
-    if (incompleteSentences && incompleteSentences.length > 5) {
-        suggestions.push('📝 **Review sentence structure:** Some sentences may be incomplete');
-    }
-    
-    // Check for repeated words
-    const repeatedWords = content.match(/\b(\w+)\s+\1\b/gi);
-    if (repeatedWords) {
-        suggestions.push('✏️ **Word repetition:** Check for repeated words that might need editing');
-    }
-    
-    // Check for ACT structure
-    const actCount = (content.match(/## ACT [IVX]+/g) || []).length;
-    if (actCount !== 4) {
-        suggestions.push(`📚 **Structure check:** Found ${actCount} ACTs (expected 4)`);
-    }
-    
-    // Check for duration markers
-    const durationCount = (content.match(/\*\*Duration:\*\*/g) || []).length;
-    if (durationCount !== actCount) {
-        suggestions.push('⏱️ **Duration markers:** Some ACTs may be missing duration information');
-    }
-    
-    // Analyze changes
-    if (diff.additions.length > diff.deletions.length * 2) {
-        suggestions.push('➕ **Expansion:** Significant additions made - consider reviewing pacing');
-    } else if (diff.deletions.length > diff.additions.length * 2) {
-        suggestions.push('➖ **Condensation:** Significant deletions made - ensure key plot points remain');
-    }
-    
-    // Check for dialogue consistency
-    const dialogueQuotes = (content.match(/"[^"]+"/g) || []).length;
-    if (dialogueQuotes > 0 && dialogueQuotes % 2 !== 0) {
-        suggestions.push('💬 **Dialogue check:** Unmatched quotation marks detected');
-    }
-    
-    // Default suggestions if nothing specific
-    if (suggestions.length === 0) {
-        suggestions.push('✅ **Review:** Read through the treatment for flow and consistency');
-        suggestions.push('📖 **Storybook:** Check the storybook to see how it renders');
-        suggestions.push('🔍 **Spellcheck:** Run a final spellcheck before next version');
-    }
-    
-    return suggestions;
 }
 
 // Generate a simple full diff
