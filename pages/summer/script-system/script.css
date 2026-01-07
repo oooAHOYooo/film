@@ -1,0 +1,440 @@
+/* Screenplay Formatting Stylesheet - 8.5x11 Standard Format */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+  /* Screen (reading / ebook-like) */
+  --page-bg: #fbfaf7;
+  --card-bg: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+  --border: #e6e6e6;
+
+  --reading-font: ui-serif, Georgia, "Times New Roman", serif;
+  --script-font: 'Courier Prime', 'Courier New', monospace;
+
+  --container-max: 78ch;
+  --container-pad-y: 2.25rem;
+  --container-pad-x: 1.25rem;
+
+  --content-left: 0;
+  --content-right: 0;
+  --content-max: none;
+
+  --scene-heading-top: 1.5rem;
+  --scene-heading-bottom: 0.75rem;
+  --action-bottom: 1.25rem;
+
+  --character-left: 12ch;
+  --dialogue-left: 6ch;
+  --dialogue-right: 6ch;
+  --parenthetical-left: 10ch;
+  --parenthetical-right: 8ch;
+  --transition-right: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--reading-font);
+  font-size: 18px;
+  line-height: 1.65;
+  background-color: var(--page-bg);
+  color: var(--text);
+  padding: 0;
+  margin: 0;
+}
+
+/* Screenplay Container - responsive on screen */
+.screenplay-container {
+  width: min(100%, var(--container-max));
+  min-height: auto;
+  margin: 0 auto;
+  padding: var(--container-pad-y) var(--container-pad-x);
+  background: var(--card-bg);
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Content area with screenplay margins (overridden for print) */
+.screenplay-content {
+  max-width: var(--content-max);
+  margin-left: var(--content-left);
+  margin-right: var(--content-right);
+  font-family: var(--script-font);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+/* Scene Headings (INT./EXT. LOCATION - TIME) */
+.scene-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: var(--scene-heading-top);
+  margin-bottom: var(--scene-heading-bottom);
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  line-height: 1.0;
+  page-break-after: avoid;
+}
+
+/* Action Lines - Full width within margins */
+.action-line {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: var(--action-bottom);
+  text-align: left;
+  line-height: 1.35;
+  page-break-inside: avoid;
+}
+
+.action-line.line-split {
+  /* if you used single-newline breaks inside action, keep it tighter */
+  margin-bottom: 0.45rem;
+}
+
+/* Character Names - 4.1" from left edge (2.6" from left margin) */
+.character-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: var(--character-left);
+  margin-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.0;
+  page-break-after: avoid;
+  display: block;
+}
+
+/* Dialogue - 2.5" from left (1" from left margin), 2.5" from right (1.5" from right margin) */
+.dialogue {
+  margin-left: var(--dialogue-left);
+  margin-right: var(--dialogue-right);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.35;
+  page-break-inside: avoid;
+}
+
+/* Parentheticals - 3.1" from left (1.6" from left margin) */
+.parenthetical {
+  font-style: italic;
+  margin-left: var(--parenthetical-left);
+  margin-right: var(--parenthetical-right);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.35;
+  display: block;
+}
+
+.dialogue.dialogue-last {
+  margin-bottom: 0.8rem;
+}
+
+.parenthetical.parenthetical-last {
+  margin-bottom: 0.25rem;
+}
+
+/* Transitions - Right aligned, 1.5" from right edge */
+.transition {
+  text-transform: uppercase;
+  text-align: right;
+  margin-left: 0;
+  margin-right: var(--transition-right);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.0;
+  page-break-after: avoid;
+}
+
+/* Default paragraph styling - will be overridden by screenplay formatting */
+.screenplay-content p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+}
+
+/* Headers for scene titles */
+.full-script-header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #111;
+  page-break-after: avoid;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.full-script-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.full-script-meta {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.25;
+}
+
+/* Gallery/Index Styles */
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: var(--reading-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.gallery-header {
+  margin-bottom: 2em;
+  border-bottom: 2px solid #000;
+  padding-bottom: 1em;
+}
+
+.gallery-header h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.scene-list {
+  list-style: none;
+  padding: 0;
+}
+
+.act-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.act-block {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.act-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+
+.act-heading {
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+.act-meta {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.scene-item {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+  transition: background 0.2s;
+}
+
+.scene-item:hover {
+  background: #f0f0f0;
+}
+
+.scene-item a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.scene-item h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.scene-meta {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.scene-id {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Compact scene list */
+.scene-list--compact {
+  margin: 0;
+}
+
+.scene-item--compact {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 1px solid #eee;
+}
+
+.scene-item--compact:last-child {
+  border-bottom: 0;
+}
+
+.scene-item--compact:hover {
+  background: #f6f6f6;
+}
+
+.scene-link {
+  display: grid;
+  grid-template-columns: 4ch 1fr auto;
+  gap: 1em;
+  padding: 0.6em 1em;
+  text-decoration: none;
+  color: #000;
+  align-items: baseline;
+}
+
+.scene-number {
+  font-weight: bold;
+}
+
+.scene-file {
+  color: #666;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+/* Navigation */
+.nav {
+  margin-bottom: 2em;
+  padding: 1em;
+  background: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.print-button {
+  appearance: none;
+  border: 1px solid #ddd;
+  background: #ffffff;
+  color: #111;
+  padding: 0.5em 0.9em;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.print-button:hover {
+  background: #f7f7f7;
+}
+
+.no-print {
+  /* hidden in print media below */
+}
+
+/* Print Styles - Optimized for 8.5x11 */
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 1in 1in 1in 1.5in;
+  }
+
+  body {
+    background: white;
+    font-size: 12pt;
+    line-height: 1.0;
+    font-family: var(--script-font);
+  }
+  
+  .screenplay-container {
+    width: 8.5in;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .screenplay-content {
+    max-width: 6in;
+    margin-left: 1.5in;
+    margin-right: 1in;
+    font-size: 12pt;
+    line-height: 1.0;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+
+  /* Prevent page breaks in awkward places */
+  .action-line,
+  .dialogue {
+    page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  .scene-heading {
+    page-break-after: avoid;
+  }
+
+  .character-name {
+    page-break-after: avoid;
+  }
+
+  :root {
+    --content-left: 1.5in;
+    --content-right: 1in;
+    --scene-heading-top: 0.6in;
+    --scene-heading-bottom: 0.3in;
+    --action-bottom: 0.3in;
+    --character-left: 2.6in;
+    --dialogue-left: 1in;
+    --dialogue-right: 1.5in;
+    --parenthetical-left: 1.6in;
+    --parenthetical-right: 1.9in;
+    --transition-right: 0.5in;
+  }
+}

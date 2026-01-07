@@ -1,0 +1,293 @@
+#!/usr/bin/env node
+
+/**
+ * Script Compiler
+ * Reads manifest.json and compiles all scenes into a single full_script.md
+ * and generates full_script.html for printing/viewing
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const SCENES_DIR = path.join(__dirname, 'scenes');
+const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
+const OUTPUT_MD = path.join(__dirname, 'full_script.md');
+const OUTPUT_HTML = path.join(__dirname, 'full_script.html');
+const SCRIPT_NAME = 'Creatures in the Tall Grass Script';
+
+function toRoman(num) {
+  const map = [
+    [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+    [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+    [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I'],
+  ];
+  let n = num;
+  let out = '';
+  for (const [v, s] of map) {
+    while (n >= v) {
+      out += s;
+      n -= v;
+    }
+  }
+  return out;
+}
+
+// Read manifest
+function loadManifest() {
+  try {
+    const manifestContent = fs.readFileSync(MANIFEST_PATH, 'utf8');
+    return JSON.parse(manifestContent);
+  } catch (error) {
+    console.error('Error reading manifest.json:', error.message);
+    process.exit(1);
+  }
+}
+
+// Read a scene file
+function loadScene(filename) {
+  const filePath = path.join(SCENES_DIR, filename);
+  try {
+    return fs.readFileSync(filePath, 'utf8');
+  } catch (error) {
+    console.warn(`Warning: Could not read scene file ${filename}: ${error.message}`);
+    return `\n[SCENE FILE MISSING: ${filename}]\n`;
+  }
+}
+
+// Compile all scenes into markdown
+function compileMarkdown(scenes) {
+  let output = `# ${SCRIPT_NAME} — Full Script\n\n`;
+  output += `*Compiled on ${new Date().toLocaleString()}*\n\n`;
+  output += `---\n\n`;
+
+  let currentAct = null;
+  scenes.forEach((scene, index) => {
+    const sceneNumber = index + 1;
+
+    if (scene.act && scene.act !== currentAct) {
+      currentAct = scene.act;
+      const actTitle = scene.actTitle ? ` — ${scene.actTitle}` : '';
+      output += `\n## ACT ${toRoman(scene.act)}${actTitle}\n\n---\n\n`;
+    }
+
+    output += `\n### Scene ${sceneNumber}: ${scene.title}\n\n`;
+    output += `*${scene.act ? `ACT ${toRoman(scene.act)}${scene.actTitle ? ` — ${scene.actTitle}` : ''} | ` : ''}ID: ${scene.id} | File: ${scene.file}*\n\n`;
+    output += `---\n\n`;
+    
+    const sceneContent = loadScene(scene.file);
+    output += sceneContent;
+    output += `\n\n---\n\n`;
+  });
+
+  return output;
+}
+
+// Generate HTML from markdown (simple conversion)
+function markdownToHTML(markdown) {
+  // Simple markdown to HTML conversion
+  // For production, you might want to use a library like marked
+  let html = markdown
+    // Headers
+    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+    // Bold
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    // Italic
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    // Line breaks
+    .replace(/\n\n/g, '</p><p>')
+    .replace(/\n/g, '<br>');
+  
+  return `<p>${html}</p>`;
+}
+
+// Generate full HTML page
+function generateHTMLPage(markdown) {
+  const html = String.raw`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Script - ${SCRIPT_NAME}</title>
+  <link rel="stylesheet" href="script.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="nav no-print">
+      <div class="nav-left">
+        <a href="index.html">← Back to Gallery</a>
+      </div>
+      <button type="button" class="print-button" onclick="window.print()">Print</button>
+    </div>
+
+    <div class="screenplay-container">
+      <div class="full-script-header">
+        <div class="full-script-title">${SCRIPT_NAME} — Full Script</div>
+        <div class="full-script-meta">Compiled on ${new Date().toLocaleString()}</div>
+      </div>
+      <div class="screenplay-content" id="scriptContent"></div>
+    </div>
+  </div>
+
+  <script>
+    const markdown = ${JSON.stringify(markdown)};
+    const container = document.getElementById('scriptContent');
+    marked.setOptions({ breaks: true });
+    container.innerHTML = marked.parse(markdown);
+    
+    // Format screenplay elements
+    formatScreenplay(document.querySelector('.screenplay-container'));
+    
+    function formatScreenplay(container) {
+      const content = container.querySelector('.screenplay-content');
+      if (!content) return;
+
+      normalizeParagraphBreaks(content);
+
+      const paragraphs = content.querySelectorAll('p');
+      let inDialogueBlock = false;
+      
+      paragraphs.forEach((p, index) => {
+        const text = p.textContent.trim();
+        const nextP = paragraphs[index + 1];
+        const prevP = paragraphs[index - 1];
+        
+        // Skip if already formatted or empty
+        if (!text || p.classList.length > 0) return;
+        
+        // Scene headings (INT. or EXT. at start of line)
+        if (/^(INT\.|EXT\.)/i.test(text)) {
+          p.className = 'scene-heading';
+          p.textContent = text.toUpperCase();
+          inDialogueBlock = false;
+          return;
+        }
+        
+        // Transitions (right-aligned, uppercase)
+        if (/^(FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text)) {
+          p.className = 'transition';
+          p.textContent = text.toUpperCase();
+          inDialogueBlock = false;
+          return;
+        }
+        
+        // Parentheticals (text in parentheses, italic) - check before character names
+        if (/^\(.+\)$/.test(text)) {
+          p.className = 'parenthetical';
+          inDialogueBlock = true;
+          return;
+        }
+        
+        // Character names (all caps, typically short, not scene headings)
+        const isAllCaps = /^[A-Z][A-Z\s\.'-]+$/.test(text) && text === text.toUpperCase();
+        const isReasonableLength = text.length > 2 && text.length < 35;
+        const isNotSceneHeading = !/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(text);
+        
+        if (isAllCaps && isReasonableLength && isNotSceneHeading) {
+          const nextText = nextP ? nextP.textContent.trim() : '';
+          const looksLikeDialogue = nextText && (
+            /^\(.+\)$/.test(nextText) ||
+            (!/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(nextText) && 
+             !/^[A-Z][A-Z\s\.'-]+$/.test(nextText))
+          );
+          
+          if (looksLikeDialogue || !prevP || prevP.classList.contains('action-line') || prevP.classList.contains('scene-heading')) {
+            p.className = 'character-name';
+            inDialogueBlock = true;
+            return;
+          }
+        }
+        
+        // Dialogue (follows character name / parenthetical / dialogue)
+        const looksLikeNewBlock = /^(INT\.|EXT\.|FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text);
+        const looksLikeCharacter = isAllCaps && isReasonableLength && isNotSceneHeading;
+        if (!looksLikeNewBlock && inDialogueBlock && prevP && (prevP.classList.contains('character-name') || prevP.classList.contains('parenthetical') || prevP.classList.contains('dialogue'))) {
+          p.className = 'dialogue';
+          inDialogueBlock = true;
+          return;
+        }
+        
+        // If we're in a dialogue block but this doesn't match, end the block
+        if (looksLikeCharacter || looksLikeNewBlock) {
+          inDialogueBlock = false;
+        }
+        
+        // Default: action line
+        p.className = 'action-line';
+        inDialogueBlock = false;
+      });
+
+      // Add markers for last line in dialogue / parenthetical blocks (spacing)
+      const ps = content.querySelectorAll('p');
+      ps.forEach((p, i) => {
+        if (!p.classList.contains('dialogue') && !p.classList.contains('parenthetical')) return;
+        const next = ps[i + 1];
+        if (!next || (!next.classList.contains('dialogue') && !next.classList.contains('parenthetical'))) {
+          if (p.classList.contains('dialogue')) p.classList.add('dialogue-last');
+          if (p.classList.contains('parenthetical')) p.classList.add('parenthetical-last');
+        }
+      });
+    }
+
+    // Split <p> blocks that contain <br> into separate <p>s per line.
+    // This lets screenplay formatting work even if the markdown uses single newlines.
+    function normalizeParagraphBreaks(content) {
+      const paragraphs = Array.from(content.querySelectorAll('p'));
+      paragraphs.forEach((p) => {
+        if (!p.querySelector('br')) return;
+        const parts = p.innerHTML
+          .split(/<br\s*\/?\s*>/i)
+          .map((s) => s.replace(/&nbsp;/g, ' ').trim())
+          .filter(Boolean);
+        if (parts.length <= 1) return;
+
+        const frag = document.createDocumentFragment();
+        parts.forEach((html) => {
+          const np = document.createElement('p');
+          np.classList.add('line-split');
+          np.innerHTML = html;
+          frag.appendChild(np);
+        });
+        p.replaceWith(frag);
+      });
+    }
+  </script>
+</body>
+</html>
+  `.trim();
+  
+  return html;
+}
+
+// Main compilation function
+function compile() {
+  console.log('Loading manifest...');
+  const scenes = loadManifest();
+  console.log(`Found ${scenes.length} scenes in manifest`);
+
+  console.log('Compiling scenes...');
+  const markdown = compileMarkdown(scenes);
+
+  console.log('Writing full_script.md...');
+  fs.writeFileSync(OUTPUT_MD, markdown, 'utf8');
+  console.log(`✓ Created ${OUTPUT_MD}`);
+
+  console.log('Generating full_script.html...');
+  const html = generateHTMLPage(markdown);
+  fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
+  console.log(`✓ Created ${OUTPUT_HTML}`);
+
+  console.log('\n✓ Compilation complete!');
+  console.log(`  - Markdown: ${OUTPUT_MD}`);
+  console.log(`  - HTML: ${OUTPUT_HTML}`);
+}
+
+// Run if called directly
+if (require.main === module) {
+  compile();
+}
+
+module.exports = { compile, loadManifest, loadScene };
