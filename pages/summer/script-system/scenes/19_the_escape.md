@@ -1,9 +1,13 @@
-# The Escape
+EXT. TALL GRASS - CONTINUOUS
 
-*TODO: Something massive follows through the grass; Dallas runs.*
+Dallas clutches the creature to his chest, its downy fur damp against his coat. The sound in the grass isn't just wind—it’s a wake. Something heavy is slicing through the reeds, rocketing toward him like an arrow.
 
----
+DALLAS
 
-INT./EXT. TBD - TBD
+(to himself)
 
-[Write scene here]
+Go, go, go.
+
+He breaks into a sprint, stumbling over hidden roots. He reaches the cedar tree. Howie is a blur of panic, barking at the wall of grass. Dallas grabs the leash and doesn't stop running until the marsh is a hundred yards behind them.
+
+He stops at the edge of his driveway, gasping for air. He looks down at his coat. The creature is motionless, but its neck glow pulses a weak, fading amber.

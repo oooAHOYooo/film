@@ -1,6 +1,6 @@
 /* Screenplay Formatting Stylesheet - 8.5x11 Standard Format */
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap');
 
 :root {
   /* Screen (reading / ebook-like) */
@@ -10,8 +10,10 @@
   --muted: #666666;
   --border: #e6e6e6;
 
-  --reading-font: ui-serif, Georgia, "Times New Roman", serif;
-  --script-font: 'Courier Prime', 'Courier New', monospace;
+  --reading-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* Screen script font: modern + readable (NOT typewriter/mono) */
+  --script-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --print-script-font: "Courier Prime", "Courier New", monospace;
 
   --container-max: 78ch;
   --container-pad-y: 2.25rem;
@@ -25,11 +27,12 @@
   --scene-heading-bottom: 0.75rem;
   --action-bottom: 1.25rem;
 
-  --character-left: 12ch;
-  --dialogue-left: 6ch;
-  --dialogue-right: 6ch;
-  --parenthetical-left: 10ch;
-  --parenthetical-right: 8ch;
+  /* With proportional fonts, use rem-based indents for consistency */
+  --character-left: 4.5rem;
+  --dialogue-left: 2.5rem;
+  --dialogue-right: 2.5rem;
+  --parenthetical-left: 3.75rem;
+  --parenthetical-right: 3.25rem;
   --transition-right: 0;
 }
 
@@ -41,8 +44,8 @@
 
 body {
   font-family: var(--reading-font);
-  font-size: 18px;
-  line-height: 1.65;
+  font-size: 17px;
+  line-height: 1.7;
   background-color: var(--page-bg);
   color: var(--text);
   padding: 0;
@@ -68,8 +71,8 @@ body {
   margin-left: var(--content-left);
   margin-right: var(--content-right);
   font-family: var(--script-font);
-  font-size: 16px;
-  line-height: 1.35;
+  font-size: 16.5px;
+  line-height: 1.65;
 }
 
 /* Scene Headings (INT./EXT. LOCATION - TIME) */
@@ -105,19 +108,22 @@ body {
 .character-name {
   text-transform: uppercase;
   font-weight: bold;
-  margin-left: var(--character-left);
+  margin-left: 0;
   margin-right: 0;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
   line-height: 1.0;
   page-break-after: avoid;
   display: block;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /* Dialogue - 2.5" from left (1" from left margin), 2.5" from right (1.5" from right margin) */
 .dialogue {
-  margin-left: var(--dialogue-left);
-  margin-right: var(--dialogue-right);
+  margin-left: auto;
+  margin-right: auto;
+  width: min(46ch, 100%);
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.35;
@@ -127,12 +133,14 @@ body {
 /* Parentheticals - 3.1" from left (1.6" from left margin) */
 .parenthetical {
   font-style: italic;
-  margin-left: var(--parenthetical-left);
-  margin-right: var(--parenthetical-right);
+  margin-left: auto;
+  margin-right: auto;
+  width: min(38ch, 100%);
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.35;
   display: block;
+  padding-left: 2ch;
 }
 
 .dialogue.dialogue-last {
@@ -380,7 +388,7 @@ body {
     background: white;
     font-size: 12pt;
     line-height: 1.0;
-    font-family: var(--script-font);
+    font-family: var(--print-script-font);
   }
   
   .screenplay-container {
@@ -421,7 +429,22 @@ body {
   }
 
   .character-name {
+    text-align: left;
+    margin-left: 2.6in;
     page-break-after: avoid;
+  }
+
+  .dialogue {
+    margin-left: 1in;
+    margin-right: 1.5in;
+    max-width: none;
+  }
+
+  .parenthetical {
+    margin-left: 1.6in;
+    margin-right: 1.9in;
+    max-width: none;
+    padding-left: 0;
   }
 
   :root {
@@ -430,11 +453,6 @@ body {
     --scene-heading-top: 0.6in;
     --scene-heading-bottom: 0.3in;
     --action-bottom: 0.3in;
-    --character-left: 2.6in;
-    --dialogue-left: 1in;
-    --dialogue-right: 1.5in;
-    --parenthetical-left: 1.6in;
-    --parenthetical-right: 1.9in;
     --transition-right: 0.5in;
   }
 }

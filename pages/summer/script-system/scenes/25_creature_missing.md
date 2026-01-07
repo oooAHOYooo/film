@@ -1,9 +1,11 @@
-# Creature Missing
+INT. DALLAS'S BASEMENT - MOMENTS LATER
 
-*TODO: The creature is gone; Janice finds burn marks on her van.*
+Dallas rushes downstairs, Howie whimpering at his heels. He reaches the shoebox. It’s empty.
 
----
+The window above is unlatched, swinging in the rising wind. Outside, Janice is staring at her minivan, which is covered in strange, scorched patterns.
 
-INT./EXT. TBD - TBD
+JANICE
 
-[Write scene here]
+Dallas! What is happening to my car?
+
+Asher points to the siding of the house. A trail of burn marks leads from the basement window toward the marsh. The creature is gone, and the "bad things" are calling it back.
