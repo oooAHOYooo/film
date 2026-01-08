@@ -10,7 +10,7 @@ He rips the ticket off, waving it at the empty street.
 
 DOMINIC (CONT'D)
 
-Twelve minutes! I was gone twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
+Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
 
 DALLAS
 
