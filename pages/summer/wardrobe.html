@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wardrobe — Creatures in the Tall Grass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/summer.css" />
+    <style>
+      .page {
+        max-width: var(--maxw);
+        margin: 80px auto 60px;
+        padding: 0 var(--gap);
+      }
+
+      .header-card {
+        padding: 28px 24px;
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--soft);
+        backdrop-filter: blur(10px);
+      }
+
+      .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .header-title {
+        margin: 0;
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      .header-subtitle {
+        margin: 6px 0 0 0;
+        color: var(--text-secondary);
+        line-height: 1.6;
+        max-width: 78ch;
+      }
+
+      .toolbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+
+      .toolbar .btn {
+        white-space: nowrap;
+      }
+
+      .toolbar input,
+      .toolbar select {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid var(--glass-border);
+        color: var(--text-primary);
+        padding: 10px 12px;
+        border-radius: 10px;
+        outline: none;
+        min-width: 220px;
+      }
+
+      .toolbar input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 18px;
+      }
+
+      details.scene {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--glass-border);
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      details.scene summary {
+        cursor: pointer;
+        list-style: none;
+        padding: 14px 16px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 16px;
+        user-select: none;
+      }
+
+      details.scene summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .scene-left {
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .scene-num {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .scene-title {
+        color: var(--text-primary);
+        font-weight: 650;
+      }
+
+      .scene-slug {
+        color: var(--text-secondary);
+        font-size: 0.92rem;
+        font-style: italic;
+      }
+
+      .scene-right {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        white-space: nowrap;
+      }
+
+      .scene-body {
+        border-top: 1px solid var(--glass-border);
+        padding: 16px;
+      }
+
+      .scene-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(88, 166, 255, 0.22);
+        background: rgba(88, 166, 255, 0.10);
+        color: var(--accent);
+        font-size: 0.85rem;
+      }
+
+      .wardrobe-table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid var(--glass-border);
+        border-radius: 12px;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.12);
+      }
+
+      .wardrobe-table thead {
+        background: rgba(88, 166, 255, 0.10);
+      }
+
+      .wardrobe-table th,
+      .wardrobe-table td {
+        padding: 12px 12px;
+        border-bottom: 1px solid var(--glass-border);
+        vertical-align: top;
+      }
+
+      .wardrobe-table th {
+        text-align: left;
+        font-weight: 650;
+        color: var(--accent);
+        white-space: nowrap;
+      }
+
+      .wardrobe-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .char-name {
+        font-weight: 700;
+        color: var(--text-primary);
+        white-space: nowrap;
+      }
+
+      .field {
+        width: 100%;
+        min-height: 44px;
+        resize: vertical;
+        padding: 10px 10px;
+        border-radius: 10px;
+        border: 1px solid var(--glass-border);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text-primary);
+        outline: none;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.35;
+      }
+
+      .field:focus {
+        border-color: rgba(88, 166, 255, 0.55);
+        box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
+      }
+
+      .checkline {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .check {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--glass-border);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+      }
+
+      .check input {
+        accent-color: var(--accent);
+      }
+
+      .empty {
+        padding: 22px 16px;
+        color: var(--text-secondary);
+        border: 1px dashed var(--glass-border);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      @media print {
+        .summer-nav,
+        .toolbar,
+        .no-print {
+          display: none !important;
+        }
+        body {
+          background: #fff;
+        }
+        .header-card,
+        details.scene,
+        .wardrobe-table {
+          box-shadow: none !important;
+          background: #fff !important;
+          border-color: #ddd !important;
+        }
+        .tag,
+        .check {
+          border-color: #ccc !important;
+          background: #fff !important;
+          color: #000 !important;
+        }
+        .field {
+          border-color: #bbb !important;
+          background: #fff !important;
+          color: #000 !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Reuse Summer sticky nav look -->
+    <nav class="summer-nav no-print">
+      <div class="nav-container">
+        <div class="nav-content">
+          <a href="/pages/summer.html" class="nav-brand">
+            <span style="font-size: 1.5rem;">←</span>
+            <h2>Summer Film</h2>
+          </a>
+          <div class="nav-links">
+            <a class="nav-link-item" href="/pages/summer/script-system/index.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg>
+              </span>
+              <span>Script</span>
+            </a>
+            <a class="nav-link-item" href="/pages/summer/production.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M8 2v4M16 2v4M4 10h16"/></svg>
+              </span>
+              <span>Production</span>
+            </a>
+            <a class="nav-link-item active" href="/pages/summer/wardrobe.html">
+              <span class="nav-icon">
+                <svg viewBox="0 0 24 24"><path d="M20 12V8l-4-4H8L4 8v4l2 2v8h12v-8z"/><path d="M8 4l2 4h4l2-4"/></svg>
+              </span>
+              <span>Wardrobe</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page">
+      <div class="header-card">
+        <div class="header-top">
+          <div>
+            <h1 class="header-title">Wardrobe by Scene</h1>
+            <p class="header-subtitle">
+              This page auto-lists every scene from the script system and pre-fills the character list per scene.
+              Fill in wardrobe notes per character; everything saves locally in your browser. Use Print for a clean handoff.
+            </p>
+          </div>
+
+          <div class="toolbar">
+            <select id="characterFilter" aria-label="Filter by character">
+              <option value="__all__">All characters</option>
+            </select>
+            <input id="search" type="search" placeholder="Search scenes (title / slug / character)" />
+            <button class="btn btn-secondary" id="expandAll">Expand all</button>
+            <button class="btn btn-secondary" id="collapseAll">Collapse all</button>
+            <button class="btn btn-secondary" id="printBtn">Print</button>
+            <button class="btn btn-primary" id="exportBtn">Export JSON</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="content" class="grid" aria-live="polite">
+        <div class="empty">Loading wardrobe breakdown…</div>
+      </div>
+    </main>
+
+    <script>
+      const MANIFEST_URL = '/pages/summer/script-system/manifest.json';
+      const SCENES_BASE = '/pages/summer/script-system/scenes/';
+      const STORAGE_KEY = 'wardrobeByScene:v1';
+
+      function readStore() {
+        try {
+          return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+        } catch {
+          return {};
+        }
+      }
+
+      function writeStore(store) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
+      }
+
+      function storeKey(sceneFile, character, field) {
+        return `${sceneFile}::${character}::${field}`;
+      }
+
+      function uniq(arr) {
+        return Array.from(new Set(arr)).sort((a, b) => a.localeCompare(b));
+      }
+
+      function extractSlugline(markdown) {
+        const lines = markdown.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+        return lines[0] || '';
+      }
+
+      function extractCharacters(markdown) {
+        const lines = markdown.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+        const chars = [];
+        for (const line of lines) {
+          if (/^(INT\.|EXT\.)/i.test(line)) continue;
+          const base = line.replace(/\s*\((CONT'D|O\.S\.|V\.O\.|O\.C\.|VO|OS)\)\s*$/i, '').trim();
+          if (!base) continue;
+          const isAllCaps = base === base.toUpperCase();
+          const looksLikeName = /^[A-Z0-9][A-Z0-9\s\.'-]+$/.test(base) && base.length <= 35;
+          if (isAllCaps && looksLikeName) chars.push(base);
+        }
+        return uniq(chars);
+      }
+
+      function downloadJson(filename, obj) {
+        const blob = new Blob([JSON.stringify(obj, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+      }
+
+      function sceneMatches(scene, query) {
+        if (!query) return true;
+        const q = query.toLowerCase();
+        return (
+          (scene.title || '').toLowerCase().includes(q) ||
+          (scene.slugline || '').toLowerCase().includes(q) ||
+          (scene.file || '').toLowerCase().includes(q) ||
+          (scene.characters || []).some(c => c.toLowerCase().includes(q))
+        );
+      }
+
+      function escapeHtml(s) {
+        return (s || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/\"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+      }
+
+      async function load() {
+        const content = document.getElementById('content');
+        const store = readStore();
+
+        const manifest = await fetch(MANIFEST_URL).then(r => r.json());
+
+        const scenes = await Promise.all(
+          manifest.map(async (s, idx) => {
+            const fileUrl = `${SCENES_BASE}${s.file}`;
+            const md = await fetch(fileUrl).then(r => r.text());
+            const slugline = extractSlugline(md);
+            const characters = extractCharacters(md);
+            return {
+              number: idx + 1,
+              id: s.id,
+              file: s.file,
+              title: s.title,
+              act: s.act,
+              actTitle: s.actTitle,
+              slugline,
+              characters
+            };
+          })
+        );
+
+        // Build character filter options
+        const allChars = uniq(scenes.flatMap(s => s.characters));
+        const characterFilter = document.getElementById('characterFilter');
+        allChars.forEach((c) => {
+          const opt = document.createElement('option');
+          opt.value = c;
+          opt.textContent = c;
+          characterFilter.appendChild(opt);
+        });
+
+        // Render
+        function render() {
+          const q = document.getElementById('search').value.trim();
+          const char = characterFilter.value;
+
+          content.innerHTML = '';
+
+          const filtered = scenes.filter(s => sceneMatches(s, q)).filter(s => {
+            if (char === '__all__') return true;
+            return s.characters.includes(char);
+          });
+
+          if (!filtered.length) {
+            content.innerHTML = '<div class="empty">No scenes match your filters.</div>';
+            return;
+          }
+
+          for (const s of filtered) {
+            const details = document.createElement('details');
+            details.className = 'scene';
+
+            const actLabel = s.act ? `ACT ${['I','II','III','IV'][s.act - 1] || s.act}` : '';
+            const charsLabel = s.characters.length ? `${s.characters.length} characters` : 'No characters detected';
+
+            details.innerHTML = `
+              <summary>
+                <div class="scene-left">
+                  <span class="scene-num">${String(s.number).padStart(2, '0')}</span>
+                  <span class="scene-title">${escapeHtml(s.title)}</span>
+                  <span class="scene-slug">${escapeHtml(s.slugline)}</span>
+                </div>
+                <div class="scene-right">${actLabel ? `${actLabel} • ` : ''}${charsLabel}</div>
+              </summary>
+              <div class="scene-body">
+                <div class="scene-meta">
+                  ${actLabel ? `<span class="tag">${actLabel}${s.actTitle ? ` — ${escapeHtml(s.actTitle)}` : ''}</span>` : ''}
+                  <span class="tag">File: ${escapeHtml(s.file)}</span>
+                  <span class="tag">Scene ID: ${escapeHtml(s.id)}</span>
+                </div>
+
+                ${
+                  s.characters.length
+                    ? `<table class="wardrobe-table">
+                        <thead>
+                          <tr>
+                            <th style="width: 170px;">Character</th>
+                            <th>Wardrobe (Top / Bottom / Shoes / Outerwear / Accessories)</th>
+                            <th>Continuity / Notes</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          ${s.characters.map((c) => {
+                            const outfitK = storeKey(s.file, c, 'outfit');
+                            const notesK = storeKey(s.file, c, 'notes');
+                            const wetK = storeKey(s.file, c, 'wet');
+                            const dirtK = storeKey(s.file, c, 'dirt');
+                            const bloodK = storeKey(s.file, c, 'blood');
+                            const changeK = storeKey(s.file, c, 'change');
+
+                            return `
+                              <tr>
+                                <td><div class="char-name">${escapeHtml(c)}</div></td>
+                                <td>
+                                  <textarea class="field" data-k="${escapeHtml(outfitK)}" placeholder="Example: denim jacket / grey tee / black jeans / boots / watch">${escapeHtml(store[outfitK] || '')}</textarea>
+                                  <div class="checkline">
+                                    <label class="check"><input type="checkbox" data-k="${escapeHtml(changeK)}" ${store[changeK] ? 'checked' : ''}/> Change in scene</label>
+                                    <label class="check"><input type="checkbox" data-k="${escapeHtml(wetK)}" ${store[wetK] ? 'checked' : ''}/> Wet</label>
+                                    <label class="check"><input type="checkbox" data-k="${escapeHtml(dirtK)}" ${store[dirtK] ? 'checked' : ''}/> Dirt / mud</label>
+                                    <label class="check"><input type="checkbox" data-k="${escapeHtml(bloodK)}" ${store[bloodK] ? 'checked' : ''}/> Blood</label>
+                                  </div>
+                                </td>
+                                <td>
+                                  <textarea class="field" data-k="${escapeHtml(notesK)}" placeholder="Continuity: sleeves rolled, jacket unzipped, soaked from rain, etc.">${escapeHtml(store[notesK] || '')}</textarea>
+                                </td>
+                              </tr>
+                            `;
+                          }).join('')}
+                        </tbody>
+                      </table>`
+                    : `<div class="empty">No character lines detected in this scene yet. If this scene is mostly action, that may be correct.</div>`
+                }
+              </div>
+            `;
+
+            content.appendChild(details);
+          }
+
+          // Wire inputs to localStorage
+          content.querySelectorAll('textarea[data-k]').forEach((el) => {
+            el.addEventListener('input', () => {
+              store[el.dataset.k] = el.value;
+              writeStore(store);
+            });
+          });
+
+          content.querySelectorAll('input[type=\"checkbox\"][data-k]').forEach((el) => {
+            el.addEventListener('change', () => {
+              store[el.dataset.k] = el.checked;
+              writeStore(store);
+            });
+          });
+        }
+
+        render();
+
+        // Controls
+        document.getElementById('search').addEventListener('input', render);
+        characterFilter.addEventListener('change', render);
+
+        document.getElementById('expandAll').addEventListener('click', () => {
+          document.querySelectorAll('details.scene').forEach(d => (d.open = true));
+        });
+        document.getElementById('collapseAll').addEventListener('click', () => {
+          document.querySelectorAll('details.scene').forEach(d => (d.open = false));
+        });
+        document.getElementById('printBtn').addEventListener('click', () => window.print());
+        document.getElementById('exportBtn').addEventListener('click', () => {
+          downloadJson('wardrobe-by-scene.json', readStore());
+        });
+      }
+
+      load().catch((err) => {
+        console.error(err);
+        document.getElementById('content').innerHTML =
+          '<div class="empty">Could not load wardrobe breakdown. Make sure the script system exists at <code>/pages/summer/script-system/</code>.</div>';
+      });
+    </script>
+  </body>
+</html>
+
