@@ -14,8 +14,20 @@ DOMINIC (CONT'D)
 
 I take care of him. He’s had a rough go since the weather changed.
 
+Dominic moves to the window and shuts the blinds halfway, like he’s done it a thousand times.
+
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
 
 MR. MIKE
 
-[TODO: Mr. Mike dialogue]
+She's here.
+
+Dominic is already moving—trying to calm him, trying to stop him.
+
+Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
+
+MR. MIKE (CONT'D)
+
+Forty-five left. Fifteen right.
+
+Dallas freezes. Dominic flips the end table over—the scratchpad numbers disappear against the floorboards.

@@ -111,7 +111,7 @@ function generateHTMLPage(markdown) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Script - ${SCRIPT_NAME}</title>
-  <link rel="stylesheet" href="script.css">
+  <link rel="stylesheet" href="script.css?v=20260108-4">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
@@ -155,8 +155,9 @@ function generateHTMLPage(markdown) {
         const nextP = paragraphs[index + 1];
         const prevP = paragraphs[index - 1];
         
-        // Skip if already formatted or empty
-        if (!text || p.classList.length > 0) return;
+        // Skip if already formatted (but allow normalizeParagraphBreaks output)
+        if (!text) return;
+        if (p.classList.length > 0 && !p.classList.contains('line-split')) return;
         
         // Scene headings (INT. or EXT. at start of line)
         if (/^(INT\.|EXT\.)/i.test(text)) {
@@ -247,7 +248,6 @@ function generateHTMLPage(markdown) {
         const frag = document.createDocumentFragment();
         parts.forEach((html) => {
           const np = document.createElement('p');
-          np.classList.add('line-split');
           np.innerHTML = html;
           frag.appendChild(np);
         });

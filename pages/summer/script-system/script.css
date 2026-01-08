@@ -27,12 +27,13 @@
   --scene-heading-bottom: 0.75rem;
   --action-bottom: 1.25rem;
 
-  /* With proportional fonts, use rem-based indents for consistency */
-  --character-left: 4.5rem;
-  --dialogue-left: 2.5rem;
-  --dialogue-right: 2.5rem;
-  --parenthetical-left: 3.75rem;
-  --parenthetical-right: 3.25rem;
+  /* Screenplay-style indents (screen only, modern type)
+     Calibrated to look like a real script on desktop, but clamp down on mobile. */
+  --character-left: clamp(6rem, 42%, 18rem);
+  --dialogue-left: clamp(3.25rem, 28%, 13rem);
+  --dialogue-right: clamp(1.25rem, 22%, 12rem);
+  --parenthetical-left: clamp(4.25rem, 32%, 15rem);
+  --parenthetical-right: clamp(1.75rem, 26%, 13rem);
   --transition-right: 0;
 }
 
@@ -86,6 +87,7 @@ body {
   text-align: left;
   line-height: 1.0;
   page-break-after: avoid;
+  letter-spacing: 0.02em;
 }
 
 /* Action Lines - Full width within margins */
@@ -97,18 +99,14 @@ body {
   text-align: left;
   line-height: 1.35;
   page-break-inside: avoid;
-}
-
-.action-line.line-split {
-  /* if you used single-newline breaks inside action, keep it tighter */
-  margin-bottom: 0.45rem;
+  text-wrap: pretty;
 }
 
 /* Character Names - 4.1" from left edge (2.6" from left margin) */
 .character-name {
   text-transform: uppercase;
   font-weight: bold;
-  margin-left: 0;
+  margin-left: var(--character-left);
   margin-right: 0;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
@@ -116,31 +114,33 @@ body {
   page-break-after: avoid;
   display: block;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
+  text-wrap: balance;
 }
 
 /* Dialogue - 2.5" from left (1" from left margin), 2.5" from right (1.5" from right margin) */
 .dialogue {
-  margin-left: auto;
-  margin-right: auto;
-  width: min(46ch, 100%);
+  margin-left: var(--dialogue-left);
+  margin-right: var(--dialogue-right);
+  max-width: none;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.35;
   page-break-inside: avoid;
+  text-wrap: pretty;
 }
 
 /* Parentheticals - 3.1" from left (1.6" from left margin) */
 .parenthetical {
   font-style: italic;
-  margin-left: auto;
-  margin-right: auto;
-  width: min(38ch, 100%);
+  margin-left: var(--parenthetical-left);
+  margin-right: var(--parenthetical-right);
+  max-width: none;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.35;
   display: block;
-  padding-left: 2ch;
+  padding-left: 0;
 }
 
 .dialogue.dialogue-last {
@@ -163,11 +163,11 @@ body {
   page-break-after: avoid;
 }
 
-/* Default paragraph styling - will be overridden by screenplay formatting */
-.screenplay-content p {
-  margin: 0;
+/* Default paragraph styling (ONLY when not classified by formatter) */
+.screenplay-content p:not(.scene-heading):not(.action-line):not(.character-name):not(.dialogue):not(.parenthetical):not(.transition) {
+  margin: 0 0 var(--action-bottom) 0;
   padding: 0;
-  line-height: 1.0;
+  line-height: 1.35;
 }
 
 /* Headers for scene titles */

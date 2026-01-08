@@ -32,6 +32,14 @@ Quinnipiac. Starting next semester. Got a couple months to get settled.
 
 DOMINIC
 
+What kind of work?
+
+DALLAS
+
+Bioacoustics. I was hired to record the marsh—birds, insects, coyotes. I start next semester.
+
+DOMINIC
+
 Nice. So are you here alone?
 
 DALLAS

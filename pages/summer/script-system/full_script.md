@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 1/7/2026, 12:38:04 PM*
+*Compiled on 1/8/2026, 12:37:07 PM*
 
 ---
 
@@ -58,7 +58,7 @@ Dallas walks into town for batteries. On the way, he meets his neighbor DOMINIC.
 
 DOMINIC
 
-Hey there! You're the new guy, right?
+Hey there! You're new guy, right?
 
 DALLAS
 
@@ -142,6 +142,14 @@ Quinnipiac. Starting next semester. Got a couple months to get settled.
 
 DOMINIC
 
+What kind of work?
+
+DALLAS
+
+Bioacoustics. I was hired to record the marsh—birds, insects, coyotes. I start next semester.
+
+DOMINIC
+
 Nice. So are you here alone?
 
 DALLAS
@@ -188,7 +196,7 @@ He rips the ticket off, waving it at the empty street.
 
 DOMINIC (CONT'D)
 
-Twelve minutes! I was gone twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
+Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
 
 DALLAS
 
@@ -330,11 +338,23 @@ DOMINIC (CONT'D)
 
 I take care of him. He’s had a rough go since the weather changed.
 
+Dominic moves to the window and shuts the blinds halfway, like he’s done it a thousand times.
+
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
 
 MR. MIKE
 
-[TODO: Mr. Mike dialogue]
+She's here.
+
+Dominic is already moving—trying to calm him, trying to stop him.
+
+Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
+
+MR. MIKE (CONT'D)
+
+Forty-five left. Fifteen right.
+
+Dallas freezes. Dominic flips the end table over—the scratchpad numbers disappear against the floorboards.
 
 
 ---
