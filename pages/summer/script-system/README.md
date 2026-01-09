@@ -47,6 +47,30 @@ Simply edit `manifest.json` and move the scene objects to your desired order. Th
 - Click any scene to view it individually
 - The scene viewer uses Marked.js (CDN) to render markdown
 
+### 3b. Edit Scenes (Zen Browser Editor)
+
+This repo includes a tiny local server that lets the browser **save edits back to your `.md` files**.
+
+From the project root:
+
+```bash
+npm run editor
+```
+
+Then open `http://127.0.0.1:41731/editor.html`
+
+### 3c. Publish (git commit + push) from the Editor (optional)
+
+For safety, git actions are **disabled by default**. To enable the editor’s **Publish** button:
+
+```bash
+FILM_EDITOR_ENABLE_GIT=1 npm run editor
+```
+
+Notes:
+- Publish runs `git add/commit/push` **non-interactively** (won’t hang on auth prompts).
+- If `git push` fails, run `git push` once in a normal terminal to authenticate/set upstream, then retry in the editor.
+
 ### 4. Compile Full Script
 
 Run the compiler to generate `full_script.md` and `full_script.html`:

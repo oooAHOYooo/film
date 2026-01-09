@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creatures in the Tall Grass Script - Scene Gallery</title>
-  <link rel="stylesheet" href="script.css?v=20260108-4">
-</head>
-<body>
-  <div class="gallery-container">
-    <div class="gallery-header">
-      <h1>Creatures in the Tall Grass Script</h1>
-      <p>Scene Gallery — organized by Act</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatures in the Tall Grass Script - Scene Gallery</title>
+    <link rel="stylesheet" href="script.css?v=20260108-5">
+  </head>
+  <body>
+    <div class="gallery-container">
+      <div class="gallery-header">
+        <h1>Creatures in the Tall Grass Script</h1>
+        <p>Scene Gallery — organized by Act</p>
+      </div>
+
+      <div class="nav no-print">
+        <div class="nav-left">
+          <a href="/pages/summer.html">← Summer Hub</a>
+          <a href="index.html">Gallery</a>
+          <a href="full_script.html">Full Script</a>
+          <a href="editor.html">Editor</a>
+        </div>
+      </div>
+
+      <div id="sceneList" class="act-list">
+        <li>Loading scenes...</li>
+      </div>
     </div>
 
-    <div class="nav no-print">
-      <a href="index.html">Gallery</a>
-      <a href="full_script.html">Full Script</a>
-    </div>
-
-    <div id="sceneList" class="act-list">
-      <li>Loading scenes...</li>
-    </div>
-  </div>
-
-  <script>
+    <script>
     function toRoman(num) {
       const map = [
         [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
@@ -103,5 +107,5 @@
     // Load scenes on page load
     loadScenes();
   </script>
-</body>
+  </body>
 </html>

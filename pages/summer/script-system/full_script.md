@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 1/8/2026, 12:37:07 PM*
+*Compiled on 1/9/2026, 9:14:24 AM*
 
 ---
 

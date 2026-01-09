@@ -111,13 +111,14 @@ function generateHTMLPage(markdown) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Script - ${SCRIPT_NAME}</title>
-  <link rel="stylesheet" href="script.css?v=20260108-4">
+  <link rel="stylesheet" href="script.css?v=20260108-5">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
   <div class="gallery-container">
     <div class="nav no-print">
       <div class="nav-left">
+        <a href="/pages/summer.html">← Summer Hub</a>
         <a href="index.html">← Back to Gallery</a>
       </div>
       <button type="button" class="print-button" onclick="window.print()">Print</button>

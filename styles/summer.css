@@ -1,5 +1,8 @@
 /* Summer Film Page Styles - Executive Production Hub */
 
+/* Wardrobe + DVD copy blocks: avoid system/Inter */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap');
+
 /* Navigation Styles (moved from inline) */
 .summer-nav {
     position: sticky;
@@ -293,6 +296,57 @@
 
 .story-action {
     margin-top: 32px;
+}
+
+/* DVD back-of-box block (left-aligned, print-like, non-generic) */
+.dvd-box {
+    margin-top: 18px;
+    padding: 18px 18px 16px 18px;
+    background: rgba(240, 246, 252, 0.04);
+    border: 1px solid rgba(240, 246, 252, 0.12);
+    border-radius: 14px;
+    text-align: left;
+    font-family: "Newsreader", serif;
+}
+
+.dvd-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 14px;
+    align-items: baseline;
+    margin: 0 0 10px 0;
+}
+
+.dvd-label {
+    font-variant: all-small-caps;
+    letter-spacing: 0.08em;
+    color: rgba(240, 246, 252, 0.72);
+    font-size: 0.95rem;
+}
+
+.dvd-value {
+    color: rgba(240, 246, 252, 0.88);
+    line-height: 1.7;
+    font-size: 1.02rem;
+}
+
+.dvd-grid {
+    margin-top: 10px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(240, 246, 252, 0.10);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 18px;
+}
+
+@media (max-width: 760px) {
+    .dvd-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    .dvd-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Visual Language Section */
