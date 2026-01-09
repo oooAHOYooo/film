@@ -12,6 +12,8 @@ const elBtnPublish = $('btnPublish');
 const elBtnSave = $('btnSave');
 const elBtnRaw = $('btnRaw');
 const elBtnZen = $('btnZen');
+const elBtnScenes = $('btnScenes');
+const elOverlay = $('overlay');
 
 let scenes = [];
 let activeFile = null;
@@ -243,6 +245,18 @@ function setZen(on) {
   elBtnZen.textContent = document.body.classList.contains('zen') ? 'Exit Zen' : 'Zen';
 }
 
+function openNav() {
+  document.body.classList.add('nav-open');
+}
+
+function closeNav() {
+  document.body.classList.remove('nav-open');
+}
+
+function toggleNav() {
+  document.body.classList.toggle('nav-open');
+}
+
 async function apiGetJson(path) {
   const res = await fetch(path, { headers: { 'Accept': 'application/json' } });
   const data = await res.json().catch(() => null);
@@ -336,6 +350,7 @@ async function openSceneFile(file) {
     elDoc.setAttribute('contenteditable', 'true');
     elRaw.disabled = false;
     setMode(false);
+    closeNav();
     updateDirtyUI();
     setStatus('', isDirty() ? 'Unsaved' : 'Saved');
   } catch (e) {
@@ -436,6 +451,9 @@ elBtnSave.addEventListener('click', () => saveActive());
 elBtnPublish.addEventListener('click', () => publishNow({ confirmFirst: true }));
 elBtnRaw.addEventListener('click', () => setMode(!isRawMode));
 elBtnZen.addEventListener('click', () => setZen(!document.body.classList.contains('zen')));
+
+if (elBtnScenes) elBtnScenes.addEventListener('click', () => toggleNav());
+if (elOverlay) elOverlay.addEventListener('click', () => closeNav());
 
 if (elAutoPublish) {
   elAutoPublish.checked = loadAutoPublish();
