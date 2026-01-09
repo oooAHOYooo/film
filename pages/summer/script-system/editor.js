@@ -24,6 +24,7 @@ let isPublishing = false;
 let isRawMode = false;
 let serverWritable = false;
 let apiMode = 'readonly'; // 'local' | 'netlify' | 'readonly'
+let localApiOrigin = ''; // e.g. http://127.0.0.1:41731
 
 function setStatus(kind, msg) {
   elStatus.className = 'status';
@@ -307,6 +308,7 @@ async function ensureAdminToken() {
 
 function apiUrlLocal(path) {
   // local dev server routes
+  if (localApiOrigin) return `${localApiOrigin}/api${path}`;
   return `/api${path}`;
 }
 
@@ -377,6 +379,25 @@ async function apiPostJson(path, body, { auth } = {}) {
   return data;
 }
 
+async function detectLocalEditorServer() {
+  // If the page is served from another local server (e.g. 127.0.0.1:3000),
+  // still allow saving by talking to the dedicated editor server on 41731.
+  if (!isLocalhost()) return '';
+  const candidates = [
+    'http://127.0.0.1:41731',
+    'http://localhost:41731',
+  ];
+  for (const origin of candidates) {
+    try {
+      const res = await fetch(`${origin}/api/scenes`, { headers: { 'Accept': 'application/json' } });
+      if (res.ok) return origin;
+    } catch (e) {
+      // keep trying
+    }
+  }
+  return '';
+}
+
 async function fetchManifestFallback() {
   const res = await fetch('manifest.json', { headers: { 'Accept': 'application/json' } });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -390,6 +411,7 @@ async function loadScenes() {
   serverWritable = false;
   try {
     apiMode = 'local';
+    localApiOrigin = '';
     const data = await apiGetJson('/scenes');
     scenes = Array.isArray(data.scenes) ? data.scenes : [];
     serverWritable = true;
@@ -397,6 +419,23 @@ async function loadScenes() {
     setStatus('', 'Pick a scene');
     return;
   } catch (e) {
+    // If you're on localhost but NOT on the editor server origin, try to discover it and use it.
+    try {
+      const origin = await detectLocalEditorServer();
+      if (origin) {
+        apiMode = 'local';
+        localApiOrigin = origin;
+        const data = await apiGetJson('/scenes');
+        scenes = Array.isArray(data.scenes) ? data.scenes : [];
+        serverWritable = true;
+        renderSceneList(elSearch.value);
+        setStatus('', 'Pick a scene');
+        return;
+      }
+    } catch (eLocal) {
+      // ignore and continue
+    }
+
     // Try Netlify Functions mode (hosted editor -> commits to GitHub)
     try {
       if (!shouldTryHostedMode()) throw e;
@@ -411,10 +450,11 @@ async function loadScenes() {
       // If opened via file:// or a static server without /api, fall back to manifest.json (read-only)
       try {
         apiMode = 'readonly';
+        localApiOrigin = '';
         scenes = await fetchManifestFallback();
         renderSceneList(elSearch.value);
         setStatus('is-error', 'Read-only mode (start the editor server to save)');
-        renderSceneListMessage('Read-only: start from the repo root with `npm run editor` then open `http://127.0.0.1:41731/editor.html` to enable saving.\n\nFor hosted editing, configure Netlify Functions + env vars (see script-system README).');
+        renderSceneListMessage('Read-only: start the editor server from the repo root with `npm run editor`.\n\nIf you are viewing the site at 127.0.0.1:3000, you can keep that open—just also run the editor server on 41731 so saving works.');
         return;
       } catch (e3) {
         throw e2;
