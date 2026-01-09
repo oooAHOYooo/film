@@ -2,6 +2,12 @@
   command = "node scripts/generate-inspo-manifests.js"
   publish = "."
 
+[functions]
+  directory = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+
 
 
 

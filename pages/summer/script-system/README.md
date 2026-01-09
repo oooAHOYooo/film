@@ -71,6 +71,22 @@ Notes:
 - Publish runs `git add/commit/push` **non-interactively** (won’t hang on auth prompts).
 - If `git push` fails, run `git push` once in a normal terminal to authenticate/set upstream, then retry in the editor.
 
+### 3d. Hosted Editing (no IDE) — Edit on your Netlify site
+
+To edit scenes directly on your deployed site (like a blog editor), this repo includes **Netlify Functions** that can commit scene edits back to GitHub.
+
+**How it works**
+- You open `editor.html` on your Netlify site.
+- The editor loads scenes via Netlify Functions.
+- **Publish** creates a commit in GitHub (this is the “git push” step).
+- Netlify sees the commit and redeploys your site automatically.
+
+**Netlify environment variables to set**
+- `FILM_ADMIN_TOKEN`: a password/token you’ll type into the editor (kept in sessionStorage)
+- `GITHUB_TOKEN`: GitHub token with repo write access
+- `GITHUB_REPO`: e.g. `oooAHOYooo/film`
+- `GITHUB_BRANCH`: optional (default `main`)
+
 ### 4. Compile Full Script
 
 Run the compiler to generate `full_script.md` and `full_script.html`:

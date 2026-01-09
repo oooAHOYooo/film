@@ -22,6 +22,8 @@ let cleanValue = '';
 let lastLoadToken = 0;
 let isPublishing = false;
 let isRawMode = false;
+let serverWritable = false;
+let apiMode = 'readonly'; // 'local' | 'netlify' | 'readonly'
 
 function setStatus(kind, msg) {
   elStatus.className = 'status';
@@ -257,8 +259,63 @@ function toggleNav() {
   document.body.classList.toggle('nav-open');
 }
 
-async function apiGetJson(path) {
-  const res = await fetch(path, { headers: { 'Accept': 'application/json' } });
+function renderSceneListMessage(text) {
+  elSceneList.innerHTML = '';
+  const box = document.createElement('div');
+  box.style.padding = '14px';
+  box.style.color = 'rgba(0,0,0,0.65)';
+  box.style.fontSize = '13px';
+  box.style.lineHeight = '1.4';
+  box.textContent = text;
+  elSceneList.appendChild(box);
+}
+
+function adminTokenKey() {
+  return 'film-editor:adminToken';
+}
+
+function getAdminToken() {
+  try { return sessionStorage.getItem(adminTokenKey()) || ''; } catch (e) { return ''; }
+}
+
+function setAdminToken(token) {
+  try { sessionStorage.setItem(adminTokenKey(), token); } catch (e) { /* ignore */ }
+}
+
+async function ensureAdminToken() {
+  let tok = getAdminToken();
+  if (tok) return tok;
+  tok = window.prompt('Admin password/token (for editing):') || '';
+  tok = tok.trim();
+  if (!tok) throw new Error('Missing admin token');
+  setAdminToken(tok);
+  return tok;
+}
+
+function apiUrlLocal(path) {
+  // local dev server routes
+  return `/api${path}`;
+}
+
+function apiUrlNetlify(path) {
+  // Netlify Functions routes
+  // scenes:  /.netlify/functions/scenes
+  // scene:   /.netlify/functions/scene
+  if (path === '/scenes') return '/.netlify/functions/scenes';
+  if (path.startsWith('/scene')) return '/.netlify/functions/scene' + path.slice('/scene'.length);
+  return '/.netlify/functions' + path;
+}
+
+function apiUrl(path) {
+  if (apiMode === 'local') return apiUrlLocal(path);
+  if (apiMode === 'netlify') return apiUrlNetlify(path);
+  return path;
+}
+
+async function apiGetJson(path, { auth } = {}) {
+  const headers = { 'Accept': 'application/json' };
+  if (auth) headers.Authorization = `Bearer ${await ensureAdminToken()}`;
+  const res = await fetch(apiUrl(path), { headers });
   const data = await res.json().catch(() => null);
   if (!res.ok || !data || data.ok === false) {
     const err = (data && data.error) ? data.error : `HTTP ${res.status}`;
@@ -267,10 +324,12 @@ async function apiGetJson(path) {
   return data;
 }
 
-async function apiPostJson(path, body) {
-  const res = await fetch(path, {
+async function apiPostJson(path, body, { auth } = {}) {
+  const headers = { 'Content-Type': 'application/json' };
+  if (auth) headers.Authorization = `Bearer ${await ensureAdminToken()}`;
+  const res = await fetch(apiUrl(path), {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers,
     body: JSON.stringify(body),
   });
   const data = await res.json().catch(() => null);
@@ -281,12 +340,49 @@ async function apiPostJson(path, body) {
   return data;
 }
 
+async function fetchManifestFallback() {
+  const res = await fetch('manifest.json', { headers: { 'Accept': 'application/json' } });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const arr = await res.json();
+  const normalized = Array.isArray(arr) ? arr.map((s, idx) => ({ ...s, sceneNumber: idx + 1 })) : [];
+  return normalized;
+}
+
 async function loadScenes() {
   setStatus('', 'Loading…');
-  const data = await apiGetJson('/api/scenes');
-  scenes = Array.isArray(data.scenes) ? data.scenes : [];
-  renderSceneList(elSearch.value);
-  setStatus('', 'Pick a scene');
+  serverWritable = false;
+  try {
+    apiMode = 'local';
+    const data = await apiGetJson('/scenes');
+    scenes = Array.isArray(data.scenes) ? data.scenes : [];
+    serverWritable = true;
+    renderSceneList(elSearch.value);
+    setStatus('', 'Pick a scene');
+    return;
+  } catch (e) {
+    // Try Netlify Functions mode (hosted editor -> commits to GitHub)
+    try {
+      apiMode = 'netlify';
+      const data = await apiGetJson('/scenes', { auth: true });
+      scenes = Array.isArray(data.scenes) ? data.scenes : [];
+      serverWritable = true; // "writable" via GitHub commits
+      renderSceneList(elSearch.value);
+      setStatus('', 'Pick a scene');
+      return;
+    } catch (e2) {
+      // If opened via file:// or a static server without /api, fall back to manifest.json (read-only)
+      try {
+        apiMode = 'readonly';
+        scenes = await fetchManifestFallback();
+        renderSceneList(elSearch.value);
+        setStatus('is-error', 'Read-only mode (start the editor server to save)');
+        renderSceneListMessage('Read-only: start from the repo root with `npm run editor` then open `http://127.0.0.1:41731/editor.html` to enable saving.\n\nFor hosted editing, configure Netlify Functions + env vars (see script-system README).');
+        return;
+      } catch (e3) {
+        throw e2;
+      }
+    }
+  }
 }
 
 function setActiveSceneMeta(scene) {
@@ -328,10 +424,21 @@ async function openSceneFile(file) {
   const token = ++lastLoadToken;
   try {
     setStatus('', 'Loading…');
-    const data = await apiGetJson(`/api/scene?file=${encodeURIComponent(file)}`);
-    if (token !== lastLoadToken) return;
-
-    const serverText = typeof data.content === 'string' ? data.content : '';
+    let serverText = '';
+    if (apiMode === 'local') {
+      const data = await apiGetJson(`/scene?file=${encodeURIComponent(file)}`);
+      if (token !== lastLoadToken) return;
+      serverText = typeof data.content === 'string' ? data.content : '';
+    } else if (apiMode === 'netlify') {
+      const data = await apiGetJson(`/scene?file=${encodeURIComponent(file)}`, { auth: true });
+      if (token !== lastLoadToken) return;
+      serverText = typeof data.content === 'string' ? data.content : '';
+    } else {
+      // read-only fallback: load file directly
+      const res = await fetch(`scenes/${encodeURIComponent(file)}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      serverText = await res.text();
+    }
 
     // Offer draft restore if present and different
     const draft = loadDraft(file);
@@ -363,10 +470,19 @@ async function openSceneFile(file) {
 
 async function saveActive() {
   if (!activeFile) return;
+  if (apiMode === 'netlify') {
+    // Hosted mode: "Save" keeps a local draft. "Publish" commits to GitHub (updates the site).
+    setStatus('is-saved', 'Saved locally (Publish to update site)');
+    return;
+  }
+  if (!serverWritable) {
+    window.alert('Saving is disabled in read-only mode.\n\nStart the editor server:\n- cd /Users/agworkywork/film\n- npm run editor\nThen open: http://127.0.0.1:41731/editor.html');
+    return;
+  }
   const content = getCurrentText();
   try {
     setStatus('', 'Saving…');
-    await apiPostJson(`/api/scene?file=${encodeURIComponent(activeFile)}`, { content });
+    await apiPostJson(`/scene?file=${encodeURIComponent(activeFile)}`, { content });
     // "clean" state becomes what we just wrote
     cleanValue = content;
     clearDraft(activeFile);
@@ -432,9 +548,20 @@ async function publishNow({ confirmFirst } = { confirmFirst: true }) {
   const msg = suggestedCommitMessage();
   try {
     setStatus('', 'Publishing…');
-    const res = await apiPostJson('/api/git/publish', { file: activeFile, message: msg });
-    if (res.published) setStatus('is-saved', 'Published');
-    else setStatus('', res.message || 'Nothing to publish');
+    if (apiMode === 'local') {
+      const res = await apiPostJson('/git/publish', { file: activeFile, message: msg });
+      if (res.published) setStatus('is-saved', 'Published');
+      else setStatus('', res.message || 'Nothing to publish');
+    } else if (apiMode === 'netlify') {
+      const content = getCurrentText();
+      const res = await apiPostJson(`/scene?file=${encodeURIComponent(activeFile)}`, { content, message: msg }, { auth: true });
+      setStatus('is-saved', res.commit ? 'Published (site updating…)': 'Published');
+      cleanValue = content;
+      clearDraft(activeFile);
+      updateDirtyUI();
+    } else {
+      window.alert('Publish requires the editor server or hosted admin mode.');
+    }
   } catch (e) {
     setStatus('is-error', `Publish failed: ${e.message}`);
     window.alert(
@@ -516,9 +643,22 @@ document.addEventListener('keydown', (e) => {
   elDoc.setAttribute('contenteditable', 'false');
   elRaw.disabled = true;
   try {
+    if (window.location.protocol === 'file:') {
+      renderSceneListMessage('Open this editor via the local server (not file://).\n\nRun from repo root:\n`npm run editor`\nThen open:\n`http://127.0.0.1:41731/editor.html`');
+    }
     await loadScenes();
+
+    // Deep-link support: editor.html?id=the-hum  OR  editor.html?file=02_the-hum.md
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const file = params.get('file');
+    let target = null;
+    if (file) target = scenes.find((s) => s.file === file) || null;
+    if (!target && id) target = scenes.find((s) => s.id === id) || null;
+    if (target && target.file) await openSceneFile(target.file);
   } catch (e) {
-    setStatus('is-error', `Failed to load manifest: ${e.message}`);
+    setStatus('is-error', `Failed to load scenes: ${e.message}`);
+    renderSceneListMessage('Could not load scenes. Make sure you opened this via the editor server: `npm run editor` → `http://127.0.0.1:41731/editor.html`');
   }
 })();
 

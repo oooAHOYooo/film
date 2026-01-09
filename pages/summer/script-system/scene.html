@@ -14,7 +14,7 @@
           <a href="/pages/summer.html">← Summer Hub</a>
           <a href="index.html">← Back to Gallery</a>
           <a href="full_script.html">Full Script</a>
-          <a href="editor.html">Editor</a>
+          <a id="editSceneLink" href="editor.html">Edit</a>
         </div>
         <button type="button" class="print-button"
           onclick="window.print()">Print</button>
@@ -62,6 +62,10 @@
               `<p>Scene "${sceneId}" not found. <a href="index.html">Return to gallery</a></p>`;
             return;
           }
+
+          // Wire edit link
+          const editLink = document.getElementById('editSceneLink');
+          if (editLink) editLink.href = `editor.html?id=${encodeURIComponent(scene.id)}`;
 
           const sceneNumber = sceneIndex + 1;
           const actLabel = scene.act ? `ACT ${toRoman(scene.act)} — ${(scene.actTitle || '').trim()}`.trim() : '';
