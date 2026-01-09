@@ -282,6 +282,19 @@ function setAdminToken(token) {
   try { sessionStorage.setItem(adminTokenKey(), token); } catch (e) { /* ignore */ }
 }
 
+function isLocalhost() {
+  const h = String(window.location.hostname || '').toLowerCase();
+  return h === 'localhost' || h === '127.0.0.1';
+}
+
+function shouldTryHostedMode() {
+  // If you're running a generic local static server (like 127.0.0.1:3000),
+  // don't prompt for admin token; fall back to read-only instead.
+  if (window.location.protocol === 'file:') return false;
+  if (isLocalhost()) return false;
+  return true;
+}
+
 async function ensureAdminToken() {
   let tok = getAdminToken();
   if (tok) return tok;
@@ -314,8 +327,18 @@ function apiUrl(path) {
 
 async function apiGetJson(path, { auth } = {}) {
   const headers = { 'Accept': 'application/json' };
-  if (auth) headers.Authorization = `Bearer ${await ensureAdminToken()}`;
-  const res = await fetch(apiUrl(path), { headers });
+  const existing = getAdminToken();
+  if (auth && existing) headers.Authorization = `Bearer ${existing}`;
+
+  let res = await fetch(apiUrl(path), { headers });
+
+  // If hosted mode returns 401 and we don't have a token yet, prompt once and retry.
+  if (auth && res.status === 401 && !existing) {
+    const tok = await ensureAdminToken();
+    const headers2 = { ...headers, Authorization: `Bearer ${tok}` };
+    res = await fetch(apiUrl(path), { headers: headers2 });
+  }
+
   const data = await res.json().catch(() => null);
   if (!res.ok || !data || data.ok === false) {
     const err = (data && data.error) ? data.error : `HTTP ${res.status}`;
@@ -326,12 +349,26 @@ async function apiGetJson(path, { auth } = {}) {
 
 async function apiPostJson(path, body, { auth } = {}) {
   const headers = { 'Content-Type': 'application/json' };
-  if (auth) headers.Authorization = `Bearer ${await ensureAdminToken()}`;
-  const res = await fetch(apiUrl(path), {
+  const existing = getAdminToken();
+  if (auth && existing) headers.Authorization = `Bearer ${existing}`;
+
+  let res = await fetch(apiUrl(path), {
     method: 'POST',
     headers,
     body: JSON.stringify(body),
   });
+
+  // If hosted mode returns 401 and we don't have a token yet, prompt once and retry.
+  if (auth && res.status === 401 && !existing) {
+    const tok = await ensureAdminToken();
+    const headers2 = { ...headers, Authorization: `Bearer ${tok}` };
+    res = await fetch(apiUrl(path), {
+      method: 'POST',
+      headers: headers2,
+      body: JSON.stringify(body),
+    });
+  }
+
   const data = await res.json().catch(() => null);
   if (!res.ok || !data || data.ok === false) {
     const err = (data && data.error) ? data.error : `HTTP ${res.status}`;
@@ -362,6 +399,7 @@ async function loadScenes() {
   } catch (e) {
     // Try Netlify Functions mode (hosted editor -> commits to GitHub)
     try {
+      if (!shouldTryHostedMode()) throw e;
       apiMode = 'netlify';
       const data = await apiGetJson('/scenes', { auth: true });
       scenes = Array.isArray(data.scenes) ? data.scenes : [];
