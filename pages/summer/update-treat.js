@@ -256,8 +256,9 @@ function generateFullDiff(oldText, newText) {
 
 // Archive current version
 function archiveCurrentVersion(currentInfo) {
-    const archiveName = `treatment-v${currentInfo.version}-${currentInfo.date}-${currentInfo.status}.md`;
-    const archivePath = path.join(VERSIONS_DIR, archiveName);
+    const baseArchiveName = `treatment-v${currentInfo.version}-${currentInfo.date}-${currentInfo.status}.md`;
+    let archiveName = baseArchiveName;
+    let archivePath = path.join(VERSIONS_DIR, archiveName);
     
     // Ensure versions directory exists
     if (!fs.existsSync(VERSIONS_DIR)) {
@@ -267,6 +268,17 @@ function archiveCurrentVersion(currentInfo) {
     // Read current content before archiving
     const currentContent = fs.readFileSync(TREATMENT_FILE, 'utf8');
     
+    // Avoid overwriting an existing archive file (keep history intact)
+    if (fs.existsSync(archivePath)) {
+        let n = 1;
+        while (fs.existsSync(archivePath)) {
+            archiveName = baseArchiveName.replace(/\.md$/, `-dup${n}.md`);
+            archivePath = path.join(VERSIONS_DIR, archiveName);
+            n += 1;
+        }
+        console.warn(`⚠️  Archive file already exists. Writing to: ${archiveName}`);
+    }
+
     fs.copyFileSync(TREATMENT_FILE, archivePath);
     console.log(`✅ Archived to: ${archiveName}`);
     
