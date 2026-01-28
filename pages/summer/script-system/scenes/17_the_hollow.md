@@ -1,6 +1,6 @@
-EXT. TALL GRASS HOLLOW - CONTINUOUS
+EXT. TALL GRASS HOLLOW - CONTINUOUS [ACT 2]
 
-The reeds are so high they block the sun. Dallas pushes through to a small clearing—a shrunken tree hollow surrounded by dead leaves.
+The reeds are so high they block the sun. Dallas pushes through to a small clearing—a shrunken tree hollow surrounded by dead leaves. 
 
 A cry rings out. It’s not a throat-sound; it’s air being forced through something hollow.
 
