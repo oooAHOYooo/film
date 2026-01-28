@@ -7,3 +7,5 @@ Dallas sits on his porch with Howie. He watches Dominic and Janice pack the kids
 Dallas goes inside to his workshop. He plays the old tape of his wife. He hits record, capturing the faint, rhythmic pulse still coming from the marsh. He begins to write—not equations, but an alphabet.
 
 Outside, in the tall grass, a single golden light flickers, then vanishes.
+
+Dallas goes and see's what the fuss is about. It is nothing. 
