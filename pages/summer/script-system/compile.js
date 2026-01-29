@@ -132,9 +132,13 @@ function generateHTMLPage(markdown, scenes) {
       </div>
 
       <div class="script-stats-row">
-        <div class="script-stats" id="scriptStats" aria-hidden="true">
-          <span class="script-pages" id="scriptPages">—</span>
-          <span class="script-runtime" id="scriptRuntime">—</span>
+        <div class="script-status-bar" id="scriptStatusBar" aria-hidden="true">
+          <div class="script-status-scene-block">
+            <span class="script-status-scene" id="scriptStatusScene">—</span>
+            <span class="script-status-characters" id="scriptStatusCharacters">—</span>
+          </div>
+          <span class="script-status-divider">|</span>
+          <span class="script-status-production" id="scriptStatusProduction">—</span>
         </div>
         <div class="script-scene-nav">
           <label for="scriptSceneSelect" class="script-scene-nav-label">Jump to scene</label>
@@ -175,23 +179,20 @@ function generateHTMLPage(markdown, scenes) {
     (function initScriptStatsAndProgress() {
       const WORDS_PER_PAGE = 250;
       const content = document.getElementById('scriptContent');
-      const pagesEl = document.getElementById('scriptPages');
-      const runtimeEl = document.getElementById('scriptRuntime');
       const progressFill = document.getElementById('scriptProgressFill');
       const progressLabel = document.getElementById('scriptProgressLabel');
       const progressBar = document.querySelector('.script-progress-bar');
 
-      if (!pagesEl) return;
+      if (!progressFill) return;
 
       const wordCount = (typeof markdown === 'string' ? markdown : (content && content.textContent) || '')
         .split(/\s+/)
         .filter(Boolean)
         .length;
-      const estimatedPages = Math.round((wordCount / WORDS_PER_PAGE) * 10) / 10;
-      const estimatedMinutes = Math.max(1, Math.round(estimatedPages));
-
-      pagesEl.textContent = 'Est. ' + estimatedPages + ' pages';
-      runtimeEl.textContent = 'Est. runtime ' + estimatedMinutes + ' min';
+      const MIN_PAGES = 90;
+      const rawPages = Math.round((wordCount / WORDS_PER_PAGE) * 10) / 10;
+      const estimatedPages = Math.max(MIN_PAGES, rawPages);
+      const estimatedMinutes = Math.max(MIN_PAGES, Math.round(estimatedPages));
 
       function updateProgress() {
         const docEl = document.documentElement;
@@ -222,8 +223,10 @@ function generateHTMLPage(markdown, scenes) {
       if (!content || !selectEl) return;
 
       const sceneHeadings = content.querySelectorAll('h3');
+      const sceneHeadingRe = /^Scene \d+:/i;
       sceneHeadings.forEach((h3, i) => {
-        if (/^Scene \\d+:/i.test(h3.textContent || '')) {
+        const text = (h3.textContent || '').trim();
+        if (sceneHeadingRe.test(text)) {
           h3.id = 'scene-' + (i + 1);
         }
       });
@@ -237,6 +240,67 @@ function generateHTMLPage(markdown, scenes) {
         }
         this.value = '';
       });
+    })();
+
+    // Status bar: current scene, who's in scene, production tags (updates on scroll)
+    (function initStatusBar() {
+      const content = document.getElementById('scriptContent');
+      const sceneEl = document.getElementById('scriptStatusScene');
+      const charsEl = document.getElementById('scriptStatusCharacters');
+      const prodEl = document.getElementById('scriptStatusProduction');
+      if (!content || !sceneEl) return;
+
+      function getSceneHeadingsInOrder() {
+        const h3s = content.querySelectorAll('h3[id^="scene-"]');
+        return Array.from(h3s).sort((a, b) => {
+          const nA = parseInt(a.id.replace('scene-', ''), 10);
+          const nB = parseInt(b.id.replace('scene-', ''), 10);
+          return nA - nB;
+        });
+      }
+
+      function getSceneBlock(sceneH3, nextSceneH3) {
+        const chars = new Set();
+        let firstSlug = '';
+        let node = sceneH3.nextSibling;
+        while (node) {
+          if (node === nextSceneH3) break;
+          if (node.nodeType === 1) {
+            if (node.classList && node.classList.contains('character-name')) {
+              const name = (node.textContent || '').trim();
+              if (name) chars.add(name);
+            }
+            if (!firstSlug && node.classList && node.classList.contains('scene-heading')) {
+              firstSlug = (node.textContent || '').trim();
+            }
+          }
+          node = node.nextSibling;
+        }
+        return { characters: Array.from(chars), production: firstSlug };
+      }
+
+      function updateStatusBar() {
+        const sceneHeadings = getSceneHeadingsInOrder();
+        if (sceneHeadings.length === 0) return;
+        const viewportThreshold = 160;
+        let current = sceneHeadings[0];
+        for (let i = 0; i < sceneHeadings.length; i++) {
+          const top = sceneHeadings[i].getBoundingClientRect().top;
+          if (top <= viewportThreshold) current = sceneHeadings[i];
+        }
+        const title = (current.textContent || '').trim();
+        const nextId = current.id.replace('scene-', '');
+        const nextNum = parseInt(nextId, 10) + 1;
+        const nextScene = document.getElementById('scene-' + nextNum);
+        const block = getSceneBlock(current, nextScene || null);
+        sceneEl.textContent = title || '—';
+        charsEl.textContent = block.characters.length ? block.characters.join(', ') : '—';
+        prodEl.textContent = block.production || '—';
+      }
+
+      updateStatusBar();
+      window.addEventListener('scroll', updateStatusBar, { passive: true });
+      window.addEventListener('resize', updateStatusBar);
     })();
     
     function formatScreenplay(container) {

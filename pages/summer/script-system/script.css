@@ -77,6 +77,11 @@ body {
   line-height: 1.65;
 }
 
+/* Scene headings (h3) get scroll-margin so "Jump to scene" lands below sticky bar */
+.screenplay-content h3[id^="scene-"] {
+  scroll-margin-top: 9rem;
+}
+
 /* Scene Headings (INT./EXT. LOCATION - TIME) */
 .scene-heading {
   text-transform: uppercase;
@@ -399,7 +404,7 @@ body {
   background: rgba(0, 0, 0, 0.03);
 }
 
-/* Script stats row (stats + scene dropdown) */
+/* Script stats row (status bar + scene dropdown) */
 .script-stats-row {
   display: flex;
   flex-wrap: wrap;
@@ -410,16 +415,46 @@ body {
   font-family: var(--reading-font);
 }
 
-.script-stats {
+/* Status bar: current scene, characters underneath, production */
+.script-status-bar {
   display: flex;
-  gap: 1.25rem;
-  padding: 0;
-  font-size: 0.875rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  font-size: 0.8rem;
   color: var(--muted);
+  font-family: var(--reading-font);
+  min-width: 0;
+  flex: 1 1 12rem;
 }
 
-.script-stats .script-pages,
-.script-stats .script-runtime {
+.script-status-scene-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.script-status-scene {
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.script-status-characters {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+.script-status-divider {
+  opacity: 0.5;
+  user-select: none;
+  align-self: stretch;
+}
+
+.script-status-production {
+  font-size: 0.75rem;
+  opacity: 0.9;
   font-variant-numeric: tabular-nums;
 }
 
