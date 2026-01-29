@@ -380,6 +380,48 @@ body {
   background: #f7f7f7;
 }
 
+/* Script stats & runtime progress (filmmaking style) */
+.script-stats {
+  display: flex;
+  gap: 1.25rem;
+  padding: 0.5rem 0.75rem 0.35rem;
+  font-size: 0.875rem;
+  color: var(--muted);
+  font-family: var(--reading-font);
+}
+
+.script-stats .script-pages,
+.script-stats .script-runtime {
+  font-variant-numeric: tabular-nums;
+}
+
+.script-progress {
+  padding: 0 0.75rem 0.75rem;
+  font-family: var(--reading-font);
+}
+
+.script-progress-bar {
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 0.35rem;
+}
+
+.script-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #2d5a3d 0%, #4a8f5c 100%);
+  border-radius: 3px;
+  transition: width 0.12s ease-out;
+}
+
+.script-progress-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
 .no-print {
   /* hidden in print media below */
 }

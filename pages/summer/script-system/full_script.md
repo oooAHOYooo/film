@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 1/9/2026, 9:14:24 AM*
+*Compiled on 1/29/2026, 12:51:50 PM*
 
 ---
 
@@ -268,6 +268,8 @@ PAT CLENDENEN
 
 (to camera)
 
+This afternoon we'll see sun to clouds, breezy and warm with a late day shower possible. But the real attention - and as why we are here - is to bring attention to a possible development along the shores of Eastern Connecticut - at the heart of the Branford should receive the most impact. We are watching the trend through the rest of this week - as any shift could dramatically impact the entire state. The computer models are showing better agreement. 
+
 ...and while we’re all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. Hopefully, it holds off until after Sunday’s festival, but folks, get those generators ready!
 
 Dominic scoffs as they walk past.
@@ -334,7 +336,7 @@ My wife and kid. They're... gone now.
 
 Dominic looks toward the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged fingernail.
 
-DOMINIC (CONT'D)
+DOMINIC 
 
 I take care of him. He’s had a rough go since the weather changed.
 
@@ -350,12 +352,22 @@ Dominic is already moving—trying to calm him, trying to stop him.
 
 Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
 
-MR. MIKE (CONT'D)
+MR. MIKE 
 
 Forty-five left. Fifteen right.
 
 Dallas freezes. Dominic flips the end table over—the scratchpad numbers disappear against the floorboards.
 
+MR. MIKE
+
+Dominic. 
+
+DOMINIC
+
+Yes Mr. Mike
+
+MR.MIKE
+Your sister is here!
 
 ---
 
@@ -388,7 +400,7 @@ You’re boiling them? You’re supposed to roast them! And the gravy—is that 
 
 Janice begins a frantic search for her keys, which she just put down. She stumbles over Dallas’s heavy receiver on the floor.
 
-JANICE (CONT'D)
+JANICE 
 
 What is this? A boat anchor?
 
@@ -500,7 +512,7 @@ Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dalla
 
 ---
 
-INT. DALLAS' HOUSE - NIGHT
+INT. DALLAS' HOUSE - BEDROOM - NIGHT
 
 Dallas stands at the window, staring into the ripping field. The storm is brewing, but the movement in the grass is wrong.
 
@@ -509,6 +521,36 @@ Shadows—tall, spindly, and darker than the night—grow in the distance. They 
 He touches the photo of his late wife on the side of the receiver. The contact is long, desperate.
 
 The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames.
+
+A doorbell is heard off screen breaking Dallas out of his trance. 
+
+INT. DALLAS' HOUSE - HALLWAY - NIGHT
+
+Dallas opens the door to find Asher and Dominic.
+
+Dominic
+Thank you for watching Howie - how did he do? 
+
+Dallas
+Good
+
+Asher looks behind Dallas at all of the equipment. 
+
+Dominic
+Okay - we'll - we'll be on our way. Hey - are you still okay with hosting lifegroup on Thursday
+
+Dallas
+Yeah - that should work out. 
+
+DOMINIC
+Okay... Hey - everything okay?
+
+DALLAS
+Yeah sorry - just a little tired. 
+
+Dallas and Asher make eye contact and Dallas looks the other way. 
+
+
 
 In the darkness of the marsh, something stares back.
 
@@ -583,7 +625,27 @@ EXT. MARSH TRAIL - DAY
 
 Dallas walks the coastal trail with Howie. Suddenly, the air vibrates. A roar-hum hybrid sound erupts from the reeds.
 
-Howie whines, pressing against Dallas’s leg. In the distance, a flicker of golden light pulses deep within the marsh. Dallas is drawn to it, his movements rhythmic and dazed.
+Dallas and Howie step onto the narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh. 
+
+As they walk - the air changes into damp, metallic, stillness.
+
+EXT. MARSH ENTRANCE
+
+Dallas and Howie stop at the creek's edge and pan glances towards the outer marsh.
+
+Howie's ears perk and he begins to gently whine, pressing against Dallas’s leg. In the distance, a flicker of golden light pulses deep within the marsh. 
+
+Dallas crouches and lifts him, holding Howie a moment longer than necessary as he catches his breath. Howie's breathing begins to quicken. Dallas steadies him, resting his forehead briefly agaisnt the Howies he steadies him. 
+
+From the distance a light flickers. A light flickers deep in the Marsh. Dallas notices it - but it is gone. 
+
+Dallas lowers Howie to the ground and his equipment begins to beep. 
+
+Dallas flips open his handheld scope and watches the waveform settle into an otherwordly pattern. 
+
+Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a pefect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy. Dallas ties 
+
+Dallas is drawn to it, his movements rhythmic and dazed.
 
 His handheld scope chirps. The waveform is no longer random; it’s a repeating, melodic pattern.
 
@@ -605,9 +667,9 @@ He ties Howie’s leash to a stunted cedar tree and steps off the path, disappea
 
 ---
 
-EXT. TALL GRASS HOLLOW - CONTINUOUS
+EXT. TALL GRASS HOLLOW - CONTINUOUS [ACT 2]
 
-The reeds are so high they block the sun. Dallas pushes through to a small clearing—a shrunken tree hollow surrounded by dead leaves.
+The reeds are so high they block the sun. Dallas pushes through to a small clearing—a shrunken tree hollow surrounded by dead leaves. 
 
 A cry rings out. It’s not a throat-sound; it’s air being forced through something hollow.
 
@@ -683,13 +745,25 @@ Dallas has turned his kitchen island into a triage station. He’s wired a porta
 
 The device pulses in a rhythmic, green jagged line—perfectly in sync with the creature's heartbeat.
 
-DALLAS
+The creature begins to fade - Dallas turns the dial into another frequency range and waits until it is asleep. 
 
+Makayla 
+(to Dallas)
+What does that do?
+
+Dallas
 (whispering)
+It changes the frequency I am transmitting.
 
-Stay with me.
+Makayla
+And you think that it somehow is like talking to the creature?
 
-He adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature’s breathing stabilizes. It lets out a low, melodic tone through its back-holes.
+Dallas
+Yes. 
+
+Asher comes in the room and gathers around the creature as well. 
+
+Dallas adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature’s breathing stabilizes. It lets out a low, melodic tone through its back-holes.
 
 Howie sits in the corner, head cocked, shivering. Outside, the world responds: the windows rattle, and a deep, distant hum echoes from the town center.
 
@@ -795,15 +869,23 @@ But Dallas is staring at the basement door. The sound isn't the wind. It’s an 
 
 ---
 
+INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
+
+The Life Group has departed. Candle shadows dance across the hall. Dallas, wide awake, checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. 
+
+EXT. DALLAS'S BACKYARD - NIGHT (same)
+
+Dallas looks out the tall window toward the marsh. In the distance, a pair of bright, dim red eyes. He scans the street: the telephone pole has a red light; something down the block glows red. He looks back at the tall grass. The red eyes are gone.
+
+Closer: the eyes reappear, swirling through the blades, watching the house. Little pulses of red light, inch by inch, toward the edge of the yard.
+
+INT. DALLAS'S HOUSE - BASEMENT / DEN - NIGHT
+
+Dallas hurries downstairs to check on the creature. The makeshift box is empty. It's gone.
+
 EXT. DALLAS'S BACKYARD - NIGHT
 
-The Life Group has departed, leaving the house in a hollow silence. Dallas stands by the tall window, staring into the dark.
-
-He looks at his monitor—a grainy video feed of the creature in the basement. It’s breathing, but the frequency of the room is shifting.
-
-Dallas looks out toward the tall grass. A pair of bright, dim-red eyes emerge in the distance. He blinks, looking at the telephone pole—a red light. A car in the distance—a red light.
-
-He returns his gaze to the grass. The red eyes are gone. Then, they reappear, swirling through the blades, inching closer to the house. Pulses of red light flicker like a predatory heartbeat.
+Dallas at the window again. The eyes are gone. The night is still.
 
 
 ---
@@ -935,6 +1017,7 @@ Dallas goes inside to his workshop. He plays the old tape of his wife. He hits r
 
 Outside, in the tall grass, a single golden light flickers, then vanishes.
 
+Dallas goes and see's what the fuss is about. It is nothing. 
 
 ---
 

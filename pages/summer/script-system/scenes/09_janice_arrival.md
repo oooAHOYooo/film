@@ -20,7 +20,7 @@ You’re boiling them? You’re supposed to roast them! And the gravy—is that 
 
 Janice begins a frantic search for her keys, which she just put down. She stumbles over Dallas’s heavy receiver on the floor.
 
-JANICE (CONT'D)
+JANICE 
 
 What is this? A boat anchor?
 

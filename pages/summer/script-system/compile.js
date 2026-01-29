@@ -124,6 +124,17 @@ function generateHTMLPage(markdown) {
       <button type="button" class="print-button" onclick="window.print()">Print</button>
     </div>
 
+    <div class="script-stats no-print" id="scriptStats" aria-hidden="true">
+      <span class="script-pages" id="scriptPages">—</span>
+      <span class="script-runtime" id="scriptRuntime">—</span>
+    </div>
+    <div class="script-progress no-print" id="scriptProgress" aria-hidden="true">
+      <div class="script-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="script-progress-fill" id="scriptProgressFill"></div>
+      </div>
+      <div class="script-progress-label" id="scriptProgressLabel">Minute 0</div>
+    </div>
+
     <div class="screenplay-container">
       <div class="full-script-header">
         <div class="full-script-title">${SCRIPT_NAME} — Full Script</div>
@@ -141,6 +152,48 @@ function generateHTMLPage(markdown) {
     
     // Format screenplay elements
     formatScreenplay(document.querySelector('.screenplay-container'));
+
+    // Filmmaking-style page length & runtime (1 page ≈ 1 minute; ~250 words/page)
+    (function initScriptStatsAndProgress() {
+      const WORDS_PER_PAGE = 250;
+      const content = document.getElementById('scriptContent');
+      const pagesEl = document.getElementById('scriptPages');
+      const runtimeEl = document.getElementById('scriptRuntime');
+      const progressFill = document.getElementById('scriptProgressFill');
+      const progressLabel = document.getElementById('scriptProgressLabel');
+      const progressBar = document.querySelector('.script-progress-bar');
+
+      if (!content || !pagesEl) return;
+
+      const text = content.textContent || '';
+      const wordCount = text.split(/\s+/).filter(Boolean).length;
+      const estimatedPages = Math.round((wordCount / WORDS_PER_PAGE) * 10) / 10;
+      const estimatedMinutes = Math.round(estimatedPages);
+
+      pagesEl.textContent = 'Est. ' + estimatedPages + ' pages';
+      runtimeEl.textContent = 'Est. runtime ' + estimatedMinutes + ' min';
+
+      function updateProgress() {
+        const docEl = document.documentElement;
+        const scrollTop = docEl.scrollTop || document.body.scrollTop;
+        const scrollHeight = docEl.scrollHeight - docEl.clientHeight;
+        if (scrollHeight <= 0) {
+          progressFill.style.width = '0%';
+          progressLabel.textContent = 'Minute 0 of ' + estimatedMinutes;
+          if (progressBar) progressBar.setAttribute('aria-valuenow', 0);
+          return;
+        }
+        const pct = Math.min(1, Math.max(0, scrollTop / scrollHeight));
+        const currentMinute = Math.min(estimatedMinutes, Math.floor(pct * estimatedMinutes));
+        progressFill.style.width = (pct * 100) + '%';
+        progressLabel.textContent = 'Minute ' + currentMinute + ' of ' + estimatedMinutes;
+        if (progressBar) progressBar.setAttribute('aria-valuenow', Math.round(pct * 100));
+      }
+
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
     
     function formatScreenplay(container) {
       const content = container.querySelector('.screenplay-content');

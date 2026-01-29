@@ -10,7 +10,7 @@ My wife and kid. They're... gone now.
 
 Dominic looks toward the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged fingernail.
 
-DOMINIC (CONT'D)
+DOMINIC 
 
 I take care of him. He’s had a rough go since the weather changed.
 
@@ -26,8 +26,19 @@ Dominic is already moving—trying to calm him, trying to stop him.
 
 Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
 
-MR. MIKE (CONT'D)
+MR. MIKE 
 
 Forty-five left. Fifteen right.
 
 Dallas freezes. Dominic flips the end table over—the scratchpad numbers disappear against the floorboards.
+
+MR. MIKE
+
+Dominic. 
+
+DOMINIC
+
+Yes Mr. Mike
+
+MR.MIKE
+Your sister is here!
