@@ -103,7 +103,13 @@ function markdownToHTML(markdown) {
 }
 
 // Generate full HTML page
-function generateHTMLPage(markdown) {
+function generateHTMLPage(markdown, scenes) {
+  const sceneOptionsHtml = (scenes || []).map((s, i) => {
+    const num = i + 1;
+    const title = (s.title || '').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    return `<option value="scene-${num}">${num}. ${title}</option>`;
+  }).join('');
+
   const html = String.raw`
 <!DOCTYPE html>
 <html lang="en">
@@ -116,23 +122,34 @@ function generateHTMLPage(markdown) {
 </head>
 <body>
   <div class="gallery-container">
-    <div class="nav no-print">
-      <div class="nav-left">
-        <a href="/pages/summer.html">← Summer Hub</a>
-        <a href="index.html">← Back to Gallery</a>
+    <div class="script-sticky-bar no-print" id="scriptStickyBar">
+      <div class="nav">
+        <div class="nav-left">
+          <a href="/pages/summer.html">← Summer Hub</a>
+          <a href="index.html">← Back to Gallery</a>
+        </div>
+        <button type="button" class="print-button" onclick="window.print()">Print</button>
       </div>
-      <button type="button" class="print-button" onclick="window.print()">Print</button>
-    </div>
 
-    <div class="script-stats no-print" id="scriptStats" aria-hidden="true">
-      <span class="script-pages" id="scriptPages">—</span>
-      <span class="script-runtime" id="scriptRuntime">—</span>
-    </div>
-    <div class="script-progress no-print" id="scriptProgress" aria-hidden="true">
-      <div class="script-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-        <div class="script-progress-fill" id="scriptProgressFill"></div>
+      <div class="script-stats-row">
+        <div class="script-stats" id="scriptStats" aria-hidden="true">
+          <span class="script-pages" id="scriptPages">—</span>
+          <span class="script-runtime" id="scriptRuntime">—</span>
+        </div>
+        <div class="script-scene-nav">
+          <label for="scriptSceneSelect" class="script-scene-nav-label">Jump to scene</label>
+          <select id="scriptSceneSelect" class="script-scene-select" aria-label="Jump to scene">
+            <option value="">—</option>
+            ${sceneOptionsHtml}
+          </select>
+        </div>
       </div>
-      <div class="script-progress-label" id="scriptProgressLabel">Minute 0</div>
+      <div class="script-progress" id="scriptProgress" aria-hidden="true">
+        <div class="script-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          <div class="script-progress-fill" id="scriptProgressFill"></div>
+        </div>
+        <div class="script-progress-label" id="scriptProgressLabel">Minute 0</div>
+      </div>
     </div>
 
     <div class="screenplay-container">
@@ -154,6 +171,7 @@ function generateHTMLPage(markdown) {
     formatScreenplay(document.querySelector('.screenplay-container'));
 
     // Filmmaking-style page length & runtime (1 page ≈ 1 minute; ~250 words/page)
+    // Count from raw markdown so we get the full script (DOM textContent can undercount)
     (function initScriptStatsAndProgress() {
       const WORDS_PER_PAGE = 250;
       const content = document.getElementById('scriptContent');
@@ -163,12 +181,14 @@ function generateHTMLPage(markdown) {
       const progressLabel = document.getElementById('scriptProgressLabel');
       const progressBar = document.querySelector('.script-progress-bar');
 
-      if (!content || !pagesEl) return;
+      if (!pagesEl) return;
 
-      const text = content.textContent || '';
-      const wordCount = text.split(/\s+/).filter(Boolean).length;
+      const wordCount = (typeof markdown === 'string' ? markdown : (content && content.textContent) || '')
+        .split(/\s+/)
+        .filter(Boolean)
+        .length;
       const estimatedPages = Math.round((wordCount / WORDS_PER_PAGE) * 10) / 10;
-      const estimatedMinutes = Math.round(estimatedPages);
+      const estimatedMinutes = Math.max(1, Math.round(estimatedPages));
 
       pagesEl.textContent = 'Est. ' + estimatedPages + ' pages';
       runtimeEl.textContent = 'Est. runtime ' + estimatedMinutes + ' min';
@@ -193,6 +213,30 @@ function generateHTMLPage(markdown) {
       updateProgress();
       window.addEventListener('scroll', updateProgress, { passive: true });
       window.addEventListener('resize', updateProgress);
+    })();
+
+    // Scene nav: add ids to scene headings and wire dropdown to scroll
+    (function initSceneNav() {
+      const content = document.getElementById('scriptContent');
+      const selectEl = document.getElementById('scriptSceneSelect');
+      if (!content || !selectEl) return;
+
+      const sceneHeadings = content.querySelectorAll('h3');
+      sceneHeadings.forEach((h3, i) => {
+        if (/^Scene \\d+:/i.test(h3.textContent || '')) {
+          h3.id = 'scene-' + (i + 1);
+        }
+      });
+
+      selectEl.addEventListener('change', function() {
+        const value = this.value;
+        if (!value) return;
+        const el = document.getElementById(value);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        this.value = '';
+      });
     })();
     
     function formatScreenplay(container) {
@@ -330,7 +374,7 @@ function compile() {
   console.log(`✓ Created ${OUTPUT_MD}`);
 
   console.log('Generating full_script.html...');
-  const html = generateHTMLPage(markdown);
+  const html = generateHTMLPage(markdown, scenes);
   fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
   console.log(`✓ Created ${OUTPUT_HTML}`);
 
