@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Script Compiler — Winter Film (Machulu)
+ * Script Compiler — Winter Film
  * Reads manifest.json and compiles all scenes into full_script.md and full_script.html
  */
 
@@ -12,7 +12,7 @@ const SCENES_DIR = path.join(__dirname, 'scenes');
 const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
 const OUTPUT_MD = path.join(__dirname, 'full_script.md');
 const OUTPUT_HTML = path.join(__dirname, 'full_script.html');
-const SCRIPT_NAME = 'Machulu Script';
+const SCRIPT_NAME = 'Winter Film Script';
 
 function toRoman(num) {
   const map = [
