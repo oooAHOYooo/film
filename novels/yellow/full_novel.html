@@ -12,8 +12,18 @@
     <div class="novel-sticky-bar no-print" id="novelStickyBar">
       <div class="nav">
         <div class="nav-left">
-          <a href="/pages/winter.html">← Winter Hub</a>
-          <a href="/pages/winter.html">← Back to Gallery</a>
+          <a class="nav-link" href="/index.html" title="Home">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span class="nav-text">Home</span>
+          </a>
+          <a class="nav-link" href="/novels/index.html" title="Novels">
+            <span class="nav-icon" aria-hidden="true">📖</span>
+            <span class="nav-text">Novels</span>
+          </a>
+          <a class="nav-link" href="/novels/yellow/full_novel.md" title="Markdown">
+            <span class="nav-icon" aria-hidden="true">✎</span>
+            <span class="nav-text">Markdown</span>
+          </a>
         </div>
         <button type="button" class="print-button" onclick="window.print()">Print</button>
       </div>
@@ -29,14 +39,14 @@
     <div class="novel-reader">
       <div class="novel-header">
         <div class="novel-title">Theology Notes — Full Novel</div>
-        <div class="novel-meta">Compiled on 1/30/2026, 12:56:47 PM</div>
+        <div class="novel-meta">Compiled on 1/30/2026, 1:08:21 PM</div>
       </div>
       <div class="novel-content" id="novelContent"></div>
     </div>
   </div>
 
   <script>
-    const markdown = "# Theology Notes — Full Novel\n\n*Compiled on 1/30/2026, 12:56:47 PM*\n\n---\n\n\n## ACT I — Opening Notes\n\n---\n\n\n### Chapter 1: Theology\n\n*ACT I — Opening Notes | ID: theology | File: 01_theology.md*\n\n---\n\nTheology notes live here.\r\n\r\nUse this space for structured chapters, essays, or a sequence of reflections.\r\n\n\n---\n\n";
+    const markdown = "# Theology Notes — Full Novel\n\n*Compiled on 1/30/2026, 1:08:21 PM*\n\n---\n\n\n## ACT I — Opening Notes\n\n---\n\n\n### Chapter 1: Theology\n\n*ACT I — Opening Notes | ID: theology | File: 01_theology.md*\n\n---\n\nTheology notes live here.\r\n\r\nUse this space for structured chapters, essays, or a sequence of reflections.\r\n\n\n---\n\n";
     const container = document.getElementById('novelContent');
     marked.setOptions({ breaks: true });
     container.innerHTML = marked.parse(markdown);

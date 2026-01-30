@@ -12,8 +12,18 @@
     <div class="novel-sticky-bar no-print" id="novelStickyBar">
       <div class="nav">
         <div class="nav-left">
-          <a href="/pages/winter.html">← Winter Hub</a>
-          <a href="/pages/winter.html">← Back to Gallery</a>
+          <a class="nav-link" href="/index.html" title="Home">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span class="nav-text">Home</span>
+          </a>
+          <a class="nav-link" href="/novels/index.html" title="Novels">
+            <span class="nav-icon" aria-hidden="true">📖</span>
+            <span class="nav-text">Novels</span>
+          </a>
+          <a class="nav-link" href="/novels/black/full_novel.md" title="Markdown">
+            <span class="nav-icon" aria-hidden="true">✎</span>
+            <span class="nav-text">Markdown</span>
+          </a>
         </div>
         <button type="button" class="print-button" onclick="window.print()">Print</button>
       </div>
@@ -29,14 +39,14 @@
     <div class="novel-reader">
       <div class="novel-header">
         <div class="novel-title">Field Notes — Full Novel</div>
-        <div class="novel-meta">Compiled on 1/30/2026, 12:56:48 PM</div>
+        <div class="novel-meta">Compiled on 1/30/2026, 1:08:22 PM</div>
       </div>
       <div class="novel-content" id="novelContent"></div>
     </div>
   </div>
 
   <script>
-    const markdown = "# Field Notes — Full Novel\n\n*Compiled on 1/30/2026, 12:56:48 PM*\n\n---\n\n\n## ACT I — Opening Notes\n\n---\n\n\n### Chapter 1: Field Notes\n\n*ACT I — Opening Notes | ID: field-notes | File: 01_field_notes.md*\n\n---\n\nField notes, fragments, and journal-style entries live here.\r\n\r\nDrop in ideas, dates, and freeform reflections as they come.\r\n\n\n---\n\n";
+    const markdown = "# Field Notes — Full Novel\n\n*Compiled on 1/30/2026, 1:08:22 PM*\n\n---\n\n\n## ACT I — Opening Notes\n\n---\n\n\n### Chapter 1: Field Notes\n\n*ACT I — Opening Notes | ID: field-notes | File: 01_field_notes.md*\n\n---\n\nField notes, fragments, and journal-style entries live here.\r\n\r\nDrop in ideas, dates, and freeform reflections as they come.\r\n\n\n---\n\n";
     const container = document.getElementById('novelContent');
     marked.setOptions({ breaks: true });
     container.innerHTML = marked.parse(markdown);

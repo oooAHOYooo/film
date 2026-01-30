@@ -100,8 +100,18 @@ function generateHTMLPage(markdown, chapters) {
     <div class="novel-sticky-bar no-print" id="novelStickyBar">
       <div class="nav">
         <div class="nav-left">
-          <a href="/pages/winter.html">← Winter Hub</a>
-          <a href="/pages/winter.html">← Back to Gallery</a>
+          <a class="nav-link" href="/index.html" title="Home">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span class="nav-text">Home</span>
+          </a>
+          <a class="nav-link" href="/novels/index.html" title="Novels">
+            <span class="nav-icon" aria-hidden="true">📖</span>
+            <span class="nav-text">Novels</span>
+          </a>
+          <a class="nav-link" href="/novels/yellow/full_novel.md" title="Markdown">
+            <span class="nav-icon" aria-hidden="true">✎</span>
+            <span class="nav-text">Markdown</span>
+          </a>
         </div>
         <button type="button" class="print-button" onclick="window.print()">Print</button>
       </div>

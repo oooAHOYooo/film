@@ -12,8 +12,18 @@
     <div class="novel-sticky-bar no-print" id="novelStickyBar">
       <div class="nav">
         <div class="nav-left">
-          <a href="/pages/winter.html">← Winter Hub</a>
-          <a href="/pages/winter.html">← Back to Gallery</a>
+          <a class="nav-link" href="/index.html" title="Home">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span class="nav-text">Home</span>
+          </a>
+          <a class="nav-link" href="/novels/index.html" title="Novels">
+            <span class="nav-icon" aria-hidden="true">📖</span>
+            <span class="nav-text">Novels</span>
+          </a>
+          <a class="nav-link" href="/novels/magenta/full_novel.md" title="Markdown">
+            <span class="nav-icon" aria-hidden="true">✎</span>
+            <span class="nav-text">Markdown</span>
+          </a>
         </div>
         <button type="button" class="print-button" onclick="window.print()">Print</button>
       </div>
@@ -29,14 +39,14 @@
     <div class="novel-reader">
       <div class="novel-header">
         <div class="novel-title">The Havens — Full Novel</div>
-        <div class="novel-meta">Compiled on 1/30/2026, 12:56:46 PM</div>
+        <div class="novel-meta">Compiled on 1/30/2026, 1:08:21 PM</div>
       </div>
       <div class="novel-content" id="novelContent"></div>
     </div>
   </div>
 
   <script>
-    const markdown = "# The Havens — Full Novel\n\n*Compiled on 1/30/2026, 12:56:46 PM*\n\n---\n\n\n## ACT I — Opening Notes\n\n---\n\n\n### Chapter 1: The Havens\n\n*ACT I — Opening Notes | ID: the-havens | File: 01_the_havens.md*\n\n---\n\nThe Havens begins here.\r\n\r\nUse this chapter as a landing point for your outline, beats, and early prose.\r\n\n\n---\n\n";
+    const markdown = "# The Havens — Full Novel\n\n*Compiled on 1/30/2026, 1:08:21 PM*\n\n---\n\n\n## ACT I — Opening Notes\n\n---\n\n\n### Chapter 1: The Havens\n\n*ACT I — Opening Notes | ID: the-havens | File: 01_the_havens.md*\n\n---\n\nThe Havens begins here.\r\n\r\nUse this chapter as a landing point for your outline, beats, and early prose.\r\n\n\n---\n\n";
     const container = document.getElementById('novelContent');
     marked.setOptions({ breaks: true });
     container.innerHTML = marked.parse(markdown);
