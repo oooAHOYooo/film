@@ -125,8 +125,22 @@ function generateHTMLPage(markdown, scenes) {
     <div class="script-sticky-bar no-print" id="scriptStickyBar">
       <div class="nav">
         <div class="nav-left">
-          <a href="/pages/summer.html">← Summer Hub</a>
-          <a href="index.html">← Back to Gallery</a>
+          <a class="nav-link" href="/index.html" title="Home">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span class="nav-text">Home</span>
+          </a>
+          <a class="nav-link" href="/pages/summer.html" title="Summer Hub">
+            <span class="nav-icon" aria-hidden="true">☀</span>
+            <span class="nav-text">Summer</span>
+          </a>
+          <a class="nav-link" href="index.html" title="Gallery">
+            <span class="nav-icon" aria-hidden="true">▦</span>
+            <span class="nav-text">Gallery</span>
+          </a>
+          <a class="nav-link" href="full_script.md" title="Markdown">
+            <span class="nav-icon" aria-hidden="true">✎</span>
+            <span class="nav-text">Markdown</span>
+          </a>
         </div>
         <button type="button" class="print-button" onclick="window.print()">Print</button>
       </div>
