@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Novel - Theology Notes</title>
+  <link rel="stylesheet" href="/novels/yellow/novel.css?v=20260130-1">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="novel-container">
+    <div class="novel-sticky-bar no-print" id="novelStickyBar">
+      <div class="nav">
+        <div class="nav-left">
+          <a href="/pages/winter.html">← Winter Hub</a>
+          <a href="/pages/winter.html">← Back to Gallery</a>
+        </div>
+        <button type="button" class="print-button" onclick="window.print()">Print</button>
+      </div>
+      <div class="novel-nav-row">
+        <label for="novelChapterSelect" class="novel-nav-label">Jump to chapter</label>
+        <select id="novelChapterSelect" class="novel-select" aria-label="Jump to chapter">
+          <option value="">—</option>
+          <option value="chapter-1">1. Theology</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="novel-reader">
+      <div class="novel-header">
+        <div class="novel-title">Theology Notes — Full Novel</div>
+        <div class="novel-meta">Compiled on 1/30/2026, 12:56:47 PM</div>
+      </div>
+      <div class="novel-content" id="novelContent"></div>
+    </div>
+  </div>
+
+  <script>
+    const markdown = "# Theology Notes — Full Novel\n\n*Compiled on 1/30/2026, 12:56:47 PM*\n\n---\n\n\n## ACT I — Opening Notes\n\n---\n\n\n### Chapter 1: Theology\n\n*ACT I — Opening Notes | ID: theology | File: 01_theology.md*\n\n---\n\nTheology notes live here.\r\n\r\nUse this space for structured chapters, essays, or a sequence of reflections.\r\n\n\n---\n\n";
+    const container = document.getElementById('novelContent');
+    marked.setOptions({ breaks: true });
+    container.innerHTML = marked.parse(markdown);
+
+    (function initChapterNav() {
+      const content = document.getElementById('novelContent');
+      const selectEl = document.getElementById('novelChapterSelect');
+      if (!content || !selectEl) return;
+      const chapterHeadings = content.querySelectorAll('h3');
+      const chapterHeadingRe = /^Chapter \\d+:/i;
+      chapterHeadings.forEach((h3, i) => {
+        const text = (h3.textContent || '').trim();
+        if (chapterHeadingRe.test(text)) h3.id = 'chapter-' + (i + 1);
+      });
+      selectEl.addEventListener('change', function() {
+        const value = this.value;
+        if (!value) return;
+        const el = document.getElementById(value);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        this.value = '';
+      });
+    })();
+  </script>
+</body>
+</html>
