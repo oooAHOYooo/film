@@ -1,9 +1,212 @@
 [
   {
-    "id": "the-havens",
+    "id": "the_havens",
     "file": "01_the_havens.md",
     "title": "The Havens",
     "act": 1,
-    "actTitle": "Opening Notes"
+    "actTitle": "The Map"
+  },
+  {
+    "id": "the_map_of_old_rivers",
+    "file": "02_the_map_of_old_rivers.md",
+    "title": "The Map of Old Rivers",
+    "act": 1,
+    "actTitle": "The Map"
+  },
+  {
+    "id": "the_festival_of_gate_lanterns",
+    "file": "03_the_festival_of_gate_lanterns.md",
+    "title": "The Festival of Gate Lanterns",
+    "act": 1,
+    "actTitle": "The Map"
+  },
+  {
+    "id": "the_oath_on_the_bridge",
+    "file": "04_the_oath_on_the_bridge.md",
+    "title": "The Oath on the Bridge",
+    "act": 1,
+    "actTitle": "The Map"
+  },
+  {
+    "id": "names_of_the_houses",
+    "file": "05_names_of_the_houses.md",
+    "title": "Names of the Houses",
+    "act": 1,
+    "actTitle": "The Map"
+  },
+  {
+    "id": "the_first_refuge",
+    "file": "06_the_first_refuge.md",
+    "title": "The First Refuge",
+    "act": 1,
+    "actTitle": "The Map"
+  },
+  {
+    "id": "the_quiet_markets",
+    "file": "07_the_quiet_markets.md",
+    "title": "The Quiet Markets",
+    "act": 1,
+    "actTitle": "The Map"
+  },
+  {
+    "id": "the_outer_bell",
+    "file": "08_the_outer_bell.md",
+    "title": "The Outer Bell",
+    "act": 1,
+    "actTitle": "The Map"
+  },
+  {
+    "id": "storm_over_eastbank",
+    "file": "09_storm_over_eastbank.md",
+    "title": "Storm Over Eastbank",
+    "act": 2,
+    "actTitle": "The Crossing"
+  },
+  {
+    "id": "the_whisper_road",
+    "file": "10_the_whisper_road.md",
+    "title": "The Whisper Road",
+    "act": 2,
+    "actTitle": "The Crossing"
+  },
+  {
+    "id": "the_archivists_rule",
+    "file": "11_the_archivists_rule.md",
+    "title": "The Archivistâ€™s Rule",
+    "act": 2,
+    "actTitle": "The Crossing"
+  },
+  {
+    "id": "letters_from_the_north",
+    "file": "12_letters_from_the_north.md",
+    "title": "Letters From the North",
+    "act": 2,
+    "actTitle": "The Crossing"
+  },
+  {
+    "id": "the_night_of_blue_fire",
+    "file": "13_the_night_of_blue_fire.md",
+    "title": "The Night of Blue Fire",
+    "act": 2,
+    "actTitle": "The Crossing"
+  },
+  {
+    "id": "the_shifting_wall",
+    "file": "14_the_shifting_wall.md",
+    "title": "The Shifting Wall",
+    "act": 2,
+    "actTitle": "The Crossing"
+  },
+  {
+    "id": "the_orphans_pact",
+    "file": "15_the_orphans_pact.md",
+    "title": "The Orphanâ€™s Pact",
+    "act": 2,
+    "actTitle": "The Crossing"
+  },
+  {
+    "id": "the_council_of_mariners",
+    "file": "16_the_council_of_mariners.md",
+    "title": "The Council of Mariners",
+    "act": 2,
+    "actTitle": "The Crossing"
+  },
+  {
+    "id": "the_salt_garden",
+    "file": "17_the_salt_garden.md",
+    "title": "The Salt Garden",
+    "act": 3,
+    "actTitle": "The Havens"
+  },
+  {
+    "id": "the_fathom_engine",
+    "file": "18_the_fathom_engine.md",
+    "title": "The Fathom Engine",
+    "act": 3,
+    "actTitle": "The Havens"
+  },
+  {
+    "id": "the_broken_causeway",
+    "file": "19_the_broken_causeway.md",
+    "title": "The Broken Causeway",
+    "act": 3,
+    "actTitle": "The Havens"
+  },
+  {
+    "id": "the_sleepers_wake",
+    "file": "20_the_sleepers_wake.md",
+    "title": "The Sleeperâ€™s Wake",
+    "act": 3,
+    "actTitle": "The Havens"
+  },
+  {
+    "id": "the_long_migration",
+    "file": "21_the_long_migration.md",
+    "title": "The Long Migration",
+    "act": 3,
+    "actTitle": "The Havens"
+  },
+  {
+    "id": "the_covenant_stone",
+    "file": "22_the_covenant_stone.md",
+    "title": "The Covenant Stone",
+    "act": 3,
+    "actTitle": "The Havens"
+  },
+  {
+    "id": "the_hidden_harbor",
+    "file": "23_the_hidden_harbor.md",
+    "title": "The Hidden Harbor",
+    "act": 3,
+    "actTitle": "The Havens"
+  },
+  {
+    "id": "the_hawsers_end",
+    "file": "24_the_hawsers_end.md",
+    "title": "The Hawserâ€™s End",
+    "act": 4,
+    "actTitle": "Return"
+  },
+  {
+    "id": "the_lantern_keepers",
+    "file": "25_the_lantern_keepers.md",
+    "title": "The Lantern Keepers",
+    "act": 4,
+    "actTitle": "Return"
+  },
+  {
+    "id": "the_drift_and_the_deep",
+    "file": "26_the_drift_and_the_deep.md",
+    "title": "The Drift and the Deep",
+    "act": 4,
+    "actTitle": "Return"
+  },
+  {
+    "id": "the_second_haven",
+    "file": "27_the_second_haven.md",
+    "title": "The Second Haven",
+    "act": 4,
+    "actTitle": "Return"
+  },
+  {
+    "id": "the_trial_of_tides",
+    "file": "28_the_trial_of_tides.md",
+    "title": "The Trial of Tides",
+    "act": 4,
+    "actTitle": "Return"
+  },
+  {
+    "id": "the_open_door",
+    "file": "29_the_open_door.md",
+    "title": "The Open Door",
+    "act": 4,
+    "actTitle": "Return"
+  },
+  {
+    "id": "home_without_walls",
+    "file": "30_home_without_walls.md",
+    "title": "Home Without Walls",
+    "act": 4,
+    "actTitle": "Return"
   }
 ]

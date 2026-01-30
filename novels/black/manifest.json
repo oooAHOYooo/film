@@ -1,9 +1,212 @@
 [
   {
-    "id": "field-notes",
+    "id": "field_notes",
     "file": "01_field_notes.md",
     "title": "Field Notes",
     "act": 1,
-    "actTitle": "Opening Notes"
+    "actTitle": "Open Pages"
+  },
+  {
+    "id": "small_inventory",
+    "file": "02_small_inventory.md",
+    "title": "Small Inventory",
+    "act": 1,
+    "actTitle": "Open Pages"
+  },
+  {
+    "id": "morning_pages",
+    "file": "03_morning_pages.md",
+    "title": "Morning Pages",
+    "act": 1,
+    "actTitle": "Open Pages"
+  },
+  {
+    "id": "dream_fragments",
+    "file": "04_dream_fragments.md",
+    "title": "Dream Fragments",
+    "act": 1,
+    "actTitle": "Open Pages"
+  },
+  {
+    "id": "streetlight_thoughts",
+    "file": "05_streetlight_thoughts.md",
+    "title": "Streetlight Thoughts",
+    "act": 1,
+    "actTitle": "Open Pages"
+  },
+  {
+    "id": "voice_memos",
+    "file": "06_voice_memos.md",
+    "title": "Voice Memos",
+    "act": 1,
+    "actTitle": "Open Pages"
+  },
+  {
+    "id": "tiny_theories",
+    "file": "07_tiny_theories.md",
+    "title": "Tiny Theories",
+    "act": 1,
+    "actTitle": "Open Pages"
+  },
+  {
+    "id": "weather_log",
+    "file": "08_weather_log.md",
+    "title": "Weather Log",
+    "act": 1,
+    "actTitle": "Open Pages"
+  },
+  {
+    "id": "conversations",
+    "file": "09_conversations.md",
+    "title": "Conversations",
+    "act": 2,
+    "actTitle": "Days"
+  },
+  {
+    "id": "maps_i_drew",
+    "file": "10_maps_i_drew.md",
+    "title": "Maps I Drew",
+    "act": 2,
+    "actTitle": "Days"
+  },
+  {
+    "id": "found_objects",
+    "file": "11_found_objects.md",
+    "title": "Found Objects",
+    "act": 2,
+    "actTitle": "Days"
+  },
+  {
+    "id": "letters_unsent",
+    "file": "12_letters_unsent.md",
+    "title": "Letters Unsent",
+    "act": 2,
+    "actTitle": "Days"
+  },
+  {
+    "id": "things_i_avoid",
+    "file": "13_things_i_avoid.md",
+    "title": "Things I Avoid",
+    "act": 2,
+    "actTitle": "Days"
+  },
+  {
+    "id": "things_i_return_to",
+    "file": "14_things_i_return_to.md",
+    "title": "Things I Return To",
+    "act": 2,
+    "actTitle": "Days"
+  },
+  {
+    "id": "the_shape_of_a_day",
+    "file": "15_the_shape_of_a_day.md",
+    "title": "The Shape of a Day",
+    "act": 2,
+    "actTitle": "Days"
+  },
+  {
+    "id": "borrowed_lines",
+    "file": "16_borrowed_lines.md",
+    "title": "Borrowed Lines",
+    "act": 2,
+    "actTitle": "Days"
+  },
+  {
+    "id": "a_good_question",
+    "file": "17_a_good_question.md",
+    "title": "A Good Question",
+    "act": 3,
+    "actTitle": "Questions"
+  },
+  {
+    "id": "after_midnight",
+    "file": "18_after_midnight.md",
+    "title": "After Midnight",
+    "act": 3,
+    "actTitle": "Questions"
+  },
+  {
+    "id": "the_long_walk",
+    "file": "19_the_long_walk.md",
+    "title": "The Long Walk",
+    "act": 3,
+    "actTitle": "Questions"
+  },
+  {
+    "id": "notes_on_rest",
+    "file": "20_notes_on_rest.md",
+    "title": "Notes on Rest",
+    "act": 3,
+    "actTitle": "Questions"
+  },
+  {
+    "id": "places_i_miss",
+    "file": "21_places_i_miss.md",
+    "title": "Places I Miss",
+    "act": 3,
+    "actTitle": "Questions"
+  },
+  {
+    "id": "mismatched_lists",
+    "file": "22_mismatched_lists.md",
+    "title": "Mismatched Lists",
+    "act": 3,
+    "actTitle": "Questions"
+  },
+  {
+    "id": "a_photograph",
+    "file": "23_a_photograph.md",
+    "title": "A Photograph",
+    "act": 3,
+    "actTitle": "Questions"
+  },
+  {
+    "id": "the_sound_of",
+    "file": "24_the_sound_of.md",
+    "title": "The Sound of ___",
+    "act": 4,
+    "actTitle": "Fragments"
+  },
+  {
+    "id": "half_finished_scenes",
+    "file": "25_half_finished_scenes.md",
+    "title": "Half-Finished Scenes",
+    "act": 4,
+    "actTitle": "Fragments"
+  },
+  {
+    "id": "dialogues",
+    "file": "26_dialogues.md",
+    "title": "Dialogues",
+    "act": 4,
+    "actTitle": "Fragments"
+  },
+  {
+    "id": "on_anger",
+    "file": "27_on_anger.md",
+    "title": "On Anger",
+    "act": 4,
+    "actTitle": "Fragments"
+  },
+  {
+    "id": "on_joy",
+    "file": "28_on_joy.md",
+    "title": "On Joy",
+    "act": 4,
+    "actTitle": "Fragments"
+  },
+  {
+    "id": "on_grief",
+    "file": "29_on_grief.md",
+    "title": "On Grief",
+    "act": 4,
+    "actTitle": "Fragments"
+  },
+  {
+    "id": "on_hope",
+    "file": "30_on_hope.md",
+    "title": "On Hope",
+    "act": 4,
+    "actTitle": "Fragments"
   }
 ]

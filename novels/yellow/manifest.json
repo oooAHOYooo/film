@@ -1,9 +1,212 @@
 [
   {
-    "id": "theology",
-    "file": "01_theology.md",
-    "title": "Theology",
+    "id": "theology_notes",
+    "file": "01_theology_notes.md",
+    "title": "Theology Notes",
     "act": 1,
-    "actTitle": "Opening Notes"
+    "actTitle": "Foundations"
+  },
+  {
+    "id": "revelation_and_mystery",
+    "file": "02_revelation_and_mystery.md",
+    "title": "Revelation and Mystery",
+    "act": 1,
+    "actTitle": "Foundations"
+  },
+  {
+    "id": "creation_and_goodness",
+    "file": "03_creation_and_goodness.md",
+    "title": "Creation and Goodness",
+    "act": 1,
+    "actTitle": "Foundations"
+  },
+  {
+    "id": "image_of_god",
+    "file": "04_image_of_god.md",
+    "title": "Image of God",
+    "act": 1,
+    "actTitle": "Foundations"
+  },
+  {
+    "id": "fall_and_fracture",
+    "file": "05_fall_and_fracture.md",
+    "title": "Fall and Fracture",
+    "act": 1,
+    "actTitle": "Foundations"
+  },
+  {
+    "id": "covenant",
+    "file": "06_covenant.md",
+    "title": "Covenant",
+    "act": 1,
+    "actTitle": "Foundations"
+  },
+  {
+    "id": "law_and_wisdom",
+    "file": "07_law_and_wisdom.md",
+    "title": "Law and Wisdom",
+    "act": 1,
+    "actTitle": "Foundations"
+  },
+  {
+    "id": "prophets_and_hope",
+    "file": "08_prophets_and_hope.md",
+    "title": "Prophets and Hope",
+    "act": 1,
+    "actTitle": "Foundations"
+  },
+  {
+    "id": "incarnation",
+    "file": "09_incarnation.md",
+    "title": "Incarnation",
+    "act": 2,
+    "actTitle": "Revelation"
+  },
+  {
+    "id": "atonement",
+    "file": "10_atonement.md",
+    "title": "Atonement",
+    "act": 2,
+    "actTitle": "Revelation"
+  },
+  {
+    "id": "resurrection",
+    "file": "11_resurrection.md",
+    "title": "Resurrection",
+    "act": 2,
+    "actTitle": "Revelation"
+  },
+  {
+    "id": "spirit_and_breath",
+    "file": "12_spirit_and_breath.md",
+    "title": "Spirit and Breath",
+    "act": 2,
+    "actTitle": "Revelation"
+  },
+  {
+    "id": "trinity",
+    "file": "13_trinity.md",
+    "title": "Trinity",
+    "act": 2,
+    "actTitle": "Revelation"
+  },
+  {
+    "id": "church_and_community",
+    "file": "14_church_and_community.md",
+    "title": "Church and Community",
+    "act": 2,
+    "actTitle": "Revelation"
+  },
+  {
+    "id": "sacraments",
+    "file": "15_sacraments.md",
+    "title": "Sacraments",
+    "act": 2,
+    "actTitle": "Revelation"
+  },
+  {
+    "id": "prayer",
+    "file": "16_prayer.md",
+    "title": "Prayer",
+    "act": 2,
+    "actTitle": "Revelation"
+  },
+  {
+    "id": "suffering_and_lament",
+    "file": "17_suffering_and_lament.md",
+    "title": "Suffering and Lament",
+    "act": 3,
+    "actTitle": "Life Together"
+  },
+  {
+    "id": "justice_and_mercy",
+    "file": "18_justice_and_mercy.md",
+    "title": "Justice and Mercy",
+    "act": 3,
+    "actTitle": "Life Together"
+  },
+  {
+    "id": "kingdom_and_eschaton",
+    "file": "19_kingdom_and_eschaton.md",
+    "title": "Kingdom and Eschaton",
+    "act": 3,
+    "actTitle": "Life Together"
+  },
+  {
+    "id": "scripture_and_tradition",
+    "file": "20_scripture_and_tradition.md",
+    "title": "Scripture and Tradition",
+    "act": 3,
+    "actTitle": "Life Together"
+  },
+  {
+    "id": "conscience_and_discernment",
+    "file": "21_conscience_and_discernment.md",
+    "title": "Conscience and Discernment",
+    "act": 3,
+    "actTitle": "Life Together"
+  },
+  {
+    "id": "vocation_and_work",
+    "file": "22_vocation_and_work.md",
+    "title": "Vocation and Work",
+    "act": 3,
+    "actTitle": "Life Together"
+  },
+  {
+    "id": "hospitality",
+    "file": "23_hospitality.md",
+    "title": "Hospitality",
+    "act": 3,
+    "actTitle": "Life Together"
+  },
+  {
+    "id": "technology_and_time",
+    "file": "24_technology_and_time.md",
+    "title": "Technology and Time",
+    "act": 4,
+    "actTitle": "Practice"
+  },
+  {
+    "id": "beauty_and_art",
+    "file": "25_beauty_and_art.md",
+    "title": "Beauty and Art",
+    "act": 4,
+    "actTitle": "Practice"
+  },
+  {
+    "id": "money_and_generosity",
+    "file": "26_money_and_generosity.md",
+    "title": "Money and Generosity",
+    "act": 4,
+    "actTitle": "Practice"
+  },
+  {
+    "id": "ecology_and_creation_care",
+    "file": "27_ecology_and_creation_care.md",
+    "title": "Ecology and Creation Care",
+    "act": 4,
+    "actTitle": "Practice"
+  },
+  {
+    "id": "conflict_and_forgiveness",
+    "file": "28_conflict_and_forgiveness.md",
+    "title": "Conflict and Forgiveness",
+    "act": 4,
+    "actTitle": "Practice"
+  },
+  {
+    "id": "doubt_and_faithfulness",
+    "file": "29_doubt_and_faithfulness.md",
+    "title": "Doubt and Faithfulness",
+    "act": 4,
+    "actTitle": "Practice"
+  },
+  {
+    "id": "blessing_and_sending",
+    "file": "30_blessing_and_sending.md",
+    "title": "Blessing and Sending",
+    "act": 4,
+    "actTitle": "Practice"
   }
 ]
