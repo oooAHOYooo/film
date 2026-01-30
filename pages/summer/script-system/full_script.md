@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 1/29/2026, 2:54:50 PM*
+*Compiled on 1/30/2026, 11:43:30 AM*
 
 ---
 
@@ -58,11 +58,17 @@ Dallas walks into town for batteries. On the way, he meets his neighbor DOMINIC.
 
 DOMINIC
 
-Hey there! You're new guy, right?
+Hey there! 
 
 DALLAS
 
-Yeah. Dallas.
+Hey. 
+
+DOMINIC
+
+You just moved in? You must know the real estate agent. 
+
+
 
 DOMINIC
 
