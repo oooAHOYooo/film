@@ -4,11 +4,17 @@ Dallas walks into town for batteries. On the way, he meets his neighbor DOMINIC.
 
 DOMINIC
 
-Hey there! You're new guy, right?
+Hey there! 
 
 DALLAS
 
-Yeah. Dallas.
+Hey. 
+
+DOMINIC
+
+You just moved in? You must know the real estate agent. 
+
+
 
 DOMINIC
 

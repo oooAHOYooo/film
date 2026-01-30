@@ -342,8 +342,7 @@
                 <div style="font-weight: 600; color: var(--accent); font-size: 0.9rem;">Quick Navigation:</div>
                 <div class="nav-links">
                     <a href="#overview" class="nav-link">Overview</a>
-                    <a href="#compact-view" class="nav-link">Compact List</a>
-                    <a href="#detailed-view" class="nav-link">Detailed View</a>
+                    <a href="#breakdown" class="nav-link">Scene Breakdown</a>
                     <a href="#locations-scheduling" class="nav-link">Locations</a>
                     <a href="#shooting-schedule" class="nav-link">Schedule</a>
                     <a href="#production-notes" class="nav-link">Production Notes</a>
@@ -367,478 +366,34 @@
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--glass-border);">
                     <div>
                         <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Total Runtime</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--accent);">~105 min</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">(1h 45m)</div>
+                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--accent);">~90 min</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">30 scenes</div>
                     </div>
                     <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act 1 (Setup)</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: #3fb950;">~30 min</div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act I (Arrival & Discovery)</div>
+                        <div style="font-size: 1.5rem; font-weight: 600; color: #3fb950;">~20 min</div>
                         <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Scenes 1-12</div>
                     </div>
                     <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act 2 (Confrontation)</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: #fbbc05;">~60 min</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Scenes 13-35</div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act II (The Creature)</div>
+                        <div style="font-size: 1.5rem; font-weight: 600; color: #fbbc05;">~30 min</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Scenes 13-24</div>
                     </div>
                     <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act 3 (Resolution)</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: #f85149;">~15 min</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Scenes 36-42</div>
+                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act III (The Return)</div>
+                        <div style="font-size: 1.5rem; font-weight: 600; color: #f85149;">~40 min</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Scenes 25-30</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section-anchor" id="compact-view">
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
-                <h2 style="margin: 0;">Scene List (Compact View)</h2>
-                <a href="#detailed-view" class="btn" style="font-size: 0.85rem; padding: 8px 16px;">Jump to Detailed View ↓</a>
-            </div>
-            <div style="overflow-x: auto;">
-                <table class="compact-table">
-                    <thead>
-                        <tr>
-                            <th class="scene-col">Scene</th>
-                            <th class="scene-name-col">Scene Name</th>
-                            <th class="location-col">Location</th>
-                            <th class="time-col">Time</th>
-                            <th class="duration-col">Duration</th>
-                            <th class="act-col">Act</th>
-                            <th class="shoot-days-col">Shoot Days</th>
-                            <th class="summary-col">Summary</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">1</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Interior</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas unpacks.</strong> Finds military receiver with photo sticker. Hears hum. Battery dies.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">2</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Town - Street</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas walks to town for batteries.</strong> Meets neighbor Dominic. Convinced to attend fellowship lunch.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">3</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Street - Car</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dominic discovers parking ticket.</strong> Rants about raccoons. Dallas notices birds on power line facing marsh.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">4</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">CPC Church - Fellowship Hall</span></td>
-                            <td class="time-col"><span class="time-of-day">Day - Late Summer</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Fellowship lunch.</strong> Circle of churchgoers outside eating Sally's. Last fellowship lunch of summer.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">5</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Marsh - Walking Path</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Walk home toward marsh.</strong> Coyotes howl. Dialogue about work at Quinnipiac. Dallas alone.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">6</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Branford - Marsh Lands</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Get lost in Branford.</strong> Wander marsh lands. News vans. Pat Clendenen reports on Nor'easter.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">7</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dominic's House - Exterior</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">1 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Approach house.</strong> Trash cans dumped over. Invites Dallas to help clean kids' mess.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">8</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dominic's House - Interior</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">4 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas notices painting.</strong> Meets Mr. Mike. Mutual understanding about loss. Mr. Mike scratches coordinates: "45 Left 15 degrees right."</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">9</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Interior</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Janice visits with kids.</strong> Dallas agrees to dog-sit Howie. Argument about Brussels sprouts. Makayla questions equipment. Whirlwind exit.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">10</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Coastal Trail - Near Tall Grass</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas walks home with Howie.</strong> Long Island Sound roars. Reader spikes near tall grass. Hum begins - grows everywhere. Howie afraid.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">11</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Interior</span></td>
-                            <td class="time-col"><span class="time-of-day">Night</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas at window, stares at field.</strong> Dominic and Asher collect Howie. Later: Touches photo of wife. Hum begins. Tall shadows grow in distance.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">12</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Exterior</span></td>
-                            <td class="time-col"><span class="time-of-day">Dawn</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Storm approaches.</strong> Janice drops off Howie. Makayla and Asher run to look at something. Schools canceled. Dominic asks about Costco and life group.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">13</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Coastal Trail - Creek</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas and Howie on trail.</strong> Stop by creek. Roar and hum begin. Light flickers in distance. Dallas drawn to light. Ties Howie to tree, enters tall grass.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">14</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass - Tree Hollow</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas in daze walks to tree hollow.</strong> Dozens of eyes seem to surround him. Movement of leaves. Animal cry. Approaches in daze.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">15</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass - Hollow</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">5 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">2</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>CREATURE REVEAL.</strong> Discovers dying creature. Birdlike, downy fur, rabbit ears, flickering glow. Back-holes make cry. Something massive following. Grabs creature, rushes out.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">16</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Kitchen</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Brings creature to kitchen.</strong> Porch instruments pulse with heartbeat. Turns dial - creature sleeps. When creature cries, world echoes. Hum floods town. Windows rattle.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">17</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Kitchen</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Janice and Dominic return.</strong> Mr. Mike freaks out. Makayla kneels to attend creature's wound - glow brightens. Asher joins. Dominic pushes everyone away.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">18</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Kitchen</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Kitchen table - healing creature.</strong> Dominic lists reasons against. Janice: "Put it back." Mr. Mike: "They are coming - not safe here." Scramble downstairs.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">19</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Living Room</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Doorbell chimes.</strong> First life group family arrives - couple with newborn JP. Mr. Mike mutters coordinates: "45 degrees left, 15 right."</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">20</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Living Room/Kitchen</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>More families arrive.</strong> Try Brussels sprouts, apple cider. Dallas excuses to basement - checks creature. Puts in shoebox. Makayla and Asher bring water bottle.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">21</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Living Room</span></td>
-                            <td class="time-col"><span class="time-of-day">Evening</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Life group meeting.</strong> Josh gives ice breaker. Tyler hands out music, everyone sings. Final notes of hymn - hum begins again. Pat comments on weird weather.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">22</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Living Room</span></td>
-                            <td class="time-col"><span class="time-of-day">Evening</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Time of reflection.</strong> Hum starts again - everyone unsettled. Talk of weird weather. People leave. Dominic rushes downstairs with kids.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">23</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Basement</span></td>
-                            <td class="time-col"><span class="time-of-day">Evening</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Creature in box with heat lamp.</strong> Responds to machines. Asher notices pebbles arranged in pattern. Decision: Drop off in morning. Mr. Mike: "Mistake to not return tonight."</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">24</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Interior</span></td>
-                            <td class="time-col"><span class="time-of-day">Night</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas stares awake at window.</strong> Bright eyes watching house from marsh border. Eyes fade away. Creature is gone. Night still.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">25</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Exterior</span></td>
-                            <td class="time-col"><span class="time-of-day">Morning</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Makayla drops off Howie.</strong> Notices burn marks on grass - trail to windows, side of house. Dallas with detector. They make fence around house. Hear distant cry and hum.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">26</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass - Salt Marsh</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">6 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">2.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>MAJOR VFX SEQUENCE.</strong> Find group of creatures attending injured one. Older ones freeze Dallas and Makayla. Dozens of glows rise. Predators emerge with red eyes.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">27</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass - Salt Marsh</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Predators' eyes blink - creatures huddle.</strong> Dallas uses dial - creature pulses, creatures retract. Dallas grabs creature, runs out.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">28</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass - Edge</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">5 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">2.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>MAJOR VFX BATTLE.</strong> Creature stops pulsing. Crew witnesses battle of pulse and shadow. Red-eyed creatures devour small creatures. Crew runs home.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">29</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Exterior</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas digs poles.</strong> Takes copper wire, hangs around poles. Storm comes. Dominic begins to help. Pat Clendenen on radio.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">30</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Exterior</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Jams last pole into mud.</strong> Crew stare at tall grass. Hear fire engines, sea birds, hum. Await on porch. Dominic: "This is crazy."</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">31</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Interior</span></td>
-                            <td class="time-col"><span class="time-of-day">Evening</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Sun sets, crew peer outside.</strong> Dinner - pasta. Eat in silence. Noise grows outside - sniffs. Makayla breaks ice. Mr. Mike mutters coordinates. Decision: Go back.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">32</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass</span></td>
-                            <td class="time-col"><span class="time-of-day">Evening</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Go back, see creature, try to grab.</strong> Eyes follow them. Makayla runs out door into tall grass. Dominic chases, hesitates at edge.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">33</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Exterior</span></td>
-                            <td class="time-col"><span class="time-of-day">Evening</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas powers on poles around tall grass.</strong> Howie cowers. Dominic rushes for flashlights. Calls Makayla on radio. Asks Dallas to watch Mr. Mike and Howie.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">34</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Porch/Backyard</span></td>
-                            <td class="time-col"><span class="time-of-day">Evening</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas waits with Howie.</strong> Equipment light turns green. Storm approaches. Mr. Mike yells: "They are coming!" Distant cry, hum. Eyes circulate. Dallas heads to tall grass.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">35</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass</span></td>
-                            <td class="time-col"><span class="time-of-day">Night</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas walks into tall grass.</strong> Strange silence. Sees fading light. Pulls crumpled napkin - coordinates 45 L 15 R match equipment compass.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">36</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass - Hollow</span></td>
-                            <td class="time-col"><span class="time-of-day">Night</span></td>
-                            <td class="duration-col"><span class="duration">4 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Sees Makayla holding creature.</strong> Surrounded by dazed Asher and Dominic. Makayla's eyes fading. Creature makes calls. Another creature emerges, nurtures.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">37</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Tall Grass - Hollow</span></td>
-                            <td class="time-col"><span class="time-of-day">Night</span></td>
-                            <td class="duration-col"><span class="duration">7 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">3</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>CLIMAX.</strong> Dallas makes contact. Creature begins to sing. Crew paralyzed - dark forces cower. Storm and creatures retreat.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">38</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Interior</span></td>
-                            <td class="time-col"><span class="time-of-day">Night</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Dallas, Dominic, Makayla watch for night to end.</strong> Morning: Wake up. Dallas puts equipment in trash.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">39</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Exterior</span></td>
-                            <td class="time-col"><span class="time-of-day">Morning</span></td>
-                            <td class="duration-col"><span class="duration">1 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Crew leaves, Dallas alone.</strong> Hears soft sound pulse of creature.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">40</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Town - Various</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Town back to normal.</strong> Pat Clendenen reports "miracle of a save." Behind Pat - faint red-pulsing eye in fog.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">41</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">CPC Church - Fellowship Hall</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Church event.</strong> Dominic and Dallas don't talk much. Eat Nica's lunch. Watch Makayla put caterpillar in jar.</span></td>
-                        </tr>
-                        <tr>
-                            <td class="scene-col"><span class="scene-number">42</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
-                            <td class="location-col"><span class="location-tag">Dallas' House - Interior/Exterior</span></td>
-                            <td class="time-col"><span class="time-of-day">Day</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="summary-col"><span class="compact-summary"><strong>Makayla and Asher build devices.</strong> Dallas hears echoes in tall grass. Janice drops off Howie. Watch sunset. Dallas turns off equipment, lives with salt breeze.</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <section class="section section-anchor" id="detailed-view">
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;">
-                <h2 style="margin: 0;">Scene Breakdown (Detailed View)</h2>
-                <a href="#compact-view" class="btn" style="font-size: 0.85rem; padding: 8px 16px;">Jump to Compact View ↑</a>
-            </div>
+        <section class="section section-anchor" id="breakdown">
+            <h2 style="margin: 0 0 16px 0;">Scene Breakdown</h2>
+            <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
+                Production-ready breakdown aligned with the script-system (30 scenes) and latest treatment. 
+                Each row includes location, time, duration, act, shoot days, key elements, and production notes.
+            </p>
             <div style="overflow-x: auto;">
                 <table class="production-table">
                     <thead>
@@ -857,7 +412,7 @@
                     <tbody>
                         <tr>
                             <td><span class="scene-number">1</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Arrival</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Interior</span>
                             </td>
@@ -878,7 +433,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">2</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">The Hum</span></td>
                             <td>
                                 <span class="location-tag">Town - Street</span>
                             </td>
@@ -897,7 +452,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">3</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Parking Ticket</span></td>
                             <td>
                                 <span class="location-tag">Street - Car</span>
                             </td>
@@ -916,7 +471,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">4</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Fellowship</span></td>
                             <td>
                                 <span class="location-tag">CPC Church - Fellowship Hall</span>
                             </td>
@@ -935,7 +490,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">5</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Marsh Walk</span></td>
                             <td>
                                 <span class="location-tag">Marsh - Walking Path</span>
                             </td>
@@ -955,7 +510,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">6</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">News Vans</span></td>
                             <td>
                                 <span class="location-tag">Branford - Marsh Lands</span>
                             </td>
@@ -976,7 +531,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">7</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Trash Cans</span></td>
                             <td>
                                 <span class="location-tag">Dominic's House - Exterior</span>
                             </td>
@@ -994,7 +549,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">8</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">The Coordinates</span></td>
                             <td>
                                 <span class="location-tag">Dominic's House - Interior</span>
                             </td>
@@ -1016,7 +571,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">9</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Janice Arrival</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Interior</span>
                             </td>
@@ -1039,7 +594,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">10</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Equipment Intro</span></td>
                             <td>
                                 <span class="location-tag">Coastal Trail - Near Tall Grass</span>
                             </td>
@@ -1061,7 +616,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">11</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Howie Walk</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Interior</span>
                             </td>
@@ -1084,7 +639,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">12</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">The First Hum</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Exterior</span>
                             </td>
@@ -1106,7 +661,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">13</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Shadows in Wind</span></td>
                             <td>
                                 <span class="location-tag">Coastal Trail - Creek</span>
                             </td>
@@ -1128,7 +683,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">14</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">The Burn Mark</span></td>
                             <td>
                                 <span class="location-tag">Tall Grass - Tree Hollow</span>
                             </td>
@@ -1149,7 +704,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">15</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Costco Run</span></td>
                             <td>
                                 <span class="location-tag">Tall Grass - Hollow</span>
                             </td>
@@ -1177,7 +732,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">16</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Entering Grass</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Kitchen</span>
                             </td>
@@ -1200,7 +755,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">17</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">The Hollow</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Kitchen</span>
                             </td>
@@ -1224,7 +779,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">18</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Creature Rescue</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Kitchen</span>
                             </td>
@@ -1245,7 +800,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">19</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">The Escape</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Living Room</span>
                             </td>
@@ -1267,7 +822,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">20</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Makeshift Hospital</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Living Room/Kitchen</span>
                             </td>
@@ -1291,7 +846,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">21</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Life Group Arrives</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Living Room</span>
                             </td>
@@ -1314,7 +869,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">22</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Basement Huddle</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Living Room</span>
                             </td>
@@ -1334,7 +889,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">23</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">The Hymn</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Basement</span>
                             </td>
@@ -1359,7 +914,7 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">24</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Red Eyes</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Interior</span>
                             </td>
@@ -1380,13 +935,13 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">25</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Creature Missing</span></td>
                             <td>
                                 <span class="location-tag">Dallas' House - Exterior</span>
                             </td>
                             <td><span class="time-of-day">Morning</span></td>
                             <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
                             <td class="shoot-days-col"><span class="shoot-days">1</span></td>
                             <td class="key-elements">
                                 <strong>Makayla drops off Howie.</strong> 
@@ -1406,13 +961,13 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">26</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Marsh Confrontation</span></td>
                             <td>
                                 <span class="location-tag">Tall Grass - Salt Marsh</span>
                             </td>
                             <td><span class="time-of-day">Day</span></td>
                             <td class="duration-col"><span class="duration">6 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
                             <td class="shoot-days-col"><span class="shoot-days">2.5</span></td>
                             <td class="key-elements">
                                 <strong>Dallas and Makayla walk trail with Howie.</strong> See same glow. Rush over. 
@@ -1431,13 +986,13 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">27</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">Predator Attack</span></td>
                             <td>
                                 <span class="location-tag">Tall Grass - Salt Marsh</span>
                             </td>
                             <td><span class="time-of-day">Day</span></td>
                             <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
                             <td class="shoot-days-col"><span class="shoot-days">1</span></td>
                             <td class="key-elements">
                                 <strong>Predators' eyes blink - causes great fear, creatures huddle.</strong> 
@@ -1453,13 +1008,13 @@
                         </tr>
                         <tr>
                             <td><span class="scene-number">28</span></td>
-                            <td class="scene-name-col"><span class="scene-name"></span></td>
+                            <td class="scene-name-col"><span class="scene-name">The Perimeter</span></td>
                             <td>
                                 <span class="location-tag">Tall Grass - Edge</span>
                             </td>
                             <td><span class="time-of-day">Day</span></td>
                             <td class="duration-col"><span class="duration">5 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
                             <td class="shoot-days-col"><span class="shoot-days">2.5</span></td>
                             <td class="key-elements">
                                 <strong>Dallas runs, stops.</strong> Realizes creature has stopped pulsing, now motionless. 
