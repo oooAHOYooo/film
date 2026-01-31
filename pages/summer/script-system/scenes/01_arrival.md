@@ -2,7 +2,7 @@ INT. DALLAS' NEW HOUSE - DAY
 
 Dallas finishes unpacking boxes. The room is sparse, filled with moving boxes and a few pieces of furniture.
 
-He hears a noise from outside. Curious, he opens a box marked "EQUIPMENT."
+He hears a noise from outside. Dallas pauses and peers outside. Curious, he opens a box marked "EQUIPMENT."
 
 Dallas pulls out a heavy, military-grade receiver. It's covered in dust. He peels back a piece of duct tape to reveal a photo sticker.
 
@@ -17,9 +17,7 @@ As he does this, he hears a HUM.
 Dallas records readings, but the battery dies.
 
 DALLAS
-
 (to himself)
-
 Damn.
 
 He sets the receiver down and heads for the door.

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Storyboard - Creatures in the Tall Grass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="storyboard.css?v=20260131-1">
+  </head>
+  <body>
+    <div class="storyboard-layout">
+      <aside class="film-rail">
+        <h2>Films</h2>
+        <div class="film-list">
+          <div class="film-item active">Creatures in the Tall Grass</div>
+        </div>
+      </aside>
+
+      <main class="storyboard-main">
+        <div class="storyboard-sticky-bar">
+          <div class="nav">
+            <div class="nav-left">
+              <span class="nav-title">Storyboard Reader</span>
+              <a class="nav-link" href="/index.html">Home</a>
+              <a class="nav-link" href="/pages/summer.html">Summer</a>
+              <a class="nav-link" href="/pages/summer/storyboard-system/full_storyboard.md">Markdown</a>
+            </div>
+          </div>
+          <div class="storyboard-meta-bar">
+            <div class="scene-status" id="sceneStatus">Scene 1 of 1</div>
+            <div class="scene-subtext" id="sceneSubtext">Loading scenes...</div>
+            <div class="scene-nav">
+              <label for="sceneSelect">Jump to scene</label>
+              <select id="sceneSelect" class="scene-select">
+                <option value="">-</option>
+              </select>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <header class="storyboard-header">
+          <h1>Creatures in the Tall Grass - Storyboard</h1>
+          <p>Anamorphic 2.39:1 frames with editable captions and shot details.</p>
+        </header>
+
+        <div class="storyboard-content" id="storyboardContent">
+          Loading storyboard...
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const META_ORDER = ['Action', 'Camera', 'Movement', 'Lens', 'Lighting', 'Sound', 'Notes'];
+
+      function parseStoryboard(markdown) {
+        const scenes = [];
+        const sceneRegex = /^## Scene\s+(\d+):\s+(.+)$/gm;
+        const matches = Array.from(markdown.matchAll(sceneRegex));
+
+        matches.forEach((match, index) => {
+          const number = parseInt(match[1], 10);
+          const title = match[2].trim();
+          const start = match.index + match[0].length;
+          const end = (index + 1 < matches.length) ? matches[index + 1].index : markdown.length;
+          const block = markdown.slice(start, end).trim();
+
+          const scene = {
+            number,
+            title,
+            meta: {},
+            shots: []
+          };
+
+          const firstShotIdx = block.search(/^### Shot/m);
+          const metaBlock = firstShotIdx === -1 ? block : block.slice(0, firstShotIdx);
+          metaBlock.split('\n').forEach((line) => {
+            const matchLine = line.match(/^-+\s*([A-Za-z ]+):\s*(.+)$/);
+            if (!matchLine) return;
+            const key = matchLine[1].trim();
+            scene.meta[key] = matchLine[2].trim();
+          });
+
+          const shotRegex = /^### Shot\s+(\d+)\s*-\s*(.+)$/gm;
+          const shotMatches = Array.from(block.matchAll(shotRegex));
+
+          shotMatches.forEach((shotMatch, shotIndex) => {
+            const shotStart = shotMatch.index + shotMatch[0].length;
+            const shotEnd = (shotIndex + 1 < shotMatches.length) ? shotMatches[shotIndex + 1].index : block.length;
+            const shotBlock = block.slice(shotStart, shotEnd);
+            const headingParts = shotMatch[2].split(' - ').map((part) => part.trim()).filter(Boolean);
+            const size = headingParts[0] || '';
+            const shotTitle = headingParts.slice(1).join(' - ');
+            const details = [];
+
+            shotBlock.split('\n').forEach((line) => {
+              const detailMatch = line.match(/^-+\s*([A-Za-z ]+):\s*(.+)$/);
+              if (!detailMatch) return;
+              details.push({
+                key: detailMatch[1].trim(),
+                value: detailMatch[2].trim()
+              });
+            });
+
+            const detailMap = details.reduce((acc, item) => {
+              acc[item.key.toLowerCase()] = item.value;
+              return acc;
+            }, {});
+
+            scene.shots.push({
+              number: parseInt(shotMatch[1], 10),
+              size,
+              title: shotTitle,
+              caption: detailMap.caption || detailMap.action || '',
+              details
+            });
+          });
+
+          scenes.push(scene);
+        });
+
+        return scenes;
+      }
+
+      function renderStoryboard(scenes) {
+        const container = document.getElementById('storyboardContent');
+        container.innerHTML = '';
+
+        scenes.forEach((scene) => {
+          const section = document.createElement('section');
+          section.className = 'storyboard-scene';
+          section.id = `scene-${scene.number}`;
+
+          const heading = document.createElement('h2');
+          heading.textContent = `Scene ${scene.number}: ${scene.title}`;
+          section.appendChild(heading);
+
+          const meta = document.createElement('div');
+          meta.className = 'scene-meta';
+          if (scene.meta.Setting) {
+            const span = document.createElement('span');
+            span.className = 'scene-setting';
+            span.textContent = scene.meta.Setting;
+            meta.appendChild(span);
+          }
+          if (scene.meta.Beat) {
+            const span = document.createElement('span');
+            span.textContent = scene.meta.Beat;
+            meta.appendChild(span);
+          }
+          section.appendChild(meta);
+
+          const shotList = document.createElement('div');
+          shotList.className = 'shot-list';
+
+          const SHOTS_PER_PAGE = 6;
+          let pageEl = null;
+
+          scene.shots.forEach((shot, index) => {
+            if (index % SHOTS_PER_PAGE === 0) {
+              pageEl = document.createElement('div');
+              pageEl.className = 'shot-page';
+              shotList.appendChild(pageEl);
+            }
+
+            const card = document.createElement('div');
+            card.className = 'shot-card';
+
+            const header = document.createElement('div');
+            header.className = 'shot-header';
+            const title = document.createElement('div');
+            title.className = 'shot-title';
+            title.textContent = `Shot ${shot.number}${shot.title ? `: ${shot.title}` : ''}`;
+            const badge = document.createElement('div');
+            badge.className = 'shot-badge';
+            badge.textContent = shot.size || 'SHOT';
+            header.appendChild(title);
+            header.appendChild(badge);
+            card.appendChild(header);
+
+            const frame = document.createElement('div');
+            frame.className = 'shot-frame';
+            const frameLabel = document.createElement('div');
+            frameLabel.className = 'frame-label';
+            frameLabel.textContent = shot.size || 'FRAME';
+            const frameMode = document.createElement('div');
+            frameMode.className = 'frame-mode';
+            frameMode.textContent = '2.39:1';
+            frame.appendChild(frameLabel);
+            frame.appendChild(frameMode);
+            card.appendChild(frame);
+
+            const caption = document.createElement('div');
+            caption.className = 'shot-caption';
+            caption.textContent = shot.caption || 'Caption to be added.';
+            card.appendChild(caption);
+
+            const metaWrap = document.createElement('div');
+            metaWrap.className = 'shot-meta';
+            META_ORDER.forEach((key) => {
+              const found = shot.details.find((detail) => detail.key.toLowerCase() === key.toLowerCase());
+              if (!found) return;
+              const span = document.createElement('span');
+              span.textContent = `${found.key}: ${found.value}`;
+              metaWrap.appendChild(span);
+            });
+            shot.details.forEach((detail) => {
+              if (META_ORDER.some((key) => key.toLowerCase() === detail.key.toLowerCase())) return;
+              if (detail.key.toLowerCase() === 'caption') return;
+              const span = document.createElement('span');
+              span.textContent = `${detail.key}: ${detail.value}`;
+              metaWrap.appendChild(span);
+            });
+            card.appendChild(metaWrap);
+
+            pageEl.appendChild(card);
+          });
+
+          section.appendChild(shotList);
+          container.appendChild(section);
+        });
+      }
+
+      function initSceneNav(scenes) {
+        const select = document.getElementById('sceneSelect');
+        select.innerHTML = '<option value="">-</option>';
+        scenes.forEach((scene) => {
+          const option = document.createElement('option');
+          option.value = `scene-${scene.number}`;
+          option.textContent = `${scene.number}. ${scene.title}`;
+          select.appendChild(option);
+        });
+
+        select.addEventListener('change', function() {
+          const target = document.getElementById(this.value);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+          this.value = '';
+        });
+      }
+
+      function initStatusBar(scenes) {
+        const statusEl = document.getElementById('sceneStatus');
+        const subtextEl = document.getElementById('sceneSubtext');
+        const progressFill = document.getElementById('progressFill');
+        const sceneEls = scenes.map((scene) => document.getElementById(`scene-${scene.number}`));
+
+        function updateStatus() {
+          const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+          const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const progress = scrollHeight > 0 ? Math.min(1, Math.max(0, scrollTop / scrollHeight)) : 0;
+          progressFill.style.width = `${progress * 100}%`;
+
+          let currentIndex = 0;
+          sceneEls.forEach((el, index) => {
+            if (!el) return;
+            const top = el.getBoundingClientRect().top;
+            if (top <= 180) currentIndex = index;
+          });
+
+          const currentScene = scenes[currentIndex];
+          if (currentScene) {
+            statusEl.textContent = `Scene ${currentScene.number} of ${scenes.length}`;
+            subtextEl.textContent = currentScene.title;
+          }
+        }
+
+        updateStatus();
+        window.addEventListener('scroll', updateStatus, { passive: true });
+        window.addEventListener('resize', updateStatus);
+      }
+
+      async function initStoryboard() {
+        try {
+          const response = await fetch('full_storyboard.md');
+          const markdown = await response.text();
+          const scenes = parseStoryboard(markdown);
+          renderStoryboard(scenes);
+          initSceneNav(scenes);
+          initStatusBar(scenes);
+        } catch (error) {
+          const container = document.getElementById('storyboardContent');
+          container.textContent = 'Unable to load storyboard markdown.';
+          console.error(error);
+        }
+      }
+
+      initStoryboard();
+    </script>
+  </body>
+</html>

@@ -129,7 +129,19 @@ function generateHTMLPage(markdown, chapters) {
         <div class="novel-title">${NOVEL_NAME} — Full Novel</div>
         <div class="novel-meta">Compiled on ${new Date().toLocaleString()}</div>
       </div>
-      <div class="novel-content" id="novelContent"></div>
+      <div class="penguin-running-header no-print" aria-label="Running header">
+        <span class="penguin-book-title">${NOVEL_NAME}</span>
+        <span class="penguin-chapter-title" id="currentChapterTitle"></span>
+      </div>
+      <div class="novel-content-viewport no-print" id="contentViewport" aria-label="Page view">
+        <div class="novel-content-scroll" id="contentScroll">
+          <div class="novel-content-pages" id="contentPages"></div>
+          <div class="novel-content-inner">
+            <div class="novel-content" id="novelContent"></div>
+          </div>
+        </div>
+      </div>
+      <div class="penguin-folio no-print" id="pageFolio" aria-label="Page number">Page 1 of 1</div>
     </div>
   </div>
 
@@ -139,23 +151,81 @@ function generateHTMLPage(markdown, chapters) {
     marked.setOptions({ breaks: true });
     container.innerHTML = marked.parse(markdown);
 
+    (function initPenguinPages() {
+      var viewport = document.getElementById('contentViewport');
+      var scrollEl = document.getElementById('contentScroll');
+      var pagesEl = document.getElementById('contentPages');
+      var inner = scrollEl && scrollEl.querySelector('.novel-content-inner');
+      var content = document.getElementById('novelContent');
+      var folioEl = document.getElementById('pageFolio');
+      if (!viewport || !scrollEl || !pagesEl || !inner || !content) return;
+      var style = window.getComputedStyle(document.body);
+      var fs = parseFloat(style.fontSize) || 14;
+      var lh = parseFloat(style.lineHeight) || 1.25;
+      if (isNaN(lh)) lh = 1.25;
+      var pageHeightPx = Math.round(35 * fs * lh);
+      var contentHeight = content.scrollHeight;
+      var totalPages = Math.max(1, Math.ceil(contentHeight / pageHeightPx));
+      pagesEl.innerHTML = '';
+      for (var i = 0; i < totalPages; i++) {
+        var div = document.createElement('div');
+        div.className = 'penguin-page-snap';
+        div.style.height = pageHeightPx + 'px';
+        pagesEl.appendChild(div);
+      }
+      scrollEl.style.minHeight = (totalPages * pageHeightPx) + 'px';
+      inner.style.height = contentHeight + 'px';
+      if (folioEl) {
+        folioEl.textContent = 'Page 1 of ' + totalPages;
+        function updateFolio() {
+          var st = viewport.scrollTop;
+          var cur = Math.min(totalPages, Math.max(1, Math.floor(st / pageHeightPx) + 1));
+          folioEl.textContent = 'Page ' + cur + ' of ' + totalPages;
+        }
+        viewport.addEventListener('scroll', function() { requestAnimationFrame(updateFolio); });
+        window.addEventListener('resize', updateFolio);
+      }
+    })();
+
     (function initChapterNav() {
-      const content = document.getElementById('novelContent');
-      const selectEl = document.getElementById('novelChapterSelect');
-      if (!content || !selectEl) return;
-      const chapterHeadings = content.querySelectorAll('h3');
-      const chapterHeadingRe = /^Chapter \\d+:/i;
-      chapterHeadings.forEach((h3, i) => {
-        const text = (h3.textContent || '').trim();
+      var content = document.getElementById('novelContent');
+      var selectEl = document.getElementById('novelChapterSelect');
+      var viewport = document.getElementById('contentViewport');
+      if (!content || !selectEl || !viewport) return;
+      var chapterHeadings = content.querySelectorAll('h3');
+      var chapterHeadingRe = /^Chapter \\d+:/i;
+      chapterHeadings.forEach(function(h3, i) {
+        var text = (h3.textContent || '').trim();
         if (chapterHeadingRe.test(text)) h3.id = 'chapter-' + (i + 1);
       });
       selectEl.addEventListener('change', function() {
-        const value = this.value;
+        var value = this.value;
         if (!value) return;
-        const el = document.getElementById(value);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        var el = document.getElementById(value);
+        if (el) viewport.scrollTo({ top: el.offsetTop, behavior: 'smooth' });
         this.value = '';
       });
+    })();
+
+    (function initRunningHeader() {
+      var content = document.getElementById('novelContent');
+      var titleEl = document.getElementById('currentChapterTitle');
+      var viewport = document.getElementById('contentViewport');
+      if (!content || !titleEl || !viewport) return;
+      var chapterHeadings = content.querySelectorAll('h3');
+      var chapterHeadingRe = /^Chapter \\d+:/i;
+      function setChapter(title) { titleEl.textContent = title || ''; }
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (!entry.isIntersecting) return;
+          var text = (entry.target.textContent || '').trim();
+          if (chapterHeadingRe.test(text)) setChapter(text);
+        });
+      }, { root: viewport, rootMargin: '-10% 0px -70% 0px', threshold: 0 });
+      chapterHeadings.forEach(function(h) {
+        if (chapterHeadingRe.test((h.textContent || '').trim())) observer.observe(h);
+      });
+      if (chapterHeadings.length) setChapter((chapterHeadings[0].textContent || '').trim());
     })();
   </script>
 </body>

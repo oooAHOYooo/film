@@ -4,12 +4,27 @@ Dallas and Dominic arrive at CPC and find themselves in a circle with other chur
 
 It's the last fellowship hall lunch of the summer. Late summer light filters through the trees.
 
-DOMINIC
+Janice, Mid 50s, puts her hand on Dominic's shoulder.
 
+DOMINIC
+Sister.
+
+JANICE
+Brother.
+
+DOMINIC
+This is Dallas
+
+JANICE
+Pleasure to meet you Dallas, what are you doing hanging out with my brother. 
+
+DALLAS
+Just had to go into town to get batteries. 
+
+DOMINIC
 This is Sally's famous casserole. You gotta try it.
 
 DALLAS
-
 Thanks.
 
 Dallas takes a plate but doesn't eat much. He's distracted, listening.

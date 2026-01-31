@@ -1,15 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@300;400;700&display=swap');
+/* Penguin B-Format inspired novel reader — Tschichold composition rules */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap');
 
 :root {
+  /* Penguin B-Format: 129mm × 198mm trim */
+  --penguin-width: 129mm;
+  --penguin-height: 198mm;
+  /* Margins — Tschichold: gutter wider for binding */
+  --penguin-margin-inside: 19mm;
+  --penguin-margin-outside: 13.5mm;
+  --penguin-margin-top: 15mm;
+  --penguin-margin-bottom: 18mm;
+  /* Typography: 10–10.5pt body, 12–13pt leading */
+  --penguin-body-size: 10.5pt;
+  --penguin-line-height: 1.25;
+  --penguin-indent: 1.5em;
+  --penguin-lines-per-page: 35;
+  /* Theme (unchanged) */
   --page-bg: #f7f6f3;
   --card-bg: #ffffff;
   --text: #2d2b28;
   --muted: #7a7875;
   --border: #e4e1dc;
   --accent: #4c6a78;
-  --reading-font: Merriweather, "Times New Roman", serif;
+  --reading-font: "EB Garamond", Garamond, "Times New Roman", serif;
   --ui-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --container-max: 80ch;
+  --container-max: var(--penguin-width);
   --container-pad-y: 2.5rem;
   --container-pad-x: 1.5rem;
 }
@@ -22,10 +38,11 @@
 
 body {
   font-family: var(--reading-font);
-  font-size: 17px;
-  line-height: 1.85;
+  font-size: var(--penguin-body-size);
+  line-height: var(--penguin-line-height);
   background-color: var(--page-bg);
   color: var(--text);
+  word-spacing: -0.02em; /* tight word spacing, avoid rivers */
 }
 
 .novel-container {
@@ -107,19 +124,49 @@ body {
   background: var(--card-bg);
 }
 
+/* ——— Penguin reader: page block with margins ——— */
 .novel-reader {
   margin-top: 2.5rem;
-  padding: var(--container-pad-y) var(--container-pad-x);
+  padding: var(--penguin-margin-top) var(--penguin-margin-outside) var(--penguin-margin-bottom) var(--penguin-margin-inside);
+  max-width: var(--penguin-width);
+  margin-left: auto;
+  margin-right: auto;
   background: var(--card-bg);
   border-radius: 14px;
   border: 1px solid var(--border);
+  position: relative;
+}
+
+/* Running header — book title (left) / chapter title (right), small caps */
+.penguin-running-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--reading-font);
+  font-size: 9pt;
+  letter-spacing: 0.06em;
+  font-variant-caps: small-caps;
+  color: var(--muted);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.penguin-book-title {
+  flex: 1;
+  text-align: left;
+}
+
+.penguin-chapter-title {
+  flex: 1;
+  text-align: right;
 }
 
 .novel-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .novel-title {
@@ -136,42 +183,183 @@ body {
   font-family: var(--ui-font);
 }
 
+/* Chapter openings: start ~1/3 down the page */
 .novel-content h2 {
-  font-family: var(--ui-font);
+  font-family: var(--reading-font);
   font-weight: 600;
-  margin: 2.2rem 0 1rem;
-  color: #1c1a18;
+  font-size: 1.1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  page-break-before: always;
+}
+
+.novel-content h2:first-of-type {
+  margin-top: 1rem;
+  page-break-before: avoid;
 }
 
 .novel-content h3 {
-  font-family: var(--ui-font);
+  font-family: var(--reading-font);
   font-weight: 600;
-  margin: 2rem 0 0.75rem;
-  color: #1c1a18;
+  font-size: 1rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+  page-break-after: avoid;
 }
 
+/* ——— Penguin paginated viewport ——— */
+.novel-content-viewport {
+  height: calc(var(--penguin-lines-per-page) * 1em * var(--penguin-line-height));
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.novel-content-scroll { position: relative; }
+.penguin-page-snap { scroll-snap-align: start; scroll-snap-stop: normal; pointer-events: none; }
+.novel-content-inner { position: absolute; top: 0; left: 0; right: 0; pointer-events: auto; }
+.penguin-folio.no-print {
+  display: block;
+  font-family: var(--reading-font);
+  font-size: 9pt;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-align: center;
+  padding: 0.5rem 0 0;
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+/* First paragraph after chapter: no indent. Rest: 5mm / 1.5em indent */
 .novel-content p {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0;
+  text-indent: var(--penguin-indent);
+  orphans: 2;
+  widows: 2;
 }
 
+.novel-content h2 + p,
+.novel-content h3 + p,
+.novel-content h2 + ul + p,
+.novel-content h3 + ul + p,
+.novel-content h2 + em + p,
+.novel-content h3 + em + p {
+  text-indent: 0;
+}
+
+/* Block-level siblings after h2/h3: first paragraph no indent handled above */
 .novel-content em {
   color: var(--muted);
   font-family: var(--ui-font);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.penguin-folio {
+  display: none;
+  font-family: var(--reading-font);
+  font-size: 9pt;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 1rem;
 }
 
 @media (max-width: 720px) {
-  body { font-size: 16px; }
-  .novel-reader { padding: 2rem 1.25rem; }
+  body { font-size: 10pt; }
+  .novel-reader {
+    padding: 1.5rem 1.25rem 2rem;
+  }
   .nav-text { display: none; }
   .nav-left { gap: 0.4rem; }
 }
 
+/* ——— Print: Penguin page layout ——— */
 @media print {
-  body { background: #fff; }
-  .novel-sticky-bar { display: none; }
+  @page {
+    size: 129mm 198mm;
+    margin: 15mm 18mm 22mm 18mm; /* top outside bottom inside (gutter); extra bottom for folio */
+    @bottom-center {
+      content: counter(page) " of " counter(pages);
+      font-family: var(--reading-font);
+      font-size: 9pt;
+      color: #666;
+    }
+  }
+
+  body {
+    background: #fff;
+    font-size: 10.5pt;
+    line-height: 1.25;
+  }
+
+  .novel-sticky-bar,
+  .no-print {
+    display: none !important;
+  }
+
   .novel-reader {
-    border: none;
+    max-width: none;
     padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  .novel-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .penguin-running-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3mm 18mm;
+    background: #fff;
+    z-index: 10;
+  }
+
+  .penguin-folio {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3mm;
+    background: #fff;
+    z-index: 10;
+  }
+
+  .novel-content-viewport {
+    display: block !important;
+    height: auto;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+  .novel-content-scroll { min-height: 0; }
+  .novel-content-inner { position: static; height: auto; }
+  .penguin-page-snap { display: none; }
+  .novel-content {
+    padding-top: 8mm;
+    padding-bottom: 8mm;
+  }
+
+  .novel-content h2 {
+    margin-top: 12mm; /* ~1/3 down: 198mm page, 15mm top margin → ~66mm to content */
+    padding-top: 8mm;
+  }
+
+  .novel-content h2:first-of-type {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .novel-content p {
+    margin-bottom: 0;
   }
 }
