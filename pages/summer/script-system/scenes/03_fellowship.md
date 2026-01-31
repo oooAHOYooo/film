@@ -1,8 +1,14 @@
-EXT. CHURCH FELLOWSHIP HALL - LATE AFTERNOON
+EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON
 
-Dallas and Dominic arrive at CPC and find themselves in a circle with other churchgoers outside, eating at the fellowship hall.
+Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends in light summerwear play spike ball, and people are on line getting food. Dallas looks around at all of the new faces but does not make eye contact. Dominic takes a deep breath, also appearing a little nervous. 
 
-It's the last fellowship hall lunch of the summer. Late summer light filters through the trees.
+Dominic carries a package of water and puts it under one of the fold up tables. 
+
+DOMINIC
+Alright buddy - let's wait on line I guess. 
+
+
+Dominic and Dallas wait on line to be served at fellowship lunch. 
 
 Janice, Mid 50s, puts her hand on Dominic's shoulder.
 
@@ -13,7 +19,27 @@ JANICE
 Brother.
 
 DOMINIC
-This is Dallas
+This is Dallas.
+
+DALLAS
+Hello.
+
+JANICE
+Hey Dallas. Dominic did you get the car?
+
+DOMINIC
+Yeah - and it had a ticket.
+
+JANICE
+Well - you can get it this time yeah? 
+
+DOMINIC
+Yep. 
+
+Janice leaves the line of food 
+
+JANICE
+Hey Patty - How's Pete?
 
 JANICE
 Pleasure to meet you Dallas, what are you doing hanging out with my brother. 
