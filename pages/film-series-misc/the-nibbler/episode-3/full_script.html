@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Script — The Nibbler Episode 3</title>
+  <link rel="stylesheet" href="../../_shared/script.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div class="gallery-container">
+    <div class="script-sticky-bar no-print" id="scriptStickyBar">
+      <div class="nav">
+        <div class="nav-left">
+          <a href="../index.html" id="navBack">← The Nibbler</a>
+          <a href="index.html">Gallery</a>
+          <a href="full_script.html">Full Script</a>
+        </div>
+        <button type="button" class="print-button" onclick="window.print()">Print</button>
+      </div>
+      <div class="script-stats-row">
+        <div class="script-status-bar" id="scriptStatusBar" aria-hidden="true">
+          <div class="script-status-scene-block">
+            <span class="script-status-scene" id="scriptStatusScene">—</span>
+            <span class="script-status-characters" id="scriptStatusCharacters">—</span>
+          </div>
+          <span class="script-status-divider">|</span>
+          <span class="script-status-production" id="scriptStatusProduction">—</span>
+        </div>
+        <div class="script-scene-nav">
+          <label for="scriptSceneSelect" class="script-scene-nav-label">Jump to scene</label>
+          <select id="scriptSceneSelect" class="script-scene-select" aria-label="Jump to scene">
+            <option value="">—</option>
+          </select>
+        </div>
+      </div>
+      <div class="script-progress" id="scriptProgress" aria-hidden="true">
+        <div class="script-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          <div class="script-progress-fill" id="scriptProgressFill"></div>
+        </div>
+        <div class="script-progress-label" id="scriptProgressLabel">—</div>
+      </div>
+    </div>
+
+    <div class="screenplay-container">
+      <div class="full-script-header">
+        <div class="full-script-title" id="scriptTitle">The Nibbler — Episode 1 — Full Script</div>
+        <div class="full-script-meta" id="scriptMeta">Loading...</div>
+      </div>
+      <div class="screenplay-content" id="scriptContent"><p>Loading script...</p></div>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      var projectTitle = 'The Nibbler';
+      var episodeNum = 3;
+      var backLabel = 'The Nibbler';
+      var backLink = '../index.html';
+
+      document.getElementById('navBack').textContent = '← ' + backLabel;
+      document.getElementById('navBack').href = backLink;
+      document.getElementById('scriptTitle').textContent = projectTitle + ' — Episode ' + episodeNum + ' — Full Script';
+
+      var WORDS_PER_PAGE = 250;
+
+      function formatScreenplay(container) {
+        var content = container && container.querySelector('.screenplay-content');
+        if (!content) return;
+        normalizeParagraphBreaks(content);
+        var paragraphs = content.querySelectorAll('p');
+        var inDialogueBlock = false;
+        for (var i = 0; i < paragraphs.length; i++) {
+          var p = paragraphs[i];
+          var text = (p.textContent || '').trim();
+          var nextP = paragraphs[i + 1];
+          var prevP = paragraphs[i - 1];
+          if (!text) continue;
+          if (p.classList.length > 0 && !p.classList.contains('line-split')) continue;
+          if (/^(INT\.|EXT\.)/i.test(text)) { p.className = 'scene-heading'; p.textContent = text.toUpperCase(); inDialogueBlock = false; continue; }
+          if (/^(FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text)) { p.className = 'transition'; p.textContent = text.toUpperCase(); inDialogueBlock = false; continue; }
+          if (/^\(.+\)$/.test(text)) { p.className = 'parenthetical'; inDialogueBlock = true; continue; }
+          var isAllCaps = /^[A-Z][A-Z\s\.'-]+$/.test(text) && text === text.toUpperCase();
+          var isReasonableLength = text.length > 2 && text.length < 35;
+          var isNotSceneHeading = !/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(text);
+          if (isAllCaps && isReasonableLength && isNotSceneHeading) {
+            var nextText = nextP ? (nextP.textContent || '').trim() : '';
+            var looksLikeDialogue = nextText && (/^\(.+\)$/.test(nextText) || (!/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(nextText) && !/^[A-Z][A-Z\s\.'-]+$/.test(nextText)));
+            if (looksLikeDialogue || !prevP || prevP.classList.contains('action-line') || prevP.classList.contains('scene-heading')) {
+              p.className = 'character-name';
+              inDialogueBlock = true;
+              continue;
+            }
+          }
+          var looksLikeNewBlock = /^(INT\.|EXT\.|FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text);
+          var looksLikeCharacter = isAllCaps && isReasonableLength && isNotSceneHeading;
+          if (!looksLikeNewBlock && inDialogueBlock && prevP && (prevP.classList.contains('character-name') || prevP.classList.contains('parenthetical') || prevP.classList.contains('dialogue'))) {
+            p.className = 'dialogue';
+            inDialogueBlock = true;
+            continue;
+          }
+          if (looksLikeCharacter || looksLikeNewBlock) inDialogueBlock = false;
+          p.className = 'action-line';
+          inDialogueBlock = false;
+        }
+        var ps = content.querySelectorAll('p');
+        for (var j = 0; j < ps.length; j++) {
+          var p = ps[j];
+          if (!p.classList.contains('dialogue') && !p.classList.contains('parenthetical')) continue;
+          var next = ps[j + 1];
+          if (!next || (!next.classList.contains('dialogue') && !next.classList.contains('parenthetical'))) {
+            if (p.classList.contains('dialogue')) p.classList.add('dialogue-last');
+            if (p.classList.contains('parenthetical')) p.classList.add('parenthetical-last');
+          }
+        }
+      }
+
+      function normalizeParagraphBreaks(content) {
+        var paragraphs = Array.prototype.slice.call(content.querySelectorAll('p'));
+        paragraphs.forEach(function(p) {
+          if (!p.querySelector('br')) return;
+          var parts = p.innerHTML.split(/<br\s*\/?\s*>/i).map(function(s) { return s.replace(/&nbsp;/g, ' ').trim(); }).filter(Boolean);
+          if (parts.length <= 1) return;
+          var frag = document.createDocumentFragment();
+          parts.forEach(function(html) {
+            var np = document.createElement('p');
+            np.innerHTML = html;
+            frag.appendChild(np);
+          });
+          p.parentNode.replaceChild(frag, p);
+        });
+      }
+
+      function toRoman(num) {
+        var map = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];
+        var n = num, out = '';
+        for (var i = 0; i < map.length; i++) { while (n >= map[i][0]) { out += map[i][1]; n -= map[i][0]; } }
+        return out;
+      }
+
+      fetch('manifest.json')
+        .then(function(r) { return r.json(); })
+        .then(function(scenes) {
+          return Promise.all(scenes.map(function(s) {
+            return fetch('scenes/' + s.file).then(function(r) { return r.text(); }).then(function(md) { return { scene: s, md: md }; });
+          }));
+        })
+        .then(function(results) {
+          var lastAct = null;
+          var parts = [];
+          results.forEach(function(item, index) {
+            var s = item.scene;
+            var n = index + 1;
+            if (s.act !== lastAct && s.actTitle) {
+              parts.push('\n## ACT ' + toRoman(s.act) + ' — ' + s.actTitle + '\n\n---\n\n');
+              lastAct = s.act;
+            }
+            parts.push('\n### Scene ' + n + ': ' + s.title + '\n\n*' + (s.actTitle ? 'ACT ' + toRoman(s.act) + ' — ' + s.actTitle + ' | ' : '') + 'ID: ' + s.id + ' | File: ' + s.file + '*\n\n---\n\n');
+            parts.push(item.md.trim());
+            parts.push('\n\n');
+          });
+          var markdown = (projectTitle + ' — Episode ' + episodeNum + ' — Full Script\n\n---\n\n').concat(parts.join(''));
+          marked.setOptions({ breaks: true });
+          var container = document.querySelector('.screenplay-container');
+          document.getElementById('scriptContent').innerHTML = marked.parse(markdown);
+          document.getElementById('scriptMeta').textContent = 'Compiled ' + (new Date().toLocaleString()) + ' · ' + results.length + ' scenes';
+
+          formatScreenplay(container);
+
+          var selectEl = document.getElementById('scriptSceneSelect');
+          results.forEach(function(item, index) {
+            var opt = document.createElement('option');
+            opt.value = 'scene-' + (index + 1);
+            opt.textContent = (index + 1) + '. ' + item.scene.title;
+            selectEl.appendChild(opt);
+          });
+
+          var content = document.getElementById('scriptContent');
+          var h3s = content.querySelectorAll('h3');
+          var sceneRe = /^Scene \d+:/i;
+          for (var i = 0; i < h3s.length; i++) {
+            if (sceneRe.test((h3s[i].textContent || '').trim())) h3s[i].id = 'scene-' + (i + 1);
+          }
+
+          selectEl.addEventListener('change', function() {
+            var val = this.value;
+            if (!val) return;
+            var el = document.getElementById(val);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            this.value = '';
+          });
+
+          var wordCount = (markdown.match(/\S+/g) || []).length;
+          var estimatedPages = Math.max(1, Math.round(wordCount / WORDS_PER_PAGE));
+          var estimatedMinutes = estimatedPages;
+          var progressFill = document.getElementById('scriptProgressFill');
+          var progressLabel = document.getElementById('scriptProgressLabel');
+          var progressBar = document.querySelector('.script-progress-bar');
+          progressLabel.textContent = 'Minute 0 of ' + estimatedMinutes;
+
+          function updateProgress() {
+            var docEl = document.documentElement;
+            var scrollTop = docEl.scrollTop || document.body.scrollTop;
+            var scrollHeight = docEl.scrollHeight - docEl.clientHeight;
+            if (scrollHeight <= 0) return;
+            var pct = Math.min(1, Math.max(0, scrollTop / scrollHeight));
+            var currentMinute = Math.min(estimatedMinutes, Math.floor(pct * estimatedMinutes));
+            progressFill.style.width = (pct * 100) + '%';
+            progressLabel.textContent = 'Minute ' + currentMinute + ' of ' + estimatedMinutes;
+            if (progressBar) progressBar.setAttribute('aria-valuenow', Math.round(pct * 100));
+          }
+          updateProgress();
+          window.addEventListener('scroll', updateProgress, { passive: true });
+          window.addEventListener('resize', updateProgress);
+
+          function getSceneHeadingsInOrder() {
+            var h3s = content.querySelectorAll('h3[id^="scene-"]');
+            return Array.prototype.slice.call(h3s).sort(function(a, b) {
+              return parseInt(a.id.replace('scene-', ''), 10) - parseInt(b.id.replace('scene-', ''), 10);
+            });
+          }
+          function getSceneBlock(sceneH3, nextSceneH3) {
+            var chars = {};
+            var firstSlug = '';
+            var node = sceneH3.nextSibling;
+            while (node) {
+              if (node === nextSceneH3) break;
+              if (node.nodeType === 1 && node.classList) {
+                if (node.classList.contains('character-name')) {
+                  var name = (node.textContent || '').trim();
+                  if (name) chars[name] = true;
+                }
+                if (!firstSlug && node.classList.contains('scene-heading')) firstSlug = (node.textContent || '').trim();
+              }
+              node = node.nextSibling;
+            }
+            return { characters: Object.keys(chars), production: firstSlug };
+          }
+          function updateStatusBar() {
+            var sceneHeadings = getSceneHeadingsInOrder();
+            if (!sceneHeadings.length) return;
+            var viewportThreshold = 160;
+            var current = sceneHeadings[0];
+            for (var i = 0; i < sceneHeadings.length; i++) {
+              if (sceneHeadings[i].getBoundingClientRect().top <= viewportThreshold) current = sceneHeadings[i];
+            }
+            var title = (current.textContent || '').trim();
+            var nextNum = parseInt(current.id.replace('scene-', ''), 10) + 1;
+            var nextScene = document.getElementById('scene-' + nextNum);
+            var block = getSceneBlock(current, nextScene || null);
+            document.getElementById('scriptStatusScene').textContent = title || '—';
+            document.getElementById('scriptStatusCharacters').textContent = block.characters.length ? block.characters.join(', ') : '—';
+            document.getElementById('scriptStatusProduction').textContent = block.production || '—';
+          }
+          updateStatusBar();
+          window.addEventListener('scroll', updateStatusBar, { passive: true });
+          window.addEventListener('resize', updateStatusBar);
+        })
+        .catch(function(err) {
+          console.error(err);
+          document.getElementById('scriptContent').innerHTML = '<p>Error loading script: ' + err.message + '. <a href="index.html">Return to gallery</a></p>';
+          document.getElementById('scriptMeta').textContent = 'Error';
+        });
+    })();
+  </script>
+</body>
+</html>

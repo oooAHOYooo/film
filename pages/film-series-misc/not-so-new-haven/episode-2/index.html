@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not So New Haven — Episode 2 · Scene Gallery</title>
+    <link rel="stylesheet" href="../../_shared/script.css">
+  </head>
+  <body>
+    <div class="gallery-container">
+      <div class="gallery-header">
+        <h1>Not So New Haven — Episode 2</h1>
+        <p>Scene Gallery — organized by Act</p>
+      </div>
+
+      <div class="nav no-print">
+        <div class="nav-left">
+          <a href="../index.html">← Not So New Haven</a>
+          <a href="index.html">Gallery</a>
+          <a href="full_script.html">Full Script</a>
+        </div>
+      </div>
+
+      <div id="sceneList" class="act-list">
+        <li>Loading scenes...</li>
+      </div>
+    </div>
+
+    <script>
+    function toRoman(num) {
+      const map = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];
+      let n = num, out = '';
+      for (const [v, s] of map) { while (n >= v) { out += s; n -= v; } }
+      return out;
+    }
+    async function loadScenes() {
+      try {
+        const response = await fetch('manifest.json');
+        const scenes = await response.json();
+        const sceneList = document.getElementById('sceneList');
+        sceneList.innerHTML = '';
+        const acts = new Map();
+        scenes.forEach((scene, index) => {
+          const sceneNumber = index + 1;
+          const act = scene.act || 0;
+          const actTitle = scene.actTitle || 'Unsorted';
+          if (!acts.has(act)) acts.set(act, { actTitle, scenes: [] });
+          acts.get(act).scenes.push({ ...scene, sceneNumber });
+        });
+        const actNumbers = Array.from(acts.keys()).sort((a, b) => a - b);
+        actNumbers.forEach((actNumber) => {
+          const { actTitle, scenes: actScenes } = acts.get(actNumber);
+          const actBlock = document.createElement('section');
+          actBlock.className = 'act-block';
+          const header = document.createElement('div');
+          header.className = 'act-header';
+          const actLabel = actNumber ? `ACT ${toRoman(actNumber)}` : 'UNSORTED';
+          header.innerHTML = `<div class="act-heading">${actLabel} — ${actTitle}</div><div class="act-meta">${actScenes.length} scenes</div>`;
+          actBlock.appendChild(header);
+          const ul = document.createElement('ul');
+          ul.className = 'scene-list scene-list--compact';
+          actScenes.forEach((scene) => {
+            const li = document.createElement('li');
+            li.className = 'scene-item scene-item--compact';
+            const num = String(scene.sceneNumber).padStart(2, '0');
+            li.innerHTML = `<a class="scene-link" href="scene.html?id=${scene.id}"><span class="scene-number">${num}</span><span class="scene-title">${scene.title}</span><span class="scene-file">${scene.file}</span></a>`;
+            ul.appendChild(li);
+          });
+          actBlock.appendChild(ul);
+          sceneList.appendChild(actBlock);
+        });
+      } catch (error) {
+        console.error('Error loading scenes:', error);
+        document.getElementById('sceneList').innerHTML = '<div>Error loading scenes. Make sure manifest.json exists.</div>';
+      }
+    }
+    loadScenes();
+    </script>
+  </body>
+</html>

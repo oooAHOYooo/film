@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene — Not So New Haven Episode 2</title>
+    <link rel="stylesheet" href="../../_shared/script.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div class="gallery-container">
+      <div class="nav no-print">
+        <div class="nav-left">
+          <a href="../index.html">← Not So New Haven</a>
+          <a href="index.html">← Back to Gallery</a>
+          <a href="full_script.html">Full Script</a>
+        </div>
+        <button type="button" class="print-button" onclick="window.print()">Print</button>
+      </div>
+
+      <div class="screenplay-container" id="sceneContent">
+        <p>Loading scene...</p>
+      </div>
+    </div>
+
+    <script>
+    function toRoman(num) {
+      const map = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];
+      let n = num, out = '';
+      for (const [v, s] of map) { while (n >= v) { out += s; n -= v; } }
+      return out;
+    }
+    const urlParams = new URLSearchParams(window.location.search);
+    const sceneId = urlParams.get('id');
+    if (!sceneId) {
+      document.getElementById('sceneContent').innerHTML = '<p>No scene ID provided. <a href="index.html">Return to gallery</a></p>';
+    } else {
+      async function loadScene() {
+        try {
+          const manifestResponse = await fetch('manifest.json');
+          const scenes = await manifestResponse.json();
+          const sceneIndex = scenes.findIndex(s => s.id === sceneId);
+          const scene = scenes[sceneIndex];
+          if (!scene) {
+            document.getElementById('sceneContent').innerHTML = '<p>Scene "' + sceneId + '" not found. <a href="index.html">Return to gallery</a></p>';
+            return;
+          }
+          const sceneNumber = sceneIndex + 1;
+          const actLabel = scene.act ? 'ACT ' + toRoman(scene.act) + ' — ' + (scene.actTitle || '').trim() : '';
+          const sceneResponse = await fetch('scenes/' + scene.file);
+          const markdown = await sceneResponse.text();
+          marked.setOptions({ breaks: true });
+          const html = marked.parse(markdown);
+          const container = document.getElementById('sceneContent');
+          container.innerHTML = '<div class="full-script-header"><div class="full-script-title">Scene ' + sceneNumber + ': ' + scene.title + '</div><div class="full-script-meta">' + (actLabel ? actLabel + ' | ' : '') + 'Scene ID: ' + scene.id + ' | File: ' + scene.file + '</div></div><div class="screenplay-content">' + html + '</div>';
+          formatScreenplay(container);
+          document.title = scene.title + ' — Not So New Haven Episode 2';
+        } catch (error) {
+          console.error('Error loading scene:', error);
+          document.getElementById('sceneContent').innerHTML = '<p>Error loading scene: ' + error.message + '. <a href="index.html">Return to gallery</a></p>';
+        }
+      }
+      loadScene();
+    }
+    function formatScreenplay(container) {
+      const content = container.querySelector('.screenplay-content');
+      if (!content) return;
+      normalizeParagraphBreaks(content);
+      const paragraphs = content.querySelectorAll('p');
+      let inDialogueBlock = false;
+      paragraphs.forEach((p, index) => {
+        const text = p.textContent.trim();
+        const nextP = paragraphs[index + 1];
+        const prevP = paragraphs[index - 1];
+        if (!text) return;
+        if (p.classList.length > 0 && !p.classList.contains('line-split')) return;
+        if (/^(INT\.|EXT\.)/i.test(text)) { p.className = 'scene-heading'; p.textContent = text.toUpperCase(); inDialogueBlock = false; return; }
+        if (/^(FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text)) { p.className = 'transition'; p.textContent = text.toUpperCase(); inDialogueBlock = false; return; }
+        if (/^\(.+\)$/.test(text)) { p.className = 'parenthetical'; inDialogueBlock = true; return; }
+        const isAllCaps = /^[A-Z][A-Z\s\.'-]+$/.test(text) && text === text.toUpperCase();
+        const isReasonableLength = text.length > 2 && text.length < 35;
+        const isNotSceneHeading = !/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(text);
+        if (isAllCaps && isReasonableLength && isNotSceneHeading) {
+          const nextText = nextP ? nextP.textContent.trim() : '';
+          const looksLikeDialogue = nextText && (/^\(.+\)$/.test(nextText) || (!/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(nextText) && !/^[A-Z][A-Z\s\.'-]+$/.test(nextText)));
+          if (looksLikeDialogue || !prevP || prevP.classList.contains('action-line') || prevP.classList.contains('scene-heading')) {
+            p.className = 'character-name';
+            inDialogueBlock = true;
+            return;
+          }
+        }
+        const looksLikeNewBlock = /^(INT\.|EXT\.|FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text);
+        const looksLikeCharacter = isAllCaps && isReasonableLength && isNotSceneHeading;
+        if (!looksLikeNewBlock && inDialogueBlock && prevP && (prevP.classList.contains('character-name') || prevP.classList.contains('parenthetical') || prevP.classList.contains('dialogue'))) {
+          p.className = 'dialogue';
+          inDialogueBlock = true;
+          return;
+        }
+        if (looksLikeCharacter || looksLikeNewBlock) inDialogueBlock = false;
+        p.className = 'action-line';
+        inDialogueBlock = false;
+      });
+      const ps = content.querySelectorAll('p');
+      ps.forEach((p, i) => {
+        if (!p.classList.contains('dialogue') && !p.classList.contains('parenthetical')) return;
+        const next = ps[i + 1];
+        if (!next || (!next.classList.contains('dialogue') && !next.classList.contains('parenthetical'))) {
+          if (p.classList.contains('dialogue')) p.classList.add('dialogue-last');
+          if (p.classList.contains('parenthetical')) p.classList.add('parenthetical-last');
+        }
+      });
+    }
+    function normalizeParagraphBreaks(content) {
+      const paragraphs = Array.from(content.querySelectorAll('p'));
+      paragraphs.forEach((p) => {
+        if (!p.querySelector('br')) return;
+        const parts = p.innerHTML.split(/<br\s*\/?\s*>/i).map((s) => s.replace(/&nbsp;/g, ' ').trim()).filter(Boolean);
+        if (parts.length <= 1) return;
+        const frag = document.createDocumentFragment();
+        parts.forEach((html) => { const np = document.createElement('p'); np.innerHTML = html; frag.appendChild(np); });
+        p.replaceWith(frag);
+      });
+    }
+    </script>
+  </body>
+</html>

@@ -104,6 +104,12 @@ a:hover {
     border-radius: 2px;
 }
 
+.section-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: -8px 0 16px 0;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
