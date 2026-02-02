@@ -16,8 +16,4 @@ As he does this, he hears a HUM.
 
 Dallas records readings, but the battery dies.
 
-DALLAS
-(to himself)
-Damn.
-
 He sets the receiver down and heads for the door.

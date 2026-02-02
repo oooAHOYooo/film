@@ -317,6 +317,15 @@ function generateHTMLPage(markdown, scenes) {
       window.addEventListener('resize', updateStatusBar);
     })();
     
+    function looksLikeActionIntro(text) {
+      if (!text || text.length < 15) return false;
+      if (/^\(.+\)$/.test(text)) return false;
+      if (/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(text)) return false;
+      if (/^[A-Z][a-z]+,\s*(?:Mid\s*\d+s|\d+s|[A-Za-z\s]+),/.test(text) && /[a-z]/.test(text)) return true;
+      if (/^[A-Z][a-z]+,\s*(?:Mid\s*\d+s|\d+s)\s*[,.]/.test(text)) return true;
+      return false;
+    }
+
     function formatScreenplay(container) {
       const content = container.querySelector('.screenplay-content');
       if (!content) return;
@@ -350,11 +359,27 @@ function generateHTMLPage(markdown, scenes) {
           inDialogueBlock = false;
           return;
         }
+
+        // Action break: (action) on its own line — ends dialogue block, next line is action; line is hidden
+        if (/^\(action\)$/i.test(text)) {
+          p.className = 'action-break';
+          p.textContent = '';
+          inDialogueBlock = false;
+          return;
+        }
         
         // Parentheticals (text in parentheses, italic) - check before character names
         if (/^\(.+\)$/.test(text)) {
           p.className = 'parenthetical';
           inDialogueBlock = true;
+          return;
+        }
+
+        // Action lines that introduce a character or describe action (e.g. "Janice, Mid 50s, puts her hand...")
+        // Never treat these as dialogue so they don't get wrapped with the previous speaker
+        if (looksLikeActionIntro(text)) {
+          p.className = 'action-line';
+          inDialogueBlock = false;
           return;
         }
         
@@ -381,7 +406,7 @@ function generateHTMLPage(markdown, scenes) {
         // Dialogue (follows character name / parenthetical / dialogue)
         const looksLikeNewBlock = /^(INT\.|EXT\.|FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text);
         const looksLikeCharacter = isAllCaps && isReasonableLength && isNotSceneHeading;
-        if (!looksLikeNewBlock && inDialogueBlock && prevP && (prevP.classList.contains('character-name') || prevP.classList.contains('parenthetical') || prevP.classList.contains('dialogue'))) {
+        if (!looksLikeNewBlock && !looksLikeActionIntro(text) && inDialogueBlock && prevP && (prevP.classList.contains('character-name') || prevP.classList.contains('parenthetical') || prevP.classList.contains('dialogue'))) {
           p.className = 'dialogue';
           inDialogueBlock = true;
           return;

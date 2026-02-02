@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 1/31/2026, 12:19:23 PM*
+*Compiled on 2/2/2026, 12:06:28 PM*
 
 ---
 
@@ -33,10 +33,6 @@ Dallas presses the sticker on the side of his new receiver.
 As he does this, he hears a HUM.
 
 Dallas records readings, but the battery dies.
-
-DALLAS
-(to himself)
-Damn.
 
 He sets the receiver down and heads for the door.
 
@@ -122,7 +118,7 @@ Dominic carries a package of water and puts it under one of the fold up tables.
 DOMINIC
 Alright buddy - let's wait on line I guess. 
 
-
+(action)
 Dominic and Dallas wait on line to be served at fellowship lunch. 
 
 Janice, Mid 50s, puts her hand on Dominic's shoulder.
@@ -168,38 +164,32 @@ This is Sally's famous casserole. You gotta try it.
 DALLAS
 Thanks.
 
+(action)
+
 Dallas takes a plate but doesn't eat much. He's distracted, listening.
 
 DOMINIC
-
 So, what are you here for?
 
 DALLAS
-
 Work.
 
 DOMINIC
-
 At Yale?
 
 DALLAS
-
 Quinnipiac. Starting next semester. Got a couple months to get settled.
 
 DOMINIC
-
 What kind of work?
 
 DALLAS
-
 Bioacoustics. I was hired to record the marsh—birds, insects, coyotes. I start next semester.
 
 DOMINIC
-
 Nice. So are you here alone?
 
 DALLAS
-
 Yep.
 
 DOMINIC
@@ -215,6 +205,8 @@ Want to walk back together? I'll show you around.
 DALLAS
 
 Sure.
+
+(action)
 
 They start walking towards the marsh, towards the New England coast.
 
@@ -235,34 +227,23 @@ EXT. TOWN CENTER - DAY
 Dallas and Dominic walk toward a small hardware store. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
 
 DOMINIC
-
 You have got to be kidding me!
 
+(action)
 He rips the ticket off, waving it at the empty street.
 
 DOMINIC (CONT'D)
-
 Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
 
-DALLAS
-
-Raccoon problem?
+(action)
+Dominic walks around and opens the door for Dallas but the lock is not quite working. 
 
 DOMINIC
 
 They’re everywhere. Knocking over bins, tearing up siding. Bold, too. They don’t even run anymore.
 
+(action)
 Dallas isn’t looking at the ticket. He’s looking up. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
-
-DALLAS
-
-Dominic. Look at the birds.
-
-Dominic glances up, then back at his ticket, uncaring.
-
-DOMINIC
-
-Probably waiting for a hand-out. Come on, let’s get your batteries before I get another fine for standing still.
 
 
 ---

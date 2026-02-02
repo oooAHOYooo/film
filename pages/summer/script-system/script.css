@@ -96,6 +96,11 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* Action break: (action) on its own line — hidden, ends dialogue block */
+.action-break {
+  display: none;
+}
+
 /* Action Lines - Full width within margins */
 .action-line {
   margin-left: 0;
@@ -170,7 +175,7 @@ body {
 }
 
 /* Default paragraph styling (ONLY when not classified by formatter) */
-.screenplay-content p:not(.scene-heading):not(.action-line):not(.character-name):not(.dialogue):not(.parenthetical):not(.transition) {
+.screenplay-content p:not(.scene-heading):not(.action-line):not(.action-break):not(.character-name):not(.dialogue):not(.parenthetical):not(.transition) {
   margin: 0 0 var(--action-bottom) 0;
   padding: 0;
   line-height: 1.35;

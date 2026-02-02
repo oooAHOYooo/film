@@ -52,3 +52,7 @@ script-system/
 - Reorder: Edit `manifest.json` array order
 - View: Open `index.html` in browser
 - Compile: `node compile.js`
+
+## Action breaks
+
+On its own line, write `(action)` to force the formatter to end the current dialogue block so the next paragraph is treated as action. The `(action)` line is hidden in the formatted script.

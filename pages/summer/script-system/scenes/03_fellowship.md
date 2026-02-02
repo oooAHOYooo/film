@@ -7,7 +7,7 @@ Dominic carries a package of water and puts it under one of the fold up tables.
 DOMINIC
 Alright buddy - let's wait on line I guess. 
 
-
+(action)
 Dominic and Dallas wait on line to be served at fellowship lunch. 
 
 Janice, Mid 50s, puts her hand on Dominic's shoulder.
@@ -53,38 +53,32 @@ This is Sally's famous casserole. You gotta try it.
 DALLAS
 Thanks.
 
+(action)
+
 Dallas takes a plate but doesn't eat much. He's distracted, listening.
 
 DOMINIC
-
 So, what are you here for?
 
 DALLAS
-
 Work.
 
 DOMINIC
-
 At Yale?
 
 DALLAS
-
 Quinnipiac. Starting next semester. Got a couple months to get settled.
 
 DOMINIC
-
 What kind of work?
 
 DALLAS
-
 Bioacoustics. I was hired to record the marsh—birds, insects, coyotes. I start next semester.
 
 DOMINIC
-
 Nice. So are you here alone?
 
 DALLAS
-
 Yep.
 
 DOMINIC
@@ -100,6 +94,8 @@ Want to walk back together? I'll show you around.
 DALLAS
 
 Sure.
+
+(action)
 
 They start walking towards the marsh, towards the New England coast.
 

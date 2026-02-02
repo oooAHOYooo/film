@@ -47,46 +47,6 @@ Simply edit `manifest.json` and move the scene objects to your desired order. Th
 - Click any scene to view it individually
 - The scene viewer uses Marked.js (CDN) to render markdown
 
-### 3b. Edit Scenes (Zen Browser Editor)
-
-This repo includes a tiny local server that lets the browser **save edits back to your `.md` files**.
-
-From the project root:
-
-```bash
-npm run editor
-```
-
-Then open `http://127.0.0.1:41731/editor.html`
-
-### 3c. Publish (git commit + push) from the Editor (optional)
-
-For safety, git actions are **disabled by default**. To enable the editor’s **Publish** button:
-
-```bash
-FILM_EDITOR_ENABLE_GIT=1 npm run editor
-```
-
-Notes:
-- Publish runs `git add/commit/push` **non-interactively** (won’t hang on auth prompts).
-- If `git push` fails, run `git push` once in a normal terminal to authenticate/set upstream, then retry in the editor.
-
-### 3d. Hosted Editing (no IDE) — Edit on your Netlify site
-
-To edit scenes directly on your deployed site (like a blog editor), this repo includes **Netlify Functions** that can commit scene edits back to GitHub.
-
-**How it works**
-- You open `editor.html` on your Netlify site.
-- The editor loads scenes via Netlify Functions.
-- **Publish** creates a commit in GitHub (this is the “git push” step).
-- Netlify sees the commit and redeploys your site automatically.
-
-**Netlify environment variables to set**
-- `FILM_ADMIN_TOKEN`: a password/token you’ll type into the editor (kept in sessionStorage)
-- `GITHUB_TOKEN`: GitHub token with repo write access
-- `GITHUB_REPO`: e.g. `oooAHOYooo/film`
-- `GITHUB_BRANCH`: optional (default `main`)
-
 ### 4. Compile Full Script
 
 Run the compiler to generate `full_script.md` and `full_script.html`:
@@ -109,6 +69,30 @@ The CSS automatically formats:
 - **Character Names**: Uppercase, bold, 2.0in left margin
 - **Dialogue**: 1.0in left margin, 1.5in right margin
 - **Action**: Full width, standard margins
+
+### Action breaks
+
+When the formatter might treat the next line as dialogue (e.g. right after a speaker), you can force an **action break** so the next paragraph is treated as action:
+
+On its own line, write:
+
+```markdown
+(action)
+```
+
+The formatter ends the current dialogue block at that point. The `(action)` line itself is not shown in the formatted script. Use this whenever you want to be sure a line is rendered as full-width action, not dialogue—for example before character intros or stage direction:
+
+```markdown
+DOMINIC
+Yep.
+
+(action)
+
+Janice leaves the line of food.
+
+JANICE
+Hey Patty - How's Pete?
+```
 
 ## Features
 
