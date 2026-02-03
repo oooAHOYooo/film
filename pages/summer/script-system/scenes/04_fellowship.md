@@ -27,33 +27,34 @@ Hello.
 JANICE
 Hey Dallas. Dominic did you get the car?
 
+(action)
+MAKAYLA, 22, and ASHER, 15 - emerge behind Janice. 
+
+DOMINIC
+(ignoring Janice)
+Dallas, these are my niece and nephew - Makayla and Asher.
+
+(action)
+Makayla and Asher don't say much but wait online. Makayla taps Asher on the shoulder and nods towards a far end of the church lawn. Between the bushes and garden. 
+
+The two leave the line for food and walk over to it. Dallas watches.
+
+JANICE
+So what happened Dominic. 
+
 DOMINIC
 Yeah - and it had a ticket.
 
 JANICE
-Well - you can get it this time yeah? 
+How much. 
 
 DOMINIC
-Yep. 
-
-Janice leaves the line of food 
+A good amount. 
 
 JANICE
-Hey Patty - How's Pete?
+That's great. 
 
-JANICE
-Pleasure to meet you Dallas, what are you doing hanging out with my brother. 
-
-DALLAS
-Just had to go into town to get batteries. 
-
-DOMINIC
-This is Sally's famous casserole. You gotta try it.
-
-DALLAS
-Thanks.
-
-(action)
+Janice leaves the line of food.
 
 Dallas takes a plate but doesn't eat much. He's distracted, listening.
 

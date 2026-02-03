@@ -14,197 +14,190 @@
     "actTitle": "Arrival & Discovery"
   },
   {
-    "id": "fellowship",
-    "file": "03_fellowship.md",
-    "title": "The Fellowship",
-    "act": 1,
-    "actTitle": "Arrival & Discovery"
-  },
-  {
-    "id": "parking-ticket",
-    "file": "04_parking_ticket.md",
-    "title": "Parking Ticket",
-    "act": 1,
-    "actTitle": "Arrival & Discovery"
-  },
-  {
     "id": "marsh-walk",
-    "file": "05_marsh_walk.md",
+    "file": "03_marsh_walk.md",
     "title": "Marsh Walk",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
+    "id": "fellowship",
+    "file": "04_fellowship.md",
+    "title": "The Fellowship",
+    "act": 1,
+    "actTitle": "Arrival & Discovery"
+  },
+  {
     "id": "news-vans",
-    "file": "06_news_vans.md",
+    "file": "05_news_vans.md",
     "title": "News Vans",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "trash-cans",
-    "file": "07_trash_cans.md",
+    "file": "06_trash_cans.md",
     "title": "Trash Cans",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "the-coordinates",
-    "file": "08_the_coordinates.md",
+    "file": "07_the_coordinates.md",
     "title": "The Coordinates",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "janice-arrival",
-    "file": "09_janice_arrival.md",
+    "file": "08_janice_arrival.md",
     "title": "Janice Arrival",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "equipment-intro",
-    "file": "10_equipment_intro.md",
+    "file": "09_equipment_intro.md",
     "title": "Equipment Intro",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "howie-walk",
-    "file": "11_howie_walk.md",
+    "file": "10_howie_walk.md",
     "title": "Howie Walk",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "the-first-hum",
-    "file": "12_the_first_hum.md",
+    "file": "11_the_first_hum.md",
     "title": "The First Hum",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "shadows-in-wind",
-    "file": "13_shadows_in_wind.md",
+    "file": "12_shadows_in_wind.md",
     "title": "Shadows in Wind",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "the-burn-mark",
-    "file": "14_the_burn_mark.md",
+    "file": "13_the_burn_mark.md",
     "title": "The Burn Mark",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "costco-run",
-    "file": "15_costco_run.md",
+    "file": "14_costco_run.md",
     "title": "Costco Run",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "entering-grass",
-    "file": "16_entering_grass.md",
+    "file": "15_entering_grass.md",
     "title": "Entering Grass",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "the-hollow",
-    "file": "17_the_hollow.md",
+    "file": "16_the_hollow.md",
     "title": "The Hollow",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "creature-rescue",
-    "file": "18_creature_rescue.md",
+    "file": "17_creature_rescue.md",
     "title": "Creature Rescue",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "the-escape",
-    "file": "19_the_escape.md",
+    "file": "18_the_escape.md",
     "title": "The Escape",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "makeshift-hospital",
-    "file": "20_makeshift_hospital.md",
+    "file": "19_makeshift_hospital.md",
     "title": "Makeshift Hospital",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "life-group-arrives",
-    "file": "21_life_group_arrives.md",
+    "file": "20_life_group_arrives.md",
     "title": "Life Group Arrives",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "basement-huddle",
-    "file": "22_basement_huddle.md",
+    "file": "21_basement_huddle.md",
     "title": "Basement Huddle",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "the-hymn",
-    "file": "23_the_hymn.md",
+    "file": "22_the_hymn.md",
     "title": "The Hymn",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "red-eyes",
-    "file": "24_red_eyes.md",
+    "file": "23_red_eyes.md",
     "title": "Red Eyes",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "creature-missing",
-    "file": "25_creature_missing.md",
+    "file": "24_creature_missing.md",
     "title": "Creature Missing",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "marsh-confrontation",
-    "file": "26_marsh_confrontation.md",
+    "file": "25_marsh_confrontation.md",
     "title": "Marsh Confrontation",
     "act": 3,
     "actTitle": "The Return"
   },
   {
     "id": "predator-attack",
-    "file": "27_predator_attack.md",
+    "file": "26_predator_attack.md",
     "title": "Predator Attack",
     "act": 3,
     "actTitle": "The Return"
   },
   {
     "id": "the-perimeter",
-    "file": "28_the_perimeter.md",
+    "file": "27_the_perimeter.md",
     "title": "The Perimeter",
     "act": 3,
     "actTitle": "The Return"
   },
   {
     "id": "the-last-dinner",
-    "file": "29_the_last_dinner.md",
+    "file": "28_the_last_dinner.md",
     "title": "The Last Dinner",
     "act": 3,
     "actTitle": "The Return"
   },
   {
     "id": "final-echoes",
-    "file": "30_final_echoes.md",
+    "file": "29_final_echoes.md",
     "title": "Final Echoes",
     "act": 4,
     "actTitle": "Aftermath"

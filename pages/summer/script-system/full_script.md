@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/3/2026, 11:30:08 AM*
+*Compiled on 2/3/2026, 12:40:21 PM*
 
 ---
 
@@ -16,13 +16,23 @@
 
 ---
 
-INT. DALLAS' NEW HOUSE - DAY
+EXT. DALLAS NEW HOUSE - DAY
 
-Dallas finishes unpacking boxes. The room is sparse, filled with moving boxes and a few pieces of furniture.
+Dallas stares at the Tall Grass outside his house as he loads boxes. He waves to DOMINIC and JANICE and the KIDS as they drive from the street. 
+
+INT. DALLAS NEW HOUSE - NIGHT
+
+Dallas struggles to fall asleep in his new home. He hears strange noises from outside. As he looks out the window he sees a flicker of a faint gold light. 
+
+INT. DALLAS' NEW HOUSE - NEXT DAY
+
+Dallas finishes unpacking boxes. The room is sparse, filled with moving supplies and a few pieces of furniture.
 
 He hears a noise from outside. Dallas pauses and peers outside. Curious, he opens a box marked "EQUIPMENT."
 
-Dallas pulls out a heavy, military-grade receiver. It's covered in dust. He peels back a piece of duct tape to reveal a photo sticker.
+Dallas pulls out a heavy, military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones. 
+
+On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker.
 
 The photo shows Dallas and a woman, both wearing heavy audio headsets, laughing in a field of grass.
 
@@ -32,23 +42,11 @@ Dallas presses the sticker on the side of his new receiver.
 
 As he does this, he hears a HUM emerging from outside.
 
-Dallas walks to the window and attempts to record the readings - but the battery dies. 
-
-Dallas records readings, but the battery dies.
+Dallas walks to the window and attempts to record the readings, and just as it capturing something, the battery dies.  
 
 He sets the receiver down and heads for the door.
 
-EXT. DALLAS OUTSIDE HOUSE
-Outside, Dallas walks and looks at all of the equipment still found outside his house in boxes. 
 
-DOMINIC
-Hey need a hand?
-
-DALLAS
-Hey there
-
-DOMINIC
-Hey there I'm Dominic - I live next door - you just moved in? 
 
 
 ---
@@ -61,63 +59,178 @@ Hey there I'm Dominic - I live next door - you just moved in?
 ---
 
 EXT. DALLAS HOUSE - DAY
-Dallas walks outside. 
+Dallas walks outside.
 
 
 EXT. BRANFORD STREET - DAY
 
-Dallas walks into town for batteries. On the way, he meets his neighbor DOMINIC.
+Dallas walks into town. On the way, he meets his neighbor DOMINIC.
 
 DOMINIC
-Neighbor! 
+Neighbor!
 
 DALLAS
-Hey. 
+What's that?
 
 DOMINIC
-What you doing?
+You are my neighbor - we saw you the other day driving by - did you just move here?
 
 DALLAS
-Heading to town to get batteries.
+Oh - yeah.
 
 DOMINIC
-You don't got a car?
+Nice. Names Dominic.
+
+DALLAS
+Dallas.
+
+DOMINIC
+Dallas, what a cool name - - What you doing?
+
+DALLAS
+I'm just walking into town - got to get some batteries.
+
+DOMINIC
+What kind of batteries?
+
+DALLAS
+9 Volt should work.
+
+DOMINIC
+So you're walking into town?
+
+DALLAS
+Yeah.
+
+DOMINIC
+You don't have a car?
 
 DALLAS
 No - no car.
 
 DOMINIC
-Yeah - my sister's borrowing mine. I have the extra set of keys though and need to go pick it up downtown - hey - we should walk together. 
-
-DOMINIC
-I'll walk with you. Got some errands myself.
-
-EXT. TOWN BRANFORD MONTAGE 
-
-Dallas and Dominic walk together. They walk through coastal scenes, and neighborhoods, and sidewalks. As they approach one in particular - a patch of tall marsh grass - Dallas stops. 
-
-Dallas, sheepisly, checks if Dominic is looking and when he isn't - he pulls out a pocket recorder - and points it at the marsh. 
-
-DOMINIC
-What's with the toy. 
+Yeah. Me neither - well I share one with my sister, she's borrowing mine. I was about to go get it in town - there's a hardware store in Branford that could have those batteries. Want to walk together?
 
 DALLAS
-Oh, it's an audio recorder. 
+Sure.
+
+EXT. TOWN BRANFORD MONTAGE
+
+Dallas and Dominic walk together. They walk through coastal scenes, and neighborhoods, and sidewalks. As they approach one in particular - a patch of tall marsh grass - Dallas stops.
+
+Dallas, sheepishly, checks if Dominic is looking and when he isn't - he pulls out a pocket recorder - and points it at the marsh.
 
 DOMINIC
-Be careful - there are coyotoes up in that. 
+What's with the toy.
 
-Dallas continues to record. 
+DALLAS
+Oh, it's an audio recorder.
 
-DOMINIC 
-Common champ - we're going to be late. 
+DOMINIC
+Be careful - there are coyotes up in that.
+
+Dallas continues to record.
+
+DOMINIC
+Come on champ. Hey - there's a fellowship lunch at my church today, CPC. You should come. Free food. We're going to be late though.
+
+DALLAS
+Sure.
+
+EXT. TOWN CENTER - DAY
+
+Dallas and Dominic walk toward a small hardware store. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
+
+DOMINIC
+You have got to be kidding me!
+
+(action)
+He rips the ticket off, waving it at the empty street.
+
+DOMINIC (CONT'D)
+Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
+
+(action)
+Dominic walks around and wiggles his hand above the car tire - finding a secret key here.
+
+DOMINIC
+This is not where it is supposed to go.
+
+
+(action)
+As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
+
+INT. CAR - DRIVING TO CPC
+
+Dominic drives from Branford Town Center toward the church. Dallas in the passenger seat.
+
+DOMINIC
+So where you from?
+
+DALLAS
+Indiana.
+
+DOMINIC
+What you doing up here?
+
+DALLAS
+Work
+
+DOMINIC
+Yeah? Where abouts
+
+DOMINIC
+Yale?
+
+DALLAS
+Quinnipiac.
+
+DOMINIC
+That's refreshing.
+
+(action)
+They pull into the church lot. The fellowship lawn is ahead—picnic in full swing.
+
 
 ---
 
 
-### Scene 3: The Fellowship
+### Scene 3: Marsh Walk
 
-*ACT I — Arrival & Discovery | ID: fellowship | File: 03_fellowship.md*
+*ACT I — Arrival & Discovery | ID: marsh-walk | File: 03_marsh_walk.md*
+
+---
+
+EXT. MARSH TRAIL - LATER
+
+The sun is dipping. Dallas and Dominic walk along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
+
+Dominic pulls out his phone, tapping an app.
+
+DOMINIC
+
+See this? Merlins. It listens to the chirps and tells you the species. Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
+
+(action)
+Dallas pulls out his own military-grade receiver. He adjusts a dial. Through his heavy headsets, he doesn't hear birds. He hears a low, rhythmic THRUB-THRUB-THRUB.
+
+DOMINIC
+Your little toy showing you good results?
+I prefer the raw feed.
+
+DOMINIC
+
+Suit yourself. But there’s a spot near the old creek where the Coyotes gather. Sounds like a choir of demons at 2 AM. You'll hear 'em soon enough.
+
+Dallas stops. He looks into the thick grass. The wind moves the reeds, but it looks like something else is moving *underneath* them, contrary to the breeze.
+
+
+---
+
+
+### Scene 4: The Fellowship
+
+*ACT I — Arrival & Discovery | ID: fellowship | File: 04_fellowship.md*
 
 ---
 
@@ -150,33 +263,34 @@ Hello.
 JANICE
 Hey Dallas. Dominic did you get the car?
 
+(action)
+MAKAYLA, 22, and ASHER, 15 - emerge behind Janice. 
+
+DOMINIC
+(ignoring Janice)
+Dallas, these are my niece and nephew - Makayla and Asher.
+
+(action)
+Makayla and Asher don't say much but wait online. Makayla taps Asher on the shoulder and nods towards a far end of the church lawn. Between the bushes and garden. 
+
+The two leave the line for food and walk over to it. Dallas watches.
+
+JANICE
+So what happened Dominic. 
+
 DOMINIC
 Yeah - and it had a ticket.
 
 JANICE
-Well - you can get it this time yeah? 
+How much. 
 
 DOMINIC
-Yep. 
-
-Janice leaves the line of food 
+A good amount. 
 
 JANICE
-Hey Patty - How's Pete?
+That's great. 
 
-JANICE
-Pleasure to meet you Dallas, what are you doing hanging out with my brother. 
-
-DALLAS
-Just had to go into town to get batteries. 
-
-DOMINIC
-This is Sally's famous casserole. You gotta try it.
-
-DALLAS
-Thanks.
-
-(action)
+Janice leaves the line of food.
 
 Dallas takes a plate but doesn't eat much. He's distracted, listening.
 
@@ -228,101 +342,9 @@ In the far distance, COYOTES HOWL.
 ---
 
 
-### Scene 4: Parking Ticket
+### Scene 5: News Vans
 
-*ACT I — Arrival & Discovery | ID: parking-ticket | File: 04_parking_ticket.md*
-
----
-
-EXT. TOWN CENTER - DAY
-
-Dallas and Dominic walk toward a small hardware store. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
-
-DOMINIC
-You have got to be kidding me!
-
-(action)
-He rips the ticket off, waving it at the empty street.
-
-DOMINIC (CONT'D)
-Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
-
-(action)
-Dominic walks around and wiggles his hand above the car tire - finding a secret key here. 
-
-DOMINIC
-This is not where it is supposed to go. 
-
-
-(action)
-As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. looking up. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
-
-INT. CAR RIDE
-Dominic drives back from Branford Town Center and drives Dallas back.
-
-DOMINIC
-So where you from?
-
-DALLAS
-Indiana. 
-
-DOMINIC
-What you doing up here?
-
-DALLAS
-Work
-
-DOMINIC
-Yeah? Where abouts
-
-DOMINIC
-Yale?
-
-DALLAS
-Quinipacc
-
-DOMINIC
-That's refreshing. 
-
----
-
-
-### Scene 5: Marsh Walk
-
-*ACT I — Arrival & Discovery | ID: marsh-walk | File: 05_marsh_walk.md*
-
----
-
-EXT. MARSH TRAIL - LATER
-
-The sun is dipping. Dallas and Dominic walk along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
-
-Dominic pulls out his phone, tapping an app.
-
-DOMINIC
-
-See this? Merlins. It listens to the chirps and tells you the species. Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
-
-(action)
-Dallas pulls out his own military-grade receiver. He adjusts a dial. Through his heavy headsets, he doesn't hear birds. He hears a low, rhythmic THRUB-THRUB-THRUB.
-
-DOMINIC
-Your little toy showing you good results?
-I prefer the raw feed.
-
-DOMINIC
-
-Suit yourself. But there’s a spot near the old creek where the Coyotes gather. Sounds like a choir of demons at 2 AM. You'll hear 'em soon enough.
-
-Dallas stops. He looks into the thick grass. The wind moves the reeds, but it looks like something else is moving *underneath* them, contrary to the breeze.
-
-
----
-
-
-### Scene 6: News Vans
-
-*ACT I — Arrival & Discovery | ID: news-vans | File: 06_news_vans.md*
+*ACT I — Arrival & Discovery | ID: news-vans | File: 05_news_vans.md*
 
 ---
 
@@ -333,13 +355,13 @@ Dallas and Dominic reach back to their neighborhood. Outside, nestled between th
 PAT CLENDENEN
 (to camera)
 This afternoon we'll see sun to clouds, breezy and warm with a late day shower possible. But the real attention - and as why we are here - is to bring attention to a possible development along the shores of Eastern Connecticut - at the heart of the Branford should receive the most impact. We are watching the trend through the rest of this week - as any shift could dramatically impact the entire state. The computer models are showing better agreement. 
-...and while we’re all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. Hopefully, it holds off until after Sunday’s festival, but folks, get those generators ready!
+...and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. Hopefully, it holds off until after Sunday's festival, but folks, get those generators ready!
 
 (action)
 Dominic scoffs as they walk past.
 
 DOMINIC
-Pat’s been predicting the end of the world every Tuesday for ten years.
+Pat's been predicting the end of the world every Tuesday for ten years.
 
 (action)
 Dallas notices that there is some red eyes lurking in the windsill reflections. 
@@ -350,9 +372,9 @@ The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dall
 ---
 
 
-### Scene 7: Trash Cans
+### Scene 6: Trash Cans
 
-*ACT I — Arrival & Discovery | ID: trash-cans | File: 07_trash_cans.md*
+*ACT I — Arrival & Discovery | ID: trash-cans | File: 06_trash_cans.md*
 
 ---
 
@@ -380,9 +402,9 @@ He walks over to it and examines it - he brings out his oscillator and then begi
 ---
 
 
-### Scene 8: The Coordinates
+### Scene 7: The Coordinates
 
-*ACT I — Arrival & Discovery | ID: the-coordinates | File: 08_the_coordinates.md*
+*ACT I — Arrival & Discovery | ID: the-coordinates | File: 07_the_coordinates.md*
 
 ---
 
@@ -447,9 +469,9 @@ Your sister is here!
 ---
 
 
-### Scene 9: Janice Arrival
+### Scene 8: Janice Arrival
 
-*ACT I — Arrival & Discovery | ID: janice-arrival | File: 09_janice_arrival.md*
+*ACT I — Arrival & Discovery | ID: janice-arrival | File: 08_janice_arrival.md*
 
 ---
 
@@ -489,9 +511,9 @@ Dominic ushers everyone toward the car for a quick errand. The kitchen is a whir
 ---
 
 
-### Scene 10: Equipment Intro
+### Scene 9: Equipment Intro
 
-*ACT I — Arrival & Discovery | ID: equipment-intro | File: 10_equipment_intro.md*
+*ACT I — Arrival & Discovery | ID: equipment-intro | File: 09_equipment_intro.md*
 
 ---
 
@@ -525,9 +547,9 @@ The family vanishes in a blur of activity, leaving Dallas standing in the sudden
 ---
 
 
-### Scene 11: Howie Walk
+### Scene 10: Howie Walk
 
-*ACT I — Arrival & Discovery | ID: howie-walk | File: 11_howie_walk.md*
+*ACT I — Arrival & Discovery | ID: howie-walk | File: 10_howie_walk.md*
 
 ---
 
@@ -553,9 +575,9 @@ Dallas pulls out his phone. A "Severe Weather Alert" pops up: STORM WARNING.
 ---
 
 
-### Scene 12: The First Hum
+### Scene 11: The First Hum
 
-*ACT I — Arrival & Discovery | ID: the-first-hum | File: 12_the_first_hum.md*
+*ACT I — Arrival & Discovery | ID: the-first-hum | File: 11_the_first_hum.md*
 
 ---
 
@@ -581,9 +603,9 @@ Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dalla
 ---
 
 
-### Scene 13: Shadows in Wind
+### Scene 12: Shadows in Wind
 
-*ACT I — Arrival & Discovery | ID: shadows-in-wind | File: 13_shadows_in_wind.md*
+*ACT I — Arrival & Discovery | ID: shadows-in-wind | File: 12_shadows_in_wind.md*
 
 ---
 
@@ -641,9 +663,9 @@ In the darkness of the marsh, something stares back.
 ---
 
 
-### Scene 14: The Burn Mark
+### Scene 13: The Burn Mark
 
-*ACT II — The Creature | ID: the-burn-mark | File: 14_the_burn_mark.md*
+*ACT II — The Creature | ID: the-burn-mark | File: 13_the_burn_mark.md*
 
 ---
 
@@ -665,9 +687,9 @@ Makayla kneels and touches it. Her hair begins to flutter, static electricity pu
 ---
 
 
-### Scene 15: Costco Run
+### Scene 14: Costco Run
 
-*ACT II — The Creature | ID: costco-run | File: 15_costco_run.md*
+*ACT II — The Creature | ID: costco-run | File: 14_costco_run.md*
 
 ---
 
@@ -693,9 +715,9 @@ Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels 
 ---
 
 
-### Scene 16: Entering Grass
+### Scene 15: Entering Grass
 
-*ACT II — The Creature | ID: entering-grass | File: 16_entering_grass.md*
+*ACT II — The Creature | ID: entering-grass | File: 15_entering_grass.md*
 
 ---
 
@@ -739,9 +761,9 @@ He ties Howie’s leash to a stunted cedar tree and steps off the path, disappea
 ---
 
 
-### Scene 17: The Hollow
+### Scene 16: The Hollow
 
-*ACT II — The Creature | ID: the-hollow | File: 17_the_hollow.md*
+*ACT II — The Creature | ID: the-hollow | File: 16_the_hollow.md*
 
 ---
 
@@ -759,9 +781,9 @@ A flickering glow emanates from its neck. Its "back-holes"—delicate vents alon
 ---
 
 
-### Scene 18: Creature Rescue
+### Scene 17: Creature Rescue
 
-*ACT II — The Creature | ID: creature-rescue | File: 18_creature_rescue.md*
+*ACT II — The Creature | ID: creature-rescue | File: 17_creature_rescue.md*
 
 ---
 
@@ -787,9 +809,9 @@ Suddenly, the wind changes. A heavy, crushing sound approaches through the ree
 ---
 
 
-### Scene 19: The Escape
+### Scene 18: The Escape
 
-*ACT II — The Creature | ID: the-escape | File: 19_the_escape.md*
+*ACT II — The Creature | ID: the-escape | File: 18_the_escape.md*
 
 ---
 
@@ -811,9 +833,9 @@ He stops at the edge of his driveway, gasping for air. He looks down at his coat
 ---
 
 
-### Scene 20: Makeshift Hospital
+### Scene 19: Makeshift Hospital
 
-*ACT II — The Creature | ID: makeshift-hospital | File: 20_makeshift_hospital.md*
+*ACT II — The Creature | ID: makeshift-hospital | File: 19_makeshift_hospital.md*
 
 ---
 
@@ -849,9 +871,9 @@ Howie sits in the corner, head cocked, shivering. Outside, the world responds: t
 ---
 
 
-### Scene 21: Life Group Arrives
+### Scene 20: Life Group Arrives
 
-*ACT II — The Creature | ID: life-group-arrives | File: 21_life_group_arrives.md*
+*ACT II — The Creature | ID: life-group-arrives | File: 20_life_group_arrives.md*
 
 ---
 
@@ -881,9 +903,9 @@ Makayla slips past them, her eyes catching Dallas’s. She knows.
 ---
 
 
-### Scene 22: Basement Huddle
+### Scene 21: Basement Huddle
 
-*ACT II — The Creature | ID: basement-huddle | File: 22_basement_huddle.md*
+*ACT II — The Creature | ID: basement-huddle | File: 21_basement_huddle.md*
 
 ---
 
@@ -911,9 +933,9 @@ A floorboard creaks above. The "Life Group" is growing. They can hear the muffle
 ---
 
 
-### Scene 23: The Hymn
+### Scene 22: The Hymn
 
-*ACT II — The Creature | ID: the-hymn | File: 23_the_hymn.md*
+*ACT II — The Creature | ID: the-hymn | File: 22_the_hymn.md*
 
 ---
 
@@ -941,9 +963,9 @@ But Dallas is staring at the basement door. The sound isn't the wind. It’s an 
 ---
 
 
-### Scene 24: Red Eyes
+### Scene 23: Red Eyes
 
-*ACT II — The Creature | ID: red-eyes | File: 24_red_eyes.md*
+*ACT II — The Creature | ID: red-eyes | File: 23_red_eyes.md*
 
 ---
 
@@ -969,9 +991,9 @@ Dallas at the window again. The eyes are gone. The night is still.
 ---
 
 
-### Scene 25: Creature Missing
+### Scene 24: Creature Missing
 
-*ACT II — The Creature | ID: creature-missing | File: 25_creature_missing.md*
+*ACT II — The Creature | ID: creature-missing | File: 24_creature_missing.md*
 
 ---
 
@@ -996,9 +1018,9 @@ Asher points to the siding of the house. A trail of burn marks leads from the ba
 ---
 
 
-### Scene 26: Marsh Confrontation
+### Scene 25: Marsh Confrontation
 
-*ACT III — The Return | ID: marsh-confrontation | File: 26_marsh_confrontation.md*
+*ACT III — The Return | ID: marsh-confrontation | File: 25_marsh_confrontation.md*
 
 ---
 
@@ -1014,9 +1036,9 @@ Suddenly, a mist sprays from the elders' backs. Dallas and Makayla freeze, their
 ---
 
 
-### Scene 27: Predator Attack
+### Scene 26: Predator Attack
 
-*ACT III — The Return | ID: predator-attack | File: 27_predator_attack.md*
+*ACT III — The Return | ID: predator-attack | File: 26_predator_attack.md*
 
 ---
 
@@ -1032,9 +1054,9 @@ He grabs the creature, but as he pulls it close, the pulsing stops. It’s motio
 ---
 
 
-### Scene 28: The Perimeter
+### Scene 27: The Perimeter
 
-*ACT III — The Return | ID: the-perimeter | File: 28_the_perimeter.md*
+*ACT III — The Return | ID: the-perimeter | File: 27_the_perimeter.md*
 
 ---
 
@@ -1052,9 +1074,9 @@ They string heavy copper wire between the poles, creating a makeshift Faraday fe
 ---
 
 
-### Scene 29: The Last Dinner
+### Scene 28: The Last Dinner
 
-*ACT III — The Return | ID: the-last-dinner | File: 29_the_last_dinner.md*
+*ACT III — The Return | ID: the-last-dinner | File: 28_the_last_dinner.md*
 
 ---
 
@@ -1079,9 +1101,9 @@ Suddenly, Makayla snaps. She runs out the door, straight into the tall grass. Do
 ---
 
 
-### Scene 30: Final Echoes
+### Scene 29: Final Echoes
 
-*ACT IV — Aftermath | ID: final-echoes | File: 30_final_echoes.md*
+*ACT IV — Aftermath | ID: final-echoes | File: 29_final_echoes.md*
 
 ---
 

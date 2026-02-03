@@ -1,51 +1,132 @@
 EXT. DALLAS HOUSE - DAY
-Dallas walks outside. 
+Dallas walks outside.
 
 
 EXT. BRANFORD STREET - DAY
 
-Dallas walks into town for batteries. On the way, he meets his neighbor DOMINIC.
+Dallas walks into town. On the way, he meets his neighbor DOMINIC.
 
 DOMINIC
-Neighbor! 
+Neighbor!
 
 DALLAS
-Hey. 
+What's that?
 
 DOMINIC
-What you doing?
+You are my neighbor - we saw you the other day driving by - did you just move here?
 
 DALLAS
-Heading to town to get batteries.
+Oh - yeah.
 
 DOMINIC
-You don't got a car?
+Nice. Names Dominic.
+
+DALLAS
+Dallas.
+
+DOMINIC
+Dallas, what a cool name - - What you doing?
+
+DALLAS
+I'm just walking into town - got to get some batteries.
+
+DOMINIC
+What kind of batteries?
+
+DALLAS
+9 Volt should work.
+
+DOMINIC
+So you're walking into town?
+
+DALLAS
+Yeah.
+
+DOMINIC
+You don't have a car?
 
 DALLAS
 No - no car.
 
 DOMINIC
-Yeah - my sister's borrowing mine. I have the extra set of keys though and need to go pick it up downtown - hey - we should walk together. 
-
-DOMINIC
-I'll walk with you. Got some errands myself.
-
-EXT. TOWN BRANFORD MONTAGE 
-
-Dallas and Dominic walk together. They walk through coastal scenes, and neighborhoods, and sidewalks. As they approach one in particular - a patch of tall marsh grass - Dallas stops. 
-
-Dallas, sheepisly, checks if Dominic is looking and when he isn't - he pulls out a pocket recorder - and points it at the marsh. 
-
-DOMINIC
-What's with the toy. 
+Yeah. Me neither - well I share one with my sister, she's borrowing mine. I was about to go get it in town - there's a hardware store in Branford that could have those batteries. Want to walk together?
 
 DALLAS
-Oh, it's an audio recorder. 
+Sure.
+
+EXT. TOWN BRANFORD MONTAGE
+
+Dallas and Dominic walk together. They walk through coastal scenes, and neighborhoods, and sidewalks. As they approach one in particular - a patch of tall marsh grass - Dallas stops.
+
+Dallas, sheepishly, checks if Dominic is looking and when he isn't - he pulls out a pocket recorder - and points it at the marsh.
 
 DOMINIC
-Be careful - there are coyotoes up in that. 
+What's with the toy.
 
-Dallas continues to record. 
+DALLAS
+Oh, it's an audio recorder.
 
-DOMINIC 
-Common champ - we're going to be late. 
+DOMINIC
+Be careful - there are coyotes up in that.
+
+Dallas continues to record.
+
+DOMINIC
+Come on champ. Hey - there's a fellowship lunch at my church today, CPC. You should come. Free food. We're going to be late though.
+
+DALLAS
+Sure.
+
+EXT. TOWN CENTER - DAY
+
+Dallas and Dominic walk toward a small hardware store. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
+
+DOMINIC
+You have got to be kidding me!
+
+(action)
+He rips the ticket off, waving it at the empty street.
+
+DOMINIC (CONT'D)
+Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
+
+(action)
+Dominic walks around and wiggles his hand above the car tire - finding a secret key here.
+
+DOMINIC
+This is not where it is supposed to go.
+
+
+(action)
+As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
+
+INT. CAR - DRIVING TO CPC
+
+Dominic drives from Branford Town Center toward the church. Dallas in the passenger seat.
+
+DOMINIC
+So where you from?
+
+DALLAS
+Indiana.
+
+DOMINIC
+What you doing up here?
+
+DALLAS
+Work
+
+DOMINIC
+Yeah? Where abouts
+
+DOMINIC
+Yale?
+
+DALLAS
+Quinnipiac.
+
+DOMINIC
+That's refreshing.
+
+(action)
+They pull into the church lot. The fellowship lawn is ahead—picnic in full swing.
