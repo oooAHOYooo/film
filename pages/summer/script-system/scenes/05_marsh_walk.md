@@ -8,10 +8,11 @@ DOMINIC
 
 See this? Merlins. It listens to the chirps and tells you the species. Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
 
+(action)
 Dallas pulls out his own military-grade receiver. He adjusts a dial. Through his heavy headsets, he doesn't hear birds. He hears a low, rhythmic THRUB-THRUB-THRUB.
 
-DALLAS
-
+DOMINIC
+Your little toy showing you good results?
 I prefer the raw feed.
 
 DOMINIC
