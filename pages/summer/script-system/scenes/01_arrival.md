@@ -1,4 +1,8 @@
-INT. DALLAS' NEW HOUSE - DAY
+EXT. DALLAS NEW HOUSE - DAY
+
+Dallas stares at the Tall Grass outside his house as he loads boxes. He waves to DOMINIC and JANICE and the KIDS as they drive from the street. 
+
+NT. DALLAS' NEW HOUSE - DAY
 
 Dallas finishes unpacking boxes. The room is sparse, filled with moving boxes and a few pieces of furniture.
 
@@ -12,8 +16,10 @@ Dallas's thumb rushes over her face. He holds the contact for a beat too long.
 
 Dallas presses the sticker on the side of his new receiver.
 
-As he does this, he hears a HUM.
+As he does this, he hears a HUM emerging from outside.
 
-Dallas records readings, but the battery dies.
+Dallas walks to the window and attempts to record the readings, and just as it capturing something, the battery dies.  
 
 He sets the receiver down and heads for the door.
+
+

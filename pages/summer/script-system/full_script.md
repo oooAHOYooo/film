@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/2/2026, 12:43:31 PM*
+*Compiled on 2/3/2026, 11:30:08 AM*
 
 ---
 
@@ -30,11 +30,25 @@ Dallas's thumb rushes over her face. He holds the contact for a beat too long.
 
 Dallas presses the sticker on the side of his new receiver.
 
-As he does this, he hears a HUM.
+As he does this, he hears a HUM emerging from outside.
+
+Dallas walks to the window and attempts to record the readings - but the battery dies. 
 
 Dallas records readings, but the battery dies.
 
 He sets the receiver down and heads for the door.
+
+EXT. DALLAS OUTSIDE HOUSE
+Outside, Dallas walks and looks at all of the equipment still found outside his house in boxes. 
+
+DOMINIC
+Hey need a hand?
+
+DALLAS
+Hey there
+
+DOMINIC
+Hey there I'm Dominic - I live next door - you just moved in? 
 
 
 ---
@@ -46,27 +60,25 @@ He sets the receiver down and heads for the door.
 
 ---
 
+EXT. DALLAS HOUSE - DAY
+Dallas walks outside. 
+
+
 EXT. BRANFORD STREET - DAY
 
 Dallas walks into town for batteries. On the way, he meets his neighbor DOMINIC.
 
 DOMINIC
-Hey there! 
+Neighbor! 
 
 DALLAS
 Hey. 
 
 DOMINIC
-You just moved in? 
+What you doing?
 
 DALLAS
-Yeah.
-
-DOMINIC
-Dominic. Nice to meet you. Heading into town?
-
-DALLAS
-Yeah. 
+Heading to town to get batteries.
 
 DOMINIC
 You don't got a car?
@@ -236,15 +248,41 @@ DOMINIC (CONT'D)
 Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
 
 (action)
-Dominic walks around and opens the door for Dallas but the lock is not quite working. 
+Dominic walks around and wiggles his hand above the car tire - finding a secret key here. 
 
 DOMINIC
+This is not where it is supposed to go. 
 
-They’re everywhere. Knocking over bins, tearing up siding. Bold, too. They don’t even run anymore.
 
 (action)
-Dallas isn’t looking at the ticket. He’s looking up. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
+As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. looking up. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
 
+INT. CAR RIDE
+Dominic drives back from Branford Town Center and drives Dallas back.
+
+DOMINIC
+So where you from?
+
+DALLAS
+Indiana. 
+
+DOMINIC
+What you doing up here?
+
+DALLAS
+Work
+
+DOMINIC
+Yeah? Where abouts
+
+DOMINIC
+Yale?
+
+DALLAS
+Quinipacc
+
+DOMINIC
+That's refreshing. 
 
 ---
 
@@ -265,10 +303,11 @@ DOMINIC
 
 See this? Merlins. It listens to the chirps and tells you the species. Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
 
+(action)
 Dallas pulls out his own military-grade receiver. He adjusts a dial. Through his heavy headsets, he doesn't hear birds. He hears a low, rhythmic THRUB-THRUB-THRUB.
 
-DALLAS
-
+DOMINIC
+Your little toy showing you good results?
 I prefer the raw feed.
 
 DOMINIC
@@ -351,26 +390,39 @@ INT. DOMINIC'S LIVING ROOM - CONTINUOUS
 
 The house smells like old wood and floor wax. Dallas helps Dominic shove a heavy oak table against the wall.
 
-Dallas stops. On the wall is a small, framed photo of a woman and a young boy.
+As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
 
 DOMINIC
-
 My wife and kid. They're... gone now.
+
+(action)
+Dallas sheepisly looks at Dominic.
+
+DOMINIC
+What about you?
+
+DALLAS
+What do you mean?
+
+DOMINIC
+Have you have someone that you've lost?
+
+DALLAS
+No, I've never really had anyone. 
 
 Dominic looks toward the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged fingernail.
 
 DOMINIC 
+Mr. Mike. I take care of him now. He's had a rough go since the weather changed... He doesn't like it at all. 
 
-I take care of him. He’s had a rough go since the weather changed.
-
-Dominic moves to the window and shuts the blinds halfway, like he’s done it a thousand times.
+Dominic moves to the window and shuts the blinds halfway, like he's done it a thousand times.
 
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
 
 MR. MIKE
-
 She's here.
 
+(action)
 Dominic is already moving—trying to calm him, trying to stop him.
 
 Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.

@@ -12,15 +12,14 @@ DOMINIC (CONT'D)
 Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
 
 (action)
-Dominic walks around and opens the door for Dallas but the lock is not quite working. 
+Dominic walks around and wiggles his hand above the car tire - finding a secret key here. 
 
 DOMINIC
-I'm just going to leave 
+This is not where it is supposed to go. 
 
-They’re everywhere. Knocking over bins, tearing up siding. Bold, too. They don’t even run anymore.
 
 (action)
-Dallas isn’t looking at the ticket. He’s looking up. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
+As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. looking up. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
 
 INT. CAR RIDE
 Dominic drives back from Branford Town Center and drives Dallas back.

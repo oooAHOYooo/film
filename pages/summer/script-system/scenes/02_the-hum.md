@@ -1,24 +1,22 @@
+EXT. DALLAS HOUSE - DAY
+Dallas walks outside. 
+
+
 EXT. BRANFORD STREET - DAY
 
 Dallas walks into town for batteries. On the way, he meets his neighbor DOMINIC.
 
 DOMINIC
-Hey there! 
+Neighbor! 
 
 DALLAS
 Hey. 
 
 DOMINIC
-You just moved in? 
+What you doing?
 
 DALLAS
-Yeah.
-
-DOMINIC
-Dominic. Nice to meet you. Heading into town?
-
-DALLAS
-Yeah. 
+Heading to town to get batteries.
 
 DOMINIC
 You don't got a car?
