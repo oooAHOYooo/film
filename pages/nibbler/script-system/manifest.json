@@ -1,0 +1,20 @@
+[
+  { "id": "crime-scene-voiceover", "file": "01_crime_scene_voiceover.md", "title": "Crime Scene & Voiceover", "act": 1, "actTitle": "Setup" },
+  { "id": "post-it-trail", "file": "02_post_it_trail.md", "title": "Post-It Trail", "act": 1, "actTitle": "Setup" },
+  { "id": "shipyard-weevil", "file": "03_shipyard_weevil.md", "title": "Shipyard — Weevil Encounter", "act": 1, "actTitle": "Setup" },
+  { "id": "rudies-bar", "file": "04_rudies_bar.md", "title": "Rudies Bar", "act": 1, "actTitle": "Setup" },
+  { "id": "ghost-enters", "file": "05_ghost_enters.md", "title": "Ghost Enters", "act": 1, "actTitle": "Setup" },
+  { "id": "back-of-rudies", "file": "06_back_of_rudies.md", "title": "Back of Rudies", "act": 1, "actTitle": "Setup" },
+  { "id": "detective-office-doubters", "file": "07_detective_office_doubters.md", "title": "Detective Office — Doubters", "act": 2, "actTitle": "Investigation" },
+  { "id": "robs-office", "file": "08_robs_office.md", "title": "Rob's Office", "act": 2, "actTitle": "Investigation" },
+  { "id": "boss-confrontation", "file": "09_boss_confrontation.md", "title": "Boss Confrontation", "act": 2, "actTitle": "Investigation" },
+  { "id": "outside-station-pep-talk", "file": "10_outside_station_pep_talk.md", "title": "Outside Station — Pep Talk", "act": 2, "actTitle": "Investigation" },
+  { "id": "boatyard-surveillance", "file": "11_boatyard_surveillance.md", "title": "Boatyard Surveillance", "act": 2, "actTitle": "Investigation" },
+  { "id": "seaside-pub-lucy", "file": "12_seaside_pub_lucy.md", "title": "Seaside Pub — Lucy", "act": 2, "actTitle": "Investigation" },
+  { "id": "grand-ballroom", "file": "13_grand_ballroom.md", "title": "City Hall — Grand Ballroom", "act": 3, "actTitle": "Confrontation" },
+  { "id": "detective-office-watch", "file": "14_detective_office_watch.md", "title": "Detective Office — Team Watches", "act": 3, "actTitle": "Confrontation" },
+  { "id": "backstage-mayor", "file": "15_backstage_mayor.md", "title": "City Hall — Backstage", "act": 3, "actTitle": "Confrontation" },
+  { "id": "mayors-office-revelation", "file": "16_mayors_office_revelation.md", "title": "Mayor's Office — Revelation", "act": 3, "actTitle": "Confrontation" },
+  { "id": "boatyard-trap", "file": "17_boatyard_trap.md", "title": "Boatyard — Trap", "act": 3, "actTitle": "Confrontation" },
+  { "id": "mayors-office-alliance", "file": "18_mayors_office_alliance.md", "title": "Mayor's Office — Alliance", "act": 4, "actTitle": "Resolution" }
+]

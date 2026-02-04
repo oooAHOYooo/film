@@ -4,8 +4,7 @@
   "description": "Film project workspace",
   "scripts": {
     "populate": "node populate",
-    "generate": "node scripts/generate-inspo-manifests.js",
-    "editor": "node scripts/md-editor-server.cjs"
+    "generate": "node scripts/generate-inspo-manifests.js"
   },
   "dependencies": {}
 }
