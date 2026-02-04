@@ -82,6 +82,15 @@ EXT. TOWN CENTER - DAY
 Dallas and Dominic walk toward a small hardware store. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
 
 DOMINIC
+Hey you hungry?
+
+DALLAS
+Yeah
+
+DOMINIC
+Good - my church is doing a fellowship lunch - little picnic - we'll go first and fuel up before getting the car. Don't worry Pal - we'll get your batteries together. 
+
+DOMINIC
 You have got to be kidding me!
 
 (action)
