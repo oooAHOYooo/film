@@ -79,16 +79,9 @@ Sure.
 
 EXT. TOWN CENTER - DAY
 
-Dallas and Dominic walk toward a small hardware store. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
+Dallas and Dominic walk toward a small hardware store. The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
 
-DOMINIC
-Hey you hungry?
 
-DALLAS
-Yeah
-
-DOMINIC
-Good - my church is doing a fellowship lunch - little picnic - we'll go first and fuel up before getting the car. Don't worry Pal - we'll get your batteries together. 
 
 DOMINIC
 You have got to be kidding me!
@@ -109,6 +102,15 @@ This is not where it is supposed to go.
 (action)
 As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
 
+DOMINIC
+Hey you hungry?
+
+DALLAS
+Yeah
+
+DOMINIC
+Good - my church is doing a fellowship lunch - little picnic - we'll go first and fuel up before getting the car. Don't worry Pal - we'll get your batteries together. 
+
 INT. CAR - DRIVING TO CPC
 
 Dominic drives from Branford Town Center toward the church. Dallas in the passenger seat.
@@ -117,10 +119,10 @@ DOMINIC
 So where you from?
 
 DALLAS
-Indiana.
+Indiana
 
 DOMINIC
-What you doing up here?
+Indiana - how'd you land up here in Branford? 
 
 DALLAS
 Work
@@ -132,7 +134,7 @@ DOMINIC
 Yale?
 
 DALLAS
-Quinnipiac.
+No - maybe - but for now Quinnipiac.
 
 DOMINIC
 That's refreshing.
