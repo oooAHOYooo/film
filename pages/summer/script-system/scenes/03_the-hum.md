@@ -1,5 +1,5 @@
 EXT. DALLAS HOUSE - DAY
-Dallas walks outside.
+Dallas walks outside and watches the tall grass sway in the wind. As he walks he notices a man approaching him from the sidewalk near his house. 
 
 
 EXT. BRANFORD STREET - DAY

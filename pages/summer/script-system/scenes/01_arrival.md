@@ -1,31 +1,55 @@
 EXT. DALLAS NEW HOUSE - DAY
 
-Dallas stares at the Tall Grass outside his house as he loads boxes. He waves to DOMINIC and JANICE and the KIDS as they drive from the street. 
+Dallas stares at the Tall Grass outside his house as he loads boxes. 
 
-INT. DALLAS NEW HOUSE - NIGHT
+As Dallas deals with a pile of boxes laid out by a tarp from the moving company. MAKAYLA, 22 and ASHER, 14 - approach him on bikes. They watch him for a while.
 
-Dallas struggles to fall asleep in his new home. He hears strange noises from outside. As he looks out the window he sees a flicker of a faint gold light. 
+They approach Dallas slowly as one of the boxes draws their curiousity. Makayla watches Dallas pull out a military grade Oscillator.
 
-INT. DALLAS' NEW HOUSE - NEXT DAY
+MAKAYLA
+(to Asher but loud enough for Dallas to hear)
+You know that could be used to track the baseline difference between the cry of the BinzoBee and the howl of the Ophragah.
 
-Dallas finishes unpacking boxes. The room is sparse, filled with moving supplies and a few pieces of furniture.
 
-He hears a noise from outside. Dallas pauses and peers outside. Curious, he opens a box marked "EQUIPMENT."
+(action)
+Asher nods. Makayla approaches Dallas. 
 
-Dallas pulls out a heavy, military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones. 
+MAKAYLA
+Is that an Oscillator?
 
-On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker.
+DALLAS
+Yes. 
 
-The photo shows Dallas and a woman, both wearing heavy audio headsets, laughing in a field of grass.
+MAKAYLA
+Do you think my brother Asher could borrow it some time? He and his friends are hunting for evidence around the marsh.
 
-Dallas's thumb rushes over her face. He holds the contact for a beat too long.
+(action)
+Dallas looks at the Oscillator and then at Makayla and Asher
 
-Dallas presses the sticker on the side of his new receiver.
+DALLAS
+What kind of evidence? 
 
-As he does this, he hears a HUM emerging from outside.
+MAKAYLA
+Tell him Asher. 
 
-Dallas walks to the window and attempts to record the readings, and just as it capturing something, the battery dies.  
+(action)
+Asher stands silent in a sheepish shyness.
 
-He sets the receiver down and heads for the door.
+MAKAYLA
+Does it work?
 
+DALLAS
+It does - but you need a power source. 
+
+MAKAYLA
+What if we connect audio cables to it - could we put some microphones in the tall grass and it'll reach it.
+
+DALLAS
+I suppose. 
+
+MAKAYLA
+Good to know. Okay - byeeeeeee
+
+(action)
+Makayla and Asher leave on bicycle. Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
 
