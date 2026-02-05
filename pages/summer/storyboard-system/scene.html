@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Storyboard - Creatures in the Tall Grass</title>
+    <link rel="stylesheet" href="storyboard.css?v=20260205-1">
+  </head>
+  <body>
+    <div class="storyboard-layout">
+      <aside class="film-rail">
+        <h2>Films</h2>
+        <div class="film-list">
+          <div class="film-item active">Creatures in the Tall Grass</div>
+        </div>
+      </aside>
+
+      <main class="storyboard-main">
+        <div class="storyboard-sticky-bar">
+          <div class="nav">
+            <div class="nav-left">
+              <span class="nav-title">Scene Storyboard</span>
+              <a class="nav-link" href="/pages/summer.html">Summer</a>
+              <a class="nav-link" href="index.html">Gallery</a>
+              <a class="nav-link" href="full_storyboard.html">Full Storyboard</a>
+            </div>
+          </div>
+          <div class="storyboard-meta-bar">
+            <div class="scene-status" id="sceneStatus">Loading...</div>
+            <div class="scene-subtext" id="sceneSubtext"></div>
+            <div class="scene-nav">
+              <a class="nav-link" id="prevScene" href="#" style="display:none">Prev</a>
+              <a class="nav-link" id="nextScene" href="#" style="display:none">Next</a>
+              <a class="nav-link" id="scriptLink" href="#" style="display:none">View Script</a>
+            </div>
+          </div>
+        </div>
+
+        <header class="storyboard-header" id="sceneHeader">
+          <h1>Loading scene...</h1>
+        </header>
+
+        <div class="storyboard-content" id="storyboardContent">
+          Loading storyboard...
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const META_ORDER = ['Action', 'Camera', 'Movement', 'Lens', 'Lighting', 'Sound', 'Notes'];
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const sceneId = urlParams.get('id');
+
+      if (!sceneId) {
+        document.getElementById('storyboardContent').innerHTML =
+          '<p>No scene ID provided. <a href="index.html">Return to gallery</a></p>';
+      } else {
+        loadScene();
+      }
+
+      async function loadScene() {
+        try {
+          const manifestResponse = await fetch('manifest.json');
+          const scenes = await manifestResponse.json();
+
+          const sceneIndex = scenes.findIndex(s => s.id === sceneId);
+          const scene = scenes[sceneIndex];
+
+          if (!scene) {
+            document.getElementById('storyboardContent').innerHTML =
+              `<p>Scene "${sceneId}" not found. <a href="index.html">Return to gallery</a></p>`;
+            return;
+          }
+
+          const sceneNumber = sceneIndex + 1;
+
+          // Load the scene markdown
+          const sceneResponse = await fetch(`scenes/${scene.file}`);
+          const markdown = await sceneResponse.text();
+
+          // Parse and render
+          const parsed = parseScene(markdown);
+          renderScene(parsed, scene, sceneNumber);
+
+          // Update header
+          const header = document.getElementById('sceneHeader');
+          header.innerHTML = `
+            <h1>Scene ${sceneNumber}: ${scene.title}</h1>
+            <p>ACT ${toRoman(scene.act)} — ${scene.actTitle}</p>
+          `;
+
+          // Status bar
+          document.getElementById('sceneStatus').textContent =
+            `Scene ${sceneNumber} of ${scenes.length}`;
+          document.getElementById('sceneSubtext').textContent = scene.title;
+
+          // Prev/Next nav
+          if (sceneIndex > 0) {
+            const prev = document.getElementById('prevScene');
+            prev.href = `scene.html?id=${scenes[sceneIndex - 1].id}`;
+            prev.style.display = '';
+          }
+          if (sceneIndex < scenes.length - 1) {
+            const next = document.getElementById('nextScene');
+            next.href = `scene.html?id=${scenes[sceneIndex + 1].id}`;
+            next.style.display = '';
+          }
+
+          // Script link
+          const scriptLink = document.getElementById('scriptLink');
+          scriptLink.href = `/pages/summer/script-system/scene.html?id=${findScriptId(scene.id)}`;
+          scriptLink.style.display = '';
+
+          document.title = `${scene.title} Storyboard - Creatures in the Tall Grass`;
+        } catch (error) {
+          console.error('Error loading scene:', error);
+          document.getElementById('storyboardContent').innerHTML =
+            `<p>Error loading scene. <a href="index.html">Return to gallery</a></p>`;
+        }
+      }
+
+      function findScriptId(storyboardId) {
+        // Map storyboard IDs to script manifest IDs where they differ
+        const idMap = {
+          'the-first-hum': 'howie-walk',
+          'parking-ticket': 'marsh-walk',
+          'costco-run': 'the-burn-mark',
+          'janice-arrival': 'the-coordinates',
+          'equipment-intro': 'dallas-marsh-walk',
+          'the-hollow': 'entering-grass'
+        };
+        return idMap[storyboardId] || storyboardId;
+      }
+
+      function toRoman(num) {
+        const map = [
+          [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+          [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+          [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+        ];
+        let n = num;
+        let out = '';
+        for (const [v, s] of map) {
+          while (n >= v) { out += s; n -= v; }
+        }
+        return out;
+      }
+
+      function parseScene(markdown) {
+        const scene = { meta: {}, shots: [] };
+
+        const firstShotIdx = markdown.search(/^### Shot/m);
+        const metaBlock = firstShotIdx === -1 ? markdown : markdown.slice(0, firstShotIdx);
+        metaBlock.split('\n').forEach((line) => {
+          const match = line.match(/^-+\s*([A-Za-z ]+):\s*(.+)$/);
+          if (match) scene.meta[match[1].trim()] = match[2].trim();
+        });
+
+        const shotRegex = /^### Shot\s+(\d+)\s*-\s*(.+)$/gm;
+        const shotMatches = Array.from(markdown.matchAll(shotRegex));
+
+        shotMatches.forEach((shotMatch, shotIndex) => {
+          const shotStart = shotMatch.index + shotMatch[0].length;
+          const shotEnd = (shotIndex + 1 < shotMatches.length) ? shotMatches[shotIndex + 1].index : markdown.length;
+          const shotBlock = markdown.slice(shotStart, shotEnd);
+          const headingParts = shotMatch[2].split(' - ').map((p) => p.trim()).filter(Boolean);
+          const size = headingParts[0] || '';
+          const shotTitle = headingParts.slice(1).join(' - ');
+          const details = [];
+
+          shotBlock.split('\n').forEach((line) => {
+            const detailMatch = line.match(/^-+\s*([A-Za-z ]+):\s*(.+)$/);
+            if (detailMatch) {
+              details.push({ key: detailMatch[1].trim(), value: detailMatch[2].trim() });
+            }
+          });
+
+          const detailMap = details.reduce((acc, item) => {
+            acc[item.key.toLowerCase()] = item.value;
+            return acc;
+          }, {});
+
+          scene.shots.push({
+            number: parseInt(shotMatch[1], 10),
+            size,
+            title: shotTitle,
+            caption: detailMap.caption || detailMap.action || '',
+            details
+          });
+        });
+
+        return scene;
+      }
+
+      function renderScene(parsed, sceneMeta, sceneNumber) {
+        const container = document.getElementById('storyboardContent');
+        container.innerHTML = '';
+
+        const section = document.createElement('section');
+        section.className = 'storyboard-scene';
+
+        const meta = document.createElement('div');
+        meta.className = 'scene-meta';
+        if (parsed.meta.Setting) {
+          const span = document.createElement('span');
+          span.className = 'scene-setting';
+          span.textContent = parsed.meta.Setting;
+          meta.appendChild(span);
+        }
+        if (parsed.meta.Beat) {
+          const span = document.createElement('span');
+          span.textContent = parsed.meta.Beat;
+          meta.appendChild(span);
+        }
+        section.appendChild(meta);
+
+        const shotList = document.createElement('div');
+        shotList.className = 'shot-list';
+
+        const SHOTS_PER_PAGE = 6;
+        let pageEl = null;
+
+        parsed.shots.forEach((shot, index) => {
+          if (index % SHOTS_PER_PAGE === 0) {
+            pageEl = document.createElement('div');
+            pageEl.className = 'shot-page';
+            shotList.appendChild(pageEl);
+          }
+
+          const card = document.createElement('div');
+          card.className = 'shot-card';
+
+          const header = document.createElement('div');
+          header.className = 'shot-header';
+          const title = document.createElement('div');
+          title.className = 'shot-title';
+          title.textContent = `Shot ${shot.number}${shot.title ? `: ${shot.title}` : ''}`;
+          const badge = document.createElement('div');
+          badge.className = 'shot-badge';
+          badge.textContent = shot.size || 'SHOT';
+          header.appendChild(title);
+          header.appendChild(badge);
+          card.appendChild(header);
+
+          const frame = document.createElement('div');
+          frame.className = 'shot-frame';
+          const frameLabel = document.createElement('div');
+          frameLabel.className = 'frame-label';
+          frameLabel.textContent = shot.size || 'FRAME';
+          const frameMode = document.createElement('div');
+          frameMode.className = 'frame-mode';
+          frameMode.textContent = '2.39:1';
+          frame.appendChild(frameLabel);
+          frame.appendChild(frameMode);
+          card.appendChild(frame);
+
+          const caption = document.createElement('div');
+          caption.className = 'shot-caption';
+          caption.textContent = shot.caption || 'Caption to be added.';
+          card.appendChild(caption);
+
+          const metaWrap = document.createElement('div');
+          metaWrap.className = 'shot-meta';
+          META_ORDER.forEach((key) => {
+            const found = shot.details.find((d) => d.key.toLowerCase() === key.toLowerCase());
+            if (!found) return;
+            const span = document.createElement('span');
+            span.textContent = `${found.key}: ${found.value}`;
+            metaWrap.appendChild(span);
+          });
+          shot.details.forEach((detail) => {
+            if (META_ORDER.some((key) => key.toLowerCase() === detail.key.toLowerCase())) return;
+            if (detail.key.toLowerCase() === 'caption') return;
+            const span = document.createElement('span');
+            span.textContent = `${detail.key}: ${detail.value}`;
+            metaWrap.appendChild(span);
+          });
+          card.appendChild(metaWrap);
+
+          pageEl.appendChild(card);
+        });
+
+        section.appendChild(shotList);
+        container.appendChild(section);
+      }
+    </script>
+  </body>
+</html>

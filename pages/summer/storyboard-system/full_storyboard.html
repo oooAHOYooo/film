@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Storyboard - Creatures in the Tall Grass</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="storyboard.css?v=20260131-1">
+    <link rel="stylesheet" href="storyboard.css?v=20260205-1">
   </head>
   <body>
     <div class="storyboard-layout">
@@ -22,7 +22,8 @@
               <span class="nav-title">Storyboard Reader</span>
               <a class="nav-link" href="/index.html">Home</a>
               <a class="nav-link" href="/pages/summer.html">Summer</a>
-              <a class="nav-link" href="/pages/summer/storyboard-system/full_storyboard.md">Markdown</a>
+              <a class="nav-link" href="index.html">Gallery</a>
+              <a class="nav-link" href="full_storyboard.md">Markdown</a>
             </div>
           </div>
           <div class="storyboard-meta-bar">
@@ -54,99 +55,90 @@
     <script>
       const META_ORDER = ['Action', 'Camera', 'Movement', 'Lens', 'Lighting', 'Sound', 'Notes'];
 
-      function parseStoryboard(markdown) {
-        const scenes = [];
-        const sceneRegex = /^## Scene\s+(\d+):\s+(.+)$/gm;
-        const matches = Array.from(markdown.matchAll(sceneRegex));
+      function parseSceneMarkdown(markdown) {
+        const scene = { meta: {}, shots: [] };
 
-        matches.forEach((match, index) => {
-          const number = parseInt(match[1], 10);
-          const title = match[2].trim();
-          const start = match.index + match[0].length;
-          const end = (index + 1 < matches.length) ? matches[index + 1].index : markdown.length;
-          const block = markdown.slice(start, end).trim();
-
-          const scene = {
-            number,
-            title,
-            meta: {},
-            shots: []
-          };
-
-          const firstShotIdx = block.search(/^### Shot/m);
-          const metaBlock = firstShotIdx === -1 ? block : block.slice(0, firstShotIdx);
-          metaBlock.split('\n').forEach((line) => {
-            const matchLine = line.match(/^-+\s*([A-Za-z ]+):\s*(.+)$/);
-            if (!matchLine) return;
-            const key = matchLine[1].trim();
-            scene.meta[key] = matchLine[2].trim();
-          });
-
-          const shotRegex = /^### Shot\s+(\d+)\s*-\s*(.+)$/gm;
-          const shotMatches = Array.from(block.matchAll(shotRegex));
-
-          shotMatches.forEach((shotMatch, shotIndex) => {
-            const shotStart = shotMatch.index + shotMatch[0].length;
-            const shotEnd = (shotIndex + 1 < shotMatches.length) ? shotMatches[shotIndex + 1].index : block.length;
-            const shotBlock = block.slice(shotStart, shotEnd);
-            const headingParts = shotMatch[2].split(' - ').map((part) => part.trim()).filter(Boolean);
-            const size = headingParts[0] || '';
-            const shotTitle = headingParts.slice(1).join(' - ');
-            const details = [];
-
-            shotBlock.split('\n').forEach((line) => {
-              const detailMatch = line.match(/^-+\s*([A-Za-z ]+):\s*(.+)$/);
-              if (!detailMatch) return;
-              details.push({
-                key: detailMatch[1].trim(),
-                value: detailMatch[2].trim()
-              });
-            });
-
-            const detailMap = details.reduce((acc, item) => {
-              acc[item.key.toLowerCase()] = item.value;
-              return acc;
-            }, {});
-
-            scene.shots.push({
-              number: parseInt(shotMatch[1], 10),
-              size,
-              title: shotTitle,
-              caption: detailMap.caption || detailMap.action || '',
-              details
-            });
-          });
-
-          scenes.push(scene);
+        const firstShotIdx = markdown.search(/^### Shot/m);
+        const metaBlock = firstShotIdx === -1 ? markdown : markdown.slice(0, firstShotIdx);
+        metaBlock.split('\n').forEach((line) => {
+          const match = line.match(/^-+\s*([A-Za-z ]+):\s*(.+)$/);
+          if (match) scene.meta[match[1].trim()] = match[2].trim();
         });
 
-        return scenes;
+        const shotRegex = /^### Shot\s+(\d+)\s*-\s*(.+)$/gm;
+        const shotMatches = Array.from(markdown.matchAll(shotRegex));
+
+        shotMatches.forEach((shotMatch, shotIndex) => {
+          const shotStart = shotMatch.index + shotMatch[0].length;
+          const shotEnd = (shotIndex + 1 < shotMatches.length) ? shotMatches[shotIndex + 1].index : markdown.length;
+          const shotBlock = markdown.slice(shotStart, shotEnd);
+          const headingParts = shotMatch[2].split(' - ').map((p) => p.trim()).filter(Boolean);
+          const size = headingParts[0] || '';
+          const shotTitle = headingParts.slice(1).join(' - ');
+          const details = [];
+
+          shotBlock.split('\n').forEach((line) => {
+            const detailMatch = line.match(/^-+\s*([A-Za-z ]+):\s*(.+)$/);
+            if (detailMatch) {
+              details.push({ key: detailMatch[1].trim(), value: detailMatch[2].trim() });
+            }
+          });
+
+          const detailMap = details.reduce((acc, item) => {
+            acc[item.key.toLowerCase()] = item.value;
+            return acc;
+          }, {});
+
+          scene.shots.push({
+            number: parseInt(shotMatch[1], 10),
+            size,
+            title: shotTitle,
+            caption: detailMap.caption || detailMap.action || '',
+            details
+          });
+        });
+
+        return scene;
       }
 
-      function renderStoryboard(scenes) {
+      function renderStoryboard(manifest, sceneData) {
         const container = document.getElementById('storyboardContent');
         container.innerHTML = '';
 
-        scenes.forEach((scene) => {
+        manifest.forEach((entry, index) => {
+          const sceneNumber = index + 1;
+          const parsed = sceneData[index];
+
           const section = document.createElement('section');
           section.className = 'storyboard-scene';
-          section.id = `scene-${scene.number}`;
+          section.id = `scene-${sceneNumber}`;
+
+          const headingRow = document.createElement('div');
+          headingRow.className = 'scene-heading-row';
 
           const heading = document.createElement('h2');
-          heading.textContent = `Scene ${scene.number}: ${scene.title}`;
-          section.appendChild(heading);
+          heading.textContent = `Scene ${sceneNumber}: ${entry.title}`;
+          headingRow.appendChild(heading);
+
+          const viewLink = document.createElement('a');
+          viewLink.href = `scene.html?id=${entry.id}`;
+          viewLink.className = 'scene-view-link';
+          viewLink.textContent = 'View Scene';
+          headingRow.appendChild(viewLink);
+
+          section.appendChild(headingRow);
 
           const meta = document.createElement('div');
           meta.className = 'scene-meta';
-          if (scene.meta.Setting) {
+          if (parsed.meta.Setting) {
             const span = document.createElement('span');
             span.className = 'scene-setting';
-            span.textContent = scene.meta.Setting;
+            span.textContent = parsed.meta.Setting;
             meta.appendChild(span);
           }
-          if (scene.meta.Beat) {
+          if (parsed.meta.Beat) {
             const span = document.createElement('span');
-            span.textContent = scene.meta.Beat;
+            span.textContent = parsed.meta.Beat;
             meta.appendChild(span);
           }
           section.appendChild(meta);
@@ -157,8 +149,8 @@
           const SHOTS_PER_PAGE = 6;
           let pageEl = null;
 
-          scene.shots.forEach((shot, index) => {
-            if (index % SHOTS_PER_PAGE === 0) {
+          parsed.shots.forEach((shot, shotIdx) => {
+            if (shotIdx % SHOTS_PER_PAGE === 0) {
               pageEl = document.createElement('div');
               pageEl.className = 'shot-page';
               shotList.appendChild(pageEl);
@@ -199,7 +191,7 @@
             const metaWrap = document.createElement('div');
             metaWrap.className = 'shot-meta';
             META_ORDER.forEach((key) => {
-              const found = shot.details.find((detail) => detail.key.toLowerCase() === key.toLowerCase());
+              const found = shot.details.find((d) => d.key.toLowerCase() === key.toLowerCase());
               if (!found) return;
               const span = document.createElement('span');
               span.textContent = `${found.key}: ${found.value}`;
@@ -222,13 +214,13 @@
         });
       }
 
-      function initSceneNav(scenes) {
+      function initSceneNav(manifest) {
         const select = document.getElementById('sceneSelect');
         select.innerHTML = '<option value="">-</option>';
-        scenes.forEach((scene) => {
+        manifest.forEach((entry, index) => {
           const option = document.createElement('option');
-          option.value = `scene-${scene.number}`;
-          option.textContent = `${scene.number}. ${scene.title}`;
+          option.value = `scene-${index + 1}`;
+          option.textContent = `${index + 1}. ${entry.title}`;
           select.appendChild(option);
         });
 
@@ -241,11 +233,10 @@
         });
       }
 
-      function initStatusBar(scenes) {
+      function initStatusBar(manifest) {
         const statusEl = document.getElementById('sceneStatus');
         const subtextEl = document.getElementById('sceneSubtext');
         const progressFill = document.getElementById('progressFill');
-        const sceneEls = scenes.map((scene) => document.getElementById(`scene-${scene.number}`));
 
         function updateStatus() {
           const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -254,15 +245,16 @@
           progressFill.style.width = `${progress * 100}%`;
 
           let currentIndex = 0;
-          sceneEls.forEach((el, index) => {
+          manifest.forEach((_, index) => {
+            const el = document.getElementById(`scene-${index + 1}`);
             if (!el) return;
             const top = el.getBoundingClientRect().top;
             if (top <= 180) currentIndex = index;
           });
 
-          const currentScene = scenes[currentIndex];
+          const currentScene = manifest[currentIndex];
           if (currentScene) {
-            statusEl.textContent = `Scene ${currentScene.number} of ${scenes.length}`;
+            statusEl.textContent = `Scene ${currentIndex + 1} of ${manifest.length}`;
             subtextEl.textContent = currentScene.title;
           }
         }
@@ -274,15 +266,23 @@
 
       async function initStoryboard() {
         try {
-          const response = await fetch('full_storyboard.md');
-          const markdown = await response.text();
-          const scenes = parseStoryboard(markdown);
-          renderStoryboard(scenes);
-          initSceneNav(scenes);
-          initStatusBar(scenes);
+          // Load manifest
+          const manifestResponse = await fetch('manifest.json');
+          const manifest = await manifestResponse.json();
+
+          // Load all scene files in parallel
+          const scenePromises = manifest.map((entry) =>
+            fetch(`scenes/${entry.file}`).then((r) => r.text())
+          );
+          const sceneTexts = await Promise.all(scenePromises);
+          const sceneData = sceneTexts.map(parseSceneMarkdown);
+
+          renderStoryboard(manifest, sceneData);
+          initSceneNav(manifest);
+          initStatusBar(manifest);
         } catch (error) {
           const container = document.getElementById('storyboardContent');
-          container.textContent = 'Unable to load storyboard markdown.';
+          container.textContent = 'Unable to load storyboard.';
           console.error(error);
         }
       }

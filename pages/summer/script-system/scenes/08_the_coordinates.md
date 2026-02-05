@@ -28,20 +28,21 @@ Have you have someone that you've lost?
 DALLAS
 No.
 
+
+(action)
 Dominic looks toward the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged fingernail.
 
 DOMINIC 
 Mr. Mike. I take care of him now. He's had a rough go since the weather changed... He doesn't like it at all. 
 
-Dominic moves to the window and shuts the blinds halfway, like he's done it a thousand times.
-
-Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
+(action)
+Dominic moves to the window and shuts the blinds halfway, like he's done it a thousand times. Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
 
 MR. MIKE
-She's here.
+She's here! Hey Dominic! Look - she's here
 
 (action)
-Dominic is already moving—trying to calm him, trying to stop him.
+Dominic dashes across the room to see what is going on - and then, once realizes - dashes for the door.  
 
 Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
 
@@ -88,10 +89,16 @@ INT. DOMINIC'S HOUSE - CONTINUOUS
 Makayla stops by Dallas's equipment. She doesn't look at it with Janice's annoyance; she looks with genuine curiosity.
 
 MAKAYLA
-This is military grade. What are you tracking?
+Have you given any thought to what I asked you the other day?
 
-DALLAS
-Bioacoustics. Sounds in the marsh.
+(action)
+Dallas looks at Makayla and back at Asher
+
+MAKAYLA
+Let my brother borrow it. 
+
+(action)
+Asher walks over to Mr. Mike to see how he is doing. Makayla approaches Dallas even further. 
 
 MAKAYLA
 Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung.

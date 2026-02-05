@@ -82,6 +82,82 @@ body {
   scroll-margin-top: 9rem;
 }
 
+/* Full script: cinematic "meta tag" styling for scene title + subtitle */
+.full-script-page .screenplay-content h3 {
+  display: block;
+  width: 100%;
+  padding: 0.3rem 0.75rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.35rem;
+  font-size: clamp(0.85rem, 1.6vw, 0.98rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 999px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 6px 16px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.full-script-page .screenplay-content h3 + p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.full-script-page .screenplay-content h3 + p > em {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.18rem 0.6rem;
+  width: 100%;
+  font-size: 0.72rem;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(8px);
+}
+
+.full-script-page .screenplay-content h3 + p > em .storyboard-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: auto;
+  padding-left: 0.6rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.full-script-page .screenplay-content h3 + p > em .storyboard-link::before {
+  content: "⟡";
+  font-size: 0.7em;
+  color: var(--accent-subtle);
+}
+
+.full-script-page .screenplay-content h3 + p > em .storyboard-link:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.full-script-page .screenplay-content h3 + p > em .storyboard-link:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.25);
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+
 /* Scene Headings (INT./EXT. LOCATION - TIME) */
 .scene-heading {
   text-transform: uppercase;
@@ -508,32 +584,55 @@ body {
   outline: none;
 }
 
-.script-progress {
-  padding: 0 0.6rem 0.6rem;
+/* Vertical progress rail: fixed left, timeline progression (full script page only) */
+.full-script-page .gallery-container {
+  padding-left: 2.75rem;
+}
+
+.script-progress-rail {
+  position: fixed;
+  left: 0.75rem;
+  top: 0;
+  bottom: 0;
+  width: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.25rem 0;
   font-family: var(--reading-font);
+  z-index: 15;
 }
 
-.script-progress-bar {
-  height: 6px;
-  background: var(--border);
-  border-radius: 3px;
-  overflow: hidden;
-  margin-bottom: 0.35rem;
-}
-
-.script-progress-fill {
+.script-progress-rail .script-progress-bar {
+  flex: 1;
+  width: 4px;
+  min-height: 6rem;
   height: 100%;
-  width: 0%;
-  background: var(--accent-subtle);
-  border-radius: 3px;
-  transition: width 0.12s ease-out;
-  opacity: 0.7;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  position: relative;
 }
 
-.script-progress-label {
-  font-size: 0.8rem;
+.script-progress-rail .script-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  background: var(--accent-subtle);
+  border-radius: 2px;
+  transition: height 0.12s ease-out;
+  opacity: 0.75;
+}
+
+.script-progress-rail .script-progress-label {
+  font-size: 0.7rem;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
+  writing-mode: horizontal-tb;
 }
 
 .no-print {
@@ -566,8 +665,13 @@ body {
     min-width: 8.5rem;
   }
 
-  .script-progress {
-    padding: 0 0.5rem 0.5rem;
+  .script-progress-rail {
+    left: 0.5rem;
+    width: 1rem;
+  }
+
+  .full-script-page .gallery-container {
+    padding-left: 2.25rem;
   }
 }
 
@@ -608,6 +712,10 @@ body {
   
   .no-print {
     display: none !important;
+  }
+
+  .full-script-page .gallery-container {
+    padding-left: 1.5rem;
   }
 
   /* Prevent page breaks in awkward places */

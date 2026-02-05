@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatures in the Tall Grass Storyboard - Scene Gallery</title>
+    <link rel="stylesheet" href="storyboard.css?v=20260205-1">
+  </head>
+  <body>
+    <div class="storyboard-layout">
+      <aside class="film-rail">
+        <h2>Films</h2>
+        <div class="film-list">
+          <div class="film-item active">Creatures in the Tall Grass</div>
+        </div>
+      </aside>
+
+      <main class="storyboard-main">
+        <div class="storyboard-sticky-bar">
+          <div class="nav">
+            <div class="nav-left">
+              <span class="nav-title">Storyboard Gallery</span>
+              <a class="nav-link" href="/pages/summer.html">Summer</a>
+              <a class="nav-link" href="full_storyboard.html">Full Storyboard</a>
+              <a class="nav-link" href="/pages/summer/script-system/index.html">Script Gallery</a>
+            </div>
+          </div>
+        </div>
+
+        <header class="storyboard-header">
+          <h1>Creatures in the Tall Grass Storyboard</h1>
+          <p>Scene Gallery — organized by Act. Click a scene to view its storyboard.</p>
+        </header>
+
+        <div class="storyboard-content" id="sceneList">
+          Loading scenes...
+        </div>
+      </main>
+    </div>
+
+    <script>
+    function toRoman(num) {
+      const map = [
+        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+        [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+      ];
+      let n = num;
+      let out = '';
+      for (const [v, s] of map) {
+        while (n >= v) { out += s; n -= v; }
+      }
+      return out;
+    }
+
+    async function loadScenes() {
+      try {
+        const response = await fetch('manifest.json');
+        const scenes = await response.json();
+        const container = document.getElementById('sceneList');
+        container.innerHTML = '';
+
+        const acts = new Map();
+        scenes.forEach((scene, index) => {
+          const sceneNumber = index + 1;
+          const act = scene.act || 0;
+          const actTitle = scene.actTitle || 'Unsorted';
+          if (!acts.has(act)) acts.set(act, { actTitle, scenes: [] });
+          acts.get(act).scenes.push({ ...scene, sceneNumber });
+        });
+
+        const actNumbers = Array.from(acts.keys()).sort((a, b) => a - b);
+
+        actNumbers.forEach((actNumber) => {
+          const { actTitle, scenes: actScenes } = acts.get(actNumber);
+
+          const section = document.createElement('section');
+          section.className = 'storyboard-scene';
+
+          const heading = document.createElement('h2');
+          const actLabel = actNumber ? `ACT ${toRoman(actNumber)}` : 'UNSORTED';
+          heading.textContent = `${actLabel} — ${actTitle}`;
+          section.appendChild(heading);
+
+          const meta = document.createElement('div');
+          meta.className = 'scene-meta';
+          const countSpan = document.createElement('span');
+          countSpan.textContent = `${actScenes.length} scenes`;
+          meta.appendChild(countSpan);
+          section.appendChild(meta);
+
+          const list = document.createElement('div');
+          list.className = 'gallery-scene-list';
+
+          actScenes.forEach((scene) => {
+            const link = document.createElement('a');
+            link.href = `scene.html?id=${scene.id}`;
+            link.className = 'gallery-scene-item';
+
+            const num = document.createElement('span');
+            num.className = 'gallery-scene-number';
+            num.textContent = String(scene.sceneNumber).padStart(2, '0');
+
+            const title = document.createElement('span');
+            title.className = 'gallery-scene-title';
+            title.textContent = scene.title;
+
+            const file = document.createElement('span');
+            file.className = 'gallery-scene-file';
+            file.textContent = scene.file;
+
+            link.appendChild(num);
+            link.appendChild(title);
+            link.appendChild(file);
+            list.appendChild(link);
+          });
+
+          section.appendChild(list);
+          container.appendChild(section);
+        });
+      } catch (error) {
+        console.error('Error loading scenes:', error);
+        document.getElementById('sceneList').innerHTML =
+          '<div>Error loading scenes. Make sure manifest.json exists.</div>';
+      }
+    }
+
+    loadScenes();
+    </script>
+  </body>
+</html>

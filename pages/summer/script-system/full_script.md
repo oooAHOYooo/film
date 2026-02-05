@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/5/2026, 11:28:45 AM*
+*Compiled on 2/5/2026, 5:50:47 PM*
 
 ---
 
@@ -177,7 +177,7 @@ Dallas and Dominic walk together. They walk through coastal scenes, and neighbor
 Dallas, sheepishly, checks if Dominic is looking and when he isn't - he pulls out a pocket recorder - and points it at the marsh.
 
 DOMINIC
-What's with the toy.
+What's with the gadget?
 
 DALLAS
 Oh, it's an audio recorder.
@@ -198,38 +198,29 @@ EXT. TOWN CENTER - DAY
 Dallas and Dominic walk toward a small hardware store. The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
 
 
-
 DOMINIC
 You have got to be kidding me!
 
 (action)
-He rips the ticket off, waving it at the empty street.
+He rips the ticket off and walks around to see if anyone is looking - and finds a secret key. 
 
-DOMINIC (CONT'D)
-Twelve minutes! I was over twelve minutes. You see this, Dallas? This is where the taxes go. Not to fixing the potholes or the raccoon problem—oh no—it goes to the guy with the ticket book.
-
-(action)
-Dominic walks around and wiggles his hand above the car tire - finding a secret key here.
-
-DOMINIC
-This is not where it is supposed to go.
-
-
-(action)
 As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
+
+Dominic opens the car and gestures Dallas to get in - non-chantanly the parking ticket in the glove box. 
 
 DOMINIC
 Hey you hungry?
 
 DALLAS
+(still in a daze)
 Yeah
 
 DOMINIC
-Good - my church is doing a fellowship lunch - little picnic - we'll go first and fuel up before getting the car. Don't worry Pal - we'll get your batteries together. 
+Good - my church is doing a fellowship lunch - little picnic - I got to go bring the car there to my sister - but we'll eat first - no worries.  
 
 INT. CAR - DRIVING TO CPC
 
-Dominic drives from Branford Town Center toward the church. Dallas in the passenger seat.
+Dominic drives from Branford Town Center toward the church. Dallas in the passenger seat. Dallas looks out the window - almost as if he is trying to solve some mathamtical equation in his mind
 
 DOMINIC
 So where you from?
@@ -534,20 +525,21 @@ Have you have someone that you've lost?
 DALLAS
 No.
 
+
+(action)
 Dominic looks toward the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged fingernail.
 
 DOMINIC 
 Mr. Mike. I take care of him now. He's had a rough go since the weather changed... He doesn't like it at all. 
 
-Dominic moves to the window and shuts the blinds halfway, like he's done it a thousand times.
-
-Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
+(action)
+Dominic moves to the window and shuts the blinds halfway, like he's done it a thousand times. Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
 
 MR. MIKE
-She's here.
+She's here! Hey Dominic! Look - she's here
 
 (action)
-Dominic is already moving—trying to calm him, trying to stop him.
+Dominic dashes across the room to see what is going on - and then, once realizes - dashes for the door.  
 
 Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
 
@@ -594,10 +586,16 @@ INT. DOMINIC'S HOUSE - CONTINUOUS
 Makayla stops by Dallas's equipment. She doesn't look at it with Janice's annoyance; she looks with genuine curiosity.
 
 MAKAYLA
-This is military grade. What are you tracking?
+Have you given any thought to what I asked you the other day?
 
-DALLAS
-Bioacoustics. Sounds in the marsh.
+(action)
+Dallas looks at Makayla and back at Asher
+
+MAKAYLA
+Let my brother borrow it. 
+
+(action)
+Asher walks over to Mr. Mike to see how he is doing. Makayla approaches Dallas even further. 
 
 MAKAYLA
 Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung.

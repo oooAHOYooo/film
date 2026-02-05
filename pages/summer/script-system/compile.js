@@ -120,8 +120,16 @@ function generateHTMLPage(markdown, scenes) {
   <link rel="stylesheet" href="script.css?v=20260108-5">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
-<body>
+<body class="full-script-page">
   <div class="gallery-container">
+    <!-- Vertical progress rail: fixed left, timeline progression -->
+    <div class="script-progress-rail no-print" id="scriptProgressRail" aria-hidden="true">
+      <div class="script-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="script-progress-fill" id="scriptProgressFill"></div>
+      </div>
+      <div class="script-progress-label" id="scriptProgressLabel">0</div>
+    </div>
+
     <div class="script-sticky-bar no-print" id="scriptStickyBar">
       <div class="nav">
         <div class="nav-left">
@@ -161,12 +169,6 @@ function generateHTMLPage(markdown, scenes) {
             ${sceneOptionsHtml}
           </select>
         </div>
-      </div>
-      <div class="script-progress" id="scriptProgress" aria-hidden="true">
-        <div class="script-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-          <div class="script-progress-fill" id="scriptProgressFill"></div>
-        </div>
-        <div class="script-progress-label" id="scriptProgressLabel">Minute 0</div>
       </div>
     </div>
 
@@ -213,15 +215,15 @@ function generateHTMLPage(markdown, scenes) {
         const scrollTop = docEl.scrollTop || document.body.scrollTop;
         const scrollHeight = docEl.scrollHeight - docEl.clientHeight;
         if (scrollHeight <= 0) {
-          progressFill.style.width = '0%';
-          progressLabel.textContent = 'Minute 0 of ' + estimatedMinutes;
+          progressFill.style.height = '0%';
+          progressLabel.textContent = '0 / ' + estimatedMinutes;
           if (progressBar) progressBar.setAttribute('aria-valuenow', 0);
           return;
         }
         const pct = Math.min(1, Math.max(0, scrollTop / scrollHeight));
         const currentMinute = Math.min(estimatedMinutes, Math.floor(pct * estimatedMinutes));
-        progressFill.style.width = (pct * 100) + '%';
-        progressLabel.textContent = 'Minute ' + currentMinute + ' of ' + estimatedMinutes;
+        progressFill.style.height = (pct * 100) + '%';
+        progressLabel.textContent = currentMinute + ' / ' + estimatedMinutes;
         if (progressBar) progressBar.setAttribute('aria-valuenow', Math.round(pct * 100));
       }
 
