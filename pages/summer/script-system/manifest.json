@@ -56,16 +56,16 @@
     "actTitle": "Arrival & Discovery"
   },
   {
-    "id": "dallas-home-night",
-    "file": "09_dallas_home_night.md",
-    "title": "Dallas Home Night",
+    "id": "dallas-marsh-walk",
+    "file": "09_dallas_marsh_walk.md",
+    "title": "Dallas Marsh Walk",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
-    "id": "janice-arrival",
-    "file": "10_janice_arrival.md",
-    "title": "Janice Arrival",
+    "id": "dallas-night-work",
+    "file": "10_dallas_night_work.md",
+    "title": "Dallas Night Work",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },

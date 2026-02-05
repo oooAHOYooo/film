@@ -18,9 +18,7 @@ DOMINIC
 Pat's been predicting the end of the world every Tuesday for ten years.
 
 (action)
-Dallas notices that there is some red eyes lurking in the windsill reflections. 
-
-The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
+Dallas notices that there is some red eyes lurking in the windsill reflections. The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
 
 EXT. DOMINIC'S HOUSE - LATER
 
@@ -29,7 +27,10 @@ They arrive back at Dominic's. Two large plastic trash bins are sprawled across 
 DOMINIC
 Those damn raccoons! I just put these out!
 
+(action)
 Dominic kicks a stray milk carton. He looks at his front door, then at Dallas.
+
+Dallas notices that there are some weird burn marks on the ground. 
 
 DOMINIC (CONT'D)
 Look, I gotta clean this up and get the furniture moved before the men's group tonight. I got to go check on Mike and bring in another AC unit from the basement. You busy? 
@@ -37,8 +38,3 @@ Look, I gotta clean this up and get the furniture moved before the men's group t
 DALLAS
 (hesitates)
 Sure. 
-
-INT. DOMINIC'S BASEMENT 
-Dallas and Dominic move an AC unit - as they go to install it - Dallas notices a strange burn mark on the ground near the tall grass. 
-
-He walks over to it and examines it - he brings out his oscillator and then begins to record it a bit. The readings are off.

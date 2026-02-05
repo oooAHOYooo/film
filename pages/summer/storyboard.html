@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Storyboard — Creatures in the Tall Grass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/summer.css" />
+    <style>
+      .page {
+        max-width: 1200px;
+        margin: 80px auto 60px;
+        padding: 0 var(--gap, 24px);
+      }
+
+      .header-card {
+        padding: 28px 24px;
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--soft);
+        backdrop-filter: blur(10px);
+        margin-bottom: 24px;
+      }
+
+      .header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .header-title {
+        margin: 0;
+        font-size: 1.9rem;
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      .header-subtitle {
+        margin: 6px 0 0 0;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      .back-link {
+        color: var(--text-secondary);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .back-link:hover { color: var(--text-primary); }
+
+      /* One sheet = 11" × 8.5" with 9 panels (3×3); anamorphic frame 2.39:1 */
+      .storyboard-sheet {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 11in;
+        margin: 0 auto 24px;
+        padding: 0.4in;
+        background: #fdfcfb;
+        border: 1px solid var(--border, #e2e1de);
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      }
+
+      .storyboard-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.25in 0.2in;
+        width: 100%;
+      }
+
+      .storyboard-panel {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+      }
+
+      /* Anamorphic frame (2.39:1) — space for sketch or image */
+      .storyboard-panel .panel-frame {
+        width: 100%;
+        aspect-ratio: 2.39 / 1;
+        background: #f0efec;
+        border: 1.5px solid #2c2c2a;
+        border-radius: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+        font-size: 0.65rem;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .storyboard-panel .panel-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Caption underneath the frame */
+      .storyboard-panel .panel-caption {
+        margin-top: 0.12in;
+        padding: 0 0.02in;
+        font-size: 0.5rem;
+        line-height: 1.4;
+        color: #2c2c2a;
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      .storyboard-panel .panel-meta {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        gap: 0.2em 0.35em;
+        margin-bottom: 0.08em;
+      }
+
+      .storyboard-panel .panel-number {
+        font-weight: 700;
+        color: #5a5a58;
+      }
+
+      .storyboard-panel .panel-camera {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: #2c2c2a;
+      }
+
+      .storyboard-panel .panel-title {
+        font-weight: 600;
+        margin-bottom: 0.06em;
+      }
+
+      .storyboard-panel .panel-caption-text {
+        color: #444;
+      }
+
+      /* Summary table at bottom */
+      .storyboard-summary {
+        max-width: 11in;
+        margin: 2rem auto 4rem;
+        padding: 0 0.5rem;
+      }
+
+      .storyboard-summary h2 {
+        font-size: 1.1rem;
+        margin: 0 0 0.75rem 0;
+        color: var(--text-primary, #2c2c2a);
+      }
+
+      .storyboard-summary-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.75rem;
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      .storyboard-summary-table th,
+      .storyboard-summary-table td {
+        text-align: left;
+        padding: 0.35rem 0.5rem;
+        border-bottom: 1px solid var(--border, #e2e1de);
+      }
+
+      .storyboard-summary-table th {
+        font-weight: 600;
+        color: #5a5a58;
+        background: #f8f7f5;
+      }
+
+      .storyboard-summary-table td:nth-child(1) { width: 2.5em; }
+      .storyboard-summary-table td:nth-child(2) { min-width: 8em; }
+      .storyboard-summary-table td:nth-child(3) { width: 6em; }
+
+      .no-print { }
+      @media print {
+        body { background: #fff; }
+        .page { margin: 0; padding: 0; max-width: none; }
+        .no-print { display: none !important; }
+        .storyboard-sheet {
+          max-width: none;
+          width: 11in;
+          padding: 0.35in;
+          page-break-after: always;
+          box-shadow: none;
+          border-radius: 0;
+          border: none;
+        }
+        .storyboard-sheet:last-child { page-break-after: auto; }
+        .storyboard-grid {
+          gap: 0.2in 0.18in;
+        }
+        .storyboard-panel .panel-frame { aspect-ratio: 2.39 / 1; }
+        .storyboard-summary {
+          margin: 1.5rem auto 2rem;
+          page-break-before: always;
+        }
+        .storyboard-summary-table { font-size: 0.7rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header-card no-print">
+        <div class="header-top">
+          <div>
+            <a href="/pages/summer.html" class="back-link">← Summer Film</a>
+            <h1 class="header-title">Storyboard</h1>
+            <p class="header-subtitle">9 shots per 11×8.5″ page · Anamorphic 2.39:1 frame · Print-friendly</p>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+        </div>
+      </header>
+
+      <div id="sheets"></div>
+
+      <section class="storyboard-summary" id="storyboard-summary">
+        <h2>Storyboard summary</h2>
+        <table class="storyboard-summary-table" id="summary-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Scene</th>
+              <th>Camera</th>
+              <th>Caption</th>
+            </tr>
+          </thead>
+          <tbody id="summary-tbody"></tbody>
+        </table>
+      </section>
+    </div>
+
+    <script>
+      (function() {
+        const SHEETS_URL = 'script-system/manifest.json';
+        const PANELS_PER_PAGE = 9;
+
+        function toRoman(num) {
+          const map = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];
+          let n = num, out = '';
+          for (const [v, s] of map) { while (n >= v) { out += s; n -= v; } }
+          return out;
+        }
+
+        function buildPanel(panel) {
+          const div = document.createElement('div');
+          div.className = 'storyboard-panel';
+          const camera = panel.camera || 'Wide';
+          const caption = panel.caption || '';
+          const frameContent = panel.image
+            ? '<img src="' + escapeAttr(panel.image) + '" alt="">'
+            : '<span>Sketch / image</span>';
+          div.innerHTML =
+            '<div class="panel-frame">' + frameContent + '</div>' +
+            '<div class="panel-caption">' +
+              '<div class="panel-meta">' +
+                '<span class="panel-number">' + escapeHtml(String(panel.sceneNumber).padStart(2, '0')) + '</span>' +
+                ' <span class="panel-camera">' + escapeHtml(camera) + '</span>' +
+              '</div>' +
+              '<div class="panel-title">' + escapeHtml(panel.title) + '</div>' +
+              (caption ? '<div class="panel-caption-text">' + escapeHtml(caption) + '</div>' : '') +
+            '</div>';
+          return div;
+        }
+
+        function escapeAttr(s) {
+          const div = document.createElement('div');
+          div.textContent = s;
+          return div.innerHTML.replace(/"/g, '&quot;');
+        }
+        function escapeHtml(s) {
+          const div = document.createElement('div');
+          div.textContent = s;
+          return div.innerHTML;
+        }
+
+        function renderSheets(panels) {
+          const container = document.getElementById('sheets');
+          container.innerHTML = '';
+          for (let p = 0; p < panels.length; p += PANELS_PER_PAGE) {
+            const chunk = panels.slice(p, p + PANELS_PER_PAGE);
+            const sheet = document.createElement('div');
+            sheet.className = 'storyboard-sheet';
+            const grid = document.createElement('div');
+            grid.className = 'storyboard-grid';
+            for (let i = 0; i < PANELS_PER_PAGE; i++) {
+              const cell = document.createElement('div');
+              if (chunk[i]) {
+                cell.appendChild(buildPanel(chunk[i]));
+              } else {
+                cell.className = 'storyboard-panel';
+                cell.innerHTML = '<div class="panel-frame"><span>—</span></div><div class="panel-caption">&nbsp;</div>';
+              }
+              grid.appendChild(cell);
+            }
+            sheet.appendChild(grid);
+            container.appendChild(sheet);
+          }
+        }
+
+        function renderSummary(panels) {
+          const tbody = document.getElementById('summary-tbody');
+          if (!tbody) return;
+          tbody.innerHTML = '';
+          panels.forEach(function(panel) {
+            const tr = document.createElement('tr');
+            tr.innerHTML =
+              '<td>' + escapeHtml(String(panel.sceneNumber).padStart(2, '0')) + '</td>' +
+              '<td>' + escapeHtml(panel.title) + '</td>' +
+              '<td>' + escapeHtml(panel.camera || 'Wide') + '</td>' +
+              '<td>' + escapeHtml(panel.caption || '') + '</td>';
+            tbody.appendChild(tr);
+          });
+        }
+
+        const DATA_URL = 'storyboard-data.json';
+
+        function mergePanels(scenes, data) {
+          const byScene = {};
+          if (data && data.panels && Array.isArray(data.panels)) {
+            data.panels.forEach(function(p) {
+              byScene[p.sceneId] = { camera: p.camera || 'Wide', caption: p.caption || '', image: p.image };
+            });
+          }
+          return scenes.map(function(s, i) {
+            const row = byScene[s.id] || { camera: 'Wide', caption: '' };
+            return {
+              sceneNumber: i + 1,
+              title: s.title,
+              actTitle: s.actTitle || '',
+              id: s.id,
+              globalIndex: i,
+              camera: row.camera,
+              caption: row.caption,
+              image: row.image
+            };
+          });
+        }
+
+        Promise.all([
+          fetch(SHEETS_URL).then(function(r) { return r.json(); }),
+          fetch(DATA_URL).then(function(r) { return r.json(); }).catch(function() { return {}; })
+        ]        ).then(function(results) {
+          const scenes = results[0];
+          const data = results[1];
+          const panels = mergePanels(scenes, data);
+          renderSheets(panels);
+          renderSummary(panels);
+        }).catch(function(err) {
+          document.getElementById('sheets').innerHTML =
+            '<p class="no-print">Could not load script manifest. Check that <code>script-system/manifest.json</code> exists.</p>';
+        });
+      })();
+    </script>
+  </body>
+</html>

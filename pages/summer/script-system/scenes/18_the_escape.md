@@ -17,7 +17,7 @@ EXT. DALLAS'S PORCH - CONTINUOUS
 Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
 
 DOMINIC
-Life group tonight. Thanks for hosting. I'm heading to Costco—need anything? Water? Batteries?
+Life group tonight. Thanks for letting us use your house. I'm heading to Costco—need anything? Water? Batteries?
 
 DALLAS
 I'm good.

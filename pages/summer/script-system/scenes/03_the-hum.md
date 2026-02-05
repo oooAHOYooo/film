@@ -1,10 +1,7 @@
 EXT. DALLAS HOUSE - DAY
 Dallas walks outside and watches the tall grass sway in the wind. As he walks he notices a man approaching him from the sidewalk near his house. 
 
-
-EXT. BRANFORD STREET - DAY
-
-Dallas walks into town. On the way, he meets his neighbor DOMINIC.
+DOMINIC, early 40s, wearing a bright salmon covered short sleeve button up approaches Dallas with great vigor. 
 
 DOMINIC
 Neighbor!
@@ -25,7 +22,7 @@ DALLAS
 Dallas.
 
 DOMINIC
-Dallas, what a cool name - - What you doing?
+Dallas, what a cool name - - What you up to?
 
 DALLAS
 I'm just walking into town - got to get some batteries.
