@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Outline — Creatures in the Tall Grass</title>
+    <link rel="stylesheet" href="script.css?v=20260108-5">
+    <style>
+      .outline-page .screenplay-container { max-width: 56rem; }
+      .outline-intro { margin-bottom: 1.5rem; color: var(--muted, #7a7976); font-size: 0.95rem; }
+      .outline-act { margin-bottom: 2.5rem; }
+      .outline-act h2 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--text, #2c2c2a); border-bottom: 1px solid var(--border, #e2e1de); padding-bottom: 0.35rem; }
+      .outline-scene { margin-bottom: 1.25rem; padding: 1rem 1.1rem; background: var(--page-bg, #f8f7f5); border: 1px solid var(--border, #e2e1de); border-radius: 8px; }
+      .outline-scene:hover { background: #f3f2f0; border-color: var(--accent-subtle, #a8b0a6); }
+      .outline-scene-head { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.6rem; }
+      .outline-num { font-variant-numeric: tabular-nums; font-size: 0.85rem; color: var(--muted); font-weight: 600; min-width: 1.75rem; }
+      .outline-title { font-weight: 600; font-size: 1rem; }
+      .outline-title a { color: var(--text, #2c2c2a); text-decoration: none; }
+      .outline-title a:hover { color: var(--accent-subtle, #5a6a5e); text-decoration: underline; }
+      .outline-file { font-family: var(--print-script-font, monospace); font-size: 0.75rem; color: var(--muted); }
+      .outline-desc { color: var(--text); font-size: 1rem; line-height: 1.6; margin: 0; padding-left: 1.75rem; }
+      @media (max-width: 480px) { .outline-desc { padding-left: 0; } }
+    </style>
+  </head>
+  <body class="full-script-page outline-page">
+    <div class="gallery-container">
+      <div class="script-sticky-bar no-print">
+        <div class="nav">
+          <div class="nav-left">
+            <a class="nav-link" href="/index.html" title="Home"><span class="nav-icon" aria-hidden="true">⌂</span><span class="nav-text">Home</span></a>
+            <a class="nav-link" href="/pages/summer.html" title="Summer Hub"><span class="nav-icon" aria-hidden="true">☀</span><span class="nav-text">Summer</span></a>
+            <a class="nav-link" href="index.html" title="Gallery"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-text">Gallery</span></a>
+            <a class="nav-link" href="full_script.html" title="Full Script"><span class="nav-text">Full Script</span></a>
+            <span class="nav-link" style="opacity: 0.9;"><span class="nav-text">Scene Outline</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenplay-container">
+        <div class="full-script-header">
+          <div class="full-script-title">Creatures in the Tall Grass — Scene Outline</div>
+          <div class="full-script-meta">Numbers and file names match the script system. Use this to stay on track while writing.</div>
+        </div>
+        <p class="outline-intro">Scene order and titles are loaded from <code>manifest.json</code>. Brief descriptions below.</p>
+        <div id="outlineContent"></div>
+      </div>
+    </div>
+
+    <script>
+      const DESCRIPTIONS = {
+        "arrival": "Dallas at new house with boxes; Makayla and Asher approach, see the oscillator.",
+        "dallas-night": "Dallas at night; early marsh / equipment.",
+        "the-hum": "First hum; Dallas records or reacts to the sound.",
+        "marsh-walk": "Dallas and Dominic (or Dallas alone) walk toward marsh.",
+        "marsh-walk-later": "Continuation along trail; coastal / marsh atmosphere.",
+        "news-vans": "News vans in town; Pat Clendenen, Nor'easter; trash / neighborhood.",
+        "the-coordinates": "Dominic's house; burn mark, photo of wife/kid, Mr. Mike, \"45 L 15 R\"; Janice, brussels, Howie dog-sit.",
+        "dallas-marsh-walk": "Dallas (and Howie?) along coastal trail; marsh, receiver.",
+        "dallas-night-work": "Dominic and Asher pick up Howie; invite to picnic; Dallas at window, equipment, late wife photo, hum, shadows in grass.",
+        "fellowship": "Church picnic at CPC; Dallas and Dominic; Janice, Makayla, Asher; Work, Quinnipiac, bioacoustics; walk home toward marsh.",
+        "shadows-in-wind": "Dallas walks Howie; reader spikes near tall grass; dogs/coyotes, storm alert; the hum builds; Howie afraid, they move on.",
+        "howie-walk-2": "Dallas at window, shadows in grass, hum; Dominic and Asher collect Howie; life group Thursday; something in the marsh.",
+        "the-burn-mark": "Dallas walks Howie at Branford rocks; reader spikes near tall grass; dogs, coyotes, storm alert; the hum; Howie pulls him back to porch.",
+        "entering-grass": "Dallas in tall grass; hollow, eyes in reeds; cry; he approaches.",
+        "creature-rescue": "Dallas finds injured creature; back-holes, waveform; touches it, creature quiets; scope in phase.",
+        "the-burn-mark-2": "Creature on crystal; lifts it, it cries for crystal and faints; something massive in the reeds; Dallas grabs creature, Howie freaks; long journey back.",
+        "the-escape": "Dawn; Janice drops Howie; Makayla and Asher find burn mark and crystal; Dominic, life group papers, Costco, schools cancelled.",
+        "makeshift-hospital": "Creature in kitchen; oscilloscope, dial, creature sleeps; Howie by door; creature cries, hum answers, windows rattle.",
+        "entering-grass-2": "Creature in kitchen; triage, wires, 115.3 MHz; Howie disturbed; windows rattle, hum.",
+        "life-group-arrives": "Dallas brings creature in; porch scope pulses; Dominic, Mr. Mike freaks at basement; Makayla tends creature, glow brightens; Dominic sees it.",
+        "basement-huddle": "Wires on creature; calm = melody, Howie barks = whimper; Dominic/Mr. Mike/Makayla argue; scramble downstairs; doorbell—Josh, Sarah, JP; Mr. Mike 115.2 Hertz.",
+        "the-hymn": "Families, Brussels; Makayla pockets sugar; basement shoebox, crystal, communication; Where's Dallas?—cat lie, vet; Tyler, hymn; hum joins; reflection, leave; Dominic rushes downstairs.",
+        "red-eyes": "Creature wakes, frozen timeline; Dallas outside; dial, something moves in grass; Not wind; decision to return creature; last to leave.",
+        "creature-missing": "Candle, video feed, tape of wife—great hum, why she stopped; red eyes in grass; downstairs—creature gone; eyes gone, night still.",
+        "marsh-confrontation": "Basement empty; Janice's minivan burn marks; Asher—trail to house; Dallas in yard with oscillator; creature gone, bad things calling it back.",
+        "predator-attack": "Mr. Mike barges in; Janice burn marks, Asher trail; Dallas and Makayla build fence; creature gone, they hear cry and hum; go get it; find creatures tending injured one.",
+        "the-perimeter": "Mist, paralysis; red eyes vs golden; predators snatch; Dallas dial, grabs creature, it goes motionless; they escape the grass.",
+        "the-last-dinner": "Crew watch battle; run home; Dallas digs poles, copper wire, perimeter; storm, Pat on radio; Leave the creature; fire engines, hum; This is crazy.",
+        "final-echoes": "Dinner, Mr. Mike 115.3; Makayla bolts into grass with crystal; Dallas powers poles, then goes in; coordinates 45 L 15 R; finds Makayla, creature sings; dark forces cower; dawn; Dallas trashes equipment, alone; hears creature pulse.",
+        "aftermath": "Town normal; Pat Clendenen TV, red eye in fog; church, Nica's lunch, Dominic and Dallas don't talk much; kids, caterpillar in jar, building devices; Dallas workshop—tape, alphabet from hum; bed, echoes; Janice drops Howie again, hug; Dallas and Howie at creek, dial clicks into place."
+      };
+
+      function toRoman(num) {
+        const map = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];
+        let n = num, out = '';
+        for (const [v, s] of map) { while (n >= v) { out += s; n -= v; } }
+        return out;
+      }
+
+      async function loadOutline() {
+        const container = document.getElementById('outlineContent');
+        try {
+          const response = await fetch('manifest.json');
+          const scenes = await response.json();
+          const byAct = new Map();
+          scenes.forEach((scene, index) => {
+            const num = index + 1;
+            const act = scene.act || 0;
+            const actTitle = scene.actTitle || 'Unsorted';
+            if (!byAct.has(act)) byAct.set(act, { actTitle, scenes: [] });
+            byAct.get(act).scenes.push({ ...scene, sceneNumber: num });
+          });
+
+          const actNumbers = Array.from(byAct.keys()).sort((a, b) => a - b);
+          let html = '';
+          actNumbers.forEach((actNum) => {
+            const { actTitle, scenes: actScenes } = byAct.get(actNum);
+            const actLabel = actNum ? `ACT ${toRoman(actNum)}` : 'Unsorted';
+            html += `<div class="outline-act"><h2>${actLabel} — ${actTitle}</h2>`;
+            actScenes.forEach((s) => {
+              const desc = DESCRIPTIONS[s.id] || '—';
+              const num = String(s.sceneNumber).padStart(2, '0');
+              html += `<div class="outline-scene">
+                <div class="outline-scene-head">
+                  <span class="outline-num">${num}</span>
+                  <span class="outline-title"><a href="scene.html?id=${encodeURIComponent(s.id)}">${escapeHtml(s.title)}</a></span>
+                  <span class="outline-file">${escapeHtml(s.file)}</span>
+                </div>
+                <p class="outline-desc">${escapeHtml(desc)}</p>
+              </div>`;
+            });
+            html += '</div>';
+          });
+          container.innerHTML = html;
+        } catch (e) {
+          container.innerHTML = '<p>Could not load manifest. Check that <code>manifest.json</code> exists.</p>';
+        }
+      }
+
+      function escapeHtml(s) {
+        const div = document.createElement('div');
+        div.textContent = s;
+        return div.innerHTML;
+      }
+
+      loadOutline();
+    </script>
+  </body>
+</html>
