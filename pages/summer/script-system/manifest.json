@@ -28,51 +28,51 @@
     "actTitle": "Arrival & Discovery"
   },
   {
-    "id": "fellowship",
-    "file": "05_fellowship.md",
-    "title": "The Fellowship",
-    "act": 1,
-    "actTitle": "Arrival & Discovery"
-  },
-  {
     "id": "marsh-walk-later",
-    "file": "06_marsh_walk.md",
+    "file": "05_marsh_walk.md",
     "title": "Marsh Trail",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "news-vans",
-    "file": "07_news_vans.md",
+    "file": "06_news_vans.md",
     "title": "News Vans & Trash Cans",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "the-coordinates",
-    "file": "08_the_coordinates.md",
+    "file": "07_the_coordinates.md",
     "title": "The Coordinates",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "dallas-marsh-walk",
-    "file": "09_dallas_marsh_walk.md",
+    "file": "08_dallas_marsh_walk.md",
     "title": "Dallas Marsh Walk",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "dallas-night-work",
-    "file": "10_dallas_night_work.md",
+    "file": "09_dallas_night_work.md",
     "title": "Dallas Night Work",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },
   {
     "id": "howie-walk",
-    "file": "11_howie_walk.md",
+    "file": "10_howie_walk.md",
     "title": "Howie Walk & The First Hum",
+    "act": 1,
+    "actTitle": "Arrival & Discovery"
+  },
+  {
+    "id": "fellowship",
+    "file": "11_fellowship.md",
+    "title": "The Fellowship",
     "act": 1,
     "actTitle": "Arrival & Discovery"
   },

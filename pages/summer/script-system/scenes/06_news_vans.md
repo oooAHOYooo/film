@@ -18,7 +18,7 @@ DOMINIC
 Pat's been predicting the end of the world every Tuesday for ten years.
 
 (action)
-Dallas notices that there is some red eyes lurking in the windsill reflections. The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
+The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
 
 EXT. DOMINIC'S HOUSE - LATER
 
