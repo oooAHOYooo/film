@@ -6,12 +6,6 @@ Dallas reaches out, his fingers trembling. As he touches the creature's back, th
 
 He notices the creature was lying on a second crystal, similar to the one Makayla found.
 
-As Dallas lifts the fragile thing toward his chest, it lets out a faint, melodic whimper before fainting. The scope in his pocket goes silent.
+As Dallas lifts the fragile thing toward his chest, it looks out and cries for the crystal—in vain. It faints. The scope in his pocket goes silent.
 
-DALLAS
-
-I've got you.
-
-Suddenly, the wind changes. A heavy, crushing sound approaches through the ree
-
-[TODO: finish this beat / complete last line]
+Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds—something massive, rocketing through the blades like an arrow. Dallas grabs the creature into his coat and rushes out. Howie does not like this. He freaks out. Dallas, the creature, and Howie make the long journey back to the house.
