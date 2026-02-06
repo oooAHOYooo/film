@@ -145,9 +145,9 @@ function generateHTMLPage(markdown, scenes) {
             <span class="nav-icon" aria-hidden="true">▦</span>
             <span class="nav-text">Gallery</span>
           </a>
-          <a class="nav-link" href="full_script.md" title="Markdown">
-            <span class="nav-icon" aria-hidden="true">✎</span>
-            <span class="nav-text">Markdown</span>
+          <a class="nav-link" href="/pages/summer/characters/index.html" title="Character Sheets">
+            <span class="nav-icon" aria-hidden="true">👤</span>
+            <span class="nav-text">Characters</span>
           </a>
         </div>
         <button type="button" class="print-button" onclick="window.print()">Print</button>
