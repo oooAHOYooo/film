@@ -1,6 +1,6 @@
 EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON
 
-Dallas arrives at CPC and find themselves in heat of a picnic. Children are running, friends in light summerwear play spike ball, and people are on line getting food. Dallas looks around at all of the new faces but does not make eye contact. Dominic takes a deep breath, also appearing a little nervous. 
+Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends in light summerwear play spike ball, and people are on line getting food. Dallas looks around at all of the new faces but does not make eye contact. Dominic takes a deep breath, also appearing a little nervous. 
 
 Dominic carries a package of water and puts it under one of the fold up tables. 
 

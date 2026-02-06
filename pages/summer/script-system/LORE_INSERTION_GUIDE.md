@@ -131,7 +131,7 @@
 
 ---
 
-### 13_howie_walk.md
+### 12_howie_walk.md
 
 **After:** *"Dallas and Asher make eye contact and Dallas looks the other way"* (line 40)  
 **Add (direction):** Asher is the one who’s been at the window, who’s seen the grass move. He and Dallas share something unsaid — they’re both listening. *LORE: Asher as observer; later his sketches become “increasingly accurate, increasingly detailed.”* Optional: Asher has a sketchbook under his arm or in his pocket — no callout, just present.

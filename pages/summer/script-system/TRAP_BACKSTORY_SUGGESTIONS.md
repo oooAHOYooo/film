@@ -13,20 +13,7 @@
 
 ## Where to add (in order of story)
 
-### 1. **10_howie_walk.md** (currently empty — “Howie Walk & The First Hum”)
-
-**Idea:** Use this as the *first* time Dallas finds one of their setups.
-
-- Dallas walking Howie early in his stay (before or just after 01).
-- Howie sniffs something in the reeds. Dallas finds: trail cam on a stake, battery pack, maybe a cheap mic or recorder, or a note in a Ziploc.
-- He doesn’t touch it or open the note. Just registers: someone’s been out here, building something.
-- Optional closing beat: he doesn’t know their names yet (Makayla, Asher), but he’s already walking through their territory.
-
-*Result:* When we meet them in 01, we’ve already seen their handiwork.
-
----
-
-### 2. **08_dallas_marsh_walk.md**
+### 1. **08_dallas_marsh_walk.md**
 
 **Existing text:** “There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. Howie runs up to it and smells it.”
 
@@ -40,7 +27,7 @@
 
 ---
 
-### 3. **12_shadows_in_wind.md** (Branford rocks — Dallas and Howie before the hum)
+### 2. **11_shadows_in_wind.md** (Branford rocks — Dallas and Howie before the hum)
 
 **Where:** Early in the scene, when Dallas is walking Howie along the perimeter (before “Dallas holds his portable reader out”).
 
@@ -67,7 +54,7 @@ So the traps feel like the same “project” across scenes:
 - Trail cam (already in 08) + solar or battery pack.
 - Cheap microphone or recorder (ties to Makayla’s ask in 01).
 - String, bottles, or stakes—low-tech “evidence” setups.
-- Optional: a note in a Ziploc (only in one scene, e.g. 10) so it feels personal, not random.
+- Optional: a note in a Ziploc (only in one scene, e.g. 12_howie_walk) so it feels personal, not random.
 
 ---
 

@@ -1,0 +1,23 @@
+EXT. SALT MARSH - DAY (CONTINUOUS)
+
+The younger creatures—two or three—scatter. The elders lift their hands. From their backs, a fine mist sprays out.
+
+Dallas and Makayla stiffen. Their bodies are no longer their own. The hum rolls over them. They are walking backward, away from the circle, step by step. Howie whines, pulled with them.
+
+More lights appear. Dozens of golden glows rise like lanterns in the mist. Then the red eyes. They multiply at the edge of the reeds, contrasting with the gold.
+
+The red eyes begin to circle the golden ones. One by one, in a blur—the mind fills in a predator pouncing—they snatch the lights. The red-eye creatures don't hum. They cancel. Sound disappears the way shadow erases light.
+
+More predators emerge. For every inch they creep, shadow climbs the tall grass. The paralysis holding Dallas and Makayla seems to come from the elders—a last effort to protect the humans—but the elders are no match. The red eyes blink. The small creatures huddle in terror.
+
+Dallas and Makayla move slowly at first, then break into a brisk walk back the way they came. Dallas glances back.
+
+In the distance: the tiny creature. Its pulse blinks large once—then dims. An awful sound of gnashing. Something has it.
+
+Dallas stops. He pulls out the dial. He turns it. The creature's pulse flares again. The predators retract. In that split second, Dallas runs forward, grabs the creature, and runs.
+
+EXT. MARSH TRAIL - CONTINUOUS
+
+Dallas runs with the creature in his coat. He stops. Looks down. The creature has stopped pulsing. It is motionless. He sets it down. Other golden pulses gather around it. The hum drops—lower and lower on the bass scale.
+
+Dallas backs away. Makayla and Howie are already at the edge of the grass. He catches up. They don't look back. They make their way out of the tall grass.

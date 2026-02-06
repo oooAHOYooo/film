@@ -1,0 +1,19 @@
+INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
+
+Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder. Presses play.
+
+His late wife's voice. Her theories. The great hum—something she read about as a girl. A long narration. Why she had to stop. He listens. He goes to bed with her voice still in his head.
+
+EXT. DALLAS'S BACKYARD - NIGHT (SAME)
+
+Dallas looks out the tall window toward the marsh. In the distance: a pair of eyes. Bright. Dim. Bright. Red. He looks across the street—the telephone pole has a red light. Something down the block glows red. He looks back at the tall grass. The red eyes are gone.
+
+He looks again. Closer. The eyes reappear. Swirling through the blades of grass. Watching the house. Little pulses of red light. Inch by inch. Closer to the edge of the yard.
+
+INT. DALLAS'S BASEMENT / DEN - NIGHT
+
+Dallas makes his way downstairs to check on the creature. The makeshift box is empty. The creature is gone.
+
+EXT. DALLAS'S BACKYARD - NIGHT
+
+Dallas at the window again. The eyes are gone. The night is still.
