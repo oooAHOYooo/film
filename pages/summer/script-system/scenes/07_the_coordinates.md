@@ -47,7 +47,10 @@ Dominic dashes across the room to see what is going on - and then, once realizes
 Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
 
 MR. MIKE 
-Forty-five left. Fifteen right.
+Forty-five left. Fifteen right. She's here - Dominic - Janice is here - ASHER! - it is playing the same frequencey Elena chased. 
+
+(action)
+Asher writes the degrees on the back of his palm - far from the sight of Dominic or Janice. 
 
 Dallas freezes. Dominic flips the end table over—the scratchpad numbers disappear against the floorboards.
 
@@ -84,9 +87,20 @@ What is this? A boat anchor?
 DALLAS
 It's a receiver. For work.
 
-INT. DOMINIC'S HOUSE - CONTINUOUS
+(action)
+Mr. Mike in the distance begins to get agitated
 
-Makayla stops by Dallas's equipment. She doesn't look at it with Janice's annoyance; she looks with genuine curiosity.
+MR. Mike
+And when you hurt one - eventually they will transform into the other one - they wont stay kind forever. If the winds get them - they will take charge.
+
+(action)
+Janice walks over and grabs Howie from the car and hands them to Dallas.
+
+JANICE
+Do you mind watching Howie for a bit this afternoon - I have to take everyone to costco
+
+(action)
+Dallas looks at the dog - the dog Howie looks back at the man Dallas. Makayla walks over and grabs the portable Oscillator holding in Dallas' hand. 
 
 MAKAYLA
 Have you given any thought to what I asked you the other day?
