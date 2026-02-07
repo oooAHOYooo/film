@@ -60,8 +60,21 @@ DALLAS
 I suppose. 
 
 MAKAYLA
-Good to know. Okay - byeeeeeee
+What if I found a weird stone that pulses when storms approach - would it pick that up?
+
+DALLAS
+I'm not sure.
+
+MAKAYLA
+Well okay. Asher do you have any questions. 
 
 (action)
-Makayla and Asher leave on bicycle. Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
+Makayla turns to Asher. He shakes his head no. 
+
+MAKAYLA
+Okay then. Byeeeeeee.
+
+
+(action)
+Makayla and Asher peddle their bikes away. Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
 

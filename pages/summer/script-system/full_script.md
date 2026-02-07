@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/7/2026, 3:13:55 PM*
+*Compiled on 2/7/2026, 3:23:08 PM*
 
 ---
 
@@ -78,10 +78,23 @@ DALLAS
 I suppose. 
 
 MAKAYLA
-Good to know. Okay - byeeeeeee
+What if I found a weird stone that pulses when storms approach - would it pick that up?
+
+DALLAS
+I'm not sure.
+
+MAKAYLA
+Well okay. Asher do you have any questions. 
 
 (action)
-Makayla and Asher leave on bicycle. Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
+Makayla turns to Asher. He shakes his head no. 
+
+MAKAYLA
+Okay then. Byeeeeeee.
+
+
+(action)
+Makayla and Asher peddle their bikes away. Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
 
 
 
@@ -782,7 +795,9 @@ INT. DALLAS BEDROOM NIGHT
 Dallas can't sleep. His receivers start to beep off. He walks outside.
 
 EXT. DALLAS HOUSE
-Dallas finds the courage to walk outside and goes into the tall grass. There he sees a faint glow - as he approaches he notices that there is a group of creatures huddling around the gnarl of an old tree. They are 
+Dallas finds the courage to walk outside and goes into the tall grass. There he sees a faint glow - as he approaches he notices that there is a group of creatures huddling around the gnarl of an old tree. The creature is biolumenist - much like a firefly - the other creatures scatter into the marsh as if they were little orbs of golden light - but remains is one, smaller than the rest, injured and letting a cry out. 
+
+As it cries out - Dallas' equipment begins to pulse and spike. 
 
 ---
 
@@ -1203,9 +1218,11 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 
 INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
 
-Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder. Presses play.
+Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder sitting next to him on his desk. Presses play.
 
 His late wife's voice. Her theories. The great hum—something she read about as a girl. A long narration. Why she had to stop. He listens. He goes to bed with her voice still in his head.
+
+Dallas looks back to the video monitor but the creature is gone!
 
 EXT. DALLAS'S BACKYARD - NIGHT (SAME)
 
@@ -1490,6 +1507,9 @@ He looks outside. The soft sound—the pulse of the creature—returns. Faint. T
 EXT. BRANFORD - DAY
 
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
+
+EXT. DALLAS HOUSE
+Dallas looks around at his property - he sees that the wind has knocked over his poles. 
 
 INT. TV STUDIO / NEWS SET - DAY
 

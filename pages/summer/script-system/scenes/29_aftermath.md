@@ -2,6 +2,9 @@ EXT. BRANFORD - DAY
 
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
 
+EXT. DALLAS HOUSE
+Dallas looks around at his property - he sees that the wind has knocked over his poles. 
+
 INT. TV STUDIO / NEWS SET - DAY
 
 PAT CLENDENEN at the anchor desk. Behind him, a window or screen shows southern New England—fog, clearing skies.

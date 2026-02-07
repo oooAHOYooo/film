@@ -1,8 +1,10 @@
 INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
 
-Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder. Presses play.
+Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder sitting next to him on his desk. Presses play.
 
 His late wife's voice. Her theories. The great hum—something she read about as a girl. A long narration. Why she had to stop. He listens. He goes to bed with her voice still in his head.
+
+Dallas looks back to the video monitor but the creature is gone!
 
 EXT. DALLAS'S BACKYARD - NIGHT (SAME)
 
