@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/6/2026, 12:24:08 PM*
+*Compiled on 2/7/2026, 9:38:46 AM*
 
 ---
 
@@ -18,9 +18,9 @@
 
 EXT. DALLAS NEW HOUSE - DAY
 
-Dallas stares at the Tall Grass outside his house as he loads boxes. 
+Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. 
 
-As Dallas deals with a pile of boxes laid out by a tarp from the moving company. MAKAYLA, 22 and ASHER, 14 - approach him on bikes. They watch him for a while.
+MAKAYLA, 22 and ASHER, 14 - approach on bikes. They watch him for a while.
 
 They approach Dallas slowly as one of the boxes draws their curiousity. Makayla watches Dallas pull out a military grade Oscillator.
 
@@ -33,16 +33,28 @@ You know that could be used to track the baseline difference between the cry of 
 Asher nods. Makayla approaches Dallas. 
 
 MAKAYLA
+Hey mister. 
+
+DALLAS
+Yes?
+
+MAKAYLA
 Is that an Oscillator?
 
 DALLAS
 Yes. 
 
+(action)
+Makayla looks at Asher and whispers something in his ear. He nods. She returns glances to Dallas and inches her bike closer. 
+
 MAKAYLA
-Do you think my brother Asher could borrow it some time? He and his friends are hunting for evidence around the marsh.
+Do you think my brother Asher could borrow it some time? 
 
 (action)
 Dallas looks at the Oscillator and then at Makayla and Asher
+
+MAKAYLA
+He needs it to gather evidence.
 
 DALLAS
 What kind of evidence? 
@@ -106,6 +118,9 @@ Dallas walks to the window and attempts to record the readings, and just as it c
 
 He sets the receiver down and heads for the door.
 
+EXT. DALLAS HOUSE
+
+Dallas stands alone watching the tall grass sway agaisnt the salt breeze. 
 
 
 ---
@@ -117,7 +132,7 @@ He sets the receiver down and heads for the door.
 
 ---
 
-EXT. DALLAS HOUSE - DAY
+EXT. DALLAS HOUSE - NEXT DAY MORNING
 Dallas walks outside and watches the tall grass sway in the wind. As he walks he notices a man approaching him from the sidewalk near his house. 
 
 DOMINIC, early 40s, wearing a bright salmon covered short sleeve button up approaches Dallas with great vigor. 
@@ -216,11 +231,8 @@ DALLAS
 Yeah
 
 DOMINIC
-Good - my church is doing a fellowship lunch - little picnic - I got to go bring the car there to my sister - but we'll eat first - no worries.  
+Good - tomorrow my church is doing a fellowship lunch - little picnic - I am bringing in a tray.
 
-INT. CAR - DRIVING TO CPC
-
-Dominic drives from Branford Town Center toward the church. Dallas in the passenger seat. Dallas looks out the window - almost as if he is trying to solve some mathamtical equation in his mind
 
 DOMINIC
 So where you from?
@@ -246,8 +258,6 @@ No - maybe - but for now Quinnipiac.
 DOMINIC
 That's refreshing.
 
-(action)
-They pull into the church lot. The fellowship lawn is ahead—picnic in full swing.
 
 
 ---
@@ -330,14 +340,21 @@ Those damn raccoons! I just put these out!
 (action)
 Dominic kicks a stray milk carton. He looks at his front door, then at Dallas.
 
-Dallas notices that there are some weird burn marks on the ground. 
+Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
 
-DOMINIC (CONT'D)
-Look, I gotta clean this up and get the furniture moved before the men's group tonight. I got to go check on Mike and bring in another AC unit from the basement. You busy? 
+DOMINIC
+Listen, I got to get the furniture moved before the men's group tonight. I got to go check on Mike and bring in another AC from the basement. You good? 
 
 DALLAS
 (hesitates)
+Yeah
+
+DOMINIC
+Do you want to stay for a bit?
+
+DALLAS
 Sure. 
+
 
 ---
 
@@ -348,23 +365,20 @@ Sure.
 
 ---
 
-
 INT. DOMINIC'S BASEMENT 
-Dallas and Dominic move an AC unit - as they go to install it - Dallas notices a strange burn mark on the ground near the tall grass. 
+Dallas and Dominic move an AC unit - as they go to install it. 
 
 He walks over to it and examines it - he brings out his oscillator and then begins to record it a bit. The readings are off.
 
-INT. DOMINIC'S LIVING ROOM - CONTINUOUS
+INT. DOMINIC'S LIVING ROOM 
 
-The house smells like old wood and floor wax. Dallas helps Dominic shove a heavy oak table against the wall.
-
-As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
+Dallas helps Dominic shove a heavy oak table against the wall. As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
 
 DOMINIC
-My wife and kid... Both gone now. 
+My wife and kid... Gone now. Dallas grab the leg
 
 (action)
-Dallas sheepisly looks at Dominic.
+Dallas grabs the leg of the table and pushes. The two look at the table for a while. 
 
 DOMINIC
 What about you?
@@ -375,51 +389,42 @@ What do you mean?
 DOMINIC
 Have you have someone that you've lost?
 
-DALLAS
-No.
-
-
 (action)
-Dominic looks toward the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged fingernail.
+Dallas falls mute. Dominic scans the room and finds his gaze upon the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged nail.
 
 DOMINIC 
-Mr. Mike. I take care of him now. He's had a rough go since the weather changed... He doesn't like it at all. 
+Mr. Mike! Hey - what are you doing? 
 
 (action)
-Dominic moves to the window and shuts the blinds halfway, like he's done it a thousand times. Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
+Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
 
 MR. MIKE
-She's here! Hey Dominic! Look - she's here
-
-(action)
-Dominic dashes across the room to see what is going on - and then, once realizes - dashes for the door.  
-
-Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
-
-MR. MIKE 
-Forty-five left. Fifteen right. She's here - Dominic - Janice is here - ASHER! - it is playing the same frequencey Elena chased. 
-
-(action)
-Asher writes the degrees on the back of his palm - far from the sight of Dominic or Janice. 
-
-Dallas freezes. Dominic flips the end table over—the scratchpad numbers disappear against the floorboards.
-
-MR. MIKE
-Dominic. 
+She's here! Hey Dominic! Look - she's here.
 
 DOMINIC
-Yes Mr. Mike
+Whose hear? Why are you scratching the table?
 
-MR.MIKE
-Your sister is here!
+MR. MIKE
+Your sister.
+
+(action)
+Dominic dashes for the door and opens it. In pops Janice with Makayla and Asher. 
+
+Dallas meanwhile walks towards Mr. Mike before Dominic blocks his view.
+
+MR. MIKE 
+Forty-five left. Fifteen right. She's here - Dominic - Janice is here - ASHER! - it is playing the same one Elena chased. 
+
+(action)
+Asher rushes over to Mr. Mike and eye's widen when he see's what he has been writing. Asher runs to Makayla - who starts to jot the numbers on the table on her palm. 
+
 
 INT. DOMINIC'S KITCHEN - LATE AFTERNOON
 
-The front door slams open. JANICE (40s) marches in, balancing two bags of groceries and a set of keys between her teeth. Behind her, ASHER (15) and MAKAYLA (22) trudge in, staring at their phones.
+JANICE (40s) marches in, balancing two bags of groceries and a set of keys between her teeth. 
 
 JANICE
-(spitting out keys)
-The traffic on I-95 is a literal nightmare. Dominic, why aren't you cooking the sprouts already? We need to boil them first and then sear them. Last time you just boiled them and it was a disgusting mush... Hi Dallas. 
+Traffic the I-95 is a literal nightmare. Dominic, why aren't you cooking the sprouts already? We need to boil them first and then sear them. Last time you just boiled them and it was a disgusting mush... Hi Dallas. 
 
 DOMINIC
 You got it Janice. Anything for the brussels.  

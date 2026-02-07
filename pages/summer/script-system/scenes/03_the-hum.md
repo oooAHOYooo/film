@@ -1,4 +1,4 @@
-EXT. DALLAS HOUSE - DAY
+EXT. DALLAS HOUSE - NEXT DAY MORNING
 Dallas walks outside and watches the tall grass sway in the wind. As he walks he notices a man approaching him from the sidewalk near his house. 
 
 DOMINIC, early 40s, wearing a bright salmon covered short sleeve button up approaches Dallas with great vigor. 

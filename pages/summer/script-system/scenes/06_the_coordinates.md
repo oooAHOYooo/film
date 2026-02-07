@@ -1,19 +1,17 @@
 INT. DOMINIC'S BASEMENT 
-Dallas and Dominic move an AC unit - as they go to install it - Dallas notices a strange burn mark on the ground near the tall grass. 
+Dallas and Dominic move an AC unit - as they go to install it. 
 
 He walks over to it and examines it - he brings out his oscillator and then begins to record it a bit. The readings are off.
 
-INT. DOMINIC'S LIVING ROOM - CONTINUOUS
+INT. DOMINIC'S LIVING ROOM 
 
-The house smells like old wood and floor wax. Dallas helps Dominic shove a heavy oak table against the wall.
-
-As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
+Dallas helps Dominic shove a heavy oak table against the wall. As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
 
 DOMINIC
-My wife and kid... Both gone now. 
+My wife and kid... Gone now. Dallas grab the leg
 
 (action)
-Dallas sheepisly looks at Dominic.
+Dallas grabs the leg of the table and pushes. The two look at the table for a while. 
 
 DOMINIC
 What about you?
@@ -24,51 +22,42 @@ What do you mean?
 DOMINIC
 Have you have someone that you've lost?
 
-DALLAS
-No.
-
-
 (action)
-Dominic looks toward the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged fingernail.
+Dallas falls mute. Dominic scans the room and finds his gaze upon the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged nail.
 
 DOMINIC 
-Mr. Mike. I take care of him now. He's had a rough go since the weather changed... He doesn't like it at all. 
+Mr. Mike! Hey - what are you doing? 
 
 (action)
-Dominic moves to the window and shuts the blinds halfway, like he's done it a thousand times. Mr. Mike suddenly looks up, his eyes milky but sharp. He points a gnarled finger at the window.
+Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
 
 MR. MIKE
-She's here! Hey Dominic! Look - she's here
-
-(action)
-Dominic dashes across the room to see what is going on - and then, once realizes - dashes for the door.  
-
-Mr. Mike scratches faster. Dallas leans in and catches the numbers before Dominic blocks his view.
-
-MR. MIKE 
-Forty-five left. Fifteen right. She's here - Dominic - Janice is here - ASHER! - it is playing the same frequencey Elena chased. 
-
-(action)
-Asher writes the degrees on the back of his palm - far from the sight of Dominic or Janice. 
-
-Dallas freezes. Dominic flips the end table over—the scratchpad numbers disappear against the floorboards.
-
-MR. MIKE
-Dominic. 
+She's here! Hey Dominic! Look - she's here.
 
 DOMINIC
-Yes Mr. Mike
+Whose hear? Why are you scratching the table?
 
-MR.MIKE
-Your sister is here!
+MR. MIKE
+Your sister.
+
+(action)
+Dominic dashes for the door and opens it. In pops Janice with Makayla and Asher. 
+
+Dallas meanwhile walks towards Mr. Mike before Dominic blocks his view.
+
+MR. MIKE 
+Forty-five left. Fifteen right. She's here - Dominic - Janice is here - ASHER! - it is playing the same one Elena chased. 
+
+(action)
+Asher rushes over to Mr. Mike and eye's widen when he see's what he has been writing. Asher runs to Makayla - who starts to jot the numbers on the table on her palm. 
+
 
 INT. DOMINIC'S KITCHEN - LATE AFTERNOON
 
-The front door slams open. JANICE (40s) marches in, balancing two bags of groceries and a set of keys between her teeth. Behind her, ASHER (15) and MAKAYLA (22) trudge in, staring at their phones.
+JANICE (40s) marches in, balancing two bags of groceries and a set of keys between her teeth. 
 
 JANICE
-(spitting out keys)
-The traffic on I-95 is a literal nightmare. Dominic, why aren't you cooking the sprouts already? We need to boil them first and then sear them. Last time you just boiled them and it was a disgusting mush... Hi Dallas. 
+Traffic the I-95 is a literal nightmare. Dominic, why aren't you cooking the sprouts already? We need to boil them first and then sear them. Last time you just boiled them and it was a disgusting mush... Hi Dallas. 
 
 DOMINIC
 You got it Janice. Anything for the brussels.  

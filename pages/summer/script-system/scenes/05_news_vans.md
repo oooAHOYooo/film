@@ -30,11 +30,17 @@ Those damn raccoons! I just put these out!
 (action)
 Dominic kicks a stray milk carton. He looks at his front door, then at Dallas.
 
-Dallas notices that there are some weird burn marks on the ground. 
+Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
 
-DOMINIC (CONT'D)
-Look, I gotta clean this up and get the furniture moved before the men's group tonight. I got to go check on Mike and bring in another AC unit from the basement. You busy? 
+DOMINIC
+Listen, I got to get the furniture moved before the men's group tonight. I got to go check on Mike and bring in another AC from the basement. You good? 
 
 DALLAS
 (hesitates)
+Yeah
+
+DOMINIC
+Do you want to stay for a bit?
+
+DALLAS
 Sure. 

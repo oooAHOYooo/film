@@ -22,3 +22,6 @@ Dallas walks to the window and attempts to record the readings, and just as it c
 
 He sets the receiver down and heads for the door.
 
+EXT. DALLAS HOUSE
+
+Dallas stands alone watching the tall grass sway agaisnt the salt breeze. 

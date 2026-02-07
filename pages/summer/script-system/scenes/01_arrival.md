@@ -1,8 +1,8 @@
 EXT. DALLAS NEW HOUSE - DAY
 
-Dallas stares at the Tall Grass outside his house as he loads boxes. 
+Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. 
 
-As Dallas deals with a pile of boxes laid out by a tarp from the moving company. MAKAYLA, 22 and ASHER, 14 - approach him on bikes. They watch him for a while.
+MAKAYLA, 22 and ASHER, 14 - approach on bikes. They watch him for a while.
 
 They approach Dallas slowly as one of the boxes draws their curiousity. Makayla watches Dallas pull out a military grade Oscillator.
 
@@ -15,6 +15,12 @@ You know that could be used to track the baseline difference between the cry of 
 Asher nods. Makayla approaches Dallas. 
 
 MAKAYLA
+Hey mister. 
+
+DALLAS
+Yes?
+
+MAKAYLA
 Is that an Oscillator?
 
 DALLAS
@@ -24,10 +30,13 @@ Yes.
 Makayla looks at Asher and whispers something in his ear. He nods. She returns glances to Dallas and inches her bike closer. 
 
 MAKAYLA
-Do you think my brother Asher could borrow it some time? He and his friends are hunting for evidence around the marsh.
+Do you think my brother Asher could borrow it some time? 
 
 (action)
 Dallas looks at the Oscillator and then at Makayla and Asher
+
+MAKAYLA
+He needs it to gather evidence.
 
 DALLAS
 What kind of evidence? 
