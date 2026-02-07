@@ -1,4 +1,3 @@
-
 INT. DOMINIC'S BASEMENT 
 Dallas and Dominic move an AC unit - as they go to install it - Dallas notices a strange burn mark on the ground near the tall grass. 
 

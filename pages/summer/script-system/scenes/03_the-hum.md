@@ -97,11 +97,8 @@ DALLAS
 Yeah
 
 DOMINIC
-Good - my church is doing a fellowship lunch - little picnic - I got to go bring the car there to my sister - but we'll eat first - no worries.  
+Good - tomorrow my church is doing a fellowship lunch - little picnic - I am bringing in a tray.
 
-INT. CAR - DRIVING TO CPC
-
-Dominic drives from Branford Town Center toward the church. Dallas in the passenger seat. Dallas looks out the window - almost as if he is trying to solve some mathamtical equation in his mind
 
 DOMINIC
 So where you from?
@@ -127,5 +124,3 @@ No - maybe - but for now Quinnipiac.
 DOMINIC
 That's refreshing.
 
-(action)
-They pull into the church lot. The fellowship lawn is ahead—picnic in full swing.

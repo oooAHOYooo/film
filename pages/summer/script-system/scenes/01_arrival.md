@@ -20,6 +20,9 @@ Is that an Oscillator?
 DALLAS
 Yes. 
 
+(action)
+Makayla looks at Asher and whispers something in his ear. He nods. She returns glances to Dallas and inches her bike closer. 
+
 MAKAYLA
 Do you think my brother Asher could borrow it some time? He and his friends are hunting for evidence around the marsh.
 

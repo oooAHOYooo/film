@@ -7,13 +7,13 @@
 ## Why it helps
 
 - **01_arrival:** Makayla says Asher and his friends are “hunting for evidence around the marsh” and asks to borrow the Oscillator. If we’ve already seen Dallas finding their traps on his Howie walks, that line pays off instead of introducing the idea.
-- **07_the_coordinates:** When Makayla asks about frequencies “below the human range” and “like a vibrating lung,” we already know she’s been out there with mics and rigs—she’s not just curious, she’s been building.
+- **06_the_coordinates:** When Makayla asks about frequencies “below the human range” and “like a vibrating lung,” we already know she’s been out there with mics and rigs—she’s not just curious, she’s been building.
 
 ---
 
 ## Where to add (in order of story)
 
-### 1. **08_dallas_marsh_walk.md**
+### 1. **07_dallas_marsh_walk.md**
 
 **Existing text:** “There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. Howie runs up to it and smells it.”
 
@@ -27,7 +27,7 @@
 
 ---
 
-### 2. **11_shadows_in_wind.md** (Branford rocks — Dallas and Howie before the hum)
+### 2. **10_shadows_in_wind.md** (Branford rocks — Dallas and Howie before the hum)
 
 **Where:** Early in the scene, when Dallas is walking Howie along the perimeter (before “Dallas holds his portable reader out”).
 
@@ -43,7 +43,7 @@
 
 ## Optional: one more beat
 
-- **04_marsh_walk.md or 05_marsh_walk.md:** These are Dallas + Dominic (no Howie). If you ever add a beat where they pass the trail or the edge of the marsh, Dominic could point out “the kids are always out here with their cameras” or Dallas could notice a stake in the reeds—tiny reinforcement that the traps are part of the neighborhood.
+- **04_marsh_walk.md:** This is Dallas + Dominic (no Howie). If you ever add a beat where they pass the trail or the edge of the marsh, Dominic could point out “the kids are always out here with their cameras” or Dallas could notice a stake in the reeds—tiny reinforcement that the traps are part of the neighborhood.
 
 ---
 
@@ -51,10 +51,10 @@
 
 So the traps feel like the same “project” across scenes:
 
-- Trail cam (already in 08) + solar or battery pack.
+- Trail cam (already in 07) + solar or battery pack.
 - Cheap microphone or recorder (ties to Makayla’s ask in 01).
 - String, bottles, or stakes—low-tech “evidence” setups.
-- Optional: a note in a Ziploc (only in one scene, e.g. 12_howie_walk) so it feels personal, not random.
+- Optional: a note in a Ziploc (only in one scene, e.g. 11_howie_walk) so it feels personal, not random.
 
 ---
 

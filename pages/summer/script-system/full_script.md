@@ -253,39 +253,9 @@ They pull into the church lot. The fellowship lawn is ahead—picnic in full swi
 ---
 
 
-### Scene 4: Marsh Walk
+### Scene 4: Marsh Trail
 
-*ACT I — Arrival & Discovery | ID: marsh-walk | File: 04_marsh_walk.md*
-
----
-
-EXT. MARSH TRAIL - LATER
-
-The sun is dipping. Dallas and Dominic walk along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
-
-Dominic pulls out his phone, tapping an app.
-
-DOMINIC
-
-See this? Listen - those are *seagulls. It listens to the chirps and tells you the species. Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
-
-(action)
-Dallas pulls out his own military-grade receiver. He adjusts a dial. Through his heavy headsets, he doesn't hear birds. He hears a low, rhythmic THRUB-THRUB-THRUB.
-
-DOMINIC
-Your little toy showing you good results?
-There’s a spot near the edge of the entrance creek where the Coyotes gather. Sounds like a choir of demons at 2 AM. You'll hear 'em soon enough.
-
-(action)
-Dallas stops. He looks into the thick grass. The wind moves the reeds, but it looks like something else is moving *underneath* them, contrary to the breeze.
-
-
----
-
-
-### Scene 5: Marsh Trail
-
-*ACT I — Arrival & Discovery | ID: marsh-walk-later | File: 05_marsh_walk.md*
+*ACT I — Arrival & Discovery | ID: marsh-walk-later | File: 04_marsh_walk.md*
 
 ---
 
@@ -322,9 +292,9 @@ Dallas stops. He looks into the thick grass. The wind moves the reeds, but it lo
 ---
 
 
-### Scene 6: News Vans & Trash Cans
+### Scene 5: News Vans & Trash Cans
 
-*ACT I — Arrival & Discovery | ID: news-vans | File: 06_news_vans.md*
+*ACT I — Arrival & Discovery | ID: news-vans | File: 05_news_vans.md*
 
 ---
 
@@ -372,9 +342,9 @@ Sure.
 ---
 
 
-### Scene 7: The Coordinates
+### Scene 6: The Coordinates
 
-*ACT I — Arrival & Discovery | ID: the-coordinates | File: 07_the_coordinates.md*
+*ACT I — Arrival & Discovery | ID: the-coordinates | File: 06_the_coordinates.md*
 
 ---
 
@@ -510,9 +480,9 @@ The family vanishes in a blur of activity, leaving Dallas standing in the sudden
 ---
 
 
-### Scene 8: Dallas Marsh Walk
+### Scene 7: Dallas Marsh Walk
 
-*ACT I — Arrival & Discovery | ID: dallas-marsh-walk | File: 08_dallas_marsh_walk.md*
+*ACT I — Arrival & Discovery | ID: dallas-marsh-walk | File: 07_dallas_marsh_walk.md*
 
 ---
 
@@ -555,9 +525,9 @@ Dallas turns and begins to make his way back, the receiver still recording, stil
 ---
 
 
-### Scene 9: Dallas Night Work
+### Scene 8: Dallas Night Work
 
-*ACT I — Arrival & Discovery | ID: dallas-night-work | File: 09_dallas_home_night.md*
+*ACT I — Arrival & Discovery | ID: dallas-night-work | File: 08_dallas_home_night.md*
 
 ---
 
@@ -622,9 +592,9 @@ Outside, the marsh is dark. Inside, Dallas is wide awake, chasing a signal into 
 ---
 
 
-### Scene 10: The Fellowship
+### Scene 9: The Fellowship
 
-*ACT I — Arrival & Discovery | ID: fellowship | File: 10_fellowship.md*
+*ACT I — Arrival & Discovery | ID: fellowship | File: 09_fellowship.md*
 
 ---
 
@@ -736,9 +706,9 @@ In the far distance, COYOTES HOWL.
 ---
 
 
-### Scene 11: Shadows in Wind
+### Scene 10: Shadows in Wind
 
-*ACT I — Arrival & Discovery | ID: shadows-in-wind | File: 11_shadows_in_wind.md*
+*ACT I — Arrival & Discovery | ID: shadows-in-wind | File: 10_shadows_in_wind.md*
 
 ---
 
@@ -778,9 +748,9 @@ Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dalla
 ---
 
 
-### Scene 12: Howie Walk (Edge of Marsh)
+### Scene 11: Howie Walk (Edge of Marsh)
 
-*ACT I — Arrival & Discovery | ID: howie-walk-2 | File: 12_howie_walk.md*
+*ACT I — Arrival & Discovery | ID: howie-walk-2 | File: 11_howie_walk.md*
 
 ---
 
@@ -838,9 +808,9 @@ In the darkness of the marsh, something stares back.
 ---
 
 
-### Scene 13: The Burn Mark & Costco
+### Scene 12: The Burn Mark & Costco
 
-*ACT II — The Creature | ID: the-burn-mark | File: 13_the_burn_mark.md*
+*ACT II — The Creature | ID: the-burn-mark | File: 12_the_burn_mark.md*
 
 ---
 
@@ -880,9 +850,9 @@ Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dalla
 ---
 
 
-### Scene 14: Entering Grass & The Hollow
+### Scene 13: Entering Grass & The Hollow
 
-*ACT II — The Creature | ID: entering-grass | File: 14_entering_grass.md*
+*ACT II — The Creature | ID: entering-grass | File: 13_entering_grass.md*
 
 ---
 
@@ -918,9 +888,9 @@ Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels 
 ---
 
 
-### Scene 15: Creature Rescue
+### Scene 14: Creature Rescue
 
-*ACT II — The Creature | ID: creature-rescue | File: 15_creature_rescue.md*
+*ACT II — The Creature | ID: creature-rescue | File: 14_creature_rescue.md*
 
 ---
 
@@ -970,9 +940,9 @@ A flickering glow emanates from its neck. Its "back-holes"—delicate vents alon
 ---
 
 
-### Scene 16: The Burn Mark
+### Scene 15: The Burn Mark
 
-*ACT II — The Creature | ID: the-burn-mark-2 | File: 16_the_burn_mark.md*
+*ACT II — The Creature | ID: the-burn-mark-2 | File: 15_the_burn_mark.md*
 
 ---
 
@@ -992,9 +962,9 @@ Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds
 ---
 
 
-### Scene 17: The Escape
+### Scene 16: The Escape
 
-*ACT II — The Creature | ID: the-escape | File: 17_the_escape.md*
+*ACT II — The Creature | ID: the-escape | File: 16_the_escape.md*
 
 ---
 
@@ -1031,9 +1001,9 @@ Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels 
 ---
 
 
-### Scene 18: Makeshift Hospital
+### Scene 17: Makeshift Hospital
 
-*ACT II — The Creature | ID: makeshift-hospital | File: 18_makeshift_hospital.md*
+*ACT II — The Creature | ID: makeshift-hospital | File: 17_makeshift_hospital.md*
 
 ---
 
@@ -1055,9 +1025,9 @@ He stops at the edge of his driveway, gasping for air. He looks down at his coat
 ---
 
 
-### Scene 19: Entering Grass
+### Scene 18: Entering Grass
 
-*ACT II — The Creature | ID: entering-grass-2 | File: 19_entering_grass.md*
+*ACT II — The Creature | ID: entering-grass-2 | File: 18_entering_grass.md*
 
 ---
 
@@ -1093,9 +1063,9 @@ Howie sits in the corner, head cocked, shivering. Outside, the world responds: t
 ---
 
 
-### Scene 20: Life Group Arrives
+### Scene 19: Life Group Arrives
 
-*ACT II — The Creature | ID: life-group-arrives | File: 20_life_group_arrives.md*
+*ACT II — The Creature | ID: life-group-arrives | File: 19_life_group_arrives.md*
 
 ---
 
@@ -1146,9 +1116,9 @@ What is that?
 ---
 
 
-### Scene 21: Basement Huddle
+### Scene 20: Basement Huddle
 
-*ACT II — The Creature | ID: basement-huddle | File: 21_basement_huddle.md*
+*ACT II — The Creature | ID: basement-huddle | File: 20_basement_huddle.md*
 
 ---
 
@@ -1195,9 +1165,9 @@ Dallas glances at the basement door. Downstairs, the creature is hidden. For now
 ---
 
 
-### Scene 22: The Hymn
+### Scene 21: The Hymn
 
-*ACT II — The Creature | ID: the-hymn | File: 22_the_hymn.md*
+*ACT II — The Creature | ID: the-hymn | File: 21_the_hymn.md*
 
 ---
 
@@ -1249,9 +1219,9 @@ During a silent moment of reflection, the hum starts again. Everyone is unsettle
 ---
 
 
-### Scene 23: Red Eyes
+### Scene 22: Red Eyes
 
-*ACT II — The Creature | ID: red-eyes | File: 23_red_eyes.md*
+*ACT II — The Creature | ID: red-eyes | File: 22_red_eyes.md*
 
 ---
 
@@ -1288,9 +1258,9 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 ---
 
 
-### Scene 24: Creature Missing
+### Scene 23: Creature Missing
 
-*ACT II — The Creature | ID: creature-missing | File: 24_creature_missing.md*
+*ACT II — The Creature | ID: creature-missing | File: 23_creature_missing.md*
 
 ---
 
@@ -1323,9 +1293,9 @@ Dallas at the window again. The eyes are gone. The night is still.
 ---
 
 
-### Scene 25: Marsh Confrontation
+### Scene 24: Marsh Confrontation
 
-*ACT III — The Return | ID: marsh-confrontation | File: 25_marsh_confrontation.md*
+*ACT III — The Return | ID: marsh-confrontation | File: 24_marsh_confrontation.md*
 
 ---
 
@@ -1351,9 +1321,9 @@ She can't find him. Inside, Dallas is already in the backyard—staring at the m
 ---
 
 
-### Scene 26: Predator Attack
+### Scene 25: Predator Attack
 
-*ACT III — The Return | ID: predator-attack | File: 26_predator_attack.md*
+*ACT III — The Return | ID: predator-attack | File: 25_predator_attack.md*
 
 ---
 
@@ -1410,9 +1380,9 @@ Dallas and Makayla slow. Howie whines. The creatures have not yet scattered. For
 ---
 
 
-### Scene 27: The Perimeter
+### Scene 26: The Perimeter
 
-*ACT III — The Return | ID: the-perimeter | File: 27_the_perimeter.md*
+*ACT III — The Return | ID: the-perimeter | File: 26_the_perimeter.md*
 
 ---
 
@@ -1444,9 +1414,9 @@ Dallas backs away. Makayla and Howie are already at the edge of the grass. He ca
 ---
 
 
-### Scene 28: The Last Dinner
+### Scene 27: The Last Dinner
 
-*ACT III — The Return | ID: the-last-dinner | File: 28_the_last_dinner.md*
+*ACT III — The Return | ID: the-last-dinner | File: 27_the_last_dinner.md*
 
 ---
 
@@ -1495,9 +1465,9 @@ No one answers.
 ---
 
 
-### Scene 29: Final Echoes
+### Scene 28: Final Echoes
 
-*ACT IV — Aftermath | ID: final-echoes | File: 29_final_echoes.md*
+*ACT IV — Aftermath | ID: final-echoes | File: 28_final_echoes.md*
 
 ---
 
@@ -1574,9 +1544,9 @@ He looks outside. The soft sound—the pulse of the creature—returns. Faint. T
 ---
 
 
-### Scene 30: Aftermath
+### Scene 29: Aftermath
 
-*ACT IV — Aftermath | ID: aftermath | File: 30_aftermath.md*
+*ACT IV — Aftermath | ID: aftermath | File: 29_aftermath.md*
 
 ---
 

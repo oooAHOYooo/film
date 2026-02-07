@@ -37,7 +37,7 @@ Before Dallas goes into town for batteries, he steps into the tall grass behind 
 Open `01_arrival.md`. Add 2-3 lines at the end where Dallas looks at the dead equipment, looks back at the grass, then heads into town for batteries. The grass is now the reason he leaves the house — not just dead batteries. He wants better equipment because he heard something real.
 
 **Task 1.3 — Plant the first grass mention in Dominic's dialogue (5 min)**
-Open the fellowship/walk scenes (03-06). Find a spot where Dominic is talking about the neighborhood. Add one line where Dominic mentions the tall grass casually: something like "Nobody goes back there" or "kids used to play in there but the ticks got bad" — something mundane that later becomes ominous. One line. That's it.
+Open the fellowship/walk scenes (03-05). Find a spot where Dominic is talking about the neighborhood. Add one line where Dominic mentions the tall grass casually: something like "Nobody goes back there" or "kids used to play in there but the ticks got bad" — something mundane that later becomes ominous. One line. That's it.
 
 **Task 1.4 — Update the manifest (5 min)**
 Add the new grass scene to `manifest.json` in the right position (after arrival, before the battery walk). Don't recompile yet — just get the manifest right.
@@ -49,34 +49,34 @@ Run `node pages/summer/script-system/compile.js`. Read the first 5 scenes of `fu
 
 ### Round 2 — Strengthen Act II's Trip
 
-**Task 2.1 — Reread scenes 12-15 (5 min)**
-Read `12_howie_walk.md`, `13_the_burn_mark.md`, `14_entering_grass.md`, `15_creature_rescue.md` back to back. This is Dallas's second trip into the grass. Ask yourself: does it feel different from the first trip? It should be scarier, more deliberate. Note what's missing.
+**Task 2.1 — Reread scenes 11-14 (5 min)**
+Read `11_howie_walk.md`, `12_the_burn_mark.md`, `13_entering_grass.md`, `14_creature_rescue.md` back to back. This is Dallas's second trip into the grass. Ask yourself: does it feel different from the first trip? It should be scarier, more deliberate. Note what's missing.
 
 **Task 2.2 — Add a callback to the first trip (5 min)**
-In `14_entering_grass.md`, add 2-3 lines where Dallas recognizes the pattern on his scope — it's the same waveform from his first trip, but stronger. He knows this frequency. That's why he ties up Howie and goes in. He's not exploring anymore — he's following something he heard before.
+In `13_entering_grass.md`, add 2-3 lines where Dallas recognizes the pattern on his scope — it's the same waveform from his first trip, but stronger. He knows this frequency. That's why he ties up Howie and goes in. He's not exploring anymore — he's following something he heard before.
 
 **Task 2.3 — Make the creature's sound specific (5 min)**
-In `15_creature_rescue.md`, you describe the creature's back-holes making sound. Add one concrete detail about what the sound reminds Dallas of. His wife's voice? A specific recording? A lullaby? Something that explains why he can't walk away. One line of internal reaction.
+In `14_creature_rescue.md`, you describe the creature's back-holes making sound. Add one concrete detail about what the sound reminds Dallas of. His wife's voice? A specific recording? A lullaby? Something that explains why he can't walk away. One line of internal reaction.
 
 **Task 2.4 — Add the "something chasing" beat (5 min)**
-Check `17_the_escape.md` (13 lines). This is where something charges through the grass at Dallas. Expand by 5-7 lines:
+Check `16_the_escape.md` (13 lines). This is where something charges through the grass at Dallas. Expand by 5-7 lines:
 - The sound of the grass parting behind him — not wind, something heavy
 - His scope going haywire — readings he's never seen
 - Dallas running with the creature in his coat, Howie pulling at the tree leash
 - The sound stopping exactly at the tree line, like it won't cross into the open
 
 **Task 2.5 — Compile and read Act II (5 min)**
-Recompile. Read scenes 12-18. The second trip should feel like: "I've been here before but something has changed." If it does, move on.
+Recompile. Read scenes 11-17. The second trip should feel like: "I've been here before but something has changed." If it does, move on.
 
 ---
 
 ### Round 3 — Fix Act III (The Big One)
 
 **Task 3.1 — Move the perimeter fence to Act II (5 min)**
-The fence-building currently happens mid-Act III. It belongs after the creature disappears (scene 24). Open `24_creature_missing.md` and add 4-5 lines at the end: Dallas goes outside, starts digging poles, stringing copper wire. He's scared. He's building a wall. This is a grief response — he couldn't protect his wife, he couldn't keep the creature, so he builds a fence.
+The fence-building currently happens mid-Act III. It belongs after the creature disappears (scene 23). Open `23_creature_missing.md` and add 4-5 lines at the end: Dallas goes outside, starts digging poles, stringing copper wire. He's scared. He's building a wall. This is a grief response — he couldn't protect his wife, he couldn't keep the creature, so he builds a fence.
 
 **Task 3.2 — Cut the first Act III scouting trip (5 min)**
-The treatment has Dallas and Makayla going into the grass, finding the creature group, getting paralyzed by mist, then walking home, THEN going back in. Cut the first trip. Open `25_marsh_confrontation.md`. Instead of a scouting trip, make this the scene where Makayla is restless on the porch, watching the grass, while Dallas monitors equipment. Build tension. They're waiting, not going in yet. 8-10 lines.
+The treatment has Dallas and Makayla going into the grass, finding the creature group, getting paralyzed by mist, then walking home, THEN going back in. Cut the first trip. Open `24_marsh_confrontation.md`. Instead of a scouting trip, make this the scene where Makayla is restless on the porch, watching the grass, while Dallas monitors equipment. Build tension. They're waiting, not going in yet. 8-10 lines.
 
 **Task 3.3 — Write Makayla's sprint (5 min)**
 This is the ignition of Act III. Write a new version of the moment Makayla grabs the crystal and runs into the grass. 8-10 lines:
@@ -89,7 +89,7 @@ This is the ignition of Act III. Write a new version of the moment Makayla grabs
 - Dominic at the edge of the grass, calling her name
 
 **Task 3.4 — Consolidate into one climactic trip (5 min)**
-`26_predator_attack.md` is 7 lines. This is supposed to be the most intense scene in the film. Expand to 20-25 lines:
+`25_predator_attack.md` is 7 lines. This is supposed to be the most intense scene in the film. Expand to 20-25 lines:
 - Dallas enters the grass alone (Dominic stays with Mr. Mike)
 - The silence — wind outside but nothing in here
 - He follows the coordinates from the napkin
@@ -99,7 +99,7 @@ This is the ignition of Act III. Write a new version of the moment Makayla grabs
 - Don't rush this. Let the images land.
 
 **Task 3.5 — Write the walk home (5 min)**
-After the climax, the crew walks out of the grass. Write 8-10 lines for `27_the_perimeter.md`:
+After the climax, the crew walks out of the grass. Write 8-10 lines for `26_the_perimeter.md`:
 - Nobody talks
 - The storm is breaking
 - Dallas looks back once
@@ -112,10 +112,10 @@ After the climax, the crew walks out of the grass. Write 8-10 lines for `27_the_
 ### Round 4 — Give Act IV Room
 
 **Task 4.1 — The trash can scene (5 min)**
-Start `29_final_echoes.md` from scratch. First beat: Dallas hears the hum through the kitchen window. He looks at the trash can. His equipment is right there. He stares at it. He takes it out. Wipes it off. This is the scene — he tried to let it go and he can't. 6-8 lines.
+Start `28_final_echoes.md` from scratch. First beat: Dallas hears the hum through the kitchen window. He looks at the trash can. His equipment is right there. He stares at it. He takes it out. Wipes it off. This is the scene — he tried to let it go and he can't. 6-8 lines.
 
 **Task 4.2 — The church lunch (5 min)**
-Add a scene or expand 29: Dallas and Dominic at the church lunch, not talking. Eating Nica's. Watching the kids. Makayla puts a caterpillar in a jar. Asher is sketching something — maybe one of the creatures from memory. 6-8 lines. This is the family forming without anyone acknowledging it.
+Add a scene or expand 28: Dallas and Dominic at the church lunch, not talking. Eating Nica's. Watching the kids. Makayla puts a caterpillar in a jar. Asher is sketching something — maybe one of the creatures from memory. 6-8 lines. This is the family forming without anyone acknowledging it.
 
 **Task 4.3 — The alphabet (5 min)**
 Dallas at his workshop. Playing his wife's tape. Recording the hum. Writing symbols — not equations, not science, but an alphabet. He's learning to speak the creature's language. 5-6 lines. Keep it quiet.
@@ -131,7 +131,7 @@ Run the compiler. Read the full script start to finish. Don't edit. Just read. N
 ### Round 5 — Cleanup
 
 **Task 5.1 — Check for orphan scene files (5 min)**
-`05_news_vans.md` and `07_janice_arrival.md` exist but may be duplicates from the renumbering. Compare them to `06_news_vans.md` and `09_janice_arrival.md`. If they're old versions, delete them. If they have unique content, merge the good parts.
+`05_news_vans.md` and `06_janice_arrival.md` exist but may be duplicates from the renumbering. Compare them to the manifest versions (`05_news_vans.md`, `08_janice_arrival.md`). If they're old versions, delete them. If they have unique content, merge the good parts.
 
 **Task 5.2 — Fix the equipment contradiction (5 min)**
 Search the script for any moment where Dallas uses equipment after the "trash" beat. Make sure the trash-then-retrieval order is clear. If you kept the trash moment, the retrieval in Act IV needs to exist on the page.
@@ -301,13 +301,13 @@ He takes it back out because he's more afraid of not listening.
 
 ### What's ready
 - Story and treatment are solid through all 4 acts (v1.11, 17 drafts deep)
-- Acts I and II are well-scripted — scenes 01-22 are real screenplay pages with dialogue, action, beats
+- Acts I and II are well-scripted — scenes 01-21 are real screenplay pages with dialogue, action, beats
 - Production docs, wardrobe, location scouts — done
 - Tooling pipeline works (compile, version, deploy)
 - You know Branford and these characters
 
 ### What's not ready
-- **Scenes 24-29 are stubs.** 7-11 lines each. You cannot shoot Act III/IV off what's on the page. Actors need real scenes.
+- **Scenes 23-28 are stubs.** 7-11 lines each. You cannot shoot Act III/IV off what's on the page. Actors need real scenes.
 - **The structural rework** (every act = a trip into the grass) needs to be executed in the actual scene files
 - **Creature design** — do you have a practical/VFX plan? The back-holes, bioluminescence, downy fur. This is make-or-break and it's not in any production doc yet.
 
