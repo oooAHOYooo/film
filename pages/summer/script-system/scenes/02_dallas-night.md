@@ -4,9 +4,11 @@ Dallas struggles to fall asleep in his new home. He hears strange noises from ou
 
 Curious and wide awake - Dallas finishes unpacking boxes. The room is sparse, filled with moving supplies and a few pieces of furniture.
 
-He hears a noise from outside. Dallas pauses and peers outside. Curious, he opens a box marked "GENIVE."
+He hears a noise from outside. Dallas pauses and peers through his living room window. 
 
-Dallas pulls out a heavy, a bunch of old vanilla folders. military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones. 
+Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Sierra".
+
+Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones. 
 
 On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker.
 

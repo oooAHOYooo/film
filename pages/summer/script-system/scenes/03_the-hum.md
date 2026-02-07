@@ -66,18 +66,12 @@ Oh, it's an audio recorder.
 DOMINIC
 Be careful - there are coyotes up in that.
 
+(action)
 Dallas continues to record.
-
-DOMINIC
-Come on champ. Hey - there's a fellowship lunch at my church today, CPC. You should come. Free food. We're going to be late though.
-
-DALLAS
-Sure.
 
 EXT. TOWN CENTER - DAY
 
 Dallas and Dominic walk toward a small hardware store. The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
-
 
 DOMINIC
 You have got to be kidding me!

@@ -83,21 +83,7 @@ DALLAS
 Yep.
 
 DOMINIC
-
 Okay cool. That's cool.
 
-They finish eating. The group begins to disperse.
-
-DOMINIC
-
-Want to walk back together? I'll show you around.
-
-DALLAS
-
-Sure.
-
 (action)
-
-They start walking towards the marsh, towards the New England coast.
-
-In the far distance, COYOTES HOWL.
+They finish eating. The group begins to disperse. Janice walks over to Dallas and hands him Howie again. 

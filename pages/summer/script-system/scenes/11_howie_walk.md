@@ -4,7 +4,7 @@ Dallas stands at the window, staring into the ripping field. The storm is brewin
 
 Shadows—tall, spindly, and darker than the night—grow in the distance. They move *against* the wind, cutting through the blades of grass like silent ships.
 
-He touches the photo of his late wife on the side of the receiver. The contact is long, desperate.
+He touches the photo of his late wife on the side of the receiver. The contact is long.
 
 The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames.
 
@@ -15,30 +15,29 @@ INT. DALLAS' HOUSE - HALLWAY - NIGHT
 Dallas opens the door to find Asher and Dominic.
 
 DOMINIC
-
 Thank you for watching Howie - how did he do? 
 
 DALLAS
-
 Good
 
-Asher looks behind Dallas at all of the equipment. 
+(action)
+Asher looks behind Dallas at all of the equipment. Dallas hands Howie over to Dominic. 
 
 DOMINIC
-
 Okay - we'll - we'll be on our way. Hey - are you still okay with hosting lifegroup on Thursday
 
 Dallas
-Yeah - that should work out. 
+Yeah. 
 
 DOMINIC
 Okay... Hey - everything okay?
 
 DALLAS
-Yeah sorry - just a little tired. 
+Yeah - sorry - I'm just a little tired. 
 
-Dallas and Asher make eye contact and Dallas looks the other way. 
+DOMINIC
+Alright well rest well big guy. 
 
+(action)
+Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
 
-
-In the darkness of the marsh, something stares back.

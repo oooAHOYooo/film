@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/7/2026, 9:38:46 AM*
+*Compiled on 2/7/2026, 3:13:55 PM*
 
 ---
 
@@ -100,9 +100,11 @@ Dallas struggles to fall asleep in his new home. He hears strange noises from ou
 
 Curious and wide awake - Dallas finishes unpacking boxes. The room is sparse, filled with moving supplies and a few pieces of furniture.
 
-He hears a noise from outside. Dallas pauses and peers outside. Curious, he opens a box marked "GENIVE."
+He hears a noise from outside. Dallas pauses and peers through his living room window. 
 
-Dallas pulls out a heavy, a bunch of old vanilla folders. military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones. 
+Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Sierra".
+
+Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones. 
 
 On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker.
 
@@ -200,18 +202,12 @@ Oh, it's an audio recorder.
 DOMINIC
 Be careful - there are coyotes up in that.
 
+(action)
 Dallas continues to record.
-
-DOMINIC
-Come on champ. Hey - there's a fellowship lunch at my church today, CPC. You should come. Free food. We're going to be late though.
-
-DALLAS
-Sure.
 
 EXT. TOWN CENTER - DAY
 
 Dallas and Dominic walk toward a small hardware store. The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
-
 
 DOMINIC
 You have got to be kidding me!
@@ -330,15 +326,15 @@ Pat's been predicting the end of the world every Tuesday for ten years.
 (action)
 The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
 
-EXT. DOMINIC'S HOUSE - LATER
+EXT. DOMINIC'S HOUSE 
 
 They arrive back at Dominic's. Two large plastic trash bins are sprawled across the driveway, trash strewn everywhere.
 
 DOMINIC
-Those damn raccoons! I just put these out!
+Those raccoons! 
 
 (action)
-Dominic kicks a stray milk carton. He looks at his front door, then at Dallas.
+Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
 Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
 
@@ -540,14 +536,14 @@ EXT. DALLAS HOUSE - LATE AFTERNOON
 
 Dominic arrives to pick up Howie.
 
-Dominic
-Hey man - sorry for the crazy day - things got a little out of hand didn't they?
+DOMINIC
+Hey man - sorry for the crazy day - how's Howie?
 
 DALLAS
-It was okay.
+He's doing good. 
 
 DOMINIC
-Great - do you think you could watch Howie tomorrow afternoon?
+Great - do you think you could him tomorrow as well?
 
 DALLAS
 Um
@@ -569,30 +565,15 @@ Dominic picks back Howie up.
 
 INT. DALLAS DESK - NIGHT
 
-Dallas is peered over his computer and begins to look at the recordings of the day. 
-
-INT. DALLAS' HOUSE - NIGHT
-
-Dallas is home. The heavy receiver sits on the kitchen table, wired to his laptop. Fresh 9-volts in the pack—he's finally got the rig running at full gain.
+Dallas is peered over his computer and begins to look at the recordings of the day. The heavy receiver sits on the kitchen table, wired to his laptop. Fresh 9-volts in the pack—he's finally got the rig running at full gain.
 
 He listens. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. Too low for the room mics, but the new batteries are pulling it in. Something layered, almost rhythmic.
 
-DALLAS
-(to himself)
-There.
-
-He replays the clip. Jots a time code. Plays it again. His hand moves to the margin of his notebook: numbers, angles. He's not just listening anymore—he's fitting pieces together.
-
-DALLAS
-(whispering)
-Forty-five left. Fifteen right.
+He replays the clip. Jots a time code. Plays it again. His hand moves to the margin of his notebook: numbers, angles. 
 
 He stares at the scribbles. Grid coordinates. Bearings. The same language Mr. Mike was scratching into the wood.
 
-Another burst hits the receiver—deeper, longer. The windows don't rattle yet, but Dallas feels it in his chest. He doesn't look up. He keeps writing. Equations. Approximations. The beginning of a map only he can hear.
-
-Outside, the marsh is dark. Inside, Dallas is wide awake, chasing a signal into the margins.
-
+As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint glow. 
 
 ---
 
@@ -688,24 +669,10 @@ DALLAS
 Yep.
 
 DOMINIC
-
 Okay cool. That's cool.
 
-They finish eating. The group begins to disperse.
-
-DOMINIC
-
-Want to walk back together? I'll show you around.
-
-DALLAS
-
-Sure.
-
 (action)
-
-They start walking towards the marsh, towards the New England coast.
-
-In the far distance, COYOTES HOWL.
+They finish eating. The group begins to disperse. Janice walks over to Dallas and hands him Howie again. 
 
 
 ---
@@ -719,19 +686,15 @@ In the far distance, COYOTES HOWL.
 
 EXT. BRANFORD ROCKS - EVENING
 
-The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the perimeter of his new property.
+The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the perimeter of his new neighborhood.
 
 Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become.
-
-DALLAS
-(to himself)
-What is this?
 
 Howie stops. His ears perk up, swiveling like small radar dishes toward the dark reeds.
 
 In the far distance, a single coyote barks. Then another. A chain reaction of domestic fear starts in the neighborhood, followed by the high, thin yip of coyotes further inland.
 
-Dallas pulls out his phone. A "Severe Weather Alert" pops up: STORM WARNING.
+Dallas pulls out his phone. A vibration and an alert for a STORM WARNING pops up.
 
 EXT. EDGE OF THE MARSH - CONTINUOUS
 
@@ -742,10 +705,6 @@ Then, the HUM begins.
 It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
 
 Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass doesn't just sway; it pulses in time with the sound.
-
-DALLAS
-(whispering)
-That's not the wind.
 
 Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dallas back toward the safety of the porch.
 
@@ -765,7 +724,7 @@ Dallas stands at the window, staring into the ripping field. The storm is brewin
 
 Shadows—tall, spindly, and darker than the night—grow in the distance. They move *against* the wind, cutting through the blades of grass like silent ships.
 
-He touches the photo of his late wife on the side of the receiver. The contact is long, desperate.
+He touches the photo of his late wife on the side of the receiver. The contact is long.
 
 The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames.
 
@@ -776,33 +735,32 @@ INT. DALLAS' HOUSE - HALLWAY - NIGHT
 Dallas opens the door to find Asher and Dominic.
 
 DOMINIC
-
 Thank you for watching Howie - how did he do? 
 
 DALLAS
-
 Good
 
-Asher looks behind Dallas at all of the equipment. 
+(action)
+Asher looks behind Dallas at all of the equipment. Dallas hands Howie over to Dominic. 
 
 DOMINIC
-
 Okay - we'll - we'll be on our way. Hey - are you still okay with hosting lifegroup on Thursday
 
 Dallas
-Yeah - that should work out. 
+Yeah. 
 
 DOMINIC
 Okay... Hey - everything okay?
 
 DALLAS
-Yeah sorry - just a little tired. 
+Yeah - sorry - I'm just a little tired. 
 
-Dallas and Asher make eye contact and Dallas looks the other way. 
+DOMINIC
+Alright well rest well big guy. 
 
+(action)
+Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
 
-
-In the darkness of the marsh, something stares back.
 
 
 ---
@@ -819,38 +777,12 @@ In the darkness of the marsh, something stares back.
 
 ---
 
-EXT. BRANFORD ROCKS - EVENING
+INT. DALLAS BEDROOM NIGHT
 
-The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the perimeter of his new property.
+Dallas can't sleep. His receivers start to beep off. He walks outside.
 
-Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become.
-
-DALLAS
-(to himself)
-What are you?
-
-Howie stops. His ears perk up, swiveling like small radar dishes toward the dark reeds.
-
-In the far distance, a single dog barks. Then another. A chain reaction of domestic fear starts in the neighborhood, followed by the high, thin yip of coyotes further inland.
-
-Dallas pulls out his phone. A "Severe Weather Alert" pops up: STORM WARNING.
-
-EXT. EDGE OF THE MARSH - CONTINUOUS
-
-Everything goes still. The wind stops. The waves seem to mute themselves.
-
-Then, the HUM begins.
-
-It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
-
-Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass doesn't just sway; it pulses in time with the sound.
-
-DALLAS
-(whispering)
-That's not the wind.
-
-Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dallas back toward the safety of the porch.
-
+EXT. DALLAS HOUSE
+Dallas finds the courage to walk outside and goes into the tall grass. There he sees a faint glow - as he approaches he notices that there is a group of creatures huddling around the gnarl of an old tree. They are 
 
 ---
 

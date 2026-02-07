@@ -20,15 +20,15 @@ Pat's been predicting the end of the world every Tuesday for ten years.
 (action)
 The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
 
-EXT. DOMINIC'S HOUSE - LATER
+EXT. DOMINIC'S HOUSE 
 
 They arrive back at Dominic's. Two large plastic trash bins are sprawled across the driveway, trash strewn everywhere.
 
 DOMINIC
-Those damn raccoons! I just put these out!
+Those raccoons! 
 
 (action)
-Dominic kicks a stray milk carton. He looks at his front door, then at Dallas.
+Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
 Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
 
