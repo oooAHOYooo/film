@@ -41,3 +41,5 @@ Alright well rest well big guy.
 (action)
 Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
 
+Dallas rushes to the kitchen and finds that the creature is doing good.
+

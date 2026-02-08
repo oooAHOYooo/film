@@ -2,7 +2,9 @@ EXT. BRANFORD ROCKS - EVENING
 
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the perimeter of his new neighborhood.
 
-Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become.
+Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
+
+It seems like the readings are pointing closer and closer to his house.
 
 Howie stops. His ears perk up, swiveling like small radar dishes toward the dark reeds.
 

@@ -1,8 +1,46 @@
-INT. DALLAS BEDROOM NIGHT
+EXT. DALLAS BACKYARD - TALL GRASS - NEXT MORNING
 
-Dallas can't sleep. His receivers start to beep off. He walks outside.
+Makayla approaches with Howie on her bike.
 
-EXT. DALLAS HOUSE
-Dallas finds the courage to walk outside and goes into the tall grass. There he sees a faint glow - as he approaches he notices that there is a group of creatures huddling around the gnarl of an old tree. The creature is biolumenist - much like a firefly - the other creatures scatter into the marsh as if they were little orbs of golden light - but remains is one, smaller than the rest, injured and letting a cry out. 
+Makayla stares at Dallas for a good while - trying to read his eyes. 
 
-As it cries out - Dallas' equipment begins to pulse and spike. 
+MAKAYLA
+I think we shoud talk.
+
+DALLAS
+Okay.
+
+MAKAYLA
+Have you seen something?... In that tall grass?
+
+DALLAS
+No.
+
+MAKAYLA
+Really? .. 
+
+(action)
+Dallas looks a bit defeated. 
+
+MAKAYLA
+I want to see it. 
+
+INT. DALLAS KITCHEN
+
+Dallas and Makayla hover around the table
+
+MAKAYLA
+What is it?
+
+DALLAS
+I am not sure.
+
+MAKAYLA
+How long has it been here for
+
+DALLAS
+Around 2 hours.
+
+MAKAYLA
+You should keep it here - and we should bring it back tonight. 
+

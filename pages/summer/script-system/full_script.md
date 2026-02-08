@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/7/2026, 3:23:08 PM*
+*Compiled on 2/8/2026, 8:40:33 AM*
 
 ---
 
@@ -506,15 +506,15 @@ Dallas walks home with Howie.
 
 Dallas walks with Howie along the coastal trail. The sun is setting, casting long shadows across the tall grass. He carries his portable receiver, the dials clicking softly as he adjusts the frequency.
 
+Dallas stops at the creek's edge and pans his gaze towards the outer marsh. The tall grass stretches endlessly before him, golden-yellow reeds swaying gently despite the lack of wind.
+
 The air is still, too still. No birds. No wind. Just the distant sound of unseen water lapping against the shore.
 
 Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
 
-There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. Howie runs up to it and smells it. 
+There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. 
 
-EXT. MARSH ENTRANCE - CONTINUOUS
 
-Dallas stops at the creek's edge and pans his gaze towards the outer marsh. The tall grass stretches endlessly before him, golden-yellow reeds swaying gently despite the lack of wind.
 
 His equipment begins to beep. Dallas flips open his handheld scope and watches the waveform settle into an otherworldly pattern.
 
@@ -525,16 +525,22 @@ From the distance, a flicker of golden light pulses deep within the marsh. Dalla
 
 Dallas takes a step forward, then another. The reeds part before him, closing behind him as he disappears into the tall grass.
 
-EXT. TALL GRASS - CONTINUOUS
-
-The reeds are so high they block the sun. Dallas pushes through, his receiver spiking with each step. The hum grows louder, more insistent.
-
-He stops. Listens. Something is moving in the grass ahead of him—something large, moving against the wind.
-
 He stands slowly, scanning the reeds around him. Nothing. Just the gentle sway of grass and the sound of his own breathing.
 
-Dallas turns and begins to make his way back, the receiver still recording, still searching for a signal that has vanished as quickly as it appeared.
+Dallas turns and begins to make his way back, the receiver still recording.
 
+There he sees a faint glow - as he approaches he notices that there is a group of biolumniset creatures huddling around the gnarl of an old tree. 
+
+Dallas in a daze follows it. 
+
+
+The creature is biolumenist - much like a firefly - the other creatures scatter into the marsh as if they were little orbs of golden light - but remains is one, smaller than the rest, injured and letting a cry out. 
+
+As Dallas approaches the other creatures scatter away - and Dallas looks around - all of a sudden it is silent. The silence engulfs him all he hears is his own breath and the creatures - and the silence comes in waves. 
+
+Dallas tkes the creature in his hand and slowly walks away fast - out of the reeds - he grabs howie and nervoulsy walks back home throug hthe edge of the tall grass - through his sidewalk - back to his backyard - up the stairs of the kitchen - and through the kitchen. 
+
+Dallas 
 
 ---
 
@@ -545,15 +551,31 @@ Dallas turns and begins to make his way back, the receiver still recording, stil
 
 ---
 
+INT. DALLAS KITCHEN
+
+As it cries out - Dallas' equipment begins to pulse and spike. 
+
+Dallas is alone and it is getting dark. He dashes back home with the creature - and scopes Howie - who is not having a good time. Dallas rushes the creature over to the kitchen and upstairs to examine further. 
+
+Dallas is alone with the creature trying to understand it. He puts it on a gentle pan with parchment paper - and begins to look through big jewerly glasses - as to see what is wrong with it. 
+
+The creature is asleep and Dallas notices that it has blood marks underneath its top wing. 
+
+Dallas treats the wound and then gently brings it outside. But as he does - he notices that the creature communicates somehow with the oscillators in the kitchen. 
+
+INT. DALLAS MUD ROOM
+
+He brings it back inside and begins to record it with and hears a bell ring. 
+
+Dallas walks outside with the creature in his hand. As he does so Dominic catches him.
+
 EXT. DALLAS HOUSE - LATE AFTERNOON
 
-Dominic arrives to pick up Howie.
-
 DOMINIC
-Hey man - sorry for the crazy day - how's Howie?
+Hey man - sorry I'm late - how's Howie?
 
-DALLAS
-He's doing good. 
+(action)
+Howie runs up to him. 
 
 DOMINIC
 Great - do you think you could him tomorrow as well?
@@ -580,6 +602,8 @@ INT. DALLAS DESK - NIGHT
 
 Dallas is peered over his computer and begins to look at the recordings of the day. The heavy receiver sits on the kitchen table, wired to his laptop. Fresh 9-volts in the pack—he's finally got the rig running at full gain.
 
+Dallas as he is reading on computer - is holding a little sringe of chemicals that he hopes will replinish the creature. 
+
 He listens. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. Too low for the room mics, but the new batteries are pulling it in. Something layered, almost rhythmic.
 
 He replays the clip. Jots a time code. Plays it again. His hand moves to the margin of his notebook: numbers, angles. 
@@ -587,6 +611,11 @@ He replays the clip. Jots a time code. Plays it again. His hand moves to the mar
 He stares at the scribbles. Grid coordinates. Bearings. The same language Mr. Mike was scratching into the wood.
 
 As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint glow. 
+
+INT. DALLAS KITCHEN
+Dallas looks at the creature - who is appearing to be drinking water and eating the grass - but is still sleeping inside of a gnarl of the aquarium Dallas has obviously made for it. 
+
+
 
 ---
 
@@ -701,7 +730,9 @@ EXT. BRANFORD ROCKS - EVENING
 
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the perimeter of his new neighborhood.
 
-Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become.
+Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
+
+It seems like the readings are pointing closer and closer to his house.
 
 Howie stops. His ears perk up, swiveling like small radar dishes toward the dark reeds.
 
@@ -774,6 +805,8 @@ Alright well rest well big guy.
 (action)
 Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
 
+Dallas rushes to the kitchen and finds that the creature is doing good.
+
 
 
 ---
@@ -790,14 +823,53 @@ Asher and Dominic and Howie leave and walk into the next side door. Dallas watch
 
 ---
 
-INT. DALLAS BEDROOM NIGHT
+EXT. DALLAS BACKYARD - TALL GRASS - NEXT MORNING
 
-Dallas can't sleep. His receivers start to beep off. He walks outside.
+Makayla approaches with Howie on her bike.
 
-EXT. DALLAS HOUSE
-Dallas finds the courage to walk outside and goes into the tall grass. There he sees a faint glow - as he approaches he notices that there is a group of creatures huddling around the gnarl of an old tree. The creature is biolumenist - much like a firefly - the other creatures scatter into the marsh as if they were little orbs of golden light - but remains is one, smaller than the rest, injured and letting a cry out. 
+Makayla stares at Dallas for a good while - trying to read his eyes. 
 
-As it cries out - Dallas' equipment begins to pulse and spike. 
+MAKAYLA
+I think we shoud talk.
+
+DALLAS
+Okay.
+
+MAKAYLA
+Have you seen something?... In that tall grass?
+
+DALLAS
+No.
+
+MAKAYLA
+Really? .. 
+
+(action)
+Dallas looks a bit defeated. 
+
+MAKAYLA
+I want to see it. 
+
+INT. DALLAS KITCHEN
+
+Dallas and Makayla hover around the table
+
+MAKAYLA
+What is it?
+
+DALLAS
+I am not sure.
+
+MAKAYLA
+How long has it been here for
+
+DALLAS
+Around 2 hours.
+
+MAKAYLA
+You should keep it here - and we should bring it back tonight. 
+
+
 
 ---
 
@@ -821,6 +893,9 @@ In the middle of the yard is a jagged, blackened circle—a burn mark in the gra
 
 Makayla kneels and touches it. Her hair begins to flutter, static electricity pulling the strands toward the stone. She quickly pockets it as Dominic yells from the car.
 
+Makayla - from the corner of her eye - and sees the creature. In a flurry she runs inside Dallas house. 
+
+
 EXT. DALLAS'S PORCH - CONTINUOUS
 
 Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
@@ -836,6 +911,10 @@ Schools are canceled already. The kids are going to be underfoot all day. Try to
 
 Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels like the field is breathing.
 
+
+INT. DALLAS KITCHEN
+
+Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. As if she is finally vindicated - and that her name will go ndown in all of history for finally discovering the creature of Branford. 
 
 ---
 
@@ -871,10 +950,6 @@ Dallas flips open his handheld scope and watches the waveform settle into an oth
 Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a perfect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy. He is drawn to it, his movements rhythmic and dazed.
 
 His handheld scope chirps. The waveform is no longer random; it's a repeating, melodic pattern.
-
-DALLAS
-(to Howie)
-Stay here.
 
 He ties Howie's leash to a stunted cedar tree and steps off the path, disappearing into the golden-yellow reeds.
 
@@ -939,10 +1014,13 @@ EXT. DALLAS'S PORCH - CONTINUOUS
 Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
 
 DOMINIC
-Life group tonight. Thanks for letting us use your house. I'm heading to Costco—need anything? Water? Batteries?
+Dalllasss - you stocking up for the storm? Life group tonight. Thanks for letting us use the house. I'm heading to Costco—need anything? Water? Batteries?
 
 DALLAS
-I'm good.
+No thanks - I'm good.
+
+DOMINIC
+Great - yeah. Crazy
 
 DOMINIC
 Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?
@@ -988,6 +1066,8 @@ INT. DALLAS'S KITCHEN - LATER
 Dallas has turned his kitchen island into a triage station. He’s wired a portable oscilloscope to the creature’s head using tiny alligator clips.
 
 The device pulses in a rhythmic, green jagged line—perfectly in sync with the creature's heartbeat.
+
+In the distance they hear howls - and then silence again. 
 
 The creature begins to fade - Dallas turns the dial into another frequency range and waits until it is asleep. 
 
@@ -1133,11 +1213,17 @@ INT. DALLAS'S BASEMENT - SAME TIME
 
 Dallas shuffles through a pile of old equipment—mono cables, spare parts. The creature doesn't look like it's doing much. It's breathing, slightly. Dallas struggles to find a bed for it. He settles on an old shoebox—pauses when he sees his wife's handwriting on one, sets that aside—and gently nestles the creature inside. Its little feet curl tightly. It breathes slowly.
 
+
+
 He finds a way to poke a hole in something so it can drink. MAKAYLA and ASHER watch from the staircase. Makayla comes down. She takes out the crystal. It begins to glow. Her hair lifts. She and the creature seem to communicate—a beat of shared attention. The creature's glow dims as she pulls her hand away.
+
+
 
 INT. DALLAS'S LIVING ROOM - LATER
 
 People mill and talk. Someone asks where Dallas is.
+
+
 
 DOMINIC
 We found a little cat. Dallas is downstairs nursing it.
@@ -1148,24 +1234,40 @@ WOMAN
 I'm a vet. I could take a look.
 
 DOMINIC
-I mean—should we stop the prayer? I think that cat's just sleeping. We could check after?
+I mean— no, that's okay. I think that cat's just sleeping. We could check after?
 
-An elderly woman nods. Everyone agrees. Someone asks how Howie is doing—where is Howie. JOSH, one of the young couples, leads the group. He starts an opening ice breaker. Dallas, Dominic, Makayla, and Asher sit silent.
+An elderly woman nods. Everyone agrees. Someone asks how Howie is doing—where is Howie. JOSH, one of the young couples, leads the group. 
+
+He starts an opening ice breaker. Dallas, Dominic, Makayla, and Asher sit silent. 
+
+(action)
+SARAH, the vet, notices a physical reaction to her cup of tea - and watches it ripple in a strange way. 
 
 TYLER, a young man with a guitar, hands out music sheets.
 
 TYLER
 Something to settle the nerves. Storm's close.
 
-They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them. Subtle at first. Then undeniable. The floorboards vibrate. People look at each other.
+They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them. 
+
+The hum starts to upset people as it becomes unbearable. 
+
+Subtle at first. Then undeniable. The floorboards vibrate. People look at each other.
+
+AMY
+What was that?
+
+(action)
+The group listen in silence.
 
 PAT CLENDENEN
-(Branford's weatherman, life group regular)
 Must be the wind. Pressure's dropping fast.
 
 Dallas stares at the basement door. The sound isn't the wind. It's an answer.
 
-During a silent moment of reflection, the hum starts again. Everyone is unsettled. What was that noise? The group settles on the weird weather—the storm, the patterns plaguing Branford. In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the last person to leave. Then he rushes downstairs with the kids.
+During a silent moment of reflection, the hum starts again. Everyone is unsettled. What was that noise? The group settles on the weird weather—the storm, the patterns plaguing Branford. 
+
+In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the last person to leave. Then he rushes downstairs with the kids.
 
 
 ---

@@ -17,10 +17,13 @@ EXT. DALLAS'S PORCH - CONTINUOUS
 Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
 
 DOMINIC
-Life group tonight. Thanks for letting us use your house. I'm heading to Costco—need anything? Water? Batteries?
+Dalllasss - you stocking up for the storm? Life group tonight. Thanks for letting us use the house. I'm heading to Costco—need anything? Water? Batteries?
 
 DALLAS
-I'm good.
+No thanks - I'm good.
+
+DOMINIC
+Great - yeah. Crazy
 
 DOMINIC
 Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?

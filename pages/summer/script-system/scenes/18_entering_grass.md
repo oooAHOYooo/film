@@ -4,6 +4,8 @@ Dallas has turned his kitchen island into a triage station. He’s wired a porta
 
 The device pulses in a rhythmic, green jagged line—perfectly in sync with the creature's heartbeat.
 
+In the distance they hear howls - and then silence again. 
+
 The creature begins to fade - Dallas turns the dial into another frequency range and waits until it is asleep. 
 
 Makayla 
