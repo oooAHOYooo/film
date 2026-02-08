@@ -85,3 +85,54 @@ Scenes 23-25: Change "Missing" to "Abducted." This provides a clear, urgent goal
 Scenes 26-28: Turn the "Perimeter" into a weapon/shield that fails during the storm, forcing a final heroic act from Dallas.
 
 Does this "Abducted vs. Missing" change help? It should make the second half of your script feel much more like an action-thriller.
+
+
+To strengthen the "Why" for Dallas and Makayla, you are moving away from simple fear and toward high-stakes containment and legacy preservation.
+
+Here is a recap of the concepts to integrate and exactly where they belong in your script structure.
+
+Part 1: The Three Pillars of Motivation
+The "Acoustic Parasite" (Town Stakes): The Red-Eyes aren't just here to eat; their frequency is a virus. If it resonates with the town’s power grid, Branford loses power during the peak of the storm. They aren't just saving themselves; they are saving the town’s infrastructure.
+
+Scientific Legacy (Makayla’s "Why"): Makayla views the golden creatures as an undocumented species being systematically erased by the Red-Eyes. She is helping Dallas because she wants to prove the "impossible" exists before it’s extinct.
+
+The "Kill Zone" Strategy: The perimeter fence is no longer just a wall to hide behind; it’s a tactical bottleneck designed to stun a predator so they can document or stop it.
+
+Part 2: Implementation (Scene-by-Scene)
+Add these specific beats to your "Do Later" list:
+
+SCENE 18: Entering Grass (The Triage)
+What to add: When Dallas stabilizes the creature with the 115.3 MHz frequency, have Makayla notice a secondary, jagged wave on the screen.
+
+The Dialogue: Makayla realizes the frequency isn't just a sound; it’s drawing power. She should mention that the town's substation is already hum-cycling.
+
+The Motivation: This establishes that the threat is expanding beyond Dallas's backyard.
+
+SCENE 22: Red Eyes (The Discovery)
+What to add: While Dallas is in a trance watching the grass, Makayla should find a specific note in the "Sierra" folder (Dallas's wife's notes).
+
+The Action: She shows Dallas a sketch of the golden creatures from decades ago. She tells him, "They’ve been here since the 70s, hiding in the noise. If the Red-Eyes take them out tonight, this folder is just a collection of ghost stories. I’m not letting them become a myth again."
+
+SCENE 25: Predator Attack (The Argument)
+What to add: When Dominic tries to pull Makayla and Dallas back to the house, give Makayla a "Commander" moment.
+
+The Dialogue: She shouldn't just say "We have to go get it back." She should say: "If that creature's frequency hits the transformer on the street while it's being attacked, the feedback loop will fry the whole grid. We aren't just rescuing a pet, Dominic. We're keeping the lights on for the whole neighborhood." *
+
+SCENE 27: The Perimeter (The Tactical Trap)
+What to add: Show Makayla and Dallas intentionally leaving a "gap" in the wire near a specific sensor.
+
+The Action: Instead of just digging poles, they are setting a "phase-cancellation trap."
+
+The Motivation: Makayla explains she wants to "stun-lock" a Red-Eye. This shifts her from a witness to a hunter. She wants a "trophy"—not a head, but a clear, undeniable frequency recording. *
+
+SCENE 28: Final Echoes (The Climax)
+What to add: When Dallas finds Makayla in the grass holding the creature, emphasize that she isn't crying out of fear. She is focused on the Oscillator.
+
+The Beat: She is actively "tuning" the golden creature's output to repel the dark forces. She has mastered the tool Dallas gave her. It’s her graduation from "curious kid" to "bioacoustic hunter."
+
+Summary for your "Do Later" notes:
+Theme: Move from Victimhood to Agency.
+
+Stakes: Move from Personal Survival to Town-wide Protection.
+
+Character Arc: Makayla starts the script wanting to borrow an oscillator; she ends the script knowing how to use it as a weapon to save an endangered species.
