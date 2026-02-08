@@ -150,7 +150,11 @@ function generateHTMLPage(markdown, scenes) {
             <span class="nav-text">Characters</span>
           </a>
         </div>
-        <button type="button" class="print-button" onclick="window.print()">Print</button>
+        <div class="nav-right">
+          <button type="button" class="print-button" onclick="downloadMarkdown()">Download .md</button>
+          <button type="button" class="print-button" onclick="printMarkdownPdf()">PDF (Markdown)</button>
+          <button type="button" class="print-button" onclick="window.print()">Print</button>
+        </div>
       </div>
 
       <div class="script-stats-row">
@@ -183,6 +187,50 @@ function generateHTMLPage(markdown, scenes) {
 
   <script>
     const markdown = ${JSON.stringify(markdown)};
+    const MARKDOWN_FILE_NAME = 'creatures_in_the_tall_grass_full_script.md';
+
+    function downloadMarkdown() {
+      const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = MARKDOWN_FILE_NAME;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function printMarkdownPdf() {
+      const printable = window.open('', '_blank', 'noopener,noreferrer');
+      if (!printable) return;
+      const escaped = String(markdown)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      const title = document.title.replace(/<\/?[^>]+>/g, '');
+      printable.document.write(`
+        <!doctype html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>${title} - Markdown</title>
+            <style>
+              body { margin: 1in; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+              pre { white-space: pre-wrap; line-height: 1.35; font-size: 11pt; }
+            </style>
+          </head>
+          <body>
+            <pre>${escaped}</pre>
+          </body>
+        </html>
+      `);
+      printable.document.close();
+      printable.focus();
+      printable.print();
+      printable.onafterprint = () => printable.close();
+    }
     const container = document.getElementById('scriptContent');
     marked.setOptions({ breaks: true });
     container.innerHTML = marked.parse(markdown);
