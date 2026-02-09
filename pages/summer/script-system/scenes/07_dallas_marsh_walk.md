@@ -27,6 +27,7 @@ He stands slowly, scanning the reeds around him. Nothing. Just the gentle sway o
 
 Dallas turns and begins to make his way back, the receiver still recording.
 
+<!-- [DELETION] Double discovery — Dallas finds creature here AND in Scenes 13–15; end scene at the golden flicker instead -->
 There he sees a faint glow - as he approaches he notices that there is a group of biolumniset creatures huddling around the gnarl of an old tree. 
 
 Dallas in a daze follows it. 
@@ -39,3 +40,4 @@ As Dallas approaches the other creatures scatter away - and Dallas looks around 
 Dallas tkes the creature in his hand and slowly walks away fast - out of the reeds - he grabs howie and nervoulsy walks back home throug hthe edge of the tall grass - through his sidewalk - back to his backyard - up the stairs of the kitchen - and through the kitchen. 
 
 Dallas 
+<!-- [/DELETION] -->

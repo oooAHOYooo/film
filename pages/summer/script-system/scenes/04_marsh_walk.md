@@ -1,3 +1,4 @@
+<!-- [DELETION] STRUCTURAL — Merge Merlin app + "movement underneath" into Scene 03; cut the rest -->
 EXT. MARSH TRAIL - LATER
 
 The sun is dipping. Dallas and Dominic walk along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
@@ -33,3 +34,4 @@ Suit yourself. But lately - i've heard rumors that there's a spot near the old c
 
 (action)
 Dallas stops. He looks into the thick grass. The wind moves the reeds, but it looks like something else is moving *underneath* them, contrary to the breeze.
+<!-- [/DELETION] -->

@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/9/2026, 9:03:19 AM*
+*Compiled on 2/9/2026, 12:39:25 PM*
 
 ---
 
@@ -289,6 +289,7 @@ That's refreshing.
 
 ---
 
+<!-- [DELETION] STRUCTURAL — Merge Merlin app + "movement underneath" into Scene 03; cut the rest -->
 EXT. MARSH TRAIL - LATER
 
 The sun is dipping. Dallas and Dominic walk along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
@@ -324,6 +325,7 @@ Suit yourself. But lately - i've heard rumors that there's a spot near the old c
 
 (action)
 Dallas stops. He looks into the thick grass. The wind moves the reeds, but it looks like something else is moving *underneath* them, contrary to the breeze.
+<!-- [/DELETION] -->
 
 
 ---
@@ -370,9 +372,9 @@ Those raccoons!
 (action)
 Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
-Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. <!-- [ADDITION] Burn marks + grid instability linked visually -->
+Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. <!-- [DELETION] Grid flicker — redundant with Pat's brownout report above; save visual proof for Scenes 10/11 -->
 Above him, the streetlight at the end of the driveway cycles—on, off, on—in a slow, deliberate rhythm that doesn't match the others on the block.
-<!-- [/ADDITION] -->
+<!-- [/DELETION] -->
 Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
 
 DOMINIC
@@ -503,7 +505,7 @@ Let my brother borrow it.
 Asher walks over to Mr. Mike to see how he is doing. Makayla approaches Dallas even further. 
 
 MAKAYLA
-Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung. <!-- [ADDITION] Makayla connects hum to grid — she's already observing the pattern -->And the streetlights on our block were doing that thing again—cycling on and off. Every time I hear the sound, the lights go weird.<!-- [/ADDITION] -->
+Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung. <!-- [DELETION] Makayla grid line — too early for her arc; save expertise for Scene 18 oscilloscope -->And the streetlights on our block were doing that thing again—cycling on and off. Every time I hear the sound, the lights go weird.<!-- [/DELETION] -->
 
 (action)
 Asher, meanwhile, stands by the window. He ignores the conversation, his eyes fixed on the distant bushes at the edge of the property. The leaves ripple, though there is no wind.
@@ -553,6 +555,7 @@ He stands slowly, scanning the reeds around him. Nothing. Just the gentle sway o
 
 Dallas turns and begins to make his way back, the receiver still recording.
 
+<!-- [DELETION] Double discovery — Dallas finds creature here AND in Scenes 13–15; end scene at the golden flicker instead -->
 There he sees a faint glow - as he approaches he notices that there is a group of biolumniset creatures huddling around the gnarl of an old tree. 
 
 Dallas in a daze follows it. 
@@ -565,6 +568,7 @@ As Dallas approaches the other creatures scatter away - and Dallas looks around 
 Dallas tkes the creature in his hand and slowly walks away fast - out of the reeds - he grabs howie and nervoulsy walks back home throug hthe edge of the tall grass - through his sidewalk - back to his backyard - up the stairs of the kitchen - and through the kitchen. 
 
 Dallas 
+<!-- [/DELETION] -->
 
 ---
 
@@ -575,6 +579,7 @@ Dallas
 
 ---
 
+<!-- [DELETION] Kitchen triage — cut through mud room to EXT. DALLAS HOUSE; this repeats in Scenes 17/18 -->
 INT. DALLAS KITCHEN
 
 As it cries out - Dallas' equipment begins to pulse and spike. 
@@ -592,6 +597,7 @@ INT. DALLAS MUD ROOM
 He brings it back inside and begins to record it with and hears a bell ring. 
 
 Dallas walks outside with the creature in his hand. As he does so Dominic catches him.
+<!-- [/DELETION] -->
 
 EXT. DALLAS HOUSE - LATE AFTERNOON
 
@@ -754,6 +760,7 @@ They finish eating. The group begins to disperse. Janice walks over to Dallas an
 
 ---
 
+<!-- [DELETION] STRUCTURAL — Merge reader-spike + coyote + blackout beats into Scene 11 -->
 EXT. BRANFORD ROCKS - EVENING
 
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his new neighborhood.
@@ -783,6 +790,7 @@ Behind him, the streetlights along the block go dark—all of them, at once. Thr
 <!-- [/ADDITION] -->
 
 Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dallas back toward the safety of the porch.
+<!-- [/DELETION] -->
 
 
 ---
@@ -1033,6 +1041,7 @@ Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds
 
 ---
 
+<!-- [DELETION] STRUCTURAL — Duplicate of Scene 13 backyard/burn-mark/crystal; fold Costco + schools-cancelled into Scene 15 -->
 EXT. DALLAS'S BACKYARD - DAWN
 
 The morning air is thick with the scent of ozone. Janice's minivan idles in the driveway. She drops Howie off, barely waving as she rushes toward the museum to secure artwork before the storm hits.
@@ -1064,6 +1073,7 @@ DOMINIC
 Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?
 
 Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels like the field is breathing.
+<!-- [/DELETION] -->
 
 
 ---
@@ -1409,6 +1419,7 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 
 ---
 
+<!-- [DELETION] STRUCTURAL — REVIEW says delete "creature missing" beat; move Sierra tape + folder to Scene 22 -->
 INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
 
 Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder sitting next to him on his desk. Presses play.
@@ -1435,6 +1446,7 @@ Dallas makes his way downstairs to check on the creature. The makeshift box is e
 EXT. DALLAS'S BACKYARD - NIGHT
 
 Dallas at the window again. The eyes are gone. The night is still.
+<!-- [/DELETION] -->
 
 
 ---
@@ -1461,19 +1473,19 @@ JANICE gets out of her car and stops. Her minivan is covered in strange, scorche
 
 ASHER stands beside her. He follows the trail with his eyes. Burn marks lead from the driveway toward the house—along the siding, up toward the windows. A path. Something left. Something came for the creature.
 
-<!-- [ADDITION] Asher connects burn marks to grid — creature movement drains power -->
+<!-- [DELETION] Asher grid observation — audience already knows from Scenes 03, 10, 19; simplify or cut -->
 The streetlight at the end of the driveway is dead—not flickering, just dark. The one beyond it cycles on and off in a slow rhythm, matching the spacing of the burn marks.
-<!-- [/ADDITION] -->
+<!-- [/DELETION] -->
 
 ASHER
 Mom. Look.
 
-<!-- [ADDITION] -->
+<!-- [DELETION] Asher dialogue — too many grid repetitions by this point -->
 He points at the streetlight, then at the burn trail. The pattern is the same.
 
 ASHER
 The lights are doing it too.
-<!-- [/ADDITION] -->
+<!-- [/DELETION] -->
 
 JANICE
 Dallas! What is happening to my car?
@@ -1756,7 +1768,7 @@ Dallas, Dominic, and Makayla sit by the window and watch for the night to end. I
 
 EXT. / INT. DALLAS'S HOUSE - MORNING
 
-Morning. Dallas is still making calculations. Then he stops. He puts his equipment in the trash. The crew leaves. Dallas is alone again.
+Morning. Dallas is still making calculations. Then he stops. <!-- [DELETION] REVIEW: giving up contradicts the legacy additions -->He puts his equipment in the trash.<!-- [/DELETION] --> The crew leaves. Dallas is alone again.
 
 He looks outside. The soft sound—the pulse of the creature—returns. Faint. There. He listens.
 

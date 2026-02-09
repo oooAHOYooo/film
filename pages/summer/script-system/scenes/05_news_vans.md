@@ -33,9 +33,9 @@ Those raccoons!
 (action)
 Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
-Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. <!-- [ADDITION] Burn marks + grid instability linked visually -->
+Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. <!-- [DELETION] Grid flicker — redundant with Pat's brownout report above; save visual proof for Scenes 10/11 -->
 Above him, the streetlight at the end of the driveway cycles—on, off, on—in a slow, deliberate rhythm that doesn't match the others on the block.
-<!-- [/ADDITION] -->
+<!-- [/DELETION] -->
 Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
 
 DOMINIC

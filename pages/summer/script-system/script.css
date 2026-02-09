@@ -765,3 +765,71 @@ body {
     --transition-right: 0.5in;
   }
 }
+
+/* ── Review Mode ── */
+.review-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.12rem 0.55rem;
+  margin: 0.3rem 0.15rem;
+  font-family: var(--reading-font);
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  line-height: 1.4;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.review-tag.review-addition {
+  background: rgba(34, 197, 94, 0.10);
+  color: #15803d;
+  border: 1px solid rgba(34, 197, 94, 0.22);
+}
+
+.review-tag.review-deletion {
+  background: rgba(239, 68, 68, 0.10);
+  color: #b91c1c;
+  border: 1px solid rgba(239, 68, 68, 0.22);
+}
+
+.review-tag.review-end {
+  font-size: 0.5rem;
+  padding: 0.06rem 0.35rem;
+  opacity: 0.45;
+}
+
+.review-toggle {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--muted);
+  padding: 0.3em 0.7em;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-family: var(--reading-font);
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.review-toggle:hover {
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.review-toggle.active {
+  background: rgba(34, 197, 94, 0.10);
+  border-color: rgba(34, 197, 94, 0.30);
+  color: #15803d;
+}
+
+@media print {
+  .review-tag,
+  .review-toggle {
+    display: none !important;
+  }
+}

@@ -1,3 +1,4 @@
+<!-- [DELETION] STRUCTURAL — Duplicate of Scene 13 backyard/burn-mark/crystal; fold Costco + schools-cancelled into Scene 15 -->
 EXT. DALLAS'S BACKYARD - DAWN
 
 The morning air is thick with the scent of ozone. Janice's minivan idles in the driveway. She drops Howie off, barely waving as she rushes toward the museum to secure artwork before the storm hits.
@@ -29,3 +30,4 @@ DOMINIC
 Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?
 
 Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels like the field is breathing.
+<!-- [/DELETION] -->

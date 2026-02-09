@@ -1,3 +1,4 @@
+<!-- [DELETION] Kitchen triage — cut through mud room to EXT. DALLAS HOUSE; this repeats in Scenes 17/18 -->
 INT. DALLAS KITCHEN
 
 As it cries out - Dallas' equipment begins to pulse and spike. 
@@ -15,6 +16,7 @@ INT. DALLAS MUD ROOM
 He brings it back inside and begins to record it with and hears a bell ring. 
 
 Dallas walks outside with the creature in his hand. As he does so Dominic catches him.
+<!-- [/DELETION] -->
 
 EXT. DALLAS HOUSE - LATE AFTERNOON
 

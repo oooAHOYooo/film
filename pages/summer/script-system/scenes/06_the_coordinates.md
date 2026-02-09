@@ -103,7 +103,7 @@ Let my brother borrow it.
 Asher walks over to Mr. Mike to see how he is doing. Makayla approaches Dallas even further. 
 
 MAKAYLA
-Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung. <!-- [ADDITION] Makayla connects hum to grid — she's already observing the pattern -->And the streetlights on our block were doing that thing again—cycling on and off. Every time I hear the sound, the lights go weird.<!-- [/ADDITION] -->
+Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung. <!-- [DELETION] Makayla grid line — too early for her arc; save expertise for Scene 18 oscilloscope -->And the streetlights on our block were doing that thing again—cycling on and off. Every time I hear the sound, the lights go weird.<!-- [/DELETION] -->
 
 (action)
 Asher, meanwhile, stands by the window. He ignores the conversation, his eyes fixed on the distant bushes at the edge of the property. The leaves ripple, though there is no wind.

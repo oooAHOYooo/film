@@ -85,6 +85,6 @@ Dallas, Dominic, and Makayla sit by the window and watch for the night to end. I
 
 EXT. / INT. DALLAS'S HOUSE - MORNING
 
-Morning. Dallas is still making calculations. Then he stops. He puts his equipment in the trash. The crew leaves. Dallas is alone again.
+Morning. Dallas is still making calculations. Then he stops. <!-- [DELETION] REVIEW: giving up contradicts the legacy additions -->He puts his equipment in the trash.<!-- [/DELETION] --> The crew leaves. Dallas is alone again.
 
 He looks outside. The soft sound—the pulse of the creature—returns. Faint. There. He listens.

@@ -1,3 +1,4 @@
+<!-- [DELETION] STRUCTURAL — REVIEW says delete "creature missing" beat; move Sierra tape + folder to Scene 22 -->
 INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
 
 Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder sitting next to him on his desk. Presses play.
@@ -24,3 +25,4 @@ Dallas makes his way downstairs to check on the creature. The makeshift box is e
 EXT. DALLAS'S BACKYARD - NIGHT
 
 Dallas at the window again. The eyes are gone. The night is still.
+<!-- [/DELETION] -->

@@ -1,3 +1,4 @@
+<!-- [DELETION] STRUCTURAL — Merge reader-spike + coyote + blackout beats into Scene 11 -->
 EXT. BRANFORD ROCKS - EVENING
 
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his new neighborhood.
@@ -27,3 +28,4 @@ Behind him, the streetlights along the block go dark—all of them, at once. Thr
 <!-- [/ADDITION] -->
 
 Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dallas back toward the safety of the porch.
+<!-- [/DELETION] -->

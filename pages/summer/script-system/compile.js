@@ -154,6 +154,7 @@ function generateHTMLPage(markdown, scenes) {
           <button type="button" class="print-button" onclick="downloadMarkdown()">Download .md</button>
           <button type="button" class="print-button" onclick="printMarkdownPdf()">PDF (Markdown)</button>
           <button type="button" class="print-button" onclick="window.print()">Print</button>
+          <button type="button" class="review-toggle" id="reviewToggle" onclick="toggleReviewMode()">Review</button>
         </div>
       </div>
 
@@ -504,6 +505,39 @@ function generateHTMLPage(markdown, scenes) {
         });
         p.replaceWith(frag);
       });
+    }
+
+    // Review mode: toggle visibility of [ADDITION] and [DELETION] tags
+    function showReviewTags(md) {
+      var result = md;
+      result = result.replace(/<!-- \[(ADDITION|DELETION)\](.*?)-->/g, function(m, type, desc) {
+        var cls = type.toLowerCase();
+        var icon = type === 'ADDITION' ? '+' : '\u2212';
+        var label = (desc.trim() || type).replace(/</g, '&lt;');
+        return '<span class="review-tag review-' + cls + '">' + icon + ' ' + label + '</span>';
+      });
+      result = result.replace(/<!-- \[\/(ADDITION|DELETION)\] -->/g, function(m, type) {
+        return '<span class="review-tag review-end review-' + type.toLowerCase() + '">\u2500</span>';
+      });
+      return result;
+    }
+
+    function stripReviewTags(md) {
+      return md.replace(/<!-- \[\/?(ADDITION|DELETION)\].*?-->/g, '');
+    }
+
+    function toggleReviewMode() {
+      var scrollY = window.scrollY;
+      var btn = document.getElementById('reviewToggle');
+      var isActive = btn.classList.toggle('active');
+      btn.textContent = isActive ? 'Review: ON' : 'Review';
+      var processed = isActive ? showReviewTags(markdown) : stripReviewTags(markdown);
+      container.innerHTML = marked.parse(processed);
+      formatScreenplay(document.querySelector('.screenplay-container'));
+      container.querySelectorAll('h3').forEach(function(h3, i) {
+        if (/^Scene \d+:/i.test((h3.textContent || '').trim())) h3.id = 'scene-' + (i + 1);
+      });
+      window.scrollTo(0, scrollY);
     }
   </script>
 </body>
