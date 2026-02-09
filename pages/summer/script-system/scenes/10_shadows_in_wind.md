@@ -1,6 +1,6 @@
 EXT. BRANFORD ROCKS - EVENING
 
-The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the perimeter of his new neighborhood.
+The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his new neighborhood.
 
 Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
 
@@ -21,5 +21,9 @@ Then, the HUM begins.
 It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
 
 Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass doesn't just sway; it pulses in time with the sound.
+
+<!-- [ADDITION] Full neighborhood blackout synced with the HUM — escalation of grid drain -->
+Behind him, the streetlights along the block go dark—all of them, at once. Three seconds of blackout. Then they snap back on, one by one, from the marsh outward, as if the power is being returned in sequence.
+<!-- [/ADDITION] -->
 
 Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dallas back toward the safety of the porch.

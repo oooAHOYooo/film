@@ -8,6 +8,12 @@ More lights appear. Dozens of golden glows rise like lanterns in the mist. Then 
 
 The red eyes begin to circle the golden ones. One by one, in a blur—the mind fills in a predator pouncing—they snatch the lights. The red-eye creatures don't hum. They cancel. Sound disappears the way shadow erases light.
 
+<!-- [ADDITION] Makayla witnesses extinction in real time — motivates her trap design -->
+MAKAYLA
+(whispering, barely audible)
+They're erasing the frequency. If there's nothing left to record, no one will ever know they existed.
+<!-- [/ADDITION] -->
+
 More predators emerge. For every inch they creep, shadow climbs the tall grass. The paralysis holding Dallas and Makayla seems to come from the elders—a last effort to protect the humans—but the elders are no match. The red eyes blink. The small creatures huddle in terror.
 
 Dallas and Makayla move slowly at first, then break into a brisk walk back the way they came. Dallas glances back.

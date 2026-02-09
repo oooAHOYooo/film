@@ -3,7 +3,15 @@ EXT. BRANFORD - DAY
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
 
 EXT. DALLAS HOUSE
-Dallas looks around at his property - he sees that the wind has knocked over his poles. 
+<!-- [ADDITION] Replaced pole wreckage with equipment wreckage + recording payoff + legacy transfer -->
+Dallas looks around at his property—the storm has scattered his equipment. Speakers knocked face-down in the mud. The oscillator on its side, screen cracked. But the sensor Makayla wired between them is still blinking. He picks it up. The screen shows a saved file: one clean recording.
+
+He presses play. The sound fills the yard—alien, harmonic, unmistakable. The frequency of the golden creatures, captured clean. No noise. No interference. Just the song.
+
+Dallas holds it for a long moment. He looks at the photo of Sierra on his receiver. Then he looks toward the church, where Makayla sits in the distance with the folder open.
+
+He doesn't need to carry it alone anymore.
+<!-- [/ADDITION] -->
 
 INT. TV STUDIO / NEWS SET - DAY
 
@@ -18,7 +26,10 @@ EXT. CHURCH GROUNDS - DAY
 
 A church event. Picnic tables. Nica's catered lunch. DOMINIC and DALLAS greet each other. They don't talk much. They sit next to each other. Eat. Still don't talk much.
 
-In the distance: ASHER and MAKAYLA. They're crouched near the playground, watching something small. Makayla pulls a jar from her bag. A tiny caterpillar. She eases it inside. They're building little devices of their own—wires, batteries, scraps. This is just the start of the creature adventure. They don't say it. It's in the way they move.
+In the distance: ASHER and MAKAYLA. They're crouched near the playground, watching something small. Makayla pulls a jar from her bag. A tiny caterpillar. She eases it inside. They're building little devices of their own—wires, batteries, scraps. <!-- [ADDITION] Sierra's folder on the bench — legacy continues as science -->
+On the bench next to them: Sierra's folder, open. They're cross-referencing her sketches with their own observations.
+<!-- [/ADDITION] -->
+This is just the start of the creature adventure. They don't say it. It's in the way they move. <!-- [ADDITION] -->The legacy continues—not as ghost stories, but as science.<!-- [/ADDITION] -->
 
 Dallas watches them. He doesn't say anything.
 

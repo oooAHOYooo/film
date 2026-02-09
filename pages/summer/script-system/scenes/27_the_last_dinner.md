@@ -11,23 +11,38 @@ They run out of the tall grass and don't stop until they're home.
 
 EXT. / INT. DALLAS'S HOUSE - LATER
 
-Dallas sits in the kitchen, silent. Then he gets up. No debate. He goes outside and starts digging.
+Dallas sits in the kitchen, silent. Then he gets up. No debate. He goes outside and starts setting up.
 
+<!-- [ADDITION] Replaced pole perimeter with phase-cancellation trap — acoustic corridor using speakers -->
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 
-Dallas jams heavy poles into the mud. He takes copper wire and hangs it between them. He pauses, moves one pole back a few feet, checks the meter again.
+Dallas drags his equipment to the edge of the yard—the oscillator, the military receiver, two speakers he's wired in series. He positions them facing the marsh, angled toward each other, creating a narrow corridor between them. He checks the meter. Adjusts. Checks again.
 
-MAKAYLA paces the distance between poles with heel-to-toe steps. The tone on the receiver drops—spreading wider but losing strength.
+MAKAYLA watches. She walks over. She pulls Sierra's folder from her jacket. Points to a sketch—a waveform diagram with two opposing frequencies colliding.
+
+MAKAYLA
+Phase cancellation. If we broadcast the inverse of the Red-Eye frequency through this channel, anything that crosses through gets stun-locked. Two waves, equal and opposite—total silence. It won't kill them. But it'll freeze one long enough.
+
+DALLAS
+Long enough for what?
+
+MAKAYLA
+A recording. A clean, undeniable frequency capture. Not a ghost story. Not a myth. Proof.
+
+Dallas studies her face. Then he adjusts the second speaker, widening the corridor by a foot. Makayla attaches a sensor between the speakers and wires it to Dallas's receiver. The trap is acoustic—invisible. No wall. Just two frequencies waiting to collide.
+<!-- [/ADDITION] -->
 
 ASHER gives Dominic a tour of the equipment, explaining what each component does. Asher reaches for the dial, then pulls his hand back when it squeals.
 
-The storm rolls in. Makayla runs toward JANICE. Mr. Mike, Asher, and Dominic are outside. Dallas looks stunned, staring into the tall grass. He keeps going—poles, wire. Dominic, without a word, begins to help him.
+<!-- [ADDITION] Replaced pole/wire/fence language -->
+The storm rolls in. Makayla runs toward JANICE. Mr. Mike, Asher, and Dominic are outside. Dallas looks stunned, staring into the tall grass. Dominic, without a word, begins to help him position the equipment.
 
-Dallas examines the perimeter. A small radio plays—PAT CLENDENEN from the news van, welcoming Branford to a beautiful southern New England morning. The contrast is cruel.
+Dallas examines the trap. A small radio plays—PAT CLENDENEN from the news van, welcoming Branford to a beautiful southern New England morning. The contrast is cruel.
 
-Dallas jams the last pole into the mud. The crew stare at the tall grass. The decision is unspoken: leave the creature. Dallas and Makayla dig. Soon: the crawl of fire engines in the distance. Sea birds. And then the hum.
+The crew stare at the tall grass. The trap is set—not a wall to hide behind, but a kill zone designed to catch a predator. Soon: the crawl of fire engines in the distance. Sea birds. And then the hum.
+<!-- [/ADDITION] -->
 
-Dallas walks back to the house. The crew follows. They wait on the porch. The perimeter is up. The storm is here.
+Dallas walks back to the house. The crew follows. They wait on the porch. The storm is here.
 
 DOMINIC
 This is crazy. What are we doing here.

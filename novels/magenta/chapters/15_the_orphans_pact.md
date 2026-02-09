@@ -8,6 +8,8 @@ I was worried that he would tell his father—for he told me he was going to. We
 
 An outsider offers help—but it comes with a personal vow. The pact binds the group to a new responsibility.
 
+Bobby's father was a theologian and well known around Yale Divinity school. I went to one of his lectures once and felt like the cool celebrity plus one among the men and women who had to earn degrees to get there. But stepping in, I knew that the joke was on me for not having the courage to put my hat in the ring to get earned entrance. But then again, I knew from such friends, that it wasn't all it was cracked up to be - furthermore - the reason I wanted entry was vain - to show others that I belonged at the table.
+
 **Focus:**
 - Add a new traveling companion (Bobby McArnold, the metal detector, the gold).
 - Raise the cost of failure (Bobby will talk; the father; the news).

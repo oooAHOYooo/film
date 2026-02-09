@@ -2,6 +2,10 @@ EXT. DALLAS NEW HOUSE - DAY
 
 Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. 
 
+Dallas goes into the grass a little bit and as he does he notices that there is a makeshift trap - a small rig of a stick. Upon further examination he notices that it is not a trap but a recording device of sorts. 
+
+As Dallas examines he hears a distinct bicycle ring.
+
 MAKAYLA, 22 and ASHER, 14 - approach on bikes. They watch him for a while.
 
 They approach Dallas slowly as one of the boxes draws their curiousity. Makayla watches Dallas pull out a military grade Oscillator.

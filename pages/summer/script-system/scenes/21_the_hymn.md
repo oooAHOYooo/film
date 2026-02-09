@@ -43,11 +43,15 @@ TYLER, a young man with a guitar, hands out music sheets.
 TYLER
 Something to settle the nerves. Storm's close.
 
-They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them. 
+They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them.
 
-The hum starts to upset people as it becomes unbearable. 
+<!-- [ADDITION] Lights dim in rhythm with creature + Sarah's tea ripples — visual proof of acoustic parasite -->
+The overhead lights dim in time with the creature's harmonics—a slow pulse that matches the rhythm of the hymn. Sarah's tea ripples in her cup, concentric rings expanding outward in perfect time.
+<!-- [/ADDITION] -->
 
-Subtle at first. Then undeniable. The floorboards vibrate. People look at each other.
+The hum starts to upset people as it becomes unbearable.
+
+Subtle at first. Then undeniable. The floorboards vibrate. <!-- [ADDITION] -->The lights pulse lower and lower. <!-- [/ADDITION] -->People look at each other.
 
 AMY
 What was that?

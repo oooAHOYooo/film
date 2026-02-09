@@ -32,4 +32,8 @@ Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels 
 
 INT. DALLAS KITCHEN
 
-Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. As if she is finally vindicated - and that her name will go ndown in all of history for finally discovering the creature of Branford. 
+Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. As if she is finally vindicated - and that her name will go down in all of history for finally discovering the creature of Branford.
+
+<!-- [ADDITION] Makayla documents like a scientist — establishes her legacy motivation -->
+She pulls out her phone and starts recording video. Then stops. She puts the phone away and instead grabs a notebook from her back pocket—the same one she jots coordinates in. She begins to sketch the creature. Careful, precise lines. The back-holes. The ears. The glow. She is documenting it the way a scientist would, not the way a teenager would.
+<!-- [/ADDITION] -->

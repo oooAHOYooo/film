@@ -12,7 +12,7 @@ Good time to eat.
 
 INT. DALLAS'S KITCHEN - CONTINUOUS
 
-Dominic and Asher cook. Makayla and Dallas share a glance at the window—Dallas watching the weather, the perimeter, the grass.
+Dominic and Asher cook. Makayla and Dallas share a glance at the window—Dallas watching the weather, <!-- [ADDITION] -->the equipment in the yard,<!-- [/ADDITION] --> the grass.
 
 They eat standing, plates in hand, taking turns at the window. Outside, the noise grows. Sniffs. Gnarls. The creatures. Makayla rattles in her chair, impatient.
 
@@ -34,7 +34,10 @@ Makayla snatches the crystal from her pocket and sprints. Dominic chases her. He
 
 EXT. DALLAS'S BACKYARD - NIGHT
 
-Dallas powers on the makeshift poles. Howie cowers next to him. Mr. Mike watches from the window. Dominic rushes past for flashlights. He tries to call Makayla on the two-way radio—Asher has the other walkie. Dominic tells Dallas to watch Mr. Mike and Howie. He hesitates, then heads into the grass.
+<!-- [ADDITION] Replaced "powers on the makeshift poles" -->
+Dallas powers on the speakers and the oscillator. The trap hums to life—a low, steady broadcast aimed at the corridor between the equipment.
+<!-- [/ADDITION] -->
+Howie cowers next to him. Mr. Mike watches from the window. Dominic rushes past for flashlights. He tries to call Makayla on the two-way radio—Asher has the other walkie. Dominic tells Dallas to watch Mr. Mike and Howie. He hesitates, then heads into the grass.
 
 Dallas waits with Howie on the porch. He watches his equipment. The blinking orange light turns green. He hurries over to inspect. The indicator: green, then orange pulses.
 
@@ -43,7 +46,10 @@ The storm approaches. The two of them pace. Mr. Mike, inside, hears the thunder 
 MR. MIKE
 They're coming! They're coming!
 
-Dallas secures the fence. A distant cry. Then the low hum. Night falls. The winds pick up. Eyes circulate in the fields. Dominic grabs Dallas's sleeve. Dallas pulls free without turning around.
+<!-- [ADDITION] Replaced "secures the fence" -->
+Dallas checks the trap one last time—the speakers are holding, the sensor blinking steady between them.
+<!-- [/ADDITION] -->
+A distant cry. Then the low hum. Night falls. The winds pick up. Eyes circulate in the fields. Dominic grabs Dallas's sleeve. Dallas pulls free without turning around.
 
 Dallas brings Howie inside. He sets the leash on the hook like he'll be back in a minute. He rubs Howie's face. Leaves the porch light on. Then he heads out to the tall grass.
 
@@ -53,9 +59,25 @@ A strange silence engulfs Dallas despite the wind. He sees a glimmer of fading l
 
 He stops. Pulls a crumpled napkin from his pocket. Opens it: 45 L 15 R. It matches his equipment. The compass on the device.
 
-In the distance: Makayla, holding one of the creatures. Asher and Dominic sit next to her, dazed. Makayla's eyes are fading as Dallas approaches. In her hands, the creature makes its calls. Little by little, dark eyes appear around them. Another creature of the same size emerges and begins to nurture the one she holds.
+<!-- [ADDITION] Makayla's graduation — from "curious kid" to bioacoustic hunter. Replaces original climax. -->
+In the distance: Makayla, holding one of the creatures. Asher and Dominic sit next to her, dazed. But Makayla isn't crying out. She isn't frozen. She is focused.
 
-Dallas makes contact with the creature. The creature begins to sing. The crew are paralyzed—and so are the dark forces. They cower away. The storm rages. The creatures retreat into their holes in the gnarls of the soft trees.
+In her lap: Dallas's oscillator. She has it wired to the creature's back-holes with the alligator clips from the kitchen triage. Her fingers move across the dial with precision—adjusting, listening, adjusting again. The creature's golden pulse flickers in time with her tuning.
+
+She is actively broadcasting—matching the creature's output frequency and amplifying it outward. The golden light around them strengthens. The dark shapes at the edge of the reeds hesitate.
+
+Dallas stops. He watches her. This isn't the girl who asked "What does that do?" in the kitchen. She has mastered the tool he gave her.
+
+Little by little, dark eyes appear around them. Another creature of the same size emerges and begins to nurture the one Makayla holds.
+
+Dallas kneels beside her. He makes contact with the creature through his receiver. The creature begins to sing—and Makayla's oscillator catches the song, amplifies it, pushes it outward in a wave that rolls across the marsh.
+
+The crew are paralyzed—and so are the dark forces. The Red-Eyes don't just cower. They lock in place—stun-locked, the same phase cancellation Makayla designed at the gap. Total silence around the predators. Total stillness.
+
+Makayla glances down at the oscillator screen. The waveform is clean. Sharp. Unmistakable. She hits record.
+
+The storm rages. The creatures retreat into their holes in the gnarls of the soft trees. The Red-Eyes unfreeze and scatter into the dark.
+<!-- [/ADDITION] -->
 
 INT. DALLAS'S HOUSE - LATE NIGHT / DAWN
 

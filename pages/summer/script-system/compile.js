@@ -209,23 +209,23 @@ function generateHTMLPage(markdown, scenes) {
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
       const title = document.title.replace(/<\/?[^>]+>/g, '');
-      printable.document.write(`
-        <!doctype html>
-        <html lang="en">
-          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>${title} - Markdown</title>
-            <style>
-              body { margin: 1in; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-              pre { white-space: pre-wrap; line-height: 1.35; font-size: 11pt; }
-            </style>
-          </head>
-          <body>
-            <pre>${escaped}</pre>
-          </body>
-        </html>
-      `);
+      printable.document.write([
+        '<!doctype html>',
+        '<html lang="en">',
+        '<head>',
+        '  <meta charset="UTF-8">',
+        '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '  <title>' + title + ' - Markdown</title>',
+        '  <style>',
+        '    body { margin: 1in; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }',
+        '    pre { white-space: pre-wrap; line-height: 1.35; font-size: 11pt; }',
+        '  </style>',
+        '</head>',
+        '<body>',
+        '  <pre>' + escaped + '</pre>',
+        '</body>',
+        '</html>',
+      ].join('\n'));
       printable.document.close();
       printable.focus();
       printable.print();

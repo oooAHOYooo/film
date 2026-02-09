@@ -57,6 +57,10 @@ He replays the clip. Jots a time code. Plays it again. His hand moves to the mar
 
 He stares at the scribbles. Grid coordinates. Bearings. The same language Mr. Mike was scratching into the wood.
 
+<!-- [ADDITION] Second Sierra folder tease — Dallas still avoiding it -->
+His elbow brushes the stack of Sierra's folders. One slides open—a corner of a sketch visible. Something with wings. He pushes it closed without looking. Not yet.
+<!-- [/ADDITION] -->
+
 As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint glow. 
 
 INT. DALLAS KITCHEN

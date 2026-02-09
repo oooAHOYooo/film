@@ -16,13 +16,15 @@ ASHER, beside her, follows the trail with his eyes. Burn marks lead from the dri
 ASHER
 Mom. Look.
 
-Janice can't find Dallas. Inside, he's in the backyard, staring at the marsh with his oscillator. He moves a pole slightly and checks the read again.
+<!-- [ADDITION] Replaced pole-planting with acoustic investigation — Makayla cross-references Sierra's folder -->
+Janice can't find Dallas. Inside, he's in the backyard, staring at the marsh with his oscillator. The readings are erratic—spikes he hasn't seen before. He scans the tree line. Something has changed.
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 
-Makayla watches from a distance. She walks over, picks up another pole, and plants it. She adjusts a wire. Dallas's reading on the handheld jumps. He looks over. A beat. He acknowledges her.
+Makayla watches from a distance. She walks over. She doesn't ask permission. She picks up the second receiver and starts scanning frequencies alongside him. Dallas's reading on the handheld jumps. He looks over. A beat. He acknowledges her.
 
-They work in silence—digging, planting poles, stringing wire. A makeshift fence taking shape around the edge of the property.
+They work in silence—listening, adjusting, mapping the signal. Makayla pulls out Sierra's folder and cross-references a frequency notation with what's on screen. A match.
+<!-- [/ADDITION] -->
 
 MAKAYLA
 What happened?
@@ -34,10 +36,22 @@ The creature?
 
 Dallas nods. Makayla grabs his device off the table. DOMINIC appears and grabs her wrist. The three of them stand there. From the direction of the marsh—a cry. Distant, unmistakable. The creature. Then the hum, low and everywhere.
 
-Makayla turns to Dallas.
+<!-- [ADDITION] Makayla's Commander moment — grid stakes + replaces original "We have to go get it back" -->
+Dominic grabs Makayla's arm, pulling her toward the house.
+
+DOMINIC
+We need to get inside. Now.
+
+Makayla pulls free. She turns to both of them. Something has shifted in her. She isn't scared anymore. She's calculating.
 
 MAKAYLA
-We have to go get it back. The bad creatures want to kill it.
+If that creature's frequency hits the transformer on the street while it's being attacked, the feedback loop will fry the whole grid. We aren't just rescuing a pet, Dominic. We're keeping the lights on for the whole neighborhood.
+
+A beat. Dominic stares at her. Dallas stares at her.
+
+MAKAYLA (CONT'D)
+We have to go get it back.
+<!-- [/ADDITION] -->
 
 Dallas looks at the tall grass. At the reading. At her. Then toward the house—Howie. They grab him and start down the trail.
 

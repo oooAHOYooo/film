@@ -81,6 +81,10 @@ He rips the ticket off and walks around to see if anyone is looking - and finds 
 
 As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
 
+<!-- [ADDITION] First grid instability hint -->
+The streetlight above them flickers. Once. Twice. Then steadies. Dallas watches it for a beat, then looks back at the birds.
+<!-- [/ADDITION] -->
+
 Dominic opens the car and gestures Dallas to get in - non-chantanly the parking ticket in the glove box. 
 
 DOMINIC

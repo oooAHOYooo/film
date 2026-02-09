@@ -8,8 +8,19 @@ JANICE gets out of her car and stops. Her minivan is covered in strange, scorche
 
 ASHER stands beside her. He follows the trail with his eyes. Burn marks lead from the driveway toward the house—along the siding, up toward the windows. A path. Something left. Something came for the creature.
 
+<!-- [ADDITION] Asher connects burn marks to grid — creature movement drains power -->
+The streetlight at the end of the driveway is dead—not flickering, just dark. The one beyond it cycles on and off in a slow rhythm, matching the spacing of the burn marks.
+<!-- [/ADDITION] -->
+
 ASHER
 Mom. Look.
+
+<!-- [ADDITION] -->
+He points at the streetlight, then at the burn trail. The pattern is the same.
+
+ASHER
+The lights are doing it too.
+<!-- [/ADDITION] -->
 
 JANICE
 Dallas! What is happening to my car?

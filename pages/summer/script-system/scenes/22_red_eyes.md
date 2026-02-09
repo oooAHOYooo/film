@@ -12,6 +12,30 @@ EXT. DALLAS'S BACKYARD - NIGHT
 
 Dallas stands alone. In a trance. He looks out at the tall grass for a long time. He slowly turns a dial on the receiver. The hum shifts. Almost instantly, something moves deep in the grass. Dallas freezes. He returns the dial to the previous setting. The movement stops.
 
+<!-- [ADDITION] Makayla discovers Sierra's folder — scientific legacy pillar -->
+INT. DALLAS'S STUDY - SAME TIME
+
+Makayla sits cross-legged on the floor. Around her: a scattered pile of folders, cassettes, and loose pages. A label on the box reads "SIERRA." She opens a manila folder and stops. Inside: hand-drawn sketches—anatomical, careful. Golden creatures with back-holes and translucent ears. Dated 1978.
+
+She flips through. More sketches. Frequency notations. A map of the marsh with circles drawn in red ink. Sierra had documented everything.
+
+Makayla carries the folder outside.
+
+EXT. DALLAS'S BACKYARD - CONTINUOUS
+
+She holds the open folder in front of Dallas. He stares at the sketches. His wife's handwriting. He can't speak.
+
+MAKAYLA
+They've been here since the seventies. Hiding in the noise.
+
+She closes the folder. Holds it against her chest.
+
+MAKAYLA (CONT'D)
+If the Red-Eyes take them out tonight, this folder is just a collection of ghost stories. I'm not letting them become a myth again.
+
+Dallas looks at her. Then back at the grass.
+<!-- [/ADDITION] -->
+
 Dominic comes outside.
 
 DOMINIC

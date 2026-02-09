@@ -8,7 +8,10 @@ He hears a noise from outside. Dallas pauses and peers through his living room w
 
 Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Sierra".
 
-Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones. 
+Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. <!-- [ADDITION] Sierra folder seed — plants the discovery Makayla makes in Scene 22 -->
+One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD 1978." Dallas closes it without looking and sets the stack aside.
+<!-- [/ADDITION] -->
+In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones.
 
 On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker.
 

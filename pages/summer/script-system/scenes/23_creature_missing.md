@@ -2,7 +2,12 @@ INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
 
 Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder sitting next to him on his desk. Presses play.
 
-His late wife's voice. Her theories. The great hum—something she read about as a girl. A long narration. Why she had to stop. He listens. He goes to bed with her voice still in his head.
+His late wife's voice. Her theories. The great hum—something she read about as a girl. A long narration. Why she had to stop. He listens.
+
+<!-- [ADDITION] Dallas finally opens Sierra's folder — leaves it visible for Makayla to find -->
+As the tape plays, Dallas's hand drifts to the stack of Sierra's folders beside the recorder. He opens one. Inside: her sketches—the same creatures, drawn with anatomical precision. Frequency notations in the margins. A map of the marsh. He's seen them before but never looked. He looks now. He closes the folder and sets it on top of the box—visible, accessible.
+<!-- [/ADDITION] -->
+He goes to bed with her voice still in his head.
 
 Dallas looks back to the video monitor but the creature is gone!
 
