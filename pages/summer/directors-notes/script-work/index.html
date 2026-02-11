@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Work Tracker - Dallas Grass Revision</title>
+    <link rel="stylesheet" href="../directors-notes.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+      .sw-grid {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .sw-kpis {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 0.75rem;
+      }
+
+      .sw-kpi {
+        background: var(--dn-card-bg);
+        border: 1px solid var(--dn-border);
+        border-radius: var(--dn-radius);
+        padding: 0.75rem 1rem;
+      }
+
+      .sw-kpi-label {
+        font-size: 0.8rem;
+        color: var(--dn-muted);
+      }
+
+      .sw-kpi-value {
+        font-size: 1.35rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-top: 0.2rem;
+      }
+
+      .sw-flow {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .sw-lane {
+        background: var(--dn-card-bg);
+        border: 1px solid var(--dn-border);
+        border-radius: var(--dn-radius);
+        padding: 1rem;
+      }
+
+      .sw-lane h3 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+      }
+
+      .sw-steps {
+        list-style: none;
+        display: grid;
+        gap: 0.5rem;
+      }
+
+      .sw-step {
+        border: 1px solid var(--dn-border);
+        border-radius: 8px;
+        padding: 0.55rem 0.7rem;
+        background: #fff;
+      }
+
+      .sw-step small {
+        color: var(--dn-muted);
+      }
+
+      .sw-arrow {
+        color: var(--dn-muted);
+        font-size: 0.9rem;
+        margin-left: 0.2rem;
+      }
+
+      .sw-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.92rem;
+      }
+
+      .sw-table th,
+      .sw-table td {
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid var(--dn-border);
+        padding: 0.55rem 0.45rem;
+      }
+
+      .sw-table th {
+        color: var(--dn-muted);
+        font-weight: 600;
+        font-size: 0.82rem;
+        letter-spacing: 0.01em;
+      }
+
+      .sw-tag {
+        display: inline-block;
+        border: 1px solid var(--dn-border);
+        border-radius: 999px;
+        padding: 0.1rem 0.45rem;
+        margin-right: 0.3rem;
+        margin-bottom: 0.25rem;
+        font-size: 0.75rem;
+        color: var(--dn-muted);
+      }
+
+      .sw-note {
+        font-size: 0.88rem;
+        color: var(--dn-muted);
+      }
+
+      .sw-checklist {
+        display: grid;
+        gap: 0.45rem;
+      }
+
+      .sw-check {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+
+      .sw-check input {
+        margin-top: 0.2rem;
+      }
+
+      .sw-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem 1rem;
+      }
+
+      @media (min-width: 960px) {
+        .sw-flow {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dn-container">
+      <div class="dn-header">
+        <h1>Script Work Tracker: Dallas and the Grass</h1>
+        <p>Visual guide for revision passes against the current full script.</p>
+      </div>
+
+      <nav class="dn-nav no-print">
+        <a href="/pages/summer.html">← Summer Hub</a>
+        <a href="/pages/summer/directors-notes/index.html">Director's Notes</a>
+        <a href="/pages/summer/script-system/full_script.html">Full Script</a>
+        <a href="/pages/summer/summer-notes/REVIEW.md">Review Notes</a>
+        <a href="dallas_grass_revision_guide.md">Markdown Guide</a>
+      </nav>
+
+      <section class="dn-section">
+        <h2>Goal Lock</h2>
+        <p>
+          Dallas finds the creature; Makayla knows early; they hide it from the Life Group;
+          it escapes; Makayla runs out first; Dallas chases; they recover the creature in battle;
+          dark creatures pursue; they use frequency strategy to save the light creatures.
+        </p>
+      </section>
+
+      <div class="sw-grid">
+        <section class="dn-section">
+          <h2>Transition Targets</h2>
+          <div class="sw-kpis">
+            <div class="sw-kpi">
+              <div class="sw-kpi-label">Dallas enters grass</div>
+              <div class="sw-kpi-value">3</div>
+            </div>
+            <div class="sw-kpi">
+              <div class="sw-kpi-label">Dallas leaves grass</div>
+              <div class="sw-kpi-value">3</div>
+            </div>
+            <div class="sw-kpi">
+              <div class="sw-kpi-label">Leaves with creature</div>
+              <div class="sw-kpi-value">2</div>
+            </div>
+            <div class="sw-kpi">
+              <div class="sw-kpi-label">Leaves without creature</div>
+              <div class="sw-kpi-value">1</div>
+            </div>
+          </div>
+          <p class="sw-note">Use these as hard constraints during your rewrite pass.</p>
+        </section>
+
+        <section class="dn-section">
+          <h2>Progress Checklist</h2>
+          <div class="sw-checklist" id="checklist"></div>
+          <p class="sw-note">Checklist state saves in this browser with local storage.</p>
+        </section>
+      </div>
+
+      <section class="dn-section">
+        <h2>Visual Flow (Current vs Target)</h2>
+        <div class="sw-flow">
+          <article class="sw-lane">
+            <h3>Current Full Script (as-is reading)</h3>
+            <ul class="sw-steps">
+              <li class="sw-step"><strong>Entry 1</strong> - Dallas enters grass without creature.<br><small>Discovery stretch around the creature rescue sequence.</small></li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Exit 1</strong> - Dallas leaves with creature.<br><small>Creature reaches house/kitchen triage.</small></li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Entry 2</strong> - Dallas + Makayla re-enter without creature.<br><small>Pursuit/rescue trip beats.</small></li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Exit 2</strong> - Retreat under pressure (state clarity varies by draft).</li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Entry 3</strong> - Final night push after Makayla runs out.</li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Exit 3</strong> - Emotional win present, but movement tags can be clearer.</li>
+            </ul>
+          </article>
+
+          <article class="sw-lane">
+            <h3>Target Revision (clean tracking)</h3>
+            <ul class="sw-steps">
+              <li class="sw-step"><strong>Entry 1 (without creature)</strong> - Dallas follows signal, finds injured light creature.</li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Exit 1 (with creature)</strong> - Dallas brings creature home, Makayla now knows.</li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>House secrecy beat</strong> - Hide from Life Group while hum threat escalates.</li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Entry 2 (without creature)</strong> - Creature escapes, Makayla runs first, Dallas chases.</li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Exit 2 (with creature)</strong> - Recover creature during battle while dark predators close in.</li>
+              <li class="sw-arrow">↓</li>
+              <li class="sw-step"><strong>Entry 3 + Exit 3</strong> - Tactical re-entry and clean strategic exit showing containment works.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="dn-section">
+        <h2>Scene Alignment Matrix</h2>
+        <table class="sw-table">
+          <thead>
+            <tr>
+              <th>Revision Phase</th>
+              <th>Current Scene IDs</th>
+              <th>Dallas Movement Goal</th>
+              <th>Creature State Goal</th>
+              <th>Rewrite Focus</th>
+            </tr>
+          </thead>
+          <tbody id="sceneRows">
+            <tr><td colspan="5">Loading scene mapping...</td></tr>
+          </tbody>
+        </table>
+        <p class="sw-note">Scene numbers are pulled from <code>script-system/manifest.json</code> at load time.</p>
+      </section>
+
+      <section class="dn-section">
+        <h2>Markdown Guide</h2>
+        <div class="dn-note-content" id="guideContent">Loading markdown guide...</div>
+      </section>
+
+      <section class="dn-section">
+        <h2>Quick Links</h2>
+        <div class="sw-links">
+          <a href="/pages/summer/directors-notes/index.html">Director's Notes Home</a>
+          <a href="/pages/summer/script-system/full_script.html">Full Script</a>
+          <a href="/pages/summer/script-system/index.html">Scene Gallery</a>
+          <a href="/pages/summer/summer-notes/REVIEW.md">Review Notes</a>
+          <a href="dallas_grass_revision_guide.md">Guide Markdown</a>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const GUIDE_PATH = 'dallas_grass_revision_guide.md';
+      const MANIFEST_PATH = '../../script-system/manifest.json';
+      const CHECK_STORAGE_KEY = 'dallas-grass-revision-checklist-v1';
+
+      const checklistItems = [
+        'Tag every marsh beat with ENTER/EXIT + WITH/WITHOUT CREATURE.',
+        'Makayla learns the truth before Life Group arrives.',
+        'Hide-from-Life-Group tension includes active near-discovery pressure.',
+        'Creature escape is causal and immediate.',
+        'Makayla runs first; Dallas follows.',
+        'Battle beat shows tactical frequency action, not only panic.',
+        'Ending shows dark-creature suppression + light-creature survival.'
+      ];
+
+      const phaseRows = [
+        {
+          phase: 'Discovery and first carry home',
+          ids: ['creature-rescue', 'the-burn-mark-2', 'the-escape', 'makeshift-hospital'],
+          movement: 'Entry 1 (without) -> Exit 1 (with)',
+          creature: 'Found injured, stabilized in house',
+          focus: 'Compress discovery into a single urgent line of action.'
+        },
+        {
+          phase: 'House secrecy and pressure',
+          ids: ['life-group-arrives', 'basement-huddle', 'the-hymn'],
+          movement: 'No grass travel (containment beat)',
+          creature: 'Hidden from Life Group',
+          focus: 'Escalate hidden-creature risk and social pressure.'
+        },
+        {
+          phase: 'Escape trigger and pursuit',
+          ids: ['creature-missing', 'marsh-confrontation', 'predator-attack'],
+          movement: 'Entry 2 (without)',
+          creature: 'Escaped and endangered',
+          focus: 'Makayla acts first; Dallas follows into clear rescue objective.'
+        },
+        {
+          phase: 'Battle recovery and tactical stop',
+          ids: ['the-perimeter', 'the-last-dinner', 'final-echoes'],
+          movement: 'Exit 2 (with) + Entry/Exit 3 (tactical)',
+          creature: 'Recovered while dark predators press',
+          focus: 'Show repeatable frequency strategy that protects light creatures.'
+        }
+      ];
+
+      function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      function loadChecklist() {
+        const container = document.getElementById('checklist');
+        container.innerHTML = '';
+        let state = {};
+        try {
+          state = JSON.parse(localStorage.getItem(CHECK_STORAGE_KEY) || '{}');
+        } catch (e) {
+          state = {};
+        }
+
+        checklistItems.forEach((item, idx) => {
+          const id = `sw-check-${idx}`;
+          const wrapper = document.createElement('label');
+          wrapper.className = 'sw-check';
+          wrapper.setAttribute('for', id);
+
+          const input = document.createElement('input');
+          input.type = 'checkbox';
+          input.id = id;
+          input.checked = Boolean(state[id]);
+          input.addEventListener('change', () => {
+            state[id] = input.checked;
+            localStorage.setItem(CHECK_STORAGE_KEY, JSON.stringify(state));
+          });
+
+          const text = document.createElement('span');
+          text.textContent = item;
+
+          wrapper.appendChild(input);
+          wrapper.appendChild(text);
+          container.appendChild(wrapper);
+        });
+      }
+
+      async function renderGuide() {
+        const el = document.getElementById('guideContent');
+        try {
+          const res = await fetch(GUIDE_PATH);
+          if (!res.ok) {
+            el.innerHTML = '<p>Guide markdown not found.</p>';
+            return;
+          }
+          const md = await res.text();
+          marked.setOptions({ breaks: true });
+          el.innerHTML = marked.parse(md);
+        } catch (err) {
+          el.innerHTML = '<p>Could not load markdown guide.</p>';
+        }
+      }
+
+      function renderSceneRows(sceneNumberById) {
+        const body = document.getElementById('sceneRows');
+        body.innerHTML = '';
+
+        phaseRows.forEach((row) => {
+          const tr = document.createElement('tr');
+          const ids = row.ids.map((id) => {
+            const n = sceneNumberById[id] ? String(sceneNumberById[id]).padStart(2, '0') : '??';
+            return `<span class="sw-tag">#${n} ${escapeHtml(id)}</span>`;
+          }).join('');
+
+          tr.innerHTML = `
+            <td>${escapeHtml(row.phase)}</td>
+            <td>${ids}</td>
+            <td>${escapeHtml(row.movement)}</td>
+            <td>${escapeHtml(row.creature)}</td>
+            <td>${escapeHtml(row.focus)}</td>
+          `;
+          body.appendChild(tr);
+        });
+      }
+
+      async function renderSceneMatrix() {
+        const body = document.getElementById('sceneRows');
+        try {
+          const res = await fetch(MANIFEST_PATH);
+          if (!res.ok) throw new Error('Manifest missing');
+          const manifest = await res.json();
+          const sceneNumberById = {};
+          manifest.forEach((scene, idx) => {
+            sceneNumberById[scene.id] = idx + 1;
+          });
+          renderSceneRows(sceneNumberById);
+        } catch (err) {
+          body.innerHTML = '<tr><td colspan="5">Could not load scene mapping. Check script manifest path.</td></tr>';
+        }
+      }
+
+      (async function init() {
+        loadChecklist();
+        await Promise.all([renderGuide(), renderSceneMatrix()]);
+      })();
+    </script>
+  </body>
+</html>

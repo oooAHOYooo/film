@@ -1,0 +1,223 @@
+/* Directors Notes — same family as script-system, distinct tone */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --dn-page-bg: #f5f4f2;
+  --dn-card-bg: #fdfcfa;
+  --dn-text: #2c2c2a;
+  --dn-muted: #6b6b68;
+  --dn-border: #e0dfdc;
+  --dn-accent: #5c6b5a;
+  --dn-accent-soft: #8a9a88;
+  --dn-addition-bg: #f0f5ef;
+  --dn-idea-bg: #f5f0f2;
+  --dn-font: Inter, ui-sans-serif, system-ui, sans-serif;
+  --dn-mono: "JetBrains Mono", ui-monospace, monospace;
+  --dn-container-max: 72ch;
+  --dn-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--dn-font);
+  font-size: 16px;
+  line-height: 1.65;
+  background: var(--dn-page-bg);
+  color: var(--dn-text);
+}
+
+.dn-container {
+  max-width: var(--dn-container-max);
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+.dn-header {
+  margin-bottom: 1.75rem;
+}
+
+.dn-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dn-text);
+}
+
+.dn-header p {
+  font-size: 0.95rem;
+  color: var(--dn-muted);
+  margin-top: 0.35rem;
+}
+
+.dn-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--dn-border);
+}
+
+.dn-nav a {
+  color: var(--dn-accent);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.dn-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+.dn-section {
+  background: var(--dn-card-bg);
+  border: 1px solid var(--dn-border);
+  border-radius: var(--dn-radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dn-section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dn-text);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--dn-border);
+}
+
+.dn-section p {
+  color: var(--dn-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.dn-section .dn-section-desc {
+  margin-bottom: 1rem;
+}
+
+/* Scene list */
+.dn-scene-list {
+  list-style: none;
+}
+
+.dn-scene-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--dn-border);
+}
+
+.dn-scene-item:last-child {
+  border-bottom: none;
+}
+
+.dn-scene-num {
+  font-family: var(--dn-mono);
+  font-size: 0.8rem;
+  color: var(--dn-muted);
+  min-width: 2ch;
+}
+
+.dn-scene-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.dn-scene-links {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.dn-scene-links a {
+  color: var(--dn-accent);
+  text-decoration: none;
+}
+
+.dn-scene-links a:hover {
+  text-decoration: underline;
+}
+
+.dn-scene-links .dn-no-note {
+  color: var(--dn-muted);
+  font-style: italic;
+}
+
+/* Note preview / content */
+.dn-note-content {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.dn-note-content h1, .dn-note-content h2, .dn-note-content h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.dn-note-content p {
+  margin-bottom: 0.75rem;
+  color: var(--dn-text);
+}
+
+.dn-note-content ul, .dn-note-content ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.dn-addition-block {
+  background: var(--dn-addition-bg);
+  border-left: 3px solid var(--dn-accent);
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.dn-idea-block {
+  background: var(--dn-idea-bg);
+  border-left: 3px solid var(--dn-accent-soft);
+  padding: 0.75rem 1rem;
+  margin: 0.75rem 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Single note page */
+.dn-note-header {
+  margin-bottom: 1.25rem;
+}
+
+.dn-note-header h1 {
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.dn-note-meta {
+  font-size: 0.9rem;
+  color: var(--dn-muted);
+  margin-top: 0.35rem;
+}
+
+.dn-note-meta a {
+  color: var(--dn-accent);
+  text-decoration: none;
+}
+
+.dn-note-meta a:hover {
+  text-decoration: underline;
+}
+
+.no-print {
+  print-color-adjust: exact;
+}
+
+@media print {
+  .dn-nav { border-bottom-color: #ccc; }
+  .dn-section { break-inside: avoid; }
+}

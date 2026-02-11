@@ -136,3 +136,75 @@ Theme: Move from Victimhood to Agency.
 Stakes: Move from Personal Survival to Town-wide Protection.
 
 Character Arc: Makayla starts the script wanting to borrow an oscillator; she ends the script knowing how to use it as a weapon to save an endangered species.
+
+---
+
+## Dallas Grass Movement Mind Map (Current vs Improved)
+
+Use this to track every time Dallas goes into / comes out of the grass, and whether he has the creature.
+
+```mermaid
+mindmap
+  root((Dallas + Grass Flow))
+    Current Draft (rough)
+      Enter 1
+        Into grass without creature
+        Finds injured light creature
+      Leave 1
+        Exits with creature
+      Enter 2
+        Rescue trip with Makayla
+        Enters without creature
+      Leave 2
+        Retreat from predator pressure
+        Exits without creature
+      Enter 3
+        Final night push
+        Enters without creature to chase Makayla
+      Leave 3 (implied/unclear)
+        Should be explicit in script
+    Improved Story Pass (recommended)
+      Enter 1
+        Dallas enters without creature
+        Goal find source signal
+      Leave 1
+        Dallas exits with creature
+        Makayla now knows
+      House secrecy beat
+        Hide creature from Life Group
+        Hum and house threat escalate
+      Enter 2
+        Creature escapes into grass
+        Makayla runs out first
+        Dallas chases without creature
+      Leave 2
+        Dallas and Makayla recover creature during battle
+        Exit with creature while dark predators pursue
+      Enter 3 (optional finale)
+        Re-enter to execute frequency trap
+        Protect light creatures as species-level goal
+      Leave 3
+        Exit alive with proof and containment working
+```
+
+## Quick Count Targets (for cleaner pacing)
+
+- Dallas **enters grass: 3 times** total.
+- Dallas **leaves grass: 3 times** total.
+- Dallas **enters without creature: 3/3** (he never starts an entry carrying it).
+- Dallas **leaves with creature: 2/3** (discovery return + battle recovery return).
+- Dallas **leaves without creature: 1/3** (failed or tactical retreat beat).
+
+## Beat-by-Beat version of your intended arc
+
+1. Dallas finds injured creature in grass (first entry), brings it home.
+2. Makayla learns the truth and helps hide it from the Life Group.
+3. Creature escapes; danger in grass rises.
+4. Makayla runs out to save it; Dallas follows.
+5. They find creature in active battle zone.
+6. Dark creatures close in; Dallas/Makayla use frequency strategy.
+7. They save the light creature(s) and establish a believable containment method.
+
+## Revision note to make this track on screen
+
+- In each marsh scene, add one explicit line near scene top: `ENTER GRASS` or `EXIT GRASS`, plus status tag: `WITH CREATURE` / `WITHOUT CREATURE`. This removes ambiguity and makes your transition count visible during rewrites.

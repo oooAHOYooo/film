@@ -20,19 +20,11 @@ Dallas drags his equipment to the edge of the yard—the oscillator, the militar
 
 MAKAYLA watches. She walks over. She pulls Sierra's folder from her jacket. Points to a sketch—a waveform diagram with two opposing frequencies colliding.
 
-MAKAYLA
-Phase cancellation. If we broadcast the inverse of the Red-Eye frequency through this channel, anything that crosses through gets stun-locked. Two waves, equal and opposite—total silence. It won't kill them. But it'll freeze one long enough.
-
-DALLAS
-Long enough for what?
-
-MAKAYLA
-A recording. A clean, undeniable frequency capture. Not a ghost story. Not a myth. Proof.
 
 Dallas studies her face. Then he adjusts the second speaker, widening the corridor by a foot. Makayla attaches a sensor between the speakers and wires it to Dallas's receiver. The trap is acoustic—invisible. No wall. Just two frequencies waiting to collide.
 <!-- [/ADDITION] -->
 
-ASHER gives Dominic a tour of the equipment, explaining what each component does. Asher reaches for the dial, then pulls his hand back when it squeals.
+ASHER gives Dominic a tour of the equipment. Asher reaches for the dial, then pulls his hand back when it squeals.
 
 <!-- [ADDITION] Replaced pole/wire/fence language -->
 The storm rolls in. Makayla runs toward JANICE. Mr. Mike, Asher, and Dominic are outside. Dallas looks stunned, staring into the tall grass. Dominic, without a word, begins to help him position the equipment.

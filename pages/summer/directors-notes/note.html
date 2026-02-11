@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note — Director's Notes</title>
+    <link rel="stylesheet" href="directors-notes.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div class="dn-container">
+      <nav class="dn-nav no-print">
+        <a href="/pages/summer.html">← Summer Hub</a>
+        <a href="/pages/summer/script-system/index.html">Script Gallery</a>
+        <a href="index.html">← Director's Notes</a>
+      </nav>
+
+      <div class="dn-note-header" id="noteHeader">
+        <h1 id="noteTitle">Note</h1>
+        <div class="dn-note-meta" id="noteMeta"></div>
+      </div>
+
+      <div class="dn-section">
+        <div class="dn-note-content" id="noteContent">
+          <p>Loading…</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    const SCRIPT_SCENE_URL = '/pages/summer/script-system/scene.html';
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const type = urlParams.get('type'); // 'scene' | 'script_additions' | 'other_ideas'
+    const id = urlParams.get('id');     // scene id or unused
+
+    const titles = {
+      script_additions: "Script Additions",
+      other_ideas: "Other Ideas"
+    };
+
+    async function loadNote() {
+      const titleEl = document.getElementById('noteTitle');
+      const metaEl = document.getElementById('noteMeta');
+      const contentEl = document.getElementById('noteContent');
+
+      if (type === 'script_additions') {
+        titleEl.textContent = titles.script_additions || type;
+        metaEl.innerHTML = '<a href="index.html#script-additions">← Back to Director\'s Notes</a>';
+        const md = await fetch('script_additions.md').then(r => r.ok ? r.text() : null).catch(() => null);
+        if (md) {
+          marked.setOptions({ breaks: true });
+          contentEl.innerHTML = marked.parse(md);
+        } else {
+          contentEl.innerHTML = '<p>No <code>script_additions.md</code> found. Create it in the directors-notes folder.</p>';
+        }
+        return;
+      }
+
+      if (type === 'other_ideas') {
+        titleEl.textContent = titles.other_ideas || type;
+        metaEl.innerHTML = '<a href="index.html#other-ideas">← Back to Director\'s Notes</a>';
+        const md = await fetch('other_ideas.md').then(r => r.ok ? r.text() : null).catch(() => null);
+        if (md) {
+          marked.setOptions({ breaks: true });
+          contentEl.innerHTML = marked.parse(md);
+        } else {
+          contentEl.innerHTML = '<p>No <code>other_ideas.md</code> found. Create it in the directors-notes folder.</p>';
+        }
+        return;
+      }
+
+      if (type === 'scene' && id) {
+        const md = await fetch(`notes/${id}.md`).then(r => r.ok ? r.text() : null).catch(() => null);
+        const sceneTitle = id.replace(/-/g, ' ');
+        titleEl.textContent = sceneTitle.charAt(0).toUpperCase() + sceneTitle.slice(1);
+        metaEl.innerHTML = `
+          <a href="index.html#by-scene">← Director's Notes</a>
+          ·
+          <a href="${SCRIPT_SCENE_URL}?id=${encodeURIComponent(id)}">View script scene →</a>
+        `;
+        if (md) {
+          marked.setOptions({ breaks: true });
+          contentEl.innerHTML = marked.parse(md);
+        } else {
+          contentEl.innerHTML = `
+            <p>No note for this scene yet.</p>
+            <p>Add a file at <code>notes/${id}.md</code> in the directors-notes folder. Use the same scene id as in the script manifest (e.g. <code>the-last-dinner</code>).</p>
+          `;
+        }
+        document.title = titleEl.textContent + " — Director's Notes";
+        return;
+      }
+
+      titleEl.textContent = 'Note';
+      metaEl.innerHTML = '<a href="index.html">← Director\'s Notes</a>';
+      contentEl.innerHTML = '<p>Specify <code>?type=scene&id=&lt;scene-id&gt;</code>, <code>?type=script_additions</code>, or <code>?type=other_ideas</code>.</p>';
+    }
+
+    loadNote();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Director's Notes — Creatures in the Tall Grass</title>
+    <link rel="stylesheet" href="directors-notes.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <div class="dn-container">
+      <div class="dn-header">
+        <h1>Director's Notes</h1>
+        <p>Script additions, scene-linked notes, and other ideas.</p>
+      </div>
+
+      <nav class="dn-nav no-print">
+        <a href="/pages/summer.html">← Summer Hub</a>
+        <a href="/pages/summer/script-system/index.html">Script Gallery</a>
+        <a href="/pages/summer/script-system/full_script.html">Full Script</a>
+        <a href="index.html">Director's Notes</a>
+        <a href="script-work/index.html">Script Work Tracker</a>
+        <a href="full_notes.html">Full Notes (compiled)</a>
+      </nav>
+
+      <!-- Script Additions -->
+      <section class="dn-section" id="script-additions">
+        <h2>Script Additions</h2>
+        <p class="dn-section-desc">Running list of additions and changes to fold into the script. Edit <code>script_additions.md</code>.</p>
+        <div class="dn-note-content" id="scriptAdditionsContent">Loading…</div>
+        <p class="dn-section-desc" style="margin-bottom:0; margin-top:0.75rem;">
+          <a href="note.html?type=script_additions">Open full page →</a>
+        </p>
+      </section>
+
+      <!-- By Scene -->
+      <section class="dn-section" id="by-scene">
+        <h2>By Scene</h2>
+        <p class="dn-section-desc">Each scene links to the script and to a director’s note (add <code>notes/<em>&lt;scene-id&gt;</em>.md</code> for any scene).</p>
+        <ul class="dn-scene-list" id="sceneList">
+          <li>Loading scenes…</li>
+        </ul>
+      </section>
+
+      <!-- Script Work -->
+      <section class="dn-section" id="script-work">
+        <h2>Script Work</h2>
+        <p class="dn-section-desc">Visual revision guide for Dallas's grass transitions, creature state, and scene-by-scene rewrite tracking.</p>
+        <div class="dn-note-content">
+          <p><a href="script-work/index.html">Open Script Work Tracker →</a></p>
+          <p><a href="script-work/dallas_grass_revision_guide.md">Open Markdown Guide →</a></p>
+        </div>
+      </section>
+
+      <!-- Other Ideas -->
+      <section class="dn-section" id="other-ideas">
+        <h2>Other Ideas</h2>
+        <p class="dn-section-desc">Tone, imagery, design — not tied to a specific scene. Edit <code>other_ideas.md</code>.</p>
+        <div class="dn-note-content" id="otherIdeasContent">Loading…</div>
+        <p class="dn-section-desc" style="margin-bottom:0; margin-top:0.75rem;">
+          <a href="note.html?type=other_ideas">Open full page →</a>
+        </p>
+      </section>
+    </div>
+
+    <script>
+    const SCRIPT_MANIFEST_URL = '../script-system/manifest.json';
+    const SCRIPT_SCENE_URL = '/pages/summer/script-system/scene.html';
+
+    function toRoman(num) {
+      const map = [
+        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+        [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
+      ];
+      let n = num;
+      let out = '';
+      for (const [v, s] of map) {
+        while (n >= v) { out += s; n -= v; }
+      }
+      return out;
+    }
+
+    async function loadMarkdown(path) {
+      try {
+        const r = await fetch(path);
+        if (!r.ok) return null;
+        return await r.text();
+      } catch (e) {
+        return null;
+      }
+    }
+
+    async function renderScriptAdditions() {
+      const md = await loadMarkdown('script_additions.md');
+      const el = document.getElementById('scriptAdditionsContent');
+      if (md) {
+        marked.setOptions({ breaks: true });
+        el.innerHTML = marked.parse(md);
+      } else {
+        el.innerHTML = '<p class="dn-muted">No <code>script_additions.md</code> found. Create it in this folder.</p>';
+      }
+    }
+
+    async function renderOtherIdeas() {
+      const md = await loadMarkdown('other_ideas.md');
+      const el = document.getElementById('otherIdeasContent');
+      if (md) {
+        marked.setOptions({ breaks: true });
+        el.innerHTML = marked.parse(md);
+      } else {
+        el.innerHTML = '<p class="dn-muted">No <code>other_ideas.md</code> found. Create it in this folder.</p>';
+      }
+    }
+
+    async function renderSceneList() {
+      const listEl = document.getElementById('sceneList');
+      try {
+        const r = await fetch(SCRIPT_MANIFEST_URL);
+        const scenes = await r.json();
+        listEl.innerHTML = '';
+
+        const acts = new Map();
+        scenes.forEach((scene, index) => {
+          const sceneNumber = index + 1;
+          const act = scene.act || 0;
+          const actTitle = scene.actTitle || 'Unsorted';
+          if (!acts.has(act)) acts.set(act, { actTitle, scenes: [] });
+          acts.get(act).scenes.push({ ...scene, sceneNumber });
+        });
+
+        const actNumbers = Array.from(acts.keys()).sort((a, b) => a - b);
+
+        actNumbers.forEach((actNumber) => {
+          const { actTitle, scenes: actScenes } = acts.get(actNumber);
+          const actLabel = actNumber ? `ACT ${toRoman(actNumber)}` : 'Unsorted';
+
+          const header = document.createElement('li');
+          header.className = 'dn-scene-item';
+          header.innerHTML = `<span class="dn-scene-num"></span><span class="dn-scene-title" style="font-weight:600;color:var(--dn-muted);">${actLabel} — ${actTitle}</span>`;
+          listEl.appendChild(header);
+
+          actScenes.forEach((scene) => {
+            const num = String(scene.sceneNumber).padStart(2, '0');
+            const scriptUrl = `${SCRIPT_SCENE_URL}?id=${encodeURIComponent(scene.id)}`;
+            const noteUrl = `note.html?type=scene&id=${encodeURIComponent(scene.id)}`;
+
+            const li = document.createElement('li');
+            li.className = 'dn-scene-item';
+            li.innerHTML = `
+              <span class="dn-scene-num">${num}</span>
+              <span class="dn-scene-title">${escapeHtml(scene.title)}</span>
+              <span class="dn-scene-links">
+                <a href="${scriptUrl}">Script</a>
+                <a href="${noteUrl}">Director's note</a>
+              </span>
+            `;
+            listEl.appendChild(li);
+          });
+        });
+      } catch (e) {
+        listEl.innerHTML = '<li>Could not load scene list. Check that <code>../script-system/manifest.json</code> exists.</li>';
+      }
+    }
+
+    function escapeHtml(s) {
+      const div = document.createElement('div');
+      div.textContent = s;
+      return div.innerHTML;
+    }
+
+    (async function init() {
+      await Promise.all([
+        renderScriptAdditions(),
+        renderOtherIdeas(),
+        renderSceneList()
+      ]);
+    })();
+    </script>
+  </body>
+</html>

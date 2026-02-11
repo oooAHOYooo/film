@@ -54,6 +54,15 @@ function loadScene(filename) {
   }
 }
 
+// Turn <!-- [ADDITION] --> / <!-- [DELETION] --> into wrapper divs + label; text inside gets colored
+function sceneContentWithVisibleMarkers(content) {
+  let out = content;
+  out = out.replace(/<!-- \[\/(?:ADDITION|DELETION)\] -->/g, '\n\n</div>\n\n');
+  out = out.replace(/<!-- \[ADDITION\][\s\S]*?-->/g, '\n\n<div class="script-addition">\n\n> addition\n\n');
+  out = out.replace(/<!-- \[DELETION\][\s\S]*?-->/g, '\n\n<div class="script-deletion">\n\n> deletion\n\n');
+  return out;
+}
+
 // Compile all scenes into markdown
 function compileMarkdown(scenes) {
   let output = `# ${SCRIPT_NAME} — Full Script\n\n`;
@@ -74,7 +83,8 @@ function compileMarkdown(scenes) {
     output += `*${scene.act ? `ACT ${toRoman(scene.act)}${scene.actTitle ? ` — ${scene.actTitle}` : ''} | ` : ''}ID: ${scene.id} | File: ${scene.file}*\n\n`;
     output += `---\n\n`;
     
-    const sceneContent = loadScene(scene.file);
+    let sceneContent = loadScene(scene.file);
+    sceneContent = sceneContentWithVisibleMarkers(sceneContent);
     output += sceneContent;
     output += `\n\n---\n\n`;
   });
@@ -145,16 +155,29 @@ function generateHTMLPage(markdown, scenes) {
             <span class="nav-icon" aria-hidden="true">▦</span>
             <span class="nav-text">Gallery</span>
           </a>
+          <a class="nav-link" href="/pages/summer/directors-notes/index.html" title="Director's Notes (hub)">
+            <span class="nav-icon" aria-hidden="true">📝</span>
+            <span class="nav-text">Director's Notes</span>
+          </a>
+          <a class="nav-link" href="/pages/summer/directors-notes/full_notes.html" title="Director's Notes (compiled)">
+            <span class="nav-text">Full Notes</span>
+          </a>
           <a class="nav-link" href="/pages/summer/characters/index.html" title="Character Sheets">
             <span class="nav-icon" aria-hidden="true">👤</span>
             <span class="nav-text">Characters</span>
           </a>
         </div>
         <div class="nav-right">
-          <button type="button" class="print-button" onclick="downloadMarkdown()">Download .md</button>
-          <button type="button" class="print-button" onclick="printMarkdownPdf()">PDF (Markdown)</button>
-          <button type="button" class="print-button" onclick="window.print()">Print</button>
-          <button type="button" class="review-toggle" id="reviewToggle" onclick="toggleReviewMode()">Review</button>
+          <div class="script-export-dropdown" id="scriptExportDropdown">
+            <button type="button" class="print-button script-export-trigger" id="scriptExportTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="scriptExportMenu">
+              Export / Print
+            </button>
+            <div class="script-export-menu" id="scriptExportMenu" role="menu" aria-label="Export and print options">
+              <button type="button" role="menuitem" onclick="downloadMarkdown()">Download .md</button>
+              <button type="button" role="menuitem" onclick="printMarkdownPdf()">PDF (Markdown)</button>
+              <button type="button" role="menuitem" onclick="window.print()">Print</button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -235,7 +258,30 @@ function generateHTMLPage(markdown, scenes) {
     const container = document.getElementById('scriptContent');
     marked.setOptions({ breaks: true });
     container.innerHTML = marked.parse(markdown);
-    
+
+    // Export dropdown: toggle on trigger click, close on outside click or menu action
+    (function initExportDropdown() {
+      var trigger = document.getElementById('scriptExportTrigger');
+      var menu = document.getElementById('scriptExportMenu');
+      if (!trigger || !menu) return;
+      function open() {
+        menu.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+      function close() {
+        menu.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+      trigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (menu.classList.contains('is-open')) close(); else open();
+      });
+      menu.querySelectorAll('button').forEach(function(btn) {
+        btn.addEventListener('click', function() { close(); });
+      });
+      document.addEventListener('click', function() { close(); });
+    })();
+
     // Format screenplay elements
     formatScreenplay(document.querySelector('.screenplay-container'));
 
@@ -505,39 +551,6 @@ function generateHTMLPage(markdown, scenes) {
         });
         p.replaceWith(frag);
       });
-    }
-
-    // Review mode: toggle visibility of [ADDITION] and [DELETION] tags
-    function showReviewTags(md) {
-      var result = md;
-      result = result.replace(/<!-- \[(ADDITION|DELETION)\](.*?)-->/g, function(m, type, desc) {
-        var cls = type.toLowerCase();
-        var icon = type === 'ADDITION' ? '+' : '\u2212';
-        var label = (desc.trim() || type).replace(/</g, '&lt;');
-        return '<span class="review-tag review-' + cls + '">' + icon + ' ' + label + '</span>';
-      });
-      result = result.replace(/<!-- \[\/(ADDITION|DELETION)\] -->/g, function(m, type) {
-        return '<span class="review-tag review-end review-' + type.toLowerCase() + '">\u2500</span>';
-      });
-      return result;
-    }
-
-    function stripReviewTags(md) {
-      return md.replace(/<!-- \[\/?(ADDITION|DELETION)\].*?-->/g, '');
-    }
-
-    function toggleReviewMode() {
-      var scrollY = window.scrollY;
-      var btn = document.getElementById('reviewToggle');
-      var isActive = btn.classList.toggle('active');
-      btn.textContent = isActive ? 'Review: ON' : 'Review';
-      var processed = isActive ? showReviewTags(markdown) : stripReviewTags(markdown);
-      container.innerHTML = marked.parse(processed);
-      formatScreenplay(document.querySelector('.screenplay-container'));
-      container.querySelectorAll('h3').forEach(function(h3, i) {
-        if (/^Scene \d+:/i.test((h3.textContent || '').trim())) h3.id = 'scene-' + (i + 1);
-      });
-      window.scrollTo(0, scrollY);
     }
   </script>
 </body>

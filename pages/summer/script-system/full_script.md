@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/9/2026, 12:39:25 PM*
+*Compiled on 2/11/2026, 11:28:22 AM*
 
 ---
 
@@ -121,9 +121,19 @@ He hears a noise from outside. Dallas pauses and peers through his living room w
 
 Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Sierra".
 
-Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. <!-- [ADDITION] Sierra folder seed — plants the discovery Makayla makes in Scene 22 -->
+Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. 
+
+<div class="script-addition">
+
+> addition
+
+
 One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD 1978." Dallas closes it without looking and sets the stack aside.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones.
 
 On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker.
@@ -237,9 +247,19 @@ He rips the ticket off and walks around to see if anyone is looking - and finds 
 
 As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
 
-<!-- [ADDITION] First grid instability hint -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 The streetlight above them flickers. Once. Twice. Then steadies. Dallas watches it for a beat, then looks back at the birds.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 Dominic opens the car and gestures Dallas to get in - non-chantanly the parking ticket in the glove box. 
 
@@ -289,7 +309,13 @@ That's refreshing.
 
 ---
 
-<!-- [DELETION] STRUCTURAL — Merge Merlin app + "movement underneath" into Scene 03; cut the rest -->
+
+
+<div class="script-deletion">
+
+> deletion
+
+
 EXT. MARSH TRAIL - LATER
 
 The sun is dipping. Dallas and Dominic walk along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
@@ -325,7 +351,11 @@ Suit yourself. But lately - i've heard rumors that there's a spot near the old c
 
 (action)
 Dallas stops. He looks into the thick grass. The wind moves the reeds, but it looks like something else is moving *underneath* them, contrary to the breeze.
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 
 
 ---
@@ -348,9 +378,19 @@ PAT CLENDENEN, MID 50s, is outside their house in front of news cameras.
 PAT CLENDENEN
 (to camera)
 This afternoon we'll see sun to clouds, breezy and warm with a late day shower possible. But the real attention - and as why we are here - is to bring attention to a possible development along the shores of Eastern Connecticut - at the heart of the Branford should receive the most impact. We are watching the trend through the rest of this week - as any shift could dramatically impact the entire state. The computer models are showing better agreement. 
-...and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. <!-- [ADDITION] Pat names brownouts — sets up Makayla's substation line in Scene 18 -->
+...and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
+
+<div class="script-addition">
+
+> addition
+
+
 We're also getting reports of rolling brownouts along the Route 146 corridor—UI says it's weather-related surges, but they're sending a crew to check the Branford substation.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 Hopefully, it holds off until after Sunday's festival, but folks, get those generators ready!
 
 (action)
@@ -372,9 +412,19 @@ Those raccoons!
 (action)
 Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
-Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. <!-- [DELETION] Grid flicker — redundant with Pat's brownout report above; save visual proof for Scenes 10/11 -->
+Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. 
+
+<div class="script-deletion">
+
+> deletion
+
+
 Above him, the streetlight at the end of the driveway cycles—on, off, on—in a slow, deliberate rhythm that doesn't match the others on the block.
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
 
 DOMINIC
@@ -505,7 +555,17 @@ Let my brother borrow it.
 Asher walks over to Mr. Mike to see how he is doing. Makayla approaches Dallas even further. 
 
 MAKAYLA
-Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung. <!-- [DELETION] Makayla grid line — too early for her arc; save expertise for Scene 18 oscilloscope -->And the streetlights on our block were doing that thing again—cycling on and off. Every time I hear the sound, the lights go weird.<!-- [/DELETION] -->
+Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung. 
+
+<div class="script-deletion">
+
+> deletion
+
+And the streetlights on our block were doing that thing again—cycling on and off. Every time I hear the sound, the lights go weird.
+
+</div>
+
+
 
 (action)
 Asher, meanwhile, stands by the window. He ignores the conversation, his eyes fixed on the distant bushes at the edge of the property. The leaves ripple, though there is no wind.
@@ -555,7 +615,13 @@ He stands slowly, scanning the reeds around him. Nothing. Just the gentle sway o
 
 Dallas turns and begins to make his way back, the receiver still recording.
 
-<!-- [DELETION] Double discovery — Dallas finds creature here AND in Scenes 13–15; end scene at the golden flicker instead -->
+
+
+<div class="script-deletion">
+
+> deletion
+
+
 There he sees a faint glow - as he approaches he notices that there is a group of biolumniset creatures huddling around the gnarl of an old tree. 
 
 Dallas in a daze follows it. 
@@ -568,7 +634,11 @@ As Dallas approaches the other creatures scatter away - and Dallas looks around 
 Dallas tkes the creature in his hand and slowly walks away fast - out of the reeds - he grabs howie and nervoulsy walks back home throug hthe edge of the tall grass - through his sidewalk - back to his backyard - up the stairs of the kitchen - and through the kitchen. 
 
 Dallas 
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 
 ---
 
@@ -579,7 +649,13 @@ Dallas
 
 ---
 
-<!-- [DELETION] Kitchen triage — cut through mud room to EXT. DALLAS HOUSE; this repeats in Scenes 17/18 -->
+
+
+<div class="script-deletion">
+
+> deletion
+
+
 INT. DALLAS KITCHEN
 
 As it cries out - Dallas' equipment begins to pulse and spike. 
@@ -597,7 +673,11 @@ INT. DALLAS MUD ROOM
 He brings it back inside and begins to record it with and hears a bell ring. 
 
 Dallas walks outside with the creature in his hand. As he does so Dominic catches him.
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 
 EXT. DALLAS HOUSE - LATE AFTERNOON
 
@@ -640,9 +720,19 @@ He replays the clip. Jots a time code. Plays it again. His hand moves to the mar
 
 He stares at the scribbles. Grid coordinates. Bearings. The same language Mr. Mike was scratching into the wood.
 
-<!-- [ADDITION] Second Sierra folder tease — Dallas still avoiding it -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 His elbow brushes the stack of Sierra's folders. One slides open—a corner of a sketch visible. Something with wings. He pushes it closed without looking. Not yet.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint glow. 
 
@@ -760,7 +850,13 @@ They finish eating. The group begins to disperse. Janice walks over to Dallas an
 
 ---
 
-<!-- [DELETION] STRUCTURAL — Merge reader-spike + coyote + blackout beats into Scene 11 -->
+
+
+<div class="script-deletion">
+
+> deletion
+
+
 EXT. BRANFORD ROCKS - EVENING
 
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his new neighborhood.
@@ -785,12 +881,26 @@ It starts as a vibration in Dallas's teeth, then moves to his chest. It is a dee
 
 Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass doesn't just sway; it pulses in time with the sound.
 
-<!-- [ADDITION] Full neighborhood blackout synced with the HUM — escalation of grid drain -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 Behind him, the streetlights along the block go dark—all of them, at once. Three seconds of blackout. Then they snap back on, one by one, from the marsh outward, as if the power is being returned in sequence.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dallas back toward the safety of the porch.
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 
 
 ---
@@ -810,9 +920,19 @@ Shadows—tall, spindly, and darker than the night—grow in the distance. They 
 
 He touches the photo of his late wife on the side of the receiver. The contact is long.
 
-The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames. <!-- [ADDITION] Interior light drain — the creature is pulling current from the house -->
+The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames. 
+
+<div class="script-addition">
+
+> addition
+
+
 The overhead light dims—not a flicker, but a slow, steady drain, as if something is pulling the current out of the walls. Then it returns to full brightness.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 A doorbell is heard off screen breaking Dallas out of his trance.
 
@@ -958,9 +1078,19 @@ INT. DALLAS KITCHEN
 
 Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. As if she is finally vindicated - and that her name will go down in all of history for finally discovering the creature of Branford.
 
-<!-- [ADDITION] Makayla documents like a scientist — establishes her legacy motivation -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 She pulls out her phone and starts recording video. Then stops. She puts the phone away and instead grabs a notebook from her back pocket—the same one she jots coordinates in. She begins to sketch the creature. Careful, precise lines. The back-holes. The ears. The glow. She is documenting it the way a scientist would, not the way a teenager would.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 ---
 
@@ -1041,7 +1171,13 @@ Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds
 
 ---
 
-<!-- [DELETION] STRUCTURAL — Duplicate of Scene 13 backyard/burn-mark/crystal; fold Costco + schools-cancelled into Scene 15 -->
+
+
+<div class="script-deletion">
+
+> deletion
+
+
 EXT. DALLAS'S BACKYARD - DAWN
 
 The morning air is thick with the scent of ozone. Janice's minivan idles in the driveway. She drops Howie off, barely waving as she rushes toward the museum to secure artwork before the storm hits.
@@ -1073,7 +1209,11 @@ DOMINIC
 Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?
 
 Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels like the field is breathing.
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 
 
 ---
@@ -1137,7 +1277,13 @@ Asher comes in the room and gathers around the creature as well.
 
 Dallas adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature's breathing stabilizes. It lets out a low, melodic tone through its back-holes.
 
-<!-- [ADDITION] Makayla identifies the secondary wave — the creature is drawing power from the grid -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 Makayla leans over the oscilloscope. She points at the screen.
 
 MAKAYLA
@@ -1154,7 +1300,11 @@ MAKAYLA (CONT'D)
 The substation on Route 146 is already hum-cycling. I heard the transformers buzzing on the way over. If this frequency keeps expanding...
 
 She trails off. Dallas stares at the secondary wave on the screen. He doesn't answer, but the implication is clear: this isn't contained to the backyard anymore.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 Howie sits in the corner, head cocked, shivering. Outside, the world responds: the windows rattle, and a deep, distant hum echoes from the town center.
 
@@ -1174,7 +1324,13 @@ Dallas brings the creature inside. The outdoor porch oscilloscope—still wired 
 
 The creature begins to fade. Dallas turns the dial to a normal frequency. The creature settles. Sleeps.
 
-HOWIE stays in the corner by the door, disturbed, waiting for his owner. Dallas tries to hide the creature. The moment it cries, the world outside echoes. The ugly hum answers from somewhere far away. The hum floods the town. Windows rattle. <!-- [ADDITION] Grid pulse + Dominic names the brownouts -->
+HOWIE stays in the corner by the door, disturbed, waiting for his owner. Dallas tries to hide the creature. The moment it cries, the world outside echoes. The ugly hum answers from somewhere far away. The hum floods the town. Windows rattle. 
+
+<div class="script-addition">
+
+> addition
+
+
 The kitchen light dims and surges—a slow, visible pulse, as if the house is breathing with the creature.
 
 DOMINIC
@@ -1182,7 +1338,11 @@ DOMINIC
 Third brownout this week. UI says it's the storm. I don't think it's the storm.
 
 Dallas adjusts the dial again. The creature quiets. The lights stabilize.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 EXT. DALLAS'S DRIVEWAY - SAME TIME
 
@@ -1323,13 +1483,33 @@ Something to settle the nerves. Storm's close.
 
 They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them.
 
-<!-- [ADDITION] Lights dim in rhythm with creature + Sarah's tea ripples — visual proof of acoustic parasite -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 The overhead lights dim in time with the creature's harmonics—a slow pulse that matches the rhythm of the hymn. Sarah's tea ripples in her cup, concentric rings expanding outward in perfect time.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 The hum starts to upset people as it becomes unbearable.
 
-Subtle at first. Then undeniable. The floorboards vibrate. <!-- [ADDITION] -->The lights pulse lower and lower. <!-- [/ADDITION] -->People look at each other.
+Subtle at first. Then undeniable. The floorboards vibrate. 
+
+<div class="script-addition">
+
+> addition
+
+The lights pulse lower and lower. 
+
+</div>
+
+People look at each other.
 
 AMY
 What was that?
@@ -1370,7 +1550,13 @@ EXT. DALLAS'S BACKYARD - NIGHT
 
 Dallas stands alone. In a trance. He looks out at the tall grass for a long time. He slowly turns a dial on the receiver. The hum shifts. Almost instantly, something moves deep in the grass. Dallas freezes. He returns the dial to the previous setting. The movement stops.
 
-<!-- [ADDITION] Makayla discovers Sierra's folder — scientific legacy pillar -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 INT. DALLAS'S STUDY - SAME TIME
 
 Makayla sits cross-legged on the floor. Around her: a scattered pile of folders, cassettes, and loose pages. A label on the box reads "SIERRA." She opens a manila folder and stops. Inside: hand-drawn sketches—anatomical, careful. Golden creatures with back-holes and translucent ears. Dated 1978.
@@ -1392,7 +1578,11 @@ MAKAYLA (CONT'D)
 If the Red-Eyes take them out tonight, this folder is just a collection of ghost stories. I'm not letting them become a myth again.
 
 Dallas looks at her. Then back at the grass.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 Dominic comes outside.
 
@@ -1419,16 +1609,32 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 
 ---
 
-<!-- [DELETION] STRUCTURAL — REVIEW says delete "creature missing" beat; move Sierra tape + folder to Scene 22 -->
+
+
+<div class="script-deletion">
+
+> deletion
+
+
 INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
 
 Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder sitting next to him on his desk. Presses play.
 
 His late wife's voice. Her theories. The great hum—something she read about as a girl. A long narration. Why she had to stop. He listens.
 
-<!-- [ADDITION] Dallas finally opens Sierra's folder — leaves it visible for Makayla to find -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 As the tape plays, Dallas's hand drifts to the stack of Sierra's folders beside the recorder. He opens one. Inside: her sketches—the same creatures, drawn with anatomical precision. Frequency notations in the margins. A map of the marsh. He's seen them before but never looked. He looks now. He closes the folder and sets it on top of the box—visible, accessible.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 He goes to bed with her voice still in his head.
 
 Dallas looks back to the video monitor but the creature is gone!
@@ -1446,7 +1652,11 @@ Dallas makes his way downstairs to check on the creature. The makeshift box is e
 EXT. DALLAS'S BACKYARD - NIGHT
 
 Dallas at the window again. The eyes are gone. The night is still.
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 
 
 ---
@@ -1473,19 +1683,39 @@ JANICE gets out of her car and stops. Her minivan is covered in strange, scorche
 
 ASHER stands beside her. He follows the trail with his eyes. Burn marks lead from the driveway toward the house—along the siding, up toward the windows. A path. Something left. Something came for the creature.
 
-<!-- [DELETION] Asher grid observation — audience already knows from Scenes 03, 10, 19; simplify or cut -->
+
+
+<div class="script-deletion">
+
+> deletion
+
+
 The streetlight at the end of the driveway is dead—not flickering, just dark. The one beyond it cycles on and off in a slow rhythm, matching the spacing of the burn marks.
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 
 ASHER
 Mom. Look.
 
-<!-- [DELETION] Asher dialogue — too many grid repetitions by this point -->
+
+
+<div class="script-deletion">
+
+> deletion
+
+
 He points at the streetlight, then at the burn trail. The pattern is the same.
 
 ASHER
 The lights are doing it too.
-<!-- [/DELETION] -->
+
+
+</div>
+
+
 
 JANICE
 Dallas! What is happening to my car?
@@ -1520,7 +1750,13 @@ ASHER, beside her, follows the trail with his eyes. Burn marks lead from the dri
 ASHER
 Mom. Look.
 
-<!-- [ADDITION] Replaced pole-planting with acoustic investigation — Makayla cross-references Sierra's folder -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 Janice can't find Dallas. Inside, he's in the backyard, staring at the marsh with his oscillator. The readings are erratic—spikes he hasn't seen before. He scans the tree line. Something has changed.
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
@@ -1528,7 +1764,11 @@ EXT. DALLAS'S BACKYARD - CONTINUOUS
 Makayla watches from a distance. She walks over. She doesn't ask permission. She picks up the second receiver and starts scanning frequencies alongside him. Dallas's reading on the handheld jumps. He looks over. A beat. He acknowledges her.
 
 They work in silence—listening, adjusting, mapping the signal. Makayla pulls out Sierra's folder and cross-references a frequency notation with what's on screen. A match.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 MAKAYLA
 What happened?
@@ -1540,7 +1780,13 @@ The creature?
 
 Dallas nods. Makayla grabs his device off the table. DOMINIC appears and grabs her wrist. The three of them stand there. From the direction of the marsh—a cry. Distant, unmistakable. The creature. Then the hum, low and everywhere.
 
-<!-- [ADDITION] Makayla's Commander moment — grid stakes + replaces original "We have to go get it back" -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 Dominic grabs Makayla's arm, pulling her toward the house.
 
 DOMINIC
@@ -1555,7 +1801,11 @@ A beat. Dominic stares at her. Dallas stares at her.
 
 MAKAYLA (CONT'D)
 We have to go get it back.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 Dallas looks at the tall grass. At the reading. At her. Then toward the house—Howie. They grab him and start down the trail.
 
@@ -1585,11 +1835,21 @@ More lights appear. Dozens of golden glows rise like lanterns in the mist. Then 
 
 The red eyes begin to circle the golden ones. One by one, in a blur—the mind fills in a predator pouncing—they snatch the lights. The red-eye creatures don't hum. They cancel. Sound disappears the way shadow erases light.
 
-<!-- [ADDITION] Makayla witnesses extinction in real time — motivates her trap design -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 MAKAYLA
 (whispering, barely audible)
 They're erasing the frequency. If there's nothing left to record, no one will ever know they existed.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 More predators emerge. For every inch they creep, shadow climbs the tall grass. The paralysis holding Dallas and Makayla seems to come from the elders—a last effort to protect the humans—but the elders are no match. The red eyes blink. The small creatures huddle in terror.
 
@@ -1630,34 +1890,46 @@ EXT. / INT. DALLAS'S HOUSE - LATER
 
 Dallas sits in the kitchen, silent. Then he gets up. No debate. He goes outside and starts setting up.
 
-<!-- [ADDITION] Replaced pole perimeter with phase-cancellation trap — acoustic corridor using speakers -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 
 Dallas drags his equipment to the edge of the yard—the oscillator, the military receiver, two speakers he's wired in series. He positions them facing the marsh, angled toward each other, creating a narrow corridor between them. He checks the meter. Adjusts. Checks again.
 
 MAKAYLA watches. She walks over. She pulls Sierra's folder from her jacket. Points to a sketch—a waveform diagram with two opposing frequencies colliding.
 
-MAKAYLA
-Phase cancellation. If we broadcast the inverse of the Red-Eye frequency through this channel, anything that crosses through gets stun-locked. Two waves, equal and opposite—total silence. It won't kill them. But it'll freeze one long enough.
-
-DALLAS
-Long enough for what?
-
-MAKAYLA
-A recording. A clean, undeniable frequency capture. Not a ghost story. Not a myth. Proof.
 
 Dallas studies her face. Then he adjusts the second speaker, widening the corridor by a foot. Makayla attaches a sensor between the speakers and wires it to Dallas's receiver. The trap is acoustic—invisible. No wall. Just two frequencies waiting to collide.
-<!-- [/ADDITION] -->
 
-ASHER gives Dominic a tour of the equipment, explaining what each component does. Asher reaches for the dial, then pulls his hand back when it squeals.
 
-<!-- [ADDITION] Replaced pole/wire/fence language -->
+</div>
+
+
+
+ASHER gives Dominic a tour of the equipment. Asher reaches for the dial, then pulls his hand back when it squeals.
+
+
+
+<div class="script-addition">
+
+> addition
+
+
 The storm rolls in. Makayla runs toward JANICE. Mr. Mike, Asher, and Dominic are outside. Dallas looks stunned, staring into the tall grass. Dominic, without a word, begins to help him position the equipment.
 
 Dallas examines the trap. A small radio plays—PAT CLENDENEN from the news van, welcoming Branford to a beautiful southern New England morning. The contrast is cruel.
 
 The crew stare at the tall grass. The trap is set—not a wall to hide behind, but a kill zone designed to catch a predator. Soon: the crawl of fire engines in the distance. Sea birds. And then the hum.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 Dallas walks back to the house. The crew follows. They wait on the porch. The storm is here.
 
@@ -1695,7 +1967,17 @@ Good time to eat.
 
 INT. DALLAS'S KITCHEN - CONTINUOUS
 
-Dominic and Asher cook. Makayla and Dallas share a glance at the window—Dallas watching the weather, <!-- [ADDITION] -->the equipment in the yard,<!-- [/ADDITION] --> the grass.
+Dominic and Asher cook. Makayla and Dallas share a glance at the window—Dallas watching the weather, 
+
+<div class="script-addition">
+
+> addition
+
+the equipment in the yard,
+
+</div>
+
+ the grass.
 
 They eat standing, plates in hand, taking turns at the window. Outside, the noise grows. Sniffs. Gnarls. The creatures. Makayla rattles in her chair, impatient.
 
@@ -1717,9 +1999,19 @@ Makayla snatches the crystal from her pocket and sprints. Dominic chases her. He
 
 EXT. DALLAS'S BACKYARD - NIGHT
 
-<!-- [ADDITION] Replaced "powers on the makeshift poles" -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 Dallas powers on the speakers and the oscillator. The trap hums to life—a low, steady broadcast aimed at the corridor between the equipment.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 Howie cowers next to him. Mr. Mike watches from the window. Dominic rushes past for flashlights. He tries to call Makayla on the two-way radio—Asher has the other walkie. Dominic tells Dallas to watch Mr. Mike and Howie. He hesitates, then heads into the grass.
 
 Dallas waits with Howie on the porch. He watches his equipment. The blinking orange light turns green. He hurries over to inspect. The indicator: green, then orange pulses.
@@ -1729,9 +2021,19 @@ The storm approaches. The two of them pace. Mr. Mike, inside, hears the thunder 
 MR. MIKE
 They're coming! They're coming!
 
-<!-- [ADDITION] Replaced "secures the fence" -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 Dallas checks the trap one last time—the speakers are holding, the sensor blinking steady between them.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 A distant cry. Then the low hum. Night falls. The winds pick up. Eyes circulate in the fields. Dominic grabs Dallas's sleeve. Dallas pulls free without turning around.
 
 Dallas brings Howie inside. He sets the leash on the hook like he'll be back in a minute. He rubs Howie's face. Leaves the porch light on. Then he heads out to the tall grass.
@@ -1742,7 +2044,13 @@ A strange silence engulfs Dallas despite the wind. He sees a glimmer of fading l
 
 He stops. Pulls a crumpled napkin from his pocket. Opens it: 45 L 15 R. It matches his equipment. The compass on the device.
 
-<!-- [ADDITION] Makayla's graduation — from "curious kid" to bioacoustic hunter. Replaces original climax. -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 In the distance: Makayla, holding one of the creatures. Asher and Dominic sit next to her, dazed. But Makayla isn't crying out. She isn't frozen. She is focused.
 
 In her lap: Dallas's oscillator. She has it wired to the creature's back-holes with the alligator clips from the kitchen triage. Her fingers move across the dial with precision—adjusting, listening, adjusting again. The creature's golden pulse flickers in time with her tuning.
@@ -1760,7 +2068,11 @@ The crew are paralyzed—and so are the dark forces. The Red-Eyes don't just cow
 Makayla glances down at the oscillator screen. The waveform is clean. Sharp. Unmistakable. She hits record.
 
 The storm rages. The creatures retreat into their holes in the gnarls of the soft trees. The Red-Eyes unfreeze and scatter into the dark.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 INT. DALLAS'S HOUSE - LATE NIGHT / DAWN
 
@@ -1768,7 +2080,17 @@ Dallas, Dominic, and Makayla sit by the window and watch for the night to end. I
 
 EXT. / INT. DALLAS'S HOUSE - MORNING
 
-Morning. Dallas is still making calculations. Then he stops. <!-- [DELETION] REVIEW: giving up contradicts the legacy additions -->He puts his equipment in the trash.<!-- [/DELETION] --> The crew leaves. Dallas is alone again.
+Morning. Dallas is still making calculations. Then he stops. 
+
+<div class="script-deletion">
+
+> deletion
+
+He puts his equipment in the trash.
+
+</div>
+
+ The crew leaves. Dallas is alone again.
 
 He looks outside. The soft sound—the pulse of the creature—returns. Faint. There. He listens.
 
@@ -1787,7 +2109,13 @@ EXT. BRANFORD - DAY
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
 
 EXT. DALLAS HOUSE
-<!-- [ADDITION] Replaced pole wreckage with equipment wreckage + recording payoff + legacy transfer -->
+
+
+<div class="script-addition">
+
+> addition
+
+
 Dallas looks around at his property—the storm has scattered his equipment. Speakers knocked face-down in the mud. The oscillator on its side, screen cracked. But the sensor Makayla wired between them is still blinking. He picks it up. The screen shows a saved file: one clean recording.
 
 He presses play. The sound fills the yard—alien, harmonic, unmistakable. The frequency of the golden creatures, captured clean. No noise. No interference. Just the song.
@@ -1795,7 +2123,11 @@ He presses play. The sound fills the yard—alien, harmonic, unmistakable. The f
 Dallas holds it for a long moment. He looks at the photo of Sierra on his receiver. Then he looks toward the church, where Makayla sits in the distance with the folder open.
 
 He doesn't need to carry it alone anymore.
-<!-- [/ADDITION] -->
+
+
+</div>
+
+
 
 INT. TV STUDIO / NEWS SET - DAY
 
@@ -1810,10 +2142,30 @@ EXT. CHURCH GROUNDS - DAY
 
 A church event. Picnic tables. Nica's catered lunch. DOMINIC and DALLAS greet each other. They don't talk much. They sit next to each other. Eat. Still don't talk much.
 
-In the distance: ASHER and MAKAYLA. They're crouched near the playground, watching something small. Makayla pulls a jar from her bag. A tiny caterpillar. She eases it inside. They're building little devices of their own—wires, batteries, scraps. <!-- [ADDITION] Sierra's folder on the bench — legacy continues as science -->
+In the distance: ASHER and MAKAYLA. They're crouched near the playground, watching something small. Makayla pulls a jar from her bag. A tiny caterpillar. She eases it inside. They're building little devices of their own—wires, batteries, scraps. 
+
+<div class="script-addition">
+
+> addition
+
+
 On the bench next to them: Sierra's folder, open. They're cross-referencing her sketches with their own observations.
-<!-- [/ADDITION] -->
-This is just the start of the creature adventure. They don't say it. It's in the way they move. <!-- [ADDITION] -->The legacy continues—not as ghost stories, but as science.<!-- [/ADDITION] -->
+
+
+</div>
+
+
+This is just the start of the creature adventure. They don't say it. It's in the way they move. 
+
+<div class="script-addition">
+
+> addition
+
+The legacy continues—not as ghost stories, but as science.
+
+</div>
+
+
 
 Dallas watches them. He doesn't say anything.
 
