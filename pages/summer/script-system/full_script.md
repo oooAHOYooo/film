@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/12/2026, 5:06:59 PM*
+*Compiled on 2/12/2026, 5:21:21 PM*
 
 ---
 
@@ -191,10 +191,10 @@ DALLAS
 I'm just walking into town - got to get some batteries.
 
 DOMINIC
-What kind of batteries?
+Oh yeah? Where abouts?
 
 DALLAS
-9 Volt should work.
+Not sure, I was just going to go to the hardware store. 
 
 DOMINIC
 So you're walking into town?
@@ -209,91 +209,91 @@ DALLAS
 No - no car.
 
 DOMINIC
-Yeah. Me neither - well I share one with my sister, she's borrowing mine. I was about to go get it in town - there's a hardware store in Branford that could have those batteries. Want to walk together?
+Yeah. Me neither - well I share one with my sister, she's borrowing mine. I was about to go  - there's a hardware store in Branford that could have those batteries. Would you like to tag along?
 
 DALLAS
 Sure.
 
 EXT. TOWN BRANFORD MONTAGE
 
-Dallas and Dominic walk together. They walk through coastal scenes, and neighborhoods, and sidewalks. As they approach one in particular - a patch of tall marsh grass - Dallas stops.
+Dallas and Dominic walk together. They walk through coastal sidewalks, neighborhoods, and natural marsh fences. As they approach one patch of tall marsh grass in particular, Dallas stops.
 
-Dallas, sheepishly, checks if Dominic is looking and when he isn't - he pulls out a pocket recorder - and points it at the marsh.
-
-DOMINIC
-What's with the gadget?
-
-DALLAS
-Oh, it's an audio recorder.
+Dallas, sheepishly, checks if Dominic is looking and when he isn't - he mumbles to himself. 
 
 DOMINIC
-Be careful - there are coyotes up in that.
+Be careful - there are coyotes up in that. Some people say the noises are from owls - but I know its coyotes. 
 
-(action)
-Dallas continues to record.
+
 
 EXT. TOWN CENTER - DAY
 
-Dallas and Dominic walk toward a small hardware store. The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
+Dallas and Dominic walk toward a small hardware store. 
+
+INT. HARDWARE STORE
+(action)
+Dominic waves to the unfriendly man at the counter and brings Dallas to the battery section. 
 
 DOMINIC
-You have got to be kidding me!
+So where you from?
+
+DALLAS
+Indiana.
+
+DOMINIC
+INDIANAAAA - how'd you land up here in Branford?
+
+(action)
+Dallas finds the correct batteries and grabs it off the shelf. 
+
+DALLAS
+Work.
+
+DOMINIC
+Yeah? Where abouts? Yale?
+
+DALLAS
+Quinipiac. 
+
+DOMINIC
+That's refreshing... What are you doing with Quinipiac
+
+DALLAS
+Mostly field and bioacoustics. 
+
+
+The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
+
+DOMINIC
+You got to be kidding me!
 
 (action)
 He rips the ticket off and walks around to see if anyone is looking - and finds a secret key. 
 
 As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
 
-
-
-<div class="script-addition">
-
-> addition
-
-
 The streetlight above them flickers. Once. Twice. Then steadies. Dallas watches it for a beat, then looks back at the birds.
-
-
-</div>
-
-
 
 Dominic opens the car and gestures Dallas to get in - non-chantanly the parking ticket in the glove box. 
 
 DOMINIC
-Hey you hungry?
+You hungry?
 
 DALLAS
 (still in a daze)
 Yeah
 
 DOMINIC
-Good - tomorrow my church is doing a fellowship lunch - little picnic - I am bringing in a tray.
-
-
-DOMINIC
-So where you from?
+Good -  my church is doing a fellowship lunch - little picnic - I got to go to the bakery and bring a tray. You should come. 
 
 DALLAS
-Indiana
+Sure. 
+
+(action)
 
 DOMINIC
-Indiana - how'd you land up here in Branford? 
+Nice - yeah - it's nice to be the new guy in town - good old branford. 
 
-DALLAS
-Work
 
-DOMINIC
-Yeah? Where abouts
-
-DOMINIC
-Yale?
-
-DALLAS
-No - maybe - but for now Quinnipiac.
-
-DOMINIC
-That's refreshing.
 
 
 
@@ -352,7 +352,9 @@ That's great.
 
 Janice leaves the line of food.
 
-Dallas takes a plate but doesn't eat much. He's distracted, listening.
+Dallas takes a plate but doesn't eat much. He's distracted by what Makayla and Asher are looking at the distance. 
+
+Janice, noticing that Dallas is a little quiet - tries to spark conversation. 
 
 DOMINIC
 So, what are you here for?
@@ -395,12 +397,6 @@ They finish eating. The group begins to disperse. Janice walks over to Dallas an
 ---
 
 
-
-<div class="script-deletion">
-
-> deletion
-
-
 EXT. MARSH TRAIL - LATER
 
 The sun is dipping. Dallas and Dominic walk along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
@@ -417,29 +413,6 @@ Dominic pulls out his phone, tapping an app.
 DOMINIC
 
 See this? Merlins. It listens to the chirps and tells you the species. Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
-
-(action)
-
-Dallas pulls out his own military-grade receiver. He adjusts a dial. Through his heavy headsets, he doesn't hear birds. He hears a low, rhythmic THRUB-THRUB-THRUB.
-
-Dominc
-What the heck is that?
-
-DALLAS
-It's a portable Oscillator. It tells me what kind of low frequencies are in the air - to see if it is worth recording. 
-
-
-
-DOMINIC
-
-Suit yourself. But lately - i've heard rumors that there's a spot near the old creek where the Coyotes gather. Sounds like a choir of demons at 2 AM. You'll hear 'em soon enough.
-
-(action)
-Dallas stops. He looks into the thick grass. The wind moves the reeds, but it looks like something else is moving *underneath* them, contrary to the breeze.
-
-
-</div>
-
 
 
 
@@ -492,28 +465,15 @@ EXT. DOMINIC'S HOUSE
 They arrive back at Dominic's. Two large plastic trash bins are sprawled across the driveway, trash strewn everywhere.
 
 DOMINIC
-Those raccoons! 
+Look at this. Those raccoons! 
 
 (action)
 Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
 Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. 
 
-<div class="script-deletion">
-
-> deletion
-
-
-Above him, the streetlight at the end of the driveway cycles—on, off, on—in a slow, deliberate rhythm that doesn't match the others on the block.
-
-
-</div>
-
-
-Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
-
 DOMINIC
-Listen, I got to get the furniture moved before the men's group tonight. I got to go check on Mike and bring in another AC from the basement. You good? 
+Listen, I got to get the furniture before Janice has her woman's group tonight. I got to go check on Mike and bring in another fan from the basement. You good? 
 
 DALLAS
 (hesitates)
@@ -573,7 +533,7 @@ Now I just have my niece and nephew.
 Dominic scans the room and finds his gaze upon the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged nail.
 
 DOMINIC 
-Mr. Mike! Hey - what are you doing? 
+Mr. Mike! Mr. Mike, what are you doing?! 
 
 (action)
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
