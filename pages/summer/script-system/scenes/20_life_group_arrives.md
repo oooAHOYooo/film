@@ -9,21 +9,20 @@ The kitchen light dims and surges—a slow, visible pulse, as if the house is br
 
 DOMINIC
 (from the doorway, carrying boxes)
-Third brownout this week. UI says it's the storm. I don't think it's the storm.
+Third brownout this week. UI says it's the storm. But who knows... Dallas thank you again for allowing us to host it here... Dallas? 
+
+(action)
+Dominic puts the boxes down on the kitchen table and looks around for Dallas. 
+
+INT. DALLAS' BASEMENT - CONTINOUS
+
+(action)
+Dallas is downstairs. Focused on the dying creature. The creature lays out a little whipmer. 
 
 Dallas adjusts the dial again. The creature quiets. The lights stabilize.
 <!-- [/ADDITION] -->
 
-EXT. DALLAS'S DRIVEWAY - SAME TIME
 
-DOMINIC's car pulls up. He gets out alone—no Janice—arms full of haphazard Costco boxes. He heads for the house.
-
-INT. DALLAS'S KITCHEN - CONTINUOUS
-
-Dominic comes through the door. He sets the boxes down.
-
-DOMINIC
-Thanks again for letting the life group meet tonight. Really. You okay?
 
 MR. MIKE walks in behind him. He takes one look at the room and freaks out—like a dog afraid of thunder. He points at the basement door.
 

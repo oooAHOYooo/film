@@ -25,10 +25,16 @@ DALLAS
 I'm good.
 
 DOMINIC
-Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?
+Listen, Makayla and Asher - help Dallas okay - I'll be back in 45 minutes. You know what to do - we got to get this place looking ready. Chairs inside - count how many.
 
-Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels like the field is breathing.
+MAKAYLA
+You got it Uncle Dominic. 
 
+(action)
+Dominic peels out. Dallas watches him drive away. then at the tall grass. It feels like the field is breathing.
+
+MAKAYLA
+Great - okay Dallas - where is it. 
 
 INT. DALLAS KITCHEN
 

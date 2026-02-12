@@ -1,9 +1,8 @@
-<!-- [DELETION] STRUCTURAL — Merge reader-spike + coyote + blackout beats into Scene 11 -->
 EXT. BRANFORD ROCKS - EVENING
 
-The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his new neighborhood.
+The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
 
-Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
+As Howie, Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
 
 It seems like the readings are pointing closer and closer to his house.
 
@@ -20,6 +19,8 @@ Everything goes still. The wind stops. The waves seem to mute themselves.
 Then, the HUM begins.
 
 It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
+
+Shadows—tall, spindly, and darker than the night—grow in the distance. They move *against* the wind, cutting through the blades of grass like silent ships.
 
 Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass doesn't just sway; it pulses in time with the sound.
 

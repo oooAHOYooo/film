@@ -19,18 +19,6 @@ JANICE
 Brother.
 
 DOMINIC
-This is Dallas.
-
-DALLAS
-Hello.
-
-JANICE
-Hey Dallas. Dominic did you get the car?
-
-(action)
-MAKAYLA, 22, and ASHER, 15 - emerge behind Janice. 
-
-DOMINIC
 (ignoring Janice)
 Dallas, these are my niece and nephew - Makayla and Asher.
 

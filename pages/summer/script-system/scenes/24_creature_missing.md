@@ -18,6 +18,8 @@ Dallas looks out the tall window toward the marsh. In the distance: a pair of ey
 
 He looks again. Closer. The eyes reappear. Swirling through the blades of grass. Watching the house. Little pulses of red light. Inch by inch. Closer to the edge of the yard.
 
+Dallas looks at the burn mark on his forearm - it begins to glow a bit - and then as it does - more howls in the distance engulf the screen.
+
 INT. DALLAS'S BASEMENT / DEN - NIGHT
 
 Dallas makes his way downstairs to check on the creature. The makeshift box is empty. The creature is gone.

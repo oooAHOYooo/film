@@ -27,10 +27,35 @@ He stands slowly, scanning the reeds around him. Nothing. Just the gentle sway o
 
 Dallas turns and begins to make his way back, the receiver still recording.
 
-<!-- [DELETION] Double discovery — Dallas finds creature here AND in Scenes 13–15; end scene at the golden flicker instead -->
 There he sees a faint glow - as he approaches he notices that there is a group of biolumniset creatures huddling around the gnarl of an old tree. 
 
 Dallas in a daze follows it. 
+
+Dallas walks the coastal trail with Howie. Suddenly, the air vibrates. A roar-hum hybrid sound erupts from the reeds.
+
+Dallas and Howie step onto the narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh. 
+
+As they walk - the air changes into damp, metallic, stillness.
+
+EXT. MARSH ENTRANCE
+
+Dallas and Howie stop at the creek's edge and pan glances towards the outer marsh.
+
+Howie's ears perk and he begins to gently whine, pressing against Dallas's leg. In the distance, a flicker of golden light pulses deep within the marsh. 
+
+Dallas crouches and lifts him, holding Howie a moment longer than necessary as he catches his breath. Howie's breathing begins to quicken. Dallas steadies him, resting his forehead briefly against Howie as he steadies him. 
+
+From the distance a light flickers deep in the marsh. Dallas notices it - but it is gone. 
+
+Dallas lowers Howie to the ground and his equipment begins to beep. 
+
+Dallas flips open his handheld scope and watches the waveform settle into an otherworldly pattern. 
+
+Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a perfect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy. He is drawn to it, his movements rhythmic and dazed.
+
+His handheld scope chirps. The waveform is no longer random; it's a repeating, melodic pattern.
+
+He ties Howie's leash to a stunted cedar tree and steps off the path, disappearing into the golden-yellow reeds.
 
 
 The creature is biolumenist - much like a firefly - the other creatures scatter into the marsh as if they were little orbs of golden light - but remains is one, smaller than the rest, injured and letting a cry out. 
@@ -39,5 +64,3 @@ As Dallas approaches the other creatures scatter away - and Dallas looks around 
 
 Dallas tkes the creature in his hand and slowly walks away fast - out of the reeds - he grabs howie and nervoulsy walks back home throug hthe edge of the tall grass - through his sidewalk - back to his backyard - up the stairs of the kitchen - and through the kitchen. 
 
-Dallas 
-<!-- [/DELETION] -->

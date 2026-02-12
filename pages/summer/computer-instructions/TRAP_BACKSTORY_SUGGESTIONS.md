@@ -43,7 +43,7 @@
 
 ## Optional: one more beat
 
-- **04_marsh_walk.md:** This is Dallas + Dominic (no Howie). If you ever add a beat where they pass the trail or the edge of the marsh, Dominic could point out “the kids are always out here with their cameras” or Dallas could notice a stake in the reeds—tiny reinforcement that the traps are part of the neighborhood.
+- **05_marsh_walk.md:** This is Dallas + Dominic (no Howie). If you ever add a beat where they pass the trail or the edge of the marsh, Dominic could point out “the kids are always out here with their cameras” or Dallas could notice a stake in the reeds—tiny reinforcement that the traps are part of the neighborhood.
 
 ---
 

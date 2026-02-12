@@ -16,8 +16,11 @@ ASHER, beside her, follows the trail with his eyes. Burn marks lead from the dri
 ASHER
 Mom. Look.
 
-<!-- [ADDITION] Replaced pole-planting with acoustic investigation — Makayla cross-references Sierra's folder -->
+(action)
 Janice can't find Dallas. Inside, he's in the backyard, staring at the marsh with his oscillator. The readings are erratic—spikes he hasn't seen before. He scans the tree line. Something has changed.
+
+(action)
+
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 
@@ -34,15 +37,15 @@ Dallas doesn't answer. Makayla reads his face.
 MAKAYLA
 The creature?
 
+(action)
 Dallas nods. Makayla grabs his device off the table. DOMINIC appears and grabs her wrist. The three of them stand there. From the direction of the marsh—a cry. Distant, unmistakable. The creature. Then the hum, low and everywhere.
 
-<!-- [ADDITION] Makayla's Commander moment — grid stakes + replaces original "We have to go get it back" -->
 Dominic grabs Makayla's arm, pulling her toward the house.
 
 DOMINIC
 We need to get inside. Now.
 
-Makayla pulls free. She turns to both of them. Something has shifted in her. She isn't scared anymore. She's calculating.
+Makayla pulls free. She turns to both of them. Her eyes dart in the direction of the tall grass on the edge of Dallas' yard. 
 
 MAKAYLA
 If that creature's frequency hits the transformer on the street while it's being attacked, the feedback loop will fry the whole grid. We aren't just rescuing a pet, Dominic. We're keeping the lights on for the whole neighborhood.

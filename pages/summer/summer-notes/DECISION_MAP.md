@@ -40,10 +40,16 @@ for a beat, then looks back at the birds.
 
 ---
 
-## SCENE 04 — Marsh Walk (`04_marsh_walk.md`)
+## SCENE 04 — The Fellowship (`04_fellowship.md`)
+
+(No additions/deletions logged yet.)
+
+---
+
+## SCENE 05 — Marsh Walk (`05_marsh_walk.md`)
 
 ### DELETION (STRUCTURAL): Entire scene — merge into Scene 03
-**Rationale:** This is a second marsh walk that hits the same beats as Scene 03 (coastal trail, tall grass, Dallas secretly recording, Dominic commenting). The REVIEW says "Combine the first two marsh walks." The Merlin app detail and the "something moving underneath" beat (lines 13–16, 34–36) can be folded into the end of Scene 03 as a few lines.
+**Rationale:** This is a second marsh walk that hits the same beats as Scene 03 (coastal trail, tall grass, Dallas secretly recording, Dominic commenting). The REVIEW says "Combine the first two marsh walks." The Merlin app detail and the "something moving underneath" beat (lines 13–16, 34–36) can be folded into the end of Scene 03 as a few lines. (Scene file renumbered to 05.)
 **What to salvage:**
 ```
 See this? Merlins. It listens to the chirps and tells you the species.
@@ -56,7 +62,7 @@ like something else is moving *underneath* them, contrary to the breeze.
 
 ---
 
-## SCENE 05 — News Vans (`05_news_vans.md`)
+## SCENE 06 — News Vans (`06_news_vans.md`)
 
 ### ADDITION: Pat names brownouts
 **Lines 12–14**
@@ -82,7 +88,7 @@ deliberate rhythm that doesn't match the others on the block.
 
 ---
 
-## SCENE 06 — The Coordinates (`06_the_coordinates.md`)
+## SCENE 07 — The Coordinates (`07_the_coordinates.md`)
 
 ### ADDITION: Makayla connects hum to grid
 **Line 106 (inline)**
@@ -99,7 +105,7 @@ Every time I hear the sound, the lights go weird.
 
 ---
 
-## SCENE 07 — Dallas Marsh Walk (`07_dallas_marsh_walk.md`)
+## SCENE 08 — Dallas Marsh Walk (`08_dallas_marsh_walk.md`)
 
 ### DELETION (STRUCTURAL): Remove the creature encounter (lines 30–39)
 **Current text:**
@@ -128,7 +134,7 @@ End the scene there (or with Dallas retreating, disturbed, without the creature)
 
 ---
 
-## SCENE 08 — Dallas Home Night (`08_dallas_home_night.md`)
+## SCENE 09 — Dallas Home Night (`09_dallas_home_night.md`)
 
 ### ADDITION: Second Sierra folder tease
 **Lines 60–62**
@@ -169,7 +175,7 @@ made for it.
 
 ---
 
-## SCENE 10 — Shadows in Wind (`10_shadows_in_wind.md`)
+## SCENE 11 — Shadows in Wind (`11_shadows_in_wind.md`)
 
 ### ADDITION: Full neighborhood blackout synced with HUM
 **Lines 25–27**
@@ -187,7 +193,7 @@ as if the power is being returned in sequence.
 
 ---
 
-## SCENE 11 — Howie Walk (`11_howie_walk.md`)
+## SCENE 12 — Howie Walk (`12_howie_walk.md`)
 
 ### ADDITION: Interior light drain
 **Lines 9–11**
@@ -200,7 +206,7 @@ pulling the current out of the walls. Then it returns to full brightness.
 
 ---
 
-## SCENE 13 — Entering Grass (`13_entering_grass.md`)
+## SCENE 14 — Entering Grass (`14_entering_grass.md`)
 
 ### ADDITION: Makayla documents like a scientist
 **Lines 37–39**
@@ -215,7 +221,7 @@ documenting it the way a scientist would, not the way a teenager would.
 
 ---
 
-## SCENE 15 + 16 — The Burn Mark / The Escape
+## SCENE 16 + 17 — The Burn Mark / The Escape
 
 ### DELETION (STRUCTURAL): Delete Scene 16 entirely
 **Rationale:** Scene 16 (`16_the_escape.md`) is nearly line-for-line identical to the opening of Scene 13 (`13_entering_grass.md`):
@@ -229,7 +235,7 @@ Scene 16 adds Dominic's Costco trip and schools-cancelled info — fold those tw
 
 ---
 
-## SCENE 18 — Entering Grass / Triage (`18_entering_grass.md`)
+## SCENE 19 — Entering Grass / Triage (`19_entering_grass.md`)
 
 ### ADDITION: Makayla identifies secondary wave / grid draw
 **Lines 29–46**
@@ -249,7 +255,7 @@ That's not coming from the creature. That's a draw. It's pulling power.
 
 ---
 
-## SCENE 19 — Life Group Arrives (`19_life_group_arrives.md`)
+## SCENE 20 — Life Group Arrives (`20_life_group_arrives.md`)
 
 ### ADDITION: Grid pulse + Dominic names brownouts
 **Lines 7–15**
@@ -268,7 +274,7 @@ Dallas adjusts the dial again. The creature quiets. The lights stabilize.
 
 ---
 
-## SCENE 21 — The Hymn (`21_the_hymn.md`)
+## SCENE 22 — The Hymn (`22_the_hymn.md`)
 
 ### ADDITION: Lights dim in rhythm + Sarah's tea ripples
 **Lines 48–50**
@@ -286,7 +292,7 @@ expanding outward in perfect time.
 
 ---
 
-## SCENE 22 — Red Eyes (`22_red_eyes.md`)
+## SCENE 23 — Red Eyes (`23_red_eyes.md`)
 
 ### ADDITION: Makayla discovers Sierra's folder
 **Lines 15–37**
@@ -309,7 +315,7 @@ stories. I'm not letting them become a myth again.
 
 ---
 
-## SCENE 23 — Creature Missing (`23_creature_missing.md`)
+## SCENE 24 — Creature Missing (`24_creature_missing.md`)
 
 ### ADDITION: Dallas finally opens Sierra's folder
 **Lines 7–9**
@@ -336,7 +342,7 @@ of the box—visible, accessible.
 
 ---
 
-## SCENE 24 — Marsh Confrontation (`24_marsh_confrontation.md`)
+## SCENE 25 — Marsh Confrontation (`25_marsh_confrontation.md`)
 
 ### ADDITION: Asher connects burn marks to dead streetlight
 **Lines 11–23**
@@ -360,7 +366,7 @@ The lights are doing it too.
 
 ---
 
-## SCENE 25 — Predator Attack (`25_predator_attack.md`)
+## SCENE 26 — Predator Attack (`26_predator_attack.md`)
 
 ### ADDITION: Makayla cross-references Sierra's folder + Commander moment
 **Lines 19–54**
@@ -384,7 +390,7 @@ We have to go get it back.
 
 ---
 
-## SCENE 26 — The Perimeter (`26_the_perimeter.md`)
+## SCENE 27 — The Perimeter (`27_the_perimeter.md`)
 
 ### ADDITION: Makayla witnesses extinction
 **Lines 11–15**
@@ -399,7 +405,7 @@ know they existed.
 
 ---
 
-## SCENE 27 — The Last Dinner (`27_the_last_dinner.md`)
+## SCENE 28 — The Last Dinner (`28_the_last_dinner.md`)
 
 ### ADDITION: Phase-cancellation trap replaces pole perimeter
 **Lines 16–43**
@@ -428,7 +434,7 @@ kill zone designed to catch a predator.
 
 ---
 
-## SCENE 28 — Final Echoes (`28_final_echoes.md`)
+## SCENE 29 — Final Echoes (`29_final_echoes.md`)
 
 ### ADDITION: Trap hums to life (replaces "powers on poles")
 **Lines 37–39**
@@ -481,7 +487,7 @@ is alone again.
 
 ---
 
-## SCENE 29 — Aftermath (`29_aftermath.md`)
+## SCENE 30 — Aftermath (`30_aftermath.md`)
 
 ### ADDITION: Equipment wreckage + clean recording payoff
 **Lines 6–14**

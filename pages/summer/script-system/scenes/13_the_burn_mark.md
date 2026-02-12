@@ -1,0 +1,43 @@
+EXT. DALLAS BACKYARD - TALL GRASS - NEXT MORNING
+
+Makayla and Asher approaches with Howie on her bike.
+
+Makayla stares at Dallas for a good while - and reads his. 
+
+MAKAYLA
+I think we shoud talk.
+
+DALLAS
+Okay.
+
+MAKAYLA
+Okay.
+
+(action)
+Makayla turns to Asher
+
+MAKAYLA
+We want to see what you have in your kitchen. 
+
+INT. DALLAS KITCHEN
+
+Dallas, Makayla and Asher hover around the table at the makeshift aquarium Dallas constructed.
+
+ASHER
+What is it?
+
+(action)
+Makayla pulls out her portable viewfinder and begins to inspect the creature further. 
+
+MAKAYLA
+I am not sure.
+
+MAKAYLA
+How long has it been here for
+
+DALLAS
+Around 2 hours.
+
+MAKAYLA
+You should keep it here - and we should bring it back tonight. 
+

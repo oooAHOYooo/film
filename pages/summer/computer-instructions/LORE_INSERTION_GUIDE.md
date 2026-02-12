@@ -179,8 +179,8 @@
 
 These scenes don’t feature the three, but lore can still inform **direction** or **sound** for Dallas/Howie/creatures:
 
-- **02_dallas-night.md, 03_the-hum.md, 04_marsh_walk.md, 07_dallas_marsh_walk.md:** Storm lowering pressure; marsh as waveguide; grass as body of the creatures.
-- **09/11 Howie:** Howie has always heard the Singers; his anxiety is overstimulation; when Eaters are near, he goes “listening-still.” *LORE: “Dogs hear 40–60 kHz. Howie has always heard the Singers.”*
-- **14_creature_rescue.md, 15_the_burn_mark.md:** Injured creature “cut off from the chord”; second crystal as waypoint; Eaters creating silence.
+- **02_dallas-night.md, 03_the-hum.md, 05_marsh_walk.md, 08_dallas_marsh_walk.md:** Storm lowering pressure; marsh as waveguide; grass as body of the creatures.
+- **09_dallas_home_night.md / 12_howie_walk.md (Howie):** Howie has always heard the Singers; his anxiety is overstimulation; when Eaters are near, he goes “listening-still.” *LORE: “Dogs hear 40–60 kHz. Howie has always heard the Singers.”*
+- **15_creature_rescue.md, 16_the_burn_mark.md:** Injured creature “cut off from the chord”; second crystal as waypoint; Eaters creating silence.
 
 Use this guide to drop in **action lines, parentheticals, or single character directions** that carry the lore through Makayla, Mr. Mike, and Asher without changing your existing dialogue or plot.

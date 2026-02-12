@@ -59,12 +59,13 @@ He replays the clip. Jots a time code. Plays it again. His hand moves to the mar
 
 He stares at the scribbles. Grid coordinates. Bearings. The same language Mr. Mike was scratching into the wood.
 
-<!-- [ADDITION] Second Sierra folder tease — Dallas still avoiding it -->
-His elbow brushes the stack of Sierra's folders. One slides open—a corner of a sketch visible. Something with wings. He pushes it closed without looking. Not yet.
-<!-- [/ADDITION] -->
+His elbow brushes the stack of Sierra's folders. One slides open—a corner of a sketch visible. Something with wings. He pushes it closed without looking. 
 
 As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint glow. 
 
 INT. DALLAS KITCHEN
+Dallas makes his way to the creature. 
+
 Dallas looks at the creature - who is appearing to be drinking water and eating the grass - but is still sleeping inside of a gnarl of the aquarium Dallas has obviously made for it. 
 
+Howie is in the corner of the room looking like he is going to pee. Dallas looks at Howie. 

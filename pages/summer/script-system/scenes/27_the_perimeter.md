@@ -18,6 +18,8 @@ More predators emerge. For every inch they creep, shadow climbs the tall grass. 
 
 Dallas and Makayla move slowly at first, then break into a brisk walk back the way they came. Dallas glances back.
 
+The dark shadow creatures engulf Dallas and Makayla in a chaos of light and fury - while this happens their shadow tentacles hit 
+
 In the distance: the tiny creature. Its pulse blinks large once—then dims. An awful sound of gnashing. Something has it.
 
 Dallas stops. He pulls out the dial. He turns it. The creature's pulse flares again. The predators retract. In that split second, Dallas runs forward, grabs the creature, and runs.

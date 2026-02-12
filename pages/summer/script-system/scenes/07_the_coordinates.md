@@ -1,5 +1,13 @@
 INT. DOMINIC'S BASEMENT 
-Dallas and Dominic move an AC unit - as they go to install it. 
+
+Dallas looks around in amazement. The basement is covered with normal basement things - but then there are two beds - and around the corner there is a workstation filled with old CRT machines and what not.
+
+DOMINIC
+Yeah, my niece and nephew live down here. They moved in a couple of months ago. I keep trying to get them to stay in the guestroom and got some bunk beds but they stay down here... Here help me grab the fans.
+
+(action)
+Dallas looks at all of the different scans and the 
+Dallas and Dominic move the wall fan - as they go to install it. 
 
 He walks over to it and examines it - he brings out his oscillator and then begins to record it a bit. The readings are off.
 
@@ -7,23 +15,25 @@ INT. DOMINIC'S LIVING ROOM
 
 Dallas helps Dominic shove a heavy oak table against the wall. As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
 
-DOMINIC
-My wife and kid... Gone now. Dallas grab the leg
-
 (action)
 Dallas grabs the leg of the table and pushes. The two look at the table for a while. 
 
 DOMINIC
-What about you?
+Do you have any kids?
 
 DALLAS
-What do you mean?
+No. 
 
 DOMINIC
-Have you have someone that you've lost?
+This was mine. And my wife. 
 
 (action)
-Dallas falls mute. Dominic scans the room and finds his gaze upon the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged nail.
+Dallas falls mute. 
+
+DOMINIC
+Now I just have my niece and nephew. 
+
+Dominic scans the room and finds his gaze upon the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged nail.
 
 DOMINIC 
 Mr. Mike! Hey - what are you doing? 
@@ -35,7 +45,7 @@ MR. MIKE
 She's here! Hey Dominic! Look - she's here.
 
 DOMINIC
-Whose hear? Why are you scratching the table?
+Whose here? Why are you scratching the table?
 
 MR. MIKE
 Your sister.
@@ -49,7 +59,14 @@ MR. MIKE
 Forty-five left. Fifteen right. She's here - Dominic - Janice is here - ASHER! - it is playing the same one Elena chased. 
 
 (action)
+
+Makayla and Asher bust through the door. 
+
 Asher rushes over to Mr. Mike and eye's widen when he see's what he has been writing. Asher runs to Makayla - who starts to jot the numbers on the table on her palm. 
+
+Asher hands the coordinates to Makayla who runs downstairs with it. Dallas watches her. 
+
+
 
 
 INT. DOMINIC'S KITCHEN - LATE AFTERNOON
