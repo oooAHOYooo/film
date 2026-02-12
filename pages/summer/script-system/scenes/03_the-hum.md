@@ -130,29 +130,5 @@ Sure.
 DOMINIC
 Nice - yeah - it's nice to be the new guy in town - good old branford. 
 
-EXT. MONTAGE WALK TO CHURCH
 
-DOMINIC
-So where you from?
-
-DALLAS
-Indiana
-
-DOMINIC
-Indiana - how'd you land up here in Branford? 
-
-DALLAS
-Work
-
-DOMINIC
-Yeah? Where abouts
-
-DOMINIC
-Yale?
-
-DALLAS
-No - maybe - but for now Quinnipiac.
-
-DOMINIC
-That's refreshing.
 

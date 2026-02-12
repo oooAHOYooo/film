@@ -44,7 +44,9 @@ That's great.
 
 Janice leaves the line of food.
 
-Dallas takes a plate but doesn't eat much. He's distracted, listening.
+Dallas takes a plate but doesn't eat much. He's distracted by what Makayla and Asher are looking at the distance. 
+
+Janice, noticing that Dallas is a little quiet - tries to spark conversation. 
 
 DOMINIC
 So, what are you here for?

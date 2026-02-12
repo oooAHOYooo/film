@@ -28,18 +28,15 @@ EXT. DOMINIC'S HOUSE
 They arrive back at Dominic's. Two large plastic trash bins are sprawled across the driveway, trash strewn everywhere.
 
 DOMINIC
-Those raccoons! 
+Look at this. Those raccoons! 
 
 (action)
 Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
-Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. <!-- [DELETION] Grid flicker — redundant with Pat's brownout report above; save visual proof for Scenes 10/11 -->
-Above him, the streetlight at the end of the driveway cycles—on, off, on—in a slow, deliberate rhythm that doesn't match the others on the block.
-<!-- [/DELETION] -->
-Dominic continues to clean the mess from the garbage and Dallas continues to help not  paying attention to what Dominic is handing him, first a garbage bag, then a leaf bag, then up to - but helping none the less. 
+Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. 
 
 DOMINIC
-Listen, I got to get the furniture moved before the men's group tonight. I got to go check on Mike and bring in another AC from the basement. You good? 
+Listen, I got to get the furniture before Janice has her woman's group tonight. I got to go check on Mike and bring in another fan from the basement. You good? 
 
 DALLAS
 (hesitates)

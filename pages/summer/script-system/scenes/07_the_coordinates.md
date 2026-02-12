@@ -36,7 +36,7 @@ Now I just have my niece and nephew.
 Dominic scans the room and finds his gaze upon the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged nail.
 
 DOMINIC 
-Mr. Mike! Hey - what are you doing? 
+Mr. Mike! Mr. Mike, what are you doing?! 
 
 (action)
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
