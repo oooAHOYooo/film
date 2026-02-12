@@ -113,3 +113,33 @@ Action: As they leave, the atmospheric pressure changes, causing the predicted "
 [ ] Scene 20: The Aftermath
 
 Action: The "Storm is missed." The neighborhood is safe, and the tall grass returns to being just grass, though Dallas and Makayla still bear the marks of what happened.
+
+
+### NEW IDEA
+
+Film
+	0. Make an Ellen Review (make it bug colored) - and the ability to highlight and leave comments ;P
+	1. Continue to Revise by Hand
+	2. Take what wrote - Process it 
+	3. Print out - Rest - 
+	4. Reconfigure the basic plot of how many times Dallas goes into the Marsh
+	5. Show Makayla's Fort? (What if Dominic and Janice live together and Makayla and Asher have basement apartments) - Dallas enters and sees all of their research
+	6. Film Repo - Update the 
+	7. Have the lifegroup be at DOMINICS - and the reason why they are going to lifegroup is because Makyala stole the creature from Dallas' house and put it in an aquirium - and while they are upstairs Dallas is downstairs and the creature escapes 
+		a. Makayla sees creature from Dominics house 
+	8. Aftermath of Shadow Encounter - - The Shadows leave biolumminest burn marks on Dallas and Makayla
+		a. It is on their forearm - it glows under a light
+		b. It is the same burn mark that was on the creature 
+	9. In Scene 18 - second rescue - they return to the Hollow and activate their device - which successfully calls the remaining creatures - but also the shadows leave a mark - and then start to chase Dallas and Makayla - - 
+
+Basically:
+	- The shadow creature leaves a burn mark - that is only visisble to a certain light - and that Dallas and Makayla have and Dominic has too - and the dark creatures are following them because they have that mark - 
+		○ So Dallas and Makayla build something - they put the crystal in their receiver thing - and are able to amplify its tiny signal 
+
+Maybe
+	1. The creature 
+
+
+
+Sound Design
+Hum should feel like its under the marsh - not in the air (low end harmonics)
