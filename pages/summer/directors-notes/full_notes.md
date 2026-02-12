@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 2/12/2026, 1:51:04 PM*
+*Compiled on 2/12/2026, 5:06:59 PM*
 
 ---
 
@@ -125,39 +125,39 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 4: Marsh Trail
+#### Scene 4: The Fellowship
+
+*ID: fellowship*
+
+*No director's note for this scene.*
+
+#### Scene 5: Marsh Trail
 
 *ID: marsh-walk-later*
 
 *No director's note for this scene.*
 
-#### Scene 5: News Vans & Trash Cans
+#### Scene 6: News Vans & Trash Cans
 
 *ID: news-vans*
 
 *No director's note for this scene.*
 
-#### Scene 6: The Coordinates
+#### Scene 7: The Coordinates
 
 *ID: the-coordinates*
 
 *No director's note for this scene.*
 
-#### Scene 7: Dallas Marsh Walk
+#### Scene 8: Dallas Marsh Walk
 
 *ID: dallas-marsh-walk*
 
 *No director's note for this scene.*
 
-#### Scene 8: Dallas Night Work
+#### Scene 9: Dallas Night Work
 
 *ID: dallas-night-work*
-
-*No director's note for this scene.*
-
-#### Scene 9: The Fellowship
-
-*ID: fellowship*
 
 *No director's note for this scene.*
 

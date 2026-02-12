@@ -8,9 +8,10 @@ He hears a noise from outside. Dallas pauses and peers through his living room w
 
 Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Sierra".
 
-Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. <!-- [ADDITION] Sierra folder seed — plants the discovery Makayla makes in Scene 22 -->
-One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD 1978." Dallas closes it without looking and sets the stack aside.
-<!-- [/ADDITION] -->
+Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. 
+
+One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD 2004." Dallas closes it without looking and sets the stack aside.
+
 In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones.
 
 On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker.
@@ -21,12 +22,19 @@ Dallas's thumb rushes over her face. He holds the contact for a beat too long.
 
 Dallas presses the sticker on the side of his new receiver.
 
-As he does this, he hears a HUM emerging from outside.
+As he does this, he hears a HUM emerging from outside. The sound is faint and he listens
 
-Dallas walks to the window and attempts to record the readings, and just as it capturing something, the battery dies.  
+Dallas walks to the window and attempts to record the readings, and just as it capturing something, the battery dies. 
 
-He sets the receiver down and heads for the door.
 
-EXT. DALLAS HOUSE
+Scrambling, Dallas looks through his box of equipment for other devices but they all take C batteries. 
 
-Dallas stands alone watching the tall grass sway agaisnt the salt breeze. 
+Dallas, fustrated, throws down the equipment and heads for the door. 
+
+EXT. DALLAS HOUSE - NIGHT
+
+Dallas stands alone watching the tall grass sway agaisnt the salt breeze. The hum seems to be decreasing in scale and size as the night disappears into the distance of the tall marsh grass.
+
+INT. DALLAS HOUSE - BEDROOM - NIGHT
+
+Dallas struggles to go to sleep. As he hears more faint cries he looks out the window and sees a faint golden glow again. 
