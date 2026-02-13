@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/13/2026, 11:03:21 AM*
+*Compiled on 2/13/2026, 11:35:08 AM*
 
 ---
 
@@ -825,7 +825,7 @@ Dallas is alone and it is getting dark. He dashes back home with the creature - 
 
 Dallas is alone with the creature trying to understand it. He puts it on a gentle pan with parchment paper - and begins to look through big jewerly glasses - as to see what is wrong with it. 
 
-The creature is asleep and Dallas notices that it has blood marks underneath its top wing. 
+The creature is asleep and Dallas notices that it has marks underneath its top wing. 
 
 Dallas treats the wound and then gently brings it outside. But as he does - he notices that the creature communicates somehow with the oscillators in the kitchen. 
 
@@ -1052,32 +1052,88 @@ Dallas rushes to the kitchen and finds that the creature is doing good.
 
 <!-- nickname: the-burn-mark -->
 
-EXT. DALLAS BACKYARD - TALL GRASS - NEXT MORNING
+EXT. DALLAS HOUSE - NEXT MORNING
 
-Makayla and Asher approaches with Howie on her bike.
+The morning air is thick with the scent of ozone. Janice's minivan idles in the driveway. She drops Howie off, barely waving as she rushes toward the road.
 
-Makayla stares at Dallas for a good while - and reads his. 
+Makayla and Asher don't follow her. They wander toward the edge of Dallas's property.
+
+MAKAYLA
+Asher, look.
+
+In the middle of the yard is a jagged, blackened  burn mark in the grass that resembles beads in paint hitting a white canvas - but on the green grass. It looks as if a drip of yellow blood is around it - acreating a trail. At its center lies a small, translucent crystal.
+
+Makayla kneels and touches it. Her hair begins to flutter, static electricity pulling the strands toward the stone. She quickly pockets it.
+
+Makayla - from the corner of her eye - and sees a trail leading from the edge of the grass into Dallas.
+
+Janice beeps the car. Makayla and Asher lock eye contact with Dallas and begin to go further. Makayla walks over and talks to her mom.
+
+MAKAYLA
+Mom, I am going to stay here.
+
+JANICE
+What? Why - what do you have going on here.
+
+MAKAYLA
+There are these little burn marks by that.
+
+JANICE
+What? Makayla get in the car - someone needs to watch your brother.
+
+MAKAYLA
+He's fine. Where's Uncle Dom?
+
+JANICE
+He's with Mr. Mike's physical therapist. Makayla get in the car.
+
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+
+(action)
+Makayla slams the door and walks right at Dallas - and violently knocks his door. 
+
+EXT. DALLAS DOORWAY 
+
+Makayla stares at Dallas for a good while - and reads his eyes.
 
 MAKAYLA
 I think we shoud talk.
 
 DALLAS
-Okay.
+Yeah?
 
 MAKAYLA
+Yes. 
+
+DALLAS
 Okay.
 
 <!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
 (action)
-Makayla turns to Asher
+Makayla turns to the burn marks. 
 
 MAKAYLA
-We want to see what you have in your kitchen. 
+What is that outside your house?
 
-INT. DALLAS KITCHEN
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
-Dallas, Makayla and Asher hover around the table at the makeshift aquarium Dallas constructed.
+(action)
+Dallas looks outside and sees that there are a bunch of burn marks on the edge of the tall grass. 
+
+From the corner of her ear - a whimper is heard from the kitchen. 
+
+MAKAYLA
+What is that?
+
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+
+(action)
+Makayla bursts through Dallas and runs to the kitchen. 
+
+INT. DALLAS KITCHEN - MOMENTS LATER
+
+Dallas and Makayla hover around the table at the makeshift aquarium Dallas constructed.
 
 ASHER
 What is it?
@@ -1088,17 +1144,52 @@ What is it?
 Makayla pulls out her portable viewfinder and begins to inspect the creature further. 
 
 MAKAYLA
-I am not sure.
-
-MAKAYLA
-How long has it been here for
+I am not sure... How long has it been here for?
 
 DALLAS
 Around 2 hours.
 
 MAKAYLA
-You should keep it here - and we should bring it back tonight. 
+Look at this, look how it breathes.
 
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+
+(action)
+The pair look closer at the creature - it seems to brath through its back. Makayla touches the creature gently - which causes the Oscillator around it to spark.
+
+MAKAYLA
+We can't tell anyone about this.
+
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+
+(action)
+Makayla turns to Dallas who nods in agreement.
+
+MAKAYLA
+Mr. Dallas, where did you find this?
+
+DALLAS
+I am not sure exactly. It was dark. 
+
+MAKAYLA
+And why did you grab it?
+
+DALLAS
+It looked like it was injured.
+
+MAKAYLA
+And is it?
+
+DALLAS
+I think so. 
+
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+
+(action)
+Dallas walks over and pulls over his bright electronic lamp over it. Where it shows the different burn marks. 
+
+MAKAYLA
+Look at that!
 
 
 ---
@@ -1116,18 +1207,6 @@ You should keep it here - and we should bring it back tonight.
 
 EXT. DALLAS'S BACKYARD - DAWN
 
-The morning air is thick with the scent of ozone. Janice's minivan idles in the driveway. She drops Howie off, barely waving as she rushes toward the museum to secure artwork before the storm hits.
-
-Makayla and Asher don't follow her. They wander toward the edge of Dallas's property.
-
-MAKAYLA
-Asher, look.
-
-In the middle of the yard is a jagged, blackened circle—a burn mark in the grass. At its center lies a small, translucent crystal.
-
-Makayla kneels and touches it. Her hair begins to flutter, static electricity pulling the strands toward the stone. She quickly pockets it as Dominic yells from the car.
-
-Makayla - from the corner of her eye - and sees the creature. In a flurry she runs inside Dallas house. 
 
 
 EXT. DALLAS'S PORCH - CONTINUOUS
@@ -1135,13 +1214,13 @@ EXT. DALLAS'S PORCH - CONTINUOUS
 Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
 
 DOMINIC
-Life group tonight. Thanks for hosting. I'm heading to Costco—need anything? Water? Batteries?
+This is the music for life group tonight. Thanks for hosting. I'm heading to Costco—need anything? Water? Batteries? That storm has gotten me all rattled. 
 
 DALLAS
 I'm good.
 
 DOMINIC
-Listen, Makayla and Asher - help Dallas okay - I'll be back in 45 minutes. You know what to do - we got to get this place looking ready. Chairs inside - count how many.
+Listen, Makayla and Asher - help Dallas okay - I'll be back in 45. You know what to do - we got to get this place looking sharp. Chairs inside - brownies in oven - we're going to have a good amount of folks tonight. 
 
 MAKAYLA
 You got it Uncle Dominic. 
