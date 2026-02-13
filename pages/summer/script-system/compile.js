@@ -63,6 +63,21 @@ function sceneContentWithVisibleMarkers(content) {
   return out;
 }
 
+function injectSceneComments(content, sceneNumber, scene) {
+  const file = scene && scene.file ? String(scene.file) : '';
+  const nickname = scene && (scene.nickname || scene.id) ? String(scene.nickname || scene.id) : '';
+  const num = String(sceneNumber).padStart(2, '0');
+  const header = `<!-- scene: ${num} file: ${file} nickname: ${nickname} -->`;
+
+  // Ensure one header at top (even if the scene already has a nickname comment)
+  let out = `${header}\n\n${content}`;
+
+  // Before every explicit action-break marker, inject a scene header comment.
+  // This helps when scanning raw markdown without affecting rendered output.
+  out = out.replace(/^\(action\)\s*$/gim, `${header}\n\n(action)`);
+  return out;
+}
+
 // Compile all scenes into markdown
 function compileMarkdown(scenes) {
   let output = `# ${SCRIPT_NAME} — Full Script\n\n`;
@@ -85,6 +100,7 @@ function compileMarkdown(scenes) {
     
     let sceneContent = loadScene(scene.file);
     sceneContent = sceneContentWithVisibleMarkers(sceneContent);
+    sceneContent = injectSceneComments(sceneContent, sceneNumber, scene);
     output += sceneContent;
     output += `\n\n---\n\n`;
   });

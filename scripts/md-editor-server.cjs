@@ -184,7 +184,7 @@ async function handleApi(req, res, url) {
     }
   }
 
-  // GET /api/scene?file=01_arrival.md
+  // GET /api/scene?file=s01.md
   if (req.method === 'GET' && url.pathname === '/api/scene') {
     const file = safeSceneFileName(url.searchParams.get('file'));
     if (!file) return sendJson(res, 400, { ok: false, error: 'Invalid scene file' });

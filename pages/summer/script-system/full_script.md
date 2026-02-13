@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/12/2026, 5:21:21 PM*
+*Compiled on 2/13/2026, 11:03:21 AM*
 
 ---
 
@@ -12,9 +12,13 @@
 
 ### Scene 1: Arrival & Discovery
 
-*ACT I — Arrival & Discovery | ID: arrival | File: 01_arrival.md*
+*ACT I — Arrival & Discovery | ID: arrival | File: s01.md*
 
 ---
+
+<!-- scene: 01 file: s01.md nickname: arrival -->
+
+<!-- nickname: arrival -->
 
 EXT. DALLAS NEW HOUSE - DAY
 
@@ -33,6 +37,8 @@ MAKAYLA
 You know that could be used to track the baseline difference between the cry of the BinzoBee and the howl of the Ophragah.
 
 
+<!-- scene: 01 file: s01.md nickname: arrival -->
+
 (action)
 Asher nods. Makayla approaches Dallas. 
 
@@ -48,11 +54,15 @@ Is that an Oscillator?
 DALLAS
 Yes. 
 
+<!-- scene: 01 file: s01.md nickname: arrival -->
+
 (action)
 Makayla looks at Asher and whispers something in his ear. He nods. She returns glances to Dallas and inches her bike closer. 
 
 MAKAYLA
 Do you think my brother Asher could borrow it some time? 
+
+<!-- scene: 01 file: s01.md nickname: arrival -->
 
 (action)
 Dallas looks at the Oscillator and then at Makayla and Asher
@@ -65,6 +75,8 @@ What kind of evidence?
 
 MAKAYLA
 Tell him Asher. 
+
+<!-- scene: 01 file: s01.md nickname: arrival -->
 
 (action)
 Asher stands silent in a sheepish shyness.
@@ -90,12 +102,16 @@ I'm not sure.
 MAKAYLA
 Well okay. Asher do you have any questions. 
 
+<!-- scene: 01 file: s01.md nickname: arrival -->
+
 (action)
 Makayla turns to Asher. He shakes his head no. 
 
 MAKAYLA
 Okay then. Byeeeeeee.
 
+
+<!-- scene: 01 file: s01.md nickname: arrival -->
 
 (action)
 Makayla and Asher peddle their bikes away. Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
@@ -107,9 +123,13 @@ Makayla and Asher peddle their bikes away. Dallas watches curiously and then pee
 
 ### Scene 2: Dallas Night
 
-*ACT I — Arrival & Discovery | ID: dallas-night | File: 02_dallas-night.md*
+*ACT I — Arrival & Discovery | ID: dallas-night | File: s02.md*
 
 ---
+
+<!-- scene: 02 file: s02.md nickname: dallas-night -->
+
+<!-- nickname: dallas-night -->
 
 INT. DALLAS NEW HOUSE - NIGHT
 
@@ -157,9 +177,13 @@ Dallas struggles to go to sleep. As he hears more faint cries he looks out the w
 
 ### Scene 3: The Hum
 
-*ACT I — Arrival & Discovery | ID: the-hum | File: 03_the-hum.md*
+*ACT I — Arrival & Discovery | ID: the-hum | File: s03.md*
 
 ---
+
+<!-- scene: 03 file: s03.md nickname: the-hum -->
+
+<!-- nickname: the-hum -->
 
 EXT. DALLAS HOUSE - NEXT DAY MORNING
 Dallas walks outside and watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the C battery in his hand. As he does so, he becomes in an almost daze As he walks he notices a man approaching him from the sidewalk near his house. 
@@ -230,6 +254,8 @@ EXT. TOWN CENTER - DAY
 Dallas and Dominic walk toward a small hardware store. 
 
 INT. HARDWARE STORE
+<!-- scene: 03 file: s03.md nickname: the-hum -->
+
 (action)
 Dominic waves to the unfriendly man at the counter and brings Dallas to the battery section. 
 
@@ -241,6 +267,8 @@ Indiana.
 
 DOMINIC
 INDIANAAAA - how'd you land up here in Branford?
+
+<!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
 Dallas finds the correct batteries and grabs it off the shelf. 
@@ -266,6 +294,8 @@ The building looks closed. Dominic stops dead. A neon orange ticket flutters und
 DOMINIC
 You got to be kidding me!
 
+<!-- scene: 03 file: s03.md nickname: the-hum -->
+
 (action)
 He rips the ticket off and walks around to see if anyone is looking - and finds a secret key. 
 
@@ -288,8 +318,9 @@ Good -  my church is doing a fellowship lunch - little picnic - I got to go to t
 DALLAS
 Sure. 
 
-(action)
+<!-- scene: 03 file: s03.md nickname: the-hum -->
 
+(action)
 DOMINIC
 Nice - yeah - it's nice to be the new guy in town - good old branford. 
 
@@ -302,9 +333,13 @@ Nice - yeah - it's nice to be the new guy in town - good old branford.
 
 ### Scene 4: The Fellowship
 
-*ACT I — Arrival & Discovery | ID: fellowship | File: 04_fellowship.md*
+*ACT I — Arrival & Discovery | ID: fellowship | File: s04.md*
 
 ---
+
+<!-- scene: 04 file: s04.md nickname: fellowship -->
+
+<!-- nickname: fellowship -->
 
 EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON
 
@@ -314,6 +349,8 @@ Dominic carries a package of water and puts it under one of the fold up tables.
 
 DOMINIC
 Alright buddy - let's wait on line I guess. 
+
+<!-- scene: 04 file: s04.md nickname: fellowship -->
 
 (action)
 Dominic and Dallas wait on line to be served at fellowship lunch. 
@@ -329,6 +366,8 @@ Brother.
 DOMINIC
 (ignoring Janice)
 Dallas, these are my niece and nephew - Makayla and Asher.
+
+<!-- scene: 04 file: s04.md nickname: fellowship -->
 
 (action)
 Makayla and Asher don't say much but wait online. Makayla taps Asher on the shoulder and nods towards a far end of the church lawn. Between the bushes and garden. 
@@ -383,6 +422,8 @@ Yep.
 DOMINIC
 Okay cool. That's cool.
 
+<!-- scene: 04 file: s04.md nickname: fellowship -->
+
 (action)
 They finish eating. The group begins to disperse. Janice walks over to Dallas and hands him Howie again. 
 
@@ -392,9 +433,19 @@ They finish eating. The group begins to disperse. Janice walks over to Dallas an
 
 ### Scene 5: Marsh Trail
 
-*ACT I — Arrival & Discovery | ID: marsh-walk-later | File: 05_marsh_walk.md*
+*ACT I — Arrival & Discovery | ID: marsh-walk-later | File: s05.md*
 
 ---
+
+<!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
+
+<!-- nickname: marsh-walk-later -->
+
+
+
+<div class="script-deletion">
+
+> deletion
 
 
 EXT. MARSH TRAIL - LATER
@@ -406,8 +457,9 @@ Dominic and Dallas walk quietly for a while. Dominic looks out to the tall grass
 DOMINIC
 The kids are always out here with their cameras.
 
-(action)
+<!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
+(action)
 Dominic pulls out his phone, tapping an app.
 
 DOMINIC
@@ -421,9 +473,13 @@ See this? Merlins. It listens to the chirps and tells you the species. Coastal s
 
 ### Scene 6: News Vans & Trash Cans
 
-*ACT I — Arrival & Discovery | ID: news-vans | File: 06_news_vans.md*
+*ACT I — Arrival & Discovery | ID: news-vans | File: s06.md*
 
 ---
+
+<!-- scene: 06 file: s06.md nickname: news-vans -->
+
+<!-- nickname: news-vans -->
 
 EXT. BRANFORD NEIGHBORHOOD - CONTINUOUS
 
@@ -451,11 +507,15 @@ We're also getting reports of rolling brownouts along the Route 146 corridor—U
 
 Hopefully, it holds off until after Sunday's festival, but folks, get those generators ready!
 
+<!-- scene: 06 file: s06.md nickname: news-vans -->
+
 (action)
 Dominic scoffs as they walk past.
 
 DOMINIC
 Pat's been predicting the end of the world every Tuesday for ten years.
+
+<!-- scene: 06 file: s06.md nickname: news-vans -->
 
 (action)
 The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
@@ -466,6 +526,8 @@ They arrive back at Dominic's. Two large plastic trash bins are sprawled across 
 
 DOMINIC
 Look at this. Those raccoons! 
+
+<!-- scene: 06 file: s06.md nickname: news-vans -->
 
 (action)
 Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
@@ -491,9 +553,13 @@ Sure.
 
 ### Scene 7: The Coordinates
 
-*ACT I — Arrival & Discovery | ID: the-coordinates | File: 07_the_coordinates.md*
+*ACT I — Arrival & Discovery | ID: the-coordinates | File: s07.md*
 
 ---
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+<!-- nickname: the-coordinates -->
 
 INT. DOMINIC'S BASEMENT 
 
@@ -501,6 +567,8 @@ Dallas looks around in amazement. The basement is covered with normal basement t
 
 DOMINIC
 Yeah, my niece and nephew live down here. They moved in a couple of months ago. I keep trying to get them to stay in the guestroom and got some bunk beds but they stay down here... Here help me grab the fans.
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas looks at all of the different scans and the 
@@ -511,6 +579,8 @@ He walks over to it and examines it - he brings out his oscillator and then begi
 INT. DOMINIC'S LIVING ROOM 
 
 Dallas helps Dominic shove a heavy oak table against the wall. As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas grabs the leg of the table and pushes. The two look at the table for a while. 
@@ -524,6 +594,8 @@ No.
 DOMINIC
 This was mine. And my wife. 
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
 (action)
 Dallas falls mute. 
 
@@ -534,6 +606,8 @@ Dominic scans the room and finds his gaze upon the corner. MR. MIKE (70s) sits i
 
 DOMINIC 
 Mr. Mike! Mr. Mike, what are you doing?! 
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
@@ -547,6 +621,8 @@ Whose here? Why are you scratching the table?
 MR. MIKE
 Your sister.
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
 (action)
 Dominic dashes for the door and opens it. In pops Janice with Makayla and Asher. 
 
@@ -555,8 +631,9 @@ Dallas meanwhile walks towards Mr. Mike before Dominic blocks his view.
 MR. MIKE 
 Forty-five left. Fifteen right. She's here - Dominic - Janice is here - ASHER! - it is playing the same one Elena chased. 
 
-(action)
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
+(action)
 Makayla and Asher bust through the door. 
 
 Asher rushes over to Mr. Mike and eye's widen when he see's what he has been writing. Asher runs to Makayla - who starts to jot the numbers on the table on her palm. 
@@ -579,8 +656,9 @@ You got it Janice. Anything for the brussels.
 JANICE
 Okay.
 
-(action)
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
+(action)
 Janice begins a frantic search for her keys, which she just put down. She stumbles over Dallas's heavy receiver on the floor.
 
 JANICE 
@@ -589,11 +667,15 @@ What is this? A boat anchor?
 DALLAS
 It's a receiver. For work.
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
 (action)
 Mr. Mike in the distance begins to get agitated
 
 MR. Mike
 And when you hurt one - eventually they will transform into the other one - they wont stay kind forever. If the winds get them - they will take charge.
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
 Janice walks over and grabs Howie from the car and hands them to Dallas.
@@ -601,17 +683,23 @@ Janice walks over and grabs Howie from the car and hands them to Dallas.
 JANICE
 Do you mind watching Howie for a bit this afternoon - I have to take everyone to costco
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
 (action)
 Dallas looks at the dog - the dog Howie looks back at the man Dallas. Makayla walks over and grabs the portable Oscillator holding in Dallas' hand. 
 
 MAKAYLA
 Have you given any thought to what I asked you the other day?
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
 (action)
 Dallas looks at Makayla and back at Asher
 
 MAKAYLA
 Let my brother borrow it. 
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
 Asher walks over to Mr. Mike to see how he is doing. Makayla approaches Dallas even further. 
@@ -629,6 +717,8 @@ And the streetlights on our block were doing that thing again—cycling on and o
 
 
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
 (action)
 Asher, meanwhile, stands by the window. He ignores the conversation, his eyes fixed on the distant bushes at the edge of the property. The leaves ripple, though there is no wind.
 
@@ -644,9 +734,13 @@ The family vanishes in a blur of activity, leaving Dallas standing in the sudden
 
 ### Scene 8: Dallas Marsh Walk
 
-*ACT I — Arrival & Discovery | ID: dallas-marsh-walk | File: 08_dallas_marsh_walk.md*
+*ACT I — Arrival & Discovery | ID: dallas-marsh-walk | File: s08.md*
 
 ---
+
+<!-- scene: 08 file: s08.md nickname: dallas-marsh-walk -->
+
+<!-- nickname: dallas-marsh-walk -->
 
 EXT. MARSH TRAIL - EVENING
 
@@ -675,44 +769,31 @@ Dallas takes a step forward, then another. The reeds part before him, closing be
 
 He stands slowly, scanning the reeds around him. Nothing. Just the gentle sway of grass and the sound of his own breathing.
 
-Dallas turns and begins to make his way back, the receiver still recording.
+Dallas steps deeper, following the fading glow.
 
-There he sees a faint glow - as he approaches he notices that there is a group of biolumniset creatures huddling around the gnarl of an old tree. 
+In a shallow hollow, a cluster of bioluminescent creatures huddle around the gnarl of an old tree—little orbs of gold, pulsing like lanterns.
 
-Dallas in a daze follows it. 
+As Dallas approaches, the lights scatter into the reeds.
 
-Dallas walks the coastal trail with Howie. Suddenly, the air vibrates. A roar-hum hybrid sound erupts from the reeds.
+One remains. Smaller than the rest. Injured. It lets out a thin cry that makes the scope needle jump.
 
-Dallas and Howie step onto the narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh. 
+Dallas looks around. All at once the marsh is silent. The silence comes in waves—pressing, releasing.
 
-As they walk - the air changes into damp, metallic, stillness.
+He scoops the injured creature into his hands.
 
-EXT. MARSH ENTRANCE
+The air changes.
 
-Dallas and Howie stop at the creek's edge and pan glances towards the outer marsh.
+A heavy, crushing sound slices through the reeds—something massive rocketing toward him like an arrow.
 
-Howie's ears perk and he begins to gently whine, pressing against Dallas's leg. In the distance, a flicker of golden light pulses deep within the marsh. 
+DALLAS
+(to himself)
+Go, go, go.
 
-Dallas crouches and lifts him, holding Howie a moment longer than necessary as he catches his breath. Howie's breathing begins to quicken. Dallas steadies him, resting his forehead briefly against Howie as he steadies him. 
+Dallas breaks into a sprint. He reaches the stunted cedar tree—HOWIE is a blur of panic, barking at the wall of grass.
 
-From the distance a light flickers deep in the marsh. Dallas notices it - but it is gone. 
+Dallas grabs the leash and doesn't stop running until the marsh is far behind them.
 
-Dallas lowers Howie to the ground and his equipment begins to beep. 
-
-Dallas flips open his handheld scope and watches the waveform settle into an otherworldly pattern. 
-
-Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a perfect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy. He is drawn to it, his movements rhythmic and dazed.
-
-His handheld scope chirps. The waveform is no longer random; it's a repeating, melodic pattern.
-
-He ties Howie's leash to a stunted cedar tree and steps off the path, disappearing into the golden-yellow reeds.
-
-
-The creature is biolumenist - much like a firefly - the other creatures scatter into the marsh as if they were little orbs of golden light - but remains is one, smaller than the rest, injured and letting a cry out. 
-
-As Dallas approaches the other creatures scatter away - and Dallas looks around - all of a sudden it is silent. The silence engulfs him all he hears is his own breath and the creatures - and the silence comes in waves. 
-
-Dallas tkes the creature in his hand and slowly walks away fast - out of the reeds - he grabs howie and nervoulsy walks back home throug hthe edge of the tall grass - through his sidewalk - back to his backyard - up the stairs of the kitchen - and through the kitchen. 
+At the edge of his driveway, he finally stops—gasping. The creature is motionless in his coat, but its neck glow pulses weak, fading amber.
 
 
 
@@ -721,9 +802,13 @@ Dallas tkes the creature in his hand and slowly walks away fast - out of the ree
 
 ### Scene 9: Dallas Night Work
 
-*ACT I — Arrival & Discovery | ID: dallas-night-work | File: 09_dallas_home_night.md*
+*ACT I — Arrival & Discovery | ID: dallas-night-work | File: s09.md*
 
 ---
+
+<!-- scene: 09 file: s09.md nickname: dallas-night-work -->
+
+<!-- nickname: dallas-night-work -->
 
 
 
@@ -760,6 +845,8 @@ EXT. DALLAS HOUSE - LATE AFTERNOON
 DOMINIC
 Hey man - sorry I'm late - how's Howie?
 
+<!-- scene: 09 file: s09.md nickname: dallas-night-work -->
+
 (action)
 Howie runs up to him. 
 
@@ -780,6 +867,8 @@ Around 3 - or 4 - or 5 - not sure - but I'll ring you - we'll go.
 
 DALLAS
 Sounds good.
+
+<!-- scene: 09 file: s09.md nickname: dallas-night-work -->
 
 (action)
 Dominic picks back Howie up.
@@ -812,9 +901,13 @@ Howie is in the corner of the room looking like he is going to pee. Dallas looks
 
 ### Scene 10: Shadows in Wind
 
-*ACT I — Arrival & Discovery | ID: shadows-in-wind | File: 11_shadows_in_wind.md*
+*ACT I — Arrival & Discovery | ID: shadows-in-wind | File: s10.md*
 
 ---
+
+<!-- scene: 10 file: s10.md nickname: shadows-in-wind -->
+
+<!-- nickname: shadows-in-wind -->
 
 EXT. BRANFORD ROCKS - EVENING
 
@@ -869,9 +962,13 @@ Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dalla
 
 ### Scene 11: Howie Walk (Edge of Marsh)
 
-*ACT I — Arrival & Discovery | ID: howie-walk-2 | File: 12_howie_walk.md*
+*ACT I — Arrival & Discovery | ID: howie-walk-2 | File: s11.md*
 
 ---
+
+<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
+
+<!-- nickname: howie-walk-2 -->
 
 INT. DALLAS' HOUSE - KITCHEN - EVENING
 
@@ -908,6 +1005,8 @@ Thank you for watching Howie - how did he do?
 DALLAS
 Good
 
+<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
+
 (action)
 Asher looks behind Dallas at all of the equipment. Dallas hands Howie over to Dominic. 
 
@@ -926,6 +1025,8 @@ Yeah - sorry - I'm just a little tired.
 DOMINIC
 Alright well rest well big guy. 
 
+<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
+
 (action)
 Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
 
@@ -943,9 +1044,13 @@ Dallas rushes to the kitchen and finds that the creature is doing good.
 
 ### Scene 12: The Burn Mark & Costco
 
-*ACT II — The Creature | ID: the-burn-mark | File: 13_the_burn_mark.md*
+*ACT II — The Creature | ID: the-burn-mark | File: s12.md*
 
 ---
+
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+
+<!-- nickname: the-burn-mark -->
 
 EXT. DALLAS BACKYARD - TALL GRASS - NEXT MORNING
 
@@ -962,6 +1067,8 @@ Okay.
 MAKAYLA
 Okay.
 
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+
 (action)
 Makayla turns to Asher
 
@@ -974,6 +1081,8 @@ Dallas, Makayla and Asher hover around the table at the makeshift aquarium Dalla
 
 ASHER
 What is it?
+
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
 (action)
 Makayla pulls out her portable viewfinder and begins to inspect the creature further. 
@@ -997,9 +1106,13 @@ You should keep it here - and we should bring it back tonight.
 
 ### Scene 13: Entering Grass & The Hollow
 
-*ACT II — The Creature | ID: entering-grass | File: 14_entering_grass.md*
+*ACT II — The Creature | ID: entering-grass | File: s13.md*
 
 ---
+
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+<!-- nickname: entering-grass -->
 
 EXT. DALLAS'S BACKYARD - DAWN
 
@@ -1033,6 +1146,8 @@ Listen, Makayla and Asher - help Dallas okay - I'll be back in 45 minutes. You k
 MAKAYLA
 You got it Uncle Dominic. 
 
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
 (action)
 Dominic peels out. Dallas watches him drive away. then at the tall grass. It feels like the field is breathing.
 
@@ -1062,9 +1177,13 @@ She pulls out her phone and starts recording video. Then stops. She puts the pho
 
 ### Scene 14: Creature Rescue
 
-*ACT II — The Creature | ID: creature-rescue | File: 15_creature_rescue.md*
+*ACT II — The Creature | ID: creature-rescue | File: s14.md*
 
 ---
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+<!-- nickname: creature-rescue -->
 
 EXT. UKNOWN
 
@@ -1078,9 +1197,13 @@ Okay here - they could bring it back to where they find it - but it doesn't want
 
 ### Scene 15: The Burn Mark
 
-*ACT II — The Creature | ID: the-burn-mark-2 | File: 16_the_burn_mark.md*
+*ACT II — The Creature | ID: the-burn-mark-2 | File: s15.md*
 
 ---
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+<!-- nickname: the-burn-mark-2 -->
 
 EXT. TALL GRASS HOLLOW - CONTINUOUS
 
@@ -1100,9 +1223,13 @@ Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds
 
 ### Scene 16: The Escape
 
-*ACT II — The Creature | ID: the-escape | File: 17_the_escape.md*
+*ACT II — The Creature | ID: the-escape | File: s16.md*
 
 ---
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+<!-- nickname: the-escape -->
 
 
 
@@ -1119,6 +1246,8 @@ Makayla and Asher don't follow her. They wander toward the edge of Dallas's prop
 
 MAKAYLA
 Asher, look.
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
 In the middle of the yard is a jagged, blackened circle—a burn mark in the grass. At its center lies a small, translucent crystal.
@@ -1154,9 +1283,13 @@ Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels 
 
 ### Scene 17: Makeshift Hospital
 
-*ACT II — The Creature | ID: makeshift-hospital | File: 18_makeshift_hospital.md*
+*ACT II — The Creature | ID: makeshift-hospital | File: s17.md*
 
 ---
+
+<!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
+
+<!-- nickname: makeshift-hospital -->
 
 EXT. TALL GRASS - CONTINUOUS
 
@@ -1178,9 +1311,13 @@ He stops at the edge of his driveway, gasping for air. He looks down at his coat
 
 ### Scene 18: Entering Grass
 
-*ACT II — The Creature | ID: entering-grass-2 | File: 19_entering_grass.md*
+*ACT II — The Creature | ID: entering-grass-2 | File: s18.md*
 
 ---
+
+<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
+
+<!-- nickname: entering-grass-2 -->
 
 INT. DALLAS'S KITCHEN - LATER
 
@@ -1247,9 +1384,13 @@ Howie sits in the corner, head cocked, shivering. Outside, the world responds: t
 
 ### Scene 19: Life Group Arrives
 
-*ACT II — The Creature | ID: life-group-arrives | File: 20_life_group_arrives.md*
+*ACT II — The Creature | ID: life-group-arrives | File: s19.md*
 
 ---
+
+<!-- scene: 19 file: s19.md nickname: life-group-arrives -->
+
+<!-- nickname: life-group-arrives -->
 
 INT. DALLAS'S KITCHEN - EVENING
 
@@ -1270,10 +1411,14 @@ DOMINIC
 (from the doorway, carrying boxes)
 Third brownout this week. UI says it's the storm. But who knows... Dallas thank you again for allowing us to host it here... Dallas? 
 
+<!-- scene: 19 file: s19.md nickname: life-group-arrives -->
+
 (action)
 Dominic puts the boxes down on the kitchen table and looks around for Dallas. 
 
 INT. DALLAS' BASEMENT - CONTINOUS
+
+<!-- scene: 19 file: s19.md nickname: life-group-arrives -->
 
 (action)
 Dallas is downstairs. Focused on the dying creature. The creature lays out a little whipmer. 
@@ -1315,9 +1460,13 @@ What is that?
 
 ### Scene 20: Basement Huddle
 
-*ACT II — The Creature | ID: basement-huddle | File: 21_basement_huddle.md*
+*ACT II — The Creature | ID: basement-huddle | File: s20.md*
 
 ---
+
+<!-- scene: 20 file: s20.md nickname: basement-huddle -->
+
+<!-- nickname: basement-huddle -->
 
 INT. DALLAS'S KITCHEN - EVENING (CONTINUOUS)
 
@@ -1364,9 +1513,13 @@ Dallas glances at the basement door. Downstairs, the creature is hidden. For now
 
 ### Scene 21: The Hymn
 
-*ACT II — The Creature | ID: the-hymn | File: 22_the_hymn.md*
+*ACT II — The Creature | ID: the-hymn | File: s21.md*
 
 ---
+
+<!-- scene: 21 file: s21.md nickname: the-hymn -->
+
+<!-- nickname: the-hymn -->
 
 INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT
 
@@ -1404,6 +1557,8 @@ I mean— no, that's okay. I think that cat's just sleeping. We could check afte
 An elderly woman nods. Everyone agrees. Someone asks how Howie is doing—where is Howie. JOSH, one of the young couples, leads the group. 
 
 He starts an opening ice breaker. Dallas, Dominic, Makayla, and Asher sit silent. 
+
+<!-- scene: 21 file: s21.md nickname: the-hymn -->
 
 (action)
 SARAH, the vet, notices a physical reaction to her cup of tea - and watches it ripple in a strange way. 
@@ -1446,6 +1601,8 @@ People look at each other.
 AMY
 What was that?
 
+<!-- scene: 21 file: s21.md nickname: the-hymn -->
+
 (action)
 The group listen in silence.
 
@@ -1464,9 +1621,13 @@ In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the 
 
 ### Scene 22: Red Eyes
 
-*ACT II — The Creature | ID: red-eyes | File: 23_red_eyes.md*
+*ACT II — The Creature | ID: red-eyes | File: s22.md*
 
 ---
+
+<!-- scene: 22 file: s22.md nickname: red-eyes -->
+
+<!-- nickname: red-eyes -->
 
 INT. DALLAS'S BASEMENT - NIGHT
 
@@ -1537,9 +1698,13 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 
 ### Scene 23: Creature Missing
 
-*ACT II — The Creature | ID: creature-missing | File: 24_creature_missing.md*
+*ACT II — The Creature | ID: creature-missing | File: s23.md*
 
 ---
+
+<!-- scene: 23 file: s23.md nickname: creature-missing -->
+
+<!-- nickname: creature-missing -->
 
 
 
@@ -1603,9 +1768,13 @@ Dallas at the window again. The eyes are gone. The night is still.
 
 ### Scene 24: Marsh Confrontation
 
-*ACT III — The Return | ID: marsh-confrontation | File: 25_marsh_confrontation.md*
+*ACT III — The Return | ID: marsh-confrontation | File: s24.md*
 
 ---
+
+<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
+
+<!-- nickname: marsh-confrontation -->
 
 INT. DALLAS'S BASEMENT - DAY (NEXT MORNING OR LATER)
 
@@ -1662,9 +1831,13 @@ She can't find him. Inside, Dallas is already in the backyard—staring at the m
 
 ### Scene 25: Predator Attack
 
-*ACT III — The Return | ID: predator-attack | File: 26_predator_attack.md*
+*ACT III — The Return | ID: predator-attack | File: s25.md*
 
 ---
+
+<!-- scene: 25 file: s25.md nickname: predator-attack -->
+
+<!-- nickname: predator-attack -->
 
 INT. DALLAS'S HOUSE - DAY
 
@@ -1684,12 +1857,14 @@ ASHER, beside her, follows the trail with his eyes. Burn marks lead from the dri
 ASHER
 Mom. Look.
 
+<!-- scene: 25 file: s25.md nickname: predator-attack -->
+
 (action)
 Janice can't find Dallas. Inside, he's in the backyard, staring at the marsh with his oscillator. The readings are erratic—spikes he hasn't seen before. He scans the tree line. Something has changed.
 
+<!-- scene: 25 file: s25.md nickname: predator-attack -->
+
 (action)
-
-
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 
 Makayla watches from a distance. She walks over. She doesn't ask permission. She picks up the second receiver and starts scanning frequencies alongside him. Dallas's reading on the handheld jumps. He looks over. A beat. He acknowledges her.
@@ -1708,6 +1883,8 @@ Dallas doesn't answer. Makayla reads his face.
 
 MAKAYLA
 The creature?
+
+<!-- scene: 25 file: s25.md nickname: predator-attack -->
 
 (action)
 Dallas nods. Makayla grabs his device off the table. DOMINIC appears and grabs her wrist. The three of them stand there. From the direction of the marsh—a cry. Distant, unmistakable. The creature. Then the hum, low and everywhere.
@@ -1746,9 +1923,13 @@ Dallas and Makayla slow. Howie whines. The creatures have not yet scattered. For
 
 ### Scene 26: The Perimeter
 
-*ACT III — The Return | ID: the-perimeter | File: 27_the_perimeter.md*
+*ACT III — The Return | ID: the-perimeter | File: s26.md*
 
 ---
+
+<!-- scene: 26 file: s26.md nickname: the-perimeter -->
+
+<!-- nickname: the-perimeter -->
 
 EXT. SALT MARSH - DAY (CONTINUOUS)
 
@@ -1798,9 +1979,13 @@ Dallas backs away. Makayla and Howie are already at the edge of the grass. He ca
 
 ### Scene 27: The Last Dinner
 
-*ACT III — The Return | ID: the-last-dinner | File: 28_the_last_dinner.md*
+*ACT III — The Return | ID: the-last-dinner | File: s27.md*
 
 ---
+
+<!-- scene: 27 file: s27.md nickname: the-last-dinner -->
+
+<!-- nickname: the-last-dinner -->
 
 EXT. EDGE OF TALL GRASS - DAY
 
@@ -1876,9 +2061,13 @@ No one answers.
 
 ### Scene 28: Final Echoes
 
-*ACT IV — Aftermath | ID: final-echoes | File: 29_final_echoes.md*
+*ACT IV — Aftermath | ID: final-echoes | File: s28.md*
 
 ---
+
+<!-- scene: 28 file: s28.md nickname: final-echoes -->
+
+<!-- nickname: final-echoes -->
 
 EXT. DALLAS'S HOUSE - LATE DAY (STORM)
 
@@ -2027,9 +2216,13 @@ He looks outside. The soft sound—the pulse of the creature—returns. Faint. T
 
 ### Scene 29: Aftermath
 
-*ACT IV — Aftermath | ID: aftermath | File: 30_aftermath.md*
+*ACT IV — Aftermath | ID: aftermath | File: s29.md*
 
 ---
+
+<!-- scene: 29 file: s29.md nickname: aftermath -->
+
+<!-- nickname: aftermath -->
 
 EXT. BRANFORD - DAY
 

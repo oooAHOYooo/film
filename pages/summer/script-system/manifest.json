@@ -1,1 +1,234 @@
-[{"id":"arrival","file":"01_arrival.md","title":"Arrival & Discovery","act":1,"actTitle":"Arrival & Discovery"},{"id":"dallas-night","file":"02_dallas-night.md","title":"Dallas Night","act":1,"actTitle":"Arrival & Discovery"},{"id":"the-hum","file":"03_the-hum.md","title":"The Hum","act":1,"actTitle":"Arrival & Discovery"},{"id":"fellowship","file":"04_fellowship.md","title":"The Fellowship","act":1,"actTitle":"Arrival & Discovery"},{"id":"marsh-walk-later","file":"05_marsh_walk.md","title":"Marsh Trail","act":1,"actTitle":"Arrival & Discovery"},{"id":"news-vans","file":"06_news_vans.md","title":"News Vans & Trash Cans","act":1,"actTitle":"Arrival & Discovery"},{"id":"the-coordinates","file":"07_the_coordinates.md","title":"The Coordinates","act":1,"actTitle":"Arrival & Discovery"},{"id":"dallas-marsh-walk","file":"08_dallas_marsh_walk.md","title":"Dallas Marsh Walk","act":1,"actTitle":"Arrival & Discovery"},{"id":"dallas-night-work","file":"09_dallas_home_night.md","title":"Dallas Night Work","act":1,"actTitle":"Arrival & Discovery"},{"id":"shadows-in-wind","file":"11_shadows_in_wind.md","title":"Shadows in Wind","act":1,"actTitle":"Arrival & Discovery"},{"id":"howie-walk-2","file":"12_howie_walk.md","title":"Howie Walk (Edge of Marsh)","act":1,"actTitle":"Arrival & Discovery"},{"id":"the-burn-mark","file":"13_the_burn_mark.md","title":"The Burn Mark & Costco","act":2,"actTitle":"The Creature"},{"id":"entering-grass","file":"14_entering_grass.md","title":"Entering Grass & The Hollow","act":2,"actTitle":"The Creature"},{"id":"creature-rescue","file":"15_creature_rescue.md","title":"Creature Rescue","act":2,"actTitle":"The Creature"},{"id":"the-burn-mark-2","file":"16_the_burn_mark.md","title":"The Burn Mark","act":2,"actTitle":"The Creature"},{"id":"the-escape","file":"17_the_escape.md","title":"The Escape","act":2,"actTitle":"The Creature"},{"id":"makeshift-hospital","file":"18_makeshift_hospital.md","title":"Makeshift Hospital","act":2,"actTitle":"The Creature"},{"id":"entering-grass-2","file":"19_entering_grass.md","title":"Entering Grass","act":2,"actTitle":"The Creature"},{"id":"life-group-arrives","file":"20_life_group_arrives.md","title":"Life Group Arrives","act":2,"actTitle":"The Creature"},{"id":"basement-huddle","file":"21_basement_huddle.md","title":"Basement Huddle","act":2,"actTitle":"The Creature"},{"id":"the-hymn","file":"22_the_hymn.md","title":"The Hymn","act":2,"actTitle":"The Creature"},{"id":"red-eyes","file":"23_red_eyes.md","title":"Red Eyes","act":2,"actTitle":"The Creature"},{"id":"creature-missing","file":"24_creature_missing.md","title":"Creature Missing","act":2,"actTitle":"The Creature"},{"id":"marsh-confrontation","file":"25_marsh_confrontation.md","title":"Marsh Confrontation","act":3,"actTitle":"The Return"},{"id":"predator-attack","file":"26_predator_attack.md","title":"Predator Attack","act":3,"actTitle":"The Return"},{"id":"the-perimeter","file":"27_the_perimeter.md","title":"The Perimeter","act":3,"actTitle":"The Return"},{"id":"the-last-dinner","file":"28_the_last_dinner.md","title":"The Last Dinner","act":3,"actTitle":"The Return"},{"id":"final-echoes","file":"29_final_echoes.md","title":"Final Echoes","act":4,"actTitle":"Aftermath"},{"id":"aftermath","file":"30_aftermath.md","title":"Aftermath","act":4,"actTitle":"Aftermath"}]
+[
+  {
+    "id": "arrival",
+    "file": "s01.md",
+    "title": "Arrival & Discovery",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "arrival"
+  },
+  {
+    "id": "dallas-night",
+    "file": "s02.md",
+    "title": "Dallas Night",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "dallas-night"
+  },
+  {
+    "id": "the-hum",
+    "file": "s03.md",
+    "title": "The Hum",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "the-hum"
+  },
+  {
+    "id": "fellowship",
+    "file": "s04.md",
+    "title": "The Fellowship",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "fellowship"
+  },
+  {
+    "id": "marsh-walk-later",
+    "file": "s05.md",
+    "title": "Marsh Trail",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "marsh-walk-later"
+  },
+  {
+    "id": "news-vans",
+    "file": "s06.md",
+    "title": "News Vans & Trash Cans",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "news-vans"
+  },
+  {
+    "id": "the-coordinates",
+    "file": "s07.md",
+    "title": "The Coordinates",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "the-coordinates"
+  },
+  {
+    "id": "dallas-marsh-walk",
+    "file": "s08.md",
+    "title": "Dallas Marsh Walk",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "dallas-marsh-walk"
+  },
+  {
+    "id": "dallas-night-work",
+    "file": "s09.md",
+    "title": "Dallas Night Work",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "dallas-night-work"
+  },
+  {
+    "id": "shadows-in-wind",
+    "file": "s10.md",
+    "title": "Shadows in Wind",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "shadows-in-wind"
+  },
+  {
+    "id": "howie-walk-2",
+    "file": "s11.md",
+    "title": "Howie Walk (Edge of Marsh)",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "howie-walk-2"
+  },
+  {
+    "id": "the-burn-mark",
+    "file": "s12.md",
+    "title": "The Burn Mark & Costco",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-burn-mark"
+  },
+  {
+    "id": "entering-grass",
+    "file": "s13.md",
+    "title": "Entering Grass & The Hollow",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "entering-grass"
+  },
+  {
+    "id": "creature-rescue",
+    "file": "s14.md",
+    "title": "Creature Rescue",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "creature-rescue"
+  },
+  {
+    "id": "the-burn-mark-2",
+    "file": "s15.md",
+    "title": "The Burn Mark",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-burn-mark-2"
+  },
+  {
+    "id": "the-escape",
+    "file": "s16.md",
+    "title": "The Escape",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-escape"
+  },
+  {
+    "id": "makeshift-hospital",
+    "file": "s17.md",
+    "title": "Makeshift Hospital",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "makeshift-hospital"
+  },
+  {
+    "id": "entering-grass-2",
+    "file": "s18.md",
+    "title": "Entering Grass",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "entering-grass-2"
+  },
+  {
+    "id": "life-group-arrives",
+    "file": "s19.md",
+    "title": "Life Group Arrives",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "life-group-arrives"
+  },
+  {
+    "id": "basement-huddle",
+    "file": "s20.md",
+    "title": "Basement Huddle",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "basement-huddle"
+  },
+  {
+    "id": "the-hymn",
+    "file": "s21.md",
+    "title": "The Hymn",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-hymn"
+  },
+  {
+    "id": "red-eyes",
+    "file": "s22.md",
+    "title": "Red Eyes",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "red-eyes"
+  },
+  {
+    "id": "creature-missing",
+    "file": "s23.md",
+    "title": "Creature Missing",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "creature-missing"
+  },
+  {
+    "id": "marsh-confrontation",
+    "file": "s24.md",
+    "title": "Marsh Confrontation",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "marsh-confrontation"
+  },
+  {
+    "id": "predator-attack",
+    "file": "s25.md",
+    "title": "Predator Attack",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "predator-attack"
+  },
+  {
+    "id": "the-perimeter",
+    "file": "s26.md",
+    "title": "The Perimeter",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "the-perimeter"
+  },
+  {
+    "id": "the-last-dinner",
+    "file": "s27.md",
+    "title": "The Last Dinner",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "the-last-dinner"
+  },
+  {
+    "id": "final-echoes",
+    "file": "s28.md",
+    "title": "Final Echoes",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "final-echoes"
+  },
+  {
+    "id": "aftermath",
+    "file": "s29.md",
+    "title": "Aftermath",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "aftermath"
+  }
+]
