@@ -1,0 +1,8 @@
+{
+  "[markdown]": {
+    "editor.fontFamily": "Charter, 'Bitstream Charter', Georgia, serif",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 1.6,
+    "editor.letterSpacing": -0.3
+  }
+}

@@ -849,3 +849,127 @@ body {
   .screenplay-content .script-addition { color: #444; }
   .screenplay-content .script-deletion { color: #888; }
 }
+
+/* ========== Plot Cards (index-card / view-all grid) ========== */
+.plot-cards-page .gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+
+.plot-cards-header {
+  margin-bottom: 1rem;
+}
+
+.plot-cards-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.25rem 0;
+}
+
+.plot-cards-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.plot-cards-subtitle a {
+  color: var(--accent-subtle);
+  text-decoration: underline;
+}
+
+.plot-cards-nav {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.plot-cards-nav .nav-link--active {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.plot-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  align-content: start;
+}
+
+.plot-cards-act-label {
+  grid-column: 1 / -1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.plot-cards-act-label:first-child {
+  margin-top: 0;
+}
+
+.plot-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 140px;
+  padding: 1rem 1.1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.plot-card:hover {
+  border-color: var(--accent-subtle);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.plot-card:focus-visible {
+  outline: 2px solid var(--accent-subtle);
+  outline-offset: 2px;
+}
+
+.plot-card-number {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.plot-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 0.5rem 0;
+}
+
+.plot-card-summary {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--muted);
+  margin: 0 auto 0 0;
+  flex: 1;
+}
+
+.plot-card-link {
+  font-size: 0.8rem;
+  color: var(--accent-subtle);
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .plot-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+  }
+  .plot-card {
+    min-height: 160px;
+    padding: 1.15rem 1.25rem;
+  }
+}

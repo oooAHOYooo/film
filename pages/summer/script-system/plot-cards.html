@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plot Cards — Creatures in the Tall Grass</title>
+  <link rel="stylesheet" href="script.css?v=20260108-5">
+</head>
+<body class="plot-cards-page">
+  <div class="gallery-container">
+    <header class="plot-cards-header">
+      <h1>Plot Cards</h1>
+      <p class="plot-cards-subtitle">Main beats per scene · <a href="full_script.html">Open Full Script</a> to jump to any scene</p>
+    </header>
+
+    <nav class="nav no-print plot-cards-nav">
+      <div class="nav-left">
+        <a class="nav-link" href="/index.html" title="Home">⌂ Home</a>
+        <a class="nav-link" href="/pages/summer.html" title="Summer Hub">☀ Summer</a>
+        <a class="nav-link" href="index.html" title="Gallery">▦ Gallery</a>
+        <a class="nav-link nav-link--active" href="plot-cards.html" title="Plot Cards">▤ Plot Cards</a>
+        <a class="nav-link" href="full_script.html" title="Full Script">Full Script</a>
+        <a class="nav-link" href="/pages/summer/directors-notes/index.html" title="Director's Notes">Director's Notes</a>
+        <a class="nav-link" href="/pages/summer/characters/index.html" title="Characters">Characters</a>
+      </div>
+    </nav>
+
+    <div class="plot-cards-grid" id="plotCardsGrid" aria-label="Scene index cards">
+      <!-- Cards injected by JS from plot-cards-data.json -->
+      <p class="plot-cards-loading" id="plotCardsLoading">Loading cards…</p>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const grid = document.getElementById('plotCardsGrid');
+      const loading = document.getElementById('plotCardsLoading');
+
+      function toRoman(num) {
+        const map = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+        let n = num, out = '';
+        for (const [v, s] of map) {
+          while (n >= v) { out += s; n -= v; }
+        }
+        return out;
+      }
+
+      function renderCards(cards) {
+        if (!cards || !cards.length) {
+          loading.textContent = 'No card data. Check plot-cards-data.json.';
+          return;
+        }
+        loading.remove();
+        let currentAct = null;
+        cards.forEach(function(card) {
+          if (card.act !== currentAct) {
+            currentAct = card.act;
+            const actLabel = document.createElement('div');
+            actLabel.className = 'plot-cards-act-label';
+            actLabel.setAttribute('aria-hidden', 'true');
+            actLabel.textContent = 'ACT ' + toRoman(card.act) + ' — ' + (card.actTitle || '');
+            grid.appendChild(actLabel);
+          }
+          const a = document.createElement('a');
+          a.className = 'plot-card';
+          a.href = 'full_script.html#scene-' + card.n;
+          a.setAttribute('data-scene', card.n);
+          a.innerHTML =
+            '<span class="plot-card-number">' + card.n + '</span>' +
+            '<h2 class="plot-card-title">' + escapeHtml(card.title) + '</h2>' +
+            '<p class="plot-card-summary">' + escapeHtml(card.summary) + '</p>' +
+            '<span class="plot-card-link">Read in script →</span>';
+          grid.appendChild(a);
+        });
+      }
+
+      function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      fetch('plot-cards-data.json')
+        .then(function(r) { return r.json(); })
+        .then(renderCards)
+        .catch(function(err) {
+          loading.textContent = 'Could not load plot-cards-data.json. ' + (err.message || '');
+        });
+    })();
+  </script>
+</body>
+</html>

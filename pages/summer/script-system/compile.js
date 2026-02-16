@@ -13,7 +13,25 @@ const SCENES_DIR = path.join(__dirname, 'scenes');
 const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
 const OUTPUT_MD = path.join(__dirname, 'full_script.md');
 const OUTPUT_HTML = path.join(__dirname, 'full_script.html');
+const PLOT_CARDS_PATH = path.join(__dirname, 'plot-cards-data.json');
 const SCRIPT_NAME = 'Creatures in the Tall Grass Script';
+
+// Scene file → plot point number(s) for plot-cards summary tags (from plot-points-scene-map)
+const PLOT_POINT_BY_FILE = {
+  's08.md': [1],
+  's12.md': [2],
+  's13.md': [2],
+  's19.md': [3],
+  's20.md': [3],
+  's21.md': [3],
+  's23.md': [4],
+  's24.md': [5, 6],
+  's25.md': [7],
+  's26.md': [8, 9, 10],
+  's27.md': [11],
+  's28.md': [12, 13],
+  's29.md': [14],
+};
 
 function toRoman(num) {
   const map = [
@@ -52,6 +70,22 @@ function loadScene(filename) {
     console.warn(`Warning: Could not read scene file ${filename}: ${error.message}`);
     return `\n[SCENE FILE MISSING: ${filename}]\n`;
   }
+}
+
+// Extract nickname from first line of scene content: <!-- nickname: foo-bar -->
+function getNicknameFromScene(content) {
+  if (!content || typeof content !== 'string') return null;
+  const match = content.match(/<!--\s*nickname:\s*([^>]+?)\s*-->/i);
+  return match ? match[1].trim() : null;
+}
+
+// Turn nickname into display title: "dallas-marsh-walk" → "Dallas Marsh Walk", "shadow walk" → "Shadow Walk"
+function nicknameToTitle(nickname) {
+  if (!nickname) return '';
+  return nickname
+    .split(/[\s-]+/)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
 }
 
 // Turn <!-- [ADDITION] --> / <!-- [DELETION] --> into wrapper divs + label; text inside gets colored
@@ -576,6 +610,75 @@ function generateHTMLPage(markdown, scenes) {
   return html;
 }
 
+// Load existing plot-cards-data.json to preserve user-edited summaries (keyed by id)
+function loadExistingPlotCards() {
+  try {
+    const raw = fs.readFileSync(PLOT_CARDS_PATH, 'utf8');
+    const arr = JSON.parse(raw);
+    const byId = new Map();
+    (Array.isArray(arr) ? arr : []).forEach((card) => {
+      if (card.id) byId.set(card.id, card.summary);
+    });
+    return byId;
+  } catch {
+    return new Map();
+  }
+}
+
+// Derive a one-line summary from scene content (first substantial action text)
+function deriveSummary(content) {
+  if (!content || typeof content !== 'string') return '';
+  const maxLen = 200;
+  let text = content
+    .replace(/<!--[\s\S]*?-->/g, ' ')
+    .replace(/^[\s\S]*?^(?:INT\.|EXT\.)[^\n]*/im, '')
+    .replace(/\n[A-Z][A-Za-z\s]+\n(?:\([^)]*\)\n)?/g, ' ') // character + dialogue
+    .replace(/\(action\)/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (text.length > maxLen) {
+    const cut = text.slice(0, maxLen).lastIndexOf(' ');
+    text = (cut > 80 ? text.slice(0, cut) : text.slice(0, maxLen)) + '…';
+  }
+  return text || '';
+}
+
+function formatPlotPointTag(plotNums) {
+  if (!plotNums || plotNums.length === 0) return '';
+  if (plotNums.length === 1) return ` [Plot ${plotNums[0]}]`;
+  return ` [Plot ${plotNums[0]}–${plotNums[plotNums.length - 1]}]`;
+}
+
+// Write plot-cards-data.json from manifest; titles from scene nickname; preserve or derive summaries
+function writePlotCardsData(scenes) {
+  const existingSummaries = loadExistingPlotCards();
+  const cards = scenes.map((scene, index) => {
+    const n = index + 1;
+    const id = scene.id || scene.nickname || `scene-${n}`;
+    const raw = loadScene(scene.file);
+    const nickname = getNicknameFromScene(raw);
+    const title = nickname ? nicknameToTitle(nickname) : (scene.title || `Scene ${n}`);
+    let summary = existingSummaries.get(id);
+    if (summary == null || summary === '') {
+      summary = deriveSummary(raw);
+    }
+    const plotNums = PLOT_POINT_BY_FILE[scene.file];
+    if (plotNums && summary && !/\[Plot \d+/.test(summary)) {
+      summary = summary.replace(/\s*…?\s*$/, '') + formatPlotPointTag(plotNums);
+    }
+    return {
+      n,
+      id,
+      title,
+      act: scene.act ?? 0,
+      actTitle: scene.actTitle || '',
+      summary: summary || `Scene ${n} — ${title}`,
+    };
+  });
+  fs.writeFileSync(PLOT_CARDS_PATH, JSON.stringify(cards, null, 2) + '\n', 'utf8');
+  console.log(`✓ Updated ${PLOT_CARDS_PATH}`);
+}
+
 // Main compilation function
 function compile() {
   console.log('Loading manifest...');
@@ -594,9 +697,13 @@ function compile() {
   fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
   console.log(`✓ Created ${OUTPUT_HTML}`);
 
+  console.log('Updating plot cards...');
+  writePlotCardsData(scenes);
+
   console.log('\n✓ Compilation complete!');
   console.log(`  - Markdown: ${OUTPUT_MD}`);
   console.log(`  - HTML: ${OUTPUT_HTML}`);
+  console.log(`  - Plot cards: ${PLOT_CARDS_PATH}`);
 }
 
 // Run if called directly

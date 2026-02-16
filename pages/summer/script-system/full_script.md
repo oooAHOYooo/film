@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/13/2026, 11:35:08 AM*
+*Compiled on 2/16/2026, 9:40:36 AM*
 
 ---
 
@@ -186,9 +186,13 @@ Dallas struggles to go to sleep. As he hears more faint cries he looks out the w
 <!-- nickname: the-hum -->
 
 EXT. DALLAS HOUSE - NEXT DAY MORNING
-Dallas walks outside and watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the C battery in his hand. As he does so, he becomes in an almost daze As he walks he notices a man approaching him from the sidewalk near his house. 
+Dallas walks outside his house, towards the edge of the property. As he approaches the edge of his yard he watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the C battery in his hand. As he does so, he becomes dazed.
 
-DOMINIC, early 40s, wearing a bright salmon covered short sleeve button up approaches Dallas with great vigor. 
+A faint hum is heard off in the distance of the tall grass - low from the earth. Dallas looks at his watch and begins clicking with his hand. And then he writes down some numbers on a sticky note. "3, 5, 1" 
+
+As Dallas focuses, he notices a man approaching him from the sidewalk near his house. 
+
+DOMINIC AMARANTO, early 40s, wearing a bright salmon covered short sleeve button up approaches Dallas with great vigor. 
 
 DOMINIC
 Neighbor!
@@ -343,9 +347,9 @@ Nice - yeah - it's nice to be the new guy in town - good old branford.
 
 EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON
 
-Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends in light summerwear play spike ball, and people are on line getting food. Dallas looks around at all of the new faces but does not make eye contact. Dominic takes a deep breath, also appearing a little nervous. 
+Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends down light summerwear as they play spike ball, and church goers find themselvees are on a long line getting food. Dallas looks around at all of the new faces but does not make great eye contact. Dominic takes a deep breath and approaches the long line. 
 
-Dominic carries a package of water and puts it under one of the fold up tables. 
+Dominic carries a package of water and puts it under one of the fold up tables. As he does so, people look at Dallas and begin to greet him. 
 
 DOMINIC
 Alright buddy - let's wait on line I guess. 
@@ -353,15 +357,64 @@ Alright buddy - let's wait on line I guess.
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
 (action)
-Dominic and Dallas wait on line to be served at fellowship lunch. 
+Dominic and Dallas wait on line to be served at fellowship lunch. As they do people begin to turn around and talk to them. One lady, MARY, 55 turns around and shakes Dallas' hand enthustiaclly.
 
-Janice, Mid 50s, puts her hand on Dominic's shoulder.
+MARY
+Well hey there sunshine
+
+DALLAS
+Hello
+
+MARY
+Dominic where did you get this Califorina boy from? My name is Mary - do you like chicken primevro?
+
+DALLAS
+Never really had it
+
+MARY
+Well you should, its great.... So you ready for some proper New England weather?
+
+<!-- scene: 04 file: s04.md nickname: fellowship -->
+
+(action)
+Another turns around and greets Dallas. An older gentleman PAUL WILDLY, 72, 
+
+PAUL
+The forecasters say that it is going to be historic one. Hasn't been this bad since 1977 - when Nixon was still in office. Paul, nice to meet you. 
+
+DALLAS
+Nice to meet you.
+
+PAUL
+Now, where are you from?
+
+DALLAS
+Indiana
+
+PAUL
+Oo - then you must know of William Henry Harrison - our 9th president, served as Indiana's governor back when it was just a terriority. 
+
+MARY
+Paul, stop that. Honey - if you need I can make you some chicken primevera
+
+DOMINIC
+He's okay Ms Mary thank you
+
+DALLAS
+Thank you. 
+
+<!-- scene: 04 file: s04.md nickname: fellowship -->
+
+(action)
+Dallas and Dominic sit in a circle of folded pull up chairs. 
+
+JANICE AMARANTO, Mid 50s, taps Dominic's shoulder.
 
 DOMINIC
 Sister.
 
 JANICE
-Brother.
+Brother. 
 
 DOMINIC
 (ignoring Janice)
@@ -372,7 +425,7 @@ Dallas, these are my niece and nephew - Makayla and Asher.
 (action)
 Makayla and Asher don't say much but wait online. Makayla taps Asher on the shoulder and nods towards a far end of the church lawn. Between the bushes and garden. 
 
-The two leave the line for food and walk over to it. Dallas watches.
+The two leave the line walk over to a corner spot by the end of the church yard and huddle over a pile of brush.
 
 JANICE
 So what happened Dominic. 
@@ -561,22 +614,21 @@ Sure.
 
 <!-- nickname: the-coordinates -->
 
-INT. DOMINIC'S BASEMENT 
+INT. JACE'S BASEMENT 
 
 Dallas looks around in amazement. The basement is covered with normal basement things - but then there are two beds - and around the corner there is a workstation filled with old CRT machines and what not.
 
 DOMINIC
-Yeah, my niece and nephew live down here. They moved in a couple of months ago. I keep trying to get them to stay in the guestroom and got some bunk beds but they stay down here... Here help me grab the fans.
+Yeah, my niece and nephew live here. They moved in a couple of months ago. I keep trying to get them to stay in the guestroom, but they just want to be living in the basement... Here, help me grab the fan. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas looks at all of the different scans and the 
+Dallas looks at all of the different equipment scattered across the room. Different audio and aoustic equipment that he seems familiar with. On the wall - there are numbers and marking similar to the three beats he wrote down. 
+
 Dallas and Dominic move the wall fan - as they go to install it. 
 
-He walks over to it and examines it - he brings out his oscillator and then begins to record it a bit. The readings are off.
-
-INT. DOMINIC'S LIVING ROOM 
+INT. THE JACE DINING ROOM 
 
 Dallas helps Dominic shove a heavy oak table against the wall. As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
 
@@ -741,6 +793,42 @@ The family vanishes in a blur of activity, leaving Dallas standing in the sudden
 <!-- scene: 08 file: s08.md nickname: dallas-marsh-walk -->
 
 <!-- nickname: dallas-marsh-walk -->
+EXT. BRANFORD ROCKS - EVENING
+
+The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
+
+As Howie, Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
+
+It seems like the readings are pointing closer and closer to his house.
+
+Howie stops. His ears perk up, swiveling like small radar dishes toward the dark reeds.
+
+In the far distance, a single coyote barks. Then another. A chain reaction of domestic fear starts in the neighborhood, followed by the high, thin yip of coyotes further inland.
+
+Dallas pulls out his phone. A vibration and an alert for a STORM WARNING pops up.
+
+EXT. EDGE OF THE MARSH - CONTINUOUS
+
+Everything goes still. The wind stops. The waves seem to mute themselves.
+
+Then, the HUM begins.
+
+It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
+
+Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass pulses in time with the sound.
+
+
+
+<div class="script-addition">
+
+> addition
+
+
+Behind him, the streetlights along the block go dark—all of them, at once. Three seconds of blackout. Then they snap back on, one by one, from the marsh outward, as if the power is being returned in sequence.
+
+
+</div>
+
 
 EXT. MARSH TRAIL - EVENING
 
@@ -756,20 +844,66 @@ Dallas steps off the boardwalk onto a narrow dirt path that runs behind the hous
 
 There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. 
 
-
-
 His equipment begins to beep. Dallas flips open his handheld scope and watches the waveform settle into an otherworldly pattern.
 
-Howie begins to bark a little - and Dallas stops him 
-He clicks "Record," then checks the timestamp twice. The trace snaps into a perfect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy.
+Howie begins to bark a little - and Dallas stops him. Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a perfect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy.
 
 From the distance, a flicker of golden light pulses deep within the marsh. Dallas notices it—but it's gone.
 
 Dallas takes a step forward, then another. The reeds part before him, closing behind him as he disappears into the tall grass.
 
-He stands slowly, scanning the reeds around him. Nothing. Just the gentle sway of grass and the sound of his own breathing.
 
-Dallas steps deeper, following the fading glow.
+
+
+---
+
+
+### Scene 9: Dallas Night Work
+
+*ACT I — Arrival & Discovery | ID: dallas-night-work | File: s09.md*
+
+---
+
+<!-- scene: 09 file: s09.md nickname: dallas-night-work -->
+
+<!-- nickname: the golden daze -->
+
+EXT. INSIDE THE TALL MARSH - SUNSET HOUR
+
+Dallas stands slowly, scanning the reeds around him. Nothing. Just the gentle sway of grass and the sound of his own breathing.
+
+Dallas steps deeper, following the fading glow. 
+
+All around him is light reeeds blowing in an almost whirlwind of light and color. 
+
+Shadows—tall, spindly, and darker than the night—grow in the distance. They move *against* the wind, cutting through the blades of grass like silent ships.
+
+As Dallas' eyes adjust to this new brightness - the world around him slowly fades back to normallacly. 
+
+There in the distance Dallas sees a gnarl tree that looks a little different than the rest of the trees. 
+
+Dallas approaches the tree and in the bottom of it - lives a small birdlike creature - gently bioluminest - and clearly injured. 
+
+Dallas looks at his equipment and it seems to do funny things when he is near it. Dallas gently wraps the creature in his jacket. 
+
+---
+
+
+### Scene 10: Shadows in Wind
+
+*ACT I — Arrival & Discovery | ID: shadows-in-wind | File: s10.md*
+
+---
+
+<!-- scene: 10 file: s10.md nickname: shadows-in-wind -->
+
+<!-- nickname: Creature discovery -->
+
+EXT. TALL GRASS - MOMENTS LATER
+
+Dallas leaves with the creature 
+Dallas finds the creature. 
+
 
 In a shallow hollow, a cluster of bioluminescent creatures huddle around the gnarl of an old tree—little orbs of gold, pulsing like lanterns.
 
@@ -795,31 +929,21 @@ Dallas grabs the leash and doesn't stop running until the marsh is far behind th
 
 At the edge of his driveway, he finally stops—gasping. The creature is motionless in his coat, but its neck glow pulses weak, fading amber.
 
-
-
 ---
 
 
-### Scene 9: Dallas Night Work
+### Scene 11: Howie Walk (Edge of Marsh)
 
-*ACT I — Arrival & Discovery | ID: dallas-night-work | File: s09.md*
+*ACT I — Arrival & Discovery | ID: howie-walk-2 | File: s11.md*
 
 ---
 
-<!-- scene: 09 file: s09.md nickname: dallas-night-work -->
+<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
 
-<!-- nickname: dallas-night-work -->
-
-
-
-<div class="script-deletion">
-
-> deletion
-
-
+<!-- nickname: The Kitchen Hospital -->
 INT. DALLAS KITCHEN
 
-As it cries out - Dallas' equipment begins to pulse and spike. 
+The creature cries out - Dallas' equipment begins to pulse and spike. 
 
 Dallas is alone and it is getting dark. He dashes back home with the creature - and scopes Howie - who is not having a good time. Dallas rushes the creature over to the kitchen and upstairs to examine further. 
 
@@ -829,49 +953,15 @@ The creature is asleep and Dallas notices that it has marks underneath its top w
 
 Dallas treats the wound and then gently brings it outside. But as he does - he notices that the creature communicates somehow with the oscillators in the kitchen. 
 
-INT. DALLAS MUD ROOM
+INT. DALLAS MUD ROOM - LATE AFTERNOON
 
-He brings it back inside and begins to record it with and hears a bell ring. 
+Dallas begins to make his way outside with his audio equipment - but is stopped when he hears the creatures cry. 
 
-Dallas walks outside with the creature in his hand. As he does so Dominic catches him.
+INT. DALLAS KITCHEN - MOMENTS LATER
 
-
-</div>
-
+Dallas approaches it - and notices that he creature, though still seemingly asleep - seems to lay out a cry 
 
 
-EXT. DALLAS HOUSE - LATE AFTERNOON
-
-DOMINIC
-Hey man - sorry I'm late - how's Howie?
-
-<!-- scene: 09 file: s09.md nickname: dallas-night-work -->
-
-(action)
-Howie runs up to him. 
-
-DOMINIC
-Great - do you think you could him tomorrow as well?
-
-DALLAS
-Um
-
-DOMINIC
-It's okay - think about it... Hey - tomorrow - Listen - we got a free picnic - we should all go.
-
-DALLAS
-What time
-
-DOMINIC
-Around 3 - or 4 - or 5 - not sure - but I'll ring you - we'll go.
-
-DALLAS
-Sounds good.
-
-<!-- scene: 09 file: s09.md nickname: dallas-night-work -->
-
-(action)
-Dominic picks back Howie up.
 
 INT. DALLAS DESK - NIGHT
 
@@ -894,88 +984,12 @@ Dallas makes his way to the creature.
 
 Dallas looks at the creature - who is appearing to be drinking water and eating the grass - but is still sleeping inside of a gnarl of the aquarium Dallas has obviously made for it. 
 
-Howie is in the corner of the room looking like he is going to pee. Dallas looks at Howie. 
-
----
-
-
-### Scene 10: Shadows in Wind
-
-*ACT I — Arrival & Discovery | ID: shadows-in-wind | File: s10.md*
-
----
-
-<!-- scene: 10 file: s10.md nickname: shadows-in-wind -->
-
-<!-- nickname: shadows-in-wind -->
-
-EXT. BRANFORD ROCKS - EVENING
-
-The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
-
-As Howie, Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
-
-It seems like the readings are pointing closer and closer to his house.
-
-Howie stops. His ears perk up, swiveling like small radar dishes toward the dark reeds.
-
-In the far distance, a single coyote barks. Then another. A chain reaction of domestic fear starts in the neighborhood, followed by the high, thin yip of coyotes further inland.
-
-Dallas pulls out his phone. A vibration and an alert for a STORM WARNING pops up.
-
-EXT. EDGE OF THE MARSH - CONTINUOUS
-
-Everything goes still. The wind stops. The waves seem to mute themselves.
-
-Then, the HUM begins.
-
-It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
-
-Shadows—tall, spindly, and darker than the night—grow in the distance. They move *against* the wind, cutting through the blades of grass like silent ships.
-
-Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass doesn't just sway; it pulses in time with the sound.
-
-
-
-<div class="script-addition">
-
-> addition
-
-
-Behind him, the streetlights along the block go dark—all of them, at once. Three seconds of blackout. Then they snap back on, one by one, from the marsh outward, as if the power is being returned in sequence.
-
-
-</div>
-
-
-
-Howie lets out a low, whimpering growl and tugs hard on the leash, pulling Dallas back toward the safety of the porch.
-
-
-</div>
-
-
-
-
----
-
-
-### Scene 11: Howie Walk (Edge of Marsh)
-
-*ACT I — Arrival & Discovery | ID: howie-walk-2 | File: s11.md*
-
----
-
-<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
-
-<!-- nickname: howie-walk-2 -->
 
 INT. DALLAS' HOUSE - KITCHEN - EVENING
 
 Dallas stands at the window, staring into the ripping field. The storm is brewing, but the movement in the grass is wrong.
 
 Dallas goes to look at the creature in his makeshift box. It is breathing. Dallas begins to examine all of the blood - it seems to have darkened. 
-
 
 He touches the photo of his late wife on the side of the receiver. The contact is long.
 
@@ -1061,6 +1075,9 @@ Makayla and Asher don't follow her. They wander toward the edge of Dallas's prop
 MAKAYLA
 Asher, look.
 
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+
+(action)
 In the middle of the yard is a jagged, blackened  burn mark in the grass that resembles beads in paint hitting a white canvas - but on the green grass. It looks as if a drip of yellow blood is around it - acreating a trail. At its center lies a small, translucent crystal.
 
 Makayla kneels and touches it. Her hair begins to flutter, static electricity pulling the strands toward the stone. She quickly pockets it.
@@ -1092,8 +1109,7 @@ He's with Mr. Mike's physical therapist. Makayla get in the car.
 (action)
 Makayla slams the door and walks right at Dallas - and violently knocks his door. 
 
-EXT. DALLAS DOORWAY 
-
+EXT. DALLAS's HOUSE -  DOORWAY 
 Makayla stares at Dallas for a good while - and reads his eyes.
 
 MAKAYLA
@@ -1262,7 +1278,7 @@ She pulls out her phone and starts recording video. Then stops. She puts the pho
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
-<!-- nickname: creature-rescue -->
+<!-- nickname: creature-dying -->
 
 EXT. UKNOWN
 
@@ -1282,7 +1298,7 @@ Okay here - they could bring it back to where they find it - but it doesn't want
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
-<!-- nickname: the-burn-mark-2 -->
+<!-- nickname: the-message -->
 
 EXT. TALL GRASS HOLLOW - CONTINUOUS
 
@@ -1292,9 +1308,11 @@ Dallas reaches out, his fingers trembling. As he touches the creature's back, th
 
 He notices the creature was lying on a second crystal, similar to the one Makayla found.
 
-As Dallas lifts the fragile thing toward his chest, it looks out and cries for the crystal—in vain. It faints. The scope in his pocket goes silent.
+As Dallas lifts the fragile creature toward his chest, it looks out and cries for the crystal—in vain. It faints. The scope in his pocket goes silent.
 
-Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds—something massive, rocketing through the blades like an arrow. Dallas grabs the creature into his coat and rushes out. Howie does not like this. 
+Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds—something massive, rocketing through the blades like an arrow. Dallas gently lowers the creature to the ground.
+
+All around him it seems like dark chaos is errupting.
 
 
 ---
