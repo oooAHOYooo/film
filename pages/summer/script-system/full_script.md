@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/16/2026, 9:40:36 AM*
+*Compiled on 2/16/2026, 11:53:58 AM*
 
 ---
 
@@ -941,26 +941,34 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 <!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
 
 <!-- nickname: The Kitchen Hospital -->
-INT. DALLAS KITCHEN
+EXT. COSTAL NEIGHBORHOOD JOURNEY 
+Dallas is alone and the evening is getting dark. He dashes back through the coastal neighborhoods with the creature in his jacket - and urges the dog Howie to walk faster - who is not having a good time. Dallas rushes the creature over to the kitchen and upstairs to examine further. 
 
-The creature cries out - Dallas' equipment begins to pulse and spike. 
+INT. DALLAS KITCHEN - DUSK
+Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines it with parchment paper. The creature seems to be asleep. 
 
-Dallas is alone and it is getting dark. He dashes back home with the creature - and scopes Howie - who is not having a good time. Dallas rushes the creature over to the kitchen and upstairs to examine further. 
+Howie barks outside. Dallas rushes to grab him.
 
-Dallas is alone with the creature trying to understand it. He puts it on a gentle pan with parchment paper - and begins to look through big jewerly glasses - as to see what is wrong with it. 
+INT. DALLAS KITCHEN - MOMENTS LATER
+Howie is in the living room couch very nervous and peering out the window. The camera pans and finds alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
 
-The creature is asleep and Dallas notices that it has marks underneath its top wing. 
+As Dallas peers closer, he notices that it has marks underneath its top wing. As Dallas touches the marks the creature suddenly wakes up and lets out a cry.
 
-Dallas treats the wound and then gently brings it outside. But as he does - he notices that the creature communicates somehow with the oscillators in the kitchen. 
+As the creature cries - Dallas notices that all of the screens on his equipment turn slowly into golden static. The hue gets so vibrant and bright that permant golden marks are left scattered across all of his equipment near the creature. 
 
-INT. DALLAS MUD ROOM - LATE AFTERNOON
+The creature lets out a final whimper and slowly falls back to sleep. Dallas - looks at the mark again, as its sparkles and then fades. 
 
-Dallas begins to make his way outside with his audio equipment - but is stopped when he hears the creatures cry. 
+Outside the hum begins again, reverbating the kitchen. 
+
+EXT. DALLAS BACKYARD - LATE AFTERNOON
+
+Dallas runs outside with his audio recording equipment in his hand. The hum is growing into a faint roar from the distant marsh. 
+
+As he begins to record - the hum ceases - and he notices that the creature inside is crying loudly. 
 
 INT. DALLAS KITCHEN - MOMENTS LATER
 
-Dallas approaches it - and notices that he creature, though still seemingly asleep - seems to lay out a cry 
-
+Dallas approaches it - and notices that the creature, though still seemingly asleep.
 
 
 INT. DALLAS DESK - NIGHT
@@ -970,6 +978,8 @@ Dallas is peered over his computer and begins to look at the recordings of the d
 Dallas as he is reading on computer - is holding a little sringe of chemicals that he hopes will replinish the creature. 
 
 He listens. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. Too low for the room mics, but the new batteries are pulling it in. Something layered, almost rhythmic.
+
+Dallas plays a recording of Sierra's voice to soothe the creature only to hear her voice dissolve into the creature's ongoing frequency. 
 
 He replays the clip. Jots a time code. Plays it again. His hand moves to the margin of his notebook: numbers, angles. 
 
@@ -1223,10 +1233,6 @@ Look at that!
 
 EXT. DALLAS'S BACKYARD - DAWN
 
-
-
-EXT. DALLAS'S PORCH - CONTINUOUS
-
 Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
 
 DOMINIC
@@ -1251,19 +1257,8 @@ Great - okay Dallas - where is it.
 
 INT. DALLAS KITCHEN
 
-Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. As if she is finally vindicated - and that her name will go down in all of history for finally discovering the creature of Branford.
+Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. 
 
-
-
-<div class="script-addition">
-
-> addition
-
-
-She pulls out her phone and starts recording video. Then stops. She puts the phone away and instead grabs a notebook from her back pocket—the same one she jots coordinates in. She begins to sketch the creature. Careful, precise lines. The back-holes. The ears. The glow. She is documenting it the way a scientist would, not the way a teenager would.
-
-
-</div>
 
 
 
@@ -1414,13 +1409,24 @@ He stops at the edge of his driveway, gasping for air. He looks down at his coat
 
 <!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
 
-<!-- nickname: entering-grass-2 -->
+<!-- nickname: Makayla's Bond with Creature -->
 
 INT. DALLAS'S KITCHEN - LATER
 
+MAKAYLA
+I've read about fish the way the transmit information. Scientists forever thought that the sea was silent - but our ears just can't pick up the right frequenies.
+
+<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
+
+(action)
+Makayla turns and begins to 
+
 Dallas has turned his kitchen island into a triage station. He’s wired a portable oscilloscope to the creature’s head using tiny alligator clips.
 
-The device pulses in a rhythmic, green jagged line—perfectly in sync with the creature's heartbeat.
+Makayla begins to sketch the creature. Careful, precise lines. The back-holes. The ears. The glow. She is documenting it the way a scientist would, not the way a teenager would.
+
+
+The device pulses in a rhythmic, golden jagged line —perfectly in sync with the creature's heartbeat.
 
 In the distance they hear howls - and then silence again. 
 
@@ -1580,10 +1586,16 @@ MR. MIKE
 You're all wrong.
 
 MAKAYLA
-We should put it back where we found it. We can't have it in the house.
+We should put it back where we found it. We can't have it in the house. They'll come for it.
+
+DOMINIC
+Whose they?
 
 MR. MIKE
 We need to leave now. They're coming for it. It's not safe here.
+
+DOMINIC
+Can we all pump the breaks on the racoon creature you found. We should get that out of the house - we have life group people coming over. 
 
 Dominic stands. The crew scramble—they have to move the creature before anyone else arrives. They head for the basement.
 
