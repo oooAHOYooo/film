@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/16/2026, 9:05:44 PM*
+*Compiled on 2/16/2026, 11:18:24 PM*
 
 ---
 
@@ -1508,7 +1508,21 @@ Makayla and Dallas return to find the creature on the table.
 
 <!-- nickname: Makayla's Bond with Creature -->
 
+EXT. DALLAS'S PORCH - CONTINUOUS
 
+Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
+
+DOMINIC
+Dalllasss - you stocking up for the storm? Life group tonight. Thanks for again for letting us use the house. Mr. Mike is home and Janice is taking care of him. Listen, I'm heading to Costco
+
+DALLAS
+No thanks - I'm good.
+
+DOMINIC
+Great - yeah. Hey Makayla! You cool here with staying here and having Dallas help out? Where's Asher. 
+
+MAKAYLA
+He's downstairs. 
 
 ---
 
@@ -1523,61 +1537,82 @@ Makayla and Dallas return to find the creature on the table.
 
 <!-- nickname: life-group-arrives -->
 
-EXT. DALLAS'S PORCH - CONTINUOUS
+INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT
 
-Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
+Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates.
 
-DOMINIC
-Dalllasss - you stocking up for the storm? Life group tonight. Thanks for letting us use the house. I'm heading to Costco—need anything? Water? Batteries?
-
-DALLAS
-No thanks - I'm good.
-
-DOMINIC
-Great - yeah. Crazy
-
-DOMINIC
-Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?
+Makayla drifts through the kitchen. She opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word.
 
 INT. DALLAS'S KITCHEN - EVENING
 
-Dallas brings the creature inside. The outdoor porch oscilloscope—still wired from earlier—begins to pulse, almost in sync with the creature's heartbeat.
+Dallas brings the creature inside. 
 
-The creature begins to fade. Dallas turns the dial to a normal frequency. The creature settles. Sleeps.
+The creature begins to fade. Dallas gently places it in the makeshift bed he created the dial to a normal frequency. The creature settles. Sleeps.
 
 HOWIE stays in the corner by the door, disturbed, waiting for his owner. Dallas tries to hide the creature. The moment it cries, the world outside echoes. The ugly hum answers from somewhere far away. The hum floods the town. Windows rattle. 
 
-<div class="script-addition">
+INT. DALLAS LIVING ROOM
 
-> addition
+INT. DALLAS'S HALL - MOMENTS LATER
 
+The first family for the life group: a young couple—JOSH and SARAH—with their newborn, JP. They introduce themselves to Dallas. He acts off. Distant. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. It's getting worse.
 
-The kitchen light dims and surges—a slow, visible pulse, as if the house is breathing with the creature.
+MR. MIKE
+(to himself)
+This is all a farce. They should be out there. Return it.
+
+Josh and Sarah know to ignore him. They smile, make small talk. Mr. Mike keeps muttering, almost in frustration.
+
+MR. MIKE
+One-one-five point two. Hertz. Hertz.
+
+MAKAYLA 
+We have brownies about to be ready.
+
+JOSH
+Makayla, how's your mom doing?
+
+MAKAYLA
+She's doing better thanks.
+
+JOSH
+Dominic, where's the host.
 
 DOMINIC
-(from the doorway, carrying boxes)
-Third brownout this week. UI says it's the storm. But who knows... Dallas thank you again for allowing us to host it here... Dallas? 
+He's downstairs in the basement - not feeling so good.
+
+SARAH
+He knows we're here.
+
+DOMINIC
+Yeah - he should be up in a second.
+
+MAKAYLA
+I'll go and check on him.
+
+INT. BASEMENT - CONTIOUS
+
+Dallas glances at the basement door. Downstairs, the creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
+
+INT. LIVING ROOM - CONTIOUS
+
+TYLER
+Alright crew, how is everyone's weeks going.
 
 <!-- scene: 19 file: s19.md nickname: life-group-arrives -->
 
 (action)
-Dominic puts the boxes down on the kitchen table and looks around for Dallas. 
+The group in a circle all look at eacother. 
+
 
 INT. DALLAS' BASEMENT - CONTINOUS
 
 <!-- scene: 19 file: s19.md nickname: life-group-arrives -->
 
 (action)
-Dallas is downstairs. Focused on the dying creature. The creature lays out a little whipmer. 
+The creature lays out a little whipmer. 
 
 Dallas adjusts the dial again. The creature quiets. The lights stabilize.
-
-
-</div>
-
-
-
-
 
 MR. MIKE walks in behind him. He takes one look at the room and freaks out—like a dog afraid of thunder. He points at the basement door.
 
@@ -1587,20 +1622,26 @@ What is here? What is going on downstairs?!
 Dominic steps between Mr. Mike and the stairs. He guides him back by the elbow.
 
 DOMINIC
-Easy. Easy. Nothing. Just—
+Easy. Easy. Nothing. Just
 
-MAKAYLA walks in. She spots the creature. Without a word, without fear, she goes to it and tends to its wound. The creature's glow begins to brighten under her touch.
-
-ASHER joins the huddle. Dominic turns.
-
-DOMINIC
-Everybody—calm down. Just—
-
-He sees the creature. He goes still. Then he pushes everyone out of the way and stares.
+MR. MIKE
+There is something down there. 
 
 DOMINIC
-What is that?
+What is going on. Mr. Mike what is wrong?
 
+<!-- scene: 19 file: s19.md nickname: life-group-arrives -->
+
+(action)
+Makayla signals to Asher who drops a plate on purpose.  
+
+DOMINIC
+What in the world?!
+
+<!-- scene: 19 file: s19.md nickname: life-group-arrives -->
+
+(action)
+Dominic rushes over to the kitchen and sees that the brownies tray is smashed on the ground.
 
 ---
 
@@ -1620,53 +1661,37 @@ EXT. BASEMENT
 
 THe creature escapes! 
 
-INT. DALLAS'S KITCHEN - EVENING (CONTINUOUS)
+Dallas looks for it and so does Makayla. Asher goes upstairs. 
 
-Dominic is flabbergasted. He sits. The crew huddle around the kitchen table. No one speaks. Dominic gets up and locks the front door without looking at it.
+INT. LIVING ROOM
 
+Dallas walks in - and the crowd look at him.
 
+DALLAS
+Hey
 
-Dominic can't take the quiet. He starts to argue.
+<!-- scene: 20 file: s20.md nickname: basement-huddle -->
 
-DOMINIC
-Could be some kind of bird. From the ground. Something that nests in the marsh.
+(action)
+Various people lift their hand up in small waves.
 
-MR. MIKE
-You're all wrong.
+TYLER
+Dallas - the host of the night - what in the world have you been up to?
 
-MAKAYLA
-We should put it back where we found it. We can't have it in the house. They'll come for it.
+DALLAS
+Sorry - I was just not feeling well so I was laying down a bit downstairs. 
 
-DOMINIC
-Whose they?
+TYLER
+Won't you join us. 
 
-MR. MIKE
-We need to leave now. They're coming for it. It's not safe here.
+<!-- scene: 20 file: s20.md nickname: basement-huddle -->
 
-DOMINIC
-Can we all pump the breaks on the racoon creature you found. We should get that out of the house - we have life group people coming over. 
+(action)
+Makayla joins Dallas in the living room.
+
 
 Dominic stands. The crew scramble—they have to move the creature before anyone else arrives. They head for the basement.
 
-The doorbell chimes.
-
-INT. DALLAS'S HALL - MOMENTS LATER
-
-The first family for the life group: a young couple—JOSH and SARAH—with their newborn, JP. They introduce themselves to Dallas. He acts off. Distant. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. It's getting worse.
-
-MR. MIKE
-(to himself)
-This is all a farce. They should be out there. Return it.
-
-Josh and Sarah know to ignore him. They smile, make small talk. Mr. Mike keeps muttering, almost in frustration.
-
-MR. MIKE
-One-one-five point two. Hertz. Hertz.
-
-MAKAYLA 
-We 
-
-Dallas glances at the basement door. Downstairs, the creature is hidden. For now.
 
 
 ---
@@ -1682,11 +1707,7 @@ Dallas glances at the basement door. Downstairs, the creature is hidden. For now
 
 <!-- nickname: the-hymn -->
 
-INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT
 
-Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates.
-
-Makayla drifts through the kitchen. She opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word.
 
 INT. DALLAS'S BASEMENT - SAME TIME
 
@@ -1724,10 +1745,21 @@ He starts an opening ice breaker. Dallas, Dominic, Makayla, and Asher sit silent
 (action)
 SARAH, the vet, notices a physical reaction to her cup of tea - and watches it ripple in a strange way. 
 
-TYLER, a young man with a guitar, hands out music sheets.
+<!-- scene: 21 file: s21.md nickname: the-hymn -->
+
+(action)
+Dominic closes the windows and blinds.
+
+DOMINIC
+Getting rough out there
+
+<!-- scene: 21 file: s21.md nickname: the-hymn -->
+
+(action)
+TYLER, 32, a young man with a guitar, hands out music sheets.
 
 TYLER
-Something to settle the nerves. Storm's close.
+Would anyone like to say any words before we start?
 
 They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them.
 
@@ -1768,7 +1800,7 @@ What was that?
 The group listen in silence.
 
 PAT CLENDENEN
-Must be the wind. Pressure's dropping fast.
+Must be the wind. The boys in the office just texted me that the pressure's dropping fast.
 
 Dallas stares at the basement door. The sound isn't the wind. It's an answer.
 
@@ -1776,6 +1808,9 @@ During a silent moment of reflection, the hum starts again. Everyone is unsettle
 
 In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the last person to leave. Then he rushes downstairs with the kids.
 
+INT. BASEMENT
+
+The creature has escaped!
 
 ---
 
@@ -1789,6 +1824,24 @@ In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the 
 <!-- scene: 22 file: s22.md nickname: red-eyes -->
 
 <!-- nickname: red-eyes -->
+EXT. DALLAS PORCH
+
+Makayla, Asher and Dallas stand outside and begin to hear the hum. 
+
+MAKAYLA
+We should go to the fortress - we got to find a way to see what is going on in there.
+
+ASHER
+I don't want to go back Makayla.
+
+MAKAYLA
+That's fair. Dallas we'll go.
+
+<!-- scene: 22 file: s22.md nickname: red-eyes -->
+
+(action)
+Dominic takes the last package of grocies back into his minivan.
+
 EXT. TALL GRASS
 
 Dallas and Makayla run into the marsh to and follow the glow. 
@@ -1887,12 +1940,6 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 <!-- nickname: night fears -->
 
 
-
-<div class="script-deletion">
-
-> deletion
-
-
 INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
 
 Dallas is wide awake. Candle shadows dance across the hall. He checks a small video feed of the creature in the den downstairs—temperature, frequency of the earth, the hum of the box. He picks up the tape recorder sitting next to him on his desk. Presses play.
@@ -1912,7 +1959,7 @@ As the tape plays, Dallas's hand drifts to the stack of Sierra's folders beside 
 </div>
 
 
-He goes to bed with her voice still in his head.
+
 
 Dallas looks back to the video monitor but the creature is gone!
 
@@ -1954,57 +2001,43 @@ Dallas at the window again. The eyes are gone. The night is still.
 
 <!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
 
-<!-- nickname: marsh-confrontation -->
+<!-- nickname: the-marsh-plan -->
 
 INT. DALLAS'S BASEMENT - DAY (NEXT MORNING OR LATER)
 
-Dallas rushes downstairs. HOWIE whimpers at his heels. He reaches the shoebox. It's empty. The window above is unlatched. Swinging in the wind.
+Dominic into his basement and looks at all of the gear that was previously on the creature. 
 
-EXT. DALLAS'S DRIVEWAY - SAME TIME
+EXT. DALLAS BACKYARD
 
-JANICE gets out of her car and stops. Her minivan is covered in strange, scorched patterns—burn marks. She pulls out her phone. Takes a photo. Scrapes one mark with her key.
+Dallas looks goes to look at the tall grass for a while. 
 
-ASHER stands beside her. He follows the trail with his eyes. Burn marks lead from the driveway toward the house—along the siding, up toward the windows. A path. Something left. Something came for the creature.
+Out of breath Makayla and Asher come riding with their bicycles.
 
+MAKAYLA
+We got to go now - 
 
+Dallas looks at the ground for a long time at the burn mark. It seems to have increased in size and now is going towards a path in the house. 
 
-<div class="script-deletion">
+Burn marks lead from the driveway toward the house—along the siding, up toward the windows.
 
-> deletion
+MAKAYLA
+Asher look at this. A path. Something left. Something came for the creature... DALLAS we have to go back. 
 
+DALLAS
+And do what?
 
-The streetlight at the end of the driveway is dead—not flickering, just dark. The one beyond it cycles on and off in a slow rhythm, matching the spacing of the burn marks.
+MAKAYLA
+Does one of your devices could it be reversed engineered to transmit the sound that you have been recording.
 
+<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
 
-</div>
+(action)
+Dallas thinks for a moment but his face says it all.
 
+DALLAS
+I suppose. 
 
-
-ASHER
-Mom. Look.
-
-
-
-<div class="script-deletion">
-
-> deletion
-
-
-He points at the streetlight, then at the burn trail. The pattern is the same.
-
-ASHER
-The lights are doing it too.
-
-
-</div>
-
-
-
-JANICE
-Dallas! What is happening to my car?
-
-She can't find him. Inside, Dallas is already in the backyard—staring at the marsh with his oscillator. The creature is gone. The bad things are calling it back. The trail of burn marks points the way.
-
+INT. 
 
 ---
 
@@ -2028,33 +2061,12 @@ Where is it? Where is it?
 
 He searches the kitchen, the hall, haphazard. Makayla makes desperate eye contact with DALLAS, who is by the window with his equipment.
 
-EXT. DALLAS'S DRIVEWAY - SAME TIME
 
-JANICE gets out of her car and stops. Strange burn marks run along the minivan's panels. She pulls out her phone, takes a photo, then scrapes one mark with her key.
-
-ASHER, beside her, follows the trail with his eyes. Burn marks lead from the driveway toward the house—along the siding, up toward the windows.
-
-ASHER
-Mom. Look.
-
-<!-- scene: 25 file: s25.md nickname: predator-attack -->
-
-(action)
-Janice can't find Dallas. Inside, he's in the backyard, staring at the marsh with his oscillator. The readings are erratic—spikes he hasn't seen before. He scans the tree line. Something has changed.
-
-<!-- scene: 25 file: s25.md nickname: predator-attack -->
-
-(action)
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 
 Makayla watches from a distance. She walks over. She doesn't ask permission. She picks up the second receiver and starts scanning frequencies alongside him. Dallas's reading on the handheld jumps. He looks over. A beat. He acknowledges her.
 
 They work in silence—listening, adjusting, mapping the signal. Makayla pulls out Sierra's folder and cross-references a frequency notation with what's on screen. A match.
-
-
-</div>
-
-
 
 MAKAYLA
 What happened?
@@ -2069,31 +2081,20 @@ The creature?
 (action)
 Dallas nods. Makayla grabs his device off the table. DOMINIC appears and grabs her wrist. The three of them stand there. From the direction of the marsh—a cry. Distant, unmistakable. The creature. Then the hum, low and everywhere.
 
-Dominic grabs Makayla's arm, pulling her toward the house.
-
-DOMINIC
-We need to get inside. Now.
-
 Makayla pulls free. She turns to both of them. Her eyes dart in the direction of the tall grass on the edge of Dallas' yard. 
 
-MAKAYLA
-If that creature's frequency hits the transformer on the street while it's being attacked, the feedback loop will fry the whole grid. We aren't just rescuing a pet, Dominic. We're keeping the lights on for the whole neighborhood.
-
-A beat. Dominic stares at her. Dallas stares at her.
+A beat. Dallas stares at her.
 
 MAKAYLA (CONT'D)
-We have to go get it back.
-
-
-</div>
-
-
+We have to go back.
 
 Dallas looks at the tall grass. At the reading. At her. Then toward the house—Howie. They grab him and start down the trail.
 
 EXT. MARSH TRAIL - LATER
 
-Dallas, Makayla, and Howie push through the reeds. The same glow they saw before—flickering, faint. They rush toward it. The trail leads toward the salt marsh. As they inch closer, they see them: a group of creatures, birdlike and small, gathered in a loose circle. They are attending to the injured one—the one from the shoebox. Gentle, urgent.
+Dallas, Makayla, and Howie push through the reeds. The same glow they saw before—flickering, faint. They rush toward it. 
+
+The trail leads toward the salt marsh. As they inch closer, they see them: a group of creatures, birdlike and small, gathered in a loose circle. They are attending to the injured one—the one from the shoebox. Gentle, urgent.
 
 Dallas and Makayla slow. Howie whines. The creatures have not yet scattered. For a moment, it looks like help. Like a family.
 
@@ -2308,7 +2309,7 @@ He looks outside. The soft sound—the pulse of the creature—returns. Faint. T
 
 <!-- scene: 27 file: s27.md nickname: the-last-dinner -->
 
-<!-- nickname: the-last-dinner -->
+<!-- nickname: the-last-battle -->
 
 EXT. EDGE OF TALL GRASS - DAY
 
@@ -2316,20 +2317,22 @@ The crew watches from a distance. In the marsh: a battle of pulse and shadow. Th
 
 The bad creatures turn. They seek the humans.
 
-DOMINIC
+They 
+<!-- scene: 27 file: s27.md nickname: the-last-dinner -->
+
+(action)
+Asher has another panic attack on the floor - his eyes and mouth open again out in the cold marsh. 
+
+ASHER
 Run.
+
+DALLAS grabs ASsher 
 
 They run out of the tall grass and don't stop until they're home.
 
 EXT. / INT. DALLAS'S HOUSE - LATER
 
-Dallas sits in the kitchen, silent. Then he gets up. No debate. He goes outside and starts setting up.
-
-
-
-<div class="script-addition">
-
-> addition
+MAKAYLA AND DALLAS are out of breath. Makayla lifts up her arm and there are burn marks. She begins freaking out. 
 
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
@@ -2390,9 +2393,20 @@ No one answers.
 
 <!-- scene: 28 file: s28.md nickname: final-echoes -->
 
-EXT. 
+<!-- nickname: back to howie -->
 
 The crew huddle around Dallas' apartment and all sleep on the floor as Mr Mike watches a movie on TV. 
+
+Janice makes her way through the door.
+
+JANICE
+Look at all of these sleeping beauties. Dallas, wheres Dallas. Dallas my boy - you were spared from the storm. How are you Mike. 
+
+MR. MIKE
+Things are better - things are better than what they were. Yes. 
+
+JANICE
+Thanks for letting everyone crash here Dallas.
 
 
 
