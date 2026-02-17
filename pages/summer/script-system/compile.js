@@ -249,6 +249,9 @@ function generateHTMLPage(markdown, scenes) {
             <span class="nav-icon" aria-hidden="true">👤</span>
             <span class="nav-text">Characters</span>
           </a>
+          <a class="nav-link" href="/pages/summer/production.html" title="Production plan">
+            <span class="nav-text">Production plan</span>
+          </a>
         </div>
         <div class="nav-right">
           <div class="script-export-dropdown" id="scriptExportDropdown">

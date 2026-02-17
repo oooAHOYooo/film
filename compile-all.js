@@ -19,6 +19,10 @@ const tasks = [
     script: path.join(ROOT, 'pages', 'summer', 'script-system', 'compile.js'),
   },
   {
+    name: 'Summer Production (from script-system)',
+    script: path.join(ROOT, 'pages', 'summer', 'compile-production.js'),
+  },
+  {
     name: "Summer Director's Notes",
     script: path.join(ROOT, 'pages', 'summer', 'directors-notes', 'compile.js'),
   },
