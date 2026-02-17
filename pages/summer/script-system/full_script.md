@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/17/2026, 12:52:24 PM*
+*Compiled on 2/17/2026, 5:33:54 PM*
 
 ---
 
@@ -1088,9 +1088,6 @@ Dallas lays tiny wires on the creature's head, connecting them to his handheld. 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 <!-- nickname: Makayla Confronts Dallas -->
-
-
-
 EXT. DALLAS HOUSE - NEXT MORNING
 
 The morning air is thick with the scent of ozone. Dominic''s minivan idles in the driveway. 
@@ -1232,13 +1229,9 @@ Dallas walks over and pulls over his bright electronic lamp over it. Where it sh
 MAKAYLA
 Look at that!
 
-INT. KITCHEN
+INT. KITCHEN - 
 
-Makayla goes back inside and huddles around the creature. Makayla presses her crystal next to the creatures neck and has a vision that the creature.
 
-Makayla's eyes begin to roll back and she has a vision and through a fast array of imagery and light knows what the creature needs - it needs to go back to the nest and help its infinits - the creature, in this montage - also shows Makayla visuals of her mother - and how sad it was to depart this world and Makayla feels inclined not to make public this information. 
-
-As Makayla is on the ground - the doorbell rings.
 
 EXT. DALLAS'S BACKYARD - DAWN
 
@@ -1304,6 +1297,17 @@ Is he okay?
 
 MAKAYLA
 He's fine... He's just processing. 
+
+DALLAS
+And how are you doing?
+
+MAKAYLA
+I'm fine.
+
+DALLAS
+What did you see?
+
+
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1428,8 +1432,28 @@ Dallas stares at the secondary wave on the screen.
 
 Howie sits in the corner, head cocked, shivering. Outside, the world responds: the windows rattle, and a deep, distant hum echoes from the town center.
 
-MAKAYLA
-We need to take this creature to the lair. 
+Makayla goes back inside and huddles around the creature. Makayla presses her crystal next to the creatures neck and has a vision that the creature.
+
+Makayla's eyes begin to roll back and she has a vision.
+
+EXT. MAKAYLA'S VISION - MONTAGE
+
+EXT. MARSH - DAY (VISION)
+
+Silence. 
+
+A figure stands in the tall grass. A woman - older, etheral but with Makayla's eyes. She turns and her face is obscured by the sun. She looks down at the creature with sadness and then touches Makayla's forehead.
+
+VOICE (V.O)
+Light doesn't leave. It changes.
+
+The woman fades in the sky.
+
+INT. KITCHEN - DAY (Reality)
+
+Makayla gasps, slamming back into her body. 
+
+The doorbell rings.
 
 
 ---
@@ -1500,10 +1524,6 @@ Dallas, dial in the tune to 11.53
 (action)
 Dallas changes the notes of his oscillator and suddenly the creature wakes up. 
 
-
-
-
-
 She rewinds the tapes - and finds the glow - and then the dark shadows grow on the screen and completely decimate the small creature on the ground. 
 
 Makayla looks at the dying creature. 
@@ -1516,12 +1536,23 @@ Dallas - could you interpret these readings and compile in your mind or somethin
 (action)
 Makayla hands Dallas a bunch of papers to look through. 
 
+MAKAYLA
+This crystal - it is a phase inverter. If we run your Oscillator through it - it won't just broadcast sound - it should create a shield - a dome of silence needed to bring it back to its nest.
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Makayla, Dallas, and Asher huddle around the creature. 
+
 INT. LAIR MONTAGE
-Makayla and Dallas rig up the dials - Dallas connects the Oscillator into a shoulder rig with the crystal on the center and put it on the table. 
+Makayla and Dallas rig up the dials - Dallas connects the Oscillator into a shoulder rig with the crystal on the center and puts the prototype on the table. 
 
 MAKAYLA
 We need to bring this to the place where you found the creature. 
 
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
 Makayla turns on the prototype - and nothing happens - but suddenly the creature wakes up and begins to howl loudly - making all of the equipment in the lair act funny.
 
 Asher clutches the creature to his chest. The creature begins to stir a bit - and Asher begins to shake to the floor. 
@@ -1542,10 +1573,10 @@ Bring me back.
 (action)
 Asher snaps out of it and the crew are visuably shaken. Makayla holds Asher close and whipsers that it will be alright. 
 
-Dallas looks on and then at the equipment. Something is intriging to him. 
+Dallas looks on and then at the equipment. 
 
-
-
+MAKAYLA
+We have to go. Now. 
 
 
 
@@ -1638,8 +1669,13 @@ Dallas sets up the creature - but as he does he nearly drops the box. He looks a
 
 Makayla and Dallas return to find the creature on the table. 
 
+Dallas straps the Oscillator rig to his chest. He connects the battery pack. The readout flickers: 12:00 Min.
+
 MAKAYLA
-The Shadows are peaking at the creek. Seems like 
+The battery is going to go fast. So I rigged up a kitchen timer. 
+
+MAKAYLA
+The Shadows are peaking at the creek. 
 
 ---
 
@@ -2348,20 +2384,9 @@ Makayla snatches the crystal from her pocket and sprints. Dominic chases her. He
 
 EXT. DALLAS'S BACKYARD - NIGHT
 
-
-
-<div class="script-addition">
-
-> addition
-
-
 Dallas powers on the speakers and the oscillator. The trap hums to life—a low, steady broadcast aimed at the corridor between the equipment.
 
-
-</div>
-
-
-Howie cowers next to him. Mr. Mike watches from the window. Dominic rushes past for flashlights. He tries to call Makayla on the two-way radio—Asher has the other walkie. Dominic tells Dallas to watch Mr. Mike and Howie. He hesitates, then heads into the grass.
+Howie cowers next to him. Mr. Mike watches from the window. Dominic rushes past for flashlights. He tries to call Makayla on the two-way radio—Asher has the other walkie. 
 
 Dallas waits with Howie on the porch. He watches his equipment. The blinking orange light turns green. He hurries over to inspect. The indicator: green, then orange pulses.
 
@@ -2370,18 +2395,7 @@ The storm approaches. The two of them pace. Mr. Mike, inside, hears the thunder 
 MR. MIKE
 They're coming! They're coming!
 
-
-
-<div class="script-addition">
-
-> addition
-
-
 Dallas checks the trap one last time—the speakers are holding, the sensor blinking steady between them.
-
-
-</div>
-
 
 A distant cry. Then the low hum. Night falls. The winds pick up. Eyes circulate in the fields. Dominic grabs Dallas's sleeve. Dallas pulls free without turning around.
 
@@ -2393,13 +2407,6 @@ A strange silence engulfs Dallas despite the wind. He sees a glimmer of fading l
 
 He stops. Pulls a crumpled napkin from his pocket. Opens it: 45 L 15 R. It matches his equipment. The compass on the device.
 
-
-
-<div class="script-addition">
-
-> addition
-
-
 In the distance: Makayla, holding one of the creatures. Asher and Dominic sit next to her, dazed. But Makayla isn't crying out. She isn't frozen. She is focused.
 
 In her lap: Dallas's oscillator. She has it wired to the creature's back-holes with the alligator clips from the kitchen triage. Her fingers move across the dial with precision—adjusting, listening, adjusting again. The creature's golden pulse flickers in time with her tuning.
@@ -2410,7 +2417,13 @@ Dallas stops. He watches her. This isn't the girl who asked "What does that do?"
 
 Little by little, dark eyes appear around them. Another creature of the same size emerges and begins to nurture the one Makayla holds.
 
-Dallas kneels beside her. He makes contact with the creature through his receiver. The creature begins to sing—and Makayla's oscillator catches the song, amplifies it, pushes it outward in a wave that rolls across the marsh.
+Dallas kneels beside her. He makes contact with the creature through his receiver. The creature begins to sing—and the oscillator catches the song, amplifies it, pushes it outward in a wave that rolls across the marsh.
+
+The creature looks at Makayla and other creatures around it step forward. It reaches a small limb and touches the Crystal in her hand. Makayla gives it to her. The Crystal changes color - it stops glowing and settles into a rich amber solid. 
+
+Another creature chimes and the family reunites. 
+
+Makayla looks down at the stone - no longer a crystal but 
 
 The crew are paralyzed—and so are the dark forces. The Red-Eyes don't just cower. They lock in place—stun-locked, the same phase cancellation Makayla designed at the gap. Total silence around the predators. Total stillness.
 
