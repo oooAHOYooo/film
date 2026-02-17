@@ -1,113 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creatures in the Tall Grass Script - Scene Gallery</title>
-    <link rel="stylesheet" href="script.css?v=20260108-5">
-  </head>
-  <body>
-    <div class="gallery-container">
-      <div class="gallery-header">
-        <h1>Creatures in the Tall Grass Script</h1>
-        <p>Scene Gallery — organized by Act</p>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatures in the Tall Grass Script - Scene Gallery</title>
+  <link rel="stylesheet" href="script.css?v=20260108-5">
+</head>
+<body class="plot-cards-page">
+  <div class="gallery-container">
+    <header class="plot-cards-header">
+      <h1>Creatures in the Tall Grass Script</h1>
+      <p class="plot-cards-subtitle">Scene gallery — main beats per scene · <a href="full_script.html">Open Full Script</a> to jump to any scene</p>
+    </header>
 
-      <div class="nav no-print">
-        <div class="nav-left">
-          <a href="/pages/summer.html">← Summer Hub</a>
-          <a href="index.html">Gallery</a>
-          <a href="plot-cards.html">Plot Cards</a>
-          <a href="full_script.html">Full Script</a>
-          <a href="scene_outline.html">Scene Outline</a>
-          <a href="/pages/summer/directors-notes/index.html">Director's Notes</a>
-        </div>
+    <nav class="nav no-print plot-cards-nav">
+      <div class="nav-left">
+        <a class="nav-link" href="/pages/summer.html" title="Summer Hub">☀ Summer</a>
+        <a class="nav-link nav-link--active" href="index.html" title="Gallery">▦ Gallery</a>
+        <a class="nav-link" href="full_script.html" title="Full Script">Full Script</a>
+        <a class="nav-link" href="scene_outline.html" title="Scene Outline">Scene Outline</a>
+        <a class="nav-link" href="/pages/summer/directors-notes/index.html" title="Director's Notes">Director's Notes</a>
       </div>
+    </nav>
 
-      <div id="sceneList" class="act-list">
-        <li>Loading scenes...</li>
-      </div>
+    <div class="plot-cards-grid" id="plotCardsGrid" aria-label="Scene index cards">
+      <!-- Cards injected by JS from plot-cards-data.json -->
+      <p class="plot-cards-loading" id="plotCardsLoading">Loading cards…</p>
     </div>
+  </div>
 
-    <script>
-    function toRoman(num) {
-      const map = [
-        [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
-        [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
-        [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']
-      ];
-      let n = num;
-      let out = '';
-      for (const [v, s] of map) {
-        while (n >= v) { out += s; n -= v; }
+  <script>
+    (function() {
+      const grid = document.getElementById('plotCardsGrid');
+      const loading = document.getElementById('plotCardsLoading');
+
+      function toRoman(num) {
+        const map = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+        let n = num, out = '';
+        for (const [v, s] of map) {
+          while (n >= v) { out += s; n -= v; }
+        }
+        return out;
       }
-      return out;
-    }
 
-    // Load and display scenes from manifest (grouped by act)
-    async function loadScenes() {
-      try {
-        const response = await fetch('manifest.json');
-        const scenes = await response.json();
-        
-        const sceneList = document.getElementById('sceneList');
-        sceneList.innerHTML = '';
-
-        const acts = new Map(); // actNumber -> { actTitle, scenes: [] }
-        scenes.forEach((scene, index) => {
-          const sceneNumber = index + 1;
-          const act = scene.act || 0;
-          const actTitle = scene.actTitle || 'Unsorted';
-          if (!acts.has(act)) acts.set(act, { actTitle, scenes: [] });
-          acts.get(act).scenes.push({ ...scene, sceneNumber });
+      function renderCards(cards) {
+        if (!cards || !cards.length) {
+          loading.textContent = 'No card data. Check plot-cards-data.json.';
+          return;
+        }
+        loading.remove();
+        let currentAct = null;
+        cards.forEach(function(card) {
+          if (card.act !== currentAct) {
+            currentAct = card.act;
+            const actLabel = document.createElement('div');
+            actLabel.className = 'plot-cards-act-label';
+            actLabel.setAttribute('aria-hidden', 'true');
+            actLabel.textContent = 'ACT ' + toRoman(card.act) + ' — ' + (card.actTitle || '');
+            grid.appendChild(actLabel);
+          }
+          const a = document.createElement('a');
+          a.className = 'plot-card';
+          a.href = 'full_script.html#scene-' + card.n;
+          a.setAttribute('data-scene', card.n);
+          a.innerHTML =
+            '<span class="plot-card-number">' + card.n + '</span>' +
+            '<h2 class="plot-card-title">' + escapeHtml(card.title) + '</h2>' +
+            '<p class="plot-card-summary">' + escapeHtml(card.summary) + '</p>' +
+            '<span class="plot-card-link">Read in script →</span>';
+          grid.appendChild(a);
         });
-
-        const actNumbers = Array.from(acts.keys()).sort((a, b) => a - b);
-
-        actNumbers.forEach((actNumber) => {
-          const { actTitle, scenes: actScenes } = acts.get(actNumber);
-
-          const actBlock = document.createElement('section');
-          actBlock.className = 'act-block';
-
-          const header = document.createElement('div');
-          header.className = 'act-header';
-          const actLabel = actNumber ? `ACT ${toRoman(actNumber)}` : 'UNSORTED';
-          header.innerHTML = `
-            <div class="act-heading">${actLabel} — ${actTitle}</div>
-            <div class="act-meta">${actScenes.length} scenes</div>
-          `;
-          actBlock.appendChild(header);
-
-          const ul = document.createElement('ul');
-          ul.className = 'scene-list scene-list--compact';
-
-          actScenes.forEach((scene) => {
-            const li = document.createElement('li');
-            li.className = 'scene-item scene-item--compact';
-            const num = String(scene.sceneNumber).padStart(2, '0');
-            li.innerHTML = `
-              <a class="scene-link" href="scene.html?id=${scene.id}">
-                <span class="scene-number">${num}</span>
-                <span class="scene-title">${scene.title}</span>
-                <span class="scene-file">${scene.file}</span>
-              </a>
-            `;
-            ul.appendChild(li);
-          });
-
-          actBlock.appendChild(ul);
-          sceneList.appendChild(actBlock);
-        });
-      } catch (error) {
-        console.error('Error loading scenes:', error);
-        document.getElementById('sceneList').innerHTML = 
-          '<div>Error loading scenes. Make sure manifest.json exists.</div>';
       }
-    }
 
-    // Load scenes on page load
-    loadScenes();
+      function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      fetch('plot-cards-data.json')
+        .then(function(r) { return r.json(); })
+        .then(renderCards)
+        .catch(function(err) {
+          loading.textContent = 'Could not load plot-cards-data.json. ' + (err.message || '');
+        });
+    })();
   </script>
-  </body>
+</body>
 </html>

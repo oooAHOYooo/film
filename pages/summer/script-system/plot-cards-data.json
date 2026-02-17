@@ -5,7 +5,7 @@
     "title": "Arrival",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Dallas moves in, finds a recording device in the grass, meets Makayla & Asher; they want to borrow his oscillator."
+    "summary": "New house, tall grass. He finds a rig in the reeds. Makayla and Asher want his oscillator."
   },
   {
     "n": 2,
@@ -13,7 +13,7 @@
     "title": "Dallas Night",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Dallas can't sleep; sees a golden flicker; unpacks Sierra's box; hears the hum; battery dies before he can record."
+    "summary": "Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies."
   },
   {
     "n": 3,
@@ -21,7 +21,7 @@
     "title": "The Hum",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Walk to town with Dominic; birds pointed at marsh; streetlight flickers; invited to fellowship lunch."
+    "summary": "Walk to town with Dominic. Birds pointed at the marsh. Streetlight flickers. Fellowship invite."
   },
   {
     "n": 4,
@@ -29,7 +29,7 @@
     "title": "Fellowship",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Church picnic; Dallas meets Makayla & Asher properly; Janice hands off Howie."
+    "summary": "Church picnic. Dallas meets Makayla and Asher. Janice hands off Howie."
   },
   {
     "n": 5,
@@ -37,7 +37,7 @@
     "title": "Marsh Walk Later",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Marsh boardwalk with Dominic; Merlin app; \"movement underneath\"—merge candidate with s03."
+    "summary": "Boardwalk through the reeds. Dominic shows the Merlin app. Something moving underneath."
   },
   {
     "n": 6,
@@ -45,7 +45,7 @@
     "title": "News Vans",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Pat on TV; wind gusts, receiver spikes; weird burn marks on Dominic's driveway; Dallas stays to help."
+    "summary": "News vans in the street. Pat on camera. Burn marks on Dominic's driveway. Dallas stays."
   },
   {
     "n": 7,
@@ -53,7 +53,7 @@
     "title": "The Coordinates",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Basement with kids' gear; Mr. Mike scratches numbers into wood; Asher/Makayla get coordinates; Makayla asks to borrow oscillator."
+    "summary": "The kids' basement. Mr. Mike scratches numbers. Makayla and Asher grab the coordinates; she wants the oscillator."
   },
   {
     "n": 8,
@@ -61,7 +61,7 @@
     "title": "Dallas Marsh Walk",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Trailcam, waveform ladder, golden flicker; Dallas finds injured creature in hollow; something chases him; he runs out with it. [Plot 1]"
+    "summary": "Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out. [Plot 1]"
   },
   {
     "n": 9,
@@ -69,7 +69,7 @@
     "title": "The Golden Daze",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Dominic returns Howie; Dallas analyzes recordings—grid coordinates match Mr. Mike's language; creature in kitchen."
+    "summary": "He replays the clip. Grid coordinates—Mr. Mike's language. The creature in the kitchen; the scope picks up a pulse."
   },
   {
     "n": 10,
@@ -77,7 +77,7 @@
     "title": "Creature Discovery",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Howie walk; readings spike toward the house; hum; shadows move against the wind; streetlights black out."
+    "summary": "Readings spike. In the hollow: gold orbs, one injured. He takes it. Something's coming."
   },
   {
     "n": 11,
@@ -85,55 +85,55 @@
     "title": "The Kitchen Hospital",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Dallas at window, creature in kitchen; hum; Dominic/Asher return Howie; lifegroup Thursday at Dallas's."
+    "summary": "He runs home with it. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold."
   },
   {
     "n": 12,
     "id": "the-burn-mark",
-    "title": "The Burn Mark",
+    "title": "The First Night With Creature",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Burn mark + crystal in yard; Makayla confronts Dallas; discovers creature; \"we can't tell anyone.\" [Plot 2]"
+    "summary": "Wires on the creature's head. It sings through its back-holes. She can't tell anyone. [Plot 2]"
   },
   {
     "n": 13,
     "id": "entering-grass",
-    "title": "Entering Grass",
+    "title": "Makayla Confronts Dallas",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Dominic leaves for Costco; Makayla sees creature, documents it (sketches, not just video). [Plot 2]"
+    "summary": "Burn mark in the grass. Crystal. She confronts him. They're in this together. [Plot 2]"
   },
   {
     "n": 14,
     "id": "creature-rescue",
-    "title": "Creature Dying",
+    "title": "Dallas And Makyla Bond",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Placeholder—return beat; they could bring it back but it doesn't want to go."
+    "summary": "They sit with the creature. Evidence. A bond. Howie at their feet."
   },
   {
     "n": 15,
     "id": "the-burn-mark-2",
-    "title": "The Message",
+    "title": "Makayla's Lair",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Creature fading on second crystal; something heavy approaches; Dallas grabs it and runs."
+    "summary": "Tour of the lair. Tapes: the glow, then the dark figures. They're being watched."
   },
   {
     "n": 16,
     "id": "the-escape",
-    "title": "The Escape",
+    "title": "Hide The Creature",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Deletion stub; content folded into s12/s13."
+    "summary": "Rush back to Dallas's. Dark figures in the trees. Burn mark in the yard; she pockets the crystal. Uncle Dom can't know."
   },
   {
     "n": 17,
     "id": "makeshift-hospital",
-    "title": "Makeshift Hospital",
+    "title": "Back Home",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Sprint out of grass; creature fading in his coat; \"go, go, go\"—echo of s08."
+    "summary": "Creature in the basement. The crew knows. Lock the door."
   },
   {
     "n": 18,
@@ -141,7 +141,7 @@
     "title": "Makayla's Bond With Creature",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Kitchen triage; oscilloscope on creature; 115.3 MHz stabilizes it; Makayla: \"It's pulling power.\""
+    "summary": "Oscilloscope on the creature. 115.3 MHz. Makayla: it's pulling power from the grid."
   },
   {
     "n": 19,
@@ -149,15 +149,15 @@
     "title": "Life Group Arrives",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Creature hidden; brownouts; Mr. Mike freaks; everyone sees the creature. [Plot 3]"
+    "summary": "Lifegroup tonight. Dominic drops off the music. The creature's downstairs—then Mr. Mike freaks. Everyone sees it. [Plot 3]"
   },
   {
     "n": 20,
     "id": "basement-huddle",
-    "title": "Basement Huddle",
+    "title": "Creature Escapes",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Crew huddle; \"return it\"; doorbell—first family for lifegroup. [Plot 3]"
+    "summary": "The creature's gone. Red eyes at the window. They're coming for it. Doorbell—first family's here. [Plot 3]"
   },
   {
     "n": 21,
@@ -165,7 +165,7 @@
     "title": "The Hymn",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Hymn rises; hum answers; lights pulse; tea ripples; group settles on \"weird weather.\" [Plot 3]"
+    "summary": "House full. They sing. The hum answers. Lights pulse. Just the storm, they say. [Plot 3]"
   },
   {
     "n": 22,
@@ -173,15 +173,15 @@
     "title": "Red Eyes",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Makayla finds Sierra's folder; \"If Red-Eyes take them out, this is just ghost stories\"; decision to return it."
+    "summary": "They find it in the gnarl. It's fading. Sierra's folder: if the Red-Eyes take them, it's all ghost stories. They'll return it."
   },
   {
     "n": 23,
     "id": "creature-missing",
-    "title": "Creature Missing",
+    "title": "Night Fears",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Red eyes at the edge of the yard; creature gone from the box. [Plot 4]"
+    "summary": "Red eyes at the edge of the yard. The creature's gone. [Plot 4]"
   },
   {
     "n": 24,
@@ -189,7 +189,7 @@
     "title": "Marsh Confrontation",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Shoebox empty; burn marks on Janice's minivan; Dallas/Makayla decide to go find it. [Plot 5–6]"
+    "summary": "Shoebox empty. Burn trail on the minivan. They're going in. [Plot 5–6]"
   },
   {
     "n": 25,
@@ -197,7 +197,7 @@
     "title": "Predator Attack",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Mr. Mike barges in; burn trail; Dallas/Makayla scan; creature's cry; \"We have to go get it.\" First confrontation with dark creatures. [Plot 7]"
+    "summary": "Mr. Mike: Where is it? Burn trail. They hear the creature cry. We have to go get it. [Plot 7]"
   },
   {
     "n": 26,
@@ -205,7 +205,7 @@
     "title": "The Perimeter",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Gold vs red eyes; paralysis; creature dies in marsh; they retreat; Dominic: \"They'll come\"; zap episodes; plan hatched. [Plot 8–10]"
+    "summary": "Gold vs red eyes. Paralysis. The creature dies in the marsh. They run. Dominic: they'll come for us. Then the plan. [Plot 8–10]"
   },
   {
     "n": 27,
@@ -213,7 +213,7 @@
     "title": "The Last Dinner",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Predators turn toward humans; run home; trap set (acoustic corridor); storm. [Plot 11]"
+    "summary": "Predators turn. They run. Trap set. Storm coming. [Plot 11]"
   },
   {
     "n": 28,
@@ -221,7 +221,7 @@
     "title": "Final Echoes",
     "act": 4,
     "actTitle": "Aftermath",
-    "summary": "Dinner; Makayla bolts into grass; phase cancellation; she records the waveform; creatures retreat. Loss opens path. [Plot 12–13]"
+    "summary": "She goes in. Phase cancellation. She records the waveform. They're free. [Plot 12–13]"
   },
   {
     "n": 29,
@@ -229,6 +229,6 @@
     "title": "Aftermath",
     "act": 4,
     "actTitle": "Aftermath",
-    "summary": "Town normal; Pat; church picnic; Sierra's folder with kids; Dallas still recording. [Plot 14]"
+    "summary": "Branford breathes again. Pat on TV. The folder's with the kids. Dallas still listening. [Plot 14]"
   }
 ]

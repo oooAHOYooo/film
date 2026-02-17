@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/16/2026, 11:53:58 AM*
+*Compiled on 2/16/2026, 9:02:34 PM*
 
 ---
 
@@ -493,13 +493,6 @@ They finish eating. The group begins to disperse. Janice walks over to Dallas an
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
 <!-- nickname: marsh-walk-later -->
-
-
-
-<div class="script-deletion">
-
-> deletion
-
 
 EXT. MARSH TRAIL - LATER
 
@@ -1074,18 +1067,39 @@ Dallas rushes to the kitchen and finds that the creature is doing good.
 
 <!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
-<!-- nickname: the-burn-mark -->
+<!-- nickname: THE FIRST NIGHT WITH CREATURE  -->
+
+INT. DALLAS DESK
+
+Dallas is alone. And keeps peering through his late wife's old documents.
+
+Dallas lays tiny wires on the creature's head, connecting them to his handheld. When the creature is calm, it emits a low, melodic tone through the holes in its back. HOWIE barks from the corner. The creature's holes shift—the sound becomes a sad cry, like a whimper.
+
+---
+
+
+### Scene 13: Entering Grass & The Hollow
+
+*ACT II — The Creature | ID: entering-grass | File: s13.md*
+
+---
+
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+<!-- nickname: Makayla Confronts Dallas -->
+
+
 
 EXT. DALLAS HOUSE - NEXT MORNING
 
-The morning air is thick with the scent of ozone. Janice's minivan idles in the driveway. She drops Howie off, barely waving as she rushes toward the road.
+The morning air is thick with the scent of ozone. Dominic''s minivan idles in the driveway. 
 
-Makayla and Asher don't follow her. They wander toward the edge of Dallas's property.
+Makayla and Asher don't follow him. They wander toward the edge of Dallas's property.
 
 MAKAYLA
 Asher, look.
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 In the middle of the yard is a jagged, blackened  burn mark in the grass that resembles beads in paint hitting a white canvas - but on the green grass. It looks as if a drip of yellow blood is around it - acreating a trail. At its center lies a small, translucent crystal.
@@ -1114,7 +1128,7 @@ He's fine. Where's Uncle Dom?
 JANICE
 He's with Mr. Mike's physical therapist. Makayla get in the car.
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 Makayla slams the door and walks right at Dallas - and violently knocks his door. 
@@ -1134,7 +1148,7 @@ Yes.
 DALLAS
 Okay.
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 Makayla turns to the burn marks. 
@@ -1142,7 +1156,7 @@ Makayla turns to the burn marks.
 MAKAYLA
 What is that outside your house?
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 Dallas looks outside and sees that there are a bunch of burn marks on the edge of the tall grass. 
@@ -1152,7 +1166,7 @@ From the corner of her ear - a whimper is heard from the kitchen.
 MAKAYLA
 What is that?
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 Makayla bursts through Dallas and runs to the kitchen. 
@@ -1164,7 +1178,7 @@ Dallas and Makayla hover around the table at the makeshift aquarium Dallas const
 ASHER
 What is it?
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 Makayla pulls out her portable viewfinder and begins to inspect the creature further. 
@@ -1178,7 +1192,7 @@ Around 2 hours.
 MAKAYLA
 Look at this, look how it breathes.
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 The pair look closer at the creature - it seems to brath through its back. Makayla touches the creature gently - which causes the Oscillator around it to spark.
@@ -1186,7 +1200,7 @@ The pair look closer at the creature - it seems to brath through its back. Makay
 MAKAYLA
 We can't tell anyone about this.
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 Makayla turns to Dallas who nods in agreement.
@@ -1209,7 +1223,7 @@ And is it?
 DALLAS
 I think so. 
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 Dallas walks over and pulls over his bright electronic lamp over it. Where it shows the different burn marks. 
@@ -1217,19 +1231,6 @@ Dallas walks over and pulls over his bright electronic lamp over it. Where it sh
 MAKAYLA
 Look at that!
 
-
----
-
-
-### Scene 13: Entering Grass & The Hollow
-
-*ACT II — The Creature | ID: entering-grass | File: s13.md*
-
----
-
-<!-- scene: 13 file: s13.md nickname: entering-grass -->
-
-<!-- nickname: entering-grass -->
 
 EXT. DALLAS'S BACKYARD - DAWN
 
@@ -1245,12 +1246,17 @@ DOMINIC
 Listen, Makayla and Asher - help Dallas okay - I'll be back in 45. You know what to do - we got to get this place looking sharp. Chairs inside - brownies in oven - we're going to have a good amount of folks tonight. 
 
 MAKAYLA
-You got it Uncle Dominic. 
+You got it Uncle.
+
+DOMINIC
+Yeah? Makayla your in charge.
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Dominic peels out. Dallas watches him drive away. then at the tall grass. It feels like the field is breathing.
+Makayla smiles and waves as Dominic peels out. 
+
+Makayla turns to Dallas. 
 
 MAKAYLA
 Great - okay Dallas - where is it. 
@@ -1273,150 +1279,50 @@ Makayla stand dumbfounded looking at the creature - they can't believe it. They 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
-<!-- nickname: creature-dying -->
+<!-- nickname: DALLAS AND MAKYLA BOND -->
 
-EXT. UKNOWN
+INT. DALLAS KITCHEN
 
-## Place for Scene 14
+Dallas watches Makayla from far away as she and Asher look at the creature from afar. 
 
+EXT. DALLAS OUTSIDE PATIO
 
-Okay here - they could bring it back to where they find it - but it doesn't want to go back **
+Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby.
 
----
+Asher sits alone.
 
-
-### Scene 15: The Burn Mark
-
-*ACT II — The Creature | ID: the-burn-mark-2 | File: s15.md*
-
----
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-<!-- nickname: the-message -->
-
-EXT. TALL GRASS HOLLOW - CONTINUOUS
-
-The creature’s pulse is slowing. The glow in its neck dims.
-
-Dallas reaches out, his fingers trembling. As he touches the creature's back, the vibration softens. The creature quiets, its breathing lining up with the hum of his equipment.
-
-He notices the creature was lying on a second crystal, similar to the one Makayla found.
-
-As Dallas lifts the fragile creature toward his chest, it looks out and cries for the crystal—in vain. It faints. The scope in his pocket goes silent.
-
-Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds—something massive, rocketing through the blades like an arrow. Dallas gently lowers the creature to the ground.
-
-All around him it seems like dark chaos is errupting.
-
-
----
-
-
-### Scene 16: The Escape
-
-*ACT II — The Creature | ID: the-escape | File: s16.md*
-
----
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-<!-- nickname: the-escape -->
-
-
-
-<div class="script-deletion">
-
-> deletion
-
-
-EXT. DALLAS'S BACKYARD - DAWN
-
-The morning air is thick with the scent of ozone. Janice's minivan idles in the driveway. She drops Howie off, barely waving as she rushes toward the museum to secure artwork before the storm hits.
-
-Makayla and Asher don't follow her. They wander toward the edge of Dallas's property.
+DALLAS
+Is he okay?
 
 MAKAYLA
-Asher, look.
+He's fine... He's just processing. 
 
-<!-- scene: 16 file: s16.md nickname: the-escape -->
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-In the middle of the yard is a jagged, blackened circle—a burn mark in the grass. At its center lies a small, translucent crystal.
+Asher sits alone on an old picnic table that the previous tentant moved in.
 
-Makayla kneels and touches it. Her hair begins to flutter, static electricity pulling the strands toward the stone. She quickly pockets it as Dominic yells from the car.
-
-EXT. DALLAS'S PORCH - CONTINUOUS
-
-Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
-
-DOMINIC
-Dalllasss - you stocking up for the storm? Life group tonight. Thanks for letting us use the house. I'm heading to Costco—need anything? Water? Batteries?
+MAKAYLA
+What do you think it is?
 
 DALLAS
-No thanks - I'm good.
+I am not sure.
 
-DOMINIC
-Great - yeah. Crazy
-
-DOMINIC
-Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?
-
-Dominic peels out. Dallas looks at the papers, then at the tall grass. It feels like the field is breathing.
-
-
-</div>
-
-
-
-
----
-
-
-### Scene 17: Makeshift Hospital
-
-*ACT II — The Creature | ID: makeshift-hospital | File: s17.md*
-
----
-
-<!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
-
-<!-- nickname: makeshift-hospital -->
-
-EXT. TALL GRASS - CONTINUOUS
-
-Dallas clutches the creature to his chest, its downy fur damp against his coat. The sound in the grass isn't just wind—it’s a wake. Something heavy is slicing through the reeds, rocketing toward him like an arrow.
+MAKAYLA
+I don't think its an alien.
 
 DALLAS
+No, I don't think so either.
 
-(to himself)
-
-Go, go, go.
-
-He breaks into a sprint, stumbling over hidden roots. He reaches the cedar tree. Howie is a blur of panic, barking at the wall of grass. Dallas grabs the leash and doesn't stop running until the marsh is a hundred yards behind them.
-
-He stops at the edge of his driveway, gasping for air. He looks down at his coat. The creature is motionless, but its neck glow pulses a weak, fading amber.
-
-
----
-
-
-### Scene 18: Entering Grass
-
-*ACT II — The Creature | ID: entering-grass-2 | File: s18.md*
-
----
-
-<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
-
-<!-- nickname: Makayla's Bond with Creature -->
+MAKAYLA
+We need to document this... Dallas - can we bring the creature to the lair? *
 
 INT. DALLAS'S KITCHEN - LATER
 
 MAKAYLA
 I've read about fish the way the transmit information. Scientists forever thought that the sea was silent - but our ears just can't pick up the right frequenies.
 
-<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
 Makayla turns and begins to 
@@ -1450,13 +1356,6 @@ Asher comes in the room and gathers around the creature as well.
 
 Dallas adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature's breathing stabilizes. It lets out a low, melodic tone through its back-holes.
 
-
-
-<div class="script-addition">
-
-> addition
-
-
 Makayla leans over the oscilloscope. She points at the screen.
 
 MAKAYLA
@@ -1485,6 +1384,135 @@ Howie sits in the corner, head cocked, shivering. Outside, the world responds: t
 ---
 
 
+### Scene 15: The Burn Mark
+
+*ACT II — The Creature | ID: the-burn-mark-2 | File: s15.md*
+
+---
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+<!-- nickname: Makayla's Lair  -->
+
+EXT. MAKAYLA'S LAIR 
+
+Makayla gives Dallas a tour of the outdoor lair. 
+
+Around a lean too structure in the woods - Makayla has built an impressive array of servillance equipment. 
+
+She rewinds the tapes - and finds the glow - and then the dark shadows grow on the screen and completely decimate the small creature on the ground. 
+
+Makayla looks at the dying creature. 
+
+MAKAYLA
+Dallas - could you interpret these readings and compile in your mind or something and tell me what they mean?
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Makayla hands Dallas a bunch of papers to look through. 
+
+Asher clutches the creature to his chest. The creature begins to stir a bit - and Asher begins to shake to the floor. 
+
+MAKAYLA
+Asher!
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Makayla runs to rescue Asher who is laying on the floor with his eyes wide open and his mouth wide open.
+
+ASHER
+Bring me back. 
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Asher snaps out of it and the crew are visuably shaken. Makayla holds Asher close and whipsers that it will be alright. 
+
+Dallas looks on and then at the equipment. Something is intriging to him. 
+
+
+
+
+
+
+---
+
+
+### Scene 16: The Escape
+
+*ACT II — The Creature | ID: the-escape | File: s16.md*
+
+---
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+<!-- nickname: Hide the Creature -->
+
+EXT. MAKAYLA'S LAIR
+
+Makayla and Dallas and Asher begin to make there way hastly out of the woods. They are in a rush to go back to Dallas' house to return the creature. 
+
+As they do - they see that dark figures are haunting them - but from a distance. 
+
+EXT. DALLAS HOUSE
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+In the middle of the yard is a jagged, blackened circle—a burn mark in the grass. At its center lies a small, translucent crystal.
+
+Makayla kneels and touches it. Her hair begins to flutter, static electricity pulling the strands toward the stone. 
+
+Dominic pulls up with Janice and a minivan full of things from Costco
+
+She quickly pockets it as Dominic yells from the car.
+
+Makayla turns to Dallas and looks at Asher. He nods. 
+
+MAKAYLA
+Dallas, Uncle Dominic can't know about this. No one can. Not until we get more evidence. He'll freak out and make us take it back.
+
+Dallas makes his way to the kitchen and begins to bring the makeshift hospital down to the basement. 
+
+INT. DALLAS BASEMENT
+
+Dallas sets up the creature - but as he does he nearly drops the box. He looks at his arm a burn mark. 
+
+---
+
+
+### Scene 17: Makeshift Hospital
+
+*ACT II — The Creature | ID: makeshift-hospital | File: s17.md*
+
+---
+
+<!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
+
+<!-- nickname: Back Home  -->
+
+Makayla and Dallas return to find the creature on the table. 
+
+---
+
+
+### Scene 18: Entering Grass
+
+*ACT II — The Creature | ID: entering-grass-2 | File: s18.md*
+
+---
+
+<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
+
+<!-- nickname: Makayla's Bond with Creature -->
+
+
+
+---
+
+
 ### Scene 19: Life Group Arrives
 
 *ACT II — The Creature | ID: life-group-arrives | File: s19.md*
@@ -1494,6 +1522,22 @@ Howie sits in the corner, head cocked, shivering. Outside, the world responds: t
 <!-- scene: 19 file: s19.md nickname: life-group-arrives -->
 
 <!-- nickname: life-group-arrives -->
+
+EXT. DALLAS'S PORCH - CONTINUOUS
+
+Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
+
+DOMINIC
+Dalllasss - you stocking up for the storm? Life group tonight. Thanks for letting us use the house. I'm heading to Costco—need anything? Water? Batteries?
+
+DALLAS
+No thanks - I'm good.
+
+DOMINIC
+Great - yeah. Crazy
+
+DOMINIC
+Schools are canceled already. The kids are going to be underfoot all day. Try to keep 'em out of the marsh, alright?
 
 INT. DALLAS'S KITCHEN - EVENING
 
@@ -1569,13 +1613,18 @@ What is that?
 
 <!-- scene: 20 file: s20.md nickname: basement-huddle -->
 
-<!-- nickname: basement-huddle -->
+<!-- nickname: Creature ESCAPES -->
+
+
+EXT. BASEMENT
+
+THe creature escapes! 
 
 INT. DALLAS'S KITCHEN - EVENING (CONTINUOUS)
 
 Dominic is flabbergasted. He sits. The crew huddle around the kitchen table. No one speaks. Dominic gets up and locks the front door without looking at it.
 
-Dallas lays tiny wires on the creature's head, connecting them to his handheld. When the creature is calm, it emits a low, melodic tone through the holes in its back. HOWIE barks from the corner. The creature's holes shift—the sound becomes a sad cry, like a whimper.
+
 
 Dominic can't take the quiet. He starts to argue.
 
@@ -1613,6 +1662,9 @@ Josh and Sarah know to ignore him. They smile, make small talk. Mr. Mike keeps m
 
 MR. MIKE
 One-one-five point two. Hertz. Hertz.
+
+MAKAYLA 
+We 
 
 Dallas glances at the basement door. Downstairs, the creature is hidden. For now.
 
@@ -1737,6 +1789,25 @@ In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the 
 <!-- scene: 22 file: s22.md nickname: red-eyes -->
 
 <!-- nickname: red-eyes -->
+EXT. TALL GRASS
+
+Dallas and Makayla run into the marsh to and follow the glow. 
+
+EXT. TALL GRASS 
+
+Makayla and Dalls find the creature in the middle of the gnarl where Dallas found it initially.
+
+The creature’s pulse is slowing. The glow in its neck dims into a faint amber. 
+
+Dallas reaches out, his fingers trembling. As he touches the creature's back, the vibration softens. The creature quiets, its breathing lining up with the hum of his equipment.
+
+He notices the creature was lying on a second crystal, similar to the one Makayla found.
+
+As Dallas lifts the fragile creature toward his chest, it looks out and cries for the crystal—in vain. It faints. The scope in his pocket goes silent.
+
+Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds—something massive, rocketing through the blades like an arrow. Dallas gently lowers the creature to the ground.
+
+All around him it seems like dark chaos is errupting.
 
 INT. DALLAS'S BASEMENT - NIGHT
 
@@ -1813,7 +1884,7 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 
 <!-- scene: 23 file: s23.md nickname: creature-missing -->
 
-<!-- nickname: creature-missing -->
+<!-- nickname: night fears -->
 
 
 
@@ -2081,6 +2152,149 @@ EXT. MARSH TRAIL - CONTINUOUS
 Dallas runs with the creature in his coat. He stops. Looks down. The creature has stopped pulsing. It is motionless. He sets it down. Other golden pulses gather around it. The hum drops—lower and lower on the bass scale.
 
 Dallas backs away. Makayla and Howie are already at the edge of the grass. He catches up. They don't look back. They make their way out of the tall grass.
+
+<!-- nickname: final-echoes -->
+
+EXT. DALLAS'S HOUSE - LATE DAY (STORM)
+
+The sun sets. The crew peer out at the yard and the tall grass.
+
+DOMINIC
+Let's have some dinner.
+
+He wipes the counter hard. A cup tips over. Mr. Mike nods from his chair.
+
+MR. MIKE
+Good time to eat.
+
+INT. DALLAS'S KITCHEN - CONTINUOUS
+
+Dominic and Asher cook. Makayla and Dallas share a glance at the window—Dallas watching the weather, 
+
+<div class="script-addition">
+
+> addition
+
+the equipment in the yard,
+
+</div>
+
+ the grass.
+
+They eat standing, plates in hand, taking turns at the window. Outside, the noise grows. Sniffs. Gnarls. The creatures. Makayla rattles in her chair, impatient.
+
+MAKAYLA
+What should we do?
+
+Dominic looks defeated. Dallas says nothing. Mr. Mike rocks in his chair, muttering. He taps the same three beats on the armrest, over and over.
+
+MR. MIKE
+One-one-five point three. One-one-five point three.
+
+Dominic is hesitant. He asks Dallas for answers about the field. Dallas doesn't have them. Dominic argues they should focus on boarding up the house for the storm.
+
+As he speaks—Makayla bolts. She runs out the back door, cutting across the yard toward the reeds before anyone can grab her.
+
+The sound spikes once. Sharper. Shorter. Then it cuts.
+
+Makayla snatches the crystal from her pocket and sprints. Dominic chases her. He can't reach her in time. He hesitates at the edge of the tall grass. He cries her name. Asher and Dallas reach the grass and stare.
+
+EXT. DALLAS'S BACKYARD - NIGHT
+
+
+
+<div class="script-addition">
+
+> addition
+
+
+Dallas powers on the speakers and the oscillator. The trap hums to life—a low, steady broadcast aimed at the corridor between the equipment.
+
+
+</div>
+
+
+Howie cowers next to him. Mr. Mike watches from the window. Dominic rushes past for flashlights. He tries to call Makayla on the two-way radio—Asher has the other walkie. Dominic tells Dallas to watch Mr. Mike and Howie. He hesitates, then heads into the grass.
+
+Dallas waits with Howie on the porch. He watches his equipment. The blinking orange light turns green. He hurries over to inspect. The indicator: green, then orange pulses.
+
+The storm approaches. The two of them pace. Mr. Mike, inside, hears the thunder and yells.
+
+MR. MIKE
+They're coming! They're coming!
+
+
+
+<div class="script-addition">
+
+> addition
+
+
+Dallas checks the trap one last time—the speakers are holding, the sensor blinking steady between them.
+
+
+</div>
+
+
+A distant cry. Then the low hum. Night falls. The winds pick up. Eyes circulate in the fields. Dominic grabs Dallas's sleeve. Dallas pulls free without turning around.
+
+Dallas brings Howie inside. He sets the leash on the hook like he'll be back in a minute. He rubs Howie's face. Leaves the porch light on. Then he heads out to the tall grass.
+
+EXT. TALL GRASS - NIGHT
+
+A strange silence engulfs Dallas despite the wind. He sees a glimmer of fading light and moves toward it. The sensation of being watched almost overwhelms him. He keeps going.
+
+He stops. Pulls a crumpled napkin from his pocket. Opens it: 45 L 15 R. It matches his equipment. The compass on the device.
+
+
+
+<div class="script-addition">
+
+> addition
+
+
+In the distance: Makayla, holding one of the creatures. Asher and Dominic sit next to her, dazed. But Makayla isn't crying out. She isn't frozen. She is focused.
+
+In her lap: Dallas's oscillator. She has it wired to the creature's back-holes with the alligator clips from the kitchen triage. Her fingers move across the dial with precision—adjusting, listening, adjusting again. The creature's golden pulse flickers in time with her tuning.
+
+She is actively broadcasting—matching the creature's output frequency and amplifying it outward. The golden light around them strengthens. The dark shapes at the edge of the reeds hesitate.
+
+Dallas stops. He watches her. This isn't the girl who asked "What does that do?" in the kitchen. She has mastered the tool he gave her.
+
+Little by little, dark eyes appear around them. Another creature of the same size emerges and begins to nurture the one Makayla holds.
+
+Dallas kneels beside her. He makes contact with the creature through his receiver. The creature begins to sing—and Makayla's oscillator catches the song, amplifies it, pushes it outward in a wave that rolls across the marsh.
+
+The crew are paralyzed—and so are the dark forces. The Red-Eyes don't just cower. They lock in place—stun-locked, the same phase cancellation Makayla designed at the gap. Total silence around the predators. Total stillness.
+
+Makayla glances down at the oscillator screen. The waveform is clean. Sharp. Unmistakable. She hits record.
+
+The storm rages. The creatures retreat into their holes in the gnarls of the soft trees. The Red-Eyes unfreeze and scatter into the dark.
+
+
+</div>
+
+
+
+INT. DALLAS'S HOUSE - LATE NIGHT / DAWN
+
+Dallas, Dominic, and Makayla sit by the window and watch for the night to end. It does.
+
+EXT. / INT. DALLAS'S HOUSE - MORNING
+
+Morning. Dallas is still making calculations. Then he stops. 
+
+<div class="script-deletion">
+
+> deletion
+
+He puts his equipment in the trash.
+
+</div>
+
+ The crew leaves. Dallas is alone again.
+
+He looks outside. The soft sound—the pulse of the creature—returns. Faint. There. He listens.
 
 
 ---

@@ -8,7 +8,7 @@ A local screenplay system that allows you to write scenes in Markdown and automa
 script-system/
 ├── scenes/              # Individual scene markdown files
 ├── manifest.json        # Master order of scenes (edit this to reorder)
-├── index.html          # Gallery view (lists all scenes)
+├── index.html          # Gallery view (plot cards — main beats per scene)
 ├── scene.html          # Individual scene viewer
 ├── full_script.html    # Compiled full script (generated)
 ├── full_script.md      # Compiled markdown (generated)
@@ -43,7 +43,7 @@ Simply edit `manifest.json` and move the scene objects to your desired order. Th
 
 ### 3. View Scenes
 
-- Open `index.html` in a browser to see the gallery
+- Open `index.html` in a browser to see the gallery (plot cards)
 - Click any scene to view it individually
 - The scene viewer uses Marked.js (CDN) to render markdown
 

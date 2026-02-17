@@ -33,6 +33,39 @@ const PLOT_POINT_BY_FILE = {
   's29.md': [14],
 };
 
+// Punchy one-line beats per scene (used for plot cards; fallback to deriveSummary if missing)
+const PUNCHY_SUMMARIES = {
+  's01.md': 'New house, tall grass. He finds a rig in the reeds. Makayla and Asher want his oscillator.',
+  's02.md': "Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies.",
+  's03.md': 'Walk to town with Dominic. Birds pointed at the marsh. Streetlight flickers. Fellowship invite.',
+  's04.md': 'Church picnic. Dallas meets Makayla and Asher. Janice hands off Howie.',
+  's05.md': 'Boardwalk through the reeds. Dominic shows the Merlin app. Something moving underneath.',
+  's06.md': "News vans in the street. Pat on camera. Burn marks on Dominic's driveway. Dallas stays.",
+  's07.md': "The kids' basement. Mr. Mike scratches numbers. Makayla and Asher grab the coordinates; she wants the oscillator.",
+  's08.md': 'Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out.',
+  's09.md': "He replays the clip. Grid coordinates—Mr. Mike's language. The creature in the kitchen; the scope picks up a pulse.",
+  's10.md': "Readings spike. In the hollow: gold orbs, one injured. He takes it. Something's coming.",
+  's11.md': 'He runs home with it. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold.',
+  's12.md': "Wires on the creature's head. It sings through its back-holes. She can't tell anyone.",
+  's13.md': 'Burn mark in the grass. Crystal. She confronts him. They\'re in this together.',
+  's14.md': 'They sit with the creature. Evidence. A bond. Howie at their feet.',
+  's15.md': "Tour of the lair. Tapes: the glow, then the dark figures. They're being watched.",
+  's16.md': "Rush back to Dallas's. Dark figures in the trees. Burn mark in the yard; she pockets the crystal. Uncle Dom can't know.",
+  's17.md': 'Creature in the basement. The crew knows. Lock the door.',
+  's18.md': "Oscilloscope on the creature. 115.3 MHz. Makayla: it's pulling power from the grid.",
+  's19.md': "Lifegroup tonight. Dominic drops off the music. The creature's downstairs—then Mr. Mike freaks. Everyone sees it.",
+  's20.md': "The creature's gone. Red eyes at the window. They're coming for it. Doorbell—first family's here.",
+  's21.md': 'House full. They sing. The hum answers. Lights pulse. Just the storm, they say.',
+  's22.md': "They find it in the gnarl. It's fading. Sierra's folder: if the Red-Eyes take them, it's all ghost stories. They'll return it.",
+  's23.md': 'Red eyes at the edge of the yard. The creature\'s gone.',
+  's24.md': 'Shoebox empty. Burn trail on the minivan. They\'re going in.',
+  's25.md': "Mr. Mike: Where is it? Burn trail. They hear the creature cry. We have to go get it.",
+  's26.md': "Gold vs red eyes. Paralysis. The creature dies in the marsh. They run. Dominic: they'll come for us. Then the plan.",
+  's27.md': 'Predators turn. They run. Trap set. Storm coming.',
+  's28.md': 'She goes in. Phase cancellation. She records the waveform. They\'re free.',
+  's29.md': "Branford breathes again. Pat on TV. The folder's with the kids. Dallas still listening.",
+};
+
 function toRoman(num) {
   const map = [
     [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
@@ -610,35 +643,39 @@ function generateHTMLPage(markdown, scenes) {
   return html;
 }
 
-// Load existing plot-cards-data.json to preserve user-edited summaries (keyed by id)
-function loadExistingPlotCards() {
-  try {
-    const raw = fs.readFileSync(PLOT_CARDS_PATH, 'utf8');
-    const arr = JSON.parse(raw);
-    const byId = new Map();
-    (Array.isArray(arr) ? arr : []).forEach((card) => {
-      if (card.id) byId.set(card.id, card.summary);
-    });
-    return byId;
-  } catch {
-    return new Map();
-  }
-}
-
-// Derive a one-line summary from scene content (first substantial action text)
+// Derive a one-line summary from scene content (first substantial action)
 function deriveSummary(content) {
   if (!content || typeof content !== 'string') return '';
-  const maxLen = 200;
-  let text = content
-    .replace(/<!--[\s\S]*?-->/g, ' ')
-    .replace(/^[\s\S]*?^(?:INT\.|EXT\.)[^\n]*/im, '')
-    .replace(/\n[A-Z][A-Za-z\s]+\n(?:\([^)]*\)\n)?/g, ' ') // character + dialogue
-    .replace(/\(action\)/gi, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+  const maxLen = 220;
+  const lines = content
+    .replace(/<!--[\s\S]*?-->/g, '\n')
+    .split(/\n/)
+    .map((l) => l.trim())
+    .filter(Boolean);
+  const actionParts = [];
+  let inDialogue = false;
+  for (const line of lines) {
+    if (/^(INT\.|EXT\.|FADE|CUT\s|DISSOLVE)/i.test(line)) continue;
+    if (/^\(action\)$/i.test(line)) continue;
+    if (/^\([^)]+\)$/.test(line)) continue; // parenthetical only
+    if (/^[A-Z][A-Za-z\s]{2,}$/.test(line) && line === line.toUpperCase()) {
+      inDialogue = true;
+      continue;
+    }
+    if (inDialogue) {
+      if (line.length < 2 || /^[A-Z]/.test(line)) continue;
+      inDialogue = false;
+    }
+    if (line.length > 10 && !/^[A-Z][A-ZA-Z\s]+\n?$/.test(line)) {
+      actionParts.push(line);
+      const soFar = actionParts.join(' ').length;
+      if (soFar >= maxLen) break;
+    }
+  }
+  let text = actionParts.join(' ').replace(/\s+/g, ' ').trim();
   if (text.length > maxLen) {
     const cut = text.slice(0, maxLen).lastIndexOf(' ');
-    text = (cut > 80 ? text.slice(0, cut) : text.slice(0, maxLen)) + '…';
+    text = (cut > 60 ? text.slice(0, cut) : text.slice(0, maxLen)) + '…';
   }
   return text || '';
 }
@@ -649,19 +686,15 @@ function formatPlotPointTag(plotNums) {
   return ` [Plot ${plotNums[0]}–${plotNums[plotNums.length - 1]}]`;
 }
 
-// Write plot-cards-data.json from manifest; titles from scene nickname; preserve or derive summaries
+// Write plot-cards-data.json from manifest; titles from scene nickname; punchy summaries or derived
 function writePlotCardsData(scenes) {
-  const existingSummaries = loadExistingPlotCards();
   const cards = scenes.map((scene, index) => {
     const n = index + 1;
     const id = scene.id || scene.nickname || `scene-${n}`;
     const raw = loadScene(scene.file);
     const nickname = getNicknameFromScene(raw);
     const title = nickname ? nicknameToTitle(nickname) : (scene.title || `Scene ${n}`);
-    let summary = existingSummaries.get(id);
-    if (summary == null || summary === '') {
-      summary = deriveSummary(raw);
-    }
+    let summary = PUNCHY_SUMMARIES[scene.file] || deriveSummary(raw);
     const plotNums = PLOT_POINT_BY_FILE[scene.file];
     if (plotNums && summary && !/\[Plot \d+/.test(summary)) {
       summary = summary.replace(/\s*…?\s*$/, '') + formatPlotPointTag(plotNums);
