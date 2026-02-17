@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/17/2026, 11:26:32 AM*
+*Compiled on 2/17/2026, 12:47:32 PM*
 
 ---
 
@@ -22,7 +22,7 @@
 
 EXT. DALLAS NEW HOUSE - DAY
 
-Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. 
+Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
 
 Dallas goes into the grass a little bit and as he does he notices that there is a makeshift trap - a small rig of a stick. Upon further examination he notices that it is not a trap but a recording device of sorts. 
 
@@ -655,6 +655,7 @@ Mr. Mike! Mr. Mike, what are you doing?!
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
+The camera reveals Mr. Mike to be drawing a complex geometrical pattern
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
 
 MR. MIKE
@@ -674,7 +675,7 @@ Dominic dashes for the door and opens it. In pops Janice with Makayla and Asher.
 Dallas meanwhile walks towards Mr. Mike before Dominic blocks his view.
 
 MR. MIKE 
-Forty-five left. Fifteen right. She's here - Dominic - Janice is here - ASHER! - it is playing the same one Elena chased. 
+One. ONE. FIVE. THREE. She's here - Dominic - Janice is here - ASHER! - it is playing the same one Elena chased. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -1231,6 +1232,13 @@ Dallas walks over and pulls over his bright electronic lamp over it. Where it sh
 MAKAYLA
 Look at that!
 
+INT. KITCHEN
+
+Makayla goes back inside and huddles around the creature. Makayla presses her crystal next to the creatures neck and has a vision that the creature.
+
+Makayla's eyes begin to roll back and she has a vision and through a fast array of imagery and light knows what the creature needs - it needs to go back to the nest and help its infinits - the creature, in this montage - also shows Makayla visuals of her mother - and how sad it was to depart this world and Makayla feels inclined not to make public this information. 
+
+As Makayla is on the ground - the doorbell rings.
 
 EXT. DALLAS'S BACKYARD - DAWN
 
@@ -1285,7 +1293,7 @@ INT. DALLAS KITCHEN
 
 Dallas watches Makayla from far away as she and Asher look at the creature from afar. 
 
-EXT. DALLAS OUTSIDE PATIO
+EXT. DALLAS BACKYARD - OLD PICNIC TABLE 
 
 Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby.
 
@@ -1315,9 +1323,43 @@ DALLAS
 No, I don't think so either.
 
 MAKAYLA
-We need to document this... Dallas - can we bring the creature to the lair? *
+What do you know about sound?
+
+DALLAS
+I know that certain frequencies don't record - they repel. 
+
+MAKAYLA
+And the frequiences that that creature is making.
+
+DALLAS
+It seems to be recording.
+
+MAKAYLA
+Recording what? 
+
+DALLAS
+Well, everything records in a way. 
+
+MAKAYLA
+And what repels.
+
+DALLAS
+I am not sure.
+
+MAKAYLA
+So what are we talking about?
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas and Makayla sit for a while on the long old picnic table outside his house. 
+
+MAKAYLA
+We need to document this... Dallas. 
 
 INT. DALLAS'S KITCHEN - LATER
+
+Makayla and Dallas walk into the kitchen and find the creature sleeping peacefully below the heat lamp. 
 
 MAKAYLA
 I've read about fish the way the transmit information. Scientists forever thought that the sea was silent - but our ears just can't pick up the right frequenies.
@@ -1356,7 +1398,21 @@ Asher comes in the room and gathers around the creature as well.
 
 Dallas adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature's breathing stabilizes. It lets out a low, melodic tone through its back-holes.
 
-Makayla leans over the oscilloscope. She points at the screen.
+Makayla leans over the oscilloscope. She points at the screen. 
+
+Makayla looks at Dallas and then at the creature and pulls out a small prototype from her backpack. 
+
+MAKAYLA
+The small device should wake up the creature. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Makayla turns away from Dallas sight and places the crystal she has found inside a palceholder for where a battery would go on a circut board.
+
+She turns to the creature and turns it on. 
+
+The creature starts to wiggle.
 
 MAKAYLA
 Wait. Look at that.
@@ -1366,19 +1422,14 @@ Behind the creature's smooth sine wave, a second signal appears—jagged, arrhyt
 MAKAYLA (CONT'D)
 That's not coming from the creature. That's a draw. It's pulling power.
 
-She looks at Dallas.
+She looks at Dallas. In the distance a hum emerges
 
-MAKAYLA (CONT'D)
-The substation on Route 146 is already hum-cycling. I heard the transformers buzzing on the way over. If this frequency keeps expanding...
-
-She trails off. Dallas stares at the secondary wave on the screen. He doesn't answer, but the implication is clear: this isn't contained to the backyard anymore.
-
-
-</div>
-
-
+Dallas stares at the secondary wave on the screen. 
 
 Howie sits in the corner, head cocked, shivering. Outside, the world responds: the windows rattle, and a deep, distant hum echoes from the town center.
+
+MAKAYLA
+We need to take this creature to the lair. 
 
 
 ---
@@ -1396,9 +1447,62 @@ Howie sits in the corner, head cocked, shivering. Outside, the world responds: t
 
 EXT. MAKAYLA'S LAIR 
 
-Makayla gives Dallas a tour of the outdoor lair. 
+The crew leave the sleeping creature under a heat lamp in the back corner of the wigwam type lair Makayla has created. 
 
-Around a lean too structure in the woods - Makayla has built an impressive array of servillance equipment. 
+Makayla gives Dallas a tour of the outdoor lair. Around a lean too structure in the woods - Makayla has built an impressive array of servillance equipment and other home-made gadgetry made from off the shelf components. 
+
+One device in particular intrigues Dallas. 
+
+MAKAYLA
+That is a reverse audiophone - capable of taking a recording and then projecting it back into reverse. I built it last summer hoping to better understand how fish communicate.
+
+DALLAS
+And how do they?
+
+MAKAYLA
+What?
+
+DALLAS
+How do the fish communicate?
+
+MAKAYLA
+Inconclusive. 
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Asher hands Dallas a small transulent crystal in the shape of a crude pyrmaid like stone. 
+
+MAKAYLA
+Asher no.
+
+Dallas holds the object in his hands fasicanted. Makayla takes it away and pockets it.
+
+MAKAYLA
+That crystal isn't just a stone - it's a biological semi-conductor. 
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Makayla stops and thinks for a moment.
+
+MAKAYLA
+Asher, what if Mr Mike's numbers wrent the coordinates we thought they were - but dial settings. 
+
+ASHER
+What do you mean?
+
+MAKAYLA
+Dallas, dial in the tune to 11.53
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Dallas changes the notes of his oscillator and suddenly the creature wakes up. 
+
+
+
+
 
 She rewinds the tapes - and finds the glow - and then the dark shadows grow on the screen and completely decimate the small creature on the ground. 
 
@@ -1411,6 +1515,14 @@ Dallas - could you interpret these readings and compile in your mind or somethin
 
 (action)
 Makayla hands Dallas a bunch of papers to look through. 
+
+INT. LAIR MONTAGE
+Makayla and Dallas rig up the dials - Dallas connects the Oscillator into a shoulder rig with the crystal on the center and put it on the table. 
+
+MAKAYLA
+We need to bring this to the place where you found the creature. 
+
+Makayla turns on the prototype - and nothing happens - but suddenly the creature wakes up and begins to howl loudly - making all of the equipment in the lair act funny.
 
 Asher clutches the creature to his chest. The creature begins to stir a bit - and Asher begins to shake to the floor. 
 
@@ -1452,9 +1564,32 @@ Dallas looks on and then at the equipment. Something is intriging to him.
 
 EXT. MAKAYLA'S LAIR
 
-Makayla and Dallas and Asher begin to make there way hastly out of the woods. They are in a rush to go back to Dallas' house to return the creature. 
+Makayla and Dallas and Asher begin to make there way hastly out of the woods. They are in a rush to go back to Dallas'.
 
 As they do - they see that dark figures are haunting them - but from a distance. 
+
+MAKAYLA
+Asher, what did you see?
+
+ASHER
+Not much - I don't really remember.
+
+MAKAYLA
+What don't you remember?
+
+ASHER
+I don't know. 
+
+MAKAYLA
+The creature just gave you a direct communion from an intelligence outside of humanity and you don't remember at all what they said or told you? 
+
+ASHER
+I don't know Makayla.
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Makayla huffs a bit and walks a bit faster than the crew. Dallas and Asher lock eye contact 
 
 EXT. DALLAS HOUSE
 
@@ -1473,6 +1608,14 @@ Makayla turns to Dallas and looks at Asher. He nods.
 
 MAKAYLA
 Dallas, Uncle Dominic can't know about this. No one can. Not until we get more evidence. He'll freak out and make us take it back.
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Dallas looks onward.
+
+MAKAYLA
+We need to go get the creature now and put it downstairs in the basement before he gets back. 
 
 Dallas makes his way to the kitchen and begins to bring the makeshift hospital down to the basement. 
 
@@ -1494,6 +1637,9 @@ Dallas sets up the creature - but as he does he nearly drops the box. He looks a
 <!-- nickname: Back Home  -->
 
 Makayla and Dallas return to find the creature on the table. 
+
+MAKAYLA
+The Shadows are peaking at the creek. Seems like 
 
 ---
 
@@ -2470,23 +2616,9 @@ In the distance: ASHER and MAKAYLA. They're crouched near the playground, watchi
 
 On the bench next to them: Sierra's folder, open. They're cross-referencing her sketches with their own observations.
 
+Makayla watches how the capitillar interacts with the different patterns of her crystal.
 
-</div>
-
-
-This is just the start of the creature adventure. They don't say it. It's in the way they move. 
-
-<div class="script-addition">
-
-> addition
-
-The legacy continues—not as ghost stories, but as science.
-
-</div>
-
-
-
-Dallas watches them. He doesn't say anything.
+Dallas watches them. from afar. 
 
 INT. DALLAS'S WORKSHOP / HOUSE - DAY
 
@@ -2502,7 +2634,7 @@ JANICE pulls up. She gets out. She and Dallas hug. She hands him HOWIE's leash. 
 
 EXT. CREEK BEND - DAY
 
-The place where the lawn becomes reed. The same bend from before. Dallas stops. He lifts the receiver. He tunes the dial. The hum rises, falls. He adjusts again. The dial clicks into place. He stands there. Recording. The tall grass moves. He doesn't move. He listens.
+Dallas walks alone with his wife's receiver in hand. The place where the lawn becomes reed. The same bend from before. Dallas stops. He lifts the receiver. He tunes the dial. The hum rises, falls. He adjusts again. The dial clicks into place. He stands there. Recording. The tall grass does not move - and neither does Dallas. 
 
 
 ---

@@ -61,3 +61,84 @@ This is a copy of `pages/summer/summer-notes/plot/plot-points-scene-map.md` plac
 - [ ] **13** Resolution is unexpected and tied to earlier setups (Sierra folder, grid draw, crystal, corridor).
 - [ ] **14** Aftermath restores normalcy while showing legacy/science continues.
 
+
+## 2.17.26 UPDATES
+
+To add the Vision/Mother arc and the Reverse Device mission into your script in 5-minute blocks, focus on these specific "insertion points."
+
+Since you have limited time, don't rewrite the whole script. Just drop these "beats" into the existing scenes.
+
+Block 1: The "Touch" and The Vision (Scene 13/14 transition)
+Location: When they first examine the creature in the kitchen.
+
+The Tweak: As Makayla reaches out to soothe the creature, her hand brushes its wing.
+
+Action: Add 3–4 lines of description: The golden light flares. The kitchen sounds drop out, replaced by a soft, familiar humming—a lullaby. Makayla sees a woman’s silhouette in the tall grass. It’s her mother. The woman turns, smiles, and whispers: "Listen to the spaces between the notes."
+
+Result: Makayla pulls back, gasping. She now has a personal stake.
+
+Block 2: Establishing the Plan (Scene 15 - The Lair)
+Location: Before the LifeGroup guests arrive.
+
+The Tweak: Makayla tells Dallas about the vision. She realizes her mother was tracking these same frequencies.
+
+Action: Makayla pulls out her "Small Jammer." Dallas holds the Crystal next to it.
+
+Dialogue: > DALLAS: "Your mom wasn't just watching them. She was protecting them. We can use this crystal to invert my Oscillator. Create a shield."
+
+MAKAYLA: "We have to test it at the Creek Bend. That's the source."
+
+Result: The "Reverse Device" mission is born.
+
+Block 3: The Technical Prep (Scene 15 - Assembly)
+Location: Minutes before the first LifeGroup doorbell rings.
+
+The Tweak: Dallas uses the numbers Mr. Mike scratched into the table to calibrate the device.
+
+Action: Describe Dallas turning the dials—45 Left, 15 Right. The Oscillator emits a low, protective hum that stabilizes the flickering kitchen lights.
+
+Visual: Dallas straps the Oscillator into a shoulder rig, the Crystal glowing at the center.
+
+Result: The device is now a "character" in the story.
+
+Block 4: The Asher Trance (Scene 16 - Pre-Departure)
+Location: Just as the LifeGroup starts in the next room.
+
+The Tweak: Asher touches the Crystal or the Device.
+
+Action: Asher’s eyes go distant. He repeats the exact words from Makayla’s vision: "The light doesn't leave. It just changes frequency."
+
+Result: This confirms the vision was real and raises the stakes—they have to get to the marsh to "bring Asher back."
+
+Block 5: The Stealth Departure (Scene 17)
+Location: Squeezing through the mudroom while the LifeGroup is praying.
+
+The Tweak: Make them look like a "Tactical Science Team."
+
+Action: They aren't just running; they are checking the Reverse Device monitors.
+
+Dialogue: > MAKAYLA: "The Shadows are peaking at the creek. We have ten minutes before the device burns out."
+
+Result: The walk to the marsh is now a "ticking clock" mission.
+
+Block 6: The Ending "Gift" (The Final Scene)
+Location: At the Creek Bend after the Shadows are repelled.
+
+The Tweak: The hand-off.
+
+Action: The creature doesn't just fly away. It lands in front of Makayla. It touches the Crystal, and the stone turns from a "battery" into a deep, glowing amber.
+
+Result: The creature gives the Crystal to her. It’s the "Memory Stone."
+
+Summary Checklist for your Morning:
+[ ] 5 mins: Write the "Mother's Vision" description (Scene 13).
+
+[ ] 5 mins: Add the "Reverse Device" dialogue in the Lair (Scene 15).
+
+[ ] 5 mins: Insert the "Asher repeats the Mother's words" beat (Scene 16).
+
+[ ] 5 mins: Add the "10-minute countdown" dialogue to the stealth exit.
+
+[ ] 5 mins: Rewrite the final beat where the creature gives the Crystal to Makayla.
+
+The Rating: This turns your script into a "High-Concept Emotional Sci-Fi." It feels like Contact—where the technology is just a way for humans to process their grief.
