@@ -689,15 +689,34 @@ function formatPlotPointTag(plotNums) {
   return ` [Plot ${plotNums[0]}–${plotNums[plotNums.length - 1]}]`;
 }
 
-// Write plot-cards-data.json from manifest; titles from scene nickname; punchy summaries or derived
-function writePlotCardsData(scenes) {
+// Extract each scene's body from the compiled full-script markdown (so summaries match what's in the script).
+function extractSceneBlocksFromFullScript(fullScriptMarkdown) {
+  if (!fullScriptMarkdown || typeof fullScriptMarkdown !== 'string') return [];
+  const blocks = [];
+  const segments = fullScriptMarkdown.split(/(?=^### Scene \d+:)/m);
+  for (let i = 1; i < segments.length; i++) {
+    const s = segments[i];
+    const afterDivider = s.indexOf('\n\n---\n\n');
+    const content = afterDivider === -1 ? s : s.slice(afterDivider + '\n\n---\n\n'.length);
+    const endMark = content.lastIndexOf('\n\n---');
+    const body = endMark > 0 ? content.slice(0, endMark) : content;
+    blocks.push(body.trim());
+  }
+  return blocks;
+}
+
+// Write plot-cards-data.json from manifest; titles from scene nickname; punchy summaries or derived from full script
+function writePlotCardsData(scenes, fullScriptMarkdown) {
+  const sceneBlocks = fullScriptMarkdown ? extractSceneBlocksFromFullScript(fullScriptMarkdown) : [];
   const cards = scenes.map((scene, index) => {
     const n = index + 1;
     const id = scene.id || scene.nickname || `scene-${n}`;
     const raw = loadScene(scene.file);
     const nickname = getNicknameFromScene(raw);
     const title = nickname ? nicknameToTitle(nickname) : (scene.title || `Scene ${n}`);
-    let summary = PUNCHY_SUMMARIES[scene.file] || deriveSummary(raw);
+    const fullScriptBlock = sceneBlocks[index];
+    const derived = fullScriptBlock ? deriveSummary(fullScriptBlock) : deriveSummary(raw);
+    let summary = PUNCHY_SUMMARIES[scene.file] || derived;
     const plotNums = PLOT_POINT_BY_FILE[scene.file];
     if (plotNums && summary && !/\[Plot \d+/.test(summary)) {
       summary = summary.replace(/\s*…?\s*$/, '') + formatPlotPointTag(plotNums);
@@ -733,8 +752,8 @@ function compile() {
   fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
   console.log(`✓ Created ${OUTPUT_HTML}`);
 
-  console.log('Updating plot cards...');
-  writePlotCardsData(scenes);
+  console.log('Updating plot cards (dynamic summaries from full script)...');
+  writePlotCardsData(scenes, markdown);
 
   // Load the just-written plot cards data to embed in the gallery
   console.log('Generating index.html (Gallery)...');
