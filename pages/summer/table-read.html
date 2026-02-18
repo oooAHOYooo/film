@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="stylesheet" href="/styles/summer.css">
         <style>
-            .table-read-page { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
+            .table-read-page { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
             .table-read-page h1 { margin-bottom: 0.5rem; }
             .table-read-date { font-size: 1.25rem; color: var(--text-secondary, #8b949e); margin-bottom: 2rem; }
             .table-read-back { display: inline-block; margin-bottom: 1.5rem; color: var(--accent, #58a6ff); text-decoration: none; }
@@ -38,13 +38,19 @@
             .answers-section ul { padding-left: 1.25rem; }
             .answers-section li { margin-bottom: 0.35rem; }
             .answers-section .read-as { font-size: 0.9rem; color: var(--text-secondary, #8b949e); }
+
+            .estimate-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.85rem; }
+            .estimate-table th, .estimate-table td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+            .estimate-table th { color: var(--accent, #58a6ff); font-weight: 600; border-bottom: 2px solid rgba(255,255,255,0.15); }
+            .estimate-table tr:hover { background: rgba(255,255,255,0.03); }
+            .cast-needed { color: var(--text-secondary, #8b949e); }
         </style>
     </head>
     <body>
         <div class="table-read-page">
             <a href="/pages/summer.html" class="table-read-back">← Summer Hub</a>
             <h1>Table Read</h1>
-            <p class="table-read-date">February 22, 2026 (2.22.26)</p>
+            <p class="table-read-date">February 18, 2026 (2.18.26)</p>
 
             <div class="dvd-block" aria-label="Film summary">
                 <p class="tagline">Something's in the marsh. A hum. Then something else.</p>
@@ -81,8 +87,35 @@
             <section class="table-read-section" aria-label="Proposed shoot dates">
                 <h2>Proposed shoot dates</h2>
                 <div class="shoot-dates-block">
-                    <p><span class="shoot-range">Principal: March 9 – March 24, 2026</span> · 12 shoot days. Optional 2-day pickup for SFX/action (Makayla + Dallas).</p>
-                    <p style="margin-top: 0.75rem; font-size: 0.9rem;">Full schedule & pickup scenes: <a href="/pages/summer/production.html" style="color: var(--accent);">Production</a>.</p>
+                    <p><span class="shoot-range">June 19 – July 12, 2026</span> · 10 shoot days. Detailed actor estimate below.</p>
+                </div>
+
+                <div class="production-glance" style="background: rgba(88, 166, 255, 0.05);">
+                    <h3>Actor Presence Estimate</h3>
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Based on current script-system scene mapping and production goals.</p>
+                    <table class="estimate-table">
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Date</th>
+                                <th>Scenes</th>
+                                <th>Cast Needed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Fri Jun 19</td><td>1–4</td><td class="cast-needed">Dallas, Makayla, Dominic, Janice, Mary, Paul</td></tr>
+                            <tr><td>2</td><td>Sat Jun 20</td><td>5–7</td><td class="cast-needed">Dallas, Dominic, Makayla, Janice</td></tr>
+                            <tr><td>3</td><td>Fri Jun 26</td><td>8–11</td><td class="cast-needed">Dallas, Dominic</td></tr>
+                            <tr><td>4</td><td>Sat Jun 27</td><td>12–14</td><td class="cast-needed">Dallas, Makayla, Asher</td></tr>
+                            <tr><td>5</td><td>Sun Jun 28</td><td>15–18</td><td class="cast-needed">Dallas, Makayla, Asher, Dominic</td></tr>
+                            <tr><td>6</td><td>Fri Jul 3</td><td>19</td><td class="cast-needed">Dominic, Makayla, Josh, Sarah, Tyler</td></tr>
+                            <tr><td>7</td><td>Sun Jul 5</td><td>20–23</td><td class="cast-needed">Dallas, Dominic, Makayla, Janice, Tyler, Amy, Asher</td></tr>
+                            <tr><td>8</td><td>Fri Jul 10</td><td>24–25</td><td class="cast-needed">Dallas, Makayla, Asher</td></tr>
+                            <tr><td>9</td><td>Sat Jul 11</td><td>26–27</td><td class="cast-needed">Makayla, Asher, Dominic</td></tr>
+                            <tr><td>10</td><td>Sun Jul 12</td><td>28–29 + PKP</td><td class="cast-needed">Janice, Dallas, Makayla (Final Pickups)</td></tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary);">Full schedule & pickup scenes: <a href="/pages/summer/production.html" style="color: var(--accent);">Production Hub</a>.</p>
                 </div>
             </section>
 

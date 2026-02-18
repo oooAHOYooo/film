@@ -1,861 +1,1048 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Production — Creatures in the Tall Grass</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="/styles/style.css">
-        <style>
-            :root {
-                --prod-accent: #79b8ff;
-                --prod-head: rgba(56, 139, 253, 0.12);
-                --prod-border: rgba(56, 139, 253, 0.18);
-                --prod-tag-bg: rgba(56, 139, 253, 0.1);
-                --prod-tag-border: rgba(56, 139, 253, 0.25);
-                --prod-row-hover: rgba(56, 139, 253, 0.06);
-            }
-            
-            .production-table-wrap {
-                margin: 16px 0;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-            }
+
+<head>
+    <meta charset="utf-8">
+    <title>Production — Creatures in the Tall Grass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        :root {
+            --prod-accent: #79b8ff;
+            --prod-head: rgba(56, 139, 253, 0.12);
+            --prod-border: rgba(56, 139, 253, 0.18);
+            --prod-tag-bg: rgba(56, 139, 253, 0.1);
+            --prod-tag-border: rgba(56, 139, 253, 0.25);
+            --prod-row-hover: rgba(56, 139, 253, 0.06);
+        }
+
+        .production-table-wrap {
+            margin: 16px 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .production-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+            background: var(--glass-bg);
+            border: 1px solid var(--prod-border);
+            border-radius: var(--soft);
+            font-size: 0.9rem;
+        }
+
+        .production-table thead th {
+            position: sticky;
+            top: 52px;
+            z-index: 15;
+            padding: 10px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--prod-accent);
+            border-bottom: 2px solid var(--prod-border);
+            background: #161b22;
+            box-shadow: 0 2px 0 0 var(--prod-border);
+        }
+
+        .production-table .duration-col {
+            width: 80px;
+            text-align: center;
+        }
+
+        .production-table .act-col {
+            width: 88px;
+            text-align: center;
+        }
+
+        .production-table .shoot-days-col {
+            width: 88px;
+            text-align: center;
+        }
+
+        .production-table .scene-name-col {
+            width: 200px;
+        }
+
+        .production-table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--prod-border);
+            color: var(--text-primary);
+            vertical-align: top;
+            line-height: 1.4;
+        }
+
+        .production-table tbody tr:hover {
+            background: var(--prod-row-hover);
+        }
+
+        .production-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .scene-number {
+            font-weight: 600;
+            color: var(--prod-accent);
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+
+        .location-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            background: var(--prod-tag-bg);
+            border: 1px solid var(--prod-tag-border);
+            border-radius: 4px;
+            font-size: 0.82rem;
+            color: var(--prod-accent);
+            margin: 2px 0;
+        }
+
+        .time-of-day {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .production-notes {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.45;
+        }
+
+        .key-elements {
+            font-size: 0.88rem;
+            line-height: 1.5;
+        }
+
+        .key-elements strong {
+            color: var(--prod-accent);
+        }
+
+        .compact-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            background: var(--glass-bg);
+            border: 1px solid var(--prod-border);
+            border-radius: var(--soft);
+            overflow: hidden;
+            font-size: 0.9rem;
+        }
+
+        .compact-table thead {
+            background: var(--prod-head);
+        }
+
+        .compact-table th {
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--prod-accent);
+            border-bottom: 2px solid var(--prod-border);
+            white-space: nowrap;
+        }
+
+        .compact-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--prod-border);
+            color: var(--text-primary);
+            vertical-align: middle;
+        }
+
+        .compact-table tbody tr:hover {
+            background: var(--prod-row-hover);
+        }
+
+        .compact-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .compact-table .scene-col {
+            width: 60px;
+            text-align: center;
+        }
+
+        .compact-table .scene-name-col {
+            width: 200px;
+        }
+
+        .compact-table .location-col {
+            width: 180px;
+        }
+
+        .scene-name {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            font-style: italic;
+            opacity: 0.85;
+        }
+
+        .scene-name:empty::before {
+            content: '—';
+            color: var(--text-muted);
+        }
+
+        .compact-table .time-col {
+            width: 100px;
+        }
+
+        .compact-table .duration-col {
+            width: 80px;
+            text-align: center;
+        }
+
+        .compact-table .act-col {
+            width: 100px;
+            text-align: center;
+        }
+
+        .compact-table .shoot-days-col {
+            width: 90px;
+            text-align: center;
+        }
+
+        .shoot-days,
+        .duration {
+            font-weight: 600;
+            color: var(--prod-accent);
+            font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        }
+
+        .act-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .act-tag.act1 {
+            background: rgba(63, 185, 80, 0.18);
+            border: 1px solid rgba(63, 185, 80, 0.35);
+            color: #7ee787;
+        }
+
+        .act-tag.act2 {
+            background: rgba(210, 153, 34, 0.18);
+            border: 1px solid rgba(210, 153, 34, 0.35);
+            color: #e3b341;
+        }
+
+        .act-tag.act3 {
+            background: rgba(248, 81, 73, 0.15);
+            border: 1px solid rgba(248, 81, 73, 0.3);
+            color: #ff7b72;
+        }
+
+        .act-tag.act4 {
+            background: var(--prod-tag-bg);
+            border: 1px solid var(--prod-tag-border);
+            color: var(--prod-accent);
+        }
+
+        .compact-summary {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: var(--text-primary);
+        }
+
+        .compact-summary strong {
+            color: var(--prod-accent);
+        }
+
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(13, 17, 23, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--prod-border);
+            padding: 12px 0;
+            margin: 0;
+        }
+
+        .nav-bar-content {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 0 var(--gap);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            padding: 6px 12px;
+            background: var(--prod-tag-bg);
+            border: 1px solid var(--prod-tag-border);
+            border-radius: 6px;
+            color: var(--prod-accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .nav-link:hover {
+            background: var(--prod-row-hover);
+            border-color: var(--prod-accent);
+            transform: translateY(-1px);
+        }
+
+        .nav-link.active {
+            background: var(--prod-row-hover);
+            border-color: var(--prod-accent);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            background: var(--glass-bg);
+            border: 1px solid var(--prod-border);
+            border-radius: 50%;
+            color: var(--prod-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.2s ease;
+            z-index: 50;
+            opacity: 0;
+            visibility: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--prod-row-hover);
+            border-color: var(--prod-accent);
+            transform: translateY(-2px);
+        }
+
+        .section-anchor {
+            scroll-margin-top: 80px;
+        }
+
+        @media (max-width: 768px) {
             .production-table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 0;
-                background: var(--glass-bg);
-                border: 1px solid var(--prod-border);
-                border-radius: var(--soft);
-                font-size: 0.9rem;
-            }
-            .production-table thead th {
-                position: sticky;
-                top: 52px;
-                z-index: 15;
-                padding: 10px 12px;
-                text-align: left;
-                font-weight: 600;
                 font-size: 0.85rem;
-                color: var(--prod-accent);
-                border-bottom: 2px solid var(--prod-border);
-                background: #161b22;
-                box-shadow: 0 2px 0 0 var(--prod-border);
             }
-            .production-table .duration-col { width: 80px; text-align: center; }
-            .production-table .act-col { width: 88px; text-align: center; }
-            .production-table .shoot-days-col { width: 88px; text-align: center; }
-            .production-table .scene-name-col { width: 200px; }
+
+            .production-table th {
+                padding: 8px 10px;
+            }
+
             .production-table td {
-                padding: 8px 12px;
-                border-bottom: 1px solid var(--prod-border);
-                color: var(--text-primary);
-                vertical-align: top;
-                line-height: 1.4;
+                padding: 6px 10px;
             }
-            .production-table tbody tr:hover { background: var(--prod-row-hover); }
-            .production-table tbody tr:last-child td { border-bottom: none; }
-            .scene-number {
-                font-weight: 600;
-                color: var(--prod-accent);
-                font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-            }
-            .location-tag {
-                display: inline-block;
-                padding: 3px 8px;
-                background: var(--prod-tag-bg);
-                border: 1px solid var(--prod-tag-border);
-                border-radius: 4px;
-                font-size: 0.82rem;
-                color: var(--prod-accent);
-                margin: 2px 0;
-            }
-            .time-of-day { font-size: 0.85rem; color: var(--text-secondary); font-style: italic; }
-            .production-notes { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; }
-            .key-elements { font-size: 0.88rem; line-height: 1.5; }
-            .key-elements strong { color: var(--prod-accent); }
+
             .compact-table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 24px 0;
-                background: var(--glass-bg);
-                border: 1px solid var(--prod-border);
-                border-radius: var(--soft);
-                overflow: hidden;
-                font-size: 0.9rem;
-            }
-            .compact-table thead { background: var(--prod-head); }
-            .compact-table th {
-                padding: 12px 16px;
-                text-align: left;
-                font-weight: 600;
-                color: var(--prod-accent);
-                border-bottom: 2px solid var(--prod-border);
-                white-space: nowrap;
-            }
-            .compact-table td {
-                padding: 10px 16px;
-                border-bottom: 1px solid var(--prod-border);
-                color: var(--text-primary);
-                vertical-align: middle;
-            }
-            .compact-table tbody tr:hover { background: var(--prod-row-hover); }
-            .compact-table tbody tr:last-child td { border-bottom: none; }
-            .compact-table .scene-col { width: 60px; text-align: center; }
-            .compact-table .scene-name-col { width: 200px; }
-            .compact-table .location-col { width: 180px; }
-            .scene-name { font-size: 0.9rem; color: var(--text-primary); font-style: italic; opacity: 0.85; }
-            .scene-name:empty::before { content: '—'; color: var(--text-muted); }
-            .compact-table .time-col { width: 100px; }
-            .compact-table .duration-col { width: 80px; text-align: center; }
-            .compact-table .act-col { width: 100px; text-align: center; }
-            .compact-table .shoot-days-col { width: 90px; text-align: center; }
-            .shoot-days, .duration {
-                font-weight: 600;
-                color: var(--prod-accent);
-                font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-            }
-            .act-tag {
-                display: inline-block;
-                padding: 4px 8px;
-                border-radius: 4px;
                 font-size: 0.8rem;
-                font-weight: 600;
             }
-            .act-tag.act1 {
-                background: rgba(63, 185, 80, 0.18);
-                border: 1px solid rgba(63, 185, 80, 0.35);
-                color: #7ee787;
+
+            .compact-table th,
+            .compact-table td {
+                padding: 8px 12px;
             }
-            .act-tag.act2 {
-                background: rgba(210, 153, 34, 0.18);
-                border: 1px solid rgba(210, 153, 34, 0.35);
-                color: #e3b341;
+
+            .compact-table .location-col {
+                width: 150px;
             }
-            .act-tag.act3 {
-                background: rgba(248, 81, 73, 0.15);
-                border: 1px solid rgba(248, 81, 73, 0.3);
-                color: #ff7b72;
+
+            .compact-table .time-col {
+                width: 80px;
             }
-            .act-tag.act4 {
-                background: var(--prod-tag-bg);
-                border: 1px solid var(--prod-tag-border);
-                color: var(--prod-accent);
+
+            .compact-table .scene-name-col {
+                width: 150px;
             }
-            .compact-summary { font-size: 0.9rem; line-height: 1.4; color: var(--text-primary); }
-            .compact-summary strong { color: var(--prod-accent); }
+
             .nav-bar {
-                position: sticky;
-                top: 0;
-                z-index: 100;
-                background: rgba(13, 17, 23, 0.95);
-                backdrop-filter: blur(10px);
-                border-bottom: 1px solid var(--prod-border);
-                padding: 12px 0;
-                margin: 0;
+                padding: 8px 0;
             }
+
             .nav-bar-content {
-                max-width: var(--maxw);
-                margin: 0 auto;
-                padding: 0 var(--gap);
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                gap: 16px;
+                flex-direction: column;
+                align-items: flex-start;
             }
-            .nav-links { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+            .nav-links {
+                width: 100%;
+                justify-content: flex-start;
+            }
+
             .nav-link {
-                padding: 6px 12px;
-                background: var(--prod-tag-bg);
-                border: 1px solid var(--prod-tag-border);
-                border-radius: 6px;
-                color: var(--prod-accent);
-                text-decoration: none;
-                font-size: 0.85rem;
-                transition: all 0.2s ease;
-                white-space: nowrap;
+                font-size: 0.8rem;
+                padding: 6px 10px;
             }
-            .nav-link:hover {
-                background: var(--prod-row-hover);
-                border-color: var(--prod-accent);
-                transform: translateY(-1px);
-            }
-            .nav-link.active {
-                background: var(--prod-row-hover);
-                border-color: var(--prod-accent);
-            }
+
             .back-to-top {
-                position: fixed;
-                bottom: 24px;
-                right: 24px;
-                width: 48px;
-                height: 48px;
-                background: var(--glass-bg);
-                border: 1px solid var(--prod-border);
-                border-radius: 50%;
-                color: var(--prod-accent);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                font-size: 1.2rem;
-                transition: all 0.2s ease;
-                z-index: 50;
-                opacity: 0;
-                visibility: hidden;
-                backdrop-filter: blur(10px);
+                bottom: 16px;
+                right: 16px;
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
             }
-            .back-to-top.visible { opacity: 1; visibility: visible; }
-            .back-to-top:hover {
-                background: var(--prod-row-hover);
-                border-color: var(--prod-accent);
-                transform: translateY(-2px);
-            }
-            .section-anchor { scroll-margin-top: 80px; }
-            @media (max-width: 768px) {
-                .production-table { font-size: 0.85rem; }
-                .production-table th { padding: 8px 10px; }
-                .production-table td { padding: 6px 10px; }
-                .compact-table { font-size: 0.8rem; }
-                .compact-table th, .compact-table td { padding: 8px 12px; }
-                .compact-table .location-col { width: 150px; }
-                .compact-table .time-col { width: 80px; }
-                .compact-table .scene-name-col { width: 150px; }
-                .nav-bar { padding: 8px 0; }
-                .nav-bar-content { flex-direction: column; align-items: flex-start; }
-                .nav-links { width: 100%; justify-content: flex-start; }
-                .nav-link { font-size: 0.8rem; padding: 6px 10px; }
-                .back-to-top { bottom: 16px; right: 16px; width: 40px; height: 40px; font-size: 1rem; }
-            }
+        }
+    </style>
+</head>
 
-        </style>
-    </head>
-    <body>
-        <header class="header">
-            <h1><a href="/pages/summer.html">← Summer Film</a> / Production</h1>
-            <p>Scene breakdown and production notes for Creatures in the Tall Grass. Generated from script-system (manifest + scenes).</p>
-        </header>
+<body>
+    <header class="header">
+        <h1><a href="/pages/summer.html">← Summer Film</a> / Production</h1>
+        <p>Scene breakdown and production notes for Creatures in the Tall Grass. Generated from script-system (manifest
+            + scenes).</p>
+    </header>
 
-        <nav class="nav-bar">
-            <div class="nav-bar-content">
-                <div style="font-weight: 600; color: var(--prod-accent); font-size: 0.9rem;">Quick Navigation:</div>
-                <div class="nav-links">
-                    <a href="#overview" class="nav-link">Overview</a>
-                    <a href="#breakdown" class="nav-link">Scene Breakdown</a>
-                    <a href="#locations-scheduling" class="nav-link">Locations</a>
-                    <a href="#production-notes" class="nav-link">Production Notes</a>
-                    <a href="/pages/summer/script-system/full_script.html" class="nav-link">Full Script</a>
-                    <a href="/pages/summer.html" class="nav-link">← Back to Summer</a>
-                </div>
+    <nav class="nav-bar">
+        <div class="nav-bar-content">
+            <div style="font-weight: 600; color: var(--prod-accent); font-size: 0.9rem;">Quick Navigation:</div>
+            <div class="nav-links">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#breakdown" class="nav-link">Scene Breakdown</a>
+                <a href="#locations-scheduling" class="nav-link">Locations</a>
+                <a href="#production-notes" class="nav-link">Production Notes</a>
+                <a href="/pages/summer/script-system/full_script.html" class="nav-link">Full Script</a>
+                <a href="/pages/summer.html" class="nav-link">← Back to Summer</a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <div class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
+    <div class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
 
-        <section class="section section-anchor" id="overview" style="margin-top: 20px;">
-            <div class="card">
-                <h3 style="margin: 0 0 12px 0; color: var(--prod-accent);">Production Overview</h3>
-                <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
-                    This scene breakdown is generated from the script-system (manifest + scenes). Use it for
-                    scheduling, location scouting, and technical planning. Edit production-data.json to add
-                    duration, shoot days, key elements, and production notes per scene.
-                </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--prod-border);">
-                    <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Total</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~80 min</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">29 scenes · 12 shoot days + 2 pickup (SFX/action, Makayla + Dallas)</div>
-                    </div>
-                    
-                    <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act I (Scenes 1-11)</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~30 min</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">11 scenes</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act II (Scenes 12-23)</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~30 min</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">12 scenes</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act III (Scenes 24-27)</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~16 min</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">4 scenes</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act IV (Scenes 28-29)</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~4 min</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">2 scenes</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-anchor" id="breakdown">
-            <h2 style="margin: 0 0 16px 0;">Scene Breakdown</h2>
+    <section class="section section-anchor" id="overview" style="margin-top: 20px;">
+        <div class="card">
+            <h3 style="margin: 0 0 12px 0; color: var(--prod-accent);">Production Overview</h3>
             <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
-                Production-ready breakdown aligned with the script-system (scenes folder). 29 scenes.
-                Location and time are parsed from INT/EXT headings; duration, shoot days, key elements, and notes come from production-data.json.
+                This scene breakdown is generated from the script-system (manifest + scenes). Use it for
+                scheduling, location scouting, and technical planning. Edit production-data.json to add
+                duration, shoot days, key elements, and production notes per scene.
             </p>
-            <div class="production-table-wrap">
-                <table class="production-table">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--prod-border);">
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Total</div>
+                    <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~80 min</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">29 scenes · 10 shoot days
+                        (June 19 – July 12)</div>
+                </div>
+
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act I (Scenes
+                        1-11)</div>
+                    <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~30 min</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">11 scenes</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act II (Scenes
+                        12-23)</div>
+                    <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~30 min</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">12 scenes</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act III (Scenes
+                        24-27)</div>
+                    <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~16 min</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">4 scenes</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Act IV (Scenes
+                        28-29)</div>
+                    <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">~4 min</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">2 scenes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-anchor" id="breakdown">
+        <h2 style="margin: 0 0 16px 0;">Scene Breakdown</h2>
+        <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
+            Production-ready breakdown aligned with the script-system (scenes folder). 29 scenes.
+            Location and time are parsed from INT/EXT headings; duration, shoot days, key elements, and notes come from
+            production-data.json.
+        </p>
+        <div class="production-table-wrap">
+            <table class="production-table">
+                <thead>
+                    <tr>
+                        <th style="width: 80px;">Scene</th>
+                        <th class="scene-name-col">Scene Name</th>
+                        <th style="width: 200px;">Location</th>
+                        <th style="width: 120px;">Time</th>
+                        <th class="duration-col">Duration</th>
+                        <th class="act-col">Act</th>
+                        <th class="shoot-days-col">Shoot Days</th>
+                        <th>Key Elements & Action</th>
+                        <th style="width: 250px;">Production Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><span class="scene-number">1</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Arrival</span></td>
+                        <td><span class="location-tag">DALLAS NEW HOUSE - Exterior</span></td>
+                        <td><span class="time-of-day">DAY</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">1</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">2</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Dallas Night</span></td>
+                        <td><span class="location-tag">DALLAS NEW HOUSE - Interior</span></td>
+                        <td><span class="time-of-day">NIGHT</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">3</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The Hum</span></td>
+                        <td><span class="location-tag">DALLAS HOUSE - Exterior</span></td>
+                        <td><span class="time-of-day">NEXT DAY MORNING</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">4</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Fellowship</span></td>
+                        <td><span class="location-tag">CHURCH FELLOWSHIP LAWN - Exterior</span></td>
+                        <td><span class="time-of-day">LATE AFTERNOON</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">1</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">5</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Marsh Walk Later</span></td>
+                        <td><span class="location-tag">MARSH TRAIL - Exterior</span></td>
+                        <td><span class="time-of-day">LATER</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">6</span></td>
+                        <td class="scene-name-col"><span class="scene-name">News Vans</span></td>
+                        <td><span class="location-tag">BRANFORD NEIGHBORHOOD - Exterior</span></td>
+                        <td><span class="time-of-day">CONTINUOUS</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">7</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The Coordinates</span></td>
+                        <td><span class="location-tag">DOMINIC'S KITCHEN - Interior</span></td>
+                        <td><span class="time-of-day">LATE AFTERNOON</span></td>
+                        <td class="duration-col"><span class="duration">4 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">8</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Dallas Marsh Walk</span></td>
+                        <td><span class="location-tag">BRANFORD ROCKS - Exterior</span></td>
+                        <td><span class="time-of-day">EVENING</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">9</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The Golden Daze</span></td>
+                        <td><span class="location-tag">INSIDE THE TALL MARSH - Exterior</span></td>
+                        <td><span class="time-of-day">SUNSET HOUR</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">10</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Creature Discovery</span></td>
+                        <td><span class="location-tag">TALL GRASS - Exterior</span></td>
+                        <td><span class="time-of-day">MOMENTS LATER
+
+                                Dallas leaves with the creature</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">11</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The Kitchen Hospital</span></td>
+                        <td><span class="location-tag">DALLAS KITCHEN - Interior</span></td>
+                        <td><span class="time-of-day">DUSK</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act1">Act 1</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">12</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The First Night With Creature</span></td>
+                        <td><span class="location-tag">—</span></td>
+                        <td><span class="time-of-day">—</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">13</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Makayla Confronts Dallas</span></td>
+                        <td><span class="location-tag">DALLAS HOUSE - Exterior</span></td>
+                        <td><span class="time-of-day">NEXT MORNING</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">14</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Dallas And Makyla Bond</span></td>
+                        <td><span class="location-tag">DALLAS BACKYARD - Exterior</span></td>
+                        <td><span class="time-of-day">OLD PICNIC TABLE</span></td>
+                        <td class="duration-col"><span class="duration">5 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">15</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Makayla's Lair</span></td>
+                        <td><span class="location-tag">—</span></td>
+                        <td><span class="time-of-day">—</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">16</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Hide The Creature</span></td>
+                        <td><span class="location-tag">—</span></td>
+                        <td><span class="time-of-day">—</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">17</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Back Home</span></td>
+                        <td><span class="location-tag">—</span></td>
+                        <td><span class="time-of-day">—</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">18</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Makayla's Bond With Creature</span></td>
+                        <td><span class="location-tag">DALLAS'S PORCH - Exterior</span></td>
+                        <td><span class="time-of-day">CONTINUOUS</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">19</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Life Group Arrives</span></td>
+                        <td><span class="location-tag">DALLAS'S KITCHEN / LIVING ROOM - Interior</span></td>
+                        <td><span class="time-of-day">NIGHT</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">1</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">20</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Creature Escapes</span></td>
+                        <td><span class="location-tag">—</span></td>
+                        <td><span class="time-of-day">—</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">21</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The Hymn</span></td>
+                        <td><span class="location-tag">DALLAS'S BASEMENT - Interior</span></td>
+                        <td><span class="time-of-day">SAME TIME</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">22</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Red Eyes</span></td>
+                        <td><span class="location-tag">DALLAS'S STUDY - Interior</span></td>
+                        <td><span class="time-of-day">SAME TIME</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">23</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Night Fears</span></td>
+                        <td><span class="location-tag">DALLAS'S HOUSE - HALL / DEN - Interior</span></td>
+                        <td><span class="time-of-day">NIGHT</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act2">Act 2</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">24</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The Marsh Plan</span></td>
+                        <td><span class="location-tag">DALLAS'S BASEMENT - Interior</span></td>
+                        <td><span class="time-of-day">MORNING</span></td>
+                        <td class="duration-col"><span class="duration">6 min</span></td>
+                        <td class="act-col"><span class="act-tag act3">Act 3</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">25</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Predator Attack</span></td>
+                        <td><span class="location-tag">—</span></td>
+                        <td><span class="time-of-day">—</span></td>
+                        <td class="duration-col"><span class="duration">3 min</span></td>
+                        <td class="act-col"><span class="act-tag act3">Act 3</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">26</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The Perimeter</span></td>
+                        <td><span class="location-tag">MARSH TRAIL - Exterior</span></td>
+                        <td><span class="time-of-day">CONTINUOUS</span></td>
+                        <td class="duration-col"><span class="duration">5 min</span></td>
+                        <td class="act-col"><span class="act-tag act3">Act 3</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">27</span></td>
+                        <td class="scene-name-col"><span class="scene-name">The Last Battle</span></td>
+                        <td><span class="location-tag">EDGE OF TALL GRASS - Exterior</span></td>
+                        <td><span class="time-of-day">DAY</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act3">Act 3</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">28</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Back To Howie</span></td>
+                        <td><span class="location-tag">—</span></td>
+                        <td><span class="time-of-day">—</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act4">Act 4</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="scene-number">29</span></td>
+                        <td class="scene-name-col"><span class="scene-name">Aftermath</span></td>
+                        <td><span class="location-tag">BRANFORD - Exterior</span></td>
+                        <td><span class="time-of-day">DAY</span></td>
+                        <td class="duration-col"><span class="duration">2 min</span></td>
+                        <td class="act-col"><span class="act-tag act4">Act 4</span></td>
+                        <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
+                        <td class="key-elements">—</td>
+                        <td class="production-notes">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="section section-anchor" id="locations-scheduling">
+        <h2>Locations & Scheduling</h2>
+        <div class="card" style="margin-bottom: 24px;">
+            <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Location Breakdown</h3>
+            <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
+                Scenes grouped by location. Shoot days summed from production-data.json when set.
+            </p>
+            <div style="overflow-x: auto;">
+                <table class="compact-table" style="margin: 0;">
                     <thead>
                         <tr>
-                            <th style="width: 80px;">Scene</th>
-                            <th class="scene-name-col">Scene Name</th>
-                            <th style="width: 200px;">Location</th>
-                            <th style="width: 120px;">Time</th>
-                            <th class="duration-col">Duration</th>
-                            <th class="act-col">Act</th>
-                            <th class="shoot-days-col">Shoot Days</th>
-                            <th>Key Elements & Action</th>
-                            <th style="width: 250px;">Production Notes</th>
+                            <th style="width: 250px;">Location</th>
+                            <th style="width: 150px;">Scenes</th>
+                            <th style="width: 120px;">Total Shoot Days</th>
+                            <th>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         <tr>
-                            <td><span class="scene-number">1</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Arrival</span></td>
-                            <td><span class="location-tag">DALLAS NEW HOUSE - Exterior</span></td>
-                            <td><span class="time-of-day">DAY</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS NEW HOUSE - Exterior</strong></td>
+                            <td>1</td>
+                            <td><span class="shoot-days">1</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">2</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Dallas Night</span></td>
-                            <td><span class="location-tag">DALLAS NEW HOUSE - Interior</span></td>
-                            <td><span class="time-of-day">NIGHT</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS NEW HOUSE - Interior</strong></td>
+                            <td>2</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">3</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The Hum</span></td>
-                            <td><span class="location-tag">DALLAS HOUSE - Exterior</span></td>
-                            <td><span class="time-of-day">NEXT DAY MORNING</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS HOUSE - Exterior</strong></td>
+                            <td>3, 13</td>
+                            <td><span class="shoot-days">1</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">4</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Fellowship</span></td>
-                            <td><span class="location-tag">CHURCH FELLOWSHIP LAWN - Exterior</span></td>
-                            <td><span class="time-of-day">LATE AFTERNOON</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>CHURCH FELLOWSHIP LAWN - Exterior</strong></td>
+                            <td>4</td>
+                            <td><span class="shoot-days">1</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">5</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Marsh Walk Later</span></td>
-                            <td><span class="location-tag">MARSH TRAIL - Exterior</span></td>
-                            <td><span class="time-of-day">LATER</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>MARSH TRAIL - Exterior</strong></td>
+                            <td>5, 26</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">6</span></td>
-                            <td class="scene-name-col"><span class="scene-name">News Vans</span></td>
-                            <td><span class="location-tag">BRANFORD NEIGHBORHOOD - Exterior</span></td>
-                            <td><span class="time-of-day">CONTINUOUS</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>BRANFORD NEIGHBORHOOD - Exterior</strong></td>
+                            <td>6</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">7</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The Coordinates</span></td>
-                            <td><span class="location-tag">DOMINIC'S KITCHEN - Interior</span></td>
-                            <td><span class="time-of-day">LATE AFTERNOON</span></td>
-                            <td class="duration-col"><span class="duration">4 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DOMINIC'S KITCHEN - Interior</strong></td>
+                            <td>7</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">8</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Dallas Marsh Walk</span></td>
-                            <td><span class="location-tag">BRANFORD ROCKS - Exterior</span></td>
-                            <td><span class="time-of-day">EVENING</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                            <td><strong>BRANFORD ROCKS - Exterior</strong></td>
+                            <td>8</td>
+                            <td><span class="shoot-days">—</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">9</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The Golden Daze</span></td>
-                            <td><span class="location-tag">INSIDE THE TALL MARSH - Exterior</span></td>
-                            <td><span class="time-of-day">SUNSET HOUR</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>INSIDE THE TALL MARSH - Exterior</strong></td>
+                            <td>9</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">10</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Creature Discovery</span></td>
-                            <td><span class="location-tag">TALL GRASS - Exterior</span></td>
-                            <td><span class="time-of-day">MOMENTS LATER
-
-Dallas leaves with the creature</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                            <td><strong>TALL GRASS - Exterior</strong></td>
+                            <td>10</td>
+                            <td><span class="shoot-days">—</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">11</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The Kitchen Hospital</span></td>
-                            <td><span class="location-tag">DALLAS KITCHEN - Interior</span></td>
-                            <td><span class="time-of-day">DUSK</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS KITCHEN - Interior</strong></td>
+                            <td>11</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">12</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The First Night With Creature</span></td>
-                            <td><span class="location-tag">—</span></td>
-                            <td><span class="time-of-day">—</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>—</strong></td>
+                            <td>12, 15, 16, 17, 20, 25, 28</td>
+                            <td><span class="shoot-days">2.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">13</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Makayla Confronts Dallas</span></td>
-                            <td><span class="location-tag">DALLAS HOUSE - Exterior</span></td>
-                            <td><span class="time-of-day">NEXT MORNING</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS BACKYARD - Exterior</strong></td>
+                            <td>14</td>
+                            <td><span class="shoot-days">—</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">14</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Dallas And Makyla Bond</span></td>
-                            <td><span class="location-tag">DALLAS BACKYARD - Exterior</span></td>
-                            <td><span class="time-of-day">OLD PICNIC TABLE</span></td>
-                            <td class="duration-col"><span class="duration">5 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
+                            <td><strong>DALLAS'S PORCH - Exterior</strong></td>
+                            <td>18</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">15</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Makayla's Lair</span></td>
-                            <td><span class="location-tag">—</span></td>
-                            <td><span class="time-of-day">—</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS'S KITCHEN / LIVING ROOM - Interior</strong></td>
+                            <td>19</td>
+                            <td><span class="shoot-days">1</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">16</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Hide The Creature</span></td>
-                            <td><span class="location-tag">—</span></td>
-                            <td><span class="time-of-day">—</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS'S BASEMENT - Interior</strong></td>
+                            <td>21, 24</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">17</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Back Home</span></td>
-                            <td><span class="location-tag">—</span></td>
-                            <td><span class="time-of-day">—</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS'S STUDY - Interior</strong></td>
+                            <td>22</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">18</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Makayla's Bond With Creature</span></td>
-                            <td><span class="location-tag">DALLAS'S PORCH - Exterior</span></td>
-                            <td><span class="time-of-day">CONTINUOUS</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>DALLAS'S HOUSE - HALL / DEN - Interior</strong></td>
+                            <td>23</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">19</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Life Group Arrives</span></td>
-                            <td><span class="location-tag">DALLAS'S KITCHEN / LIVING ROOM - Interior</span></td>
-                            <td><span class="time-of-day">NIGHT</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">1</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>EDGE OF TALL GRASS - Exterior</strong></td>
+                            <td>27</td>
+                            <td><span class="shoot-days">—</span></td>
+                            <td>—</td>
                         </tr>
                         <tr>
-                            <td><span class="scene-number">20</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Creature Escapes</span></td>
-                            <td><span class="location-tag">—</span></td>
-                            <td><span class="time-of-day">—</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">21</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The Hymn</span></td>
-                            <td><span class="location-tag">DALLAS'S BASEMENT - Interior</span></td>
-                            <td><span class="time-of-day">SAME TIME</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">22</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Red Eyes</span></td>
-                            <td><span class="location-tag">DALLAS'S STUDY - Interior</span></td>
-                            <td><span class="time-of-day">SAME TIME</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">23</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Night Fears</span></td>
-                            <td><span class="location-tag">DALLAS'S HOUSE - HALL / DEN - Interior</span></td>
-                            <td><span class="time-of-day">NIGHT</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">24</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The Marsh Plan</span></td>
-                            <td><span class="location-tag">DALLAS'S BASEMENT - Interior</span></td>
-                            <td><span class="time-of-day">MORNING</span></td>
-                            <td class="duration-col"><span class="duration">6 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">25</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Predator Attack</span></td>
-                            <td><span class="location-tag">—</span></td>
-                            <td><span class="time-of-day">—</span></td>
-                            <td class="duration-col"><span class="duration">3 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">26</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The Perimeter</span></td>
-                            <td><span class="location-tag">MARSH TRAIL - Exterior</span></td>
-                            <td><span class="time-of-day">CONTINUOUS</span></td>
-                            <td class="duration-col"><span class="duration">5 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">27</span></td>
-                            <td class="scene-name-col"><span class="scene-name">The Last Battle</span></td>
-                            <td><span class="location-tag">EDGE OF TALL GRASS - Exterior</span></td>
-                            <td><span class="time-of-day">DAY</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act3">Act 3</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">28</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Back To Howie</span></td>
-                            <td><span class="location-tag">—</span></td>
-                            <td><span class="time-of-day">—</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act4">Act 4</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">pickup</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
-                        </tr>
-                        <tr>
-                            <td><span class="scene-number">29</span></td>
-                            <td class="scene-name-col"><span class="scene-name">Aftermath</span></td>
-                            <td><span class="location-tag">BRANFORD - Exterior</span></td>
-                            <td><span class="time-of-day">DAY</span></td>
-                            <td class="duration-col"><span class="duration">2 min</span></td>
-                            <td class="act-col"><span class="act-tag act4">Act 4</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
-                            <td class="key-elements">—</td>
-                            <td class="production-notes">—</td>
+                            <td><strong>BRANFORD - Exterior</strong></td>
+                            <td>29</td>
+                            <td><span class="shoot-days">0.5</span></td>
+                            <td>—</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-        </section>
-
-        <section class="section section-anchor" id="locations-scheduling">
-            <h2>Locations & Scheduling</h2>
-            <div class="card" style="margin-bottom: 24px;">
-                <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Location Breakdown</h3>
-                <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
-                    Scenes grouped by location. Shoot days summed from production-data.json when set.
-                </p>
-                <div style="overflow-x: auto;">
-                    <table class="compact-table" style="margin: 0;">
-                        <thead>
-                            <tr>
-                                <th style="width: 250px;">Location</th>
-                                <th style="width: 150px;">Scenes</th>
-                                <th style="width: 120px;">Total Shoot Days</th>
-                                <th>Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <tr>
-                                <td><strong>DALLAS NEW HOUSE - Exterior</strong></td>
-                                <td>1</td>
-                                <td><span class="shoot-days">1</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS NEW HOUSE - Interior</strong></td>
-                                <td>2</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS HOUSE - Exterior</strong></td>
-                                <td>3, 13</td>
-                                <td><span class="shoot-days">1</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>CHURCH FELLOWSHIP LAWN - Exterior</strong></td>
-                                <td>4</td>
-                                <td><span class="shoot-days">1</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>MARSH TRAIL - Exterior</strong></td>
-                                <td>5, 26</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>BRANFORD NEIGHBORHOOD - Exterior</strong></td>
-                                <td>6</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DOMINIC'S KITCHEN - Interior</strong></td>
-                                <td>7</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>BRANFORD ROCKS - Exterior</strong></td>
-                                <td>8</td>
-                                <td><span class="shoot-days">—</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>INSIDE THE TALL MARSH - Exterior</strong></td>
-                                <td>9</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>TALL GRASS - Exterior</strong></td>
-                                <td>10</td>
-                                <td><span class="shoot-days">—</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS KITCHEN - Interior</strong></td>
-                                <td>11</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>—</strong></td>
-                                <td>12, 15, 16, 17, 20, 25, 28</td>
-                                <td><span class="shoot-days">2.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS BACKYARD - Exterior</strong></td>
-                                <td>14</td>
-                                <td><span class="shoot-days">—</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS'S PORCH - Exterior</strong></td>
-                                <td>18</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS'S KITCHEN / LIVING ROOM - Interior</strong></td>
-                                <td>19</td>
-                                <td><span class="shoot-days">1</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS'S BASEMENT - Interior</strong></td>
-                                <td>21, 24</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS'S STUDY - Interior</strong></td>
-                                <td>22</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>DALLAS'S HOUSE - HALL / DEN - Interior</strong></td>
-                                <td>23</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>EDGE OF TALL GRASS - Exterior</strong></td>
-                                <td>27</td>
-                                <td><span class="shoot-days">—</span></td>
-                                <td>—</td>
-                            </tr>
-                            <tr>
-                                <td><strong>BRANFORD - Exterior</strong></td>
-                                <td>29</td>
-                                <td><span class="shoot-days">0.5</span></td>
-                                <td>—</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        </div>
+        <div class="card">
+            <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Scheduling Summary</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                <div>
+                    <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Total Shoot Days</h4>
+                    <div style="font-size: 2rem; font-weight: 600; color: var(--prod-accent); margin-bottom: 8px;">10
+                        days</div>
+                    <div style="font-size: 0.9rem; color: var(--text-secondary);">June 19 – July 12, 2026 · 29 scenes
+                        (script-system)</div>
                 </div>
             </div>
-            <div class="card">
-                <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Scheduling Summary</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
-                    <div>
-                        <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Total Shoot Days</h4>
-                        <div style="font-size: 2rem; font-weight: 600; color: var(--prod-accent); margin-bottom: 8px;">12 + 2 pickup</div>
-                        <div style="font-size: 0.9rem; color: var(--text-secondary);">29 scenes (script-system) · Pickup for SFX/action (Makayla + Dallas)</div>
-                    </div>
+        </div>
+    </section>
+
+    <section class="section section-anchor" id="production-notes">
+        <h2>Production Notes Summary</h2>
+        <div class="card">
+            <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Key Production Considerations</h3>
+            <p style="margin: 0 0 16px 0; color: var(--text-secondary);">Add per-scene notes in production-data.json
+                (keyElements, productionNotes). High-level categories below.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                <div>
+                    <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Visual Effects</h4>
+                    <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+                        <li>Creature design and animation</li>
+                        <li>Glowing effects, predator red eyes</li>
+                        <li>Burn marks and trails, weather</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Sound Design</h4>
+                    <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+                        <li>Hum, creature cries, equipment</li>
+                        <li>Storm, wind, coyotes</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Locations</h4>
+                    <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
+                        <li>Dallas' house, Dominic's house</li>
+                        <li>Branford streets, marsh, tall grass</li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="section section-anchor" id="production-notes">
-            <h2>Production Notes Summary</h2>
-            <div class="card">
-                <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Key Production Considerations</h3>
-                <p style="margin: 0 0 16px 0; color: var(--text-secondary);">Add per-scene notes in production-data.json (keyElements, productionNotes). High-level categories below.</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
-                    <div>
-                        <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Visual Effects</h4>
-                        <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
-                            <li>Creature design and animation</li>
-                            <li>Glowing effects, predator red eyes</li>
-                            <li>Burn marks and trails, weather</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Sound Design</h4>
-                        <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
-                            <li>Hum, creature cries, equipment</li>
-                            <li>Storm, wind, coyotes</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Locations</h4>
-                        <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
-                            <li>Dallas' house, Dominic's house</li>
-                            <li>Branford streets, marsh, tall grass</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <footer>
+        <p>Barnacle Film Studio Company ©2025</p>
+    </footer>
 
-        <footer><p>Barnacle Film Studio Company ©2025</p></footer>
+    <script>
+        var backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', function () {
+            backToTop.classList.toggle('visible', window.pageYOffset > 300);
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+            anchor.addEventListener('click', function (e) {
+                var href = this.getAttribute('href');
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    var target = document.querySelector(href);
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        var sections = document.querySelectorAll('.section-anchor');
+        var navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+        window.addEventListener('scroll', function () {
+            var current = '';
+            sections.forEach(function (section) {
+                if (pageYOffset >= section.offsetTop - 100) current = section.getAttribute('id');
+            });
+            navLinks.forEach(function (link) {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+        });
+    </script>
+</body>
 
-        <script>
-            var backToTop = document.getElementById('backToTop');
-            window.addEventListener('scroll', function() {
-                backToTop.classList.toggle('visible', window.pageYOffset > 300);
-            });
-            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-                anchor.addEventListener('click', function(e) {
-                    var href = this.getAttribute('href');
-                    if (href !== '#' && href !== '') {
-                        e.preventDefault();
-                        var target = document.querySelector(href);
-                        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
-            });
-            var sections = document.querySelectorAll('.section-anchor');
-            var navLinks = document.querySelectorAll('.nav-link[href^="#"]');
-            window.addEventListener('scroll', function() {
-                var current = '';
-                sections.forEach(function(section) {
-                    if (pageYOffset >= section.offsetTop - 100) current = section.getAttribute('id');
-                });
-                navLinks.forEach(function(link) {
-                    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-                });
-            });
-        </script>
-    </body>
 </html>
