@@ -97,6 +97,7 @@ function buildProductionRows(scenes, productionData, plotCards) {
     const time = data.time != null && data.time !== '' ? data.time : parsedTime;
     const durationMin = data.durationMin;
     const shootDays = data.shootDays;
+    const pickup = !!data.pickup;
     const keyElements = data.keyElements || '';
     const productionNotes = data.productionNotes || '';
     rows.push({
@@ -107,6 +108,7 @@ function buildProductionRows(scenes, productionData, plotCards) {
       time,
       durationMin,
       shootDays,
+      pickup,
       keyElements,
       productionNotes,
       act,
@@ -390,7 +392,7 @@ function generateBreakdownRows(rows) {
                             <td><span class="time-of-day">${escapeHtml(r.time || '—')}</span></td>
                             <td class="duration-col"><span class="duration">${r.durationMin != null ? r.durationMin + ' min' : '—'}</span></td>
                             <td class="act-col"><span class="act-tag act${r.act}">Act ${r.act}</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">${r.shootDays != null ? r.shootDays : '—'}</span></td>
+                            <td class="shoot-days-col"><span class="shoot-days">${r.pickup ? 'pickup' : (r.shootDays != null ? r.shootDays : '—')}</span></td>
                             <td class="key-elements">${r.keyElements ? r.keyElements.replace(/\n/g, ' ').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') : '—'}</td>
                             <td class="production-notes">${escapeHtml(r.productionNotes || '—')}</td>
                         </tr>`
@@ -426,8 +428,14 @@ function generateLocationTable(locationRows, totalDays) {
     .join('');
 }
 
+const PICKUP_DAYS = 2;
+
 function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays) {
   const totalScenes = rows.length;
+  const pickupSceneCount = rows.filter((r) => r.pickup).length;
+  const shootDaysLabel = totalDays != null && totalDays !== ''
+    ? (pickupSceneCount > 0 ? `${totalDays} shoot days + ${PICKUP_DAYS} pickup (SFX/action, Makayla + Dallas)` : `${totalDays} shoot days`)
+    : '';
   const overviewStats = actRangesList
     .map(
       (a) => `
@@ -495,7 +503,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                     <div>
                         <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Total</div>
                         <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">${totalMin ? '~' + totalMin + ' min' : totalScenes + ' scenes'}</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">${totalScenes} scenes${totalDays ? ' · ' + totalDays + ' shoot days' : ''}</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">${totalScenes} scenes${shootDaysLabel ? ' · ' + shootDaysLabel : ''}</div>
                     </div>
                     ${overviewStats}
                 </div>
@@ -558,8 +566,8 @@ ${locationRowsHtml}
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
                     <div>
                         <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Total Shoot Days</h4>
-                        <div style="font-size: 2rem; font-weight: 600; color: var(--prod-accent); margin-bottom: 8px;">${totalDays || '—'}</div>
-                        <div style="font-size: 0.9rem; color: var(--text-secondary);">${totalScenes} scenes (script-system)</div>
+                        <div style="font-size: 2rem; font-weight: 600; color: var(--prod-accent); margin-bottom: 8px;">${totalDays ?? '—'}${pickupSceneCount > 0 ? ' + ' + PICKUP_DAYS + ' pickup' : ''}</div>
+                        <div style="font-size: 0.9rem; color: var(--text-secondary);">${totalScenes} scenes (script-system)${pickupSceneCount > 0 ? ' · Pickup for SFX/action (Makayla + Dallas)' : ''}</div>
                     </div>
                 </div>
             </div>
