@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/18/2026, 7:13:33 AM*
+*Compiled on 2/18/2026, 11:38:15 AM*
 
 ---
 
@@ -2164,7 +2164,7 @@ Dallas at the window again. The eyes are gone. The night is still.
 
 <!-- nickname: the-marsh-plan -->
 
-INT. DALLAS'S BASEMENT - DAY (NEXT MORNING OR LATER)
+INT. DALLAS'S BASEMENT - MORNING
 
 Dominic into his basement and looks at all of the gear that was previously on the creature. 
 
@@ -2175,17 +2175,22 @@ Dallas looks goes to look at the tall grass for a while.
 Out of breath Makayla and Asher come riding with their bicycles.
 
 MAKAYLA
-We got to go now - 
+How is the burn mark developed?
 
-Dallas looks at the ground for a long time at the burn mark. It seems to have increased in size and now is going towards a path in the house. 
+<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
 
-Burn marks lead from the driveway toward the house—along the siding, up toward the windows.
+(action)
+Makayla sizes up Dallas and reaches for his arm. She holds it - and realizes that the same burn marks that are on the ground - are also on Dallas' arm - and her arm as well. 
 
 MAKAYLA
-Asher look at this. A path. Something left. Something came for the creature... DALLAS we have to go back. 
+This isn't good. 
 
-DALLAS
-And do what?
+<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
+
+(action)
+Dallas looks at the ground for a long time at the burn mark. It seems to have increased in size and now is forming lines of darkness towards his house, not unlike a corrupt vein system. 
+
+Burn marks lead from the driveway toward the house—along the siding, up toward the windows. Makayla follows them. She does some quiet mental math and takes a deep breath.
 
 MAKAYLA
 Does one of your devices could it be reversed engineered to transmit the sound that you have been recording.
@@ -2198,7 +2203,38 @@ Dallas thinks for a moment but his face says it all.
 DALLAS
 I suppose. 
 
-INT. 
+<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
+
+(action)
+A faint hum is heard off in the distance.  Makayla turns to the group. 
+
+MAKAYLA
+We have to go back - and pause the dark creatures - to allow for the light creatures space to leave this place.  We will wait for the evening and then strike. 
+
+ASHER
+Asher lets go back to the spot and see if we need anything.
+
+<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
+
+(action)
+Makayla looks and sizes up Dallas.
+
+MAKAYLA
+Dallas, you come too. 
+
+EXT. MAKAYLA'S FORT - LATE SUN
+
+Makayla and Asher and Dallas sit on a tree log among the Long Island Sound. They watch - as the wind picks up - and the storms clouds make their way. 
+
+MAKAYLA
+I really think the storm will pass... It's been 17 years since our mom has passed and we've been living with Dominic and Aunt Janice. 
+
+<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
+
+(action)
+Dallas looks onward
+
+Asher brings the final device forward. 
 
 ---
 
