@@ -736,10 +736,111 @@ function compile() {
   console.log('Updating plot cards...');
   writePlotCardsData(scenes);
 
+  // Load the just-written plot cards data to embed in the gallery
+  console.log('Generating index.html (Gallery)...');
+  const plotCardsData = JSON.parse(fs.readFileSync(PLOT_CARDS_PATH, 'utf8'));
+  const galleryHtml = generateGalleryPage(plotCardsData);
+  const galleryPath = path.join(__dirname, 'index.html');
+  fs.writeFileSync(galleryPath, galleryHtml, 'utf8');
+  console.log(`✓ Created ${galleryPath}`);
+
   console.log('\n✓ Compilation complete!');
   console.log(`  - Markdown: ${OUTPUT_MD}`);
   console.log(`  - HTML: ${OUTPUT_HTML}`);
   console.log(`  - Plot cards: ${PLOT_CARDS_PATH}`);
+  console.log(`  - Gallery: ${galleryPath}`);
+}
+
+function generateGalleryPage(cardsData) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatures in the Tall Grass Script - Scene Gallery</title>
+  <link rel="stylesheet" href="script.css?v=${new Date().toISOString().split('T')[0]}">
+</head>
+<body class="plot-cards-page">
+  <div class="gallery-container">
+    <header class="plot-cards-header">
+      <h1>Creatures in the Tall Grass Script</h1>
+      <p class="plot-cards-subtitle">Scene gallery — main beats per scene · <a href="full_script.html">Open Full Script</a> to jump to any scene</p>
+    </header>
+
+    <nav class="nav no-print plot-cards-nav">
+      <div class="nav-left">
+        <a class="nav-link" href="/pages/summer.html" title="Summer Hub">☀ Summer</a>
+        <a class="nav-link nav-link--active" href="index.html" title="Gallery">▦ Gallery</a>
+        <a class="nav-link" href="full_script.html" title="Full Script">Full Script</a>
+        <a class="nav-link" href="scene_outline.html" title="Scene Outline">Scene Outline</a>
+        <a class="nav-link" href="/pages/summer/directors-notes/index.html" title="Director's Notes">Director's Notes</a>
+        <a class="nav-link" href="/pages/summer/production.html" title="Production plan">Production plan</a>
+      </div>
+    </nav>
+
+    <div class="plot-cards-grid" id="plotCardsGrid" aria-label="Scene index cards">
+      <!-- Cards injected by JS -->
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // Embedded data from compile.js
+      const CARDS_DATA = ${JSON.stringify(cardsData)};
+      
+      const grid = document.getElementById('plotCardsGrid');
+
+      function toRoman(num) {
+        const map = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+        let n = num, out = '';
+        for (const [v, s] of map) {
+          while (n >= v) { out += s; n -= v; }
+        }
+        return out;
+      }
+
+      function renderCards(cards) {
+        if (!cards || !cards.length) {
+          grid.innerHTML = '<p class="plot-cards-loading">No card data available.</p>';
+          return;
+        }
+        
+        let currentAct = null;
+        cards.forEach(function(card) {
+          if (card.act !== currentAct) {
+            currentAct = card.act;
+            const actLabel = document.createElement('div');
+            actLabel.className = 'plot-cards-act-label';
+            actLabel.setAttribute('aria-hidden', 'true');
+            actLabel.textContent = 'ACT ' + toRoman(card.act) + ' — ' + (card.actTitle || '');
+            grid.appendChild(actLabel);
+          }
+          const a = document.createElement('a');
+          a.className = 'plot-card';
+          a.href = 'full_script.html#scene-' + card.n;
+          a.setAttribute('data-scene', card.n);
+          a.innerHTML =
+            '<span class="plot-card-number">' + card.n + '</span>' +
+            '<h2 class="plot-card-title">' + escapeHtml(card.title) + '</h2>' +
+            '<p class="plot-card-summary">' + escapeHtml(card.summary) + '</p>' +
+            '<span class="plot-card-link">Read in script →</span>';
+          grid.appendChild(a);
+        });
+      }
+
+      function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      // Render immediately
+      renderCards(CARDS_DATA);
+    })();
+  </script>
+</body>
+</html>`;
 }
 
 // Run if called directly

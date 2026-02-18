@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creatures in the Tall Grass Script - Scene Gallery</title>
-  <link rel="stylesheet" href="script.css?v=20260108-5">
+  <link rel="stylesheet" href="script.css?v=2026-02-18">
 </head>
 <body class="plot-cards-page">
   <div class="gallery-container">
@@ -25,15 +25,16 @@
     </nav>
 
     <div class="plot-cards-grid" id="plotCardsGrid" aria-label="Scene index cards">
-      <!-- Cards injected by JS from plot-cards-data.json -->
-      <p class="plot-cards-loading" id="plotCardsLoading">Loading cards…</p>
+      <!-- Cards injected by JS -->
     </div>
   </div>
 
   <script>
     (function() {
+      // Embedded data from compile.js
+      const CARDS_DATA = [{"n":1,"id":"arrival","title":"Arrival","act":1,"actTitle":"Arrival & Discovery","summary":"New house, tall grass. He finds a rig in the reeds. Makayla and Asher want his oscillator."},{"n":2,"id":"dallas-night","title":"Dallas Night","act":1,"actTitle":"Arrival & Discovery","summary":"Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies."},{"n":3,"id":"the-hum","title":"The Hum","act":1,"actTitle":"Arrival & Discovery","summary":"Walk to town with Dominic. Birds pointed at the marsh. Streetlight flickers. Fellowship invite."},{"n":4,"id":"fellowship","title":"Fellowship","act":1,"actTitle":"Arrival & Discovery","summary":"Church picnic. Dallas meets Makayla and Asher. Janice hands off Howie."},{"n":5,"id":"marsh-walk-later","title":"Marsh Walk Later","act":1,"actTitle":"Arrival & Discovery","summary":"Boardwalk through the reeds. Dominic shows the Merlin app. Something moving underneath."},{"n":6,"id":"news-vans","title":"News Vans","act":1,"actTitle":"Arrival & Discovery","summary":"News vans in the street. Pat on camera. Burn marks on Dominic's driveway. Dallas stays."},{"n":7,"id":"the-coordinates","title":"The Coordinates","act":1,"actTitle":"Arrival & Discovery","summary":"The kids' basement. Mr. Mike scratches numbers. Makayla and Asher grab the coordinates; she wants the oscillator."},{"n":8,"id":"dallas-marsh-walk","title":"Dallas Marsh Walk","act":1,"actTitle":"Arrival & Discovery","summary":"Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out. [Plot 1]"},{"n":9,"id":"dallas-night-work","title":"The Golden Daze","act":1,"actTitle":"Arrival & Discovery","summary":"He replays the clip. Grid coordinates—Mr. Mike's language. The creature in the kitchen; the scope picks up a pulse."},{"n":10,"id":"shadows-in-wind","title":"Creature Discovery","act":1,"actTitle":"Arrival & Discovery","summary":"Readings spike. In the hollow: gold orbs, one injured. He takes it. Something's coming."},{"n":11,"id":"howie-walk-2","title":"The Kitchen Hospital","act":1,"actTitle":"Arrival & Discovery","summary":"He runs home with it. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold."},{"n":12,"id":"the-burn-mark","title":"The First Night With Creature","act":2,"actTitle":"The Creature","summary":"Wires on the creature's head. It sings through its back-holes. She can't tell anyone. [Plot 2]"},{"n":13,"id":"entering-grass","title":"Makayla Confronts Dallas","act":2,"actTitle":"The Creature","summary":"Burn mark in the grass. Crystal. She confronts him. They're in this together. [Plot 2]"},{"n":14,"id":"creature-rescue","title":"Dallas And Makyla Bond","act":2,"actTitle":"The Creature","summary":"They sit with the creature. Evidence. A bond. Howie at their feet."},{"n":15,"id":"the-burn-mark-2","title":"Makayla's Lair","act":2,"actTitle":"The Creature","summary":"Tour of the lair. Tapes: the glow, then the dark figures. They're being watched."},{"n":16,"id":"the-escape","title":"Hide The Creature","act":2,"actTitle":"The Creature","summary":"Rush back to Dallas's. Dark figures in the trees. Burn mark in the yard; she pockets the crystal. Uncle Dom can't know."},{"n":17,"id":"makeshift-hospital","title":"Back Home","act":2,"actTitle":"The Creature","summary":"Creature in the basement. The crew knows. Lock the door."},{"n":18,"id":"entering-grass-2","title":"Makayla's Bond With Creature","act":2,"actTitle":"The Creature","summary":"Oscilloscope on the creature. 115.3 MHz. Makayla: it's pulling power from the grid."},{"n":19,"id":"life-group-arrives","title":"Life Group Arrives","act":2,"actTitle":"The Creature","summary":"Lifegroup tonight. Dominic drops off the music. The creature's downstairs—then Mr. Mike freaks. Everyone sees it. [Plot 3]"},{"n":20,"id":"basement-huddle","title":"Creature Escapes","act":2,"actTitle":"The Creature","summary":"The creature's gone. Red eyes at the window. They're coming for it. Doorbell—first family's here. [Plot 3]"},{"n":21,"id":"the-hymn","title":"The Hymn","act":2,"actTitle":"The Creature","summary":"House full. They sing. The hum answers. Lights pulse. Just the storm, they say. [Plot 3]"},{"n":22,"id":"red-eyes","title":"Red Eyes","act":2,"actTitle":"The Creature","summary":"They find it in the gnarl. It's fading. Sierra's folder: if the Red-Eyes take them, it's all ghost stories. They'll return it."},{"n":23,"id":"creature-missing","title":"Night Fears","act":2,"actTitle":"The Creature","summary":"Red eyes at the edge of the yard. The creature's gone. [Plot 4]"},{"n":24,"id":"marsh-confrontation","title":"The Marsh Plan","act":3,"actTitle":"The Return","summary":"Shoebox empty. Burn trail on the minivan. They're going in. [Plot 5–6]"},{"n":25,"id":"predator-attack","title":"Predator Attack","act":3,"actTitle":"The Return","summary":"Mr. Mike: Where is it? Burn trail. They hear the creature cry. We have to go get it. [Plot 7]"},{"n":26,"id":"the-perimeter","title":"The Perimeter","act":3,"actTitle":"The Return","summary":"Gold vs red eyes. Paralysis. The creature dies in the marsh. They run. Dominic: they'll come for us. Then the plan. [Plot 8–10]"},{"n":27,"id":"the-last-dinner","title":"The Last Battle","act":3,"actTitle":"The Return","summary":"Predators turn. They run. Trap set. Storm coming. [Plot 11]"},{"n":28,"id":"final-echoes","title":"Back To Howie","act":4,"actTitle":"Aftermath","summary":"She goes in. Phase cancellation. She records the waveform. They're free. [Plot 12–13]"},{"n":29,"id":"aftermath","title":"Aftermath","act":4,"actTitle":"Aftermath","summary":"Branford breathes again. Pat on TV. The folder's with the kids. Dallas still listening. [Plot 14]"}];
+      
       const grid = document.getElementById('plotCardsGrid');
-      const loading = document.getElementById('plotCardsLoading');
 
       function toRoman(num) {
         const map = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
@@ -46,10 +47,10 @@
 
       function renderCards(cards) {
         if (!cards || !cards.length) {
-          loading.textContent = 'No card data. Check plot-cards-data.json.';
+          grid.innerHTML = '<p class="plot-cards-loading">No card data available.</p>';
           return;
         }
-        loading.remove();
+        
         let currentAct = null;
         cards.forEach(function(card) {
           if (card.act !== currentAct) {
@@ -80,12 +81,8 @@
         return div.innerHTML;
       }
 
-      fetch('plot-cards-data.json')
-        .then(function(r) { return r.json(); })
-        .then(renderCards)
-        .catch(function(err) {
-          loading.textContent = 'Could not load plot-cards-data.json. ' + (err.message || '');
-        });
+      // Render immediately
+      renderCards(CARDS_DATA);
     })();
   </script>
 </body>

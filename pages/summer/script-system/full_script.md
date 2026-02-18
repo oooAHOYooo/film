@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/18/2026, 11:38:15 AM*
+*Compiled on 2/18/2026, 12:14:38 PM*
 
 ---
 
@@ -1896,7 +1896,6 @@ INT. DALLAS'S BASEMENT - SAME TIME
 Dallas shuffles through a pile of old equipment—mono cables, spare parts. The creature doesn't look like it's doing much. It's breathing, slightly. Dallas struggles to find a bed for it. He settles on an old shoebox—pauses when he sees his wife's handwriting on one, sets that aside—and gently nestles the creature inside. Its little feet curl tightly. It breathes slowly.
 
 
-
 He finds a way to poke a hole in something so it can drink. MAKAYLA and ASHER watch from the staircase. Makayla comes down. She takes out the crystal. It begins to glow. Her hair lifts. She and the creature seem to communicate—a beat of shared attention. The creature's glow dims as she pulls her hand away.
 
 
@@ -1904,7 +1903,6 @@ He finds a way to poke a hole in something so it can drink. MAKAYLA and ASHER wa
 INT. DALLAS'S LIVING ROOM - LATER
 
 People mill and talk. Someone asks where Dallas is.
-
 
 
 DOMINIC
@@ -1944,6 +1942,20 @@ TYLER
 Would anyone like to say any words before we start?
 
 They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them.
+
+MR. MIKE barges through the front door with JANICE guiding him inside. 
+
+MR. MIKE
+Where is it? Where is it?
+
+JANICE
+Oh, calm down Mr. Mike, we are here now.
+
+TYLER
+Hello Mr. Mike - thank you for joining us!
+
+
+
 
 
 
@@ -1994,6 +2006,40 @@ INT. BASEMENT
 
 The creature has escaped!
 
+
+He searches the kitchen, the hall, haphazard. Makayla makes desperate eye contact with DALLAS, who is by the window with his equipment.
+
+MAKAYLA
+Dallas, where is it?
+
+DALLAS
+I am not sure. 
+
+The crew search high and low. From a distance Dominic calls them to come upstairs for they are about to do praise reports. 
+
+MAKAYLA
+What happened?
+
+Dallas doesn't answer. Makayla reads his face.
+
+MAKAYLA
+The creature?
+
+<!-- scene: 21 file: s21.md nickname: the-hymn -->
+
+(action)
+Dallas nods. Makayla grabs his device off the table. DOMINIC appears and grabs her wrist. The three of them stand there. From the direction of the marsh—a cry. Distant, unmistakable. The creature. Then the hum, low and everywhere.
+
+Makayla pulls free. She turns to both of them. Her eyes dart in the direction of the tall grass on the edge of Dallas' yard. 
+
+A beat. Dallas stares at her.
+
+MAKAYLA (CONT'D)
+We have to go back.
+
+Dallas looks at the tall grass. At the reading. At her. Then toward the house—Howie. They grab him and start down the trail.
+
+
 ---
 
 
@@ -2024,25 +2070,10 @@ That's fair. Dallas we'll go.
 (action)
 Dominic takes the last package of grocies back into his minivan.
 
-EXT. TALL GRASS
 
-Dallas and Makayla run into the marsh to and follow the glow. 
 
-EXT. TALL GRASS 
+They work in silence—listening, adjusting, mapping the signal. Makayla pulls out Sierra's folder and cross-references a frequency notation with what's on screen. A match.
 
-Makayla and Dalls find the creature in the middle of the gnarl where Dallas found it initially.
-
-The creature’s pulse is slowing. The glow in its neck dims into a faint amber. 
-
-Dallas reaches out, his fingers trembling. As he touches the creature's back, the vibration softens. The creature quiets, its breathing lining up with the hum of his equipment.
-
-He notices the creature was lying on a second crystal, similar to the one Makayla found.
-
-As Dallas lifts the fragile creature toward his chest, it looks out and cries for the crystal—in vain. It faints. The scope in his pocket goes silent.
-
-Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds—something massive, rocketing through the blades like an arrow. Dallas gently lowers the creature to the ground.
-
-All around him it seems like dark chaos is errupting.
 
 INT. DALLAS'S STUDY - SAME TIME
 
@@ -2249,52 +2280,52 @@ Asher brings the final device forward.
 
 <!-- nickname: predator-attack -->
 
-INT. DALLAS'S HOUSE - DAY
+EXT. EDGE OF THE TALL GRASS
 
-MR. MIKE barges through the front door. MAKAYLA chases after him.
+Dallas, Makayla and Asher all stand before the edge of the tallgrass with the shoulder rig device. 
 
-MR. MIKE
-Where is it? Where is it?
+They all take a deep breath as the winds pick up. And enter.
 
-He searches the kitchen, the hall, haphazard. Makayla makes desperate eye contact with DALLAS, who is by the window with his equipment.
+EXT. INSIDE THE TALLGRASS
 
+Dallas, Makayla, and Asher push through the reeds. The same glow they saw before—flickering, faint. They rush toward it. 
 
-EXT. DALLAS'S BACKYARD - CONTINUOUS
+Makayla and Dalls find the creature in the middle of the gnarl where Dallas found it initially.
 
-Makayla watches from a distance. She walks over. She doesn't ask permission. She picks up the second receiver and starts scanning frequencies alongside him. Dallas's reading on the handheld jumps. He looks over. A beat. He acknowledges her.
+The creature’s pulse is slowing. The glow in its neck dims into a faint amber. 
 
-They work in silence—listening, adjusting, mapping the signal. Makayla pulls out Sierra's folder and cross-references a frequency notation with what's on screen. A match.
+Dallas reaches out, his fingers trembling. As he touches the creature's back, the vibration softens. The creature quiets, its breathing lining up with the hum of his equipment.
+
+He notices the creature was lying on a second crystal, similar to the one Makayla found.
+
+As Dallas lifts the fragile creature toward his chest, it looks out and cries for the crystal—in vain. It faints. The scope in his pocket goes silent.
+
+Suddenly, the wind changes. A heavy, crushing sound approaches through the reeds—something massive, rocketing through the blades like an arrow. Dallas gently lowers the creature to the ground.
+
+Behind them it seems like dark chaos is errupting.
+
+In the dark scary chaos that is beyond them - little by little faint pulses of golden light begin to swarm the creature. 
+
+As they inch closer, they see them: a group of creatures, birdlike and small, gathered in a loose circle. They are attending to the injured one—the one from the shoebox. Gentle, urgent.
+
+Dallas and Makayla slow. Asher whines and grabs his head on the floor. The creatures turn and look at Asher in distress. One of them shakes its head and Asher's breathing comes back to normal. 
+
+Suddenly and just then dark figures appear in the distance and the hum begins faintly.
+
+Inch by icnch the hum draws closer.
 
 MAKAYLA
-What happened?
-
-Dallas doesn't answer. Makayla reads his face.
-
-MAKAYLA
-The creature?
+(whispering)
+Asher, turn it on. 
 
 <!-- scene: 25 file: s25.md nickname: predator-attack -->
 
 (action)
-Dallas nods. Makayla grabs his device off the table. DOMINIC appears and grabs her wrist. The three of them stand there. From the direction of the marsh—a cry. Distant, unmistakable. The creature. Then the hum, low and everywhere.
+Asher turns on the device that is strapped to Makayla's shouder. He turns it up all the way the dial and plugs in the numbers 1, 1, 5, 3. 
 
-Makayla pulls free. She turns to both of them. Her eyes dart in the direction of the tall grass on the edge of Dallas' yard. 
+The dark creatures begin to swarm the crowd from the edge of a radius among the tall grass. 
 
-A beat. Dallas stares at her.
-
-MAKAYLA (CONT'D)
-We have to go back.
-
-Dallas looks at the tall grass. At the reading. At her. Then toward the house—Howie. They grab him and start down the trail.
-
-EXT. MARSH TRAIL - LATER
-
-Dallas, Makayla, and Howie push through the reeds. The same glow they saw before—flickering, faint. They rush toward it. 
-
-The trail leads toward the salt marsh. As they inch closer, they see them: a group of creatures, birdlike and small, gathered in a loose circle. They are attending to the injured one—the one from the shoebox. Gentle, urgent.
-
-Dallas and Makayla slow. Howie whines. The creatures have not yet scattered. For a moment, it looks like help. Like a family.
-
+Dallas and Makayla hold their arms in pain. 
 
 ---
 
@@ -2320,21 +2351,13 @@ More lights appear. Dozens of golden glows rise like lanterns in the mist. Then 
 The red eyes begin to circle the golden ones. One by one, in a blur—the mind fills in a predator pouncing—they snatch the lights. The red-eye creatures don't hum. They cancel. Sound disappears the way shadow erases light.
 
 
-
-<div class="script-addition">
-
-> addition
-
-
 MAKAYLA
 (whispering, barely audible)
-They're erasing the frequency. If there's nothing left to record, no one will ever know they existed.
+They're erasing the frequency. Asher turn it on. 
 
+<!-- scene: 26 file: s26.md nickname: the-perimeter -->
 
-</div>
-
-
-
+(action)
 More predators emerge. For every inch they creep, shadow climbs the tall grass. The paralysis holding Dallas and Makayla seems to come from the elders—a last effort to protect the humans—but the elders are no match. The red eyes blink. The small creatures huddle in terror.
 
 Dallas and Makayla move slowly at first, then break into a brisk walk back the way they came. Dallas glances back.
@@ -2349,127 +2372,7 @@ EXT. MARSH TRAIL - CONTINUOUS
 
 Dallas runs with the creature in his coat. He stops. Looks down. The creature has stopped pulsing. It is motionless. He sets it down. Other golden pulses gather around it. The hum drops—lower and lower on the bass scale.
 
-Dallas backs away. Makayla and Howie are already at the edge of the grass. He catches up. They don't look back. They make their way out of the tall grass.
-
-<!-- nickname: final-echoes -->
-
-EXT. DALLAS'S HOUSE - LATE DAY (STORM)
-
-The sun sets. The crew peer out at the yard and the tall grass.
-
-DOMINIC
-Let's have some dinner.
-
-He wipes the counter hard. A cup tips over. Mr. Mike nods from his chair.
-
-MR. MIKE
-Good time to eat.
-
-INT. DALLAS'S KITCHEN - CONTINUOUS
-
-Dominic and Asher cook. Makayla and Dallas share a glance at the window—Dallas watching the weather, 
-
-<div class="script-addition">
-
-> addition
-
-the equipment in the yard,
-
-</div>
-
- the grass.
-
-They eat standing, plates in hand, taking turns at the window. Outside, the noise grows. Sniffs. Gnarls. The creatures. Makayla rattles in her chair, impatient.
-
-MAKAYLA
-What should we do?
-
-Dominic looks defeated. Dallas says nothing. Mr. Mike rocks in his chair, muttering. He taps the same three beats on the armrest, over and over.
-
-MR. MIKE
-One-one-five point three. One-one-five point three.
-
-Dominic is hesitant. He asks Dallas for answers about the field. Dallas doesn't have them. Dominic argues they should focus on boarding up the house for the storm.
-
-As he speaks—Makayla bolts. She runs out the back door, cutting across the yard toward the reeds before anyone can grab her.
-
-The sound spikes once. Sharper. Shorter. Then it cuts.
-
-Makayla snatches the crystal from her pocket and sprints. Dominic chases her. He can't reach her in time. He hesitates at the edge of the tall grass. He cries her name. Asher and Dallas reach the grass and stare.
-
-EXT. DALLAS'S BACKYARD - NIGHT
-
-Dallas powers on the speakers and the oscillator. The trap hums to life—a low, steady broadcast aimed at the corridor between the equipment.
-
-Howie cowers next to him. Mr. Mike watches from the window. Dominic rushes past for flashlights. He tries to call Makayla on the two-way radio—Asher has the other walkie. 
-
-Dallas waits with Howie on the porch. He watches his equipment. The blinking orange light turns green. He hurries over to inspect. The indicator: green, then orange pulses.
-
-The storm approaches. The two of them pace. Mr. Mike, inside, hears the thunder and yells.
-
-MR. MIKE
-They're coming! They're coming!
-
-Dallas checks the trap one last time—the speakers are holding, the sensor blinking steady between them.
-
-A distant cry. Then the low hum. Night falls. The winds pick up. Eyes circulate in the fields. Dominic grabs Dallas's sleeve. Dallas pulls free without turning around.
-
-Dallas brings Howie inside. He sets the leash on the hook like he'll be back in a minute. He rubs Howie's face. Leaves the porch light on. Then he heads out to the tall grass.
-
-EXT. TALL GRASS - NIGHT
-
-A strange silence engulfs Dallas despite the wind. He sees a glimmer of fading light and moves toward it. The sensation of being watched almost overwhelms him. He keeps going.
-
-He stops. Pulls a crumpled napkin from his pocket. Opens it: 45 L 15 R. It matches his equipment. The compass on the device.
-
-In the distance: Makayla, holding one of the creatures. Asher and Dominic sit next to her, dazed. But Makayla isn't crying out. She isn't frozen. She is focused.
-
-In her lap: Dallas's oscillator. She has it wired to the creature's back-holes with the alligator clips from the kitchen triage. Her fingers move across the dial with precision—adjusting, listening, adjusting again. The creature's golden pulse flickers in time with her tuning.
-
-She is actively broadcasting—matching the creature's output frequency and amplifying it outward. The golden light around them strengthens. The dark shapes at the edge of the reeds hesitate.
-
-Dallas stops. He watches her. This isn't the girl who asked "What does that do?" in the kitchen. She has mastered the tool he gave her.
-
-Little by little, dark eyes appear around them. Another creature of the same size emerges and begins to nurture the one Makayla holds.
-
-Dallas kneels beside her. He makes contact with the creature through his receiver. The creature begins to sing—and the oscillator catches the song, amplifies it, pushes it outward in a wave that rolls across the marsh.
-
-The creature looks at Makayla and other creatures around it step forward. It reaches a small limb and touches the Crystal in her hand. Makayla gives it to her. The Crystal changes color - it stops glowing and settles into a rich amber solid. 
-
-Another creature chimes and the family reunites. 
-
-Makayla looks down at the stone - no longer a crystal but 
-
-The crew are paralyzed—and so are the dark forces. The Red-Eyes don't just cower. They lock in place—stun-locked, the same phase cancellation Makayla designed at the gap. Total silence around the predators. Total stillness.
-
-Makayla glances down at the oscillator screen. The waveform is clean. Sharp. Unmistakable. She hits record.
-
-The storm rages. The creatures retreat into their holes in the gnarls of the soft trees. The Red-Eyes unfreeze and scatter into the dark.
-
-
-</div>
-
-
-
-INT. DALLAS'S HOUSE - LATE NIGHT / DAWN
-
-Dallas, Dominic, and Makayla sit by the window and watch for the night to end. It does.
-
-EXT. / INT. DALLAS'S HOUSE - MORNING
-
-Morning. Dallas is still making calculations. Then he stops. 
-
-<div class="script-deletion">
-
-> deletion
-
-He puts his equipment in the trash.
-
-</div>
-
- The crew leaves. Dallas is alone again.
-
-He looks outside. The soft sound—the pulse of the creature—returns. Faint. There. He listens.
+Dallas backs away. Makayla and Asher are already at the edge of the grass. He catches up. They don't look back. They make their way out of the tall grass.
 
 
 ---
