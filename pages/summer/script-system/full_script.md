@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/19/2026, 12:42:41 PM*
+*Compiled on 2/19/2026, 5:18:50 PM*
 
 ---
 
@@ -162,7 +162,9 @@ Dallas presses the sticker on the side of his new receiver.
 
 As he does this, he hears a HUM emerging from outside. The sound is faint and he listens
 
-Dallas walks to the window and attempts to record the readings, and just as it capturing something, the battery dies. 
+Dallas walks to the window and attempts to record. The needle spikes. A pure, harmonic tone cuts through the static—a "Golden Note." He holds it. One second. Two. Three. It's clean. It's proof. 
+
+Then—the battery dies. The hum vanishes. But looking down at the tape counter, Dallas sees it: 00:03. He has it. 
 
 
 Scrambling, Dallas looks through his box of equipment for other devices but they all take C batteries. 
@@ -1294,13 +1296,10 @@ DALLAS
 How did you know that?
 
 MAKAYLA
-I saw a folder open. Where is she now?
+I saw the folder open. Where is she now?
 
 DALLAS
 She's gone.
-
-MAKAYLA
-Ah... our mom too. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1322,24 +1321,40 @@ I'm fine.
 DALLAS
 What did you see?
 
+MAKAYLA
+Not sure... I'm not sure - I feel a bit uninspired. 
 
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
-***
+(action)
+Makayla takes a deep breath and looks at Dallas.
 
 MAKAYLA
-What do you think it is?
+What do you do when you are sad? Like sad all the time. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas looks at Howie and then at Makayla.
 
 DALLAS
-I am not sure.
+I don't know.
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas and Makayla sit for a while on the long old picnic table outside his house.
 
 MAKAYLA
-I don't think its an alien.
+We need to document this... Dallas. 
 
-DALLAS
-No, I don't think so either.
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Makayla looks at Asher and then back at the house. 
 
 MAKAYLA
-What do you know about sound?
+We can't tell anyone about this. The sound it made. We should try to record that.
 
 DALLAS
 I know that certain frequencies don't record - they repel. 
@@ -1360,7 +1375,7 @@ MAKAYLA
 And what repels.
 
 DALLAS
-I am not sure.
+Things that are usually on the opposite end of the spectrum.
 
 MAKAYLA
 So what are we talking about?
@@ -1368,17 +1383,15 @@ So what are we talking about?
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas and Makayla sit for a while on the long old picnic table outside his house. 
+The breeze overwhelms them both.
 
-MAKAYLA
-We need to document this... Dallas. 
 
 INT. DALLAS'S KITCHEN - LATER
 
 Makayla and Dallas walk into the kitchen and find the creature sleeping peacefully below the heat lamp. 
 
 MAKAYLA
-I've read about fish the way the transmit information. Scientists forever thought that the sea was silent - but our ears just can't pick up the right frequenies.
+I've read about fish the way the transmit information. Scientists used to think that the sea was silent - but our ears just can't pick up the right frequenies.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1718,6 +1731,50 @@ Great - yeah. Hey Makayla! You cool here with staying here and having Dallas hel
 
 MAKAYLA
 He's downstairs. 
+
+DOMINIC
+(to Dallas)
+Roger roger, well - I'm heading to Costco - do you need anything?
+
+DALLAS
+No thanks - I'm good.
+
+<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
+
+(action)
+Dominic leaves.
+
+INT. DALLAS BASEMENT
+
+Makayla stares for a long time looking at the creature. 
+
+MAKAYLA
+(to Dallas)
+I think it's dying. 
+
+<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
+
+(action)
+Dallas walks over and looks at the creature. He turns the dial on his receiver to a different frequency. The creature begins to perk up.
+
+MAKAYLA
+It told me that it needs to go back. 
+
+DALLAS
+Back where?
+
+MAKAYLA 
+To where you grabbed it.
+
+<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
+
+(action)
+The summer breeze blows through the open window. 
+
+MAKAYLA
+(to Dallas)
+We are going to have to go before the red eyes take it. And take us. 
+
 
 ---
 
