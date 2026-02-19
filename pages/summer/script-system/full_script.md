@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/18/2026, 9:54:33 PM*
+*Compiled on 2/18/2026, 10:00:29 PM*
 
 ---
 
@@ -141,7 +141,10 @@ Curious and wide awake - Dallas finishes unpacking boxes. The room is sparse, fi
 
 He hears a noise from outside. Dallas pauses and peers through his living room window. 
 
-Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Sierra".
+Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Lepidoptera by Sierra".
+
+Dallas opens up the box to find sketches of buttleries - and other insects. 
+
 
 Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. 
 
@@ -1302,8 +1305,28 @@ Makayla and Dallas look on the ground for a while as they sit outside the patio.
 
 Asher sits alone.
 
+MAKAYLA
+So your wife was an Episotmialist?
+
 DALLAS
-Is he okay?
+How did you know that?
+
+MAKAYLA
+I saw folder open. Where is she now?
+
+DALLAS
+She's gone.
+
+MAKAYLA
+Ah... our mom too. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Asher looks on to the distance and then on the ground and then out on the tall grass. 
+
+DALLAS
+Is Asher okay?
 
 MAKAYLA
 He's fine... He's just processing. 
@@ -1319,10 +1342,7 @@ What did you see?
 
 
 
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Asher sits alone on an old picnic table that the previous tentant moved in.
+***
 
 MAKAYLA
 What do you think it is?
@@ -2556,7 +2576,7 @@ On the bench next to them: Sierra's folder, open with ross-referencings sketches
 
 INT. DALLAS'S WORKSHOP / HOUSE - DAY
 
-Dallas at his desk. The tape recorder plays his late wife's voice. He fiddles with a recording mechanism. Wires. A modified receiver. He finally gets it working. He hits record. From outside, the hum from the tall grass bleeds into the room. He listens. He begins to sketch—notations, marks. An alphabet. Something to capture it.
+Dallas at his desk. He fiddles with a recording mechanism. Wires. A modified receiver. He finally gets it working. He hits record. From outside, the hum from the tall grass bleeds into the room. He listens. He begins to sketch—notations, marks. An alphabet. Something to capture it.
 
 INT. DALLAS'S BEDROOM - NIGHT
 
