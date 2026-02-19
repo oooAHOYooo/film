@@ -1,78 +1,350 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Table Read — Creatures in the Tall Grass</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="/styles/style.css">
-        <link rel="stylesheet" href="/styles/summer.css">
-        <style>
-            .table-read-page { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem; }
-            .table-read-page h1 { margin-bottom: 0.5rem; }
-            .table-read-date { font-size: 1.25rem; color: var(--text-secondary, #8b949e); margin-bottom: 2rem; }
-            .table-read-back { display: inline-block; margin-bottom: 1.5rem; color: var(--accent, #58a6ff); text-decoration: none; }
-            .table-read-back:hover { text-decoration: underline; }
-            .cast-list { list-style: none; padding: 0; margin: 0; }
-            .cast-list li { padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
-            .cast-list li:last-child { border-bottom: none; }
-            .cast-role { font-weight: 600; color: var(--text-primary, #e6edf3); }
-            .cast-actor { color: var(--text-secondary, #8b949e); }
-            .table-read-section { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08); }
-            .table-read-section h2 { font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-primary, #e6edf3); }
-            .shoot-dates-block { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.25rem 1.5rem; margin: 1rem 0; }
-            .shoot-dates-block p { margin: 0.5rem 0; color: var(--text-secondary, #8b949e); line-height: 1.5; font-size: 0.95rem; }
-            .shoot-dates-block .shoot-range { font-size: 1.1rem; font-weight: 600; color: var(--accent, #58a6ff); }
-            .page-links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1rem; }
-            .dvd-block { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; }
-            .dvd-block .tagline { font-size: 1rem; font-style: italic; color: var(--text-secondary, #8b949e); margin-bottom: 1rem; }
-            .dvd-block .synopsis { color: var(--text-primary, #e6edf3); line-height: 1.6; margin-bottom: 1.25rem; }
-            .dvd-specs { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px; font-size: 0.9rem; color: var(--text-secondary, #8b949e); }
-            .dvd-specs span { color: var(--text-primary, #e6edf3); font-weight: 600; }
-            .story-glance, .production-glance { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 1.25rem 1.5rem; margin: 1rem 0; }
-            .story-glance h3, .production-glance h3 { font-size: 0.95rem; margin: 0 0 0.5rem 0; color: var(--accent, #58a6ff); }
-            .story-glance p, .production-glance p { margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--text-primary, #e6edf3); }
-            .story-glance ul, .production-glance ul { margin: 0.5rem 0 0 1rem; padding-left: 1rem; font-size: 0.9rem; color: var(--text-secondary, #8b949e); line-height: 1.45; }
-            .answers-section { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1.25rem 1.5rem; margin-top: 1rem; }
-            .answers-section h3 { font-size: 1rem; margin: 0 0 0.5rem 0; color: var(--accent, #58a6ff); }
-            .answers-section p, .answers-section ul { margin: 0 0 0.75rem 0; color: var(--text-primary, #e6edf3); line-height: 1.5; font-size: 0.95rem; }
-            .answers-section ul { padding-left: 1.25rem; }
-            .answers-section li { margin-bottom: 0.35rem; }
-            .answers-section .read-as { font-size: 0.9rem; color: var(--text-secondary, #8b949e); }
 
-            .estimate-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.85rem; }
-            .estimate-table th, .estimate-table td { text-align: left; padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.08); }
-            .estimate-table th { color: var(--accent, #58a6ff); font-weight: 600; border-bottom: 2px solid rgba(255,255,255,0.15); }
-            .estimate-table tr:hover { background: rgba(255,255,255,0.03); }
-            .cast-needed { color: var(--text-secondary, #8b949e); }
-        </style>
-    </head>
-    <body>
-        <div class="table-read-page">
-            <a href="/pages/summer.html" class="table-read-back">← Summer Hub</a>
-            <h1>Table Read</h1>
-            <p class="table-read-date">February 18, 2026 (2.18.26)</p>
+<head>
+    <meta charset="utf-8">
+    <title>Table Read — Creatures in the Tall Grass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9fafb;
+            --text-primary: #111827;
+            --text-secondary: #4b5563;
+            --accent: #c5a059;
+            /* Sophisticated Gold */
+            --accent-dark: #1b263b;
+            /* Deep Navy */
+            --border: #e5e7eb;
+            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
 
-            <div class="dvd-block" aria-label="Film summary">
-                <p class="tagline">Something's in the marsh. A hum. Then something else.</p>
-                <p class="synopsis">Dallas moves to Branford with a box he won't open—Sierra's field notes, her sketches, the receiver they used together. Next door, his neighbor Dominic's niece and nephew want his oscillator; something's moving under the reeds, and the power grid's acting up. When Dallas finds an injured creature in the tall grass, Makayla finds out. So does the thing that's chasing it. A small-town fellowship, a life group in the living room, and a return to the hollow—to get the creature home or lose the story for good.</p>
-                <div class="dvd-specs">
-                    <div><span>~80 min</span> · Runtime</div>
-                    <div><span>29</span> scenes · <span>4</span> acts</div>
-                    <div><span>Branford, CT</span> · Shoreline, marsh</div>
-                    <div><span>12</span> shoot days + <span>2</span> pickup</div>
-                </div>
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .table-read-page {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            color: var(--accent-dark);
+            letter-spacing: -0.01em;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 0.25rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 0;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .table-read-date {
+            font-size: 1rem;
+            color: var(--accent);
+            font-weight: 400;
+            margin-bottom: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+        }
+
+        .table-read-back {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color 0.2s;
+        }
+
+        .table-read-back:hover {
+            color: var(--accent);
+        }
+
+        .table-read-back::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        .cast-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cast-list li {
+            padding: 1.25rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        .cast-list li:last-child {
+            border-bottom: none;
+        }
+
+        .cast-role {
+            font-weight: 500;
+            color: var(--accent-dark);
+            font-size: 1.05rem;
+        }
+
+        .cast-actor {
+            color: var(--text-secondary);
+            font-weight: 300;
+        }
+
+        .table-read-section {
+            margin-top: 4rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .shoot-dates-block {
+            background: var(--bg-secondary);
+            border-left: 2px solid var(--accent);
+            padding: 1.5rem 2.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .shoot-dates-block p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-weight: 300;
+        }
+
+        .shoot-dates-block .shoot-range {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--accent-dark);
+            display: block;
+            margin-bottom: 0.25rem;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .dvd-block {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 3rem;
+            margin: 3.5rem 0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+        }
+
+        .dvd-block .tagline {
+            font-size: 1.1rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            color: var(--accent);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .dvd-block .synopsis {
+            color: var(--text-primary);
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .dvd-specs {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 30px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .dvd-specs div {
+            border-right: 1px solid var(--border);
+        }
+
+        .dvd-specs div:last-child {
+            border-right: none;
+        }
+
+        .dvd-specs span {
+            color: var(--accent-dark);
+            font-weight: 500;
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .story-glance,
+        .production-glance {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 2rem 2.5rem;
+            margin: 2rem 0;
+        }
+
+        .story-glance h3,
+        .production-glance h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .story-glance p,
+        .production-glance p {
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .story-glance p:last-child {
+            margin-bottom: 0;
+        }
+
+        .estimate-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+        }
+
+        .estimate-table th,
+        .estimate-table td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .estimate-table th {
+            color: var(--accent-dark);
+            font-weight: 500;
+            background: #fafafa;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            letter-spacing: 0.1em;
+        }
+
+        .estimate-table tr:hover {
+            background: #fdfdfd;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-primary {
+            background: var(--accent-dark);
+            color: white;
+            border: 1px solid var(--accent-dark);
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--accent-dark);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--accent-dark);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-dark);
+        }
+
+        .page-links {
+            gap: 1rem;
+            margin-top: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table-read-page">
+        <a href="/pages/summer.html" class="table-read-back">Summer Hub</a>
+        <h1>Table Read</h1>
+        <p class="table-read-date">February 18, 2026</p>
+
+        <div class="dvd-block" aria-label="Film summary">
+            <p class="tagline">Something's in the marsh. A hum. Then something else.</p>
+            <p class="synopsis">Dallas moves to Branford with a box he won't open—Sierra's field notes, her sketches,
+                the receiver they used together. Next door, his neighbor Dominic's niece and nephew want his oscillator;
+                something's moving under the reeds, and the power grid's acting up. When Dallas finds an injured
+                creature in the tall grass, Makayla finds out. So does the thing that's chasing it. A small-town
+                fellowship, a life group in the living room, and a return to the hollow—to get the creature home or lose
+                the story for good.</p>
+            <div class="dvd-specs">
+                <div><span>~80 min</span> Runtime</div>
+                <div><span>29</span> Scenes</div>
+                <div><span>Shoreline, CT</span> Location</div>
+                <div><span>14</span> Shoot Days</div>
             </div>
+        </div>
 
-            <section aria-label="Cast">
-                <h2>Cast</h2>
-                <p style="font-size: 0.9rem; color: var(--text-secondary, #8b949e); margin-bottom: 0.5rem;">Table read (present 2.22.26)</p>
+        <section aria-label="Cast">
+            <h2>Cast</h2>
+            <div class="production-glance">
+                <h3>Table Read Present</h3>
                 <ul class="cast-list">
                     <li><span class="cast-role">Makayla</span><span class="cast-actor">Amaranto</span></li>
                     <li><span class="cast-role">Dominic</span><span class="cast-actor">Armarto</span></li>
                     <li><span class="cast-role">Dallas</span><span class="cast-actor">Demartini</span></li>
                 </ul>
-                <p style="font-size: 0.9rem; color: var(--text-secondary, #8b949e); margin: 1.25rem 0 0.35rem 0;">Full cast</p>
-                <ul class="cast-list" style="font-size: 0.9rem;">
+            </div>
+
+            <div class="production-glance" style="margin-top: 2rem;">
+                <h3>Full Cast</h3>
+                <ul class="cast-list">
                     <li><span class="cast-role">Dallas</span><span class="cast-actor">Demartini</span></li>
                     <li><span class="cast-role">Dominic</span><span class="cast-actor">Armarto</span></li>
                     <li><span class="cast-role">Makayla</span><span class="cast-actor">Amaranto</span></li>
@@ -82,113 +354,131 @@
                     <li><span class="cast-role">Howie</span><span class="cast-actor">(non-speaking)</span></li>
                     <li><span class="cast-role">Pat Clendenen</span><span class="cast-actor">—</span></li>
                 </ul>
-            </section>
+            </div>
+        </section>
 
-            <section class="table-read-section" aria-label="Proposed shoot dates">
-                <h2>Proposed shoot dates</h2>
-                <div class="shoot-dates-block">
-                    <p><span class="shoot-range">June 19 – July 12, 2026</span> · 10 shoot days. Detailed actor estimate below.</p>
-                </div>
-
-                <div class="production-glance" style="background: rgba(88, 166, 255, 0.05);">
-                    <h3>Actor Presence Estimate</h3>
-                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">Based on current script-system scene mapping and production goals.</p>
-                    <table class="estimate-table">
-                        <thead>
-                            <tr>
-                                <th>Day</th>
-                                <th>Date</th>
-                                <th>Scenes</th>
-                                <th>Cast Needed</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>1</td><td>Fri Jun 19</td><td>1–4</td><td class="cast-needed">Dallas, Makayla, Dominic, Janice, Mary, Paul</td></tr>
-                            <tr><td>2</td><td>Sat Jun 20</td><td>5–7</td><td class="cast-needed">Dallas, Dominic, Makayla, Janice</td></tr>
-                            <tr><td>3</td><td>Fri Jun 26</td><td>8–11</td><td class="cast-needed">Dallas, Dominic</td></tr>
-                            <tr><td>4</td><td>Sat Jun 27</td><td>12–14</td><td class="cast-needed">Dallas, Makayla, Asher</td></tr>
-                            <tr><td>5</td><td>Sun Jun 28</td><td>15–18</td><td class="cast-needed">Dallas, Makayla, Asher, Dominic</td></tr>
-                            <tr><td>6</td><td>Fri Jul 3</td><td>19</td><td class="cast-needed">Dominic, Makayla, Josh, Sarah, Tyler</td></tr>
-                            <tr><td>7</td><td>Sun Jul 5</td><td>20–23</td><td class="cast-needed">Dallas, Dominic, Makayla, Janice, Tyler, Amy, Asher</td></tr>
-                            <tr><td>8</td><td>Fri Jul 10</td><td>24–25</td><td class="cast-needed">Dallas, Makayla, Asher</td></tr>
-                            <tr><td>9</td><td>Sat Jul 11</td><td>26–27</td><td class="cast-needed">Makayla, Asher, Dominic</td></tr>
-                            <tr><td>10</td><td>Sun Jul 12</td><td>28–29 + PKP</td><td class="cast-needed">Janice, Dallas, Makayla (Final Pickups)</td></tr>
-                        </tbody>
-                    </table>
-                    <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary);">Full schedule & pickup scenes: <a href="/pages/summer/production.html" style="color: var(--accent);">Production Hub</a>.</p>
-                </div>
-            </section>
-
-            <div class="story-glance">
-                <h3>Story at a glance</h3>
-                <p><strong>Act I — Arrival & Discovery (Scenes 1–11, ~30 min):</strong> New house, tall grass, the hum. Dallas meets Makayla and Asher; fellowship, marsh walk, news vans. The coordinates, the hollow, the creature in the kitchen.</p>
-                <p><strong>Act II — The Creature (Scenes 12–23, ~30 min):</strong> First night with the creature, Makayla confronts Dallas, bond and lair. Creature in the basement; life group arrives, Mr. Mike freaks. Red eyes, the creature gone.</p>
-                <p><strong>Act III — The Return (Scenes 24–27, ~16 min):</strong> Marsh plan, predator attack, the perimeter. Creature dies in the marsh; they run. The plan, the trap, the storm.</p>
-                <p><strong>Act IV — Aftermath (Scenes 28–29, ~4 min):</strong> She goes in. Phase cancellation; they're free. Branford breathes again; the folder's with the kids.</p>
-                <p style="margin-top: 0.75rem;"><a href="/pages/summer/script-system/index.html" style="color: var(--accent);">Scene Gallery</a> — one-line beat per scene.</p>
+        <section class="table-read-section" aria-label="Proposed shoot dates">
+            <h2>Proposed Dates</h2>
+            <div class="shoot-dates-block">
+                <p><span class="shoot-range">June 19 – July 12, 2026</span> 10 shoot days. Detailed actor estimate
+                    below.</p>
             </div>
 
             <div class="production-glance">
-                <h3>Production at a glance</h3>
-                <p>29 scenes · 12 principal shoot days + 2 pickup (SFX/action). ~80 min total runtime.</p>
-                <ul>
-                    <li><strong>Locations:</strong> Dallas's house (int/ext), backyard, porch, basement, study; Dominic's kitchen; church fellowship lawn; marsh trail / boardwalk; Branford rocks; tall grass / hollow; Branford neighborhood.</li>
-                    <li>Scene breakdown, shoot days per scene, and pickup list: <a href="/pages/summer/production.html" style="color: var(--accent);">Production</a>.</li>
-                </ul>
+                <h3>Actor Presence</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">Based on current script-system scene
+                    mapping and production goals.</p>
+                <table class="estimate-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Date</th>
+                            <th>Scenes</th>
+                            <th>Cast Needed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Fri Jun 19</td>
+                            <td>1–4</td>
+                            <td>Dallas, Makayla, Dominic, Janice, Mary, Paul</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sat Jun 20</td>
+                            <td>5–7</td>
+                            <td>Dallas, Dominic, Makayla, Janice</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Fri Jun 26</td>
+                            <td>8–11</td>
+                            <td>Dallas, Dominic</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Sat Jun 27</td>
+                            <td>12–14</td>
+                            <td>Dallas, Makayla, Asher</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Sun Jun 28</td>
+                            <td>15–18</td>
+                            <td>Dallas, Makayla, Asher, Dominic</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Fri Jul 3</td>
+                            <td>19</td>
+                            <td>Dominic, Makayla, Josh, Sarah, Tyler</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Sun Jul 5</td>
+                            <td>20–23</td>
+                            <td>Dallas, Dominic, Makayla, Janice, Tyler, Amy, Asher</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Fri Jul 10</td>
+                            <td>24–25</td>
+                            <td>Dallas, Makayla, Asher</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Sat Jul 11</td>
+                            <td>26–27</td>
+                            <td>Makayla, Asher, Dominic</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Sun Jul 12</td>
+                            <td>28–29</td>
+                            <td>Janice, Dallas, Makayla</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--text-secondary);">Full schedule & pickup
+                    scenes: <a href="/pages/summer/production.html"
+                        style="color: var(--accent); text-decoration: none;">Production Hub</a>.</p>
             </div>
+        </section>
 
-            <div class="page-links">
-                <a href="/pages/summer/script-system/full_script.html" class="btn btn-primary">Full Script →</a>
-                <a href="/pages/summer/script-system/index.html" class="btn btn-secondary">Scene Gallery →</a>
-                <a href="/pages/summer/characters/index.html" class="btn btn-secondary">Characters →</a>
-                <a href="/pages/summer/production.html" class="btn btn-secondary">Production →</a>
-            </div>
-
-            <h3 style="margin: 2rem 0 0.75rem 0; font-size: 1.1rem;">Answers you can use</h3>
-            <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.9rem;">Filled in on your behalf—read or copy as needed.</p>
-
-            <div class="answers-section">
-                <h3>Director intro (say this or something like it)</h3>
-                <p>"This is <em>Creatures in the Tall Grass</em>. It's set in Branford—small-town Connecticut, marsh, tall grass, salt breeze. Dallas has just moved in; he's got a box of stuff from Sierra, and he's not really looking at it. Next door there's Dominic, his niece Makayla and nephew Asher, and a fellowship that meets at the church. Something's in the marsh—a hum, then something else. The tone is intimate and a little uneasy: we're in their houses, the church lawn, the hollow. Today I just want to hear it. No pressure to perform. If something's unclear or you have a question, we can pause or talk after. Let's go Scene 1 to 29—we'll take a short break after Act II."</p>
-            </div>
-
-            <div class="answers-section">
-                <h3>Who reads what</h3>
-                <p><strong>Makayla</strong> — Amaranto &nbsp;|&nbsp; <strong>Dominic</strong> — Armarto &nbsp;|&nbsp; <strong>Dallas</strong> — Demartini</p>
-                <p class="read-as">Asher, Janice, Mr. Mike, Pat, and any other speaking parts: assign to whoever's free (or read them yourself). Narration and action lines: director. Howie doesn't speak.</p>
-            </div>
-
-            <div class="answers-section">
-                <h3>Time and place</h3>
-                <p>Block <strong>2–2.5 hours</strong> (read + discussion). <strong>Venue:</strong> TBD—quiet room, same table or circle so everyone can hear. Break: <strong>after Scene 23 (Night Fears)</strong>, 5–10 min, before they go back into the marsh.</p>
-            </div>
-
-            <div class="answers-section">
-                <h3>Q&amp;A — what to note</h3>
-                <ul>
-                    <li><strong>Script clarity:</strong> Any line that feels wrong, redundant, or hard to say; Branford/marsh/location references; creature/hum/tech (oscillator, 115.3 MHz, phase cancellation, Sierra's folder).</li>
-                    <li><strong>Character/emotion:</strong> Dallas and Sierra (the box, the sticker, "FIELD NOTES — BRANFORD 2004"); "they're in this together"; the hymn and the hum; Makayla with the folder at the end.</li>
-                    <li><strong>Continuity/tone:</strong> Life group vs. family; who knows what and when; red eyes vs. gold; the plan before the return.</li>
-                </ul>
-            </div>
-
-            <div class="answers-section">
-                <h3>Character context (short version to share)</h3>
-                <p><strong>Dallas</strong> — Bioacoustics, just moved to Branford. Has a box from Sierra (field notes, sketches, recorder); he avoids opening it. The hum and the creature pull him back in.</p>
-                <p><strong>Dominic</strong> — Neighbor, early 40s, fellowship guy. Makayla and Asher's uncle. Friendly, a bit oblivious to what the kids are up to.</p>
-                <p><strong>Makayla</strong> — 22, sharp, wants the oscillator and the truth. Bonds with the creature; ends up with Sierra's folder and the solution (phase cancellation).</p>
-                <p><strong>Asher</strong> — 14, her brother. Quiet, in on the evidence-gathering.</p>
-                <p><strong>Janice</strong> — Mid 50s, Dominic's sister. Hands off Howie to Dallas at the picnic.</p>
-                <p><strong>Mr. Mike</strong> — Scratches numbers; the coordinates connect to the creature and the grid. Freaks when he sees it at life group.</p>
-                <p><strong>Howie</strong> — Dog. With Dallas and later with the kids; non-speaking.</p>
-                <p><strong>Pat Clendenen</strong> — Mid 50s, news; weather and Branford/substation. Bookends the film.</p>
-            </div>
-
-            <div class="answers-section">
-                <h3>Production — when &amp; where</h3>
-                <p><strong>When:</strong> Principal photography (proposed) March 9–24, 2026 — 12 shoot days. Plus up to 2 pickup days for SFX/action (Makayla + Dallas).</p>
-                <p><strong>Where (main locations):</strong> Dallas's new house (int/ext), Dallas's backyard/porch, Dominic's kitchen, church fellowship lawn, marsh trail / boardwalk, Branford rocks, tall grass / hollow, Branford neighborhood, Dallas's basement/study. Full breakdown and which scenes where: <a href="/pages/summer/production.html" style="color: var(--accent);">Production</a>.</p>
-            </div>
+        <div class="story-glance">
+            <h3>Story Overview</h3>
+            <p><strong>Act I — Arrival & Discovery (Scenes 1–11):</strong> New house, tall grass, the hum. Dallas meets
+                Makayla and Asher; fellowship, marsh walk, news vans. The coordinates, the hollow, the creature in the
+                kitchen.</p>
+            <p><strong>Act II — The Creature (Scenes 12–23):</strong> First night with the creature, Makayla confronts
+                Dallas, bond and lair. Creature in the basement; life group arrives, Mr. Mike freaks. Red eyes, the
+                creature gone.</p>
+            <p><strong>Act III — The Return (Scenes 24–27):</strong> Marsh plan, predator attack, the perimeter.
+                Creature dies in the marsh; they run. The plan, the trap, the storm.</p>
+            <p><strong>Act IV — Aftermath (Scenes 28–29):</strong> She goes in. Phase cancellation; they're free.
+                Branford breathes again; the folder's with the kids.</p>
+            <p style="margin-top: 1.5rem; font-size: 0.8rem;"><a href="/pages/summer/script-system/index.html"
+                    style="color: var(--accent); text-decoration: none;">Explore Scene Gallery →</a></p>
         </div>
-    </body>
+
+        <div class="production-glance">
+            <h3>Production Notes</h3>
+            <p>29 scenes · 12 principal shoot days + 2 pickup (SFX/action). ~80 min total runtime.</p>
+            <p><strong>Locations:</strong> Dallas's house (int/ext), backyard, porch, basement, study; Dominic's
+                kitchen; church fellowship lawn; marsh trail / boardwalk; Branford rocks; tall grass / hollow; Branford
+                neighborhood.</p>
+            <p style="font-size: 0.8rem;"><a href="/pages/summer/production.html"
+                    style="color: var(--accent); text-decoration: none;">View Detailed Production Breakdown →</a></p>
+        </div>
+
+        <div class="page-links">
+            <a href="/pages/summer/script-system/full_script.html" class="btn btn-primary">Full Script</a>
+            <a href="/pages/summer/script-system/index.html" class="btn btn-secondary">Scene Gallery</a>
+            <a href="/pages/summer/characters/index.html" class="btn btn-secondary">Characters</a>
+            <a href="/pages/summer/production.html" class="btn btn-secondary">Production</a>
+        </div>
+    </div>
+</body>
+
 </html>
