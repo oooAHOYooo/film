@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/18/2026, 10:00:29 PM*
+*Compiled on 2/19/2026, 11:53:18 AM*
 
 ---
 
@@ -130,7 +130,7 @@ Makayla and Asher peddle their bikes away. Dallas watches curiously and then pee
 
 <!-- scene: 02 file: s02.md nickname: dallas-night -->
 
-<!-- nickname: dallas-night -->
+# Scene 2: Sierra's Box
 <!-- summary: Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies. -->
 
 INT. DALLAS NEW HOUSE - NIGHT
@@ -499,7 +499,7 @@ They finish eating. The group begins to disperse. Janice walks over to Dallas an
 
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
-<!-- nickname: marsh-walk-later -->
+# Scene 5: The Merlin App
 <!-- summary: Boardwalk through the reeds. Dominic shows the Merlin app. Something moving underneath. -->
 
 EXT. MARSH TRAIL - LATER
@@ -533,7 +533,7 @@ See this? Merlins. It listens to the chirps and tells you the species. Coastal s
 
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
-<!-- nickname: news-vans -->
+# Scene 6: News Vans
 <!-- summary: News vans in the street. Pat on camera. Burn marks on Dominic's driveway. Dallas stays. -->
 
 EXT. BRANFORD NEIGHBORHOOD - CONTINUOUS
@@ -796,7 +796,7 @@ The family vanishes in a blur of activity, leaving Dallas standing in the sudden
 
 <!-- scene: 08 file: s08.md nickname: dallas-marsh-walk -->
 
-<!-- nickname: dallas-marsh-walk -->
+# Scene 8: The Trailcam
 <!-- summary: Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out. -->
 EXT. BRANFORD ROCKS - EVENING
 
@@ -871,8 +871,8 @@ Dallas takes a step forward, then another. The reeds part before him, closing be
 
 <!-- scene: 09 file: s09.md nickname: dallas-night-work -->
 
-<!-- nickname: the golden daze -->
-<!-- summary: He replays the clip. Grid coordinates—Mr. Mike's language. The creature in the kitchen; the scope picks up a pulse. -->
+# Scene 9: The Injured One
+<!-- summary:  -->
 
 EXT. INSIDE THE TALL MARSH - SUNSET HOUR
 
@@ -882,7 +882,7 @@ Dallas steps deeper, following the fading glow.
 
 All around him is light reeeds blowing in an almost whirlwind of light and color. 
 
-Shadows—tall, spindly, and darker than the night—grow in the distance. They move *against* the wind, cutting through the blades of grass like silent ships.
+Shadows—tall, spindly, and darker than the night—grow in the distance. They move *against* the wind, cutting through the blades of grass like silent ships. Dallas dismisses them as obtacle illusions. 
 
 As Dallas' eyes adjust to this new brightness - the world around him slowly fades back to normallacly. 
 
@@ -947,7 +947,7 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 
 <!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
 
-<!-- nickname: The Kitchen Hospital -->
+# Scene 11: Kitchen Triage
 <!-- summary: He runs home with it. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
 EXT. COSTAL NEIGHBORHOOD JOURNEY 
 Dallas is alone and the evening is getting dark. He dashes back through the coastal neighborhoods with the creature in his jacket - and urges the dog Howie to walk faster - who is not having a good time. Dallas rushes the creature over to the kitchen and upstairs to examine further. 
@@ -1102,7 +1102,7 @@ Dallas lays tiny wires on the creature's head, connecting them to his handheld. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
-<!-- nickname: Makayla Confronts Dallas -->
+# Scene 13: The Confrontation
 <!-- summary: Burn mark in the grass. The Mother's Vision: a silhouette in the reeds whispers a lullaby. The stake is now personal. -->
 EXT. DALLAS HOUSE - NEXT MORNING
 
@@ -1292,7 +1292,7 @@ Makayla stand dumbfounded looking at the creature - they can't believe it. They 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
-<!-- nickname: DALLAS AND MAKYLA BOND -->
+# Scene 14: The Vision
 <!-- summary: They sit with the creature. Evidence. A bond. Howie at their feet. -->
 
 INT. DALLAS KITCHEN
@@ -1497,7 +1497,7 @@ The doorbell rings.
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
-<!-- nickname: Makayla's Lair  -->
+# Scene 15: Makayla's Lair
 <!-- summary: Reverse Device mission born. Dallas calibrates the oscillator using Mr. Mike's numbers. A countdown begins. -->
 
 EXT. MAKAYLA'S LAIR 
@@ -1622,7 +1622,7 @@ We have to go. Now.
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
-<!-- nickname: Hide the Creature -->
+# Scene 16: Escape from the Lair
 <!-- summary: Asher trance: 'The light doesn't leave.' Stakes raised—the vision confirms they must reach the Creek Bend. -->
 
 EXT. MAKAYLA'S LAIR
@@ -2085,7 +2085,7 @@ Dallas looks at the tall grass. At the reading. At her. Then toward the house—
 
 <!-- scene: 22 file: s22.md nickname: red-eyes -->
 
-<!-- nickname: red-eyes -->
+# Scene 22: Sierra's Folder
 <!-- summary: They find it in the gnarl. It's fading. Sierra's folder: if the Red-Eyes take them, it's all ghost stories. They'll return it. -->
 EXT. DALLAS PORCH
 
@@ -2229,7 +2229,7 @@ Dallas at the window again. The eyes are gone. The night is still.
 
 <!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
 
-<!-- nickname: the-marsh-plan -->
+# Scene 24: The Burn Marks
 <!-- summary: Shoebox empty. The creature dies in the marsh. They choose to go in—active choice with clear stakes. -->
 
 INT. DALLAS'S BASEMENT - MORNING
@@ -2315,7 +2315,7 @@ Asher brings the final device forward.
 
 <!-- scene: 25 file: s25.md nickname: predator-attack -->
 
-<!-- nickname: predator-attack -->
+# Scene 25: Into the Marsh
 <!-- summary: First confrontation with Dark Creatures. Distinctive weird marks. They have to rescue the light. -->
 
 EXT. EDGE OF THE TALL GRASS
@@ -2429,7 +2429,7 @@ He catches up. They don't look back. They make their way out of the tall grass.
 
 <!-- scene: 27 file: s27.md nickname: the-last-dinner -->
 
-<!-- nickname: the-last-battle -->
+# Scene 27: The Trap
 <!-- summary: They set out with the plan. It's not an accident—the plan is pressure-tested by the storm. -->
 
 EXT. EDGE OF TALL GRASS - DAY
@@ -2514,7 +2514,7 @@ No one answers.
 
 <!-- scene: 28 file: s28.md nickname: final-echoes -->
 
-<!-- nickname: back to howie -->
+# Scene 28: The Morning After
 <!-- summary: Climax: Light vs Shadow logic. Clear swings on the battlefield. The reverse device flares. -->
 
 The crew huddle around Dallas' apartment and all sleep on the floor as Mr Mike watches a movie on TV. 

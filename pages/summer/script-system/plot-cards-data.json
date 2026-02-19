@@ -34,7 +34,7 @@
   {
     "n": 5,
     "id": "marsh-walk-later",
-    "title": "Marsh Walk Later",
+    "title": "Marsh Trail",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "Boardwalk through the reeds. Dominic shows the Merlin app. Something moving underneath."
@@ -42,7 +42,7 @@
   {
     "n": 6,
     "id": "news-vans",
-    "title": "News Vans",
+    "title": "News Vans & Trash Cans",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "News vans in the street. Pat on camera. Burn marks on Dominic's driveway. Dallas stays."
@@ -66,10 +66,10 @@
   {
     "n": 9,
     "id": "dallas-night-work",
-    "title": "The Golden Daze",
+    "title": "Dallas Night Work",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "He replays the clip. Grid coordinates—Mr. Mike's language. The creature in the kitchen; the scope picks up a pulse."
+    "summary": "# Scene 9: The Injured One Dallas stands slowly, scanning the reeds around him. Nothing. Just the gentle sway of grass and the sound of his own breathing. Dallas steps deeper, following the fading glow. All around him…"
   },
   {
     "n": 10,
@@ -82,7 +82,7 @@
   {
     "n": 11,
     "id": "howie-walk-2",
-    "title": "The Kitchen Hospital",
+    "title": "Howie Walk (Edge of Marsh)",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "He runs home with it. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold."
@@ -98,7 +98,7 @@
   {
     "n": 13,
     "id": "entering-grass",
-    "title": "Makayla Confronts Dallas",
+    "title": "Entering Grass & The Hollow",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Burn mark in the grass. The Mother's Vision: a silhouette in the reeds whispers a lullaby. The stake is now personal."
@@ -106,7 +106,7 @@
   {
     "n": 14,
     "id": "creature-rescue",
-    "title": "Dallas And Makyla Bond",
+    "title": "Creature Rescue",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "They sit with the creature. Evidence. A bond. Howie at their feet."
@@ -114,7 +114,7 @@
   {
     "n": 15,
     "id": "the-burn-mark-2",
-    "title": "Makayla's Lair",
+    "title": "The Burn Mark",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Reverse Device mission born. Dallas calibrates the oscillator using Mr. Mike's numbers. A countdown begins."
@@ -122,7 +122,7 @@
   {
     "n": 16,
     "id": "the-escape",
-    "title": "Hide The Creature",
+    "title": "The Escape",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Asher trance: 'The light doesn't leave.' Stakes raised—the vision confirms they must reach the Creek Bend."
@@ -186,7 +186,7 @@
   {
     "n": 24,
     "id": "marsh-confrontation",
-    "title": "The Marsh Plan",
+    "title": "Marsh Confrontation",
     "act": 3,
     "actTitle": "The Return",
     "summary": "Shoebox empty. The creature dies in the marsh. They choose to go in—active choice with clear stakes."
@@ -210,7 +210,7 @@
   {
     "n": 27,
     "id": "the-last-dinner",
-    "title": "The Last Battle",
+    "title": "The Last Dinner",
     "act": 3,
     "actTitle": "The Return",
     "summary": "They set out with the plan. It's not an accident—the plan is pressure-tested by the storm."
@@ -218,7 +218,7 @@
   {
     "n": 28,
     "id": "final-echoes",
-    "title": "Back To Howie",
+    "title": "Final Echoes",
     "act": 4,
     "actTitle": "Aftermath",
     "summary": "Climax: Light vs Shadow logic. Clear swings on the battlefield. The reverse device flares."
