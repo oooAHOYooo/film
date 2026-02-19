@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/18/2026, 4:20:53 PM*
+*Compiled on 2/18/2026, 9:19:36 PM*
 
 ---
 
@@ -19,6 +19,7 @@
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
 <!-- nickname: arrival -->
+<!-- summary: New house, tall grass. He finds a rig in the reeds. Makayla and Asher want his oscillator. -->
 
 EXT. DALLAS NEW HOUSE - DAY
 
@@ -130,6 +131,7 @@ Makayla and Asher peddle their bikes away. Dallas watches curiously and then pee
 <!-- scene: 02 file: s02.md nickname: dallas-night -->
 
 <!-- nickname: dallas-night -->
+<!-- summary: Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies. -->
 
 INT. DALLAS NEW HOUSE - NIGHT
 
@@ -184,6 +186,7 @@ Dallas struggles to go to sleep. As he hears more faint cries he looks out the w
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 <!-- nickname: the-hum -->
+<!-- summary: Walk to town with Dominic. Birds pointed at the marsh. Streetlight flickers. Fellowship invite. -->
 
 EXT. DALLAS HOUSE - NEXT DAY MORNING
 Dallas walks outside his house, towards the edge of the property. As he approaches the edge of his yard he watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the C battery in his hand. As he does so, he becomes dazed.
@@ -344,6 +347,7 @@ Nice - yeah - it's nice to be the new guy in town - good old branford.
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
 <!-- nickname: fellowship -->
+<!-- summary: Church picnic. Dallas meets Makayla and Asher. Janice hands off Howie. -->
 
 EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON
 
@@ -493,6 +497,7 @@ They finish eating. The group begins to disperse. Janice walks over to Dallas an
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
 <!-- nickname: marsh-walk-later -->
+<!-- summary: Boardwalk through the reeds. Dominic shows the Merlin app. Something moving underneath. -->
 
 EXT. MARSH TRAIL - LATER
 
@@ -526,6 +531,7 @@ See this? Merlins. It listens to the chirps and tells you the species. Coastal s
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
 <!-- nickname: news-vans -->
+<!-- summary: News vans in the street. Pat on camera. Burn marks on Dominic's driveway. Dallas stays. -->
 
 EXT. BRANFORD NEIGHBORHOOD - CONTINUOUS
 
@@ -606,6 +612,7 @@ Sure.
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 <!-- nickname: the-coordinates -->
+<!-- summary: The kids' basement. Mr. Mike scratches numbers. Makayla and Asher grab the coordinates; she wants the oscillator. -->
 
 INT. JACE'S BASEMENT 
 
@@ -787,6 +794,7 @@ The family vanishes in a blur of activity, leaving Dallas standing in the sudden
 <!-- scene: 08 file: s08.md nickname: dallas-marsh-walk -->
 
 <!-- nickname: dallas-marsh-walk -->
+<!-- summary: Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out. -->
 EXT. BRANFORD ROCKS - EVENING
 
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
@@ -861,6 +869,7 @@ Dallas takes a step forward, then another. The reeds part before him, closing be
 <!-- scene: 09 file: s09.md nickname: dallas-night-work -->
 
 <!-- nickname: the golden daze -->
+<!-- summary: He replays the clip. Grid coordinates—Mr. Mike's language. The creature in the kitchen; the scope picks up a pulse. -->
 
 EXT. INSIDE THE TALL MARSH - SUNSET HOUR
 
@@ -892,6 +901,7 @@ Dallas looks at his equipment and it seems to do funny things when he is near it
 <!-- scene: 10 file: s10.md nickname: shadows-in-wind -->
 
 <!-- nickname: Creature discovery -->
+<!-- summary: Readings spike. In the hollow: gold orbs, one injured. He takes it. Something's coming. -->
 
 EXT. TALL GRASS - MOMENTS LATER
 
@@ -935,6 +945,7 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 <!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
 
 <!-- nickname: The Kitchen Hospital -->
+<!-- summary: He runs home with it. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
 EXT. COSTAL NEIGHBORHOOD JOURNEY 
 Dallas is alone and the evening is getting dark. He dashes back through the coastal neighborhoods with the creature in his jacket - and urges the dog Howie to walk faster - who is not having a good time. Dallas rushes the creature over to the kitchen and upstairs to examine further. 
 
@@ -1069,6 +1080,7 @@ Dallas rushes to the kitchen and finds that the creature is doing good.
 <!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
 <!-- nickname: THE FIRST NIGHT WITH CREATURE  -->
+<!-- summary: Wires on the creature's head. It sings through its back-holes. She can't tell anyone. -->
 
 INT. DALLAS DESK
 
@@ -1088,6 +1100,7 @@ Dallas lays tiny wires on the creature's head, connecting them to his handheld. 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 <!-- nickname: Makayla Confronts Dallas -->
+<!-- summary: Burn mark in the grass. The Mother's Vision: a silhouette in the reeds whispers a lullaby. The stake is now personal. -->
 EXT. DALLAS HOUSE - NEXT MORNING
 
 The morning air is thick with the scent of ozone. Dominic''s minivan idles in the driveway. 
@@ -1229,10 +1242,6 @@ Dallas walks over and pulls over his bright electronic lamp over it. Where it sh
 MAKAYLA
 Look at that!
 
-INT. KITCHEN - 
-
-
-
 EXT. DALLAS'S BACKYARD - DAWN
 
 Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
@@ -1281,6 +1290,7 @@ Makayla stand dumbfounded looking at the creature - they can't believe it. They 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 <!-- nickname: DALLAS AND MAKYLA BOND -->
+<!-- summary: They sit with the creature. Evidence. A bond. Howie at their feet. -->
 
 INT. DALLAS KITCHEN
 
@@ -1468,6 +1478,7 @@ The doorbell rings.
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 <!-- nickname: Makayla's Lair  -->
+<!-- summary: Reverse Device mission born. Dallas calibrates the oscillator using Mr. Mike's numbers. A countdown begins. -->
 
 EXT. MAKAYLA'S LAIR 
 
@@ -1592,6 +1603,7 @@ We have to go. Now.
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 <!-- nickname: Hide the Creature -->
+<!-- summary: Asher trance: 'The light doesn't leave.' Stakes raised—the vision confirms they must reach the Creek Bend. -->
 
 EXT. MAKAYLA'S LAIR
 
@@ -1666,16 +1678,14 @@ Dallas sets up the creature - but as he does he nearly drops the box. He looks a
 <!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
 
 <!-- nickname: Back Home  -->
+<!-- summary: Tactical science team. Squeezing through the mudroom with a 10-minute window before the device burns out. -->
 
 Makayla and Dallas return to find the creature on the table. 
 
-Dallas straps the Oscillator rig to his chest. He connects the battery pack. The readout flickers: 12:00 Min.
+Dallas straps the Oscillator rig to his chest. He connects the battery pack. The readout flickers: **12:00**.
 
 MAKAYLA
-The battery is going to go fast. So I rigged up a kitchen timer. 
-
-MAKAYLA
-The Shadows are peaking at the creek. 
+The battery is going to go fast. I rigged a kitchen timer as a backup. The Shadows are peaking at the creek.
 
 ---
 
@@ -1689,6 +1699,7 @@ The Shadows are peaking at the creek.
 <!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
 
 <!-- nickname: Makayla's Bond with Creature -->
+<!-- summary: Oscilloscope on the creature. 115.3 MHz. Makayla: it's pulling power from the grid. -->
 
 EXT. DALLAS'S PORCH - CONTINUOUS
 
@@ -1718,6 +1729,7 @@ He's downstairs.
 <!-- scene: 19 file: s19.md nickname: life-group-arrives -->
 
 <!-- nickname: life-group-arrives -->
+<!-- summary: Lifegroup tonight. Dominic drops off the music. The creature's downstairs—then Mr. Mike freaks. Everyone sees it. -->
 
 INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT
 
@@ -1837,6 +1849,7 @@ Dominic rushes over to the kitchen and sees that the brownies tray is smashed on
 <!-- scene: 20 file: s20.md nickname: basement-huddle -->
 
 <!-- nickname: Creature ESCAPES -->
+<!-- summary: The creature's gone. Red eyes at the window. They're coming for it. Doorbell—first family's here. -->
 
 
 EXT. BASEMENT
@@ -1888,6 +1901,7 @@ Dominic stands. The crew scramble—they have to move the creature before anyone
 <!-- scene: 21 file: s21.md nickname: the-hymn -->
 
 <!-- nickname: the-hymn -->
+<!-- summary: House full. They sing. The hum answers. Lights pulse. Just the storm, they say. -->
 
 
 
@@ -2052,6 +2066,7 @@ Dallas looks at the tall grass. At the reading. At her. Then toward the house—
 <!-- scene: 22 file: s22.md nickname: red-eyes -->
 
 <!-- nickname: red-eyes -->
+<!-- summary: They find it in the gnarl. It's fading. Sierra's folder: if the Red-Eyes take them, it's all ghost stories. They'll return it. -->
 EXT. DALLAS PORCH
 
 Makayla, Asher and Dallas stand outside and begin to hear the hum. 
@@ -2130,6 +2145,7 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 <!-- scene: 23 file: s23.md nickname: creature-missing -->
 
 <!-- nickname: night fears -->
+<!-- summary: Red eyes at the edge of the yard. The creature's gone. -->
 
 
 INT. DALLAS'S HOUSE - HALL / DEN - NIGHT
@@ -2194,6 +2210,7 @@ Dallas at the window again. The eyes are gone. The night is still.
 <!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
 
 <!-- nickname: the-marsh-plan -->
+<!-- summary: Shoebox empty. The creature dies in the marsh. They choose to go in—active choice with clear stakes. -->
 
 INT. DALLAS'S BASEMENT - MORNING
 
@@ -2279,6 +2296,7 @@ Asher brings the final device forward.
 <!-- scene: 25 file: s25.md nickname: predator-attack -->
 
 <!-- nickname: predator-attack -->
+<!-- summary: First confrontation with Dark Creatures. Distinctive weird marks. They have to rescue the light. -->
 
 EXT. EDGE OF THE TALL GRASS
 
@@ -2339,6 +2357,7 @@ Dallas and Makayla hold their arms in pain.
 <!-- scene: 26 file: s26.md nickname: the-perimeter -->
 
 <!-- nickname: the-perimeter -->
+<!-- summary: Retreat with dread: 'They'll come for us.' Shadows at the edge trigger zap episodes. They hatch the plan. -->
 
 EXT. SALT MARSH - DAY (CONTINUOUS)
 
@@ -2362,7 +2381,7 @@ More predators emerge. For every inch they creep, shadow climbs the tall grass. 
 
 Dallas and Makayla move slowly at first, then break into a brisk walk back the way they came. Dallas glances back.
 
-The dark shadow creatures engulf Dallas and Makayla in a chaos of light and fury - while this happens their shadow tentacles hit 
+The dark shadow creatures engulf Dallas and Makayla in a chaos of light and fury - while this happens their shadow tentacles hit the invisible barrier of the oscillator, sparks of golden static flying. 
 
 In the distance: the tiny creature. Its pulse blinks large once—then dims. An awful sound of gnashing. Something has it.
 
@@ -2372,7 +2391,11 @@ EXT. MARSH TRAIL - CONTINUOUS
 
 Dallas runs with the creature in his coat. He stops. Looks down. The creature has stopped pulsing. It is motionless. He sets it down. Other golden pulses gather around it. The hum drops—lower and lower on the bass scale.
 
-Dallas backs away. Makayla and Asher are already at the edge of the grass. He catches up. They don't look back. They make their way out of the tall grass.
+Dallas backs away. Makayla and Asher are already at the edge of the grass. 
+
+Makayla looks down at the stone in her hand. It is no longer a jagged crystal, but a smooth, warm sphere of amber.
+
+He catches up. They don't look back. They make their way out of the tall grass.
 
 
 ---
@@ -2387,6 +2410,7 @@ Dallas backs away. Makayla and Asher are already at the edge of the grass. He ca
 <!-- scene: 27 file: s27.md nickname: the-last-dinner -->
 
 <!-- nickname: the-last-battle -->
+<!-- summary: They set out with the plan. It's not an accident—the plan is pressure-tested by the storm. -->
 
 EXT. EDGE OF TALL GRASS - DAY
 
@@ -2471,6 +2495,7 @@ No one answers.
 <!-- scene: 28 file: s28.md nickname: final-echoes -->
 
 <!-- nickname: back to howie -->
+<!-- summary: Climax: Light vs Shadow logic. Clear swings on the battlefield. The reverse device flares. -->
 
 The crew huddle around Dallas' apartment and all sleep on the floor as Mr Mike watches a movie on TV. 
 
@@ -2499,35 +2524,22 @@ Thanks for letting everyone crash here Dallas.
 <!-- scene: 29 file: s29.md nickname: aftermath -->
 
 <!-- nickname: aftermath -->
+<!-- summary: Resolution: Unexpected gift. Town back to normal, but the science continues. -->
 
 EXT. BRANFORD - DAY
 
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
 
 EXT. DALLAS HOUSE
-
-
-<div class="script-addition">
-
-> addition
-
-
 Dallas looks around at his property—the storm has scattered his equipment. Speakers knocked face-down in the mud. The oscillator on its side, screen cracked. But the sensor Makayla wired between them is still blinking. He picks it up. The screen shows a saved file: one clean recording.
 
-He presses play. The sound fills the yard—alien, harmonic, unmistakable. The frequency of the golden creatures, captured clean. No noise. No interference. Just the song.
+He presses play. The sound fills the yard— it is the tune from the golden furry creatures, captured clean. 
 
-Dallas holds it for a long moment. He looks at the photo of Sierra on his receiver. Then he looks toward the church, where Makayla sits in the distance with the folder open.
+Dallas holds play for a long moment. He looks at the photo of Sierra on his receiver. 
 
-He doesn't need to carry it alone anymore.
+EXT. BRANFORD - OUTSIDE PIZZA PLACE - DAY
 
-
-</div>
-
-
-
-INT. TV STUDIO / NEWS SET - DAY
-
-PAT CLENDENEN at the anchor desk. Behind him, a window or screen shows southern New England—fog, clearing skies.
+PAT CLENDENEN stands outside a choppy PIZZA and POST OFFICE - place in Branford, CT. He is being interviewed by his news crew.
 
 PAT CLENDENEN
 The Nor'easter's last-second shift—call it an unlikely miracle. Either way, a good safety warning. This town's prepared now.
@@ -2536,16 +2548,11 @@ Behind him, in the background fog, a faint red-pulsing eye appears. One moment. 
 
 EXT. CHURCH GROUNDS - DAY
 
-A church event. Picnic tables. Nica's catered lunch. DOMINIC and DALLAS greet each other. They don't talk much. They sit next to each other. Eat. Still don't talk much.
+A church event. Picnic tables. Nica's catered lunch. DOMINIC and DALLAS greet each other. They don't talk much. They sit next to each other and eat. 
 
-In the distance: ASHER and MAKAYLA. They're crouched near the playground, watching something small. Makayla pulls a jar from her bag. A tiny caterpillar. She eases it inside. They're building little devices of their own—wires, batteries, scraps. 
+In the distance: Asher and Makayla and some younger kids are crouched near the playground, watching something small. Makayla pulls a jar from her bag. A tiny caterpillar. She eases it inside. 
 
-<div class="script-addition">
-
-> addition
-
-
-On the bench next to them: Sierra's folder, open. They're cross-referencing her sketches with their own observations.
+On the bench next to them: Sierra's folder, open with ross-referencings sketches and observations with the pages labelled "Metamorphosis Cycles"
 
 Makayla watches how the capitillar interacts with the different patterns of her crystal.
 

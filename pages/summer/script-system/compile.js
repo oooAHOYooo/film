@@ -34,37 +34,7 @@ const PLOT_POINT_BY_FILE = {
 };
 
 // Punchy one-line beats per scene (used for plot cards; fallback to deriveSummary if missing)
-const PUNCHY_SUMMARIES = {
-  's01.md': 'New house, tall grass. He finds a rig in the reeds. Makayla and Asher want his oscillator.',
-  's02.md': "Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies.",
-  's03.md': 'Walk to town with Dominic. Birds pointed at the marsh. Streetlight flickers. Fellowship invite.',
-  's04.md': 'Church picnic. Dallas meets Makayla and Asher. Janice hands off Howie.',
-  's05.md': 'Boardwalk through the reeds. Dominic shows the Merlin app. Something moving underneath.',
-  's06.md': "News vans in the street. Pat on camera. Burn marks on Dominic's driveway. Dallas stays.",
-  's07.md': "The kids' basement. Mr. Mike scratches numbers. Makayla and Asher grab the coordinates; she wants the oscillator.",
-  's08.md': 'Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out.',
-  's09.md': "He replays the clip. Grid coordinates—Mr. Mike's language. The creature in the kitchen; the scope picks up a pulse.",
-  's10.md': "Readings spike. In the hollow: gold orbs, one injured. He takes it. Something's coming.",
-  's11.md': 'He runs home with it. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold.',
-  's12.md': "Wires on the creature's head. It sings through its back-holes. She can't tell anyone.",
-  's13.md': 'Burn mark in the grass. Crystal. She confronts him. They\'re in this together.',
-  's14.md': 'They sit with the creature. Evidence. A bond. Howie at their feet.',
-  's15.md': "Tour of the lair. Tapes: the glow, then the dark figures. They're being watched.",
-  's16.md': "Rush back to Dallas's. Dark figures in the trees. Burn mark in the yard; she pockets the crystal. Uncle Dom can't know.",
-  's17.md': 'Creature in the basement. The crew knows. Lock the door.',
-  's18.md': "Oscilloscope on the creature. 115.3 MHz. Makayla: it's pulling power from the grid.",
-  's19.md': "Lifegroup tonight. Dominic drops off the music. The creature's downstairs—then Mr. Mike freaks. Everyone sees it.",
-  's20.md': "The creature's gone. Red eyes at the window. They're coming for it. Doorbell—first family's here.",
-  's21.md': 'House full. They sing. The hum answers. Lights pulse. Just the storm, they say.',
-  's22.md': "They find it in the gnarl. It's fading. Sierra's folder: if the Red-Eyes take them, it's all ghost stories. They'll return it.",
-  's23.md': 'Red eyes at the edge of the yard. The creature\'s gone.',
-  's24.md': 'Shoebox empty. Burn trail on the minivan. They\'re going in.',
-  's25.md': "Mr. Mike: Where is it? Burn trail. They hear the creature cry. We have to go get it.",
-  's26.md': "Gold vs red eyes. Paralysis. The creature dies in the marsh. They run. Dominic: they'll come for us. Then the plan.",
-  's27.md': 'Predators turn. They run. Trap set. Storm coming.',
-  's28.md': 'She goes in. Phase cancellation. She records the waveform. They\'re free.',
-  's29.md': "Branford breathes again. Pat on TV. The folder's with the kids. Dallas still listening.",
-};
+// Summaries are now loaded from inline comments (<!-- summary: ... -->) or derived from content
 
 function toRoman(num) {
   const map = [
@@ -109,6 +79,13 @@ function loadScene(filename) {
 function getNicknameFromScene(content) {
   if (!content || typeof content !== 'string') return null;
   const match = content.match(/<!--\s*nickname:\s*([^>]+?)\s*-->/i);
+  return match ? match[1].trim() : null;
+}
+
+// Extract summary from scene content: <!-- summary: foo-bar -->
+function getSummaryFromScene(content) {
+  if (!content || typeof content !== 'string') return null;
+  const match = content.match(/<!--\s*summary:\s*([\s\S]+?)\s*-->/i);
   return match ? match[1].trim() : null;
 }
 
@@ -164,7 +141,7 @@ function compileMarkdown(scenes) {
     output += `\n### Scene ${sceneNumber}: ${scene.title}\n\n`;
     output += `*${scene.act ? `ACT ${toRoman(scene.act)}${scene.actTitle ? ` — ${scene.actTitle}` : ''} | ` : ''}ID: ${scene.id} | File: ${scene.file}*\n\n`;
     output += `---\n\n`;
-    
+
     let sceneContent = loadScene(scene.file);
     sceneContent = sceneContentWithVisibleMarkers(sceneContent);
     sceneContent = injectSceneComments(sceneContent, sceneNumber, scene);
@@ -191,7 +168,7 @@ function markdownToHTML(markdown) {
     // Line breaks
     .replace(/\n\n/g, '</p><p>')
     .replace(/\n/g, '<br>');
-  
+
   return `<p>${html}</p>`;
 }
 
@@ -642,7 +619,7 @@ function generateHTMLPage(markdown, scenes) {
 </body>
 </html>
   `.trim();
-  
+
   return html;
 }
 
@@ -713,14 +690,13 @@ function writePlotCardsData(scenes, fullScriptMarkdown) {
     const id = scene.id || scene.nickname || `scene-${n}`;
     const raw = loadScene(scene.file);
     const nickname = getNicknameFromScene(raw);
+    const inlineSummary = getSummaryFromScene(raw);
     const title = nickname ? nicknameToTitle(nickname) : (scene.title || `Scene ${n}`);
     const fullScriptBlock = sceneBlocks[index];
     const derived = fullScriptBlock ? deriveSummary(fullScriptBlock) : deriveSummary(raw);
-    let summary = PUNCHY_SUMMARIES[scene.file] || derived;
-    const plotNums = PLOT_POINT_BY_FILE[scene.file];
-    if (plotNums && summary && !/\[Plot \d+/.test(summary)) {
-      summary = summary.replace(/\s*…?\s*$/, '') + formatPlotPointTag(plotNums);
-    }
+    // Priority: Inline comment > derived
+    let summary = inlineSummary || derived;
+    // Removed automatic plot tag appending to clean up the display
     return {
       n,
       id,

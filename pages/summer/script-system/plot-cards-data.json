@@ -61,7 +61,7 @@
     "title": "Dallas Marsh Walk",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out. [Plot 1]"
+    "summary": "Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out."
   },
   {
     "n": 9,
@@ -93,7 +93,7 @@
     "title": "The First Night With Creature",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Wires on the creature's head. It sings through its back-holes. She can't tell anyone. [Plot 2]"
+    "summary": "Wires on the creature's head. It sings through its back-holes. She can't tell anyone."
   },
   {
     "n": 13,
@@ -101,7 +101,7 @@
     "title": "Makayla Confronts Dallas",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Burn mark in the grass. Crystal. She confronts him. They're in this together. [Plot 2]"
+    "summary": "Burn mark in the grass. The Mother's Vision: a silhouette in the reeds whispers a lullaby. The stake is now personal."
   },
   {
     "n": 14,
@@ -117,7 +117,7 @@
     "title": "Makayla's Lair",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Tour of the lair. Tapes: the glow, then the dark figures. They're being watched."
+    "summary": "Reverse Device mission born. Dallas calibrates the oscillator using Mr. Mike's numbers. A countdown begins."
   },
   {
     "n": 16,
@@ -125,7 +125,7 @@
     "title": "Hide The Creature",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Rush back to Dallas's. Dark figures in the trees. Burn mark in the yard; she pockets the crystal. Uncle Dom can't know."
+    "summary": "Asher trance: 'The light doesn't leave.' Stakes raised—the vision confirms they must reach the Creek Bend."
   },
   {
     "n": 17,
@@ -133,7 +133,7 @@
     "title": "Back Home",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Creature in the basement. The crew knows. Lock the door."
+    "summary": "Tactical science team. Squeezing through the mudroom with a 10-minute window before the device burns out."
   },
   {
     "n": 18,
@@ -149,7 +149,7 @@
     "title": "Life Group Arrives",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Lifegroup tonight. Dominic drops off the music. The creature's downstairs—then Mr. Mike freaks. Everyone sees it. [Plot 3]"
+    "summary": "Lifegroup tonight. Dominic drops off the music. The creature's downstairs—then Mr. Mike freaks. Everyone sees it."
   },
   {
     "n": 20,
@@ -157,7 +157,7 @@
     "title": "Creature Escapes",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "The creature's gone. Red eyes at the window. They're coming for it. Doorbell—first family's here. [Plot 3]"
+    "summary": "The creature's gone. Red eyes at the window. They're coming for it. Doorbell—first family's here."
   },
   {
     "n": 21,
@@ -165,7 +165,7 @@
     "title": "The Hymn",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "House full. They sing. The hum answers. Lights pulse. Just the storm, they say. [Plot 3]"
+    "summary": "House full. They sing. The hum answers. Lights pulse. Just the storm, they say."
   },
   {
     "n": 22,
@@ -181,7 +181,7 @@
     "title": "Night Fears",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Red eyes at the edge of the yard. The creature's gone. [Plot 4]"
+    "summary": "Red eyes at the edge of the yard. The creature's gone."
   },
   {
     "n": 24,
@@ -189,7 +189,7 @@
     "title": "The Marsh Plan",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Shoebox empty. Burn trail on the minivan. They're going in. [Plot 5–6]"
+    "summary": "Shoebox empty. The creature dies in the marsh. They choose to go in—active choice with clear stakes."
   },
   {
     "n": 25,
@@ -197,7 +197,7 @@
     "title": "Predator Attack",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Mr. Mike: Where is it? Burn trail. They hear the creature cry. We have to go get it. [Plot 7]"
+    "summary": "First confrontation with Dark Creatures. Distinctive weird marks. They have to rescue the light."
   },
   {
     "n": 26,
@@ -205,7 +205,7 @@
     "title": "The Perimeter",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Gold vs red eyes. Paralysis. The creature dies in the marsh. They run. Dominic: they'll come for us. Then the plan. [Plot 8–10]"
+    "summary": "Retreat with dread: 'They'll come for us.' Shadows at the edge trigger zap episodes. They hatch the plan."
   },
   {
     "n": 27,
@@ -213,7 +213,7 @@
     "title": "The Last Battle",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Predators turn. They run. Trap set. Storm coming. [Plot 11]"
+    "summary": "They set out with the plan. It's not an accident—the plan is pressure-tested by the storm."
   },
   {
     "n": 28,
@@ -221,7 +221,7 @@
     "title": "Back To Howie",
     "act": 4,
     "actTitle": "Aftermath",
-    "summary": "She goes in. Phase cancellation. She records the waveform. They're free. [Plot 12–13]"
+    "summary": "Climax: Light vs Shadow logic. Clear swings on the battlefield. The reverse device flares."
   },
   {
     "n": 29,
@@ -229,6 +229,6 @@
     "title": "Aftermath",
     "act": 4,
     "actTitle": "Aftermath",
-    "summary": "Branford breathes again. Pat on TV. The folder's with the kids. Dallas still listening. [Plot 14]"
+    "summary": "Resolution: Unexpected gift. Town back to normal, but the science continues."
   }
 ]
