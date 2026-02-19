@@ -5,7 +5,8 @@
   "scripts": {
     "populate": "node populate",
     "generate": "node scripts/generate-inspo-manifests.js",
-    "compile:all": "node compile-all.js"
+    "compile:all": "node compile-all.js",
+    "start up": "node start-summer.js"
   },
   "dependencies": {}
 }
