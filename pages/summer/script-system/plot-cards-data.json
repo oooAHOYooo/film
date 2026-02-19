@@ -77,7 +77,7 @@
     "title": "Creature Discovery",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Readings spike. In the hollow: gold orbs, one injured. He takes it. Something's coming."
+    "summary": "# Scene 10: The Chase The air changes. A heavy, crushing sound slices through the reeds—something massive rocketing toward him like an arrow. Dallas breaks into a sprint. He reaches the stunted cedar tree—HOWIE is a…"
   },
   {
     "n": 11,
@@ -154,10 +154,10 @@
   {
     "n": 20,
     "id": "basement-huddle",
-    "title": "Creature Escapes",
+    "title": "Basement Huddle",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "The creature's gone. Red eyes at the window. They're coming for it. Doorbell—first family's here."
+    "summary": "[SCENE FILE MISSING: s20.md]"
   },
   {
     "n": 21,
