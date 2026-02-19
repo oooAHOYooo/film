@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/18/2026, 9:19:36 PM*
+*Compiled on 2/18/2026, 9:54:33 PM*
 
 ---
 
@@ -2553,10 +2553,6 @@ A church event. Picnic tables. Nica's catered lunch. DOMINIC and DALLAS greet ea
 In the distance: Asher and Makayla and some younger kids are crouched near the playground, watching something small. Makayla pulls a jar from her bag. A tiny caterpillar. She eases it inside. 
 
 On the bench next to them: Sierra's folder, open with ross-referencings sketches and observations with the pages labelled "Metamorphosis Cycles"
-
-Makayla watches how the capitillar interacts with the different patterns of her crystal.
-
-Dallas watches them. from afar. 
 
 INT. DALLAS'S WORKSHOP / HOUSE - DAY
 
