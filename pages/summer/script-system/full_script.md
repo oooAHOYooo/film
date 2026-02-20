@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/19/2026, 5:18:50 PM*
+*Compiled on 2/19/2026, 9:04:06 PM*
 
 ---
 
@@ -487,8 +487,7 @@ Okay cool. That's cool.
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
 (action)
-They finish eating. The group begins to disperse. Janice walks over to Dallas and hands him Howie again. 
-
+They finish eating. The group begins to disperse. 
 
 ---
 
@@ -633,7 +632,7 @@ Dallas looks at all of the different equipment scattered across the room. Differ
 
 Dallas and Dominic move the wall fan - as they go to install it. 
 
-INT. THE JACE DINING ROOM 
+INT. DOMINIC'S BASEMENT
 
 Dallas helps Dominic shove a heavy oak table against the wall. As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
 
@@ -739,7 +738,7 @@ And when you hurt one - eventually they will transform into the other one - they
 Janice walks over and grabs Howie from the car and hands them to Dallas.
 
 JANICE
-Do you mind watching Howie for a bit this afternoon - I have to take everyone to costco
+Do you mind watching Howie for a bit this afternoon? - I have to take everyone to Costco and the lines are going to be longer than my patience.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -880,19 +879,27 @@ EXT. INSIDE THE TALL MARSH - SUNSET HOUR
 
 Dallas stands slowly, scanning the reeds around him. Nothing. Just the gentle sway of grass and the sound of his own breathing.
 
+Dallas pushes through a dense curtain of reeds. Dust motes dance in a whirlwind of color refracting the sunset into jagged prisms on his face. 
+
 Dallas steps deeper, following the fading glow. 
 
 All around him is light reeeds blowing in an almost whirlwind of light and color. 
 
-Shadows—tall, spindly, and darker than the night—grow in the distance. They move *against* the wind, cutting through the blades of grass like silent ships. Dallas dismisses them as optical illusions. 
-
 As Dallas' eyes adjust to this new brightness - the world around him slowly fades back to normally. 
 
-There in the distance Dallas sees a gnarl tree that looks a little different than the rest of the trees. 
+There in the distance Dallas sees a gnarled tree that looks a little different than the rest of the trees. 
 
 Dallas approaches the tree and in the bottom of it - lives a small birdlike creature - gently bioluminest - and clearly injured. 
 
-Dallas looks at his equipment and it seems to do funny things when he is near it. Dallas gently wraps the creature in his jacket. 
+The creature is small. Birdlike, but not a bird - more round. A cloudlike - cottonball, powder-puff. Small round It skin is fluffy pulsing with a soft glow. Round. Covered in dense, dirty white fur like a dandelion seed head. It looks like a small owl. Its large eyes are closed. With no visible mouth, it looks a bit like a living cotton ball with shivering, transulent ears. 
+
+The 
+
+Dallas reaches out. His hand trembles. He touches the creature's back. The creature flinches but doesn't move away. 
+
+Dallas looks at his equipment and it seems to do funny things when he is near it. 
+
+Suddenly, the wind returns. A violent gust. Shadows in the distance start to fill the sky and hover over Dallas and the creature. Dallas in a daze, slowly grabs the creature and gently places it in his jacket and begins to walk out without looking back. 
 
 ---
 
@@ -1693,14 +1700,7 @@ Dallas sets up the creature - but as he does he nearly drops the box. He looks a
 <!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
 
 <!-- nickname: Back Home  -->
-<!-- summary: Tactical science team. Squeezing through the mudroom with a 10-minute window before the device burns out. -->
 
-Makayla and Dallas return to find the creature on the table. 
-
-Dallas straps the Oscillator rig to his chest. He connects the battery pack. The readout flickers: **12:00**.
-
-MAKAYLA
-The battery is going to go fast. I rigged a kitchen timer as a backup. The Shadows are peaking at the creek.
 
 ---
 
@@ -1716,33 +1716,7 @@ The battery is going to go fast. I rigged a kitchen timer as a backup. The Shado
 <!-- nickname: Makayla's Bond with Creature -->
 <!-- summary: Oscilloscope on the creature. 115.3 MHz. Makayla: it's pulling power from the grid. -->
 
-EXT. DALLAS'S PORCH - CONTINUOUS
 
-Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
-
-DOMINIC
-Dalllasss - you stocking up for the storm? Life group tonight. Thanks for again for letting us use the house. Mr. Mike is home and Janice is taking care of him. Listen, I'm heading to Costco
-
-DALLAS
-No thanks - I'm good.
-
-DOMINIC
-Great - yeah. Hey Makayla! You cool here with staying here and having Dallas help out? Where's Asher. 
-
-MAKAYLA
-He's downstairs. 
-
-DOMINIC
-(to Dallas)
-Roger roger, well - I'm heading to Costco - do you need anything?
-
-DALLAS
-No thanks - I'm good.
-
-<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
-
-(action)
-Dominic leaves.
 
 INT. DALLAS BASEMENT
 
@@ -1907,9 +1881,11 @@ Dominic rushes over to the kitchen and sees that the brownies tray is smashed on
 
 <!-- scene: 20 file: s20.md nickname: basement-huddle -->
 
+# Scene 20: Back in Branford
 
-[SCENE FILE MISSING: s20.md]
+EXT. BRANFORD TOWN COMMONS
 
+Makayla and Dallas go into town as they walk to the edge of the tall grass.
 
 ---
 
@@ -2176,26 +2152,11 @@ Dallas is wide awake. Candle shadows dance across the hall. He checks a small vi
 
 His late wife's voice. Her theories. The great hum—something she read about as a girl. A long narration. Why she had to stop. He listens.
 
-
-
-<div class="script-addition">
-
-> addition
-
-
-As the tape plays, Dallas's hand drifts to the stack of Sierra's folders beside the recorder. He opens one. Inside: her sketches—the same creatures, drawn with anatomical precision. Frequency notations in the margins. A map of the marsh. He's seen them before but never looked. He looks now. He closes the folder and sets it on top of the box—visible, accessible.
-
-
-</div>
-
-
-
-
-Dallas looks back to the video monitor but the creature is gone!
+Dallas looks back to the video monitor, and raises from the bed - the creature is gone!
 
 EXT. DALLAS'S BACKYARD - NIGHT (SAME)
 
-Dallas looks out the tall window toward the marsh. In the distance: a pair of eyes. Bright. Dim. Bright. Red. He looks across the street—the telephone pole has a red light. Something down the block glows red. He looks back at the tall grass. The red eyes are gone.
+Dallas looks out the tall window toward the marsh while holding the empty cardboard box. His hair blows in the wind. In the distance: a pair of eyes. Bright. Dim. Bright. Red. He looks across the past a telephone pole with a red eyes. Something down the block glows red. He looks back at the tall grass. The red eyes are gone.
 
 He looks again. Closer. The eyes reappear. Swirling through the blades of grass. Watching the house. Little pulses of red light. Inch by inch. Closer to the edge of the yard.
 

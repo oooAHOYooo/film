@@ -111,3 +111,32 @@ EXT. / INT. DALLAS'S HOUSE - MORNING
 Morning. Dallas is still making calculations. Then he stops. <!-- [DELETION] REVIEW: giving up contradicts the legacy additions -->He puts his equipment in the trash.<!-- [/DELETION] --> The crew leaves. Dallas is alone again.
 
 He looks outside. The soft sound—the pulse of the creature—returns. Faint. There. He listens.
+
+
+FROM S20
+
+EXT. DALLAS'S PORCH - CONTINUOUS
+
+Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
+
+DOMINIC
+Dalllasss - you stocking up for the storm? Life group tonight. Thanks for again for letting us use the house. Mr. Mike is home and Janice is taking care of him. Listen, I'm heading to Costco
+
+DALLAS
+No thanks - I'm good.
+
+DOMINIC
+Great - yeah. Hey Makayla! You cool here with staying here and having Dallas help out? Where's Asher. 
+
+MAKAYLA
+He's downstairs. 
+
+DOMINIC
+(to Dallas)
+Roger roger, well - I'm heading to Costco - do you need anything?
+
+DALLAS
+No thanks - I'm good.
+
+(action)
+Dominic leaves.
