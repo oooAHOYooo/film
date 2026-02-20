@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/19/2026, 9:57:38 PM*
+*Compiled on 2/19/2026, 10:15:40 PM*
 
 ---
 
@@ -457,32 +457,6 @@ Dallas takes a plate but doesn't eat much. He's distracted by what Makayla and A
 
 Janice, noticing that Dallas is a little quiet - tries to spark conversation. 
 
-DOMINIC
-So, what are you here for?
-
-DALLAS
-Work.
-
-DOMINIC
-At Yale?
-
-DALLAS
-Quinnipiac. Starting next semester. Got a couple months to get settled.
-
-DOMINIC
-What kind of work?
-
-DALLAS
-Bioacoustics. I was hired to record the marsh—birds, insects, coyotes. I start next semester.
-
-DOMINIC
-Nice. So are you here alone?
-
-DALLAS
-Yep.
-
-DOMINIC
-Okay cool. That's cool.
 
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
@@ -1644,6 +1618,10 @@ EXT. DALLAS HOUSE
 
 The crew walk back to Dallas's house. Makayla and Asher walk up to the front door and take Howie who was inside this time. Dominic pulls up and honks the horn.
 
+JANICE
+(leaning out the window)
+You kids! I said the basement was off limits tonight so you're in Dallas basement now.
+
 MAKAYLA
 Dallas, Uncle Dominic can't know about this. No one can. Not until we get more evidence. He'll freak out and make us take it back.
 
@@ -1651,6 +1629,10 @@ Dallas, Uncle Dominic can't know about this. No one can. Not until we get more e
 
 (action)
 Dallas looks onward and waves. 
+
+DOMINIC
+(out the window)
+Dallas, you ready. 
 
 ---
 
@@ -2167,7 +2149,7 @@ Dallas looks at the burn mark on his forearm - it begins to glow a bit - and the
 <!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
 
 # Scene 24: The Burn Marks
-<!-- summary: Shoebox empty. The creature dies in the marsh. They choose to go in—active choice with clear stakes. -->
+<!-- summary:  -->
 
 INT. DALLAS'S BASEMENT - MORNING
 
@@ -2197,13 +2179,15 @@ Dallas looks at the ground for a long time at the burn mark. It seems to have in
 
 Burn marks lead from the driveway toward the house—along the siding, up toward the windows. Makayla follows them. She does some quiet mental math and takes a deep breath.
 
+Dallas looks at all of his gear scattered across the lawn and the picnic table. 
+
 MAKAYLA
 Does one of your devices could it be reversed engineered to transmit the sound that you have been recording.
 
 <!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
 
 (action)
-Dallas thinks for a moment but his face says it all.
+Makayla doesn't answer. She grabs one of the portable speakers and positions it on the picnic table. 
 
 DALLAS
 I suppose. 
@@ -2213,12 +2197,22 @@ I suppose.
 (action)
 A faint hum is heard off in the distance.  Makayla turns to the group. 
 
-MAKAYLA
-We have to go back - and pause the dark creatures - to allow for the light creatures space to leave this place.  We will wait for the evening and then strike. 
+Makayla hits the trigger. A sound like a glass crackles under pressure ripples out. 
 
-ASHER
-(taps the device twice)
-Let's go back to the spot. See if we need anything.
+The grass at the edge of the yard sways rhythimically. Freezing in place. 
+
+Dallas notices that the "vein" burn mark - turns from a dark brown to a dull brown to a light brown - to a dark green. 
+
+MAKAYLA
+We have to go back... We will wait for the evening and then strike.... Asher - we need to get the oscillator rigged up - the device is at the lair. 
+
+<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
+
+(action)
+Asher nods and runs off toward his house.
+
+MAKAYLA
+But the batteries won't hold for more than a few minutes.
 
 <!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
 
@@ -2226,9 +2220,9 @@ Let's go back to the spot. See if we need anything.
 Makayla looks and sizes up Dallas.
 
 MAKAYLA
-Dallas, you come too. 
+Dallas, you should come too. 
 
-EXT. MAKAYLA'S FORT - LATE SUN
+EXT. MAKAYLA'S LAIR - LATE SUN
 
 Makayla and Asher and Dallas sit on a tree log among the Long Island Sound. They watch - as the wind picks up - and the storms clouds make their way. 
 
