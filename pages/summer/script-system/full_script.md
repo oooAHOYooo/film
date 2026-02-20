@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/19/2026, 9:04:06 PM*
+*Compiled on 2/19/2026, 9:57:38 PM*
 
 ---
 
@@ -1236,29 +1236,6 @@ Dallas walks over and pulls over his bright electronic lamp over it. Where it sh
 MAKAYLA
 Look at that!
 
-EXT. DALLAS'S BACKYARD - DAWN
-
-Dominic emerges from the minivan, looking harried. He hands Dallas a stack of photocopied papers.
-
-DOMINIC
-This is the music for life group tonight. Thanks for hosting. I'm heading to Costco—need anything? Water? Batteries? That storm has gotten me all rattled. 
-
-DALLAS
-I'm good.
-
-DOMINIC
-Listen, Makayla and Asher - help Dallas okay - I'll be back in 45. You know what to do - we got to get this place looking sharp. Chairs inside - brownies in oven - we're going to have a good amount of folks tonight. 
-
-MAKAYLA
-You got it Uncle.
-
-DOMINIC
-Yeah? Makayla your in charge.
-
-<!-- scene: 13 file: s13.md nickname: entering-grass -->
-
-(action)
-Makayla smiles and waves as Dominic peels out. 
 
 Makayla turns to Dallas. 
 
@@ -1269,7 +1246,7 @@ INT. DALLAS KITCHEN
 
 Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. 
 
-
+Makayla brushes the creature's wing, hears a lullaby, and sees her mothers silheottue
 
 
 ---
@@ -1504,6 +1481,10 @@ The doorbell rings.
 
 EXT. MAKAYLA'S LAIR 
 
+The crew walk into Makayala's outdoor wigwam with the creature in their makeshift portable box.
+
+INT. MAKAYLA'S LAIR - CONTINUOUS
+
 The crew leave the sleeping creature under a heat lamp in the back corner of the wigwam type lair Makayla has created. 
 
 Makayla gives Dallas a tour of the outdoor lair. Around a lean too structure in the woods - Makayla has built an impressive array of servillance equipment and other home-made gadgetry made from off the shelf components. 
@@ -1646,30 +1627,22 @@ ASHER
 I don't know. 
 
 MAKAYLA
-The creature just gave you a direct communion from an intelligence outside of humanity and you don't remember at all what they said or told you? 
+The creature just gave you a direct communication from an intelligence outside of humanity and you can't tell me what they said or told you? 
 
 ASHER
-I don't know Makayla.
+I guess not. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-Makayla huffs and walks faster. Asher's notebook is closed, gripped in both hands. He and Dallas lock eyes—Dallas doesn't push. Asher gives a small nod. He's not saying. Not yet. 
+Makayla huffs and walks faster. She circles around the wigwam and looks back at Asher.
+
+MAKAYLA
+I'm sorry little brother. 
 
 EXT. DALLAS HOUSE
 
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-In the middle of the yard is a jagged, blackened circle—a burn mark in the grass. At its center lies a small, translucent crystal.
-
-Makayla kneels and touches it. Her hair begins to flutter, static electricity pulling the strands toward the stone. 
-
-Dominic pulls up with Janice and a minivan full of things from Costco
-
-She quickly pockets it as Dominic yells from the car.
-
-Makayla turns to Dallas and looks at Asher. Asher taps his notebook twice. Nods. 
+The crew walk back to Dallas's house. Makayla and Asher walk up to the front door and take Howie who was inside this time. Dominic pulls up and honks the horn.
 
 MAKAYLA
 Dallas, Uncle Dominic can't know about this. No one can. Not until we get more evidence. He'll freak out and make us take it back.
@@ -1677,16 +1650,7 @@ Dallas, Uncle Dominic can't know about this. No one can. Not until we get more e
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-Dallas looks onward.
-
-MAKAYLA
-We need to go get the creature now and put it downstairs in the basement before he gets back. 
-
-Dallas makes his way to the kitchen and begins to bring the makeshift hospital down to the basement. 
-
-INT. DALLAS BASEMENT
-
-Dallas sets up the creature - but as he does he nearly drops the box. He looks at his arm a burn mark. 
+Dallas looks onward and waves. 
 
 ---
 
@@ -1700,6 +1664,32 @@ Dallas sets up the creature - but as he does he nearly drops the box. He looks a
 <!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
 
 <!-- nickname: Back Home  -->
+INT. DALLAS MUDROOM - NIGHT (DURING LIFEGROUP)
+
+The sound of the LifeGroup singing "Great Is Thy Faithfulness" is muffled by the heavy basement door. 
+
+MAKAYLA, DALLAS, and ASHER are crouched in the mudroom, shoulder-to-shoulder. Dallas is strapping the Oscillator rig over his jacket. The Crystal is locked in the center, humming with the frequency of a low-voltage wire.
+
+Makayla taps the screen on her portable viewfinder. It’s a mess of jagged red lines.
+
+MAKAYLA
+(whispering)
+The Shadows are spiking at the Creek Bend. We have ten minutes before the Crystal hits the inversion limit. If it burns out out there, we're blind.
+
+<!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
+
+(action)
+Dallas tightens the straps on the Oscillator rig over his jacket. The Crystal is locked in the center, humming with the frequency of a low-voltage wire.
+
+<!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
+
+(action)
+Asher looks at his notebook and says 115.3.
+
+<!-- scene: 17 file: s17.md nickname: makeshift-hospital -->
+
+(action)
+Makayla clicks a "Master" switch on the device. A small, protective green light flickers on. 
 
 
 ---
@@ -1899,9 +1889,7 @@ Makayla and Dallas go into town as they walk to the edge of the tall grass.
 <!-- scene: 21 file: s21.md nickname: the-hymn -->
 
 <!-- nickname: the-hymn -->
-<!-- summary: House full. They sing. The hum answers. Lights pulse. Just the storm, they say. -->
-
-
+<!-- summary:  -->
 
 INT. DALLAS'S BASEMENT - SAME TIME
 
@@ -1909,8 +1897,6 @@ Dallas shuffles through a pile of old equipment—mono cables, spare parts. The 
 
 
 He finds a way to poke a hole in something so it can drink. MAKAYLA and ASHER watch from the staircase. Makayla comes down. She takes out the crystal. It begins to glow. Her hair lifts. She and the creature seem to communicate—a beat of shared attention. The creature's glow dims as she pulls her hand away.
-
-
 
 INT. DALLAS'S LIVING ROOM - LATER
 
@@ -1923,7 +1909,7 @@ We found a little cat. Dallas is downstairs nursing it.
 A woman stands—early fifties, warm.
 
 WOMAN
-I'm a vet. I could take a look.
+I'm a retired vet. I could take a look.
 
 DOMINIC
 I mean— no, that's okay. I think that cat's just sleeping. We could check after?
@@ -2161,18 +2147,6 @@ Dallas looks out the tall window toward the marsh while holding the empty cardbo
 He looks again. Closer. The eyes reappear. Swirling through the blades of grass. Watching the house. Little pulses of red light. Inch by inch. Closer to the edge of the yard.
 
 Dallas looks at the burn mark on his forearm - it begins to glow a bit - and then as it does - more howls in the distance engulf the screen.
-
-INT. DALLAS'S BASEMENT / DEN - NIGHT
-
-Dallas makes his way downstairs to check on the creature. The makeshift box is empty. The creature is gone.
-
-EXT. DALLAS'S BACKYARD - NIGHT
-
-Dallas at the window again. The eyes are gone. The night is still.
-
-
-</div>
-
 
 
 
