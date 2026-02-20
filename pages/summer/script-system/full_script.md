@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/19/2026, 10:15:40 PM*
+*Compiled on 2/19/2026, 10:19:03 PM*
 
 ---
 
@@ -1220,7 +1220,11 @@ INT. DALLAS KITCHEN
 
 Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. 
 
-Makayla brushes the creature's wing, hears a lullaby, and sees her mothers silheottue
+Makayla brushes the creature's wing, hears a lullaby, and sees her mothers silheottue in the distance. 
+
+Makayla shakes her head and looks at Dallas.
+
+
 
 
 ---
