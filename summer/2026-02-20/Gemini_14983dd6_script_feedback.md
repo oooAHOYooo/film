@@ -1,0 +1,53 @@
+# Summer Film Script Feedback
+
+## 1. Fresh Scan Feedback
+
+Your treatment has a beautiful, quiet sci-fi/horror tone that feels heavily resonant—evoking the grounded wonder of *Arrival* and the eerie isolation of *The Vast of Night*. The concept of bioacoustics as the central mechanic (creatures that communicate and survive via frequency, and predators that consume sound) is highly original and very poetic.
+
+**Strengths of the Current Draft:**
+- **The Core Mechanic:** Sound vs. Silence. This is brilliant. The fact that the "scary" moments are defined by the absence of sound (the flatlining of Dallas's equipment) rather than jump-scare noises is a fantastic tension builder.
+- **The Grounded Setting:** The contrast of cosmic, ancient creatures hiding right next door to mundane suburban life (Costco runs, complaining about raccoons, church life groups) makes the story feel very real.
+- **Dallas's Grief Arc:** It's underplayed in the best way possible. Peeling back the duct tape to see his wife, holding onto her equipment—it all makes his obsession with the marsh feel emotionally anchored rather than just academic.
+
+**Areas for Consideration:**
+- **Pacing the "Life Group" Scene (Act II):** The transition from Dallas studying the dying creature alone to suddenly having his house filled with 15 church members is a great recipe for tension, but it happens very quickly. Consider giving Dallas an extra quiet beat with the creature to fully establish his awe and the creature's vulnerability before the chaos of the Life Group descends upon his house.
+- **Agency in the Climax (Act III):** In the marsh confrontation, Dallas and Makayla are briefly paralyzed by the creatures. While this shows the creatures' power, make sure Dallas and Makayla still have strong active roles. Dallas using his dial to cause the creature to pulse and scare the red eyes is a great interactive moment—leaning into his acoustic tools as his "weapon" works perfectly.
+
+---
+
+## 2. Reviewing Existing Feedback
+
+I've reviewed the existing notes in your `summer-notes` folder (specifically `REVIEW.md` and `IMPROVEMENTS.md`). Those are incredibly strong outlines for where the script needs to go. 
+
+**How my scan aligns with them:**
+- The existing feedback correctly identifies that the "Trips into the Tall Grass" should escalate with each act.
+- The `IMPROVEMENTS.md` focus on tightening the logic around the predators (the "Eaters" consuming sound) is spot on. It gives the threat clear rules.
+- The suggestion to shift Makayla from passive observer to active participant fits perfectly with the momentum you've built for her character. 
+- You have a fantastic Lore Bible and roadmap; the structural tweaks suggested there will absolutely land this script in the Sundance tier.
+
+---
+
+## 3. Dominic as an Aspiring Fairy Tale Writer
+
+**Is this a good idea?**
+Yes, it is a **fantastic** idea. It adds a layer of gentle, heartbreaking tragedy to his character. 
+
+Right now, Dominic is defined by his compulsion to care for others (Mr. Mike, his sister, his new neighbor Dallas, the church). He does this to outrun the grief of losing his wife and son. Giving him a personal, suppressed dream—like writing a book of woodland fairy tales—shows that beneath his busy, practical exterior, he possesses a deep sense of wonder that he feels he doesn't have the "right" or the time to indulge anymore.
+
+Furthermore, this perfectly collides with the plot: the creatures in the marsh *are* essentially woodland fairy tales come to life. When he finally encounters them, it will mean something completely different to him than it does to Dallas (the scientist) or Makayla (the fearless youth). 
+
+**How to Sprinkle This In (Suggestions without altering your text):**
+
+Here are some subtle ways to insert this trait into the existing beats of your outline:
+
+1. **The Initial Walk (Act I):**
+   While Dominic is showing Dallas around the marsh and talking about the birds and his app, he could briefly let his guard down. He might mention that he used to bring his son to the edge of the tall grass and make up stories about "marsh sprites" or "golden reeds." He could chuckle dismissively: *"Always meant to write them down into a little book. But you know... life."*
+
+2. **The Costco / Cooking Scene at Dominic's (Act I):**
+   When Dallas is at Dominic's house, Dallas might notice a notebook with half-drawn sketches or a few written pages sitting on the counter buried under bills, life group flyers, and Mr. Mike's medicine. Dominic quickly sweeps it away, a bit embarrassed, saying, *"Just some old nonsense I fiddle with when Mike is asleep. Never seem to get past chapter one."*
+
+3. **The Life Group Meeting (Act II):**
+   A church member, making small talk over the Brussels sprouts, could innocently ask Dominic, *"Hey Dom, did you ever finish that children's book you were working on?"* Dominic could brush it off with his usual cheerful deflection: *"Who has the time, right? Too many mouths to feed here."* This highlights how his self-sacrifice actively buries his dreams.
+
+4. **The Marsh Climax (Act III):**
+   When Dominic actually sees the glowing creatures in the tall grass during the final confrontation, give him a quiet moment of recognition. Instead of pure terror or confusion, he should look at the bioluminescent "Singers" with tearful awe. He could whisper something incredibly simple like, *"They're real..."* It pays off his fairy tale dreams in a profound, emotional way. Validate his lost imagination.
