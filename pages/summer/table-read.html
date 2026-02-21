@@ -306,53 +306,365 @@
             display: flex;
             flex-wrap: wrap;
         }
+
+        /* New Enhancement Styles */
+        .hero-section {
+            position: relative;
+            margin-bottom: 3rem;
+            border-radius: 4px;
+            overflow: hidden;
+            background: var(--accent-dark);
+            height: 350px;
+        }
+
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.7;
+            filter: saturate(0.8) contrast(1.1);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 3rem;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: white;
+        }
+
+        .hero-overlay h1 {
+            color: white;
+            margin: 0;
+            font-size: 4rem;
+        }
+
+        .hero-overlay .table-read-date {
+            color: var(--accent);
+            margin: 0;
+            margin-top: 0.5rem;
+        }
+
+        .vision-quote {
+            text-align: center;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 200;
+            color: var(--text-secondary);
+            font-style: italic;
+            margin: 4rem 0;
+            padding: 0 2rem;
+        }
+
+        .resonance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .resonance-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+
+        .resonance-meta {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            margin-top: -0.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .resonance-card p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        .rules-container {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .rule-item {
+            padding: 1.5rem;
+            border-left: 3px solid var(--accent);
+            background: #fff;
+            box-shadow: var(--card-shadow);
+        }
+
+        .rule-title {
+            display: block;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-dark);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .rule-item p {
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .inspiration-section {
+            margin-top: 4rem;
+        }
+
+        .inspiration-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 16px;
+            margin-top: 2rem;
+        }
+
+        .inspiration-item {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            aspect-ratio: 16 / 9;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+        }
+
+        .inspiration-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: grayscale(20%) contrast(1.1);
+        }
+
+        .inspiration-item:hover img {
+            transform: scale(1.03);
+            filter: grayscale(0%) contrast(1.1);
+        }
     </style>
 </head>
 
 <body>
     <div class="table-read-page">
-        <a href="/pages/summer.html" class="table-read-back">Summer Hub</a>
-        <h1>Table Read</h1>
-        <p class="table-read-date">February 18, 2026</p>
+        <a href="/pages/summer.html" class="table-read-back">Creatures in the tall grass</a>
+
+        <div class="hero-section">
+            <img src="marsh_concept.png" alt="The Branford Marshes Concept Art" class="hero-img">
+            <div class="hero-overlay">
+                <h1>Table Read</h1>
+                <p class="table-read-date">February 22, 2026</p>
+            </div>
+        </div>
+
+        <div class="vision-quote">
+            <p>"Something's in the marsh. A hum. Then something more."</p>
+        </div>
 
         <div class="dvd-block" aria-label="Film summary">
-            <p class="tagline">Something's in the marsh. A hum. Then something else.</p>
+            <p class="tagline"></p>
             <p class="synopsis">Dallas moves to Branford with a box he won't open—Sierra's field notes, her sketches,
                 the receiver they used together. Next door, his neighbor Dominic's niece and nephew want his oscillator;
                 something's moving under the reeds, and the power grid's acting up. When Dallas finds an injured
                 creature in the tall grass, Makayla finds out. So does the thing that's chasing it. A small-town
-                fellowship, a life group in the living room, and a return to the hollow—to get the creature home or lose
-                the story for good.</p>
+                fellowship, a life group in the living room, and a return to the hollow.</p>
             <div class="dvd-specs">
-                <div><span>~80 min</span> Runtime</div>
+                <div><span>~90 min</span> Runtime</div>
                 <div><span>29</span> Scenes</div>
-                <div><span>Shoreline, CT</span> Location</div>
-                <div><span>14</span> Shoot Days</div>
+                <div><span>Branford, CT</span> Location</div>
+                <div><span>14 + -</span> Shoot Days</div>
             </div>
         </div>
+
+        <section class="inspiration-section" aria-label="Visual Inspiration">
+            <h2>Visual Inspiration</h2>
+            <div class="inspiration-gallery">
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam3.jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam2.jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seaM1.jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam4.jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam3%20copy.jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam2%20copy.jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/d0b413429934cc7ccc23bef98a7c9d82.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam-inspo.jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/1ad07eb04ccd80ef85bbb53b51e8a4cd.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/58b78dd9a9b318ada0553d773bcee159.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/dd54256eda27694fa609cac80cccf29d.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/463dd4a776dff9d822ed3b7590d19a2b.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/139a0415b0c5587f00584a3772709636.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/da90dce4ee6156f5c31f3e808d055602.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img
+                        src="/assets/summer/inspo-imgs/9b78bbc12e3136a8b1ba31ee50cbf389 (1).jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/9b78bbc12e3136a8b1ba31ee50cbf389.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/0e33eda70f8f54ecb607eeede9784816.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/01e60c9f13f3934480846f8e36cac625.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/deab0428ff773e0d4836ca2473ece2d6.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/a3df358363c11a84827533d0b9174e97.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/83a769175948ec6ad6013acd3cb4382f.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/4843e37a35a0b9c8652d2b7407608f9c.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/df5852dafdb33c46a9e2d8d9793bd528.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/7891d109b883554cb21db40b672bc2e8.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/50b771bc6903b7d10f957115e03af2c2.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/4e032b4be06df10c35e360a4f4319c31.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/7497a2988323ae3d44204e2a9dfb7b89.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/5cffa2cfb7fab78d5d1aaea77da1544d.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/06cf4238b2238097946661143f0896c6.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/639891b22a5e496d1078235358b2c80d.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/20m_ant_05.jpg" alt="Inspiration"
+                        loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/bobs-simple-wire-antenna-sml.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/antenna-wire-to-adapter.webp"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/30556c4f1b586782df5958caa13e49c4.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/96e378ec70a189aa7fe16665c2d0cdec.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/c151bc1e6730ffda4dcc99f71f5ea11f.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/64b35b2e964b0e55013196dc143b1a5a.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/b904caa951a8f4d14bf40dd900c08555.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/efe2604b5ebbd8318d41bd5f0ee2a89a.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/c34ed91c56254d4ae1d53e4634d4cfd5.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/ceeab40e217f91334b7f13e7e6f616e7.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/05365bc54cd8f3ea81518c3e38ab8822.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/257eb6ec10f4d6ccfdedc516d7a57354.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/7070831a604a48efbb9c604642abebd6.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/27489523572dd4f77ccf893f2bd8a3fb.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/72f7ef1ba912006a069192456eb6e7c2.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/58d4f9084bb65b1ceab351e467e2174b.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/66832ce2c86d9224167be7adc861bd19.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/024c23653cb31dbd5f0c63fd02d44f5f.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/bfcfdc78f4f3e7b6f06aa45684814fa5.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/39e2d7506f984dd62acf9a882d986238.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/5fe68f943aed992e5969557cb11f800e.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/f6d048bbe2cc433489cb50e31b431405.jpg"
+                        alt="Inspiration" loading="lazy"></div>
+            </div>
+        </section>
+
+        <section class="resonance-section" aria-label="Character Resonance">
+            <h2>Character Resonance</h2>
+            <div class="resonance-grid">
+                <div class="resonance-card">
+                    <h3>Dallas</h3>
+                    <p><strong>Before:</strong> Records sound to escape the quiet of grief. Silence reminds him of
+                        death.</p>
+                    <p><strong>After:</strong> Gains a "new sense." His auditory cortex restructures. He can distinguish
+                        the individual layers of the world's orchestra.</p>
+                </div>
+                <div class="resonance-card">
+                    <h3>Makayla</h3>
+                    <p><strong>Before:</strong> Fearless and open. No baggage. A clean signal.</p>
+                    <p><strong>After:</strong> The frequency enters her bones. She moves from curiosity to fierce
+                        protection. She leads the chord.</p>
+                </div>
+                <div class="resonance-card">
+                    <h3>Dominic</h3>
+                    <p><strong>Before:</strong> Fills silence with activity—cooking, talking, organizing. Stillness is
+                        where his loss lives.</p>
+                    <p><strong>After:</strong> Learns that silence isn't absence; it's full. He finds the ability to sit
+                        in a space that isn't empty anymore.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules-section" aria-label="The Laws of the Marsh">
+            <h2>The Laws of the Marsh</h2>
+            <div class="rules-container">
+                <div class="rule-item">
+                    <span class="rule-title">The Chord Protects</span>
+                    <p>A Singer alone is vulnerable. Singers together are safe. Connection protects.</p>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-title">Silence is a Weapon</span>
+                    <p>The Eaters don't roar; they consume vibration. When they approach, the world goes mute.</p>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-title">The Grass is the Body</span>
+                    <p>The marsh doesn't just house them; it's a symbiotic waveguide. The grass sings back.</p>
+                </div>
+            </div>
+        </section>
 
         <section aria-label="Cast">
             <h2>Cast</h2>
             <div class="production-glance">
                 <h3>Table Read Present</h3>
                 <ul class="cast-list">
-                    <li><span class="cast-role">Makayla</span><span class="cast-actor">Amaranto</span></li>
-                    <li><span class="cast-role">Dominic</span><span class="cast-actor">Armarto</span></li>
-                    <li><span class="cast-role">Dallas</span><span class="cast-actor">Demartini</span></li>
+                    <li><span class="cast-role">Makayla Armaranto</span><span class="cast-actor">Charollete</span></li>
+                    <li><span class="cast-role">Dominic Armaranto</span><span class="cast-actor">Matt Grant</span></li>
+                    <li><span class="cast-role">Dallas Demartini</span><span class="cast-actor">Dallas Demartini</span>
+                    </li>
                 </ul>
             </div>
 
             <div class="production-glance" style="margin-top: 2rem;">
                 <h3>Full Cast</h3>
                 <ul class="cast-list">
-                    <li><span class="cast-role">Dallas</span><span class="cast-actor">Demartini</span></li>
-                    <li><span class="cast-role">Dominic</span><span class="cast-actor">Armarto</span></li>
-                    <li><span class="cast-role">Makayla</span><span class="cast-actor">Amaranto</span></li>
-                    <li><span class="cast-role">Asher</span><span class="cast-actor">—</span></li>
-                    <li><span class="cast-role">Janice</span><span class="cast-actor">—</span></li>
-                    <li><span class="cast-role">Mr. Mike</span><span class="cast-actor">—</span></li>
-                    <li><span class="cast-role">Howie</span><span class="cast-actor">(non-speaking)</span></li>
-                    <li><span class="cast-role">Pat Clendenen</span><span class="cast-actor">—</span></li>
+                    <li><span class="cast-role">Dallas Demartini</span><span class="cast-actor">Dallas Demartini</span>
+                    </li>
+                    <li><span class="cast-role">Dominic Armaranto</span><span class="cast-actor">Matt Grant</span></li>
+                    <li><span class="cast-role">Makayla Armaranto</span><span class="cast-actor">Charollete</span></li>
+                    <li><span class="cast-role">Asher Armaranto</span><span class="cast-actor">Mac Sheldon</span></li>
+                    <li><span class="cast-role">Janice Armaranto</span><span class="cast-actor">Michelle
+                            Armaranto</span></li>
+                    <li><span class="cast-role">Mr. Mike</span><span class="cast-actor">Mike</span></li>
+                    <li><span class="cast-role">Howie</span><span class="cast-actor">Howie</span></li>
+                    <li><span class="cast-role">Pat Clendenen</span><span class="cast-actor">Pat Clendenen</span></li>
                 </ul>
             </div>
         </section>
@@ -360,19 +672,20 @@
         <section class="table-read-section" aria-label="Proposed shoot dates">
             <h2>Proposed Dates</h2>
             <div class="shoot-dates-block">
-                <p><span class="shoot-range">June 19 – July 12, 2026</span> 10 shoot days. Detailed actor estimate
+                <p><span class="shoot-range">June 19 – July 12, 2026</span> 14 shoot days. Detailed actor estimate
                     below.</p>
             </div>
 
             <div class="production-glance">
                 <h3>Actor Presence</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">Based on current script-system scene
-                    mapping and production goals.</p>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">14-day sequential shoot schedule with
+                    location grouping.</p>
                 <table class="estimate-table">
                     <thead>
                         <tr>
                             <th>Day</th>
                             <th>Date</th>
+                            <th>Location</th>
                             <th>Scenes</th>
                             <th>Cast Needed</th>
                         </tr>
@@ -381,62 +694,100 @@
                         <tr>
                             <td>1</td>
                             <td>Fri Jun 19</td>
-                            <td>1–4</td>
-                            <td>Dallas, Makayla, Dominic, Janice, Mary, Paul</td>
+                            <td>Dallas House</td>
+                            <td>1–3</td>
+                            <td>Dallas, Makayla, Dominic, Howie</td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Sat Jun 20</td>
-                            <td>5–7</td>
-                            <td>Dallas, Dominic, Makayla, Janice</td>
+                            <td>Dallas House</td>
+                            <td>7</td>
+                            <td>Dominic, Janice, Asher, Dallas, Makayla, Howie</td>
                         </tr>
                         <tr>
                             <td>3</td>
-                            <td>Fri Jun 26</td>
-                            <td>8–11</td>
-                            <td>Dallas, Dominic</td>
+                            <td>Sun Jun 21</td>
+                            <td>Dallas House</td>
+                            <td>9, 11</td>
+                            <td>Dallas, Dominic, Asher, Howie</td>
                         </tr>
                         <tr>
                             <td>4</td>
-                            <td>Sat Jun 27</td>
-                            <td>12–14</td>
-                            <td>Dallas, Makayla, Asher</td>
+                            <td>Fri Jun 26</td>
+                            <td>CPC Lawn</td>
+                            <td>4</td>
+                            <td>Dallas, Dominic, Makayla, Janice, Mary, Paul</td>
                         </tr>
                         <tr>
                             <td>5</td>
-                            <td>Sun Jun 28</td>
-                            <td>15–18</td>
-                            <td>Dallas, Makayla, Asher, Dominic</td>
+                            <td>Sat Jun 27</td>
+                            <td>Marshes</td>
+                            <td>5, 8, 10</td>
+                            <td>Dallas, Howie</td>
                         </tr>
                         <tr>
                             <td>6</td>
-                            <td>Fri Jul 3</td>
-                            <td>19</td>
-                            <td>Dominic, Makayla, Josh, Sarah, Tyler</td>
+                            <td>Sun Jun 28</td>
+                            <td>Marshes</td>
+                            <td>12–15</td>
+                            <td>Dallas, Makayla, Asher, Howie</td>
                         </tr>
                         <tr>
                             <td>7</td>
-                            <td>Sun Jul 5</td>
-                            <td>20–23</td>
-                            <td>Dallas, Dominic, Makayla, Janice, Tyler, Amy, Asher</td>
+                            <td>Mon Jun 29</td>
+                            <td>Neighborhood</td>
+                            <td>6</td>
+                            <td>Dallas, Pat Clendenen</td>
                         </tr>
                         <tr>
                             <td>8</td>
-                            <td>Fri Jul 10</td>
-                            <td>24–25</td>
-                            <td>Dallas, Makayla, Asher</td>
+                            <td>Fri Jul 3</td>
+                            <td>Dominic House</td>
+                            <td>16</td>
+                            <td>Dominic, Janice, Asher, Dallas, Makayla</td>
                         </tr>
                         <tr>
                             <td>9</td>
-                            <td>Sat Jul 11</td>
-                            <td>26–27</td>
-                            <td>Makayla, Asher, Dominic</td>
+                            <td>Sat Jul 4</td>
+                            <td>Dallas House</td>
+                            <td>17-18</td>
+                            <td>Dallas, Makayla, Howie</td>
                         </tr>
                         <tr>
                             <td>10</td>
+                            <td>Sun Jul 5</td>
+                            <td>Dallas House</td>
+                            <td>19-21</td>
+                            <td>Dallas, Makayla, Dominic, Asher, Janice, Mike, Josh, Sarah, Tyler, Howie</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Mon Jul 6</td>
+                            <td>Dallas House</td>
+                            <td>22-23</td>
+                            <td>Dallas, Makayla, Dominic, Asher, Mike</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Fri Jul 10</td>
+                            <td>Marshes</td>
+                            <td>24-25</td>
+                            <td>Dallas, Makayla, Dominic, Asher, Mike</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Sat Jul 11</td>
+                            <td>Marshes</td>
+                            <td>26, 28</td>
+                            <td>Dallas, Makayla, Dominic, Asher, Mike</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
                             <td>Sun Jul 12</td>
-                            <td>28–29</td>
-                            <td>Janice, Dallas, Makayla</td>
+                            <td>Dallas House / Creek</td>
+                            <td>27, 29</td>
+                            <td>Dallas, Makayla, Janice, Howie</td>
                         </tr>
                     </tbody>
                 </table>
