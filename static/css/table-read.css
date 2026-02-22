@@ -411,30 +411,40 @@ h3 {
 .inspiration-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 16px;
+    grid-auto-rows: 1fr;
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .inspiration-item {
     position: relative;
-    border-radius: 4px;
+    border-radius: 8px;
     overflow: hidden;
     aspect-ratio: 16 / 9;
     background: var(--bg-secondary);
     border: 1px solid var(--border);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .inspiration-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    filter: grayscale(20%) contrast(1.1);
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), filter 0.4s ease;
+    filter: saturate(0.8);
+}
+
+.inspiration-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent);
 }
 
 .inspiration-item:hover img {
-    transform: scale(1.03);
-    filter: grayscale(0%) contrast(1.1);
+    transform: scale(1.08);
+    filter: saturate(1.1);
 }
 
 .crew-list {
