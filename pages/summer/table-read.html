@@ -229,7 +229,10 @@
                         </div>
                 </section>
                 <section id="visual-inspiration" class="table-read-section" aria-label="Visual inspiration">
-                        <h2>Visual Inspiration</h2>
+                        <div class="inspiration-header">
+                                <h2>Visual Inspiration</h2>
+                                <button id="toggle-inspiration" class="btn-toggle">Hide Gallery</button>
+                        </div>
                         <div class="inspiration-gallery">
                                 <div class="inspiration-item"><img
                                                 src="https://i.pinimg.com/originals/6b/fc/eb/6bfceb914e1ba95ea53129cd3440e717.gif"
@@ -1139,6 +1142,18 @@
                                 lightbox.classList.remove('active');
                                 document.body.style.overflow = '';
                         };
+
+                        // Toggle Gallery Visibility
+                        const toggleBtn = document.getElementById('toggle-inspiration');
+                        const galleryWrapper = document.querySelector('.inspiration-gallery');
+
+                        if (toggleBtn && galleryWrapper) {
+                                toggleBtn.addEventListener('click', () => {
+                                        const isHidden = galleryWrapper.style.display === 'none';
+                                        galleryWrapper.style.display = isHidden ? 'grid' : 'none';
+                                        toggleBtn.textContent = isHidden ? 'Hide Gallery' : 'Show Gallery';
+                                });
+                        }
 
                         const showNext = (e) => {
                                 if (e) e.stopPropagation();
