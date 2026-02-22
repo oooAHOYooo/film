@@ -2,834 +2,995 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Table Read — Creatures in the Tall Grass</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap"
-        rel="stylesheet">
-    <style>
-        :root {
-            --bg-primary: #ffffff;
-            --bg-secondary: #f9fafb;
-            --text-primary: #111827;
-            --text-secondary: #4b5563;
-            --accent: #c5a059;
-            /* Sophisticated Gold */
-            --accent-dark: #1b263b;
-            /* Deep Navy */
-            --border: #e5e7eb;
-            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-        }
+        <meta charset="utf-8">
+        <title>Table Read — Creatures in the Tall Grass</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap"
+                rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/table-read.css">
 
-        body {
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        .table-read-page {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-
-        h1,
-        h2,
-        h3 {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 300;
-            color: var(--accent-dark);
-            letter-spacing: -0.01em;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            border-bottom: 1px solid var(--accent);
-            display: inline-block;
-            padding-bottom: 0.25rem;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            font-weight: 400;
-        }
-
-        h3 {
-            font-size: 1.1rem;
-            margin-top: 0;
-            font-weight: 400;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .table-read-date {
-            font-size: 1rem;
-            color: var(--accent);
-            font-weight: 400;
-            margin-bottom: 3.5rem;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-        }
-
-        .table-read-back {
-            display: inline-flex;
-            align-items: center;
-            margin-bottom: 2rem;
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: color 0.2s;
-        }
-
-        .table-read-back:hover {
-            color: var(--accent);
-        }
-
-        .table-read-back::before {
-            content: "←";
-            margin-right: 0.5rem;
-        }
-
-        .cast-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .cast-list li {
-            padding: 1.25rem 0;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            gap: 1rem;
-        }
-
-        .cast-list li:last-child {
-            border-bottom: none;
-        }
-
-        .cast-role {
-            font-weight: 500;
-            color: var(--accent-dark);
-            font-size: 1.05rem;
-        }
-
-        .cast-actor {
-            color: var(--text-secondary);
-            font-weight: 300;
-        }
-
-        .table-read-section {
-            margin-top: 4rem;
-            padding-top: 2.5rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .shoot-dates-block {
-            background: var(--bg-secondary);
-            border-left: 2px solid var(--accent);
-            padding: 1.5rem 2.5rem;
-            margin: 2.5rem 0;
-        }
-
-        .shoot-dates-block p {
-            margin: 0;
-            color: var(--text-secondary);
-            font-weight: 300;
-        }
-
-        .shoot-dates-block .shoot-range {
-            font-size: 1.25rem;
-            font-weight: 400;
-            color: var(--accent-dark);
-            display: block;
-            margin-bottom: 0.25rem;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .dvd-block {
-            background: #ffffff;
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            padding: 3rem;
-            margin: 3.5rem 0;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
-        }
-
-        .dvd-block .tagline {
-            font-size: 1.1rem;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 300;
-            color: var(--accent);
-            margin-bottom: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .dvd-block .synopsis {
-            color: var(--text-primary);
-            line-height: 1.8;
-            margin-bottom: 2.5rem;
-            font-size: 1.1rem;
-            font-weight: 300;
-        }
-
-        .dvd-specs {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 30px;
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            border-top: 1px solid var(--border);
-            padding-top: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .dvd-specs div {
-            border-right: 1px solid var(--border);
-        }
-
-        .dvd-specs div:last-child {
-            border-right: none;
-        }
-
-        .dvd-specs span {
-            color: var(--accent-dark);
-            font-weight: 500;
-            display: block;
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .story-glance,
-        .production-glance {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            padding: 2rem 2.5rem;
-            margin: 2rem 0;
-        }
-
-        .story-glance h3,
-        .production-glance h3 {
-            margin-bottom: 1.5rem;
-        }
-
-        .story-glance p,
-        .production-glance p {
-            margin-bottom: 1.25rem;
-            font-size: 0.95rem;
-            font-weight: 300;
-        }
-
-        .story-glance p:last-child {
-            margin-bottom: 0;
-        }
-
-        .estimate-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 2rem;
-            font-size: 0.85rem;
-        }
-
-        .estimate-table th,
-        .estimate-table td {
-            text-align: left;
-            padding: 15px;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .estimate-table th {
-            color: var(--accent-dark);
-            font-weight: 500;
-            background: #fafafa;
-            text-transform: uppercase;
-            font-size: 0.7rem;
-            letter-spacing: 0.1em;
-        }
-
-        .estimate-table tr:hover {
-            background: #fdfdfd;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            border-radius: 2px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .btn-primary {
-            background: var(--accent-dark);
-            color: white;
-            border: 1px solid var(--accent-dark);
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: var(--accent-dark);
-        }
-
-        .btn-secondary {
-            background: white;
-            color: var(--accent-dark);
-            border: 1px solid var(--border);
-        }
-
-        .btn-secondary:hover {
-            border-color: var(--accent-dark);
-        }
-
-        .page-links {
-            gap: 1rem;
-            margin-top: 3rem;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        /* New Enhancement Styles */
-        .hero-section {
-            position: relative;
-            margin-bottom: 3rem;
-            border-radius: 4px;
-            overflow: hidden;
-            background: var(--accent-dark);
-            height: 350px;
-        }
-
-        .hero-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.7;
-            filter: saturate(0.8) contrast(1.1);
-        }
-
-        .hero-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 3rem;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-            color: white;
-        }
-
-        .hero-overlay h1 {
-            color: white;
-            margin: 0;
-            font-size: 4rem;
-        }
-
-        .hero-overlay .table-read-date {
-            color: var(--accent);
-            margin: 0;
-            margin-top: 0.5rem;
-        }
-
-        .vision-quote {
-            text-align: center;
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 200;
-            color: var(--text-secondary);
-            font-style: italic;
-            margin: 4rem 0;
-            padding: 0 2rem;
-        }
-
-        .resonance-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .resonance-card {
-            background: var(--bg-secondary);
-            padding: 2rem;
-            border: 1px solid var(--border);
-            border-radius: 4px;
-        }
-
-        .resonance-meta {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--accent);
-            margin-top: -0.5rem;
-            margin-bottom: 1.5rem;
-            font-weight: 500;
-        }
-
-        .resonance-card p {
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            font-weight: 300;
-        }
-
-        .rules-container {
-            display: grid;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .rule-item {
-            padding: 1.5rem;
-            border-left: 3px solid var(--accent);
-            background: #fff;
-            box-shadow: var(--card-shadow);
-        }
-
-        .rule-title {
-            display: block;
-            font-family: 'Outfit', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--accent-dark);
-            font-weight: 500;
-            margin-bottom: 0.5rem;
-        }
-
-        .rule-item p {
-            margin: 0;
-            font-size: 0.95rem;
-            font-weight: 300;
-        }
-
-        .inspiration-section {
-            margin-top: 4rem;
-        }
-
-        .inspiration-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 16px;
-            margin-top: 2rem;
-        }
-
-        .inspiration-item {
-            position: relative;
-            border-radius: 4px;
-            overflow: hidden;
-            aspect-ratio: 16 / 9;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-        }
-
-        .inspiration-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            filter: grayscale(20%) contrast(1.1);
-        }
-
-        .inspiration-item:hover img {
-            transform: scale(1.03);
-            filter: grayscale(0%) contrast(1.1);
-        }
-    </style>
 </head>
 
 <body>
-    <div class="table-read-page">
-        <a href="/pages/summer.html" class="table-read-back">Creatures in the tall grass</a>
+        <div class="table-read-page">
+                <a href="/pages/summer.html" class="table-read-back">Creatures in the tall grass</a>
 
-        <div class="hero-section">
-            <img src="marsh_concept.png" alt="The Branford Marshes Concept Art" class="hero-img">
-            <div class="hero-overlay">
-                <h1>Table Read</h1>
-                <p class="table-read-date">February 22, 2026</p>
-            </div>
+                <div class="hero-section">
+                        <img src="marsh_concept.png" alt="The Branford Marshes Concept Art" class="hero-img">
+                        <div class="hero-overlay">
+                                <h1>Table Read</h1>
+                                <p class="table-read-date">February 22, 2026</p>
+                        </div>
+                </div>
+
+                <div class="dvd-block" aria-label="Film summary">
+                        <p class="tagline"></p>
+                        <p class="synopsis">Dallas moves to Branford with a box he won't open—Sierra's field notes, her
+                                sketches,
+                                the receiver they used together. Next door, his neighbor Dominic's niece and nephew want
+                                his oscillator;
+                                something's moving under the reeds, and the power grid's acting up. When Dallas finds an
+                                injured
+                                creature in the tall grass, Makayla finds out. So does the thing that's chasing it. A
+                                small-town
+                                fellowship, a life group in the living room, and a return to the hollow.</p>
+                        <div class="dvd-specs">
+                                <div><span>~90 min</span> Runtime</div>
+                                <div><span>29</span> Scenes</div>
+                                <div><span>Branford, CT</span> Location</div>
+                                <div><span>14 + -</span> Shoot Days</div>
+                        </div>
+                </div>
+
+
+
+
+
+                <section aria-label="Cast">
+                        <h2>Cast</h2>
+
+
+                        <div class="production-glance" style="margin-top: 2rem;">
+                                <h3>Full Cast</h3>
+                                <ul class="cast-list">
+                                        <li><span class="cast-role">Dallas Demartini</span><span
+                                                        class="cast-actor">Dallas Demartini</span>
+                                        </li>
+                                        <li><span class="cast-role">Dominic Armaranto</span><span
+                                                        class="cast-actor">Matt Grant</span></li>
+                                        <li><span class="cast-role">Makayla Armaranto</span><span
+                                                        class="cast-actor">Charollete</span></li>
+                                        <li><span class="cast-role">Asher Armaranto</span><span class="cast-actor">Mac
+                                                        Sheldon</span></li>
+                                        <li><span class="cast-role">Janice Armaranto</span><span
+                                                        class="cast-actor">Michelle
+                                                        Armaranto</span></li>
+                                        <li><span class="cast-role">Mr. Mike</span><span class="cast-actor">Mike</span>
+                                        </li>
+                                        <li><span class="cast-role">Howie</span><span class="cast-actor">Howie</span>
+                                        </li>
+                                        <li><span class="cast-role">Pat Clendenen</span><span class="cast-actor">Pat
+                                                        Clendenen</span></li>
+                                </ul>
+                        </div>
+                </section>
+
+                <section class="table-read-section" aria-label="Proposed shoot dates">
+                        <h2>Proposed Dates</h2>
+                        <div class="shoot-dates-block">
+                                <p><span class="shoot-range">June 19 – July 12, 2026</span> 14 shoot days. Detailed
+                                        actor estimate
+                                        below.</p>
+                        </div>
+
+                        <div class="production-glance">
+                                <h3>Actor Presence</h3>
+                                <p style="color: var(--text-secondary); margin-bottom: 2rem;">14-day sequential shoot
+                                        schedule with
+                                        location grouping.</p>
+                                <table class="estimate-table">
+                                        <thead>
+                                                <tr>
+                                                        <th>Day</th>
+                                                        <th>Date</th>
+                                                        <th>Location</th>
+                                                        <th>Scenes</th>
+                                                        <th>Cast Needed</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td data-label="Day">1</td>
+                                                        <td data-label="Date">Fri Jun 19</td>
+                                                        <td data-label="Location">Dallas House</td>
+                                                        <td data-label="Scenes">1–3</td>
+                                                        <td data-label="Cast">Dallas, Makayla, Dominic, Howie</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">2</td>
+                                                        <td data-label="Date">Sat Jun 20</td>
+                                                        <td data-label="Location">Dallas House</td>
+                                                        <td data-label="Scenes">7</td>
+                                                        <td data-label="Cast">Dominic, Janice, Asher, Dallas, Makayla,
+                                                                Howie</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">3</td>
+                                                        <td data-label="Date">Sun Jun 21</td>
+                                                        <td data-label="Location">Dallas House</td>
+                                                        <td data-label="Scenes">9, 11</td>
+                                                        <td data-label="Cast">Dallas, Dominic, Asher, Howie</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">4</td>
+                                                        <td data-label="Date">Fri Jun 26</td>
+                                                        <td data-label="Location">CPC Lawn</td>
+                                                        <td data-label="Scenes">4</td>
+                                                        <td data-label="Cast">Dallas, Dominic, Makayla, Janice, Mary,
+                                                                Paul</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">5</td>
+                                                        <td data-label="Date">Sat Jun 27</td>
+                                                        <td data-label="Location">Marshes</td>
+                                                        <td data-label="Scenes">5, 8, 10</td>
+                                                        <td data-label="Cast">Dallas, Howie</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">6</td>
+                                                        <td data-label="Date">Sun Jun 28</td>
+                                                        <td data-label="Location">Marshes</td>
+                                                        <td data-label="Scenes">12–15</td>
+                                                        <td data-label="Cast">Dallas, Makayla, Asher, Howie</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">7</td>
+                                                        <td data-label="Date">Mon Jun 29</td>
+                                                        <td data-label="Location">Neighborhood</td>
+                                                        <td data-label="Scenes">6</td>
+                                                        <td data-label="Cast">Dallas, Pat Clendenen</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">8</td>
+                                                        <td data-label="Date">Fri Jul 3</td>
+                                                        <td data-label="Location">Dominic House</td>
+                                                        <td data-label="Scenes">16</td>
+                                                        <td data-label="Cast">Dominic, Janice, Asher, Dallas, Makayla
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">9</td>
+                                                        <td data-label="Date">Sat Jul 4</td>
+                                                        <td data-label="Location">Dallas House</td>
+                                                        <td data-label="Scenes">17-18</td>
+                                                        <td data-label="Cast">Dallas, Makayla, Howie</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">10</td>
+                                                        <td data-label="Date">Sun Jul 5</td>
+                                                        <td data-label="Location">Dallas House</td>
+                                                        <td data-label="Scenes">19-21</td>
+                                                        <td data-label="Cast">Dallas, Makayla, Dominic, Asher, Janice,
+                                                                Mike, Josh, Sarah,
+                                                                Tyler, Howie</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">11</td>
+                                                        <td data-label="Date">Mon Jul 6</td>
+                                                        <td data-label="Location">Dallas House</td>
+                                                        <td data-label="Scenes">22-23</td>
+                                                        <td data-label="Cast">Dallas, Makayla, Dominic, Asher, Mike</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">12</td>
+                                                        <td data-label="Date">Fri Jul 10</td>
+                                                        <td data-label="Location">Marshes</td>
+                                                        <td data-label="Scenes">24-25</td>
+                                                        <td data-label="Cast">Dallas, Makayla, Dominic, Asher, Mike</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">13</td>
+                                                        <td data-label="Date">Sat Jul 11</td>
+                                                        <td data-label="Location">Marshes</td>
+                                                        <td data-label="Scenes">26, 28</td>
+                                                        <td data-label="Cast">Dallas, Makayla, Dominic, Asher, Mike</td>
+                                                </tr>
+                                                <tr>
+                                                        <td data-label="Day">14</td>
+                                                        <td data-label="Date">Sun Jul 12</td>
+                                                        <td data-label="Location">Dallas House / Creek</td>
+                                                        <td data-label="Scenes">27, 29</td>
+                                                        <td data-label="Cast">Dallas, Makayla, Janice, Howie</td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                                <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--text-secondary);">Full
+                                        schedule & pickup
+                                        scenes: <a href="/pages/summer/production.html"
+                                                style="color: var(--accent); text-decoration: none;">Production Hub</a>.
+                                </p>
+                        </div>
+                </section>
+                <section class="inspiration-section" aria-label="Visual Inspiration">
+                        <h2>Visual Inspiration</h2>
+                        <div class="inspiration-gallery">
+                                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam3.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam2.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seaM1.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam4.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam3%20copy.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam2%20copy.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/d0b413429934cc7ccc23bef98a7c9d82.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam-inspo.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/1ad07eb04ccd80ef85bbb53b51e8a4cd.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/58b78dd9a9b318ada0553d773bcee159.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/dd54256eda27694fa609cac80cccf29d.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/463dd4a776dff9d822ed3b7590d19a2b.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/139a0415b0c5587f00584a3772709636.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/da90dce4ee6156f5c31f3e808d055602.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/9b78bbc12e3136a8b1ba31ee50cbf389 (1).jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/9b78bbc12e3136a8b1ba31ee50cbf389.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/0e33eda70f8f54ecb607eeede9784816.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/01e60c9f13f3934480846f8e36cac625.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/deab0428ff773e0d4836ca2473ece2d6.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/a3df358363c11a84827533d0b9174e97.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/83a769175948ec6ad6013acd3cb4382f.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/4843e37a35a0b9c8652d2b7407608f9c.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/df5852dafdb33c46a9e2d8d9793bd528.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/7891d109b883554cb21db40b672bc2e8.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/50b771bc6903b7d10f957115e03af2c2.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/4e032b4be06df10c35e360a4f4319c31.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/7497a2988323ae3d44204e2a9dfb7b89.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/5cffa2cfb7fab78d5d1aaea77da1544d.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/06cf4238b2238097946661143f0896c6.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/639891b22a5e496d1078235358b2c80d.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/20m_ant_05.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/bobs-simple-wire-antenna-sml.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/antenna-wire-to-adapter.webp"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/30556c4f1b586782df5958caa13e49c4.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/96e378ec70a189aa7fe16665c2d0cdec.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/c151bc1e6730ffda4dcc99f71f5ea11f.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/64b35b2e964b0e55013196dc143b1a5a.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/b904caa951a8f4d14bf40dd900c08555.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/efe2604b5ebbd8318d41bd5f0ee2a89a.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/c34ed91c56254d4ae1d53e4634d4cfd5.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/ceeab40e217f91334b7f13e7e6f616e7.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/05365bc54cd8f3ea81518c3e38ab8822.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/257eb6ec10f4d6ccfdedc516d7a57354.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/7070831a604a48efbb9c604642abebd6.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/27489523572dd4f77ccf893f2bd8a3fb.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/72f7ef1ba912006a069192456eb6e7c2.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/58d4f9084bb65b1ceab351e467e2174b.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/66832ce2c86d9224167be7adc861bd19.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/024c23653cb31dbd5f0c63fd02d44f5f.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/bfcfdc78f4f3e7b6f06aa45684814fa5.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/39e2d7506f984dd62acf9a882d986238.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/5fe68f943aed992e5969557cb11f800e.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                                <div class="inspiration-item"><img
+                                                src="/assets/summer/inspo-imgs/f6d048bbe2cc433489cb50e31b431405.jpg"
+                                                alt="Inspiration" loading="lazy"></div>
+                        </div>
+                </section>
+
+
+                <div class="story-glance">
+                        <h3>Story Overview</h3>
+                        <p><strong>Act I — Arrival & Discovery (Scenes 1–11):</strong> New house, tall grass, the hum.
+                                Dallas meets
+                                Makayla and Asher; fellowship, marsh walk, news vans. The coordinates, the hollow, the
+                                creature in the
+                                kitchen.</p>
+                        <p><strong>Act II — The Creature (Scenes 12–23):</strong> First night with the creature, Makayla
+                                confronts
+                                Dallas, bond and lair. Creature in the basement; life group arrives, Mr. Mike freaks.
+                                Red eyes, the
+                                creature gone.</p>
+                        <p><strong>Act III — The Return (Scenes 24–27):</strong> Marsh plan, predator attack, the
+                                perimeter.
+                                Creature dies in the marsh; they run. The plan, the trap, the storm.</p>
+                        <p><strong>Act IV — Aftermath (Scenes 28–29):</strong> She goes in. Phase cancellation; they're
+                                free.
+                                Branford breathes again; the folder's with the kids.</p>
+                        <p style="margin-top: 1.5rem; font-size: 0.8rem;"><a
+                                        href="/pages/summer/script-system/index.html"
+                                        style="color: var(--accent); text-decoration: none;">Explore Scene Gallery →</a>
+                        </p>
+                </div>
+
+                <div class="production-glance">
+                        <h3>Crew Roles</h3>
+                        <ul class="crew-list">
+                                <li class="crew-item"><span class="crew-label">Director</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Producer</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Director of Photography</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Production Designer</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Practical FX / Creature Lead</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Sound Designer / Recordist</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Script Supervisor</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Gaffer / Grip</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Makeup & Prosthetics</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                                <li class="crew-item"><span class="crew-label">Production Assistant</span>
+                                        <div class="crew-name-blank"></div>
+                                </li>
+                        </ul>
+
+                        <h3 style="margin-top: 3rem;">Practical Effects Guide</h3>
+                        <div class="effects-guide">
+                                <div class="effect-card">
+                                        <span class="effect-tag">Animatronics</span>
+                                        <h4>The Creature Puppet</h4>
+                                        <p>Hand-operated cable-controlled maquette for kitchen and aquarium scenes.
+                                                Requires articulating wings and independent head movement.</p>
+                                </div>
+                                <div class="effect-card">
+                                        <span class="effect-tag">Bio-Luminescence</span>
+                                        <h4>Equipment Golden Static</h4>
+                                        <p>UV-reactive phosphor paint on radio gear, triggered by hidden 365nm LED
+                                                strips. Flickering "golden burn" marks for scene 11.</p>
+                                </div>
+                                <div class="effect-card">
+                                        <span class="effect-tag">Mechanical</span>
+                                        <h4>Mechanical House Rattles</h4>
+                                        <p>Cam-driven window shakers and solenoid-based wall thumps to simulate the
+                                                "hum" frequency resonance in Dallas's house.</p>
+                                </div>
+                                <div class="effect-card">
+                                        <span class="effect-tag">Props</span>
+                                        <h4>The Acoustic Trap</h4>
+                                        <p>Practical, kit-bashed military receivers and vintage oscillators and
+                                                high-power phased speakers for the marsh perimeter sequence.</p>
+                                </div>
+                                <div class="effect-card">
+                                        <span class="effect-tag">Makeup</span>
+                                        <h4>Marsh Burn Marks</h4>
+                                        <p>Silicone prosthetic burns for Makayla's arm (Scene 27) and "Red Eye" sclera
+                                                lenses for the larger marsh predators.</p>
+                                </div>
+                                <div class="effect-card">
+                                        <span class="effect-tag">Physical SFX</span>
+                                        <h4>Tall Grass Movement</h4>
+                                        <p>Oscillating fans and cable-pull systems for localized grass parting and
+                                                "creature paths" during the nighttime marsh hunts.</p>
+                                </div>
+                        </div>
+
+                        <p style="font-size: 0.8rem; margin-top: 2rem;"><a href="/pages/summer/production.html"
+                                        style="color: var(--accent); text-decoration: none;">View Detailed Production
+                                        Breakdown →</a></p>
+                </div>
+
+                <h3 style="margin-top: 4rem;">Technical Gear & Vision</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">Digital Cinema & Optical Configuration for
+                        "Creatures in the Tall Grass". Prioritizing wide lateral presence to capture the peripheral
+                        movement in the marsh.</p>
+
+                <div class="aspect-ratio-grid" style="margin-bottom: 3rem;">
+                        <div class="aspect-card">
+                                <div class="aspect-diagram">
+                                        <svg width="185" height="100" viewBox="0 0 185 100">
+                                                <rect x="0" y="0" width="185" height="100" fill="none"
+                                                        stroke="var(--accent)" stroke-width="2" opacity="0.5" />
+                                                <rect x="0" y="0" width="185" height="100" fill="none"
+                                                        stroke="var(--accent)" stroke-width="1" stroke-dasharray="4" />
+                                                <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10"
+                                                        font-family="Outfit" font-weight="600">1.85:1 FLAT</text>
+                                        </svg>
+                                </div>
+                                <span class="aspect-label">Safety Margin</span>
+                                <p class="aspect-meta">Town / Interior Scenes</p>
+                        </div>
+                        <div class="aspect-card">
+                                <div class="aspect-diagram">
+                                        <svg width="239" height="100" viewBox="0 0 239 100">
+                                                <rect x="0" y="0" width="239" height="100" fill="none"
+                                                        stroke="var(--accent)" stroke-width="2" />
+                                                <line x1="19" y1="0" x2="19" y2="100" stroke="rgba(255,255,255,0.2)"
+                                                        stroke-width="1" />
+                                                <line x1="220" y1="0" x2="220" y2="100" stroke="rgba(255,255,255,0.2)"
+                                                        stroke-width="1" />
+                                                <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10"
+                                                        font-family="Outfit" font-weight="600">2.39:1 SCOPE</text>
+                                        </svg>
+                                </div>
+                                <span class="aspect-label">Anamorphic Standard</span>
+                                <p class="aspect-meta">Primary Narrative Workspace</p>
+                        </div>
+                        <div class="aspect-card">
+                                <div class="aspect-diagram">
+                                        <svg width="300" height="100" viewBox="0 0 300 100">
+                                                <rect x="0" y="0" width="300" height="100" fill="none"
+                                                        stroke="var(--accent)" stroke-width="2" />
+                                                <path d="M50,50 L250,50" stroke="rgba(197, 160, 89, 0.4)"
+                                                        stroke-width="1" stroke-dasharray="2,2" />
+                                                <circle cx="50" cy="50" r="2" fill="var(--accent)" />
+                                                <circle cx="250" cy="50" r="2" fill="var(--accent)" />
+                                                <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="10"
+                                                        font-family="Outfit" font-weight="600">3.00:1 ULTRA-WIDE</text>
+                                        </svg>
+                                </div>
+                                <span class="aspect-label">The Marsh Vision</span>
+                                <p class="aspect-meta">Creature POV / Night Hunts</p>
+                        </div>
+                </div>
+
+                <div class="gear-grid" aria-label="Camera and Lenses" style="margin-bottom: 4rem;">
+                        <div class="gear-card">
+                                <h4>Main Camera Body</h4>
+                                <ul class="gear-specs">
+                                        <li><span class="spec-label">Body</span><span class="spec-value">RED KOMODO
+                                                        6K</span></li>
+                                        <li><span class="spec-label">Sensor</span><span class="spec-value">Super 35
+                                                        Global Shutter</span></li>
+                                        <li><span class="spec-label">Codec</span><span class="spec-value">REDCODE® RAW
+                                                        (R3D)</span></li>
+                                        <li><span class="spec-label">Latitude</span><span class="spec-value">16+
+                                                        Stops</span></li>
+                                </ul>
+                        </div>
+                        <div class="gear-card">
+                                <h4>Anamorphic Optics</h4>
+                                <ul class="gear-specs">
+                                        <li><span class="spec-label">Lens Set</span><span class="spec-value">Sirius
+                                                        Anamorphics (1.8x)</span></li>
+                                        <li><span class="spec-label">Focal Lengths</span><span class="spec-value">35mm,
+                                                        50mm, 75mm</span></li>
+                                        <li><span class="spec-label">Speed</span><span class="spec-value">T2.0
+                                                        (Constant)</span></li>
+                                        <li><span class="spec-label">Char</span><span class="spec-value">Vintage Blue
+                                                        Streak</span></li>
+                                </ul>
+                        </div>
+                </div>
+
+                <div class="sample-call-sheet-header" style="margin-top: 5rem; text-align: center;">
+                        <span
+                                style="font-family: 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); font-size: 0.8rem; font-weight: 600;">Production
+                                Planning Extras</span>
+                        <h2 style="border: none; margin-top: 0.5rem;">Sample Call Sheets</h2>
+                </div>
+
+                <div class="sample-call-sheet" data-scene="SCENE 15: MAKAYLA'S LAIR">
+                        <div class="call-sheet-header">
+                                <div class="call-sheet-title">
+                                        <h3>PRODUCTION CALL SHEET</h3>
+                                        <p style="color: #64748b; font-size: 0.9rem; margin-top: 0.5rem;">Day 6: The
+                                                Lair Technical Montage (Full Scene 15)</p>
+                                </div>
+                                <div class="call-sheet-meta">
+                                        <div><strong>DATE:</strong> JUNE 28, 2026</div>
+                                        <div><strong>CALL TIME:</strong> 2:00 PM</div>
+                                </div>
+                        </div>
+
+                        <div class="call-sheet-grid">
+                                <div class="call-sheet-main">
+                                        <h4>General Schedule</h4>
+                                        <table class="schedule-table">
+                                                <thead>
+                                                        <tr>
+                                                                <th>Time</th>
+                                                                <th>Scene</th>
+                                                                <th>Description</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">2:00 PM</td>
+                                                                <td class="scene-col" data-label="Scene">—</td>
+                                                                <td data-label="Description">Crew Call / Set Dressing
+                                                                        (Lair Interior)</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">2:45 PM</td>
+                                                                <td class="scene-col" data-label="Scene">S15</td>
+                                                                <td data-label="Description">Blocking: Dallas, Makayla,
+                                                                        Asher entry with Creature</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">3:15 PM</td>
+                                                                <td class="scene-col" data-label="Scene">S15 (A)</td>
+                                                                <td data-label="Description">The Entry / Lair Tour /
+                                                                        Reverse Audiophone Tech Reveal</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">4:45 PM</td>
+                                                                <td class="scene-col" data-label="Scene">S15 (B)</td>
+                                                                <td data-label="Description">Crystal Reveal / Oscillator
+                                                                        Hub Calibration (11.53)</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">6:00 PM</td>
+                                                                <td class="scene-col" data-label="Scene">—</td>
+                                                                <td data-label="Description">Dinner Break / Battery Swap
+                                                                </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">7:00 PM</td>
+                                                                <td class="scene-col" data-label="Scene">S15 (C)</td>
+                                                                <td data-label="Description">Lair Montage: Prototype
+                                                                        Rigging / Shoulder Mount assembly</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">8:30 PM</td>
+                                                                <td class="scene-col" data-label="Scene">S15 (D)</td>
+                                                                <td data-label="Description">Prototype Activation /
+                                                                        Equipment Distortion / Asher's reaction</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">10:00 PM</td>
+                                                                <td class="scene-col" data-label="Scene">—</td>
+                                                                <td data-label="Description">Pack / Set Strike (Woods) /
+                                                                        Wrap</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+
+                                <div class="call-sheet-sidebar">
+                                        <div class="location-info">
+                                                <h4>Location</h4>
+                                                <strong>Primary Set:</strong>
+                                                <p>Branford Woods - Sector D<br>200ft off the Marsh Boardwalk Trail</p>
+                                        </div>
+
+                                        <div class="weather-widget">
+                                                <h4>Forest Interior Conditions</h4>
+                                                <div class="weather-item">
+                                                        <span>Conditions</span>
+                                                        <span>Scattered Overcast / High Humidity</span>
+                                                </div>
+                                                <div class="weather-item">
+                                                        <span>Light</span>
+                                                        <span>Filtering Canopy / Bring Scrims</span>
+                                                </div>
+                                                <div class="weather-item">
+                                                        <span>Temp</span>
+                                                        <span>76°F (Woods)</span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="sample-call-sheet" data-scene="SCENE 4: FELLOWSHIP LUNCH">
+                        <div class="call-sheet-header">
+                                <div class="call-sheet-title">
+                                        <h3>PRODUCTION CALL SHEET</h3>
+                                        <p style="color: #64748b; font-size: 0.9rem; margin-top: 0.5rem;">Day 4: The
+                                                Church Fellowship (Lawn & Circle)</p>
+                                </div>
+                                <div class="call-sheet-meta">
+                                        <div><strong>DATE:</strong> JUNE 26, 2026</div>
+                                        <div><strong>CALL TIME:</strong> 8:00 AM</div>
+                                </div>
+                        </div>
+
+                        <div class="call-sheet-grid">
+                                <div class="call-sheet-main">
+                                        <h4>General Schedule</h4>
+                                        <table class="schedule-table">
+                                                <thead>
+                                                        <tr>
+                                                                <th>Time</th>
+                                                                <th>Scene</th>
+                                                                <th>Description</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">8:00 AM</td>
+                                                                <td class="scene-col" data-label="Scene">—</td>
+                                                                <td data-label="Description">Crew Call / CPC Lawn Setup
+                                                                        / BG Crowd Load-in</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">9:00 AM</td>
+                                                                <td class="scene-col" data-label="Scene">S4 (A)</td>
+                                                                <td data-label="Description">Dallas & Dominic arrive /
+                                                                        Food Line Interactions (Mary/Paul)</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">11:30 AM</td>
+                                                                <td class="scene-col" data-label="Scene">—</td>
+                                                                <td data-label="Description">N/P: On-set Catering
+                                                                        (Church provided)</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">12:30 PM</td>
+                                                                <td class="scene-col" data-label="Scene">S4 (B)</td>
+                                                                <td data-label="Description">Chair Circle / Janice
+                                                                        Greeting / Meeting the Kids</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">2:00 PM</td>
+                                                                <td class="scene-col" data-label="Scene">S4 (C)</td>
+                                                                <td data-label="Description">Reverse: Kids' Brush Pile
+                                                                        Huddle / Dallas observations</td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td class="time-col" data-label="Time">3:30 PM</td>
+                                                                <td class="scene-col" data-label="Scene">—</td>
+                                                                <td data-label="Description">BG Wrap / Set Strike (Lawn)
+                                                                        / Wrap</td>
+                                                        </tr>
+                                                </tbody>
+                                        </table>
+                                </div>
+
+                                <div class="call-sheet-sidebar">
+                                        <div class="location-info">
+                                                <h4>Location</h4>
+                                                <strong>Primary Set:</strong>
+                                                <p>CPC Fellowship Lawn<br>Main Campus, Branford CT</p>
+                                        </div>
+
+                                        <div class="weather-widget">
+                                                <h4>Lawn Conditions</h4>
+                                                <div class="weather-item">
+                                                        <span>Conditions</span>
+                                                        <span>Full Sun / Summer Heat</span>
+                                                </div>
+                                                <div class="weather-item">
+                                                        <span>Light</span>
+                                                        <span>Direct Sunlight / Use Frames</span>
+                                                </div>
+                                                <div class="weather-item">
+                                                        <span>Temp</span>
+                                                        <span>84°F</span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="production-packet">
+                        <!-- Shot List Page -->
+                        <div class="packet-page" id="shot-list">
+                                <h4>Shot List: Scene 15 (S15)</h4>
+                                <table class="shot-list-table">
+                                        <thead>
+                                                <tr>
+                                                        <th>Shot</th>
+                                                        <th>Size</th>
+                                                        <th>Description</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td class="shot-no">15.1</td>
+                                                        <td class="shot-size">WS</td>
+                                                        <td>EXT. WOODS / LAIR - Wide arrival. Dallas, Makayla, and Asher
+                                                                approach the wigwam with the creature in the portable
+                                                                box.
+                                                                Establishing the lair's homemade nature.</td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="shot-no">15.2</td>
+                                                        <td class="shot-size">MS</td>
+                                                        <td>INT. LAIR - Medium on Dallas as he takes in the surveillance
+                                                                gear.
+                                                                Reveal of the reverse audiophone on the table. Focus on
+                                                                curiosity.</td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="shot-no">15.3</td>
+                                                        <td class="shot-size">CU</td>
+                                                        <td>INT. LAIR - Extreme Close-Up on the Crystal
+                                                                (Semi-conductor).
+                                                                Dallas's hand in frame for scale. The translucent
+                                                                pyramid
+                                                                catches the lens flare.</td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="shot-no">15.4</td>
+                                                        <td class="shot-size">POV</td>
+                                                        <td>INT. LAIR - POV of the Oscillator display as Dallas tunes to
+                                                                11.53.
+                                                                Digits flicker.</td>
+                                                </tr>
+                                                <tr>
+                                                        <td class="shot-no">15.5</td>
+                                                        <td class="shot-size">CU</td>
+                                                        <td>INT. LAIR - ASHER: Close-Up as the frequency hits. Eyes
+                                                                wide, jaw
+                                                                open. Trance-like state. Shaky handheld camera to
+                                                                emphasize
+                                                                distress.</td>
+                                                </tr>
+                                        </tbody>
+                                </table>
+                        </div>
+
+                        <!-- Sides Page -->
+                        <div class="packet-page" id="sides">
+                                <h4>Sides: Scene 15 (Excerpts)</h4>
+                                <div class="sides-content">
+                                        <span class="sides-action">EXT. MAKAYLA'S LAIR - CONTINUOUS</span>
+
+                                        <span class="sides-char">MAKAYLA</span>
+                                        <span class="sides-dialogue">That crystal isn't just a stone - it's a biological
+                                                semi-conductor.</span>
+
+                                        <span class="sides-char">MAKAYLA</span>
+                                        <span class="sides-dialogue">Dallas, dial in the tune to 11.53.</span>
+
+                                        <span class="sides-action">Dallas changes the notes of his oscillator and
+                                                suddenly the
+                                                creature wakes up. The equipment begins to howl.</span>
+
+                                        <span class="sides-char">MAKAYLA</span>
+                                        <span class="sides-dialogue">This crystal - it is a phase inverter. If we run
+                                                your
+                                                Oscillator through it - it won't just broadcast sound - it should create
+                                                a
+                                                shield - a dome of silence needed to bring it back to its nest.</span>
+
+                                        <span class="sides-char">ASHER</span>
+                                        <span class="sides-parenthetical">(eyes wide open)</span>
+                                        <span class="sides-dialogue">Bring me back.</span>
+
+                                        <span class="sides-action">Asher snaps out of it and the crew are visibly
+                                                shaken.</span>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="dvd-back-container" aria-label="DVD Back Cover">
+                        <div class="dvd-spine">
+                                <div class="spine-text">Creatures in the Tall Grass — Season Series</div>
+                        </div>
+                        <div class="dvd-insert">
+                                <div class="dvd-back-header">
+                                        <h2>Creatures in the Tall Grass</h2>
+                                        <div style="display: flex; align-items: center;">
+                                                <span class="dvd-logo-badge">4K UHD</span>
+                                                <span class="dvd-logo-badge">HDR</span>
+                                                <div class="dvd-rating">PG-13</div>
+                                        </div>
+                                </div>
+
+                                <div class="dvd-back-content">
+                                        <div class="dvd-back-main">
+                                                <p class="tagline">Something is moving under the reeds.</p>
+                                                <p class="synopsis">Dallas moves to Branford with a box he won't
+                                                        open—Sierra's
+                                                        field notes, her sketches, the receiver they used together. Next
+                                                        door,
+                                                        his neighbor Dominic's niece and nephew want his oscillator;
+                                                        something's
+                                                        moving under the reeds, and the power grid's acting up. When
+                                                        Dallas
+                                                        finds an injured creature in the tall grass, a small-town
+                                                        fellowship
+                                                        must decide: return to the hollow or lose the neighborhood
+                                                        forever.</p>
+
+                                                <div class="dvd-metadata">
+                                                        <div class="metadata-row">
+                                                                <div><strong>Runtime:</strong> 94 Mins</div>
+                                                                <div><strong>Aspect:</strong> 2.39:1 / 3.00:1</div>
+                                                        </div>
+                                                        <div class="metadata-row">
+                                                                <div><strong>Audio:</strong> Dolby Atmos / DTS-HD</div>
+                                                                <div><strong>Region:</strong> A/B/C</div>
+                                                        </div>
+                                                </div>
+                                        </div>
+
+                                        <div class="dvd-back-sidebar">
+                                                <div class="dvd-bonus-features">
+                                                        <h4>Special Features</h4>
+                                                        <ul>
+                                                                <li>Full Table Read Script</li>
+                                                                <li>Scene-by-Scene Visual Gallery</li>
+                                                                <li>Practical Creatures & FX Guide</li>
+                                                                <li>Proposed 14-Day Shoot Schedule</li>
+                                                                <li>Director's Resonance Notes</li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="dvd-back-footer">
+                                        <div class="dvd-studios">BRANFORD HOLLOW PRODUCTIONS © 2026 FALL SEASON SERIES
+                                        </div>
+                                        <div class="dvd-barcode"></div>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="page-links">
+                        <a href="/pages/summer/script-system/full_script.html" class="btn btn-primary">Full
+                                Script</a>
+                        <a href="/pages/summer/script-system/index.html" class="btn btn-secondary">Scene
+                                Gallery</a>
+                        <a href="/pages/summer/characters/index.html" class="btn btn-secondary">Characters</a>
+                        <a href="/pages/summer/production.html" class="btn btn-secondary">Production</a>
+                </div>
         </div>
 
-        <div class="vision-quote">
-            <p>"Something's in the marsh. A hum. Then something more."</p>
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+                <span class="lightbox-close">&times;</span>
+                <button class="lightbox-nav lightbox-prev" aria-label="Previous">&larr;</button>
+                <img class="lightbox-content" id="lightbox-img" src="" alt="Enlarged Inspiration">
+                <button class="lightbox-nav lightbox-next" aria-label="Next">&rarr;</button>
         </div>
 
-        <div class="dvd-block" aria-label="Film summary">
-            <p class="tagline"></p>
-            <p class="synopsis">Dallas moves to Branford with a box he won't open—Sierra's field notes, her sketches,
-                the receiver they used together. Next door, his neighbor Dominic's niece and nephew want his oscillator;
-                something's moving under the reeds, and the power grid's acting up. When Dallas finds an injured
-                creature in the tall grass, Makayla finds out. So does the thing that's chasing it. A small-town
-                fellowship, a life group in the living room, and a return to the hollow.</p>
-            <div class="dvd-specs">
-                <div><span>~90 min</span> Runtime</div>
-                <div><span>29</span> Scenes</div>
-                <div><span>Branford, CT</span> Location</div>
-                <div><span>14 + -</span> Shoot Days</div>
-            </div>
-        </div>
+        <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                        const lightbox = document.getElementById('lightbox');
+                        const lightboxImg = document.getElementById('lightbox-img');
+                        const closeBtn = document.querySelector('.lightbox-close');
+                        const prevBtn = document.querySelector('.lightbox-prev');
+                        const nextBtn = document.querySelector('.lightbox-next');
+                        const inspoImages = Array.from(document.querySelectorAll('.inspiration-item img'));
 
-        <section class="inspiration-section" aria-label="Visual Inspiration">
-            <h2>Visual Inspiration</h2>
-            <div class="inspiration-gallery">
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam3.jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam2.jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seaM1.jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam4.jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam3%20copy.jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam2%20copy.jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/d0b413429934cc7ccc23bef98a7c9d82.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/seam-inspo.jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/1ad07eb04ccd80ef85bbb53b51e8a4cd.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/58b78dd9a9b318ada0553d773bcee159.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/dd54256eda27694fa609cac80cccf29d.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/463dd4a776dff9d822ed3b7590d19a2b.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/139a0415b0c5587f00584a3772709636.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/da90dce4ee6156f5c31f3e808d055602.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img
-                        src="/assets/summer/inspo-imgs/9b78bbc12e3136a8b1ba31ee50cbf389 (1).jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/9b78bbc12e3136a8b1ba31ee50cbf389.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/0e33eda70f8f54ecb607eeede9784816.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/01e60c9f13f3934480846f8e36cac625.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/deab0428ff773e0d4836ca2473ece2d6.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/a3df358363c11a84827533d0b9174e97.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/83a769175948ec6ad6013acd3cb4382f.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/4843e37a35a0b9c8652d2b7407608f9c.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/df5852dafdb33c46a9e2d8d9793bd528.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/7891d109b883554cb21db40b672bc2e8.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/50b771bc6903b7d10f957115e03af2c2.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/4e032b4be06df10c35e360a4f4319c31.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/7497a2988323ae3d44204e2a9dfb7b89.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/5cffa2cfb7fab78d5d1aaea77da1544d.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/06cf4238b2238097946661143f0896c6.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/639891b22a5e496d1078235358b2c80d.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/20m_ant_05.jpg" alt="Inspiration"
-                        loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/bobs-simple-wire-antenna-sml.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/antenna-wire-to-adapter.webp"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/30556c4f1b586782df5958caa13e49c4.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/96e378ec70a189aa7fe16665c2d0cdec.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/c151bc1e6730ffda4dcc99f71f5ea11f.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/64b35b2e964b0e55013196dc143b1a5a.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/b904caa951a8f4d14bf40dd900c08555.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/efe2604b5ebbd8318d41bd5f0ee2a89a.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/c34ed91c56254d4ae1d53e4634d4cfd5.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/ceeab40e217f91334b7f13e7e6f616e7.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/05365bc54cd8f3ea81518c3e38ab8822.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/257eb6ec10f4d6ccfdedc516d7a57354.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/7070831a604a48efbb9c604642abebd6.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/27489523572dd4f77ccf893f2bd8a3fb.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/72f7ef1ba912006a069192456eb6e7c2.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/58d4f9084bb65b1ceab351e467e2174b.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/66832ce2c86d9224167be7adc861bd19.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/024c23653cb31dbd5f0c63fd02d44f5f.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/bfcfdc78f4f3e7b6f06aa45684814fa5.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/39e2d7506f984dd62acf9a882d986238.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/5fe68f943aed992e5969557cb11f800e.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-                <div class="inspiration-item"><img src="/assets/summer/inspo-imgs/f6d048bbe2cc433489cb50e31b431405.jpg"
-                        alt="Inspiration" loading="lazy"></div>
-            </div>
-        </section>
+                        let currentIndex = 0;
 
-        <section class="resonance-section" aria-label="Character Resonance">
-            <h2>Character Resonance</h2>
-            <div class="resonance-grid">
-                <div class="resonance-card">
-                    <h3>Dallas</h3>
-                    <p><strong>Before:</strong> Records sound to escape the quiet of grief. Silence reminds him of
-                        death.</p>
-                    <p><strong>After:</strong> Gains a "new sense." His auditory cortex restructures. He can distinguish
-                        the individual layers of the world's orchestra.</p>
-                </div>
-                <div class="resonance-card">
-                    <h3>Makayla</h3>
-                    <p><strong>Before:</strong> Fearless and open. No baggage. A clean signal.</p>
-                    <p><strong>After:</strong> The frequency enters her bones. She moves from curiosity to fierce
-                        protection. She leads the chord.</p>
-                </div>
-                <div class="resonance-card">
-                    <h3>Dominic</h3>
-                    <p><strong>Before:</strong> Fills silence with activity—cooking, talking, organizing. Stillness is
-                        where his loss lives.</p>
-                    <p><strong>After:</strong> Learns that silence isn't absence; it's full. He finds the ability to sit
-                        in a space that isn't empty anymore.</p>
-                </div>
-            </div>
-        </section>
+                        const openLightbox = (index) => {
+                                currentIndex = index;
+                                lightboxImg.src = inspoImages[currentIndex].src;
+                                lightboxImg.alt = inspoImages[currentIndex].alt;
+                                lightbox.classList.add('active');
+                                document.body.style.overflow = 'hidden'; // Prevent scrolling
+                        };
 
-        <section class="rules-section" aria-label="The Laws of the Marsh">
-            <h2>The Laws of the Marsh</h2>
-            <div class="rules-container">
-                <div class="rule-item">
-                    <span class="rule-title">The Chord Protects</span>
-                    <p>A Singer alone is vulnerable. Singers together are safe. Connection protects.</p>
-                </div>
-                <div class="rule-item">
-                    <span class="rule-title">Silence is a Weapon</span>
-                    <p>The Eaters don't roar; they consume vibration. When they approach, the world goes mute.</p>
-                </div>
-                <div class="rule-item">
-                    <span class="rule-title">The Grass is the Body</span>
-                    <p>The marsh doesn't just house them; it's a symbiotic waveguide. The grass sings back.</p>
-                </div>
-            </div>
-        </section>
+                        const closeLightbox = () => {
+                                lightbox.classList.remove('active');
+                                document.body.style.overflow = '';
+                        };
 
-        <section aria-label="Cast">
-            <h2>Cast</h2>
-            <div class="production-glance">
-                <h3>Table Read Present</h3>
-                <ul class="cast-list">
-                    <li><span class="cast-role">Makayla Armaranto</span><span class="cast-actor">Charollete</span></li>
-                    <li><span class="cast-role">Dominic Armaranto</span><span class="cast-actor">Matt Grant</span></li>
-                    <li><span class="cast-role">Dallas Demartini</span><span class="cast-actor">Dallas Demartini</span>
-                    </li>
-                </ul>
-            </div>
+                        const showNext = (e) => {
+                                if (e) e.stopPropagation();
+                                currentIndex = (currentIndex + 1) % inspoImages.length;
+                                lightboxImg.src = inspoImages[currentIndex].src;
+                                lightboxImg.alt = inspoImages[currentIndex].alt;
+                        };
 
-            <div class="production-glance" style="margin-top: 2rem;">
-                <h3>Full Cast</h3>
-                <ul class="cast-list">
-                    <li><span class="cast-role">Dallas Demartini</span><span class="cast-actor">Dallas Demartini</span>
-                    </li>
-                    <li><span class="cast-role">Dominic Armaranto</span><span class="cast-actor">Matt Grant</span></li>
-                    <li><span class="cast-role">Makayla Armaranto</span><span class="cast-actor">Charollete</span></li>
-                    <li><span class="cast-role">Asher Armaranto</span><span class="cast-actor">Mac Sheldon</span></li>
-                    <li><span class="cast-role">Janice Armaranto</span><span class="cast-actor">Michelle
-                            Armaranto</span></li>
-                    <li><span class="cast-role">Mr. Mike</span><span class="cast-actor">Mike</span></li>
-                    <li><span class="cast-role">Howie</span><span class="cast-actor">Howie</span></li>
-                    <li><span class="cast-role">Pat Clendenen</span><span class="cast-actor">Pat Clendenen</span></li>
-                </ul>
-            </div>
-        </section>
+                        const showPrev = (e) => {
+                                if (e) e.stopPropagation();
+                                currentIndex = (currentIndex - 1 + inspoImages.length) % inspoImages.length;
+                                lightboxImg.src = inspoImages[currentIndex].src;
+                                lightboxImg.alt = inspoImages[currentIndex].alt;
+                        };
 
-        <section class="table-read-section" aria-label="Proposed shoot dates">
-            <h2>Proposed Dates</h2>
-            <div class="shoot-dates-block">
-                <p><span class="shoot-range">June 19 – July 12, 2026</span> 14 shoot days. Detailed actor estimate
-                    below.</p>
-            </div>
+                        inspoImages.forEach((img, index) => {
+                                img.parentElement.addEventListener('click', () => openLightbox(index));
+                        });
 
-            <div class="production-glance">
-                <h3>Actor Presence</h3>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">14-day sequential shoot schedule with
-                    location grouping.</p>
-                <table class="estimate-table">
-                    <thead>
-                        <tr>
-                            <th>Day</th>
-                            <th>Date</th>
-                            <th>Location</th>
-                            <th>Scenes</th>
-                            <th>Cast Needed</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Fri Jun 19</td>
-                            <td>Dallas House</td>
-                            <td>1–3</td>
-                            <td>Dallas, Makayla, Dominic, Howie</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Sat Jun 20</td>
-                            <td>Dallas House</td>
-                            <td>7</td>
-                            <td>Dominic, Janice, Asher, Dallas, Makayla, Howie</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Sun Jun 21</td>
-                            <td>Dallas House</td>
-                            <td>9, 11</td>
-                            <td>Dallas, Dominic, Asher, Howie</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Fri Jun 26</td>
-                            <td>CPC Lawn</td>
-                            <td>4</td>
-                            <td>Dallas, Dominic, Makayla, Janice, Mary, Paul</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Sat Jun 27</td>
-                            <td>Marshes</td>
-                            <td>5, 8, 10</td>
-                            <td>Dallas, Howie</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Sun Jun 28</td>
-                            <td>Marshes</td>
-                            <td>12–15</td>
-                            <td>Dallas, Makayla, Asher, Howie</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Mon Jun 29</td>
-                            <td>Neighborhood</td>
-                            <td>6</td>
-                            <td>Dallas, Pat Clendenen</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Fri Jul 3</td>
-                            <td>Dominic House</td>
-                            <td>16</td>
-                            <td>Dominic, Janice, Asher, Dallas, Makayla</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>Sat Jul 4</td>
-                            <td>Dallas House</td>
-                            <td>17-18</td>
-                            <td>Dallas, Makayla, Howie</td>
-                        </tr>
-                        <tr>
-                            <td>10</td>
-                            <td>Sun Jul 5</td>
-                            <td>Dallas House</td>
-                            <td>19-21</td>
-                            <td>Dallas, Makayla, Dominic, Asher, Janice, Mike, Josh, Sarah, Tyler, Howie</td>
-                        </tr>
-                        <tr>
-                            <td>11</td>
-                            <td>Mon Jul 6</td>
-                            <td>Dallas House</td>
-                            <td>22-23</td>
-                            <td>Dallas, Makayla, Dominic, Asher, Mike</td>
-                        </tr>
-                        <tr>
-                            <td>12</td>
-                            <td>Fri Jul 10</td>
-                            <td>Marshes</td>
-                            <td>24-25</td>
-                            <td>Dallas, Makayla, Dominic, Asher, Mike</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>Sat Jul 11</td>
-                            <td>Marshes</td>
-                            <td>26, 28</td>
-                            <td>Dallas, Makayla, Dominic, Asher, Mike</td>
-                        </tr>
-                        <tr>
-                            <td>14</td>
-                            <td>Sun Jul 12</td>
-                            <td>Dallas House / Creek</td>
-                            <td>27, 29</td>
-                            <td>Dallas, Makayla, Janice, Howie</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p style="margin-top: 1.5rem; font-size: 0.8rem; color: var(--text-secondary);">Full schedule & pickup
-                    scenes: <a href="/pages/summer/production.html"
-                        style="color: var(--accent); text-decoration: none;">Production Hub</a>.</p>
-            </div>
-        </section>
+                        closeBtn.addEventListener('click', closeLightbox);
+                        lightbox.addEventListener('click', (e) => {
+                                if (e.target === lightbox) closeLightbox();
+                        });
 
-        <div class="story-glance">
-            <h3>Story Overview</h3>
-            <p><strong>Act I — Arrival & Discovery (Scenes 1–11):</strong> New house, tall grass, the hum. Dallas meets
-                Makayla and Asher; fellowship, marsh walk, news vans. The coordinates, the hollow, the creature in the
-                kitchen.</p>
-            <p><strong>Act II — The Creature (Scenes 12–23):</strong> First night with the creature, Makayla confronts
-                Dallas, bond and lair. Creature in the basement; life group arrives, Mr. Mike freaks. Red eyes, the
-                creature gone.</p>
-            <p><strong>Act III — The Return (Scenes 24–27):</strong> Marsh plan, predator attack, the perimeter.
-                Creature dies in the marsh; they run. The plan, the trap, the storm.</p>
-            <p><strong>Act IV — Aftermath (Scenes 28–29):</strong> She goes in. Phase cancellation; they're free.
-                Branford breathes again; the folder's with the kids.</p>
-            <p style="margin-top: 1.5rem; font-size: 0.8rem;"><a href="/pages/summer/script-system/index.html"
-                    style="color: var(--accent); text-decoration: none;">Explore Scene Gallery →</a></p>
-        </div>
+                        nextBtn.addEventListener('click', showNext);
+                        prevBtn.addEventListener('click', showPrev);
 
-        <div class="production-glance">
-            <h3>Production Notes</h3>
-            <p>29 scenes · 12 principal shoot days + 2 pickup (SFX/action). ~80 min total runtime.</p>
-            <p><strong>Locations:</strong> Dallas's house (int/ext), backyard, porch, basement, study; Dominic's
-                kitchen; church fellowship lawn; marsh trail / boardwalk; Branford rocks; tall grass / hollow; Branford
-                neighborhood.</p>
-            <p style="font-size: 0.8rem;"><a href="/pages/summer/production.html"
-                    style="color: var(--accent); text-decoration: none;">View Detailed Production Breakdown →</a></p>
-        </div>
-
-        <div class="page-links">
-            <a href="/pages/summer/script-system/full_script.html" class="btn btn-primary">Full Script</a>
-            <a href="/pages/summer/script-system/index.html" class="btn btn-secondary">Scene Gallery</a>
-            <a href="/pages/summer/characters/index.html" class="btn btn-secondary">Characters</a>
-            <a href="/pages/summer/production.html" class="btn btn-secondary">Production</a>
-        </div>
-    </div>
+                        document.addEventListener('keydown', (e) => {
+                                if (!lightbox.classList.contains('active')) return;
+                                if (e.key === 'Escape') closeLightbox();
+                                if (e.key === 'ArrowRight') showNext(e);
+                                if (e.key === 'ArrowLeft') showPrev(e);
+                        });
+                });
+        </script>
 </body>
 
 </html>
