@@ -440,7 +440,7 @@ h3 {
 }
 
 .inspiration-gallery {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     grid-auto-rows: 1fr;
     gap: 1.5rem;
@@ -1625,4 +1625,112 @@ h3 {
     color: var(--accent);
     opacity: 1;
     transform: translateY(-1px);
+}
+
+/* Print Styles - Optimized for 8.5x11 Portrait B&W */
+@media print {
+    @page {
+        size: 8.5in 11in;
+        margin: 0.5in;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 11pt;
+    }
+
+    .table-read-page {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Hide non-essential elements */
+    .mobile-top-nav,
+    .table-read-back,
+    .btn-toggle,
+    #toggle-inspiration,
+    .inspiration-header button,
+    .page-links,
+    .lightbox {
+        display: none !important;
+    }
+
+    /* Collapse Visual Inspiration in print by default */
+    #visual-inspiration,
+    .inspiration-gallery {
+        display: none !important;
+    }
+
+    /* Grayscale enforcement */
+    img,
+    .hero-section,
+    .resonance-card,
+    .rule-item,
+    .dvd-block {
+        filter: grayscale(100%) !important;
+        background: white !important;
+        border-color: #000 !important;
+        box-shadow: none !important;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .table-read-date {
+        color: black !important;
+        border-bottom-color: black !important;
+    }
+
+    .hero-section {
+        height: auto !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .hero-img {
+        max-height: 2in !important;
+    }
+
+    .hero-overlay {
+        position: static !important;
+        padding: 1rem 0 !important;
+        background: none !important;
+        color: black !important;
+    }
+
+    .hero-overlay h1 {
+        font-size: 24pt !important;
+    }
+
+    .cast-list li,
+    .estimate-table td,
+    .estimate-table th {
+        border-bottom: 1px solid #000 !important;
+    }
+
+    .btn {
+        display: none !important;
+    }
+
+    /* Force background colors to print if needed (though we want B&W) */
+    .shoot-dates-block,
+    .story-glance,
+    .production-glance {
+        background: #f0f0f0 !important;
+        border-left: 2px solid black !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+.btn-print {
+    border-color: #111;
+    color: #111;
+    font-size: 0.65rem;
+}
+
+.btn-print:hover {
+    background: #000;
+    color: #fff;
 }
