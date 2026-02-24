@@ -47,7 +47,7 @@ function compileMarkdown(entries) {
   output += `---\n\n`;
 
   entries.forEach((entry) => {
-    output += `\n## ${entry.title}\n\n`;
+    output += `\n<h2 id="entry-${entry.id}">${entry.title}</h2>\n\n`;
     output += `*Category: ${entry.category} | File: ${entry.file}*\n\n`;
     output += `---\n\n`;
     output += loadEntry(entry.file);
@@ -205,14 +205,6 @@ function generateFullPage(entries, markdown) {
     marked.setOptions({ gfm: true, breaks: true });
     container.innerHTML = marked.parse(markdown);
 
-    // Assign ids to entry headings (first h2 per entry in order)
-    (function assignEntryIds() {
-      const h2s = container.querySelectorAll('h2');
-      ENTRIES.forEach(function(entry, i) {
-        if (h2s[i]) h2s[i].id = 'entry-' + entry.id;
-      });
-    })();
-
     mermaid.initialize({ startOnLoad: true, theme: 'dark' });
     if (typeof renderMathInElement === 'function') {
       renderMathInElement(container, { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }] });
@@ -271,24 +263,47 @@ function generateFullPage(entries, markdown) {
       });
     })();
 
-    // Status bar: current entry on scroll
+    // Status bar: current entry via IntersectionObserver
     (function initStatusBar() {
-      const content = document.getElementById('bibleContent');
       const statusEl = document.getElementById('bibleStatusEntry');
-      if (!content || !statusEl) return;
-      const headings = ENTRIES.map(function(e) { return document.getElementById('entry-' + e.id); }).filter(Boolean);
-      function update() {
-        const threshold = 120;
-        let current = headings[0];
-        for (let i = 0; i < headings.length; i++) {
-          if (headings[i].getBoundingClientRect().top <= threshold) current = headings[i];
+      if (!statusEl) return;
+
+      // Track entries + command center
+      const targets = [
+        document.getElementById('command-center'),
+        ...ENTRIES.map(e => document.getElementById('entry-' + e.id))
+      ].filter(Boolean);
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '-10% 0px -85% 0px', // Precise threshold for the top of the viewport
+        threshold: 0
+      };
+
+      let activeId = null;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            activeId = entry.target.id;
+            updateStatus();
+          }
+        });
+      }, observerOptions);
+
+      targets.forEach(t => observer.observe(t));
+
+      function updateStatus() {
+        if (activeId === 'command-center') {
+          statusEl.textContent = 'Command Center';
+          return;
         }
-        const entry = ENTRIES.find(function(e) { return current.id === 'entry-' + e.id; });
+        const entryId = activeId.replace('entry-', '');
+        const entry = ENTRIES.find(e => e.id === entryId);
         statusEl.textContent = entry ? entry.title : '—';
       }
-      update();
-      window.addEventListener('scroll', update, { passive: true });
-      window.addEventListener('resize', update);
+
+      updateStatus();
     })();
 
     (function initSidebarToggle() {

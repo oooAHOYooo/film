@@ -8,6 +8,10 @@ He was on a master in data science—and that meant that he was just going to be
 
 We didn't really—we met outside on a September day outside of Chapel at Book Trader Cafe. He had a little espresso black—and I had a large iced latte with apple cider flavor. I knew that it was a little early for pumpkin—but I was excited. He was asking about the American fall—and all that it accompanied.
 
+I saw him a couple of months later at a post doc party and we talked about the good old days when we would get coffee. The conversation kept going back into coffee - and then inevitably how gCafe was the only real french cafe in New Haven. And then a slight or two about his distate for America - and I was done. Not that I was particularly patriotic - but I judged him on the notion that I would never go to france and compare it to the states. Lest outloud. 
+
+I saw him a couple of weeks later - after a historic noreaster - walking down avoiding the snow banks. I think he saw me - and I think I saw him too - but we didn't acknowledge each other.
+
 **Focus:**
 - Derail the original plan (coworking becomes something else).
 - Force a harder path (the French man knows more than Patrick; New Haven as question mark).

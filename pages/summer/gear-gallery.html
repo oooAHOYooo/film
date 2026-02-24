@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DIY Gear & Techniques — Creatures in the Tall Grass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/summer.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap');
+
+        :root {
+            --primary-bg: #0d1117;
+            --secondary-bg: #161b22;
+            --accent: #58a6ff;
+            --accent-glow: rgba(88, 166, 255, 0.4);
+            --glass-bg: rgba(22, 27, 34, 0.6);
+            --glass-border: rgba(240, 246, 252, 0.1);
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --font-main: 'Inter', -apple-system, sans-serif;
+            --font-serif: 'Newsreader', serif;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--primary-bg);
+            color: var(--text-primary);
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .gear-gallery-container {
+            max-width: 935px;
+            /* Instagram's desktop max-width */
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        /* Profile Style Header */
+        .profile-header {
+            max-width: 935px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .profile-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent) 0%, #161b22 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            border: 4px solid var(--secondary-bg);
+            box-shadow: 0 0 20px var(--accent-glow);
+            justify-self: center;
+        }
+
+        .profile-info h1 {
+            font-size: 1.75rem;
+            font-weight: 300;
+            margin: 0 0 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .profile-stats {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+
+        .stat-item {
+            font-size: 1rem;
+        }
+
+        .stat-item strong {
+            font-weight: 600;
+        }
+
+        .profile-bio {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        .profile-bio p {
+            margin: 0;
+        }
+
+        .profile-bio span {
+            color: var(--accent);
+            cursor: pointer;
+        }
+
+        /* Instagram Style Grid */
+        .gear-grid-insta {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+            padding: 20px 0;
+        }
+
+        .gear-item {
+            position: relative;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            background: var(--glass-bg);
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        .gear-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.3s ease;
+        }
+
+        .gear-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            z-index: 2;
+        }
+
+        .gear-item:hover .gear-overlay {
+            opacity: 1;
+        }
+
+        .gear-stats-overlay {
+            display: flex;
+            gap: 20px;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .gear-stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Video specific icon */
+        .video-type-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            z-index: 1;
+        }
+
+        @media (min-width: 1024px) {
+            .gear-grid-insta {
+                gap: 28px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .profile-header {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .profile-avatar {
+                width: 80px;
+                height: 80px;
+                font-size: 1.5rem;
+            }
+
+            .profile-info h1 {
+                justify-content: center;
+                font-size: 1.5rem;
+            }
+
+            .profile-stats {
+                justify-content: center;
+                gap: 20px;
+                border-top: 1px solid var(--glass-border);
+                border-bottom: 1px solid var(--glass-border);
+                padding: 10px 0;
+            }
+
+            .gear-grid-insta {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2px;
+                padding: 0;
+            }
+
+            .gear-gallery-container {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="primary-bg">
+    <nav class="summer-nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="/pages/summer.html" class="nav-brand">
+                    <span style="font-size: 1.5rem;">←</span>
+                    <h2>Production Hub</h2>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="gear-gallery-container">
+        <!-- Profile Header -->
+        <header class="profile-header">
+            <div class="profile-avatar">📷</div>
+            <div class="profile-info">
+                <h1>diy_cinematography <span
+                        style="font-size: 0.9rem; background: var(--accent); color: white; padding: 5px 15px; border-radius: 4px; font-weight: 600; cursor: pointer;">Follow</span>
+                </h1>
+                <div class="profile-stats">
+                    <div class="stat-item"><strong>25</strong> posts</div>
+                    <div class="stat-item"><strong>1.2k</strong> followers</div>
+                    <div class="stat-item"><strong>480</strong> following</div>
+                </div>
+                <div class="profile-bio">
+                    <p><strong>DIY Gear & Techniques</strong></p>
+                    <p>Practical solutions for cinematic results. From rigging to optics, making the most of every
+                        build.</p>
+                    <p><span>#cinematography #diyfilmmaking #summercreatures</span></p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Instagram Grid -->
+        <div class="gear-grid-insta">
+            <!-- 1 -->
+            <div class="gear-item" data-index="0"
+                data-url="https://i.pinimg.com/736x/ca/d3/17/cad3171a734f8bccb99aa824ee7e897a.jpg"
+                data-title="Handheld Rigging" data-description="Custom handheld rig for steady tracking shots.">
+                <img src="https://i.pinimg.com/736x/ca/d3/ca/cad3171a734f8bccb99aa824ee7e897a.jpg" alt="DIY Gear 1">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 128</div>
+                        <div class="gear-stat">💬 14</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="gear-item" data-index="1"
+                data-url="https://i.pinimg.com/736x/0d/69/91/0d6991af86a438f7ebe896eb58b6601b.jpg"
+                data-title="Optical Hacks" data-description="Experimenting with custom glass elements.">
+                <img src="https://i.pinimg.com/736x/0d/69/91/0d6991af86a438f7ebe896eb58b6601b.jpg" alt="DIY Gear 2">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 89</div>
+                        <div class="gear-stat">💬 5</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="gear-item" data-index="2"
+                data-url="https://i.pinimg.com/1200x/db/4e/42/db4e42354ce74152b44608cb1aedd5e0.jpg"
+                data-title="Stabilization Bench" data-description="Heavy-duty stabilization for macro work.">
+                <img src="https://i.pinimg.com/1200x/db/4e/42/db4e42354ce74152b44608cb1aedd5e0.jpg" alt="DIY Gear 3">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 245</div>
+                        <div class="gear-stat">💬 32</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="gear-item" data-index="3"
+                data-url="https://i.pinimg.com/1200x/dd/84/e7/dd84e750463b7ac083c6ce827b38e473.jpg"
+                data-title="Lighting Modifiers" data-description="Hand-made diffusers for soft portrait lighting.">
+                <img src="https://i.pinimg.com/1200x/dd/84/e7/dd84e750463b7ac083c6ce827b38e473.jpg" alt="DIY Gear 4">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 156</div>
+                        <div class="gear-stat">💬 8</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="gear-item" data-index="4"
+                data-url="https://i.pinimg.com/1200x/9c/77/8e/9c778e60cbfff1c4c9384856ac684fb8.jpg"
+                data-title="Macro Details" data-description="Lens reversal technique for extreme closeups.">
+                <img src="https://i.pinimg.com/1200x/9c/77/8e/9c778e60cbfff1c4c9384856ac684fb8.jpg" alt="DIY Gear 5">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 412</div>
+                        <div class="gear-stat">💬 56</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="gear-item" data-index="5"
+                data-url="https://i.pinimg.com/1200x/9f/11/be/9f11bed7c20a1a1fb2e743e6154ede4e.jpg"
+                data-title="Cable Management" data-description="Keeping the rig clean with custom ties.">
+                <img src="https://i.pinimg.com/1200x/9f/11/be/9f11bed7c20a1a1fb2e743e6154ede4e.jpg" alt="DIY Gear 6">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 67</div>
+                        <div class="gear-stat">💬 2</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="gear-item" data-index="6"
+                data-url="https://i.pinimg.com/736x/7d/68/98/7d6898be13cb47a0baddb1e5aab65d7b.jpg"
+                data-title="Follow Focus DIY" data-description="3D printed follow focus rings.">
+                <img src="https://i.pinimg.com/736x/7d/68/98/7d6898be13cb47a0baddb1e5aab65d7b.jpg" alt="DIY Gear 7">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 198</div>
+                        <div class="gear-stat">💬 21</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="gear-item" data-index="7"
+                data-url="https://i.pinimg.com/1200x/6b/db/1e/6bdb1e06252f610b34667934789e3137.jpg"
+                data-title="Rigging Mechanics" data-description="Stress testing the structural joints.">
+                <img src="https://i.pinimg.com/1200x/6b/db/1e/6bdb1e06252f610b34667934789e3137.jpg" alt="DIY Gear 8">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 92</div>
+                        <div class="gear-stat">💬 4</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="gear-item" data-index="8"
+                data-url="https://i.pinimg.com/474x/f3/0b/99/f30b993feafad45dcc1094cc61189727.jpg"
+                data-title="Field Power" data-description="Portable battery solutions for remote shoots.">
+                <img src="https://i.pinimg.com/474x/f3/0b/99/f30b993feafad45dcc1094cc61189727.jpg" alt="DIY Gear 9">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 310</div>
+                        <div class="gear-stat">💬 28</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="gear-item" data-index="9"
+                data-url="https://m.media-amazon.com/images/I/51cs6gscPyS._AC_SY300_SX300_QL70_ML2_.jpg"
+                data-title="Monitor Mounting" data-description="DIY cold shoe adapter for field monitors.">
+                <img src="https://m.media-amazon.com/images/I/51cs6gscPyS._AC_SY300_SX300_QL70_ML2_.jpg"
+                    alt="DIY Gear 10">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 54</div>
+                        <div class="gear-stat">💬 1</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 11 -->
+            <div class="gear-item" data-index="10"
+                data-url="https://i.pinimg.com/1200x/c1/83/fd/c183fd4e87773e604e0a1cb238849435.jpg"
+                data-title="Vibration Control" data-description="Damping materials for car-mounted rigs.">
+                <img src="https://i.pinimg.com/1200x/c1/83/fd/c183fd4e87773e604e0a1cb238849435.jpg" alt="DIY Gear 11">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 88</div>
+                        <div class="gear-stat">💬 3</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="gear-item" data-index="11"
+                data-url="https://i.pinimg.com/1200x/51/7d/4c/517d4c8af5c54f610270cca3c24d67c5.jpg"
+                data-title="Sensor Care" data-description="Proactive cleaning techniques in the field.">
+                <img src="https://i.pinimg.com/1200x/51/7d/4c/517d4c8af5c54f610270cca3c24d67c5.jpg" alt="DIY Gear 12">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 42</div>
+                        <div class="gear-stat">💬 0</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 13 -->
+            <div class="gear-item" data-index="12"
+                data-url="https://i.pinimg.com/1200x/9a/ca/ef/9acaef8f32a9d81619bbacf1144833c5.jpg"
+                data-title="Lens Calibration" data-description="Fine-tuning the vintage glass.">
+                <img src="https://i.pinimg.com/1200x/9a/ca/ef/9acaef8f32a9d81619bbacf1144833c5.jpg" alt="DIY Gear 13">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 76</div>
+                        <div class="gear-stat">💬 4</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 14 -->
+            <div class="gear-item" data-index="13"
+                data-url="https://i.pinimg.com/736x/73/8b/8c/738b8cb71e55089db57ee99ac06a7b1a.jpg"
+                data-title="Gimbal Balance" data-description="Perfecting the center of gravity.">
+                <img src="https://i.pinimg.com/736x/73/8b/8c/738b8cb71e55089db57ee99ac06a7b1a.jpg" alt="DIY Gear 14">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 134</div>
+                        <div class="gear-stat">💬 11</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 15 -->
+            <div class="gear-item" data-index="14"
+                data-url="https://i.pinimg.com/736x/d1/c8/3c/d1c83c3373e9a21755aa959801ba0a97.jpg"
+                data-title="Audio Rigging" data-description="Isolating mic noise on the cage.">
+                <img src="https://i.pinimg.com/736x/d1/c8/3c/d1c83c3373e9a21755aa959801ba0a97.jpg" alt="DIY Gear 15">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 65</div>
+                        <div class="gear-stat">💬 2</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 16 -->
+            <div class="gear-item" data-index="15"
+                data-url="https://i.pinimg.com/1200x/f4/15/93/f4159377fb837b42beb195e4623e4e0c.jpg"
+                data-title="Weather Proofing" data-description="DIY rain covers for long shoots.">
+                <img src="https://i.pinimg.com/1200x/f4/15/93/f4159377fb837b42beb195e4623e4e0c.jpg" alt="DIY Gear 16">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 210</div>
+                        <div class="gear-stat">💬 19</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 17 (Video) -->
+            <div class="gear-item video-tile" data-video-url="https://www.youtube.com/embed/FKM3Jiv_eE8"
+                data-title="DIY Gear Showcase">
+                <div class="video-type-icon">▶</div>
+                <img src="https://img.youtube.com/vi/FKM3Jiv_eE8/hqdefault.jpg" alt="Video Placeholder">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 854</div>
+                        <div class="gear-stat">💬 98</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 18 -->
+            <div class="gear-item" data-index="16"
+                data-url="https://i.pinimg.com/1200x/7a/2a/32/7a2a32856b4fb156595b19041d0af058.jpg"
+                data-title="Optical Filters" data-description="Filtering the light for specific moods.">
+                <img src="https://i.pinimg.com/1200x/7a/2a/32/7a2a32856b4fb156595b19041d0af058.jpg" alt="DIY Gear 18">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 45</div>
+                        <div class="gear-stat">💬 2</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 19 -->
+            <div class="gear-item" data-index="17"
+                data-url="https://i.pinimg.com/736x/50/b8/83/50b883b332d21978b20e48b56d7d3531.jpg"
+                data-title="Custom Matte Box" data-description="Lightweight matte box from recycled parts.">
+                <img src="https://i.pinimg.com/736x/50/b8/83/50b883b332d21978b20e48b56d7d3531.jpg" alt="DIY Gear 19">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 112</div>
+                        <div class="gear-stat">💬 8</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 20 -->
+            <div class="gear-item" data-index="18"
+                data-url="https://i.pinimg.com/1200x/ac/68/ec/ac68ecf7a3ae8c9db421636dded0f7c1.jpg"
+                data-title="Precision Focusing" data-description="Mechanical focus puller setup.">
+                <img src="https://i.pinimg.com/1200x/ac/68/ec/ac68ecf7a3ae8c9db421636dded0f7c1.jpg" alt="DIY Gear 20">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 89</div>
+                        <div class="gear-stat">💬 4</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 21 -->
+            <div class="gear-item" data-index="19"
+                data-url="https://i.pinimg.com/1200x/c2/25/63/c2256327328018c12cb39ccafd1eab2f.jpg"
+                data-title="Mobile Power Station" data-description="Centralized power for the tech crew.">
+                <img src="https://i.pinimg.com/1200x/c2/25/63/c2256327328018c12cb39ccafd1eab2f.jpg" alt="DIY Gear 21">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 234</div>
+                        <div class="gear-stat">💬 15</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 22 -->
+            <div class="gear-item" data-index="20"
+                data-url="https://i.pinimg.com/1200x/72/e5/7e/72e57ebd8b6b6fab263105c56175f343.jpg"
+                data-title="Fluid Head Mod" data-description="Increasing tension for smoother pans.">
+                <img src="https://i.pinimg.com/1200x/72/e5/7e/72e57ebd8b6b6fab263105c56175f343.jpg" alt="DIY Gear 22">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 67</div>
+                        <div class="gear-stat">💬 3</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 23 -->
+            <div class="gear-item" data-index="21"
+                data-url="https://i.pinimg.com/736x/30/2f/d7/302fd722776403539a952cdca0d3099c.jpg"
+                data-title="Compact Rigging" data-description="Going minimal for tight spaces.">
+                <img src="https://i.pinimg.com/736x/30/2f/d7/302fd722776403539a952cdca0d3099c.jpg" alt="DIY Gear 23">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 156</div>
+                        <div class="gear-stat">💬 9</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 24 -->
+            <div class="gear-item" data-index="22"
+                data-url="https://i.pinimg.com/1200x/b4/c8/e7/b4c8e76fed03c180d715f8685d70c56c.jpg"
+                data-title="Wireless Monitoring" data-description="Low-latency video transmission hacks.">
+                <img src="https://i.pinimg.com/1200x/b4/c8/e7/b4c8e76fed03c180d715f8685d70c56c.jpg" alt="DIY Gear 24">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 92</div>
+                        <div class="gear-stat">💬 6</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 25 -->
+            <div class="gear-item" data-index="23"
+                data-url="https://i.pinimg.com/736x/bb/5b/e1/bb5be179e0af5fe9e0023caa5b1e7e8a.jpg"
+                data-title="Field Workshop" data-description="The mobile lab in action.">
+                <img src="https://i.pinimg.com/736x/bb/5b/e1/bb5be179e0af5fe9e0023caa5b1e7e8a.jpg" alt="DIY Gear 25">
+                <div class="gear-overlay">
+                    <div class="gear-stats-overlay">
+                        <div class="gear-stat">❤️ 289</div>
+                        <div class="gear-stat">💬 34</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Barnacle Film Studio Company ©2025</p>
+    </footer>
+
+    <script src="/scripts/vault.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const gearItems = document.querySelectorAll('.gear-item:not(.video-tile)');
+            const videoItems = document.querySelectorAll('.video-tile');
+
+            // Build gallery list for lightbox
+            const galleryList = Array.from(gearItems).map(item => ({
+                url: item.dataset.url,
+                title: item.dataset.title,
+                description: item.dataset.description
+            }));
+
+            // Image click handler
+            gearItems.forEach((item, index) => {
+                item.addEventListener('click', () => {
+                    if (window.openGalleryModalWithList) {
+                        window.openGalleryModalWithList(galleryList, index);
+                    }
+                });
+            });
+
+            // Video click handler
+            videoItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    if (window.openVideoModal) {
+                        window.openVideoModal(item.dataset.videoUrl, item.dataset.title);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

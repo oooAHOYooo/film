@@ -5,7 +5,7 @@ The golden creatures (and their ecosystem) are defined by acoustic and electroma
 
 ## Key Frequency: 115.3 MHz
 - **Dial setting:** Mr. Mike’s numbers (1, 1, 5, 3) are **dial settings**, not map coordinates.
-- Dallas’s to receive messages at oscillator at **115.3 MHz** stabilizes the injured creature and aligns with its “voice.”
+- Dallas’s to receive messages at and theoscillator at **115.3 MHz** stabilizes the injured creature and aligns with its “voice.”
 - The creature’s back-holes emit a low, melodic tone at this band; equipment (oscilloscope, receiver) shows a clean sine in sync with its heartbeat.
 - Any dialogue or action referring to “the numbers” or “coordinates” should be understood as this frequency/dial logic.
 

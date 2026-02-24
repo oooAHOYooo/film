@@ -1,7 +1,24 @@
 /* Summer Film Page Styles - Executive Production Hub */
-
-/* Wardrobe + DVD copy blocks: avoid system/Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..700&display=swap');
+
+:root {
+    --primary-bg: #0d1117;
+    --secondary-bg: #161b22;
+    --accent: #58a6ff;
+    --accent-glow: rgba(88, 166, 255, 0.4);
+    --bible-gold: #f2cc60;
+    --bible-glow: rgba(242, 204, 96, 0.3);
+    --glass-bg: rgba(22, 27, 34, 0.6);
+    --glass-border: rgba(240, 246, 252, 0.1);
+    --text-primary: #f0f6fc;
+    --text-secondary: #8b949e;
+    --font-main: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+}
 
 /* Navigation Styles (moved from inline) */
 .summer-nav {
@@ -192,6 +209,120 @@
     font-size: 1.25rem;
     color: var(--text-secondary);
     margin: 0 0 24px 0;
+}
+
+/* Bento Grid System */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(160px, auto);
+    gap: 16px;
+    margin: 40px auto;
+    max-width: var(--maxw);
+}
+
+.bento-item {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 24px;
+    backdrop-filter: blur(12px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+}
+
+.bento-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: var(--accent);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+}
+
+.bento-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.bento-item.wide {
+    grid-column: span 2;
+}
+
+.bento-item.tall {
+    grid-row: span 2;
+}
+
+.bento-item.bible {
+    background: linear-gradient(135deg, rgba(242, 204, 96, 0.1) 0%, rgba(13, 17, 23, 0.6) 100%);
+    border-color: rgba(242, 204, 96, 0.2);
+}
+
+.bento-item.bible:hover {
+    border-color: var(--bible-gold);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px var(--bible-glow);
+}
+
+.bento-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(135deg, #fff 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bento-item.bible .bento-title {
+    background: linear-gradient(135deg, #fff 0%, var(--bible-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bento-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.bento-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.bento-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 4px 10px;
+    border-radius: 99px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-item.large,
+    .bento-item.wide {
+        grid-column: span 1;
+    }
 }
 
 .hero-logline {
@@ -407,6 +538,7 @@
         grid-template-columns: 1fr;
         gap: 6px;
     }
+
     .dvd-grid {
         grid-template-columns: 1fr;
     }
@@ -830,7 +962,7 @@
     .mobile-nav-toggle {
         display: block;
     }
-    
+
     .nav-links {
         position: absolute;
         top: 100%;
@@ -845,40 +977,40 @@
         display: none;
         gap: 4px;
     }
-    
+
     .nav-links.open {
         display: flex;
     }
-    
+
     .nav-link-item {
         width: 100%;
         padding: 12px 16px;
     }
-    
+
     .nav-content {
         position: relative;
     }
-    
+
     .hero {
         margin: 60px auto 40px;
     }
-    
+
     .hero-content {
         padding: 40px 24px;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-facts {
         gap: 24px;
     }
-    
+
     .hero-actions {
         flex-direction: column;
     }
-    
+
     .hero-actions .btn {
         width: 100%;
         justify-content: center;
@@ -893,20 +1025,20 @@
         grid-template-columns: 1fr;
         gap: 8px;
     }
-    
+
     .vault-table {
         font-size: 0.9rem;
     }
-    
+
     .vault-table th,
     .vault-table td {
         padding: 10px 12px;
     }
-    
+
     .location-gallery {
         grid-template-columns: 1fr;
     }
-    
+
     .stills-preview,
     .stills-full {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -918,23 +1050,22 @@
     .hero-title {
         font-size: 1.75rem;
     }
-    
+
     .hero-logline {
         font-size: 1rem;
     }
-    
+
     .hero-facts {
         flex-direction: column;
         gap: 16px;
     }
-    
+
     .inspiration-filters {
         gap: 8px;
     }
-    
+
     .filter-btn {
         padding: 6px 12px;
         font-size: 0.8rem;
     }
 }
-

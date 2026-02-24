@@ -1,11 +1,11 @@
 # Creatures in the Tall Grass - Production Bible
 
-*Compiled on 2/24/2026, 11:06:26 AM*
+*Compiled on 2/24/2026, 3:25:51 PM*
 
 ---
 
 
-## Glow Logic
+<h2 id="entry-glow-logic">Glow Logic</h2>
 
 *Category: Lore | File: lore/glow-logic.md*
 
@@ -53,7 +53,7 @@ graph TD
 ---
 
 
-## Creature Physiology
+<h2 id="entry-creature-physiology">Creature Physiology</h2>
 
 *Category: Lore | File: lore/creature-physiology.md*
 
@@ -66,7 +66,7 @@ The golden creatures (and their ecosystem) are defined by acoustic and electroma
 
 ## Key Frequency: 115.3 MHz
 - **Dial setting:** Mr. Mike’s numbers (1, 1, 5, 3) are **dial settings**, not map coordinates.
-- Dallas’s to receive messages at oscillator at **115.3 MHz** stabilizes the injured creature and aligns with its “voice.”
+- Dallas’s to receive messages at and theoscillator at **115.3 MHz** stabilizes the injured creature and aligns with its “voice.”
 - The creature’s back-holes emit a low, melodic tone at this band; equipment (oscilloscope, receiver) shows a clean sine in sync with its heartbeat.
 - Any dialogue or action referring to “the numbers” or “coordinates” should be understood as this frequency/dial logic.
 
@@ -99,7 +99,7 @@ The golden creatures (and their ecosystem) are defined by acoustic and electroma
 ---
 
 
-## Red-Eyes and Shadow Creatures
+<h2 id="entry-red-eyes-and-shadows">Red-Eyes and Shadow Creatures</h2>
 
 *Category: Lore | File: lore/red-eyes-and-shadows.md*
 
@@ -129,7 +129,7 @@ The **Red-Eyes** (and the larger **shadow creatures**) are the antagonists of th
 ---
 
 
-## Anamorphic
+<h2 id="entry-anamorphic">Anamorphic</h2>
 
 *Category: Optics | File: optics/anamorphic.md*
 
@@ -178,7 +178,51 @@ $$Aspect = \frac{R_h}{R_v \times \text{CropFactor}}$$
 ---
 
 
-## Branford and the Marsh
+<h2 id="entry-dolly-tracks">Camera Setup: Dolly Tracks</h2>
+
+*Category: Optics | File: optics/dolly-tracks.md*
+
+---
+
+# Camera Setup: DIY Dolly Tracks
+
+To achieve smooth, tracking movements within the salt marsh and Dallas's house without a professional crew, we utilize a custom-built **Dolly Railroad** system.
+
+## 🛠️ Build Specifications: The "Marsh Runner"
+The dolly is designed for portability and stability on uneven terrain.
+
+### Components
+| Part | Material | Purpose |
+| :--- | :--- | :--- |
+| **Rails** | 2" Schedule 40 PVC Pipe | Lightweight, flexible, and rust-proof in saltwater environments. |
+| **Sleeper Ties** | 2x4 Pressure-Treated Lumber | Provides rigid spacing for the rails (approx. 24" gauge). |
+| **Dolly Platform** | 3/4" Plywood with Outdoor Carpet | Dampens vibration and provides a "grippy" surface for the tripod. |
+| **Wheels** | 70mm Inline Skate Wheels | High-durometer wheels for minimal rolling resistance. |
+
+---
+
+## 🎥 Operation Logic
+The RED Komodo is mounted on a standard tripod, which is then secured to the plywood platform via sandbags or bungee tie-downs.
+
+### Tracking Techniques
+1. **The "Marsh Slide":** Long, slow lateral tracks through the tall grass to simulate a predator's POV.
+2. **The "Low-Angle Slink":** Tracks set directly on the mudflats for extreme low-angle shots of the creature.
+3. **The "Storm Push":** Rapid tracking towards a subject during high-wind sequences to create a sense of urgency.
+
+---
+
+## 📐 DIY Schematic
+> [!TIP]
+> Use silicone-based lubricant on the PVC rails to ensure the inline wheels glide silently. Any squeaks will interfere with the bioacoustic recording (Dallas's job logic).
+
+![DIY Dolly Setup](/Users/agworkywork/film/pages/summer/bible-system/content/optics/dolly_setup.png)
+*(Reference Image: PVC pipe rails with wooden cross-braces and wheeled platform)*
+
+
+---
+
+
+<h2 id="entry-branford-and-marsh">Branford and the Marsh</h2>
 
 *Category: Locations | File: locations/branford-and-marsh.md*
 
@@ -216,7 +260,7 @@ $$Aspect = \frac{R_h}{R_v \times \text{CropFactor}}$$
 ---
 
 
-## Location List
+<h2 id="entry-location-list">Location List</h2>
 
 *Category: Locations | File: locations/location-list.md*
 
@@ -351,7 +395,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## Tone and Style Guide
+<h2 id="entry-style-guide">Tone and Style Guide</h2>
 
 *Category: Tone | File: tone/style-guide.md*
 
@@ -392,7 +436,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 1 — Arrival
+<h2 id="entry-pr01">PE 1 — Arrival</h2>
 
 *Category: Practical Effects | File: practical-effects/pr01.md*
 
@@ -446,7 +490,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 2 — Dallas Night
+<h2 id="entry-pr02">PE 2 — Dallas Night</h2>
 
 *Category: Practical Effects | File: practical-effects/pr02.md*
 
@@ -507,7 +551,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 3 — The Hum
+<h2 id="entry-pr03">PE 3 — The Hum</h2>
 
 *Category: Practical Effects | File: practical-effects/pr03.md*
 
@@ -569,7 +613,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 4 — Fellowship
+<h2 id="entry-pr04">PE 4 — Fellowship</h2>
 
 *Category: Practical Effects | File: practical-effects/pr04.md*
 
@@ -623,7 +667,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 5 — Marsh Trail
+<h2 id="entry-pr05">PE 5 — Marsh Trail</h2>
 
 *Category: Practical Effects | File: practical-effects/pr05.md*
 
@@ -677,7 +721,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 6 — News Vans & Trash Cans
+<h2 id="entry-pr06">PE 6 — News Vans & Trash Cans</h2>
 
 *Category: Practical Effects | File: practical-effects/pr06.md*
 
@@ -711,7 +755,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 7 — The Coordinates
+<h2 id="entry-pr07">PE 7 — The Coordinates</h2>
 
 *Category: Practical Effects | File: practical-effects/pr07.md*
 
@@ -746,7 +790,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 8 — Dallas Marsh Walk
+<h2 id="entry-pr08">PE 8 — Dallas Marsh Walk</h2>
 
 *Category: Practical Effects | File: practical-effects/pr08.md*
 
@@ -781,7 +825,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 9 — Dallas Night Work
+<h2 id="entry-pr09">PE 9 — Dallas Night Work</h2>
 
 *Category: Practical Effects | File: practical-effects/pr09.md*
 
@@ -814,7 +858,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 10 — The Chase
+<h2 id="entry-pr10">PE 10 — The Chase</h2>
 
 *Category: Practical Effects | File: practical-effects/pr10.md*
 
@@ -847,7 +891,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 11 — Howie Walk
+<h2 id="entry-pr11">PE 11 — Howie Walk</h2>
 
 *Category: Practical Effects | File: practical-effects/pr11.md*
 
@@ -884,7 +928,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 12 — The Burn Mark & Costco
+<h2 id="entry-pr12">PE 12 — The Burn Mark & Costco</h2>
 
 *Category: Practical Effects | File: practical-effects/pr12.md*
 
@@ -917,7 +961,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 13 — Entering Grass & The Hollow
+<h2 id="entry-pr13">PE 13 — Entering Grass & The Hollow</h2>
 
 *Category: Practical Effects | File: practical-effects/pr13.md*
 
@@ -952,7 +996,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 14 — Creature Rescue
+<h2 id="entry-pr14">PE 14 — Creature Rescue</h2>
 
 *Category: Practical Effects | File: practical-effects/pr14.md*
 
@@ -989,7 +1033,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 15 — The Burn Mark (Lair)
+<h2 id="entry-pr15">PE 15 — The Burn Mark (Lair)</h2>
 
 *Category: Practical Effects | File: practical-effects/pr15.md*
 
@@ -1024,7 +1068,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 16 — The Escape
+<h2 id="entry-pr16">PE 16 — The Escape</h2>
 
 *Category: Practical Effects | File: practical-effects/pr16.md*
 
@@ -1058,7 +1102,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 17 — Makeshift Hospital
+<h2 id="entry-pr17">PE 17 — Makeshift Hospital</h2>
 
 *Category: Practical Effects | File: practical-effects/pr17.md*
 
@@ -1091,7 +1135,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 18 — Entering Grass
+<h2 id="entry-pr18">PE 18 — Entering Grass</h2>
 
 *Category: Practical Effects | File: practical-effects/pr18.md*
 
@@ -1124,7 +1168,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 19 — Life Group Arrives
+<h2 id="entry-pr19">PE 19 — Life Group Arrives</h2>
 
 *Category: Practical Effects | File: practical-effects/pr19.md*
 
@@ -1162,7 +1206,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 20 — Basement Huddle
+<h2 id="entry-pr20">PE 20 — Basement Huddle</h2>
 
 *Category: Practical Effects | File: practical-effects/pr20.md*
 
@@ -1195,7 +1239,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 21 — The Hymn
+<h2 id="entry-pr21">PE 21 — The Hymn</h2>
 
 *Category: Practical Effects | File: practical-effects/pr21.md*
 
@@ -1230,7 +1274,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 22 — Red Eyes
+<h2 id="entry-pr22">PE 22 — Red Eyes</h2>
 
 *Category: Practical Effects | File: practical-effects/pr22.md*
 
@@ -1266,7 +1310,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 23 — Creature Missing
+<h2 id="entry-pr23">PE 23 — Creature Missing</h2>
 
 *Category: Practical Effects | File: practical-effects/pr23.md*
 
@@ -1300,7 +1344,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 24 — Marsh Confrontation
+<h2 id="entry-pr24">PE 24 — Marsh Confrontation</h2>
 
 *Category: Practical Effects | File: practical-effects/pr24.md*
 
@@ -1335,7 +1379,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 25 — Predator Attack
+<h2 id="entry-pr25">PE 25 — Predator Attack</h2>
 
 *Category: Practical Effects | File: practical-effects/pr25.md*
 
@@ -1369,7 +1413,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 26 — The Perimeter
+<h2 id="entry-pr26">PE 26 — The Perimeter</h2>
 
 *Category: Practical Effects | File: practical-effects/pr26.md*
 
@@ -1403,7 +1447,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 27 — The Last Dinner
+<h2 id="entry-pr27">PE 27 — The Last Dinner</h2>
 
 *Category: Practical Effects | File: practical-effects/pr27.md*
 
@@ -1438,7 +1482,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 28 — Final Echoes
+<h2 id="entry-pr28">PE 28 — Final Echoes</h2>
 
 *Category: Practical Effects | File: practical-effects/pr28.md*
 
@@ -1471,7 +1515,7 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 ---
 
 
-## PE 29 — Aftermath
+<h2 id="entry-pr29">PE 29 — Aftermath</h2>
 
 *Category: Practical Effects | File: practical-effects/pr29.md*
 

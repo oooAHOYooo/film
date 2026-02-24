@@ -1,38 +1,261 @@
 [
-  {"id": "glow-logic", "category": "Lore", "file": "lore/glow-logic.md", "title": "Glow Logic", "nickname": "glow-logic"},
-  {"id": "creature-physiology", "category": "Lore", "file": "lore/creature-physiology.md", "title": "Creature Physiology", "nickname": "creature-physiology"},
-  {"id": "red-eyes-and-shadows", "category": "Lore", "file": "lore/red-eyes-and-shadows.md", "title": "Red-Eyes and Shadow Creatures", "nickname": "red-eyes-and-shadows"},
-  {"id": "anamorphic", "category": "Optics", "file": "optics/anamorphic.md", "title": "Anamorphic", "nickname": "anamorphic"},
-  {"id": "branford-and-marsh", "category": "Locations", "file": "locations/branford-and-marsh.md", "title": "Branford and the Marsh", "nickname": "branford-and-marsh"},
-  {"id": "location-list", "category": "Locations", "file": "locations/location-list.md", "title": "Location List", "nickname": "location-list"},
-  {"id": "style-guide", "category": "Tone", "file": "tone/style-guide.md", "title": "Tone and Style Guide", "nickname": "style-guide"},
-  {"id": "pr01", "category": "Practical Effects", "file": "practical-effects/pr01.md", "title": "PE 1 — Arrival", "nickname": "pr01"},
-  {"id": "pr02", "category": "Practical Effects", "file": "practical-effects/pr02.md", "title": "PE 2 — Dallas Night", "nickname": "pr02"},
-  {"id": "pr03", "category": "Practical Effects", "file": "practical-effects/pr03.md", "title": "PE 3 — The Hum", "nickname": "pr03"},
-  {"id": "pr04", "category": "Practical Effects", "file": "practical-effects/pr04.md", "title": "PE 4 — Fellowship", "nickname": "pr04"},
-  {"id": "pr05", "category": "Practical Effects", "file": "practical-effects/pr05.md", "title": "PE 5 — Marsh Trail", "nickname": "pr05"},
-  {"id": "pr06", "category": "Practical Effects", "file": "practical-effects/pr06.md", "title": "PE 6 — News Vans & Trash Cans", "nickname": "pr06"},
-  {"id": "pr07", "category": "Practical Effects", "file": "practical-effects/pr07.md", "title": "PE 7 — The Coordinates", "nickname": "pr07"},
-  {"id": "pr08", "category": "Practical Effects", "file": "practical-effects/pr08.md", "title": "PE 8 — Dallas Marsh Walk", "nickname": "pr08"},
-  {"id": "pr09", "category": "Practical Effects", "file": "practical-effects/pr09.md", "title": "PE 9 — Dallas Night Work", "nickname": "pr09"},
-  {"id": "pr10", "category": "Practical Effects", "file": "practical-effects/pr10.md", "title": "PE 10 — The Chase", "nickname": "pr10"},
-  {"id": "pr11", "category": "Practical Effects", "file": "practical-effects/pr11.md", "title": "PE 11 — Howie Walk", "nickname": "pr11"},
-  {"id": "pr12", "category": "Practical Effects", "file": "practical-effects/pr12.md", "title": "PE 12 — The Burn Mark & Costco", "nickname": "pr12"},
-  {"id": "pr13", "category": "Practical Effects", "file": "practical-effects/pr13.md", "title": "PE 13 — Entering Grass & The Hollow", "nickname": "pr13"},
-  {"id": "pr14", "category": "Practical Effects", "file": "practical-effects/pr14.md", "title": "PE 14 — Creature Rescue", "nickname": "pr14"},
-  {"id": "pr15", "category": "Practical Effects", "file": "practical-effects/pr15.md", "title": "PE 15 — The Burn Mark (Lair)", "nickname": "pr15"},
-  {"id": "pr16", "category": "Practical Effects", "file": "practical-effects/pr16.md", "title": "PE 16 — The Escape", "nickname": "pr16"},
-  {"id": "pr17", "category": "Practical Effects", "file": "practical-effects/pr17.md", "title": "PE 17 — Makeshift Hospital", "nickname": "pr17"},
-  {"id": "pr18", "category": "Practical Effects", "file": "practical-effects/pr18.md", "title": "PE 18 — Entering Grass", "nickname": "pr18"},
-  {"id": "pr19", "category": "Practical Effects", "file": "practical-effects/pr19.md", "title": "PE 19 — Life Group Arrives", "nickname": "pr19"},
-  {"id": "pr20", "category": "Practical Effects", "file": "practical-effects/pr20.md", "title": "PE 20 — Basement Huddle", "nickname": "pr20"},
-  {"id": "pr21", "category": "Practical Effects", "file": "practical-effects/pr21.md", "title": "PE 21 — The Hymn", "nickname": "pr21"},
-  {"id": "pr22", "category": "Practical Effects", "file": "practical-effects/pr22.md", "title": "PE 22 — Red Eyes", "nickname": "pr22"},
-  {"id": "pr23", "category": "Practical Effects", "file": "practical-effects/pr23.md", "title": "PE 23 — Creature Missing", "nickname": "pr23"},
-  {"id": "pr24", "category": "Practical Effects", "file": "practical-effects/pr24.md", "title": "PE 24 — Marsh Confrontation", "nickname": "pr24"},
-  {"id": "pr25", "category": "Practical Effects", "file": "practical-effects/pr25.md", "title": "PE 25 — Predator Attack", "nickname": "pr25"},
-  {"id": "pr26", "category": "Practical Effects", "file": "practical-effects/pr26.md", "title": "PE 26 — The Perimeter", "nickname": "pr26"},
-  {"id": "pr27", "category": "Practical Effects", "file": "practical-effects/pr27.md", "title": "PE 27 — The Last Dinner", "nickname": "pr27"},
-  {"id": "pr28", "category": "Practical Effects", "file": "practical-effects/pr28.md", "title": "PE 28 — Final Echoes", "nickname": "pr28"},
-  {"id": "pr29", "category": "Practical Effects", "file": "practical-effects/pr29.md", "title": "PE 29 — Aftermath", "nickname": "pr29"}
+  {
+    "id": "glow-logic",
+    "category": "Lore",
+    "file": "lore/glow-logic.md",
+    "title": "Glow Logic",
+    "nickname": "glow-logic"
+  },
+  {
+    "id": "creature-physiology",
+    "category": "Lore",
+    "file": "lore/creature-physiology.md",
+    "title": "Creature Physiology",
+    "nickname": "creature-physiology"
+  },
+  {
+    "id": "red-eyes-and-shadows",
+    "category": "Lore",
+    "file": "lore/red-eyes-and-shadows.md",
+    "title": "Red-Eyes and Shadow Creatures",
+    "nickname": "red-eyes-and-shadows"
+  },
+  {
+    "id": "anamorphic",
+    "category": "Optics",
+    "file": "optics/anamorphic.md",
+    "title": "Anamorphic",
+    "nickname": "anamorphic"
+  },
+  {
+    "id": "dolly-tracks",
+    "category": "Optics",
+    "file": "optics/dolly-tracks.md",
+    "title": "Camera Setup: Dolly Tracks",
+    "nickname": "dolly-tracks"
+  },
+  {
+    "id": "branford-and-marsh",
+    "category": "Locations",
+    "file": "locations/branford-and-marsh.md",
+    "title": "Branford and the Marsh",
+    "nickname": "branford-and-marsh"
+  },
+  {
+    "id": "location-list",
+    "category": "Locations",
+    "file": "locations/location-list.md",
+    "title": "Location List",
+    "nickname": "location-list"
+  },
+  {
+    "id": "style-guide",
+    "category": "Tone",
+    "file": "tone/style-guide.md",
+    "title": "Tone and Style Guide",
+    "nickname": "style-guide"
+  },
+  {
+    "id": "pr01",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr01.md",
+    "title": "PE 1 — Arrival",
+    "nickname": "pr01"
+  },
+  {
+    "id": "pr02",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr02.md",
+    "title": "PE 2 — Dallas Night",
+    "nickname": "pr02"
+  },
+  {
+    "id": "pr03",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr03.md",
+    "title": "PE 3 — The Hum",
+    "nickname": "pr03"
+  },
+  {
+    "id": "pr04",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr04.md",
+    "title": "PE 4 — Fellowship",
+    "nickname": "pr04"
+  },
+  {
+    "id": "pr05",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr05.md",
+    "title": "PE 5 — Marsh Trail",
+    "nickname": "pr05"
+  },
+  {
+    "id": "pr06",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr06.md",
+    "title": "PE 6 — News Vans & Trash Cans",
+    "nickname": "pr06"
+  },
+  {
+    "id": "pr07",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr07.md",
+    "title": "PE 7 — The Coordinates",
+    "nickname": "pr07"
+  },
+  {
+    "id": "pr08",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr08.md",
+    "title": "PE 8 — Dallas Marsh Walk",
+    "nickname": "pr08"
+  },
+  {
+    "id": "pr09",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr09.md",
+    "title": "PE 9 — Dallas Night Work",
+    "nickname": "pr09"
+  },
+  {
+    "id": "pr10",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr10.md",
+    "title": "PE 10 — The Chase",
+    "nickname": "pr10"
+  },
+  {
+    "id": "pr11",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr11.md",
+    "title": "PE 11 — Howie Walk",
+    "nickname": "pr11"
+  },
+  {
+    "id": "pr12",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr12.md",
+    "title": "PE 12 — The Burn Mark & Costco",
+    "nickname": "pr12"
+  },
+  {
+    "id": "pr13",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr13.md",
+    "title": "PE 13 — Entering Grass & The Hollow",
+    "nickname": "pr13"
+  },
+  {
+    "id": "pr14",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr14.md",
+    "title": "PE 14 — Creature Rescue",
+    "nickname": "pr14"
+  },
+  {
+    "id": "pr15",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr15.md",
+    "title": "PE 15 — The Burn Mark (Lair)",
+    "nickname": "pr15"
+  },
+  {
+    "id": "pr16",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr16.md",
+    "title": "PE 16 — The Escape",
+    "nickname": "pr16"
+  },
+  {
+    "id": "pr17",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr17.md",
+    "title": "PE 17 — Makeshift Hospital",
+    "nickname": "pr17"
+  },
+  {
+    "id": "pr18",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr18.md",
+    "title": "PE 18 — Entering Grass",
+    "nickname": "pr18"
+  },
+  {
+    "id": "pr19",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr19.md",
+    "title": "PE 19 — Life Group Arrives",
+    "nickname": "pr19"
+  },
+  {
+    "id": "pr20",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr20.md",
+    "title": "PE 20 — Basement Huddle",
+    "nickname": "pr20"
+  },
+  {
+    "id": "pr21",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr21.md",
+    "title": "PE 21 — The Hymn",
+    "nickname": "pr21"
+  },
+  {
+    "id": "pr22",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr22.md",
+    "title": "PE 22 — Red Eyes",
+    "nickname": "pr22"
+  },
+  {
+    "id": "pr23",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr23.md",
+    "title": "PE 23 — Creature Missing",
+    "nickname": "pr23"
+  },
+  {
+    "id": "pr24",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr24.md",
+    "title": "PE 24 — Marsh Confrontation",
+    "nickname": "pr24"
+  },
+  {
+    "id": "pr25",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr25.md",
+    "title": "PE 25 — Predator Attack",
+    "nickname": "pr25"
+  },
+  {
+    "id": "pr26",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr26.md",
+    "title": "PE 26 — The Perimeter",
+    "nickname": "pr26"
+  },
+  {
+    "id": "pr27",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr27.md",
+    "title": "PE 27 — The Last Dinner",
+    "nickname": "pr27"
+  },
+  {
+    "id": "pr28",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr28.md",
+    "title": "PE 28 — Final Echoes",
+    "nickname": "pr28"
+  },
+  {
+    "id": "pr29",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr29.md",
+    "title": "PE 29 — Aftermath",
+    "nickname": "pr29"
+  }
 ]
