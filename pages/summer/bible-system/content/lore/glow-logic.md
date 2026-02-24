@@ -35,7 +35,3 @@ graph TD
 1. **Horizontal Stretching:** The glow must flare horizontally across the $2.39:1$ frame.
 2. **Chromatic Aberration:** Edge illumination should show slight fringing matching the lens profile.
 3. **Streak Decay:** Flares should follow a logarithmic decay curve: $I(x) = I_0 \cdot e^{-kx}$.
-
----
-
-[[README]] | [[Lore]] | [[Optics]]

@@ -36,7 +36,3 @@ Where $W_{pixel}$ is the pixel width and $S_f$ is the squeeze factor ($2.0$).
 
 Due to the $2.39:1$ crop from the desqueezed frame:
 $$Aspect = \frac{R_h}{R_v \times \text{CropFactor}}$$
-
----
-
-[[README]] | [[Lore]] | [[Optics]]

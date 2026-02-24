@@ -71,19 +71,25 @@ function main() {
     }
   }
 
-  console.log('\n=== Exporting Artifacts ===');
-  console.log('Running: export-artifacts.ps1');
-  const exportResult = spawnSync('powershell.exe', ['-ExecutionPolicy', 'Bypass', '-File', path.join(ROOT, 'export-artifacts.ps1')], {
-    cwd: ROOT,
-    stdio: 'inherit',
-  });
+  const isWindows = process.platform === 'win32';
+  if (isWindows) {
+    console.log('\n=== Exporting Artifacts ===');
+    console.log('Running: export-artifacts.ps1');
+    const exportResult = spawnSync('powershell.exe', ['-ExecutionPolicy', 'Bypass', '-File', path.join(ROOT, 'export-artifacts.ps1')], {
+      cwd: ROOT,
+      stdio: 'inherit',
+    });
 
-  if (exportResult.error) {
-    console.error('Error running export-artifacts.ps1:', exportResult.error.message);
-  } else if (typeof exportResult.status === 'number' && exportResult.status !== 0) {
-    console.error(`export-artifacts.ps1 failed with exit code ${exportResult.status}.`);
+    if (exportResult.error) {
+      console.error('Error running export-artifacts.ps1:', exportResult.error.message);
+    } else if (typeof exportResult.status === 'number' && exportResult.status !== 0) {
+      console.error(`export-artifacts.ps1 failed with exit code ${exportResult.status}.`);
+    } else {
+      console.log('✓ Artifacts export complete');
+    }
   } else {
-    console.log('✓ Artifacts export complete');
+    console.log('\n=== Exporting Artifacts ===');
+    console.log('Skipped (export-artifacts.ps1 is Windows-only).');
   }
 
   const elapsedMs = Date.now() - startedAt;
