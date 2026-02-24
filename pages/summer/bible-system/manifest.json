@@ -1,0 +1,16 @@
+[
+    {
+        "id": "glow-logic",
+        "category": "Lore",
+        "file": "Lore/Glow_Logic.md",
+        "title": "Glow Logic",
+        "nickname": "glow-logic"
+    },
+    {
+        "id": "optics-anamorphic",
+        "category": "Optics",
+        "file": "Optics/Optics_Anamorphic.md",
+        "title": "Optics Anamorphic",
+        "nickname": "optics-anamorphic"
+    }
+]

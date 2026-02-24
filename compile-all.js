@@ -30,6 +30,10 @@ const tasks = [
     name: 'Summer Character Sheets',
     script: path.join(ROOT, 'pages', 'summer', 'characters', 'compile.js'),
   },
+  {
+    name: 'Summer Production Bible',
+    script: path.join(ROOT, 'pages', 'summer', 'bible-system', 'compile.js'),
+  },
 ];
 
 function runTask(task) {
@@ -73,7 +77,7 @@ function main() {
     cwd: ROOT,
     stdio: 'inherit',
   });
-  
+
   if (exportResult.error) {
     console.error('Error running export-artifacts.ps1:', exportResult.error.message);
   } else if (typeof exportResult.status === 'number' && exportResult.status !== 0) {

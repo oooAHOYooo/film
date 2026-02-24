@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/24/2026, 8:17:38 AM*
+*Compiled on 2/24/2026, 9:34:57 AM*
 
 ---
 
@@ -588,7 +588,7 @@ Dallas and Dominic look out for a while near the tall grass.
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
 # Scene 6: News Vans
-<!-- summary: News vans in the street. Pat on camera. Burn marks on Dominic's driveway. Dallas stays. -->
+<!-- summary: News vans in the street. Pat on camera. Marks on Dominic's driveway. Dallas strays and stays. -->
 
 EXT. BRANFORD NEIGHBORHOOD - CONTINUOUS
 
@@ -600,8 +600,10 @@ PAT CLENDENEN, MID 50s, is outside their house in front of news cameras.
 
 PAT CLENDENEN
 (to camera)
-This afternoon we'll see sun to clouds, breezy and warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores of Eastern Connecticut - at the heart of Branford, which should receive the most impact. We are watching the trend through the rest of this week - as any shift could dramatically impact the entire state. The computer models are showing better agreement. 
-...and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
+Hey Rob, thanks for having me on. Ought here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge.
+So in that spirit, today we'll see sun to clouds, breezy, warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores. 
+We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The computer models are showing better agreement. 
+and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
 
 <div class="script-addition">
 
@@ -610,11 +612,7 @@ This afternoon we'll see sun to clouds, breezy and warm with a late day shower p
 
 We're also getting reports of rolling brownouts along the Route 146 corridor—UI says it's weather-related surges, but they're sending a crew to check the Branford substation.
 
-
-</div>
-
-
-Hopefully, it holds off until after Sunday's festival, but folks, get those generators ready!
+Hopefully, it holds off until after Sunday's
 
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
@@ -639,12 +637,23 @@ Look at this. Those raccoons!
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
 (action)
-Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
+Dominc takes a deep breath and begins to do a stretch to calm down. 
 
-Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. 
+DOMINIC
+I try to do the right thing in life and keep getting kicked. 
+
+<!-- scene: 06 file: s06.md nickname: news-vans -->
+
+(action)
+Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
 DOMINIC
 Listen, I got to get the furniture before Janice has her women's group tonight. I got to go check on Mike and bring in another fan from the basement. You good? 
+
+<!-- scene: 06 file: s06.md nickname: news-vans -->
+
+(action)
+Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. The burn marks are like black sands, not disimmilar to veins on the ground. 
 
 DALLAS
 (hesitates)

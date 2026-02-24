@@ -1,0 +1,975 @@
+/* Screenplay Formatting Stylesheet - 8.5x11 Standard Format */
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root {
+  /* Screen (reading / ebook-like) — muted, zen */
+  --page-bg: #f8f7f5;
+  --card-bg: #fdfcfb;
+  --text: #2c2c2a;
+  --muted: #7a7976;
+  --border: #e2e1de;
+  --accent-subtle: #a8b0a6;
+
+  --reading-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  /* Screen script font: modern + readable (NOT typewriter/mono) */
+  --script-font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --print-script-font: "Courier Prime", "Courier New", monospace;
+
+  --container-max: 78ch;
+  --container-pad-y: 2.25rem;
+  --container-pad-x: 1.25rem;
+
+  --content-left: 0;
+  --content-right: 0;
+  --content-max: none;
+
+  --scene-heading-top: 1.5rem;
+  --scene-heading-bottom: 0.75rem;
+  --action-bottom: 1.25rem;
+
+  /* Screenplay-style indents (screen only, modern type)
+     Calibrated to look like a real script on desktop, but clamp down on mobile. */
+  --character-left: clamp(6rem, 42%, 18rem);
+  --dialogue-left: clamp(3.25rem, 28%, 13rem);
+  --dialogue-right: clamp(1.25rem, 22%, 12rem);
+  --parenthetical-left: clamp(4.25rem, 32%, 15rem);
+  --parenthetical-right: clamp(1.75rem, 26%, 13rem);
+  --transition-right: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--reading-font);
+  font-size: 17px;
+  line-height: 1.7;
+  background-color: var(--page-bg);
+  color: var(--text);
+  padding: 0;
+  margin: 0;
+}
+
+/* Screenplay Container - responsive on screen */
+.screenplay-container {
+  width: min(100%, var(--container-max));
+  min-height: auto;
+  margin: 0 auto;
+  padding: var(--container-pad-y) var(--container-pad-x);
+  background: var(--card-bg);
+  position: relative;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+/* Content area with screenplay margins (overridden for print) */
+.screenplay-content {
+  max-width: var(--content-max);
+  margin-left: var(--content-left);
+  margin-right: var(--content-right);
+  font-family: var(--script-font);
+  font-size: 16.5px;
+  line-height: 1.65;
+}
+
+/* Scene headings (h3) get scroll-margin so "Jump to scene" lands below sticky bar */
+.screenplay-content h3[id^="scene-"] {
+  scroll-margin-top: 9rem;
+}
+
+/* Full script: cinematic "meta tag" styling for scene title + subtitle */
+.full-script-page .screenplay-content h3 {
+  display: block;
+  width: 100%;
+  padding: 0.3rem 0.75rem;
+  margin-top: 1.6rem;
+  margin-bottom: 0.35rem;
+  font-size: clamp(0.85rem, 1.6vw, 0.98rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 999px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 6px 16px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.full-script-page .screenplay-content h3 + p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+.full-script-page .screenplay-content h3 + p > em {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.18rem 0.6rem;
+  width: 100%;
+  font-size: 0.72rem;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 4px 12px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(8px);
+}
+
+.full-script-page .screenplay-content h3 + p > em .storyboard-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: auto;
+  padding-left: 0.6rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.full-script-page .screenplay-content h3 + p > em .storyboard-link::before {
+  content: "⟡";
+  font-size: 0.7em;
+  color: var(--accent-subtle);
+}
+
+.full-script-page .screenplay-content h3 + p > em .storyboard-link:hover {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.full-script-page .screenplay-content h3 + p > em .storyboard-link:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.25);
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+
+/* Scene Headings (INT./EXT. LOCATION - TIME) */
+.scene-heading {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: var(--scene-heading-top);
+  margin-bottom: var(--scene-heading-bottom);
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  line-height: 1.0;
+  page-break-after: avoid;
+  letter-spacing: 0.02em;
+}
+
+/* Action break: (action) on its own line — hidden, ends dialogue block */
+.action-break {
+  display: none;
+}
+
+/* Action Lines - Full width within margins */
+.action-line {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: var(--action-bottom);
+  text-align: left;
+  line-height: 1.35;
+  page-break-inside: avoid;
+  text-wrap: pretty;
+}
+
+/* Character Names - 4.1" from left edge (2.6" from left margin) */
+.character-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: var(--character-left);
+  margin-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.0;
+  page-break-after: avoid;
+  display: block;
+  letter-spacing: 0.02em;
+  text-align: left;
+  text-wrap: balance;
+}
+
+/* Dialogue - 2.5" from left (1" from left margin), 2.5" from right (1.5" from right margin) */
+.dialogue {
+  margin-left: var(--dialogue-left);
+  margin-right: var(--dialogue-right);
+  max-width: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.35;
+  page-break-inside: avoid;
+  text-wrap: pretty;
+}
+
+/* Parentheticals - 3.1" from left (1.6" from left margin) */
+.parenthetical {
+  font-style: italic;
+  margin-left: var(--parenthetical-left);
+  margin-right: var(--parenthetical-right);
+  max-width: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.35;
+  display: block;
+  padding-left: 0;
+}
+
+.dialogue.dialogue-last {
+  margin-bottom: 0.8rem;
+}
+
+.parenthetical.parenthetical-last {
+  margin-bottom: 0.25rem;
+}
+
+/* Transitions - Right aligned, 1.5" from right edge */
+.transition {
+  text-transform: uppercase;
+  text-align: right;
+  margin-left: 0;
+  margin-right: var(--transition-right);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.0;
+  page-break-after: avoid;
+}
+
+/* Default paragraph styling (ONLY when not classified by formatter) */
+.screenplay-content p:not(.scene-heading):not(.action-line):not(.action-break):not(.character-name):not(.dialogue):not(.parenthetical):not(.transition) {
+  margin: 0 0 var(--action-bottom) 0;
+  padding: 0;
+  line-height: 1.35;
+}
+
+/* Headers for scene titles */
+.full-script-header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #111;
+  page-break-after: avoid;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.full-script-title {
+  font-size: 1.15rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.full-script-meta {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.25;
+}
+
+/* Gallery/Index Styles */
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  font-family: var(--reading-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.gallery-header {
+  margin-bottom: 2em;
+  border-bottom: 2px solid #000;
+  padding-bottom: 1em;
+}
+
+.gallery-header h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.scene-list {
+  list-style: none;
+  padding: 0;
+}
+
+.act-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+}
+
+.act-block {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.act-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+
+.act-heading {
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+.act-meta {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.scene-item {
+  padding: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+  transition: background 0.2s;
+}
+
+.scene-item:hover {
+  background: #f0f0f0;
+}
+
+.scene-item a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+.scene-item h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.2em;
+}
+
+.scene-meta {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.scene-id {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Compact scene list */
+.scene-list--compact {
+  margin: 0;
+}
+
+.scene-item--compact {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 1px solid #eee;
+}
+
+.scene-item--compact:last-child {
+  border-bottom: 0;
+}
+
+.scene-item--compact:hover {
+  background: #f6f6f6;
+}
+
+.scene-link {
+  display: grid;
+  grid-template-columns: 4ch 1fr auto;
+  gap: 1em;
+  padding: 0.6em 1em;
+  text-decoration: none;
+  color: #000;
+  align-items: baseline;
+}
+
+.scene-number {
+  font-weight: bold;
+}
+
+.scene-file {
+  color: #666;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+/* Sticky top bar (minute tracker + scene nav) — muted, zen */
+.script-sticky-bar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--page-bg);
+  border-bottom: 1px solid var(--border);
+  box-shadow: none;
+  margin: 0 -1px 0 -1px;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Navigation */
+.nav {
+  margin-bottom: 0;
+  padding: 0.4rem 0.6rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-family: var(--reading-font);
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.script-sticky-bar .nav {
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.3rem 0.45rem;
+  border-radius: 10px;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+.nav-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.nav a:hover {
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.print-button {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--muted);
+  padding: 0.3em 0.7em;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+
+.print-button:hover {
+  color: var(--text);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Export / Print dropdown (full script) */
+.script-export-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.script-export-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.script-export-trigger::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: 0.8;
+}
+
+.script-export-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.25rem;
+  min-width: 11rem;
+  padding: 0.35rem 0;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+  display: none;
+}
+
+.script-export-menu.is-open {
+  display: block;
+}
+
+.script-export-menu button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.45rem 0.85rem;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.script-export-menu button:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* Script stats row (status bar + scene dropdown) */
+.script-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  padding: 0.4rem 0.6rem 0.2rem;
+  font-family: var(--reading-font);
+}
+
+/* Status bar: current scene, characters underneath, production */
+.script-status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.65rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: var(--reading-font);
+  min-width: 0;
+  flex: 1 1 12rem;
+}
+
+.script-status-scene-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.script-status-scene {
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.script-status-characters {
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.2;
+}
+
+.script-status-divider {
+  opacity: 0.5;
+  user-select: none;
+  align-self: stretch;
+}
+
+.script-status-production {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scene jump dropdown */
+.script-scene-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.script-scene-nav-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.script-scene-select {
+  font-family: var(--reading-font);
+  font-size: 0.82rem;
+  padding: 0.28rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text);
+  min-width: 10rem;
+  max-width: 20rem;
+  cursor: pointer;
+}
+
+.script-scene-select:hover,
+.script-scene-select:focus {
+  border-color: var(--accent-subtle);
+  outline: none;
+}
+
+/* Vertical progress rail: fixed left, timeline progression (full script page only) */
+.full-script-page .gallery-container {
+  padding-left: 2.75rem;
+}
+
+.script-progress-rail {
+  position: fixed;
+  left: 0.75rem;
+  top: 0;
+  bottom: 0;
+  width: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1.25rem 0;
+  font-family: var(--reading-font);
+  z-index: 15;
+}
+
+.script-progress-rail .script-progress-bar {
+  flex: 1;
+  width: 4px;
+  min-height: 6rem;
+  height: 100%;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.script-progress-rail .script-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  background: var(--accent-subtle);
+  border-radius: 2px;
+  transition: height 0.12s ease-out;
+  opacity: 0.75;
+}
+
+.script-progress-rail .script-progress-label {
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  writing-mode: horizontal-tb;
+}
+
+.no-print {
+  /* hidden in print media below */
+}
+
+@media (max-width: 720px) {
+  .nav {
+    padding: 0.35rem 0.5rem;
+  }
+
+  .nav-text {
+    display: none;
+  }
+
+  .nav a {
+    padding: 0.25rem 0.4rem;
+  }
+
+  .print-button {
+    padding: 0.25em 0.6em;
+  }
+
+  .script-stats-row {
+    padding: 0.35rem 0.5rem 0.2rem;
+    gap: 0.4rem 0.7rem;
+  }
+
+  .script-scene-select {
+    min-width: 8.5rem;
+  }
+
+  .script-progress-rail {
+    left: 0.5rem;
+    width: 1rem;
+  }
+
+  .full-script-page .gallery-container {
+    padding-left: 2.25rem;
+  }
+}
+
+/* Print Styles - Optimized for 8.5x11 */
+@media print {
+  @page {
+    size: 8.5in 11in;
+    margin: 1in 1in 1in 1.5in;
+  }
+
+  body {
+    background: white;
+    font-size: 12pt;
+    line-height: 1.0;
+    font-family: var(--print-script-font);
+  }
+  
+  .screenplay-container {
+    width: 8.5in;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .screenplay-content {
+    max-width: 6in;
+    margin-left: 1.5in;
+    margin-right: 1in;
+    font-size: 12pt;
+    line-height: 1.0;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+
+  .full-script-page .gallery-container {
+    padding-left: 1.5rem;
+  }
+
+  /* Prevent page breaks in awkward places */
+  .action-line,
+  .dialogue {
+    page-break-inside: avoid;
+    orphans: 3;
+    widows: 3;
+  }
+
+  .scene-heading {
+    page-break-after: avoid;
+  }
+
+  .character-name {
+    text-align: left;
+    margin-left: 2.6in;
+    page-break-after: avoid;
+  }
+
+  .dialogue {
+    margin-left: 1in;
+    margin-right: 1.5in;
+    max-width: none;
+  }
+
+  .parenthetical {
+    margin-left: 1.6in;
+    margin-right: 1.9in;
+    max-width: none;
+    padding-left: 0;
+  }
+
+  :root {
+    --content-left: 1.5in;
+    --content-right: 1in;
+    --scene-heading-top: 0.6in;
+    --scene-heading-bottom: 0.3in;
+    --action-bottom: 0.3in;
+    --transition-right: 0.5in;
+  }
+}
+
+/* Wrapped addition/deletion blocks: label + colored text */
+.screenplay-content .script-addition {
+  color: #5a5a58;
+}
+
+.screenplay-content .script-deletion {
+  color: #9a9a98;
+}
+
+.screenplay-content .script-addition > blockquote:first-of-type,
+.screenplay-content .script-deletion > blockquote:first-of-type {
+  font-family: var(--print-script-font), monospace;
+  font-size: 0.8em;
+  color: var(--muted);
+  margin: 0.35em 0;
+  padding: 0;
+  border: none;
+  border-left: 2px solid var(--border);
+  padding-left: 0.5em;
+}
+
+@media print {
+  .screenplay-content .script-addition { color: #444; }
+  .screenplay-content .script-deletion { color: #888; }
+}
+
+/* ========== Plot Cards (index-card / view-all grid) ========== */
+.plot-cards-page .gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 3rem;
+}
+
+.plot-cards-header {
+  margin-bottom: 1rem;
+}
+
+.plot-cards-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 0.25rem 0;
+}
+
+.plot-cards-subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.plot-cards-subtitle a {
+  color: var(--accent-subtle);
+  text-decoration: underline;
+}
+
+.plot-cards-nav {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.plot-cards-nav .nav-link--active {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.plot-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  align-content: start;
+}
+
+.plot-cards-act-label {
+  grid-column: 1 / -1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin-top: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.plot-cards-act-label:first-child {
+  margin-top: 0;
+}
+
+.plot-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 140px;
+  padding: 1rem 1.1rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.plot-card:hover {
+  border-color: var(--accent-subtle);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.plot-card:focus-visible {
+  outline: 2px solid var(--accent-subtle);
+  outline-offset: 2px;
+}
+
+.plot-card-number {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.plot-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 0.5rem 0;
+}
+
+.plot-card-summary {
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--muted);
+  margin: 0 auto 0 0;
+  flex: 1;
+}
+
+.plot-card-link {
+  font-size: 0.8rem;
+  color: var(--accent-subtle);
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .plot-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+  }
+  .plot-card {
+    min-height: 160px;
+    padding: 1.15rem 1.25rem;
+  }
+}

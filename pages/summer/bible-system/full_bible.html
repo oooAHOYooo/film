@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatures in the Tall Grass - Production Bible</title>
+  <link rel="stylesheet" href="bible.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+</head>
+<body class="bible-page">
+  <nav class="nav no-print">
+    <div class="nav-left">
+      <a class="nav-link" href="/pages/summer.html">☀ Summer</a>
+      <a class="nav-link" href="index.html">▦ Gallery</a>
+      <a class="nav-link active" href="full_bible.html">Full Bible</a>
+    </div>
+  </nav>
+
+  <div class="bible-container">
+    <header class="bible-header">
+      <h1>Creatures in the Tall Grass - Production Bible</h1>
+      <p>Compiled on 2/24/2026, 9:34:58 AM</p>
+    </header>
+
+    <div class="bible-layout">
+      <aside class="bible-sidebar no-print">
+        <h3>Contents</h3>
+        <ul><li><a href="#entry-glow-logic">Glow Logic</a></li><li><a href="#entry-optics-anamorphic">Optics Anamorphic</a></li></ul>
+      </aside>
+
+      <main class="bible-main">
+        <section id="entry-glow-logic" class="bible-entry">
+      <h2>Glow Logic</h2>
+      <div class="bible-meta">Category: Lore | File: Lore/Glow_Logic.md</div>
+      <div class="bible-markdown-raw" style="display:none;"># Glow Logic: Bioluminescent Physics
+
+## 🔬 Overview
+The creatures in the *Tall Grass* exhibit high-frequency bioluminescence generated via a specialized crystal-matrix organ located near the dorsal ridge. This light is not merely aesthetic; it is a primary communication and aggression vector.
+
+## 🌈 Spectral Standards
+The film utilizes specific wavelengths to denote creature intent and physiological state.
+
+| State | Color | Wavelength ($\lambda$) | Frequency ($f$) |
+| :--- | :--- | :--- | :--- |
+| **Idle / Foraging** | Amber | $600nm$ | $\approx 500\,THz$ |
+| **Aggression / Hunt** | Blue | $450nm$ | $\approx 666\,THz$ |
+| **Distress** | Pulsing Violet | $400nm$ | $\approx 750\,THz$ |
+
+### Mathematical Model of Pulse Frequency
+The pulse rate ($P_r$) during aggression is modeled by:
+$$P_r = \int_{t_0}^{t_1} A \cdot \sin(2\pi f_b t + \phi) dt$$
+where $A$ is the arousal amplitude and $f_b$ is the base bioluminescent frequency.
+
+---
+
+## 🎞️ Anamorphic Behavior
+To maintain the cinematic texture of the *Tall Grass*, the glow must interact specifically with the anamorphic optics.
+
+```mermaid
+graph TD
+    A[Bioluminescent Source] --&gt; B{Anamorphic Lens}
+    B --&gt; C[Vertical Compression]
+    B --&gt; D[Horizontal Flare Projection]
+    D --&gt; E[Blue/Amber Streak]
+    C --&gt; F[Elliptical Bokeh]
+```
+
+### Optical Rules:
+1. **Horizontal Stretching:** The glow must flare horizontally across the $2.39:1$ frame.
+2. **Chromatic Aberration:** Edge illumination should show slight fringing matching the lens profile.
+3. **Streak Decay:** Flares should follow a logarithmic decay curve: $I(x) = I_0 \cdot e^{-kx}$.
+
+---
+
+[[README]] | [[Lore]] | [[Optics]]
+</div>
+      <div class="bible-rendered-content"></div>
+    </section><hr><section id="entry-optics-anamorphic" class="bible-entry">
+      <h2>Optics Anamorphic</h2>
+      <div class="bible-meta">Category: Optics | File: Optics/Optics_Anamorphic.md</div>
+      <div class="bible-markdown-raw" style="display:none;"># The Anamorphic Lens Profile: "Tall Grass" Distortion
+
+## 🎥 Camera Configuration: RED Komodo
+The film is captured on the RED Komodo 6K global shutter sensor, utilizing a $2\times$ anamorphic squeeze factor to achieve the $2.39:1$ aspect ratio.
+
+### Technical Infobox
+| Parameter | Setting |
+| :--- | :--- |
+| **Sensor Mode** | 6K 17:9 (Anamorphic $2\times$) |
+| **Resolution** | $6144 \times 3240$ (Pre-Desqueeze) |
+| **Format** | R3D MQ / HQ |
+| **Colorspace** | REDWideGamutRGB / Log3G10 |
+
+---
+
+## 🔍 Lens Profile: "The Vertical Stretch"
+The visual identity of *Creatures in the Tall Grass* is defined by a heavy vertical distortion and extreme edge softness, simulating a vintage or "distressed" anamorphic look.
+
+### Distortion Characteristics
+1. **Vertical Stretching:** Objects at the frame edges exhibit a $1.2\times$ vertical elongation.
+2. **Edge Softness:** Resolution drops significantly beyond the central $50\%$ of the frame.
+3. **Flaring:** Asymmetric blue/amber flares corresponding to creature "Glow Logic."
+
+### The "Tall Grass" Overlay Matrix
+To simulate textured glass, the following overlay parameters are applied in post-processing:
+- **Grain Density:** $0.04$
+- **Micro-Scratches:** Vertical orientation, $80\%$ transparency.
+- **Vignette:** Elliptical, $-1.5$ stops at edges.
+
+---
+
+## 📐 Optics Math
+The desqueezed horizontal resolution ($R_h$) is calculated as:
+$$R_h = W_{pixel} \times S_f$$
+Where $W_{pixel}$ is the pixel width and $S_f$ is the squeeze factor ($2.0$).
+
+Due to the $2.39:1$ crop from the desqueezed frame:
+$$Aspect = \frac{R_h}{R_v \times \text{CropFactor}}$$
+
+---
+
+[[README]] | [[Lore]] | [[Optics]]
+</div>
+      <div class="bible-rendered-content"></div>
+    </section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    marked.setOptions({ gfm: true, breaks: true });
+
+    document.querySelectorAll('.bible-entry').forEach(entry => {
+      const raw = entry.querySelector('.bible-markdown-raw').textContent;
+      const target = entry.querySelector('.bible-rendered-content');
+      target.innerHTML = marked.parse(raw);
+    });
+  </script>
+</body>
+</html>
