@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass - Production Bible
 
-*Compiled on 2/24/2026, 3:25:51 PM*
+*Compiled on 2/24/2026, 3:32:09 PM*
 
 ---
 
@@ -431,6 +431,28 @@ Use this list with the script scene breakdown to map **which scenes use which lo
 - Don’t over-explain the science. Let the equipment and the numbers do the work.
 - Don’t show the full shadow creature. Erasure and suggestion are scarier.
 - Don’t soften the pastoral. The church picnic and the fellowship are real; the dread works because the world is specific and lived-in.
+
+
+---
+
+
+<h2 id="entry-gear-gallery">DIY Gear Gallery</h2>
+
+*Category: Production | File: production/gear-gallery.md*
+
+---
+
+# DIY Gear Gallery
+
+Reference gallery for DIY gear, rigging, and techniques used on *Creatures in the Tall Grass*. Linked from the Summer hub and Production Center.
+
+## Production standard
+
+- **No fake engagement data.** The gallery does not display likes, comments, followers, or any Instagram-style metrics. It is a reference grid only.
+- **No social branding.** No profile avatars, follow buttons, or handle-style headers. The page uses a simple title: "DIY Gear & Techniques."
+- **No overlay stats.** Grid items do not show heart/comment counts on hover or elsewhere.
+
+This keeps the gallery focused on build references and techniques for the production, not on social presentation.
 
 
 ---

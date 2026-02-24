@@ -65,7 +65,7 @@ function buildSidebarNav(entries) {
     if (!byCategory[cat]) byCategory[cat] = [];
     byCategory[cat].push(e);
   });
-  const catOrder = ['Lore', 'Optics', 'Locations', 'Tone', 'Practical Effects'];
+  const catOrder = ['Lore', 'Optics', 'Locations', 'Tone', 'Production', 'Practical Effects'];
   let html = '<nav class="bible-sidebar-nav" aria-label="Bible contents">';
   html += '<a class="bible-sidebar-link bible-sidebar-link--command" href="#command-center"><span class="bible-sidebar-icon" aria-hidden="true">▣</span><span class="bible-sidebar-label">Command Center</span></a>';
   catOrder.forEach((cat) => {
