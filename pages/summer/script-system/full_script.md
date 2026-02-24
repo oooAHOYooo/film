@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/22/2026, 7:45:34 AM*
+*Compiled on 2/24/2026, 8:08:12 AM*
 
 ---
 
@@ -208,7 +208,7 @@ A faint hum is heard off in the distance of the tall grass - low from the earth.
 
 As Dallas focuses, he notices a man approaching him from the sidewalk near his house. 
 
-DOMINIC AMARANTO, early 40s, wearing a bright salmon covered short sleeve button up approaches Dallas with great vigor. 
+DOMINIC AMARANTO, early 40s, wearing a bright salmon covered short sleeve button walks right up to Dallas with vigor. 
 
 DOMINIC
 Neighbor!
@@ -217,34 +217,74 @@ DALLAS
 What's that?
 
 DOMINIC
-You are my neighbor - we saw you the other day driving by - did you just move here?
+You are my neighbor - I live nextdoor - I think we saw you the other day driving by - did you just move here?
 
 DALLAS
-Oh - yeah.
+Oh hello - yes. 
 
 DOMINIC
-Nice. Names Dominic.
+Nice to meet you. I'm Dominic - this is Branford. 
 
 DALLAS
-Dallas.
+Nice to meet you too. I'm Dallas. 
 
 DOMINIC
-Dallas, what a cool name - - What you up to?
+Dallas, what a name - where you from? 
 
 DALLAS
-I'm just walking into town - got to get some batteries.
+Indiana.
 
 DOMINIC
-Oh yeah? Where abouts?
-
-DALLAS
-Not sure, I was just going to go to the hardware store. 
-
-DOMINIC
-So you're walking into town?
+IndyANNA - that's far from Branford. 
 
 DALLAS
 Yeah.
+
+DOMINIC
+What you know about Branford?
+
+DALLAS
+Basically nothing.
+
+DOMINIC
+So what you doing around here?
+
+DALLAS
+Just here for work. 
+
+DOMINIC
+What kind of work?
+
+DALLAS
+I do research mostly. 
+
+DOMINIC
+What kind of research? Yale hire you? 
+
+DALLAS
+No, actually I'm going to be going between Qunipiac and Southern
+
+DOMINIC
+Nice man. What you doing there.
+
+DALLAS
+Bioacoustics. 
+
+DOMINIC
+Bio-acoutsitcs. Right on. Alright listen - I'm headed into the town green right now - you want to go for a walk. What's that in your hand?
+
+DALLAS
+A battery so I could show the teller the reference.
+
+DOMINIC
+Show the teller the reference? What is that - that a C battery - Rudy's got that. Let's go - I'll buy you a coffee.
+
+<!-- scene: 03 file: s03.md nickname: the-hum -->
+
+(action)
+Dallas accepts. 
+
+The two begin to wander off towards Branford. 
 
 DOMINIC
 You don't have a car?
@@ -253,16 +293,13 @@ DALLAS
 No - no car.
 
 DOMINIC
-Yeah. Me neither - well I share one with my sister, she's borrowing mine. I was about to go  - there's a hardware store in Branford that could have those batteries. Would you like to tag along?
-
-DALLAS
-Sure.
+Yeah. Me neither - well I can drive - yeah, I share one with my sister, she's borrowing mine.
 
 EXT. TOWN BRANFORD MONTAGE
 
-Dallas and Dominic walk together. They walk through coastal sidewalks, neighborhoods, and natural marsh fences. As they approach one patch of tall marsh grass in particular, Dallas stops.
+Dallas and Dominic through coastal sidewalks, neighborhoods, and natural marsh fences. As they approach one patch of tall marsh grass in particular, Dallas stops.
 
-Dallas, sheepishly, checks if Dominic is looking and when he isn't - he mumbles to himself. 
+Dallas, sheepishly, checks if Dominic is looking and when he isn't - he takes out a small oscillator and records.  
 
 DOMINIC
 Be careful - there are coyotes up in that. Some people say the noises are from owls - but I know its coyotes. 
@@ -503,6 +540,40 @@ DOMINIC
 
 See this? Merlins. It listens to the chirps and tells you the species. Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
 
+DOMINIC
+Yeah - I wanted to be a writer but it never really worked out for me - so I am writing now - and going to tell a story of these marlins
+
+<!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
+
+(action)
+Dominic sees some garbage on the cans - and starts having a bit of a tough time breathing. He grabs his Asmatha inhaler and takes a deep breath.
+
+DOMINIC
+(in anger)
+Sometimes I wonder if this all is just make believe.
+
+<!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
+
+(action)
+Dallas looks onward empathically. 
+
+DALLAS
+What do you mean?
+
+DOMINIC
+This whole existence - being alive - its so overwhelming and then boom you are gone. 
+
+DALLAS
+Yeah.
+
+DOMINIC
+(to himself)
+This whole thing.
+
+<!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
+
+(action)
+Dallas and Dominic look out for a while near the tall grass. 
 
 
 ---
