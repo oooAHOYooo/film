@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/25/2026, 2:36:08 PM*
+*Compiled on 2/25/2026, 2:47:42 PM*
 
 ---
 
@@ -923,9 +923,11 @@ EXT. BRANFORD ROCKS - EVENING
 
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
 
+Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
+
 As Howie, Dallas holds his portable Oscillator out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
 
-It seems like the readings are pointing closer and closer to his house.
+It seems like the readings are pointing closer and closer to marsh by his house.
 
 Howie stops. His ears perk up and swivel like small radar dishes toward the dark reeds in the distance. 
 
@@ -933,29 +935,29 @@ In the far distance, a single coyote barks. Then another. A chain reaction of do
 
 The winds pick up and Dallas and Howie march forward. 
 
-EXT. EDGE OF THE MARSH - CONTINUOUS
+EXT. EDGE OF THE MARSH 
 
-Everything goes still. The wind stops. The waves seem to mute themselves.
-
-Then, the HUM begins.
+Dallas stands before the edge of the Marsh. As he gazes, everything increasingly becomes still. The winds lower. The waves begin to mute themselves. Then, the HUM begins.
 
 It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
 
 Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass pulses in time with the sound.
 
-The sun sets, casting long shadows across the tall grass. He carries his portable receiver, the dials clicking softly as he adjusts the frequency.
+The sun sets, casting long shadows across the tall grass. Dallas dials his receiver clicking softly as he adjusts the frequency.
 
 Dallas stops at the creek's edge and pans his gaze towards the outer marsh. The tall grass stretches endlessly before him, golden-yellow reeds swaying gently despite the lack of wind.
 
-The air is still, too still. No birds. No wind. Just the distant sound of unseen water lapping against the shore.
+Dallas ties Howie to a nearby tree and walks into the marsh. 
 
-Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
+EXT. INTO THE MARSH
+
+Receiver in hand, Dallas walks deeper into the marsh. 
 
 There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. 
 
 His equipment begins to beep. Dallas flips open his handheld scope and watches the waveform settle into an otherworldly pattern.
 
-Howie begins to bark a little - and Dallas stops him. Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a perfect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy.
+Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a perfect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy.
 
 From the distance, a flicker of golden light pulses deep within the marsh. Dallas notices it—but it's gone.
 
@@ -976,9 +978,9 @@ Dallas takes a step forward, then another. The reeds part before him, closing be
 <!-- scene: 09 file: s09.md nickname: dallas-night-work -->
 
 # Scene 9: The Injured One
-<!-- summary:  -->
+<!-- summary: Dallas, as he ventures deeper and deeper into the marsh - finds a bioluminest creature -->
 
-EXT. INSIDE THE TALL MARSH - SUNSET HOUR
+EXT. DEEP INSIDE THE TALL MARSH 
 
 Dallas stands slowly, scanning the reeds around him. Nothing. Just the gentle sway of grass and the sound of his own breathing.
 
@@ -986,23 +988,24 @@ Dallas pushes through a dense curtain of reeds. Dust motes dance in a whirlwind 
 
 Dallas steps deeper, following the fading glow. 
 
-All around him is light reeeds blowing in an almost whirlwind of light and color. 
+All around him is light reeeds blowing in a whirlwind of light and color. 
 
-As Dallas' eyes adjust to this new brightness - the world around him slowly fades back to normally. 
+As Dallas' eyes adjust to this new brightness - the world around him slowly blurs. 
 
-There in the distance Dallas sees a gnarled tree that looks a little different than the rest of the trees. 
+There in the distance Dallas sees a gnarled tree that stands alone among the reeds.  
 
-Dallas approaches the tree and in the bottom of it - lives a small birdlike creature - gently bioluminest - and clearly injured. 
+Dallas approaches the tree and as he does - he notices that inside of the gnarl, curled up, tucked away,  lives a small orb shaped creature - slightly bioluminest - and clearly injured. 
 
-The creature is small. Birdlike, but not a bird - more round. A cloudlike - cottonball, powder-puff. Small round It skin is fluffy pulsing with a soft glow. Round. Covered in dense, dirty white fur like a dandelion seed head. It looks like a small owl. Its large eyes are closed. With no visible mouth, it looks a bit like a living cotton ball with shivering, transulent ears. 
+The creature is a cloudlike - cottonball, powder-puff animal. 
 
-The 
-
+Small round It skin is fluffy pulsing with a soft glow. Round. Covered in dense, dirty white fur like a dandelion seed head. It looks like a small owl. Its large eyes are closed. With no visible mouth, it looks a bit like a living cotton ball with shivering, transulent ears. 
+ 
 Dallas reaches out. His hand trembles. He touches the creature's back. The creature flinches but doesn't move away. 
 
-Dallas looks at his equipment and it seems to do funny things when he is near it. 
+Dallas hears his equipment beep louder and louder - the closer his hand gets to the creature. 
 
 Suddenly, the wind returns. A violent gust. Shadows in the distance start to fill the sky and hover over Dallas and the creature. Dallas in a daze, slowly grabs the creature and gently places it in his jacket and begins to walk out without looking back. 
+
 
 ---
 
@@ -1020,15 +1023,24 @@ Suddenly, the wind returns. A violent gust. Shadows in the distance start to fil
 
 EXT. TALL GRASS - MOMENTS LATER
 
-The air changes.
+Dallas picks up the creature and begins to walk out of the tall grass. As he does, he gets the sense that something is following him.
+
+The air changes and the hum faintly comes back. Then in the distant, more coyotes begin to howl around. 
 
 A heavy, crushing sound slices through the reeds—something massive rocketing toward him like an arrow.
 
-Dallas breaks into a sprint. He reaches the stunted cedar tree—HOWIE is a blur of panic, barking at the wall of grass.
+Dallas breaks into a sprint. He reaches the stunted cedar tree—HOWIE where Howie is tied, who is a blur of panic, barking at the wall of grass.
 
 Dallas grabs the leash and doesn't stop running until the marsh is far behind them.
 
+EXT. BRANFORD MONTAGE
+
+Dallas walks briskly past the same neighborhood stuff he did before.
+
+EXT. DALLAS DRIVEWAY
+
 At the edge of his driveway, he finally stops—gasping. The creature is motionless in his coat, but its neck glow pulses weak, fading amber.
+
 
 ---
 

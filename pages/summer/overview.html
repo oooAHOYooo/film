@@ -124,7 +124,7 @@
         .goodies-section .goodies-list .group-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--overview-gold); margin-top: 1rem; margin-bottom: 0.35rem; }
         .goodies-section .goodies-list .group-label:first-child { margin-top: 0; }
         .goodies-section .password-err { font-size: 0.85rem; color: #b91c1c; margin-top: 0.5rem; display: none; }
-        /* How can you help out — registry */
+        /* What we need — static list (you track checklist elsewhere) */
         .registry-section { margin-top: 2rem; }
         .registry-section h2 { font-size: 1.1rem; color: var(--overview-navy); margin-bottom: 0.5rem; }
         .registry-section .registry-intro { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
@@ -135,11 +135,8 @@
         .registry-section summary::after { content: '+'; float: right; color: var(--overview-gold); font-size: 1.1rem; }
         .registry-section details[open] summary::after { content: '−'; }
         .registry-section .registry-list { padding: 0 1rem 1rem; margin: 0; list-style: none; }
-        .registry-section .registry-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 0.6rem; }
+        .registry-section .registry-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; color: var(--overview-navy); }
         .registry-section .registry-list li:last-child { border-bottom: none; }
-        .registry-section .registry-list input[type="checkbox"] { width: 1.1rem; height: 1.1rem; accent-color: var(--overview-gold); cursor: pointer; }
-        .registry-section .registry-list label { cursor: pointer; flex: 1; font-size: 0.95rem; }
-        .registry-section .registry-list input:checked + label { text-decoration: line-through; color: var(--text-secondary); }
         @media print { .overview-page { padding: 1.5rem 0; } body { background: #fff; } .no-print { display: none !important; } .goodies-section .password-form { display: none !important; } .dvd-box { box-shadow: none; } .registry-section details { border: 1px solid #ccc; } .registry-section summary::after { display: none; } }
     </style>
 </head>
@@ -260,23 +257,6 @@
                 }
             });
 
-            var REGISTRY_KEY = 'overview_registry';
-            function loadRegistry() {
-                try { return JSON.parse(localStorage.getItem(REGISTRY_KEY) || '{}'); } catch (e) { return {}; }
-            }
-            function saveRegistry(data) {
-                localStorage.setItem(REGISTRY_KEY, JSON.stringify(data));
-            }
-            var registryData = loadRegistry();
-            document.querySelectorAll('.registry-section input[type="checkbox"][data-registry-id]').forEach(function(cb) {
-                var id = cb.getAttribute('data-registry-id');
-                if (registryData[id]) cb.checked = true;
-                cb.addEventListener('change', function() {
-                    var d = loadRegistry();
-                    d[id] = cb.checked;
-                    saveRegistry(d);
-                });
-            });
         })();
     </script>
 </body>
