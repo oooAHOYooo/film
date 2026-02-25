@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/25/2026, 2:47:42 PM*
+*Compiled on 2/25/2026, 3:01:38 PM*
 
 ---
 
@@ -1054,9 +1054,7 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 <!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
 
 # Scene 11: Kitchen Triage
-<!-- summary: He runs home with it. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
-EXT. COSTAL NEIGHBORHOOD JOURNEY 
-Dallas is alone and the evening is getting dark. He dashes back through the coastal neighborhoods with the creature in his jacket - and urges the dog Howie to walk faster - who is not having a good time. Dallas rushes the creature over to the kitchen and upstairs to examine further. 
+<!-- summary: Dallas at home with the creature. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
 
 INT. DALLAS KITCHEN - DUSK
 Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines it with parchment paper. The creature seems to be asleep. 
@@ -1064,7 +1062,7 @@ Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines 
 Howie barks outside. Dallas rushes to grab him.
 
 INT. DALLAS KITCHEN - MOMENTS LATER
-Howie is in the living room couch very nervous and peering out the window. The camera pans and finds Dallas alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
+Howie is in the living room couch nervously peering out the window. The camera pans and finds Dallas alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
 
 As Dallas peers closer, he notices that it has marks underneath its top wing. As Dallas touches the marks the creature suddenly wakes up and lets out a cry.
 
@@ -1074,7 +1072,7 @@ The creature lets out a final whimper and slowly falls back to sleep. Dallas - l
 
 Outside the hum begins again, reverbating the kitchen. 
 
-EXT. DALLAS BACKYARD - LATE AFTERNOON
+EXT. DALLAS BACKYARD - EVENING AFTERNOON
 
 Dallas runs outside with his audio recording equipment in his hand. The hum is growing into a faint roar from the distant marsh. 
 
@@ -1082,32 +1080,37 @@ As he begins to record - the hum ceases - and he notices that the creature insid
 
 INT. DALLAS KITCHEN - MOMENTS LATER
 
-Dallas approaches it - and notices that the creature, though still seemingly asleep.
-
+Dallas approaches the creature - and notices that is not crying, but still seemingly asleep.
 
 INT. DALLAS DESK - NIGHT
 
-Dallas is peered over his computer and begins to look at the recordings of the day. The heavy receiver sits on the kitchen table, wired to his laptop. Fresh 9-volts in the pack—he's finally got the rig running at full gain.
+Dallas is peered over his computer and begins to scan a program between different frequecnies. Connected to his computer is a usb that seemingly posts.
 
-Dallas as he is reading on computer - is holding a little sringe of chemicals that he hopes will replinish the creature. 
+Dallas tries different frequiences to broadcast - but nothing. 
 
-He listens. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. Too low for the room mics, but the new batteries are pulling it in. Something layered, almost rhythmic.
+Dallas look at the recordings of the day that captured and finds that there is a peak on the GHz frequency 115.2GHZ. 
 
-Dallas plays a recording of Sierra's voice to soothe the creature only to hear her voice dissolve into the creature's ongoing frequency. 
+The heavy receiver sits on the workshop table, wired to his laptop. 
 
-He replays the clip. Jots a time code. Plays it again. His hand moves to the margin of his notebook: numbers, angles. 
+He listens. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. Something layered, almost rhythmic.
 
-He stares at the scribbles. Grid coordinates. Bearings. The same language Mr. Mike was scratching into the wood.
+In the distance Dallas heres the creature cry again.
+
+INT. DALLAS KITCHEN
+
+Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
+
+Dallas goes over and tends to the creature - but this time it is visually shaken. Dallas sits next to it on a chair and waits for it to calm down. 
+
+As Dallas sits - his eyes get heavy - and he suddenly catches himself snoozing. He gets up - and sees Sierra's tape recorder on the desk. He stumbles over for a bit and presses play. 
+
+As he does, he notices that the creatures' cry begins to cease - but as it does - so does the recording. Dallas realizes that  her voice dissolve into the creature's ongoing frequency. 
+
+He replays the clip. But nothing, it is blank. Dallas plays it again, distraught.
 
 His elbow brushes the stack of Sierra's folders. One slides open—a corner of a sketch visible. Something with wings. He pushes it closed without looking. 
 
-As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint glow. 
-
-INT. DALLAS KITCHEN
-Dallas makes his way to the creature. 
-
-Dallas looks at the creature - who is appearing to be drinking water and eating the grass - but is still sleeping inside of a gnarl of the aquarium Dallas has obviously made for it. 
-
+As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint hum.  
 
 INT. DALLAS' HOUSE - KITCHEN - EVENING
 
@@ -1126,19 +1129,19 @@ The hum begins again, lower this time. His equipment remains silent, unable to r
 
 The overhead light dims—not a flicker, but a slow, steady drain, as if something is pulling the current out of the walls. Then it returns to full brightness.
 
-
-</div>
-
-
-
 A doorbell is heard off screen breaking Dallas out of his trance.
 
 INT. DALLAS' HOUSE - HALLWAY - NIGHT
 
-Dallas opens the door to find Asher and Makayla.
+Dallas opens the door to find Dominic.
 
 DOMINIC
 Thank you for watching Howie - how did he do? 
+
+<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
+
+(action)
+Dallas looks over to Howie who is resting on the sofa, exhausted, sleeping. 
 
 DALLAS
 Good
@@ -1149,10 +1152,21 @@ Good
 Asher looks behind Dallas at all of the equipment. Dallas hands Howie over to Dominic. 
 
 DOMINIC
-Okay - we'll - we'll be on our way. Hey - are you still okay with hosting lifegroup on Thursday
+Okay - we'll - we'll be on our way. Hey - are you still okay with hosting lifegroup on Thursday.
 
-Dallas
-Yeah. 
+DALLAS
+This Thursday?
+
+DOMINIC
+Yeah, is that still good?
+
+<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
+
+(action)
+Dallas peers toward the kitchen.
+
+DALLAS
+Yeah, should be good. 
 
 DOMINIC
 Okay... Hey - everything okay?
@@ -1168,7 +1182,7 @@ Alright well rest well big guy.
 (action)
 Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
 
-Dallas rushes to the kitchen and finds that the creature is doing good.
+Dallas rushes to the kitchen and finds that the creature sleeping peacefully. 
 
 
 
@@ -1193,9 +1207,22 @@ Dallas rushes to the kitchen and finds that the creature is doing good.
 
 INT. DALLAS DESK
 
-Dallas is alone. He keeps peering through his late wife's old documents.
+Dallas is alone. He keeps peering through his late wife's old documents. 
 
-Dallas lays tiny wires on the creature's head, connecting them to his handheld. When the creature is calm, it emits a low, melodic tone through the holes in its back. HOWIE barks from the corner. The creature's holes shift—the sound becomes a sad cry, like a whimper.
+On the desk is the recorder and all of the tapes next to it. 
+
+INT. KITCHEN
+
+Dallas lays tiny wires on the creature's head, connecting them to his handheld. 
+When the creature is calm, it emits a low, melodic tone through the holes in its back. The creature's holes shift—the sound becomes a sad cry, like a whimper.
+
+INT. DALLAS ROOM - NIGHT
+Dallas falls asleep on his futon. 
+
+INT. DALLAS ROOM - NEXT MORNING
+
+Dallas wakes up to find the place a mess. He gently puts down all of the notes. As he does, he reads one page from the Sierra box - with much interest. 
+
 
 ---
 
@@ -1215,6 +1242,8 @@ EXT. DALLAS HOUSE - NEXT MORNING
 The morning air is thick with the scent of ozone. Dominic''s minivan idles in the driveway. 
 
 Makayla and Asher don't follow him. They wander toward the edge of Dallas's property.
+
+Dominic walks right up to Dallas' doorway and knocks loudly. 
 
 MAKAYLA
 Asher, look.
