@@ -22,7 +22,6 @@
                 </a>
                 <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">☰</button>
                 <div class="nav-links" id="navLinks">
-                    <a href="#overview" class="nav-link-item"><span>Overview</span></a>
                     <a href="#story" class="nav-link-item"><span>Story</span></a>
                     <a href="#script" class="nav-link-item"><span>Script</span></a>
                     <a href="#sitemap" class="nav-link-item"><span>Sitemap</span></a>
@@ -32,7 +31,6 @@
                     <a href="#visuals" class="nav-link-item"><span>Visuals</span></a>
                     <a href="#production" class="nav-link-item"><span>Production</span></a>
                     <a href="#vault" class="nav-link-item"><span>Vault</span></a>
-                    <a href="#bookmarks" class="nav-link-item"><span>Bookmarks</span></a>
                     <a href="#extras" class="nav-link-item"><span>Extras</span></a>
                 </div>
             </div>
@@ -107,7 +105,7 @@
         </div>
     </section>
 
-    <!-- B) STORY & INTENT -->
+    <!-- STORY & INTENT -->
     <section class="section section-anchor" id="story">
         <h2>Story & Intent</h2>
         <div class="story-content">
@@ -170,13 +168,14 @@
         </div>
     </section>
 
-    <!-- B2A) SITEMAP -->
+    <!-- SITEMAP -->
     <section class="section section-anchor" id="sitemap">
         <h2>Sitemap / Quick Navigation</h2>
         <div class="production-card">
             <p class="production-description">Fast links to every Summer HTML page for script, notes, storyboard,
                 characters, and production.</p>
             <h3>Core Hub Pages</h3>
+            <a href="/pages/summer/overview.html" class="btn btn-primary">Overview (public)</a>
             <a href="/pages/summer/bible-system/index.html" class="btn btn-primary">Production Bible</a>
             <a href="/pages/summer/production.html" class="btn btn-primary">Production</a>
             <a href="/pages/summer/table-read.html" class="btn btn-primary">Table Read</a>
@@ -240,7 +239,7 @@
         </div>
     </section>
 
-    <!-- C) VISUAL LANGUAGE -->
+    <!-- VISUAL LANGUAGE -->
     <section class="section section-anchor" id="visuals">
         <h2>Visual Language</h2>
 
@@ -299,56 +298,31 @@
         </div>
     </section>
 
-    <!-- D) PRODUCTION CENTER -->
+    <!-- PRODUCTION CENTER -->
     <section class="section section-anchor" id="production">
         <h2>Production Center</h2>
         <div class="production-card">
-            <p class="production-description">Scene breakdown, notes, schedule, deliverables.</p>
-            <a href="/pages/summer/production.html" class="btn btn-primary">View Production →</a>
-            <a href="/pages/summer/gear-gallery.html" class="btn btn-primary">DIY Gear Gallery →</a>
+            <p class="production-description">Schedule, scene breakdown, deliverables. <a href="/pages/summer/production.html">Production →</a> <a href="/pages/summer/gear-gallery.html">DIY Gear Gallery →</a></p>
         </div>
     </section>
 
-    <!-- E) PRODUCTION VAULT (renamed from Files) -->
+    <!-- PRODUCTION VAULT -->
     <section class="section section-anchor" id="vault">
         <h2>Production Vault</h2>
         <div data-files></div>
     </section>
 
-    <!-- EXTRAS (Markdown, etc.) -->
+    <!-- EXTRAS -->
     <section class="section section-anchor" id="extras">
         <h2>Extras</h2>
         <div class="production-card">
-            <p class="production-description">Raw markdown and reference files for script and storyboard.</p>
-            <a href="/pages/summer/script-system/full_script.md" class="btn btn-secondary">Script (Markdown)</a>
-            <a href="/pages/summer/storyboard-system/full_storyboard.md" class="btn btn-secondary">Storyboard
-                (Markdown)</a>
-        </div>
-    </section>
-
-    <!-- F) BOOKMARKS -->
-    <section class="section section-anchor" id="bookmarks">
-        <div class="bookmarks-header">
-            <h2>Bookmarks</h2>
-            <button class="btn btn-secondary" id="addBookmarkBtn">Add Bookmark</button>
-        </div>
-        <div class="bookmarks-content">
-            <div data-bookmarks></div>
+            <p class="production-description">Raw markdown: <a href="/pages/summer/script-system/full_script.md">Script</a>, <a href="/pages/summer/storyboard-system/full_storyboard.md">Storyboard</a>.</p>
         </div>
     </section>
 
     <footer>
         <p>Barnacle Film Studio Company ©2025–2026</p>
     </footer>
-
-    <!-- Bookmark Modal -->
-    <div class="modal" id="bookmarkModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <div class="modal-content">
-            <h3 id="modalTitle">Add Bookmark</h3>
-            <p>Coming soon: Bookmark functionality will be available in a future update.</p>
-            <button class="btn" onclick="closeBookmarkModal()">Close</button>
-        </div>
-    </div>
 
     <script src="/scripts/vault.js"></script>
     <script src="/scripts/summer.js"></script>

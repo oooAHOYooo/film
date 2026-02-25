@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/24/2026, 3:25:51 PM*
+*Compiled on 2/25/2026, 2:36:08 PM*
 
 ---
 
@@ -25,7 +25,7 @@ EXT. DALLAS NEW HOUSE - DAY
 
 Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
 
-Dallas goes into the grass a little bit and as he does he notices that there is a makeshift trap - a small rig of a stick. Upon further examination he notices that it is not a trap but a recording device of sorts. 
+Dallas goes into the grass a little bit and as he does he notices that there is a makeshift trailcam - a small camera rig on a stick. Upon further examination he notices that it is not a trap but a recording device of sorts. 
 
 As Dallas examines he hears a distinct bicycle ring.
 
@@ -706,6 +706,11 @@ Dallas grabs the leg of the table and pushes. The two look at the table for a wh
 DOMINIC
 Do you have any kids?
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dominic hands Dallas a portrait of his wife. 
+
 DALLAS
 No. 
 
@@ -755,25 +760,22 @@ One. ONE. FIVE. THREE. She's here - Dominic - Janice is here - ASHER! - it is pl
 (action)
 Makayla and Asher bust through the door. 
 
-Asher rushes over to Mr. Mike—his eyes widen when he sees what Mr. Mike has been writing. He already has his notebook out; he copies the numbers, taps the page twice, then runs to Makayla and shows her. She jots them on her palm. 
+Asher rushes over to Mr. Mike. His eyes widen when he sees what Mr. Mike has been writing. He already has his notebook out; he copies the numbers, taps the page twice, then runs to Makayla and shows her. She jots them on her palm. 
 
 Asher hands the coordinates to Makayla. She runs downstairs with them. Dallas watches her. 
-
-
-
 
 INT. DOMINIC'S KITCHEN - LATE AFTERNOON
 
 JANICE (40s) marches in, balancing two bags of groceries and a set of keys between her teeth. 
 
 JANICE
-Traffic the I-95 is a literal nightmare. Dominic, why aren't you cooking the sprouts already? We need to boil them first and then sear them. Last time you just boiled them and it was a disgusting mush... Hi Dallas. 
+ I-95 is hell on Earth.  Dominic, why aren't you cooking the sprouts already? We need to boil them first and then sear them. Last time you just boiled them and it was a disgusting mush... Hi Dallas. 
 
 DOMINIC
-You got it Janice. Anything for the brussels.  
+I was just about to.  
 
 JANICE
-Okay.
+Okay. Good, Good. That's good. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -805,7 +807,9 @@ Do you mind watching Howie for a bit this afternoon? - I have to take everyone t
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas looks at the dog - the dog Howie looks back at the man Dallas. Makayla walks over and grabs the portable Oscillator holding in Dallas' hand. 
+Dallas looks at the dog - the dog Howie looks back at the man Dallas. 
+
+Makayla walks over and grabs the portable Oscillator from  Dallas' hand. 
 
 MAKAYLA
 Have you given any thought to what I asked you the other day?
@@ -813,37 +817,91 @@ Have you given any thought to what I asked you the other day?
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas looks at Makayla and back at Asher
+Dallas looks at Makayla and back at Asher. Without making eye contact with Dallas she begins to twist and turn the dials on the Oscillator. 
 
 MAKAYLA
-Let my brother borrow it. 
+You should, Let my brother borrow it. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Asher walks over to Mr. Mike to see how he is doing. Makayla approaches Dallas even further. 
+Asher, igorning Makayla, walks over to Mr. Mike and stands besides him in his rocking chair.
 
-MAKAYLA
-Does it pick up frequencies below the human range? I heard something last night. Like a vibrating lung. 
-
-<div class="script-deletion">
-
-> deletion
-
-And the streetlights on our block were doing that thing again—cycling on and off. Every time I hear the sound, the lights go weird.
-
-</div>
-
-
+DOMINIC
+Makayla, I showed Dallas your little hideout. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Asher, meanwhile, stands by the window—notebook closed, held tight. He ignores the conversation, eyes fixed on the distant bushes at the edge of the property. The leaves ripple, though there is no wind. His finger traces the same ripple on the glass.
+Makayla looks over to Dallas with sus looks.  
+
+MAKAYLA
+So you saw the equipment?
+
+DALLAS
+Yes.
+
+MAKAYLA
+What did you think?
+
+DALLAS
+What is it for?
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Makayla rolls her eyes and walks over to Mr. Mike who is rocking back and forth in his chair. 
+
+MAKAYLA
+Mr. Mike? What's wrong?
+
+MR MIKE
+The numbers are off. Asher knows. The numbers are off.
+
+MAKAYLA
+What numbers?
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Mr. Mike doesn't answer but continues to rock - he looks over - ignores Makayala's gaze and locks eye contact with Asher.
+
+MR. MIKE
+The numbers are wrong. 
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Makayla walks over to Dallas.
+
+MAKAYLA
+Does it pick up frequencies below the human range? 
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Asher, meanwhile, ignores the conversation, eyes fixed on the distant bushes at the edge of the property. The leaves ripple, though there is no wind. His finger traces the same ripple on the glass.
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dominic begins to light the gas to start boiling the brussels but the lighter doesnt work. 
+Janice throws up her hands and goes outside for a smoke. 
+
+DALLAS
+Crap, I got to go to the store. 
+
+JANICE
+I'm coming with you. Kids - let's go. 
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+The crew leave with the little dog howie. 
 
 DOMINIC
 (yelling from the door)
-Everyone in the car! We're going to be late! Dallas, thanks for watching Howie!
+ Dallas, thanks for watching Howie!
 
 The family vanishes in a blur of activity, leaving Dallas standing in the sudden, ringing silence with HOWIE, the small dog.
 
@@ -865,15 +923,15 @@ EXT. BRANFORD ROCKS - EVENING
 
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
 
-As Howie, Dallas holds his portable reader out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
+As Howie, Dallas holds his portable Oscillator out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
 
 It seems like the readings are pointing closer and closer to his house.
 
-Howie stops. His ears perk up, swiveling like small radar dishes toward the dark reeds.
+Howie stops. His ears perk up and swivel like small radar dishes toward the dark reeds in the distance. 
 
 In the far distance, a single coyote barks. Then another. A chain reaction of domestic fear starts in the neighborhood, followed by the high, thin yip of coyotes further inland.
 
-Dallas pulls out his phone. A vibration and an alert for a STORM WARNING pops up.
+The winds pick up and Dallas and Howie march forward. 
 
 EXT. EDGE OF THE MARSH - CONTINUOUS
 
@@ -885,24 +943,7 @@ It starts as a vibration in Dallas's teeth, then moves to his chest. It is a dee
 
 Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass pulses in time with the sound.
 
-
-
-<div class="script-addition">
-
-> addition
-
-
-Behind him, the streetlights along the block go dark—all of them, at once. Three seconds of blackout. Then they snap back on, one by one, from the marsh outward, as if the power is being returned in sequence.
-
-
-</div>
-
-
-EXT. MARSH TRAIL - EVENING
-
-Dallas walks home with Howie. 
-
-Dallas walks with Howie along the coastal trail. The sun is setting, casting long shadows across the tall grass. He carries his portable receiver, the dials clicking softly as he adjusts the frequency.
+The sun sets, casting long shadows across the tall grass. He carries his portable receiver, the dials clicking softly as he adjusts the frequency.
 
 Dallas stops at the creek's edge and pans his gaze towards the outer marsh. The tall grass stretches endlessly before him, golden-yellow reeds swaying gently despite the lack of wind.
 

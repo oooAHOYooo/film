@@ -1,4 +1,4 @@
-// Summer Film Page JavaScript - Executive Production Hub
+// Summer Film Page JavaScript
 
 (function() {
     'use strict';
@@ -499,33 +499,22 @@
         };
     }
 
-    // Bookmark modal
+    // Bookmark modal (no-op when section removed)
     function setupBookmarkModal() {
         const addBtn = document.getElementById('addBookmarkBtn');
         const modal = document.getElementById('bookmarkModal');
-        
-        if (addBtn && modal) {
-            addBtn.addEventListener('click', () => {
-                modal.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        }
+        if (!addBtn || !modal) return;
 
-        // Close modal on outside click
-        if (modal) {
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeBookmarkModal();
-                }
-            });
-
-            // Close on Escape key
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal.classList.contains('active')) {
-                    closeBookmarkModal();
-                }
-            });
-        }
+        addBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeBookmarkModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) closeBookmarkModal();
+        });
     }
 
     // Make closeBookmarkModal available globally

@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass - Production Bible
 
-*Compiled on 2/24/2026, 3:32:09 PM*
+*Compiled on 2/25/2026, 2:36:09 PM*
 
 ---
 
@@ -790,8 +790,8 @@ This keeps the gallery focused on build references and techniques for the produc
 ## Locations
 
 - INT. JACE'S BASEMENT
-- INT. DOMINIC'S BASEMENT
-- INT. DOMINIC'S KITCHEN - LATE AFTERNOON
+- INT. DOMINIC'S BASEMENT (Makayla's Lair -1 )
+- INT. DOMINIC'S Kitchen (or living room)
 
 ## Practical effects
 
@@ -804,9 +804,18 @@ This keeps the gallery focused on build references and techniques for the produc
 
 - _How we'll tackle each effect._
 
+1. For the Basement - We need a table in the side corner
+2. We will use old TVs - found in church - they do not have to be on or functioning - we just have to add tape through the sides of them - maybe this could be a cool partical effect
+3. We need to find a way for Mr. Mike to be scratching in 
+
+
 ## Notes
 
 - _Coordinates = dial numbers (115.3)._
+- Need to have the portable oscillator in this scene 
+
+## PROPS
+- Rocking Chair
 
 
 ---
