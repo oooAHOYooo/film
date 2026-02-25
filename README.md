@@ -20,6 +20,7 @@ Welcome to the **Living Wiki** for *Creatures in the Tall Grass*. This repositor
 
 ### 🎥 [[Optics]]
 - **[[Optics_Anamorphic]]**: Lens profiles, distortion maps, and RED Komodo settings.
+- **[[Hardware-Incident-Log]]**: Tracking technical issues and sensor maintenance.
 - **Practical FX Logs**: Integration of physical lights and bioluminescence.
 
 ### 🌾 [[World]]
