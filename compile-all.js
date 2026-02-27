@@ -34,6 +34,10 @@ const tasks = [
     name: 'Summer Production Bible',
     script: path.join(ROOT, 'pages', 'summer', 'bible-system', 'compile.js'),
   },
+  {
+    name: 'Summer Inspiration Gallery',
+    script: path.join(ROOT, 'pages', 'summer', 'inspiration', 'compile.js'),
+  },
 ];
 
 function runTask(task) {
