@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/27/2026, 10:34:47 AM*
+*Compiled on 2/27/2026, 12:39:49 PM*
 
 ---
 
@@ -35,7 +35,7 @@ They approach Dallas slowly as one of the boxes draws their curiousity. Makayla 
 
 MAKAYLA
 (to Asher but loud enough for Dallas to hear)
-You know that could be used to track the baseline difference between the cry of the BinzoBee and the howl of the Ophragah.
+You know that could be used to track the baseline difference between the cry of the BinzoBee and the howl of the Ophragah. Did you know that peptide crystal act kind of as a biologicial bridge. 
 
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
@@ -1355,7 +1355,7 @@ We can't tell anyone about this.
 Makayla turns to Dallas who nods in agreement.
 
 MAKAYLA
-Mr. Dallas, where did you find this?
+Mr. Dallas, where did you find it?
 
 DALLAS
 I am not sure exactly. It was dark. 
@@ -1408,12 +1408,13 @@ Makayla shakes her head and looks at Dallas.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
-# Scene 14: The Vision
+# Scene 14: The Connection
 <!-- summary: They sit with the creature. Evidence. A bond. Howie at their feet. -->
 
 INT. DALLAS KITCHEN
+Dallas sits on a stool and in an almost daze watches Makayla from far away as she and Asher look at the creature from afar. 
 
-Dallas watches Makayla from far away as she and Asher look at the creature from afar. 
+Makayla begins to sketch the creature. Careful, precise lines. The back-holes. The ears. The glow. She is documenting it the way a scientist would, not the way a teenager would.
 
 EXT. DALLAS BACKYARD - OLD PICNIC TABLE 
 
@@ -1422,21 +1423,43 @@ Makayla and Dallas look on the ground for a while as they sit outside the patio.
 Asher sits alone a few feet away—drawing in his notebook. Not the creature; repeating shapes, like the burn mark pattern.
 
 MAKAYLA
-So your wife was an Epistemologist?
-
-DALLAS
-How did you know that?
-
-MAKAYLA
-I saw the folder open. Where is she now?
-
-DALLAS
-She's gone.
+So your wife was an Epistemologist? 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Asher looks at the distance, then the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
+Dallas looks at Makayla. 
+
+MAKAYLA
+She studied how fish communicate underwater. 
+
+DALLAS
+She did.
+
+MAKAYLA
+I'm sorry for your loss.
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas looks at the ground.
+
+MAKAYLA
+Our mom died too.  Janice adopted us when we were little. Dominic is our dad's brother.... Our dad's gone too. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+The room grows quiet.  Asher, breaking the tension, appears busy trying to connect wires up to the computer. But he stops as he looks at the distance, then the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
+
+Outside the window, the wind picks up.  Dallas looks out the window.
+
+MAKAYLA
+What is it?
+
+EXT. DALLAS BACKYARD - OLD PICNIC TABLE - CONTINUOUS
+
+The group look out  at the edge of the tall grass
 
 DALLAS
 Is Asher okay?
@@ -1488,11 +1511,8 @@ Makayla looks at Asher and then back at the house.
 MAKAYLA
 We can't tell anyone about this. The sound it made. We should try to record that.
 
-DALLAS
-I know that certain frequencies don't record - they repel. 
-
 MAKAYLA
-And the frequiences that that creature is making.
+The frequiences that that creature is making.
 
 DALLAS
 It seems to be recording.
@@ -1500,62 +1520,45 @@ It seems to be recording.
 MAKAYLA
 Recording what? 
 
-DALLAS
-Well, everything records in a way. 
-
-MAKAYLA
-And what repels.
-
-DALLAS
-Things that are usually on the opposite end of the spectrum.
-
-MAKAYLA
-So what are we talking about?
-
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
 The breeze overwhelms them both.
-
 
 INT. DALLAS'S KITCHEN - LATER
 
 Makayla and Dallas walk into the kitchen and find the creature sleeping peacefully below the heat lamp. 
 
 MAKAYLA
-I've read about fish the way the transmit information. Scientists used to think that the sea was silent - but our ears just can't pick up the right frequenies.
+I find it interesting that your wife was an epistemologist - she must have known about fish - the way they transmit information. Scientists used to think that the sea was silent - but our ears just can't pick up the right frequenies.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla turns and begins to sketch. 
-
-Dallas has turned his kitchen island into a triage station. He’s wired a portable oscilloscope to the creature’s head using tiny alligator clips.
-
-Makayla begins to sketch the creature. Careful, precise lines. The back-holes. The ears. The glow. She is documenting it the way a scientist would, not the way a teenager would.
-
-
-The device pulses in a rhythmic, golden jagged line —perfectly in sync with the creature's heartbeat.
+Dallas has turned his kitchen island into a triage station. He’s wired a portable oscilloscope.  The device pulses in a rhythmic, golden jagged line — in sync with the creature's heartbeat.
 
 In the distance they hear howls - and then silence again. 
 
 The creature begins to fade - Dallas turns the dial into another frequency range and waits until it is asleep. 
 
-Makayla 
+MAKAYLA
 (to Dallas)
 What does that do?
 
-Dallas
+DALLAS
 (whispering)
-It changes the frequency I am transmitting.
+It changes the frequency I am broadcasting.
 
-Makayla
-And you think that it somehow is like talking to the creature?
+MAKAYLA
+It looks like the creature is responding to it.
 
 Dallas
 Yes. 
 
-Asher comes in and gathers around the creature too—notebook in one hand, pencil still. He doesn't draw it. Just watches. His finger traces a small pattern on the edge of the island. 
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Meanwhile,Asher comes in and gathers around the creature too—notebook in one hand, pencil still. He doesn't draw it. Just watches. His finger traces a small pattern on the edge of the island. 
 
 Dallas adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature's breathing stabilizes. It lets out a low, melodic tone through its back-holes.
 
@@ -1563,54 +1566,35 @@ Makayla leans over the oscilloscope. She points at the screen.
 
 Makayla looks at Dallas and then at the creature and pulls out a small prototype from her backpack. 
 
+The two look at each other for a moment.
+
+DALLAS
+What is that?
+
 MAKAYLA
-The small device should wake up the creature. 
+An amplifier.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla turns away from Dallas sight and places the crystal she has found inside a palceholder for where a battery would go on a circut board.
+Makayla turns and places the crystal she has found inside a palceholder for where a battery would go on a circut board.
 
 She turns to the creature and turns it on. 
 
 The creature starts to wiggle.
 
-MAKAYLA
-Wait. Look at that.
-
 Behind the creature's smooth sine wave, a second signal appears—jagged, arrhythmic. It pulses in sharp, irregular bursts, riding underneath the creature's frequency like static beneath music.
 
 MAKAYLA (CONT'D)
-That's not coming from the creature. That's a draw. It's pulling power.
+That's not coming from the creature. That's drawing from outside.
 
-She looks at Dallas. In the distance a hum emerges
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
-Dallas stares at the secondary wave on the screen. 
+(action)
+The group looks at the creature and then at the oscilloscope and then at the sway of the tall grass outside. 
 
-Howie sits in the corner, head cocked, shivering. Outside, the world responds: the windows rattle, and a deep, distant hum echoes from the town center.
-
-Makayla goes back inside and huddles around the creature. Makayla presses her crystal next to the creature's neck and has a vision.
-
-Makayla's eyes begin to roll back and she has a vision.
-
-EXT. MAKAYLA'S VISION - MONTAGE
-
-EXT. MARSH - DAY (VISION)
-
-Silence. 
-
-A figure stands in the tall grass. A woman - older, etheral but with Makayla's eyes. She turns and her face is obscured by the sun. She looks down at the creature with sadness and then touches Makayla's forehead.
-
-VOICE (V.O)
-Light doesn't leave. It changes.
-
-The woman fades in the sky.
-
-INT. KITCHEN - DAY (Reality)
-
-Makayla gasps, slamming back into her body. 
-
-The doorbell rings.
+MAKAYLA
+Dallas - I have something I want to show you. 
 
 
 ---
@@ -1627,32 +1611,28 @@ The doorbell rings.
 # Scene 15: Makayla's Lair
 <!-- summary: Reverse Device mission born. Dallas calibrates the oscillator using Mr. Mike's numbers. A countdown begins. -->
 
+EXT. NEIGHBORHOODS - EVENING 
+The crew walk towards the neighborhood and begin the long process of making their journey down sunset filled woodland area - as they approach a big field. 
+
+MAKAYLA
+Did you know, peptide crystals that conduct elecriticy? 
+
+
 EXT. MAKAYLA'S LAIR 
 
-The crew walk into Makayala's outdoor wigwam with the creature in their makeshift portable box.
+The crew walk into Makayala's outdoor wigwam.
+
+MAKAYLA
+I found out that my dad left us a bit of land - some random patch of dirt. 
 
 INT. MAKAYLA'S LAIR - CONTINUOUS
 
-The crew leave the sleeping creature under a heat lamp in the back corner of the wigwam type lair Makayla has created. 
+Makayla gives Dallas a tour of the outdoor lair. Around a semi-permanent wooden structure made out of fallen trees and branches. Makayla has built an impressive array of trail cameras and other surveillance equipment.
 
-Makayla gives Dallas a tour of the outdoor lair. Around a lean too structure in the woods - Makayla has built an impressive array of servillance equipment and other home-made gadgetry made from off the shelf components. 
-
-One device in particular intrigues Dallas. 
+One device in particular intrigues Dallas. He grabs it and holds it up to his ear. 
 
 MAKAYLA
-That is a reverse audiophone - capable of taking a recording and then projecting it back into reverse. I built it last summer hoping to better understand how fish communicate.
-
-DALLAS
-And how do they?
-
-MAKAYLA
-What?
-
-DALLAS
-How do the fish communicate?
-
-MAKAYLA
-Inconclusive. 
+That is a reverse audiophone - capable of taking a recording and then projecting it back into reverse. I built it last summer - well Asher did the heavy lifting. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
