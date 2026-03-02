@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 2/27/2026, 2:25:45 PM*
+*Compiled on 3/2/2026, 12:19:22 PM*
 
 ---
 
@@ -1530,12 +1530,12 @@ INT. DALLAS'S KITCHEN - LATER
 Makayla and Dallas walk into the kitchen and find the creature sleeping peacefully below the heat lamp. 
 
 MAKAYLA
-I find it interesting that your wife was an epistemologist - she must have known about fish - the way they transmit information. Scientists used to think that the sea was silent - but our ears just can't pick up the right frequenies.
+I find it interesting that your wife was an epistemologist - you know, Scientists used to think that the sea was silent - but our ears just can't pick up the right frequenies.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas has turned his kitchen island into a triage station. He’s wired a portable oscilloscope.  The device pulses in a rhythmic, golden jagged line — in sync with the creature's heartbeat.
+Dallas looks around at his kitchen island - which has turned part into a triage hospital station. He’s wired a portable oscilloscope.  The device pulses in a rhythmic, golden jagged line — in sync with the creature's heartbeat.
 
 In the distance they hear howls - and then silence again. 
 
@@ -1554,6 +1554,15 @@ It looks like the creature is responding to it.
 
 Dallas
 Yes. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Makayla looks down and thinks for a moment.
+
+MAKAYLA
+(to Dallas)
+You know, Mr. Mike has been telling Asher things for years... They have some special bond.... Mr. Mike's grandfather was an explorer - who claims that he knew of a creature like this that his father saw when he first immigrated. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1612,24 +1621,105 @@ Dallas - I have something I want to show you.
 <!-- summary: Reverse Device mission born. Dallas calibrates the oscillator using Mr. Mike's numbers. A countdown begins. -->
 
 EXT. NEIGHBORHOODS - EVENING 
-The crew walk towards the neighborhood and begin the long process of making their journey down sunset filled woodland area - as they approach a big field. 
+The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. 
 
 MAKAYLA
-Did you know, peptide crystals that conduct elecriticy? 
+Did you know some peptide crystals can conduct electricity? 
 
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
-EXT. MAKAYLA'S LAIR 
+(action)
+The crew walk into the field and find a small wooden structure hidden inside. 
 
-The crew walk into Makayala's outdoor wigwam.
+EXT. MAKAYLA'S LAIR - CONTINUOUS
+As they approach the structure, they can see that it is a small wooden structure made out of fallen trees and branches. 
+
+Immeditaley outside the structure, seems like there are some trail cameras and other surveillance equipment.  
+
+One device in particular intrigues Dallas. He grabs it and holds it up to his ear. 
 
 MAKAYLA
-I found out that my dad left us a bit of land - some random patch of dirt. 
+Do you believe in fate Mr. Dallas?
+
+DALLAS
+I am not sure.
+
+MAKAYLA
+Well you tell me how, last year - before my father passed - he left us a bit of random land in his will. You are looking at a solid acre of Amaranto land. Uncle Dominic and Aunt Janice aren't keen on touching or doing anything with it - so Asher and I built this. 
+
+DALLAS
+What is it?
+
+MAKAYLA
+(ignoring his question)
+And funny thing about fate, is - right as we were searching this land - we found this.
 
 INT. MAKAYLA'S LAIR - CONTINUOUS
 
-Makayla gives Dallas a tour of the outdoor lair. Around a semi-permanent wooden structure made out of fallen trees and branches. Makayla has built an impressive array of trail cameras and other surveillance equipment.
+Makayla gives Dallas a tour of the outdoor lair. Around a semi-permanent wooden structure made out of fallen trees and branches. 
 
-One device in particular intrigues Dallas. He grabs it and holds it up to his ear. 
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Makayla points to a small wooden box and gestures Asher to open it up. He walks over over the cables laid on the floor and does. 
+
+ASHER
+(to Dallas)
+Here.
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Asher hands Dallas a small wooden box. Dallas opens it and finds a small translucent crystal inside—a crude pyramid-like stone. Dallas holds it, fascinated.
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Asher taps it twice against Dallas's palm before letting go—his tell when he's sure about something. 
+
+MAKAYLA
+What do you think?
+
+DALLAS
+Seems like a common quartz crystal..
+
+MAKAYLA
+Asher show him.
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Asher walks over and puts the cystal on top of a little bay area device . As he does - Makayla walks over to her computer running linux and starts typing away. Soon a program emerges that seemingly measures waveforms. 
+
+MAKAYLA
+(to Dallas)
+Do you know what this?
+
+DALLAS
+Seems like a frequency analyzer...
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Makayla makes a couple of clicks and looks at Asher - she nods. 
+
+MAKAYLA
+(to Dallas)
+Do you know what this is?
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Dallas looks onward, the computer's monitor's waveforms and graphs seem to be moving in sync with Asher as he places the crystal on top of the device. It reacts viollently to it. 
+
+Dallas looks on in amazement.
+
+EXT. MAKAYLAS LAIR
+
+Makayla and Dallas sit on a wooden stool and watch Asher as he prepares for a small fire.
+
+MAKAYLA
+I think that the crystal is picking up something. And that creature. Like that wasn't normal. 
 
 MAKAYLA
 That is a reverse audiophone - capable of taking a recording and then projecting it back into reverse. I built it last summer - well Asher did the heavy lifting. 
@@ -1645,7 +1735,7 @@ Asher no.
 Dallas holds the object in his hands fasicanted. Makayla takes it away and pockets it.
 
 MAKAYLA
-That crystal isn't just a stone - it's a biological semi-conductor. 
+I think the crystal is a biological semi-conductor and somehow - the creature needs it - to purify it from the darkness. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
@@ -1653,7 +1743,7 @@ That crystal isn't just a stone - it's a biological semi-conductor.
 Makayla stops and thinks for a moment.
 
 MAKAYLA
-Asher, what if Mr Mike's numbers wrent the coordinates we thought they were - but dial settings. 
+Asher, do you know the numbers Mr. Mike writes? 
 
 ASHER
 Maybe. I don't know. What do you mean?
@@ -1733,14 +1823,42 @@ We have to go. Now.
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
-# Scene 16: Escape from the Lair
-<!-- summary: Asher trance: 'The light doesn't leave.' Stakes raised—the vision confirms they must reach the Creek Bend. -->
+# Scene 16: Asher Trance
 
 EXT. MAKAYLA'S LAIR
 
-Makayla and Dallas and Asher begin to make there way hastly out of the woods. They are in a rush to go back to Dallas'.
+Makayla and Dallas and Asher begin to make there way hastly out of the woods back to the field. 
+
+As the crew walk, they begin to notice that the tall grass around them is acting unusual. The crew walk in unease silence. 
 
 As they do - they see that dark figures are haunting them - but from a distance. 
+
+Asher begins to shake and falls down to the ground. His eyes look directly at the sky and he begins to cry.
+
+ASHER
+(in trance)
+Leave us alone. Leave us alone. 
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Asher begins to cry and shake. Dallas and Makayla rush to his side.
+
+MAKAYLA
+Asher!
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Asher slowly wakes up. 
+
+MAKAYLA
+Breathe. 
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Dallas looks at the tall grass - his portable oscilloscope begins to beep. The crew, little by little hear the distinct faint hum. 
 
 MAKAYLA
 Asher, what did you see?
@@ -2008,10 +2126,56 @@ Dominic rushes over to the kitchen and sees that the brownies tray is smashed on
 <!-- scene: 20 file: s20.md nickname: basement-huddle -->
 
 # Scene 20: Back in Branford
+<!-- summary: The town is falling apart. Dallas and Makayla scavenge for protection. The Faraday Cage plan. -->
 
-EXT. BRANFORD TOWN COMMONS
+EXT. BRANFORD TOWN COMMONS - DAY
 
-Makayla and Dallas go into town as they walk to the edge of the tall grass.
+The town is a ghost of itself. Streetlights flicker in broad daylight. A parked car’s alarm chirps rhythmically, then dies as its battery is sucked dry.
+
+Makayla and Dallas walk quickly toward a hardware store at the edge of the commons.
+
+MAKAYLA
+The grid is bleeding. 115.3 MHz. It’s not just the creature anymore—something else is pulling the power. Resonant inductive coupling on a massive scale.
+
+DALLAS
+(looking at his dead Gauss meter)
+The magnetic field is so localized it’s turning the marsh into a False North. We can’t navigate by compass.
+
+INT. HARDWARE STORE - CONTINUOUS
+
+The store is empty, the power out. Dallas moves to the back, grabbing rolls of copper mesh.
+
+DALLAS
+If we're going into that marsh, we need protection from the infrasound and the electrical bursts. 
+
+MAKAYLA
+(grabbing a soldering iron and wire)
+Faraday cages. If we line our gear with this copper mesh, we can ground the attacks. Redirect the energy before it hits our nerves.
+
+<!-- scene: 20 file: s20.md nickname: basement-huddle -->
+
+(action)
+Dallas starts cutting the mesh with heavy shears. Makayla watches him, a bit of the bravado fading.
+
+MAKAYLA
+You think it’s going to work? The "Anti-Wave"?
+
+DALLAS
+It has to. The crystal is the only thing that can flip the phase. Constructive resonance for the light, destructive for the shadow.
+
+<!-- scene: 20 file: s20.md nickname: basement-huddle -->
+
+(action)
+Outside, a transformer on a pole blows with a shower of blue sparks. The town goes completely dark. 
+
+MAKAYLA
+(quietly)
+We’re out of time. 
+
+EXT. BRANFORD TOWN COMMONS - CONTINUOUS
+
+They step out of the store, gear modified with crude copper shielding. They look toward the tall grass of the marsh, which is now swaying against the wind. 
+
 
 ---
 
