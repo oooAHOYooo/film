@@ -1,6 +1,6 @@
 // Summer Film Page JavaScript
 
-(function() {
+(function () {
     'use strict';
 
     // Initialize when DOM is ready
@@ -19,7 +19,7 @@
         setupInspirationFilters();
         setupBookmarkModal();
         setupAccordions();
-        
+
         // Hydrate after all overrides are set up
         if (typeof hydrateSection === 'function') {
             hydrateSection('summer');
@@ -37,7 +37,7 @@
     // Navigation functionality
     function setupNavigation() {
         const nav = document.getElementById('summerNav');
-        const mobileToggle = document.getElementById('mobileNavToggle');
+        const mobileToggle = document.getElementById('navToggle');
         const navLinks = document.getElementById('navLinks');
         const navLinkItems = document.querySelectorAll('.nav-link-item');
 
@@ -59,7 +59,7 @@
 
         // Smooth scroll for anchor links
         navLinkItems.forEach(link => {
-            link.addEventListener('click', function(e) {
+            link.addEventListener('click', function (e) {
                 const href = this.getAttribute('href');
                 if (href.startsWith('#')) {
                     e.preventDefault();
@@ -76,7 +76,7 @@
 
         // Active link highlighting based on scroll position
         const sections = document.querySelectorAll('.section-anchor');
-        
+
         function updateActiveNav() {
             let current = '';
             sections.forEach(section => {
@@ -107,7 +107,7 @@
         // Scroll effect on nav
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
-            
+
             if (currentScroll > 50) {
                 nav.classList.add('scrolled');
             } else {
@@ -139,14 +139,14 @@
 
     function overrideRenderFiles() {
         const originalRenderFiles = window.renderFiles;
-        window.renderFiles = function(el, files) {
+        window.renderFiles = function (el, files) {
             if (!el) return;
             el.innerHTML = '';
             if (!files || !files.length) {
                 el.innerHTML = '<div class="empty-state"><p>No files yet.</p></div>';
                 return;
             }
-            
+
             // Group files by category
             const categories = {};
             files.forEach(f => {
@@ -154,15 +154,15 @@
                 if (!categories[category]) categories[category] = [];
                 categories[category].push(f);
             });
-            
+
             // Render each category as a table
             Object.keys(categories).sort().forEach(category => {
                 const categoryFiles = categories[category];
-                
+
                 // Create category section
                 const categoryDiv = document.createElement('div');
                 categoryDiv.style.marginBottom = '40px';
-                
+
                 const categoryHeader = document.createElement('h3');
                 categoryHeader.textContent = category;
                 categoryHeader.style.fontSize = '1.25rem';
@@ -170,7 +170,7 @@
                 categoryHeader.style.marginBottom = '16px';
                 categoryHeader.style.color = 'var(--text-primary)';
                 categoryDiv.appendChild(categoryHeader);
-                
+
                 // Create table
                 const table = document.createElement('table');
                 table.className = 'vault-table';
@@ -180,12 +180,12 @@
                 table.style.borderRadius = 'var(--soft)';
                 table.style.overflow = 'hidden';
                 table.style.background = 'var(--glass-bg)';
-                
+
                 // Create table header
                 const thead = document.createElement('thead');
                 thead.style.backgroundColor = 'rgba(88, 166, 255, 0.1)';
                 const headerRow = document.createElement('tr');
-                
+
                 const nameHeader = document.createElement('th');
                 nameHeader.textContent = 'Name';
                 nameHeader.style.padding = '12px 16px';
@@ -193,7 +193,7 @@
                 nameHeader.style.borderBottom = '1px solid var(--glass-border)';
                 nameHeader.style.fontWeight = '600';
                 nameHeader.style.color = 'var(--text-primary)';
-                
+
                 const updatedHeader = document.createElement('th');
                 updatedHeader.textContent = 'Last Updated';
                 updatedHeader.style.padding = '12px 16px';
@@ -201,7 +201,7 @@
                 updatedHeader.style.borderBottom = '1px solid var(--glass-border)';
                 updatedHeader.style.fontWeight = '600';
                 updatedHeader.style.color = 'var(--text-primary)';
-                
+
                 const actionHeader = document.createElement('th');
                 actionHeader.textContent = 'Action';
                 actionHeader.style.padding = '12px 16px';
@@ -209,13 +209,13 @@
                 actionHeader.style.borderBottom = '1px solid var(--glass-border)';
                 actionHeader.style.fontWeight = '600';
                 actionHeader.style.color = 'var(--text-primary)';
-                
+
                 headerRow.appendChild(nameHeader);
                 headerRow.appendChild(updatedHeader);
                 headerRow.appendChild(actionHeader);
                 thead.appendChild(headerRow);
                 table.appendChild(thead);
-                
+
                 // Create table body
                 const tbody = document.createElement('tbody');
                 categoryFiles.forEach((f, index) => {
@@ -223,35 +223,35 @@
                     row.style.borderBottom = index < categoryFiles.length - 1 ? '1px solid var(--glass-border)' : 'none';
                     row.style.backgroundColor = index % 2 === 0 ? 'var(--glass-bg)' : 'rgba(22, 27, 34, 0.5)';
                     row.style.transition = 'background-color 0.2s ease';
-                    
+
                     row.addEventListener('mouseenter', () => {
                         row.style.backgroundColor = 'rgba(88, 166, 255, 0.1)';
                     });
                     row.addEventListener('mouseleave', () => {
                         row.style.backgroundColor = index % 2 === 0 ? 'var(--glass-bg)' : 'rgba(22, 27, 34, 0.5)';
                     });
-                    
+
                     // Name cell
                     const nameCell = document.createElement('td');
                     nameCell.textContent = f.label || f.path;
                     nameCell.style.padding = '12px 16px';
                     nameCell.style.fontWeight = '500';
                     nameCell.style.color = 'var(--text-primary)';
-                    
+
                     // Last updated cell
                     const updatedCell = document.createElement('td');
                     updatedCell.textContent = f.lastUpdated || '—';
                     updatedCell.style.padding = '12px 16px';
                     updatedCell.style.color = 'var(--text-muted)';
                     updatedCell.style.fontSize = '0.9rem';
-                    
+
                     // Action cell
                     const actionCell = document.createElement('td');
                     actionCell.style.padding = '12px 16px';
-                    
+
                     // Check if it's a video file
                     const isVideo = f.path && (f.path.includes('.mov') || f.path.includes('.mp4') || f.path.includes('.webm'));
-                    
+
                     if (isVideo) {
                         const playBtn = document.createElement('button');
                         playBtn.className = 'btn';
@@ -278,13 +278,13 @@
                         }
                         actionCell.appendChild(link);
                     }
-                    
+
                     row.appendChild(nameCell);
                     row.appendChild(updatedCell);
                     row.appendChild(actionCell);
                     tbody.appendChild(row);
                 });
-                
+
                 table.appendChild(tbody);
                 categoryDiv.appendChild(table);
                 el.appendChild(categoryDiv);
@@ -309,7 +309,7 @@
 
     function overrideRenderGallery() {
         const originalRenderGallery = window.renderGallery;
-        window.renderGallery = function(el, gallery) {
+        window.renderGallery = function (el, gallery) {
             if (el && el.hasAttribute('data-stills')) {
                 // Store stills data for lightbox
                 window.__summerStillsData = gallery;
@@ -327,15 +327,15 @@
         const preview = document.getElementById('stillsPreview');
         const full = document.getElementById('stillsFull');
         const expandBtn = document.getElementById('expandStills');
-        
+
         if (!stillsContainer || !preview || !full) return;
-        
+
         const gallery = stillsContainer.querySelector('.gallery');
         if (!gallery) return;
-        
+
         const items = Array.from(gallery.children);
         if (items.length === 0) return;
-        
+
         const previewItems = items.slice(0, 4);
         const fullItems = items.slice(4);
 
@@ -349,7 +349,7 @@
             });
             preview.innerHTML = '';
             preview.appendChild(previewGallery);
-            
+
             // Re-attach click handlers
             previewGallery.querySelectorAll('.gallery-item').forEach((item, idx) => {
                 item.addEventListener('click', () => {
@@ -371,7 +371,7 @@
             });
             full.innerHTML = '';
             full.appendChild(fullGallery);
-            
+
             // Re-attach click handlers
             fullGallery.querySelectorAll('.gallery-item').forEach((item, idx) => {
                 item.addEventListener('click', () => {
@@ -400,14 +400,14 @@
         const expandBtn = document.getElementById('expandStills');
         const preview = document.getElementById('stillsPreview');
         const full = document.getElementById('stillsFull');
-        
+
         if (!expandBtn || !preview || !full) return;
 
         let isExpanded = false;
 
         expandBtn.addEventListener('click', () => {
             isExpanded = !isExpanded;
-            
+
             if (isExpanded) {
                 preview.style.display = 'none';
                 full.style.display = 'grid';
@@ -424,7 +424,7 @@
     function setupInspirationFilters() {
         const filterBtns = document.querySelectorAll('.filter-btn');
         const inspirationGallery = document.querySelector('.inspiration-gallery');
-        
+
         if (!filterBtns.length || !inspirationGallery) return;
 
         filterBtns.forEach(btn => {
@@ -441,7 +441,7 @@
 
     function filterInspirationGallery(filter) {
         const galleryItems = document.querySelectorAll('.inspiration-gallery .gallery-item');
-        
+
         galleryItems.forEach(item => {
             if (filter === 'all') {
                 item.style.display = '';
@@ -471,7 +471,7 @@
 
     function overrideRenderBookmarks() {
         const originalRenderBookmarks = window.renderBookmarks;
-        window.renderBookmarks = function(el, bookmarks) {
+        window.renderBookmarks = function (el, bookmarks) {
             if (!el) return;
             el.innerHTML = '';
             if (!bookmarks || !bookmarks.length) {
@@ -518,7 +518,7 @@
     }
 
     // Make closeBookmarkModal available globally
-    window.closeBookmarkModal = function() {
+    window.closeBookmarkModal = function () {
         const modal = document.getElementById('bookmarkModal');
         if (modal) {
             modal.classList.remove('active');

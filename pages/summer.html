@@ -18,21 +18,14 @@
             <div class="nav-content">
                 <a href="/" class="nav-brand">
                     <span style="font-size: 1.5rem;">←</span>
-                    <h2>Summer Film</h2>
+                    <h2>Summer Hub</h2>
                 </a>
-                <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">☰</button>
+                <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation"
+                    style="display: block;">☰</button>
                 <div class="nav-links" id="navLinks">
                     <a href="/pages/summer/overview.html" class="nav-link-item"><span>Overview</span></a>
-                    <a href="#story" class="nav-link-item"><span>Story</span></a>
-                    <a href="#script" class="nav-link-item"><span>Script</span></a>
-                    <a href="#sitemap" class="nav-link-item"><span>Sitemap</span></a>
                     <a href="/pages/summer/characters/index.html" class="nav-link-item"><span>Characters</span></a>
-                    <a href="#storyboard" class="nav-link-item"><span>Storyboard</span></a>
-                    <a href="#wardrobe" class="nav-link-item"><span>Wardrobe</span></a>
-                    <a href="#visuals" class="nav-link-item"><span>Visuals</span></a>
-                    <a href="#production" class="nav-link-item"><span>Production</span></a>
-                    <a href="#vault" class="nav-link-item"><span>Vault</span></a>
-                    <a href="#extras" class="nav-link-item"><span>Extras</span></a>
+                    <a href="/" class="nav-link-item"><span>Log Out</span></a>
                 </div>
             </div>
         </div>
@@ -50,36 +43,19 @@
 
             <!-- Bento Navigation -->
             <div class="bento-grid">
-                <a href="/pages/summer/overview.html" class="bento-item"
-                    style="background: linear-gradient(135deg, rgba(184, 134, 11, 0.12) 0%, rgba(13, 17, 23, 0.6) 100%);">
-                    <div class="bento-badge"
-                        style="background: rgba(184, 134, 11, 0.25); border-color: #b8860b; color: #b8860b;">Public
-                    </div>
+                <a href="/pages/summer/overview.html" class="bento-item">
                     <h3 class="bento-title">Overview</h3>
-                    <p class="bento-desc">Synopsis, what we need (locations &amp; props), contact. Share this link.</p>
+                    <p class="bento-desc">Synopsis, what we need (locations & props), contact.</p>
                 </a>
 
-                <a href="/pages/summer/bible-system/index.html" class="bento-item large bible">
-                    <div class="bento-badge"
-                        style="background: rgba(242, 204, 96, 0.2); border-color: var(--bible-gold); color: var(--bible-gold);">
-                        Essential</div>
-                    <div>
-                        <h3 class="bento-title">Production Bible</h3>
-                        <p class="bento-desc">The master document containing every detail of the world, characters, and
-                            lore. The core of the production.</p>
-                    </div>
+                <a href="/pages/summer/bible-system/index.html" class="bento-item">
+                    <h3 class="bento-title">Production Bible</h3>
+                    <p class="bento-desc">The master document containing every detail of the world and lore.</p>
                 </a>
 
-                <a href="/pages/summer/script-system/full_script.html" class="bento-item wide">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-end;">
-                        <div>
-                            <h3 class="bento-title">Full Script</h3>
-                            <p class="bento-desc">29 Scenes. Print-ready execution script.</p>
-                        </div>
-                        <span class="status-badge"
-                            style="background: rgba(88, 166, 255, 0.1); color: var(--accent); font-size: 0.6rem;">v2.4
-                            Locked</span>
-                    </div>
+                <a href="/pages/summer/script-system/full_script.html" class="bento-item">
+                    <h3 class="bento-title">Full Script</h3>
+                    <p class="bento-desc">29 Scenes. Locked v2.4 execution script.</p>
                 </a>
 
                 <a href="/pages/summer/production.html" class="bento-item">
@@ -92,10 +68,9 @@
                     <p class="bento-desc">Anamorphic Frame Selects.</p>
                 </a>
 
-                <a href="/pages/summer/table-read.html" class="bento-item wide"
-                    style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.1) 0%, rgba(13, 17, 23, 0.6) 100%);">
-                    <h3 class="bento-title">Table Read Center</h3>
-                    <p class="bento-desc">Cast resources, schedule, and rehearsal notes for the 2.22.26 session.</p>
+                <a href="/pages/summer/table-read.html" class="bento-item">
+                    <h3 class="bento-title">Table Read</h3>
+                    <p class="bento-desc">Cast resources and rehearsal notes.</p>
                 </a>
 
                 <a href="/pages/summer/characters/index.html" class="bento-item">
@@ -108,245 +83,31 @@
                     <p class="bento-desc">Continuity & Style.</p>
                 </a>
 
-                <a href="/pages/summer/inspiration/index.html" class="bento-item"
-                    style="background: linear-gradient(135deg, rgba(242, 204, 96, 0.1) 0%, rgba(13, 17, 23, 0.6) 100%);">
+                <a href="/pages/summer/inspiration/index.html" class="bento-item">
                     <h3 class="bento-title">Inspiration</h3>
-                    <p class="bento-desc">Organized mood boards & creature lore.</p>
+                    <p class="bento-desc">Mood boards & creature lore.</p>
                 </a>
             </div>
 
-            <div class="hero-actions" style="margin-top: 20px;">
+            <!-- <div class="hero-actions" style="margin-top: 20px;">
                 <a href="#vault" class="btn btn-secondary">Open Production Vault ↓</a>
-            </div>
+            </div> -->
         </div>
     </section>
 
-    <!-- STORY & INTENT -->
-    <section class="section section-anchor" id="story">
-        <h2>Story & Intent</h2>
-        <div class="story-content">
-            <p>Dallas relocates to Branford, Connecticut to start a bioacoustics job recording the marsh (birds,
-                insects, coyotes). After unpacking, he hears a low hum that his equipment can’t fully capture.</p>
-            <p>He meets his neighbor Dominic and is pulled into a church lunch, family dynamics, and the arrival of
-                Dominic’s sister Janice and her kids (Makayla and Asher). Mr. Mike fixates on the weather and scratches
-                coordinates (45 left, 15 right) before Dominic flips the table to stop him.</p>
-            <p>As a Nor’easter approaches, Dallas’s readings spike near the tall grass. He follows a signal into the
-                reeds and finds a small creature and a crystal. Bringing it home triggers a larger response: the hum
-                escalates, the house reacts, and predatory red eyes close in. The group attempts to protect the creature
-                and hold the perimeter as the storm hits.</p>
-
-            <aside class="dvd-box">
-                <div class="dvd-row">
-                    <div class="dvd-label">Tagline</div>
-                    <div class="dvd-value">The marsh answers.</div>
-                </div>
-                <div class="dvd-row">
-                    <div class="dvd-label">Back-of-box</div>
-                    <div class="dvd-value">
-                        Dallas moves to a coastal town to start a bioacoustics job recording the marsh. His equipment
-                        begins to pick up a hum that doesn’t match wind or weather. He follows it into the reeds and
-                        finds an injured creature and a crystal. As the storm arrives, the hum spreads through the
-                        neighborhood and something in the tall grass closes in.
-                    </div>
-                </div>
-                <div class="dvd-grid">
-                    <div class="dvd-row">
-                        <div class="dvd-label">Genre</div>
-                        <div class="dvd-value">Thriller / sci‑fi horror</div>
-                    </div>
-                    <div class="dvd-row">
-                        <div class="dvd-label">Setting</div>
-                        <div class="dvd-value">Branford, Connecticut — salt marshes — late summer — Nor’easter week
-                        </div>
-                    </div>
-                    <div class="dvd-row">
-                        <div class="dvd-label">Cast</div>
-                        <div class="dvd-value">Dallas, Dominic, Janice, Makayla, Asher, Mr. Mike, Pat Clendenen</div>
-                    </div>
-                    <div class="dvd-row">
-                        <div class="dvd-label">Keywords</div>
-                        <div class="dvd-value">frequency, perimeter, predators, light</div>
-                    </div>
-                </div>
-            </aside>
-        </div>
+    <!-- 
+    <section class="section section-anchor" id="resources">
+        ...
     </section>
 
-    <!-- SCRIPT -->
-    <section class="section section-anchor" id="script">
-        <h2>Script</h2>
-        <div class="production-card">
-            <p class="production-description">Scene gallery, full script (print-ready), table read, and director's
-                notes. Scene outline and script work tracker are in the Sitemap below.</p>
-            <a href="/pages/summer/table-read.html" class="btn btn-primary">Table Read (2.22.26) →</a>
-            <a href="/pages/summer/script-system/index.html" class="btn btn-primary">Scene Gallery →</a>
-            <a href="/pages/summer/script-system/full_script.html" class="btn btn-primary">Full Script →</a>
-            <a href="/pages/summer/directors-notes/index.html" class="btn btn-primary">Director's Notes →</a>
-        </div>
-    </section>
-
-    <!-- SITEMAP -->
-    <section class="section section-anchor" id="sitemap">
-        <h2>Sitemap / Quick Navigation</h2>
-        <div class="production-card">
-            <p class="production-description">Fast links to every Summer HTML page for script, notes, storyboard,
-                characters, and production.</p>
-            <h3>Core Hub Pages</h3>
-            <a href="/pages/summer/overview.html" class="btn btn-primary">Overview (public)</a>
-            <a href="/pages/summer/bible-system/index.html" class="btn btn-primary">Production Bible</a>
-            <a href="/pages/summer/production.html" class="btn btn-primary">Production</a>
-            <a href="/pages/summer/table-read.html" class="btn btn-primary">Table Read</a>
-            <a href="/pages/summer/wardrobe.html" class="btn btn-primary">Wardrobe</a>
-            <a href="/pages/summer/storyboard.html" class="btn btn-primary">Storyboard Hub</a>
-            <a href="/pages/summer/inspiration/index.html" class="btn btn-primary">Inspiration Gallery</a>
-        </div>
-
-        <div class="production-card">
-            <h3>Script System</h3>
-            <a href="/pages/summer/script-system/index.html" class="btn btn-primary">Scene Gallery</a>
-            <a href="/pages/summer/script-system/full_script.html" class="btn btn-primary">Full Script</a>
-            <a href="/pages/summer/script-system/scene_outline.html" class="btn btn-primary">Scene Outline</a>
-            <a href="/pages/summer/script-system/scene.html?id=arrival" class="btn btn-secondary">Single Scene View
-                (sample)</a>
-        </div>
-
-        <div class="production-card">
-            <h3>Director's Notes + Script Work</h3>
-            <a href="/pages/summer/directors-notes/index.html" class="btn btn-primary">Director's Notes Home</a>
-            <a href="/pages/summer/directors-notes/full_notes.html" class="btn btn-primary">Full Notes</a>
-            <a href="/pages/summer/directors-notes/script-work/index.html" class="btn btn-primary">Script Work
-                Tracker</a>
-            <a href="/pages/summer/directors-notes/note.html?type=script_additions" class="btn btn-secondary">Single
-                Note View (sample)</a>
-        </div>
-
-        <div class="production-card">
-            <h3>Storyboard System</h3>
-            <a href="/pages/summer/storyboard-system/index.html" class="btn btn-primary">Storyboard Gallery</a>
-            <a href="/pages/summer/storyboard-system/full_storyboard.html" class="btn btn-primary">Full Storyboard</a>
-            <a href="/pages/summer/storyboard-system/scene.html?id=arrival" class="btn btn-secondary">Single Storyboard
-                Scene (sample)</a>
-        </div>
-
-        <div class="production-card">
-            <h3>Characters</h3>
-            <a href="/pages/summer/characters/index.html" class="btn btn-primary">Character Index</a>
-            <a href="/pages/summer/characters/dallas.html" class="btn btn-secondary">Dallas</a>
-            <a href="/pages/summer/characters/dominic.html" class="btn btn-secondary">Dominic</a>
-            <a href="/pages/summer/characters/makayla.html" class="btn btn-secondary">Makayla</a>
-            <a href="/pages/summer/characters/asher.html" class="btn btn-secondary">Asher</a>
-            <a href="/pages/summer/characters/janice.html" class="btn btn-secondary">Janice</a>
-            <a href="/pages/summer/characters/mr-mike.html" class="btn btn-secondary">Mr. Mike</a>
-            <a href="/pages/summer/characters/howie.html" class="btn btn-secondary">Howie</a>
-        </div>
-    </section>
-
-    <!-- STORYBOARD -->
-    <section class="section section-anchor" id="storyboard">
-        <h2>Storyboard</h2>
-        <div class="production-card">
-            <p class="production-description">Anamorphic frames with captions and shot notes. <a
-                    href="/pages/summer/storyboard-system/full_storyboard.html">Open Storyboard →</a></p>
-        </div>
-    </section>
-
-    <!-- WARDROBE -->
-    <section class="section section-anchor" id="wardrobe">
-        <h2>Wardrobe</h2>
-        <div class="production-card">
-            <p class="production-description">Breakdown by scene and continuity checklist. <a
-                    href="/pages/summer/wardrobe.html">Open Wardrobe →</a></p>
-        </div>
-    </section>
-
-    <!-- VISUAL LANGUAGE -->
-    <section class="section section-anchor" id="visuals">
-        <h2>Visual Language</h2>
-
-        <!-- Look / Stills -->
-        <div class="visual-subsection">
-            <div class="subsection-header">
-                <h3>Look / Stills</h3>
-                <button class="btn-expand" id="expandStills" aria-label="View all stills">View all stills</button>
-            </div>
-            <div class="stills-preview" id="stillsPreview" data-stills></div>
-            <div class="stills-full" id="stillsFull" data-stills-full style="display: none;"></div>
-        </div>
-
-        <!-- Locations -->
-        <div class="visual-subsection">
-            <h3>Locations</h3>
-
-            <div class="location-group">
-                <h4>Scout Selects</h4>
-                <div class="location-gallery" data-gallery></div>
-            </div>
-
-            <div class="location-group">
-                <h4>Locked Locations</h4>
-                <div class="empty-state">
-                    <p>No locked locations yet.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Inspiration -->
-        <div class="visual-subsection">
-            <div class="subsection-header">
-                <h3>Inspiration</h3>
-                <button class="btn-expand" id="expandInspiration" aria-label="Open all inspiration">Open all
-                    inspiration</button>
-            </div>
-
-            <div class="inspiration-filters" id="inspirationFilters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="sea">Sea</button>
-                <button class="filter-btn" data-filter="antenna">Antenna</button>
-                <button class="filter-btn" data-filter="textures">Textures</button>
-                <button class="filter-btn" data-filter="palette">Palette</button>
-                <button class="filter-btn" data-filter="tech">Tech</button>
-            </div>
-
-            <details class="inspiration-accordion" id="inspirationAccordion">
-                <summary>View Inspiration Gallery</summary>
-                <div class="inspiration-gallery" data-inspiration></div>
-            </details>
-            <div
-                style="margin-top: 1rem; text-align: center; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-                <a href="/pages/summer/inspiration/index.html" class="btn-expand"
-                    style="text-decoration: none; display: inline-block; background: var(--accent); color: #fff;">Open
-                    Organized Inspiration Gallery →</a>
-                <a href="/pages/summer/gear-gallery.html" class="btn-expand"
-                    style="text-decoration: none; display: inline-block;">Explore DIY Gear & Techniques Gallery →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRODUCTION CENTER -->
-    <section class="section section-anchor" id="production">
-        <h2>Production Center</h2>
-        <div class="production-card">
-            <p class="production-description">Schedule, scene breakdown, deliverables. <a
-                    href="/pages/summer/production.html">Production →</a> <a href="/pages/summer/gear-gallery.html">DIY
-                    Gear Gallery →</a></p>
-        </div>
-    </section>
-
-    <!-- PRODUCTION VAULT -->
     <section class="section section-anchor" id="vault">
-        <h2>Production Vault</h2>
-        <div data-files></div>
+        ...
     </section>
 
-    <!-- EXTRAS -->
-    <section class="section section-anchor" id="extras">
-        <h2>Extras</h2>
-        <div class="production-card">
-            <p class="production-description">Raw markdown: <a
-                    href="/pages/summer/script-system/full_script.md">Script</a>, <a
-                    href="/pages/summer/storyboard-system/full_storyboard.md">Storyboard</a>.</p>
-        </div>
+    <section class="section">
+        ...
     </section>
+    -->
 
     <footer>
         <p>Barnacle Film Studio Company ©2025–2026</p>
