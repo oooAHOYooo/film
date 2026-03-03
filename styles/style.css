@@ -355,38 +355,58 @@ footer {
     color: white;
 }
 
+.gallery-modal-info {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--text-secondary);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
 .gallery-modal-prev,
 .gallery-modal-next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--glass-bg);
+    background: rgba(22, 27, 34, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid var(--glass-border);
     color: var(--text-primary);
     border-radius: 50%;
-    width: 44px;
-    height: 44px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 1.4rem;
-    transition: all 0.2s ease;
+    font-size: 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     user-select: none;
+    z-index: 10;
 }
 
 .gallery-modal-prev {
-    left: -56px;
+    left: 20px;
 }
 
 .gallery-modal-next {
-    right: -56px;
+    right: 20px;
 }
 
 .gallery-modal-prev:hover,
 .gallery-modal-next:hover {
     background: var(--accent);
+    border-color: var(--accent);
     color: white;
+    transform: translateY(-50%) scale(1.1);
 }
 
 .gallery-modal-prev:focus-visible,
@@ -394,6 +414,17 @@ footer {
 .gallery-modal-close:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+    .gallery-modal-prev,
+    .gallery-modal-next {
+        width: 44px;
+        height: 44px;
+        font-size: 1.4rem;
+    }
+    .gallery-modal-prev { left: 10px; }
+    .gallery-modal-next { right: 10px; }
 }
 
 /* Video Modal */
