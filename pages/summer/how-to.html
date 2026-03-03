@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>How To Build — Creatures in the Tall Grass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/summer.css">
+    <style>
+        .howto-page {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 100px var(--gap) 60px;
+        }
+
+        .howto-hero {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .howto-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin: 0 0 12px;
+        }
+
+        .howto-hero p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 620px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        .category-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .tab-btn {
+            padding: 7px 16px;
+            border-radius: 99px;
+            border: 1px solid rgba(88, 166, 255, 0.25);
+            background: rgba(88, 166, 255, 0.07);
+            color: var(--accent);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn:hover,
+        .tab-btn.active {
+            background: rgba(88, 166, 255, 0.2);
+            border-color: var(--accent);
+        }
+
+        .guides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 20px;
+        }
+
+        .guide-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .guide-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+        }
+
+        .guide-card[data-cat="creature"] {
+            border-color: rgba(63, 185, 80, 0.2);
+        }
+
+        .guide-card[data-cat="creature"]:hover {
+            border-color: #3fb950;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(63, 185, 80, 0.3);
+        }
+
+        .guide-card[data-cat="sfx"] {
+            border-color: rgba(248, 81, 73, 0.2);
+        }
+
+        .guide-card[data-cat="sfx"]:hover {
+            border-color: #f85149;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(248, 81, 73, 0.2);
+        }
+
+        .guide-card[data-cat="gear"] {
+            border-color: rgba(210, 153, 34, 0.2);
+        }
+
+        .guide-card[data-cat="gear"]:hover {
+            border-color: #e3b341;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(210, 153, 34, 0.2);
+        }
+
+        .guide-card[data-cat="camera"] {
+            border-color: rgba(88, 166, 255, 0.2);
+        }
+
+        .guide-card.hidden {
+            display: none;
+        }
+
+        .guide-header {
+            padding: 22px 22px 0;
+        }
+
+        .guide-cat-tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 99px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+
+        .cat-camera {
+            background: rgba(88, 166, 255, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+        }
+
+        .cat-creature {
+            background: rgba(63, 185, 80, 0.12);
+            color: #7ee787;
+            border: 1px solid rgba(63, 185, 80, 0.3);
+        }
+
+        .cat-sfx {
+            background: rgba(248, 81, 73, 0.12);
+            color: #ff7b72;
+            border: 1px solid rgba(248, 81, 73, 0.3);
+        }
+
+        .cat-gear {
+            background: rgba(210, 153, 34, 0.12);
+            color: #e3b341;
+            border: 1px solid rgba(210, 153, 34, 0.3);
+        }
+
+        .guide-title {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin: 0 0 6px;
+        }
+
+        .guide-tagline {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .guide-scenes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 12px 22px 0;
+        }
+
+        .scene-ref {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(240, 246, 252, 0.06);
+            border: 1px solid rgba(240, 246, 252, 0.1);
+            color: var(--text-secondary);
+        }
+
+        .guide-body {
+            padding: 14px 22px 22px;
+        }
+
+        .guide-body details {
+            margin-bottom: 12px;
+        }
+
+        .guide-body summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 10px 14px;
+            background: rgba(240, 246, 252, 0.04);
+            border: 1px solid rgba(240, 246, 252, 0.08);
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            user-select: none;
+            transition: all 0.2s ease;
+        }
+
+        .guide-body summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .guide-body summary::after {
+            content: '+';
+            float: right;
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        .guide-body details[open] summary::after {
+            content: '−';
+        }
+
+        .guide-body summary:hover {
+            background: rgba(88, 166, 255, 0.08);
+            border-color: rgba(88, 166, 255, 0.2);
+        }
+
+        .guide-content {
+            padding: 12px 14px 0;
+        }
+
+        .guide-content h4 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin: 14px 0 6px;
+        }
+
+        .guide-content h4:first-child {
+            margin-top: 0;
+        }
+
+        .guide-content ul {
+            margin: 0 0 8px 0;
+            padding-left: 18px;
+        }
+
+        .guide-content li {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 2px;
+        }
+
+        .guide-content p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin: 0 0 8px;
+        }
+
+        .guide-content .step {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            min-width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: rgba(88, 166, 255, 0.15);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+            color: var(--accent);
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .step p {
+            margin: 0;
+        }
+
+        .tip-box {
+            margin-top: 12px;
+            padding: 10px 14px;
+            border-radius: 8px;
+            background: rgba(210, 153, 34, 0.08);
+            border: 1px solid rgba(210, 153, 34, 0.2);
+            font-size: 0.85rem;
+            color: #e3b341;
+            line-height: 1.5;
+        }
+
+        .tip-box strong {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .back-bar {
+            text-align: center;
+            margin-top: 48px;
+        }
+
+        .back-bar a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-bar a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .howto-hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .guides-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <nav class="summer-nav" id="summerNav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="/pages/summer.html" class="nav-brand">
+                    <span style="font-size:1.5rem">←</span>
+                    <h2>Summer Hub</h2>
+                </a>
+                <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+                <div class="nav-links" id="navLinks">
+                    <a href="/pages/summer/overview.html" class="nav-link-item"><span>Overview</span></a>
+                    <a href="/pages/summer/characters/index.html" class="nav-link-item"><span>Characters</span></a>
+                    <a href="/pages/summer/how-to.html" class="nav-link-item active"><span>How To</span></a>
+                    <a href="/" class="nav-link-item"><span>Log Out</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="howto-page">
+
+        <div class="howto-hero">
+            <h1>🔧 How To Build It</h1>
+            <p>Practical build guides for every rig, creature, effect, and piece of gear needed for <em>Creatures in the
+                    Tall Grass</em> — pulled straight from the script.</p>
+        </div>
+
+        <div class="category-tabs">
+            <button class="tab-btn active" data-filter="all">All Guides</button>
+            <button class="tab-btn" data-filter="camera">📷 Camera Rigs</button>
+            <button class="tab-btn" data-filter="creature">🦎 Creature</button>
+            <button class="tab-btn" data-filter="sfx">💥 SFX</button>
+            <button class="tab-btn" data-filter="gear">⚙️ Gear &amp; Props</button>
+        </div>
+
+        <div class="guides-grid" id="guidesGrid">
+
+            <!-- PVC DOLLY -->
+            <div class="guide-card" data-cat="camera">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-camera">Camera Rig</span>
+                    <h2 class="guide-title">PVC Pipe Tripod Dolly</h2>
+                    <p class="guide-tagline">A rolling ground-level dolly for smooth tracking shots through the marsh
+                        grass and neighborhood streets.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scenes 5, 8, 10, 16, 26</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>6× ¾″ PVC pipe, each 24″ long (legs + crossbars)</li>
+                                <li>4× ¾″ PVC T-joints, 4× elbow joints</li>
+                                <li>4× inline skate wheels (70mm, 82A hardness)</li>
+                                <li>4× ¼-20 bolts + wing nuts (wheel-to-PVC mount)</li>
+                                <li>1× ¼-20 bolt center mount (fits standard tripod plate)</li>
+                                <li>PVC cement or compression fittings (for rigidity)</li>
+                                <li>2× 8-foot sections of track (smooth PVC or closet rod)</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Build Steps</summary>
+                        <div class="guide-content">
+                            <div class="step"><span class="step-num">1</span>
+                                <p>Build a rectangular frame with T-joints at corners: 24″ wide × 18″ long. Cement
+                                    joints.</p>
+                            </div>
+                            <div class="step"><span class="step-num">2</span>
+                                <p>Mount one skate wheel at each corner using a bolt through the PVC wall. Add wing nut
+                                    + washer so wheels are adjustable for track width.</p>
+                            </div>
+                            <div class="step"><span class="step-num">3</span>
+                                <p>Drill center hole in the frame top. Insert ¼-20 bolt with rubber washer. This is your
+                                    tripod thread mount.</p>
+                            </div>
+                            <div class="step"><span class="step-num">4</span>
+                                <p>Lay track rails parallel on the ground. For marsh shots, level with sandbags under
+                                    each end.</p>
+                            </div>
+                            <div class="step"><span class="step-num">5</span>
+                                <p>Set dolly on tracks, mount tripod head, attach camera. Use fishing line pulled from
+                                    off-frame for smooth manual pulls.</p>
+                            </div>
+                            <div class="tip-box"><strong>💡 Field Tip</strong>Tape a bungee cord between two stakes on
+                                either side of track for a tension-controlled bounce-free return pull.</div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- CREATURE PROP -->
+            <div class="guide-card" data-cat="creature">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-creature">Creature Build</span>
+                    <h2 class="guide-title">The Creature — Practical Puppet</h2>
+                    <p class="guide-tagline">The injured alien creature that breathes through its back, responds to
+                        touch with bioluminescent pulses, and reacts to the oscillator.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scenes 10, 12, 13, 14, 18</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>Foam latex or silicone foam (Dragon Skin FX-Pro or foam latex kit)</li>
+                                <li>Wire armature: 16-gauge aluminum art wire for spine + limbs</li>
+                                <li>Translucent resin for the crystal/skin patches</li>
+                                <li>EL wire (electroluminescent) or small LED strip for bioluminescence</li>
+                                <li>Small bellows or aquarium pump for breathing movement (back pulse)</li>
+                                <li>Acrylic paints, Pros-Aide adhesive, silicone pigments</li>
+                                <li>Mini servo motor for wing-flick reaction on touch</li>
+                                <li>AAA battery pack (hidden in body cavity)</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Build Steps</summary>
+                        <div class="guide-content">
+                            <div class="step"><span class="step-num">1</span>
+                                <p>Sculpt the body in clay (~14″ long). Keep spine broad for the "breathing back"
+                                    mechanism. Rough, segmented texture — not smooth.</p>
+                            </div>
+                            <div class="step"><span class="step-num">2</span>
+                                <p>Mold in plaster bandage. Pull foam latex or pour silicone into mold. Insert wire
+                                    armature before cure.</p>
+                            </div>
+                            <div class="step"><span class="step-num">3</span>
+                                <p>Install bellows of small aquarium air pump inside the back cavity. Run thin tubing to
+                                    a small silicone bladder just under the skin — this pumps the "breathing" effect.
+                                </p>
+                            </div>
+                            <div class="step"><span class="step-num">4</span>
+                                <p>Thread EL wire through translucent resin skin patches along the spine. Connect to a
+                                    PWM dimmer — operator controls pulse from off-screen.</p>
+                            </div>
+                            <div class="step"><span class="step-num">5</span>
+                                <p>Mount a small servo to the wing hinge point. Triggered via a hand-held momentary
+                                    switch: creature "reacts" when Makayla brushes it.</p>
+                            </div>
+                            <div class="step"><span class="step-num">6</span>
+                                <p>Paint in layers: base (ochre-grey), wash (burnt sienna), dry-brush highlights (mint
+                                    green on translucent patches).</p>
+                            </div>
+                            <div class="tip-box"><strong>💡 Script Note</strong>"It breathes through its back." Build
+                                the back with the most detail — it's the money shot in Scenes 13 and 18.</div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- PREDATOR SHADOW MONSTERS -->
+            <div class="guide-card" data-cat="creature">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-creature">Creature Build</span>
+                    <h2 class="guide-title">Shadow Predators — Bad Monsters</h2>
+                    <p class="guide-tagline">Dark figures that haunt from a distance in the tall grass. Designed for
+                        silhouette impact, not close inspection.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scenes 16, 24, 25, 26</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>Black 5mm EVA foam sheets (craft foam)</li>
+                                <li>¾″ PVC pipe or bamboo stakes for mounting rods</li>
+                                <li>Black stretch fabric (for soft body filler)</li>
+                                <li>Black cable ties, black duct tape</li>
+                                <li>Small fishing weights (to keep silhouettes upright in wind)</li>
+                                <li>Black matte spray paint</li>
+                                <li>Optional: flexible LED strips (red) for eye effect</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Build Steps</summary>
+                        <div class="guide-content">
+                            <div class="step"><span class="step-num">1</span>
+                                <p>Draw silhouette shapes on foam: tall, elongated, slightly inhuman proportions.
+                                    Irregular limb angles matter more than fine detail — these are backlit.</p>
+                            </div>
+                            <div class="step"><span class="step-num">2</span>
+                                <p>Cut two matching silhouette pieces. Sandwich a vertical PVC pipe between them. Glue
+                                    with contact cement, cable-tie at joints.</p>
+                            </div>
+                            <div class="step"><span class="step-num">3</span>
+                                <p>Spray entire figure flat black. Add a peel of stretch fabric over the form for a
+                                    slight organic texture.</p>
+                            </div>
+                            <div class="step"><span class="step-num">4</span>
+                                <p>Drive a bamboo stake into the ground and slide PVC mount over it. Position figures
+                                    15–20 feet into the grass for depth.</p>
+                            </div>
+                            <div class="step"><span class="step-num">5</span>
+                                <p>For "red eyes" (Scene 22): drill two 5mm holes in the head zone and back-light with
+                                    red LEDs on a 3V coin battery. Simple on/off switch in the operator's hand.</p>
+                            </div>
+                            <div class="tip-box"><strong>💡 Director Note</strong>Shoot these at the magic hour or with
+                                a strong backlight. Silhouette is everything. The less you reveal, the scarier.</div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- WIND / GRASS SFX -->
+            <div class="guide-card" data-cat="sfx">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-sfx">Practical SFX</span>
+                    <h2 class="guide-title">Wind &amp; Grass Direction Effect</h2>
+                    <p class="guide-tagline">Making tall grass sway against the wind — the script's central visual tell
+                        that something is wrong. Also for storm sequences.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scenes 16, 20, 26, 27</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials — Counter-Wind Sway</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>Monofilament fishing line (20lb, clear)</li>
+                                <li>2× tent stakes or PVC stakes (off-frame anchor points)</li>
+                                <li>Zip ties for bundling grass stems to line</li>
+                                <li>2× person crew (one each side of frame)</li>
+                                <li>Gas-powered leaf blower or box fan for baseline wind</li>
+                                <li>Optional: compressed-air rig (regulator + garden hose nozzle) for localized gusts
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Build Steps</summary>
+                        <div class="guide-content">
+                            <div class="step"><span class="step-num">1</span>
+                                <p>Identify the 6–10 key grass stems in the main camera line of sight. Tie a 4-foot
+                                    section of monofilament to each stem, mid-height.</p>
+                            </div>
+                            <div class="step"><span class="step-num">2</span>
+                                <p>Run lines off-frame toward two positions — one forward, one left or right. Tie each
+                                    cluster to an anchor stake or hold manually.</p>
+                            </div>
+                            <div class="step"><span class="step-num">3</span>
+                                <p>Turn on the leaf blower pointing natural wind direction (say, left to right). On
+                                    action, crew pulls monofilament from off-frame right — grass bends INTO the wind's
+                                    source direction.</p>
+                            </div>
+                            <div class="step"><span class="step-num">4</span>
+                                <p>Release slowly for an organic settle. Vary pull tension between cuts for
+                                    unpredictable movement.</p>
+                            </div>
+                            <div class="tip-box"><strong>💡 Quick Note</strong>For Storm sequences: layer a second leaf
+                                blower at high angle hitting the tops of the grass while low trees get compressed-air
+                                gusts. Gives depth of storm.</div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- BURN MARKS -->
+            <div class="guide-card" data-cat="sfx">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-sfx">Practical SFX</span>
+                    <h2 class="guide-title">Burn Mark Practical Effect</h2>
+                    <p class="guide-tagline">Jagged blackened burn patterns in the grass — like paint drips on green
+                        canvas — with a yellow-fluid trail from the creature's passage.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scenes 13, 15</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>Charcoal powder (crushed charcoal briquette)</li>
+                                <li>Spray bottle with black water-based paint (diluted 1:4)</li>
+                                <li>Neon yellow/amber acrylic paint (for "blood" trail)</li>
+                                <li>Paintbrushes and small sponges</li>
+                                <li>Stencil templates (cut from cardboard — drip / splatter shapes)</li>
+                                <li>Hair dryer (to dry paint before talent arrives)</li>
+                                <li>Wood-burning tool or propane torch (for real char on dead grass — fire safety
+                                    required)</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Build Steps</summary>
+                        <div class="guide-content">
+                            <div class="step"><span class="step-num">1</span>
+                                <p>Lay cardboard stencil (drip splash pattern) on ground. Spray black paint through it.
+                                    Build multiple splatter points — not a single circle.</p>
+                            </div>
+                            <div class="step"><span class="step-num">2</span>
+                                <p>Dust dry charcoal powder over wet paint while still damp. This adds texture and
+                                    depth.</p>
+                            </div>
+                            <div class="step"><span class="step-num">3</span>
+                                <p>With the wood burner (away from live grass), lightly scorch the tips of dead straw or
+                                    prop grass placed at the center for a real char smell and look.</p>
+                            </div>
+                            <div class="step"><span class="step-num">4</span>
+                                <p>Dip brush in diluted amber/yellow acrylic. Drip a trail of "yellow fluid" leading
+                                    FROM the burn mark toward Dallas's door — 4–6 foot trail, organic drip pattern.</p>
+                            </div>
+                            <div class="step"><span class="step-num">5</span>
+                                <p>Let fully dry. Walk the shot before talent arrives — check for continuity across
+                                    Scene 13 and 15.</p>
+                            </div>
+                            <div class="tip-box"><strong>💡 Tip</strong>If shooting on real grass: use the spray paint
+                                (water-based, will wash out) and charcoal only. No open flame on live turf.</div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- CRYSTAL PROP -->
+            <div class="guide-card" data-cat="gear">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-gear">Prop Build</span>
+                    <h2 class="guide-title">The Crystal — Practical Prop</h2>
+                    <p class="guide-tagline">A translucent crystal that creates static electricity when Makayla touches
+                        it and is the key to "flipping the phase" at the climax.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scenes 13, 20, 24, 26</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>Clear casting resin (Smooth-Cast 325 or equivalent)</li>
+                                <li>Silicone mold (pour around natural quartz crystal shape)</li>
+                                <li>Iridescent mica powder (pearl + violet tones)</li>
+                                <li>Small EL wire or fiber optic strands (for internal glow)</li>
+                                <li>Fine steel wool (for static spark effect on touch)</li>
+                                <li>Piezoelectric igniter (the kind from a BBQ lighter) — creates spark</li>
+                                <li>Thin copper foil tape (for conductive surface)</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Build Steps</summary>
+                        <div class="guide-content">
+                            <div class="step"><span class="step-num">1</span>
+                                <p>Make a silicone mold of the desired crystal shape (use natural rock crystal as
+                                    master, or sculpt in clay with angular facets).</p>
+                            </div>
+                            <div class="step"><span class="step-num">2</span>
+                                <p>Mix resin with iridescent mica powder. Pour first thin layer, let cure slightly.
+                                    Embed fiber optic strands or EL wire at the core before pouring the full mold.</p>
+                            </div>
+                            <div class="step"><span class="step-num">3</span>
+                                <p>Once fully cured, sand edges with 400-grit then 1000-grit to restore clarity. Apply a
+                                    layer of clear UV resin topcoat for wet-glass look.</p>
+                            </div>
+                            <div class="step"><span class="step-num">4</span>
+                                <p>For the "static electricity" scene: apply copper foil tape to the bottom face.
+                                    Connect to a piezo igniter via thin wire hidden up actor's sleeve or held off-frame.
+                                    Tap the igniter on cue for a spark crackle effect.</p>
+                            </div>
+                            <div class="tip-box"><strong>💡 Make multiples</strong>Cast 3–4 crystal copies. Have a hero
+                                prop for close-ups (with fiber optic/static effect) and stunt props for worn pockets and
+                                drops.</div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- OSCILLATOR RIG -->
+            <div class="guide-card" data-cat="gear">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-gear">Prop / Tech Rig</span>
+                    <h2 class="guide-title">Dallas's Oscillator Field Rig</h2>
+                    <p class="guide-tagline">Military-grade bioacoustics field recorder and oscilloscope combo. Dallas's
+                        primary tech tool throughout the film.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scenes 1, 13, 16, 22</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>Raspberry Pi + small TFT screen (for live waveform display prop)</li>
+                                <li>Old handheld radio or Zoom H5 field recorder (functional base)</li>
+                                <li>Aluminum project enclosure box (Hammond style)</li>
+                                <li>Toggle switches, VU meters, vintage-style knobs (salvage from old electronics)</li>
+                                <li>Olive drab / flat black spray paint + khaki dry-brush weathering</li>
+                                <li>Vinyl stickers (military-look labels: frequencies, serial numbers)</li>
+                                <li>Rubber gasket material around the screen bezel</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Build Steps</summary>
+                        <div class="guide-content">
+                            <div class="step"><span class="step-num">1</span>
+                                <p>Mount the Raspberry Pi + TFT inside the enclosure. Run a simple Python oscilloscope
+                                    script (free: "PyAudio + matplotlib" or use a pre-built audio visualizer) — screen
+                                    shows real waveforms from ambient mic.</p>
+                            </div>
+                            <div class="step"><span class="step-num">2</span>
+                                <p>Cut holes in the enclosure face for the screen, knobs, and toggle switches. Mount
+                                    real toggle switches and knobs — most don't need to do anything functional.</p>
+                            </div>
+                            <div class="step"><span class="step-num">3</span>
+                                <p>Spray box flat olive drab. Dry-brush with raw sienna for wear marks on edges and
+                                    around knobs. Add scratch marks with a hobby knife.</p>
+                            </div>
+                            <div class="step"><span class="step-num">4</span>
+                                <p>Print military-look label sheets on label paper: "FIELD OSCILLOSCOPE MIL-SPEC / UNIT
+                                    4471" with frequency ranges. Seal with matte varnish.</p>
+                            </div>
+                            <div class="tip-box"><strong>💡 Script Note</strong>The oscilloscope "beeps" in Scene 16.
+                                Pre-program a looping beep pattern triggered by a hidden footswitch for the actor.</div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- MAKESHIFT AQUARIUM -->
+            <div class="guide-card" data-cat="gear">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-gear">Prop Build</span>
+                    <h2 class="guide-title">Creature Triage Tank (Makeshift Aquarium)</h2>
+                    <p class="guide-tagline">Dallas's improvised creature habitat built inside his house — a glass tank
+                        with heat lamps and the creature inside. Must look cobbled together.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scenes 12, 13, 14, 18</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>10–20 gallon glass aquarium (thrift store)</li>
+                                <li>Hardware cloth or wire mesh lid (custom cut)</li>
+                                <li>2× heat lamp clamp fixtures + red incandescent bulbs</li>
+                                <li>Layer of moss, dried grass, and marsh mud for bedding</li>
+                                <li>Medical-looking tube + funnel (for "care" props)</li>
+                                <li>Electrical tape, zip ties, duct tape = all look improvised</li>
+                                <li>Dallas's "electronic lamp" — a high-CRI work light on a clamp arm</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details>
+                        <summary>Build Steps</summary>
+                        <div class="guide-content">
+                            <div class="step"><span class="step-num">1</span>
+                                <p>Fill tank bottom with 2″ mix of moss and dried marsh grass. Add a few smooth rocks
+                                    from real marsh. Keep it naturalistic but small-scale.</p>
+                            </div>
+                            <div class="step"><span class="step-num">2</span>
+                                <p>Cut wire mesh to size for lid. Attach two clamp heat lamps at opposite ends, angle
+                                    downward. Wrap any exposed wire runs in electrical tape to look improvised.</p>
+                            </div>
+                            <div class="step"><span class="step-num">3</span>
+                                <p>Place creature puppet inside on a bed of moss. Position heat lamps so they backlight
+                                    the creature's translucent patches (best for the bioluminescence EL wire effect).
+                                </p>
+                            </div>
+                            <div class="step"><span class="step-num">4</span>
+                                <p>Rig the work light on a clamp arm above — this is Dallas's "bright electronic lamp"
+                                    examination light in Scene 13. Use a high-CRI 5000K bulb so it shows detail on
+                                    camera.</p>
+                            </div>
+                            <div class="tip-box"><strong>💡 Tip</strong>Add a small aquarium air pump tube into the tank
+                                (hidden at back wall). The bubbling sound on set gives actors something real to react
+                                to.</div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <!-- FARADAY CAGE -->
+            <div class="guide-card" data-cat="gear">
+                <div class="guide-header">
+                    <span class="guide-cat-tag cat-gear">Prop / Gear Build</span>
+                    <h2 class="guide-title">Faraday Cage Gear Rigs</h2>
+                    <p class="guide-tagline">Crude copper-mesh lined vests, bag panels, and equipment wraps that Dallas
+                        and Makayla build in the hardware store. Functional-looking EMF protection.</p>
+                </div>
+                <div class="guide-scenes">
+                    <span class="scene-ref">Scene 20</span>
+                </div>
+                <div class="guide-body">
+                    <details open>
+                        <summary>Materials</summary>
+                        <div class="guide-content">
+                            <ul>
+                                <li>Copper mesh screen / copper insect screen (home supply store)</li>
+                                <li>Heavy-duty shears (to cut mesh on camera)</li>
+                                <li>Basic canvas vests or tactical gear (thrift)</li>
+                                <li>Soldering iron + 60/40 solder (functional props for scene)</li>
+                                <li>Alligator clip leads + grounding wire (visual prop dressing)</li>
+                                <li>Duct tape, cable ties (makeshift look)</li>
+                            </ul>
+                        </div>
+                </div>
+                <details>
+                    <summary>Build Steps</summary>
+                    <div class="guide-content">
+                        <div class="step"><span class="step-num">1</span>
+                            <p>Cut copper mesh into panels. Sew or staple to the inside of vests, bag flaps, and helmet
+                                lining. Visible edges add to the improvised feel.</p>
+                        </div>
+                        <div class="step"><span class="step-num">2</span>
+                            <p>Run grounding wires with alligator clips between garment and a length of bare copper wire
+                                at the hem — looks like it's trying to ground to earth.</p>
+                        </div>
+                        <div class="step"><span class="step-num">3</span>
+                            <p>For the on-camera cutting scene: have real copper mesh and real shears. Dallas cutting
+                                the mesh is the practical action. Let it happen for real.</p>
+                        </div>
+                        <div class="tip-box"><strong>💡 Script Note</strong>"Crude copper shielding." The goal is these
+                            look like they were built in 10 minutes — not finished props. Raw edges, exposed staples,
+                            tape showing.</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- INFRASOUND HUM SFX -->
+        <div class="guide-card" data-cat="sfx">
+            <div class="guide-header">
+                <span class="guide-cat-tag cat-sfx">Sound SFX</span>
+                <h2 class="guide-title">The Hum — Infrasound SFX Design</h2>
+                <p class="guide-tagline">The film's central sound design element. A low pulsing hum from the marsh that
+                    builds throughout. On-set production and post-production design notes.</p>
+            </div>
+            <div class="guide-scenes">
+                <span class="scene-ref">Scenes 1, 3, 9, 16, 24, 26</span>
+            </div>
+            <div class="guide-body">
+                <details open>
+                    <summary>On-Set Sound Cues</summary>
+                    <div class="guide-content">
+                        <h4>Playback Rig</h4>
+                        <ul>
+                            <li>Laptop + Ableton Live or Audacity running a 35–60 Hz sine wave loop</li>
+                            <li>Small subwoofer or bass shaker on set (for actor body feeling)</li>
+                            <li>Loop: 3-second pulse, 1-second silence, slightly irregular rhythm</li>
+                        </ul>
+                        <h4>Reference Frequency</h4>
+                        <ul>
+                            <li>115.3 MHz radio band — Makayla's locked frequency (reference in dialogue)</li>
+                            <li>On-set hum: 38 Hz base + 80 Hz harmonic</li>
+                            <li>Increase 6dB every 5 scenes as creature influence grows</li>
+                        </ul>
+                    </div>
+                </details>
+                <details>
+                    <summary>Post-Production Design</summary>
+                    <div class="guide-content">
+                        <div class="step"><span class="step-num">1</span>
+                            <p>Layer 3 elements: a pure 40Hz sub sine, a forest ambience loop with bass cut, and a
+                                reverse wind recording pitched down 1 octave.</p>
+                        </div>
+                        <div class="step"><span class="step-num">2</span>
+                            <p>Apply subtle amplitude modulation (tremolo at 0.3Hz) — this creates the "breathing"
+                                quality described in script.</p>
+                        </div>
+                        <div class="step"><span class="step-num">3</span>
+                            <p>For the lullaby that Makayla hears (Scene 13): pitch-shift a female vocal humming up a
+                                major third, then reverb for 8+ seconds tail. Play under the hum at -12dB.</p>
+                        </div>
+                        <div class="tip-box"><strong>💡 Free Tools</strong>Audacity (free) can generate all sine wave
+                            elements. FFMPEG for batch rendering. Use earbuds on mobile to monitor the frequency range
+                            on shoot days.</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- MAKAYLA'S VIEWFINDER -->
+        <div class="guide-card" data-cat="gear">
+            <div class="guide-header">
+                <span class="guide-cat-tag cat-gear">Prop Build</span>
+                <h2 class="guide-title">Makayla's Portable Viewfinder</h2>
+                <p class="guide-tagline">A monocular scientific viewfinder Makayla uses to inspect the creature. Needs
+                    to feel real, hand-built, and slightly alien in design.</p>
+            </div>
+            <div class="guide-scenes">
+                <span class="scene-ref">Scene 13</span>
+            </div>
+            <div class="guide-body">
+                <details>
+                    <summary>Materials &amp; Build</summary>
+                    <div class="guide-content">
+                        <ul>
+                            <li>Monocular or medical otoscope shell (thrift / online)</li>
+                            <li>Short length of PVC or abs pipe for extension grip</li>
+                            <li>Brass plumbing fittings as decorative lens rings</li>
+                            <li>Small lens from a magnifying glass (functional or dummy)</li>
+                            <li>Copper tape wrap + hand-painted brass finish paint</li>
+                            <li>Etched or laser-printed measurement markings on the barrel</li>
+                        </ul>
+                        <div class="step" style="margin-top:10px"><span class="step-num">1</span>
+                            <p>Strip any plastic housing from the monocular. Wrap barrel in copper tape. Band with brass
+                                fittings at the lens end.</p>
+                        </div>
+                        <div class="step"><span class="step-num">2</span>
+                            <p>Attach PVC handle, wrap in hemp twine or leather strip for grip texture. Paint metal
+                                parts with Rub'n Buff antique gold.</p>
+                        </div>
+                        <div class="step"><span class="step-num">3</span>
+                            <p>Engrave measurement marks (or print and Mod Podge on) with scientific units. Seal with
+                                matte varnish.</p>
+                        </div>
+                        <div class="tip-box"><strong>💡 Note</strong>This prop is held close to the eye — so it needs to
+                            feel real and be the right weight. A real monocular base is the best starting point.</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- TRAIL CAM RIG -->
+        <div class="guide-card" data-cat="camera">
+            <div class="guide-header">
+                <span class="guide-cat-tag cat-camera">Camera Rig</span>
+                <h2 class="guide-title">Makayla's Trailcam Stake Rig</h2>
+                <p class="guide-tagline">A makeshift recording device on a stick in the tall grass — the first prop
+                    Dallas finds in Scene 1. Found-footage aesthetic.</p>
+            </div>
+            <div class="guide-scenes">
+                <span class="scene-ref">Scene 1</span>
+            </div>
+            <div class="guide-body">
+                <details>
+                    <summary>Materials &amp; Build</summary>
+                    <div class="guide-content">
+                        <ul>
+                            <li>Cheap action cam or dummy shell (GoPro knockoff or dead cam)</li>
+                            <li>1″ PVC pipe, 3 feet long (staked into ground)</li>
+                            <li>Zip ties + waterproof tape for cam mounting</li>
+                            <li>Camo or flat tan spray paint</li>
+                            <li>Small wire microphone (dummy or real for ambient sound)</li>
+                            <li>4× Rubber bands / bungee cord for camo netting strips</li>
+                        </ul>
+                        <div class="step" style="margin-top:10px"><span class="step-num">1</span>
+                            <p>Paint PVC pipe and camera shell in flat earth tones. Wrap in strips of burlap or camo
+                                fabric strips.</p>
+                        </div>
+                        <div class="step"><span class="step-num">2</span>
+                            <p>Mount camera using heavy zip ties at the top of the pole. Angle slightly downward toward
+                                the grass base.</p>
+                        </div>
+                        <div class="step"><span class="step-num">3</span>
+                            <p>Drive pipe stake into the ground. Bend tall grass naturally in front of it — it should
+                                look like it's been there a season.</p>
+                        </div>
+                        <div class="tip-box"><strong>💡 Continuity</strong>It's Dallas who finds this in Scene 1 —
+                            Makayla says "Did you turn off my trap?" It should look like a kid built it. Not
+                            professional.</div>
+                    </div>
+                </details>
+            </div>
+        </div>
+
+    </div><!-- end guides-grid -->
+
+    <div class="back-bar">
+        <a href="/pages/summer.html">← Back to Summer Hub</a>
+    </div>
+
+    </div>
+
+    <script src="/scripts/summer.js"></script>
+    <script>
+        // Filter tabs
+        var tabs = document.querySelectorAll('.tab-btn');
+        var cards = document.querySelectorAll('.guide-card');
+        tabs.forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var filter = this.dataset.filter;
+                tabs.forEach(function (t) { t.classList.remove('active'); });
+                this.classList.add('active');
+                cards.forEach(function (c) {
+                    if (filter === 'all' || c.dataset.cat === filter) {
+                        c.classList.remove('hidden');
+                    } else {
+                        c.classList.add('hidden');
+                    }
+                });
+            });
+        });
+        // Scroll progress
+        window.addEventListener('scroll', function () {
+            var el = document.getElementById('scrollProgress');
+            var scrollTop = window.scrollY;
+            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            el.style.width = (scrollTop / docHeight * 100) + '%';
+        });
+    </script>
+</body>
+
+</html>
