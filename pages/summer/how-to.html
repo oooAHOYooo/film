@@ -14,6 +14,171 @@
             padding: 100px var(--gap) 60px;
         }
 
+        .howto-layout {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 32px;
+            align-items: start;
+        }
+
+        .howto-sidebar {
+            position: sticky;
+            top: 100px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .howto-sidebar h3 {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            margin: 0 0 12px 12px;
+        }
+
+        .howto-nav-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .howto-nav-list a {
+            display: block;
+            padding: 10px 14px;
+            border-radius: 12px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .howto-nav-list a:hover {
+            color: var(--text-primary);
+            background: rgba(88, 166, 255, 0.08);
+        }
+
+        .howto-nav-list a.active {
+            color: var(--accent);
+            background: rgba(88, 166, 255, 0.12);
+            border: 1px solid rgba(88, 166, 255, 0.25);
+        }
+
+        .howto-main {
+            min-width: 0;
+        }
+
+        .guide-card .inspo-section,
+        .guide-card .links-section,
+        .guide-card .purchase-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .guide-card .section-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin: 0 0 12px;
+            font-weight: 700;
+        }
+
+        .inspo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+        }
+
+        .inspo-grid-item {
+            aspect-ratio: 1;
+            background: rgba(240, 246, 252, 0.04);
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .inspo-grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .inspo-grid-item.placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .links-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .links-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(240, 246, 252, 0.06);
+            font-size: 0.9rem;
+        }
+
+        .links-list li:last-child {
+            border-bottom: none;
+        }
+
+        .links-list a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .links-list a:hover {
+            text-decoration: underline;
+        }
+
+        .purchase-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .purchase-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .purchase-list input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .purchase-list li.checked {
+            color: var(--text-secondary);
+            text-decoration: line-through;
+        }
+
+        @media (max-width: 900px) {
+            .howto-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .howto-sidebar {
+                position: static;
+            }
+        }
+
         .howto-hero {
             text-align: center;
             margin-bottom: 48px;
@@ -356,23 +521,42 @@
     <div class="howto-page">
 
         <div class="howto-hero">
-            <h1>🔧 How To Build It</h1>
+            <h1>How To Build It</h1>
             <p>Practical build guides for every rig, creature, effect, and piece of gear needed for <em>Creatures in the
                     Tall Grass</em> — pulled straight from the script.</p>
         </div>
 
         <div class="category-tabs">
             <button class="tab-btn active" data-filter="all">All Guides</button>
-            <button class="tab-btn" data-filter="camera">📷 Camera Rigs</button>
-            <button class="tab-btn" data-filter="creature">🦎 Creature</button>
-            <button class="tab-btn" data-filter="sfx">💥 SFX</button>
-            <button class="tab-btn" data-filter="gear">⚙️ Gear &amp; Props</button>
+            <button class="tab-btn" data-filter="camera">Camera Rigs</button>
+            <button class="tab-btn" data-filter="creature">Creature</button>
+            <button class="tab-btn" data-filter="sfx">SFX</button>
+            <button class="tab-btn" data-filter="gear">Gear &amp; Props</button>
         </div>
 
+        <div class="howto-layout">
+            <aside class="howto-sidebar">
+                <h3>Guides</h3>
+                <ul class="howto-nav-list">
+                    <li><a href="#guide-pvc-dolly">PVC Dolly</a></li>
+                    <li><a href="#guide-creature">The Creature</a></li>
+                    <li><a href="#guide-shadow-predators">Shadow Predators</a></li>
+                    <li><a href="#guide-wind-grass">Wind &amp; Grass</a></li>
+                    <li><a href="#guide-burn-marks">Burn Marks</a></li>
+                    <li><a href="#guide-crystal">The Crystal</a></li>
+                    <li><a href="#guide-oscillator">Oscillator Rig</a></li>
+                    <li><a href="#guide-triage-tank">Triage Tank</a></li>
+                    <li><a href="#guide-faraday">Faraday Cage</a></li>
+                    <li><a href="#guide-infrasound">Infrasound Hum</a></li>
+                    <li><a href="#guide-viewfinder">Viewfinder</a></li>
+                    <li><a href="#guide-trailcam">Trailcam Rig</a></li>
+                </ul>
+            </aside>
+            <div class="howto-main">
         <div class="guides-grid" id="guidesGrid">
 
             <!-- PVC DOLLY -->
-            <div class="guide-card" data-cat="camera">
+            <div class="guide-card" id="guide-pvc-dolly" data-cat="camera">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-camera">Camera Rig</span>
                     <h2 class="guide-title">PVC Pipe Tripod Dolly</h2>
@@ -424,11 +608,35 @@
                                 either side of track for a tension-controlled bounce-free return pull.</div>
                         </div>
                     </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> 6× ¾″ PVC pipe, 24″</label></li>
+                            <li><label><input type="checkbox"> 4× ¾″ PVC T-joints, 4× elbows</label></li>
+                            <li><label><input type="checkbox"> 4× inline skate wheels (70mm)</label></li>
+                            <li><label><input type="checkbox"> ¼-20 bolts + wing nuts</label></li>
+                            <li><label><input type="checkbox"> 2× 8-foot track sections</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- CREATURE PROP -->
-            <div class="guide-card" data-cat="creature">
+            <div class="guide-card" id="guide-creature" data-cat="creature">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-creature">Creature Build</span>
                     <h2 class="guide-title">The Creature — Practical Puppet</h2>
@@ -486,11 +694,35 @@
                                 the back with the most detail — it's the money shot in Scenes 13 and 18.</div>
                         </div>
                     </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Foam latex or Dragon Skin FX-Pro</label></li>
+                            <li><label><input type="checkbox"> 16-gauge aluminum art wire</label></li>
+                            <li><label><input type="checkbox"> Translucent resin, EL wire or LED strip</label></li>
+                            <li><label><input type="checkbox"> Bellows or aquarium pump</label></li>
+                            <li><label><input type="checkbox"> Mini servo, AAA battery pack</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- PREDATOR SHADOW MONSTERS -->
-            <div class="guide-card" data-cat="creature">
+            <div class="guide-card" id="guide-shadow-predators" data-cat="creature">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-creature">Creature Build</span>
                     <h2 class="guide-title">Shadow Predators — Bad Monsters</h2>
@@ -542,11 +774,33 @@
                                 a strong backlight. Silhouette is everything. The less you reveal, the scarier.</div>
                         </div>
                     </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Black 5mm EVA foam sheets</label></li>
+                            <li><label><input type="checkbox"> ¾″ PVC or bamboo stakes</label></li>
+                            <li><label><input type="checkbox"> Black stretch fabric, cable ties</label></li>
+                            <li><label><input type="checkbox"> Optional: red LED strips</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- WIND / GRASS SFX -->
-            <div class="guide-card" data-cat="sfx">
+            <div class="guide-card" id="guide-wind-grass" data-cat="sfx">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-sfx">Practical SFX</span>
                     <h2 class="guide-title">Wind &amp; Grass Direction Effect</h2>
@@ -596,11 +850,30 @@
                                 gusts. Gives depth of storm.</div>
                         </div>
                     </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Monofilament 20lb, tent stakes</label></li>
+                            <li><label><input type="checkbox"> Leaf blower or box fan</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- BURN MARKS -->
-            <div class="guide-card" data-cat="sfx">
+            <div class="guide-card" id="guide-burn-marks" data-cat="sfx">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-sfx">Practical SFX</span>
                     <h2 class="guide-title">Burn Mark Practical Effect</h2>
@@ -653,11 +926,31 @@
                                 (water-based, will wash out) and charcoal only. No open flame on live turf.</div>
                         </div>
                     </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Charcoal powder, spray bottle</label></li>
+                            <li><label><input type="checkbox"> Neon yellow/amber acrylic</label></li>
+                            <li><label><input type="checkbox"> Wood-burning tool (optional)</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- CRYSTAL PROP -->
-            <div class="guide-card" data-cat="gear">
+            <div class="guide-card" id="guide-crystal" data-cat="gear">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-gear">Prop Build</span>
                     <h2 class="guide-title">The Crystal — Practical Prop</h2>
@@ -707,11 +1000,32 @@
                                 drops.</div>
                         </div>
                     </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Clear casting resin, silicone mold</label></li>
+                            <li><label><input type="checkbox"> Iridescent mica, EL wire/fiber optic</label></li>
+                            <li><label><input type="checkbox"> Piezoelectric igniter, copper foil tape</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- OSCILLATOR RIG -->
-            <div class="guide-card" data-cat="gear">
+            <div class="guide-card" id="guide-oscillator" data-cat="gear">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-gear">Prop / Tech Rig</span>
                     <h2 class="guide-title">Dallas's Oscillator Field Rig</h2>
@@ -760,11 +1074,31 @@
                                 Pre-program a looping beep pattern triggered by a hidden footswitch for the actor.</div>
                         </div>
                     </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Raspberry Pi + TFT screen</label></li>
+                            <li><label><input type="checkbox"> Zoom H5 or handheld radio</label></li>
+                            <li><label><input type="checkbox"> Aluminum enclosure, toggles, knobs</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- MAKESHIFT AQUARIUM -->
-            <div class="guide-card" data-cat="gear">
+            <div class="guide-card" id="guide-triage-tank" data-cat="gear">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-gear">Prop Build</span>
                     <h2 class="guide-title">Creature Triage Tank (Makeshift Aquarium)</h2>
@@ -815,11 +1149,31 @@
                                 to.</div>
                         </div>
                     </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> 10–20 gal glass aquarium</label></li>
+                            <li><label><input type="checkbox"> Heat lamp fixtures + red bulbs</label></li>
+                            <li><label><input type="checkbox"> Moss, dried grass, mesh lid</label></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
             <!-- FARADAY CAGE -->
-            <div class="guide-card" data-cat="gear">
+            <div class="guide-card" id="guide-faraday" data-cat="gear">
                 <div class="guide-header">
                     <span class="guide-cat-tag cat-gear">Prop / Gear Build</span>
                     <h2 class="guide-title">Faraday Cage Gear Rigs</h2>
@@ -842,7 +1196,7 @@
                                 <li>Duct tape, cable ties (makeshift look)</li>
                             </ul>
                         </div>
-                </div>
+                    </details>
                 <details>
                     <summary>Build Steps</summary>
                     <div class="guide-content">
@@ -863,11 +1217,30 @@
                             tape showing.</div>
                     </div>
                 </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Copper mesh screen</label></li>
+                            <li><label><input type="checkbox"> Canvas vests, soldering iron</label></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
 
         <!-- INFRASOUND HUM SFX -->
-        <div class="guide-card" data-cat="sfx">
+        <div class="guide-card" id="guide-infrasound" data-cat="sfx">
             <div class="guide-header">
                 <span class="guide-cat-tag cat-sfx">Sound SFX</span>
                 <h2 class="guide-title">The Hum — Infrasound SFX Design</h2>
@@ -915,11 +1288,31 @@
                             on shoot days.</div>
                     </div>
                 </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Laptop + Ableton/Audacity</label></li>
+                            <li><label><input type="checkbox"> Subwoofer or bass shaker</label></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- MAKAYLA'S VIEWFINDER -->
-        <div class="guide-card" data-cat="gear">
+        <div class="guide-card" id="guide-viewfinder" data-cat="gear">
             <div class="guide-header">
                 <span class="guide-cat-tag cat-gear">Prop Build</span>
                 <h2 class="guide-title">Makayla's Portable Viewfinder</h2>
@@ -957,11 +1350,31 @@
                             feel real and be the right weight. A real monocular base is the best starting point.</div>
                     </div>
                 </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Monocular or otoscope shell</label></li>
+                            <li><label><input type="checkbox"> Brass fittings, copper tape</label></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- TRAIL CAM RIG -->
-        <div class="guide-card" data-cat="camera">
+        <div class="guide-card" id="guide-trailcam" data-cat="camera">
             <div class="guide-header">
                 <span class="guide-cat-tag cat-camera">Camera Rig</span>
                 <h2 class="guide-title">Makayla's Trailcam Stake Rig</h2>
@@ -1000,10 +1413,32 @@
                             professional.</div>
                     </div>
                 </details>
+                    <div class="inspo-section">
+                        <div class="section-label">Inspiration photos</div>
+                        <div class="inspo-grid">
+                            <div class="inspo-grid-item placeholder">Add photo</div>
+                        </div>
+                    </div>
+                    <div class="links-section">
+                        <div class="section-label">Links</div>
+                        <ul class="links-list">
+                            <li><a href="#">Add reference link</a></li>
+                        </ul>
+                    </div>
+                    <div class="purchase-section">
+                        <div class="section-label">Purchase list</div>
+                        <ul class="purchase-list">
+                            <li><label><input type="checkbox"> Action cam or dummy shell</label></li>
+                            <li><label><input type="checkbox"> 1″ PVC pipe 3 ft, zip ties</label></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
     </div><!-- end guides-grid -->
+            </div><!-- end howto-main -->
+        </div><!-- end howto-layout -->
 
     <div class="back-bar">
         <a href="/pages/summer.html">← Back to Summer Hub</a>
@@ -1036,7 +1471,22 @@
             var scrollTop = window.scrollY;
             var docHeight = document.documentElement.scrollHeight - window.innerHeight;
             el.style.width = (scrollTop / docHeight * 100) + '%';
+            // Sidebar active state
+            var cards = document.querySelectorAll('.guide-card');
+            var navLinks = document.querySelectorAll('.howto-nav-list a');
+            var top = scrollTop + 120;
+            for (var i = cards.length - 1; i >= 0; i--) {
+                if (cards[i].offsetTop <= top) {
+                    navLinks.forEach(function (l) { l.classList.remove('active'); });
+                    var id = cards[i].id;
+                    var link = document.querySelector('.howto-nav-list a[href="#' + id + '"]');
+                    if (link) link.classList.add('active');
+                    break;
+                }
+            }
         });
+        // Set active on load
+        document.querySelector('.howto-nav-list a[href="#guide-pvc-dolly"]').classList.add('active');
     </script>
 </body>
 
