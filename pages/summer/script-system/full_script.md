@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/3/2026, 10:37:58 PM*
+*Compiled on 3/4/2026, 9:09:52 AM*
 
 ---
 
@@ -116,15 +116,12 @@ Makayla turns to Asher. He shakes his head no—still not looking up, finger mov
 MAKAYLA
 Okay then. Byeeee. 
 
-DALLAS
-Thank you sir. 
-
-
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
 (action)
 Makayla and Asher peddle their bikes away. Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
 
+Dallas looks down at a box of old equipment and stretches down to pick it up. 
 
 
 ---
@@ -145,20 +142,17 @@ INT. DALLAS NEW HOUSE - NIGHT
 
 Dallas struggles to fall asleep in his new home. He hears strange noises from outside. As he looks out the window he sees a flicker of a faint gold light. 
 
-Curious and wide awake - Dallas finishes unpacking boxes. The room is sparse, filled with moving supplies and a few pieces of furniture.
+Curious and wide awake - Dallas finishes unpacking boxes. The room is sparse, filled with a few pieces of furniture.
 
 He hears a noise from outside. Dallas pauses and peers through his living room window. 
 
-Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Lepidoptera by Sierra".
+Dallas looks back at a pile of unopened boxes in the middle of his living room. He hestitates but makes his way towards a box marked "Sierra".
 
-Dallas opens up the box to find sketches of buttleries - and other insects. 
+Dallas opens up the box to find sketches of butterflies - and other insects. As he turns the pages, the butterflies and the drawings turn more into creatures with wings.  Angels.  One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD." He flips through some of the pages, some showing sketches of the grass and a golden creature.Dallas closes it without looking and sets the stack aside.
 
+Dallas takes a sigh and closes the box. He opens up another box next to it and pulls out a heavy military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. 
 
-Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. 
-
-One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD 2004." He flips through some of the pages, some showing sketches of the grass and a golden creature.Dallas closes it without looking and sets the stack aside.
-
-In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones.
+In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and pair of retro ruby-red headphones.
 
 On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker.
 
