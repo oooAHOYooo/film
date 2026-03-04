@@ -18,10 +18,10 @@
   {
     "n": 3,
     "id": "the-hum",
-    "title": "The Hum",
+    "title": "Meet The Neighbors",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Walk to town with Dominic. Birds pointed at the marsh. Streetlight flickers. Fellowship invite."
+    "summary": "Dallas walks outside his house, towards the edge of the property. As he approaches the edge of his yard he watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the C battery…"
   },
   {
     "n": 4,
@@ -173,15 +173,15 @@
     "title": "Red Eyes",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "They find it in the gnarl. It's fading. Sierra's folder: if the Red-Eyes take them, it's all ghost stories. They'll return it."
+    "summary": "Dominic confronts Dallas about Sierra's folder. The Red-Eyes arrive at the edge of the property. The house is surrounded."
   },
   {
     "n": 23,
     "id": "creature-missing",
-    "title": "Night Fears",
+    "title": "Creature Missing",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Red eyes at the edge of the yard. The creature's gone."
+    "summary": "The Red-Eyes swarm the property. Makayla tests the oscillator against the burn marks, proving the phase canceler works. They are trapped and must fight."
   },
   {
     "n": 24,
@@ -189,7 +189,7 @@
     "title": "Marsh Confrontation",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "# Scene 24: The Burn Marks Dominic into his basement and looks at all of the gear that was previously on the creature. Dallas looks goes to look at the tall grass for a while. Out of breath Makayla and Asher come riding…"
+    "summary": "The golden creatures emerge at the edge of the yard. The Red-Eyes attack. Dallas rescues the tiny creature, forcing them to set the trap immediately."
   },
   {
     "n": 25,
@@ -197,7 +197,7 @@
     "title": "Predator Attack",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "First confrontation with Dark Creatures. Distinctive weird marks. They have to rescue the light."
+    "summary": "Intentionally compressed. The crew scrambles to wire the trap."
   },
   {
     "n": 26,
@@ -205,7 +205,7 @@
     "title": "The Perimeter",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Retreat with dread: 'They'll come for us.' Shadows at the edge trigger zap episodes. They hatch the plan."
+    "summary": "Intentionally compressed. Waiting for the strike."
   },
   {
     "n": 27,
@@ -213,7 +213,7 @@
     "title": "The Last Dinner",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "They set out with the plan. It's not an accident—the plan is pressure-tested by the storm."
+    "summary": "The climax. The storm hits, the power goes out, and the shadow creatures arrive. The phase-cancellation trap is tested. Dominic physically holds the line."
   },
   {
     "n": 28,
@@ -221,7 +221,7 @@
     "title": "Final Echoes",
     "act": 4,
     "actTitle": "Aftermath",
-    "summary": "Climax: Light vs Shadow logic. Clear swings on the battlefield. The reverse device flares."
+    "summary": "The calm after the storm. Everyone rests after the battle in the backyard."
   },
   {
     "n": 29,
