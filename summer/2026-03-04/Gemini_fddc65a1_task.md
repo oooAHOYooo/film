@@ -11,3 +11,8 @@
 - [x] Present the finalized scene-by-scene script review to the user.
 - [x] Integrate Dominic's character moment into the Session 27 climax scene.
 - [x] Analyze and correct the narrative flow from the creature's escape (Scene 21) to the climax (Scene 27).
+- [x] Review the fully updated script and compile a new Act-by-Act plot point summary.
+- [x] Perform a new scene-by-scene review highlighting what works and what doesn't in the current draft.
+- [x] Integrate burn-mark infection and Red-Eye breach mechanics into Act III.
+- [x] Update Mr. Mike's resolution in Act IV.
+- [x] Update `updated_act_and_scene_review.md` to reflect new climax details and Mr. Mike's ending.

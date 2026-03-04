@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/4/2026, 11:40:25 AM*
+*Compiled on 3/4/2026, 12:15:39 PM*
 
 ---
 
@@ -1246,7 +1246,7 @@ INT. DALLAS DESK
 
 Dallas is alone. He keeps peering through his late wife's old documents. 
 
-On the desk is the recorder and all of the tapes next to it. 
+On the desk is the recorder and all of the tapes next to it.  Howie cries out in the distance. 
 
 INT. KITCHEN
 
@@ -1976,34 +1976,37 @@ Makayla clicks a "Master" switch on the device. A small, protective green light 
 
 INT. DALLAS BASEMENT
 
-Makayla stares for a long time looking at the creature. 
+Makayla stares for a long time at the creature. The jagged red lines on her portable viewfinder match the erratic, panicked breathing of the tiny golden animal. 
 
 MAKAYLA
 (to Dallas)
 I think it's dying. 
 
-<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
-
-(action)
-Dallas walks over and looks at the creature. He turns the dial on his receiver to a different frequency. The creature begins to perk up.
-
-MAKAYLA
-It told me that it needs to go back. 
+Dallas walks over and looks at the creature. He touches the photo of Sierra taped to his receiver. 
 
 DALLAS
-Back where?
+Sierra believed that some bio-acoustics weren't just communication. They were camouflage. A defense mechanism. 
 
-MAKAYLA 
-To where you grabbed it.
+Dallas gently turns the dial on his receiver to **115.3 MHz**. He dials the volume up just enough to create a soft, resonant hum in the basement. 
 
-<!-- scene: 18 file: s18.md nickname: entering-grass-2 -->
-
-(action)
-The summer breeze blows through the open window. 
+The creature's ears twitch. It stops its erratic whimpering. Slowly, it opens its mouth and emits a low, melodic tone, trying to match the frequency Dallas is broadcasting. As it sings, the golden glow in its neck grows stronger, pushing back the shadows in the room.
 
 MAKAYLA
-(to Dallas)
-We are going to have to go before the red eyes take it. And take us. 
+(amazed)
+It's mimicking the phase canceler. It’s trying to learn the frequency to hide from the Red-Eyes. 
+
+DALLAS
+It's too weak. It can't hold the tune. 
+
+MAKAYLA 
+If we keep broadcasting... maybe we can teach it. If it learns the frequency, it can return to the marsh and protect the others. 
+
+The summer breeze blows through the open basement window. 
+
+MAKAYLA (CONT'D)
+We have to teach it before the Red-Eyes take it. And take us.
+
+Upstairs, the heavy footsteps of Dominic and the first LifeGroup guests begin to echo through the ceiling.
 
 
 ---
@@ -2026,28 +2029,36 @@ Families arrive in waves. The small kitchen and smaller living room fill. The cr
 
 Makayla drifts through the kitchen. She opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word.
 
-INT. DALLAS'S KITCHEN - EVENING
+INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT
 
-Dallas brings the creature inside. 
+Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates.
 
-The creature begins to fade. Dallas gently places it in the makeshift bed he created the dial to a normal frequency. The creature settles. Sleeps.
+Downstairs, the volume of the 115.3 MHz frequency pulses rhythmically through the floorboards. The LifeGroup guests don't know what it is—they assume it's the storm outside. 
 
-HOWIE stays in the corner by the door, disturbed, waiting for his owner. Dallas tries to hide the creature. The moment it cries, the world outside echoes. The ugly hum answers from somewhere far away. The hum floods the town. Windows rattle. 
+INT. DALLAS BASEMENT - CONTINUOUS
 
-INT. DALLAS LIVING ROOM
+Dallas is sweating. He turns the dial up. 
 
-INT. DALLAS'S HALL - MOMENTS LATER
+DALLAS
+(whispering)
+Come on. Sing. 
 
-The first family for the life group: a young couple—JOSH and SARAH—with their newborn, JP. They introduce themselves to Dallas. He acts off. Distant. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. It's getting worse.
+The glowing creature in the shoebox mimics the tone, its golden light flaring brighter with each successful note. But the louder it sings, the harder the walls of the basement shake. 
+
+MAKAYLA
+The Red-Eyes can hear it practicing! It's drawing them here!
+
+HOWIE stays curled in the corner of the stairs, disturbed, whimpering. 
+
+INT. DALLAS LIVING ROOM - CONTINUOUS
+
+The first family for the life group: a young couple—JOSH and SARAH—with their newborn, JP. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. 
+
+The glass pane rattles violently. 
 
 MR. MIKE
 (to himself)
-This is all a farce. They should be out there. Return it.
-
-Josh and Sarah know to ignore him. They smile, make small talk. Mr. Mike keeps muttering, almost in frustration.
-
-MR. MIKE
-One-one-five point two. Hertz. Hertz.
+They are listening to the song. They don't like the song.
 
 MAKAYLA 
 We have brownies about to be ready.
@@ -2129,76 +2140,13 @@ Dominic rushes over to the kitchen and sees that the brownies tray is smashed on
 ---
 
 
-### Scene 20: Basement Huddle
-
-*ACT II — The Creature | ID: basement-huddle | File: s20.md*
-
----
-
-<!-- scene: 20 file: s20.md nickname: basement-huddle -->
-
-# Scene 20: Back in Branford
-<!-- summary: The town is falling apart. Dallas and Makayla scavenge for protection. The Faraday Cage plan. -->
-
-EXT. BRANFORD TOWN COMMONS - DAY
-
-The town is a ghost of itself. Streetlights flicker in broad daylight. A parked car’s alarm chirps rhythmically, then dies as its battery is sucked dry.
-
-Makayla and Dallas walk quickly toward a hardware store at the edge of the commons.
-
-MAKAYLA
-The grid is bleeding. 115.3 MHz. It’s not just the creature anymore—something else is pulling the power. Resonant inductive coupling on a massive scale.
-
-DALLAS
-(looking at his dead Gauss meter)
-The magnetic field is so localized it’s turning the marsh into a False North. We can’t navigate by compass.
-
-INT. HARDWARE STORE - CONTINUOUS
-
-The store is empty, the power out. Dallas moves to the back, grabbing rolls of copper mesh.
-
-DALLAS
-If we're going into that marsh, we need protection from the infrasound and the electrical bursts. 
-
-MAKAYLA
-(grabbing a soldering iron and wire)
-Faraday cages. If we line our gear with this copper mesh, we can ground the attacks. Redirect the energy before it hits our nerves.
-
-<!-- scene: 20 file: s20.md nickname: basement-huddle -->
-
-(action)
-Dallas starts cutting the mesh with heavy shears. Makayla watches him, a bit of the bravado fading.
-
-MAKAYLA
-You think it’s going to work? The "Anti-Wave"?
-
-DALLAS
-It has to. The crystal is the only thing that can flip the phase. Constructive resonance for the light, destructive for the shadow.
-
-<!-- scene: 20 file: s20.md nickname: basement-huddle -->
-
-(action)
-Outside, a transformer on a pole blows with a shower of blue sparks. The town goes completely dark. 
-
-MAKAYLA
-(quietly)
-We’re out of time. 
-
-EXT. BRANFORD TOWN COMMONS - CONTINUOUS
-
-They step out of the store, gear modified with crude copper shielding. They look toward the tall grass of the marsh, which is now swaying against the wind. 
-
-
----
-
-
-### Scene 21: The Hymn
+### Scene 20: The Hymn
 
 *ACT II — The Creature | ID: the-hymn | File: s21.md*
 
 ---
 
-<!-- scene: 21 file: s21.md nickname: the-hymn -->
+<!-- scene: 20 file: s21.md nickname: the-hymn -->
 
 <!-- nickname: the-hymn -->
 <!-- summary:  -->
@@ -2207,13 +2155,10 @@ INT. DALLAS'S BASEMENT - SAME TIME
 
 Dallas shuffles through a pile of old equipment—mono cables, spare parts. The creature doesn't look like it's doing much. It's breathing, slightly. Dallas struggles to find a bed for it. He settles on an old shoebox—pauses when he sees his wife's handwriting on one, sets that aside—and gently nestles the creature inside. Its little feet curl tightly. It breathes slowly.
 
-
 He finds a way to poke a hole in something so it can drink. MAKAYLA and ASHER watch from the staircase. Makayla comes down. She takes out the crystal. It begins to glow. Her hair lifts. She and the creature seem to communicate—a beat of shared attention. The creature's glow dims as she pulls her hand away.
 
 INT. DALLAS'S LIVING ROOM - LATER
-
 People mill and talk. Someone asks where Dallas is.
-
 
 DOMINIC
 We found a little cat. Dallas is downstairs nursing it.
@@ -2230,20 +2175,19 @@ An elderly woman nods. Everyone agrees. Someone asks how Howie is doing—where 
 
 He starts an opening ice breaker. Dallas, Dominic, Makayla, and Asher sit silent. 
 
-<!-- scene: 21 file: s21.md nickname: the-hymn -->
+<!-- scene: 20 file: s21.md nickname: the-hymn -->
 
 (action)
 SARAH, the vet, notices a physical reaction to her cup of tea - and watches it ripple in a strange way. 
 
-<!-- scene: 21 file: s21.md nickname: the-hymn -->
+<!-- scene: 20 file: s21.md nickname: the-hymn -->
 
 (action)
 Dominic closes the windows and blinds.
 
 DOMINIC
 Getting rough out there
-
-<!-- scene: 21 file: s21.md nickname: the-hymn -->
+<!-- scene: 20 file: s21.md nickname: the-hymn -->
 
 (action)
 TYLER, 32, a young man with a guitar, hands out music sheets.
@@ -2264,41 +2208,19 @@ Oh, calm down Mr. Mike, we are here now.
 TYLER
 Hello Mr. Mike - thank you for joining us!
 
+<!-- scene: 20 file: s21.md nickname: the-hymn -->
 
-
-
-
-
-<div class="script-addition">
-
-> addition
-
-
+(action)
 The overhead lights dim in time with the creature's harmonics—a slow pulse that matches the rhythm of the hymn. Sarah's tea ripples in her cup, concentric rings expanding outward in perfect time.
-
-
-</div>
-
-
 
 The hum starts to upset people as it becomes unbearable.
 
-Subtle at first. Then undeniable. The floorboards vibrate. 
+Subtle at first. Then undeniable. The floorboards vibrate. The lights pulse lower and lower. People look at each other.
 
-<div class="script-addition">
-
-> addition
-
-The lights pulse lower and lower. 
-
-</div>
-
-People look at each other.
-
-AMY
+SASHA
 What was that?
 
-<!-- scene: 21 file: s21.md nickname: the-hymn -->
+<!-- scene: 20 file: s21.md nickname: the-hymn -->
 
 (action)
 The group listen in silence.
@@ -2306,9 +2228,7 @@ The group listen in silence.
 PAT CLENDENEN
 Must be the wind. The boys in the office just texted me that the pressure's dropping fast.
 
-Dallas stares at the basement door. The sound isn't the wind. It's an answer.
-
-During a silent moment of reflection, the hum starts again. Everyone is unsettled. What was that noise? The group settles on the weird weather—the storm, the patterns plaguing Branford. 
+Dallas stares at the basement door. During a silent moment of reflection, the hum starts again. Everyone is unsettled. What was that noise? The group settles on the weird weather—the storm, the patterns plaguing Branford. 
 
 In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the last person to leave. 
 
@@ -2321,7 +2241,7 @@ INT. BASEMENT - CONTINUOUS
 
 Dominic descends the stairs, expecting a stray kitten. 
 
-Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. 
+Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small basement hopper window is busted open, rain blowing in from the outside.
 
 INT. DALLAS'S LIVING ROOM - CONTINUOUS
 
@@ -2332,20 +2252,26 @@ MAKAYLA
 Dallas! Where is it?
 
 DALLAS
-It's gone. 
+It's gone. The basement window is broke. 
 
 From the direction of the marsh—a cry. Distant, unmistakable. The creature. And then the hum answers it, vibrating up through the floorboards. 
+
+MAKAYLA
+It went back to the grass! But the Red-Eyes... they're still coming here.
+
+DALLAS
+We drew them here when we taught it to sing. They're surrounding the house. 
 
 Before Dallas can move, DOMINIC appears at the top of the basement stairs holding Sierra's folder of anatomical creature sketches. His face is pale. He looks at Dallas like he doesn't know him.
 
 DOMINIC
-Dallas... what is this? What the hell have you brought into this house?
+Dallas... what is this? 
 
-Dallas stares toward the window. Out at the tall grass swaying in the dark. 
+Dallas stares toward the window. Out at the tall grass swaying in the dark. The Red-Eyes are pulsing at the edge of the property.
 
 MAKAYLA
 (pointing)
-Uncle Dominic... we have to find it before the Red-Eyes do.
+Uncle Dominic... we have to get out there and find it before the Red-Eyes do.
 
 The storm outside breaks, rain lashing against the glass.
 
@@ -2353,13 +2279,13 @@ The storm outside breaks, rain lashing against the glass.
 ---
 
 
-### Scene 22: Red Eyes
+### Scene 21: Red Eyes
 
 *ACT II — The Creature | ID: red-eyes | File: s22.md*
 
 ---
 
-<!-- scene: 22 file: s22.md nickname: red-eyes -->
+<!-- scene: 21 file: s22.md nickname: red-eyes -->
 
 # Scene 22: The Secret is Out
 <!-- summary: Dominic confronts Dallas about Sierra's folder. The Red-Eyes arrive at the edge of the property. The house is surrounded. -->
@@ -2369,7 +2295,7 @@ INT. DALLAS'S LIVING ROOM - CONTINUOUS
 Dominic holds up Sierra's folder, his hands shaking slightly. The sketches of the golden creatures and the maps of the marsh are undeniable. Dallas steps forward and gently pulls the folder from his grip.
 
 DOMINIC
-I let my niece and nephew stay under this roof! I told everybody we had a cat! You’ve got military weapons down there. And files from 1978! Dallas, what is going on?!
+I told everybody we had a cat! You’ve got military weapons down there. And files from 1978! Dallas, what is going on?!
 
 MAKAYLA
 Uncle Dominic, listen—
@@ -2384,32 +2310,29 @@ They aren't ghost stories!
 Makayla points hard at the window. The rain is blinding now.
 
 MAKAYLA (CONT'D)
-They've been here since the seventies. Hiding out there, in the noise. And something else is hunting them. If those Red-Eyes take that creature tonight... this folder belongs in the trash. I'm not letting them become a myth again. 
+They've been here since the seventies. Hiding out there, in the noise. And something else is hunting them. If those Red-Eyes take that creature tonight... this folder belongs in the trash. 
 
-Dominic stares at her. She looks nothing like a kid. He looks at Dallas, pleading. 
+Dominic stares at her and then at Asher. 
 
 DOMINIC
-Dallas, tell her she’s crazy. Tell her we’re calling the cops and going home.
+Asher, tell your sister she’s crazy. 
 
 Suddenly, the lights in the house flicker. Not the rhythmic, gentle pulse from earlier—a hard, violent loss of power. The room plunges into pitch black. 
 
 EXT. DALLAS'S BACKYARD - NIGHT (SAME)
-
-Dallas kicks the porch door open, entirely ignoring Dominic. The wind whips his hair. Asher and Makayla follow close behind. Dominic cautiously steps out last, shivering.
-
-Dallas looks out the tall window toward the marsh. 
+Dallas kicks the porch door open, ignoring Dominic. The wind whips his hair. Asher and Makayla follow close behind. Dominic cautiously steps out last, shivering.
 
 In the distance: a pair of eyes. Bright. Dim. Bright. Red. He looks past the telephone pole. Something down the block glows red.
 
-He looks again. Closer. The eyes reappear. Swirling through the beating rain and the blades of grass. Watching the house. Little pulses of red light. Inch by inch. Closer to the edge of the yard.
+He looks again. Closer. The eyes reappear. Swirling through the beating rain and the tall grass. Watching the house. Little pulses of red light. Inch by inch. Closer to the edge of the yard.
 
-Black, twisting patterns—like rotten veins—begin creeping up the driveway concrete. The rain hits them and hisses into steam. 
+Black, twisting patterns—like rotten veins—begin creeping up the driveway. The rain hits them and hisses into steam. 
 
 DOMINIC
 (barely a whisper)
 What is that? 
 
-Dallas's hands are white-knuckling the military receiver. The screen isn't just flashing red; it's screaming in static. 
+Dallas's hands are white-knuckling the military receiver. The screen is screaming in static. 
 
 DALLAS
 They're here.
@@ -2418,62 +2341,96 @@ They're here.
 ---
 
 
-### Scene 23: Creature Missing
+### Scene 22: Creature Missing
 
 *ACT II — The Creature | ID: creature-missing | File: s23.md*
 
 ---
 
-<!-- scene: 23 file: s23.md nickname: creature-missing -->
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
 
 # Scene 23: The Burn Marks
 <!-- summary: The Red-Eyes swarm the property. Makayla tests the oscillator against the burn marks, proving the phase canceler works. They are trapped and must fight. -->
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
-
 The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
 
-Makayla watches the thick black veins approach the bottom of the porch stairs. She does some frantic mental math. The hum from the tall grass is deafening. 
+Makayla stares at the black veins on the wood. She slowly rolls up her wet sleeve. 
+
+Beneath her skin, identical black, twisting veins pulse faintly along her forearm. 
+
+Dallas sees it. He rips back his own jacket sleeve. His wrist is covered in the same creeping rot. 
+
+He looks up at the towering shadows at the edge of the property. The hum from the tall grass is deafening. 
 
 MAKAYLA
 The battery on the portable speaker won't last long enough. But if we can reverse engineer the frequency... 
 
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
+
+(action)
 Makayla drops to her knees, ripping open Dallas's gear bag. She hauls out a portable speaker, slamming it onto the porch railing, aiming it directly at the creeping burn mark like a shotgun. She rips the wire with her teeth and bridges the crystal into the circuit. 
 
-DALLAS
-Wait, you're building a phase canceler?
+ASHER
+A phase canceler?
 
 MAKAYLA
 We have to try! Asher—the numbers! 
 
-Asher doesn't use his notebook. His hands fly over the oscillator dial with muscle memory. 1-1-5-3. 
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
 
+(action)
+Asher's hands fly over the oscillator dial with muscle memory. 1-1-5-3. 
+
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
+
+(action)
 Makayla hits the trigger. 
 
 A sound like thick glass cracking under pressure pierces the rain. A high-pitched, localized frequency beam hits the lawn. 
 
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
+
+(action)
 The grass at the edge of the yard sways rhythmically, completely freezing in place despite the gale-force wind. 
 
-Dallas, Makayla, and Dominic watch, stunned, as the "vein" burn mark physically recoils. It turns from a dark, hissing black—to a sickly brown—and back to a vibrant, natural green. The acoustic beam healed the earth.
+Dallas, Makayla, Asher and Dominic watch, stunned, as the "vein" burn mark physically recoils. It turns from a dark, hissing black—to a sickly brown—and back to a vibrant, natural green. The acoustic beam healed the earth.
 
 DOMINIC
 (breathless, eyes wide)
 You reversed it. 
 
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
+
+(action)
 Makayla looks back at the tree line. The red eyes are multiplying.
 
 MAKAYLA
 We can't run. They're surrounding the house. We have to set the trap here. Build the acoustic corridor on the lawn. 
 
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
+
+(action)
 Dallas nods, his jaw tight. He looks at Dominic. 
 
 DALLAS
 I'm going to need help moving the big speakers. 
 
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
+
+(action)
 Dominic looks at the fading burn mark on the grass. He looks at Asher, vibrating with anxiety in the cold. Finally, Dominic exhales sharply. 
 
 DOMINIC
 Show me where you want them.
+
+<!-- scene: 22 file: s23.md nickname: creature-missing -->
+
+(action)
+Makayla lifts the sparking portable speaker. She sweeps the invisible acoustic beam across the yard like a lighthouse beam. The sheer wall of Red-Eye shadows violently flinches, peeling back into the reeds and leaving a temporary, circular safe zone in the pouring rain. 
+
+MAKAYLA
+Move fast! The battery won't last!
 
 
 ---
@@ -2484,23 +2441,26 @@ Show me where you want them.
 ---
 
 
-### Scene 24: Marsh Confrontation
+### Scene 23: Marsh Confrontation
 
 *ACT III — The Return | ID: marsh-confrontation | File: s24.md*
 
 ---
 
-<!-- scene: 24 file: s24.md nickname: marsh-confrontation -->
+<!-- scene: 23 file: s24.md nickname: marsh-confrontation -->
 
 # Scene 24: The Elders
 <!-- summary: The golden creatures emerge at the edge of the yard. The Red-Eyes attack. Dallas rescues the tiny creature, forcing them to set the trap immediately. -->
 
 EXT. EDGE OF THE TALL GRASS - CONTINUOUS
 
-While Dallas and Dominic struggle to drag the heavy, military-grade speakers through the thick mud, Makayla and Asher stand near the tree line as tense lookouts. 
+While Dallas and Dominic struggle to drag the heavy, military-grade speakers through the thick mud of the temporary safe zone, Makayla sweeps the portable speaker back and forth, holding the towering wall of Red-Eyes at bay. Asher stands beside her as a tense lookout. 
 
-Suddenly, a flickering, faint glow bleeds softly through the reeds. Just a few feet away. 
+Suddenly, a flickering, faint glow bleeds softly through the reeds. Just a few feet away, outside of their protective acoustic ring.
 
+<!-- scene: 23 file: s24.md nickname: marsh-confrontation -->
+
+(action)
 Makayla pushes blindly through the wet grass. 
 
 There, in a geometric ring of perfectly flattened stalks, is the tiny creature from the shoebox. Its pulse is slowing. The glow in its neck flickering like a dying bulb, dimming into a faint amber. 
@@ -2533,13 +2493,13 @@ Wire the sensor! We're out of time!
 ---
 
 
-### Scene 25: Predator Attack
+### Scene 24: Predator Attack
 
 *ACT III — The Return | ID: predator-attack | File: s25.md*
 
 ---
 
-<!-- scene: 25 file: s25.md nickname: predator-attack -->
+<!-- scene: 24 file: s25.md nickname: predator-attack -->
 
 # Scene 25: The Final Setup
 <!-- summary: Intentionally compressed. The crew scrambles to wire the trap. -->
@@ -2559,13 +2519,13 @@ The trap is set—not a wall to hide behind, but a kill zone explicitly designed
 ---
 
 
-### Scene 26: The Perimeter
+### Scene 25: The Perimeter
 
 *ACT III — The Return | ID: the-perimeter | File: s26.md*
 
 ---
 
-<!-- scene: 26 file: s26.md nickname: the-perimeter -->
+<!-- scene: 25 file: s26.md nickname: the-perimeter -->
 
 # Scene 26: Holding the Line
 <!-- summary: Intentionally compressed. Waiting for the strike. -->
@@ -2588,13 +2548,13 @@ The storm is here.
 ---
 
 
-### Scene 27: The Last Dinner
+### Scene 26: The Last Dinner
 
 *ACT III — The Return | ID: the-last-dinner | File: s27.md*
 
 ---
 
-<!-- scene: 27 file: s27.md nickname: the-last-dinner -->
+<!-- scene: 26 file: s27.md nickname: the-last-dinner -->
 
 # Scene 27: The Climax
 <!-- summary: The climax. The storm hits, the power goes out, and the shadow creatures arrive. The phase-cancellation trap is tested. Dominic physically holds the line. -->
@@ -2632,30 +2592,41 @@ Dallas grips the wooden railing hard enough to splinter it. He watches his milit
 
 DALLAS
 (to Makayla, eyes glued to screen)
-The frequency is spiking. Wait for them to hit the corridor. 
+The frequency is spiking. 
 
-The red eyes glide past the edge of the property line. The veins of burn marks stretching across the grass begin to hiss, turning pitch black. The shadows form into horrific, massive silhouettes, reaching out toward the house. 
+The red eyes glide past the edge of the property line. The veins of burn marks stretching across the grass begin to hiss, turning pitch black. 
+
+Suddenly, the front door of the house explodes inward. 
+
+A massive, formless shadow pours into the living room. The air freezes. The sound of the rain is instantly sucked out of the room, leaving a horrific, suffocating vacuum. 
+
+ASHER
+(screaming silently in the vacuum)
+
+The shadow creature reaches a massive, crawling tentacle across the living room floor directly toward the shoebox holding the golden creature. The black rot spreads across the hardwood instantly. 
+
+Dallas's arm burns with intense, agonizing pain as the rot under his skin reacts to the creature's proximity. 
 
 MAKAYLA
 Now! Dallas, hit it!
 
 Dallas slams the master switch on the oscillator. 
 
-A high-pitched, harmonic tone—**115.3 MHz**—blasts through the speakers. It isn’t just loud; it's physically concussive. 
+A high-pitched, harmonic tone—**115.3 MHz**—blasts through the speakers outside, projecting the acoustic wall directly *through* the open front door.
 
-The leading shadow creature stretches a massive, formless tentacle toward the yard. 
-
-It hits the empty air between the speakers. 
+It isn’t just loud; it's physically concussive. 
 
 **CRACK!**
 
-A brilliant flash of golden static erupts in mid-air. The shadow recoils violently, letting out a horrific gnashing shriek. It didn't hit a wall—it hit the acoustic kill zone. The opposing frequencies collide, creating a dome of sheer sonic force.
+A brilliant flash of golden static erupts inside the living room. The shadow recoils violently, letting out a horrific gnashing shriek as the frequency literally burns it. The opposing frequencies collide, creating a dome of sheer sonic force that acts like a snowplow.
+
+The acoustic wall pushes the massive shadow backward, dragging it out of the living room, across the porch, and back into the yard. 
 
 DOMINIC
 (covering his ears)
-It's an invisible wall! 
+It's pushing them out! 
 
-More shadows rush the perimeter, blind with rage. Snap! Crack! Flashes of golden electricity light up the backyard like a strobe light as each shadow hits the phase-cancellation trap and is violently repelled. The air smells heavily of ozone and burnt earth.
+More shadows rush the perimeter, blind with rage. Snap! Crack! Flashes of golden electricity light up the backyard like a strobe light as each shadow hits the phase-cancellation trap and is violently repelled. The air smells heavily of ozone and burnt wood.
 
 Asher watches, completely mesmerized. He taps his leg twice. It’s working.
 
@@ -2696,6 +2667,8 @@ The red eyes are gone. The shadows are gone.
 
 Only the gentle sway of the tall grass remains, illuminated by faint flashes of natural lightning. Between the two smoking speakers, the blackened burn marks on the grass are slowly, beautifully fading back to green. 
 
+Dallas looks down at his wrist. The black, rotting veins beneath his skin are gone. He looks over at Makayla. She is staring at her own forearm. Clean. The shockwave purged the contagion from the earth and from their blood. 
+
 Makayla lets out a massive, shuddering breath. Asher smiles. 
 
 DOMINIC
@@ -2715,13 +2688,13 @@ We tuned them out.
 ---
 
 
-### Scene 28: Final Echoes
+### Scene 27: Final Echoes
 
 *ACT IV — Aftermath | ID: final-echoes | File: s28.md*
 
 ---
 
-<!-- scene: 28 file: s28.md nickname: final-echoes -->
+<!-- scene: 27 file: s28.md nickname: final-echoes -->
 
 # Scene 28: The Morning After
 <!-- summary: The calm after the storm. Everyone rests after the battle in the backyard. -->
@@ -2744,13 +2717,13 @@ Thanks for letting everyone crash here Dallas.
 ---
 
 
-### Scene 29: Aftermath
+### Scene 28: Aftermath
 
 *ACT IV — Aftermath | ID: aftermath | File: s29.md*
 
 ---
 
-<!-- scene: 29 file: s29.md nickname: aftermath -->
+<!-- scene: 28 file: s29.md nickname: aftermath -->
 
 <!-- nickname: little aftermath -->
 
@@ -2775,6 +2748,12 @@ The Nor'easter's last-second shift—call it an unlikely miracle. Either way, a 
 EXT. CHURCH GROUNDS - DAY
 
 A church event. Picnic tables. Nica's catered lunch. DOMINIC and DALLAS greet each other. They don't talk much. They sit next to each other and eat. 
+
+MR. MIKE sits at the end of the table, peacefully eating a piece of cornbread. He looks out toward the edge of the woods and smiles softly. 
+
+MR. MIKE
+(to himself)
+Quiet now. The numbers are finally right. Javarice would have loved the quiet.
 
 In the distance: Makayla and some younger kids are crouched near the playground, watching something small. Makayla pulls a jar from her bag. A tiny caterpillar. She eases it inside. 
 

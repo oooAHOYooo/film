@@ -152,14 +152,6 @@
     "nickname": "life-group-arrives"
   },
   {
-    "id": "basement-huddle",
-    "file": "s20.md",
-    "title": "Basement Huddle",
-    "act": 2,
-    "actTitle": "The Creature",
-    "nickname": "basement-huddle"
-  },
-  {
     "id": "the-hymn",
     "file": "s21.md",
     "title": "The Hymn",

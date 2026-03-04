@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 3/4/2026, 11:40:26 AM*
+*Compiled on 3/4/2026, 12:15:39 PM*
 
 ---
 
@@ -224,25 +224,19 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 20: Basement Huddle
-
-*ID: basement-huddle*
-
-*No director's note for this scene.*
-
-#### Scene 21: The Hymn
+#### Scene 20: The Hymn
 
 *ID: the-hymn*
 
 *No director's note for this scene.*
 
-#### Scene 22: Red Eyes
+#### Scene 21: Red Eyes
 
 *ID: red-eyes*
 
 *No director's note for this scene.*
 
-#### Scene 23: Creature Missing
+#### Scene 22: Creature Missing
 
 *ID: creature-missing*
 
@@ -251,25 +245,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT III — The Return
 
-#### Scene 24: Marsh Confrontation
+#### Scene 23: Marsh Confrontation
 
 *ID: marsh-confrontation*
 
 *No director's note for this scene.*
 
-#### Scene 25: Predator Attack
+#### Scene 24: Predator Attack
 
 *ID: predator-attack*
 
 *No director's note for this scene.*
 
-#### Scene 26: The Perimeter
+#### Scene 25: The Perimeter
 
 *ID: the-perimeter*
 
 *No director's note for this scene.*
 
-#### Scene 27: The Last Dinner
+#### Scene 26: The Last Dinner
 
 *ID: the-last-dinner*
 
@@ -298,13 +292,13 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT IV — Aftermath
 
-#### Scene 28: Final Echoes
+#### Scene 27: Final Echoes
 
 *ID: final-echoes*
 
 *No director's note for this scene.*
 
-#### Scene 29: Aftermath
+#### Scene 28: Aftermath
 
 *ID: aftermath*
 

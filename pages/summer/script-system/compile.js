@@ -22,7 +22,6 @@ const PLOT_POINT_BY_FILE = {
   's12.md': [2],
   's13.md': [2],
   's19.md': [3],
-  's20.md': [3],
   's21.md': [3],
   's23.md': [4],
   's24.md': [5, 6],
