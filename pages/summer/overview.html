@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/static/css/table-read.css">
     <style>
         :root {
@@ -15,229 +17,562 @@
             --overview-navy: #1b263b;
             --overview-paper: #faf8f5;
             --overview-border: #d4c4a8;
+            --overview-accent: #7a8291;
         }
-        body { background: var(--overview-paper); }
-        .overview-page { max-width: 560px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+
+        body {
+            background: var(--overview-paper);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .overview-page {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2.5rem 1.25rem;
+        }
+
         /* DVD back-of-box card */
         .dvd-box {
             background: #fff;
             border: 2px solid var(--overview-border);
             border-radius: 2px;
-            padding: 2.25rem 2rem;
+            padding: 2.5rem 2.25rem;
             margin: 0 0 2rem;
-            box-shadow: 0 4px 20px rgba(27, 38, 59, 0.08), inset 0 1px 0 rgba(255,255,255,0.9);
+            box-shadow: 0 4px 24px rgba(27, 38, 59, 0.08);
             position: relative;
         }
+
         .dvd-box::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
             background: linear-gradient(90deg, var(--overview-gold) 0%, transparent 50%, var(--overview-gold) 100%);
-            border-radius: 2px 2px 0 0;
         }
+
         .dvd-badge {
             display: inline-block;
             font-size: 0.65rem;
-            font-weight: 600;
-            letter-spacing: 0.2em;
+            font-weight: 700;
+            letter-spacing: 0.25em;
             text-transform: uppercase;
             color: var(--overview-navy);
             margin-bottom: 0.75rem;
             opacity: 0.8;
         }
-        .dvd-box .dvd-title {
+
+        .dvd-title {
             font-family: 'Outfit', sans-serif;
-            font-size: 1.85rem;
+            font-size: 2.2rem;
             font-weight: 400;
             color: var(--overview-navy);
             letter-spacing: -0.02em;
-            line-height: 1.2;
+            line-height: 1.1;
             margin: 0 0 0.5rem;
         }
-        .dvd-box .dvd-tagline {
+
+        .dvd-tagline {
             font-family: 'Outfit', sans-serif;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 300;
             color: var(--overview-gold);
-            letter-spacing: 0.25em;
+            letter-spacing: 0.3em;
             text-transform: uppercase;
-            margin: 0 0 1.5rem;
-            padding-bottom: 1.25rem;
+            margin: 0 0 1.75rem;
+            padding-bottom: 1.5rem;
             border-bottom: 1px solid var(--overview-border);
         }
-        .dvd-box .dvd-synopsis-label {
-            font-size: 0.7rem;
+
+        .dvd-synopsis-label {
+            font-size: 0.75rem;
             font-weight: 600;
             letter-spacing: 0.15em;
             text-transform: uppercase;
             color: var(--overview-gold);
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.75rem;
         }
-        .dvd-box .dvd-synopsis {
-            font-size: 0.95rem;
-            line-height: 1.75;
+
+        .dvd-synopsis {
+            font-size: 1rem;
+            line-height: 1.8;
             color: var(--overview-navy);
-            margin: 0 0 1.5rem;
+            margin: 0 0 2rem;
             font-weight: 300;
         }
-        .dvd-box .dvd-meta {
+
+        .dvd-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem 1.25rem;
+            gap: 0.75rem 1.5rem;
             font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.1em;
             color: var(--overview-navy);
-            opacity: 0.85;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--overview-border);
         }
-        .dvd-box .dvd-meta span { color: var(--overview-gold); font-weight: 500; }
-        .dvd-box .dvd-meta .sep { color: var(--overview-border); user-select: none; }
-        /* Location callout */
-        .location-callout {
-            background: linear-gradient(135deg, rgba(184, 134, 11, 0.06) 0%, rgba(255,255,255,0.8) 100%);
+
+        .dvd-meta span {
+            color: var(--overview-gold);
+            font-weight: 600;
+        }
+
+        .dvd-meta .sep {
+            color: var(--overview-border);
+            opacity: 0.5;
+        }
+
+        /* Production Status Grid */
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .status-item {
+            background: #fff;
+            border: 1px solid var(--overview-border);
+            padding: 1rem;
+            border-radius: 2px;
+        }
+
+        .status-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--overview-gold);
+            margin-bottom: 0.25rem;
+            font-weight: 700;
+        }
+
+        .status-val {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--overview-navy);
+        }
+
+        .status-val span {
+            font-size: 0.8rem;
+            opacity: 0.6;
+            font-weight: 400;
+        }
+
+        /* Cast Section */
+        .personnel-section {
+            margin: 3rem 0;
+        }
+
+        .personnel-section h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            color: var(--overview-navy);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--overview-gold);
+            display: inline-block;
+            padding-right: 2rem;
+        }
+
+        .personnel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .person-card {
+            border-left: 3px solid var(--overview-border);
+            padding-left: 1rem;
+        }
+
+        .person-role {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: var(--overview-gold);
+            letter-spacing: 0.1em;
+            font-weight: 700;
+        }
+
+        .person-name {
+            font-size: 1.1rem;
+            color: var(--overview-navy);
+            font-weight: 500;
+        }
+
+        /* Callout */
+        .host-appeal {
+            background: var(--overview-navy);
+            color: #fff;
+            padding: 2rem;
+            border-radius: 2px;
+            margin: 2.5rem 0;
+        }
+
+        .host-appeal h2 {
+            color: var(--overview-gold);
+            margin-top: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .host-appeal p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .host-specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        .host-spec-item {
+            border-left: 2px solid var(--overview-gold);
+            padding-left: 0.75rem;
+        }
+
+        .registry-section {
+            margin-top: 3rem;
+        }
+
+        .registry-section h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            color: var(--overview-navy);
+            margin-bottom: 1rem;
+        }
+
+        .registry-section details {
+            margin-bottom: 0.5rem;
             border: 1px solid var(--overview-border);
             border-radius: 2px;
-            padding: 1rem 1.25rem;
-            font-size: 0.9rem;
-            color: var(--overview-navy);
-            margin-bottom: 2rem;
+            background: #fff;
         }
-        .location-callout strong { color: var(--overview-gold); }
-        .overview-footer { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--overview-border); font-size: 0.9rem; color: var(--text-secondary); }
-        .overview-footer a { color: var(--overview-gold); text-decoration: none; font-weight: 500; }
-        .overview-footer a:hover { text-decoration: underline; }
-        .goodies-section { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--overview-border); }
-        .goodies-section h2 { margin-bottom: 0.75rem; font-size: 1.1rem; color: var(--overview-navy); }
-        .goodies-section .password-form { display: flex; gap: 0.5rem; margin-bottom: 1rem; max-width: 20rem; }
-        .goodies-section .password-form input { flex: 1; padding: 0.5rem 0.75rem; border: 1px solid var(--overview-border); border-radius: 2px; font-size: 1rem; background: #fff; }
-        .goodies-section .password-form button { padding: 0.5rem 1rem; background: var(--overview-navy); color: #fff; border: none; border-radius: 2px; font-size: 0.9rem; cursor: pointer; white-space: nowrap; }
-        .goodies-section .password-form button:hover { background: #0f1729; }
-        .goodies-section .goodies-content { display: none; }
-        .goodies-section.unlocked .password-form { display: none; }
-        .goodies-section.unlocked .goodies-content { display: block; }
-        .goodies-section .goodies-list { list-style: none; padding: 0; margin: 0; }
-        .goodies-section .goodies-list li { padding: 0.4rem 0; border-bottom: 1px solid var(--border); }
-        .goodies-section .goodies-list li:last-child { border-bottom: none; }
-        .goodies-section .goodies-list a { color: var(--overview-navy); text-decoration: none; font-weight: 500; }
-        .goodies-section .goodies-list a:hover { color: var(--overview-gold); text-decoration: underline; }
-        .goodies-section .goodies-list .group-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--overview-gold); margin-top: 1rem; margin-bottom: 0.35rem; }
-        .goodies-section .goodies-list .group-label:first-child { margin-top: 0; }
-        .goodies-section .password-err { font-size: 0.85rem; color: #b91c1c; margin-top: 0.5rem; display: none; }
-        /* What we need — static list (you track checklist elsewhere) */
-        .registry-section { margin-top: 2rem; }
-        .registry-section h2 { font-size: 1.1rem; color: var(--overview-navy); margin-bottom: 0.5rem; }
-        .registry-section .registry-intro { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
-        .registry-section details { margin-bottom: 0.5rem; border: 1px solid var(--overview-border); border-radius: 2px; background: #fff; }
-        .registry-section details[open] { border-color: var(--overview-gold); }
-        .registry-section summary { padding: 0.75rem 1rem; font-weight: 500; color: var(--overview-navy); cursor: pointer; list-style: none; user-select: none; }
-        .registry-section summary::-webkit-details-marker { display: none; }
-        .registry-section summary::after { content: '+'; float: right; color: var(--overview-gold); font-size: 1.1rem; }
-        .registry-section details[open] summary::after { content: '−'; }
-        .registry-section .registry-list { padding: 0 1rem 1rem; margin: 0; list-style: none; }
-        .registry-section .registry-list li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; color: var(--overview-navy); }
-        .registry-section .registry-list li:last-child { border-bottom: none; }
-        @media print { .overview-page { padding: 1.5rem 0; } body { background: #fff; } .no-print { display: none !important; } .goodies-section .password-form { display: none !important; } .dvd-box { box-shadow: none; } .registry-section details { border: 1px solid #ccc; } .registry-section summary::after { display: none; } }
+
+        .registry-section summary {
+            padding: 1rem;
+            font-weight: 600;
+            color: var(--overview-navy);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .registry-section summary::after {
+            content: '+';
+            color: var(--overview-gold);
+            font-size: 1.2rem;
+        }
+
+        .registry-section details[open] summary::after {
+            content: '−';
+        }
+
+        .goodies-section {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: #fff;
+            border: 1px dashed var(--overview-border);
+        }
+
+        .goodies-section h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--overview-navy);
+        }
+
+        .overview-footer {
+            margin-top: 4rem;
+            text-align: center;
+            border-top: 1px solid var(--overview-border);
+            padding-top: 2rem;
+        }
+
+        .overview-footer a {
+            color: var(--overview-gold);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 480px) {
+
+            .status-grid,
+            .host-specs {
+                grid-template-columns: 1fr;
+            }
+
+            .dvd-box {
+                padding: 1.5rem;
+            }
+
+            .dvd-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        @media print {
+            .overview-page {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .no-print,
+            .goodies-section {
+                display: none !important;
+            }
+
+            .host-appeal {
+                border: 1px solid #000;
+                color: #000;
+                background: #fff;
+            }
+
+            .host-appeal h2 {
+                color: #000;
+            }
+        }
+
+        @media print {
+            .overview-page {
+                padding: 1.5rem 0;
+            }
+
+            body {
+                background: #fff;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .goodies-section .password-form {
+                display: none !important;
+            }
+
+            .dvd-box {
+                box-shadow: none;
+            }
+
+            .registry-section details {
+                border: 1px solid #ccc;
+            }
+
+            .registry-section summary::after {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="table-read-page overview-page">
-        <div class="dvd-box" aria-label="Film summary">
-            <p class="dvd-badge">Feature Film</p>
+    <div class="overview-page">
+        <div class="hero-image-container"
+            style="margin-bottom: 2rem; border: 2px solid var(--overview-border); padding: 2px; background: #fff;">
+            <img src="marsh_concept.png" alt="Creatures in the Tall Grass Concept Art"
+                style="width: 100%; height: auto; display: block; filter: sepia(0.2) contrast(1.1);">
+        </div>
+        <div class="dvd-box">
+            <p class="dvd-badge">Independently Funded / Pre-Production</p>
             <h1 class="dvd-title">Creatures in the Tall Grass</h1>
             <p class="dvd-tagline">The marsh answers.</p>
-            <p class="dvd-synopsis-label">Synopsis</p>
-            <p class="dvd-synopsis">A bioacoustics researcher moves to a coastal Connecticut town and picks up a signal from the marsh that doesn’t match wind or weather. He follows it into the reeds and finds an injured creature and a crystal. As the storm rolls in, the hum spreads through the neighborhood—and something in the tall grass closes in.</p>
+            <p class="dvd-synopsis-label">The Story</p>
+            <p class="dvd-synopsis">A bioacoustics researcher moves to a coastal Connecticut town for a fresh start,
+                only to pick up a signal from the marshes that shouldn’t exist. When he follows the sound into the
+                reeds, he discovers something injured—and something else that is hunting it. A grounded sci-fi thriller
+                about sound, solitude, and what we find when we finally stop to listen.</p>
+
             <div class="dvd-meta">
-                <span>~90 min</span><span class="sep">•</span>
-                <span>Thriller / Sci‑Fi</span><span class="sep">•</span>
+                <span>June 19 – July 12, 2026</span><span class="sep">•</span>
                 <span>Branford, CT</span><span class="sep">•</span>
-                <span>Summer 2026</span>
+                <span>90 min Feature</span><span class="sep">•</span>
+                <span>Anamorphic 6K</span>
             </div>
         </div>
 
-        <div class="location-callout">
-            <strong>Seeking locations.</strong> Primary needs:
-            <ol style="margin: 0.5rem 0 0 1.25rem; padding: 0;">
-                <li>House near tallgrass in Branford</li>
-                <li>Branford tallgrass / field</li>
-                <li>Dallas house (coastal neighborhood house)</li>
-            </ol>
-            If you’re open to a conversation, get in touch.
+        <div class="status-grid">
+            <div class="status-item">
+                <div class="status-label">Finance Status</div>
+                <div class="status-val">Fully Funded<span>• Greenlit</span></div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Script Status</div>
+                <div class="status-val">Locked (v2.4) <span>• 29 Scenes</span></div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Casting Status</div>
+                <div class="status-val">Key Roles Attached</div>
+            </div>
+            <div class="status-item">
+                <div class="status-label">Camera Package</div>
+                <div class="status-val">RED Komodo 6K / Anamorphic</div>
+            </div>
         </div>
 
-        <section class="registry-section" aria-label="What we need">
-            <h2>What we need</h2>
-            <p class="registry-intro">Locations and props we're looking for. If you can help with any of these, get in touch.</p>
-            <details class="registry-details" id="registryLocations">
-                <summary>Locations</summary>
-                <ul class="registry-list" id="registryLocationsList">
-                    <li>House near tallgrass in Branford</li>
-                    <li>Branford tallgrass / field</li>
-                    <li>Dallas house (coastal neighborhood house)</li>
-                    <li>Dominic's house (basement, kitchen, exterior)</li>
-                    <li>Church fellowship lawn / CPC (picnic)</li>
-                    <li>Hardware store (interior)</li>
-                    <li>Marsh trail / boardwalk</li>
-                    <li>Makayla's lair (woods by Sound / wigwam)</li>
+        <section class="personnel-section">
+            <h2>The Team</h2>
+            <div class="personnel-grid">
+                <div class="person-card">
+                    <div class="person-role">Dallas Demartini</div>
+                    <div class="person-name">Dallas Demartini</div>
+                </div>
+                <div class="person-card">
+                    <div class="person-role">Dominic Armaranto</div>
+                    <div class="person-name">Matt Grant</div>
+                </div>
+                <div class="person-card">
+                    <div class="person-role">Makayla Armaranto</div>
+                    <div class="person-name">Charollete</div>
+                </div>
+                <div class="person-card">
+                    <div class="person-role">Asher Armaranto</div>
+                    <div class="person-name">Mac Sheldon</div>
+                </div>
+                <div class="person-card">
+                    <div class="person-role">Janice Armaranto</div>
+                    <div class="person-name">Michelle Armaranto</div>
+                </div>
+                <div class="person-card">
+                    <div class="person-role">Mr. Mike</div>
+                    <div class="person-name">Mike</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="crew-collaboration-section" style="margin: 3rem 0;">
+            <h2
+                style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--overview-navy); margin-bottom: 1rem; border-bottom: 2px solid var(--overview-gold); display: inline-block; padding-right: 2rem;">
+                Crew & Collaboration</h2>
+            <p style="font-size: 0.95rem; line-height: 1.6; color: var(--overview-navy);">We are operating as a
+                professional LLC and are happy to facilitate <strong>college credit</strong> for students and interns.
+                We are prepared to sign all necessary university paperwork to support your academic and professional
+                development.</p>
+        </section>
+
+        <section class="host-appeal">
+            <h2>Partnering with Local Hosts</h2>
+            <p>We are a small, professional crew of local filmmakers dedicated to capturing the unique beauty of
+                Branford. As a <strong>fully self-funded and greenlit independent production</strong>, we have the
+                resources in place to ensure smooth, professional operations at every location.</p>
+            <div class="host-specs">
+                <div class="host-spec-item">
+                    <strong>Full Insurance</strong><br>General liability coverage for all locations.
+                </div>
+                <div class="host-spec-item">
+                    <strong>Small Footprint</strong><br>Crew of ~8–12 people total.
+                </div>
+                <div class="host-spec-item">
+                    <strong>Flexible Hours</strong><br>Working within neighbor-friendly windows.
+                </div>
+                <div class="host-spec-item">
+                    <strong>Professional Care</strong><br>Full protection for floors/walls on every set.
+                </div>
+            </div>
+        </section>
+
+        <section class="registry-section">
+            <h2>Primary Needs</h2>
+            <p style="font-size: 0.9rem; color: var(--overview-accent); margin-bottom: 1.5rem;">We are a
+                <strong>volunteer-led project</strong> currently scouting for the following locations and
+                period-appropriate materials.
+            </p>
+
+            <details>
+                <summary>Priority Locations</summary>
+                <ul class="registry-list" style="padding: 1rem; list-style: circle; margin-left: 1.5rem;">
+                    <li><strong>Coastal House:</strong> Ideally in Branford, near tallgrass/marsh.</li>
+                    <li><strong>The Marsh:</strong> Shoreline trail or private boardwalk access.</li>
+                    <li><strong>Basement/Exterior:</strong> Domestic neighborhood settings.</li>
                 </ul>
             </details>
-            <details class="registry-details" id="registryProps">
-                <summary>Props</summary>
-                <ul class="registry-list" id="registryPropsList">
-                    <li>Handheld oscilloscope / wave reader</li>
-                    <li>Field recorder (period-appropriate or military look)</li>
-                    <li>Sierra's box (folders, field notes, sketches)</li>
-                    <li>Heat lamp (creature triage)</li>
-                    <li>Crystal (practical creature prop)</li>
-                    <li>Military-style / vintage receiver</li>
-                    <li>CRT TV (kids' basement)</li>
-                    <li>Burn mark materials (practical effects)</li>
-                    <li>Minivan (Janice's vehicle)</li>
+
+            <details>
+                <summary>Production Assets</summary>
+                <ul class="registry-list" style="padding: 1rem; list-style: circle; margin-left: 1.5rem;">
+                    <li>Vintage bioacoustics / radio equipment.</li>
+                    <li>CRT Televisions & Period-appropriate furniture.</li>
+                    <li>Mini-van or older neighborhood vehicles.</li>
                 </ul>
             </details>
         </section>
 
-        <section class="goodies-section no-print" id="goodiesSection" aria-label="Full materials">
-            <h2>Full materials</h2>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Production Bible, full script, table read, storyboards, and more. Enter the password to view links.</p>
-            <form class="password-form" id="goodiesForm" autocomplete="off">
-                <input type="password" id="goodiesPassword" placeholder="Password" aria-label="Password">
-                <button type="submit">Unlock</button>
+        <section class="delivery-plan-section" style="margin: 3rem 0;">
+            <h2
+                style="font-family: 'Outfit', sans-serif; font-size: 1.4rem; color: var(--overview-navy); margin-bottom: 1rem; border-bottom: 2px solid var(--overview-gold); display: inline-block; padding-right: 2rem;">
+                The Delivery Plan</h2>
+            <p style="font-size: 0.95rem; line-height: 1.7; color: var(--overview-navy); margin-bottom: 1.5rem;">Our
+                goal is a <strong>Summer 2027 Wide Release</strong> across Southern New England. We are planning an
+                ambitious "Grassroots Theatrical Tour" involving:</p>
+            <ul style="padding-left: 1.5rem; font-size: 0.9rem; line-height: 1.6; color: var(--overview-navy);">
+                <li style="margin-bottom: 0.5rem;"><strong>Independent Theaters:</strong> Premieres in local cinema
+                    houses from CT to MA.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Community Hubs:</strong> Screenings in local coffee shops and
+                    cultural centers.</li>
+                <li style="margin-bottom: 0.5rem;"><strong>Summer Roadshow:</strong> A commitment to having at least one
+                    screening in a different New England town every night of the summer.</li>
+            </ul>
+        </section>
+
+        <section class="goodies-section no-print" id="goodiesSection">
+            <h2>Internal Production Hub</h2>
+            <p style="color: var(--overview-accent); font-size: 0.9rem; margin-bottom: 1.5rem;">Full access to the
+                Production Bible, storyboard selects, and technical specs is restricted to attached cast and crew.</p>
+            <form class="password-form" id="goodiesForm" style="display: flex; gap: 0.5rem; max-width: 300px;">
+                <input type="password" id="goodiesPassword" placeholder="Password"
+                    style="flex: 1; padding: 0.75rem; border: 1px solid var(--overview-border); border-radius: 2px;">
+                <button type="submit"
+                    style="padding: 0.75rem 1.25rem; background: var(--overview-navy); color: #fff; border: none; border-radius: 2px; cursor: pointer; font-weight: 600;">Unlock</button>
             </form>
-            <p class="password-err" id="goodiesErr" role="alert">Incorrect password.</p>
-            <div class="goodies-content" id="goodiesContent">
-                <ul class="goodies-list">
-                    <li class="group-label">Core</li>
-                    <li><a href="/pages/summer/bible-system/index.html">Production Bible</a></li>
-                    <li><a href="/pages/summer/bible-system/full_bible.html">Full Bible (all entries)</a></li>
-                    <li><a href="/pages/summer/script-system/full_script.html">Full Script</a></li>
-                    <li><a href="/pages/summer/script-system/index.html">Scene Gallery</a></li>
-                    <li><a href="/pages/summer/script-system/scene_outline.html">Scene Outline</a></li>
-                    <li><a href="/pages/summer/table-read.html">Table Read</a></li>
-                    <li><a href="/pages/summer/storybook.html">Treatment (Storybook)</a></li>
-                    <li><a href="/pages/summer/production.html">Production</a></li>
-                    <li class="group-label">Storyboard &amp; Art</li>
-                    <li><a href="/pages/summer/storyboard.html">Storyboard Hub</a></li>
-                    <li><a href="/pages/summer/storyboard-system/full_storyboard.html">Full Storyboard</a></li>
-                    <li><a href="/pages/summer/wardrobe.html">Wardrobe</a></li>
-                    <li class="group-label">Characters &amp; Notes</li>
-                    <li><a href="/pages/summer/characters/index.html">Character Index</a></li>
-                    <li><a href="/pages/summer/directors-notes/index.html">Director's Notes</a></li>
-                    <li><a href="/pages/summer/directors-notes/full_notes.html">Full Notes</a></li>
-                    <li><a href="/pages/summer/directors-notes/script-work/index.html">Script Work Tracker</a></li>
+            <p class="password-err" id="goodiesErr"
+                style="color: #b91c1c; font-size: 0.85rem; margin-top: 0.5rem; display: none;">Credential mismatch.</p>
+            <div class="goodies-content" id="goodiesContent" style="display: none; margin-top: 2rem;">
+                <ul class="goodies-list" style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 0.5rem;"><a href="/pages/summer/bible-system/index.html"
+                            style="color: var(--overview-navy); text-decoration: none; font-weight: 500;">→ Production
+                            Bible</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="/pages/summer/script-system/full_script.html"
+                            style="color: var(--overview-navy); text-decoration: none; font-weight: 500;">→ Script (v2.4
+                            Locked)</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="/pages/summer/storyboard.html"
+                            style="color: var(--overview-navy); text-decoration: none; font-weight: 500;">→ Storyboard
+                            selects</a></li>
+                    <li style="margin-bottom: 0.5rem;"><a href="/pages/summer/production.html"
+                            style="color: var(--overview-navy); text-decoration: none; font-weight: 500;">→ Production
+                            Logistics</a></li>
                 </ul>
             </div>
         </section>
 
-        <div class="overview-footer">
-            <p>Questions? <a href="mailto:alex@littlemarket.org">alex@littlemarket.org</a></p>
-            <p class="no-print" style="margin-top: 0.75rem;"><button type="button" onclick="window.print()" class="btn-toggle btn-print">Print / Save as PDF</button></p>
+        <div class="overview-footer"
+            style="background: #fff; padding: 3rem 2rem; border: 1px solid var(--overview-border); border-radius: 2px; position: relative; overflow: hidden;">
+            <div
+                style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--overview-gold);">
+            </div>
+            <h2
+                style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--overview-navy);">
+                Barnacle Films</h2>
+            <p
+                style="font-size: 0.95rem; line-height: 1.6; color: var(--overview-navy); max-width: 500px; margin: 0 auto 2rem;">
+                <em>Creatures in the Tall Grass</em> is the <strong>flagship feature film</strong> from Barnacle Films,
+                a studio founded in 2026 by filmmaker
+                <a href="https://alexgonzalez.ooo" target="_blank"
+                    style="color: var(--overview-gold); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--overview-gold);">Alex
+                    Gonzalez</a>
+                dedicated to regional stories with global imagination.
+            </p>
+            <div style="border-top: 1px solid var(--overview-border); padding-top: 2rem;">
+                <p
+                    style="font-size: 0.75rem; opacity: 0.5; margin-top: 2rem; letter-spacing: 0.1em; text-transform: uppercase;">
+                    Barnacle Film Studio Company ©2026</p>
+            </div>
         </div>
     </div>
     <script>
-        (function() {
+        (function () {
             var PASS = 'letsgobranford';
             var key = 'overview_goodies_unlocked';
             var section = document.getElementById('goodiesSection');
@@ -245,7 +580,7 @@
             var input = document.getElementById('goodiesPassword');
             var err = document.getElementById('goodiesErr');
             if (sessionStorage.getItem(key) === '1') section.classList.add('unlocked');
-            form.addEventListener('submit', function(e) {
+            form.addEventListener('submit', function (e) {
                 e.preventDefault();
                 err.style.display = 'none';
                 if (input.value.trim() === PASS) {
