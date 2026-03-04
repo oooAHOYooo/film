@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/3/2026, 2:55:42 PM*
+*Compiled on 3/3/2026, 10:34:48 PM*
 
 ---
 
@@ -156,7 +156,7 @@ Dallas opens up the box to find sketches of buttleries - and other insects.
 
 Dallas pulls out a heavy, a bunch of old vanilla folders, another military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. 
 
-One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD 2004." Dallas closes it without looking and sets the stack aside.
+One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD 2004." He flips through some of the pages, some showing sketches of the grass and a golden creature.Dallas closes it without looking and sets the stack aside.
 
 In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and old pair of retro red headphones.
 
@@ -244,13 +244,13 @@ DOMINIC
 What you know about Branford?
 
 DALLAS
-Basically nothing.
+Not much. 
 
 DOMINIC
 So what you doing around here?
 
 DALLAS
-Just here for work. 
+Work.
 
 DOMINIC
 What kind of work?
@@ -462,16 +462,45 @@ Thank you.
 (action)
 Dallas and Dominic sit in a circle of folded pull up chairs. 
 
-JANICE AMARANTO, Mid 50s, taps Dominic's shoulder.
+JANICE AMARANTO, Mid 50s, approaches the line holding a small dog in her arms. She taps Dominic's shoulder.
 
 DOMINIC
-Sister.
+(greeting the dog)
+Howie.
 
 JANICE
-Brother. 
+(greeting Dominic)
+Yeah - he's doing much better. He's been having little scares hasn't heeeee - the thunder - he doesn't like the thunder. Dominic did you get the brussel sprouts like I asked?
 
 DOMINIC
-(ignoring Janice)
+Got them. Should be good to go. 
+
+JANICE
+Thanks brother. Listen - did you give Mr Mike his mediciation - he has to take them now at 4:30pm - an hour or so before dinner. 
+
+DOMINIC
+Yes.
+
+JANICE
+What's wrong you with - who is this? 
+
+DOMINIC
+Dallas.
+
+<!-- scene: 04 file: s04.md nickname: fellowship -->
+
+(action)
+Dallas smiles and puts out his hand.
+
+JANICE
+Nice to meet you Dallas. Dominic hold Howie for a second I go to go make sure that I didn't lock the car. 
+
+<!-- scene: 04 file: s04.md nickname: fellowship -->
+
+(action)
+Janice abrutly leaves. 
+
+DOMINIC
 Dallas, these are my niece and nephew - Makayla and Asher.
 
 <!-- scene: 04 file: s04.md nickname: fellowship -->
@@ -520,16 +549,24 @@ They finish eating. The group begins to disperse.
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
 # Scene 5: The Merlin App
-<!-- summary: Boardwalk through the reeds. Dominic shows the Merlin app. Something moving underneath. -->
+<!-- summary: Boardwalk through the reeds. They hear birds andSomething moving in the marsh. -->
 
 EXT. MARSH TRAIL - LATER
-
-The sun is dipping. Dallas and Dominic walk along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
+The sun is dipping. Dallas and Dominic walk back home - along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
 
 Dominic and Dallas walk quietly for a while. Dominic looks out to the tall grass.
 
 DOMINIC
-The kids are always out here with their cameras.
+The kids are always out here planting down cameras. Makayla says that they are geotagging or something. I don't know. 
+
+<!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
+
+(action)
+The two hear a distant cry - that could be a bird. Dallas looks at Dominic.
+
+DOMINIC
+(to himself)
+Yeah.
 
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
@@ -537,8 +574,7 @@ The kids are always out here with their cameras.
 Dominic pulls out his phone, tapping an app.
 
 DOMINIC
-
-See this? Merlins. It listens to the chirps and tells you the species. Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
+Hey check this - It listens to the chirps and tells you the species. They got a lot of offspree here - Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
 
 DOMINIC
 Yeah - I wanted to be a writer but it never really worked out for me - so I am writing now - and going to tell a story of these marlins
@@ -561,14 +597,14 @@ DALLAS
 What do you mean?
 
 DOMINIC
-This whole existence - being alive - its so overwhelming and then boom you are gone. 
+This whole existence - being alive - its so overwhelming and then boom - you are gone. 
 
 DALLAS
 Yeah.
 
 DOMINIC
 (to himself)
-This whole thing.
+Boom - Gone. 
 
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
@@ -654,6 +690,8 @@ Listen, I got to get the furniture before Janice has her women's group tonight. 
 
 (action)
 Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. The burn marks are like black sands, not disimmilar to veins on the ground. 
+
+Dallas walks over to the burn marks and touches them. He looks at his skin and they have a weird mark on them. He takes a little leaf and puts it in his pocket. 
 
 DALLAS
 (hesitates)
@@ -791,9 +829,19 @@ It's a receiver. For work.
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Mr. Mike in the distance begins to get agitated
+Mr. Mike in the distance begins to get agitated. He rocks slowly in his rocking chair and taps his fingers. 
 
 MR. Mike
+They are being hunted. Javarice told me. They are being hunted.
+
+ASHER
+Who is Javerias?
+
+MR. Mike
+He was a good man. He told me things when I was little - things have since come true. 
+
+
+
 And when you hurt one - eventually they will transform into the other one - they wont stay kind forever. If the winds get them - they will take charge.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
@@ -1257,31 +1305,6 @@ Makayla kneels and touches it. Her hair begins to flutter, static electricity pu
 
 Makayla notices a trail leading from the edge of the grass toward Dallas.
 
-Janice beeps the car. Makayla and Asher lock eye contact with Dallas and begin to go further. Makayla walks over and talks to her mom.
-
-MAKAYLA
-Mom, I am going to stay here.
-
-JANICE
-What? Why - what do you have going on here.
-
-MAKAYLA
-There are these little burn marks by that.
-
-JANICE
-What? Makayla get in the car - someone needs to watch your brother.
-
-MAKAYLA
-He's fine. Where's Uncle Dom?
-
-JANICE
-He's with Mr. Mike's physical therapist. Makayla get in the car.
-
-<!-- scene: 13 file: s13.md nickname: entering-grass -->
-
-(action)
-Makayla slams the door and walks right at Dallas - and violently knocks his door. 
-
 EXT. DALLAS's HOUSE -  DOORWAY 
 Makayla stares at Dallas for a good while - and reads his eyes.
 
@@ -1445,7 +1468,7 @@ I'm sorry for your loss.
 Dallas looks at the ground.
 
 MAKAYLA
-Our mom died too.  Janice adopted us when we were little. Dominic is our dad's brother.... Our dad's gone too. 
+Our mom died too.  Janice was her sister, Dominic is her younger brother. We used to live with her - but now we stay with Uncle Dominic. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -2369,8 +2392,6 @@ That's fair. Dallas we'll go.
 (action)
 Dominic takes the last package of grocies back into his minivan.
 
-
-
 They work in silence—listening, adjusting, mapping the signal. Makayla pulls out Sierra's folder and cross-references a frequency notation with what's on screen. A match.
 
 
@@ -2578,13 +2599,13 @@ EXT. INSIDE THE TALLGRASS
 
 Dallas, Makayla, and Asher push through the reeds. The same glow they saw before—flickering, faint. They rush toward it. 
 
-Makayla and Dalls find the creature in the middle of the gnarl where Dallas found it initially.
+Makayla and Dalls find the creature in the middle of the a geometric pattern formation on the bottom grass layer - almost a ring. Asher runs towards the mark and stares dumfounded.
 
-The creature’s pulse is slowing. The glow in its neck dims into a faint amber. 
+Makayla ignoring Asher's daze walks forward. The creature’s pulse is slowing. The glow in its neck dims into a faint amber. 
 
-Dallas reaches out, his fingers trembling. As he touches the creature's back, the vibration softens. The creature quiets, its breathing lining up with the hum of his equipment.
+Makayla reaches out, her fingers trembling. As she touches the creature's back, the vibration softens. The creature quiets, its breathing lining up with the hum of his equipment.
 
-He notices the creature was lying on a second crystal, similar to the one Makayla found.
+She notices the creature was lying on a second crystal, similar to the one Makayla found.
 
 As Dallas lifts the fragile creature toward his chest, it looks out and cries for the crystal—in vain. It faints. The scope in his pocket goes silent.
 
@@ -2839,6 +2860,7 @@ EXT. CREEK BEND - DAY
 
 Dallas walks alone with his wife's receiver in hand. The place where the lawn becomes reed. The same bend from before. Dallas stops. He lifts the receiver. He tunes the dial. The hum rises, falls. He adjusts again. The dial clicks into place. He stands there. Recording. The tall grass does not move - and neither does Dallas. 
 
+In the Tall Grass Dallas senses the creature - and plays the pure recording of their hum - and realizes that it matches the exact cadence of Sierra's breathing. 
 
 ---
 
