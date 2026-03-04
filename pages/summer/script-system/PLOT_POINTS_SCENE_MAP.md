@@ -29,18 +29,18 @@ This is a copy of `pages/summer/summer-notes/plot/plot-points-scene-map.md` plac
 
 - **1. Dallas finds the creature** → **s08** `s08.md`
 - **2. Makayla discovers Dallas has it** → **s13** `s13.md` (with **s12** folded into it)
-- **3. Lifegroup meeting** → **s19–s21** (`s19.md`, `s20.md`, `s21.md`)
-- **4. Creature escapes** → **s23** `s23.md` (seed Red Eyes in **s22**)
-- **5. Creature dies in marsh** → **cold open at start of s24** `s24.md` (before the “we go in” decision)
-- **6. Makayla + Dallas go to find it** → **rest of s24** `s24.md`
-- **7. First confrontation w/ Dark creatures + weird marks** → **s25** `s25.md`
-- **8. Crew retreats; Dominic worries they’ll come** → **top of s26** `s26.md`
-- **9. Shadows at edge + Mr Mike/Asher “zap episodes”** → **mid s26** `s26.md`
-- **10. Makayla + Dallas hatch the plan** → **end of s26** `s26.md`
-- **11. Makayla + Dallas set out with the plan** → **rewrite s27** `s27.md` (remove “impulsive bolt”; make it deliberate)
-- **12. Conflict (Light vs Shadow) — climax** → **s28** `s28.md`
+- **3. Lifegroup meeting** → **s19–s21** (`s18.md`, `s20.md`, `s19.md`)
+- **4. Creature escapes** → **s23** `s21.md` (seed Red Eyes in **s22**)
+- **5. Creature dies in marsh** → **cold open at start of s24** `s22.md` (before the “we go in” decision)
+- **6. Makayla + Dallas go to find it** → **rest of s24** `s22.md`
+- **7. First confrontation w/ Dark creatures + weird marks** → **s25** `s23.md`
+- **8. Crew retreats; Dominic worries they’ll come** → **top of s26** `s24.md`
+- **9. Shadows at edge + Mr Mike/Asher “zap episodes”** → **mid s26** `s24.md`
+- **10. Makayla + Dallas hatch the plan** → **end of s26** `s24.md`
+- **11. Makayla + Dallas set out with the plan** → **rewrite s27** `s25.md` (remove “impulsive bolt”; make it deliberate)
+- **12. Conflict (Light vs Shadow) — climax** → **s28** `s26.md`
 - **13. Resolution (unexpected); loss opens path** → **s28 → s29 payoff**
-- **14. Aftermath; town back to normal** → **s29** `s29.md`
+- **14. Aftermath; town back to normal** → **s29** `s27.md`
 
 ---
 

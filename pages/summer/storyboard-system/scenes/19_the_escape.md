@@ -1,4 +1,4 @@
-## Scene 19: The Escape
+## Scene 18: The Escape
 - Setting: EXT. TALL GRASS / DRIVEWAY - CONTINUOUS
 - Beat: Dallas flees with the creature as the pursuit closes in.
 

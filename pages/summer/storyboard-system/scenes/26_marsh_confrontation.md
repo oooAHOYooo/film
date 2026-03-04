@@ -1,4 +1,4 @@
-## Scene 26: Marsh Confrontation
+## Scene 24: Marsh Confrontation
 - Setting: EXT. SALT MARSH - NIGHT
 - Beat: Dallas and Makayla find the creature among glowing elders.
 

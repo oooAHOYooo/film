@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass - Production Bible
 
-*Compiled on 3/4/2026, 5:39:48 PM*
+*Compiled on 3/4/2026, 6:39:35 PM*
 
 ---
 
@@ -1139,19 +1139,19 @@ This keeps the gallery focused on build references and techniques for the produc
 
 ---
 
-# Practical effect 17 — Makeshift Hospital
+# Practical effect 18 — Entering Grass (Makayla's Bond)
 
-**Script:** Scene 17 · [s17.md](../../../script-system/scenes/s17.md) · Makeshift Hospital
+**Script:** Scene 18 · [s17.md](../../../script-system/scenes/s17.md) · Entering Grass
 
 ## Locations
 
-- INT. DALLAS MUDROOM - NIGHT (DURING LIFEGROUP)
+- INT. DALLAS BASEMENT
 
 ## Practical effects
 
 **I. (add)**
-- e.g. LifeGroup singing offscreen, oscillator rig on Dallas, crystal humming, Makayla viewfinder (jagged red lines), "Master" switch green light.
-- *Approach:* build / buy / rig.
+- e.g. creature fading, dial change → creature perks up.
+- *Approach:* build / buy / rig / VFX.
 - *Status:* —
 
 ## Approach
@@ -1160,7 +1160,7 @@ This keeps the gallery focused on build references and techniques for the produc
 
 ## Notes
 
-- _Ten minutes before crystal inversion limit._
+- _"Red eyes take it. And take us."_
 
 
 ---
@@ -1168,13 +1168,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr18">PE 18 — Entering Grass</h2>
 
-*Category: Practical Effects | File: practical-effects/pr18.md*
+*Category: Practical Effects | File: practical-effects/pr17.md*
 
 ---
 
 # Practical effect 18 — Entering Grass (Makayla's Bond)
 
-**Script:** Scene 18 · [s18.md](../../../script-system/scenes/s18.md) · Entering Grass
+**Script:** Scene 18 · [s17.md](../../../script-system/scenes/s17.md) · Entering Grass
 
 ## Locations
 
@@ -1201,13 +1201,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr19">PE 19 — Life Group Arrives</h2>
 
-*Category: Practical Effects | File: practical-effects/pr19.md*
+*Category: Practical Effects | File: practical-effects/pr18.md*
 
 ---
 
 # Practical effect 19 — Life Group Arrives
 
-**Script:** Scene 19 · [s19.md](../../../script-system/scenes/s19.md) · Life Group Arrives
+**Script:** Scene 19 · [s18.md](../../../script-system/scenes/s18.md) · Life Group Arrives
 
 ## Locations
 
@@ -1243,18 +1243,21 @@ This keeps the gallery focused on build references and techniques for the produc
 
 ---
 
-# Practical effect 20 — Basement Huddle
+# Practical effect 22 — Red Eyes (Sierra's Folder)
 
-**Script:** Scene 20 · [s20.md](../../../script-system/scenes/s20.md) · Basement Huddle
+**Script:** Scene 22 · [s20.md](../../../script-system/scenes/s20.md) · Red Eyes
 
 ## Locations
 
-- EXT. BRANFORD TOWN COMMONS
+- EXT. DALLAS PORCH
+- INT. DALLAS'S STUDY - SAME TIME
+- EXT. DALLAS'S BACKYARD - CONTINUOUS
+- INT. DALLAS'S LIVING ROOM - LATER
 
 ## Practical effects
 
 **I. (add)**
-- e.g. Makayla and Dallas to edge of grass.
+- e.g. Sierra's folder, sketches, frequency notation, hum, decision to return creature.
 - *Approach:* build / buy / rig.
 - *Status:* —
 
@@ -1264,7 +1267,7 @@ This keeps the gallery focused on build references and techniques for the produc
 
 ## Notes
 
-- _Short scene; link to 21._
+- _"If the Red-Eyes take them out tonight, this folder is just ghost stories."_
 
 
 ---
@@ -1272,13 +1275,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr21">PE 21 — The Hymn</h2>
 
-*Category: Practical Effects | File: practical-effects/pr21.md*
+*Category: Practical Effects | File: practical-effects/pr19.md*
 
 ---
 
 # Practical effect 21 — The Hymn
 
-**Script:** Scene 21 · [s21.md](../../../script-system/scenes/s21.md) · The Hymn
+**Script:** Scene 21 · [s19.md](../../../script-system/scenes/s19.md) · The Hymn
 
 ## Locations
 
@@ -1307,13 +1310,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr22">PE 22 — Red Eyes</h2>
 
-*Category: Practical Effects | File: practical-effects/pr22.md*
+*Category: Practical Effects | File: practical-effects/pr20.md*
 
 ---
 
 # Practical effect 22 — Red Eyes (Sierra's Folder)
 
-**Script:** Scene 22 · [s22.md](../../../script-system/scenes/s22.md) · Red Eyes
+**Script:** Scene 22 · [s20.md](../../../script-system/scenes/s20.md) · Red Eyes
 
 ## Locations
 
@@ -1343,13 +1346,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr23">PE 23 — Creature Missing</h2>
 
-*Category: Practical Effects | File: practical-effects/pr23.md*
+*Category: Practical Effects | File: practical-effects/pr21.md*
 
 ---
 
 # Practical effect 23 — Creature Missing (Night Fears)
 
-**Script:** Scene 23 · [s23.md](../../../script-system/scenes/s23.md) · Creature Missing
+**Script:** Scene 23 · [s21.md](../../../script-system/scenes/s21.md) · Creature Missing
 
 ## Locations
 
@@ -1377,13 +1380,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr24">PE 24 — Marsh Confrontation</h2>
 
-*Category: Practical Effects | File: practical-effects/pr24.md*
+*Category: Practical Effects | File: practical-effects/pr22.md*
 
 ---
 
 # Practical effect 24 — Marsh Confrontation (The Burn Marks)
 
-**Script:** Scene 24 · [s24.md](../../../script-system/scenes/s24.md) · Marsh Confrontation
+**Script:** Scene 24 · [s22.md](../../../script-system/scenes/s22.md) · Marsh Confrontation
 
 ## Locations
 
@@ -1412,13 +1415,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr25">PE 25 — Predator Attack</h2>
 
-*Category: Practical Effects | File: practical-effects/pr25.md*
+*Category: Practical Effects | File: practical-effects/pr23.md*
 
 ---
 
 # Practical effect 25 — Predator Attack (Into the Marsh)
 
-**Script:** Scene 25 · [s25.md](../../../script-system/scenes/s25.md) · Predator Attack
+**Script:** Scene 25 · [s23.md](../../../script-system/scenes/s23.md) · Predator Attack
 
 ## Locations
 
@@ -1446,13 +1449,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr26">PE 26 — The Perimeter</h2>
 
-*Category: Practical Effects | File: practical-effects/pr26.md*
+*Category: Practical Effects | File: practical-effects/pr24.md*
 
 ---
 
 # Practical effect 26 — The Perimeter
 
-**Script:** Scene 26 · [s26.md](../../../script-system/scenes/s26.md) · The Perimeter
+**Script:** Scene 26 · [s24.md](../../../script-system/scenes/s24.md) · The Perimeter
 
 ## Locations
 
@@ -1480,13 +1483,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr27">PE 27 — The Last Dinner</h2>
 
-*Category: Practical Effects | File: practical-effects/pr27.md*
+*Category: Practical Effects | File: practical-effects/pr25.md*
 
 ---
 
 # Practical effect 27 — The Last Dinner (The Trap)
 
-**Script:** Scene 27 · [s27.md](../../../script-system/scenes/s27.md) · The Last Dinner
+**Script:** Scene 27 · [s25.md](../../../script-system/scenes/s25.md) · The Last Dinner
 
 ## Locations
 
@@ -1515,13 +1518,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr28">PE 28 — Final Echoes</h2>
 
-*Category: Practical Effects | File: practical-effects/pr28.md*
+*Category: Practical Effects | File: practical-effects/pr26.md*
 
 ---
 
 # Practical effect 28 — Final Echoes (The Morning After)
 
-**Script:** Scene 28 · [s28.md](../../../script-system/scenes/s28.md) · Final Echoes
+**Script:** Scene 28 · [s26.md](../../../script-system/scenes/s26.md) · Final Echoes
 
 ## Locations
 
@@ -1548,13 +1551,13 @@ This keeps the gallery focused on build references and techniques for the produc
 
 <h2 id="entry-pr29">PE 29 — Aftermath</h2>
 
-*Category: Practical Effects | File: practical-effects/pr29.md*
+*Category: Practical Effects | File: practical-effects/pr27.md*
 
 ---
 
 # Practical effect 29 — Aftermath
 
-**Script:** Scene 29 · [s29.md](../../../script-system/scenes/s29.md) · Aftermath
+**Script:** Scene 29 · [s27.md](../../../script-system/scenes/s27.md) · Aftermath
 
 ## Locations
 

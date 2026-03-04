@@ -1,4 +1,4 @@
-## Scene 27: Predator Attack
+## Scene 25: Predator Attack
 - Setting: EXT. SALT MARSH - CONTINUOUS
 - Beat: Red-eyed predators attack; Dallas turns the dial.
 

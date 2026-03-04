@@ -1,4 +1,4 @@
-## Scene 22: Basement Huddle
+## Scene 20: Basement Huddle
 - Setting: INT. DALLAS' BASEMENT - MOMENTS LATER
 - Beat: Makayla and Asher watch the creature and crystal.
 

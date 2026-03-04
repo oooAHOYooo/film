@@ -1,4 +1,4 @@
-## Scene 28: The Perimeter
+## Scene 26: The Perimeter
 - Setting: EXT. DALLAS' HOUSE - NIGHT (STORM)
 - Beat: Dallas builds the pole fence and powers it on.
 

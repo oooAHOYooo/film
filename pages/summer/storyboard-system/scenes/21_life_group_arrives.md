@@ -1,4 +1,4 @@
-## Scene 21: Life Group Arrives
+## Scene 19: Life Group Arrives
 - Setting: INT. DALLAS' HOUSE - EVENING
 - Beat: Families arrive as Mr. Mike panics about the basement.
 

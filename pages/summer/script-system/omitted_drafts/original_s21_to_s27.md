@@ -1,6 +1,6 @@
 # ORIGINAL SCENES 21 TO 27 (PRE-REWRITE)
 
-## Scene 21 (Original Ending)
+## Scene 19 (Original Ending)
 In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the last person to leave. Then he rushes downstairs with the kids.
 
 INT. BASEMENT
@@ -39,7 +39,7 @@ Dallas looks at the tall grass. At the reading. At her. Then toward the house—
 
 ***
 
-## Scene 22: Sierra's Folder
+## Scene 20: Sierra's Folder
 <!-- summary: They find it in the gnarl. It's fading. Sierra's folder: if the Red-Eyes take them, it's all ghost stories. They'll return it. -->
 EXT. DALLAS PORCH
 
@@ -98,7 +98,7 @@ They are the last to leave. Dominic herds the kids toward the door. Dallas stays
 
 ***
 
-## Scene 23
+## Scene 21
 <!-- nickname: night fears -->
 <!-- summary: Red eyes at the edge of the yard. The creature's gone. -->
 
@@ -120,7 +120,7 @@ Dallas looks at the burn mark on his forearm - it begins to glow a bit - and the
 
 ***
 
-## Scene 24: The Burn Marks
+## Scene 22: The Burn Marks
 
 INT. DALLAS'S BASEMENT - MORNING
 
@@ -195,7 +195,7 @@ Asher brings the final device forward. He checks his notebook once—1153—then
 
 ***
 
-## Scene 25: Into the Marsh
+## Scene 23: Into the Marsh
 <!-- summary: First confrontation with Dark Creatures. Distinctive weird marks. They have to rescue the light. -->
 
 EXT. EDGE OF THE TALL GRASS
@@ -245,7 +245,7 @@ Dallas and Makayla hold their arms in pain.
 
 ***
 
-## Scene 26
+## Scene 24
 <!-- nickname: the-perimeter -->
 <!-- summary: Retreat with dread: 'They'll come for us.' Shadows at the edge trigger zap episodes. They hatch the plan. -->
 
@@ -287,7 +287,7 @@ He catches up. They don't look back. They make their way out of the tall grass.
 
 ***
 
-## Scene 27: The Trap
+## Scene 25: The Trap
 <!-- summary: They set out with the plan. It's not an accident—the plan is pressure-tested by the storm. -->
 
 EXT. EDGE OF TALL GRASS - DAY

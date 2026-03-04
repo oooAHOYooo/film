@@ -21,15 +21,15 @@ const PLOT_POINT_BY_FILE = {
   's08.md': [1],
   's12.md': [2],
   's13.md': [2],
+  's18.md': [3],
   's19.md': [3],
-  's21.md': [3],
-  's23.md': [4],
-  's24.md': [5, 6],
-  's25.md': [7],
-  's26.md': [8, 9, 10],
-  's27.md': [11],
-  's28.md': [12, 13],
-  's29.md': [14],
+  's21.md': [4],
+  's22.md': [5, 6],
+  's23.md': [7],
+  's24.md': [8, 9, 10],
+  's25.md': [11],
+  's26.md': [12, 13],
+  's27.md': [14],
 };
 
 // Punchy one-line beats per scene (used for plot cards; fallback to deriveSummary if missing)

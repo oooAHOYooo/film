@@ -1,4 +1,4 @@
-## Scene 18: Creature Rescue
+## Scene 17: Creature Rescue
 - Setting: EXT. TALL GRASS HOLLOW - CONTINUOUS
 - Beat: Dallas touches the creature and senses a threat.
 

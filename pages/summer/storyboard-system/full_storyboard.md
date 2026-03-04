@@ -311,7 +311,7 @@
 - Action: The tiny creature breathes through its back-holes.
 - Caption: The creature's glow flickers beneath its throat.
 
-## Scene 18: Creature Rescue
+## Scene 17: Creature Rescue
 - Setting: EXT. TALL GRASS HOLLOW - CONTINUOUS
 - Beat: Dallas touches the creature and senses a threat.
 
@@ -329,7 +329,7 @@
 - Action: The reeds part as something heavy moves closer.
 - Caption: A massive presence rushes through the grass toward them.
 
-## Scene 19: The Escape
+## Scene 18: The Escape
 - Setting: EXT. TALL GRASS / DRIVEWAY - CONTINUOUS
 - Beat: Dallas flees with the creature as the pursuit closes in.
 
@@ -365,7 +365,7 @@
 - Action: The waveform matches the creature's heartbeat.
 - Caption: The device pulses in perfect sync with the creature.
 
-## Scene 21: Life Group Arrives
+## Scene 19: Life Group Arrives
 - Setting: INT. DALLAS' HOUSE - EVENING
 - Beat: Families arrive as Mr. Mike panics about the basement.
 
@@ -383,7 +383,7 @@
 - Action: Mr. Mike points toward the basement door.
 - Caption: Mr. Mike senses something beneath the floor.
 
-## Scene 22: Basement Huddle
+## Scene 20: Basement Huddle
 - Setting: INT. DALLAS' BASEMENT - MOMENTS LATER
 - Beat: Makayla and Asher watch the creature and crystal.
 
@@ -401,7 +401,7 @@
 - Action: The crystal brightens; Makayla's hair lifts.
 - Caption: The crystal responds to the creature's hum.
 
-## Scene 23: The Hymn
+## Scene 21: The Hymn
 - Setting: INT. DALLAS' LIVING ROOM - NIGHT
 - Beat: The hymn rises and the hum answers.
 
@@ -419,7 +419,7 @@
 - Action: A glass trembles as the hum harmonizes.
 - Caption: The house answers the hymn with vibration.
 
-## Scene 24: Red Eyes
+## Scene 22: Red Eyes
 - Setting: INT. DALLAS' HOUSE / EXT. BACKYARD - NIGHT
 - Beat: Red eyes appear and the creature vanishes.
 
@@ -437,7 +437,7 @@
 - Action: Pairs of red eyes pulse in the grass.
 - Caption: The red eyes inch closer, then disappear.
 
-## Scene 25: Creature Missing
+## Scene 23: Creature Missing
 - Setting: INT. DALLAS' BASEMENT / EXT. YARD - MOMENTS LATER
 - Beat: The shoebox is empty; burn marks trail outside.
 
@@ -455,7 +455,7 @@
 - Action: Asher traces a scorched trail toward the marsh.
 - Caption: Burn marks point back to the tall grass.
 
-## Scene 26: Marsh Confrontation
+## Scene 24: Marsh Confrontation
 - Setting: EXT. SALT MARSH - NIGHT
 - Beat: Dallas and Makayla find the creature among glowing elders.
 
@@ -473,7 +473,7 @@
 - Action: Mist sprays; their bodies lock in place.
 - Caption: The elders' hum pins Dallas and Makayla.
 
-## Scene 27: Predator Attack
+## Scene 25: Predator Attack
 - Setting: EXT. SALT MARSH - CONTINUOUS
 - Beat: Red-eyed predators attack; Dallas turns the dial.
 
@@ -491,7 +491,7 @@
 - Action: Dallas cranks the dial as the creature pulses.
 - Caption: A burst of light buys them a second to escape.
 
-## Scene 28: The Perimeter
+## Scene 26: The Perimeter
 - Setting: EXT. DALLAS' HOUSE - NIGHT (STORM)
 - Beat: Dallas builds the pole fence and powers it on.
 
@@ -509,7 +509,7 @@
 - Action: The orange light flips to green.
 - Caption: The fence powers on with a steady pulse.
 
-## Scene 29: The Last Dinner
+## Scene 27: The Last Dinner
 - Setting: INT. DALLAS' KITCHEN - NIGHT
 - Beat: A tense meal as noises surround the house.
 

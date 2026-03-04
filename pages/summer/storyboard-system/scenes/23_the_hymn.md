@@ -1,4 +1,4 @@
-## Scene 23: The Hymn
+## Scene 21: The Hymn
 - Setting: INT. DALLAS' LIVING ROOM - NIGHT
 - Beat: The hymn rises and the hum answers.
 

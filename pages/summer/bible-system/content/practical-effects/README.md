@@ -1,6 +1,6 @@
 # Practical Effects — Scene-by-scene system
 
-One file per scene: **pr01.md** through **pr29.md**, keyed to the script (s01.md–s29.md).
+One file per scene: **pr01.md** through **pr27.md**, keyed to the script (s01.md–s27.md).
 
 ## How to use
 

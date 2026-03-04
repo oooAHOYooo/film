@@ -1,4 +1,4 @@
-## Scene 24: Red Eyes
+## Scene 22: Red Eyes
 - Setting: INT. DALLAS' HOUSE / EXT. BACKYARD - NIGHT
 - Beat: Red eyes appear and the creature vanishes.
 

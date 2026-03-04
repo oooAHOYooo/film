@@ -27,16 +27,16 @@ This is a human-friendly map you can reference while reorganizing.
 | 15 | `s15.md` | `the-burn-mark-2` | The Burn Mark |
 | 16 | `s16.md` | `the-escape` | The Escape |
 | 17 | `s17.md` | `makeshift-hospital` | Makeshift Hospital |
-| 18 | `s18.md` | `entering-grass-2` | Entering Grass |
-| 19 | `s19.md` | `life-group-arrives` | Life Group Arrives |
+| 18 | `s17.md` | `entering-grass-2` | Entering Grass |
+| 19 | `s18.md` | `life-group-arrives` | Life Group Arrives |
 | 20 | `s20.md` | `basement-huddle` | Basement Huddle |
-| 21 | `s21.md` | `the-hymn` | The Hymn |
-| 22 | `s22.md` | `red-eyes` | Red Eyes |
-| 23 | `s23.md` | `creature-missing` | Creature Missing |
-| 24 | `s24.md` | `marsh-confrontation` | Marsh Confrontation |
-| 25 | `s25.md` | `predator-attack` | Predator Attack |
-| 26 | `s26.md` | `the-perimeter` | The Perimeter |
-| 27 | `s27.md` | `the-last-dinner` | The Last Dinner |
-| 28 | `s28.md` | `final-echoes` | Final Echoes |
-| 29 | `s29.md` | `aftermath` | Aftermath |
+| 21 | `s19.md` | `the-hymn` | The Hymn |
+| 22 | `s20.md` | `red-eyes` | Red Eyes |
+| 23 | `s21.md` | `creature-missing` | Creature Missing |
+| 24 | `s22.md` | `marsh-confrontation` | Marsh Confrontation |
+| 25 | `s23.md` | `predator-attack` | Predator Attack |
+| 26 | `s24.md` | `the-perimeter` | The Perimeter |
+| 27 | `s25.md` | `the-last-dinner` | The Last Dinner |
+| 28 | `s26.md` | `final-echoes` | Final Echoes |
+| 29 | `s27.md` | `aftermath` | Aftermath |
 

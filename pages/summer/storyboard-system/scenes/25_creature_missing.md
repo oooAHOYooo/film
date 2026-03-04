@@ -1,4 +1,4 @@
-## Scene 25: Creature Missing
+## Scene 23: Creature Missing
 - Setting: INT. DALLAS' BASEMENT / EXT. YARD - MOMENTS LATER
 - Beat: The shoebox is empty; burn marks trail outside.
 

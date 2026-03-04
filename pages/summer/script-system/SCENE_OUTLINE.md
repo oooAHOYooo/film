@@ -34,12 +34,12 @@ Use this to stay on track while writing. Scene numbers and file names match the 
 | 15 | **The Burn Mark** `s15.md` | Creature on crystal; lifts it, it cries for crystal and faints; something massive in the reeds; Dallas grabs creature, Howie freaks; long journey back. |
 | 16 | **The Escape** `s16.md` | Dawn; Janice drops Howie; Makayla and Asher find burn mark and crystal; Dominic, life group papers, Costco, schools cancelled. |
 | 17 | **Makeshift Hospital** `s17.md` | Creature in kitchen; oscilloscope, dial, creature sleeps; Howie by door; creature cries, hum answers, windows rattle. |
-| 18 | **Entering Grass** `s18.md` | Creature in kitchen; triage, wires, 115.3 MHz; Howie disturbed; windows rattle, hum. |
-| 19 | **Life Group Arrives** `s19.md` | Dallas brings creature in; porch scope pulses; Dominic, Mr. Mike freaks at basement; Makayla tends creature, glow brightens; Dominic sees it. |
+| 18 | **Entering Grass** `s17.md` | Creature in kitchen; triage, wires, 115.3 MHz; Howie disturbed; windows rattle, hum. |
+| 19 | **Life Group Arrives** `s18.md` | Dallas brings creature in; porch scope pulses; Dominic, Mr. Mike freaks at basement; Makayla tends creature, glow brightens; Dominic sees it. |
 | 20 | **Basement Huddle** `s20.md` | Wires on creature; calm = melody, Howie barks = whimper; Dominic/Mr. Mike/Makayla argue; scramble downstairs; doorbell—Josh, Sarah, JP; Mr. Mike 115.2 Hertz. |
-| 21 | **The Hymn** `s21.md` | Families, Brussels; Makayla pockets sugar; basement shoebox, crystal, communication; Where's Dallas?—cat lie, vet; Tyler, hymn; hum joins; reflection, leave; Dominic rushes downstairs. |
-| 22 | **Red Eyes** `s22.md` | Creature wakes, frozen timeline; Dallas outside; dial, something moves in grass; Not wind; decision to return creature; last to leave. |
-| 23 | **Creature Missing** `s23.md` | Candle, video feed, tape of wife—great hum, why she stopped; red eyes in grass; downstairs—creature gone; eyes gone, night still. |
+| 21 | **The Hymn** `s19.md` | Families, Brussels; Makayla pockets sugar; basement shoebox, crystal, communication; Where's Dallas?—cat lie, vet; Tyler, hymn; hum joins; reflection, leave; Dominic rushes downstairs. |
+| 22 | **Red Eyes** `s20.md` | Creature wakes, frozen timeline; Dallas outside; dial, something moves in grass; Not wind; decision to return creature; last to leave. |
+| 23 | **Creature Missing** `s21.md` | Candle, video feed, tape of wife—great hum, why she stopped; red eyes in grass; downstairs—creature gone; eyes gone, night still. |
 
 ---
 
@@ -47,10 +47,10 @@ Use this to stay on track while writing. Scene numbers and file names match the 
 
 | # | Scene / file | Brief description |
 |---|--------------|-------------------|
-| 24 | **Marsh Confrontation** `s24.md` | Basement empty; Janice's minivan burn marks; Asher—trail to house; Dallas in yard with oscillator; creature gone, bad things calling it back. |
-| 25 | **Predator Attack** `s25.md` | Mr. Mike barges in; Janice burn marks, Asher trail; creature gone, they hear cry and hum; go get it; find creatures tending injured one. |
-| 26 | **The Perimeter** `s26.md` | Mist, paralysis; red eyes vs golden; predators snatch; Dallas dial, grabs creature, it goes motionless; they escape the grass. |
-| 27 | **The Last Dinner** `s27.md` | Crew watch battle; run home; Dallas sets up the trap/perimeter; storm, Pat on radio; fire engines, hum; This is crazy. |
+| 24 | **Marsh Confrontation** `s22.md` | Basement empty; Janice's minivan burn marks; Asher—trail to house; Dallas in yard with oscillator; creature gone, bad things calling it back. |
+| 25 | **Predator Attack** `s23.md` | Mr. Mike barges in; Janice burn marks, Asher trail; creature gone, they hear cry and hum; go get it; find creatures tending injured one. |
+| 26 | **The Perimeter** `s24.md` | Mist, paralysis; red eyes vs golden; predators snatch; Dallas dial, grabs creature, it goes motionless; they escape the grass. |
+| 27 | **The Last Dinner** `s25.md` | Crew watch battle; run home; Dallas sets up the trap/perimeter; storm, Pat on radio; fire engines, hum; This is crazy. |
 
 ---
 
@@ -58,8 +58,8 @@ Use this to stay on track while writing. Scene numbers and file names match the 
 
 | # | Scene / file | Brief description |
 |---|--------------|-------------------|
-| 28 | **Final Echoes** `s28.md` | Dinner, Mr. Mike 115.3; Makayla goes into grass with crystal; trap powers on; Dallas finds them; creature sings; dark forces cower; dawn; Dallas keeps recording. |
-| 29 | **Aftermath** `s29.md` | Town normal; Pat Clendenen TV, red eye in fog; church, Nica's lunch; Makayla/Asher building devices; Sierra folder continues; Dallas workshop—tape, alphabet from hum; Janice drops Howie again; Dallas and Howie at creek, dial clicks into place. |
+| 28 | **Final Echoes** `s26.md` | Dinner, Mr. Mike 115.3; Makayla goes into grass with crystal; trap powers on; Dallas finds them; creature sings; dark forces cower; dawn; Dallas keeps recording. |
+| 29 | **Aftermath** `s27.md` | Town normal; Pat Clendenen TV, red eye in fog; church, Nica's lunch; Makayla/Asher building devices; Sierra folder continues; Dallas workshop—tape, alphabet from hum; Janice drops Howie again; Dallas and Howie at creek, dial clicks into place. |
 
 ---
 

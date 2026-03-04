@@ -1,4 +1,4 @@
-## Scene 29: The Last Dinner
+## Scene 27: The Last Dinner
 - Setting: INT. DALLAS' KITCHEN - NIGHT
 - Beat: A tense meal as noises surround the house.
 

@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 3/4/2026, 5:39:48 PM*
+*Compiled on 3/4/2026, 6:39:35 PM*
 
 ---
 
@@ -206,37 +206,31 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 17: Makeshift Hospital
-
-*ID: makeshift-hospital*
-
-*No director's note for this scene.*
-
-#### Scene 18: Entering Grass
+#### Scene 17: Entering Grass
 
 *ID: entering-grass-2*
 
 *No director's note for this scene.*
 
-#### Scene 19: Life Group Arrives
+#### Scene 18: Life Group Arrives
 
 *ID: life-group-arrives*
 
 *No director's note for this scene.*
 
-#### Scene 20: The Hymn
+#### Scene 19: The Hymn
 
 *ID: the-hymn*
 
 *No director's note for this scene.*
 
-#### Scene 21: Red Eyes
+#### Scene 20: Red Eyes
 
 *ID: red-eyes*
 
 *No director's note for this scene.*
 
-#### Scene 22: Creature Missing
+#### Scene 21: Creature Missing
 
 *ID: creature-missing*
 
@@ -245,25 +239,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT III — The Return
 
-#### Scene 23: Marsh Confrontation
+#### Scene 22: Marsh Confrontation
 
 *ID: marsh-confrontation*
 
 *No director's note for this scene.*
 
-#### Scene 24: Predator Attack
+#### Scene 23: Predator Attack
 
 *ID: predator-attack*
 
 *No director's note for this scene.*
 
-#### Scene 25: The Perimeter
+#### Scene 24: The Perimeter
 
 *ID: the-perimeter*
 
 *No director's note for this scene.*
 
-#### Scene 26: The Last Dinner
+#### Scene 25: The Last Dinner
 
 *ID: the-last-dinner*
 
@@ -292,15 +286,21 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT IV — Aftermath
 
-#### Scene 27: Final Echoes
+#### Scene 26: Final Echoes
 
 *ID: final-echoes*
 
 *No director's note for this scene.*
 
-#### Scene 28: Aftermath
+#### Scene 27: Aftermath
 
 *ID: aftermath*
+
+*No director's note for this scene.*
+
+#### Scene 28: Full Circle
+
+*ID: full-circle*
 
 *No director's note for this scene.*
 

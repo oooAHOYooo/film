@@ -3,7 +3,7 @@
 Here is a full log of all the structural and dialogue changes made to smooth out the timeline. You can reference this when you go back through to humanize the voices and add your own specific flavor to the dialogue:
 
 ### 1. Merging Scene 17 & 18 (The Basement Discovery)
-* **What changed:** `s17.md` was completely deleted and its contents were folded directly into the beginning of `s18.md` (and `s17` was removed from the `manifest.json`).
+* **What changed:** `s17.md` was completely deleted and its contents were folded directly into the beginning of `s17.md` (and `s17` was removed from the `manifest.json`).
 * **Why:** Having two separate scenes in the exact same location breaking up the discovery felt disjointed.
 * **What you can humanize:** In `s18`, the scene now starts with Makayla checking her viewfinder (tracking the Red-Eyes swarming Creek Bend), noting that the creature's erratic breathing matches the jagged lines on the screen, before Asher locks in the `115.3` frequency so the creature can mimic it. You can adjust the flow of Makayla and Dallas's whisper-shouting here to sound more natural.
 

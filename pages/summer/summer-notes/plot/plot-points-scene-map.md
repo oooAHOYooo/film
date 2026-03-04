@@ -27,18 +27,18 @@ This document maps the **desired 1–14 plot points** onto the current `script-s
 
 - **1. Dallas finds the creature** → **s08** `s08.md`
 - **2. Makayla discovers Dallas has it** → **s13** `s13.md` (with **s12** folded into it)
-- **3. Lifegroup meeting** → **s19–s21** (`s19.md`, `s20.md`, `s21.md`)
-- **4. Creature escapes** → **s23** `s23.md` (seed Red Eyes in **s22**)
-- **5. Creature dies in marsh** → **cold open at start of s24** `s24.md` (before the “we go in” decision)
-- **6. Makayla + Dallas go to find it** → **rest of s24** `s24.md`
-- **7. First confrontation w/ Dark creatures + weird marks** → **s25** `s25.md`
-- **8. Crew retreats; Dominic worries they’ll come** → **top of s26** `s26.md`
-- **9. Shadows at edge + Mr Mike/Asher “zap episodes”** → **mid s26** `s26.md`
-- **10. Makayla + Dallas hatch the plan** → **end of s26** `s26.md`
-- **11. Makayla + Dallas set out with the plan** → **rewrite s27** `s27.md` (remove “impulsive bolt”; make it deliberate)
-- **12. Conflict (Light vs Shadow) — climax** → **s28** `s28.md`
+- **3. Lifegroup meeting** → **s19–s21** (`s18.md`, `s20.md`, `s19.md`)
+- **4. Creature escapes** → **s23** `s21.md` (seed Red Eyes in **s22**)
+- **5. Creature dies in marsh** → **cold open at start of s24** `s22.md` (before the “we go in” decision)
+- **6. Makayla + Dallas go to find it** → **rest of s24** `s22.md`
+- **7. First confrontation w/ Dark creatures + weird marks** → **s25** `s23.md`
+- **8. Crew retreats; Dominic worries they’ll come** → **top of s26** `s24.md`
+- **9. Shadows at edge + Mr Mike/Asher “zap episodes”** → **mid s26** `s24.md`
+- **10. Makayla + Dallas hatch the plan** → **end of s26** `s24.md`
+- **11. Makayla + Dallas set out with the plan** → **rewrite s27** `s25.md` (remove “impulsive bolt”; make it deliberate)
+- **12. Conflict (Light vs Shadow) — climax** → **s28** `s26.md`
 - **13. Resolution (unexpected); loss opens path** → **s28 → s29 payoff**
-- **14. Aftermath; town back to normal** → **s29** `s29.md`
+- **14. Aftermath; town back to normal** → **s29** `s27.md`
 
 ---
 
@@ -79,39 +79,39 @@ This document maps the **desired 1–14 plot points** onto the current `script-s
 - **s21**: the hymn + rising hum is a strong public collision of “faith/normal” with “signal/unknown.”
 - **Cut**: repeating “it’s just storm” rationalizations after you’ve landed it once.
 
-### s22 `s22.md`
+### s22 `s20.md`
 - **Keep**: Makayla discovering Sierra’s folder (big “legacy/science” pillar that powers Plot Points 10–13).
 - **Change ending**: land an explicit decision (“we return it now / first light”) but they’re too late.
 
-### s23 `s23.md` (Plot point 4)
+### s23 `s21.md` (Plot point 4)
 - **Keep**: this beat is structurally important (even if the file has comments suggesting deletion).
 - **Make it causal**: escape is triggered (red-eyes calling, brownout pulse, crystal pull), not random.
 - **Plant marks motif**: first clear “weird burn-mark glyphs” evidence can appear along its escape path.
 
-### s24 `s24.md` (Plot points 5–6)
+### s24 `s22.md` (Plot points 5–6)
 - **Add cold open (Plot point 5)**: before “Mr Mike barges in,” show the creature’s glow failing in the marsh and the predators closing in; *the creature dies/goes out*.
 - **Then**: the existing “Dallas/Makayla decide to go” remains Plot Point 6.
 
-### s25 `s25.md` (Plot point 7)
+### s25 `s23.md` (Plot point 7)
 - **Add**: explicit “weird marks” visual to the Red-Eyes (ties to driveway/minivan burn patterns; becomes a recognizable signature).
 
-### s26 `s26.md` (Plot points 8–10)
+### s26 `s24.md` (Plot points 8–10)
 - **Plot point 8**: after retreat, give Dominic one blunt dread line (“They saw us / now they’ll come”).
 - **Plot point 9**: shadows reach the yard edge → trigger “zap episodes”:
   - **Asher**: gets hit when he touches equipment/wire/dial; hair lifts, lock-up, quick blackout.
   - **Mr Mike**: mirrors it (seizure-like lock, rhythm/115.3 chant intensifies).
 - **Plot point 10**: make the plan explicit in dialogue and purpose: phase-cancellation corridor / acoustic corridor / “why it works” (Sierra diagram + Makayla’s secondary wave insight).
 
-### s27 `s27.md` (Plot point 11)
+### s27 `s25.md` (Plot point 11)
 - **Replace**: the current “Makayla bolts impulsively” beat.
 - **Make deliberate**: Makayla + Dallas set out with the plan (walkies, oscillator, crystal as lure/bait if needed, trap powered). Dominic can still follow—but it’s not accidental.
 
-### s28 `s28.md` (Plot points 12–13)
+### s28 `s26.md` (Plot points 12–13)
 - **Keep**: Makayla’s “graduation” (mastering the tool / recording the waveform) as the unexpected resolution engine.
 - **Make the ‘loss opens path’ concrete**: creature gone but the recording/crystal/corridor logic becomes the new “key” that works in its absence.
 - **Avoid**: Dallas “throws equipment away” (this undercuts the legacy/science continuation).
 
-### s29 `s29.md` (Plot point 14)
+### s29 `s27.md` (Plot point 14)
 - **Already aligned**: town normalizes; Pat news beat; Makayla/Asher continuing science; Dallas still recording.
 
 ---
