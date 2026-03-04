@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/4/2026, 12:20:29 PM*
+*Compiled on 3/4/2026, 1:51:21 PM*
 
 ---
 
@@ -2029,9 +2029,29 @@ Families arrive in waves. The small kitchen and smaller living room fill. The cr
 
 Makayla drifts through the kitchen. She opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word.
 
-INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT
+Dominic catches her slipping the sugar into her pocket. He wipes his hands on a dish towel.
 
-Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates.
+DOMINIC
+What are you doing? 
+
+MAKAYLA
+(caught)
+Nothing. Just... getting sugar.
+
+DOMINIC
+For what? You don't drink coffee. Where's Dallas? People are asking for the host.
+
+Makayla desperately thinks of an excuse. 
+
+MAKAYLA
+He's downstairs. We... found a stray cat outside. It's really sick. He's nursing it. I was getting it some sugar water.
+
+Dominic raises an eyebrow, but buys it.
+
+DOMINIC
+A cat? Alright. Well, tell him not to get bit. And tell him to come up soon.
+
+Makayla nods quickly and slips away.
 
 Downstairs, the volume of the 115.3 MHz frequency pulses rhythmically through the floorboards. The LifeGroup guests don't know what it is—they assume it's the storm outside. 
 
@@ -2153,12 +2173,20 @@ Dominic rushes over to the kitchen and sees that the brownies tray is smashed on
 
 INT. DALLAS'S BASEMENT - SAME TIME
 
-Dallas shuffles through a pile of old equipment—mono cables, spare parts. The creature doesn't look like it's doing much. It's breathing, slightly. Dallas struggles to find a bed for it. He settles on an old shoebox—pauses when he sees his wife's handwriting on one, sets that aside—and gently nestles the creature inside. Its little feet curl tightly. It breathes slowly.
+Dallas shuffles through a pile of old equipment—mono cables, spare parts and arranges them all neatly on a desk.
 
-He finds a way to poke a hole in something so it can drink. MAKAYLA and ASHER watch from the staircase. Makayla comes down. She takes out the crystal. It begins to glow. Her hair lifts. She and the creature seem to communicate—a beat of shared attention. The creature's glow dims as she pulls her hand away.
+ The creature doesn't look like it's doing much. It's breathing, slightly. Dallas struggles to find a bed for it. He settles on an old shoebox—pauses when he sees his wife's handwriting on one, sets that aside—and gently nestles the creature inside. Its little feet curl tightly. It breathes slowly.
+
+He finds a way to poke a hole in something so it can drink. The creature, laying beside him in the makeshift shoebox, begins to glow. 
+
+MAKAYLA and ASHER watch from the staircase. Makayla comes down. She takes out the crystal from her pocket. It begins to glow. 
+
+Her hair lifts. As she grips the crystal, she feels a warmth spread through her hand.  The creature seems to respond to her touch of the crystal. 
+
+She pulls her hand away. The creature's glow dims.
 
 INT. DALLAS'S LIVING ROOM - LATER
-People mill and talk. Someone asks where Dallas is.
+People at lifegroup mill and talk. Someone asks where Dallas is.
 
 DOMINIC
 We found a little cat. Dallas is downstairs nursing it.
@@ -2288,17 +2316,19 @@ The storm outside breaks, rain lashing against the glass.
 <!-- scene: 21 file: s22.md nickname: red-eyes -->
 
 # Scene 22: The Secret is Out
-<!-- summary: Dominic confronts Dallas about Sierra's folder. The Red-Eyes arrive at the edge of the property. The house is surrounded. -->
 
 INT. DALLAS'S LIVING ROOM - CONTINUOUS
 
 Dominic holds up Sierra's folder, his hands shaking slightly. The sketches of the golden creatures and the maps of the marsh are undeniable. Dallas steps forward and gently pulls the folder from his grip.
 
 DOMINIC
-I told everybody we had a cat! You’ve got military weapons down there. And files from 1978! Dallas, what is going on?!
+Makayla! I told everybody we had a cat! You’ve got military weapons down there.  Dallas, what is going on?!
 
 MAKAYLA
-Uncle Dominic, listen—
+Uncle , listen—
+
+DOMINIC
+Niece, I listen. 
 
 DOMINIC
 (pointing at the folder)
