@@ -634,7 +634,7 @@ function deriveSummary(content) {
   const actionParts = [];
   let inDialogue = false;
   for (const line of lines) {
-    if (/^(INT\.|EXT\.|FADE|CUT\s|DISSOLVE)/i.test(line)) continue;
+    if (/^(INT\.|EXT\.|FADE|CUT\s|DISSOLVE|#)/i.test(line)) continue;
     if (/^\(action\)$/i.test(line)) continue;
     if (/^\([^)]+\)$/.test(line)) continue; // parenthetical only
     if (/^[A-Z][A-Za-z\s]{2,}$/.test(line) && line === line.toUpperCase()) {
@@ -651,7 +651,7 @@ function deriveSummary(content) {
       if (soFar >= maxLen) break;
     }
   }
-  let text = actionParts.join(' ').replace(/\s+/g, ' ').trim();
+  let text = actionParts.join(' ').replace(/\s+/g, ' ').replace(/[#*_~`]/g, '').trim();
   if (text.length > maxLen) {
     const cut = text.slice(0, maxLen).lastIndexOf(' ');
     text = (cut > 60 ? text.slice(0, cut) : text.slice(0, maxLen)) + '…';
@@ -809,16 +809,18 @@ function generateGalleryPage(cardsData) {
             actLabel.textContent = 'ACT ' + toRoman(card.act) + ' — ' + (card.actTitle || '');
             grid.appendChild(actLabel);
           }
-          const a = document.createElement('a');
-          a.className = 'plot-card';
-          a.href = 'full_script.html#scene-' + card.n;
-          a.setAttribute('data-scene', card.n);
-          a.innerHTML =
+          const cardDiv = document.createElement('div');
+          cardDiv.className = 'plot-card';
+          cardDiv.innerHTML =
             '<span class="plot-card-number">' + card.n + '</span>' +
             '<h2 class="plot-card-title">' + escapeHtml(card.title) + '</h2>' +
             '<p class="plot-card-summary">' + escapeHtml(card.summary) + '</p>' +
-            '<span class="plot-card-link">Read in script →</span>';
-          grid.appendChild(a);
+            '<div class="plot-card-links" style="margin-top: auto; display: flex; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 0.75rem; margin-top: 1rem; font-size: 0.8rem;">' +
+              '<a href="full_script.html#scene-' + card.n + '" class="plot-card-link" style="text-decoration: none; font-weight: 600;">Full Script</a>' +
+              '<a href="scene.html?id=' + encodeURIComponent(card.id) + '" class="plot-card-link" style="text-decoration: none; color: var(--muted); border-left: 1px solid var(--border); padding-left: 0.75rem;">Preview</a>' +
+            '</div>';
+          grid.appendChild(cardDiv);
+
         });
       }
 

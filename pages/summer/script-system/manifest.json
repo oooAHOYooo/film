@@ -128,14 +128,6 @@
     "nickname": "the-escape"
   },
   {
-    "id": "makeshift-hospital",
-    "file": "s17.md",
-    "title": "Makeshift Hospital",
-    "act": 2,
-    "actTitle": "The Creature",
-    "nickname": "makeshift-hospital"
-  },
-  {
     "id": "entering-grass-2",
     "file": "s18.md",
     "title": "Entering Grass",
