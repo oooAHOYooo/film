@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/5/2026, 2:54:59 PM*
+*Compiled on 3/5/2026, 2:55:26 PM*
 
 ---
 
@@ -2288,15 +2288,13 @@ MAKAYLA
 Dallas! Where is it?
 
 DALLAS
-It's gone. The basement window is broke. 
+It's gone. 
 
 From the direction of the marsh—a cry. Distant, unmistakable. The creature. And then the hum answers it, vibrating up through the floorboards. 
 
 MAKAYLA
-It went back to the grass! But the Red-Eyes... they're still coming here.
+It went back to the grass! But the Red-Eyes are still there. 
 
-DALLAS
-We drew them here when we taught it to sing. They're surrounding the house. 
 
 Before Dallas can move, DOMINIC appears at the top of the basement stairs holding Sierra's folder of anatomical creature sketches. His face is pale. He looks at Dallas like he doesn't know him.
 
@@ -2459,7 +2457,7 @@ Dominic sits down on the outside porch.
 <!-- scene: 21 file: s21.md nickname: creature-missing -->
 
 (action)
-Makayla lifts the sparking portable speaker. She sweeps the invisible acoustic beam across the yard like a lighthouse beam. The a small glint of a red eye - is glimmering in the distance.  wall of Red-Eye shadows violently flinches, peeling back into the reeds and leaving a temporary, circular safe zone in the pouring rain. 
+Makayla lifts the sparking portable speaker. She sweeps the invisible acoustic beam across the yard like a lighthouse beam. The a small glint of a red eye - is glimmering in the distance.  A wall of Red-Eye shadows violently flinches, peeling back into the reeds and leaving a temporary, circular safe zone in the pouring rain. 
 
 But there are too many. Hundreds of red eyes begin to dot the tree line. The sheer numbers are overwhelming the small portable speaker.
 
@@ -2495,7 +2493,7 @@ The burn marks lead from the driveway toward the house—crawling along the sidi
 
 The wind drops. The rain is still falling, but the howling stops. 
 
-Then it starts. **THE HUM.**
+Then it starts. The Hum. 
 
 It rises from the marsh, a dense, low-grade vibration that rattles Dallas’s teeth. Slowly, at the edge of the tall grass, the darkness itself seems to thicken. 
 
@@ -2503,7 +2501,7 @@ ASHER
 (pointing into the void)
 They're coming.
 
-Pairs of red eyes blink into existence. Two. Then four. Then a dozen. They aren't walking—they are drifting, heavy and crushing, actively erasing the sound of the rain as they move closer to the yard. 
+Pairs of red eyes blink into existence. Two. Then four. Then a dozen. They aren't walking—they are drifting, heavy and crushing, actively erasing the sound of the wind as they move closer to the yard. 
 
 DOMINIC
 (panicking, stepping back)
@@ -2513,14 +2511,14 @@ INT. DALLAS'S LIVING ROOM - CONTINUOUS
 
 Dallas shoves everyone inside. He slams the door and deadbolts it. He watches his military receiver. The waveform on the screen is a jagged, violent mess. 
 
-DALLAS
-(to Makayla, eyes glued to screen)
+MAKAYLA
+(eyes glued to screen)
 The frequency is spiking. We have to set the acoustic walls right now.
 
 Makayla drops her bag on the coffee table. She looks at the massive speakers Dallas dragged inside earlier, then at the small, glowing crystal she wired to the oscillator. 
 
 MAKAYLA
-Dallas, look at the output draw. If we fire a 115 megahertz phase-canceler inside this living room... the concussive shockwave will blow the roof off. We'll be deaf, or dead. 
+Dallas, look at the output draw. If we fire the phase-canceler inside this living room... the shockwave will kill us.  
 
 The house shudders violently. The rotting black veins are creeping under the front door. The red glowing eyes bleed through the window panes.
 
@@ -2530,32 +2528,29 @@ So what do we do?! We can't stay here!
 Makayla looks out the back window toward the pitch-black abyss of the marsh. 
 
 MAKAYLA
-We don't. We take the fight to them. We push into the grass, create a safe zone, and detonate the frequency out in the open. 
-
-DALLAS
-(staring at the massive speakers)
-They weigh eighty pounds each. The mud out there is two feet deep. 
+We push into the grass, create a safe zone, and detonate the frequency out in the open. 
 
 DOMINIC
+(staring at the massive speakers)
+Those speakers? They weigh eighty pounds each. The mud out there is two feet deep. 
+
+DALLAS
 I'll carry them. 
 
-Dallas and Makayla stare at Dominic. The man who was worried about parking tickets and property values an hour ago is rolling up his sleeves. 
+Dominic and Makayla stare at Dallas. 
 
-DOMINIC (CONT'D)
+DOMINIC
 I'll carry the damn speakers. Makayla, what do you need?
 
 MAKAYLA
 (frantically moving)
-Batteries. We need marine batteries. I need the oscillator strapped to my chest. Asher, you have to carry the creature in the backpack. Keep it directly behind me so the frequency shields it. 
+Batteries. We need marine batteries. I need the oscillator strapped to my chest. Asher, you bring the backpack.
 
 It’s a frantic, desperate load-out. Dallas and Dominic heave the massive speakers onto their shoulders, wrapping heavy nylon straps around their chests to distribute the weight. 
 
 Makayla uses duct tape to secure the oscillator and the translucent crystal to her chest rig. She grabs a portable, handheld speaker. 
 
 The front door bows inward, the wood groaning and cracking under immense, unseen pressure. Black rot explodes across the grass towards the door. 
-
-DALLAS
-Back door! Go! Go!
 
 They burst out the back door, burdened by the heavy equipment, just as the living room windows shatter inward behind them. 
 
@@ -2663,7 +2658,7 @@ Makayla breaches through a thick wall of reeds and stops. Dallas, Dominic, and A
 
 They are standing in a perfect, geometric ring of flattened grass. It’s almost perfectly circular, about fifty feet in diameter. The tall stalks around the edge are woven together tight like a wicker basket, forming an impenetrable wall. 
 
-Inside the ring, it is completely calm. The storm raging directly above them doesn't penetrate the space. It’s eerily peaceful. 
+Inside the ring, it is completely calm. The storm raging directly above them doesn't penetrate the space. It’s eerily peaceful. zzzz
 
 And it is glowing. 
 
