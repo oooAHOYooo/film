@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/5/2026, 12:05:40 PM*
+*Compiled on 3/5/2026, 12:52:06 PM*
 
 ---
 
@@ -2472,7 +2472,13 @@ Dominic sits down on the outside porch.
 (action)
 Makayla lifts the sparking portable speaker. She sweeps the invisible acoustic beam across the yard like a lighthouse beam. The a small glint of a red eye - is glimmering in the distance.  wall of Red-Eye shadows violently flinches, peeling back into the reeds and leaving a temporary, circular safe zone in the pouring rain. 
 
-Dallas and Makayla enter the tall grass. 
+But there are too many. Hundreds of red eyes begin to dot the tree line. The sheer numbers are overwhelming the small portable speaker.
+
+DALLAS
+(grabbing Makayla)
+Inside! Now!
+
+They turn and sprint back into the house, slamming the door.
 
 
 ---
@@ -2491,139 +2497,14 @@ Dallas and Makayla enter the tall grass.
 
 <!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 
-# Scene 22: The Elders
-<!-- summary: The golden creatures emerge at the edge of the yard. The Red-Eyes attack. Dallas rescues the tiny creature, forcing them to set the trap immediately. -->
-
-EXT. EDGE OF THE TALL GRASS - CONTINUOUS
-
-As the crew enter the grass - the wind picks up and the air grows with heavy atompshere. 
-
-Makayla sweeps the portable speaker back and forth, holding the whispering sounds of the Red-Eyes at bay. Asher stands beside her, his eyes darting back and forth.
-
-Suddenly, a flickering, a new sound is heard - and Dallas's device picks up on it. A faint glow bleeds softly through the reeds. Just a few feet away, outside of their protective acoustic ring. As they approach, the glow grows brighter.
-
-There, in a geometric ring of perfectly flattened stalks, is the tiny creature resting easy and looking up at the sky. All around it, the tall reeds sway violently as if it were in a hurricane. 
-
-Its pulse is slowing. The glow in its neck flickering like a dying bulb, dimming into a faint amber.  
-
-Surrounding it are about half a dozen red-eyed creatures, their bodies hunched and their movements jerky. 
-
-Dominic's eyes widen in horror.  Dallas remains still and keeps his keys focused on the golden creature. 
-
-Surrounding it are a group of elders—larger,  different shaded- golden creatures. They are attending to the injured one, their movements gentle and desperate. 
-
-Asher whines, grabbing the sides of his head in sudden pain. The elders look at Asher. One of them tilts its massive head, emitting a soft, deeply resonant hum. Instantly, Asher's tight shoulders drop. His breathing calms. 
-
-Then the wind changes. 
-
-A heavy, crushing sound approaches through the reeds—the massive Red-Eye shadows rocketing toward the light. 
-
-The elders lift their hands. From their backs, a fine golden mist sprays out into the air, trying to weave a protective acoustic field. But it's not enough. The Red-Eyes smash through them, erasing the light in violent snaps. They devour the sound. It's an absolute massacre. 
-
-The creature breaks through the collision of light and shadows.  One of the red-eyed creatures lunges for it and snatches it up in its mouth. 
-
-Dallas without flinching runs toward the creature. 
-
-MAKAYLA
-Dallas!!
-
-He snatches the frail, glowing creature against his chest, and scrambles backward.  The red-eyed creatures turn their attention to Dallas and the creature. They begin to climb the tall grass in their ghastly manner - and ready their attack.
-
-Asher hits the trigger on the device - and for a moment the sound is deafening. The red-eyed creatures flinch and recoil from the sound. 
-
-Dallas turns and runs toward the reed exit. 
-
-Dominic, Makayla and Asher  follow close behind
-
----
-
-
-### Scene 23: Predator Attack
-
-*ACT III — The Return | ID: predator-attack | File: s23.md*
-
----
-
-<!-- scene: 23 file: s23.md nickname: predator-attack -->
-
-# Scene 23: The Final Setup
-<!-- summary: Intentionally compressed. The crew scrambles to wire the trap. -->
+# Scene 22: The Breach & The Load-Out
+<!-- summary: The Red-Eyes swarm the house. Realizing they can't set the trap inside without destroying the home, the crew frantically packs the heavy acoustic gear to make their stand in the marsh. -->
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 
-The crew run and run and run through the tall grass and eventually make it out on the doorway. 
+The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
 
-They hold the creature in the backpack and close to their chest. The tall grass around them is rustling and whispering.
-
-
-
-The wind is howling now, stinging their faces. Dallas and Dominic heave the massive speakers into position on the lawn, angling them toward each other to create a narrow funnel pointing toward the marsh. 
-
-Makayla attaches the sensor between the speakers, her bare, freezing fingers quickly twisting raw copper to Dallas's receiver. The trap is acoustic—invisible. No concrete wall. Just two volatile frequencies waiting to violently collide.
-
-Asher gives Dominic a quick, frantic pointing tour of the equipment. He reaches for the main dial—then pulls his hand back before touching it. He taps his leg twice instead. 
-
-A small radio on the porch plays thinly through the static—PAT CLENDENEN from the news van, cheerfully welcoming Branford to a beautiful southern New England morning. The contrast is cruel, almost mocking.
-
-The trap is set—not a wall to hide behind, but a kill zone explicitly designed to catch a predator. And the hum from the tall grass isn't just loud anymore; it's rattling their bones.
-
----
-
-
-### Scene 24: The Perimeter
-
-*ACT III — The Return | ID: the-perimeter | File: s24.md*
-
----
-
-<!-- scene: 24 file: s24.md nickname: the-perimeter -->
-
-# Scene 24: Holding the Line
-<!-- summary: Intentionally compressed. Waiting for the strike. -->
-
-EXT. DALLAS'S PORCH - CONTINUOUS
-
-Dallas wipes the mud from his face and walks back to the house. The crew clusters together tightly on the porch, drenched and shivering in the rain. 
-
-The injured creature lies safely in its shoebox near the door, its faint golden pulse matching the blinking green LED on the acoustic trap. 
-
-DOMINIC
-(staring at the yard)
-This is actually crazy. I'm losing my mind. 
-
-No one answers him. They just stare out into the pitch-black abyss of the yard.
-
-The crew stand at the edge of the tall grass. 
-
-
----
-
-
-### Scene 25: The Last Dinner
-
-*ACT III — The Return | ID: the-last-dinner | File: s25.md*
-
----
-
-<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
-
-# Scene 25: The Climax
-<!-- summary: The climax. The storm hits, the power goes out, and the shadow creatures arrive. The phase-cancellation trap is tested. Dominic physically holds the line. -->
-
-EXT. DALLAS'S BACKYARD - NIGHT
-
-Siding rattles. The neighborhood is pitch black, stripped of all power. 
-
-Dallas, Makayla, Asher, and Dominic stand on the porch, staring out at the yard. The only light comes from the small, blinking green LED on Makayla’s sensor, wired between the two massive speakers facing the marsh.
-
-DOMINIC
-(shouting over the wind)
-I can't see anything! Let's just go into the basement!
-
-MAKAYLA
-If we go down there, we trap ourselves! It has to hold here!
-
-Suddenly, the wind drops. The rain is still falling, but the howling stops. 
+The wind drops. The rain is still falling, but the howling stops. 
 
 Then it starts. **THE HUM.**
 
@@ -2639,86 +2520,324 @@ DOMINIC
 (panicking, stepping back)
 What is that?! What IS THAT?!
 
-Dallas grips the wooden railing hard enough to splinter it. He watches his military receiver. The waveform on the screen is a jagged, violent mess. 
+INT. DALLAS'S LIVING ROOM - CONTINUOUS
+
+Dallas shoves everyone inside. He slams the door and deadbolts it. He watches his military receiver. The waveform on the screen is a jagged, violent mess. 
 
 DALLAS
 (to Makayla, eyes glued to screen)
-The frequency is spiking. 
+The frequency is spiking. We have to set the acoustic walls right now.
 
-The red eyes glide past the edge of the property line. The veins of burn marks stretching across the grass begin to hiss, turning pitch black. 
-
-Suddenly, the front door of the house explodes inward. 
-
-A massive, formless shadow pours into the living room. The air freezes. The sound of the rain is instantly sucked out of the room, leaving a horrific, suffocating vacuum. 
-
-ASHER
-(screaming silently in the vacuum)
-
-The shadow creature reaches a massive, crawling tentacle across the living room floor directly toward the shoebox holding the golden creature. The black rot spreads across the hardwood instantly. 
-
-Dallas's arm burns with intense, agonizing pain as the rot under his skin reacts to the creature's proximity. 
+Makayla drops her bag on the coffee table. She looks at the massive speakers Dallas dragged inside earlier, then at the small, glowing crystal she wired to the oscillator. 
 
 MAKAYLA
-Now! Dallas, hit it!
+Dallas, look at the output draw. If we fire a 115 megahertz phase-canceler inside this living room... the concussive shockwave will blow the roof off. We'll be deaf, or dead. 
 
-Dallas slams the master switch on the oscillator. 
-
-A high-pitched, harmonic tone—**115.3 MHz**—blasts through the speakers outside, projecting the acoustic wall directly *through* the open front door.
-
-It isn’t just loud; it's physically concussive. 
-
-**CRACK!**
-
-A brilliant flash of golden static erupts inside the living room. The shadow recoils violently, letting out a horrific gnashing shriek as the frequency literally burns it. The opposing frequencies collide, creating a dome of sheer sonic force that acts like a snowplow.
-
-The acoustic wall pushes the massive shadow backward, dragging it out of the living room, across the porch, and back into the yard. 
+The house shudders violently. The rotting black veins are creeping under the front door. The red glowing eyes bleed through the window panes.
 
 DOMINIC
-(covering his ears)
-It's pushing them out! 
+So what do we do?! We can't stay here!
 
-More shadows rush the perimeter, blind with rage. Snap! Crack! Flashes of golden electricity light up the backyard like a strobe light as each shadow hits the phase-cancellation trap and is violently repelled. The air smells heavily of ozone and burnt wood.
-
-Asher watches, completely mesmerized. He taps his leg twice. It’s working.
-
-But the receiver in Dallas’s hand starts to crackle and smoke. The needle is buried in the red. 
-
-DALLAS
-The crystal! It’s drawing too much current!
+Makayla looks out the back window toward the pitch-black abyss of the marsh. 
 
 MAKAYLA
-Hold the line! If we drop the frequency now, they'll erase us!
+We don't. We take the fight to them. We push into the grass, create a safe zone, and detonate the frequency out in the open. 
 
-The largest of the shadows rears up, its red eyes burning bright. It throws its entire, massive weight against the center of the acoustic corridor. The right speaker groans, its heavy wooden frame lifting dangerously out of the mud. 
+DALLAS
+(staring at the massive speakers)
+They weigh eighty pounds each. The mud out there is two feet deep. 
+
+DOMINIC
+I'll carry them. 
+
+Dallas and Makayla stare at Dominic. The man who was worried about parking tickets and property values an hour ago is rolling up his sleeves. 
+
+DOMINIC (CONT'D)
+I'll carry the damn speakers. Makayla, what do you need?
+
+MAKAYLA
+(frantically moving)
+Batteries. We need marine batteries. I need the oscillator strapped to my chest. Asher, you have to carry the creature in the backpack. Keep it directly behind me so the frequency shields it. 
+
+It’s a frantic, desperate load-out. Dallas and Dominic heave the massive speakers onto their shoulders, wrapping heavy nylon straps around their chests to distribute the weight. 
+
+Makayla uses duct tape to secure the oscillator and the translucent crystal to her chest rig. She grabs a portable, handheld speaker. 
+
+The front door bows inward, the wood groaning and cracking under immense, unseen pressure. Black rot explodes across the grass towards the door. 
+
+DALLAS
+Back door! Go! Go!
+
+They burst out the back door, burdened by the heavy equipment, just as the living room windows shatter inward behind them. 
+
+The massive, formless shadows pour into the house—but the crew is already sprinting toward the edge of the tall grass. They plunge into the suffocating darkness of the marsh.
+
+---
+
+
+### Scene 23: Predator Attack
+
+*ACT III — The Return | ID: predator-attack | File: s23.md*
+
+---
+
+<!-- scene: 23 file: s23.md nickname: predator-attack -->
+
+# Scene 23: The Trench Run
+<!-- summary: The crew makes a grueling, terrifying push through the pitch-black tall grass. They must avoid patrolling Red-Eyes while carrying the heavy acoustic equipment into the marsh. -->
+
+EXT. TALL GRASS - CONTINUOUS
+
+The second they cross the threshold off the lawn, they are plunged into total sensory deprivation. 
+
+The tall grass towers over their heads, ten feet high and thick like jungle vines. The wind is howling, whipping the stalks in violent, unpredictable rhythms. 
+
+It is pitch black. The only light is the small, blinking green LED on Makayla’s chest rig. 
+
+They move in single file. Makayla is leading, sweeping the handheld speaker back and forth like a flashlight. Behind her is Asher, hunched low, clutching the backpack with the golden creature. Dallas and Dominic take up the rear, breathing heavily, their boots sinking deep into the marsh mud under the crushing eighty-pound weight of the massive speakers. 
+
+MAKAYLA
+(barely a whisper over the wind)
+Straight ahead. Stay close to the beam. If you step outside my acoustic bubble, I can't protect you. 
+
+The air is thick, humid. Heavy. The "veins" of black rot are everywhere on the ground, hissing as the rain hits them. 
+
+ASHER
+They're above us. 
+
+Dallas looks up. Above the swaying tops of the grass, massive, formless shadows drift lazily through the storm clouds like storm surges. They are hunting. Searching. Hundreds of glowing red eyes piercing the dark. 
+
+Suddenly, a massive shadow drops down into the grass fifty feet ahead of them. 
+
+The concussive force of its landing knocks Dominic to his knees. His speaker groans, the heavy wood sliding dangerously on his shoulder. 
+
+DOMINIC
+(grunting)
+I'm slipping. 
+
+DALLAS
+(whispering intensely)
+Hold it, Dom. Don't drop it in the mud. 
+
+Makayla freezes. The Red-Eye is directly in their path, thrashing through the reeds. Its black, rotting tendrils search the dirt in a wide arc. 
+
+MAKAYLA
+(panic rising)
+It's patrolling. 
+
+DALLAS
+Hit it with the portable beam!
+
+MAKAYLA
+I can't! It drains the battery by twenty percent every time I fire it. We'll run out of juice before we reach the center of the marsh to set the main trap!
+
+The shadow creeps closer. Forty feet. Thirty feet. The black rot spreads toward Dominic's boot. 
+
+It stops. Its massive red eyes scan the area. It senses something. The silence stretches. Dallas tightens his grip on the nylon strap holding his speaker. 
+
+Asher steps forward from behind Makayla. He closes his eyes and reaches his hand out toward the swaying grass. He taps his leg twice. He begins to hum. 
+
+It's a bizarre, off-key sound—but mathematically perfect to the exact frequency he heard the creature make earlier. 
+
+The Red-Eye snaps its head in the opposite direction. Off to the right. Following the echo of Asher's voice, which he mysteriously managed to throw fifty feet away. 
+
+The massive shadow turns and drifts off into the darkness, chasing the ghost sound. 
+
+Makayla exhales slowly. 
+
+MAKAYLA
+Asher... how did you do that?
+
+Asher just points forward into the dark. 
+
+ASHER
+We have to keep moving. The center is close. 
+
+Dominic groans, pulling his boot out of a foot of thick, sucking mud. He adjusts the eighty-pound weight on his shoulder. Dallas grabs his arm, helping him up. 
+
+DALLAS
+You good?
+
+DOMINIC
+(gritting teeth)
+Never better. Just a light hike in the country. Let's go. 
+
+They push forward, deeper into the howling void.
+
+---
+
+
+### Scene 24: The Perimeter
+
+*ACT III — The Return | ID: the-perimeter | File: s24.md*
+
+---
+
+<!-- scene: 24 file: s24.md nickname: the-perimeter -->
+
+# Scene 24: The Sanctuary & The Siege
+<!-- summary: The crew finds the Golden Elders hiding in a flattened ring of grass. They reunite the creature just before the Red-Eyes launch a massive, coordinated attack on the sanctuary. -->
+
+EXT. CENTER OF THE MARSH - LATER
+
+The howling wind suddenly dies down. 
+
+Makayla breaches through a thick wall of reeds and stops. Dallas, Dominic, and Asher break through behind her, collapsing to their knees in the mud under the weight of the speakers. 
+
+They are standing in a perfect, geometric ring of flattened grass. It’s almost perfectly circular, about fifty feet in diameter. The tall stalks around the edge are woven together tight like a wicker basket, forming an impenetrable wall. 
+
+Inside the ring, it is completely calm. The storm raging directly above them doesn't penetrate the space. It’s eerily peaceful. 
+
+And it is glowing. 
+
+DALLAS
+(breathless, staring)
+My god. 
+
+Sitting in a circle in the center of the flattened grass are the Golden Elders. They are massive—seven feet tall, covered in thick, iridescent golden fur. They look ancient. Wise. Their giant, primate-like faces are serene. 
+
+They are humming. A deep, resonant, multi-chord frequency that visibly vibrates the air around them, creating a faint, shimmering golden dome over the sanctuary. 
+
+Asher slowly unzips the backpack. 
+
+The tiny, injured creature pokes its head out. The glowing pulse in its neck, which had been weak and erratic, suddenly flares bright gold as it hears its family's song. 
+
+Asher lifts the small creature and gently sets it down in the mud. The tiny being stumbles forward, letting out a high-pitched chirp. 
+
+One of the giant Elders turns its head. It sees the baby. 
+
+The Elder doesn’t move fast, but with massive, deliberate grace. It scoops the tiny creature up into its giant, golden-furred arms. The baby nuzzles into the thick fur, safe. 
+
+The Elder looks up at Asher. Then at Dallas. It slowly bows its head, emitting a single, isolated note of pure, acoustic gratitude that rattles Dallas's ribs in the best possible way. 
+
+Makayla looks at her screen. The jagged red lines are spiking massively at the edge of the circle. 
+
+They're blocking the shadows. 
+
+A heavy, crushing sound slams into the woven wall of grass on the edge of the circle. The golden dome shudders violently. 
+
+The peace is broken instantly. 
+
+Dozens of massive, corrupted Red-Eye shadows burst through the woven grass perimeter. The black rot spreads across the sanctuary floor instantly. 
+
+The Elders rise to their feet, roaring—not with sound, but with concussive, acoustic blasts of golden light. From their backs, a fine golden mist sprays into the air, trying to weave the protective field thicker. 
+
+It’s a horrific clash of physics. The golden mist meets the black shadows in violent, ozone-scented snaps. The Red-Eyes are trying to devour the light. 
+
+DOMINIC
+(terrified)
+There's too many of them!
+
+The massive Red-Eyes swarm the largest Golden Elder, ripping into its acoustic field with jagged, corrupted static. The Elder is pushed back toward the center of the ring, shielding the injured one. 
+
+Dominic looks at the massive wooden speakers lying in the mud. 
+
+Dominic screams, an animalistic roar of adrenaline and fear, and heaves the eighty-pound speaker off the ground. Dallas grabs the other. 
+
+They wade through the chaotic crossfire of light and shadow, positioning the two massive wooden frames in a V-shape in the very center of the ring. 
+
+
+
+
+---
+
+
+### Scene 25: The Last Dinner
+
+*ACT III — The Return | ID: the-last-dinner | File: s25.md*
+
+---
+
+<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
+
+# Scene 25: The Final Blast
+<!-- summary: In the mud and chaos, they wire the acoustic trap. Dominic physically holds the heavy speakers upright against the onslaught as Dallas detonates the golden frequency, destroying the shadow army. -->
+
+EXT. CENTER OF THE MARSH - LATER
+
+The golden dome of the Elders is failing. 
+
+Red-Eye shadows are ripping through the barrier, violently canceling out the light. The black rot is spreading rapidly inward across the flattened grass floor. 
+
+Dallas and Dominic are in the center, struggling to keep the massive eighty-pound wooden speakers standing upright in the thick marsh mud. They are aimed outward, creating a narrow funnel toward the advancing shadow horde. 
+
+DALLAS
+(screaming over the chaos of frequencies)
+Makayla! The wires! Hurry!
+
+Makayla drops to her knees in the mud. She is trembling, cold, covered in rain and ozone. She pulls the thick copper wires from the speakers toward the oscillator strapped to her chest. 
+
+She twists the cold copper around the small, translucent crystal. Her fingers slip. 
+
+MAKAYLA
+It won't catch! The humidity is destroying the connection!
+
+ASHER
+They're breaking through!
+
+The largest Elder groans, a deep sub-bass sound, as a massive Red-Eye slams into it, throwing it backward. The Elder falls to the mud, its golden fur dimming as the shadow begins to erase its frequency completely. 
+
+The horde of massive, formless red-eyed shadows surges forward toward the center. Toward the baby. Toward the crew. 
+
+DALLAS
+(holding a speaker steady)
+Makayla!
+
+MAKAYLA
+(frantically twisting bare wire)
+I'm tying it! I'm tying it!
+
+She wraps the copper tight and bites down hard on the connection to crimp the cold wire against the crystal. The small screen on her chest flares green. The connection holds. 
+
+MAKAYLA (CONT'D)
+Hit it! 
+
+Dallas reaches for the master dial on her chest rig. 
+
+They are suddenly hit from the side. A massive shadow sweeps its rotting tendrils across the mud. The concussive, silent force of its movement slams into the left speaker. 
+
+The heavy wooden frame groans, lifting dangerously out of the mud. It is tipping over. If it falls, the acoustic wall will fail and the feedback loop will kill them all. 
 
 DOMINIC
 It’s tipping! 
 
-Dominic—who spent the whole week worrying about parking tickets and lawn care—throws himself into the brutal mud. He grabs the speaker stand, planting his boots deep into the dirt, using his own body weight to anchor the acoustic wall. 
+Dominic—the man who only ever cared about neat lawns and HOA rules—throws himself entirely into the brutal, rotting mud. 
 
-The golden static flares so bright it blinds them. The shockwave rattles Dominic to his bones, but he doesn't let go. He grits his teeth and holds.
-
-The oscillator whines—a desperate, failing sound. 
+He grabs the listing speaker stand, planting his boots deep into the dirt, using his own body weight to anchor the acoustic frame upright. The black, rotting veins creep up his pant leg. He screams in agonizing pain but doesn't let go. 
 
 DALLAS
 (screaming)
 Hold on!
 
-Dallas grabs the dial and forces it perfectly onto **115.3**, reinforcing the signal with everything the battery has left. 
+Dallas grabs the oscillator dial on Makayla's chest and forces it perfectly onto **115.3**, reinforcing the signal with everything the battery has left. 
 
-A massive, concussive **BOOM** of golden light shatters outward over the lawn. The shockwave lifts Dallas and Dominic off their feet, knocking them backward. 
+A massive, concussive **BOOM** of golden light shatters outward over the marsh. 
+
+The shockwave is incredible. It throws Dallas, Makayla, and Asher completely off their feet, knocking them backward into the mud. 
+
+The acoustic blast of 115.3 MHz acts like a 360-degree snowplow. 
+
+A brilliant flash of golden static erupts inside the claustrophobic walls of the flattened grass. The wall of Red-Eyes recoils violently, letting out a horrific gnashing shriek as the frequency literally burns them. 
+
+The sheer sonic force ripples through the entire marsh, flattening the tall grass for hundreds of yards in every direction. The massive shadows are instantly vaporized into thin, harmless grey smoke. 
 
 Silence. 
 
 Total silence. 
 
-Dallas slowly gets up, groaning. His ears are ringing. He looks out at the yard. 
+The wind stops. The rain slows to a gentle, natural drizzle. 
+
+Dallas slowly gets up, groaning. His ears are ringing furiously. He looks out at the marsh. 
 
 The red eyes are gone. The shadows are gone. 
 
-Only the gentle sway of the tall grass remains, illuminated by faint flashes of natural lightning. Between the two smoking speakers, the blackened burn marks on the grass are slowly, beautifully fading back to green. 
+The tall grass is flattened all around them, illuminated by faint flashes of natural lightning. 
 
-Dallas looks down at his wrist. The black, rotting veins beneath his skin are gone. He looks over at Makayla. She is staring at her own forearm. Clean. The shockwave purged the contagion from the earth and from their blood. 
+Dallas looks down at his wrist. The black, rotting veins beneath his skin are gone. He looks over at Makayla. She is staring at her own forearm. Clean. He looks over at Dominic, who is lying in the mud, panting, completely unharmed. The shockwave purged the contagion from the earth and from their blood. 
+
+The Golden Elders rise to their feet. The baby chirps happily. 
+
+The largest Elder looks at the crew. It doesn't roar. It just nods its massive head, turns, and leads its clan deeper into the remaining marsh, disappearing into the mist. 
 
 Makayla lets out a massive, shuddering breath. Asher smiles. 
 
@@ -2727,7 +2846,7 @@ DOMINIC
 What... what did you just do?
 
 DALLAS
-(looking at the smoking receiver)
+(looking at the smoking crystal on Makayla's chest)
 We tuned them out.
 
 
@@ -2782,10 +2901,10 @@ EXT. BRANFORD - DAY
 
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
 
-EXT. DALLAS HOUSE
-Dallas looks around at his property—the storm has scattered his equipment. Speakers knocked face-down in the mud. The oscillator on its side, screen cracked. But the sensor Makayla wired between them is still blinking. He picks it up. The screen shows a saved file: one clean recording.
+EXT. CENTER OF THE MARSH - DAY
+Dallas walks alone into the flattened ring of grass from the night before. The storm is gone. He finds his heavy equipment where they left it—speakers knocked face-down in the mud. The oscillator on its side, screen cracked. But the sensor Makayla wired between them is still blinking. He picks it up. The screen shows a saved file: one clean recording.
 
-He presses play. The sound fills the yard— it is the tune from the golden furry creatures, captured clean. 
+He presses play. The sound fills the quiet marsh— it is the tune from the golden furry creatures, captured clean. 
 
 Dallas holds play for a long moment. He looks at the photo of Sierra on his receiver. 
 
