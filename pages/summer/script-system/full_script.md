@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/5/2026, 12:52:51 PM*
+*Compiled on 3/5/2026, 2:54:59 PM*
 
 ---
 
@@ -2330,7 +2330,7 @@ INT. DALLAS'S LIVING ROOM - CONTINUOUS
 Dominic holds up Sierra's folder, his hands shaking slightly. The sketches of the golden creatures and the maps of the marsh are undeniable. Dallas steps forward and gently pulls the folder from his grip.
 
 DOMINIC
-Makayla! I told everybody we had a cat! You’ve got military weapons down there.  Dallas, what is going on?!
+Makayla! I told everybody we had a cat! You’ve got military weapons down there.  
 
 MAKAYLA
 Uncle , listen—
@@ -2338,27 +2338,16 @@ Uncle , listen—
 DOMINIC
 Niece, I listen. 
 
-DOMINIC
-(pointing at the folder)
-Don't cover for him! These are ghost stories, Makayla! 
-
-MAKAYLA
-They aren't ghost stories! 
-
-Makayla points hard at the window. The rain is blinding now.
-
-MAKAYLA (CONT'D)
-They've been here since the seventies. Hiding out there, in the noise. And something else is hunting them. If those Red-Eyes take that creature tonight... this folder belongs in the trash. 
+Makayla points hard at the window. The wind is blinding now.
 
 Dominic stares at her and then at Asher. 
 
-DOMINIC
-Asher, tell your sister she’s crazy. 
+Suddenly, the lights in the house flicker. Not the rhythmic, gentle pulse from earlier—a hard, violent loss of power. The room plunges into pitch black and then back again. 
 
-Suddenly, the lights in the house flicker. Not the rhythmic, gentle pulse from earlier—a hard, violent loss of power. The room plunges into pitch black. 
+Makayla abrutly turns and runs out the front door. 
 
-EXT. DALLAS'S BACKYARD - NIGHT (SAME)
-Dallas kicks the porch door open, ignoring Dominic. The wind whips his hair. Asher and Makayla follow close behind. Dominic cautiously steps out last, shivering.
+EXT. DALLAS'S BACKYARD - NIGHT 
+Dominic bursts through the porch door, ignoring Dallas. The wind whips his hair. Asher and Dallas follow close behind. 
 
 In the distance: a pair of eyes. Bright. Dim. Bright. Red. He looks past the telephone pole. Something down the block glows red.
 
@@ -2584,7 +2573,6 @@ The massive, formless shadows pour into the house—but the crew is already spri
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 # Scene 23: The Trench Run
-<!-- summary: The crew makes a grueling, terrifying push through the pitch-black tall grass. They must avoid patrolling Red-Eyes while carrying the heavy acoustic equipment into the marsh. -->
 
 EXT. TALL GRASS - CONTINUOUS
 
@@ -2598,7 +2586,7 @@ They move in single file. Makayla is leading, sweeping the handheld speaker back
 
 MAKAYLA
 (barely a whisper over the wind)
-Straight ahead. Stay close to the beam. If you step outside my acoustic bubble, I can't protect you. 
+Straight ahead. Stay close.
 
 The air is thick, humid. Heavy. The "veins" of black rot are everywhere on the ground, hissing as the rain hits them. 
 
@@ -2615,21 +2603,11 @@ DOMINIC
 (grunting)
 I'm slipping. 
 
-DALLAS
-(whispering intensely)
-Hold it, Dom. Don't drop it in the mud. 
-
 Makayla freezes. The Red-Eye is directly in their path, thrashing through the reeds. Its black, rotting tendrils search the dirt in a wide arc. 
 
 MAKAYLA
 (panic rising)
 It's patrolling. 
-
-DALLAS
-Hit it with the portable beam!
-
-MAKAYLA
-I can't! It drains the battery by twenty percent every time I fire it. We'll run out of juice before we reach the center of the marsh to set the main trap!
 
 The shadow creeps closer. Forty feet. Thirty feet. The black rot spreads toward Dominic's boot. 
 
@@ -2662,7 +2640,7 @@ DOMINIC
 (gritting teeth)
 Never better. Just a light hike in the country. Let's go. 
 
-They push forward, deeper into the howling void.
+They push forward, deeper into the howling void.zz
 
 ---
 
@@ -2676,7 +2654,6 @@ They push forward, deeper into the howling void.
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
 # Scene 24: The Sanctuary & The Siege
-<!-- summary: The crew finds the Golden Elders hiding in a flattened ring of grass. They reunite the creature just before the Red-Eyes launch a massive, coordinated attack on the sanctuary. -->
 
 EXT. CENTER OF THE MARSH - LATER
 
@@ -2690,17 +2667,11 @@ Inside the ring, it is completely calm. The storm raging directly above them doe
 
 And it is glowing. 
 
-DALLAS
-(breathless, staring)
-My god. 
-
-Sitting in a circle in the center of the flattened grass are the Golden Elders. They are massive—seven feet tall, covered in thick, iridescent golden fur. They look ancient. Wise. Their giant, primate-like faces are serene. 
+Sitting in a circle in the center of the flattened grass are the Golden Elders. They are bigger than the injured creature. About a foot taller than the injured creature, covered in thick, iridescent golden fur. They look ancient. Wise. 
 
 They are humming. A deep, resonant, multi-chord frequency that visibly vibrates the air around them, creating a faint, shimmering golden dome over the sanctuary. 
 
-Asher slowly unzips the backpack. 
-
-The tiny, injured creature pokes its head out. The glowing pulse in its neck, which had been weak and erratic, suddenly flares bright gold as it hears its family's song. 
+ The glowing pulse in its neck, which had been weak and erratic, suddenly flares bright gold as it hears its family's song. 
 
 Asher lifts the small creature and gently sets it down in the mud. The tiny being stumbles forward, letting out a high-pitched chirp. 
 
