@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/6/2026, 9:11:15 AM*
+*Compiled on 3/6/2026, 11:35:08 AM*
 
 ---
 
@@ -1966,12 +1966,7 @@ Dallas and Makayla exchange a wide-eyed, terrified look. The creature shifts gen
 
 <!-- nickname: Makayla's Bond with Creature -->
 <!-- summary: Oscilloscope on the creature. 115.3 MHz. Makayla: it's pulling power from the grid. -->
-
-
-
-INT. DALLAS BASEMENT - NIGHT (DURING LIFEGROUP)
-
-The sound of the LifeGroup singing "Great Is Thy Faithfulness" is muffled by the heavy basement door. Upstairs, the heavy footsteps of Dominic and the first LifeGroup guests begin to echo through the ceiling.
+INT. DALLS BASEMENT
 
 MAKAYLA, DALLAS, and ASHER are crouched in the mudroom, shoulder-to-shoulder. 
 
@@ -1979,41 +1974,55 @@ Makayla stares for a long time at the golden creature. The jagged red lines on h
 
 MAKAYLA
 (whispering, to Dallas)
-They're swarming Creek Bend. Ten minutes before the Crystal hits the limit. If it goes dark out there, we do too.
+I think it's dying. 
 
-She looks closer at the creature.
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
 
-MAKAYLA (CONT'D)
-I think it's dying.
+(action)
+The creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
 
-Dallas walks over. He touches the photo of Sierra taped to his receiver. 
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+
+(action)
+Dallas walks over and then paces around the room to think a bit. Asher and Makayla watch him. He taps various equipments and thinks and thinks. Dallas looks at the photo of Sierra taped to his receiver. 
 
 DALLAS
-Sierra believed that some bio-acoustics weren't just communication. They were camouflage. A defense mechanism. 
+Sierra believed that some bio-acoustics could be used as communication.  A defense mechanism.  They were camouflage.
 
 ASHER
-(checking notebook)
-One-fifteen point three. Lock it in.
+(Trance like)
+One-fifteen point three. 
 
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+
+(action)
 Dallas gently turns the dial on his receiver to **115.3 MHz**. He dials the volume up just enough to create a soft, resonant hum in the basement. 
 
-The creature's ears twitch. It stops its erratic whimpering. Slowly, it opens its mouth and emits a low, melodic tone, trying to match the frequency Dallas is broadcasting. As it sings, the golden glow in its neck grows stronger, pushing back the shadows in the room.
+The creature's ears twitch. It stops its erratic movements. Slowly, it opens its mouth and emits a low, melodic tone, matching the frequency Dallas is broadcasting. As it sings, the golden glow in its neck grows stronger, pushing back the shadows in the room.
 
 MAKAYLA
 (amazed)
-It's mimicking the phase canceler. It’s trying to learn the frequency to hide from the Red-Eyes. 
+It's mimicking.
 
-DALLAS
-It's too weak. It can't hold the tune. 
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+
+(action)
+Dallas walks over to the small creature and gently rubs its furry head. 
 
 MAKAYLA 
-If we keep broadcasting... maybe we can teach it. If it learns the frequency, it can return to the marsh and protect the others. 
+If we keep broadcasting... maybe we can teach it. If it learns the frequency, it can return to the marsh and you know - avoid those red-eye demon things. 
 
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+
+(action)
 The summer breeze blows through the open basement window. 
 
-MAKAYLA (CONT'D)
-We have to teach it before the Red-Eyes take it. And take us.
+MAKAYLA
+We could to teach it.
 
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+
+(action)
 Makayla clicks a "Master" switch on the device. A small, protective green light flickers on.
 
 
@@ -2043,44 +2052,39 @@ DOMINIC
 What are you doing? 
 
 MAKAYLA
-(caught)
 Nothing. Just... getting sugar.
 
 DOMINIC
 For what? You don't drink coffee. Where's Dallas? People are asking for the host.
 
-Makayla desperately thinks of an excuse. 
-
 MAKAYLA
 He's downstairs. We... found a stray cat outside. It's really sick. He's nursing it. I was getting it some sugar water.
-
-Dominic raises an eyebrow, but buys it.
 
 DOMINIC
 A cat? Alright. Well, tell him not to get bit. And tell him to come up soon.
 
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
 Makayla nods quickly and slips away.
 
-Downstairs, the volume of the 115.3 MHz frequency pulses rhythmically through the floorboards. The LifeGroup guests don't know what it is—they assume it's the storm outside. 
+Downstairs, the volume of the creature frequency pulses rhythmically through the floorboards.
 
 INT. DALLAS BASEMENT - CONTINUOUS
-
 Dallas is sweating. He turns the dial up. 
 
 DALLAS
-(whispering)
-Come on. Sing. 
+Come on. 
 
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
 The glowing creature in the shoebox mimics the tone, its golden light flaring brighter with each successful note. But the louder it sings, the harder the walls of the basement shake. 
-
-MAKAYLA
-The Red-Eyes can hear it practicing! It's drawing them here!
 
 HOWIE stays curled in the corner of the stairs, disturbed, whimpering. 
 
-INT. DALLAS LIVING ROOM - CONTINUOUS
-
-The first family for the life group: a young couple—JOSH and SARAH—with their newborn, JP. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. 
+INT. DALLAS LIVING ROOM - UPSTAIRS CONTINUOUS
+The last family arrive late for life group: a young couple—JOSH and SARAH—with their newborn, JP. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. 
 
 The glass pane rattles violently. 
 
@@ -2088,14 +2092,43 @@ MR. MIKE
 (to himself)
 They are listening to the song. They don't like the song.
 
-MAKAYLA 
+DOMINIC
 We have brownies about to be ready.
+
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
+Makayla tries to shuffle past people who are hovering around a kitchen island grabbing popcorn and brownies. 
 
 JOSH
 Makayla, how's your mom doing?
 
 MAKAYLA
 She's doing better thanks.
+
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
+Makayla darts past the crowd and heads for the stairs.
+
+A lifegroup member JOSH, 36, Tall and blonde, talks to PAT CLENDENEN, 60s. 
+
+JOSH
+How is it going for you?
+
+PAT
+Busy week. It's tracking that it'll hit us some point later tonight. 
+
+JOSH
+Do you think there will be flooding. 
+
+PAT
+Definitely. 
+
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
+The two eat carrots and dip. 
 
 JOSH
 Dominic, where's the host.
@@ -2104,7 +2137,7 @@ DOMINIC
 He's downstairs in the basement - not feeling so good.
 
 SARAH
-He knows we're here.
+He knows we're here?
 
 DOMINIC
 Yeah - he should be up in a second.
@@ -2113,22 +2146,24 @@ MAKAYLA
 I'll go and check on him.
 
 INT. BASEMENT - CONTIOUS
+Downstairs, the creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
 
-Dallas glances at the basement door. Downstairs, the creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
+Makayla joins him and brings over some sugar cubes to thte table. The creature is unresponsive.
 
-INT. LIVING ROOM - CONTIOUS
+The sound of the LifeGroup singing "Great Is Thy Faithfulness" is muffled by the heavy basement door. Upstairs, the heavy footsteps of Dominic and the first LifeGroup guests begin to echo through the ceiling.
+
+
+INT. LIVING ROOM - CONTINUOUS
 
 TYLER
-Alright crew, how is everyone's weeks going.
+Alright crew, glad we are all here - gathered together. On this breezy summer night. 
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-The group in a circle all look at eacother. 
-
+The group giggle a bit as the wind picks up. The group in a circle all look at eacother. 
 
 INT. DALLAS' BASEMENT - CONTINOUS
-
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
@@ -2141,29 +2176,28 @@ MR. MIKE walks in behind him. He takes one look at the room and freaks out—lik
 MR. MIKE
 What is here? What is going on downstairs?!
 
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
 Dominic steps between Mr. Mike and the stairs. He guides him back by the elbow.
 
-DOMINIC
-Easy. Easy. Nothing. Just
+MAKAYLA
+Easy. Easy. Nothing. 
 
 MR. MIKE
-There is something down there. 
+There is something down here. DOMINIC DOMINIC
 
-DOMINIC
-What is going on. Mr. Mike what is wrong?
+MAKAYLA
+Mr. Mike what is wrong?
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Makayla signals to Asher who drops a plate on purpose.  
 
-DOMINIC
+MR MIKE. 
 What in the world?!
 
-<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
-
-(action)
-Dominic rushes over to the kitchen and sees that the brownies tray is smashed on the ground.
 
 ---
 
@@ -2180,6 +2214,7 @@ Dominic rushes over to the kitchen and sees that the brownies tray is smashed on
 <!-- summary:  -->
 
 INT. DALLAS'S BASEMENT - SAME TIME
+Mr. Mike rocks back and forth in the chair. 
 
 Dallas shuffles through a pile of old equipment—mono cables, spare parts and arranges them all neatly on a desk.
 
@@ -2273,6 +2308,21 @@ Alright, let's see this cat.
 
 He heads toward the basement alone. Dallas's stomach drops. He and Makayla exchange a panicked look. Asher starts bouncing his leg.
 
+
+---
+
+
+### Scene 20: Red Eyes
+
+*ACT II — The Creature | ID: red-eyes | File: s20.md*
+
+---
+
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
+
+# Scene 20: The Secret is Out
+
+
 INT. BASEMENT - CONTINUOUS
 
 Dominic descends the stairs, expecting a stray kitten. 
@@ -2309,19 +2359,6 @@ Uncle Dominic... we have to get out there and find it before the Red-Eyes do.
 
 The storm outside breaks, rain lashing against the glass.
 
-
----
-
-
-### Scene 20: Red Eyes
-
-*ACT II — The Creature | ID: red-eyes | File: s20.md*
-
----
-
-<!-- scene: 20 file: s20.md nickname: red-eyes -->
-
-# Scene 20: The Secret is Out
 
 INT. DALLAS'S LIVING ROOM - CONTINUOUS
 
@@ -2500,8 +2537,7 @@ They look again. Closer. The eyes reappear. Swirling through the beating wind an
 
 <!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 
-# Scene 22: The Breach & The Load-Out
-<!-- summary: The Red-Eyes swarm the house. Realizing they can't set the trap inside without destroying the home, the crew frantically packs the heavy acoustic gear to make their stand in the marsh. -->
+# Scene 22: The Load-Out
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 The crew step outside to see the weather at hand. 
