@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/6/2026, 12:25:33 PM*
+*Compiled on 3/6/2026, 12:32:36 PM*
 
 ---
 
@@ -2910,16 +2910,9 @@ The Golden Elders rise to their feet. The baby chirps happily.
 
 The largest Elder looks at the crew. It doesn't roar. It just nods its massive head, turns, and leads its clan deeper into the remaining marsh, disappearing into the mist. 
 
-Makayla lets out a massive, shuddering breath. Asher smiles. 
+Makayla lets out a massive, shuddering breath. 
 
-DOMINIC
-(stunned, out of breath, covered in mud)
-What... what did you just do?
-
-DALLAS
-(looking at the smoking crystal on Makayla's chest)
-We tuned them out.
-
+The crew walk back through the tall grass, through neighborhoods, back and slow. 
 
 ---
 
@@ -2938,20 +2931,26 @@ We tuned them out.
 <!-- scene: 26 file: s26.md nickname: final-echoes -->
 
 # Scene 26: The Morning After
-<!-- summary: The calm after the storm. Everyone rests after the battle in the backyard. -->
+<!-- scene: 26 file: s26.md nickname: final-echoes -->
 
+(action)
 The crew huddle around Dallas' apartment and all sleep on the floor as Mr Mike watches a movie on TV. 
 
 Janice makes her way through the door.
 
 JANICE
-Look at all of these sleeping beauties. Dallas, wheres Dallas. Dallas my boy - you were spared from the storm. How are you Mike. 
+Look at all of these sleeping beauties. 
+
+<!-- scene: 26 file: s26.md nickname: final-echoes -->
+
+(action)
+Dallas, wheres Dallas. Dallas my boy - you were spared from the storm. How are you Mike. 
 
 MR. MIKE
 Things are better - things are better than what they were. Yes. 
 
 JANICE
-Thanks for letting everyone crash here Dallas.
+Thanks for letting everyone crash here Dallas. Dominic, Makayla, lets go. 
 
 
 
