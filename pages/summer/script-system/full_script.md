@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/5/2026, 6:13:12 PM*
+*Compiled on 3/6/2026, 9:11:15 AM*
 
 ---
 
@@ -2341,48 +2341,31 @@ Niece, I listen.
 (action)
 Makayla points hard at the window. The wind is blinding now.
 
-Dominic stares at her and then at Asher. 
-
-Suddenly, the lights in the house flicker. Not the rhythmic, gentle pulse from earlier—a hard, violent loss of power. The room plunges into pitch black and then back again. 
-
-Makayla abrutly turns and runs out the front door. 
-
-EXT. DALLAS'S BACKYARD - NIGHT 
-Dominic bursts through the porch door, ignoring Dallas. The wind whips his hair. Asher and Dallas follow close behind. 
-
-In the distance: a pair of eyes. Bright. Dim. Bright. Red. He looks past the telephone pole. Something down the block glows red.
-Makayla runs straight for the tall grass at the edge of their house. 
-
-He looks again. Closer. The eyes reappear. Swirling through the beating rain and the tall grass. Watching the house. Little pulses of red light. Inch by inch. Closer to the edge of the yard.
-
-Black, twisting patterns—like rotten veins—begin creeping up the driveway. The rain hits them and hisses into steam. 
-
 DOMINIC
-(barely a whisper)
-What is that? 
+I don't get it.
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Dallas's hands are white-knuckling the military receiver. The screen is screaming in static. 
+Asher walks over and hands Dominic the device with the cystral on it .
 
-DALLAS
-They're here.
+DOMINIC
+What is this?
 
+ASHER
+It's to keep them at bay.
 
----
+DOMINIC
+Keep who at bay?
 
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
-### Scene 21: Creature Missing
+(action)
+Asher points to the window. Dominic glances out the window and sees the red eyes. He turns back to Asher and then to Makayla. 
 
-*ACT II — The Creature | ID: creature-missing | File: s21.md*
+Suddenly, the lights in the house flicker and within a moment, the room plunges into pitch black. 
 
----
-
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
-
-# Scene 21: The Burn Marks
-<!-- summary: The Red-Eyes swarm the property. Makayla tests the oscillator against the burn marks, proving the phase canceler works. They are trapped and must fight. -->
+The crew walk outside and grab flashlights. 
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
@@ -2398,12 +2381,12 @@ He looks up at the towering shadows at the edge of the property. The hum from th
 MAKAYLA
 Do you think this will work?
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Dallas nods. 
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla drops to her knees, ripping open Dallas's gear bag. She scrambles out a portable speaker, slamming it onto the porch railing, aiming it directly at the creeping burn mark like a shotgun. 
@@ -2413,19 +2396,19 @@ Dallas rips the wire with his teeth and bridges the crystal into the circut.
 MAKAYLA
  Asher—the numbers!
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Asher's hands fly over the oscillator dial with  1-1-5-3. 
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla hits the trigger. 
 
 A sound like thick glass cracking under pressure pierces the air. A high-pitched, localized frequency beam hits the lawn. 
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 The grass at the edge of the yard sways rhythmically,in a direction opposit of  the wind. 
@@ -2438,17 +2421,17 @@ DOMINIC
 (breathless, eyes wide)
 You reversed it. 
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla looks back at the tree line.
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Dallas nods, his jaw tight. He looks at Dominic. 
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Dominic looks at the fading burn mark on the grass. He looks at Asher, vibrating with anxiety in the cold. Finally, Dominic exhales sharply. 
@@ -2456,12 +2439,12 @@ Dominic looks at the fading burn mark on the grass. He looks at Asher, vibrating
 DOMINIC
 I think I am going to sit down, not feeling so good. 
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Dominic sits down on the outside porch.
 
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla lifts the sparking portable speaker. She sweeps the invisible acoustic beam across the yard like a lighthouse beam. The a small glint of a red eye - is glimmering in the distance.  A wall of Red-Eye shadows violently flinches, peeling back into the reeds and leaving a temporary, circular safe zone in the pouring rain. 
@@ -2473,6 +2456,32 @@ DALLAS
 Inside! Now!
 
 They turn and sprint back into the house, slamming the door.
+
+
+---
+
+
+### Scene 21: Creature Missing
+
+*ACT II — The Creature | ID: creature-missing | File: s21.md*
+
+---
+
+<!-- scene: 21 file: s21.md nickname: creature-missing -->
+
+# Scene 21: The Burn Marks
+
+
+Makayla abruptly turns, grabs a flashlight and runs out the front door. 
+
+EXT. DALLAS'S BACKYARD - NIGHT 
+Dominic bursts through the porch door after her. The wind whips his hair. Asher and Dallas follow close behind. 
+
+Makayla runs straight for the tall grass at the edge of their house. Dominic follows her.
+
+Dallas and Asher stop at the edge of the porch. In the distance: a pair of eyes. Bright. Dim. Bright. Red. And then gone. 
+
+They look again. Closer. The eyes reappear. Swirling through the beating wind and the tall grass. They seem like they following Makayla's flashlight. 
 
 
 ---
