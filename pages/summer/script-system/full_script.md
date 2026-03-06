@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/5/2026, 2:55:26 PM*
+*Compiled on 3/5/2026, 6:13:12 PM*
 
 ---
 
@@ -2336,6 +2336,9 @@ Uncle , listen—
 DOMINIC
 Niece, I listen. 
 
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
+
+(action)
 Makayla points hard at the window. The wind is blinding now.
 
 Dominic stares at her and then at Asher. 
@@ -2348,6 +2351,7 @@ EXT. DALLAS'S BACKYARD - NIGHT
 Dominic bursts through the porch door, ignoring Dallas. The wind whips his hair. Asher and Dallas follow close behind. 
 
 In the distance: a pair of eyes. Bright. Dim. Bright. Red. He looks past the telephone pole. Something down the block glows red.
+Makayla runs straight for the tall grass at the edge of their house. 
 
 He looks again. Closer. The eyes reappear. Swirling through the beating rain and the tall grass. Watching the house. Little pulses of red light. Inch by inch. Closer to the edge of the yard.
 
@@ -2357,6 +2361,9 @@ DOMINIC
 (barely a whisper)
 What is that? 
 
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
+
+(action)
 Dallas's hands are white-knuckling the military receiver. The screen is screaming in static. 
 
 DALLAS
@@ -2488,12 +2495,11 @@ They turn and sprint back into the house, slamming the door.
 <!-- summary: The Red-Eyes swarm the house. Realizing they can't set the trap inside without destroying the home, the crew frantically packs the heavy acoustic gear to make their stand in the marsh. -->
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
+The crew step outside to see the weather at hand. 
 
 The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
 
-The wind drops. The rain is still falling, but the howling stops. 
-
-Then it starts. The Hum. 
+The wind drops, the howling stops. Then it starts. The Hum. 
 
 It rises from the marsh, a dense, low-grade vibration that rattles Dallas’s teeth. Slowly, at the edge of the tall grass, the darkness itself seems to thicken. 
 
@@ -2501,7 +2507,11 @@ ASHER
 (pointing into the void)
 They're coming.
 
-Pairs of red eyes blink into existence. Two. Then four. Then a dozen. They aren't walking—they are drifting, heavy and crushing, actively erasing the sound of the wind as they move closer to the yard. 
+<!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
+
+(action)
+From the edge of their property, through 
+Pairs of red eyes blink into existence. Two. Then four. Then a dozen. They drift back and forth. aren't walking—they are drifting, heavy and crushing, actively erasing the sound of the wind as they move closer to the yard. 
 
 DOMINIC
 (panicking, stepping back)
@@ -2635,7 +2645,9 @@ DOMINIC
 (gritting teeth)
 Never better. Just a light hike in the country. Let's go. 
 
-They push forward, deeper into the howling void.zz
+They push forward, deeper into the howling void.
+
+
 
 ---
 
@@ -2658,7 +2670,7 @@ Makayla breaches through a thick wall of reeds and stops. Dallas, Dominic, and A
 
 They are standing in a perfect, geometric ring of flattened grass. It’s almost perfectly circular, about fifty feet in diameter. The tall stalks around the edge are woven together tight like a wicker basket, forming an impenetrable wall. 
 
-Inside the ring, it is completely calm. The storm raging directly above them doesn't penetrate the space. It’s eerily peaceful. zzzz
+Inside the ring, it is completely calm. The storm raging directly above them doesn't penetrate the space. It’s eerily tranquil. 
 
 And it is glowing. 
 
