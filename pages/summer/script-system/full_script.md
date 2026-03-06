@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/6/2026, 12:32:36 PM*
+*Compiled on 3/6/2026, 2:52:41 PM*
 
 ---
 
@@ -2934,7 +2934,7 @@ The crew walk back through the tall grass, through neighborhoods, back and slow.
 <!-- scene: 26 file: s26.md nickname: final-echoes -->
 
 (action)
-The crew huddle around Dallas' apartment and all sleep on the floor as Mr Mike watches a movie on TV. 
+The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. 
 
 Janice makes her way through the door.
 
