@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/6/2026, 2:52:41 PM*
+*Compiled on 3/7/2026, 7:46:37 AM*
 
 ---
 
@@ -2359,7 +2359,7 @@ Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's
 
 INT. DALLAS'S LIVING ROOM - CONTINUOUS
 
-Dallas frantically taps his receiver. The needle isn't just bouncing; it's burying itself in the red. 
+Dallas frantically taps his receiver. The needle flickers back and forth between frequencies. 
 
 MAKAYLA
 Dallas! Where is it?
@@ -2370,10 +2370,10 @@ It's gone.
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-From the direction of the marsh—a cry. Distant, unmistakable. The creature. And then the hum answers it, vibrating up through the floorboards. 
+From the direction of the marsh—a cry emerges that sounds like the creature. 
 
 MAKAYLA
-It went back to the grass! But the Red-Eyes are still there. 
+It went back.
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
@@ -2386,24 +2386,24 @@ Dallas... what is this?
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Dallas stares toward the window. Out at the tall grass swaying in the dark. The Red-Eyes are pulsing at the edge of the property.
+Dallas makes eye contact with Dominic. Outside, the hum increases and Dallas' eyes fall toward the window. Out at the tall grass swaying in the dark. The Red-Eyes are pulsing at the edge of the property.
 
 MAKAYLA
-(pointing)
-Uncle Dominic... we have to get out there and find it before the Red-Eyes do.
+We have to get out there and find it before the Red-Eyes do.
+
+DOMINIC
+The what? Makayla what is going on? Where's the cat?
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-The storm outside breaks, rain lashing against the glass.
-
-Dominic holds up Sierra's folder, his hands shaking slightly. The sketches of the golden creatures and the maps of the marsh are undeniable. 
+Makayla looks at Dominic with a serious expression.
 
 DOMINIC
 Makayla! I told everybody we had a cat! You’ve got military weapons down there.  
 
 MAKAYLA
-Uncle , listen—
+Uncle, listen—
 
 DOMINIC
 Niece, I listen. 
@@ -2411,18 +2411,10 @@ Niece, I listen.
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla points hard at the window. The wind is blinding now.
+Makayla points hard at the window. Asher walks over to Dominic and hands him the device with the cystral on it.
 
 DOMINIC
-I don't get it.
-
-<!-- scene: 20 file: s20.md nickname: red-eyes -->
-
-(action)
-Asher walks over and hands Dominic the device with the cystral on it .
-
-DOMINIC
-What is this?
+I don't get it. What is this? 
 
 ASHER
 It's to keep them at bay.
@@ -2437,9 +2429,43 @@ Asher points to the window. Dominic glances out the window and sees the red eyes
 
 Suddenly, the lights in the house flicker and within a moment, the room plunges into pitch black. 
 
-The crew walk outside and grab flashlights. 
+INT. DALLAS'S LIVING ROOM - CONTINUOUS
+
+Makayla reaches from her backpack and grabs a bunch of flashlights and starts to hand them out to everyone. 
+
+DOMINIC
+We can't go out there.
+
+MAKAYLA
+We have to.
+
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
+
+(action)
+Dominic looks defeated. From the corner of the room Mr. Mike rocks back and forth in his chair. Dominic rushes over to see him. 
+
+DOMINIC
+Mr. Mike, are you okay?
+
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
+
+(action)
+Mr. Mike looks at Dominic with a blank expression. He points toward the window. 
+
+MR. MIKE
+They're going to come. Look outside. The marks. 
+
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
+
+(action)
+Makayla looks out the window and sees the burn marks on the grass. 
+
+MAKAYLA
+Dallas. Look. 
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
+
+Dallas, Makayla and Asher walk outside in the backyard among the 
 The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
 
 Makayla stares at the black veins on the wood. She slowly rolls up her wet sleeve. 
