@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/7/2026, 7:46:37 AM*
+*Compiled on 3/7/2026, 7:49:20 AM*
 
 ---
 
@@ -2465,8 +2465,7 @@ Dallas. Look.
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS
 
-Dallas, Makayla and Asher walk outside in the backyard among the 
-The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
+Dallas, Makayla and Asher walk outside in the backyard and witness the burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
 
 Makayla stares at the black veins on the wood. She slowly rolls up her wet sleeve. 
 
@@ -3023,7 +3022,7 @@ Quiet now. The numbers are finally right. Javarice would have loved the quiet.
 
 INT. DALLAS'S WORKSHOP / HOUSE - DAY
 
-Dallas at his kitchen table and grabs a battery as he walks to his workbench. He begins to fiddle with a recording mechniasm. And feed water to a tiny plant. He finally gets it working. He hits record. From outside, the hum from the tall grass bleeds into the room. He listens. He begins to sketch—notations, marks. An alphabet. 
+Dallas at his kitchen table and grabs a battery as he walks to his workbench. He begins to fiddle with a recording mechniasm. And feed water to a tiny plant. He finally gets it working. He hits record. From outside, a low hum, different from before, bleeds into the room. He listens. He begins to sketch—notations, marks. An alphabet. 
 
 
 ---
@@ -3044,15 +3043,11 @@ EXT. MAKAYLA'S LAIR - DAY
 
 Makayla walks up to the wooden structure in the woods. Asher is already there, stringing up a new, much larger antenna between the trees. The trail cameras have been repositioned to face deeper into the marsh.
 
-Makayla pulls the small, translucent crystal out of her pocket. The one she found in the pristine grass. She places it gently onto a newly built bay area device. 
+Makayla pulls the small, translucent crystal out of her pocket.  She places it gently onto a newly built bay area device. 
 
-The screen flares to life. But it's not erratic this time. It’s a clean, perfect, golden sine wave. 
+The screen flares to life, a clean, perfect, golden sine wave, emerges on screen. 
 
-Makayla puts on a pair of headphones. She smiles.
-
-MAKAYLA
-(whispering to herself)
-Okay. Let's hear what you have to say. 
+Makayla puts on a pair of headphones. 
 
 INT. DALLAS'S BEDROOM - NIGHT
 
@@ -3066,7 +3061,7 @@ EXT. CREEK BEND - DAY
 
 Dallas walks alone with his wife's receiver in hand. The place where the lawn becomes reed. The same bend from before. Dallas stops. He lifts the receiver. He tunes the dial. The hum rises, falls. He adjusts again. The dial clicks into place. He stands there. Recording. The tall grass does not move - and neither does Dallas. 
 
-In the Tall Grass Dallas senses the creature - and plays the pure recording of their hum - and realizes that it matches the exact cadence of Sierra's breathing.
+In the Tall Grass Dallas senses the creature - and plays the pure recording of their hum - and realizes that it matches the exact cadence of Sierra's song.
 
 
 ---
