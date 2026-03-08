@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/7/2026, 7:49:20 AM*
+*Compiled on 3/8/2026, 8:17:58 AM*
 
 ---
 
@@ -1666,14 +1666,25 @@ DALLAS
 I am not sure.
 
 MAKAYLA
-Well you tell me how, last year - before my father passed - he left us a bit of random land in his will. You are looking at a solid acre of Amaranto land. Uncle Dominic and Aunt Janice aren't keen on touching or doing anything with it - so Asher and I built this. 
+My father left Asher and I this random bit of land in Branford, in his will. 
+My uncle isn't keen on touching or doing anything with it - so Asher and I built this. 
 
-DALLAS
-What is it?
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Dallas nods. 
 
 MAKAYLA
 (ignoring his question)
 And funny thing about fate, is - right as we were searching this land - we found this.
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Makayla picks up a small flower that looks planted.
+
+MAKAYLA
+Dominic wouldn't understand what we happened today. Some people live their whole lives in the shadows, thinking that
 
 INT. MAKAYLA'S LAIR - CONTINUOUS
 
