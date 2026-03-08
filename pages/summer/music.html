@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Music — Creatures in the Tall Grass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/table-read.css">
+    <style>
+        :root {
+            --gold: #b8860b;
+            --navy: #1b263b;
+            --paper: #faf8f5;
+            --border: #d4c4a8;
+            --accent: #7a8291;
+        }
+
+        body {
+            background: var(--paper);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .page {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2.5rem 1.25rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .back-link:hover { color: var(--gold); }
+
+        .page-header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .page-eyebrow {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--navy);
+            letter-spacing: -0.02em;
+            margin: 0 0 0.75rem;
+        }
+
+        .page-intro {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: var(--navy);
+            font-weight: 300;
+            max-width: 560px;
+        }
+
+        .philosophy {
+            background: var(--navy);
+            color: #fff;
+            padding: 2rem;
+            border-radius: 2px;
+            margin: 0 0 3rem;
+        }
+
+        .philosophy h2 {
+            font-family: 'Outfit', sans-serif;
+            color: var(--gold);
+            margin-top: 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        .philosophy p {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            opacity: 0.88;
+            margin: 0;
+        }
+
+        /* Table */
+        .music-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
+        .music-table thead tr {
+            background: var(--navy);
+        }
+
+        .music-table thead th {
+            padding: 0.75rem 1rem;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            font-weight: 700;
+            color: var(--gold);
+            text-align: left;
+        }
+
+        .music-table thead th:first-child {
+            width: 2.5rem;
+            text-align: center;
+        }
+
+        .music-table thead th:nth-child(2) { width: 16%; }
+        .music-table thead th:nth-child(3) { width: 22%; }
+
+        .music-table tbody tr {
+            border-bottom: 1px solid var(--border);
+            transition: background 0.1s;
+        }
+
+        .music-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        .music-table tbody tr:hover {
+            background: var(--paper);
+        }
+
+        /* Act separator rows */
+        .music-table tbody tr.act-row td {
+            background: var(--paper);
+            padding: 0.45rem 1rem;
+            font-size: 0.6rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .music-table td {
+            padding: 1rem;
+            vertical-align: top;
+            font-size: 0.875rem;
+            color: var(--navy);
+            line-height: 1.5;
+        }
+
+        .music-table td:first-child {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 200;
+            color: var(--border);
+            text-align: center;
+            vertical-align: middle;
+            padding: 1rem 0.5rem;
+        }
+
+        .td-song {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--navy);
+        }
+
+        .td-scene {
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 400;
+            line-height: 1.4;
+        }
+
+        .td-note {
+            font-weight: 300;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--navy);
+        }
+
+        @media (max-width: 600px) {
+            .music-table thead th:nth-child(3),
+            .music-table td:nth-child(3) {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+
+        <a class="back-link" href="/pages/summer/overview.html">← Overview</a>
+
+        <div class="page-header">
+            <p class="page-eyebrow">Creatures in the Tall Grass</p>
+            <h1 class="page-title">Music</h1>
+            <p class="page-intro">Original songs in film order — from Dallas's first day in Branford through
+                the acoustic collapse and what's left after.</p>
+        </div>
+
+        <div class="philosophy">
+            <h2>The Guiding Principle</h2>
+            <p>Sound is the film's central argument. The music should feel like it was picked up by Dallas's
+                equipment rather than dropped in from outside — sparse, low-frequency, built from resonance
+                rather than melody. The score lives in the body before it reaches the ear. Songs earn their
+                place by belonging to the same acoustic world as the creature's hum.</p>
+        </div>
+
+        <table class="music-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Song</th>
+                    <th>Scene</th>
+                    <th>Mood & Direction</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="act-row">
+                    <td colspan="4">Act I — The Frequencies</td>
+                </tr>
+
+                <tr>
+                    <td>01</td>
+                    <td>
+                        <div class="td-song">"Arrival"</div>
+                    </td>
+                    <td class="td-scene">Dallas unloads boxes, looks at the tall grass for the first time</td>
+                    <td class="td-note">Arrival without excitement. Dallas is here because he had nowhere else to go. The grass is vast and still and he is small in front of it. No percussion — just something that breathes.</td>
+                </tr>
+
+                <tr>
+                    <td>02</td>
+                    <td>
+                        <div class="td-song">"The Hum"</div>
+                    </td>
+                    <td class="td-scene">Dallas unpacks Sierra's bioacoustics equipment in the spare room</td>
+                    <td class="td-note">Every piece of equipment is a relic. He handles it accordingly. Grief that has gone quiet — not raw, just present. Slow and patient, with a tone that lingers a beat longer than expected.</td>
+                </tr>
+
+                <tr>
+                    <td>03</td>
+                    <td>
+                        <div class="td-song">"The Coordinates"</div>
+                    </td>
+                    <td class="td-scene">Dallas picks up the anomalous frequency alone at the equipment, late at night</td>
+                    <td class="td-note">The signal isn't frightening yet — just wrong in a way he can't explain. Puzzled, pulled forward, a little electric. A pattern that almost resolves but doesn't.</td>
+                </tr>
+
+                <tr>
+                    <td>04</td>
+                    <td>
+                        <div class="td-song">"Marsh Walk"</div>
+                    </td>
+                    <td class="td-scene">Makayla leads Dallas toward the marsh at dusk — the first walk in</td>
+                    <td class="td-note">Makayla moves through the grass like she knows it. The feeling of being led somewhere by someone younger and more certain than you — wonder and mild unease together. The song moves. Not urgent, but forward.</td>
+                </tr>
+
+                <tr class="act-row">
+                    <td colspan="4">Act II — The Mimic</td>
+                </tr>
+
+                <tr>
+                    <td>05</td>
+                    <td>
+                        <div class="td-song">"The Hollow"</div>
+                    </td>
+                    <td class="td-scene">The geometric clearing — Dallas steps into the ring of flattened grass and sees the creature</td>
+                    <td class="td-note">Not fear — the suspension just before fear, the moment before your body decides what it is. The air pressure changed. Something resonant and low-frequency, as if the ground itself is the instrument.</td>
+                </tr>
+
+                <tr>
+                    <td>06</td>
+                    <td>
+                        <div class="td-song">"The First Hum"</div>
+                    </td>
+                    <td class="td-scene">The creature in the basement — its first sustained, unbroken hum fills the room</td>
+                    <td class="td-note">The creature sings to survive, not to communicate. But it is also genuinely beautiful, and that's the tension. Wonder with an undercurrent of dread. A melody learned from a signal, not from music.</td>
+                </tr>
+
+                <tr>
+                    <td>07</td>
+                    <td>
+                        <div class="td-song">"The Hymn"</div>
+                    </td>
+                    <td class="td-scene">LifeGroup meeting upstairs — neighbors singing together while the creature pulses through the floor below</td>
+                    <td class="td-note">Domestic horror — the ordinary made thin. A hymn that's come slightly unmoored, something communal and warm that the circumstances have made uncanny. It sits under the scene, not over it.</td>
+                </tr>
+
+                <tr class="act-row">
+                    <td colspan="4">Act III — The Trap</td>
+                </tr>
+
+                <tr>
+                    <td>08</td>
+                    <td>
+                        <div class="td-song">"The Burn Mark"</div>
+                    </td>
+                    <td class="td-scene">The Red-Eyes breach the property line — first burn marks at the fence in the rain</td>
+                    <td class="td-note">They don't announce themselves. The burn marks are the announcement. Bass that arrives low and stays low — not a swell, not a sting. The threat is patient. The music should be too.</td>
+                </tr>
+
+                <tr>
+                    <td>09</td>
+                    <td>
+                        <div class="td-song">"Shadows in Wind"</div>
+                    </td>
+                    <td class="td-scene">The family drags military-grade speakers through the yard in the storm</td>
+                    <td class="td-note">Physical labor under terror. Moving enormous equipment through mud and rain while shadows pace the property line. Desperate momentum — focused urgency when the only option is work. The song has mass. It feels like something being dragged.</td>
+                </tr>
+
+                <tr class="act-row">
+                    <td colspan="4">Act IV — Point Source Interference</td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>
+                        <div class="td-song">"Final Echoes"</div>
+                    </td>
+                    <td class="td-scene">The acoustic perimeter fires — the sonic collision begins and the Red-Eyes are destroyed</td>
+                    <td class="td-note">Sound as weapon. Dallas fires a machine built from his grief — Sierra's research, her frequencies. Release after extreme tension, but not triumphant. More like a dam breaking. Frequency against frequency until one gives.</td>
+                </tr>
+
+                <tr>
+                    <td>11</td>
+                    <td>
+                        <div class="td-song">"Little Aftermath"</div>
+                    </td>
+                    <td class="td-scene">The creature glows at the edge of the reeds and returns to the marsh</td>
+                    <td class="td-note">The yard is quiet. The creature holds at the fence line, then disappears. Nobody speaks. The specific stillness after something enormous has passed through — not relief exactly, more like the world resettling.</td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>
+                        <div class="td-song">"Makayla's New Lair"</div>
+                    </td>
+                    <td class="td-scene">End credits — Makayla sets up in the woods; Dallas finds Sierra's hum in the marsh</td>
+                    <td class="td-note">Not resolution so much as permission — to keep going, to look ahead. The oscillators are still in the spare room and he will use them again. Quiet but not defeated. Something that opens rather than closes.</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div style="margin-top: 4rem; text-align: center; border-top: 1px solid var(--border); padding-top: 2rem;">
+            <p style="font-size: 0.75rem; opacity: 0.4; letter-spacing: 0.1em; text-transform: uppercase;">Barnacle Film Studio Company ©2026</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
