@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/9/2026, 9:07:11 AM*
+*Compiled on 3/9/2026, 12:15:13 PM*
 
 ---
 
@@ -153,17 +153,18 @@ INT. DALLAS NEW HOUSE - NIGHT
 Dallas struggles to fall asleep in his new home. He hears strange noises from outside. As he looks out the window he sees a flicker of a faint gold light. 
 
 Curious and wide awake - Dallas finishes unpacking boxes. The room is sparse, filled with a few pieces of furniture.
-Dallas opens up the box to find sketches of butterflies - and other insects. As he turns the pages, the butterflies and the drawings turn more into creatures with wings.  Angels.  One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD." He flips through some of the pages, some showing sketches of the grass and a golden creature.Dallas closes it without looking and sets the stack aside.
 
-In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and pair of retro ruby-red headphones.
+Dallas opens up the box to find sketches of butterflies and caterpillars and loads of curious insects. As he turns the pages, the butterflies and the drawings turn more into creatures with wings.  Angels.  One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD." He flips through some of the pages, some showing sketches of the grass and a golden creature.Dallas closes it without looking and sets the stack aside.
 
-On one of the headphones, Dallas peels back a piece of duct tape to reveal a photo sticker. The photo shows Dallas and a woman, both wearing heavy audio headsets, laughing in a field of grass.Dallas's thumb rushes over her face. 
+In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and pair of retro, ruby-red headphones.
 
-Dallas gently closes the box. He takes a deep breath and opens up another box laying adjacent. He carefully pulls out a heavy military-grade desktop Oscillator, a portable audio recorder, an a portable Oscillator. 
+On the side on the inside of the headphone, Dallas peels back a piece of duct tape to reveal a photo sticker. The photo shows Dallas and a woman, both wearing heavy audio headsets, laughing in a field of grass. Dallas's thumb rushes over her face. 
+
+Dallas gently closes the box of headphones and gear. He takes a deep breath and opens up another box laying adjacent. He carefully pulls out a heavy military-grade desktop Oscillator, a portable audio recorder, and a portable Oscillator. 
 
 INT. DALLAS BATHROOM - NIGHT
 
-Dallas takes a shower - and as he zones out from the hot water a noise emerges from outside. 
+Dallas takes a shower - and as he zones out from the sounds of the hot water, a faint hum interrupts from the far outside. 
 
 Dallas dries off and peers through his steamy bathroom window as the hum grows louder. 
 
@@ -172,7 +173,7 @@ Dallas rushes downstairs towards a pile of boxes in the middle of his living roo
 
 As he does this, he hears the hum growing louder. Dallas grabs a recorder on his desk and scrambles toward the window and brings to record. The needle spikes. Dallas begins to turn the dial - tuning his instrument towards a pure, harmonic tone that cuts through the air like butter. Dallas holds the dial. One second. One Second. Five Seconds. Three Seconds.  
 
-The hum sounds like it is moving away and begins to grow faint. Looking down at the his tuning oscillator, Dallas notes a spike in the waveform. 
+The hum sounds like it is moving away and its loudness begins to grow faint. Looking down at the his tuning oscillator, Dallas notes a spike in the waveform. 
 
 The battery dies. Scrambling, Dallas looks through his box of equipment for but none of them have batteries. 
 
@@ -216,7 +217,7 @@ DALLAS
 What's that?
 
 DOMINIC
-You are my neighbor - I live nextdoor - I think we saw you the other day driving by - did you just move here?
+You are my neighbor - I think we're neighbors.I live nextdoor - I think we saw you the other day driving by - did you just move here?
 
 DALLAS
 Oh hello - yes. 
@@ -270,20 +271,18 @@ DALLAS
 Bioacoustics. 
 
 DOMINIC
-Bio-acoutsitcs. What is that the study of sound? Right on. Alright listen - I'm headed to the green right now - you up for a walk? My car is parked down in the center of town and I need to go get it... What's that in your hand?
+Bio-acoustics. That's the study of sound - yeah? Yeah. Right on. Alright listen - I'm about to head to the green right now - you up for a walk? My car is parked down in the center of town and I need to go get it... What's that in your hand?
 
 DALLAS
-A battery. I could show the teller the reference.
+A battery. 
 
 DOMINIC
-Show the teller the reference? What is that - that a C battery - Rudy's got that. Let's go - I'll buy you a coffee.
+What is that - that a C battery - Rudy's got that. Let's go - I'll buy you a coffee.
 
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
-Dallas accepts. 
-
-The two begin to wander off towards Branford. 
+Dallas accepts. The two begin to wander off toward. Branford. 
 
 EXT. BRANFORD NEIGHBORHOOD - MOMENTS LATER
 
@@ -388,33 +387,33 @@ Nice - yeah - it's nice to be the new guy in town - good old branford.
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
 <!-- nickname: fellowship -->
-<!-- summary: Church picnic. Dallas meets Makayla and Asher. Janice hands off Howie. -->
-
 EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON
 
-Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends down light summerwear as they play spike ball, and church goers find themselvees are on a long line getting food. Dallas looks around at all of the new faces but does not make great eye contact. Dominic takes a deep breath and approaches the long line. 
+Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends down light summerwear as they play spike ball, and church goers find themselvees are on a long line for food. 
+
+Dallas looks around at all of the new faces but does not make great eye contact. Dominic takes a deep breath and approaches the long line. 
 
 Dominic carries a package of water and puts it under one of the fold up tables. As he does so, people look at Dallas and begin to greet him. 
 
 DOMINIC
-Alright buddy - let's wait on line I guess. 
+Line is long today - they must got Nicas. Everyone's all downing what they can before the storm. 
 
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
 (action)
-Dominic and Dallas wait on line to be served at fellowship lunch. As they do people begin to turn around and talk to them. One lady, MARY, 55 turns around and shakes Dallas' hand enthustiaclly.
+As they wait in line, people begin to turn around and talk to them. One lady, MARY, 55 turns around and shakes Dallas' hand enthusiastically.
 
 MARY
-Well hey there sunshine
+Well hey there sunshine - what's your name?
 
 DALLAS
-Hello
+Dallas
 
 MARY
-Dominic where did you get this Califorina boy from? My name is Mary - do you like chicken primevro?
+Dallas... Dallas, Dominic where did you get this Califorina boy from? My name is Mary - do you like chicken primevera?
 
 DALLAS
-Never really had it
+Never really had it.
 
 MARY
 Well you should, its great.... So you ready for some proper New England weather?
@@ -440,10 +439,10 @@ PAUL
 Oo - then you must know of William Henry Harrison - our 9th president, served as Indiana's governor back when it was just a terriority. 
 
 MARY
-Paul, stop that. Honey - if you need I can make you some chicken primevera
+Paul, stop that. Honey - if you need I can make you some chicken primevera tonight. 
 
 DOMINIC
-He's okay Ms Mary thank you
+He's okay, Ms Mary thank you. 
 
 DALLAS
 Thank you. 
@@ -501,27 +500,7 @@ Makayla and Asher don't say much but wait on line. Asher is doodling in his smal
 
 The two leave the line walk over to a corner spot by the end of the church yard and huddle over a pile of brush.
 
-JANICE
-So what happened Dominic. 
-
-DOMINIC
-Yeah - and it had a ticket.
-
-JANICE
-How much. 
-
-DOMINIC
-A good amount. 
-
-JANICE
-That's great. 
-
-Janice leaves the line of food.
-
-Dallas takes a plate but doesn't eat much. He's distracted by what Makayla and Asher are looking at the distance. 
-
-Janice, noticing that Dallas is a little quiet - tries to spark conversation. 
-
+Dallas takes a bite of his chicken but doesn't eat much. He's distracted by what Makayla and Asher are looking at the distance. 
 
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
@@ -3026,6 +3005,8 @@ The Nor'easter's last-second shift—call it an unlikely miracle. Either way, a 
 EXT. CHURCH GROUNDS - DAY
 
 A church event. Picnic tables. Nica's catered lunch. DOMINIC and DALLAS greet each other. They don't talk much. They sit next to each other and eat. 
+
+Dallas holds a tray of Chicken Primevera. 
 
 MR. MIKE sits at the end of the table, peacefully eating a piece of cornbread. He looks out toward the edge of the woods and smiles softly. 
 
