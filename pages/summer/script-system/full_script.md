@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/8/2026, 10:12:52 PM*
+*Compiled on 3/9/2026, 9:07:11 AM*
 
 ---
 
@@ -252,25 +252,25 @@ DALLAS
 Work.
 
 DOMINIC
-What kind of work?
+Oh yeah? What kind of work?
 
 DALLAS
-I do research mostly. 
+Research mostly. 
 
 DOMINIC
-What kind of research? Yale hire you? 
+Ooo - big guy - Yale? 
 
 DALLAS
-No, actually I'm going to be going between Qunipiac and Southern
+Quinnipiac 
 
 DOMINIC
-Nice man. What you doing there.
+Oooo - right on - nice. What kind of research?  
 
 DALLAS
 Bioacoustics. 
 
 DOMINIC
-Bio-acoutsitcs. Right on. Alright listen - I'm headed to the town green right now - you want to go for a walk. I could drive but I figured I'd get some steps in. What's that in your hand?
+Bio-acoutsitcs. What is that the study of sound? Right on. Alright listen - I'm headed to the green right now - you up for a walk? My car is parked down in the center of town and I need to go get it... What's that in your hand?
 
 DALLAS
 A battery. I could show the teller the reference.
@@ -284,6 +284,8 @@ Show the teller the reference? What is that - that a C battery - Rudy's got that
 Dallas accepts. 
 
 The two begin to wander off towards Branford. 
+
+EXT. BRANFORD NEIGHBORHOOD - MOMENTS LATER
 
 DOMINIC
 You don't have a car?
@@ -301,8 +303,7 @@ Dallas and Dominic through coastal sidewalks, neighborhoods, and natural marsh f
 Dallas, sheepishly, checks if Dominic is looking and when he isn't - he takes out a small oscillator and records.  
 
 DOMINIC
-Be careful - there are coyotes up in that. Some people say the noises are from owls - but I know its coyotes. 
-
+Be careful - I heard some coyotes up in that the other night when I was walking Howie. Some people say the noises are from owls - but I know its coyotes. 
 
 
 EXT. TOWN CENTER - DAY
@@ -327,34 +328,25 @@ INDIANAAAA - how'd you land up here in Branford?
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
-Dallas finds the correct batteries and grabs it off the shelf. 
+Dallas finds the correct batteries and grabs it off the shelf. The two exit the shop.
 
-DALLAS
-Work.
 
-DOMINIC
-Yeah? Where abouts? Yale?
+EXT. BRANFORD GREEN
 
-DALLAS
-Quinipiac. 
+Dallas and Dominic walk past the town green.The building looks closed.The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
 
 DOMINIC
-That's refreshing... What are you doing with Quinipiac
-
-DALLAS
-Mostly field and bioacoustics. 
-
-
-The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
-
-DOMINIC
-You got to be kidding me!
+Great.
 
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
-He rips the ticket off and walks around to see if anyone is looking - and finds a secret key. 
+He rips the ticket off and walks around to see if anyone is looking, he crumbles it up and puts it in his pocket. 
 
+Dominic bends downs and grabs a key from the bottom of the car and starts it. 
+
+INT. DOMINIC's CAR
+ 
 As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
 
 The streetlight above them flickers. Once. Twice. Then steadies. Dallas watches it for a beat, then looks back at the birds.
