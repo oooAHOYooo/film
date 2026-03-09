@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/8/2026, 8:17:58 AM*
+*Compiled on 3/8/2026, 10:12:52 PM*
 
 ---
 
@@ -137,6 +137,16 @@ Dallas looks down at a box of old equipment and stretches down to pick it up.
 
 # Scene 2: Sierra's Box
 <!-- summary: Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies. -->
+
+INT. DALLAS KITCHEN - SUNSET
+Dallas looks at his new surroundings and begins to take out silverwear out of a box labelled "Kitchen". 
+
+CUT TO:
+
+The Kitchen is spotless and well organized for what it is. Dallas carefully cuts through an onion and sizzles it in a wok.
+
+EXT. DALLAS DRIVEWAY
+Dallas goes outside with some trash bags and takes in the surroundings. He notices that there are 
 
 INT. DALLAS NEW HOUSE - NIGHT
 
