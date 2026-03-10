@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/9/2026, 12:15:13 PM*
+*Compiled on 3/10/2026, 12:28:21 PM*
 
 ---
 
@@ -693,7 +693,7 @@ INT. JACE'S BASEMENT
 Dallas looks around in amazement. The basement is covered with normal basement things - but then there are two beds - and around the corner there is a workstation filled with old CRT machines and what not.
 
 DOMINIC
-Yeah, my niece and nephew live here. They moved in a couple of months ago. I keep trying to get them to stay in the guestroom, but they just want to be living in the basement... Here, help me grab the fan. 
+Yeah, my niece and nephew live here now. Formely our basement - they love that basement vibe - pretty cool in here. Here, help me grab the fan. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -2533,6 +2533,8 @@ Dominic sits down on the outside porch.
 
 (action)
 Makayla lifts the sparking portable speaker. She sweeps the invisible acoustic beam across the yard like a lighthouse beam. The a small glint of a red eye - is glimmering in the distance.  A wall of Red-Eye shadows violently flinches, peeling back into the reeds and leaving a temporary, circular safe zone in the pouring rain. 
+
+The orbs turn into red orb and then grow into a shadow which takes shape into a humanoid darkness with red eyes.
 
 But there are too many. Hundreds of red eyes begin to dot the tree line. The sheer numbers are overwhelming the small portable speaker.
 
