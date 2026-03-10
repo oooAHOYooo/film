@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/9/2026, 12:15:13 PM*
+*Compiled on 3/9/2026, 8:35:29 PM*
 
 ---
 
@@ -810,8 +810,9 @@ Who is Javerias?
 MR. Mike
 He was a good man. He told me things when I was little - things have since come true. 
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
-
+(action)
 And when you hurt one - eventually they will transform into the other one - they wont stay kind forever. If the winds get them - they will take charge.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
@@ -827,10 +828,10 @@ Do you mind watching Howie for a bit this afternoon? - I have to take everyone t
 (action)
 Dallas looks at the dog - the dog Howie looks back at the man Dallas. 
 
-Makayla walks over and grabs the portable Oscillator from  Dallas' hand. 
+Makayla walks over and grabs the portable Oscillator from Dallas' hand. 
 
 MAKAYLA
-Have you given any thought to what I asked you the other day?
+So you dial this here and it picks up frequencies. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -846,7 +847,7 @@ You should, Let my brother borrow it.
 Asher, igorning Makayla, walks over to Mr. Mike and stands besides him in his rocking chair.
 
 DOMINIC
-Makayla, I showed Dallas your little hideout. 
+Makayla, I showed Dallas your little basement dwelling.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -936,9 +937,7 @@ The family vanishes in a blur of activity, leaving Dallas standing in the sudden
 <!-- scene: 08 file: s08.md nickname: dallas-marsh-walk -->
 
 # Scene 8: The Trailcam
-<!-- summary: Trailcam. Waveform ladder. Golden flicker in the hollow. He grabs the injured one—something chases him out. -->
 EXT. BRANFORD ROCKS - EVENING
-
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
 
 Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
@@ -954,7 +953,6 @@ In the far distance, a single coyote barks. Then another. A chain reaction of do
 The winds pick up and Dallas and Howie march forward. 
 
 EXT. EDGE OF THE MARSH 
-
 Dallas stands before the edge of the Marsh. As he gazes, everything increasingly becomes still. The winds lower. The waves begin to mute themselves. Then, the HUM begins.
 
 It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
@@ -968,7 +966,6 @@ Dallas stops at the creek's edge and pans his gaze towards the outer marsh. The 
 Dallas ties Howie to a nearby tree and walks into the marsh. 
 
 EXT. INTO THE MARSH
-
 Receiver in hand, Dallas walks deeper into the marsh. 
 
 There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. 
@@ -981,7 +978,7 @@ From the distance, a flicker of golden light pulses deep within the marsh. Dalla
 
 Dallas takes a step forward, then another. The reeds part before him, closing behind him as he disappears into the tall grass.
 
-
+Howie whine and ties them up to a lone tree. Dallas bends down and pets Howie on the head, with a smile. 
 
 
 ---
@@ -1000,7 +997,7 @@ Dallas takes a step forward, then another. The reeds part before him, closing be
 
 EXT. DEEP INSIDE THE TALL MARSH 
 
-Dallas stands slowly, scanning the reeds around him. Nothing. Just the gentle sway of grass and the sound of his own breathing.
+Dallas stands slowly, scanning the reeds around him. Nothing much seems out there - just the gentle sway of grass and the disappointed sound of his own breathing.
 
 Dallas pushes through a dense curtain of reeds. Dust motes dance in a whirlwind of color refracting the sunset into jagged prisms on his face. 
 
@@ -2961,7 +2958,12 @@ Look at all of these sleeping beauties.
 <!-- scene: 26 file: s26.md nickname: final-echoes -->
 
 (action)
-Dallas, wheres Dallas. Dallas my boy - you were spared from the storm. How are you Mike. 
+MR. Mike walks in behind Janice and walks right over to Dallas - out for a good old fashion handshake. 
+
+MR. MIKE
+Dallas, wheres Dallas. Dallas my boy - you were spared from the storm. 
+
+DALLASHow are you Mike. 
 
 MR. MIKE
 Things are better - things are better than what they were. Yes. 
