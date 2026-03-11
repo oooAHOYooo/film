@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/10/2026, 12:45:50 PM*
+*Compiled on 3/10/2026, 11:32:16 PM*
 
 ---
 
@@ -1970,10 +1970,47 @@ The creature is not doing so good - but seems to be glowing - and the distant hu
 <!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
 
 (action)
-Dallas walks over and then paces around the room to think a bit. Asher and Makayla watch him. He taps various equipments and thinks and thinks. Dallas looks at the photo of Sierra taped to his receiver. 
+Dallas walks over and then paces around the room; Asher and Makayla watch him. He taps various equipments and thinks and thinks. Dallas looks at the photo of Sierra taped to his receiver. 
 
 DALLAS
 Sierra believed that some bio-acoustics could be used as communication.  A defense mechanism.  They were camouflage.
+
+MAKAYLA
+And you?
+
+DALLAS
+And me what?
+
+MAKAYLA
+What do you believe?
+
+DALLAS
+I don't believe... I just feel numb. 
+
+MAKAYLA
+Asher thinks your special. He told me the day that we all met. 
+
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+
+(action)
+Dallas looks at Dallas. And then down at his hands.
+
+DALLAS
+Why do you want to find that creature?
+
+MAKAYLA
+Why do you?
+
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+
+(action)
+Dallas thinks for a while
+
+Dallas
+It's hurt. 
+
+MAKAYLA
+It is hurt.
 
 ASHER
 (Trance like)
@@ -1982,7 +2019,7 @@ One-fifteen point three.
 <!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
 
 (action)
-Dallas gently turns the dial on his receiver to **115.3 MHz**. He dials the volume up just enough to create a soft, resonant hum in the basement. 
+Dallas gently turns the dial on his receiver to **mak115.3 MHz**. He dials the volume up just enough to create a soft, resonant hum in the basement. 
 
 The creature's ears twitch. It stops its erratic movements. Slowly, it opens its mouth and emits a low, melodic tone, matching the frequency Dallas is broadcasting. As it sings, the golden glow in its neck grows stronger, pushing back the shadows in the room.
 
