@@ -1,0 +1,4 @@
+Loading manifest...
+Found 28 scenes
+Using plot-cards-data.json so production matches scene gallery
+✓ Created pages\summer\production.html

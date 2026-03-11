@@ -1,0 +1,9 @@
+Loading script manifest and note files...
+Writing full_notes.md...
+✓ Created C:\Users\agonzalez7\film\pages\summer\directors-notes\full_notes.md
+Generating full_notes.html...
+✓ Created C:\Users\agonzalez7\film\pages\summer\directors-notes\full_notes.html
+
+✓ Director's notes compilation complete.
+  - Markdown: C:\Users\agonzalez7\film\pages\summer\directors-notes\full_notes.md
+  - HTML: C:\Users\agonzalez7\film\pages\summer\directors-notes\full_notes.html

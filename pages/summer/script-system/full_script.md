@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/10/2026, 11:32:16 PM*
+*Compiled on 3/11/2026, 11:16:37 AM*
 
 ---
 
@@ -1622,6 +1622,12 @@ The crew walk towards the neighborhood and begin the long process of making thei
 MAKAYLA
 Did you know some peptide crystals can conduct electricity? 
 
+DALLAS
+Yeah.
+
+MAKAYLA
+Everything does... which begs the question - what exactly is electricity? 
+
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
@@ -1632,7 +1638,21 @@ As they approach the structure, they can see that it is a small wooden structure
 
 Immeditaley outside the structure, seems like there are some trail cameras and other surveillance equipment.  
 
-One device in particular intrigues Dallas. He grabs it and holds it up to his ear. 
+One device in particular intrigues Dallas. It is an old cart that has a perptual motion machine on it. Dallas walks over to it and admires it.
+
+MAKAYLA
+That's Ashers perpetual motion machine. 
+
+ASHER
+It's not ready. 
+
+MAKAYLA
+Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - they are going to change the world.
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Dallas looks at asher and then back at Asher. 
 
 MAKAYLA
 Do you believe in fate Mr. Dallas?
@@ -1845,22 +1865,22 @@ We have to go.
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
-# Scene 16: The Trap is Set
-<!-- summary: They walk back from the lair to charge the rig. Asher goes into a trance on the way. They arrive at Dallas's house, only to learn Dominic is hosting LifeGroup there tonight. -->
+# Scene 16: Makayla's Lair
 
 EXT. MAKAYLA'S LAIR
-
 Makayla, Dallas, and Asher hastily make their way out of the woods, back toward the field, carrying the creature in its box and the heavy, dead oscillator rig.
 
-As the crew walk, they begin to notice that the tall grass around them is acting universally restless. The crew walk in uneasy silence. 
+<!-- scene: 16 file: s16.md nickname: the-escape -->
 
+(action)
+As the crew walk, they begin to notice that the tall grass around them is acting universally restless. The crew walk in uneasy silence as the summer glow lights their pace. 
 EXT. BRANFORD TOWN GREEN - DAY
 
 The crew walk through the backstreets of Branford with the creature covered in a towel drapped over Makayla's dog backpack. 
 
 EXT. DALLAS'S HOUSE - DAY
 
-As they approach the house, the crew look suspciously at the tall grass around Dallas's house. The creature in Makayla's backpack - begins to cry a bit. 
+As they approach the driveway, the crew look suspciously at the tall grass around Dallas's house. The creature in Makayla's backpack - begins to cry a bit. 
 
 Asher begins to shake and falls to the ground. His eyes look directly at the sky and he begins to cry.
 
@@ -1890,7 +1910,12 @@ Breathe.
 Dallas looks at the tall grass. His spare handheld oscilloscope begins to beep. The crew, little by little, hear the distinct faint hum following them.
 
 MAKAYLA
-I'm sorry, little brother. 
+This too shall pass. Breathe. Good. We'll fix this.
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Asher slowly lowers his breathing 
 
 EXT. DALLAS'S HOUSE
 The crew finally walks up to Dallas's house, exhausted and muddy. Makayla and Asher walk up to the front door holding the backpack.
@@ -1899,17 +1924,17 @@ Before they can even touch the doorknob, Dominic pulls up in his minivan and hon
 
 JANICE
 (yelling out the window)
-You kids! I told you, my house is off-limits tonight! 
+You kids! Howie my baby. Why is he in the backpack?
+
+MAKAYLA
+That's not Howie. 
+
+JANICE
+What?
 
 MAKAYLA
 (confused)
-We know. That's why we're here. We're just going down to Dallas's basement.
-
-JANICE
-What are you doing with Howie's backpack? What is in that?
-
-MAKAYLA
-We found an injured rabbit and Dallas has tools to help.
+We found an injured rabbit and Mr. Dallas has tools to help. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
@@ -1917,27 +1942,42 @@ We found an injured rabbit and Dallas has tools to help.
 Janice looks at Dallas dumbfounded. 
 
 JANICE
-What?... Kid's get in the car - and leave Mr. Dallas alone - he's hosting life group tonight and I am sure needs to get ready. 
+What?... Kid's get in the car - and leave Mr. Dallas alone - he's hosting life group tonight and I am sure he needs to get ready. 
+
+DALLAS
+It's okay. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-Dominic throws the minivan into park and steps out, carrying three massive trays of toasted Brussels sprouts and a stack of hymnals. He looks at Dallas. 
+Makayla hands Dallas the backpack and gently lets the creature in. She walks to the car with Asher.
+
+JANICE
+So you now I got to go home and clean this out before Howie gets in, is that what this means? 
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Dominic comes out from the other side door and throws the minivan into park and steps out, carrying three massive trays of toasted Brussels sprouts and a stack of hymnals. He looks at Dallas. 
 
 DOMINIC
-Dallas, my man! You got the living room vacuumed? The first families are gonna be here in ten minutes. 
+Dallas, my man! You got the living room vacuumed? Here are some food - we'll heat up later. 
 
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
 Dallas stops dead in his tracks. 
 
-DALLAS
+DOMINIC
 What? 
 
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Dallas and Makayla exchange a wide-eyed, terrified look. The creature shifts gently in the shoebox on the kitchen island, beginning to glow. 
+
 DOMINIC
-(laughing)
-LifeGroup! Since Janice banned us, you said we could host it here tonight! You ready?
-
-Dallas and Makayla exchange a wide-eyed, terrified look. The creature shifts gently in the shoebox, beginning to glow. They are trapped.
-
+Alright see you later buddy. 
 
 ---
 
@@ -2004,7 +2044,7 @@ Why do you?
 <!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
 
 (action)
-Dallas thinks for a while
+Dallas thinks for a while. 
 
 Dallas
 It's hurt. 

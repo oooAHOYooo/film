@@ -1,0 +1,13 @@
+Loading manifest...
+Found 38 entries in manifest (content/)
+Compiling full_bible.md from MD sources...
+✓ Created C:\Users\agonzalez7\film\pages\summer\bible-system\full_bible.md
+Generating full_bible.html...
+✓ Created C:\Users\agonzalez7\film\pages\summer\bible-system\full_bible.html
+Generating index.html (Gallery by category)...
+✓ Created C:\Users\agonzalez7\film\pages\summer\bible-system\index.html
+
+✓ Production content compilation complete!
+  - Markdown: C:\Users\agonzalez7\film\pages\summer\bible-system\full_bible.md
+  - HTML: C:\Users\agonzalez7\film\pages\summer\bible-system\full_bible.html
+  - Gallery: C:\Users\agonzalez7\film\pages\summer\bible-system\index.html
