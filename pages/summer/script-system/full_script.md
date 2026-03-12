@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/12/2026, 12:13:17 PM*
+*Compiled on 3/12/2026, 4:58:47 PM*
 
 ---
 
@@ -424,7 +424,7 @@ Well you should, its great.... So you ready for some proper New England weather?
 Another turns around and greets Dallas. An older gentleman PAUL WILDLY, 72, 
 
 PAUL
-The forecasters say that it is going to be historic one. Hasn't been this bad since 1977 - when Nixon was still in office. Paul, nice to meet you. 
+It is going to be historic one. They claim we haven't had a storm like this since 1977 - when Nixon was still in office. Paul, nice to meet you. 
 
 DALLAS
 Nice to meet you.
@@ -460,7 +460,7 @@ Howie.
 
 JANICE
 (greeting Dominic)
-Yeah - he's doing much better. He's been having little scares hasn't heeeee - the thunder - he doesn't like the thunder. Dominic did you get the brussel sprouts like I asked?
+Yeah - he's doing much better. He's been having little scares hasn't heeeee - the thunder last night really scared him - he doesn't like the thunder. Dominic, listen, you all set for dinner? You got the brussel sprouts?
 
 DOMINIC
 Got them. Should be good to go. 
