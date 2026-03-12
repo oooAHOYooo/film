@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/12/2026, 11:29:32 AM*
+*Compiled on 3/12/2026, 12:13:17 PM*
 
 ---
 
@@ -631,6 +631,19 @@ Pat's been predicting the end of the world every Tuesday for ten years.
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
 (action)
+Pat notices Dominic and waves at him from afar. 
+
+PAT CLENDENEN
+Dominic! See you Thursday! 
+
+<!-- scene: 06 file: s06.md nickname: news-vans -->
+
+(action)
+Dominic waves back at Pat. He looks at Dallas and shrugs. The two continue past the news vans.
+
+<!-- scene: 06 file: s06.md nickname: news-vans -->
+
+(action)
 The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
 
 EXT. DOMINIC'S HOUSE 
@@ -867,25 +880,27 @@ Sure.
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas looks at the dog - the dog Howie looks back at the man Dallas. 
-
-Makayla walks over and grabs the portable Oscillator from Dallas' hand. 
+Dallas looks at the dog - the dog Howie looks back at the man Dallas. Makayla walks over and grabs the portable Oscillator from Dallas' hand. 
 
 MAKAYLA
-So you dial this here and it picks up frequencies. 
+So will it actually record the frequencies? Or does it just display? How do you record?
+
+DALLAS
+There's a memory card in there.
+
+MAKAYLA
+Okay.
+
+JANICE
+Makayla whats that - give it back. 
+
+DALLAS
+It's fine. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas looks at Makayla and back at Asher. Without making eye contact with Dallas she begins to twist and turn the dials on the Oscillator. 
-
-MAKAYLA
-You should, Let my brother borrow it. 
-
-<!-- scene: 07 file: s07.md nickname: the-coordinates -->
-
-(action)
-Asher, igorning Makayla, walks over to Mr. Mike and stands besides him in his rocking chair.
+Dallas looks at Makayla and back at Asher who is still kneeling by Mr. Mike. 
 
 DOMINIC
 Makayla, I showed Dallas your little basement dwelling.
@@ -918,13 +933,10 @@ Mr. Mike? What's wrong?
 MR MIKE
 The numbers are off. Asher knows. The numbers are off.
 
-MAKAYLA
-What numbers?
-
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Mr. Mike doesn't answer but continues to rock - he looks over - ignores Makayala's gaze and locks eye contact with Asher.
+Mr. Mike continues to rock - he looks over - ignores Makayala's gaze and locks eye contact with Asher.
 
 MR. MIKE
 The numbers are wrong. 
@@ -948,8 +960,8 @@ Asher, meanwhile, ignores the conversation, eyes fixed on the distant bushes at 
 Dominic begins to light the gas to start boiling the brussels but the lighter doesnt work. 
 Janice throws up her hands and goes outside for a smoke. 
 
-DALLAS
-Crap, I got to go to the store. 
+DOMINIC
+Crap, Janice - we need to go pickup the pharamecy. 
 
 JANICE
 I'm coming with you. Kids - let's go. 
@@ -957,13 +969,17 @@ I'm coming with you. Kids - let's go.
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-The crew leave with the little dog howie. 
+The crew leave with the little dog howie.
 
 DOMINIC
-(yelling from the door)
- Dallas, thanks for watching Howie!
+Dallas, thanks for watching Howie!
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
 The family vanishes in a blur of activity, leaving Dallas standing in the sudden, ringing silence with HOWIE, the small dog.
+
+Dallas begins to walk across the street to his house. 
 
 
 ---
@@ -978,6 +994,11 @@ The family vanishes in a blur of activity, leaving Dallas standing in the sudden
 <!-- scene: 08 file: s08.md nickname: dallas-marsh-walk -->
 
 # Scene 8: The Trailcam
+
+EXT. DALLAS HOUSE - MOMENTS LATER
+
+Dallas tries to bring Howie inside but he won't go. He looks like he wants to go on a walk. So Dallas reasons with the creature and brings him on a walk. 
+
 EXT. BRANFORD ROCKS - EVENING
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
 
