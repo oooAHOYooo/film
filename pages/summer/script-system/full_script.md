@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/12/2026, 7:35:41 AM*
+*Compiled on 3/12/2026, 11:29:32 AM*
 
 ---
 
@@ -809,7 +809,7 @@ Yeah, I got some food back at home.
 (action)
 Mr. Mike in the distance begins to get agitated. He rocks slowly in his rocking chair and taps his fingers. 
 
-MR. Mike
+MR. MIKE
 They are being hunted. Javarice told me. They are being hunted.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
@@ -842,17 +842,16 @@ He's back - when I was growing up we didn't have a dog, we had a cat - Misty - t
 JANICE
 Stop it Michael. Mr. Dallas - would you like to watch him sometime? 
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Howie motions to Dallas like he wants to be held.
+
 MAKAYLA
 How about tomorrow? 
 
 JANICE
-Yeah - I mean - we could drop him off in the morning.
-
-DALLAS
-No - I think I have to prpe.
-
-JANICE
-What do you have to do. Just kidding. Dallas I'm kidding.
+Yeah - I mean - we could drop him off in the morning. What do you think Dallas?
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -860,7 +859,10 @@ What do you have to do. Just kidding. Dallas I'm kidding.
 Dallas looks at Howie - and the dog looks back at him.
 
 JANICE
-Do you mind watching Howie for a bit this afternoon? - I have to take everyone to Costco and the lines are going to be longer than my patience.
+You could even take him this afternoon as well? Lord knows I got errands and can't walk him like I used to with my knees.
+
+DALLAS
+Sure. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
