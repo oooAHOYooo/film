@@ -23,11 +23,13 @@
         const inspiration = data.inspiration;
         const categories = {
             'Good Creatures': document.getElementById('good-creatures-grid'),
-            'Bad Creatures': document.getElementById('bad-creatures-grid'),
+            'Dark Creature': document.getElementById('bad-creatures-grid'),
             'Wardrobe': document.getElementById('wardrobe-grid'),
             'Practical SFX Ideas': document.getElementById('sfx-grid'),
             'Location Ideas': document.getElementById('locations-grid'),
             'Vibes + Colors': document.getElementById('vibes-grid'),
+            'Gear': document.getElementById('gear-grid'),
+            'Camera Rig': document.getElementById('camera-rig-grid'),
             'Misc': document.getElementById('misc-grid')
         };
 

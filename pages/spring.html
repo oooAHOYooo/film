@@ -1,50 +1,100 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Spring Film — Film Vault</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="/styles/style.css">
-    </head>
-    <body>
-        <header class="header">
-            <h1><a href="/">← Film Vault</a> / Spring Film</h1>
-            <p>Spring film project workspace</p>
-        </header>
 
-        <section class="section">
-            <h2>Stills</h2>
-            <div data-stills></div>
-        </section>
+<head>
+    <meta charset="utf-8">
+    <title>The Fall of Hibisicas - Spring Hub</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/summer.css">
+    <style>
+        :root {
+            --accent-color: #e0f2f1;
+            --hero-bg: #80cbc4;
+        }
 
-        <section class="section">
-            <h2>Location Scout Gallery</h2>
-            <div data-gallery></div>
-        </section>
+        .hero {
+            background: linear-gradient(135deg, #80cbc4 0%, #4db6ac 100%);
+        }
+    </style>
+</head>
 
-        <section class="section">
-            <h2>Inspiration Gallery</h2>
-            <div data-inspiration></div>
-        </section>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-        <section class="section">
-            <div data-files></div>
-        </section>
+    <!-- Sticky Navigation -->
+    <nav class="summer-nav" id="summerNav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="/" class="nav-brand">
+                    <span style="font-size: 1.5rem;">←</span>
+                    <h2>Spring Hub</h2>
+                </a>
+                <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation"
+                    style="display: block;">☰</button>
+                <div class="nav-links" id="navLinks">
+                    <a href="/pages/spring/script-system/full_script.html" class="nav-link-item"><span>Full
+                            Script</span></a>
+                    <a href="/" class="nav-link-item"><span>Log Out</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <section class="section">
-            <details>
-                <summary style="cursor: pointer; color: #75c0ff; font-weight: 600; font-size: 1.2rem; margin-bottom: 12px;">Bookmarks</summary>
-                <div data-bookmarks></div>
-            </details>
-        </section>
+    <!-- HERO / PROJECT OVERVIEW -->
+    <section class="hero section-anchor" id="overview">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-weight: 800; letter-spacing: -0.02em;">The Fall of Hibisicas</h1>
 
-        <footer>
-            <p>Private. Static. Yours.</p>
-        </footer>
+            <div class="hero-status">
+                <span class="status-badge"
+                    style="background: #e0f2f1; color: #004d40; border-radius: 6px; padding: 6px 12px; font-weight: 700;">Development</span>
+            </div>
 
-        <script src="/scripts/vault.js"></script>
-        <script>
-    hydrateSection('spring');
-  </script>
-    </body>
+            <!-- Bento Navigation -->
+            <div class="bento-grid">
+                <a href="/pages/spring/script-system/full_script.html" class="bento-item">
+                    <h3 class="bento-title">Full Script</h3>
+                    <p class="bento-desc">30 Scenes. Initial draft in progress.</p>
+                </a>
+
+                <a href="/pages/spring/script-system/index.html" class="bento-item">
+                    <h3 class="bento-title">Scene Gallery</h3>
+                    <p class="bento-desc">Visual breakdown of all 30 scenes.</p>
+                </a>
+
+                <a href="/pages/spring/inspiration/index.html" class="bento-item">
+                    <h3 class="bento-title">Inspiration</h3>
+                    <p class="bento-desc">Hibisicas Vibes & visual research.</p>
+                </a>
+
+                <div class="bento-item" style="opacity: 0.5; cursor: not-allowed;">
+                    <h3 class="bento-title">Production Bible</h3>
+                    <p class="bento-desc">Coming soon.</p>
+                </div>
+
+                <div class="bento-item" style="opacity: 0.5; cursor: not-allowed;">
+                    <h3 class="bento-title">Storyboards</h3>
+                    <p class="bento-desc">Pending script lock.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Barnacle Film Studio Company ©2025–2026</p>
+    </footer>
+
+    <script>
+        // Simple nav toggle
+        const toggle = document.getElementById('navToggle');
+        const links = document.getElementById('navLinks');
+        if (toggle && links) {
+            toggle.addEventListener('click', () => {
+                links.classList.toggle('active');
+            });
+        }
+    </script>
+</body>
+
 </html>

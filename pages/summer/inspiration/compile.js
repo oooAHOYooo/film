@@ -8,11 +8,13 @@ const LEGACY_INSPO_DIR = path.join(PROJECT_ROOT, 'assets', 'summer', 'inspo-imgs
 
 const CATEGORY_MAP = {
     'good-creatures': 'Good Creatures',
-    'bad-creatures': 'Bad Creatures',
+    'bad-creatures': 'Dark Creature',
     'wardrobe': 'Wardrobe',
     'practical-sfx': 'Practical SFX Ideas',
     'locations': 'Location Ideas',
     'vibes-colors': 'Vibes + Colors',
+    'gear': 'Gear',
+    'camera-rig': 'Camera Rig',
     'misc': 'Misc'
 };
 
@@ -69,7 +71,7 @@ function compile() {
     // 3. Keep existing Pinterest links but ensure they have categories (default to Misc)
     if (data.inspiration) {
         data.inspiration.forEach(item => {
-            if (item.url.includes('pinterest.com') || item.url.includes('i.pinimg.com')) {
+            if (item.url.startsWith('http')) {
                 if (!inspiration.find(i => i.url === item.url)) {
                     inspiration.push({
                         ...item,

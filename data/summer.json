@@ -125,6 +125,46 @@
   ],
   "inspiration": [
     {
+      "url": "https://i.pinimg.com/736x/b5/e8/35/b5e8358d5f481af54eab68a986d7fa07.jpg",
+      "title": "Camera Rig Inspo",
+      "category": "Camera Rig"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/33/df/a1/33dfa1004d49ca66c6b04168cbee7be9.jpg",
+      "title": "Dark Creature - Tall Grass Inspo",
+      "category": "Dark Creature"
+    },
+    {
+      "url": "https://cdn.displate.com/artwork/270x380/2024-10-22/2f1af749-04c6-449a-a1fe-df9caa024aaf.jpg",
+      "title": "Dark Creature - Sentinel",
+      "category": "Dark Creature"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/7a/04/be/7a04be71ec08778ed41dfa0892054a36.jpg",
+      "title": "Dark Creature Inspo 3",
+      "category": "Dark Creature"
+    },
+    {
+      "url": "https://i.pinimg.com/1200x/ae/70/50/ae705079f2fe52b47a1e158ebb6b8be9.jpg",
+      "title": "Dark Creature Inspo 2",
+      "category": "Dark Creature"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/13/05/d0/1305d0dd006784643cfea2fcd7b3a2b1.jpg",
+      "title": "Dark Creature Inspo 1",
+      "category": "Dark Creature"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/0d/5a/29/0d5a29bf6e063c0e6217e94852410122.jpg",
+      "title": "Dark Creature",
+      "category": "Dark Creature"
+    },
+    {
+      "url": "https://i.pinimg.com/736x/5d/51/a4/5d51a4a90e6172d2b06740c15ed7ae8e.jpg",
+      "title": "Audio/Tape Gear Inspo",
+      "category": "Gear"
+    },
+    {
       "url": "https://i.pinimg.com/736x/77/7f/31/777f310cd9a0ca53ca0cd8d6a8335652.jpg",
       "title": "Summer Creature Inspo 1",
       "category": "Good Creatures"
@@ -148,6 +188,11 @@
       "url": "https://i.pinimg.com/1200x/ad/68/5e/ad685ea4d3fc4544ff8daf2d0ed19a94.jpg",
       "title": "Summer Creature Inspo 5",
       "category": "Good Creatures"
+    },
+    {
+      "url": "https://www.wwlp.com/wp-content/uploads/sites/26/2019/10/dementorsighting.jpg",
+      "title": "Practical SFX - Floating Form",
+      "category": "Practical SFX Ideas"
     },
     {
       "url": "/assets/summer/inspo-imgs/01e60c9f13f3934480846f8e36cac625.jpg",
@@ -380,13 +425,13 @@
       "category": "Misc"
     },
     {
-      "url": "/assets/summer/inspo-imgs/seam-inspo.jpg",
-      "title": "seam inspo",
+      "url": "/assets/summer/inspo-imgs/seaM1.jpg",
+      "title": "seaM1",
       "category": "Misc"
     },
     {
-      "url": "/assets/summer/inspo-imgs/seaM1.jpg",
-      "title": "seaM1",
+      "url": "/assets/summer/inspo-imgs/seam-inspo.jpg",
+      "title": "seam inspo",
       "category": "Misc"
     },
     {
