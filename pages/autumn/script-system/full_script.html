@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Script - The Fall of Hibisicas</title>
+  <link rel="stylesheet" href="script.css?v=2026-03-12">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="full-script-page">
+  <div class="gallery-container">
+    <!-- Vertical progress rail -->
+    <div class="script-progress-rail no-print" id="scriptProgressRail" aria-hidden="true">
+      <div class="script-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="script-progress-fill" id="scriptProgressFill"></div>
+      </div>
+      <div class="script-progress-label" id="scriptProgressLabel">0</div>
+    </div>
+
+    <div class="script-sticky-bar no-print" id="scriptStickyBar">
+      <div class="nav">
+        <div class="nav-left">
+          <a class="nav-link" href="/index.html" title="Home">
+            <span class="nav-icon" aria-hidden="true">⌂</span>
+            <span class="nav-text">Home</span>
+          </a>
+          <a class="nav-link" href="/pages/autumn.html" title="Autumn Hub">
+            <span class="nav-icon" aria-hidden="true">🍂</span>
+            <span class="nav-text">Autumn</span>
+          </a>
+          <a class="nav-link" href="index.html" title="Gallery">
+            <span class="nav-icon" aria-hidden="true">▦</span>
+            <span class="nav-text">Gallery</span>
+          </a>
+          <a class="nav-link" href="scene_outline.html" title="Scene Outline">
+            <span class="nav-text">Scene Outline</span>
+          </a>
+        </div>
+        <div class="nav-right">
+          <div class="script-export-dropdown" id="scriptExportDropdown">
+            <button type="button" class="print-button script-export-trigger" id="scriptExportTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="scriptExportMenu">
+              Export / Print
+            </button>
+            <div class="script-export-menu" id="scriptExportMenu" role="menu" aria-label="Export and print options">
+              <button type="button" role="menuitem" onclick="downloadMarkdown()">Download .md</button>
+              <button type="button" role="menuitem" onclick="printMarkdownPdf()">PDF (Markdown)</button>
+              <button type="button" role="menuitem" onclick="window.print()">Print</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="script-stats-row">
+        <div class="script-status-bar" id="scriptStatusBar" aria-hidden="true">
+          <div class="script-status-scene-block">
+            <span class="script-status-scene" id="scriptStatusScene">—</span>
+            <span class="script-status-characters" id="scriptStatusCharacters">—</span>
+          </div>
+          <span class="script-status-divider">|</span>
+          <span class="script-status-production" id="scriptStatusProduction">—</span>
+        </div>
+        <div class="script-scene-nav">
+          <label for="scriptSceneSelect" class="script-scene-nav-label">Jump to scene</label>
+          <select id="scriptSceneSelect" class="script-scene-select" aria-label="Jump to scene">
+            <option value="">—</option>
+            <option value="scene-1">1. Scene 1</option><option value="scene-2">2. Scene 2</option><option value="scene-3">3. Scene 3</option><option value="scene-4">4. Scene 4</option><option value="scene-5">5. Scene 5</option><option value="scene-6">6. Scene 6</option><option value="scene-7">7. Scene 7</option><option value="scene-8">8. Scene 8</option><option value="scene-9">9. Scene 9</option><option value="scene-10">10. Scene 10</option><option value="scene-11">11. Scene 11</option><option value="scene-12">12. Scene 12</option><option value="scene-13">13. Scene 13</option><option value="scene-14">14. Scene 14</option><option value="scene-15">15. Scene 15</option><option value="scene-16">16. Scene 16</option><option value="scene-17">17. Scene 17</option><option value="scene-18">18. Scene 18</option><option value="scene-19">19. Scene 19</option><option value="scene-20">20. Scene 20</option><option value="scene-21">21. Scene 21</option><option value="scene-22">22. Scene 22</option><option value="scene-23">23. Scene 23</option><option value="scene-24">24. Scene 24</option><option value="scene-25">25. Scene 25</option><option value="scene-26">26. Scene 26</option><option value="scene-27">27. Scene 27</option><option value="scene-28">28. Scene 28</option><option value="scene-29">29. Scene 29</option><option value="scene-30">30. Scene 30</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="screenplay-container">
+      <div class="full-script-header">
+        <div class="full-script-title">The Fall of Hibisicas — Full Script</div>
+        <div class="full-script-meta">Compiled on 3/12/2026, 7:35:42 AM</div>
+      </div>
+      <div class="screenplay-content" id="scriptContent"></div>
+    </div>
+  </div>
+
+  <script>
+    const markdown = "# The Fall of Hibisicas — Full Script\n\n*Compiled on 3/12/2026, 7:35:42 AM*\n\n---\n\n\n## ACT I — Act I\n\n---\n\n\n### Scene 1: Scene 1\n\n*ACT I — Act I | ID: s01 | File: s01.md*\n\n---\n\n<!-- scene: 01 file: s01.md nickname: s01 -->\n\n\n\n---\n\n\n### Scene 2: Scene 2\n\n*ACT I — Act I | ID: s02 | File: s02.md*\n\n---\n\n<!-- scene: 02 file: s02.md nickname: s02 -->\n\n\n\n---\n\n\n### Scene 3: Scene 3\n\n*ACT I — Act I | ID: s03 | File: s03.md*\n\n---\n\n<!-- scene: 03 file: s03.md nickname: s03 -->\n\n\n\n---\n\n\n### Scene 4: Scene 4\n\n*ACT I — Act I | ID: s04 | File: s04.md*\n\n---\n\n<!-- scene: 04 file: s04.md nickname: s04 -->\n\n\n\n---\n\n\n### Scene 5: Scene 5\n\n*ACT I — Act I | ID: s05 | File: s05.md*\n\n---\n\n<!-- scene: 05 file: s05.md nickname: s05 -->\n\n\n\n---\n\n\n### Scene 6: Scene 6\n\n*ACT I — Act I | ID: s06 | File: s06.md*\n\n---\n\n<!-- scene: 06 file: s06.md nickname: s06 -->\n\n\n\n---\n\n\n### Scene 7: Scene 7\n\n*ACT I — Act I | ID: s07 | File: s07.md*\n\n---\n\n<!-- scene: 07 file: s07.md nickname: s07 -->\n\n\n\n---\n\n\n### Scene 8: Scene 8\n\n*ACT I — Act I | ID: s08 | File: s08.md*\n\n---\n\n<!-- scene: 08 file: s08.md nickname: s08 -->\n\n\n\n---\n\n\n### Scene 9: Scene 9\n\n*ACT I — Act I | ID: s09 | File: s09.md*\n\n---\n\n<!-- scene: 09 file: s09.md nickname: s09 -->\n\n\n\n---\n\n\n### Scene 10: Scene 10\n\n*ACT I — Act I | ID: s10 | File: s10.md*\n\n---\n\n<!-- scene: 10 file: s10.md nickname: s10 -->\n\n\n\n---\n\n\n## ACT II — Act II\n\n---\n\n\n### Scene 11: Scene 11\n\n*ACT II — Act II | ID: s11 | File: s11.md*\n\n---\n\n<!-- scene: 11 file: s11.md nickname: s11 -->\n\n\n\n---\n\n\n### Scene 12: Scene 12\n\n*ACT II — Act II | ID: s12 | File: s12.md*\n\n---\n\n<!-- scene: 12 file: s12.md nickname: s12 -->\n\n\n\n---\n\n\n### Scene 13: Scene 13\n\n*ACT II — Act II | ID: s13 | File: s13.md*\n\n---\n\n<!-- scene: 13 file: s13.md nickname: s13 -->\n\n\n\n---\n\n\n### Scene 14: Scene 14\n\n*ACT II — Act II | ID: s14 | File: s14.md*\n\n---\n\n<!-- scene: 14 file: s14.md nickname: s14 -->\n\n\n\n---\n\n\n### Scene 15: Scene 15\n\n*ACT II — Act II | ID: s15 | File: s15.md*\n\n---\n\n<!-- scene: 15 file: s15.md nickname: s15 -->\n\n\n\n---\n\n\n### Scene 16: Scene 16\n\n*ACT II — Act II | ID: s16 | File: s16.md*\n\n---\n\n<!-- scene: 16 file: s16.md nickname: s16 -->\n\n\n\n---\n\n\n### Scene 17: Scene 17\n\n*ACT II — Act II | ID: s17 | File: s17.md*\n\n---\n\n<!-- scene: 17 file: s17.md nickname: s17 -->\n\n\n\n---\n\n\n### Scene 18: Scene 18\n\n*ACT II — Act II | ID: s18 | File: s18.md*\n\n---\n\n<!-- scene: 18 file: s18.md nickname: s18 -->\n\n\n\n---\n\n\n### Scene 19: Scene 19\n\n*ACT II — Act II | ID: s19 | File: s19.md*\n\n---\n\n<!-- scene: 19 file: s19.md nickname: s19 -->\n\n\n\n---\n\n\n### Scene 20: Scene 20\n\n*ACT II — Act II | ID: s20 | File: s20.md*\n\n---\n\n<!-- scene: 20 file: s20.md nickname: s20 -->\n\n\n\n---\n\n\n## ACT III — Act III\n\n---\n\n\n### Scene 21: Scene 21\n\n*ACT III — Act III | ID: s21 | File: s21.md*\n\n---\n\n<!-- scene: 21 file: s21.md nickname: s21 -->\n\n\n\n---\n\n\n### Scene 22: Scene 22\n\n*ACT III — Act III | ID: s22 | File: s22.md*\n\n---\n\n<!-- scene: 22 file: s22.md nickname: s22 -->\n\n\n\n---\n\n\n### Scene 23: Scene 23\n\n*ACT III — Act III | ID: s23 | File: s23.md*\n\n---\n\n<!-- scene: 23 file: s23.md nickname: s23 -->\n\n\n\n---\n\n\n### Scene 24: Scene 24\n\n*ACT III — Act III | ID: s24 | File: s24.md*\n\n---\n\n<!-- scene: 24 file: s24.md nickname: s24 -->\n\n\n\n---\n\n\n### Scene 25: Scene 25\n\n*ACT III — Act III | ID: s25 | File: s25.md*\n\n---\n\n<!-- scene: 25 file: s25.md nickname: s25 -->\n\n\n\n---\n\n\n### Scene 26: Scene 26\n\n*ACT III — Act III | ID: s26 | File: s26.md*\n\n---\n\n<!-- scene: 26 file: s26.md nickname: s26 -->\n\n\n\n---\n\n\n### Scene 27: Scene 27\n\n*ACT III — Act III | ID: s27 | File: s27.md*\n\n---\n\n<!-- scene: 27 file: s27.md nickname: s27 -->\n\n\n\n---\n\n\n## ACT IV — Act IV\n\n---\n\n\n### Scene 28: Scene 28\n\n*ACT IV — Act IV | ID: s28 | File: s28.md*\n\n---\n\n<!-- scene: 28 file: s28.md nickname: s28 -->\n\n\n\n---\n\n\n### Scene 29: Scene 29\n\n*ACT IV — Act IV | ID: s29 | File: s29.md*\n\n---\n\n<!-- scene: 29 file: s29.md nickname: s29 -->\n\n\n\n---\n\n\n### Scene 30: Scene 30\n\n*ACT IV — Act IV | ID: s30 | File: s30.md*\n\n---\n\n<!-- scene: 30 file: s30.md nickname: s30 -->\n\n\n\n---\n\n";
+    const MARKDOWN_FILE_NAME = 'the_fall_of_hibisicas_full_script.md';
+
+    function downloadMarkdown() {
+      const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = MARKDOWN_FILE_NAME;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function printMarkdownPdf() {
+      const printable = window.open('', '_blank', 'noopener,noreferrer');
+      if (!printable) return;
+      const escaped = String(markdown)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      const title = document.title.replace(/<\/?[^>]+>/g, '');
+      printable.document.write([
+        '<!doctype html>',
+        '<html lang="en">',
+        '<head>',
+        '  <meta charset="UTF-8">',
+        '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '  <title>' + title + ' - Markdown</title>',
+        '  <style>',
+        '    body { margin: 1in; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }',
+        '    pre { white-space: pre-wrap; line-height: 1.35; font-size: 11pt; }',
+        '  </style>',
+        '</head>',
+        '<body>',
+        '  <pre>' + escaped + '</pre>',
+        '</body>',
+        '</html>',
+      ].join('\n'));
+      printable.document.close();
+      printable.focus();
+      printable.print();
+      printable.onafterprint = () => printable.close();
+    }
+
+    const container = document.getElementById('scriptContent');
+    marked.setOptions({ breaks: true });
+    container.innerHTML = marked.parse(markdown);
+
+    // Export dropdown
+    (function initExportDropdown() {
+      var trigger = document.getElementById('scriptExportTrigger');
+      var menu = document.getElementById('scriptExportMenu');
+      if (!trigger || !menu) return;
+      function open() {
+        menu.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+      function close() {
+        menu.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+      trigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (menu.classList.contains('is-open')) close(); else open();
+      });
+      menu.querySelectorAll('button').forEach(function(btn) {
+        btn.addEventListener('click', function() { close(); });
+      });
+      document.addEventListener('click', function() { close(); });
+    })();
+
+    // Format screenplay elements
+    formatScreenplay(document.querySelector('.screenplay-container'));
+
+    // Progress rail + runtime estimate
+    (function initScriptStatsAndProgress() {
+      const WORDS_PER_PAGE = 250;
+      const progressFill = document.getElementById('scriptProgressFill');
+      const progressLabel = document.getElementById('scriptProgressLabel');
+      const progressBar = document.querySelector('.script-progress-bar');
+      if (!progressFill) return;
+      const wordCount = (typeof markdown === 'string' ? markdown : '')
+        .split(/\s+/).filter(Boolean).length;
+      const MIN_PAGES = 90;
+      const rawPages = Math.round((wordCount / WORDS_PER_PAGE) * 10) / 10;
+      const estimatedPages = Math.max(MIN_PAGES, rawPages);
+      const estimatedMinutes = Math.max(MIN_PAGES, Math.round(estimatedPages));
+      function updateProgress() {
+        const docEl = document.documentElement;
+        const scrollTop = docEl.scrollTop || document.body.scrollTop;
+        const scrollHeight = docEl.scrollHeight - docEl.clientHeight;
+        if (scrollHeight <= 0) {
+          progressFill.style.height = '0%';
+          progressLabel.textContent = '0 / ' + estimatedMinutes;
+          if (progressBar) progressBar.setAttribute('aria-valuenow', 0);
+          return;
+        }
+        const pct = Math.min(1, Math.max(0, scrollTop / scrollHeight));
+        const currentMinute = Math.min(estimatedMinutes, Math.floor(pct * estimatedMinutes));
+        progressFill.style.height = (pct * 100) + '%';
+        progressLabel.textContent = currentMinute + ' / ' + estimatedMinutes;
+        if (progressBar) progressBar.setAttribute('aria-valuenow', Math.round(pct * 100));
+      }
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+
+    // Scene nav: ids on h3s + dropdown
+    (function initSceneNav() {
+      const content = document.getElementById('scriptContent');
+      const selectEl = document.getElementById('scriptSceneSelect');
+      if (!content || !selectEl) return;
+      const sceneHeadings = content.querySelectorAll('h3');
+      const sceneHeadingRe = /^Scene \d+:/i;
+      sceneHeadings.forEach((h3, i) => {
+        const text = (h3.textContent || '').trim();
+        if (sceneHeadingRe.test(text)) h3.id = 'scene-' + (i + 1);
+      });
+      selectEl.addEventListener('change', function() {
+        const value = this.value;
+        if (!value) return;
+        const el = document.getElementById(value);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        this.value = '';
+      });
+    })();
+
+    // Status bar: current scene, characters, production tag
+    (function initStatusBar() {
+      const content = document.getElementById('scriptContent');
+      const sceneEl = document.getElementById('scriptStatusScene');
+      const charsEl = document.getElementById('scriptStatusCharacters');
+      const prodEl = document.getElementById('scriptStatusProduction');
+      if (!content || !sceneEl) return;
+      function getSceneHeadingsInOrder() {
+        const h3s = content.querySelectorAll('h3[id^="scene-"]');
+        return Array.from(h3s).sort((a, b) => {
+          const nA = parseInt(a.id.replace('scene-', ''), 10);
+          const nB = parseInt(b.id.replace('scene-', ''), 10);
+          return nA - nB;
+        });
+      }
+      function getSceneBlock(sceneH3, nextSceneH3) {
+        const chars = new Set();
+        let firstSlug = '';
+        let node = sceneH3.nextSibling;
+        while (node) {
+          if (node === nextSceneH3) break;
+          if (node.nodeType === 1) {
+            if (node.classList && node.classList.contains('character-name')) {
+              const name = (node.textContent || '').trim();
+              if (name) chars.add(name);
+            }
+            if (!firstSlug && node.classList && node.classList.contains('scene-heading')) {
+              firstSlug = (node.textContent || '').trim();
+            }
+          }
+          node = node.nextSibling;
+        }
+        return { characters: Array.from(chars), production: firstSlug };
+      }
+      function updateStatusBar() {
+        const sceneHeadings = getSceneHeadingsInOrder();
+        if (sceneHeadings.length === 0) return;
+        const viewportThreshold = 160;
+        let current = sceneHeadings[0];
+        for (let i = 0; i < sceneHeadings.length; i++) {
+          const top = sceneHeadings[i].getBoundingClientRect().top;
+          if (top <= viewportThreshold) current = sceneHeadings[i];
+        }
+        const title = (current.textContent || '').trim();
+        const nextId = current.id.replace('scene-', '');
+        const nextNum = parseInt(nextId, 10) + 1;
+        const nextScene = document.getElementById('scene-' + nextNum);
+        const block = getSceneBlock(current, nextScene || null);
+        sceneEl.textContent = title || '—';
+        charsEl.textContent = block.characters.length ? block.characters.join(', ') : '—';
+        prodEl.textContent = block.production || '—';
+      }
+      updateStatusBar();
+      window.addEventListener('scroll', updateStatusBar, { passive: true });
+      window.addEventListener('resize', updateStatusBar);
+    })();
+
+    function looksLikeActionIntro(text) {
+      if (!text || text.length < 15) return false;
+      if (/^\(.+\)$/.test(text)) return false;
+      if (/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(text)) return false;
+      if (/^[A-Z][a-z]+,\s*(?:Mid\s*\d+s|\d+s|[A-Za-z\s]+),/.test(text) && /[a-z]/.test(text)) return true;
+      if (/^[A-Z][a-z]+,\s*(?:Mid\s*\d+s|\d+s)\s*[,.]/.test(text)) return true;
+      return false;
+    }
+
+    function formatScreenplay(container) {
+      const content = container.querySelector('.screenplay-content');
+      if (!content) return;
+      normalizeParagraphBreaks(content);
+      const paragraphs = content.querySelectorAll('p');
+      let inDialogueBlock = false;
+      paragraphs.forEach((p, index) => {
+        const text = p.textContent.trim();
+        const nextP = paragraphs[index + 1];
+        const prevP = paragraphs[index - 1];
+        if (!text) return;
+        if (p.classList.length > 0 && !p.classList.contains('line-split')) return;
+        if (/^(INT\.|EXT\.)/i.test(text)) {
+          p.className = 'scene-heading';
+          p.textContent = text.toUpperCase();
+          inDialogueBlock = false;
+          return;
+        }
+        if (/^(FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text)) {
+          p.className = 'transition';
+          p.textContent = text.toUpperCase();
+          inDialogueBlock = false;
+          return;
+        }
+        if (/^\(action\)$/i.test(text)) {
+          p.className = 'action-break';
+          p.textContent = '';
+          inDialogueBlock = false;
+          return;
+        }
+        if (/^\(.+\)$/.test(text)) {
+          p.className = 'parenthetical';
+          inDialogueBlock = true;
+          return;
+        }
+        if (looksLikeActionIntro(text)) {
+          p.className = 'action-line';
+          inDialogueBlock = false;
+          return;
+        }
+        const isAllCaps = /^[A-Z][A-Z\s\.'-]+$/.test(text) && text === text.toUpperCase();
+        const isReasonableLength = text.length > 2 && text.length < 35;
+        const isNotSceneHeading = !/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(text);
+        if (isAllCaps && isReasonableLength && isNotSceneHeading) {
+          const nextText = nextP ? nextP.textContent.trim() : '';
+          const looksLikeDialogue = nextText && (
+            /^\(.+\)$/.test(nextText) ||
+            (!/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(nextText) &&
+             !/^[A-Z][A-Z\s\.'-]+$/.test(nextText))
+          );
+          if (looksLikeDialogue || !prevP || prevP.classList.contains('action-line') || prevP.classList.contains('scene-heading')) {
+            p.className = 'character-name';
+            inDialogueBlock = true;
+            return;
+          }
+        }
+        const looksLikeNewBlock = /^(INT\.|EXT\.|FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text);
+        const looksLikeCharacter = isAllCaps && isReasonableLength && isNotSceneHeading;
+        if (!looksLikeNewBlock && !looksLikeActionIntro(text) && inDialogueBlock && prevP &&
+            (prevP.classList.contains('character-name') || prevP.classList.contains('parenthetical') || prevP.classList.contains('dialogue'))) {
+          p.className = 'dialogue';
+          inDialogueBlock = true;
+          return;
+        }
+        if (looksLikeCharacter || looksLikeNewBlock) inDialogueBlock = false;
+        p.className = 'action-line';
+        inDialogueBlock = false;
+      });
+      const ps = content.querySelectorAll('p');
+      ps.forEach((p, i) => {
+        if (!p.classList.contains('dialogue') && !p.classList.contains('parenthetical')) return;
+        const next = ps[i + 1];
+        if (!next || (!next.classList.contains('dialogue') && !next.classList.contains('parenthetical'))) {
+          if (p.classList.contains('dialogue')) p.classList.add('dialogue-last');
+          if (p.classList.contains('parenthetical')) p.classList.add('parenthetical-last');
+        }
+      });
+    }
+
+    function normalizeParagraphBreaks(content) {
+      const paragraphs = Array.from(content.querySelectorAll('p'));
+      paragraphs.forEach((p) => {
+        if (!p.querySelector('br')) return;
+        const parts = p.innerHTML
+          .split(/<br\s*\/?>/i)
+          .map((s) => s.replace(/&nbsp;/g, ' ').trim())
+          .filter(Boolean);
+        if (parts.length <= 1) return;
+        const frag = document.createDocumentFragment();
+        parts.forEach((html) => {
+          const np = document.createElement('p');
+          np.innerHTML = html;
+          frag.appendChild(np);
+        });
+        p.replaceWith(frag);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # The Havens — Full Novel
 
-*Compiled on 1/30/2026, 2:51:55 PM*
+*Compiled on 3/12/2026, 7:23:46 AM*
 
 ---
 
@@ -221,6 +221,10 @@ He was on a master in data science—and that meant that he was just going to be
 
 We didn't really—we met outside on a September day outside of Chapel at Book Trader Cafe. He had a little espresso black—and I had a large iced latte with apple cider flavor. I knew that it was a little early for pumpkin—but I was excited. He was asking about the American fall—and all that it accompanied.
 
+I saw him a couple of months later at a post doc party and we talked about the good old days when we would get coffee. The conversation kept going back into coffee - and then inevitably how gCafe was the only real french cafe in New Haven. And then a slight or two about his distate for America - and I was done. Not that I was particularly patriotic - but I judged him on the notion that I would never go to france and compare it to the states. Lest outloud. 
+
+I saw him a couple of weeks later - after a historic noreaster - walking down avoiding the snow banks. I think he saw me - and I think I saw him too - but we didn't acknowledge each other.
+
 **Focus:**
 - Derail the original plan (coworking becomes something else).
 - Force a harder path (the French man knows more than Patrick; New Haven as question mark).
@@ -358,6 +362,8 @@ I was happy to have discovered the gold with Bobby McArnold—but I was wary bec
 I was worried that he would tell his father—for he told me he was going to. We both ordered a Reuben at Archie Moore's as I marveled at the design pirate wheel that was pouring my red ale. It came about when he was showing me his old collection of his father's collection from the 80s—and one of them—next to a bunch of other items that seemed to be out of Miami Vice—was a metal detector. I've never seen anything like it.
 
 An outsider offers help—but it comes with a personal vow. The pact binds the group to a new responsibility.
+
+Bobby's father was a theologian and well known around Yale Divinity school. I went to one of his lectures once and felt like the cool celebrity plus one among the men and women who had to earn degrees to get there. But stepping in, I knew that the joke was on me for not having the courage to put my hat in the ring to get earned entrance. But then again, I knew from such friends, that it wasn't all it was cracked up to be - furthermore - the reason I wanted entry was vain - to show others that I belonged at the table.
 
 **Focus:**
 - Add a new traveling companion (Bobby McArnold, the metal detector, the gold).
@@ -866,6 +872,8 @@ Currents pull the group off course. The sea is not an enemy—but it refuses to 
 Three weeks came and went and not much went on—besides everything.
 
 I settled on a design for the popup cafe laundromat but I second guessed myself. I asked around. I went to Gather and talked to Sultan about the idea—he loved it and encouraged me—I went home that night and talked to Kenny Lewis—he discouraged me. Back and forth back and forth pros and cons list—realizing that I was confronting a certain fear I had by making the decision. I spoke to my mom on the phone that night and found out that my grandmother fell ill and had to be rushed to the ER—my parents—presently having covid—couldn't go and visit her—so that was it—she was stressed on the phone.
+
+I went outside that night and watched a tree swing in the wind. And then watched that same tree brush up agaisnt the fence - and stared for a while. Through the glitter of the wind and the street lights - it looked like eyes peering back to me. 
 
 I decided to take some action—and gave a hard look at the backyard. I wrote a list of 20 or so folks who I knew would come—but then what—it would turn into a party. So—not wanting it to turn into a party—but a functional business—I decided that we needed to be out and about. I thought about the New Haven Green—and Google mapped it a bit. I gave the school outside of Westville a call and they agreed to it. But I knew that we would have to spread the idea—so I contacted the local 8 news—and they sent out a reporter to follow—and then I hung posters all around town.
 

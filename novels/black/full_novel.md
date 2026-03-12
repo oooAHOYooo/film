@@ -1,6 +1,6 @@
 # Field Notes — Full Novel
 
-*Compiled on 1/30/2026, 1:18:57 PM*
+*Compiled on 3/12/2026, 7:23:46 AM*
 
 ---
 
@@ -159,6 +159,9 @@ Focus:
 - Capture the exact phrase.
 - Explain why it landed.
 
+
+## Conversation 
+1. Not wanting a job because I am some sort of Olympic athelete and getting a job would be equivelent to working at a gas station. 
 
 ---
 

@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/12/2026, 7:13:53 AM*
+*Compiled on 3/12/2026, 7:35:41 AM*
 
 ---
 
@@ -2067,7 +2067,7 @@ MAKAYLA
 What do you believe?
 
 DALLAS
-I don't believe... I just feel numb. 
+I don't know...
 
 MAKAYLA
 Asher thinks your special. He told me the day that we all met. 
@@ -2075,7 +2075,7 @@ Asher thinks your special. He told me the day that we all met.
 <!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
 
 (action)
-Dallas looks at Dallas. And then down at his hands.
+Dallas looks at Asher. And then down at his hands holding the oscillator.
 
 DALLAS
 Why do you want to find that creature?
@@ -2094,9 +2094,14 @@ It's hurt.
 MAKAYLA
 It is hurt.
 
+<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+
+(action)
+Asher walks over to the oscillator and begins to dial it.
+
 ASHER
 (Trance like)
-One-fifteen point three. 
+One - one - five - three. 
 
 <!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
 

@@ -1,11 +1,19 @@
 #!/usr/bin/env node
 
 /**
- * Compile all Summer markdown-driven systems from project root.
+ * compile-all.js
+ * Compiles all seasonal film script systems plus Summer extras.
  *
  * Usage:
  *   node compile-all.js
  *   npm run compile:all
+ *
+ * Seasonal scripts compiled:
+ *   Spring  → pages/spring/script-system/compile.js
+ *   Summer  → pages/summer/script-system/compile.js
+ *   Autumn  → pages/autumn/script-system/compile.js
+ *   Winter  → pages/winter/script-system/compile.js
+ *   Nibbler → pages/nibbler/script-system/compile.js
  */
 
 const path = require('path');
@@ -14,12 +22,30 @@ const { spawnSync } = require('child_process');
 const ROOT = __dirname;
 
 const tasks = [
+  // ── Seasonal Script Systems ───────────────────────────────────
+  {
+    name: 'Spring Script System',
+    script: path.join(ROOT, 'pages', 'spring', 'script-system', 'compile.js'),
+  },
   {
     name: 'Summer Script System',
     script: path.join(ROOT, 'pages', 'summer', 'script-system', 'compile.js'),
   },
   {
-    name: 'Summer Production (from script-system)',
+    name: 'Autumn Script System',
+    script: path.join(ROOT, 'pages', 'autumn', 'script-system', 'compile.js'),
+  },
+  {
+    name: 'Winter Script System',
+    script: path.join(ROOT, 'pages', 'winter', 'script-system', 'compile.js'),
+  },
+  {
+    name: 'Nibbler Script System',
+    script: path.join(ROOT, 'pages', 'nibbler', 'script-system', 'compile.js'),
+  },
+  // ── Summer Extras ──────────────────────────────────────────
+  {
+    name: 'Summer Production',
     script: path.join(ROOT, 'pages', 'summer', 'compile-production.js'),
   },
   {

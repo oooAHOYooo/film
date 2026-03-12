@@ -1,50 +1,141 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Autumn Film — Film Vault</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="/styles/style.css">
-    </head>
-    <body>
-        <header class="header">
-            <h1><a href="/">← Film Vault</a> / Autumn Film</h1>
-            <p>Autumn film project workspace</p>
-        </header>
 
-        <section class="section">
-            <h2>Stills</h2>
-            <div data-stills></div>
-        </section>
+<head>
+    <meta charset="utf-8">
+    <title>The Fall of Hibisicas — Autumn Film</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/autumn.css">
+</head>
 
-        <section class="section">
-            <h2>Location Scout Gallery</h2>
-            <div data-gallery></div>
-        </section>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-        <section class="section">
-            <h2>Inspiration Gallery</h2>
-            <div data-inspiration></div>
-        </section>
+    <!-- Sticky Navigation -->
+    <nav class="autumn-nav" id="autumnNav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="/" class="nav-brand">
+                    <span style="font-size: 1.5rem;">←</span>
+                    <h2>Autumn Hub</h2>
+                </a>
+                <button class="mobile-nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+                <div class="nav-links" id="navLinks">
+                    <a href="#script" class="nav-link-item"><span>Script</span></a>
+                    <a href="#stills" class="nav-link-item"><span>Stills</span></a>
+                    <a href="#locations" class="nav-link-item"><span>Locations</span></a>
+                    <a href="/" class="nav-link-item"><span>Home</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <section class="section">
-            <div data-files></div>
-        </section>
+    <!-- HERO -->
+    <section class="hero section-anchor" id="overview">
+        <div class="hero-content">
+            <h1 class="hero-title" style="font-weight: 800; letter-spacing: -0.02em;">The Fall of Hibisicas</h1>
 
-        <section class="section">
-            <details>
-                <summary style="cursor: pointer; color: #75c0ff; font-weight: 600; font-size: 1.2rem; margin-bottom: 12px;">Bookmarks</summary>
-                <div data-bookmarks></div>
-            </details>
-        </section>
+            <div class="hero-status">
+                <span class="status-badge status-pre-production"
+                    style="border-radius: 6px; padding: 6px 12px; font-weight: 700;">Pre-Production</span>
+            </div>
 
-        <footer>
-            <p>Private. Static. Yours.</p>
-        </footer>
+            <!-- Bento Navigation -->
+            <div class="bento-grid">
+                <a href="/pages/autumn/script-system/full_script.html" class="bento-item script wide">
+                    <div>
+                        <div class="bento-icon">📜</div>
+                        <h3 class="bento-title">Full Script</h3>
+                        <p class="bento-desc">The compiled screenplay — write scenes as .md files, run compile.js to
+                            regenerate.</p>
+                    </div>
+                </a>
 
-        <script src="/scripts/vault.js"></script>
-        <script>
-    hydrateSection('autumn');
-  </script>
-    </body>
+                <a href="/pages/autumn/script-system/index.html" class="bento-item">
+                    <div>
+                        <div class="bento-icon">▦</div>
+                        <h3 class="bento-title">Scene Gallery</h3>
+                        <p class="bento-desc">Browse all scenes with act structure and summaries.</p>
+                    </div>
+                </a>
+
+                <a href="/pages/autumn/script-system/scene_outline.html" class="bento-item">
+                    <div>
+                        <div class="bento-icon">📋</div>
+                        <h3 class="bento-title">Scene Outline</h3>
+                        <p class="bento-desc">Numbered scene list with file references.</p>
+                    </div>
+                </a>
+
+                <a href="/pages/autumn/script-system/scenes/" class="bento-item">
+                    <div>
+                        <div class="bento-icon">✏️</div>
+                        <h3 class="bento-title">Write Scenes</h3>
+                        <p class="bento-desc">Edit individual .md files in <code
+                                style="font-size:0.8rem; color: var(--accent);">script-system/scenes/</code></p>
+                    </div>
+                </a>
+
+                <a href="/pages/autumn/script-system/full_script.html" class="bento-item">
+                    <div>
+                        <div class="bento-icon">🖨️</div>
+                        <h3 class="bento-title">Print / Export</h3>
+                        <p class="bento-desc">Print or download the compiled script as PDF or Markdown.</p>
+                    </div>
+                </a>
+            </div>
+
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0;">
+                To compile: <code
+                    style="color: var(--accent); font-size: 0.8rem;">node pages/autumn/script-system/compile.js</code>
+            </p>
+        </div>
+    </section>
+
+    <!-- Stills -->
+    <section class="section section-anchor" id="stills"
+        style="max-width: var(--maxw); margin: 0 auto 60px; padding: 0 var(--gap);">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; color: var(--text-primary);">Stills</h2>
+        <div data-stills></div>
+    </section>
+
+    <!-- Location Scout -->
+    <section class="section section-anchor" id="locations"
+        style="max-width: var(--maxw); margin: 0 auto 60px; padding: 0 var(--gap);">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; color: var(--text-primary);">Location Scout
+            Gallery</h2>
+        <div data-gallery></div>
+    </section>
+
+    <!-- Inspiration -->
+    <section class="section" style="max-width: var(--maxw); margin: 0 auto 60px; padding: 0 var(--gap);">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 24px; color: var(--text-primary);">Inspiration
+            Gallery</h2>
+        <div data-inspiration></div>
+    </section>
+
+    <!-- Files / Vault -->
+    <section class="section" style="max-width: var(--maxw); margin: 0 auto 60px; padding: 0 var(--gap);">
+        <div data-files></div>
+    </section>
+
+    <!-- Bookmarks -->
+    <section class="section" style="max-width: var(--maxw); margin: 0 auto 60px; padding: 0 var(--gap);">
+        <details>
+            <summary
+                style="cursor: pointer; color: var(--accent); font-weight: 600; font-size: 1.2rem; margin-bottom: 12px;">
+                Bookmarks</summary>
+            <div data-bookmarks></div>
+        </details>
+    </section>
+
+    <footer>
+        <p>Barnacle Film Studio Company © 2025–2026</p>
+    </footer>
+
+    <script src="/scripts/vault.js"></script>
+    <script src="/scripts/autumn.js"></script>
+</body>
+
 </html>
