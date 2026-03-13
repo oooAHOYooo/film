@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/13/2026, 11:44:04 AM*
+*Compiled on 3/13/2026, 7:00:59 PM*
 
 ---
 
@@ -29,36 +29,42 @@ Dallas goes into the grass a little bit and as he does he notices that there is 
 
 As Dallas examines he hears a distinct bicycle ring.
 
-MAKAYLA, 22 and ASHER, 14 — approach on bikes. Asher has a small spiral notebook in his back pocket; he's tracing something on his palm with his finger as they roll up. They watch Dallas for a while.
+MAKAYLA, 22 and ASHER, 14 — approach on bikes. They watch Dallas for a while.
 
 They approach Dallas slowly as one of the boxes draws their curiousity. Makayla watches Dallas pull out a military grade Oscillator.
 
 MAKAYLA
 (to Asher but loud enough for Dallas to hear)
-You know that could be used to track the baseline difference between the cry of the BinzoBee and the howl of the Ophragah. Did you know that peptide crystal act kind of as a biologicial bridge.  But neither really matters if a Nidus is forming. That's the apex predator. 
+You know that could be used to track the baseline between the cries of the Binzos and the howls of the Oragraph. But neither really matters if a Nidus is forming. That's an apex predator situation. 
 
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
 (action)
-Asher nods. Makayla approaches Dallas. 
+Asher nods with his headphones on. Makayla approaches Dallas. 
 
 MAKAYLA
-Hello there - I'm Makayla. 
+Hello there
+
+DALLAS
+Hello.
+
+MAKAYLA
+I'm Makayla.
 
 DALLAS
 Dallas. 
 
 MAKAYLA
-Did you just move here?
+Nice to meet you.
 
 DALLAS
-Yes?
+You too.
 
 MAKAYLA
 Did you just move here?
 
 DALLAS
-Yes.
+Yes
 
 MAKAYLA
 Did you turn off my trap?
@@ -86,10 +92,10 @@ Do you think my brother Asher could borrow it some time?
 Dallas looks at the Oscillator and then at Asher.
 
 MAKAYLA
-He'll need it. We'll need it. I'll need it too. 
+He'll need it. 
 
 DALLAS
-What would you need it for?
+What would he need it for?
 
 MAKAYLA
 Tell him Asher. 
@@ -97,13 +103,13 @@ Tell him Asher.
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
 (action)
-Asher stands silent, still tracing a pattern on his palm. Sheepish. He doesn't look up.
+Asher stands silent, still tracing a pattern on his palm. He doesn't look up.
 
 MAKAYLA
 Does it work?
 
 DALLAS
-It does
+It does.
 
 MAKAYLA
 What is the range on it?
@@ -120,12 +126,15 @@ Well okay. Asher, do you have any more questions?
 Makayla turns to Asher. He shakes his head no—still not looking up, finger moving on his palm. 
 
 MAKAYLA
-Okay then. Byeeee. 
+Okay then. Good to know. Can we borrow it?
+
+DALLAS
+Sure.
 
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
 (action)
-Makayla and Asher peddle their bikes away. Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
+Makayla and Asher peddle their bikes away with their new oscilattor.     Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
 
 Dallas looks down at a box of old equipment and stretches down to pick it up. 
 
@@ -149,24 +158,26 @@ Dallas looks at his new surroundings and begins to take out silverwear out of a 
 
 CUT TO:
 
-The Kitchen is spotless and well organized for what it is. Dallas carefully cuts through an onion and sizzles it in a wok.
+The Kitchen is spotless and well organized for what it is. Dallas takes out a bag of groceries and gets some flour and some dough. He hasitly begins to put forth a pizza. 
+
+A noise is heard off screen. 
 
 EXT. DALLAS DRIVEWAY
-Dallas goes outside with some trash bags and takes in the surroundings. He notices that there are 
+Dallas goes outside hands still covered in flour. he stares for a while at the edge of his property - along it a long fence of conneticut's finest natural tall grass. 
 
 INT. DALLAS NEW HOUSE - NIGHT
 
 Dallas struggles to fall asleep in his new home. He hears strange noises from outside. As he looks out the window he sees a flicker of a faint gold light. 
 
-Curious and wide awake - Dallas finishes unpacking boxes. The room is sparse, filled with a few pieces of furniture.
+Curious and awake - Dallas heads downstairs and begins to unpack boxes. The room is sparse, filled with a few pieces of furniture.
 
-Dallas opens up the box to find sketches of butterflies and caterpillars and loads of curious insects. As he turns the pages, the butterflies and the drawings turn more into creatures with wings.  Angels.  One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD." He flips through some of the pages, some showing sketches of the grass and a golden creature.Dallas closes it without looking and sets the stack aside.
+Dallas opens up the box to find sketches of butterflies and caterpillars and loads of curious insects drawings. As he turns the pages, the butterflies and the drawings turn more into creatures with wings.  Angels.  One of the folders slips open as he lifts it—inside, a glimpse of hand-drawn sketches and a tab labeled "FIELD NOTES — BRANFORD." He flips through some of the pages, some showing sketches of the grass and a golden creature. And a bunch of math. Dallas closes it without looking and sets the stack aside.
 
-In the bottom of the box, covered in dust, sumberged by cables,  Dallas finds and pair of retro, ruby-red headphones.
+In the bottom of the box, covered in dust, sumberged by cables, Dallas finds and pair of retro, ruby-red headphones. Next to the headphones is a small casette player. On the back of the player, Dallas peels back a piece of duct tape to reveal a photo sticker. A photo of Dallas and a woman, both sporting heavy audio headsets, laughing as they capture noise in a field of grass. Dalla's thumb rushes over her face. Dallas thumbs over the play button but fails to. 
 
 On the side on the inside of the headphone, Dallas peels back a piece of duct tape to reveal a photo sticker. The photo shows Dallas and a woman, both wearing heavy audio headsets, laughing in a field of grass. Dallas's thumb rushes over her face. 
 
-Dallas gently closes the box of headphones and gear. He takes a deep breath and opens up another box laying adjacent. He carefully pulls out a heavy military-grade desktop Oscillator, a portable audio recorder, and a portable Oscillator. 
+Dallas gently closes the box of headphones and gear. He takes a deep breath and opens up another box laying adjacent. He carefully pulls out a heavy military-grade desktop audio recorder, another portable audio recorder, and a small portable Oscillator. 
 
 INT. DALLAS BATHROOM - NIGHT
 
@@ -175,15 +186,13 @@ Dallas takes a shower - and as he zones out from the sounds of the hot water, a 
 Dallas dries off and peers through his steamy bathroom window as the hum grows louder. 
 
 INT. DALLAS DOWNSTAIRS - NIGHT
-Dallas rushes downstairs towards a pile of boxes in the middle of his living room. 
+Dallas rushes downstairs as the hum grows louder. Dallas, recorder in hand, scrambles toward the window and brings to record. The needle spikes. Dallas begins to adjust the dial - and begins to hear a whimpering faint, pure, harmonic tone. The sound abrutly stops. And then it starts up again. The sound abrutly stops. And then starts up again. This time in a pulsing pattern. Dallas looks at his watch and begins to time it. One Second. Stop. One second - top. Five seconds. Three seconds. 
 
-As he does this, he hears the hum growing louder. Dallas grabs a recorder on his desk and scrambles toward the window and brings to record. The needle spikes. Dallas begins to turn the dial - tuning his instrument towards a pure, harmonic tone that cuts through the air like butter. Dallas holds the dial. One second. One Second. Five Seconds. Three Seconds.  
+Suddenly hum sounds like it is moving away and its loudness begins to grow faint. Looking down at the his recording, Dallas notes a spike in the waveform on the low frequency range. 
 
-The hum sounds like it is moving away and its loudness begins to grow faint. Looking down at the his tuning oscillator, Dallas notes a spike in the waveform. 
+The battery dies on the recorder. Dallas smacks the back in fustration. Scrambling, he tears through a box of equipment for but none of them have batteries. 
 
-The battery dies. Scrambling, Dallas looks through his box of equipment for but none of them have batteries. 
-
-Dallas, frustrated, abandones the equipment and heads for the door. 
+Frustrated, Dallas abandones the equipment and heads for the door. 
 
 EXT. DALLAS HOUSE - NIGHT
 
@@ -191,7 +200,7 @@ Dallas stands alone watching the tall grass sway agaisnt the salt breeze. Coyote
 
 INT. DALLAS HOUSE - BEDROOM - NIGHT
 
-Dallas struggles to go to sleep. His eyes fixed on the ceiling, he hears more faint cries and looks out the window and sees a faint golden glow, pulse once. 
+Dallas struggles to go to sleep. His eyes fixed on the ceiling, he hears more faint cries and looks out the window and then from outside his window he sees, a faint golden glow, pulse - once. twice. five times. three times. 
 
 
 ---
