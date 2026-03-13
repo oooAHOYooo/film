@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/13/2026, 7:00:59 PM*
+*Compiled on 3/13/2026, 7:12:16 PM*
 
 ---
 
@@ -217,11 +217,9 @@ Dallas struggles to go to sleep. His eyes fixed on the ceiling, he hears more fa
 <!-- nickname: Meet the Neighbors -->
 
 EXT. DALLAS HOUSE - NEXT DAY MORNING
-Dallas walks outside his house, towards the edge of the property. As he approaches the edge of his yard he watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the C battery in his hand. As he does so, he becomes dazed.
+Dallas walks outside his house, towards the edge of the property. As he approaches the edge of his yard he watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the audio recorder in his hand. As he does so, he becomes dazed.
 
-A faint hum is heard off in the distance of the tall grass - low from the earth. Dallas looks at his watch and begins clicking with his hand. And then he writes down some numbers on a sticky note. "3, 5, 1" 
-
-As Dallas focuses, he notices a man approaching him from the sidewalk near his house. 
+As Dallas dazes onward, a man approaches him from the sidewalk near his house. 
 
 DOMINIC AMARANTO, early 40s, wearing a bright salmon covered short sleeve button walks right up to Dallas with vigor. 
 
@@ -232,25 +230,25 @@ DALLAS
 What's that?
 
 DOMINIC
-You are my neighbor - I think we're neighbors.I live nextdoor - I think we saw you the other day driving by - did you just move here?
+Neighbor, neighbor - you're my neighbor - I think we're neighbors. Hey! Dominic - nice to meet you - I live nextdoor - did you just move here?
 
 DALLAS
-Oh hello - yes. 
+Oh yeah - nice to meet you.  
 
 DOMINIC
-Nice to meet you. I'm Dominic - this is Branford. 
+Yeah, put her there. I'm Dominic - this is Branford. 
 
 DALLAS
-Nice to meet you too. I'm Dallas. 
+Dallas
 
 DOMINIC
-Dallas, what a name - where you from? 
+Dallas? Dallas, what a name - where you from? 
 
 DALLAS
 Indiana.
 
 DOMINIC
-IndyANNA - that's far from Branford. 
+IndyANNA - far from Branford. 
 
 DALLAS
 Yeah.
@@ -262,7 +260,7 @@ DALLAS
 Not much. 
 
 DOMINIC
-So what you doing around here?
+So what brings you to here?
 
 DALLAS
 Work.
@@ -289,10 +287,10 @@ DOMINIC
 Bio-acoustics. That's the study of sound - yeah? Yeah. Right on. Alright listen - I'm about to head to the green right now - you up for a walk? My car is parked down in the center of town and I need to go get it... What's that in your hand?
 
 DALLAS
-A battery. 
+An audio recorder. I was going to go into town anyway to get it. 
 
 DOMINIC
-What is that - that a C battery - Rudy's got that. Let's go - I'll buy you a coffee.
+Oh yeah? Rudy's got that. Let's go - I'll buy you a coffee.
 
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
@@ -301,6 +299,8 @@ Dallas accepts. The two begin to wander off toward. Branford.
 
 EXT. BRANFORD NEIGHBORHOOD - MOMENTS LATER
 
+Dallas and Dominic begin to walk down the sidewalks towards town. 
+
 DOMINIC
 You don't have a car?
 
@@ -308,20 +308,19 @@ DALLAS
 No - no car.
 
 DOMINIC
-Yeah. Me neither - well I can drive - yeah, I share one with my sister, she's borrowing mine.
+Yeah. Me neither - well I drive - for sure, but yeah, I share one with my sister.
 
 EXT. TOWN BRANFORD MONTAGE
 
 Dallas and Dominic through coastal sidewalks, neighborhoods, and natural marsh fences. As they approach one patch of tall marsh grass in particular, Dallas stops.
 
-Dallas, sheepishly, checks if Dominic is looking and when he isn't - he takes out a small oscillator and records.  
+Dallas, checks if Dominic is looking and when he isn't - he takes records a bit with the audio recorder and points it's microphone toward the grass. 
 
 DOMINIC
+(spotting Dallas)
 Be careful - I heard some coyotes up in that the other night when I was walking Howie. Some people say the noises are from owls - but I know its coyotes. 
 
-
 EXT. TOWN CENTER - DAY
-
 Dallas and Dominic walk toward a small hardware store. 
 
 INT. HARDWARE STORE
@@ -330,40 +329,26 @@ INT. HARDWARE STORE
 (action)
 Dominic waves to the unfriendly man at the counter and brings Dallas to the battery section. 
 
-DOMINIC
-So where you from?
-
-DALLAS
-Indiana.
-
-DOMINIC
-INDIANAAAA - how'd you land up here in Branford?
-
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
 Dallas finds the correct batteries and grabs it off the shelf. The two exit the shop.
 
-
 EXT. BRANFORD GREEN
 
-Dallas and Dominic walk past the town green.The building looks closed.The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
+Dallas and Dominic walk past the town green. The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
 
 DOMINIC
-Great.
+Oh, this is great. Cool. 
 
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
-He rips the ticket off and walks around to see if anyone is looking, he crumbles it up and puts it in his pocket. 
+He rips the ticket off and walks around to see if anyone is looking, he crumbles it up and puts it in his pocket. Dominic takes out an inhaler out of his pocket and takes a massive rip. 
 
-Dominic bends downs and grabs a key from the bottom of the car and starts it. 
+He bends downs and grabs a key from the bottom of the car and starts it up. 
 
-INT. DOMINIC's CAR
- 
-As Dominic struggles to look for the key, Dallas' glance finds himself looking up at the power lines with the birds acting weird. On a sagging power line, thirty birds sit in a perfect, silent row. They aren't preening or chirping. Every single beak is pointed South-East. Toward the marsh.
-
-The streetlight above them flickers. Once. Twice. Then steadies. Dallas watches it for a beat, then looks back at the birds.
+INT. DOMINIC's SISTER's CAR
 
 Dominic opens the car and gestures Dallas to get in - non-chantanly the parking ticket in the glove box. 
 
@@ -375,7 +360,7 @@ DALLAS
 Yeah
 
 DOMINIC
-Good -  my church is doing a fellowship lunch - little picnic - I got to go to the bakery and bring a tray. You should come. 
+Good -  my church is doing a fellowship lunch - little picnic - I'm on cleanup duty and got to lock up when they are done. I could drop you off home first but it would be out of the way - You want to come for the ride? 
 
 DALLAS
 Sure. 
@@ -383,6 +368,8 @@ Sure.
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
+Dominic drives towards the church. 
+
 DOMINIC
 Nice - yeah - it's nice to be the new guy in town - good old branford. 
 
