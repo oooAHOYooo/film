@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/12/2026, 4:58:47 PM*
+*Compiled on 3/13/2026, 10:58:16 AM*
 
 ---
 
@@ -35,7 +35,7 @@ They approach Dallas slowly as one of the boxes draws their curiousity. Makayla 
 
 MAKAYLA
 (to Asher but loud enough for Dallas to hear)
-You know that could be used to track the baseline difference between the cry of the BinzoBee and the howl of the Ophragah. Did you know that peptide crystal act kind of as a biologicial bridge. 
+You know that could be used to track the baseline difference between the cry of the BinzoBee and the howl of the Ophragah. Did you know that peptide crystal act kind of as a biologicial bridge.  But neither really matters if a Nidus is forming. That's the apex predator. 
 
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
@@ -43,7 +43,13 @@ You know that could be used to track the baseline difference between the cry of 
 Asher nods. Makayla approaches Dallas. 
 
 MAKAYLA
-Hey mister. 
+Hello there - I'm Makayla. 
+
+DALLAS
+Dallas. 
+
+MAKAYLA
+Did you just move here?
 
 DALLAS
 Yes?
@@ -466,12 +472,13 @@ DOMINIC
 Got them. Should be good to go. 
 
 JANICE
-Thanks brother. Listen - did you give Mr Mike his mediciation - he has to take them now at 4:30pm - an hour or so before dinner. 
+Thanks brother. Listen - did you give Mr. Mike his mediciation? - He has to take them now at 4:30pm - an hour or so before dinner. Make sure he takes it with some cheese or something. 
 
 DOMINIC
 Yes.
 
 JANICE
+(noticing Dallas)
 What's wrong you with - who is this? 
 
 DOMINIC
@@ -546,13 +553,18 @@ Dominic pulls out his phone, tapping an app.
 DOMINIC
 Hey check this - It listens to the chirps and tells you the species. They got a lot of offspree here - Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
 
+<!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
+
+(action)
+Dominic struggles to get the app to work and begins to pace a bit. 
+
 DOMINIC
-Yeah - I wanted to be a writer but it never really worked out for me - so I am writing now - and going to tell a story of these marlins
+Yeah - I wanted to be a writer but it never really worked out for me - so I am writing now - and going to tell a story of these marlins.
 
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
 (action)
-Dominic sees some garbage on the cans - and starts having a bit of a tough time breathing. He grabs his Asmatha inhaler and takes a deep breath.
+He grabs his Asmatha inhaler and takes a deep breath.
 
 DOMINIC
 (in anger)
@@ -579,7 +591,7 @@ Boom - Gone.
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
 (action)
-Dallas and Dominic look out for a while near the tall grass. 
+Dallas and Dominic walk slowly and Dallas looks out to the tall grass for a while. 
 
 
 ---
@@ -674,7 +686,7 @@ Listen, I got to get the furniture before Janice has her women's group tonight. 
 (action)
 Dallas notices that there are some weird burn marks on the ground. He gazes at them for a bit of time. The burn marks are like black sands, not disimmilar to veins on the ground. 
 
-Dallas walks over to the burn marks and touches them. He looks at his skin and they have a weird mark on them. He takes a little leaf and puts it in his pocket. 
+Dallas walks over to the burn marks and touches them. He looks at his skin reacts a bit to the marks and he takes a little nearby leaf with the mark and puts it in his pocket. 
 
 DALLAS
 (hesitates)
@@ -1726,8 +1738,7 @@ DALLAS
 I am not sure.
 
 MAKAYLA
-My father left Asher and I this random bit of land in Branford, in his will. 
-My uncle isn't keen on touching or doing anything with it - so Asher and I built this. 
+My father left Asher and I this random bit of land in Branford, in his will. My uncle isn't keen on touching or doing anything with it - so Asher and I built this. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
@@ -1827,7 +1838,7 @@ Asher no.
 Dallas holds the object in his hands fasicanted. Makayla takes it away and pockets it.
 
 MAKAYLA
-I think the crystal is a biological semi-conductor and somehow - the creature needs it - to purify it from the darkness. 
+Look at it. It's vibrating at the same rate as your pulse. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
@@ -2461,6 +2472,12 @@ Dallas stares at the basement door. During a silent moment of reflection, the hu
 
 In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the last person to leave. 
 
+INT. DOORWAY - CONTIOUS
+Pat Clendenen walks out and puts his hand out to shake Dominic and Dallas' hand. As he does so, he notices from the corner of his eye the burn mark on the ground.
+
+INT. HALLWAY- CONTIOUS
+Dominic shuts the door. 
+
 DOMINIC
 Alright, let's see this cat. 
 
@@ -2787,6 +2804,14 @@ The massive, formless shadows pour into the house—but the crew is already spri
 EXT. TALL GRASS - CONTINUOUS
 Dallas and Asher enter the tall grass carrying all of the equipment. 
 
+Dallas stops for a moment in pain, almost dropping the speaker on Asher. He looks down at his hand - the black veins pulse under his skin, it falls into the mud with a wet heavy thunk.
+
+Dallas looks at his arm it begins to look transulent. 
+
+In the distance Makayla begins to cry. 
+
+Dominic appears and helps Asher with the speaker. 
+
 As they cross into the threshold, they plunged into  sensory deprivation. 
 
 The tall grass towers over their heads, ten feet high and thick like jungle vines. The wind is howling, whipping the stalks in violent, unpredictable rhythms. 
@@ -2998,26 +3023,36 @@ The largest Elder groans, a deep sub-bass sound, as a massive Red-Eye slams into
 
 The horde of massive, formless red-eyed shadows surges forward toward the center. Toward the baby. Toward the crew. 
 
-DALLAS
+DOMINIC
 (holding a speaker steady)
 Makayla!
 
 MAKAYLA
 (frantically twisting bare wire)
-I'm tying it! I'm tying it!
+I'm trying. 
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
 She wraps the copper tight and bites down hard on the connection to crimp the cold wire against the crystal. The small screen on her chest flares green. The connection holds. 
 
-MAKAYLA (CONT'D)
+Asher holds out his palm again and begins to trace his index finger along its edges. 
+
+ASHER
+Wait!
+
+<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
+
+(action)
+Asher runs over and adjusts the dial to 1154
+
+MAKAYLA 
 Hit it! 
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
-Dallas reaches for the master dial on her chest rig. 
+As Makayla goes to fire the pulse from the speaker.
 
 They are suddenly hit from the side. A massive shadow sweeps its rotting tendrils across the mud. The concussive, silent force of its movement slams into the left speaker. 
 
