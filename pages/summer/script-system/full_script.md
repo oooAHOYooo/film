@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/13/2026, 10:58:16 AM*
+*Compiled on 3/13/2026, 11:44:04 AM*
 
 ---
 
@@ -2804,19 +2804,45 @@ The massive, formless shadows pour into the house—but the crew is already spri
 EXT. TALL GRASS - CONTINUOUS
 Dallas and Asher enter the tall grass carrying all of the equipment. 
 
-Dallas stops for a moment in pain, almost dropping the speaker on Asher. He looks down at his hand - the black veins pulse under his skin, it falls into the mud with a wet heavy thunk.
+The nylon straps bite into Dallas' shoulders - straining the fabric. 
+
+Dallas stops for a moment in pain, almost dropping the speaker on Asher. He looks down at his hand - the black veins pulse under his skin, Dallas in pain, drops the speaker into into the mud with a wet heavy thunk.
 
 Dallas looks at his arm it begins to look transulent. 
 
 In the distance Makayla begins to cry. 
 
-Dominic appears and helps Asher with the speaker. 
+Suddenly, Dominic appears and runs towards Dallas and Asher.
+
+DOMINIC
+I can't find Makayla.
+
+<!-- scene: 23 file: s23.md nickname: predator-attack -->
+
+(action)
+Dominic begins to pace around and hits his inhaler. 
+
+DOMINIC
+MAKAYLA!  
+
+<!-- scene: 23 file: s23.md nickname: predator-attack -->
+
+(action)
+Dallas and Asher continue to make their way with the spaeker. Dallas drops to the ground.  
+
+DOMINIC
+Dallas you okay?
+
+<!-- scene: 23 file: s23.md nickname: predator-attack -->
+
+(action)
+Dallas grips his arm tightly and stoticly marches onward.  Dominic takes a big hit of his inhaler. 
 
 As they cross into the threshold, they plunged into  sensory deprivation. 
 
 The tall grass towers over their heads, ten feet high and thick like jungle vines. The wind is howling, whipping the stalks in violent, unpredictable rhythms. 
 
-It is pitch black. The only light is the small, blinking green LED on Makayla’s chest rig. Dallas and Asher follow it.
+It is pitch black. The only light is the small, blinking green LED on Makayla’s chest rig. Dallas, Dominic and Asher follow it.
 
 Dallas and Asher catch up with Dominic and Makayla who are out of breath in the pitch black. 
 
@@ -2931,37 +2957,34 @@ Inside the ring, it is completely calm. The storm raging directly above them doe
 
 And it is glowing. 
 
-Sitting in a circle in the center of the flattened grass are the Golden Elders. They are bigger than the injured creature. About a foot taller than the injured creature, covered in thick, iridescent golden fur. They look ancient. Wise. 
+Sitting in a circle in the center of the flattened grass are the Golden Elders. They are slightly bigger than the injured creature. About a foot taller than the injured creature, covered in thick, iridescent golden fur. They look ancient. Wise. 
 
 They are humming. A deep, resonant, multi-chord frequency that visibly vibrates the air around them, creating a faint, shimmering golden dome over the sanctuary. 
 
- The glowing pulse in its neck, which had been weak and erratic, suddenly flares bright gold as it hears its family's song. 
+ The glowing pulse in its neck, which had been weak and erratic, suddenly flares bright gold as it hears the song. 
 
 Asher lifts the small creature and gently sets it down in the mud. The tiny being stumbles forward, letting out a high-pitched chirp. 
 
 One of the giant Elders turns its head. It sees the baby. 
 
-The Elder doesn’t move fast, but with massive, deliberate grace. It scoops the tiny creature up into its giant, golden-furred arms. The baby nuzzles into the thick fur, safe. 
+The Elder approaches it with deliberate grace. And begins to gently sway. 
 
-The Elder looks up at Asher. Then at Dallas. It slowly bows its head, emitting a single, isolated note of pure, acoustic gratitude that rattles Dallas's ribs in the best possible way. 
+The Elder looks up at Asher. Then at Dallas. It slowly bows its head, emitting a single, isolated note of pure, acoustic note that rattles Dallas's ribs in the best possible way. 
 
-Makayla looks at her screen. The jagged red lines are spiking massively at the edge of the circle. 
+Makayla looks at her screen. The jagged red lines are spiking massively at the edge of the circle. They're blocking the shadows. 
 
-They're blocking the shadows. 
-
-A heavy, crushing sound slams into the woven wall of grass on the edge of the circle. The golden dome shudders violently. 
+A heavy, crushing sound slams into the woven wall of grass on the edge of the circle. The air shudders violently. 
 
 The peace is broken instantly. 
 
 Dozens of massive, corrupted Red-Eye shadows burst through the woven grass perimeter. The black rot spreads across the sanctuary floor instantly. 
 
-The Elders rise to their feet, roaring—not with sound, but with concussive, acoustic blasts of golden light. From their backs, a fine golden mist sprays into the air, trying to weave the protective field thicker. 
+The Elders rise to their feet, roaring—and make sound, that act as acoustic blasts of golden light. From their backs, a fine golden mist sprays into the air, trying to weave the protective field thicker. 
 
-It’s a horrific clash of physics. The golden mist meets the black shadows in violent, ozone-scented snaps. The Red-Eyes are trying to devour the light. 
+It’s a horrific clash of physics. The golden mist meets the black shadows in violent, ozone-scented snaps. The Red-Eyes begin to swarm like ghouls devour the light in their flight. 
 
 DOMINIC
-(terrified)
-There's too many of them!
+What the heck is even that?
 
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
@@ -2989,7 +3012,6 @@ They wade through the chaotic crossfire of light and shadow, positioning the two
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 # Scene 25: The Final Blast
-<!-- summary: In the mud and chaos, they wire the acoustic trap. Dominic physically holds the heavy speakers upright against the onslaught as Dallas detonates the golden frequency, destroying the shadow army. -->
 
 EXT. CENTER OF THE MARSH - LATER
 
@@ -3064,24 +3086,19 @@ It’s tipping!
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
-Dominic—the man who only ever cared about neat lawns and HOA rules—throws himself entirely into the brutal, rotting mud. 
+Dominic throws himself entirely into the brutal, rotting mud. 
 
-He grabs the listing speaker stand, planting his boots deep into the dirt, using his own body weight to anchor the acoustic frame upright. The black, rotting veins creep up his pant leg. He screams in agonizing pain but doesn't let go. 
+He grabs the listing speaker stand, planting his boots deep into the dirt, using his own body weight to anchor the acoustic frame upright. The deafing sound begins to engulf him. He screams in agonizing pain but doesn't let go. 
 
-DALLAS
-(screaming)
-Hold on!
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Dallas grabs the oscillator dial on Makayla's chest and forces it perfectly onto **115.3**, reinforcing the signal with everything the battery has left. 
 
-A massive, concussive **BOOM** of golden light shatters outward over the marsh. 
+The golden creatures respond to this and begin to glow and hover closer together like a cluster. A massive, concussive **BOOM** of golden light shatters outward over the marsh. 
 
 The shockwave is incredible. It throws Dallas, Makayla, and Asher completely off their feet, knocking them backward into the mud. 
-
-The acoustic blast of 115.3 MHz acts like a 360-degree snowplow. 
 
 A brilliant flash of golden static erupts inside the claustrophobic walls of the flattened grass. The wall of Red-Eyes recoils violently, letting out a horrific gnashing shriek as the frequency literally burns them. 
 
@@ -3091,7 +3108,7 @@ Silence.
 
 Total silence. 
 
-The wind stops. The rain slows to a gentle, natural drizzle. 
+The wind stops. 
 
 Dallas slowly gets up, groaning. His ears are ringing furiously. He looks out at the marsh. 
 
@@ -3103,11 +3120,11 @@ Dallas looks down at his wrist. The black, rotting veins beneath his skin are go
 
 The Golden Elders rise to their feet. The baby chirps happily. 
 
-The largest Elder looks at the crew. It doesn't roar. It just nods its massive head, turns, and leads its clan deeper into the remaining marsh, disappearing into the mist. 
+The largest Elder looks at the crew. It doesn't roar. It just nods its, turns, and leads its clan deeper into the remaining marsh, disappearing into the mist. 
 
 Makayla lets out a massive, shuddering breath. 
 
-The crew walk back through the tall grass, through neighborhoods, back and slow. 
+
 
 ---
 
@@ -3129,6 +3146,10 @@ The crew walk back through the tall grass, through neighborhoods, back and slow.
 <!-- scene: 26 file: s26.md nickname: final-echoes -->
 
 (action)
+EXT. TALL GRASS
+The crew walk back through the tall grass, through neighborhoods, back and slow. 
+
+INT. DOMINICS HOUSE
 The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. 
 
 Janice makes her way through the door.
