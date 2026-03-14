@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/13/2026, 8:17:38 PM*
+*Compiled on 3/13/2026, 9:36:16 PM*
 
 ---
 
@@ -201,6 +201,8 @@ Dallas stands alone watching the tall grass sway agaisnt the salt breeze. Coyote
 INT. DALLAS HOUSE - BEDROOM - NIGHT
 
 Dallas struggles to go to sleep. His eyes fixed on the ceiling, he hears more faint cries and looks out the window and then from outside his window he sees, a faint golden glow, pulse - once. twice. five times. three times. 
+
+In the distance a storm brews. A thunderstorm. 
 
 
 ---
@@ -432,13 +434,13 @@ Well you should, its great.... So you ready for some proper New England weather?
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
 (action)
-Another turns around and greets Dallas. An older gentleman PAUL WILDLY, 72, 
+Another turns around and greets Dallas. An older gentleman PAUL WILDLY, 72, approaches. 
 
 PAUL
-It is going to be historic one. They claim we haven't had a storm like this since 1977 - when Nixon was still in office. Paul, nice to meet you. 
+They claim it'll be historic. Apparently, we haven't had a storm like this since 1971 when Nixon took the US off the gold standard. Paul, nice to meet you. 
 
 DALLAS
-Nice to meet you.
+Dallas. 
 
 PAUL
 Now, where are you from?
@@ -453,7 +455,7 @@ MARY
 Paul, stop that. Honey - if you need I can make you some chicken primevera tonight. 
 
 DOMINIC
-He's okay, Ms Mary thank you. 
+He's okay, Ms. Mary thank you. 
 
 DALLAS
 Thank you. 
@@ -477,14 +479,14 @@ DOMINIC
 Got them. Should be good to go. 
 
 JANICE
-Thanks brother. Listen - did you give Mr. Mike his mediciation? - He has to take them now at 4:30pm - an hour or so before dinner. Make sure he takes it with some cheese or something. 
+Thanks again little brother. Listen - did you give Mr. Mike his mediciation? - He has to take them now at 4:30pm - an hour or so before dinner. Make sure he takes it with some cheese or something. 
 
 DOMINIC
 Yes.
 
 JANICE
 (noticing Dallas)
-What's wrong you with - who is this? 
+What's wrong you for not introducing me to your friend Dominic  - who is this? 
 
 DOMINIC
 Dallas.
@@ -502,13 +504,18 @@ Nice to meet you Dallas. Dominic hold Howie for a second I go to go make sure th
 (action)
 Janice abrutly leaves. 
 
+<!-- scene: 04 file: s04.md nickname: fellowship -->
+
+(action)
+Makayla and Asher approach from afar to the line. 
+
 DOMINIC
 Dallas, these are my niece and nephew - Makayla and Asher.
 
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
 (action)
-Makayla and Asher don't say much but wait on line. Asher is doodling in his small spiral notebook—grids, repeating shapes. Makayla taps his shoulder and nods toward the far end of the church lawn. Between the bushes and garden. 
+Makayla and Asher don't make direct eye contact with Dallas but fake a polite smile. Makayla taps Asher's headphones and nods toward the far end of the church lawn. Between the bushes and garden. 
 
 The two leave the line walk over to a corner spot by the end of the church yard and huddle over a pile of brush.
 
@@ -564,7 +571,7 @@ Hey check this - It listens to the chirps and tells you the species. They got a 
 Dominic struggles to get the app to work and begins to pace a bit. 
 
 DOMINIC
-Yeah - I wanted to be a writer but it never really worked out for me - so I am writing now - and going to tell a story of these marlins.
+Yeah - I wanted to be a writer but it never really worked out - but I'm writing now - maybe one day I'll tell a story of these marlins.
 
 <!-- scene: 05 file: s05.md nickname: marsh-walk-later -->
 
@@ -623,19 +630,9 @@ PAT CLENDENEN, MID 50s, is outside their house in front of news cameras.
 
 PAT CLENDENEN
 (to camera)
-Hey Rob, thanks for having me on. Ought here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge.
+Hey Rob, thanks for having me on. Out here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge.
 So in that spirit, today we'll see sun to clouds, breezy, warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores. 
-We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The computer models are showing better agreement. 
-and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
-
-<div class="script-addition">
-
-> addition
-
-
-We're also getting reports of rolling brownouts along the Route 146 corridor—UI says it's weather-related surges, but they're sending a crew to check the Branford substation.
-
-Hopefully, it holds off until after Sunday's
+We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The european models are showing signings that we might be in for a big one and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
 
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
@@ -648,7 +645,7 @@ Pat's been predicting the end of the world every Tuesday for ten years.
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
 (action)
-Pat notices Dominic and waves at him from afar. 
+The camera cuts. Pat notices Dominic and waves at him from afar. 
 
 PAT CLENDENEN
 Dominic! See you Thursday! 
@@ -661,7 +658,7 @@ Dominic waves back at Pat. He looks at Dallas and shrugs. The two continue past 
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
 (action)
-The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket receiver spikes for a split second.
+The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket recorder spikes for a split second.
 
 EXT. DOMINIC'S HOUSE 
 
@@ -673,10 +670,10 @@ Look at this. Those raccoons!
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
 (action)
-Dominc takes a deep breath and begins to do a stretch to calm down. 
+Dominc takes a deep breath and takes a hit of his inhaler.
 
 DOMINIC
-I try to do the right thing in life and keep getting kicked. 
+I try to do the right thing and I keep getting kicked. 
 
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
@@ -1058,6 +1055,9 @@ From the distance, a flicker of golden light pulses deep within the marsh. Dalla
 Dallas takes a step forward, then another. The reeds part before him, closing behind him as he disappears into the tall grass.
 
 Howie whine and ties them up to a lone tree. Dallas bends down and pets Howie on the head, with a smile. 
+
+
+
 
 
 ---
