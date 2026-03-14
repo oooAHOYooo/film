@@ -98,3 +98,14 @@ Signs answers that question with faith. Close Encounters answers it with wonder.
 Your script is reaching for the Arrival answer. Dallas discovers that Sierra was right — the world is full of frequencies we can't hear, and she spent her life trying to hear them, and now something is trying to communicate on exactly the frequency of her voice. That's not random. That's the universe being generous in the only language a bioacoustician could receive.
 Make sure every scene is quietly asking that question. And make sure the final image answers it in a way that makes the audience feel, not think.
 That's your movie.
+
+
+
+What a compelling script! The bioacoustics mystery angle is genuinely original, and the creature design (cotton-ball bioluminescent owl-thing) is evocative. The ending with Sierra's song matching the creature's hum is a beautiful payoff.
+Here are some ideas worth considering:
+Deepen Dallas's grief arc. Right now Sierra's presence is mostly through objects — the tape recorder, the folders, the receiver photo. What if Dallas hears something in the creature's frequency that sounds unmistakably like her voice? Not supernatural, but acoustically explainable — the creature somehow recorded ambient human sound over years. It would make the final scene hit much harder and give Dallas a real reason to stay in Branford rather than just "work."
+Give Asher more agency before his trance moments. He's mysterious and effective, but his trances arrive a bit randomly. If you seed earlier that he's been quietly documenting the hum patterns longer than Makayla — maybe Mr. Mike has been teaching him privately — his "1-1-5-3" knowledge feels earned rather than intuitive.
+Dominic deserves a harder moment of choice. He's charming comic relief until the marsh sequence, where he suddenly becomes heroic. A beat where he genuinely considers calling the whole thing off — and chooses not to for Makayla and Asher's sake — would make his speaker-anchor moment feel like the culmination of something rather than a surprise.
+The Red-Eyes need one rule we understand. Right now they're effectively "darkness that corrupts." If there's one clear, established behavior — say, they're drawn specifically to amplified sound but repelled by natural acoustic frequencies — the climax becomes a logical puzzle Dallas is uniquely qualified to solve, rather than a gear-and-crystal sprint.
+Consider a scene where the creature does something morally uncomfortable. Right now it's purely a victim to be rescued. If it accidentally harms someone — maybe Howie, briefly — it raises the stakes of Dallas's choice to protect it and complicates the Red-Eyes-as-pure-villain dynamic.
+What's your instinct on the ending? The Sierra reveal feels like it could either close the story or open a second act depending on how you play it.

@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/14/2026, 8:14:40 AM*
+*Compiled on 3/14/2026, 12:22:00 PM*
 
 ---
 
@@ -1114,7 +1114,7 @@ Dallas reaches out. His hand trembles. He touches the creature's back. The creat
 
 Dallas hears his equipment beep louder and louder - the closer his hand gets to the creature. 
 
-Suddenly, the wind returns. A violent gust. Shadows in the distance start to fill the sky and hover over Dallas and the creature. Dallas in a daze, slowly grabs the creature and gently places it in his jacket and begins to walk out without looking back. 
+Suddenly, the wind returns. A violent gust. Shadows in the distance start to fill the sky and hover over Dallas and the creature. Dallas in a daze, slowly grabs the creature and gently places it in his jacket and begins to walk without looking back. 
 
 
 ---
@@ -1133,19 +1133,19 @@ Suddenly, the wind returns. A violent gust. Shadows in the distance start to fil
 
 EXT. TALL GRASS - MOMENTS LATER
 
-Dallas picks up the creature, puts it in his shirt, and begins to walk out of the tall grass. As he does, he gets the sense that something is following him.
+As Dallas walks out of the tall grass, he gets the sense that something is following him.
 
-The air changes and the hum faintly comes back. Then in the distant, more coyotes begin to howl around. 
+The air changes and the hum faintly comes back. Then in the distant, more coyotes begin to howl. 
 
 A heavy, crushing sound slices through the reeds—something massive rocketing toward him like an arrow.
 
-Dallas breaks into a sprint. He reaches the stunted cedar tree—HOWIE where Howie is tied, who is a blur of panic, barking at the wall of grass.
+Dallas breaks into a sprint. He reaches the stunted cedar tree— where Howie is tied, who is a blur of panic, barking at the wall of grass.
 
 Dallas grabs the leash and doesn't stop running until the marsh is far behind them.
 
 EXT. BRANFORD MONTAGE
 
-Dallas walks briskly past the same neighborhood stuff he did before.
+Dallas walks briskly past the same neighborhood route he took before. 
 
 EXT. DALLAS DRIVEWAY
 
@@ -1172,9 +1172,9 @@ Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines 
 Howie barks outside. Dallas rushes to grab him.
 
 INT. DALLAS KITCHEN - MOMENTS LATER
-Howie is in the living room couch nervously peering out the window. The camera pans and finds Dallas alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
+Howie is in the living room couch nervously peering out the window. Dallas finds himself alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
 
-As Dallas peers closer, he notices that it has marks underneath its top wing. As Dallas touches the marks the creature suddenly wakes up and lets out a cry.
+As Dallas peers closer, he notices that it has marks underneath its eye. As Dallas touches the marks the creature suddenly wakes up and lets out a cry.
 
 As the creature cries - Dallas notices that all of the screens on his equipment turn slowly into golden static. The hue gets so vibrant and bright that permant golden marks are left scattered across all of his equipment near the creature. 
 
@@ -1194,31 +1194,25 @@ Dallas approaches the creature - and notices that is not crying, but still seemi
 
 INT. DALLAS DESK - NIGHT
 
-Dallas is peered over his computer and begins to scan a program between different frequecnies. Connected to his computer is a usb that seemingly posts.
+Dallas is peered over his computer and begins to scan a program between different frequecnies. Connected to his computer is a usb connected to all of his various audio equipment.
 
-Dallas tries different frequiences to broadcast - but nothing. 
+Dallas tries different frequiences to broadcast - but nothing. Dallas look at the recordings of the day that captured and finds that there is a peak on the GHz frequency 115.2GHZ. 
 
-Dallas look at the recordings of the day that captured and finds that there is a peak on the GHz frequency 115.2GHZ. 
-
-The heavy receiver sits on the workshop table, wired to his laptop. 
-
-He listens. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. Something layered, almost rhythmic.
+He listens to the recording. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. 
 
 In the distance Dallas heres the creature cry again.
 
 INT. DALLAS KITCHEN
 
-Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
-
 Dallas goes over and tends to the creature - but this time it is visually shaken. Dallas sits next to it on a chair and waits for it to calm down. 
 
-As Dallas sits - his eyes get heavy - and he suddenly catches himself snoozing. He gets up - and sees Sierra's tape recorder on the desk. He stumbles over for a bit and presses play. 
+As Dallas sits - his eyes get heavy - and he suddenly catches himself snoozing. He gets up - and sees Sierra's tape recorder on the desk. He stumbles over for a bit and presses play. A small little melody of Sierra playing piano and singing gently engulfs the air.  
 
 As he does, he notices that the creatures' cry begins to cease - but as it does - so does the recording. Dallas realizes that  her voice dissolve into the creature's ongoing frequency. 
 
 He replays the clip. But nothing, it is blank. Dallas plays it again, distraught.
 
-His elbow brushes the stack of Sierra's folders. One slides open—a corner of a sketch visible. Something with wings. He pushes it closed without looking. 
+His elbow brushes the stack of Sierra's folders. One slides open—a corner of a sketch visible. Something golden. He pushes it closed without looking. 
 
 As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint hum.  
 
@@ -1226,16 +1220,11 @@ INT. DALLAS' HOUSE - KITCHEN - EVENING
 
 Dallas stands at the window, staring into the ripping field. The storm is brewing, but the movement in the grass is wrong.
 
-Dallas goes to look at the creature in his makeshift box. It is breathing. Dallas begins to examine all of the blood - it seems to have darkened. 
+Dallas goes to look at the creature in his makeshift box. It is breathing. 
 
 He touches the photo of his late wife on the side of the receiver. The contact is long.
 
-The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames. 
-
-<div class="script-addition">
-
-> addition
-
+The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames.    
 
 The overhead light dims—not a flicker, but a slow, steady drain, as if something is pulling the current out of the walls. Then it returns to full brightness.
 
@@ -1262,13 +1251,7 @@ Good
 Asher looks behind Dallas at all of the equipment. Dallas hands Howie over to Dominic. 
 
 DOMINIC
-Okay - we'll - we'll be on our way. Hey - are you still okay with hosting lifegroup on Thursday.
-
-DALLAS
-This Thursday?
-
-DOMINIC
-Yeah, is that still good?
+Okay - we'll - we'll be on our way. Hey - we're doing a lifegroup tomorrow night at our place - you should come. 
 
 <!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
 
@@ -1315,23 +1298,15 @@ Dallas rushes to the kitchen and finds that the creature sleeping peacefully.
 <!-- nickname: THE FIRST NIGHT WITH CREATURE  -->
 <!-- summary: Wires on the creature's head. It sings through its back-holes. She can't tell anyone. -->
 
-INT. DALLAS DESK
+INT. DALLAS DESK - NIGHT - MOMENTS LATER
 
 Dallas is alone. He keeps peering through his late wife's old documents. 
 
-On the desk is the recorder and all of the tapes next to it.  Howie cries out in the distance. 
+On the desk is the recorder and all of the tapes next to it.  
 
-INT. KITCHEN
+Dallas presses play on the recorder and goes to sleep. 
 
-Dallas lays tiny wires on the creature's head, connecting them to his handheld. 
-When the creature is calm, it emits a low, melodic tone through the holes in its back. The creature's holes shift—the sound becomes a sad cry, like a whimper.
 
-INT. DALLAS ROOM - NIGHT
-Dallas falls asleep on his futon. 
-
-INT. DALLAS ROOM - NEXT MORNING
-
-Dallas wakes up to find the place a mess. He gently puts down all of the notes. As he does, he reads one page from the Sierra box - with much interest. 
 
 
 ---
@@ -1346,7 +1321,7 @@ Dallas wakes up to find the place a mess. He gently puts down all of the notes. 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 # Scene 13: The Confrontation
-<!-- summary: Burn mark in the grass. The Mother's Vision: a silhouette in the reeds whispers a lullaby. The stake is now personal. -->
+
 EXT. DALLAS HOUSE - NEXT MORNING
 
 The morning air is thick with the scent of ozone. Dominic''s minivan idles in the driveway. 
@@ -1361,9 +1336,9 @@ Asher, look.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-In the middle of the yard is a jagged, blackened  burn mark in the grass that resembles beads in paint hitting a white canvas - but on the green grass. It looks as if a drip of yellow blood is around it - acreating a trail. At its center lies a small, translucent crystal.
+In the middle of the yard is a jagged, blackened  burn mark in the grass that resembles beads in paint hitting a white canvas - but on the green grass. It looks as if a drip of yellow blood is around it - acreating a trail towards Dallas' window. At its center lies a small, translucent crystal.
 
-Makayla kneels and touches it. Her hair begins to flutter, static electricity pulling the strands toward the stone. She quickly pockets it.
+Makayla kneels and touches it. Her hair flutters, static electricity pulling the strands toward the stone. She quickly pockets it.
 
 Makayla notices a trail leading from the edge of the grass toward Dallas.
 
@@ -1395,6 +1370,9 @@ What is that outside your house?
 (action)
 Dallas looks outside and sees that there are a bunch of burn marks on the edge of the tall grass. 
 
+DALLAS
+I am not sure. 
+
 A whimper is heard from the kitchen. 
 
 MAKAYLA
@@ -1409,8 +1387,7 @@ INT. DALLAS KITCHEN - MOMENTS LATER
 
 Dallas and Makayla hover around the table at the makeshift aquarium Dallas constructed.
 
-ASHER
-What is it?
+Asher walks arounds and takes his headphones off and grabs the ruby red headphones on the kitchen table. He puts them on and listens to the recording. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
@@ -1418,10 +1395,10 @@ What is it?
 Makayla pulls out her portable viewfinder and begins to inspect the creature further. 
 
 MAKAYLA
-I am not sure... How long has it been here for?
+How long has it been here for?
 
 DALLAS
-Around 2 hours.
+Since last night. 
 
 MAKAYLA
 Look at this, look how it breathes.
@@ -1429,7 +1406,7 @@ Look at this, look how it breathes.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-The pair look closer at the creature - it seems to brath through its back. Makayla touches the creature gently - which causes the Oscillator around it to spark.
+The pair look closer at the creature - it seems to breath through its back. Makayla touches the creature gently - which causes the Oscillator around it to spark.
 
 MAKAYLA
 We can't tell anyone about this.
@@ -1443,10 +1420,10 @@ MAKAYLA
 Mr. Dallas, where did you find it?
 
 DALLAS
-I am not sure exactly. It was dark. 
+Out somewhere in the tall reeds a couple of miles away. I am not sure exactly. It was dark. 
 
 MAKAYLA
-And why did you grab it?
+Why did you grab it?
 
 DALLAS
 It looked like it was injured.
@@ -1465,19 +1442,14 @@ Dallas walks over and pulls over his bright electronic lamp over it. Where it sh
 MAKAYLA
 Look at that!
 
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
-Makayla turns to Dallas. 
-
-MAKAYLA
-Great - okay Dallas - where is it. 
-
-INT. DALLAS KITCHEN
-
+(action)
 Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. 
 
-Makayla brushes the creature's wing, hears a lullaby, and sees her mothers silheottue in the distance. 
+Makayla brushes the creature's wing, hears a lullaby, and as she does a sillheto of a woman appears on the wall. 
 
-Makayla shakes her head and looks at Dallas.
+Makayla shakes her head and stops toching the creature. 
 
 
 
@@ -1494,13 +1466,6 @@ Makayla shakes her head and looks at Dallas.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 # Scene 14: The Connection
-<!-- summary: They sit with the creature. Evidence. A bond. Howie at their feet. -->
-
-INT. DALLAS KITCHEN
-Dallas sits on a stool and in an almost daze watches Makayla from far away as she and Asher look at the creature from afar. 
-
-Makayla begins to sketch the creature. Careful, precise lines. The back-holes. The ears. The glow. She is documenting it the way a scientist would, not the way a teenager would.
-
 EXT. DALLAS BACKYARD - OLD PICNIC TABLE 
 
 Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby.
@@ -1530,7 +1495,7 @@ I'm sorry for your loss.
 Dallas looks at the ground.
 
 MAKAYLA
-Our mom died too.  Janice was her sister, Dominic is her younger brother. We used to live with her - but now we stay with Uncle Dominic - nextdoor to a bioacoustics engineer.... What's it like?
+Our mom died too.  Janice was her sister, Dominic was her younger brother. We used to live with her - but now we stay with Uncle Dominic - nextdoor to a bioacoustics engineer.... What's it like?
 
 DALLAS
 What's what like?
@@ -1541,37 +1506,33 @@ Your job.
 DALLAS
 It's fine. 
 
+INT. KITCHEN - CONTINUOUS
+
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-The room grows quiet.  Asher, breaking the tension, appears busy trying to connect wires up to the computer. But he stops as he looks at the distance, then the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
+The room grows quiet.  Asher, alone, busies himself  trying to connect wires up to the computer. But he stops as he looks at the distance, then the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
 
-Outside the window, the wind picks up.  Dallas looks out the window.
+Outside the window, the wind picks up. 
 
-MAKAYLA
-What is it?
+Asher begins to tap and tap and tap, and his head begins to shake and shake and shake. He crashes to the ground.
 
 EXT. DALLAS BACKYARD - OLD PICNIC TABLE - CONTINUOUS
 
-The group look out  at the edge of the tall grass
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+A loud thump is heard from outside. Makayla runs into Dalla's kitchen.
+
+INT. DALLAS' KITCHEN - MOMENTS LATER
+
+Makayla holds Asher by the head as he shakes on the ground. Makayla begins to sing to him gently. 
 
 DALLAS
-Is Asher okay?
+Is he okay? 
 
 MAKAYLA
 He's fine... He's just processing. 
-
-DALLAS
-And how are you doing?
-
-MAKAYLA
-I'm fine.
-
-DALLAS
-What did you see?
-
-MAKAYLA
-Not sure... I'm not sure - I feel a bit uninspired. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1600,7 +1561,7 @@ We need to document this... Dallas.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla looks at Asher and then back at the house. 
+Makayla looks at Asher who is now peacefully asleep. 
 
 MAKAYLA
 We can't tell anyone about this. The sound it made. We should try to record that.
