@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/14/2026, 8:04:01 AM*
+*Compiled on 3/14/2026, 8:14:40 AM*
 
 ---
 
@@ -1133,7 +1133,7 @@ Suddenly, the wind returns. A violent gust. Shadows in the distance start to fil
 
 EXT. TALL GRASS - MOMENTS LATER
 
-Dallas picks up the creature and begins to walk out of the tall grass. As he does, he gets the sense that something is following him.
+Dallas picks up the creature, puts it in his shirt, and begins to walk out of the tall grass. As he does, he gets the sense that something is following him.
 
 The air changes and the hum faintly comes back. Then in the distant, more coyotes begin to howl around. 
 
