@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/13/2026, 7:12:16 PM*
+*Compiled on 3/13/2026, 8:17:38 PM*
 
 ---
 
@@ -236,7 +236,16 @@ DALLAS
 Oh yeah - nice to meet you.  
 
 DOMINIC
-Yeah, put her there. I'm Dominic - this is Branford. 
+Yeah, put her there. I'm Dominic... So you must be here on some university position? Last guy who was here was here for 3 years and then moved to Guilford. How is the house? Do they furnish it? 
+
+DALLAS
+Yeah. 
+
+DOMINIC
+Nice - who you work for Yale?
+
+DALLAS
+Quinnipiac nice... Sorry - what's your name? 
 
 DALLAS
 Dallas
