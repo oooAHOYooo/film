@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/13/2026, 9:36:16 PM*
+*Compiled on 3/14/2026, 8:04:01 AM*
 
 ---
 
@@ -630,9 +630,7 @@ PAT CLENDENEN, MID 50s, is outside their house in front of news cameras.
 
 PAT CLENDENEN
 (to camera)
-Hey Rob, thanks for having me on. Out here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge.
-So in that spirit, today we'll see sun to clouds, breezy, warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores. 
-We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The european models are showing signings that we might be in for a big one and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
+Hey Rob, thanks for having me on. Out here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge....So in that spirit, today we'll see sun to clouds, breezy, warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores.... We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The european models are showing signings that we might be in for a big one and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
 
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
@@ -698,7 +696,7 @@ DOMINIC
 Do you want to stay for a bit?
 
 DALLAS
-Sure. 
+Sure.
 
 
 ---
@@ -731,12 +729,12 @@ INT. DOMINIC'S BASEMENT
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dominic helps Dallas shove a heavy oak table against the wall. As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy.
+Dominic helps Dallas shove a heavy oak table against the wall. As they move - Dominic knocks over a photo frame - and Dallas grabs it. On the ground is a small, framed photo of a woman and a young boy on Dominic's shoulders.
 
 Dominic bends down to grab the photo for a bit. 
 
 DOMINIC
-Do you have any kids?
+Do you have kids?
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -747,7 +745,8 @@ DALLAS
 No. 
 
 DOMINIC
-This was mine. And that was my wife. 
+(looking at the photo)
+I had a family once. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -755,12 +754,23 @@ This was mine. And that was my wife.
 Dallas falls mute. 
 
 DOMINIC
-No kid now, no wife now. Just the niece and nephew. And Mr. Mike.  
+No kid now, no wife now. Just the niece and nephew. Janice and Mr. Mike. My lot in life. I'll take it.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dominic scans the room and finds his gaze upon the corner. MR. MIKE (70s) sits in a rocking chair, staring fixedly at the floor. He is scratching something into the wood of the end table with a jagged nail.
+Dominic takes a hit of his inhaler. And reaches out for a handshake. 
+
+DOMINIC
+It has been nice hanging out with you Dallas - thanks for coming and helping today. 
+
+DALLAS
+Oh you're welcome. 
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dominic scans the room and finds his gaze upon the corner. MR. MIKE (mid 70s) begins to wake up from his  rocking chair, staring fixedly at the floor. Mr. Mike begins to scratch something into the wood of the end table with a jagged nail.
 
 DOMINIC 
 Mr. Mike! Mr. Mike, what are you doing?! 
@@ -771,20 +781,26 @@ Mr. Mike! Mr. Mike, what are you doing?!
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
 
 MR. MIKE
-She's here! Hey Dominic! Look - she's here.
+Sorry, I had to write something down. Dominic. 
+
+DOMINIC
+Yeah?
+
+MR. MIKE
+She's here!
 
 DOMINIC
 Whose here? Why are you scratching the table?
 
 MR. MIKE
-Your sister.
+Your sister. Makayla. Asher
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dominic dashes for the door and opens it. In pops Janice with Makayla and Asher. 
 
-Dallas meanwhile walks towards Mr. Mike before Dominic blocks his view.
+Asher runs straight towards Mr. Mike and kneels down before him. Makayla side eyes Dallas. 
 
 MR. MIKE 
 One. ONE. FIVE. THREE. She's here - Dominic - Janice is here - ASHER! Is that you? Come here. 
@@ -797,39 +813,38 @@ Mr. Mike points to the window.
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Asher rushes over to Mr. Mike. His eyes widen when he sees what Mr. Mike has been writing. He already has his notebook out; he copies the numbers, taps the page twice, then runs to Makayla and shows her. She jots them on her palm. 
+Asher's eyes widen when he sees what Mr. Mike has been writing. He already has his sticky note out; he copies the numbers, taps the page twice, then runs to Makayla and shows her. She puts the note in her pocket. 
 
-Asher hands the coordinates to Makayla. She runs downstairs with them. Dallas watches her. 
-
-INT. DOMINIC'S KITCHEN - LATE AFTERNOON
-
-JANICE (Early 50s) marches in, balancing two bags of groceries and a set of keys between her teeth. 
+JANICE (Early 50s) marches in, balancing two bags of groceries and a set of keys between her teeth. Makayla walks over and helps with a bag and hands Asher the keys. 
 
 JANICE
- I-95 you know how it is. Listen, Dominic, what's the status man - how the sprouts going? You need to boil them first and then sear them. Alright? Last time you just boiled them and it was a disgusting mush... Dallas, you got to teach your friend here how to cook. 
+ I-95 you know how it is. Listen, Dominic, what's the status - how we doing on the sprouts? You need to boil them first and then sear them. Alright? Last time you just boiled them and it didn't work... Dallas, you got to teach your friend here how to cook. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Janice begins a frantic search for her keys, which she just put down. She stumbles upon Dallas's heavy receiver.
+Janice begins a frantic search for her keys, which she just put down. She stumbles upon Dallas's heavy audio recorder.
 
 JANICE 
 What is this? A boat anchor?
 
 DALLAS
-It's a receiver. 
+It's a recorder. 
 
 JANICE
-A receiver? A receiver. What you receiving? And why is it here? Dallas do you want to have some dinner with us? 
+A recorder? You taping this conversation? I'm kidding, you could, la la la la laaaa. Dallas do you want to have some dinner with us? 
 
 DALLAS
-That's alright. 
+Um, no - I should be going back. Thank you though.  
 
 JANICE
 You sure honey? 
 
+DOMINIC
+Yeah Janice, Dallas needs to settle a bit. 
+
 DALLAS
-Yeah, I got some food back at home. 
+Yeah, I got some food back at home, so, I'll be okay.  
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -837,34 +852,41 @@ Yeah, I got some food back at home.
 Mr. Mike in the distance begins to get agitated. He rocks slowly in his rocking chair and taps his fingers. 
 
 MR. MIKE
-They are being hunted. Javarice told me. They are being hunted.
+They are being hunted. Javerias told me. They are being hunted.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Makayla walks over to Asher, who is kneeling besides Mr. Mike, listening intently.
+Makayla walks over to Asher, who is still kneeling besides Mr. Mike, listening intently.
 
 MAKAYLA
 Who is Javerias?
 
 MR. MIKE
-He was good. Kind. Normal. He told me things when I was little - just a kid - important things. He told me that when you hurt one - even if it was by mistake and you had no reason to. They will eventually they will transform into the other one - they wont stay kind forever. If the winds get them - they will take charge.
-
-<!-- scene: 07 file: s07.md nickname: the-coordinates -->
-
-(action)
-Janice walks over and grabs Howie from her backpack and rests him on the floor. Howie rushes over to Dallas. 
+Javerias, Javerias, he told me. I miss him. He was good. Kind. Normal. He told me things when I was little - just a kid - important things. He told me that when you hurt one - even if it was by mistake and you had no reason to - they will eventually they will transform into the other one - the darker one - and they wont stay  kind forever. And some decided not to be kind - and are predators. Javerias. If the winds get them - they will take charge.
 
 JANICE
-Howie, no. Look at that. He likes you Dallas. 
+(from the Kitchen)
+Mr. Mike calm down my friend woof - dinner will be ready soon. 
+
+MR. MIKE
+Are you making the sprouts?
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas bends over the dog. The two embrace. 
+Janice walks over and grabs Howie from her doggie backpack and rests him on the floor. Howie rushes over to Dallas. 
+
+JANICE
+Howie, wait, no no - well, look at that. He likes you Dallas. 
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas kneels down to meet the dog Howie. They embrace.  
 
 MR. MIKE
-He's back - when I was growing up we didn't have a dog, we had a cat - Misty - this dog is no good. 
+When I was growing up we didn't have a dog, we had a cat - Misty - this dog is no good. 
 
 JANICE
 Stop it Michael. Mr. Dallas - would you like to watch him sometime? 
@@ -873,6 +895,9 @@ Stop it Michael. Mr. Dallas - would you like to watch him sometime?
 
 (action)
 Howie motions to Dallas like he wants to be held.
+
+DALLAS
+Sure. 
 
 MAKAYLA
 How about tomorrow? 
@@ -886,7 +911,7 @@ Yeah - I mean - we could drop him off in the morning. What do you think Dallas?
 Dallas looks at Howie - and the dog looks back at him.
 
 JANICE
-You could even take him this afternoon as well? Lord knows I got errands and can't walk him like I used to with my knees.
+Actually... Want to take him tonight? Do a little dry run? He'll sleep on the couch like a baby. I don't want you alone in that new house of yours - say how is it? Did they treat it nice? Dominic, where are you? Yeah, take him tonight sweetie - go on a big walk along the shore -  Lord knows I got can't walk him like I used to with my knees.
 
 DALLAS
 Sure. 
@@ -894,16 +919,29 @@ Sure.
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas looks at the dog - the dog Howie looks back at the man Dallas. Makayla walks over and grabs the portable Oscillator from Dallas' hand. 
+Dallas looks at the dog - the dog Howie looks back at the man Dallas. Makayla walks over and places the portable Oscillator from Dallas' hand. 
 
 MAKAYLA
-So will it actually record the frequencies? Or does it just display? How do you record?
+It didn't work.
 
 DALLAS
-There's a memory card in there.
+No?
 
 MAKAYLA
-Okay.
+(thinking)
+Will it actually record the frequencies? Or does it just display? How do you record?
+
+DALLAS
+There's a memory card in there. But it writes in an old format. 
+
+MAKAYLA
+What format? 
+
+DALLAS
+B24FF
+
+MAKAYLA
+Okay, I've already copied them and don't think it worked. Thank you though. 
 
 JANICE
 Makayla whats that - give it back. 
@@ -925,24 +963,13 @@ Makayla, I showed Dallas your little basement dwelling.
 Makayla looks over to Dallas with sus looks.  
 
 MAKAYLA
-So you saw the equipment?
-
-DALLAS
-Yes.
-
-MAKAYLA
-What did you think?
-
-DALLAS
-What is it for?
+Okay great.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Makayla rolls her eyes and walks over to Mr. Mike who is rocking back and forth in his chair. 
+Mr. Mike from the living rooms gets agitated. He begins rocking back and forth in his chair. 
 
-MAKAYLA
-Mr. Mike? What's wrong?
 
 MR MIKE
 The numbers are off. Asher knows. The numbers are off.
@@ -966,34 +993,28 @@ Does it pick up frequencies below the human range?
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Asher, meanwhile, ignores the conversation, eyes fixed on the distant bushes at the edge of the property. The leaves ripple, though there is no wind. His finger traces the same ripple on the glass.
+Dallas nods. 
+
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Asher, meanwhile, ignores the conversation, eyes fixed on the distant bushes at the edge of the property. The leaves flutter, though there is no wind. His finger traces a ripple on his hand.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dominic begins to light the gas to start boiling the brussels but the lighter doesnt work. 
-Janice throws up her hands and goes outside for a smoke. 
+Janice throws up her hands and goes outside for a smoke. Dallas follows her with Howie.
 
-DOMINIC
-Crap, Janice - we need to go pickup the pharamecy. 
+EXT. DOMINIC'S PATIO
 
 JANICE
-I'm coming with you. Kids - let's go. 
+Thank you again Dallas.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-The crew leave with the little dog howie.
-
-DOMINIC
-Dallas, thanks for watching Howie!
-
-<!-- scene: 07 file: s07.md nickname: the-coordinates -->
-
-(action)
-The family vanishes in a blur of activity, leaving Dallas standing in the sudden, ringing silence with HOWIE, the small dog.
-
-Dallas begins to walk across the street to his house. 
+Dallas begins to walk across the street to his house.
 
 
 ---
@@ -1018,9 +1039,7 @@ The Long Island Sound roars, the waves crashing violently against the Branford r
 
 Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
 
-As Howie, Dallas holds his portable Oscillator out. The needle isn't just moving; it's spiking. The closer they get to the tall grass, the more violent the readings become. 
-
-It seems like the readings are pointing closer and closer to marsh by his house.
+As Howie, Dallas holds his portable Oscillator out. The needle begins to flutter.
 
 Howie stops. His ears perk up and swivel like small radar dishes toward the dark reeds in the distance. 
 
@@ -1035,9 +1054,9 @@ It starts as a vibration in Dallas's teeth, then moves to his chest. It is a dee
 
 Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass pulses in time with the sound.
 
-The sun sets, casting long shadows across the tall grass. Dallas dials his receiver clicking softly as he adjusts the frequency.
+The sun sets, casting long shadows across the tall grass. Dallas dials his recorder clicking softly as he adjusts the frequency.
 
-Dallas stops at the creek's edge and pans his gaze towards the outer marsh. The tall grass stretches endlessly before him, golden-yellow reeds swaying gently despite the lack of wind.
+Dallas stops at the creek's edge right outside his property lines and gazes towards the distant outer marsh. The tall grass stretches endlessly before him, golden-yellow reeds swaying gently despite the lack of wind.
 
 Dallas ties Howie to a nearby tree and walks into the marsh. 
 
@@ -1054,10 +1073,7 @@ From the distance, a flicker of golden light pulses deep within the marsh. Dalla
 
 Dallas takes a step forward, then another. The reeds part before him, closing behind him as he disappears into the tall grass.
 
-Howie whine and ties them up to a lone tree. Dallas bends down and pets Howie on the head, with a smile. 
-
-
-
+Howie whine and ties them up to a lone tree. Dallas bends down and pets Howie on the head, with a smile.
 
 
 ---
