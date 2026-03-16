@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/14/2026, 12:22:00 PM*
+*Compiled on 3/16/2026, 12:34:58 PM*
 
 ---
 
@@ -2485,7 +2485,7 @@ Dominic heads toward the basement alone. Dallas's stomach drops. He and Makayla 
 
 INT. BASEMENT - CONTINUOUS
 
-Dominic descends the stairs, expecting a stray kitten. 
+Dominic descends the basement stairs, expecting a stray kitten. 
 
 Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small basement hopper window is busted open, rain blowing in from the outside.
 
