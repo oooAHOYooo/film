@@ -173,14 +173,26 @@
 
             const frame = document.createElement('div');
             frame.className = 'shot-frame';
-            const frameLabel = document.createElement('div');
-            frameLabel.className = 'frame-label';
-            frameLabel.textContent = shot.size || 'FRAME';
-            const frameMode = document.createElement('div');
-            frameMode.className = 'frame-mode';
-            frameMode.textContent = '2.39:1';
-            frame.appendChild(frameLabel);
-            frame.appendChild(frameMode);
+            const imageDetail = shot.details.find(d => d.key.toLowerCase() === 'image');
+            if (imageDetail) {
+              const img = document.createElement('img');
+              img.src = imageDetail.value;
+              img.style.width = '100%';
+              img.style.height = '100%';
+              img.style.objectFit = 'cover';
+              img.style.borderTopLeftRadius = '4px';
+              img.style.borderTopRightRadius = '4px';
+              frame.appendChild(img);
+            } else {
+              const frameLabel = document.createElement('div');
+              frameLabel.className = 'frame-label';
+              frameLabel.textContent = shot.size || 'FRAME';
+              const frameMode = document.createElement('div');
+              frameMode.className = 'frame-mode';
+              frameMode.textContent = '2.39:1';
+              frame.appendChild(frameLabel);
+              frame.appendChild(frameMode);
+            }
             card.appendChild(frame);
 
             const caption = document.createElement('div');
