@@ -1,10 +1,20 @@
 I/E.
 
-Rob's big ass eyes go through a magnifying glass. He scours the wall. Dramatic eerie music fills the air. Rob reaches inside his coat and begins to put on a pair of dusting gloves as he gently collects a fingerprint and hair with a tweaser. He puts it in his coat pocket.
+Dustin's peering eyes pierce through a magnifying glass. He scours the wall. Dramatic eerie music fills the air. Rob reaches inside his coat and begins to put on a pair of dusting gloves as he gently collects a fingerprint and hair with a tweaser. He puts it in his coat pocket.
 
-ROB
+DUSTIN
 (voiceover)
-They call me "The Nibbler," the one who takes a bite out of crime. The people of this city have seen me in action, witnessed my dedication to keeping their sidewalks safe. They've come to trust in my abilities, my unwavering determination. And this is what motivates me.
+The city. 
+The city has changed. 
+The city used to have character, but now only mischef. 
+
+I used to walk in the bright streets.
+Now I lurk in the shadows.
+Waiting for a chance to catch a break. 
+
+
+
+The people of this city have seen me in action, witnessed my dedication to keeping their sidewalks safe. They've come to trust in my abilities, my unwavering determination. And this is what motivates me.
 
 Rob scratches notes on his notepad.
 
