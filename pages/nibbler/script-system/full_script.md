@@ -1,6 +1,6 @@
 # The Nibbler — Full Script
 
-*Compiled on 3/16/2026, 12:34:59 PM*
+*Compiled on 3/18/2026, 12:20:38 PM*
 
 ---
 
@@ -18,11 +18,21 @@
 
 I/E.
 
-Rob's big ass eyes go through a magnifying glass. He scours the wall. Dramatic eerie music fills the air. Rob reaches inside his coat and begins to put on a pair of dusting gloves as he gently collects a fingerprint and hair with a tweaser. He puts it in his coat pocket.
+Dustin's peering eyes pierce through a magnifying glass. He scours the wall. Dramatic eerie music fills the air. Rob reaches inside his coat and begins to put on a pair of dusting gloves as he gently collects a fingerprint and hair with a tweaser. He puts it in his coat pocket.
 
-ROB
+DUSTIN
 (voiceover)
-They call me "The Nibbler," the one who takes a bite out of crime. The people of this city have seen me in action, witnessed my dedication to keeping their sidewalks safe. They've come to trust in my abilities, my unwavering determination. And this is what motivates me.
+The city. 
+The city has changed. 
+The city used to have character, but now only mischef. 
+
+I used to walk in the bright streets.
+Now I lurk in the shadows.
+Waiting for a chance to catch a break. 
+
+
+
+The people of this city have seen me in action, witnessed my dedication to keeping their sidewalks safe. They've come to trust in my abilities, my unwavering determination. And this is what motivates me.
 
 Rob scratches notes on his notepad.
 
@@ -46,7 +56,9 @@ Assigned to investigate a series of high-profile robberies, I became consumed wi
 
 EXT. OUTSIDE OF THE POLICE STATION
 
-Rob engulfs a pouch of chewing tobacco — but he doesn't like the taste so he quickly spits it out. As he does — he spots a post-it note on the ground and then another — and then another one and it all begins to form a trail.
+Rob engulfs a pouch of chewing tobacco — but he doesn't like the taste so he quickly spits it out. As he does — he spots a pair of glasses on the ground and then another — and then another. 
+
+Dustin follows the trail down the street to a nearby local pub.
 
 
 ---
@@ -59,15 +71,23 @@ Rob engulfs a pouch of chewing tobacco — but he doesn't like the taste so he q
 ---
 
 EXT. ABANDONED SHIP YARD
+[FLASHBACK]
 
-He finds a series of post-it notes on the ground — and it eventually leads him to a man sitting behind a desk in the middle of the shipyard. Upon further notice — Rob notices that it is indeed the Weevil himself!
+He finds a series of glasses and shards of glass on the ground — and it eventually leads him to a man sitting behind a desk in the middle of the shipyard. Upon further notice — Rob notices that it is indeed the Weevil himself!
 
-Rob takes out his little pistol on one hand — and handcuffs on the other.
+DUSTIN takes out his little pistol on one hand — and handcuffs on the other.
 
-ROB
+DUSTIN
 Freeze!
 
-Before Rob could make his move and take notice — The Weevil makes a grand disappearance. A dust of smoke and puff — he is out of frame — leaving Rob standing in a stupor.
+Before DUSTIN could make his move and take notice — The Weevil makes a grand disappearance. A dust of smoke and puff — he is out of frame — leaving DUSTIN standing in a confused state. 
+
+VO DUSTIN
+(to the bartendar Lance)
+I let him get away. He was in front of my eyes and I let him get away.
+
+VO LANCE
+That's okay Dustin.
 
 
 ---
@@ -81,17 +101,30 @@ Before Rob could make his move and take notice — The Weevil makes a grand disa
 
 INT. RUDIES BAR
 
-Rob sits at the bar, nursing a glass of whiskey. The dimly lit room is filled with the murmur of conversation and the clinking of glasses. As he takes a sip, his eyes scan the room, catching glimpses of admiration and respect from the patrons. The women at the bar give him coy smiles, while the men nod in acknowledgment.
+DUSTIN
+Is it?
 
-ROB
+SAM
+Yeah. You're the best there is Dustin.
+
+DUSTIN
+Oh, stop it. You're just saying that.
+
+SAM
+Maybe so. 
+
+(action)
+Dustin sits at the bar, nursing a glass of whiskey. The dimly lit room is filled with the murmur of conversation and the clinking of glasses. As he takes a sip, his eyes scan the room, catching glimpses of admiration and respect from the patrons. The women at the bar give him coy smiles, while the men nod in acknowledgment.
+
+DUSTIN
 (voiceover)
 I couldn't tell anyone, for they wouldn't believe me. I had witnessed the truth, seen the Weevil in action. But without hard evidence, it was just my word against his.
 
 Rob begins to read the tattered paper on the bar. The headline reads: "Mayor's Japan Scandal Resurfaces: A Dark Secret Threatens New Haven's Future."
 
-Rob's eyes scan the article, his expression a mixture of concern and intrigue. The pub buzzes with activity around him, but he remains engrossed in the unfolding events.
+DUSTIN's eyes scan the article, his expression a mixture of concern and intrigue. The pub buzzes with activity around him, but he remains engrossed in the unfolding events.
 
-ROB
+DUSTIN
 (voiceover, whispering)
 The mayor's scandal with Japan... it's more than just a stain on his reputation. I believe The Weevil is orchestrating this, pulling strings behind the scenes to manipulate the city's fate.
 

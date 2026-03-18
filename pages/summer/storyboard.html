@@ -339,18 +339,34 @@
           });
         }
 
+        const FRAMES_URL = 'storyboard-system/frames-data.json';
+
         Promise.all([
           fetch(SHEETS_URL).then(function(r) { return r.json(); }),
-          fetch(DATA_URL).then(function(r) { return r.json(); }).catch(function() { return {}; })
-        ]        ).then(function(results) {
+          fetch(DATA_URL).then(function(r) { return r.json(); }).catch(function() { return {}; }),
+          fetch(FRAMES_URL).then(function(r) { return r.json(); }).catch(function() { return null; })
+        ]).then(function(results) {
           const scenes = results[0];
           const data = results[1];
-          const panels = mergePanels(scenes, data);
-          renderSheets(panels);
-          renderSummary(panels);
+          const frames = results[2];
+
+          const urlParams = new URLSearchParams(window.location.search);
+          const folder = urlParams.get('folder');
+
+          if (folder && frames && frames[folder]) {
+            const panels = frames[folder];
+            document.querySelector('.header-title').textContent = 'Scene ' + folder.replace(/^s/i, '') + ' Storyboard';
+            document.querySelector('.header-subtitle').textContent = 'Dynamic generation from AI frames';
+            renderSheets(panels);
+            renderSummary(panels);
+          } else {
+            const panels = mergePanels(scenes, data);
+            renderSheets(panels);
+            renderSummary(panels);
+          }
         }).catch(function(err) {
           document.getElementById('sheets').innerHTML =
-            '<p class="no-print">Could not load script manifest. Check that <code>script-system/manifest.json</code> exists.</p>';
+            '<p class="no-print">Could not load script manifest or scenes. Check that <code>script-system/manifest.json</code> exists.</p>';
         });
       })();
     </script>

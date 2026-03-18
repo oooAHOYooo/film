@@ -1,0 +1,84 @@
+{
+  "s23": [
+    {
+      "sceneNumber": 1,
+      "sceneId": "s23",
+      "camera": "Wide Tracking",
+      "caption": "A-1: Dallas and Asher enter the tall grass carrying the heavy equipment.",
+      "image": "storyboard-system/frames/s23/board-1-D3IAH-shot-generator.png",
+      "title": "Shot 1"
+    },
+    {
+      "sceneNumber": 2,
+      "sceneId": "s23",
+      "camera": "Medium",
+      "caption": "A-2: The nylon straps bite into Dallas' shoulders, straining the fabric.",
+      "image": "storyboard-system/frames/s23/board-2-8FGBT-shot-generator.png",
+      "title": "Shot 2"
+    },
+    {
+      "sceneNumber": 3,
+      "sceneId": "s23",
+      "camera": "Close Up",
+      "caption": "A-3: Dallas drops the speaker into the mud in pain. He looks at his hand—black veins pulse under his skin, beginning to look translucent.",
+      "image": "storyboard-system/frames/s23/board-3-2EQZY-shot-generator.png",
+      "title": "Shot 3"
+    },
+    {
+      "sceneNumber": 4,
+      "sceneId": "s23",
+      "camera": "Medium Wide",
+      "caption": "B-1: Dominic runs towards Dallas and Asher, screaming for Makayla.",
+      "image": "storyboard-system/frames/s23/board-4-V3442-shot-generator.png",
+      "title": "Shot 4"
+    },
+    {
+      "sceneNumber": 5,
+      "sceneId": "s23",
+      "camera": "Medium",
+      "caption": "B-2: Dominic paces and takes a hit from his inhaler.",
+      "image": "storyboard-system/frames/s23/board-5-H57NT-shot-generator.png",
+      "title": "Shot 5"
+    },
+    {
+      "sceneNumber": 6,
+      "sceneId": "s23",
+      "camera": "Medium Close Up",
+      "caption": "B-3: Dallas grips his arm tightly and stoically marches onward. Dominic takes another hit.",
+      "image": "storyboard-system/frames/s23/board-6-NUSQS-shot-generator.png",
+      "title": "Shot 6"
+    },
+    {
+      "sceneNumber": 7,
+      "sceneId": "s23",
+      "camera": "POV",
+      "caption": "C-1: Crossing the threshold into pitch black. The tall grass towers over ten feet high, whipping violently in unpredictable rhythms.",
+      "image": "storyboard-system/frames/s23/board-7-2WO0V-shot-generator.png",
+      "title": "Shot 7"
+    },
+    {
+      "sceneNumber": 8,
+      "sceneId": "s23",
+      "camera": "Wide Tracking",
+      "caption": "C-2: Makayla sweeps the handheld speaker like a flashlight, the small blinking green LED on her chest rig leading the way.",
+      "image": "storyboard-system/frames/s23/board-8-FU0R9-shot-generator.png",
+      "title": "Shot 8"
+    },
+    {
+      "sceneNumber": 9,
+      "sceneId": "s23",
+      "camera": "Medium Tracking",
+      "caption": "C-3: Asher follows, hunched low with the backpack containing the golden creature. Dallas and Dominic take up the rear, sinking deep into the marsh mud.",
+      "image": "storyboard-system/frames/s23/board-9-XN7V2-shot-generator.png",
+      "title": "Shot 9"
+    },
+    {
+      "sceneNumber": 10,
+      "sceneId": "s23",
+      "camera": "Low Angle Wide",
+      "caption": "D-1: Massive, formless shadows drift lazily through the storm clouds. Hundreds of glowing red eyes pierce the dark.",
+      "image": "storyboard-system/frames/s23/board-10-9YDCS-shot-generator.png",
+      "title": "Shot 10"
+    }
+  ]
+}
