@@ -356,7 +356,7 @@
           if (folder && frames && frames[folder]) {
             const panels = frames[folder];
             document.querySelector('.header-title').textContent = 'Scene ' + folder.replace(/^s/i, '') + ' Storyboard';
-            document.querySelector('.header-subtitle').textContent = 'Dynamic generation from AI frames';
+            document.querySelector('.header-subtitle').textContent = 'Sequence generation from frames';
             renderSheets(panels);
             renderSummary(panels);
           } else {

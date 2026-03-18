@@ -55,8 +55,13 @@
 
     async function loadScenes() {
       try {
-        const response = await fetch('manifest.json');
+        const [response, framesResponse] = await Promise.all([
+           fetch('manifest.json'),
+           fetch('frames-data.json').catch(() => null)
+        ]);
         const scenes = await response.json();
+        const framesData = framesResponse && framesResponse.ok ? await framesResponse.json() : null;
+
         const container = document.getElementById('sceneList');
         container.innerHTML = '';
 
@@ -93,9 +98,17 @@
           list.className = 'gallery-scene-list';
 
           actScenes.forEach((scene) => {
+            const wrapper = document.createElement('div');
+            wrapper.style.display = 'flex';
+            wrapper.style.gap = '10px';
+            wrapper.style.alignItems = 'center';
+            wrapper.style.marginBottom = '6px';
+
             const link = document.createElement('a');
             link.href = `scene.html?id=${scene.id}`;
             link.className = 'gallery-scene-item';
+            link.style.flex = '1';
+            link.style.margin = '0';
 
             const num = document.createElement('span');
             num.className = 'gallery-scene-number';
@@ -112,7 +125,28 @@
             link.appendChild(num);
             link.appendChild(title);
             link.appendChild(file);
-            list.appendChild(link);
+            wrapper.appendChild(link);
+
+            const folderName = scene.file ? scene.file.split(' ')[0].toLowerCase() : '';
+            if (framesData && framesData[folderName]) {
+               const vizLink = document.createElement('a');
+               vizLink.href = `/pages/summer/storyboard.html?folder=${folderName}`;
+               vizLink.textContent = 'Visual Board';
+               vizLink.style.padding = '8px 16px';
+               vizLink.style.background = 'var(--glass-bg, #f3f2ef)';
+               vizLink.style.border = '1px solid var(--border, #e2e1de)';
+               vizLink.style.borderRadius = '6px';
+               vizLink.style.textDecoration = 'none';
+               vizLink.style.color = 'var(--text-primary, #2c2c2a)';
+               vizLink.style.fontSize = '0.85rem';
+               vizLink.style.fontWeight = '600';
+               vizLink.style.whiteSpace = 'nowrap';
+               vizLink.onmouseover = () => { vizLink.style.background = 'var(--bg-hover, #e2e1de)'; };
+               vizLink.onmouseout = () => { vizLink.style.background = 'var(--glass-bg, #f3f2ef)'; };
+               wrapper.appendChild(vizLink);
+            }
+
+            list.appendChild(wrapper);
           });
 
           section.appendChild(list);
