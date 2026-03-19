@@ -22,8 +22,8 @@ function compileStoryboardFrames() {
     const folderPath = path.join(FRAMES_DIR, folder);
     const files = fs.readdirSync(folderPath);
 
-    // Filter to shot-generator.png or posterframe.jpg
-    let images = files.filter(f => f.includes('shot-generator.png') || f.includes('posterframe.jpg'));
+    // Filter to shot-generator.png, posterframe.jpg, or S08 style images
+    let images = files.filter(f => f.includes('shot-generator.png') || f.includes('posterframe.jpg') || f.match(/board-\d+\.png/));
     
     // Sort logically by board number
     images.sort((a, b) => {
@@ -62,12 +62,30 @@ function compileStoryboardFrames() {
         let currentShot = null;
         for (let i = 0; i < lines.length; i++) {
           const line = lines[i].trim();
-          const shotMatch = line.match(/^- ([A-Z]-\d+):\s*\[(.*?)\]/);
-          if (shotMatch) {
-            currentShot = { id: shotMatch[1], size: shotMatch[2], action: "" };
+          
+          // Format 1: - A-1: [Wide]
+          const shotMatch1 = line.match(/^- ([A-Z]-\d+):\s*\[(.*?)\]/);
+          // Format 2: ### Shot 1 - WIDE TRACKING - House Exit
+          const shotMatch2 = line.match(/^### Shot (\d+) - (.*?) - (.*?)$/i);
+
+          if (shotMatch1) {
+            currentShot = { id: shotMatch1[1], size: shotMatch1[2], action: "" };
             captions.push(currentShot);
-          } else if (currentShot && line.startsWith('- ')) {
-             if (currentShot.action === "") {
+          } else if (shotMatch2) {
+            currentShot = { id: parseInt(shotMatch2[1], 10), action: "", captionText: "" };
+            captions.push(currentShot);
+          } else if (currentShot) {
+             const actionMatch = line.match(/^- Action:\s*(.*)/i);
+             const sizeMatch = line.match(/^- Size:\s*(.*)/i);
+             const captionMatch = line.match(/^- Caption:\s*(.*)/i);
+             
+             if (actionMatch) {
+               currentShot.action = actionMatch[1].trim();
+             } else if (sizeMatch && !currentShot.size) {
+               currentShot.size = sizeMatch[1].trim();
+             } else if (captionMatch) {
+               currentShot.captionText = captionMatch[1].trim();
+             } else if (line.startsWith('- ') && currentShot.action === "" && !shotMatch2) {
                currentShot.action = line.replace(/^- /, '').trim();
              }
           }
@@ -78,12 +96,21 @@ function compileStoryboardFrames() {
     }
 
     const panels = finalImages.map((img, index) => {
-      const mdIndex = index;
-      let caption = `Board ${sortedNum[index]}`;
+      const boardNum = sortedNum[index];
+      let caption = `Board ${boardNum}`;
       let camera = "Wide";
-      if (captions[mdIndex]) {
-        caption = `${captions[mdIndex].id}: ${captions[mdIndex].action}`;
-        camera = captions[mdIndex].size;
+      
+      // Try to find by exact board number first
+      let matchedShot = captions.find(c => c.id == boardNum);
+      if (!matchedShot) {
+        // Fallback to sequential index
+        matchedShot = captions[index];
+      }
+      
+      if (matchedShot) {
+        let actionTxt = matchedShot.captionText || matchedShot.action;
+        caption = `${matchedShot.id}: ${actionTxt}`;
+        camera = matchedShot.size;
       }
 
       return {

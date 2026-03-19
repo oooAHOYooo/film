@@ -1,4 +1,86 @@
 {
+  "s08": [
+    {
+      "sceneNumber": 2,
+      "sceneId": "s08",
+      "camera": "Wide",
+      "caption": "2: The Long Island Sound roars against the rocks.",
+      "image": "storyboard-system/frames/s08/s08-board-00002.png",
+      "title": "Shot 2"
+    },
+    {
+      "sceneNumber": 3,
+      "sceneId": "s08",
+      "camera": "Medium Wide",
+      "caption": "3: Dallas and Howie head toward the marsh.",
+      "image": "storyboard-system/frames/s08/s08-board-00003.png",
+      "title": "Shot 3"
+    },
+    {
+      "sceneNumber": 5,
+      "sceneId": "s08",
+      "camera": "Medium",
+      "caption": "5: Howie senses something in the marsh.",
+      "image": "storyboard-system/frames/s08/s08-board-00005.png",
+      "title": "Shot 5"
+    },
+    {
+      "sceneNumber": 6,
+      "sceneId": "s08",
+      "camera": "Extreme Wide",
+      "caption": "6: Coyotes bark in the distance as the wind rises.",
+      "image": "storyboard-system/frames/s08/s08-board-00006.png",
+      "title": "Shot 6"
+    },
+    {
+      "sceneNumber": 7,
+      "sceneId": "s08",
+      "camera": "Medium Wide",
+      "caption": "7: The environment becomes suddenly quiet.",
+      "image": "storyboard-system/frames/s08/s08-board-00007.png",
+      "title": "Shot 7"
+    },
+    {
+      "sceneNumber": 8,
+      "sceneId": "s08",
+      "camera": "Close Up",
+      "caption": "8: The HUM vibrates through Dallas's chest.",
+      "image": "storyboard-system/frames/s08/s08-board-00008.png",
+      "title": "Shot 8"
+    },
+    {
+      "sceneNumber": 10,
+      "sceneId": "s08",
+      "camera": "Close Up",
+      "caption": "10: Dallas tunes the audio recorder.",
+      "image": "storyboard-system/frames/s08/s08-board-00010.png",
+      "title": "Shot 10"
+    },
+    {
+      "sceneNumber": 11,
+      "sceneId": "s08",
+      "camera": "Medium",
+      "caption": "11: Dallas leaves Howie behind at the creek's edge.",
+      "image": "storyboard-system/frames/s08/s08-board-00011.png",
+      "title": "Shot 11"
+    },
+    {
+      "sceneNumber": 12,
+      "sceneId": "s08",
+      "camera": "Wide",
+      "caption": "12: Dallas discovers a rigged trailcam in the reeds.",
+      "image": "storyboard-system/frames/s08/s08-board-00012.png",
+      "title": "Shot 12"
+    },
+    {
+      "sceneNumber": 13,
+      "sceneId": "s08",
+      "camera": "Close Up",
+      "caption": "13: The trace settles into an otherworldly pattern.",
+      "image": "storyboard-system/frames/s08/s08-board-00013.png",
+      "title": "Shot 13"
+    }
+  ],
   "s23": [
     {
       "sceneNumber": 1,
