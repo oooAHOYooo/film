@@ -129,6 +129,71 @@ function compileStoryboardFrames() {
   const outputPath = path.join(SYSTEM_DIR, 'frames-data.json');
   fs.writeFileSync(outputPath, JSON.stringify(framesData, null, 2));
   console.log(`Generated frames-data.json with ${Object.keys(framesData).length} scenes.`);
+
+  // Auto-generate manifest.json
+  console.log('Generating manifest.json...');
+  const SCRIPT_MANIFEST = path.join(SYSTEM_DIR, '../script-system/manifest.json');
+  let scriptData = [];
+  try {
+    scriptData = JSON.parse(fs.readFileSync(SCRIPT_MANIFEST, 'utf-8'));
+  } catch(e) {
+    console.warn('Could not read script manifest.');
+  }
+
+  const scLookup = {};
+  scriptData.forEach(s => {
+    const match = s.file.match(/s(\d+)\.md/i);
+    if(match) {
+      scLookup[parseInt(match[1], 10)] = s;
+    }
+  });
+
+  const builtManifest = [];
+  const processedNums = new Set();
+  const scenesDirFiles = fs.existsSync(SCENES_DIR) ? fs.readdirSync(SCENES_DIR) : [];
+
+  for (const f of scenesDirFiles) {
+    const m = f.match(/S(\d+).*?\.md/i);
+    if (m) {
+      const num = parseInt(m[1], 10);
+      processedNums.add(num);
+      const sc = scLookup[num] || {};
+      builtManifest.push({
+        id: `s${m[1].padStart(2,'0')}-sl`,
+        file: f,
+        title: sc.title || `Scene ${num}`,
+        act: sc.act || 0,
+        actTitle: sc.actTitle || ''
+      });
+    }
+  }
+
+  for (const folder of folders) {
+    const m = folder.match(/s(\d+)/i);
+    if (m) {
+      const num = parseInt(m[1], 10);
+      if (!processedNums.has(num)) {
+        processedNums.add(num);
+        const sc = scLookup[num] || {};
+        builtManifest.push({
+          id: `s${m[1].padStart(2,'0')}-sl`,
+          file: "", 
+          title: sc.title || `Scene ${num}`,
+          act: sc.act || 0,
+          actTitle: sc.actTitle || ''
+        });
+      }
+    }
+  }
+
+  builtManifest.sort((a,b) => {
+    const aNum = parseInt((a.id.match(/\d+/) || [0])[0], 10);
+    const bNum = parseInt((b.id.match(/\d+/) || [0])[0], 10);
+    return aNum - bNum;
+  });
+
+  fs.writeFileSync(path.join(SYSTEM_DIR, 'manifest.json'), JSON.stringify(builtManifest, null, 2));
+  console.log(`Generated manifest.json with ${builtManifest.length} scenes.`);
 }
 
 compileStoryboardFrames();

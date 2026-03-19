@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/styles/summer.css" />
     <style>
       .page {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 80px auto 60px;
         padding: 0 var(--gap, 24px);
       }
@@ -50,44 +50,57 @@
       }
       .back-link:hover { color: var(--text-primary); }
 
-      /* One sheet = 11" × 8.5" with 9 panels (3×3); anamorphic frame 2.39:1 */
-      .storyboard-sheet {
-        box-sizing: border-box;
-        width: 100%;
-        max-width: 11in;
-        margin: 0 auto 24px;
-        padding: 0.4in;
-        background: #fdfcfb;
-        border: 1px solid var(--border, #e2e1de);
-        border-radius: 8px;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      }
+      .actions { display: flex; gap: 8px; align-items: center; }
 
       .storyboard-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0.25in 0.2in;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 2rem;
         width: 100%;
+        margin-bottom: 4rem;
       }
 
       .storyboard-panel {
         display: flex;
         flex-direction: column;
         min-width: 0;
+        background: #fdfcfb;
+        border: 1px solid var(--border, #e2e1de);
+        border-radius: 8px;
+        padding: 16px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        cursor: grab;
+        transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s;
       }
 
-      /* Anamorphic frame (2.39:1) — space for sketch or image */
+      .storyboard-panel:active { cursor: grabbing; }
+
+      .storyboard-panel.dragging {
+        opacity: 0.5;
+        transform: scale(0.98);
+        border: 2px dashed #999;
+      }
+
+      .storyboard-grid:not(.show-hidden) .hidden-panel {
+        display: none;
+      }
+
+      .hidden-panel {
+        opacity: 0.4;
+        filter: grayscale(1);
+      }
+
       .storyboard-panel .panel-frame {
         width: 100%;
         aspect-ratio: 2.39 / 1;
         background: #f0efec;
         border: 1.5px solid #2c2c2a;
-        border-radius: 2px;
+        border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #999;
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         overflow: hidden;
         flex-shrink: 0;
       }
@@ -98,22 +111,20 @@
         object-fit: cover;
       }
 
-      /* Caption underneath the frame */
       .storyboard-panel .panel-caption {
-        margin-top: 0.12in;
-        padding: 0 0.02in;
-        font-size: 0.5rem;
-        line-height: 1.4;
+        margin-top: 16px;
+        font-size: 0.85rem;
+        line-height: 1.5;
         color: #2c2c2a;
         font-family: Inter, system-ui, sans-serif;
+        flex: 1;
       }
 
       .storyboard-panel .panel-meta {
         display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        gap: 0.2em 0.35em;
-        margin-bottom: 0.08em;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
       }
 
       .storyboard-panel .panel-number {
@@ -126,78 +137,79 @@
         text-transform: uppercase;
         letter-spacing: 0.03em;
         color: #2c2c2a;
+        padding: 2px 4px;
+        border-radius: 4px;
+        transition: background 0.2s;
       }
 
-      .storyboard-panel .panel-title {
-        font-weight: 600;
-        margin-bottom: 0.06em;
+      .btn-hide {
+        background: transparent;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 3px 8px;
+        font-size: 0.7rem;
+        cursor: pointer;
+        margin-left: auto;
+        color: #666;
+        transition: all 0.2s;
+      }
+      .btn-hide:hover {
+        background: #eee;
+        color: #000;
       }
 
       .storyboard-panel .panel-caption-text {
         color: #444;
+        padding: 4px;
+        border-radius: 4px;
+        min-height: 2em;
+        transition: background 0.2s;
       }
 
-      /* Summary table at bottom */
-      .storyboard-summary {
-        max-width: 11in;
-        margin: 2rem auto 4rem;
-        padding: 0 0.5rem;
+      [contenteditable="true"] { cursor: text; }
+      [contenteditable="true"]:hover { background: rgba(0,0,0,0.03); }
+      [contenteditable="true"]:focus {
+        outline: 2px solid var(--text-primary);
+        background: rgba(0,0,0,0.05);
       }
 
-      .storyboard-summary h2 {
-        font-size: 1.1rem;
-        margin: 0 0 0.75rem 0;
-        color: var(--text-primary, #2c2c2a);
-      }
-
-      .storyboard-summary-table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 0.75rem;
-        font-family: Inter, system-ui, sans-serif;
-      }
-
-      .storyboard-summary-table th,
-      .storyboard-summary-table td {
-        text-align: left;
-        padding: 0.35rem 0.5rem;
-        border-bottom: 1px solid var(--border, #e2e1de);
-      }
-
-      .storyboard-summary-table th {
-        font-weight: 600;
-        color: #5a5a58;
-        background: #f8f7f5;
-      }
-
-      .storyboard-summary-table td:nth-child(1) { width: 2.5em; }
-      .storyboard-summary-table td:nth-child(2) { min-width: 8em; }
-      .storyboard-summary-table td:nth-child(3) { width: 6em; }
+      .storyboard-summary { display: none; } 
 
       .no-print { }
       @media print {
         body { background: #fff; }
-        .page { margin: 0; padding: 0; max-width: none; }
+        .page { margin: 0; padding: 0; max-width: 11in; }
         .no-print { display: none !important; }
-        .storyboard-sheet {
-          max-width: none;
-          width: 11in;
-          padding: 0.35in;
-          page-break-after: always;
-          box-shadow: none;
-          border-radius: 0;
-          border: none;
-        }
-        .storyboard-sheet:last-child { page-break-after: auto; }
+        
         .storyboard-grid {
-          gap: 0.2in 0.18in;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0.2in;
+          margin: 0;
         }
-        .storyboard-panel .panel-frame { aspect-ratio: 2.39 / 1; }
+        
+        .storyboard-panel {
+          padding: 8px;
+          border: 1px solid #e2e1de;
+          box-shadow: none;
+          page-break-inside: avoid;
+        }
+
         .storyboard-summary {
-          margin: 1.5rem auto 2rem;
+          display: block;
+          margin: 2rem auto;
           page-break-before: always;
         }
-        .storyboard-summary-table { font-size: 0.7rem; }
+        
+        .storyboard-summary-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 0.75rem;
+        }
+        .storyboard-summary-table th, .storyboard-summary-table td {
+          text-align: left;
+          padding: 0.35rem 0.5rem;
+          border-bottom: 1px solid #e2e1de;
+        }
       }
     </style>
   </head>
@@ -208,13 +220,20 @@
           <div>
             <a href="/pages/summer.html" class="back-link">← Summer Film</a>
             <h1 class="header-title">Storyboard</h1>
-            <p class="header-subtitle">9 shots per 11×8.5″ page · Anamorphic 2.39:1 frame · Print-friendly</p>
+            <p class="header-subtitle">Interactive Board — Drag to reorder, click text to edit, hide bad frames. Edits auto-save!</p>
           </div>
-          <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+          <div class="actions">
+            <label style="display:flex;align-items:center;cursor:pointer;font-size:0.85rem;color:var(--text-secondary);gap:6px;margin-right:12px;">
+              <input type="checkbox" id="showHiddenToggle" /> Show Hidden
+            </label>
+            <button type="button" class="btn" style="background:var(--bg-hover); color:var(--text-primary)" id="resetBtn">Reset</button>
+            <button type="button" class="btn" style="background:#555; color:#fff" id="copyMarkdownBtn">Copy Markdown</button>
+            <button type="button" class="btn btn-primary" onclick="window.print()">Print</button>
+          </div>
         </div>
       </header>
 
-      <div id="sheets"></div>
+      <div id="grid-container" class="storyboard-grid"></div>
 
       <section class="storyboard-summary" id="storyboard-summary">
         <h2>Storyboard summary</h2>
@@ -235,87 +254,161 @@
     <script>
       (function() {
         const SHEETS_URL = 'script-system/manifest.json';
-        const PANELS_PER_PAGE = 9;
-
-        function toRoman(num) {
-          const map = [[1000,'M'],[900,'CM'],[500,'D'],[400,'CD'],[100,'C'],[90,'XC'],[50,'L'],[40,'XL'],[10,'X'],[9,'IX'],[5,'V'],[4,'IV'],[1,'I']];
-          let n = num, out = '';
-          for (const [v, s] of map) { while (n >= v) { out += s; n -= v; } }
-          return out;
-        }
-
-        function buildPanel(panel) {
-          const div = document.createElement('div');
-          div.className = 'storyboard-panel';
-          const camera = panel.camera || 'Wide';
-          const caption = panel.caption || '';
-          const frameContent = panel.image
-            ? '<img src="' + escapeAttr(panel.image) + '" alt="">'
-            : '<span>Sketch / image</span>';
-          div.innerHTML =
-            '<div class="panel-frame">' + frameContent + '</div>' +
-            '<div class="panel-caption">' +
-              '<div class="panel-meta">' +
-                '<span class="panel-number">' + escapeHtml(String(panel.sceneNumber).padStart(2, '0')) + '</span>' +
-                ' <span class="panel-camera">' + escapeHtml(camera) + '</span>' +
-              '</div>' +
-              '<div class="panel-title">' + escapeHtml(panel.title) + '</div>' +
-              (caption ? '<div class="panel-caption-text">' + escapeHtml(caption) + '</div>' : '') +
-            '</div>';
-          return div;
-        }
+        const DATA_URL = 'storyboard-data.json';
+        const FRAMES_URL = 'storyboard-system/frames-data.json';
+        
+        let currentPanels = [];
+        let currentFolder = null;
 
         function escapeAttr(s) {
-          const div = document.createElement('div');
-          div.textContent = s;
+          const div = document.createElement('div'); div.textContent = s;
           return div.innerHTML.replace(/"/g, '&quot;');
         }
         function escapeHtml(s) {
-          const div = document.createElement('div');
-          div.textContent = s;
+          const div = document.createElement('div'); div.textContent = s;
           return div.innerHTML;
         }
 
-        function renderSheets(panels) {
-          const container = document.getElementById('sheets');
-          container.innerHTML = '';
-          for (let p = 0; p < panels.length; p += PANELS_PER_PAGE) {
-            const chunk = panels.slice(p, p + PANELS_PER_PAGE);
-            const sheet = document.createElement('div');
-            sheet.className = 'storyboard-sheet';
-            const grid = document.createElement('div');
-            grid.className = 'storyboard-grid';
-            for (let i = 0; i < PANELS_PER_PAGE; i++) {
-              const cell = document.createElement('div');
-              if (chunk[i]) {
-                cell.appendChild(buildPanel(chunk[i]));
-              } else {
-                cell.className = 'storyboard-panel';
-                cell.innerHTML = '<div class="panel-frame"><span>—</span></div><div class="panel-caption">&nbsp;</div>';
-              }
-              grid.appendChild(cell);
-            }
-            sheet.appendChild(grid);
-            container.appendChild(sheet);
-          }
+        function saveLocalData() {
+          const key = currentFolder ? `storyboard-${currentFolder}` : 'storyboard-global';
+          localStorage.setItem(key, JSON.stringify(currentPanels));
         }
 
-        function renderSummary(panels) {
+        function buildPanel(panel, index) {
+          const div = document.createElement('div');
+          div.className = 'storyboard-panel';
+          if (panel.hidden) div.classList.add('hidden-panel');
+          div.draggable = true;
+          div.dataset.index = index;
+
+          const camera = panel.camera || 'Wide';
+          const caption = panel.caption || '';
+          const frameContent = panel.image
+            ? `<img src="/pages/summer/${escapeAttr(panel.image)}" draggable="false" alt="">`
+            : '<span>Sketch / image</span>';
+
+          div.innerHTML = `
+            <div class="panel-frame">${frameContent}</div>
+            <div class="panel-caption">
+              <div class="panel-meta">
+                <span class="panel-number">${escapeHtml(String(panel.sceneNumber || index+1).padStart(2, '0'))}</span>
+                <span class="panel-camera" contenteditable="true" spellcheck="false" data-field="camera">${escapeHtml(camera)}</span>
+                <button type="button" class="btn-hide">${panel.hidden ? 'Unhide' : 'Hide'}</button>
+              </div>
+              <div class="panel-caption-text" contenteditable="true" data-field="caption">${escapeHtml(caption)}</div>
+            </div>
+          `;
+
+          div.querySelector('.btn-hide').addEventListener('click', () => {
+             currentPanels[index].hidden = !currentPanels[index].hidden;
+             saveLocalData();
+             renderGrid();
+          });
+
+          div.addEventListener('dragstart', (e) => {
+            div.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+            e.dataTransfer.setData('text/plain', index);
+          });
+          
+          div.addEventListener('dragend', () => {
+            div.classList.remove('dragging');
+          });
+
+          const camEl = div.querySelector('.panel-camera');
+          const capEl = div.querySelector('.panel-caption-text');
+          
+          const updateData = (e) => {
+            const field = e.target.dataset.field;
+            currentPanels[index][field] = e.target.textContent;
+            saveLocalData();
+          };
+
+          camEl.addEventListener('blur', updateData);
+          capEl.addEventListener('blur', updateData);
+
+          return div;
+        }
+
+        function renderGrid() {
+          const container = document.getElementById('grid-container');
+          container.innerHTML = '';
+          
+          let visibleIndex = 1;
+          currentPanels.forEach((panel, i) => {
+             if (!panel.hidden) {
+                panel.sceneNumber = visibleIndex++;
+             } else {
+                panel.sceneNumber = '-';
+             }
+             container.appendChild(buildPanel(panel, i));
+          });
+          
+          setupDragAndDrop(container);
+          renderSummary();
+        }
+
+        function setupDragAndDrop(container) {
+          container.addEventListener('dragover', e => {
+            e.preventDefault();
+            const afterElement = getDragAfterElement(container, e.clientY, e.clientX);
+            const draggable = document.querySelector('.dragging');
+            if (afterElement == null) {
+              container.appendChild(draggable);
+            } else {
+              container.insertBefore(draggable, afterElement);
+            }
+          });
+
+          container.addEventListener('drop', e => {
+            e.preventDefault();
+            const newPanels = [];
+            const panelElements = container.querySelectorAll('.storyboard-panel');
+            panelElements.forEach((el) => {
+              const oldIndex = el.dataset.index;
+              newPanels.push(currentPanels[oldIndex]);
+            });
+            currentPanels = newPanels;
+            saveLocalData();
+            renderGrid();
+          });
+        }
+
+        function getDragAfterElement(container, y, x) {
+          const draggableElements = [...container.querySelectorAll('.storyboard-panel:not(.dragging)')];
+          
+          return draggableElements.reduce((closest, child) => {
+            const box = child.getBoundingClientRect();
+            const yOffset = y - (box.top + box.height / 2);
+            const xOffset = x - (box.left + box.width / 2);
+            
+            if (Math.abs(yOffset) < box.height / 2) {
+               if (xOffset < 0 && xOffset > closest.offset) {
+                 return { offset: xOffset, element: child };
+               }
+            } else if (yOffset < 0 && yOffset > closest.yOffset) {
+               return { offset: yOffset, yOffset: yOffset, element: child };
+            }
+            
+            return closest;
+          }, { offset: Number.NEGATIVE_INFINITY, yOffset: Number.NEGATIVE_INFINITY }).element;
+        }
+
+        function renderSummary() {
           const tbody = document.getElementById('summary-tbody');
           if (!tbody) return;
           tbody.innerHTML = '';
-          panels.forEach(function(panel) {
+          currentPanels.forEach(function(panel) {
+            if (panel.hidden) return;
             const tr = document.createElement('tr');
             tr.innerHTML =
               '<td>' + escapeHtml(String(panel.sceneNumber).padStart(2, '0')) + '</td>' +
-              '<td>' + escapeHtml(panel.title) + '</td>' +
+              '<td>' + escapeHtml(panel.title || '') + '</td>' +
               '<td>' + escapeHtml(panel.camera || 'Wide') + '</td>' +
               '<td>' + escapeHtml(panel.caption || '') + '</td>';
             tbody.appendChild(tr);
           });
         }
-
-        const DATA_URL = 'storyboard-data.json';
 
         function mergePanels(scenes, data) {
           const byScene = {};
@@ -331,7 +424,6 @@
               title: s.title,
               actTitle: s.actTitle || '',
               id: s.id,
-              globalIndex: i,
               camera: row.camera,
               caption: row.caption,
               image: row.image
@@ -339,7 +431,12 @@
           });
         }
 
-        const FRAMES_URL = 'storyboard-system/frames-data.json';
+        const showHiddenToggle = document.getElementById('showHiddenToggle');
+        showHiddenToggle.addEventListener('change', (e) => {
+           const container = document.getElementById('grid-container');
+           if (e.target.checked) container.classList.add('show-hidden');
+           else container.classList.remove('show-hidden');
+        });
 
         Promise.all([
           fetch(SHEETS_URL).then(function(r) { return r.json(); }),
@@ -351,22 +448,59 @@
           const frames = results[2];
 
           const urlParams = new URLSearchParams(window.location.search);
-          const folder = urlParams.get('folder');
+          currentFolder = urlParams.get('folder');
+          const saveKey = currentFolder ? `storyboard-${currentFolder}` : 'storyboard-global';
 
-          if (folder && frames && frames[folder]) {
-            const panels = frames[folder];
-            document.querySelector('.header-title').textContent = 'Scene ' + folder.replace(/^s/i, '') + ' Storyboard';
-            document.querySelector('.header-subtitle').textContent = 'Sequence generation from frames';
-            renderSheets(panels);
-            renderSummary(panels);
+          if (currentFolder && frames && frames[currentFolder]) {
+            document.querySelector('.header-title').textContent = 'Scene ' + currentFolder.replace(/^s/i, '') + ' Storyboard';
+            const localSaved = localStorage.getItem(saveKey);
+            if (localSaved) {
+               currentPanels = JSON.parse(localSaved);
+            } else {
+               currentPanels = frames[currentFolder];
+            }
           } else {
-            const panels = mergePanels(scenes, data);
-            renderSheets(panels);
-            renderSummary(panels);
+            const localSaved = localStorage.getItem(saveKey);
+            if (localSaved) {
+               currentPanels = JSON.parse(localSaved);
+            } else {
+               currentPanels = mergePanels(scenes, data);
+            }
           }
+          
+          renderGrid();
+
+          document.getElementById('resetBtn').addEventListener('click', () => {
+             if (confirm('Are you sure you want to reset to default? All local edits will be lost.')) {
+                localStorage.removeItem(saveKey);
+                window.location.reload();
+             }
+          });
+
+          document.getElementById('copyMarkdownBtn').addEventListener('click', () => {
+             let md = `## Shot List\n\n`;
+             currentPanels.forEach((p) => {
+                 if (p.hidden) return;
+                 let cam = p.camera || 'Wide';
+                 let cap = p.caption ? p.caption.replace(/^\d+:\s*/, '') : '';
+                 md += `### Shot ${p.sceneNumber} - ${cam}\n`;
+                 md += `- Size: ${cam}\n`;
+                 if (cap) md += `- Caption: ${cap}\n`;
+                 md += `\n`;
+             });
+             navigator.clipboard.writeText(md).then(() => {
+                 const btn = document.getElementById('copyMarkdownBtn');
+                 btn.textContent = 'Copied!';
+                 setTimeout(() => btn.textContent = 'Copy Markdown', 2000);
+             }).catch(err => {
+                 alert('Could not copy text: ' + err);
+             });
+          });
+
         }).catch(function(err) {
-          document.getElementById('sheets').innerHTML =
-            '<p class="no-print">Could not load script manifest or scenes. Check that <code>script-system/manifest.json</code> exists.</p>';
+            console.error(err);
+          document.getElementById('grid-container').innerHTML =
+            '<p class="no-print">Could not load scenes or data.</p>';
         });
       })();
     </script>

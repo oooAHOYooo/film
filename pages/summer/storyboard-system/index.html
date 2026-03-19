@@ -127,7 +127,16 @@
             link.appendChild(file);
             wrapper.appendChild(link);
 
-            const folderName = scene.file ? scene.file.split(' ')[0].toLowerCase() : '';
+            const folderName = scene.file ? scene.file.split(' ')[0].toLowerCase() : scene.id.replace('-sl','').toLowerCase();
+            
+            if (!scene.file) {
+               link.href = '#';
+               link.onclick = (e) => e.preventDefault();
+               link.style.opacity = '0.6';
+               link.style.cursor = 'default';
+               file.textContent = '(Generated)';
+            }
+
             if (framesData && framesData[folderName]) {
                const vizLink = document.createElement('a');
                vizLink.href = `/pages/summer/storyboard.html?folder=${folderName}`;

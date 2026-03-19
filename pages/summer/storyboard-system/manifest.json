@@ -1,16 +1,37 @@
 [
   {
+    "id": "s08-sl",
+    "file": "S08 - SL.md",
+    "title": "Dallas Marsh Walk",
+    "act": 1,
+    "actTitle": "Arrival & Discovery"
+  },
+  {
     "id": "s20-sl",
     "file": "S20 - SL.md",
-    "title": "The Secret is Out",
+    "title": "Red Eyes",
     "act": 2,
     "actTitle": "The Creature"
   },
   {
     "id": "s21-sl",
     "file": "S21 - SL.md",
-    "title": "The Burn Marks",
+    "title": "Creature Missing",
     "act": 2,
     "actTitle": "The Creature"
+  },
+  {
+    "id": "s23-sl",
+    "file": "S23 - SL.md",
+    "title": "Predator Attack",
+    "act": 3,
+    "actTitle": "The Return"
+  },
+  {
+    "id": "s24-sl",
+    "file": "S24 - SL.md",
+    "title": "The Perimeter",
+    "act": 3,
+    "actTitle": "The Return"
   }
 ]

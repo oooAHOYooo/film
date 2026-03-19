@@ -13,7 +13,6 @@
 - Camera: Slow push-in
 - Action: The camera pushes in on Makayla's face as she looks out the window, a glow reflecting in her eyes.
 - Caption: Makayla's eyes widen in awe and terror.
-- Image: images/s21_shot2_makayla.png
 
 ### Shot 3 - POV WIDE - The Glow in the Grass
 - Size: Wide
@@ -40,7 +39,6 @@
 - Camera: Static, deep focus
 - Action: Dallas and Asher stand in the foreground on the porch. Far across the marsh, red eyes pulse in the beating wind.
 - Caption: A pair of glowing red eyes reappear in the distance.
-- Image: images/s21_shot6_marsh.png
 
 ### Shot 7 - MEDIUM PUSH-IN - Swarm Approaches
 - Size: Medium
