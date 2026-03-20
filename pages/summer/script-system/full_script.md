@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/20/2026, 12:00:16 PM*
+*Compiled on 3/20/2026, 12:05:09 PM*
 
 ---
 
@@ -142,7 +142,7 @@ Dallas looks down at a box of old equipment and stretches down to pick it up.
 ---
 
 
-### Scene 2: Dallas Night
+### Scene 2: Sierra's Box
 
 *ACT I — Arrival & Discovery | ID: dallas-night | File: s02.md*
 
@@ -529,7 +529,7 @@ They finish eating. The group begins to disperse.
 ---
 
 
-### Scene 5: Marsh Trail
+### Scene 5: The Merlin App
 
 *ACT I — Arrival & Discovery | ID: marsh-walk-later | File: s05.md*
 
@@ -609,7 +609,7 @@ Dallas and Dominic walk slowly and Dallas looks out to the tall grass for a whil
 ---
 
 
-### Scene 6: News Vans & Trash Cans
+### Scene 6: News Vans
 
 *ACT I — Arrival & Discovery | ID: news-vans | File: s06.md*
 
@@ -1020,7 +1020,7 @@ Dallas begins to walk across the street to his house.
 ---
 
 
-### Scene 8: Dallas Marsh Walk
+### Scene 8: The Trailcam
 
 *ACT I — Arrival & Discovery | ID: dallas-marsh-walk | File: s08.md*
 
@@ -1079,7 +1079,7 @@ Howie whine and ties them up to a lone tree. Dallas bends down and pets Howie on
 ---
 
 
-### Scene 9: Dallas Night Work
+### Scene 9: The Injured One
 
 *ACT I — Arrival & Discovery | ID: dallas-night-work | File: s09.md*
 
@@ -1120,7 +1120,7 @@ Suddenly, the wind returns. A violent gust. Shadows in the distance start to fil
 ---
 
 
-### Scene 10: Shadows in Wind
+### Scene 10: The Chase
 
 *ACT I — Arrival & Discovery | ID: shadows-in-wind | File: s10.md*
 
@@ -1155,7 +1155,7 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 ---
 
 
-### Scene 11: Howie Walk (Edge of Marsh)
+### Scene 11: Kitchen Triage
 
 *ACT I — Arrival & Discovery | ID: howie-walk-2 | File: s11.md*
 
@@ -1312,7 +1312,7 @@ Dallas presses play on the recorder and goes to sleep.
 ---
 
 
-### Scene 13: Entering Grass & The Hollow
+### Scene 13: The Confrontation
 
 *ACT II — The Creature | ID: entering-grass | File: s13.md*
 
@@ -1457,7 +1457,7 @@ Makayla shakes her head and stops toching the creature.
 ---
 
 
-### Scene 14: Creature Rescue
+### Scene 14: The Connection
 
 *ACT II — The Creature | ID: creature-rescue | File: s14.md*
 
@@ -1697,7 +1697,7 @@ Dallas - I have to show you something.
 ---
 
 
-### Scene 15: The Burn Mark
+### Scene 15: Makayla's Lair
 
 *ACT II — The Creature | ID: the-burn-mark-2 | File: s15.md*
 
@@ -1948,7 +1948,7 @@ We have to go.
 ---
 
 
-### Scene 16: The Escape
+### Scene 16: Makayla's Lair
 
 *ACT II — The Creature | ID: the-escape | File: s16.md*
 
@@ -2505,7 +2505,7 @@ Dominic heads toward the basement alone. Dallas's stomach drops. He and Makayla 
 ---
 
 
-### Scene 20: Red Eyes
+### Scene 20: The Secret is Out
 
 *ACT II — The Creature | ID: red-eyes | File: s20.md*
 
@@ -2717,7 +2717,7 @@ The crew turn and sprint back into the house, slamming the door.
 ---
 
 
-### Scene 21: Creature Missing
+### Scene 21: The Burn Marks
 
 *ACT II — The Creature | ID: creature-missing | File: s21.md*
 
@@ -2760,7 +2760,7 @@ They look again. Closer. The eyes reappear. Swirling through the beating wind an
 ---
 
 
-### Scene 22: Marsh Confrontation
+### Scene 22: The Load-Out
 
 *ACT III — The Return | ID: marsh-confrontation | File: s22.md*
 
@@ -2806,7 +2806,7 @@ The massive, formless shadows pour into the house—but the crew is already spri
 ---
 
 
-### Scene 23: Predator Attack
+### Scene 23: The Trench Run
 
 *ACT III — The Return | ID: predator-attack | File: s23.md*
 
@@ -2950,7 +2950,7 @@ They push forward, deeper into the howling void.
 ---
 
 
-### Scene 24: The Perimeter
+### Scene 24: The Sanctuary & The Siege
 
 *ACT III — The Return | ID: the-perimeter | File: s24.md*
 
@@ -3018,7 +3018,7 @@ They wade through the chaotic crossfire of light and shadow, positioning the two
 ---
 
 
-### Scene 25: The Last Dinner
+### Scene 25: The Final Blast
 
 *ACT III — The Return | ID: the-last-dinner | File: s25.md*
 
@@ -3149,7 +3149,7 @@ Makayla lets out a massive, shuddering breath.
 ---
 
 
-### Scene 26: Final Echoes
+### Scene 26: The Morning After
 
 *ACT IV — Aftermath | ID: final-echoes | File: s26.md*
 

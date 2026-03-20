@@ -10,7 +10,7 @@
   {
     "id": "dallas-night",
     "file": "s02.md",
-    "title": "Dallas Night",
+    "title": "Sierra's Box",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "nickname": "dallas-night"
@@ -34,7 +34,7 @@
   {
     "id": "marsh-walk-later",
     "file": "s05.md",
-    "title": "Marsh Trail",
+    "title": "The Merlin App",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "nickname": "marsh-walk-later"
@@ -42,7 +42,7 @@
   {
     "id": "news-vans",
     "file": "s06.md",
-    "title": "News Vans & Trash Cans",
+    "title": "News Vans",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "nickname": "news-vans"
@@ -58,7 +58,7 @@
   {
     "id": "dallas-marsh-walk",
     "file": "s08.md",
-    "title": "Dallas Marsh Walk",
+    "title": "The Trailcam",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "nickname": "dallas-marsh-walk"
@@ -66,7 +66,7 @@
   {
     "id": "dallas-night-work",
     "file": "s09.md",
-    "title": "Dallas Night Work",
+    "title": "The Injured One",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "nickname": "dallas-night-work"
@@ -74,7 +74,7 @@
   {
     "id": "shadows-in-wind",
     "file": "s10.md",
-    "title": "Shadows in Wind",
+    "title": "The Chase",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "nickname": "shadows-in-wind"
@@ -82,7 +82,7 @@
   {
     "id": "howie-walk-2",
     "file": "s11.md",
-    "title": "Howie Walk (Edge of Marsh)",
+    "title": "Kitchen Triage",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "nickname": "howie-walk-2"
@@ -98,7 +98,7 @@
   {
     "id": "entering-grass",
     "file": "s13.md",
-    "title": "Entering Grass & The Hollow",
+    "title": "The Confrontation",
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "entering-grass"
@@ -106,7 +106,7 @@
   {
     "id": "creature-rescue",
     "file": "s14.md",
-    "title": "Creature Rescue",
+    "title": "The Connection",
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "creature-rescue"
@@ -114,7 +114,7 @@
   {
     "id": "the-burn-mark-2",
     "file": "s15.md",
-    "title": "The Burn Mark",
+    "title": "Makayla's Lair",
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "the-burn-mark-2"
@@ -122,7 +122,7 @@
   {
     "id": "the-escape",
     "file": "s16.md",
-    "title": "The Escape",
+    "title": "Makayla's Lair",
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "the-escape"
@@ -154,7 +154,7 @@
   {
     "id": "red-eyes",
     "file": "s20.md",
-    "title": "Red Eyes",
+    "title": "The Secret is Out",
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "red-eyes"
@@ -162,7 +162,7 @@
   {
     "id": "creature-missing",
     "file": "s21.md",
-    "title": "Creature Missing",
+    "title": "The Burn Marks",
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "creature-missing"
@@ -170,7 +170,7 @@
   {
     "id": "marsh-confrontation",
     "file": "s22.md",
-    "title": "Marsh Confrontation",
+    "title": "The Load-Out",
     "act": 3,
     "actTitle": "The Return",
     "nickname": "marsh-confrontation"
@@ -178,7 +178,7 @@
   {
     "id": "predator-attack",
     "file": "s23.md",
-    "title": "Predator Attack",
+    "title": "The Trench Run",
     "act": 3,
     "actTitle": "The Return",
     "nickname": "predator-attack"
@@ -186,7 +186,7 @@
   {
     "id": "the-perimeter",
     "file": "s24.md",
-    "title": "The Perimeter",
+    "title": "The Sanctuary & The Siege",
     "act": 3,
     "actTitle": "The Return",
     "nickname": "the-perimeter"
@@ -194,7 +194,7 @@
   {
     "id": "the-last-dinner",
     "file": "s25.md",
-    "title": "The Last Dinner",
+    "title": "The Final Blast",
     "act": 3,
     "actTitle": "The Return",
     "nickname": "the-last-dinner"
@@ -202,7 +202,7 @@
   {
     "id": "final-echoes",
     "file": "s26.md",
-    "title": "Final Echoes",
+    "title": "The Morning After",
     "act": 4,
     "actTitle": "Aftermath",
     "nickname": "final-echoes"

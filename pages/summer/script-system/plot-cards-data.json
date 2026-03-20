@@ -10,7 +10,7 @@
   {
     "n": 2,
     "id": "dallas-night",
-    "title": "Dallas Night",
+    "title": "Sierra's Box",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies."
@@ -34,7 +34,7 @@
   {
     "n": 5,
     "id": "marsh-walk-later",
-    "title": "Marsh Trail",
+    "title": "The Merlin App",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "Boardwalk through the reeds. They hear birds andSomething moving in the marsh."
@@ -42,7 +42,7 @@
   {
     "n": 6,
     "id": "news-vans",
-    "title": "News Vans & Trash Cans",
+    "title": "News Vans",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "News vans in the street. Pat on camera. Marks on Dominic's driveway. Dallas strays and stays."
@@ -58,7 +58,7 @@
   {
     "n": 8,
     "id": "dallas-marsh-walk",
-    "title": "Dallas Marsh Walk",
+    "title": "The Trailcam",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "Dallas tries to bring Howie inside but he won't go. He looks like he wants to go on a walk. So Dallas reasons with the creature and brings him on a walk. The Long Island Sound roars, the waves crashing violently against…"
@@ -66,7 +66,7 @@
   {
     "n": 9,
     "id": "dallas-night-work",
-    "title": "Dallas Night Work",
+    "title": "The Injured One",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "Dallas, as he ventures deeper and deeper into the marsh - finds a bioluminest creature"
@@ -82,7 +82,7 @@
   {
     "n": 11,
     "id": "howie-walk-2",
-    "title": "Howie Walk (Edge of Marsh)",
+    "title": "Kitchen Triage",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "Dallas at home with the creature. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold."
@@ -98,7 +98,7 @@
   {
     "n": 13,
     "id": "entering-grass",
-    "title": "Entering Grass & The Hollow",
+    "title": "The Confrontation",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "The morning air is thick with the scent of ozone. Dominic''s minivan idles in the driveway. Makayla and Asher don't follow him. They wander toward the edge of Dallas's property. Dominic walks right up to Dallas' doorway…"
@@ -106,7 +106,7 @@
   {
     "n": 14,
     "id": "creature-rescue",
-    "title": "Creature Rescue",
+    "title": "The Connection",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. Asher sits alone a few feet away—drawing in his notebook."
@@ -114,7 +114,7 @@
   {
     "n": 15,
     "id": "the-burn-mark-2",
-    "title": "The Burn Mark",
+    "title": "Makayla's Lair",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Reverse Device mission born. Dallas calibrates the oscillator using Mr. Mike's numbers. A countdown begins."
@@ -122,7 +122,7 @@
   {
     "n": 16,
     "id": "the-escape",
-    "title": "The Escape",
+    "title": "Makayla's Lair",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Makayla, Dallas, and Asher hastily make their way out of the woods, back toward the field, carrying the creature in its box and the heavy, dead oscillator rig. As the crew walk, they begin to notice that the tall grass…"
@@ -154,7 +154,7 @@
   {
     "n": 20,
     "id": "red-eyes",
-    "title": "Red Eyes",
+    "title": "The Secret is Out",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Dominic descends the basement stairs, expecting a stray kitten. Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small…"
@@ -162,7 +162,7 @@
   {
     "n": 21,
     "id": "creature-missing",
-    "title": "Creature Missing",
+    "title": "The Burn Marks",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "The crew hold the door down."
@@ -170,7 +170,7 @@
   {
     "n": 22,
     "id": "marsh-confrontation",
-    "title": "Marsh Confrontation",
+    "title": "The Load-Out",
     "act": 3,
     "actTitle": "The Return",
     "summary": "The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. The wind drops, the howling stops. Then it…"
@@ -178,7 +178,7 @@
   {
     "n": 23,
     "id": "predator-attack",
-    "title": "Predator Attack",
+    "title": "The Trench Run",
     "act": 3,
     "actTitle": "The Return",
     "summary": "Dallas and Asher enter the tall grass carrying all of the equipment. The nylon straps bite into Dallas' shoulders - straining the fabric. Dallas stops for a moment in pain, almost dropping the speaker on Asher. He looks…"
@@ -186,7 +186,7 @@
   {
     "n": 24,
     "id": "the-perimeter",
-    "title": "The Perimeter",
+    "title": "The Sanctuary & The Siege",
     "act": 3,
     "actTitle": "The Return",
     "summary": "The howling wind suddenly dies down. Makayla breaches through a thick wall of reeds and stops. Dallas, Dominic, and Asher break through behind her, collapsing to their knees in the mud under the weight of the speakers.…"
@@ -194,7 +194,7 @@
   {
     "n": 25,
     "id": "the-last-dinner",
-    "title": "The Last Dinner",
+    "title": "The Final Blast",
     "act": 3,
     "actTitle": "The Return",
     "summary": "The golden dome of the Elders is failing. Red-Eye shadows are ripping through the barrier, violently canceling out the light. The black rot is spreading rapidly inward across the flattened grass floor. Dallas and…"
@@ -202,7 +202,7 @@
   {
     "n": 26,
     "id": "final-echoes",
-    "title": "Final Echoes",
+    "title": "The Morning After",
     "act": 4,
     "actTitle": "Aftermath",
     "summary": "The crew walk back through the tall grass, through neighborhoods, back and slow. The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. Janice makes her way through the door."
