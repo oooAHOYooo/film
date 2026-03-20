@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/19/2026, 12:51:52 PM*
+*Compiled on 3/20/2026, 10:44:49 AM*
 
 ---
 
@@ -1468,26 +1468,29 @@ Makayla shakes her head and stops toching the creature.
 # Scene 14: The Connection
 EXT. DALLAS BACKYARD - OLD PICNIC TABLE 
 
-Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby.
+Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. 
 
-Asher sits alone a few feet away—drawing in his notebook. Not the creature; repeating shapes, like the burn mark pattern.
+Asher sits alone a few feet away—drawing in his notebook. 
 
 MAKAYLA
-So your wife was an Epistemologist? 
+Your wife was an Epistemologist? 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas looks at Makayla. 
+Dallas looks at the sky and then at the ground and then at the edge of the property. 
 
 MAKAYLA
-She studied how fish communicate underwater. 
+She studied how fish communicate underwater?
 
 DALLAS
 She did.
 
 MAKAYLA
-I'm sorry for your loss.
+That's interesting... Sounds like a smart lady.
+
+DALLAS
+She was. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1495,7 +1498,7 @@ I'm sorry for your loss.
 Dallas looks at the ground.
 
 MAKAYLA
-Our mom died too.  Janice was her sister, Dominic was her younger brother. We used to live with her - but now we stay with Uncle Dominic - nextdoor to a bioacoustics engineer.... What's it like?
+Our moms gone too. Janice was her sister, Dominic, her brother, baby brother. We used to live with her - and now we are here - in branford - in my uncle's basement - nextdoor to a bioacoustics.... What's it like?
 
 DALLAS
 What's what like?
@@ -1504,14 +1507,22 @@ MAKAYLA
 Your job.
 
 DALLAS
-It's fine. 
+I'm not sure yet. I'll tell you when I find it.
+
+MAKAYLA
+Sounds good.
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+A gentle breeze blows through the sky. Asher begins to pace around a little outside himself and bob his head a bit back and forth. He goes into the house without much indication or word from anyone. 
 
 INT. KITCHEN - CONTINUOUS
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-The room grows quiet.  Asher, alone, busies himself  trying to connect wires up to the computer. But he stops as he looks at the distance, then the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
+The room grows quiet.  Asher, alone, busies himself trying to connect wires up to the makeshift computer on the counter. He stops as, looks down at the cables and then far off in the distance, then on the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
 
 Outside the window, the wind picks up. 
 
@@ -1526,7 +1537,7 @@ A loud thump is heard from outside. Makayla runs into Dalla's kitchen.
 
 INT. DALLAS' KITCHEN - MOMENTS LATER
 
-Makayla holds Asher by the head as he shakes on the ground. Makayla begins to sing to him gently. 
+Makayla holds Asher by the head as he shakes on the ground. Makayla begins to sway and hum to him gently. She puts her hand on his chest and he breathes. 
 
 DALLAS
 Is he okay? 
@@ -1537,7 +1548,11 @@ He's fine... He's just processing.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla takes a deep breath and looks at Dallas.
+Makayla takes a deep breath.
+
+EXT. DALLAS BACKYARD - PICNIC TABLE - MOMENTS LATER
+
+Makayla and Dallas sit on top of a picnic table outside the house, Asher blankly stares out into the distance. Makayla holds the Oscillator in her hand and fiddles with it. 
 
 MAKAYLA
 What do you do when you are sad? Like sad all the time. 
@@ -1553,7 +1568,7 @@ I don't know.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas and Makayla sit for a while on the long old picnic table outside his house.
+Dallas and Makayla sit for a while on the long old picnic table outside his house. The creature begins to cry and then it fades. Makayla turns to look and then thinks for a moment. 
 
 MAKAYLA
 We need to document this... Dallas. 
@@ -1564,7 +1579,16 @@ We need to document this... Dallas.
 Makayla looks at Asher who is now peacefully asleep. 
 
 MAKAYLA
-We can't tell anyone about this. The sound it made. We should try to record that.
+We can't tell anyone, not until we document this. The sound it made. We should try to record that.
+
+DALLAS
+I've been.
+
+MAKAYLA
+You've been what?
+
+DALLAS
+I've been recording. 
 
 MAKAYLA
 The frequiences that that creature is making.
@@ -1573,24 +1597,27 @@ DALLAS
 It seems to be recording.
 
 MAKAYLA
-Recording what? 
+What do you mean?
+
+DALLAS
+I'm not sure. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-The breeze overwhelms them both.
+The breeze overwhelms them both in the distance they begin to hear the faint pulse of a dark deep hum. 
 
 INT. DALLAS'S KITCHEN - LATER
 
 Makayla and Dallas walk into the kitchen and find the creature sleeping peacefully below the heat lamp. 
 
 MAKAYLA
-I find it interesting that your wife was an epistemologist - you know, Scientists used to think that the sea was silent - but our ears just can't pick up the right frequenies.
+I find it interesting that your wife was an epistemologist - you know, Scientists used to think that the sea was silent - but our ears just can't pick up the right notes. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas looks around at his kitchen island - which has turned part into a triage hospital station. He’s wired a portable oscilloscope.  The device pulses in a rhythmic, golden jagged line — in sync with the creature's heartbeat.
+Dallas looks around at his kitchen island - which has turned part into a triage hospital station. A portable oscilloscope is wired up to the creature.  The device pulses in a rhythmic, golden jagged line — in sync with the creature's heartbeat.
 
 In the distance they hear howls - and then silence again. 
 
@@ -1605,10 +1632,18 @@ DALLAS
 It changes the frequency I am broadcasting.
 
 MAKAYLA
-It looks like the creature is responding to it.
+Why are you broadcasting?
 
-Dallas
-Yes. 
+DALLAS
+I'm trying to get a response.
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+The two look at the creature on the table. 
+
+MAKAYLA
+It looks like the creature is responding to it.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1617,14 +1652,14 @@ Makayla looks down and thinks for a moment.
 
 MAKAYLA
 (to Dallas)
-You know, Mr. Mike has been telling Asher things for years... They have some special bond.... Mr. Mike's grandfather was an explorer - who claims that he knew of a creature like this that his father saw when he first immigrated. 
+You know, Mr. Mike's grandfather was an explorer - and Mr. Mike claims that he knew of a creature like this that his father saw when he first immigrated. In his boyhood. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Meanwhile,Asher comes in and gathers around the creature too—notebook in one hand, pencil still. He doesn't draw it. Just watches. His finger traces a small pattern on the edge of the island. 
+Asher comes in and gathers around the creature too—notebook in one hand, pencil still. He doesn't draw it. Just watches. 
 
-Dallas adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature's breathing stabilizes. It lets out a low, melodic tone through its back-holes.
+Dallas adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature's breathing stabilizes. It lets out a low, melodic tone.
 
 Makayla leans over the oscilloscope. She points at the screen. 
 
@@ -1643,9 +1678,7 @@ An amplifier.
 (action)
 Makayla turns and places the crystal she has found inside a palceholder for where a battery would go on a circut board.
 
-She turns to the creature and turns it on. 
-
-The creature starts to wiggle.
+She turns to the creature and turns it on. The creature starts to wiggle.
 
 Behind the creature's smooth sine wave, a second signal appears—jagged, arrhythmic. It pulses in sharp, irregular bursts, riding underneath the creature's frequency like static beneath music.
 
@@ -1658,7 +1691,7 @@ That's not coming from the creature. That's drawing from outside.
 The group looks at the creature and then at the oscilloscope and then at the sway of the tall grass outside. 
 
 MAKAYLA
-Dallas - I have something I want to show you. 
+Dallas - I have to show you something. 
 
 
 ---
