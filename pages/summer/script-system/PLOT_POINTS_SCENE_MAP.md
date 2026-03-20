@@ -142,3 +142,19 @@ Summary Checklist for your Morning:
 [ ] 5 mins: Rewrite the final beat where the creature gives the Crystal to Makayla.
 
 The Rating: This turns your script into a "High-Concept Emotional Sci-Fi." It feels like Contact—where the technology is just a way for humans to process their grief.
+
+
+
+as of ##3.20.26
+  What Gets Rewritten
+
+  Scenes affected:
+  1. S21 — Only Dallas follows the creature sighting; Asher stays inside
+  2. S22 — Dallas + Dominic load speakers (not Asher); add a Mr. Mike/Asher
+  moment at the door
+  3. S23 — Three-person line instead of four; replace Asher's "sound trick" with
+   either Makayla's counter-frequency, Dallas's distraction, or the creature's
+  call
+  4. S24 — Makayla sets creature down (instead of Asher)
+  5. S25 — Dallas adjusts the dial (instead of Asher)
+  6. S26 — Clarify Asher stays at the house while others leave

@@ -7,6 +7,13 @@
     "actTitle": "Arrival & Discovery"
   },
   {
+    "id": "s14-sl",
+    "file": "S14 - SL.md",
+    "title": "The Connection",
+    "act": 2,
+    "actTitle": "The Creature"
+  },
+  {
     "id": "s20-sl",
     "file": "S20 - SL.md",
     "title": "Red Eyes",
