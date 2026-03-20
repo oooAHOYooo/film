@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 3/20/2026, 12:00:17 PM*
+*Compiled on 3/20/2026, 1:35:34 PM*
 
 ---
 
@@ -113,7 +113,7 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 2: Dallas Night
+#### Scene 2: Sierra's Box
 
 *ID: dallas-night*
 
@@ -131,13 +131,13 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 5: Marsh Trail
+#### Scene 5: The Merlin App
 
 *ID: marsh-walk-later*
 
 *No director's note for this scene.*
 
-#### Scene 6: News Vans & Trash Cans
+#### Scene 6: News Vans
 
 *ID: news-vans*
 
@@ -149,25 +149,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 8: Dallas Marsh Walk
+#### Scene 8: The Trailcam
 
 *ID: dallas-marsh-walk*
 
 *No director's note for this scene.*
 
-#### Scene 9: Dallas Night Work
+#### Scene 9: The Injured One
 
 *ID: dallas-night-work*
 
 *No director's note for this scene.*
 
-#### Scene 10: Shadows in Wind
+#### Scene 10: The Chase
 
 *ID: shadows-in-wind*
 
 *No director's note for this scene.*
 
-#### Scene 11: Howie Walk (Edge of Marsh)
+#### Scene 11: Kitchen Triage
 
 *ID: howie-walk-2*
 
@@ -182,25 +182,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 13: Entering Grass & The Hollow
+#### Scene 13: The Confrontation
 
 *ID: entering-grass*
 
 *No director's note for this scene.*
 
-#### Scene 14: Creature Rescue
+#### Scene 14: The Connection
 
 *ID: creature-rescue*
 
 *No director's note for this scene.*
 
-#### Scene 15: The Burn Mark
+#### Scene 15: Makayla's Lair
 
 *ID: the-burn-mark-2*
 
 *No director's note for this scene.*
 
-#### Scene 16: The Escape
+#### Scene 16: Makayla's Lair
 
 *ID: the-escape*
 
@@ -224,13 +224,13 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 20: Red Eyes
+#### Scene 20: The Secret is Out
 
 *ID: red-eyes*
 
 *No director's note for this scene.*
 
-#### Scene 21: Creature Missing
+#### Scene 21: The Burn Marks
 
 *ID: creature-missing*
 
@@ -239,25 +239,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT III — The Return
 
-#### Scene 22: Marsh Confrontation
+#### Scene 22: The Load-Out
 
 *ID: marsh-confrontation*
 
 *No director's note for this scene.*
 
-#### Scene 23: Predator Attack
+#### Scene 23: The Trench Run
 
 *ID: predator-attack*
 
 *No director's note for this scene.*
 
-#### Scene 24: The Perimeter
+#### Scene 24: The Sanctuary & The Siege
 
 *ID: the-perimeter*
 
 *No director's note for this scene.*
 
-#### Scene 25: The Last Dinner
+#### Scene 25: The Final Blast
 
 *ID: the-last-dinner*
 
@@ -286,7 +286,7 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT IV — Aftermath
 
-#### Scene 26: Final Echoes
+#### Scene 26: The Morning After
 
 *ID: final-echoes*
 

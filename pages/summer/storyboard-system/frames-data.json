@@ -435,6 +435,7 @@
       "title": "Shot 44"
     }
   ],
+  "s17": [],
   "s23": [
     {
       "sceneNumber": 1,
@@ -516,5 +517,6 @@
       "image": "storyboard-system/frames/s23/board-10-9YDCS-shot-generator.png",
       "title": "Shot 10"
     }
-  ]
+  ],
+  "s24": []
 }

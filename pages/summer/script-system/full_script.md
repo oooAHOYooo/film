@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/20/2026, 12:05:09 PM*
+*Compiled on 3/20/2026, 1:35:33 PM*
 
 ---
 
@@ -2082,7 +2082,7 @@ Alright see you later buddy.
 <!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
 
 <!-- nickname: Makayla's Bond with Creature -->
-<!-- summary: Oscilloscope on the creature. 115.3 MHz. Makayla: it's pulling power from the grid. -->
+
 INT. DALLS BASEMENT
 
 MAKAYLA, DALLAS, and ASHER are crouched in the mudroom, shoulder-to-shoulder. 
@@ -2197,7 +2197,6 @@ Makayla clicks a "Master" switch on the device. A small, protective green light 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 <!-- nickname: life-group-arrives -->
-<!-- summary: Lifegroup tonight. Dominic drops off the music. The creature's downstairs—then Mr. Mike freaks. Everyone sees it. -->
 
 INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT
 

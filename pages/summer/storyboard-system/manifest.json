@@ -14,6 +14,20 @@
     "actTitle": "The Creature"
   },
   {
+    "id": "s17-sl",
+    "file": "",
+    "title": "Entering Grass",
+    "act": 2,
+    "actTitle": "The Creature"
+  },
+  {
+    "id": "s18-sl",
+    "file": "S18 - SL.md",
+    "title": "Life Group Arrives",
+    "act": 2,
+    "actTitle": "The Creature"
+  },
+  {
     "id": "s20-sl",
     "file": "S20 - SL.md",
     "title": "The Secret is Out",
