@@ -135,11 +135,9 @@ Summary Checklist for your Morning:
 
 [ ] 5 mins: Add the "Reverse Device" dialogue in the Lair (Scene 15).
 
-[ ] 5 mins: Insert the "Asher repeats the Mother's words" beat (Scene 16).
 
-[ ] 5 mins: Add the "10-minute countdown" dialogue to the stealth exit.
 
-[ ] 5 mins: Rewrite the final beat where the creature gives the Crystal to Makayla.
+
 
 The Rating: This turns your script into a "High-Concept Emotional Sci-Fi." It feels like Contact—where the technology is just a way for humans to process their grief.
 
