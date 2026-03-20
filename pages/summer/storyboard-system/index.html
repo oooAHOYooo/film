@@ -67,7 +67,8 @@
 
         const acts = new Map();
         scenes.forEach((scene, index) => {
-          const sceneNumber = index + 1;
+          const match = scene.id.match(/\d+/);
+          const sceneNumber = match ? parseInt(match[0], 10) : index + 1;
           const act = scene.act || 0;
           const actTitle = scene.actTitle || 'Unsorted';
           if (!acts.has(act)) acts.set(act, { actTitle, scenes: [] });

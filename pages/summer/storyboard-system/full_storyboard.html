@@ -106,7 +106,8 @@
         container.innerHTML = '';
 
         manifest.forEach((entry, index) => {
-          const sceneNumber = index + 1;
+          const match = entry.id.match(/\d+/);
+          const sceneNumber = match ? parseInt(match[0], 10) : index + 1;
           const parsed = sceneData[index];
 
           const section = document.createElement('section');
@@ -230,9 +231,11 @@
         const select = document.getElementById('sceneSelect');
         select.innerHTML = '<option value="">-</option>';
         manifest.forEach((entry, index) => {
+          const match = entry.id.match(/\d+/);
+          const sceneNumber = match ? parseInt(match[0], 10) : index + 1;
           const option = document.createElement('option');
-          option.value = `scene-${index + 1}`;
-          option.textContent = `${index + 1}. ${entry.title}`;
+          option.value = `scene-${sceneNumber}`;
+          option.textContent = `${sceneNumber}. ${entry.title}`;
           select.appendChild(option);
         });
 
@@ -257,8 +260,10 @@
           progressFill.style.width = `${progress * 100}%`;
 
           let currentIndex = 0;
-          manifest.forEach((_, index) => {
-            const el = document.getElementById(`scene-${index + 1}`);
+          manifest.forEach((entry, index) => {
+            const match = entry.id.match(/\d+/);
+            const sceneNumber = match ? parseInt(match[0], 10) : index + 1;
+            const el = document.getElementById(`scene-${sceneNumber}`);
             if (!el) return;
             const top = el.getBoundingClientRect().top;
             if (top <= 180) currentIndex = index;
@@ -266,7 +271,9 @@
 
           const currentScene = manifest[currentIndex];
           if (currentScene) {
-            statusEl.textContent = `Scene ${currentIndex + 1} of ${manifest.length}`;
+            const match = currentScene.id.match(/\d+/);
+            const sceneNumber = match ? parseInt(match[0], 10) : currentIndex + 1;
+            statusEl.textContent = `Scene ${sceneNumber} of ${manifest.length}`;
             subtextEl.textContent = currentScene.title;
           }
         }

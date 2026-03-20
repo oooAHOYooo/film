@@ -73,7 +73,8 @@
             return;
           }
 
-          const sceneNumber = sceneIndex + 1;
+          const match = scene.id.match(/\d+/);
+          const sceneNumber = match ? parseInt(match[0], 10) : sceneIndex + 1;
 
           // Load the scene markdown
           const sceneResponse = await fetch(`scenes/${scene.file}`);
