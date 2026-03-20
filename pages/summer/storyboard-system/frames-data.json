@@ -191,48 +191,48 @@
     {
       "sceneNumber": 4,
       "sceneId": "s14",
-      "camera": "Medium",
-      "caption": "4: Asher tries to trace the pattern as the wind picks up outside.",
+      "camera": "Wide",
+      "caption": "4: Makayla asks Dallas about his late wife's research.",
       "image": "storyboard-system/frames/s14/s14-board-00004.png",
       "title": "Shot 4"
     },
     {
       "sceneNumber": 5,
       "sceneId": "s14",
-      "camera": "Medium",
-      "caption": "5: Asher tries to trace the pattern as the wind picks up outside.",
+      "camera": "Wide",
+      "caption": "5: Makayla asks Dallas about his late wife's research.",
       "image": "storyboard-system/frames/s14/s14-board-00005.png",
       "title": "Shot 5"
     },
     {
       "sceneNumber": 6,
       "sceneId": "s14",
-      "camera": "Close Up",
-      "caption": "6: The overwhelming frequency brings Asher to the floor.",
+      "camera": "Medium",
+      "caption": "6: Asher tries to trace the pattern as the wind picks up outside.",
       "image": "storyboard-system/frames/s14/s14-board-00006.png",
       "title": "Shot 6"
     },
     {
       "sceneNumber": 7,
       "sceneId": "s14",
-      "camera": "Wide",
-      "caption": "7: Makayla hums to comfort Asher as he processes the sound.",
+      "camera": "Medium",
+      "caption": "7: Asher tries to trace the pattern as the wind picks up outside.",
       "image": "storyboard-system/frames/s14/s14-board-00007.png",
       "title": "Shot 7"
     },
     {
       "sceneNumber": 8,
       "sceneId": "s14",
-      "camera": "Wide",
-      "caption": "8: Makayla hums to comfort Asher as he processes the sound.",
+      "camera": "Medium",
+      "caption": "8: Asher tries to trace the pattern as the wind picks up outside.",
       "image": "storyboard-system/frames/s14/s14-board-00008.png",
       "title": "Shot 8"
     },
     {
       "sceneNumber": 9,
       "sceneId": "s14",
-      "camera": "Over-Shoulder",
-      "caption": "9: Makayla insists they need to document the creature's frequency.",
+      "camera": "Medium",
+      "caption": "9: Asher tries to trace the pattern as the wind picks up outside.",
       "image": "storyboard-system/frames/s14/s14-board-00009.png",
       "title": "Shot 9"
     },
@@ -240,23 +240,23 @@
       "sceneNumber": 10,
       "sceneId": "s14",
       "camera": "Medium",
-      "caption": "10: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
+      "caption": "10: Asher tries to trace the pattern as the wind picks up outside.",
       "image": "storyboard-system/frames/s14/s14-board-00010.png",
       "title": "Shot 10"
     },
     {
       "sceneNumber": 11,
       "sceneId": "s14",
-      "camera": "Medium",
-      "caption": "11: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
+      "camera": "Close Up",
+      "caption": "11: The overwhelming frequency brings Asher to the floor.",
       "image": "storyboard-system/frames/s14/s14-board-00011.png",
       "title": "Shot 11"
     },
     {
       "sceneNumber": 12,
       "sceneId": "s14",
-      "camera": "Medium",
-      "caption": "12: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
+      "camera": "Close Up",
+      "caption": "12: The overwhelming frequency brings Asher to the floor.",
       "image": "storyboard-system/frames/s14/s14-board-00012.png",
       "title": "Shot 12"
     },
@@ -264,105 +264,257 @@
       "sceneNumber": 13,
       "sceneId": "s14",
       "camera": "Close Up",
-      "caption": "13: Dallas broadcasts a frequency to seek a response.",
+      "caption": "13: The overwhelming frequency brings Asher to the floor.",
       "image": "storyboard-system/frames/s14/s14-board-00013.png",
       "title": "Shot 13"
     },
     {
       "sceneNumber": 14,
       "sceneId": "s14",
-      "camera": "Close Up",
-      "caption": "14: Dallas broadcasts a frequency to seek a response.",
+      "camera": "Wide",
+      "caption": "14: Makayla hums to comfort Asher as he processes the sound.",
       "image": "storyboard-system/frames/s14/s14-board-00014.png",
       "title": "Shot 14"
     },
     {
       "sceneNumber": 15,
       "sceneId": "s14",
-      "camera": "Close Up",
-      "caption": "15: Dallas broadcasts a frequency to seek a response.",
+      "camera": "Wide",
+      "caption": "15: Makayla hums to comfort Asher as he processes the sound.",
       "image": "storyboard-system/frames/s14/s14-board-00015.png",
       "title": "Shot 15"
     },
     {
       "sceneNumber": 16,
       "sceneId": "s14",
-      "camera": "Insert",
-      "caption": "16: Makayla powers up a makeshift amplifier with her crystal.",
+      "camera": "Wide",
+      "caption": "16: Makayla hums to comfort Asher as he processes the sound.",
       "image": "storyboard-system/frames/s14/s14-board-00016.png",
       "title": "Shot 16"
     },
     {
       "sceneNumber": 17,
       "sceneId": "s14",
-      "camera": "Insert",
-      "caption": "17: Makayla powers up a makeshift amplifier with her crystal.",
+      "camera": "Wide",
+      "caption": "17: Makayla hums to comfort Asher as he processes the sound.",
       "image": "storyboard-system/frames/s14/s14-board-00017.png",
       "title": "Shot 17"
     },
     {
       "sceneNumber": 18,
       "sceneId": "s14",
-      "camera": "Insert",
-      "caption": "18: Makayla powers up a makeshift amplifier with her crystal.",
+      "camera": "Over-Shoulder",
+      "caption": "18: Makayla insists they need to document the creature's frequency.",
       "image": "storyboard-system/frames/s14/s14-board-00018.png",
       "title": "Shot 18"
     },
     {
       "sceneNumber": 19,
       "sceneId": "s14",
-      "camera": "Macro",
-      "caption": "19: A distorted secondary signal disrupts the waveform.",
+      "camera": "Over-Shoulder",
+      "caption": "19: Makayla insists they need to document the creature's frequency.",
       "image": "storyboard-system/frames/s14/s14-board-00019.png",
       "title": "Shot 19"
     },
     {
       "sceneNumber": 20,
       "sceneId": "s14",
-      "camera": "Macro",
-      "caption": "20: A distorted secondary signal disrupts the waveform.",
+      "camera": "Over-Shoulder",
+      "caption": "20: Makayla insists they need to document the creature's frequency.",
       "image": "storyboard-system/frames/s14/s14-board-00020.png",
       "title": "Shot 20"
     },
     {
       "sceneNumber": 21,
       "sceneId": "s14",
-      "camera": "Macro",
-      "caption": "21: A distorted secondary signal disrupts the waveform.",
+      "camera": "Over-Shoulder",
+      "caption": "21: Makayla insists they need to document the creature's frequency.",
       "image": "storyboard-system/frames/s14/s14-board-00021.png",
       "title": "Shot 21"
     },
     {
       "sceneNumber": 22,
       "sceneId": "s14",
-      "camera": "POV Wide",
-      "caption": "22: Makayla realizes the second signal is coming from outside.",
+      "camera": "Over-Shoulder",
+      "caption": "22: Makayla insists they need to document the creature's frequency.",
       "image": "storyboard-system/frames/s14/s14-board-00022.png",
       "title": "Shot 22"
     },
     {
       "sceneNumber": 23,
       "sceneId": "s14",
-      "camera": "POV Wide",
-      "caption": "23: Makayla realizes the second signal is coming from outside.",
+      "camera": "Medium",
+      "caption": "23: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
       "image": "storyboard-system/frames/s14/s14-board-00023.png",
       "title": "Shot 23"
     },
     {
       "sceneNumber": 24,
       "sceneId": "s14",
-      "camera": "POV Wide",
-      "caption": "24: Makayla realizes the second signal is coming from outside.",
+      "camera": "Medium",
+      "caption": "24: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
       "image": "storyboard-system/frames/s14/s14-board-00024.png",
       "title": "Shot 24"
     },
     {
       "sceneNumber": 25,
       "sceneId": "s14",
-      "camera": "POV Wide",
-      "caption": "25: Makayla realizes the second signal is coming from outside.",
+      "camera": "Medium",
+      "caption": "25: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
       "image": "storyboard-system/frames/s14/s14-board-00025.png",
       "title": "Shot 25"
+    },
+    {
+      "sceneNumber": 26,
+      "sceneId": "s14",
+      "camera": "Medium",
+      "caption": "26: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
+      "image": "storyboard-system/frames/s14/s14-board-00026.png",
+      "title": "Shot 26"
+    },
+    {
+      "sceneNumber": 27,
+      "sceneId": "s14",
+      "camera": "Medium",
+      "caption": "27: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
+      "image": "storyboard-system/frames/s14/s14-board-00027.png",
+      "title": "Shot 27"
+    },
+    {
+      "sceneNumber": 28,
+      "sceneId": "s14",
+      "camera": "Medium",
+      "caption": "28: The oscilloscope's rhythmic line syncs perfectly with the creature's heartbeat.",
+      "image": "storyboard-system/frames/s14/s14-board-00028.png",
+      "title": "Shot 28"
+    },
+    {
+      "sceneNumber": 29,
+      "sceneId": "s14",
+      "camera": "Close Up",
+      "caption": "29: Dallas broadcasts a frequency to seek a response.",
+      "image": "storyboard-system/frames/s14/s14-board-00029.png",
+      "title": "Shot 29"
+    },
+    {
+      "sceneNumber": 30,
+      "sceneId": "s14",
+      "camera": "Close Up",
+      "caption": "30: Dallas broadcasts a frequency to seek a response.",
+      "image": "storyboard-system/frames/s14/s14-board-00030.png",
+      "title": "Shot 30"
+    },
+    {
+      "sceneNumber": 31,
+      "sceneId": "s14",
+      "camera": "Close Up",
+      "caption": "31: Dallas broadcasts a frequency to seek a response.",
+      "image": "storyboard-system/frames/s14/s14-board-00031.png",
+      "title": "Shot 31"
+    },
+    {
+      "sceneNumber": 32,
+      "sceneId": "s14",
+      "camera": "Close Up",
+      "caption": "32: Dallas broadcasts a frequency to seek a response.",
+      "image": "storyboard-system/frames/s14/s14-board-00032.png",
+      "title": "Shot 32"
+    },
+    {
+      "sceneNumber": 33,
+      "sceneId": "s14",
+      "camera": "Close Up",
+      "caption": "33: Dallas broadcasts a frequency to seek a response.",
+      "image": "storyboard-system/frames/s14/s14-board-00033.png",
+      "title": "Shot 33"
+    },
+    {
+      "sceneNumber": 34,
+      "sceneId": "s14",
+      "camera": "Insert",
+      "caption": "34: Makayla powers up a makeshift amplifier with her crystal.",
+      "image": "storyboard-system/frames/s14/s14-board-00034.png",
+      "title": "Shot 34"
+    },
+    {
+      "sceneNumber": 35,
+      "sceneId": "s14",
+      "camera": "Insert",
+      "caption": "35: Makayla powers up a makeshift amplifier with her crystal.",
+      "image": "storyboard-system/frames/s14/s14-board-00035.png",
+      "title": "Shot 35"
+    },
+    {
+      "sceneNumber": 36,
+      "sceneId": "s14",
+      "camera": "Insert",
+      "caption": "36: Makayla powers up a makeshift amplifier with her crystal.",
+      "image": "storyboard-system/frames/s14/s14-board-00036.png",
+      "title": "Shot 36"
+    },
+    {
+      "sceneNumber": 37,
+      "sceneId": "s14",
+      "camera": "Macro",
+      "caption": "37: A distorted secondary signal disrupts the waveform.",
+      "image": "storyboard-system/frames/s14/s14-board-00037.png",
+      "title": "Shot 37"
+    },
+    {
+      "sceneNumber": 38,
+      "sceneId": "s14",
+      "camera": "Macro",
+      "caption": "38: A distorted secondary signal disrupts the waveform.",
+      "image": "storyboard-system/frames/s14/s14-board-00038.png",
+      "title": "Shot 38"
+    },
+    {
+      "sceneNumber": 39,
+      "sceneId": "s14",
+      "camera": "Macro",
+      "caption": "39: A distorted secondary signal disrupts the waveform.",
+      "image": "storyboard-system/frames/s14/s14-board-00039.png",
+      "title": "Shot 39"
+    },
+    {
+      "sceneNumber": 40,
+      "sceneId": "s14",
+      "camera": "POV Wide",
+      "caption": "40: Makayla realizes the second signal is coming from outside.",
+      "image": "storyboard-system/frames/s14/s14-board-00040.png",
+      "title": "Shot 40"
+    },
+    {
+      "sceneNumber": 41,
+      "sceneId": "s14",
+      "camera": "POV Wide",
+      "caption": "41: Makayla realizes the second signal is coming from outside.",
+      "image": "storyboard-system/frames/s14/s14-board-00041.png",
+      "title": "Shot 41"
+    },
+    {
+      "sceneNumber": 42,
+      "sceneId": "s14",
+      "camera": "POV Wide",
+      "caption": "42: Makayla realizes the second signal is coming from outside.",
+      "image": "storyboard-system/frames/s14/s14-board-00042.png",
+      "title": "Shot 42"
+    },
+    {
+      "sceneNumber": 43,
+      "sceneId": "s14",
+      "camera": "POV Wide",
+      "caption": "43: Makayla realizes the second signal is coming from outside.",
+      "image": "storyboard-system/frames/s14/s14-board-00043.png",
+      "title": "Shot 43"
+    },
+    {
+      "sceneNumber": 44,
+      "sceneId": "s14",
+      "camera": "POV Wide",
+      "caption": "44: Makayla realizes the second signal is coming from outside.",
+      "image": "storyboard-system/frames/s14/s14-board-00044.png",
+      "title": "Shot 44"
     }
   ]
 }
