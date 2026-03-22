@@ -8,11 +8,20 @@
       "scenes": [25, 26, 27, 28],
       "type": "visual/prop/character_arc",
       "notes": "Inheritance/passing on moment - Asher now has Dallas' original headphones"
+    },
+    {
+      "id": 2,
+      "added": "2026-03-22",
+      "idea": "Dominic shows Dallas picture of his wife, then shows Makayla and Asher with their mother, reveals 'that was my little sister' and says 'now we're just a family of death'",
+      "character": "Dominic",
+      "scenes": [7],
+      "type": "dialogue/backstory/character_relationship",
+      "notes": "Expands s07 photo moment - reveals family connection & loss. Adds emotional weight to why Dominic raised Makayla and Asher"
     }
   ],
   "metadata": {
     "created": "2026-03-22",
     "updated": "2026-03-22",
-    "total_ideas": 1
+    "total_ideas": 2
   }
 }
