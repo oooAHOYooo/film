@@ -17,11 +17,20 @@
       "scenes": [7],
       "type": "dialogue/backstory/character_relationship",
       "notes": "Expands s07 photo moment - reveals family connection & loss. Adds emotional weight to why Dominic raised Makayla and Asher"
+    },
+    {
+      "id": 3,
+      "added": "2026-03-22",
+      "idea": "Asher suggests they add a tracker to the creature so they can track it and Makayla could find it later",
+      "character": "Asher",
+      "scenes": [10, 11, 12, 13, 14],
+      "type": "dialogue/plot/practical_concern",
+      "notes": "Act II creature sequences - Asher's practical thinking about tracking. Sets up potential future recovery arc. Shows his resourcefulness."
     }
   ],
   "metadata": {
     "created": "2026-03-22",
     "updated": "2026-03-22",
-    "total_ideas": 2
+    "total_ideas": 3
   }
 }
