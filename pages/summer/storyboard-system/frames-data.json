@@ -81,6 +81,176 @@
       "title": "Shot 13"
     }
   ],
+  "s10": [
+    {
+      "sceneNumber": 1,
+      "sceneId": "s10",
+      "camera": "Medium Wide",
+      "caption": "1: Dallas scans the quiet, swaying reeds.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00001.png",
+      "title": "Shot 1"
+    },
+    {
+      "sceneNumber": 2,
+      "sceneId": "s10",
+      "camera": "Wide",
+      "caption": "2: Dallas pushes through the dense reeds.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00002.png",
+      "title": "Shot 2"
+    },
+    {
+      "sceneNumber": 3,
+      "sceneId": "s10",
+      "camera": "Close Up",
+      "caption": "3: Sunset colors refract jagged prisms on Dallas's face.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00003.png",
+      "title": "Shot 3"
+    },
+    {
+      "sceneNumber": 4,
+      "sceneId": "s10",
+      "camera": "POV Wide",
+      "caption": "4: A fading golden glow draws Dallas deeper.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00004.png",
+      "title": "Shot 4"
+    },
+    {
+      "sceneNumber": 5,
+      "sceneId": "s10",
+      "camera": "Medium",
+      "caption": "5: Dallas's eyes adjust to the blinding light and color.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00005.png",
+      "title": "Shot 5"
+    },
+    {
+      "sceneNumber": 6,
+      "sceneId": "s10",
+      "camera": "Wide",
+      "caption": "6: A solitary gnarled tree stands in the marsh.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00006.png",
+      "title": "Shot 6"
+    },
+    {
+      "sceneNumber": 7,
+      "sceneId": "s10",
+      "camera": "Medium Wide",
+      "caption": "7: Dallas cautiously steps toward the tree.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00007.png",
+      "title": "Shot 7"
+    },
+    {
+      "sceneNumber": 8,
+      "sceneId": "s10",
+      "camera": "Medium",
+      "caption": "8: Dallas discovers a small creature hidden in the tree.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00008.png",
+      "title": "Shot 8"
+    },
+    {
+      "sceneNumber": 9,
+      "sceneId": "s10",
+      "camera": "Close Up",
+      "caption": "9: The glowing, fluffy creature rests in the gnarl.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00009.png",
+      "title": "Shot 9"
+    },
+    {
+      "sceneNumber": 10,
+      "sceneId": "s10",
+      "camera": "Extreme Close Up",
+      "caption": "10: Dallas's trembling hand reaches toward the creature.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00010.png",
+      "title": "Shot 10"
+    },
+    {
+      "sceneNumber": 11,
+      "sceneId": "s10",
+      "camera": "Medium Close Up",
+      "caption": "11: The creature flinches at Dallas's touch.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00011.png",
+      "title": "Shot 11"
+    },
+    {
+      "sceneNumber": 12,
+      "sceneId": "s10",
+      "camera": "Close Up",
+      "caption": "12: Dallas's equipment beeps erratically.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00012.png",
+      "title": "Shot 12"
+    },
+    {
+      "sceneNumber": 13,
+      "sceneId": "s10",
+      "camera": "Extreme Wide",
+      "caption": "13: Dark shadows begin to blanket the sky.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00013.png",
+      "title": "Shot 13"
+    },
+    {
+      "sceneNumber": 14,
+      "sceneId": "s10",
+      "camera": "Wide",
+      "caption": "14: Dallas tucks the creature into his jacket and leaves.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00014.png",
+      "title": "Shot 14"
+    },
+    {
+      "sceneNumber": 15,
+      "sceneId": "s10",
+      "camera": "Wide",
+      "caption": "15: Dallas rushes out of the tall grass.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00015.png",
+      "title": "Shot 15"
+    },
+    {
+      "sceneNumber": 16,
+      "sceneId": "s10",
+      "camera": "Medium Wide",
+      "caption": "16: Coyotes howl as the hum returns.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00016.png",
+      "title": "Shot 16"
+    },
+    {
+      "sceneNumber": 17,
+      "sceneId": "s10",
+      "camera": "POV Wide",
+      "caption": "17: Something massive tears through the reeds.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00017.png",
+      "title": "Shot 17"
+    },
+    {
+      "sceneNumber": 18,
+      "sceneId": "s10",
+      "camera": "Medium",
+      "caption": "18: Dallas sprints away from the reeds.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00018.png",
+      "title": "Shot 18"
+    },
+    {
+      "sceneNumber": 19,
+      "sceneId": "s10",
+      "camera": "Wide",
+      "caption": "19: Howie barks frantically at the encroaching grass.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00019.png",
+      "title": "Shot 19"
+    },
+    {
+      "sceneNumber": 20,
+      "sceneId": "s10",
+      "camera": "Medium Wide",
+      "caption": "20: Dallas grabs Howie's leash and runs.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00020.png",
+      "title": "Shot 20"
+    },
+    {
+      "sceneNumber": 21,
+      "sceneId": "s10",
+      "camera": "Extreme Wide",
+      "caption": "21: Dallas hurries back through his neighborhood.",
+      "image": "storyboard-system/frames/s10/s09-s10-board-00021.png",
+      "title": "Shot 21"
+    }
+  ],
   "s14": [
     {
       "sceneNumber": 1,
