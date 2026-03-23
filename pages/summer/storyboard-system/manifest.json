@@ -7,6 +7,20 @@
     "actTitle": "Arrival & Discovery"
   },
   {
+    "id": "s09-sl",
+    "file": "S09 - SL.md",
+    "title": "The Injured One",
+    "act": 1,
+    "actTitle": "Arrival & Discovery"
+  },
+  {
+    "id": "s10-sl",
+    "file": "S10 - SL.md",
+    "title": "The Chase",
+    "act": 1,
+    "actTitle": "Arrival & Discovery"
+  },
+  {
     "id": "s14-sl",
     "file": "S14 - SL.md",
     "title": "The Connection",
