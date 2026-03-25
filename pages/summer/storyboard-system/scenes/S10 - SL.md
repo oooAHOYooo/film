@@ -159,3 +159,38 @@
 ### Props & Equipment
 - **Dog Leash**: Tied to the tree, held by Dallas.
 - **Audio Equipment**: A handheld device worn by Dallas that visibly beeps.
+
+***
+
+## Spatial Checklist: The Chase (Shots 15-22)
+**Rule of Thumb:** Threat is locked to **Screen-Left**.
+
+### 1. BEFORE HE SEES THE CREATURE (Unease phase)
+**Applies to: Shot 15 (Emerging from the Grass)**
+- [ ] Dallas is framed **screen-right**.
+- [ ] He glances back **screen-left** into the negative space of the tall grass.
+- [ ] *Bottom of board:* "Threat is screen-left"
+
+### 2. THE MOMENT HE REALIZES HE’S NOT ALONE
+**Applies to: Shot 16 (The Howl Returns)**
+- [ ] Dallas shifts closer to center but stays **screen-right** relative to the frame.
+- [ ] He remains oriented looking **screen-left** as the hum returns and coyotes howl.
+- [ ] *Bottom of board:* "Threat is screen-left"
+
+### 3. FIRST PHYSICAL SIGN OF THE CREATURE (Impact moment)
+**Applies to: Shot 17 (The Crushing Sound)**
+- [ ] *Since this is a POV Wide:* The camera (Dallas's eyes) looks back. The reeds should crash violently on **screen-left** or dead center.
+- [ ] *Bottom of board:* "Threat is screen-left"
+
+### 4. THE TURN / CROUCH / SCRAMBLE (Chaos allowed here)
+**Applies to: Shots 18, 19, & 20 (The Sprint & Grabbing the Leash)**
+- [ ] **Shot 18:** Dallas whips around (from looking left to facing right) and begins his desperate sprint toward **screen-right**.
+- [ ] **Shot 19:** Howie barks at **screen-left** (the encroaching grass).
+- [ ] **Shot 20:** The camera can whip-pan or shake wildly as Dallas grabs the leash, but the chaotic motion trend pulls toward the right. 
+- [ ] *Bottom of board:* "Threat is screen-left"
+
+### 5. THE RUN (Chase phase)
+**Applies to: Shots 21 & 22 (Branford Montage & Driveway)**
+- [ ] **Shot 21:** Dallas runs consistently **screen-right** through the neighborhood. Background motion reinforces escaping away from the left.
+- [ ] **Shot 22:** Dallas stops at the driveway, catching his breath neutrally (facing camera) or still oriented away from the left.
+- [ ] *Bottom of board:* "Threat is screen-left (Escaping screen-right)"

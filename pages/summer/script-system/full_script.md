@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/23/2026, 12:26:58 PM*
+*Compiled on 3/25/2026, 12:19:42 PM*
 
 ---
 
@@ -2739,6 +2739,8 @@ Makayla and Asher run towards the window.
 
 Makayla's eyes widen as she see the glow from the creature in the tall grass. 
 
+Makayla runs to the table and grabs the tracker. On the display it shows a tiny beep. 
+
 Makayla abruptly turns, grabs a flashlight and runs out the front door. 
 
 EXT. DALLAS'S BACKYARD - NIGHT 
@@ -2780,27 +2782,37 @@ Asher and Dallas look at each other.
 
 ASHER
 (pointing into the void)
-They're coming.
+They're coming. 
 
 <!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 
 (action)
-From the edge of their property, through 
-Pairs of red eyes blink into existence. Two. Then four. Then a dozen. They drift back and forth. aren't walking—they are drifting, heavy and crushing, actively erasing the sound of the wind as they move closer to the yard. 
+Asher begins to pace nervously back and forth. Mr. Mike in the inside begins to call for him. He looks at Dallas, then outside, and puts the headphones on and goes inside with Mr. Mike. 
 
-The house shudders violently. The rotting black veins are creeping under the front door. The red glowing eyes bleed through the window panes.
+<!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
+
+(action)
+From the edge of their property, pairs of red eyes blink into existence. Two. Then four. Then a dozen. They drift back and forth, actively erasing the sound of the wind as they move closer to the yard. 
+
+The house shudders violently. The rotting black veins creep on the grass towards the front door. The red glowing eyes bleed through the window panes.
 
 EXT. MARSH - CONTINOUS 
 Makayla runs towards the golden light. Hums around her grow deafening. Dominic chases after her. 
 
 EXT. DALLAS HOUSE - CONTINOUS
-It’s a frantic, desperate load-out. Dallas and Asher heave the massive speakers onto their shoulders, wrapping heavy nylon straps around their chests to distribute the weight. 
+It’s a frantic, desperate load-out. Dallas heaves a massive speaker onto his shoulders, wrapping heavy nylon straps around his chest to distribute the weight. 
 
 The front door bows inward, the wood groaning and cracking under immense, unseen pressure. Black rot explodes across the grass towards the door. 
 
-They burst out the back door, burdened by the heavy equipment, just as the living room windows shatter inward behind them. 
+Dallas signals for Asher. Asher flips a screen and the black forces repell. Dallas nods.  
 
-The massive, formless shadows pour into the house—but the crew is already sprinting toward the edge of the tall grass. They plunge into the suffocating darkness of the marsh.
+
+
+
+The massive, formless shadows pour into the house—
+
+
+but Dallas is already sprinting toward the edge of the tall grass. He plunges into the suffocating darkness of the marsh.
 
 ---
 
@@ -2816,25 +2828,23 @@ The massive, formless shadows pour into the house—but the crew is already spri
 # Scene 23: The Trench Run
 
 EXT. TALL GRASS - CONTINUOUS
-Dallas and Asher enter the tall grass carrying all of the equipment. 
+Dallas enters the tall grass carrying the speaker.  The nylon straps bite into Dallas' shoulders - straining the fabric. 
 
-The nylon straps bite into Dallas' shoulders - straining the fabric. 
-
-Dallas stops for a moment in pain, almost dropping the speaker on Asher. He looks down at his hand - the black veins pulse under his skin, Dallas in pain, drops the speaker into into the mud with a wet heavy thunk.
+Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker, and then looks down at his hand - the black veins pulse under his skin, Dallas in pain, drops the speaker into into the mud with a wet heavy thunk.
 
 Dallas looks at his arm it begins to look transulent. 
 
 In the distance Makayla begins to cry. 
 
-Suddenly, Dominic appears and runs towards Dallas and Asher.
+Suddenly, Dominic appears and runs towards Dallas.
 
 DOMINIC
-I can't find Makayla.
+Dallas have you seen her? I can't find her? What's that a tracker? Does it show where Makayla is? 
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-Dominic begins to pace around and hits his inhaler. 
+Dominic begins to pace around and hits his inhaler.  A giant roar is heard off in the distance.
 
 DOMINIC
 MAKAYLA!  
@@ -2842,7 +2852,7 @@ MAKAYLA!
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-Dallas and Asher continue to make their way with the spaeker. Dallas drops to the ground.  
+Dallas and Dominic continue to make their way with the spaeker. Dallas drops to the ground.  
 
 DOMINIC
 Dallas you okay?
@@ -2850,15 +2860,15 @@ Dallas you okay?
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-Dallas grips his arm tightly and stoticly marches onward.  Dominic takes a big hit of his inhaler. 
+Dallas grips his arm tightly and stoticly marches onward.  Dominic takes another big hit of his inhaler. 
 
 As they cross into the threshold, they plunged into  sensory deprivation. 
 
 The tall grass towers over their heads, ten feet high and thick like jungle vines. The wind is howling, whipping the stalks in violent, unpredictable rhythms. 
 
-It is pitch black. The only light is the small, blinking green LED on Makayla’s chest rig. Dallas, Dominic and Asher follow it.
+It is pitch black. The only light is the small, blinking green LED on Makayla’s chest rig. Dallas and Dominic follow it.
 
-Dallas and Asher catch up with Dominic and Makayla who are out of breath in the pitch black. 
+Dallas catches up with Dominic and Makayla who are out of breath in the pitch black. 
 
 DOMINIC
 Makayla, lets go back.
@@ -2866,9 +2876,12 @@ Makayla, lets go back.
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-Makayla moves forward.
+Makayla moves forward. 
 
-Everybody moves quickly in single file. Makayla is leading, sweeping the handheld speaker back and forth like a flashlight. Behind her is Asher, hunched low, clutching the backpack with the golden creature. Dallas and Dominic take up the rear, breathing heavily, their boots sinking deep into the marsh mud under the crushing eighty-pound weight of the massive speakers. 
+MAKAYLA
+I saw the creature but it vanished. Dallas, those things are after it. 
+
+Everybody moves quickly in single file. Makayla is leading, sweeping the handheld speaker back and forth like a flashlight. Behind her is Dominic, hunched low, clutching the backpack with the golden creature. Dallas takes up the rear, breathing heavily, his boots sinking deep into the marsh mud under the crushing eighty-pound weight of the massive speakers. 
 
 MAKAYLA
 Straight ahead. 
@@ -2876,9 +2889,9 @@ Straight ahead.
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-The air is thick, humid. Heavy. The "veins" of black rot are everywhere on the ground, hissing as the rain hits them. 
+The air is thick, humid. Heavy. The "veins" of black rot are everywhere on the ground, hissing as the air hits them. 
 
-ASHER
+MAKAYLA
 They're above us. 
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
@@ -2906,6 +2919,15 @@ It's patrolling.
 
 (action)
 The shadow creeps closer. Forty feet. Thirty feet. The black rot spreads toward Dominic's boot. 
+
+INT. DALLAS'S HOUSE - NIGHT (CONTINOUS CUT TO)
+Asher and Mr. Mike pace back and forth. Asher checks the dials on the machine - and nervously looks out the window. 
+
+MR. MIKE
+(to himself)
+Come on, come on, come on...
+
+EXT. MARSH - CONTINUOUS
 
 It stops. Its massive red eyes scan the area. It senses something. The silence stretches. Dallas tightens his grip on the nylon strap holding his speaker. 
 
