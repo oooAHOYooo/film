@@ -64,7 +64,10 @@
           const manifestResponse = await fetch('manifest.json');
           const scenes = await manifestResponse.json();
 
-          const sceneIndex = scenes.findIndex(s => s.id === sceneId);
+          const sceneIndex = scenes.findIndex(s => 
+            s.id === sceneId || 
+            s.id.toLowerCase().replace(/\s*-\s*/, '-').replace('.md', '') === sceneId.toLowerCase()
+          );
           const scene = scenes[sceneIndex];
 
           if (!scene) {

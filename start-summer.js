@@ -44,7 +44,8 @@ function openBrowser(url) {
 }
 
 function serveStatic(req, res) {
-  let filePath = path.join(ROOT, req.url === '/' ? '/index.html' : req.url);
+  const urlPath = req.url.split('?')[0];
+  let filePath = path.join(ROOT, urlPath === '/' ? '/index.html' : urlPath);
   const parsed = path.parse(filePath);
   if (!parsed.ext) {
     filePath = path.join(filePath, 'index.html');

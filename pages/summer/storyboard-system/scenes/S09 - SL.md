@@ -1,90 +1,90 @@
-## Scene 9: The Injured One
+## Scene 09: The Injured One
 - Setting: EXT. DEEP INSIDE THE TALL MARSH - DUSK
 - Beat: Dallas discovers a glowing, injured creature hidden within a gnarled tree in the marsh and rescues it as a storm approaches.
 
-### Shot 1 - MEDIUM WIDE - Scanning the Reeds
+### Shot 09.01 - MEDIUM WIDE
 - Size: Medium Wide
-- Camera: Handheld, slow pan
-- Action: Dallas stands slowly, scanning the swaying reeds around him. The only sound is his disappointed breathing.
-- Caption: Dallas scans the quiet, swaying reeds.
+- Camera: Position: D - Screen Right
+- Action: Dallas screen-right, empty space left. He turns his head slowly toward the "threat" area.
+- Caption: Dallas turns his head slowly toward the "threat" area.
 
-### Shot 2 - WIDE - Breaking Through
+### Shot 09.02 - WIDE
 - Size: Wide
-- Camera: Tracking forward
-- Action: Dallas pushes through a dense curtain of reeds. Dust motes dance around him.
-- Caption: Dallas pushes through the dense reeds.
+- Camera: Position: Center
+- Action: Dallas enters frame from foreground and walks away from camera into the reeds.
+- Caption: Dallas walks away from camera into the reeds.
 
-### Shot 3 - CLOSE UP - Refracting Sunset
-- Size: Close Up
-- Camera: Static
-- Action: The setting sun refracts through the dust, casting jagged prisms of color onto Dallas's face.
-- Caption: Sunset colors refract jagged prisms on Dallas's face.
+### Shot 09.03 - CLOSEUP
+- Size: Closeup
+- Camera: Position: Center
+- Action: Extreme CU on Dallas's eyes. He shifts slightly.
+- Caption: Extreme CU on Dallas's eyes as he shifts.
 
-### Shot 4 - POV WIDE - Fading Glow
-- Size: POV Wide
-- Camera: Slow push-in
-- Action: From Dallas's perspective, a fading glow lies deeper within the marsh. Everything spins with light.
-- Caption: A fading golden glow draws Dallas deeper.
+### Shot 09.04 - POV WIDE
+- Size: POV WIDE
+- Camera: Position: Center. Locked-off POV.
+- Action: Locked-off POV from Dallas's perspective. The "glow" is deep in the grass.
+- Caption: The "glow" is deep in the grass.
 
-### Shot 5 - MEDIUM - Adjusting Eyes
+### Shot 09.05 - MEDIUM
 - Size: Medium
-- Camera: Racking focus
-- Action: The world blurs and slowly comes back into focus as Dallas's eyes adjust to the new brightness.
-- Caption: Dallas's eyes adjust to the blinding light and color.
+- Camera: Static
+- Action: Dallas reacts to the light.
+- Caption: Dallas reacts to the mysterious light.
 
-### Shot 6 - WIDE - The Gnarled Tree
+### Shot 09.06 - WIDE
 - Size: Wide
-- Camera: Static
-- Action: In the distance, a large, gnarled tree stands entirely alone amid the towering golden reeds.
-- Caption: A solitary gnarled tree stands in the marsh.
+- Camera: Pure locked-off wide
+- Action: Pure locked-off wide. Dallas is a small figure near the base of the tree.
+- Caption: Dallas stands near the base of the tree.
 
-### Shot 7 - OVER THE SHOULDER - Approaching the Tree
-- Size: Medium Wide
-- Camera: Tracking forward, over the shoulder
-- Action: Dallas slowly approaches the base of the gnarled tree.
-- Caption: Dallas cautiously steps toward the tree.
+### Shot 09.07 - MEDIUM OTS
+- Size: Medium OTS
+- Camera: Over the shoulder
+- Action: Dallas reaches out to touch something hidden.
+- Caption: Dallas reaches out to touch something hidden.
 
-### Shot 8 - PUSH-IN MEDIUM - The Discovery
+### Shot 09.08 - MEDIUM
 - Size: Medium
-- Camera: Slow push-in
-- Action: Dallas peers into the gnarl of the tree and notices a curled-up, small orb-like creature tucked inside.
-- Caption: Dallas discovers a small creature hidden in the tree.
-
-### Shot 9 - CLOSE UP - The Creature
-- Size: Close Up
 - Camera: Static
-- Action: The creature is revealed: dandelion-like white fur, shivering translucent ears, closed large eyes, and a soft bioluminescent glow. It is clearly injured.
-- Caption: The glowing, fluffy creature rests in the gnarl.
+- Action: Static shot of Dallas pulling his hand back, face showing dawning realization.
+- Caption: Dallas pulls his hand back in realization.
 
-### Shot 10 - EXTREME CLOSE UP - Trembling Hand
-- Size: Extreme Close Up
-- Camera: Handheld
-- Action: Dallas slowly reaches out. His hand trembles as he reaches for the creature.
-- Caption: Dallas's trembling hand reaches toward the creature.
-
-### Shot 11 - MEDIUM CLOSE UP - The Touch
-- Size: Medium Close Up
+### Shot 09.09 - CLOSEUP
+- Size: Closeup
 - Camera: Static
-- Action: Dallas gently touches the creature's back. The creature flinches slightly but stays put.
-- Caption: The creature flinches at Dallas's touch.
+- Action: Tight on Dallas's hands or the specific part of the grass he is investigating.
+- Caption: Dallas's hands investigate the grass.
 
-### Shot 12 - CLOSE UP - Equipment Alert
-- Size: Close Up
+### Shot 09.10 - CLOSEUP
+- Size: Closeup
 - Camera: Static
-- Action: The audio equipment at Dallas's side begins to violently beep louder and louder.
-- Caption: Dallas's equipment beeps erratically.
+- Action: Dallas's eyes go wide. The "hum" begins (sound design beat).
+- Caption: Dallas's eyes go wide as the "hum" begins.
 
-### Shot 13 - EXTREME WIDE - Gathering Shadows
+### Shot 09.11 - MEDIUM
+- Size: Medium
+- Camera: Tracking
+- Action: Dallas physically recoils away from the grass, moving toward the camera.
+- Caption: Dallas recoils away from the grass.
+
+### Shot 09.12 - INSERT
+- Size: Insert
+- Camera: Static
+- Action: Static shot of the reader/device in his hand as the dial spikes or light flashes.
+- Caption: The device dial spikes and flashes.
+
+### Shot 09.13 - EXTREME WIDE
 - Size: Extreme Wide
-- Camera: Low angle, tilting up
-- Action: A violent gust of wind returns. Ominous shadows in the distance rise to fill the sky, hovering.
-- Caption: Dark shadows begin to blanket the sky.
+- Camera: Low angle from the ground
+- Action: Low angle from the ground. Dallas looks tiny against the darkening Branford sky.
+- Caption: Dallas looks tiny against the darkening stormy sky.
 
-### Shot 14 - WIDE - The Rescue
-- Size: Wide
-- Camera: Tracking backward
-- Action: In a daze, Dallas gently grabs the creature, tucks it securely inside his jacket, and quickly walks away without looking back.
-- Caption: Dallas tucks the creature into his jacket and leaves.
+### Shot 09.14 - MEDIUM
+- Size: Medium
+- Camera: Handheld
+- Action: Dallas grabs his gear, whips around, and exits frame right immediately.
+- Caption: Dallas grabs his gear and exits frame right.
 
 ***
 
