@@ -459,23 +459,46 @@
 
         // ===== Waveform Generators =====
         function generateSineWithHarmonics(freq, amplitude, samples = 400) {
-            // Fundamental + 4 harmonics (like real creature resonance)
+            // Fundamental + 4 harmonics with realistic jitter, noise, and instability
             const wave = [];
+
+            // Slow AM (amplitude modulation) - creature breathing/strengthening
+            const breathCycle = Math.sin(state.time * 0.5) * 0.3 + 0.7; // 0.7 - 1.0
+
+            // Slow FM (frequency modulation) - pitch drift
+            const freqDrift = Math.sin(state.time * 0.3) * 0.03; // ±3%
+
+            // Harmonic instability - each harmonic's amplitude varies
+            const harmAmp1 = 1.0 + Math.sin(state.time * 0.7) * 0.15;
+            const harmAmp2 = 0.8 + Math.sin(state.time * 0.5 + 1.2) * 0.2;
+            const harmAmp3 = 0.6 + Math.sin(state.time * 0.4 + 2.4) * 0.15;
+            const harmAmp4 = 0.4 + Math.sin(state.time * 0.3 + 3.6) * 0.15;
+
             for (let i = 0; i < samples; i++) {
                 let value = 0;
                 const phase = (i / samples) * Math.PI * 2;
 
-                // Fundamental (100% amplitude)
-                value += Math.sin(phase * (freq / 115.3)) * amplitude;
+                // Apply frequency drift
+                const driftedFreq = freq * (1 + freqDrift);
 
-                // 2nd harmonic (80% amplitude)
-                value += Math.sin(phase * (freq / 115.3) * 2) * amplitude * 0.8;
+                // Fundamental (with breathing)
+                value += Math.sin(phase * (driftedFreq / 115.3)) * amplitude * breathCycle * harmAmp1;
 
-                // 3rd harmonic (60% amplitude)
-                value += Math.sin(phase * (freq / 115.3) * 3) * amplitude * 0.6;
+                // 2nd harmonic (variable amplitude)
+                value += Math.sin(phase * (driftedFreq / 115.3) * 2) * amplitude * breathCycle * harmAmp2 * 0.8;
 
-                // 4th harmonic (40% amplitude)
-                value += Math.sin(phase * (freq / 115.3) * 4) * amplitude * 0.4;
+                // 3rd harmonic
+                value += Math.sin(phase * (driftedFreq / 115.3) * 3) * amplitude * breathCycle * harmAmp3 * 0.6;
+
+                // 4th harmonic
+                value += Math.sin(phase * (driftedFreq / 115.3) * 4) * amplitude * breathCycle * harmAmp4 * 0.4;
+
+                // Add white noise (1%)
+                value += (Math.random() - 0.5) * amplitude * 0.01;
+
+                // Hard clipping if signal too strong
+                if (value > amplitude) value = amplitude * 0.98;
+                if (value < -amplitude) value = -amplitude * 0.98;
 
                 wave.push(value);
             }
@@ -493,8 +516,13 @@
         }
 
         function generateLadder(amplitude, samples = 400) {
-            // Quantized harmonic series visualization
+            // Quantized harmonic series with instability
             const wave = [];
+
+            // Breathing + drift
+            const breathCycle = Math.sin(state.time * 0.4) * 0.35 + 0.65;
+            const lockStrength = Math.max(0.5, Math.sin(state.time * 0.6)); // Wanders in/out of lock
+
             for (let i = 0; i < samples; i++) {
                 let value = 0;
                 const phase = (i / samples) * Math.PI * 2;
@@ -502,28 +530,64 @@
                 // Quantized harmonic ladder (discrete steps visible)
                 for (let h = 1; h <= 8; h++) {
                     const harmStrength = Math.max(0, 1 - (h / 8) * 0.5);
-                    value += Math.sin(phase * h) * harmStrength * amplitude * 0.15;
+                    // Variable harmonic strength simulates lock/unlock
+                    const variableStrength = harmStrength * (0.7 + Math.sin(state.time * 0.5 + h) * 0.3);
+                    value += Math.sin(phase * h) * variableStrength * amplitude * breathCycle * 0.15;
                 }
+
+                // Noise floor
+                value += (Math.random() - 0.5) * amplitude * 0.008;
+
+                // Occasional spikes (noise bursts)
+                if (Math.sin(state.time * 2.3 + i * 0.01) > 0.95) {
+                    value += (Math.random() - 0.5) * amplitude * 0.1;
+                }
+
                 wave.push(value);
             }
             return wave;
         }
 
         function generateSecondSignal(freq, amplitude, samples = 400) {
-            // Creature fundamental + interference/beating pattern
+            // Creature fundamental + Eater interference (jagged, arrhythmic)
             const wave = [];
+
+            // Primary creature breathing
+            const breathCycle = Math.sin(state.time * 0.5) * 0.3 + 0.7;
+            const freqDrift = Math.sin(state.time * 0.3) * 0.03;
+
             for (let i = 0; i < samples; i++) {
                 const phase = (i / samples) * Math.PI * 2;
+                const driftedFreq = freq * (1 + freqDrift);
 
-                // Primary creature signal with harmonics
-                let primary = Math.sin(phase * (freq / 115.3)) * amplitude * 0.7;
-                primary += Math.sin(phase * (freq / 115.3) * 2) * amplitude * 0.5;
+                // Primary creature signal (clean-ish)
+                let primary = Math.sin(phase * (driftedFreq / 115.3)) * amplitude * breathCycle * 0.7;
+                primary += Math.sin(phase * (driftedFreq / 115.3) * 2) * amplitude * breathCycle * 0.5;
 
-                // Secondary signal (slightly detuned, creating beat/interference)
-                let secondary = Math.sin(phase * (freq / 115.3) * 0.95 + 0.3) * amplitude * 0.4;
-                secondary += (Math.random() - 0.5) * amplitude * 0.15;
+                // Secondary Eater signal - jagged, arrhythmic, unpredictable
+                let secondary = 0;
 
-                wave.push(primary + secondary);
+                // Detuned interference (beating pattern)
+                secondary += Math.sin(phase * (driftedFreq / 115.3) * 0.95 + state.time * 2) * amplitude * 0.35;
+
+                // High-frequency spikes (harsh overtones)
+                secondary += Math.sin(phase * (driftedFreq / 115.3) * 5.3) * amplitude * 0.25;
+
+                // Chaotic noise bursts
+                const noiseBurst = Math.sin(state.time * 3.7 + i) * Math.cos(state.time * 1.3) * 0.2;
+                secondary += (Math.random() - 0.5) * amplitude * (0.2 + noiseBurst);
+
+                // Occasionally spike (Eater aggression)
+                const aggression = Math.max(0, Math.sin(state.time * 1.2) - 0.5) * 2;
+                secondary += Math.sin(phase * (driftedFreq / 115.3) * 3.7) * amplitude * aggression * 0.3;
+
+                let value = primary + secondary;
+
+                // Hard clipping
+                if (value > amplitude) value = amplitude * 0.95;
+                if (value < -amplitude) value = -amplitude * 0.95;
+
+                wave.push(value);
             }
             return wave;
         }
@@ -553,6 +617,9 @@
             const amp = state.amplitude;
             const samples = 400;
 
+            // Trigger jitter (realistic scope behavior)
+            const triggerJitter = Math.sin(state.time * 5.2) * 15; // ±15px drift
+
             // Draw each harmonic separately at different opacities
             const harmonics = [
                 { mult: 1, opacity: 1.0, thickness: 2.5 },      // Fundamental (thickest)
@@ -572,10 +639,10 @@
                 ctxOsc.beginPath();
 
                 for (let x = 0; x < width; x++) {
-                    const phase = ((x + state.scrollOffset) * pointsPerPixel / samples) * Math.PI * 2;
+                    const phase = ((x + state.scrollOffset + triggerJitter * 0.5) * pointsPerPixel / samples) * Math.PI * 2;
                     // Generate this harmonic's wave
                     const value = Math.sin(phase * harmonic.mult * (state.frequency / 115.3)) * amp * (1 - (harmonic.mult - 1) * 0.2);
-                    const y = centerY - value * (height / 2) * 0.8;
+                    const y = centerY - value * (height / 2) * 0.8 + triggerJitter * 0.1;
 
                     if (x === 0) {
                         ctxOsc.moveTo(x, y);
@@ -626,9 +693,30 @@
             ctxOsc.lineTo(width, centerY);
             ctxOsc.stroke();
 
+            // Trigger jitter (realistic scope behavior)
+            const triggerJitter = Math.sin(state.time * 5.2) * 20; // ±20px drift
+            const jitterOffset = triggerJitter;
+
+            // Signal dropout (creature pauses)
+            const dropoutChance = Math.max(0, Math.sin(state.time * 0.8) - 0.85); // 15% of time
+            const isDropout = dropoutChance > 0;
+
             // Waveform with harmonics (only for sine and second-signal)
             if (state.waveform === 'sine' || state.waveform === 'second-signal') {
-                drawHarmonics();
+                if (!isDropout) {
+                    drawHarmonics();
+                } else {
+                    // Signal dropout - just draw noise floor
+                    ctxOsc.strokeStyle = `rgba(255, 255, 255, 0.1)`;
+                    ctxOsc.lineWidth = 0.5;
+                    ctxOsc.beginPath();
+                    for (let x = 0; x < width; x++) {
+                        const y = centerY + (Math.random() - 0.5) * 30;
+                        if (x === 0) ctxOsc.moveTo(x, y);
+                        else ctxOsc.lineTo(x, y);
+                    }
+                    ctxOsc.stroke();
+                }
             } else {
                 // For ladder and flatline, use the complex waveform directly
                 const wave = getWaveform();
@@ -665,6 +753,27 @@
             ctxOsc.fillStyle = `rgba(255, 255, 255, 0.5)`;
             ctxOsc.textAlign = 'left';
             ctxOsc.fillText('CH1', 16, 28);
+
+            // Signal lock indicator
+            const lockStrength = Math.max(0.4, Math.sin(state.time * 0.6));
+            const isLocked = lockStrength > 0.6;
+
+            if (isDropout) {
+                ctxOsc.fillStyle = `rgba(248, 81, 73, 0.8)`;
+                ctxOsc.font = 'bold 12px Inter';
+                ctxOsc.textAlign = 'center';
+                ctxOsc.fillText('NO SIGNAL', width / 2, height / 2);
+            } else if (!isLocked) {
+                ctxOsc.fillStyle = `rgba(255, 193, 7, 0.6)`;
+                ctxOsc.font = '9px Inter';
+                ctxOsc.textAlign = 'right';
+                ctxOsc.fillText('SEARCHING...', width - 16, 48);
+            } else {
+                ctxOsc.fillStyle = `rgba(76, 175, 80, 0.6)`;
+                ctxOsc.font = '9px Inter';
+                ctxOsc.textAlign = 'right';
+                ctxOsc.fillText('LOCKED', width - 16, 48);
+            }
 
             // Harmonic legend (bottom-left, for sine/second-signal modes)
             if (state.waveform === 'sine' || state.waveform === 'second-signal') {
@@ -1001,6 +1110,7 @@
                     if (now - lastFrameTime >= frameInterval) {
                         drawExportFrame(exportCtx, res.width, res.height);
                         state.scrollOffset += 2;
+                        state.time += 0.033; // ~30 FPS
                         lastFrameTime = now;
 
                         const elapsed = Math.floor((now - startTime) / 1000);
@@ -1047,9 +1157,17 @@
             ctx.lineTo(width, centerY);
             ctx.stroke();
 
+            // Trigger jitter and dropout for export
+            const triggerJitter = Math.sin(state.time * 5.2) * 20;
+            const dropoutChance = Math.max(0, Math.sin(state.time * 0.8) - 0.85);
+            const isDropout = dropoutChance > 0;
+            const lockStrength = Math.max(0.4, Math.sin(state.time * 0.6));
+            const isLocked = lockStrength > 0.6;
+
             // Waveform with harmonics (for sine/second-signal)
             if (state.waveform === 'sine' || state.waveform === 'second-signal') {
-                const harmonics = [
+                if (!isDropout) {
+                    const harmonics = [
                     { mult: 1, opacity: 1.0, thickness: Math.max(2, width / 400) },
                     { mult: 2, opacity: 0.7, thickness: Math.max(1.5, width / 500) },
                     { mult: 3, opacity: 0.5, thickness: Math.max(1, width / 600) },
@@ -1082,29 +1200,72 @@
                 }
 
                 ctx.globalAlpha = 1.0;
+                } else {
+                    // Signal dropout - noise floor
+                    ctx.strokeStyle = `rgba(255, 255, 255, 0.1)`;
+                    ctx.lineWidth = 0.5;
+                    ctx.beginPath();
+                    for (let x = 0; x < width; x++) {
+                        const y = centerY + (Math.random() - 0.5) * 50;
+                        if (x === 0) ctx.moveTo(x, y);
+                        else ctx.lineTo(x, y);
+                    }
+                    ctx.stroke();
+                }
             } else {
                 // For ladder and flatline
-                const wave = getWaveform();
-                const pointsPerPixel = wave.length / width;
+                if (!isDropout) {
+                    const wave = getWaveform();
+                    const pointsPerPixel = wave.length / width;
 
-                ctx.strokeStyle = col.line;
-                ctx.lineWidth = Math.max(2, width / 400);
-                ctx.lineCap = 'round';
-                ctx.lineJoin = 'round';
-                ctx.beginPath();
+                    ctx.strokeStyle = col.line;
+                    ctx.lineWidth = Math.max(2, width / 400);
+                    ctx.lineCap = 'round';
+                    ctx.lineJoin = 'round';
+                    ctx.beginPath();
 
-                for (let x = 0; x < width; x++) {
-                    const waveIndex = Math.floor((x + state.scrollOffset) * pointsPerPixel) % wave.length;
-                    const value = wave[waveIndex];
-                    const y = centerY - value * (height / 2) * 0.8;
+                    for (let x = 0; x < width; x++) {
+                        const waveIndex = Math.floor((x + state.scrollOffset) * pointsPerPixel) % wave.length;
+                        const value = wave[waveIndex];
+                        const y = centerY - value * (height / 2) * 0.8;
 
-                    if (x === 0) {
-                        ctx.moveTo(x, y);
-                    } else {
-                        ctx.lineTo(x, y);
+                        if (x === 0) {
+                            ctx.moveTo(x, y);
+                        } else {
+                            ctx.lineTo(x, y);
+                        }
                     }
+                    ctx.stroke();
+                } else {
+                    // Dropout for ladder/flatline
+                    ctx.strokeStyle = `rgba(255, 255, 255, 0.1)`;
+                    ctx.lineWidth = 0.5;
+                    ctx.beginPath();
+                    for (let x = 0; x < width; x++) {
+                        const y = centerY + (Math.random() - 0.5) * 50;
+                        if (x === 0) ctx.moveTo(x, y);
+                        else ctx.lineTo(x, y);
+                    }
+                    ctx.stroke();
                 }
-                ctx.stroke();
+            }
+
+            // Signal dropout indicator
+            if (isDropout) {
+                ctx.fillStyle = `rgba(248, 81, 73, 0.8)`;
+                ctx.font = `bold ${Math.floor(width / 40)}px Inter`;
+                ctx.textAlign = 'center';
+                ctx.fillText('NO SIGNAL', width / 2, height / 2);
+            } else if (!isLocked) {
+                ctx.fillStyle = `rgba(255, 193, 7, 0.6)`;
+                ctx.font = `${Math.floor(width / 120)}px Inter`;
+                ctx.textAlign = 'right';
+                ctx.fillText('SEARCHING...', width - Math.floor(width / 40), Math.floor(height / 12));
+            } else {
+                ctx.fillStyle = `rgba(76, 175, 80, 0.6)`;
+                ctx.font = `${Math.floor(width / 120)}px Inter`;
+                ctx.textAlign = 'right';
+                ctx.fillText('LOCKED', width - Math.floor(width / 40), Math.floor(height / 12));
             }
 
             // Frequency display
