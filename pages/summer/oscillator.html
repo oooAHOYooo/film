@@ -387,6 +387,34 @@
 
             <button class="utility-btn" id="greenscreen-toggle">🟢 Greenscreen</button>
             <button class="utility-btn" id="fullscreen-btn">⛶ Fullscreen</button>
+
+            <div class="spacer"></div>
+
+            <div class="control-group">
+                <label>Export:</label>
+                <input type="number" id="export-duration" min="5" max="120" value="10" style="width: 50px; padding: 4px; border: 1px solid rgba(240, 246, 252, 0.1); border-radius: 4px; background: rgba(22, 27, 34, 0.8); color: #c9d1d9; font-size: 0.85rem;">
+                <span style="font-size: 0.85rem; color: #8b949e;">sec</span>
+            </div>
+
+            <div class="control-group">
+                <select id="export-resolution" style="padding: 6px 8px; border: 1px solid rgba(240, 246, 252, 0.1); border-radius: 4px; background: rgba(22, 27, 34, 0.8); color: #c9d1d9; font-size: 0.85rem; font-family: inherit;">
+                    <option value="720p">720p</option>
+                    <option value="1080p">1080p</option>
+                    <option value="2k">2K</option>
+                    <option value="4k">4K</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <select id="export-format" style="padding: 6px 8px; border: 1px solid rgba(240, 246, 252, 0.1); border-radius: 4px; background: rgba(22, 27, 34, 0.8); color: #c9d1d9; font-size: 0.85rem; font-family: inherit;">
+                    <option value="mp4">MP4</option>
+                    <option value="webm">WebM</option>
+                </select>
+            </div>
+
+            <button class="utility-btn" id="export-btn" style="background: rgba(88, 166, 255, 0.15); border-color: rgba(88, 166, 255, 0.3);">💾 Export Video</button>
+
+            <div id="export-status" style="display: none; font-size: 0.85rem; color: #58a6ff; margin-left: 12px;"></div>
         </div>
     </div>
 
@@ -865,6 +893,233 @@
             ambientRenderer.render(ambientScene, ambientCamera);
         }
 
+        // ===== Video Export =====
+        async function exportVideo() {
+            const duration = parseInt(document.getElementById('export-duration').value);
+            const resolution = document.getElementById('export-resolution').value;
+            const format = document.getElementById('export-format').value;
+            const statusEl = document.getElementById('export-status');
+
+            const resMap = {
+                '720p': { width: 1280, height: 720 },
+                '1080p': { width: 1920, height: 1080 },
+                '2k': { width: 2560, height: 1440 },
+                '4k': { width: 3840, height: 2160 },
+            };
+
+            const res = resMap[resolution];
+
+            // Create offscreen canvas
+            const exportCanvas = document.createElement('canvas');
+            exportCanvas.width = res.width;
+            exportCanvas.height = res.height;
+            const exportCtx = exportCanvas.getContext('2d');
+
+            // Determine MIME type
+            const mimeTypes = [
+                format === 'mp4' ? 'video/mp4;codecs=avc1' : 'video/webm;codecs=vp9,opus',
+                format === 'mp4' ? 'video/mp4' : 'video/webm',
+            ];
+
+            let mimeType = null;
+            for (const mime of mimeTypes) {
+                if (MediaRecorder.isTypeSupported(mime)) {
+                    mimeType = mime;
+                    break;
+                }
+            }
+
+            if (!mimeType) {
+                statusEl.textContent = 'Video codec not supported';
+                statusEl.style.display = 'block';
+                return;
+            }
+
+            // Capture stream
+            const stream = exportCanvas.captureStream(30);
+            const recorder = new MediaRecorder(stream, { mimeType });
+
+            const chunks = [];
+            recorder.ondataavailable = (e) => chunks.push(e.data);
+
+            // UI updates
+            const exportBtn = document.getElementById('export-btn');
+            const exportDuration = document.getElementById('export-duration');
+            const exportResolution = document.getElementById('export-resolution');
+            const exportFormat = document.getElementById('export-format');
+
+            exportBtn.disabled = true;
+            exportDuration.disabled = true;
+            exportResolution.disabled = true;
+            exportFormat.disabled = true;
+            statusEl.style.display = 'block';
+
+            statusEl.textContent = `Recording... 0/${duration}s`;
+
+            recorder.start();
+
+            const startTime = Date.now();
+            const endTime = startTime + duration * 1000;
+            const frameInterval = 1000 / 30; // 30 FPS
+            let lastFrameTime = startTime;
+
+            return new Promise((resolve) => {
+                function animateExport() {
+                    const now = Date.now();
+
+                    if (now >= endTime) {
+                        recorder.stop();
+                        statusEl.textContent = 'Encoding...';
+
+                        setTimeout(() => {
+                            const blob = new Blob(chunks, { type: mimeType });
+                            const url = URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            const ext = format === 'mp4' ? 'mp4' : 'webm';
+                            a.download = `oscillator-${state.waveform}-${duration}s-${resolution}.${ext}`;
+                            document.body.appendChild(a);
+                            a.click();
+                            document.body.removeChild(a);
+                            URL.revokeObjectURL(url);
+
+                            statusEl.textContent = 'Download started!';
+                            setTimeout(() => {
+                                statusEl.style.display = 'none';
+                                exportBtn.disabled = false;
+                                exportDuration.disabled = false;
+                                exportResolution.disabled = false;
+                                exportFormat.disabled = false;
+                                resolve();
+                            }, 1500);
+                        }, 500);
+
+                        return;
+                    }
+
+                    // Draw frame only if enough time has passed
+                    if (now - lastFrameTime >= frameInterval) {
+                        drawExportFrame(exportCtx, res.width, res.height);
+                        state.scrollOffset += 2;
+                        lastFrameTime = now;
+
+                        const elapsed = Math.floor((now - startTime) / 1000);
+                        statusEl.textContent = `Recording... ${elapsed}/${duration}s`;
+                    }
+
+                    requestAnimationFrame(animateExport);
+                }
+
+                animateExport();
+            });
+        }
+
+        function drawExportFrame(ctx, width, height) {
+            const centerY = height / 2;
+            const gridSpacing = Math.floor(width / 20); // Scale grid to resolution
+            const col = colors[state.color];
+
+            // Background
+            ctx.fillStyle = col.bg;
+            ctx.fillRect(0, 0, width, height);
+
+            // Grid
+            ctx.strokeStyle = col.grid;
+            ctx.lineWidth = 0.5;
+            for (let x = 0; x < width; x += gridSpacing) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, height);
+                ctx.stroke();
+            }
+            for (let y = 0; y < height; y += gridSpacing) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(width, y);
+                ctx.stroke();
+            }
+
+            // Center line
+            ctx.strokeStyle = `rgba(88, 166, 255, 0.1)`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(0, centerY);
+            ctx.lineTo(width, centerY);
+            ctx.stroke();
+
+            // Waveform with harmonics (for sine/second-signal)
+            if (state.waveform === 'sine' || state.waveform === 'second-signal') {
+                const harmonics = [
+                    { mult: 1, opacity: 1.0, thickness: Math.max(2, width / 400) },
+                    { mult: 2, opacity: 0.7, thickness: Math.max(1.5, width / 500) },
+                    { mult: 3, opacity: 0.5, thickness: Math.max(1, width / 600) },
+                    { mult: 4, opacity: 0.3, thickness: Math.max(0.8, width / 800) },
+                ];
+
+                const samples = 400;
+                const pointsPerPixel = samples / width;
+
+                for (const harmonic of harmonics) {
+                    ctx.strokeStyle = col.line;
+                    ctx.globalAlpha = harmonic.opacity;
+                    ctx.lineWidth = harmonic.thickness;
+                    ctx.lineCap = 'round';
+                    ctx.lineJoin = 'round';
+                    ctx.beginPath();
+
+                    for (let x = 0; x < width; x++) {
+                        const phase = ((x + state.scrollOffset) * pointsPerPixel / samples) * Math.PI * 2;
+                        const value = Math.sin(phase * harmonic.mult * (state.frequency / 115.3)) * state.amplitude * (1 - (harmonic.mult - 1) * 0.2);
+                        const y = centerY - value * (height / 2) * 0.8;
+
+                        if (x === 0) {
+                            ctx.moveTo(x, y);
+                        } else {
+                            ctx.lineTo(x, y);
+                        }
+                    }
+                    ctx.stroke();
+                }
+
+                ctx.globalAlpha = 1.0;
+            } else {
+                // For ladder and flatline
+                const wave = getWaveform();
+                const pointsPerPixel = wave.length / width;
+
+                ctx.strokeStyle = col.line;
+                ctx.lineWidth = Math.max(2, width / 400);
+                ctx.lineCap = 'round';
+                ctx.lineJoin = 'round';
+                ctx.beginPath();
+
+                for (let x = 0; x < width; x++) {
+                    const waveIndex = Math.floor((x + state.scrollOffset) * pointsPerPixel) % wave.length;
+                    const value = wave[waveIndex];
+                    const y = centerY - value * (height / 2) * 0.8;
+
+                    if (x === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+            }
+
+            // Frequency display
+            ctx.fillStyle = col.line;
+            ctx.font = `bold ${Math.floor(width / 60)}px monospace`;
+            ctx.textAlign = 'right';
+            ctx.fillText(`${state.frequency.toFixed(1)} Hz`, width - Math.floor(width / 40), Math.floor(height / 20));
+
+            // Channel label
+            ctx.font = `${Math.floor(width / 90)}px Inter`;
+            ctx.fillStyle = `rgba(255, 255, 255, 0.5)`;
+            ctx.textAlign = 'left';
+            ctx.fillText('CH1', Math.floor(width / 40), Math.floor(height / 20));
+        }
+
         // ===== Main Animation Loop =====
         function animate() {
             state.scrollOffset += 2;
@@ -965,6 +1220,11 @@
             state.fullscreen = !state.fullscreen;
             document.body.classList.toggle('fullscreen');
             document.getElementById('fullscreen-btn').classList.toggle('active');
+        });
+
+        // Export video
+        document.getElementById('export-btn').addEventListener('click', () => {
+            exportVideo();
         });
 
         // Keyboard shortcuts
