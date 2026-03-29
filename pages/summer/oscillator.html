@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscillator Visualization - Creatures in the Tall Grass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+            }
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0d1117;
+            color: #c9d1d9;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header & Tabs */
+        .header {
+            background: rgba(22, 27, 34, 0.8);
+            border-bottom: 1px solid rgba(240, 246, 252, 0.1);
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(8px);
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #58a6ff;
+            letter-spacing: -0.5px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin: 0 auto;
+        }
+
+        .tab-btn {
+            background: transparent;
+            border: 1px solid rgba(240, 246, 252, 0.1);
+            color: #8b949e;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .tab-btn:hover {
+            border-color: rgba(240, 246, 252, 0.3);
+            color: #c9d1d9;
+        }
+
+        .tab-btn.active {
+            background: #58a6ff;
+            border-color: #58a6ff;
+            color: #0d1117;
+        }
+
+        /* Viewport */
+        .viewport {
+            flex: 1;
+            display: flex;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mode {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .mode.active {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Canvas Modes */
+        #canvas-osc, #canvas-wave {
+            display: block;
+            background: #0a0e13;
+            flex: 1;
+        }
+
+        /* Three.js Mode */
+        #canvas-ambient {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Control Panel */
+        .controls {
+            background: rgba(22, 27, 34, 0.9);
+            border-top: 1px solid rgba(240, 246, 252, 0.1);
+            padding: 16px 24px;
+            display: flex;
+            gap: 24px;
+            align-items: center;
+            flex-wrap: wrap;
+            backdrop-filter: blur(8px);
+            transition: all 0.3s ease-out;
+            z-index: 10;
+        }
+
+        .controls.collapsed {
+            padding: 8px 16px;
+            gap: 12px;
+            height: 44px;
+        }
+
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-group label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #8b949e;
+            min-width: 80px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 4px;
+            border: 1px solid rgba(240, 246, 252, 0.1);
+            border-radius: 6px;
+            padding: 2px;
+            background: rgba(240, 246, 252, 0.02);
+        }
+
+        .btn-small {
+            background: transparent;
+            border: none;
+            color: #8b949e;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .btn-small:hover {
+            background: rgba(88, 166, 255, 0.1);
+            color: #58a6ff;
+        }
+
+        .btn-small.active {
+            background: #58a6ff;
+            color: #0d1117;
+        }
+
+        .slider-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input[type="range"] {
+            width: 140px;
+            height: 5px;
+            cursor: pointer;
+            background: linear-gradient(to right,
+                #8b949e 0%,
+                #8b949e calc(var(--value, 0) * 100%),
+                rgba(240, 246, 252, 0.1) calc(var(--value, 0) * 100%),
+                rgba(240, 246, 252, 0.1) 100%);
+            border: none;
+            border-radius: 3px;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #58a6ff;
+            cursor: pointer;
+            box-shadow: 0 0 8px rgba(88, 166, 255, 0.4);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #58a6ff;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 0 8px rgba(88, 166, 255, 0.4);
+        }
+
+        .freq-display {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #58a6ff;
+            min-width: 100px;
+            text-align: right;
+            font-family: 'Courier New', monospace;
+        }
+
+        .spacer {
+            flex: 1;
+        }
+
+        .utility-btn {
+            background: rgba(88, 166, 255, 0.1);
+            border: 1px solid rgba(88, 166, 255, 0.3);
+            color: #58a6ff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .utility-btn:hover {
+            background: rgba(88, 166, 255, 0.2);
+            border-color: rgba(88, 166, 255, 0.5);
+        }
+
+        .utility-btn.active {
+            background: #58a6ff;
+            color: #0d1117;
+            border-color: #58a6ff;
+        }
+
+        /* Greenscreen mode background */
+        body.greenscreen #canvas-osc,
+        body.greenscreen #canvas-wave,
+        body.greenscreen #canvas-ambient {
+            background: #00ff00 !important;
+        }
+
+        /* Fullscreen styles */
+        body.fullscreen {
+            overflow: hidden;
+        }
+
+        body.fullscreen .header,
+        body.fullscreen .controls {
+            position: absolute;
+            width: 100%;
+        }
+
+        body.fullscreen .header {
+            top: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        body.fullscreen .controls {
+            bottom: 0;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        body.fullscreen:hover .header,
+        body.fullscreen:hover .controls {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* Scanlines effect */
+        .scanlines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.08),
+                rgba(0, 0, 0, 0.08) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            mix-blend-mode: overlay;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>⚛ Oscillator Visualization</h1>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="osc">Oscilloscope</button>
+                <button class="tab-btn" data-tab="wave">Greenscreen Wave</button>
+                <button class="tab-btn" data-tab="ambient">Ambient</button>
+            </div>
+            <div class="spacer"></div>
+        </div>
+
+        <!-- Viewport -->
+        <div class="viewport">
+            <!-- Oscilloscope Mode -->
+            <div class="mode active" data-mode="osc">
+                <canvas id="canvas-osc"></canvas>
+                <div class="scanlines"></div>
+            </div>
+
+            <!-- Greenscreen Waveform Mode -->
+            <div class="mode" data-mode="wave">
+                <canvas id="canvas-wave"></canvas>
+            </div>
+
+            <!-- Ambient (Three.js) Mode -->
+            <div class="mode" data-mode="ambient">
+                <canvas id="canvas-ambient"></canvas>
+            </div>
+        </div>
+
+        <!-- Control Panel -->
+        <div class="controls">
+            <div class="control-group">
+                <label>Waveform:</label>
+                <div class="btn-group">
+                    <button class="btn-small active" data-waveform="sine">Sine</button>
+                    <button class="btn-small" data-waveform="ladder">Ladder</button>
+                    <button class="btn-small" data-waveform="second-signal">2nd Signal</button>
+                    <button class="btn-small" data-waveform="flatline">Flatline</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Frequency:</label>
+                <div class="slider-group">
+                    <input type="range" id="freq-slider" min="10" max="300" value="115.3" step="0.1">
+                    <div class="freq-display" id="freq-display">115.3 Hz</div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label>Amplitude:</label>
+                <input type="range" id="amp-slider" min="0.2" max="1.5" value="1" step="0.1">
+            </div>
+
+            <div class="control-group">
+                <label>Color:</label>
+                <div class="btn-group">
+                    <button class="btn-small active" data-color="amber">Amber</button>
+                    <button class="btn-small" data-color="red">Red</button>
+                    <button class="btn-small" data-color="white">White</button>
+                </div>
+            </div>
+
+            <div class="spacer"></div>
+
+            <button class="utility-btn" id="greenscreen-toggle">🟢 Greenscreen</button>
+            <button class="utility-btn" id="fullscreen-btn">⛶ Fullscreen</button>
+        </div>
+    </div>
+
+    <script type="module">
+        import * as THREE from 'three';
+
+        // ===== State =====
+        const state = {
+            waveform: 'sine',
+            frequency: 115.3,
+            amplitude: 1.0,
+            color: 'amber',
+            scrollOffset: 0,
+            greenscreen: false,
+            fullscreen: false,
+            time: 0,
+        };
+
+        const colors = {
+            amber: { line: '#f2aa4c', bg: '#0a0e13', grid: 'rgba(242, 170, 60, 0.15)' },
+            red: { line: '#f85149', bg: '#0a0e13', grid: 'rgba(248, 81, 73, 0.15)' },
+            white: { line: '#ffffff', bg: '#0a0e13', grid: 'rgba(255, 255, 255, 0.15)' },
+        };
+
+        // ===== Canvas Setup =====
+        const canvasOsc = document.getElementById('canvas-osc');
+        const canvasWave = document.getElementById('canvas-wave');
+        const ctxOsc = canvasOsc.getContext('2d');
+        const ctxWave = canvasWave.getContext('2d');
+
+        function resizeCanvas() {
+            const oscParent = canvasOsc.parentElement;
+            canvasOsc.width = oscParent.offsetWidth;
+            canvasOsc.height = oscParent.offsetHeight;
+
+            const waveParent = canvasWave.parentElement;
+            canvasWave.width = waveParent.offsetWidth;
+            canvasWave.height = waveParent.offsetHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // ===== Waveform Generators =====
+        function generateSineWithHarmonics(freq, amplitude, samples = 400) {
+            // Fundamental + 4 harmonics (like real creature resonance)
+            const wave = [];
+            for (let i = 0; i < samples; i++) {
+                let value = 0;
+                const phase = (i / samples) * Math.PI * 2;
+
+                // Fundamental (100% amplitude)
+                value += Math.sin(phase * (freq / 115.3)) * amplitude;
+
+                // 2nd harmonic (80% amplitude)
+                value += Math.sin(phase * (freq / 115.3) * 2) * amplitude * 0.8;
+
+                // 3rd harmonic (60% amplitude)
+                value += Math.sin(phase * (freq / 115.3) * 3) * amplitude * 0.6;
+
+                // 4th harmonic (40% amplitude)
+                value += Math.sin(phase * (freq / 115.3) * 4) * amplitude * 0.4;
+
+                wave.push(value);
+            }
+            return wave;
+        }
+
+        function generateSine(freq, amplitude, samples = 400) {
+            // Just fundamental without harmonics
+            const wave = [];
+            for (let i = 0; i < samples; i++) {
+                const angle = (i / samples) * Math.PI * 2 * (freq / 115.3);
+                wave.push(Math.sin(angle) * amplitude);
+            }
+            return wave;
+        }
+
+        function generateLadder(amplitude, samples = 400) {
+            // Quantized harmonic series visualization
+            const wave = [];
+            for (let i = 0; i < samples; i++) {
+                let value = 0;
+                const phase = (i / samples) * Math.PI * 2;
+
+                // Quantized harmonic ladder (discrete steps visible)
+                for (let h = 1; h <= 8; h++) {
+                    const harmStrength = Math.max(0, 1 - (h / 8) * 0.5);
+                    value += Math.sin(phase * h) * harmStrength * amplitude * 0.15;
+                }
+                wave.push(value);
+            }
+            return wave;
+        }
+
+        function generateSecondSignal(freq, amplitude, samples = 400) {
+            // Creature fundamental + interference/beating pattern
+            const wave = [];
+            for (let i = 0; i < samples; i++) {
+                const phase = (i / samples) * Math.PI * 2;
+
+                // Primary creature signal with harmonics
+                let primary = Math.sin(phase * (freq / 115.3)) * amplitude * 0.7;
+                primary += Math.sin(phase * (freq / 115.3) * 2) * amplitude * 0.5;
+
+                // Secondary signal (slightly detuned, creating beat/interference)
+                let secondary = Math.sin(phase * (freq / 115.3) * 0.95 + 0.3) * amplitude * 0.4;
+                secondary += (Math.random() - 0.5) * amplitude * 0.15;
+
+                wave.push(primary + secondary);
+            }
+            return wave;
+        }
+
+        function generateFlatline(samples = 400) {
+            return new Array(samples).fill(0);
+        }
+
+        function getWaveform() {
+            const amp = state.amplitude;
+            switch (state.waveform) {
+                case 'sine': return generateSineWithHarmonics(state.frequency, amp);
+                case 'ladder': return generateLadder(amp);
+                case 'second-signal': return generateSecondSignal(state.frequency, amp);
+                case 'flatline': return generateFlatline();
+                default: return generateSineWithHarmonics(state.frequency, amp);
+            }
+        }
+
+        // ===== Harmonic Series Renderer (helper) =====
+        function drawHarmonics() {
+            const width = canvasOsc.width;
+            const height = canvasOsc.height;
+            const centerY = height / 2;
+
+            const col = colors[state.color];
+            const amp = state.amplitude;
+            const samples = 400;
+
+            // Draw each harmonic separately at different opacities
+            const harmonics = [
+                { mult: 1, opacity: 1.0, thickness: 2.5 },      // Fundamental (thickest)
+                { mult: 2, opacity: 0.7, thickness: 1.8 },      // 2nd harmonic
+                { mult: 3, opacity: 0.5, thickness: 1.3 },      // 3rd harmonic
+                { mult: 4, opacity: 0.3, thickness: 0.8 },      // 4th harmonic
+            ];
+
+            const pointsPerPixel = samples / width;
+
+            for (const harmonic of harmonics) {
+                ctxOsc.strokeStyle = col.line;
+                ctxOsc.globalAlpha = harmonic.opacity;
+                ctxOsc.lineWidth = harmonic.thickness;
+                ctxOsc.lineCap = 'round';
+                ctxOsc.lineJoin = 'round';
+                ctxOsc.beginPath();
+
+                for (let x = 0; x < width; x++) {
+                    const phase = ((x + state.scrollOffset) * pointsPerPixel / samples) * Math.PI * 2;
+                    // Generate this harmonic's wave
+                    const value = Math.sin(phase * harmonic.mult * (state.frequency / 115.3)) * amp * (1 - (harmonic.mult - 1) * 0.2);
+                    const y = centerY - value * (height / 2) * 0.8;
+
+                    if (x === 0) {
+                        ctxOsc.moveTo(x, y);
+                    } else {
+                        ctxOsc.lineTo(x, y);
+                    }
+                }
+                ctxOsc.stroke();
+            }
+
+            ctxOsc.globalAlpha = 1.0;
+        }
+
+        // ===== Oscilloscope Renderer =====
+        function drawOscilloscope() {
+            const width = canvasOsc.width;
+            const height = canvasOsc.height;
+            const centerY = height / 2;
+            const gridSpacing = 40;
+
+            const col = colors[state.color];
+
+            // Background
+            ctxOsc.fillStyle = col.bg;
+            ctxOsc.fillRect(0, 0, width, height);
+
+            // Grid
+            ctxOsc.strokeStyle = col.grid;
+            ctxOsc.lineWidth = 0.5;
+            for (let x = 0; x < width; x += gridSpacing) {
+                ctxOsc.beginPath();
+                ctxOsc.moveTo(x, 0);
+                ctxOsc.lineTo(x, height);
+                ctxOsc.stroke();
+            }
+            for (let y = 0; y < height; y += gridSpacing) {
+                ctxOsc.beginPath();
+                ctxOsc.moveTo(0, y);
+                ctxOsc.lineTo(width, y);
+                ctxOsc.stroke();
+            }
+
+            // Center line
+            ctxOsc.strokeStyle = `rgba(88, 166, 255, 0.1)`;
+            ctxOsc.lineWidth = 1;
+            ctxOsc.beginPath();
+            ctxOsc.moveTo(0, centerY);
+            ctxOsc.lineTo(width, centerY);
+            ctxOsc.stroke();
+
+            // Waveform with harmonics (only for sine and second-signal)
+            if (state.waveform === 'sine' || state.waveform === 'second-signal') {
+                drawHarmonics();
+            } else {
+                // For ladder and flatline, use the complex waveform directly
+                const wave = getWaveform();
+                const pointsPerPixel = wave.length / width;
+
+                ctxOsc.strokeStyle = col.line;
+                ctxOsc.lineWidth = 2;
+                ctxOsc.lineCap = 'round';
+                ctxOsc.lineJoin = 'round';
+                ctxOsc.beginPath();
+
+                for (let x = 0; x < width; x++) {
+                    const waveIndex = Math.floor((x + state.scrollOffset) * pointsPerPixel) % wave.length;
+                    const value = wave[waveIndex];
+                    const y = centerY - value * (height / 2) * 0.8;
+
+                    if (x === 0) {
+                        ctxOsc.moveTo(x, y);
+                    } else {
+                        ctxOsc.lineTo(x, y);
+                    }
+                }
+                ctxOsc.stroke();
+            }
+
+            // Frequency display
+            ctxOsc.fillStyle = col.line;
+            ctxOsc.font = 'bold 14px monospace';
+            ctxOsc.textAlign = 'right';
+            ctxOsc.fillText(`${state.frequency.toFixed(1)} Hz`, width - 16, 28);
+
+            // Channel label
+            ctxOsc.font = '12px Inter';
+            ctxOsc.fillStyle = `rgba(255, 255, 255, 0.5)`;
+            ctxOsc.textAlign = 'left';
+            ctxOsc.fillText('CH1', 16, 28);
+
+            // Harmonic legend (bottom-left, for sine/second-signal modes)
+            if (state.waveform === 'sine' || state.waveform === 'second-signal') {
+                ctxOsc.font = '10px Inter';
+                ctxOsc.fillStyle = `rgba(255, 255, 255, 0.4)`;
+                ctxOsc.textAlign = 'left';
+                ctxOsc.fillText('Harmonics:', 16, height - 24);
+
+                const harmonicLabels = [
+                    { label: 'F (1×)', opacity: 1.0 },
+                    { label: '2×', opacity: 0.7 },
+                    { label: '3×', opacity: 0.5 },
+                    { label: '4×', opacity: 0.3 },
+                ];
+
+                let labelX = 82;
+                for (const h of harmonicLabels) {
+                    ctxOsc.globalAlpha = h.opacity;
+                    ctxOsc.fillStyle = col.line;
+                    ctxOsc.fillText(h.label, labelX, height - 24);
+                    labelX += 40;
+                }
+                ctxOsc.globalAlpha = 1.0;
+            }
+        }
+
+        // ===== Greenscreen Waveform Renderer =====
+        function drawWaveform() {
+            const width = canvasWave.width;
+            const height = canvasWave.height;
+            const centerY = height / 2;
+
+            const col = colors[state.color];
+            const bgColor = state.greenscreen ? '#00ff00' : col.bg;
+
+            // Background
+            ctxWave.fillStyle = bgColor;
+            ctxWave.fillRect(0, 0, width, height);
+
+            if (!state.greenscreen) {
+                // Subtle center line
+                ctxWave.strokeStyle = `rgba(88, 166, 255, 0.05)`;
+                ctxWave.lineWidth = 1;
+                ctxWave.beginPath();
+                ctxWave.moveTo(0, centerY);
+                ctxWave.lineTo(width, centerY);
+                ctxWave.stroke();
+            }
+
+            // For greenscreen, show fundamental + 2nd harmonic only (cleaner visual)
+            if (state.waveform === 'sine' || state.waveform === 'second-signal') {
+                const harmonics = [
+                    { mult: 1, opacity: 1.0, thickness: 5 },      // Fundamental (thickest)
+                    { mult: 2, opacity: 0.6, thickness: 2.5 },    // 2nd harmonic
+                ];
+
+                const samples = 400;
+                const pointsPerPixel = samples / width;
+
+                for (const harmonic of harmonics) {
+                    ctxWave.strokeStyle = col.line;
+                    ctxWave.globalAlpha = harmonic.opacity;
+                    ctxWave.lineWidth = harmonic.thickness;
+                    ctxWave.lineCap = 'round';
+                    ctxWave.lineJoin = 'round';
+                    ctxWave.beginPath();
+
+                    for (let x = 0; x < width; x++) {
+                        const phase = ((x + state.scrollOffset) * pointsPerPixel / samples) * Math.PI * 2;
+                        const value = Math.sin(phase * harmonic.mult * (state.frequency / 115.3)) * state.amplitude * (1 - (harmonic.mult - 1) * 0.2);
+                        const y = centerY - value * (height / 2) * 0.7;
+
+                        if (x === 0) {
+                            ctxWave.moveTo(x, y);
+                        } else {
+                            ctxWave.lineTo(x, y);
+                        }
+                    }
+                    ctxWave.stroke();
+                }
+
+                ctxWave.globalAlpha = 1.0;
+            } else {
+                // For ladder and flatline, use the complex waveform
+                const wave = getWaveform();
+                const pointsPerPixel = wave.length / width;
+
+                ctxWave.strokeStyle = col.line;
+                ctxWave.lineWidth = 4;
+                ctxWave.lineCap = 'round';
+                ctxWave.lineJoin = 'round';
+                ctxWave.beginPath();
+
+                for (let x = 0; x < width; x++) {
+                    const waveIndex = Math.floor((x + state.scrollOffset) * pointsPerPixel) % wave.length;
+                    const value = wave[waveIndex];
+                    const y = centerY - value * (height / 2) * 0.7;
+
+                    if (x === 0) {
+                        ctxWave.moveTo(x, y);
+                    } else {
+                        ctxWave.lineTo(x, y);
+                    }
+                }
+                ctxWave.stroke();
+            }
+        }
+
+        // ===== Three.js Setup (Ambient Mode) =====
+        let ambientScene, ambientCamera, ambientRenderer, ambientParticles, ambientRibbon;
+
+        function initAmbient() {
+            const canvasAmbient = document.getElementById('canvas-ambient');
+            const width = canvasAmbient.clientWidth;
+            const height = canvasAmbient.clientHeight;
+
+            ambientScene = new THREE.Scene();
+            ambientScene.background = new THREE.Color(state.greenscreen ? 0x00ff00 : 0x0a0e13);
+
+            ambientCamera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
+            ambientCamera.position.z = 30;
+
+            ambientRenderer = new THREE.WebGLRenderer({ canvas: canvasAmbient, antialias: true, alpha: false });
+            ambientRenderer.setSize(width, height);
+            ambientRenderer.setPixelRatio(window.devicePixelRatio);
+
+            // Particle field (bioluminescent spores)
+            const particleGeometry = new THREE.BufferGeometry();
+            const particleCount = 3000;
+            const posArray = new Float32Array(particleCount * 3);
+            const colorArray = new Float32Array(particleCount * 3);
+
+            for (let i = 0; i < particleCount * 3; i += 3) {
+                posArray[i] = (Math.random() - 0.5) * 100;
+                posArray[i + 1] = (Math.random() - 0.5) * 100;
+                posArray[i + 2] = (Math.random() - 0.5) * 100;
+            }
+
+            particleGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+            const particleMaterial = new THREE.PointsMaterial({
+                size: 0.3,
+                sizeAttenuation: true,
+            });
+            updateParticleColors();
+
+            ambientParticles = new THREE.Points(particleGeometry, particleMaterial);
+            ambientScene.add(ambientParticles);
+
+            // Waveform ribbon
+            const ribbonGeometry = createWaveformRibbon();
+            const ribbonMaterial = new THREE.LineBasicMaterial({
+                linewidth: 3,
+            });
+            updateRibbonColor();
+
+            ambientRibbon = new THREE.LineSegments(ribbonGeometry, ribbonMaterial);
+            ambientScene.add(ambientRibbon);
+
+            window.addEventListener('resize', () => {
+                const w = canvasAmbient.clientWidth;
+                const h = canvasAmbient.clientHeight;
+                ambientCamera.aspect = w / h;
+                ambientCamera.updateProjectionMatrix();
+                ambientRenderer.setSize(w, h);
+            });
+        }
+
+        function createWaveformRibbon() {
+            const geometry = new THREE.BufferGeometry();
+            const points = [];
+            for (let i = 0; i < 100; i++) {
+                const x = (i / 100) * 80 - 40;
+                const y = Math.sin(i / 20) * 10;
+                points.push(x, y, 0);
+            }
+            geometry.setAttribute('position', new THREE.BufferAttribute(new Float32Array(points), 3));
+            return geometry;
+        }
+
+        function updateParticleColors() {
+            if (!ambientParticles) return;
+            const colorMap = {
+                amber: [0.949, 0.667, 0.298],
+                red: [0.973, 0.318, 0.286],
+                white: [1, 1, 1],
+            };
+            const col = colorMap[state.color];
+            ambientParticles.material.color.setRGB(...col);
+        }
+
+        function updateRibbonColor() {
+            if (!ambientRibbon) return;
+            const colorMap = {
+                amber: new THREE.Color(0xf2aa4c),
+                red: new THREE.Color(0xf85149),
+                white: new THREE.Color(0xffffff),
+            };
+            ambientRibbon.material.color = colorMap[state.color];
+        }
+
+        function animateAmbient() {
+            if (!ambientScene) return;
+
+            // Rotate particles
+            if (ambientParticles) {
+                ambientParticles.rotation.y += 0.0003;
+                ambientParticles.rotation.z += 0.0001;
+            }
+
+            // Drift particles upward
+            if (ambientParticles) {
+                const positions = ambientParticles.geometry.attributes.position.array;
+                for (let i = 1; i < positions.length; i += 3) {
+                    positions[i] += 0.03;
+                    if (positions[i] > 60) positions[i] = -60;
+                }
+                ambientParticles.geometry.attributes.position.needsUpdate = true;
+            }
+
+            // Rotate ribbon
+            if (ambientRibbon) {
+                ambientRibbon.rotation.x += 0.0005;
+                ambientRibbon.rotation.z += 0.0002;
+            }
+
+            ambientRenderer.render(ambientScene, ambientCamera);
+        }
+
+        // ===== Main Animation Loop =====
+        function animate() {
+            state.scrollOffset += 2;
+            state.time += 0.016;
+
+            const activeMode = document.querySelector('.mode.active');
+            if (activeMode.dataset.mode === 'osc') {
+                drawOscilloscope();
+            } else if (activeMode.dataset.mode === 'wave') {
+                drawWaveform();
+            } else if (activeMode.dataset.mode === 'ambient') {
+                animateAmbient();
+            }
+
+            requestAnimationFrame(animate);
+        }
+        animate();
+
+        // ===== UI Event Listeners =====
+
+        // Tabs
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.mode').forEach(m => m.classList.remove('active'));
+                btn.classList.add('active');
+                const mode = document.querySelector(`[data-mode="${btn.dataset.tab}"]`);
+                mode.classList.add('active');
+
+                if (btn.dataset.tab === 'ambient' && !ambientScene) {
+                    initAmbient();
+                }
+
+                // Update canvas backgrounds for greenscreen
+                if (state.greenscreen) {
+                    const canvases = [canvasOsc, canvasWave];
+                    canvases.forEach(c => c.style.background = '#00ff00');
+                    if (ambientScene) {
+                        ambientScene.background.setHex(0x00ff00);
+                    }
+                }
+            });
+        });
+
+        // Waveform buttons
+        document.querySelectorAll('[data-waveform]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('[data-waveform]').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                state.waveform = btn.dataset.waveform;
+            });
+        });
+
+        // Color buttons
+        document.querySelectorAll('[data-color]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('[data-color]').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                state.color = btn.dataset.color;
+                updateParticleColors();
+                updateRibbonColor();
+
+                if (state.greenscreen && ambientScene) {
+                    // Keep greenscreen bg
+                } else if (ambientScene) {
+                    ambientScene.background.setHex(0x0a0e13);
+                }
+            });
+        });
+
+        // Frequency slider
+        document.getElementById('freq-slider').addEventListener('input', (e) => {
+            state.frequency = parseFloat(e.target.value);
+            document.getElementById('freq-display').textContent = `${state.frequency.toFixed(1)} MHz`;
+        });
+
+        // Amplitude slider
+        document.getElementById('amp-slider').addEventListener('input', (e) => {
+            state.amplitude = parseFloat(e.target.value);
+        });
+
+        // Greenscreen toggle
+        document.getElementById('greenscreen-toggle').addEventListener('click', () => {
+            state.greenscreen = !state.greenscreen;
+            document.getElementById('greenscreen-toggle').classList.toggle('active');
+
+            const bgColor = state.greenscreen ? '#00ff00' : '#0a0e13';
+            canvasOsc.style.background = bgColor;
+            canvasWave.style.background = bgColor;
+
+            if (ambientScene) {
+                ambientScene.background.setHex(state.greenscreen ? 0x00ff00 : 0x0a0e13);
+            }
+        });
+
+        // Fullscreen toggle
+        document.getElementById('fullscreen-btn').addEventListener('click', () => {
+            state.fullscreen = !state.fullscreen;
+            document.body.classList.toggle('fullscreen');
+            document.getElementById('fullscreen-btn').classList.toggle('active');
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && state.fullscreen) {
+                state.fullscreen = false;
+                document.body.classList.remove('fullscreen');
+                document.getElementById('fullscreen-btn').classList.remove('active');
+            }
+            if (e.key === 'g' && e.ctrlKey) {
+                e.preventDefault();
+                document.getElementById('greenscreen-toggle').click();
+            }
+        });
+
+        // Initialize ambient mode if visible at start
+        setTimeout(() => {
+            if (document.querySelector('[data-mode="ambient"].active')) {
+                initAmbient();
+            }
+        }, 100);
+    </script>
+</body>
+</html>
