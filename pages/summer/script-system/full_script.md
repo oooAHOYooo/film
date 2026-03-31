@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 3/26/2026, 11:40:32 AM*
+*Compiled on 3/31/2026, 11:54:12 AM*
 
 ---
 
@@ -25,7 +25,7 @@ EXT. DALLAS NEW HOUSE - DAY
 
 Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
 
-Dallas goes into the grass a little bit and as he does he notices that there is a makeshift trailcam - a small camera rig on a stick. Upon further examination he notices that it is not a trap but a recording device of sorts. 
+Dallas goes into the grass a little bit and as he does he notices that there is, what appears to be, a makeshift trap. That, upon further inspection reveals, a small camera rig on a stick. 
 
 As Dallas examines he hears a distinct bicycle ring.
 
@@ -35,7 +35,7 @@ They approach Dallas slowly as one of the boxes draws their curiousity. Makayla 
 
 MAKAYLA
 (to Asher but loud enough for Dallas to hear)
-You know that could be used to track the baseline between the cries of the Binzos and the howls of the Oragraph. But neither really matters if a Nidus is forming. That's an apex predator situation. 
+You know that could be used to track the baseline between the cries of the Binzos and the howls of the Oragraph. They don't really know for sure though, and of course, none of it really matters if a Nidus is forming. That's an apex predator situation. 
 
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
@@ -43,7 +43,7 @@ You know that could be used to track the baseline between the cries of the Binzo
 Asher nods with his headphones on. Makayla approaches Dallas. 
 
 MAKAYLA
-Hello there
+Hello there.
 
 DALLAS
 Hello.
@@ -65,12 +65,6 @@ Did you just move here?
 
 DALLAS
 Yes
-
-MAKAYLA
-Did you turn off my trap?
-
-Dallas
-No. 
 
 MAKAYLA
 Is that an Oscillator?
@@ -112,7 +106,7 @@ DALLAS
 It does.
 
 MAKAYLA
-What is the range on it?
+What's the range on it?
 
 DALLAS
 I'm not sure.
@@ -123,7 +117,7 @@ Well okay. Asher, do you have any more questions?
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
 (action)
-Makayla turns to Asher. He shakes his head no—still not looking up, finger moving on his palm. 
+Makayla turns to Asher. He shakes his head no—still not looking up, finger tapping his other fingers in an almost morse code type of way. 
 
 MAKAYLA
 Okay then. Good to know. Can we borrow it?
@@ -714,13 +708,18 @@ Sure.
 INT. JACE'S BASEMENT 
 Dallas looks around in amazement. The basement is covered with normal basement things - but as his eyes scan the room he notices that there are two beds, room, and clutter. Around the corner there is a workstation filled with old CRT machines and what not.
 
+<!-- scene: 07 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas looks at all of the different audio and acoustic devices scattered across the room. On the cieling there are tiny beeds hung from strings - tiny with different colors. 
+
 DOMINIC
-This was formerly our basement - but my niece and nephew live here now. They love that basement vibe. Here, help me grab the fan. 
+This was formerly our shared basement - but, now, my niece and nephew live here have occupied. They just love this basement... Here, help me grab the fan. 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas looks at all of the different audio and acoustic devices scattered across the room. On the wall - there are numbers and markings similar to the three beats he wrote down. 
+Dallas looks at all of the different audio and acoustic devices scattered across the room. Dallas walks over to one and sees the similar trail cam that he found on his property - but, this one is different. It has a small antenna attached to it. 
 
 Dominic taps Dallas on the shoulder, breaking him out of his gaze and together they slowly move the AC unit upstairs. 
 
@@ -770,7 +769,7 @@ Oh you're welcome.
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dominic scans the room and finds his gaze upon the corner. MR. MIKE (mid 70s) begins to wake up from his  rocking chair, staring fixedly at the floor. Mr. Mike begins to scratch something into the wood of the end table with a jagged nail.
+Dominic scans the room and finds his gaze upon the corner. MR. MIKE (mid 70s) begins to wake up from his  rocking chair, staring fixedly at the floor. Mr. Mike scans the room and then outside and then takes a deep breath before he begins to violintely scratch the wood of the table using a jagged nail. 
 
 DOMINIC 
 Mr. Mike! Mr. Mike, what are you doing?! 
@@ -781,16 +780,16 @@ Mr. Mike! Mr. Mike, what are you doing?!
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
 
 MR. MIKE
-Sorry, I had to write something down. Dominic. 
+Sorry, I had to write something down. It was important that I wrote something down. Dominic. Dominic! 
 
 DOMINIC
-Yeah?
+Yes? 
 
 MR. MIKE
 She's here!
 
 DOMINIC
-Whose here? Why are you scratching the table?
+Whose here? Could you not scratch the table anymore? Whose here? 
 
 MR. MIKE
 Your sister. Makayla. Asher
@@ -803,12 +802,15 @@ Dominic dashes for the door and opens it. In pops Janice with Makayla and Asher.
 Asher runs straight towards Mr. Mike and kneels down before him. Makayla side eyes Dallas. 
 
 MR. MIKE 
-One. ONE. FIVE. THREE. She's here - Dominic - Janice is here - ASHER! Is that you? Come here. 
+One one five three. One one five three. She's here - Dominic - Janice is here - ASHER! Is that you? Come here. Five five five five.  
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 (action)
 Mr. Mike points to the window. 
+
+MR. MIKE
+Do you see? 
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -1470,7 +1472,7 @@ EXT. DALLAS BACKYARD - OLD PICNIC TABLE
 
 Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. 
 
-Asher sits alone a few feet away—drawing in his notebook. 
+Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in approval. He takes some string from his pocket and begins to thread various quanity of beads. 
 
 MAKAYLA
 Your wife was an Epistemologist? 
@@ -1517,6 +1519,47 @@ Sounds good.
 (action)
 A gentle breeze blows through the sky. Asher begins to pace around a little outside himself and bob his head a bit back and forth. He goes into the house without much indication or word from anyone. 
 
+Makayla holds the Oscillator in her hand and fiddles with it. 
+
+MAKAYLA
+What do you do when you are sad? Like sad all the time. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas looks at Howie and then at Makayla.
+
+DALLAS
+I don't know.
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas and Makayla sit for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Makayla turns to look and then thinks for a moment. 
+
+MAKAYLA
+We need to document this... Dallas. We can't tell anyone, not until we document this. The sound it made. We should try to record that.
+
+DALLAS
+I've been.
+
+MAKAYLA
+You've been what?
+
+DALLAS
+I've been recording it's sound and... it seems to be recording back. 
+
+MAKAYLA
+What do you mean?
+
+DALLAS
+I'm not sure. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+The breeze overwhelms them both in the distance they begin to hear the faint pulse of a dark deep hum. 
+
 INT. KITCHEN - CONTINUOUS
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
@@ -1543,76 +1586,23 @@ DALLAS
 Is he okay? 
 
 MAKAYLA
-He's fine... He's just processing. 
+He's fine... He's just doing Asher stuff. I think he's just processing. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla takes a deep breath.
-
-EXT. DALLAS BACKYARD - PICNIC TABLE - MOMENTS LATER
-
-Makayla and Dallas sit on top of a picnic table outside the house, Asher blankly stares out into the distance. Makayla holds the Oscillator in her hand and fiddles with it. 
+Makayla takes a deep breath as Asher relaxes. 
 
 MAKAYLA
-What do you do when you are sad? Like sad all the time. 
+Sit up.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas looks at Howie and then at Makayla.
-
-DALLAS
-I don't know.
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Dallas and Makayla sit for a while on the long old picnic table outside his house. The creature begins to cry and then it fades. Makayla turns to look and then thinks for a moment. 
+Makayla makes Asher sit up and brings him a glass of water. As she is pouring it - she notices the creature sleeping peacefully below the heat lamp. 
 
 MAKAYLA
-We need to document this... Dallas. 
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Makayla looks at Asher who is now peacefully asleep. 
-
-MAKAYLA
-We can't tell anyone, not until we document this. The sound it made. We should try to record that.
-
-DALLAS
-I've been.
-
-MAKAYLA
-You've been what?
-
-DALLAS
-I've been recording. 
-
-MAKAYLA
-The frequiences that that creature is making.
-
-DALLAS
-It seems to be recording.
-
-MAKAYLA
-What do you mean?
-
-DALLAS
-I'm not sure. 
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-The breeze overwhelms them both in the distance they begin to hear the faint pulse of a dark deep hum. 
-
-INT. DALLAS'S KITCHEN - LATER
-
-Makayla and Dallas walk into the kitchen and find the creature sleeping peacefully below the heat lamp. 
-
-MAKAYLA
-I find it interesting that your wife was an epistemologist - you know, Scientists used to think that the sea was silent - but our ears just can't pick up the right notes. 
+I find it interesting that your wife was an epistemologist - you know, they used to think that the sea was silent - but it's not. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1648,21 +1638,6 @@ It looks like the creature is responding to it.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla looks down and thinks for a moment.
-
-MAKAYLA
-(to Dallas)
-You know, Mr. Mike's grandfather was an explorer - and Mr. Mike claims that he knew of a creature like this that his father saw when he first immigrated. In his boyhood. 
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Asher comes in and gathers around the creature too—notebook in one hand, pencil still. He doesn't draw it. Just watches. 
-
-Dallas adjusts the dial on his military receiver to a 115.3 MHz frequency. The creature's breathing stabilizes. It lets out a low, melodic tone.
-
-Makayla leans over the oscilloscope. She points at the screen. 
-
 Makayla looks at Dallas and then at the creature and pulls out a small prototype from her backpack. 
 
 The two look at each other for a moment.
@@ -1676,13 +1651,11 @@ An amplifier.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla turns and places the crystal she has found inside a palceholder for where a battery would go on a circut board.
-
 She turns to the creature and turns it on. The creature starts to wiggle.
 
 Behind the creature's smooth sine wave, a second signal appears—jagged, arrhythmic. It pulses in sharp, irregular bursts, riding underneath the creature's frequency like static beneath music.
 
-MAKAYLA (CONT'D)
+MAKAYLA
 That's not coming from the creature. That's drawing from outside.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
@@ -1705,17 +1678,16 @@ Dallas - I have to show you something.
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
-# Scene 15: Makayla's Lair
-<!-- summary: Reverse Device mission born. Dallas calibrates the oscillator using Mr. Mike's numbers. A countdown begins. -->
+# Scene 15: Makayla's Tracking Box
 
 EXT. NEIGHBORHOODS - EVENING 
 The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. 
 
 MAKAYLA
-Did you know some peptide crystals can conduct electricity? 
+Did you know peptide crystals can conduct electricity? 
 
 DALLAS
-Yeah.
+I've heard. 
 
 MAKAYLA
 Everything does... which begs the question - what exactly is electricity? 
@@ -1723,20 +1695,22 @@ Everything does... which begs the question - what exactly is electricity?
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-The crew walk into the field and find a small wooden structure hidden inside. 
+The crew walk into the field and find a small wooden structure hidden beneath a field of tall grass. 
 
-EXT. MAKAYLA'S LAIR - CONTINUOUS
-As they approach the structure, they can see that it is a small wooden structure made out of fallen trees and branches. 
+EXT. MAKAYLA'S SPECIAL WOODED SPOT - CONTINUOUS
+As they approach the structure, they can see that it is a small wooden structure hidden by fallen trees and branches. 
 
-Immeditaley outside the structure, seems like there are some trail cameras and other surveillance equipment.  
+Inside the structure there is a wooden box. Makayla opens it. Inside there are various trail cameras and recording equipment. On the bottom of the box, Makayla pulls out various cables and wires connected to a  small crystal. 
 
 One device in particular intrigues Dallas. It is an old cart that has a perptual motion machine on it. Dallas walks over to it and admires it.
 
 MAKAYLA
-That's Ashers perpetual motion machine. 
+That's Ashers perpetual motion machine...
 
-ASHER
-It's not ready. 
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Dallas and Asher make eye contact with each other. 
 
 MAKAYLA
 Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - they are going to change the world.
@@ -1749,41 +1723,20 @@ Dallas looks at asher and then back at Asher.
 MAKAYLA
 Do you believe in fate Mr. Dallas?
 
-DALLAS
-I am not sure.
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
-MAKAYLA
-My father left Asher and I this random bit of land in Branford, in his will. My uncle isn't keen on touching or doing anything with it - so Asher and I built this. 
+(action)
+Dallas shakes his head no. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-Dallas nods. 
+Makayla picks up a small flower that looks planted. She begins to dig and unearth various alligator clips hooked up to the bottom roots. 
+
+Asher walks over with the crystal in his hand - and places an aligator clip on the crystal - it glows. 
 
 MAKAYLA
-(ignoring his question)
-And funny thing about fate, is - right as we were searching this land - we found this.
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Makayla picks up a small flower that looks planted.
-
-MAKAYLA
-Dominic wouldn't understand what we happened today. Some people live their whole lives in the shadows, thinking that
-
-INT. MAKAYLA'S LAIR - CONTINUOUS
-
-Makayla gives Dallas a tour of the outdoor lair. Around a semi-permanent wooden structure made out of fallen trees and branches. 
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Makayla points to a small wooden box and gestures Asher to open it up. He walks over over the cables laid on the floor and does. 
-
-ASHER
-(to Dallas)
-Here.
+Uncle Dom would never understand what we happened today. What we have witnessed. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
@@ -1799,7 +1752,7 @@ MAKAYLA
 What do you think?
 
 DALLAS
-Seems like a common quartz crystal..
+Seems like a quartz. 
 
 MAKAYLA
 Asher show him.
@@ -1807,141 +1760,37 @@ Asher show him.
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-Asher walks over and puts the cystal on top of a little bay area device . As he does - Makayla walks over to her computer running linux and starts typing away. Soon a program emerges that seemingly measures waveforms. 
+Asher walks over and puts the cystal on top of a little bay area device that is also hidden by a bunch of branches. Asher grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. He points to the two metal rods that are coming out of the portable wooden device - and nudges Dallas to grip. 
+
+<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
+
+(action)
+Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
+
+Dallas wakes up.
 
 MAKAYLA
-(to Dallas)
-Do you know what this?
+So, what do you think?
 
 DALLAS
-Seems like a frequency analyzer...
+What is it?
+
+MAKAYLA
+We don't know. But I wonder what would happen if we hook up the creature to it - and your oscillator. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-Makayla makes a couple of clicks and looks at Asher - she nods. 
-
-MAKAYLA
-(to Dallas)
-Do you know what this is?
+In the distance the howls are getting more ganrly. Makayla and Asher stand silent in fear.
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-Dallas looks onward, the computer's monitor's waveforms and graphs seem to be moving in sync with Asher as he places the crystal on top of the device. It reacts viollently to it. 
-
-Dallas looks on in amazement.
-
-EXT. MAKAYLAS LAIR
-
-Makayla and Dallas sit on a wooden stool and watch Asher as he prepares for a small fire.
+Dallas begins to record a bit on his pocket recorder. 
 
 MAKAYLA
-I think that the crystal is picking up something. And that creature. Like that wasn't normal. 
-
-MAKAYLA
-That is a reverse audiophone - capable of taking a recording and then projecting it back into reverse. I built it last summer - well Asher did the heavy lifting. 
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Asher hands Dallas a small translucent crystal in the shape of a crude pyramid-like stone. He taps it twice against Dallas's palm before letting go—his tell when he's sure about something. 
-
-MAKAYLA
-Asher no.
-
-Dallas holds the object in his hands fasicanted. Makayla takes it away and pockets it.
-
-MAKAYLA
-Look at it. It's vibrating at the same rate as your pulse. 
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Makayla stops and thinks for a moment.
-
-MAKAYLA
-Asher, do you know the numbers Mr. Mike writes? 
-
-ASHER
-Maybe. I don't know. What do you mean?
-
-MAKAYLA
-Dallas, dial in the tune to 11.53
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Dallas changes the notes of his oscillator and suddenly the creature wakes up. 
-
-Makayla dashes to her computer. She rewinds the waveform recordings and finds a spike.
-
-MAKAYLA
-11.53
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-The creature begins to glow - and then the dark shadows grow on the screen and completely decimate the small creature on the ground. 
-
-Makayla looks at the dying creature. 
-
-MAKAYLA
-Dallas - could you interpret these readings and compile in your mind or something and tell me what they mean?
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Makayla hands Dallas a bunch of papers to look through. 
-
-MAKAYLA
-This crystal - it is a phase inverter. If we run your Oscillator through it - it won't just broadcast sound - it should create a shield - a dome of silence needed to bring it back to its nest.
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Makayla, Dallas, and Asher huddle around the creature and watch it fade as the equipment begins to flicker and die.
-
-INT. LAIR MONTAGE
-Makayla and Dallas rig up the dials - Dallas connects the Oscillator into a shoulder rig with the crystal on the center and puts the prototype on the table. 
-
-MAKAYLA
-We need to bring this to the place where you found the creature. 
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Makayla turns on the prototype - and nothing happens - but suddenly the creature wakes up and begins to howl  - making all of the equipment in the lair act funny.
-
-Asher clutches the creature to his chest. The creature begins to stir—and Asher's notebook slips from his hand. His pencil rolls. He begins to shake. Then he's on the floor. 
-
-MAKAYLA
-Asher!
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Makayla runs to rescue Asher who is laying on the floor with his eyes wide open and his mouth wide open.
-
-ASHER
-Bring me back. 
-
-MAKAYLA
-Asher - what?!
-
-ASHER 
-(in a trance)
-Bring me back. 
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Asher snaps out of it and the crew are visuably shaken. Makayla holds Asher close and whipsers that it will be alright. 
-
-Dallas looks on and then at the equipment. The portable oscilloscope screen flickers and dies. The battery is dead.
-
-MAKAYLA
-We have to go. 
+(takes a deep breath and contemplates for a while)
+We should go. 
 
 
 
@@ -1958,20 +1807,22 @@ We have to go.
 
 # Scene 16: Makayla's Lair
 
-EXT. MAKAYLA'S LAIR
-Makayla, Dallas, and Asher hastily make their way out of the woods, back toward the field, carrying the creature in its box and the heavy, dead oscillator rig.
+EXT. DALLAS BACKYARD
+Makayla, Dallas, and Asher hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
 As the crew walk, they begin to notice that the tall grass around them is acting universally restless. The crew walk in uneasy silence as the summer glow lights their pace. 
+
+
 EXT. BRANFORD TOWN GREEN - DAY
 
 The crew walk through the backstreets of Branford with the creature covered in a towel drapped over Makayla's dog backpack. 
 
 EXT. DALLAS'S HOUSE - DAY
 
-As they approach the driveway, the crew look suspciously at the tall grass around Dallas's house. The creature in Makayla's backpack - begins to cry a bit. 
+As they approach the driveway, the crew look suspciously at the tall grass around Dallas's house. 
 
 Asher begins to shake and falls to the ground. His eyes look directly at the sky and he begins to cry.
 

@@ -171,3 +171,95 @@ Yep.
 
 DOMINIC
 Okay cool. That's cool.
+
+
+FROM S15
+
+MAKAYLA
+I think that the crystal is picking up something. And that creature. Like that wasn't normal. 
+
+MAKAYLA
+That is a reverse audiophone - capable of taking a recording and then projecting it back into reverse. I built it last summer - well Asher did the heavy lifting. 
+
+(action)
+Asher hands Dallas a small translucent crystal in the shape of a crude pyramid-like stone. He taps it twice against Dallas's palm before letting go—his tell when he's sure about something. 
+
+MAKAYLA
+Asher no.
+
+Dallas holds the object in his hands fasicanted. Makayla takes it away and pockets it.
+
+MAKAYLA
+Look at it. It's vibrating at the same rate as your pulse. 
+
+(action)
+Makayla stops and thinks for a moment.
+
+MAKAYLA
+Asher, do you know the numbers Mr. Mike writes? 
+
+ASHER
+Maybe. I don't know. What do you mean?
+
+MAKAYLA
+Dallas, dial in the tune to 11.53
+
+(action)
+Dallas changes the notes of his oscillator and suddenly the creature wakes up. 
+
+Makayla dashes to her computer. She rewinds the waveform recordings and finds a spike.
+
+MAKAYLA
+11.53
+
+(action)
+The creature begins to glow - and then the dark shadows grow on the screen and completely decimate the small creature on the ground. 
+
+Makayla looks at the dying creature. 
+
+MAKAYLA
+Dallas - could you interpret these readings and compile in your mind or something and tell me what they mean?
+
+(action)
+Makayla hands Dallas a bunch of papers to look through. 
+
+MAKAYLA
+This crystal - it is a phase inverter. If we run your Oscillator through it - it won't just broadcast sound - it should create a shield - a dome of silence needed to bring it back to its nest.
+
+(action)
+Makayla, Dallas, and Asher huddle around the creature and watch it fade as the equipment begins to flicker and die.
+
+INT. LAIR MONTAGE
+Makayla and Dallas rig up the dials - Dallas connects the Oscillator into a shoulder rig with the crystal on the center and puts the prototype on the table. 
+
+MAKAYLA
+We need to bring this to the place where you found the creature. 
+
+(action)
+Makayla turns on the prototype - and nothing happens - but suddenly the creature wakes up and begins to howl  - making all of the equipment in the lair act funny.
+
+Asher clutches the creature to his chest. The creature begins to stir—and Asher's notebook slips from his hand. His pencil rolls. He begins to shake. Then he's on the floor. 
+
+MAKAYLA
+Asher!
+
+(action)
+Makayla runs to rescue Asher who is laying on the floor with his eyes wide open and his mouth wide open.
+
+ASHER
+Bring me back. 
+
+MAKAYLA
+Asher - what?!
+
+ASHER 
+(in a trance)
+Bring me back. 
+
+(action)
+Asher snaps out of it and the crew are visuably shaken. Makayla holds Asher close and whipsers that it will be alright. 
+
+Dallas looks on and then at the equipment. The portable oscilloscope screen flickers and dies. 
+
+
+FROM s16 - Basically do not want the creature out - when they go to look for the tackle 

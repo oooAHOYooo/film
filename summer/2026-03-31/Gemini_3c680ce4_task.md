@@ -1,0 +1,8 @@
+- [x] Add Wikipedia-inspired design tokens to `bible.css`
+- [x] Create and style the persistent Top Bar with Search bar
+- [x] Implement Wikipedia-style Sidebar navigation
+- [x] Update `full_bible.html` with the new Top Bar and Sidebar
+- [x] Implement Dynamic Search logic in `full_bible.html`
+- [x] Restructure `index.html` (Gallery) to match the new Wikipedia layout
+- [x] Transform Bible entries into Wikipedia-style articles with Infoboxes
+- [x] Verify functionality and responsive design
