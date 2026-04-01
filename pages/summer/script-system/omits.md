@@ -263,3 +263,12 @@ Dallas looks on and then at the equipment. The portable oscilloscope screen flic
 
 
 FROM s16 - Basically do not want the creature out - when they go to look for the tackle 
+
+
+From s02 - on 4.01
+
+INT. DALLAS NEW HOUSE - NIGHT
+
+Dallas struggles to fall asleep in his new home. He hears strange noises from outside. As he looks out the window he sees a flicker of a faint gold light. 
+
+Curious and awake - Dallas heads downstairs and begins to unpack boxes. The room is sparse, filled with a few pieces of furniture.

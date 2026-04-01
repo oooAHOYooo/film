@@ -15,6 +15,7 @@ const CATEGORY_MAP = {
     'vibes-colors': 'Vibes + Colors',
     'gear': 'Gear',
     'camera-rig': 'Camera Rig',
+    'cinematography': 'Cinematography',
     'misc': 'Misc'
 };
 

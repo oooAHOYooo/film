@@ -30,6 +30,7 @@
             'Vibes + Colors': document.getElementById('vibes-grid'),
             'Gear': document.getElementById('gear-grid'),
             'Camera Rig': document.getElementById('camera-rig-grid'),
+            'Cinematography': document.getElementById('cinematography-grid'),
             'Misc': document.getElementById('misc-grid')
         };
 
