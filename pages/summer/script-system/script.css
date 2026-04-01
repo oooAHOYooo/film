@@ -170,6 +170,23 @@ body {
   line-height: 1.0;
   page-break-after: avoid;
   letter-spacing: 0.02em;
+  position: relative; /* For absolutely positioned scene IDs in print */
+}
+
+.scene-id {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--muted);
+  opacity: 0.5; /* Very subtle */
+  background: none;
+  padding: 0;
+  margin-right: 0.7rem;
+  vertical-align: baseline;
+  text-transform: lowercase;
+  font-family: var(--reading-font);
+  letter-spacing: 0.05em;
+  border: none;
 }
 
 /* Action break: (action) on its own line — hidden, ends dialogue block */
@@ -793,6 +810,18 @@ body {
 
   .scene-heading {
     page-break-after: avoid;
+  }
+
+  .scene-id {
+    position: absolute;
+    left: -1.1in;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: var(--print-script-font);
+    font-size: 12pt;
+    font-weight: normal;
+    color: #000;
   }
 
   .character-name {

@@ -134,7 +134,17 @@
         // Scene headings (INT. or EXT. at start of line)
         if (/^(INT\.|EXT\.)/i.test(text)) {
           p.className = 'scene-heading';
-          p.textContent = text.toUpperCase();
+          
+          // Check for scene ID at the end: (s01.1)
+          const idMatch = text.match(/\((s\d+\.\d+)\)$/i);
+          if (idMatch) {
+            const id = idMatch[1].toLowerCase();
+            const cleanText = text.replace(idMatch[0], '').trim();
+            p.innerHTML = '<span class="scene-id">' + id + '</span>' + cleanText.toUpperCase();
+          } else {
+            p.textContent = text.toUpperCase();
+          }
+          
           inDialogueBlock = false;
           return;
         }

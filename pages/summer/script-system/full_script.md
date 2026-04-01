@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/1/2026, 11:36:22 AM*
+*Compiled on 4/1/2026, 12:26:54 PM*
 
 ---
 
@@ -21,7 +21,7 @@
 <!-- nickname: arrival -->
 <!-- summary: New house, tall grass. He finds a rig in the reeds. Makayla and Asher want his oscillator. -->
 
-EXT. DALLAS NEW HOUSE - DAY
+EXT. DALLAS NEW HOUSE - DAY (s01.1)
 
 Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
 
@@ -147,23 +147,23 @@ Dallas looks down at a box of old equipment and stretches down to pick it up.
 # Scene 2: Sierra's Box
 <!-- summary: Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies. -->
 
-INT. DALLAS KITCHEN - SUNSET
+INT. DALLAS KITCHEN - SUNSET (s02.1)
 Dallas looks at his new surroundings. He opens drawers and closes others. Cut to : Dallas looks at a gift basket - filled with fresh fruit and items. Cut to: He hasitly begins to put forth a frozen pizza. Cut to: Dallas hangs on the couch and begins to watch tv. On the screen a weatherman talks about the upcoming Branford weather.  
 
 A noise is heard off screen. 
 
-EXT. DALLAS DRIVEWAY
+EXT. DALLAS DRIVEWAY (s02.2)
 Dallas goes outside and stares for a while at the edge of his property - along it a long fence of conneticut's finest natural tall grass. 
 
 Dallas looks back at his house - and begins to go on a walk. 
 
-EXT. BRANFORD AT NIGHT MONTAGES
+EXT. BRANFORD AT NIGHT MONTAGES (s02.3)
 
 Dallas walks around at night with a recorder in his hand. As he walks along the different coastal - he takes a big deep breath and looks saddened at the coast. He records the sounds of the ocean. 
 
 On the way home - he records the breeze of the tall grass. 
 
-INT. DALLAS NEW HOUSE - LIVINGROOM - Early NIGHT
+INT. DALLAS NEW HOUSE - LIVINGROOM - Early NIGHT (s02.4)
 Dallas walks in again and looks again at his new place. He looks at the windows, he looks at the doors, he looks at the cielings. He walks towards a group of large moving boxes scaterred in the center of the living room. 
 
 Dallas opens up the box labelled "Field Notes - Branford" to find sketches of butterflies and caterpillars and scattered drawings of curious insects. As he turns the pages, the butterflies seem to morph into creatures with wings.  Angels.  He flips through some of the pages, some containing sketches of the grass and a golden creature. And a bunch of math. Dallas closes it.
@@ -174,7 +174,7 @@ Dallas walks over to the ruby red casette player - he thumbs over the play butto
 
 Dallas gently closes the box of headphones and gear. He takes a deep breath and opens up another box laying adjacent. He carefully pulls out a heavy military-grade desktop audio recorder, another portable audio recorder, and a small portable Oscillator on his desk. 
 
-INT. DALLAS BATHROOM - NIGHT
+INT. DALLAS BATHROOM - NIGHT (s02.5)
 
 Dallas takes a shower - and as he zones out from the sounds of the hot water, a faint hum interrupts from the far outside. 
 
@@ -182,7 +182,7 @@ As he takes a shower the audio tape of the ruby red cassette player fills the ro
 
 Dallas dries off, stops the tape, and peers through the steam of the bathroom window. The hum grows louder. 
 
-INT. DALLAS DOWNSTAIRS - NIGHT
+INT. DALLAS DOWNSTAIRS - NIGHT (s02.6)
 Dallas rushes downstairs as the hum grows louder. Dallas, recorder in hand, scrambles toward the window and brings to record. The needle spikes. Dallas begins to adjust the dial - and begins to hear a whimpering faint, pure, harmonic tone. The sound abrutly stops. And then it starts up again. The sound abrutly stops. And then starts up again. This time in a pulsing pattern. Dallas looks at his watch and begins to time it. One Second. Stop. One second - top. Five seconds. Three seconds. 
 
 Suddenly hum sounds like it is moving away and its loudness begins to grow faint. Looking down at the his recording, Dallas notes a spike in the waveform on the low frequency range. 
@@ -191,7 +191,7 @@ The battery dies on the recorder. Dallas smacks the back in fustration. Scrambli
 
 Frustrated, Dallas abandones the equipment and heads for the door. 
 
-EXT. DALLAS HOUSE - NIGHT
+EXT. DALLAS HOUSE - NIGHT (s02.7)
 
 Dallas stands alone watching the tall grass sway agaisnt the salt breeze. Coyotes howl in the distance and the hum decreases in scale and size as the starry night disappears into the distance of the tall marsh grass. He sees a faint golden glow pulse once, twice, five times, three times. 
 
@@ -211,39 +211,30 @@ In the distance a thunderstorm.
 
 <!-- nickname: Meet the Neighbors -->
 
-EXT. DALLAS HOUSE - NEXT DAY MORNING
+EXT. DALLAS HOUSE - NEXT DAY MORNING (s03.1)
 Dallas walks outside his house, towards the edge of the property. As he approaches the edge of his yard he watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the audio recorder in his hand. As he does so, he becomes dazed.
 
 As Dallas dazes onward, a man approaches him from the sidewalk near his house. 
 
-DOMINIC AMARANTO, early 40s, wearing a bright salmon covered short sleeve button walks right up to Dallas with vigor. 
+DOMINIC AMARANTO, early 40s, wearing a bright salmon covered short sleeve button walks up to Dallas with vigor. 
 
 DOMINIC
-Neighbor!
+My neighbor!
 
 DALLAS
 What's that?
 
 DOMINIC
-Neighbor, neighbor - you're my neighbor - I think we're neighbors. Hey! Dominic - nice to meet you - I live nextdoor - did you just move here?
+My beighbor, neighbor - you're my neighbor - I think we're neighbors - right? You just moved yeah? Dominic - I live nextdoor. Where you coming from?
 
 DALLAS
-Oh yeah - nice to meet you.  
+Oh yeah - nice to meet you. Dallas.   
 
 DOMINIC
-Yeah, put her there. I'm Dominic... So you must be here on some university position? Last guy who was here was here for 3 years and then moved to Guilford. How is the house? Do they furnish it? 
+You here on some university position? Last guy who was here was here for 3 years and then moved on to better things up in Guilford. How is the house? Do they furnish it? 
 
 DALLAS
 Yeah. 
-
-DOMINIC
-Nice - who you work for Yale?
-
-DALLAS
-Quinnipiac nice... Sorry - what's your name? 
-
-DALLAS
-Dallas
 
 DOMINIC
 Dallas? Dallas, what a name - where you from? 
@@ -291,17 +282,17 @@ DOMINIC
 Bio-acoustics. That's the study of sound - yeah? Yeah. Right on. Alright listen - I'm about to head to the green right now - you up for a walk? My car is parked down in the center of town and I need to go get it... What's that in your hand?
 
 DALLAS
-An audio recorder. I was going to go into town anyway to get it. 
+An audio recorder. I was going to go into town to get some new batteries.  
 
 DOMINIC
-Oh yeah? Rudy's got that. Let's go - I'll buy you a coffee.
+Into town? Where you headed? Rudy's got that. Let's go - I'll buy you a coffee.
 
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
-Dallas accepts. The two begin to wander off toward. Branford. 
+Dallas nods and Dominic leads the way as the two begin their trek towards Brandford town green. 
 
-EXT. BRANFORD NEIGHBORHOOD - MOMENTS LATER
+EXT. BRANFORD NEIGHBORHOOD - MOMENTS LATER (s03.2)
 
 Dallas and Dominic begin to walk down the sidewalks towards town. 
 
@@ -314,7 +305,7 @@ No - no car.
 DOMINIC
 Yeah. Me neither - well I drive - for sure, but yeah, I share one with my sister.
 
-EXT. TOWN BRANFORD MONTAGE
+EXT. TOWN BRANFORD MONTAGE (s03.3)
 
 Dallas and Dominic through coastal sidewalks, neighborhoods, and natural marsh fences. As they approach one patch of tall marsh grass in particular, Dallas stops.
 
@@ -324,10 +315,10 @@ DOMINIC
 (spotting Dallas)
 Be careful - I heard some coyotes up in that the other night when I was walking Howie. Some people say the noises are from owls - but I know its coyotes. 
 
-EXT. TOWN CENTER - DAY
+EXT. TOWN CENTER - DAY (s03.4)
 Dallas and Dominic walk toward a small hardware store. 
 
-INT. HARDWARE STORE
+INT. HARDWARE STORE (s03.5)
 <!-- scene: 03 file: s03.md nickname: the-hum -->
 
 (action)
@@ -338,7 +329,7 @@ Dominic waves to the unfriendly man at the counter and brings Dallas to the batt
 (action)
 Dallas finds the correct batteries and grabs it off the shelf. The two exit the shop.
 
-EXT. BRANFORD GREEN
+EXT. BRANFORD GREEN (s03.6)
 
 Dallas and Dominic walk past the town green. The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
 
@@ -352,7 +343,7 @@ He rips the ticket off and walks around to see if anyone is looking, he crumbles
 
 He bends downs and grabs a key from the bottom of the car and starts it up. 
 
-INT. DOMINIC's SISTER's CAR
+INT. DOMINIC's SISTER's CAR (s03.7)
 
 Dominic opens the car and gestures Dallas to get in - non-chantanly the parking ticket in the glove box. 
 
@@ -393,7 +384,7 @@ Nice - yeah - it's nice to be the new guy in town - good old branford.
 <!-- scene: 04 file: s04.md nickname: fellowship -->
 
 <!-- nickname: fellowship -->
-EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON
+EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON (s04.1)
 
 Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends down light summerwear as they play spike ball, and church goers find themselvees are on a long line for food. 
 
@@ -519,6 +510,7 @@ Dallas takes a bite of his chicken but doesn't eat much. He's distracted by what
 (action)
 They finish eating. The group begins to disperse. 
 
+
 ---
 
 
@@ -533,7 +525,7 @@ They finish eating. The group begins to disperse.
 # Scene 5: The Merlin App
 <!-- summary: Boardwalk through the reeds. They hear birds andSomething moving in the marsh. -->
 
-EXT. MARSH TRAIL - LATER
+EXT. MARSH TRAIL - LATER (s05.1)
 The sun is dipping. Dallas and Dominic walk back home - along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
 
 Dominic and Dallas walk quietly for a while. Dominic looks out to the tall grass.
@@ -613,7 +605,7 @@ Dallas and Dominic walk slowly and Dallas looks out to the tall grass for a whil
 # Scene 6: News Vans
 <!-- summary: News vans in the street. Pat on camera. Marks on Dominic's driveway. Dallas strays and stays. -->
 
-EXT. BRANFORD NEIGHBORHOOD - CONTINUOUS
+EXT. BRANFORD NEIGHBORHOOD - CONTINUOUS (s06.1)
 
 Dallas and Dominic reach back to their neighborhood. Outside, nestled between their house, three news vans are parked haphazardly. 
 
@@ -651,7 +643,7 @@ Dominic waves back at Pat. He looks at Dallas and shrugs. The two continue past 
 (action)
 The wind gusts, catching a news umbrella and nearly toppling it. The hum in Dallas's pocket recorder spikes for a split second.
 
-EXT. DOMINIC'S HOUSE 
+EXT. DOMINIC'S HOUSE (s06.2)
 
 They arrive back at Dominic's. Two large plastic trash bins are sprawled across the driveway, trash strewn everywhere.
 
@@ -704,7 +696,7 @@ Sure.
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
 <!-- nickname: the-coordinates -->
-INT. JACE'S BASEMENT 
+INT. JACE'S BASEMENT (s07.1)
 Dallas looks around in amazement. The basement is covered with normal basement things - but as his eyes scan the room he notices that there are two beds, room, and clutter. Around the corner there is a workstation filled with old CRT machines and what not.
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
@@ -722,7 +714,7 @@ Dallas looks at all of the different audio and acoustic devices scattered across
 
 Dominic taps Dallas on the shoulder, breaking him out of his gaze and together they slowly move the AC unit upstairs. 
 
-INT. DOMINIC'S BASEMENT
+INT. DOMINIC'S BASEMENT (s07.2)
 
 <!-- scene: 07 file: s07.md nickname: the-coordinates -->
 
@@ -1007,7 +999,7 @@ Asher, meanwhile, ignores the conversation, eyes fixed on the distant bushes at 
 Dominic begins to light the gas to start boiling the brussels but the lighter doesnt work. 
 Janice throws up her hands and goes outside for a smoke. Dallas follows her with Howie.
 
-EXT. DOMINIC'S PATIO
+EXT. DOMINIC'S PATIO (s07.3)
 
 JANICE
 Thank you again Dallas.
@@ -1031,11 +1023,11 @@ Dallas begins to walk across the street to his house.
 
 # Scene 8: The Trailcam
 
-EXT. DALLAS HOUSE - MOMENTS LATER
+EXT. DALLAS HOUSE - MOMENTS LATER (s08.1)
 
 Dallas tries to bring Howie inside but he won't go. He looks like he wants to go on a walk. So Dallas reasons with the creature and brings him on a walk. 
 
-EXT. BRANFORD ROCKS - EVENING
+EXT. BRANFORD ROCKS - EVENING (s08.2)
 The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
 
 Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
@@ -1048,7 +1040,7 @@ In the far distance, a single coyote barks. Then another. A chain reaction of do
 
 The winds pick up and Dallas and Howie march forward. 
 
-EXT. EDGE OF THE MARSH 
+EXT. EDGE OF THE MARSH (s08.3)
 Dallas stands before the edge of the Marsh. As he gazes, everything increasingly becomes still. The winds lower. The waves begin to mute themselves. Then, the HUM begins.
 
 It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
@@ -1061,7 +1053,7 @@ Dallas stops at the creek's edge right outside his property lines and gazes towa
 
 Dallas ties Howie to a nearby tree and walks into the marsh. 
 
-EXT. INTO THE MARSH
+EXT. INTO THE MARSH (s08.4)
 Receiver in hand, Dallas walks deeper into the marsh. 
 
 There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. 
@@ -1091,7 +1083,7 @@ Howie whine and ties them up to a lone tree. Dallas bends down and pets Howie on
 # Scene 9: The Injured One
 <!-- summary: Dallas, as he ventures deeper and deeper into the marsh - finds a bioluminest creature -->
 
-EXT. DEEP INSIDE THE TALL MARSH 
+EXT. DEEP INSIDE THE TALL MARSH (s09.1)
 
 Dallas stands slowly, scanning the reeds around him. Nothing much seems out there - just the gentle sway of grass and the disappointed sound of his own breathing.
 
@@ -1132,7 +1124,7 @@ Suddenly, the wind returns. A violent gust. Shadows in the distance start to fil
 # Scene 10: The Chase
 <!-- nickname: Creature discovery -->
 
-EXT. TALL GRASS - MOMENTS LATER
+EXT. TALL GRASS - MOMENTS LATER (s10.1)
 
 As Dallas walks out of the tall grass, he gets the sense that something is following him.
 
@@ -1144,11 +1136,11 @@ Dallas breaks into a sprint. He reaches the stunted cedar tree— where Howie is
 
 Dallas grabs the leash and doesn't stop running until the marsh is far behind them.
 
-EXT. BRANFORD MONTAGE
+EXT. BRANFORD MONTAGE (s10.2)
 
 Dallas walks briskly past the same neighborhood route he took before. 
 
-EXT. DALLAS DRIVEWAY
+EXT. DALLAS DRIVEWAY (s10.3)
 
 At the edge of his driveway, he finally stops—gasping. The creature is motionless in his coat, but its neck glow pulses weak, fading amber.
 
@@ -1167,12 +1159,12 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 # Scene 11: Kitchen Triage
 <!-- summary: Dallas at home with the creature. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
 
-INT. DALLAS KITCHEN - DUSK
+INT. DALLAS KITCHEN - DUSK (s11.1)
 Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines it with parchment paper. The creature seems to be asleep. 
 
 Howie barks outside. Dallas rushes to grab him.
 
-INT. DALLAS KITCHEN - MOMENTS LATER
+INT. DALLAS KITCHEN - MOMENTS LATER (s11.2)
 Howie is in the living room couch nervously peering out the window. Dallas finds himself alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
 
 As Dallas peers closer, he notices that it has marks underneath its eye. As Dallas touches the marks the creature suddenly wakes up and lets out a cry.
@@ -1183,17 +1175,17 @@ The creature lets out a final whimper and slowly falls back to sleep. Dallas - l
 
 Outside the hum begins again, reverbating the kitchen. 
 
-EXT. DALLAS BACKYARD - EVENING AFTERNOON
+EXT. DALLAS BACKYARD - EVENING AFTERNOON (s11.3)
 
 Dallas runs outside with his audio recording equipment in his hand. The hum is growing into a faint roar from the distant marsh. 
 
 As he begins to record - the hum ceases - and he notices that the creature inside is crying loudly. 
 
-INT. DALLAS KITCHEN - MOMENTS LATER
+INT. DALLAS KITCHEN - MOMENTS LATER (s11.4)
 
 Dallas approaches the creature - and notices that is not crying, but still seemingly asleep.
 
-INT. DALLAS DESK - NIGHT
+INT. DALLAS DESK - NIGHT (s11.5)
 
 Dallas is peered over his computer and begins to scan a program between different frequecnies. Connected to his computer is a usb connected to all of his various audio equipment.
 
@@ -1203,7 +1195,7 @@ He listens to the recording. At first, nothing but the usual low-grade rumble of
 
 In the distance Dallas heres the creature cry again.
 
-INT. DALLAS KITCHEN
+INT. DALLAS KITCHEN (s11.6)
 
 Dallas goes over and tends to the creature - but this time it is visually shaken. Dallas sits next to it on a chair and waits for it to calm down. 
 
@@ -1217,7 +1209,7 @@ His elbow brushes the stack of Sierra's folders. One slides open—a corner of a
 
 As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint hum.  
 
-INT. DALLAS' HOUSE - KITCHEN - EVENING
+INT. DALLAS' HOUSE - KITCHEN - EVENING (s11.7)
 
 Dallas stands at the window, staring into the ripping field. The storm is brewing, but the movement in the grass is wrong.
 
@@ -1231,7 +1223,7 @@ The overhead light dims—not a flicker, but a slow, steady drain, as if somethi
 
 A doorbell is heard off screen breaking Dallas out of his trance.
 
-INT. DALLAS' HOUSE - HALLWAY - NIGHT
+INT. DALLAS' HOUSE - HALLWAY - NIGHT (s11.8)
 
 Dallas opens the door to find Dominic.
 
@@ -1299,7 +1291,7 @@ Dallas rushes to the kitchen and finds that the creature sleeping peacefully.
 <!-- nickname: THE FIRST NIGHT WITH CREATURE  -->
 <!-- summary: Wires on the creature's head. It sings through its back-holes. She can't tell anyone. -->
 
-INT. DALLAS DESK - NIGHT - MOMENTS LATER
+INT. DALLAS DESK - NIGHT - MOMENTS LATER (s12.1)
 
 Dallas is alone. He keeps peering through his late wife's old documents. 
 
@@ -1323,7 +1315,7 @@ Dallas presses play on the recorder and goes to sleep.
 
 # Scene 13: The Confrontation
 
-EXT. DALLAS HOUSE - NEXT MORNING
+EXT. DALLAS HOUSE - NEXT MORNING (s13.1)
 
 The morning air is thick with the scent of ozone. Dominic''s minivan idles in the driveway. 
 
@@ -1343,7 +1335,7 @@ Makayla kneels and touches it. Her hair flutters, static electricity pulling the
 
 Makayla notices a trail leading from the edge of the grass toward Dallas.
 
-EXT. DALLAS's HOUSE -  DOORWAY 
+EXT. DALLAS's HOUSE -  DOORWAY (s13.2)
 Makayla stares at Dallas for a good while - and reads his eyes.
 
 MAKAYLA
@@ -1384,7 +1376,7 @@ What is that?
 (action)
 Makayla pushes past Dallas and runs to the kitchen. 
 
-INT. DALLAS KITCHEN - MOMENTS LATER
+INT. DALLAS KITCHEN - MOMENTS LATER (s13.3)
 
 Dallas and Makayla hover around the table at the makeshift aquarium Dallas constructed.
 
@@ -1467,7 +1459,7 @@ Makayla shakes her head and stops toching the creature.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 # Scene 14: The Connection
-EXT. DALLAS BACKYARD - OLD PICNIC TABLE 
+EXT. DALLAS BACKYARD - OLD PICNIC TABLE (s14.1)
 
 Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. 
 
@@ -1559,7 +1551,7 @@ I'm not sure.
 (action)
 The breeze overwhelms them both in the distance they begin to hear the faint pulse of a dark deep hum. 
 
-INT. KITCHEN - CONTINUOUS
+INT. KITCHEN - CONTINUOUS (s14.2)
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1570,14 +1562,14 @@ Outside the window, the wind picks up.
 
 Asher begins to tap and tap and tap, and his head begins to shake and shake and shake. He crashes to the ground.
 
-EXT. DALLAS BACKYARD - OLD PICNIC TABLE - CONTINUOUS
+EXT. DALLAS BACKYARD - OLD PICNIC TABLE - CONTINUOUS (s14.3)
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
 A loud thump is heard from outside. Makayla runs into Dalla's kitchen.
 
-INT. DALLAS' KITCHEN - MOMENTS LATER
+INT. DALLAS' KITCHEN - MOMENTS LATER (s14.4)
 
 Makayla holds Asher by the head as he shakes on the ground. Makayla begins to sway and hum to him gently. She puts her hand on his chest and he breathes. 
 
@@ -1679,7 +1671,7 @@ Dallas - I have to show you something.
 
 # Scene 15: Makayla's Tracking Box
 
-EXT. NEIGHBORHOODS - EVENING 
+EXT. NEIGHBORHOODS - EVENING (s15.1)
 The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. 
 
 MAKAYLA
@@ -1696,7 +1688,7 @@ Everything does... which begs the question - what exactly is electricity?
 (action)
 The crew walk into the field and find a small wooden structure hidden beneath a field of tall grass. 
 
-EXT. MAKAYLA'S SPECIAL WOODED SPOT - CONTINUOUS
+EXT. MAKAYLA'S SPECIAL WOODED SPOT - CONTINUOUS (s15.2)
 As they approach the structure, they can see that it is a small wooden structure hidden by fallen trees and branches. 
 
 Inside the structure there is a wooden box. Makayla opens it. Inside there are various trail cameras and recording equipment. On the bottom of the box, Makayla pulls out various cables and wires connected to a  small crystal. 
@@ -1806,7 +1798,7 @@ We should go.
 
 # Scene 16: Makayla's Lair
 
-EXT. DALLAS BACKYARD
+EXT. DALLAS BACKYARD (s16.1)
 Makayla, Dallas, and Asher hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
@@ -1815,11 +1807,11 @@ Makayla, Dallas, and Asher hastily make their way out of the woods, back toward 
 As the crew walk, they begin to notice that the tall grass around them is acting universally restless. The crew walk in uneasy silence as the summer glow lights their pace. 
 
 
-EXT. BRANFORD TOWN GREEN - DAY
+EXT. BRANFORD TOWN GREEN - DAY (s16.2)
 
 The crew walk through the backstreets of Branford with the creature covered in a towel drapped over Makayla's dog backpack. 
 
-EXT. DALLAS'S HOUSE - DAY
+EXT. DALLAS'S HOUSE - DAY (s16.3)
 
 As they approach the driveway, the crew look suspciously at the tall grass around Dallas's house. 
 
@@ -1858,7 +1850,7 @@ This too shall pass. Breathe. Good. We'll fix this.
 (action)
 Asher slowly lowers his breathing 
 
-EXT. DALLAS'S HOUSE
+EXT. DALLAS'S HOUSE (s16.4)
 The crew finally walks up to Dallas's house, exhausted and muddy. Makayla and Asher walk up to the front door holding the backpack.
 
 Before they can even touch the doorknob, Dominic pulls up in his minivan and honks the horn. Janice is aggressively leaning out the passenger window.
@@ -1920,6 +1912,7 @@ Dallas and Makayla exchange a wide-eyed, terrified look. The creature shifts gen
 DOMINIC
 Alright see you later buddy. 
 
+
 ---
 
 
@@ -1933,7 +1926,7 @@ Alright see you later buddy.
 
 <!-- nickname: Makayla's Bond with Creature -->
 
-INT. DALLS BASEMENT
+INT. DALLS BASEMENT (s17.1)
 
 MAKAYLA, DALLAS, and ASHER are crouched in the mudroom, shoulder-to-shoulder. 
 
@@ -2048,7 +2041,7 @@ Makayla clicks a "Master" switch on the device. A small, protective green light 
 
 <!-- nickname: life-group-arrives -->
 
-INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT
+INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT (s18.1)
 
 Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates.
 
@@ -2078,7 +2071,7 @@ Makayla nods quickly and slips away.
 
 Downstairs, the volume of the creature frequency pulses rhythmically through the floorboards.
 
-INT. DALLAS BASEMENT - CONTINUOUS
+INT. DALLAS BASEMENT - CONTINUOUS (s18.2)
 Dallas is sweating. He turns the dial up. 
 
 DALLAS
@@ -2091,7 +2084,7 @@ The glowing creature in the shoebox mimics the tone, its golden light flaring br
 
 HOWIE stays curled in the corner of the stairs, disturbed, whimpering. 
 
-INT. DALLAS LIVING ROOM - UPSTAIRS CONTINUOUS
+INT. DALLAS LIVING ROOM - UPSTAIRS CONTINUOUS (s18.3)
 The last family arrive late for life group: a young couple—JOSH and SARAH—with their newborn, JP. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. 
 
 The glass pane rattles violently. 
@@ -2153,7 +2146,7 @@ Yeah - he should be up in a second.
 MAKAYLA
 I'll go and check on him.
 
-INT. BASEMENT - CONTIOUS
+INT. BASEMENT - CONTIOUS (s18.4)
 Downstairs, the creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
 
 Makayla joins him and brings over some sugar cubes to thte table. The creature is unresponsive.
@@ -2161,7 +2154,7 @@ Makayla joins him and brings over some sugar cubes to thte table. The creature i
 The sound of the LifeGroup singing "Great Is Thy Faithfulness" is muffled by the heavy basement door. Upstairs, the heavy footsteps of Dominic and the first LifeGroup guests begin to echo through the ceiling.
 
 
-INT. LIVING ROOM - CONTINUOUS
+INT. LIVING ROOM - CONTINUOUS (s18.5)
 
 TYLER
 Alright crew, glad we are all here - gathered together. On this breezy summer night. 
@@ -2171,7 +2164,7 @@ Alright crew, glad we are all here - gathered together. On this breezy summer ni
 (action)
 The group giggle a bit as the wind picks up. The group in a circle all look at eacother. 
 
-INT. DALLAS' BASEMENT - CONTINOUS
+INT. DALLAS' BASEMENT - CONTINOUS (s18.6)
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
@@ -2221,7 +2214,7 @@ What in the world?!
 <!-- nickname: the-hymn -->
 <!-- summary:  -->
 
-INT. DALLAS'S BASEMENT - SAME TIME
+INT. DALLAS'S BASEMENT - SAME TIME (s19.1)
 Mr. Mike rocks back and forth in the chair. 
 
 Dallas shuffles through a pile of old equipment—mono cables, spare parts and arranges them all neatly on a desk.
@@ -2236,7 +2229,7 @@ Her hair lifts. As she grips the crystal, she feels a warmth spread through her 
 
 She pulls her hand away. The creature's glow dims.
 
-INT. DALLAS'S LIVING ROOM - LATER
+INT. DALLAS'S LIVING ROOM - LATER (s19.2)
 People at lifegroup mill and talk. Someone asks where Dallas is.
 
 DOMINIC
@@ -2336,10 +2329,10 @@ Dallas stares at the basement door. During a silent moment of reflection, the hu
 
 In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the last person to leave. 
 
-INT. DOORWAY - CONTIOUS
+INT. DOORWAY - CONTIOUS (s19.3)
 Pat Clendenen walks out and puts his hand out to shake Dominic and Dallas' hand. As he does so, he notices from the corner of his eye the burn mark on the ground.
 
-INT. HALLWAY- CONTIOUS
+INT. HALLWAY- CONTIOUS (s19.4)
 Dominic shuts the door. 
 
 DOMINIC
@@ -2365,13 +2358,13 @@ Dominic heads toward the basement alone. Dallas's stomach drops. He and Makayla 
 # Scene 20: The Secret is Out
 
 
-INT. BASEMENT - CONTINUOUS
+INT. BASEMENT - CONTINUOUS (s20.1)
 
 Dominic descends the basement stairs, expecting a stray kitten. 
 
 Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small basement hopper window is busted open, rain blowing in from the outside.
 
-INT. DALLAS'S LIVING ROOM - CONTINUOUS
+INT. DALLAS'S LIVING ROOM - CONTINUOUS (s20.2)
 
 Dallas frantically taps his receiver. The needle flickers back and forth between frequencies. 
 
@@ -2443,7 +2436,7 @@ Asher points to the window. Dominic glances out the window and sees the red eyes
 
 Suddenly, the lights in the house flicker and within a moment, the room plunges into pitch black. 
 
-INT. DALLAS'S LIVING ROOM - CONTINUOUS
+INT. DALLAS'S LIVING ROOM - CONTINUOUS (s20.3)
 
 Makayla reaches from her backpack and grabs a bunch of flashlights and starts to hand them out to everyone. 
 
@@ -2477,7 +2470,7 @@ Makayla looks out the window and sees the burn marks on the grass.
 MAKAYLA
 Dallas. Look. 
 
-EXT. DALLAS'S BACKYARD - CONTINUOUS
+EXT. DALLAS'S BACKYARD - CONTINUOUS (s20.4)
 
 Dallas, Makayla and Asher walk outside in the backyard and witness the burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
 
@@ -2576,7 +2569,7 @@ The crew turn and sprint back into the house, slamming the door.
 
 # Scene 21: The Burn Marks
 
-INT. DALLAS LIVING ROOM
+INT. DALLAS LIVING ROOM (s21.1)
 The crew hold the door down.
 
 DOMINIC
@@ -2593,7 +2586,7 @@ Makayla runs to the table and grabs the tracker. On the display it shows a tiny 
 
 Makayla abruptly turns, grabs a flashlight and runs out the front door. 
 
-EXT. DALLAS'S BACKYARD - NIGHT 
+EXT. DALLAS'S BACKYARD - NIGHT (s21.2)
 Dominic bursts through the porch door after her. The wind whips his hair. Asher and Dallas follow close behind. 
 
 Makayla runs straight for the tall grass at the edge of their house. Dominic follows her.
@@ -2621,7 +2614,7 @@ They look again. Closer. The eyes reappear. Swirling through the beating wind an
 
 # Scene 22: The Load-Out
 
-EXT. DALLAS'S BACKYARD - CONTINUOUS
+EXT. DALLAS'S BACKYARD - CONTINUOUS (s22.1)
 The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
 
 The wind drops, the howling stops. Then it starts. The Hum. 
@@ -2646,10 +2639,10 @@ From the edge of their property, pairs of red eyes blink into existence. Two. Th
 
 The house shudders violently. The rotting black veins creep on the grass towards the front door. The red glowing eyes bleed through the window panes.
 
-EXT. MARSH - CONTINOUS 
+EXT. MARSH - CONTINOUS (s22.2)
 Makayla runs towards the golden light. Hums around her grow deafening. Dominic chases after her. 
 
-EXT. DALLAS HOUSE - CONTINOUS
+EXT. DALLAS HOUSE - CONTINOUS (s22.3)
 It’s a frantic, desperate load-out. Dallas heaves a massive speaker onto his shoulders, wrapping heavy nylon straps around his chest to distribute the weight. 
 
 The front door bows inward, the wood groaning and cracking under immense, unseen pressure. Black rot explodes across the grass towards the door. 
@@ -2664,6 +2657,7 @@ The massive, formless shadows pour into the house—
 
 but Dallas is already sprinting toward the edge of the tall grass. He plunges into the suffocating darkness of the marsh.
 
+
 ---
 
 
@@ -2677,7 +2671,7 @@ but Dallas is already sprinting toward the edge of the tall grass. He plunges in
 
 # Scene 23: The Trench Run
 
-EXT. TALL GRASS - CONTINUOUS
+EXT. TALL GRASS - CONTINUOUS (s23.1)
 Dallas enters the tall grass carrying the speaker.  The nylon straps bite into Dallas' shoulders - straining the fabric. 
 
 Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker, and then looks down at his hand - the black veins pulse under his skin, Dallas in pain, drops the speaker into into the mud with a wet heavy thunk.
@@ -2770,14 +2764,14 @@ It's patrolling.
 (action)
 The shadow creeps closer. Forty feet. Thirty feet. The black rot spreads toward Dominic's boot. 
 
-INT. DALLAS'S HOUSE - NIGHT (CONTINOUS CUT TO)
+INT. DALLAS'S HOUSE - NIGHT (CONTINOUS CUT TO) (s23.2)
 Asher and Mr. Mike pace back and forth. Asher checks the dials on the machine - and nervously looks out the window. 
 
 MR. MIKE
 (to himself)
 Come on, come on, come on...
 
-EXT. MARSH - CONTINUOUS
+EXT. MARSH - CONTINUOUS (s23.3)
 
 It stops. Its massive red eyes scan the area. It senses something. The silence stretches. Dallas tightens his grip on the nylon strap holding his speaker. 
 
@@ -2831,7 +2825,7 @@ They push forward, deeper into the howling void.
 
 # Scene 24: The Sanctuary & The Siege
 
-EXT. CENTER OF THE MARSH - LATER
+EXT. CENTER OF THE MARSH - LATER (s24.1)
 
 The howling wind suddenly dies down. 
 
@@ -2899,7 +2893,7 @@ They wade through the chaotic crossfire of light and shadow, positioning the two
 
 # Scene 25: The Final Blast
 
-EXT. CENTER OF THE MARSH - LATER
+EXT. CENTER OF THE MARSH - LATER (s25.1)
 
 The golden dome of the Elders is failing. 
 
@@ -3032,10 +3026,10 @@ Makayla lets out a massive, shuddering breath.
 <!-- scene: 26 file: s26.md nickname: final-echoes -->
 
 (action)
-EXT. TALL GRASS
+EXT. TALL GRASS (s26.1)
 The crew walk back through the tall grass, through neighborhoods, back and slow. 
 
-INT. DOMINICS HOUSE
+INT. DOMINICS HOUSE (s26.2)
 The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. 
 
 Janice makes her way through the door.
@@ -3074,25 +3068,25 @@ Thanks for letting everyone crash here Dallas. Dominic, Makayla, lets go.
 
 <!-- nickname: little aftermath -->
 
-EXT. BRANFORD - DAY
+EXT. BRANFORD - DAY (s27.1)
 
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
 
-EXT. CENTER OF THE MARSH - DAY
+EXT. CENTER OF THE MARSH - DAY (s27.2)
 Dallas walks alone into the flattened ring of grass from the night before. The storm is gone. He finds his heavy equipment where they left it—speakers knocked face-down in the mud. The oscillator on its side, screen cracked. But the sensor Makayla wired between them is still blinking. He picks it up. The screen shows a saved file: one clean recording.
 
 He presses play. The sound fills the quiet marsh— it is the tune from the golden furry creatures, captured clean. 
 
 Dallas holds play for a long moment. He looks at the photo of Sierra on his receiver. 
 
-EXT. BRANFORD - OUTSIDE PIZZA PLACE - DAY
+EXT. BRANFORD - OUTSIDE PIZZA PLACE - DAY (s27.3)
 
 PAT CLENDENEN stands outside a choppy PIZZA and POST OFFICE - place in Branford, CT. He is being interviewed by his news crew.
 
 PAT CLENDENEN
 The Nor'easter's last-second shift—call it an unlikely miracle. Either way, a good safety warning. This town's prepared now.
 
-EXT. CHURCH GROUNDS - DAY
+EXT. CHURCH GROUNDS - DAY (s27.4)
 
 A church event. Picnic tables. Nica's catered lunch. DOMINIC and DALLAS greet each other. They don't talk much. They sit next to each other and eat. 
 
@@ -3104,7 +3098,7 @@ MR. MIKE
 (to himself)
 Quiet now. The numbers are finally right. Javarice would have loved the quiet.
 
-INT. DALLAS'S WORKSHOP / HOUSE - DAY
+INT. DALLAS'S WORKSHOP / HOUSE - DAY (s27.5)
 
 Dallas at his kitchen table and grabs a battery as he walks to his workbench. He begins to fiddle with a recording mechniasm. And feed water to a tiny plant. He finally gets it working. He hits record. From outside, a low hum, different from before, bleeds into the room. He listens. He begins to sketch—notations, marks. An alphabet. 
 
@@ -3123,7 +3117,7 @@ Dallas at his kitchen table and grabs a battery as he walks to his workbench. He
 # Scene 28: Full Circle
 <!-- summary: Makayla sets up her new Lair in the woods to listen to the creatures. Dallas finds his wife's specific hum out in the marsh. -->
 
-EXT. MAKAYLA'S LAIR - DAY
+EXT. MAKAYLA'S LAIR - DAY (s28.1)
 
 Makayla walks up to the wooden structure in the woods. Asher is already there, stringing up a new, much larger antenna between the trees. The trail cameras have been repositioned to face deeper into the marsh.
 
@@ -3133,15 +3127,15 @@ The screen flares to life, a clean, perfect, golden sine wave, emerges on screen
 
 Makayla puts on a pair of headphones. 
 
-INT. DALLAS'S BEDROOM - NIGHT
+INT. DALLAS'S BEDROOM - NIGHT (s28.2)
 
 Dallas goes to bed. The device sits on the nightstand. He hears echoes. Something beyond the shadows he saw before. He lies there. Listening. He goes and checks on the plant.
 
-EXT. DALLAS'S DRIVEWAY - MORNING
+EXT. DALLAS'S DRIVEWAY - MORNING (s28.3)
 
 JANICE pulls up. She gets out. She and Dallas hug. She hands him HOWIE's leash. Dallas greets the little dog with affection. Howie's ears twitch. He's disturbed by something out in the tall grass. Dallas looks toward the creek.
 
-EXT. CREEK BEND - DAY
+EXT. CREEK BEND - DAY (s28.4)
 
 Dallas walks alone with his wife's receiver in hand. The place where the lawn becomes reed. The same bend from before. Dallas stops. He lifts the receiver. He tunes the dial. The hum rises, falls. He adjusts again. The dial clicks into place. He stands there. Recording. The tall grass does not move - and neither does Dallas. 
 
