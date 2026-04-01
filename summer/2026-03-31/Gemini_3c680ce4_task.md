@@ -1,8 +1,25 @@
-- [x] Add Wikipedia-inspired design tokens to `bible.css`
-- [x] Create and style the persistent Top Bar with Search bar
-- [x] Implement Wikipedia-style Sidebar navigation
-- [x] Update `full_bible.html` with the new Top Bar and Sidebar
-- [x] Implement Dynamic Search logic in `full_bible.html`
-- [x] Restructure `index.html` (Gallery) to match the new Wikipedia layout
-- [x] Transform Bible entries into Wikipedia-style articles with Infoboxes
-- [x] Verify functionality and responsive design
+# Task List - Asher/Makayla Mods & Tracking Box Quest
+
+- [ ] **Phase 1: Asher Character Updates**
+    - [x] Add "hanging beads" description and Makayla's comment to Scene 07 (Basement).
+    - [x] Add "hanging beads" description to Scene 14 (Picnic Table). 
+    - [x] (User already added "star maps" to Scene 14).
+    - [ ] Add beads/tapping to Scene 04 (Church Picnic).
+    - [ ] Add clicking beads to Scene 11 (Kitchen Triage).
+    - [ ] Add Morse-tapping to Scene 13 (Confrontation).
+    - [ ] Update Asher's presence in Scene 15 (beads clicking, etc.).
+- [ ] **Phase 2: Plot Shift (Wigwam to Tracking Box)**
+    - [x] Replace Scene 15's "wooden structure" with a "tracking box".
+    - [x] Update dialogue in Scene 15 to explain the tracking box quest.
+    - [x] Adjust Scene 15's "Lair" mentions to "tracking site" or similar.
+- [ ] **Phase 3: Critical Consistency Fixes (The Ending)**
+    - [ ] **Scene 17**: Fix "DALLS" typo; add Asher's traits.
+    - [ ] **Scene 23**: FIX GEOGRAPHICAL ERROR (Remove Asher from house cut-away); fix "spaeker/stoticly" typos; unify tapping trait.
+    - [ ] **Scene 24**: Add beads clicking when Asher handles the creature.
+    - [ ] **Scene 25**: Fix "deafing" typo; bridge Tracking Box tech to Final Blast.
+- [ ] **Phase 4: Bible & Documentation**
+    - [ ] Update `location-list.md` to replace "Wigwam" with "Tracking Box Site".
+    - [ ] Sync changes with `full_bible.md`.
+- [ ] **Phase 5: Review & Refine**
+    - [ ] Read through modified scripts to ensure narrative flow.
+    - [ ] Final check for any leftover "Lair" mentions.

@@ -1,54 +1,54 @@
-# Restructure Production Bible to Wikipedia-like Layout
+# Implementation Plan - Comprehensive Review & Extension of Asher/Makayla Mods
 
-This plan outlines the steps to add a dynamic search bar and restructure the Production Bible to match the Wikipedia aesthetic.
+The user has manually updated several key scenes (1, 7, 14, 15, 16) with new character traits for Asher (beads, tapping, star maps) and shifted the "Wigwam/Lair" to a "Tracking Box" quest. This plan ensures these changes are applied consistently across ALL remaining scenes where Asher or the "Lair" are mentioned.
 
 ## User Review Required
 
 > [!IMPORTANT]
-> The "Wikipedia" look involves changing the primarily sans-serif design to a mix of serif (for titles) and sans-serif (for body content). It also introduces a top search bar and a more structured sidebar.
+> **Lore Change**: In Scene 14/15, you removed the backstory about Mr. Mike's grandfather being an explorer and the "reverse audiophone" dialogue. I will ensure that the new "Tracking Box" lore fills this space consistently in later scenes.
+>
+> **Asher's Traits**: You've introduced "Morse code tapping" and "threading beads." I will apply these as rhythmic, nervous habits throughout his other scenes (4, 11, 13, 17-28) to maintain his unique character voice.
 
 ## Proposed Changes
 
-We will modify the core HTML and CSS files for the Bible system.
+### Script Review & Extension
 
-### [Bible System](file:///c:/Users/agonzalez7/film/pages/summer/bible-system/)
+#### Primary Character Updates (Asher)
+#### [MODIFY] [s11.md](file:///c:/Users/agonzalez7/film/pages/summer/script-system/scenes/s11.md)
+- Add Asher's beads clicking as he watches Dallas from the doorway.
 
-#### [MODIFY] [bible.css](file:///c:/Users/agonzalez7/film/pages/summer/bible-system/bible.css)
-- Add Wikipedia-inspired design tokens (Serif fonts, specific colors).
-- Style the new Top Bar and search input.
-- Redesign the sidebar to be a clean, list-based navigation.
-- Add styles for "Infoboxes" that will be used for entry metadata.
-- Update typography for headers (Serif) and body (Sans-serif).
+#### [MODIFY] [s13.md](file:///c:/Users/agonzalez7/film/pages/summer/script-system/scenes/s13.md)
+- Integrate Asher's Morse-tapping trait while he observes the burn marks in the yard.
 
-#### [MODIFY] [index.html](file:///c:/Users/agonzalez7/film/pages/summer/bible-system/index.html)
-- Add the new Top Bar with dynamic search.
-- Restructure the page to have a sidebar (like a Portal page in Wikipedia).
-- Apply Wikipedia-style header and subheader.
+#### [MODIFY] [s17.md](file:///c:/Users/agonzalez7/film/pages/summer/script-system/scenes/s17.md)
+- Fix typo: "DALLS" to "DALLAS".
+- Add Asher's beads/tapping traits.
 
-#### [MODIFY] [full_bible.html](file:///c:/Users/agonzalez7/film/pages/summer/bible-system/full_bible.html)
-- Add the new Top Bar with dynamic search.
-- Enhance the existing sidebar functionality.
-- Update the entry rendering logic to create Wikipedia-style articles with infoboxes.
-- Implement the "Dynamic Search" script to filter entries and provide a dropdown.
+#### [MODIFY] [s23.md](file:///c:/Users/agonzalez7/film/pages/summer/script-system/scenes/s23.md)
+- **CRITICAL**: Remove Asher from the "INT. DALLAS'S HOUSE" cut-away (he is physically in the marsh).
+- Fix typos: "spaeker" and "stoticly".
+- Unify tapping trait with "Morse-code" style.
 
-## Implementation Details
+#### [MODIFY] [s24.md](file:///c:/Users/agonzalez7/film/pages/summer/script-system/scenes/s24.md)
+- Add Asher's beads clicking when he lifts/sets down the creature.
 
-### Wikipedia Aesthetic
-- **Fonts**: Use `Georgia`, `Serif` for headings. `Inter` or `Arial` for body.
-- **Top Bar**: A persistent bar at the top containing the site title and a search input.
-- **Infobox**: A floating box on the right of each entry containing "Category" and "Source File" info.
+#### [MODIFY] [s25.md](file:///c:/Users/agonzalez7/film/pages/summer/script-system/scenes/s25.md)
+- Fix typo: "deafing".
+- Bridge the "Tracking Box" tech to the "Final Blast" frequency.
+- Maintain Asher's beads/tapping traits during the climax.
 
-### Dynamic Search
-- As the user types in the search bar, a dropdown will show matching entries.
-- Using `ENTRIES` constant already present in the script.
-- Support keyboard navigation for the search results.
+### Bible & Metadata Updates
+- **Bible Sync**: Update `full_bible.md` to reflect the shift from a permanent structure (Wigwam) to multiple Tracking Box sites.
+- **Scene Summaries**: Update scene descriptions in headers to reflect the new plot points.
+
+## Open Questions
+
+- **The Morse Tapping**: Should Asher's tapping actually "spell" anything significant to the plot later on, or is it purely a character tick?
+- **The Quest**: How many tracking boxes have they found so far? Should they mention having a "map" of these spots (stored in the star maps)?
 
 ## Verification Plan
 
-### Automated Tests
-- N/A (Visual changes)
-
 ### Manual Verification
-- Verify search functionality: typing should filter and show results.
-- Verify Wikipedia styling: Check headers, sidebar, and infoboxes.
-- Responsive check: Ensure the new top bar and sidebar work on mobile.
+- **Read-Through**: Conduct a full read-through of the modified scenes to ensure the character voice remains consistent.
+- **Consistency Check**: Verify that no mentions of the "Lair" remain in any script or bible file.
+- **Narrative Flow**: Ensure Makayla's dialogue about Asher's detachment feels earned in each scene it appears.
