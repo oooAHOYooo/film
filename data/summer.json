@@ -126,7 +126,12 @@
   "inspiration": [
     {
       "url": "https://i.pinimg.com/736x/b5/e8/35/b5e8358d5f481af54eab68a986d7fa07.jpg",
-      "title": "Camera Rig Inspo",
+      "title": "Camera Rig Inspo 1",
+      "category": "Camera Rig"
+    },
+    {
+      "url": "https://i.pinimg.com/1200x/87/d9/1d/87d91d2c8a9c7ba36af51e79104c4cff.jpg",
+      "title": "Camera Rig Inspo 2",
       "category": "Camera Rig"
     },
     {
@@ -237,6 +242,26 @@
     {
       "url": "https://i.pinimg.com/1200x/db/4e/42/db4e42354ce74152b44608cb1aedd5e0.jpg",
       "title": "Gear Inspo - Electronic Setup",
+      "category": "Gear"
+    },
+    {
+      "url": "https://i.pinimg.com/1200x/6b/db/1e/6bdb1e06252f610b34667934789e3137.jpg",
+      "title": "Gear Inspo - Modular Synth",
+      "category": "Gear"
+    },
+    {
+      "url": "https://i.pinimg.com/1200x/bc/4d/ac/bc4dacfda9d51f99d9d9e17771b873f0.jpg",
+      "title": "Gear Inspo - Rack Detail",
+      "category": "Gear"
+    },
+    {
+      "url": "https://i.pinimg.com/1200x/83/cd/b3/83cdb3b89f9eb204ec95ec0710d07d12.jpg",
+      "title": "Gear Inspo - Control Surface Detail",
+      "category": "Gear"
+    },
+    {
+      "url": "https://i.pinimg.com/1200x/46/61/07/466107b23e930c53e4bb6a7b4d1f7982.jpg",
+      "title": "Gear Inspo - Studio Setup",
       "category": "Gear"
     },
     {
