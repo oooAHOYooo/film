@@ -21,6 +21,13 @@
     "actTitle": "Arrival & Discovery"
   },
   {
+    "id": "s11-sl",
+    "file": "S11 - SL.md",
+    "title": "Kitchen Triage",
+    "act": 1,
+    "actTitle": "Arrival & Discovery"
+  },
+  {
     "id": "s14-sl",
     "file": "S14 - SL.md",
     "title": "The Connection",

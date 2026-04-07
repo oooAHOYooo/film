@@ -233,3 +233,15 @@ DALLAS
 (looking at the smoking receiver)
 We tuned them out.
 ```
+
+
+
+
+
+OMMITED = INT. DALLAS' HOUSE - KITCHEN - EVENING (s11.5)
+
+Dallas stands at the window, staring into the ripping field. The storm is brewing, but the movement in the grass is wrong.
+
+The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames.    
+
+The overhead light dims—not a flicker, but a slow, steady drain, as if something is pulling the current out of the walls. Then it returns to full brightness.

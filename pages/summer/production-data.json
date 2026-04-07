@@ -9,7 +9,7 @@
   "dallas-marsh-walk": { "durationMin": 3, "shootDays": 0, "pickup": true, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
   "dallas-night-work": { "durationMin": 3, "shootDays": 0.5, "keyElements": "", "productionNotes": "" },
   "shadows-in-wind": { "durationMin": 3, "shootDays": 0, "pickup": true, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "howie-walk-2": { "durationMin": 2, "shootDays": 0.5, "keyElements": "", "productionNotes": "" },
+  "howie-walk-2": { "durationMin": 2, "shootDays": 0.5, "keyElements": "Aluminum pan, macro monoculars, glowing marks, tech overload/golden static, red light bulb, makeshift habitat.", "productionNotes": "Includes 4 new generated AI Storyboard sketches for referencing." },
   "the-burn-mark": { "durationMin": 2, "shootDays": 0.5, "keyElements": "", "productionNotes": "" },
   "entering-grass": { "durationMin": 2, "shootDays": 0.5, "keyElements": "", "productionNotes": "" },
   "creature-rescue": { "durationMin": 5, "shootDays": 0, "pickup": true, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
