@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/7/2026, 1:41:35 PM*
+*Compiled on 4/7/2026, 3:11:43 PM*
 
 ---
 
@@ -1184,7 +1184,7 @@ He peers over at the creature and notices that it is breathing heavily. He cover
 Dallas flicks the switch and the box turns into a redlight. 
 
 
-INT. DALLAS DESK - NIGHT (s11.4)
+INT. DALLAS DESK - NIGHT (s11.3)
 
 The day has turned to night and Dallas is still tinkering with this habitat creation. From it - a bunch of wires are hooked up haphazardly to his makeshift computer. 
 
@@ -1194,13 +1194,15 @@ Dallas tries dials different frequiences to broadcast - but nothing. Dallas look
 
 He listens to the recording. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. 
 
-In the distance Dallas heres the hum again.
+In the distance Dallas hears the hum again.
 
 Dallas goes over and tends to the creature - but this time it is visually shaken. Dallas sits next to it on a chair and waits for it to calm down. 
 
+Dallas puts the creature in his new makeshift box. 
+
 As Dallas sits - his eyes get heavy - and he suddenly catches himself snoozing. He gets up - and sees Sierra's tape recorder on the desk. He stumbles over for a bit and presses play. A small little melody of Sierra playing piano and singing gently engulfs the air.  
 
-As he does, he notices that the creatures' cry begins to cease - but as it does - so does the recording. Dallas realizes that  her voice dissolve into the creature's ongoing frequency. 
+As he does, he notices that the creatures' cry begins to cease - but as it does - so does the recording. 
 
 He replays the clip. But nothing, it is blank. Dallas plays it again, distraught.
 
@@ -1208,22 +1210,9 @@ His elbow brushes the stack of Sierra's folders. One slides open—a corner of a
 
 As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint hum.  
 
-INT. DALLAS' HOUSE - KITCHEN - EVENING (s11.5)
-
-Dallas stands at the window, staring into the ripping field. The storm is brewing, but the movement in the grass is wrong.
-
-Dallas goes to look at the creature in his makeshift box. It is breathing. 
-
-He touches the photo of his late wife on the side of the receiver. The contact is long.
-
-The hum begins again, lower this time. His equipment remains silent, unable to register the frequency, but the windows of the house begin to rattle in their frames.    
-
-The overhead light dims—not a flicker, but a slow, steady drain, as if something is pulling the current out of the walls. Then it returns to full brightness.
-
 A doorbell is heard off screen breaking Dallas out of his trance.
 
-INT. DALLAS' HOUSE - HALLWAY - NIGHT (s11.6)
-
+INT. DALLAS' HOUSE - HALLWAY - NIGHT (s11.4)
 Dallas opens the door to find Dominic.
 
 DOMINIC
@@ -1267,7 +1256,7 @@ Alright well rest well big guy.
 (action)
 Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
 
-Dallas rushes to the kitchen and finds that the creature sleeping peacefully. 
+Dallas rushes to the workstation and finds that the creature sleeping peacefully. 
 
 
 
@@ -1314,9 +1303,13 @@ Dallas presses play on the recorder and goes to sleep.
 
 # Scene 13: The Confrontation
 
+INT. DALLAS BEDROOM - NEXT MORNING
+
+Dallas awakes with the sunlight hitting his face. He gets up and walks over to his desk. Outside he hears a loud bang and someone cursing in the distance. 
+
 EXT. DALLAS HOUSE - NEXT MORNING (s13.1)
 
-The morning air is thick with the scent of ozone. Dominic''s minivan idles in the driveway. 
+Dominic''s minivan idles in the driveway. Dominic gets out and checks the pressure on one of its tires. 
 
 Makayla and Asher don't follow him. They wander toward the edge of Dallas's property.
 
@@ -1328,11 +1321,42 @@ Asher, look.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-In the middle of the yard is a jagged, blackened  burn mark in the grass that resembles beads in paint hitting a white canvas - but on the green grass. It looks as if a drip of yellow blood is around it - acreating a trail towards Dallas' window. At its center lies a small, translucent crystal.
+In the middle of the yard is a jagged, blackened  burn mark in the grass that resembles paint splatters on a canvas - scattered across the green grass. It looks as if a drip of yellow blood is around it - acreating a trail towards Dallas' window. At its center lies a small, translucent crystal.
 
 Makayla kneels and touches it. Her hair flutters, static electricity pulling the strands toward the stone. She quickly pockets it.
 
 Makayla notices a trail leading from the edge of the grass toward Dallas.
+
+Dallas walks outside and Dominic bangs his hand on the car door.
+
+DOMINIC
+Dallas! Gosh what a whirlwind. Listen, I know this is a lot but I'm wondering if you could watch Howie again? Listen, our church has a bible study - you should come. That okay?
+
+DALLAS
+Yeah that's fine. 
+
+DOMINIC
+Good. 
+
+MAKAYLA
+Dominic, no worries Mr. Dallas we'll watch Howie. 
+
+DOMINIC
+Yeah? You trying to get out of the ride to costco? 
+
+MAKAYLA
+Maybe. 
+
+DOMINIC
+Alright fine - but you owe me one. If your mother comes back before I do tell her I am at costco - and then I got to probably do another thousand things.
+
+MAKAYLA
+Okay.
+
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+(action)
+Dominic drives away. 
 
 EXT. DALLAS's HOUSE -  DOORWAY (s13.2)
 Makayla stares at Dallas for a good while - and reads his eyes.
