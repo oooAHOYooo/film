@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/1/2026, 12:26:54 PM*
+*Compiled on 4/7/2026, 1:41:35 PM*
 
 ---
 
@@ -1169,33 +1169,32 @@ Howie is in the living room couch nervously peering out the window. Dallas finds
 
 As Dallas peers closer, he notices that it has marks underneath its eye. As Dallas touches the marks the creature suddenly wakes up and lets out a cry.
 
-As the creature cries - Dallas notices that all of the screens on his equipment turn slowly into golden static. The hue gets so vibrant and bright that permant golden marks are left scattered across all of his equipment near the creature. 
+As the creature cries - Dallas notices that all of the screens on his equipment transform a sudden burst of golden static. The hue gets so vibrant and bright that permant golden marks are left scattered across all of his equipment near the creature. 
 
 The creature lets out a final whimper and slowly falls back to sleep. Dallas - looks at the mark again, as its sparkles and then fades. 
 
-Outside the hum begins again, reverbating the kitchen. 
+INT. DALLAS WORKSHOP (s11.3)
 
-EXT. DALLAS BACKYARD - EVENING AFTERNOON (s11.3)
+Dallas enters the workshop and grabs a bunch of things. 
 
-Dallas runs outside with his audio recording equipment in his hand. The hum is growing into a faint roar from the distant marsh. 
+Dallas begins to construct a livable habit that the creature could live in. He grabs spare objects around his workbench and constructs. 
 
-As he begins to record - the hum ceases - and he notices that the creature inside is crying loudly. 
+He peers over at the creature and notices that it is breathing heavily. He covers it with a blanket - and a makeshift box - as he notices that the light hurts it. 
 
-INT. DALLAS KITCHEN - MOMENTS LATER (s11.4)
+Dallas flicks the switch and the box turns into a redlight. 
 
-Dallas approaches the creature - and notices that is not crying, but still seemingly asleep.
 
-INT. DALLAS DESK - NIGHT (s11.5)
+INT. DALLAS DESK - NIGHT (s11.4)
 
-Dallas is peered over his computer and begins to scan a program between different frequecnies. Connected to his computer is a usb connected to all of his various audio equipment.
+The day has turned to night and Dallas is still tinkering with this habitat creation. From it - a bunch of wires are hooked up haphazardly to his makeshift computer. 
 
-Dallas tries different frequiences to broadcast - but nothing. Dallas look at the recordings of the day that captured and finds that there is a peak on the GHz frequency 115.2GHZ. 
+Dallas is peered over his computer and begins to scan a program between different spectrums. 
+
+Dallas tries dials different frequiences to broadcast - but nothing. Dallas look at the recordings of the day that captured and finds that there is a peak on the GHz frequency 115.2GHZ. 
 
 He listens to the recording. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. 
 
-In the distance Dallas heres the creature cry again.
-
-INT. DALLAS KITCHEN (s11.6)
+In the distance Dallas heres the hum again.
 
 Dallas goes over and tends to the creature - but this time it is visually shaken. Dallas sits next to it on a chair and waits for it to calm down. 
 
@@ -1209,7 +1208,7 @@ His elbow brushes the stack of Sierra's folders. One slides open—a corner of a
 
 As he is listening another burst hits the ongoing recording. Dallas looks up from his desk and peers outside. Another faint hum.  
 
-INT. DALLAS' HOUSE - KITCHEN - EVENING (s11.7)
+INT. DALLAS' HOUSE - KITCHEN - EVENING (s11.5)
 
 Dallas stands at the window, staring into the ripping field. The storm is brewing, but the movement in the grass is wrong.
 
@@ -1223,7 +1222,7 @@ The overhead light dims—not a flicker, but a slow, steady drain, as if somethi
 
 A doorbell is heard off screen breaking Dallas out of his trance.
 
-INT. DALLAS' HOUSE - HALLWAY - NIGHT (s11.8)
+INT. DALLAS' HOUSE - HALLWAY - NIGHT (s11.6)
 
 Dallas opens the door to find Dominic.
 
@@ -3081,7 +3080,7 @@ Dallas holds play for a long moment. He looks at the photo of Sierra on his rece
 
 EXT. BRANFORD - OUTSIDE PIZZA PLACE - DAY (s27.3)
 
-PAT CLENDENEN stands outside a choppy PIZZA and POST OFFICE - place in Branford, CT. He is being interviewed by his news crew.
+PAT CLENDENEN, microphone in hand, stands by a windy flag by the PIZZA and POST OFFICE - place on 142 branford road. 
 
 PAT CLENDENEN
 The Nor'easter's last-second shift—call it an unlikely miracle. Either way, a good safety warning. This town's prepared now.

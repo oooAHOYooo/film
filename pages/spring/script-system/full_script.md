@@ -1,6 +1,6 @@
 # The Fall of Hibisicas — Full Script
 
-*Compiled on 4/1/2026, 11:36:21 AM*
+*Compiled on 4/7/2026, 1:41:35 PM*
 
 ## LOOSE NOTES
 
@@ -30,6 +30,15 @@ INT. SOMEWHERE
 
 VOICEOVER
 Sometimes there are feelings of fresh spring breezes that hit your face and you feel okay again. Sometimes that doesn't happen. 
+
+(action)
+A professor looks out the window of a public library. He is an older gentleman, dressed, and nearby him somebody sniffles. He is greatly disturbed by this. 
+
+INT. LIBRARY - DAY
+
+The professor begins to look up prices on zillow - and looks nostaglically at all of the books. He then walks around the library and begins to touch the books. 
+
+He looks at the windows and begins to measure the window. 
 
 ---
 
