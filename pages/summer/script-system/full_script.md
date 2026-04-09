@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/7/2026, 3:22:46 PM*
+*Compiled on 4/9/2026, 8:07:08 AM*
 
 ---
 
@@ -1277,7 +1277,7 @@ Dallas rushes to the workstation and finds that the creature sleeping peacefully
 <!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
 <!-- nickname: THE FIRST NIGHT WITH CREATURE  -->
-<!-- summary: Wires on the creature's head. It sings through its back-holes. She can't tell anyone. -->
+
 
 INT. DALLAS DESK - NIGHT - MOMENTS LATER (s12.1)
 
@@ -1311,7 +1311,9 @@ EXT. DALLAS HOUSE - NEXT MORNING (s13.1)
 
 Dominic''s minivan idles in the driveway. Dominic gets out and checks the pressure on one of its tires. 
 
-Makayla and Asher don't follow him. They wander toward the edge of Dallas's property.
+Dominic takes a deep breath and takes off his shoes. He finds a patch of grass and touches it. 
+
+Makayla and Asher wander toward the edge of Dallas's property, kneeling over when they get to the edge. 
 
 Dominic walks right up to Dallas' doorway and knocks loudly. 
 
@@ -1321,13 +1323,13 @@ Asher, look.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-In the middle of the yard is a jagged, blackened  burn mark in the grass that resembles paint splatters on a canvas - scattered across the green grass. It looks as if a drip of yellow blood is around it - acreating a trail towards Dallas' window. At its center lies a small, translucent crystal.
+Towards the edge of the yard is a jagged, burn mark in the grass that resembles paint splatters on a canvas - scattered across the green grass. It looks as if a drip of yellow blood is around it - acreating a trail towards Dallas' window. At its center lies a small, translucent crystal.
 
 Makayla kneels and touches it. Her hair flutters, static electricity pulling the strands toward the stone. She quickly pockets it.
 
 Makayla notices a trail leading from the edge of the grass toward Dallas.
 
-Dallas walks outside and Dominic bangs his hand on the car door.
+Dallas walks outside and Dominic bangs his hand on the car door. As Do
 
 DOMINIC
 Dallas! Gosh what a whirlwind. Listen, I know this is a lot but I'm wondering if you could watch Howie again? Listen, our church has a bible study - you should come. That okay?

@@ -28,6 +28,13 @@
     "actTitle": "Arrival & Discovery"
   },
   {
+    "id": "s13-sl",
+    "file": "S13 - SL.md",
+    "title": "The Confrontation",
+    "act": 2,
+    "actTitle": "The Creature"
+  },
+  {
     "id": "s14-sl",
     "file": "S14 - SL.md",
     "title": "The Connection",

@@ -15,7 +15,8 @@
       "Bash(done)",
       "Bash(open:*)",
       "Bash(git:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(find /home/alexg/Dev/film -type f -name *shot* -o -name *s09* -o -name *s10*)"
     ]
   }
 }
