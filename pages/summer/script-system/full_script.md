@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/9/2026, 8:07:08 AM*
+*Compiled on 4/9/2026, 12:34:31 PM*
 
 ---
 
@@ -1378,7 +1378,7 @@ Okay.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla turns to the burn marks. 
+Makayla turns and points to the burn marks. 
 
 MAKAYLA
 What is that outside your house?
@@ -1386,7 +1386,8 @@ What is that outside your house?
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Dallas looks outside and sees that there are a bunch of burn marks on the edge of the tall grass. 
+Dallas looks outside, towards the burn marks on the edge of 
+the tall grass. His eyes widen. 
 
 DALLAS
 I am not sure. 
@@ -1399,7 +1400,8 @@ What is that?
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla pushes past Dallas and runs to the kitchen. 
+Makayla pushes past Dallas and runs to the kitchen. Asher and Dallas stand 
+silent looking at each other for a beat too long. 
 
 INT. DALLAS KITCHEN - MOMENTS LATER (s13.3)
 
@@ -1424,30 +1426,41 @@ Look at this, look how it breathes.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-The pair look closer at the creature - it seems to breath through its back. Makayla touches the creature gently - which causes the Oscillator around it to spark.
+The pair look closer at the creature - it seems to breath through its back. 
+Makayla touches the creature gently - which causes the screen Oscillator around 
+it to spark.
 
 MAKAYLA
 We can't tell anyone about this.
 
-<!-- scene: 13 file: s13.md nickname: entering-grass -->
+(action)walks over and
+Makayla turns to Dallas who nods in agreement. 
 
-(action)
-Makayla turns to Dallas who nods in agreement.
+EXT. DALLAS HOUSE - PICNIC BENCH (s13.4)
+Dallas adjusts his position on the picnic bench and gently walks towards the 
+edge of the tall grass. 
 
 MAKAYLA
 Mr. Dallas, where did you find it?
 
 DALLAS
-Out somewhere in the tall reeds a couple of miles away. I am not sure exactly. It was dark. 
+A couple of miles away. I am not sure exactly. It was during my walk with 
+Howie.
 
 MAKAYLA
-Why did you grab it?
+How did Howie react to it?
+
+DALLAS
+He didn't really - I tied him up before I ventured off the trail. 
+
+MAKAYLA
+Why did you take it?
 
 DALLAS
 It looked like it was injured.
 
 MAKAYLA
-And is it?
+And you could fix it? 
 
 DALLAS
 I think so. 
@@ -1455,21 +1468,8 @@ I think so.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Dallas walks over and pulls over his bright electronic lamp over it. Where it shows the different burn marks. 
-
-MAKAYLA
-Look at that!
-
-<!-- scene: 13 file: s13.md nickname: entering-grass -->
-
-(action)
-Makayla stand dumbfounded looking at the creature - they can't believe it. They walk around Makayla stares at it for a good while. 
-
-Makayla brushes the creature's wing, hears a lullaby, and as she does a sillheto of a woman appears on the wall. 
-
-Makayla shakes her head and stops toching the creature. 
-
-
+Dallas grabs a heat lamp and begins to examine the creature. Asher in the 
+distance stands off, afraid to look at the creature. 
 
 
 ---
@@ -1488,57 +1488,10 @@ EXT. DALLAS BACKYARD - OLD PICNIC TABLE (s14.1)
 
 Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. 
 
-Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in approval. He takes some string from his pocket and begins to thread various quanity of beads. 
+Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in approval. He takes some string from his pocket and begins to quietly thread various quanity of beads. 
 
 MAKAYLA
-Your wife was an Epistemologist? 
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Dallas looks at the sky and then at the ground and then at the edge of the property. 
-
-MAKAYLA
-She studied how fish communicate underwater?
-
-DALLAS
-She did.
-
-MAKAYLA
-That's interesting... Sounds like a smart lady.
-
-DALLAS
-She was. 
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Dallas looks at the ground.
-
-MAKAYLA
-Our moms gone too. Janice was her sister, Dominic, her brother, baby brother. We used to live with her - and now we are here - in branford - in my uncle's basement - nextdoor to a bioacoustics.... What's it like?
-
-DALLAS
-What's what like?
-
-MAKAYLA
-Your job.
-
-DALLAS
-I'm not sure yet. I'll tell you when I find it.
-
-MAKAYLA
-Sounds good.
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-A gentle breeze blows through the sky. Asher begins to pace around a little outside himself and bob his head a bit back and forth. He goes into the house without much indication or word from anyone. 
-
-Makayla holds the Oscillator in her hand and fiddles with it. 
-
-MAKAYLA
-What do you do when you are sad? Like sad all the time. 
+What do you do when you are sad? 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1547,6 +1500,77 @@ Dallas looks at Howie and then at Makayla.
 
 DALLAS
 I don't know.
+
+MAKAYLA
+Your wife was an Epistemologist? 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas looks at the sky and then at the ground and then at the burn marks at the edge of the property. 
+
+MAKAYLA
+She studied how fish communicate underwater?
+
+DALLAS
+She did.
+
+MAKAYLA
+Sounds like a smart lady.
+
+DALLAS
+She was... How did you know that?
+
+MAKAYLA
+How did I know what?
+
+DALLAS
+How did you know that my wife was an Epistemologist. 
+
+MAKAYLA
+I've read her papers. Read her book.
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas nods and looks at the ground.
+
+MAKAYLA
+Our moms gone too. But we're still here and now we are here living with her baby brother - in Branford - - nextdoor to a bioacoustics engineer.... who found the creature I have been looking for my entire adult life... Dallas, what are we going to do? 
+
+DALLAS
+I'm not sure. 
+
+MAKAYLA
+That habitat you built. What is that about?
+
+DALLAS
+I think it is senstivie to UV light. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Makayla nods. 
+
+DALLAS
+I'm not sure yet. I'll tell you when I find it.
+
+MAKAYLA
+Sounds good. Hopefully we all are still here?
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dallas looks at Makayla curiously. 
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+A gentle breeze blows through the sky. Asher begins to pace around a little outside himself and bob his head a bit back and forth. He goes into the house without much indication or word from anyone. 
+
+Makayla holds the Oscillator in her hand and fiddles with it. 
+
+
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
