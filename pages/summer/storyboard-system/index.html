@@ -13,6 +13,45 @@
         <div class="film-list">
           <div class="film-item active">Creatures in the Tall Grass</div>
         </div>
+
+        <div class="full-pdf-feature">
+          <h2>Project Files</h2>
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="pdf-feature-card">
+              <div class="pdf-feature-title" style="align-items: flex-start;">
+                <svg class="pdf-feature-icon" style="flex-shrink: 0;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <div style="line-height: 1.2; font-size: 0.95rem;">PRODUCTION READY<br><span style="font-size: 1.1em; color: var(--accent);">STORYBOARD</span></div>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 2px;">The compiled master document with all current scenes.</p>
+              <a href="full_storyboard.pdf" target="_blank" class="pdf-feature-btn">Open PDF</a>
+              <div class="pdf-feature-timestamp" id="pdf-timestamp">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Checking update time...
+              </div>
+            </div>
+
+            <div class="pdf-feature-card">
+              <div class="pdf-feature-title" style="align-items: flex-start;">
+                <svg class="pdf-feature-icon" style="flex-shrink: 0; color: #0077c2; background: #e6f4fd;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <div style="line-height: 1.2; font-size: 0.95rem;">MASTER<br><span style="font-size: 1.1em; color: #0077c2;">SHOT LIST</span></div>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--muted); margin-bottom: 2px;">The complete breakdown of all shots for production.</p>
+              <a href="https://docs.google.com/document/d/1V39rCMtCAiPmbLCY0A6LZDx9BSZG-tM2ooQUaz4O2V8/edit?usp=sharing" target="_blank" class="pdf-feature-btn" style="background: #0077c2;">View Document</a>
+            </div>
+          </div>
+        </div>
       </aside>
 
       <main class="storyboard-main">
@@ -55,24 +94,79 @@
 
     async function loadScenes() {
       try {
-        const [response, pdfsResponse] = await Promise.all([
-           fetch('manifest.json'),
-           fetch('pdfs-data.json').catch(() => null)
+        const [response, pdfsResponse, metaResponse] = await Promise.all([
+           fetch('manifest.json').catch(() => null),
+           fetch('pdfs-data.json').catch(() => null),
+           fetch('pdf-meta.json').catch(() => null)
         ]);
-        const scenes = await response.json();
-        const availablePDFs = pdfsResponse && pdfsResponse.ok ? await pdfsResponse.json() : [];
+        
+        let scenes = [];
+        if (response && response.ok) {
+           scenes = await response.json();
+        }
+        
+        // Normalize to handle both strings (legacy) and objects
+        let availablePDFsRaw = pdfsResponse && pdfsResponse.ok ? await pdfsResponse.json() : [];
+        const availablePDFs = availablePDFsRaw.map(item => typeof item === 'string' ? { file: item, mtime: null } : item);
+
+        if (metaResponse && metaResponse.ok) {
+           const meta = await metaResponse.json();
+           const timestampEl = document.getElementById('pdf-timestamp');
+           if (timestampEl && meta.lastUpdated) {
+             const date = new Date(meta.lastUpdated);
+             const formattedDate = date.toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+             timestampEl.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Updated ${formattedDate}`;
+           }
+        }
 
         const container = document.getElementById('sceneList');
         container.innerHTML = '';
+        
+        if (scenes.length === 0 && availablePDFs.length === 0) {
+           container.innerHTML = '<div>No scenes found. Ensure manifest.json or pdfs-data.json exist.</div>';
+           return;
+        }
+
+        // If manifest doesn't exist but we have PDFs, just show PDFs:
+        if (scenes.length === 0) {
+            scenes = availablePDFs.map(pdfObj => {
+                const match = pdfObj.file.match(/s(\d+)/i);
+                const sceneNumber = match ? parseInt(match[1], 10) : 0;
+                return {
+                    id: `s${sceneNumber}-sl`,
+                    title: pdfObj.file.replace(/\.pdf$/i, ''),
+                    act: 0,
+                    actTitle: 'Imported',
+                    sceneNumber,
+                    pdfFile: pdfObj.file
+                };
+            });
+        }
 
         const acts = new Map();
         scenes.forEach((scene, index) => {
-          const match = scene.id.match(/\d+/);
-          const sceneNumber = match ? parseInt(match[0], 10) : index + 1;
+          const match = scene.id ? scene.id.match(/\d+/) : null;
+          const sceneNumber = scene.sceneNumber || (match ? parseInt(match[0], 10) : index + 1);
           const act = scene.act || 0;
           const actTitle = scene.actTitle || 'Unsorted';
+          
+          let matchedPdf = scene.pdfFile;
+          let matchedPdfMtime = null;
+
+          if (!matchedPdf) {
+              const folderName = scene.file ? scene.file.split(' ')[0].toLowerCase() : (scene.id ? scene.id.replace('-sl','').toLowerCase() : `s${sceneNumber}`);
+              const foundObj = availablePDFs.find(f => f.file.toLowerCase().includes(folderName));
+              if (foundObj) {
+                  matchedPdf = foundObj.file;
+                  matchedPdfMtime = foundObj.mtime;
+              }
+          } else {
+              const foundObj = availablePDFs.find(f => f.file === matchedPdf);
+              if (foundObj) matchedPdfMtime = foundObj.mtime;
+          }
+
           if (!acts.has(act)) acts.set(act, { actTitle, scenes: [] });
-          acts.get(act).scenes.push({ ...scene, sceneNumber });
+          acts.get(act).scenes.push({ ...scene, sceneNumber, matchedPdf, matchedPdfMtime });
         });
 
         const actNumbers = Array.from(acts.keys()).sort((a, b) => a - b);
@@ -91,7 +185,8 @@
           const meta = document.createElement('div');
           meta.className = 'scene-meta';
           const countSpan = document.createElement('span');
-          countSpan.textContent = `${actScenes.length} scenes`;
+          let pdfCount = actScenes.filter(s => s.matchedPdf).length;
+          countSpan.textContent = `${pdfCount} of ${actScenes.length} PDFs Ready`;
           meta.appendChild(countSpan);
           section.appendChild(meta);
 
@@ -106,7 +201,6 @@
             wrapper.style.marginBottom = '6px';
 
             const link = document.createElement('a');
-            link.href = `scene.html?id=${scene.id}`;
             link.className = 'gallery-scene-item';
             link.style.flex = '1';
             link.style.margin = '0';
@@ -117,59 +211,44 @@
 
             const title = document.createElement('span');
             title.className = 'gallery-scene-title';
-            title.textContent = scene.title;
+            title.textContent = scene.title || `Scene ${scene.sceneNumber}`;
 
-            const file = document.createElement('span');
-            file.className = 'gallery-scene-file';
-            file.textContent = scene.file;
+            const status = document.createElement('span');
+            status.className = 'gallery-scene-file';
+
+            if (scene.matchedPdf) {
+               link.href = `pdfs/${scene.matchedPdf}`;
+               link.target = '_blank';
+               if (scene.matchedPdfMtime) {
+                   const dateObj = new Date(scene.matchedPdfMtime);
+                   status.textContent = `Updated ${dateObj.toLocaleDateString([], { month: 'short', day: 'numeric'})}`;
+               } else {
+                   status.textContent = 'Ready';
+               }
+               status.style.color = '#10b981'; // Green
+               status.style.fontWeight = '600';
+            } else {
+               link.href = '#';
+               link.onclick = (e) => e.preventDefault();
+               link.style.opacity = '0.5';
+               status.textContent = 'Pending';
+            }
 
             link.appendChild(num);
             link.appendChild(title);
-            link.appendChild(file);
+            link.appendChild(status);
             wrapper.appendChild(link);
-
-            const folderName = scene.file ? scene.file.split(' ')[0].toLowerCase() : scene.id.replace('-sl','').toLowerCase();
-            
-            if (!scene.file) {
-               link.href = '#';
-               link.onclick = (e) => e.preventDefault();
-               link.style.opacity = '0.6';
-               link.style.cursor = 'default';
-               file.textContent = '(Generated)';
-            }
-
-            // Check if there's a matching PDF in the pdfs folder
-            const matchedPdf = availablePDFs.find(f => f.toLowerCase().includes(folderName));
-
-            if (matchedPdf) {
-               const vizLink = document.createElement('a');
-               vizLink.href = `pdfs/${matchedPdf}`;
-               vizLink.textContent = 'View PDF';
-               vizLink.target = '_blank';
-               vizLink.style.padding = '8px 16px';
-               vizLink.style.background = 'var(--glass-bg, #f3f2ef)';
-               vizLink.style.border = '1px solid var(--border, #e2e1de)';
-               vizLink.style.borderRadius = '6px';
-               vizLink.style.textDecoration = 'none';
-               vizLink.style.color = 'var(--text-primary, #2c2c2a)';
-               vizLink.style.fontSize = '0.85rem';
-               vizLink.style.fontWeight = '600';
-               vizLink.style.whiteSpace = 'nowrap';
-               vizLink.onmouseover = () => { vizLink.style.background = 'var(--bg-hover, #e2e1de)'; };
-               vizLink.onmouseout = () => { vizLink.style.background = 'var(--glass-bg, #f3f2ef)'; };
-               wrapper.appendChild(vizLink);
-            }
-
             list.appendChild(wrapper);
           });
 
           section.appendChild(list);
           container.appendChild(section);
         });
+
       } catch (error) {
         console.error('Error loading scenes:', error);
         document.getElementById('sceneList').innerHTML =
-          '<div>Error loading scenes. Make sure manifest.json exists.</div>';
+          '<div>Error loading scenes. Please ensure you are serving via HTTP so JSON files can be read.</div>';
       }
     }
 

@@ -75,6 +75,73 @@ a {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 }
 
+.full-pdf-feature {
+  margin-top: 36px;
+}
+
+.full-pdf-feature h2 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.pdf-feature-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pdf-feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border-color: var(--accent);
+}
+
+.pdf-feature-title {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pdf-feature-icon {
+  color: #d93025;
+}
+
+.pdf-feature-btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.pdf-feature-btn:hover {
+  background: #1557c0;
+}
+
+.pdf-feature-timestamp {
+  font-size: 0.75rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .storyboard-main {
   flex: 1;
   padding: 0 0 80px 0;

@@ -57,10 +57,23 @@ async function compilePDFs() {
   
   console.log(`\n✓ Successfully merged ${files.length} PDFs into ${OUTPUT_PDF}`);
 
-  // Save out a simple JSON of the available PDFs so the frontend index.html can link to them
+  // Save out a JSON of the available PDFs with their modification timestamps
   const pdfManifestPath = path.join(SYSTEM_DIR, 'pdfs-data.json');
-  fs.writeFileSync(pdfManifestPath, JSON.stringify(files, null, 2));
+  const pdfData = files.map(file => {
+    const stat = fs.statSync(path.join(PDFS_DIR, file));
+    return {
+      file: file,
+      mtime: stat.mtime.toISOString()
+    };
+  });
+  fs.writeFileSync(pdfManifestPath, JSON.stringify(pdfData, null, 2));
   console.log(`✓ Generated pdfs-data.json for frontend linking`);
+
+  // Save metadata
+  const pdfMetadataPath = path.join(SYSTEM_DIR, 'pdf-meta.json');
+  const metadata = { lastUpdated: new Date().toISOString() };
+  fs.writeFileSync(pdfMetadataPath, JSON.stringify(metadata, null, 2));
+  console.log(`✓ Generated pdf-meta.json with timestamp`);
 
   console.log(`\nTo update the PDF later, just replace or add PDFs in the "pdfs" folder and run this script again!`);
 }
