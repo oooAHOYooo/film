@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/10/2026, 1:44:33 PM*
+*Compiled on 4/10/2026, 1:49:54 PM*
 
 ---
 
@@ -1951,104 +1951,20 @@ Dominic comes out from the other side door and throws the minivan into drive.
 
 INT. DALLS BASEMENT (s17.1)
 
-MAKAYLA, DALLAS, and ASHER are crouched in the mudroom, shoulder-to-shoulder. 
+Dallas looks at the creature by himself for a long time. 
 
-Makayla stares for a long time at the golden creature. The jagged red lines on her portable viewfinder match the erratic, panicked breathing of the tiny animal. 
+Dallas stares for a long time at the golden creature. The jagged red lines on his portable viewfinder match the erratic, panicked breathing of the tiny animal. 
 
-MAKAYLA
-(whispering, to Dallas)
-I think it's dying. 
-
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
-
-(action)
 The creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
 
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+Dallas walks over and then paces around the room; He taps various equipments and thinks and thinks. Dallas looks at the photo of Sierra taped to his receiver. 
 
-(action)
-Dallas walks over and then paces around the room; Asher and Makayla watch him. He taps various equipments and thinks and thinks. Dallas looks at the photo of Sierra taped to his receiver. 
+Dallas grabs the crystal that Makayla left him and hooks it up to the alligator clips - seems like the creature is interacting with it somehow. 
 
-DALLAS
-Sierra believed that some bio-acoustics could be used as communication.  A defense mechanism.  They were camouflage.
-
-MAKAYLA
-And you?
-
-DALLAS
-And me what?
-
-MAKAYLA
-What do you believe?
-
-DALLAS
-I don't know...
-
-MAKAYLA
-Asher thinks your special. He told me the day that we all met. 
-
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
-
-(action)
-Dallas looks at Asher. And then down at his hands holding the oscillator.
-
-DALLAS
-Why do you want to find that creature?
-
-MAKAYLA
-Why do you?
-
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
-
-(action)
-Dallas thinks for a while. 
-
-Dallas
-It's hurt. 
-
-MAKAYLA
-It is hurt.
-
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
-
-(action)
-Asher walks over to the oscillator and begins to dial it.
-
-ASHER
-(Trance like)
-One - one - five - three. 
-
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
-
-(action)
-Dallas gently turns the dial on his receiver to **mak115.3 MHz**. He dials the volume up just enough to create a soft, resonant hum in the basement. 
+Dallas gently turns the dial on his receiver and dials the volume up just enough to create a soft, resonant hum in the basement. 
 
 The creature's ears twitch. It stops its erratic movements. Slowly, it opens its mouth and emits a low, melodic tone, matching the frequency Dallas is broadcasting. As it sings, the golden glow in its neck grows stronger, pushing back the shadows in the room.
 
-MAKAYLA
-(amazed)
-It's mimicking.
-
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
-
-(action)
-Dallas walks over to the small creature and gently rubs its furry head. 
-
-MAKAYLA 
-If we keep broadcasting... maybe we can teach it. If it learns the frequency, it can return to the marsh and you know - avoid those red-eye demon things. 
-
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
-
-(action)
-The summer breeze blows through the open basement window. 
-
-MAKAYLA
-We could to teach it.
-
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
-
-(action)
-Makayla clicks a "Master" switch on the device. A small, protective green light flickers on.
 
 
 ---
@@ -2082,7 +1998,7 @@ DOMINIC
 For what? You don't drink coffee. Where's Dallas? People are asking for the host.
 
 MAKAYLA
-He's downstairs. We... found a stray cat outside. It's really sick. He's nursing it. I was getting it some sugar water.
+He's downstairs. He... found a stray cat outside. It's really sick. He's nursing it. I was getting it some sugar water.
 
 DOMINIC
 A cat? Alright. Well, tell him not to get bit. And tell him to come up soon.
@@ -2095,7 +2011,19 @@ Makayla nods quickly and slips away.
 Downstairs, the volume of the creature frequency pulses rhythmically through the floorboards.
 
 INT. DALLAS BASEMENT - CONTINUOUS (s18.2)
-Dallas is sweating. He turns the dial up. 
+Dallas is sweating. He turns the dial up. Dallas walks over to the small creature and gently rubs its furry head. 
+
+MAKAYLA 
+If we keep broadcasting... maybe we can teach it. If it learns the frequency, it can return to the marsh and you know - avoid those red-eye demon things. 
+
+MAKAYLA
+We could to teach it.
+
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
+Makayla clicks a "Master" switch on the device. A small, protective green light flickers on.
+
 
 DALLAS
 Come on. 

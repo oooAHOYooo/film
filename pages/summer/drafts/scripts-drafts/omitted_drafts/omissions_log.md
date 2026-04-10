@@ -47,3 +47,33 @@ DOMINIC
 Alright see you later buddy. 
 //
 
+## FROM S17
+
+
+
+(action)
+Dallas looks at Asher. And then down at his hands holding the oscillator.
+
+DALLAS
+Why do you want to find that creature?
+
+MAKAYLA
+Why do you?
+
+(action)
+Dallas thinks for a while. 
+
+Dallas
+It's hurt. 
+
+MAKAYLA
+It is hurt.
+
+(action)
+Asher walks over to the oscillator and begins to dial it.
+
+ASHER
+(Trance like)
+One - one - five - three. 
+
+(action)
