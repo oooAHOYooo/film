@@ -21,7 +21,7 @@
             <div class="nav-left">
               <span class="nav-title">Storyboard Gallery</span>
               <a class="nav-link" href="/pages/summer.html">Summer</a>
-              <a class="nav-link" href="full_storyboard.html">Full Storyboard</a>
+              <a class="nav-link" href="full_storyboard.pdf">Full Storyboard PDF</a>
               <a class="nav-link" href="/pages/summer/script-system/index.html">Script Gallery</a>
             </div>
           </div>
@@ -55,12 +55,12 @@
 
     async function loadScenes() {
       try {
-        const [response, framesResponse] = await Promise.all([
+        const [response, pdfsResponse] = await Promise.all([
            fetch('manifest.json'),
-           fetch('frames-data.json').catch(() => null)
+           fetch('pdfs-data.json').catch(() => null)
         ]);
         const scenes = await response.json();
-        const framesData = framesResponse && framesResponse.ok ? await framesResponse.json() : null;
+        const availablePDFs = pdfsResponse && pdfsResponse.ok ? await pdfsResponse.json() : [];
 
         const container = document.getElementById('sceneList');
         container.innerHTML = '';
@@ -138,10 +138,14 @@
                file.textContent = '(Generated)';
             }
 
-            if (framesData && framesData[folderName]) {
+            // Check if there's a matching PDF in the pdfs folder
+            const matchedPdf = availablePDFs.find(f => f.toLowerCase().includes(folderName));
+
+            if (matchedPdf) {
                const vizLink = document.createElement('a');
-               vizLink.href = `/pages/summer/storyboard.html?folder=${folderName}`;
-               vizLink.textContent = 'Visual Board';
+               vizLink.href = `pdfs/${matchedPdf}`;
+               vizLink.textContent = 'View PDF';
+               vizLink.target = '_blank';
                vizLink.style.padding = '8px 16px';
                vizLink.style.background = 'var(--glass-bg, #f3f2ef)';
                vizLink.style.border = '1px solid var(--border, #e2e1de)';

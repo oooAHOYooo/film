@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/9/2026, 12:34:31 PM*
+*Compiled on 4/10/2026, 10:55:30 AM*
 
 ---
 
@@ -1556,20 +1556,19 @@ DALLAS
 I'm not sure yet. I'll tell you when I find it.
 
 MAKAYLA
-Sounds good. Hopefully we all are still here?
+Sounds good. Hopefully we all are still here...
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas looks at Makayla curiously. 
+Dallas looks at Makayla with curisoity. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-A gentle breeze blows through the sky. Asher begins to pace around a little outside himself and bob his head a bit back and forth. He goes into the house without much indication or word from anyone. 
+A gentle breeze blows through the sky. Asher begins to pace around and bob his head a bit back and forth. Suddenly, he stops in his tracks and proceeds to walk slowly into the house. 
 
-Makayla holds the Oscillator in her hand and fiddles with it. 
-
+Makayla looks back and him and continues to fiddle with the Oscillator.
 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
@@ -1721,10 +1720,10 @@ Dallas - I have to show you something.
 # Scene 15: Makayla's Tracking Box
 
 EXT. NEIGHBORHOODS - EVENING (s15.1)
-The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. 
+The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
 
 MAKAYLA
-Did you know peptide crystals can conduct electricity? 
+Did you know that peptide crystals conduct electricity? 
 
 DALLAS
 I've heard. 
@@ -1735,7 +1734,7 @@ Everything does... which begs the question - what exactly is electricity?
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-The crew walk into the field and find a small wooden structure hidden beneath a field of tall grass. 
+The crew walk into the field and find a small wooden chest on the ground, hidden beneath a field of tall grass. 
 
 EXT. MAKAYLA'S SPECIAL WOODED SPOT - CONTINUOUS (s15.2)
 As they approach the structure, they can see that it is a small wooden structure hidden by fallen trees and branches. 
@@ -1745,20 +1744,17 @@ Inside the structure there is a wooden box. Makayla opens it. Inside there are v
 One device in particular intrigues Dallas. It is an old cart that has a perptual motion machine on it. Dallas walks over to it and admires it.
 
 MAKAYLA
-That's Ashers perpetual motion machine...
+That's our attempt at a perpetual motion machine...
 
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
-(action)
-Dallas and Asher make eye contact with each other. 
 
 MAKAYLA
-Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - they are going to change the world.
+Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - they are going to change the world... He just needs to rest a bit. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-Dallas looks at asher and then back at Asher. 
+Dallas looks at one of the inventions on the ground. 
 
 MAKAYLA
 Do you believe in fate Mr. Dallas?
@@ -1773,20 +1769,13 @@ Dallas shakes his head no.
 (action)
 Makayla picks up a small flower that looks planted. She begins to dig and unearth various alligator clips hooked up to the bottom roots. 
 
-Asher walks over with the crystal in his hand - and places an aligator clip on the crystal - it glows. 
-
 MAKAYLA
 Uncle Dom would never understand what we happened today. What we have witnessed. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-Asher hands Dallas a small wooden box. Dallas opens it and finds a small translucent crystal inside—a crude pyramid-like stone. Dallas holds it, fascinated.
-
-<!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
-
-(action)
-Asher taps it twice against Dallas's palm before letting go—his tell when he's sure about something. 
+Makayla hands Dallas a small wooden box. Dallas opens it and finds a small translucent crystal inside—a crude pyramid-like stone. Dallas holds it, fascinated.
 
 MAKAYLA
 What do you think?
@@ -1794,13 +1783,11 @@ What do you think?
 DALLAS
 Seems like a quartz. 
 
-MAKAYLA
-Asher show him.
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-Asher walks over and puts the cystal on top of a little bay area device that is also hidden by a bunch of branches. Asher grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. He points to the two metal rods that are coming out of the portable wooden device - and nudges Dallas to grip. 
+Makayla walks over and puts the cystal on top of a little bay area device that is also hidden by a bunch of branches. Makayla grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. She points to the two metal rods that are coming out of the portable wooden device - and nudges Dallas to grip. 
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
@@ -1821,7 +1808,7 @@ We don't know. But I wonder what would happen if we hook up the creature to it -
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
 (action)
-In the distance the howls are getting more ganrly. Makayla and Asher stand silent in fear.
+In the distance the howls are getting more ganrly. Makayla and Dallas stand silent in fear.
 
 <!-- scene: 15 file: s15.md nickname: the-burn-mark-2 -->
 
@@ -1848,21 +1835,24 @@ We should go.
 # Scene 16: Makayla's Lair
 
 EXT. DALLAS BACKYARD (s16.1)
-Makayla, Dallas, and Asher hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 
+Makayla and Dallas hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-As the crew walk, they begin to notice that the tall grass around them is acting universally restless. The crew walk in uneasy silence as the summer glow lights their pace. 
+As the two walk, they begin to notice that the tall grass around them is acting universally restless. The two walk in uneasy silence as the summer glow lights their pace. 
 
 
 EXT. BRANFORD TOWN GREEN - DAY (s16.2)
 
-The crew walk through the backstreets of Branford with the creature covered in a towel drapped over Makayla's dog backpack. 
+The two walk through the backstreets of Branford with the creature covered in a towel drapped over the dog backpack. 
 
 EXT. DALLAS'S HOUSE - DAY (s16.3)
 
-As they approach the driveway, the crew look suspciously at the tall grass around Dallas's house. 
+As they approach the driveway, the two look suspciously at the tall grass around Dallas's house. 
+
+INT. DALLAS' KITCHEN
+The crew find Asher in the kitchen, pacing back and forth. 
 
 Asher begins to shake and falls to the ground. His eyes look directly at the sky and he begins to cry.
 
@@ -1892,21 +1882,25 @@ Breathe.
 Dallas looks at the tall grass. His spare handheld oscilloscope begins to beep. The crew, little by little, hear the distinct faint hum following them.
 
 MAKAYLA
-This too shall pass. Breathe. Good. We'll fix this.
+Breathe. Breathe. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-Asher slowly lowers his breathing 
+Asher slowly lowers his breathing. A doorbell is heard off screen.
 
-EXT. DALLAS'S HOUSE (s16.4)
-The crew finally walks up to Dallas's house, exhausted and muddy. Makayla and Asher walk up to the front door holding the backpack.
+INT. DALLAS'S HOUSE - HALLWAY - DAY (s16.4)
 
 Before they can even touch the doorknob, Dominic pulls up in his minivan and honks the horn. Janice is aggressively leaning out the passenger window.
 
 JANICE
 (yelling out the window)
 You kids! Howie my baby. Why is he in the backpack?
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Dallas and Makayla look at each other in fear.
 
 MAKAYLA
 That's not Howie. 
@@ -1924,7 +1918,7 @@ We found an injured rabbit and Mr. Dallas has tools to help.
 Janice looks at Dallas dumbfounded. 
 
 JANICE
-What?... Kid's get in the car - and leave Mr. Dallas alone - he's hosting life group tonight and I am sure he needs to get ready. 
+What?... Kid's get in the car - and leave Mr. Dallas alone - he's coming to our life group tonight and I am sure he needs to get rest a bit and get ready. 
 
 DALLAS
 It's okay. 
@@ -1940,27 +1934,7 @@ So you now I got to go home and clean this out before Howie gets in, is that wha
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-Dominic comes out from the other side door and throws the minivan into park and steps out, carrying three massive trays of toasted Brussels sprouts and a stack of hymnals. He looks at Dallas. 
-
-DOMINIC
-Dallas, my man! You got the living room vacuumed? Here are some food - we'll heat up later. 
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Dallas stops dead in his tracks. 
-
-DOMINIC
-What? 
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Dallas and Makayla exchange a wide-eyed, terrified look. The creature shifts gently in the shoebox on the kitchen island, beginning to glow. 
-
-DOMINIC
-Alright see you later buddy. 
-
+Dominic comes out from the other side door and throws the minivan into drive. 
 
 ---
 

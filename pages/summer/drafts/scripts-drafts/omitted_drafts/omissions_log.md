@@ -25,3 +25,25 @@ This file tracks the major concepts, character moments, and plot points that wer
 - **Makayla's Diagram:** Makayla originally pulled out Sierra's folder during the setup of the trap specifically to point at a "waveform diagram with two opposing frequencies colliding" as an explicit blueprint. 
 
 *(Note: The full, unedited text of original Scenes 21 through 27 has been archived in `original_s21_to_s25.md` in this folder).*
+
+
+
+## FROM s16
+d steps out, carrying three massive trays of toasted Brussels sprouts and a stack of hymnals. He looks at Dallas. 
+
+DOMINIC
+Dallas, my man! You got the living room vacuumed? Here are some food - we'll heat up later. 
+
+(action)
+Dallas stops dead in his tracks. 
+
+DOMINIC
+What? 
+
+(action)
+Dallas and Makayla exchange a wide-eyed, terrified look. The creature shifts gently in the shoebox on the kitchen island, beginning to glow. 
+
+DOMINIC
+Alright see you later buddy. 
+//
+

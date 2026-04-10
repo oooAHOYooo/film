@@ -6,7 +6,10 @@
     "populate": "node populate",
     "generate": "node scripts/generate-inspo-manifests.js",
     "compile:all": "node compile-all.js",
+    "compile:pdfs": "node pages/summer/storyboard-system/compile-pdfs.js",
     "start up": "node start-summer.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
 }

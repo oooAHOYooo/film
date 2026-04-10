@@ -68,6 +68,10 @@ const tasks = [
     name: 'Summer Storyboard Frames',
     script: path.join(ROOT, 'pages', 'summer', 'storyboard-system', 'compile.js'),
   },
+  {
+    name: 'Summer Storyboard PDFs',
+    script: path.join(ROOT, 'pages', 'summer', 'storyboard-system', 'compile-pdfs.js'),
+  },
 ];
 
 function runTask(task) {
