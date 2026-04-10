@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/10/2026, 2:15:54 PM*
+*Compiled on 4/10/2026, 2:37:42 PM*
 
 ---
 
@@ -2018,9 +2018,9 @@ What the heck is that? Asher.
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-Makayla and Dallas hush downstairs to find the creature has made it. Makayla quickly rushes to grab a box for it. 
+Makayla and Dallas hush downstairs to find the creature has made it somehow in the basement. Makayla quickly rushes to grab a box for it. 
 
-INT. KITCHEN (S18.3)
+INT. DOMINIC's KITCHEN (S18.3)
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
@@ -2065,8 +2065,7 @@ We could to teach it.
 (action)
 Makayla clicks a "Master" switch on the device. A small, protective green light flickers on.
 
-
-DALLAS
+MAKAYLA
 Come on. 
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
@@ -2076,7 +2075,7 @@ The glowing creature in the shoebox mimics the tone, its golden light flaring br
 
 HOWIE stays curled in the corner of the stairs, disturbed, whimpering. 
 
-INT. DALLAS LIVING ROOM - UPSTAIRS CONTINUOUS (s18.5)
+INT. DOMINIC's LIVING ROOM - UPSTAIRS CONTINUOUS (s18.5)
 The last family arrive late for life group: a young couple—JOSH and SARAH—with their newborn, JP. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. 
 
 The glass pane rattles violently. 
@@ -2138,7 +2137,7 @@ Yeah - he should be up in a second.
 MAKAYLA
 I'll go and check on him.
 
-INT. BASEMENT - CONTIOUS (s18.6)
+INT. DOMINIC'S BASEMENT - CONTIOUS (s18.6)
 Downstairs, the creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
 
 Makayla joins him and brings over some sugar cubes to thte table. The creature is unresponsive.
@@ -2146,7 +2145,7 @@ Makayla joins him and brings over some sugar cubes to thte table. The creature i
 The sound of the LifeGroup singing "Great Is Thy Faithfulness" is muffled by the heavy basement door. Upstairs, the heavy footsteps of Dominic and the first LifeGroup guests begin to echo through the ceiling.
 
 
-INT. LIVING ROOM - CONTINUOUS (s18.7)
+INT. DOMINIC'S LIVING ROOM - CONTINUOUS (s18.7)
 
 TYLER
 Alright crew, glad we are all here - gathered together. On this breezy summer night. 
@@ -2156,7 +2155,7 @@ Alright crew, glad we are all here - gathered together. On this breezy summer ni
 (action)
 The group giggle a bit as the wind picks up. The group in a circle all look at eacother. 
 
-INT. DALLAS' BASEMENT - CONTINOUS (s18.8)
+INT. DOMINIC'S BASEMENT - CONTINOUS (s18.8)
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
