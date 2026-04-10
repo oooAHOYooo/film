@@ -26,8 +26,7 @@ This is a human-friendly map you can reference while reorganizing.
 | 14 | `s14.md` | `creature-rescue` | Creature Rescue |
 | 15 | `s15.md` | `the-burn-mark-2` | The Burn Mark |
 | 16 | `s16.md` | `the-escape` | The Escape |
-| 17 | `s17.md` | `makeshift-hospital` | Makeshift Hospital |
-| 18 | `s17.md` | `entering-grass-2` | Entering Grass |
+| 17 | `s17.md` | `resonance` | Resonance |
 | 19 | `s18.md` | `life-group-arrives` | Life Group Arrives |
 | 20 | `s20.md` | `basement-huddle` | Basement Huddle |
 | 21 | `s19.md` | `the-hymn` | The Hymn |

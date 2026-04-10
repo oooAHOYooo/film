@@ -33,8 +33,7 @@ Use this to stay on track while writing. Scene numbers and file names match the 
 | 14 | **Creature Rescue** `s14.md` | Dallas finds injured creature; back-holes, waveform; touches it, creature quiets; scope in phase. |
 | 15 | **The Burn Mark** `s15.md` | Creature on crystal; lifts it, it cries for crystal and faints; something massive in the reeds; Dallas grabs creature, Howie freaks; long journey back. |
 | 16 | **The Escape** `s16.md` | Dawn; Janice drops Howie; Makayla and Asher find burn mark and crystal; Dominic, life group papers, Costco, schools cancelled. |
-| 17 | **Makeshift Hospital** `s17.md` | Creature in kitchen; oscilloscope, dial, creature sleeps; Howie by door; creature cries, hum answers, windows rattle. |
-| 18 | **Entering Grass** `s17.md` | Creature in kitchen; triage, wires, 115.3 MHz; Howie disturbed; windows rattle, hum. |
+| 17 | **Resonance** `s17.md` | Dallas and the creature in the basement; frequency matching; tone resonance. |
 | 19 | **Life Group Arrives** `s18.md` | Dallas brings creature in; porch scope pulses; Dominic, Mr. Mike freaks at basement; Makayla tends creature, glow brightens; Dominic sees it. |
 | 20 | **Basement Huddle** `s20.md` | Wires on creature; calm = melody, Howie barks = whimper; Dominic/Mr. Mike/Makayla argue; scramble downstairs; doorbell—Josh, Sarah, JP; Mr. Mike 115.2 Hertz. |
 | 21 | **The Hymn** `s19.md` | Families, Brussels; Makayla pockets sugar; basement shoebox, crystal, communication; Where's Dallas?—cat lie, vet; Tyler, hymn; hum joins; reflection, leave; Dominic rushes downstairs. |

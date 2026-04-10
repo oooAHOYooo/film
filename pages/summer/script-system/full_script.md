@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/10/2026, 1:49:54 PM*
+*Compiled on 4/10/2026, 1:56:47 PM*
 
 ---
 
@@ -1939,15 +1939,15 @@ Dominic comes out from the other side door and throws the minivan into drive.
 ---
 
 
-### Scene 17: Entering Grass
+### Scene 17: Resonance
 
-*ACT II — The Creature | ID: entering-grass-2 | File: s17.md*
+*ACT II — The Creature | ID: resonance | File: s17.md*
 
 ---
 
-<!-- scene: 17 file: s17.md nickname: entering-grass-2 -->
+<!-- scene: 17 file: s17.md nickname: resonance -->
 
-<!-- nickname: Makayla's Bond with Creature -->
+<!-- nickname: resonance -->
 
 INT. DALLS BASEMENT (s17.1)
 

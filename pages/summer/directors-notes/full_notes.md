@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 4/10/2026, 1:49:55 PM*
+*Compiled on 4/10/2026, 1:56:48 PM*
 
 ---
 
@@ -206,9 +206,9 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 17: Entering Grass
+#### Scene 17: Resonance
 
-*ID: entering-grass-2*
+*ID: resonance*
 
 *No director's note for this scene.*
 
