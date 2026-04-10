@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/10/2026, 1:56:47 PM*
+*Compiled on 4/10/2026, 2:11:30 PM*
 
 ---
 
@@ -1965,6 +1965,15 @@ Dallas gently turns the dial on his receiver and dials the volume up just enough
 
 The creature's ears twitch. It stops its erratic movements. Slowly, it opens its mouth and emits a low, melodic tone, matching the frequency Dallas is broadcasting. As it sings, the golden glow in its neck grows stronger, pushing back the shadows in the room.
 
+A doorbell is heard off screen. 
+
+INT. DALLAS NIGHTTIME (S17.2)
+
+DALLAS sleeps next to the the setup. He hears a beep beep and looks at the workshop. The creature is gone!. 
+
+EXT. DALLAS BACKYARD - NIGHT (S17.3)
+
+Dallas runs outside and looks around. But to no avail. 
 
 
 ---
@@ -1980,28 +1989,60 @@ The creature's ears twitch. It stops its erratic movements. Slowly, it opens its
 
 <!-- nickname: life-group-arrives -->
 
-INT. DALLAS'S KITCHEN / LIVING ROOM - NIGHT (s18.1)
+INT. DOMINIC'S KITCHEN / LIVING ROOM - NIGHT (s18.1)
 
 Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates.
 
-Makayla drifts through the kitchen. She opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word.
+The doorbell is heard.
+
+INT. DOMINIC'S HALLWAY (S18.2)
+Makayla answers the door and sees Dallas. She quietly hushes him to the corner. 
+
+MAKAYLA
+Dallas, what happened? How is it doing?
+
+DOMINIC
+It ran away. 
+
+MAKAYLA
+It what?!
+
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
+Suddenly a loud bang is heard off screen. Makayla and Dallas turn to look. Mr Mike is heard off screen.
+
+MR. MIKE
+What the heck is that? Asher. 
+
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
+Makayla and Dallas hush downstairs to find the creature has made it. Makayla quickly rushes to grab a box for it. 
+
+INT. KITCHEN (S18.3)
+
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
+Makayla drifts through the kitchen. She opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word. She continues to look and finds a bunch of tupawear. She grabs a couple of them. 
 
 Dominic catches her slipping the sugar into her pocket. He wipes his hands on a dish towel.
 
 DOMINIC
-What are you doing? 
+What are you doing Makayla. 
 
 MAKAYLA
 Nothing. Just... getting sugar.
 
 DOMINIC
-For what? You don't drink coffee. Where's Dallas? People are asking for the host.
+For what? Where's Dallas? 
 
 MAKAYLA
 He's downstairs. He... found a stray cat outside. It's really sick. He's nursing it. I was getting it some sugar water.
 
 DOMINIC
-A cat? Alright. Well, tell him not to get bit. And tell him to come up soon.
+A cat? Alright. Well, tell him not to grow too attached - Howie is enough for us - okay? What you doing with that Tupawear - you going to put the cat in that?
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
