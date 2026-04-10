@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass - Production Bible
 
-*Compiled on 4/10/2026, 1:42:18 PM*
+*Compiled on 4/10/2026, 1:43:23 PM*
 
 ---
 
@@ -1105,9 +1105,9 @@ This keeps the gallery focused on build references and techniques for the produc
 
 ---
 
-# Practical effect 16 — The Escape
+# Practical effect 16 — Back Home
 
-**Script:** Scene 16 · [s16.md](../../../script-system/scenes/s16.md) · The Escape
+**Script:** Scene 16 · [s16.md](../../../script-system/scenes/s16.md) · Back Home
 
 ## Locations
 
