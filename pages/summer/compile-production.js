@@ -445,6 +445,7 @@ function generateBreakdownRows(rows, calendar, holidays) {
                             <td class="shoot-days-col"><span class="shoot-days">${r.pickup ? 'pickup' : (r.shootDays != null ? r.shootDays : '—')}</span></td>
                             <td class="key-elements">
                                 ${r.keyElements ? r.keyElements.replace(/\n/g, ' ').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') : '—'}
+                                ${r.characters && r.characters.length === 1 && r.characters[0] === 'DALLAS' ? '<div style="margin-top:8px;"><span style="color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span></div>' : ''}
                                 <div style="margin-top:8px;">${charChips}</div>
                             </td>
                             <td class="production-notes">${escapeHtml(r.productionNotes || '—')}</td>
@@ -498,10 +499,14 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
     const locList = Array.from(locs).sort().join('<br>') || '—';
     const scenesList = sceneNums.length > 0 ? sceneNums.join(' + ') : '—';
 
+    const isJustDallas = chars.size === 1 && chars.has('DALLAS');
+    const dallasTag = isJustDallas ? '<span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>' : '';
+
     html += `
       <div class="stats-card" style="margin-bottom: 0;">
         <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
           Day ${dayNum} <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">${formatD(dateStr)}</span>
+          ${dallasTag}
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
