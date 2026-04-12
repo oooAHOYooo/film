@@ -52,6 +52,23 @@
             gap: 24px;
         }
 
+        .back-hub-btn {
+            background: var(--timeline-active);
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: opacity 0.2s;
+        }
+
+        .back-hub-btn:hover {
+            opacity: 0.8;
+        }
+
         .nav-btn {
             background: none;
             border: 1px solid rgba(255,255,255,0.2);
@@ -279,6 +296,7 @@
 <body>
 
     <header class="header">
+        <a href="/pages/summer.html" class="back-hub-btn">← Back to Hub</a>
         <h1>Assembly Timeline <span style="opacity:0.3; margin-left:10px;">90 MIN CUT</span></h1>
         <div class="controls">
             <div class="toggle-container">
@@ -392,10 +410,27 @@
 
         function renderMisc(misc) {
             const container = document.getElementById('miscTimeline');
+            container.innerHTML = '';
             misc.forEach(item => {
                 const card = document.createElement('div');
                 card.className = 'misc-card';
                 card.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
+                card.addEventListener('click', () => {
+                    const video = document.getElementById('videoPlayer');
+                    const placeholder = document.getElementById('noFootage');
+                    if (item.url) {
+                        video.src = item.url;
+                        video.style.display = 'block';
+                        placeholder.style.display = 'none';
+                        video.play();
+                        // Update Info for Misc
+                        document.getElementById('currentTitle').innerText = item.title;
+                        document.getElementById('currentMeta').innerText = `Type: MISC | Date: ${item.date || '—'}`;
+                        document.getElementById('currentDuration').innerText = '--:--';
+                    } else {
+                        alert("Footage not yet linked for this vibe.");
+                    }
+                });
                 container.appendChild(card);
             });
         }

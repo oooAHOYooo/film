@@ -30,6 +30,13 @@
     { "id": "s28", "sceneId": "full-circle", "title": "Full Circle", "url": null, "type": "placeholder", "durationMin": 1, "subscenes": 4 }
   ],
   "misc": [
-    { "title": "Atmospheric Reference", "url": null, "description": "Marsh visual/sonic tests", "date": "2026-03-29" }
+    { 
+      "title": "Branford Streets [VIBE EDIT]", 
+      "url": "https://storage.googleapis.com/sea-monster/exports/pre-production/%5BVIBE%20EDIT%5D%5BBRANFORD%20STREETS%5D%5B12-21-24%5D%5B1080p%5D-1.mov", 
+      "description": "Atmospheric pre-production tests of Branford locations.", 
+      "date": "2024-12-21",
+      "type": "vibe"
+    },
+    { "title": "Atmospheric Reference", "url": null, "description": "Marsh visual/sonic tests", "date": "2026-03-29", "type": "vibe" }
   ]
 }
