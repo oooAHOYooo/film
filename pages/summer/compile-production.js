@@ -251,6 +251,23 @@ function getProductionStyles() {
                 font-weight: 600;
                 color: var(--prod-accent);
             }
+            .sidebar-button {
+                display: block;
+                width: 100%;
+                padding: 14px;
+                background: #2ea44f;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 600;
+                border-radius: 6px;
+                margin-bottom: 24px;
+                font-size: 0.9rem;
+                transition: background 0.2s;
+            }
+            .sidebar-button:hover {
+                background: #2c974b;
+            }
             .sidebar-nav-title {
                 font-size: 0.85rem;
                 font-weight: 600;
@@ -449,6 +466,11 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
             <aside class="sidebar no-print">
                 <div style="font-size: 1.2rem; font-weight: 700; color: var(--prod-accent); margin-bottom: 24px;">SUMMER HUB</div>
                 
+                <a href="https://docs.google.com/spreadsheets/d/1si2c5ahcv-MxEjdCnCVAq7QULCkY4I6Wj-JR7zKhFFg/edit?usp=sharing" target="_blank" class="sidebar-button">
+                    📊 Open Master Schedule<br>
+                    <span style="font-size:0.7rem; font-weight:400; opacity:0.8;">(Google Sheet Sync)</span>
+                </a>
+
                 <div class="stats-card">
                     <div class="stats-title">Shoot Window</div>
                     <div class="stats-value">${formatDate(calendar["1"])} – ${formatDate(calendar["15"])}</div>
