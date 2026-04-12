@@ -1,0 +1,35 @@
+{
+  "timeline": [
+    { "id": "s01", "sceneId": "arrival", "title": "Arrival & Discovery", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 1 },
+    { "id": "s02", "sceneId": "dallas-night", "title": "Sierra's Box", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 7 },
+    { "id": "s03", "sceneId": "the-hum", "title": "The Hum", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 7 },
+    { "id": "s04", "sceneId": "fellowship", "title": "The Fellowship", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 1 },
+    { "id": "s05", "sceneId": "marsh-walk-later", "title": "The Merlin App", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 1 },
+    { "id": "s06", "sceneId": "news-vans", "title": "News Vans", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 2 },
+    { "id": "s07", "sceneId": "the-coordinates", "title": "The Coordinates", "url": null, "type": "placeholder", "durationMin": 4, "subscenes": 3 },
+    { "id": "s08", "sceneId": "dallas-marsh-walk", "title": "The Trailcam", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 4 },
+    { "id": "s09", "sceneId": "dallas-night-work", "title": "The Injured One", "url": "https://storage.googleapis.com/sea-monster/exports/pre-production/s9-CITG-TS-compiled-d1-.mp4", "type": "test", "date": "2026-03-29", "durationMin": 3, "subscenes": 1, "notes": "Latest pre-production test shoot." },
+    { "id": "s10", "sceneId": "shadows-in-wind", "title": "The Chase", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 3 },
+    { "id": "s11", "sceneId": "howie-walk-2", "title": "Kitchen Triage", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 8 },
+    { "id": "s12", "sceneId": "the-burn-mark", "title": "The Burn Mark & Costco", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 1 },
+    { "id": "s13", "sceneId": "entering-grass", "title": "The Confrontation", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 3 },
+    { "id": "s14", "sceneId": "creature-rescue", "title": "The Connection", "url": null, "type": "placeholder", "durationMin": 5, "subscenes": 4 },
+    { "id": "s15", "sceneId": "the-burn-mark-2", "title": "Makayla's Lair", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 2 },
+    { "id": "s16", "sceneId": "the-escape", "title": "Back Home", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 4 },
+    { "id": "s17", "sceneId": "resonance", "title": "Resonance", "url": null, "type": "placeholder", "durationMin": 1, "subscenes": 1 },
+    { "id": "s18", "sceneId": "life-group-arrives", "title": "Life Group Arrives", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 6 },
+    { "id": "s19", "sceneId": "the-hymn", "title": "The Hymn", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 4 },
+    { "id": "s20", "sceneId": "red-eyes", "title": "The Secret is Out", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 4 },
+    { "id": "s21", "sceneId": "creature-missing", "title": "The Burn Marks", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 2 },
+    { "id": "s22", "sceneId": "marsh-confrontation", "title": "The Load-Out", "url": null, "type": "placeholder", "durationMin": 6, "subscenes": 3 },
+    { "id": "s23", "sceneId": "predator-attack", "title": "The Trench Run", "url": null, "type": "placeholder", "durationMin": 3, "subscenes": 3 },
+    { "id": "s24", "sceneId": "the-perimeter", "title": "The Sanctuary & The Siege", "url": null, "type": "placeholder", "durationMin": 5, "subscenes": 1 },
+    { "id": "s25", "sceneId": "the-last-dinner", "title": "The Final Blast", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 1 },
+    { "id": "s26", "sceneId": "final-echoes", "title": "The Morning After", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 2 },
+    { "id": "s27", "sceneId": "aftermath", "title": "Aftermath", "url": null, "type": "placeholder", "durationMin": 2, "subscenes": 5 },
+    { "id": "s28", "sceneId": "full-circle", "title": "Full Circle", "url": null, "type": "placeholder", "durationMin": 1, "subscenes": 4 }
+  ],
+  "misc": [
+    { "title": "Atmospheric Reference", "url": null, "description": "Marsh visual/sonic tests", "date": "2026-03-29" }
+  ]
+}

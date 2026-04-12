@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembly Timeline — Creatures in the Tall Grass</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <style>
+        :root {
+            --cinematic-bg: #0a0a0b;
+            --timeline-track: rgba(255, 255, 255, 0.05);
+            --timeline-active: #f1aa3c;
+            --timeline-filled: rgba(241, 170, 60, 0.4);
+            --text-muted: #888;
+            --glass: rgba(13, 17, 23, 0.85);
+            --unit-width: 60px; /* Width per 1 minute of scene duration */
+        }
+
+        body {
+            background: var(--cinematic-bg);
+            color: #fff;
+            margin: 0;
+            overflow-x: hidden;
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+        }
+
+        .header {
+            padding: 1.5rem 5%;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(15px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header h1 {
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin: 0;
+            color: var(--timeline-active);
+        }
+
+        .header .controls {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .nav-btn {
+            background: none;
+            border: 1px solid rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: #fff;
+        }
+
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        /* Video Player Area */
+        .player-container {
+            max-width: 1280px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .main-player {
+            background: #000;
+            aspect-ratio: 2.39 / 1;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .main-player video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .player-placeholder {
+            padding: 4rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-weight: 300;
+            letter-spacing: 0.05em;
+        }
+
+        .scene-info {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .scene-info h2 {
+            margin: 0;
+            font-size: 1.75rem;
+            font-weight: 300;
+            letter-spacing: -0.01em;
+        }
+
+        .scene-info .meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-top: 4px;
+        }
+
+        /* Timeline Styling */
+        .timeline-section {
+            margin: 4rem 0;
+            padding: 0 5%;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            color: var(--text-muted);
+        }
+
+        .timeline-wrapper {
+            position: relative;
+            background: var(--timeline-track);
+            border-radius: 8px;
+            padding: 40px 0;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scroll-snap-type: x proximity;
+            scrollbar-width: none;
+        }
+        .timeline-wrapper::-webkit-scrollbar { display: none; }
+
+        .timeline-track {
+            display: flex;
+            gap: 2px;
+            min-width: max-content;
+            padding: 0 50vw; /* Center the first/last items */
+        }
+
+        .timeline-slot {
+            height: 100px;
+            background: rgba(255,255,255,0.02);
+            border-top: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 12px;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            scroll-snap-align: center;
+            box-sizing: border-box;
+        }
+
+        .timeline-slot:hover {
+            background: rgba(255,255,255,0.08);
+        }
+
+        .timeline-slot.active {
+            background: rgba(255,255,255,0.12);
+            border-color: var(--timeline-active);
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .timeline-slot.has-footage {
+            background: var(--timeline-filled);
+            border-color: rgba(241, 170, 60, 0.4);
+        }
+
+        .timeline-slot .scene-tag {
+            font-size: 0.6rem;
+            font-weight: 800;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+        }
+
+        .timeline-slot.active .scene-tag, .timeline-slot.has-footage .scene-tag {
+            color: var(--timeline-active);
+        }
+
+        .timeline-slot .scene-title {
+            font-size: 0.75rem;
+            font-weight: 400;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            opacity: 0.6;
+        }
+
+        /* Sub-scene Indicators */
+        .subscene-markers {
+            display: flex;
+            gap: 3px;
+            margin-top: auto;
+        }
+
+        .marker {
+            width: 4px;
+            height: 4px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+        }
+
+        .timeline-slot.has-footage .marker {
+            background: rgba(241, 170, 60, 0.5);
+        }
+
+        /* Scrubber UX */
+        .scrub-info {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--glass);
+            padding: 8px 20px;
+            border-radius: 100px;
+            border: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Misc */
+        .misc-section { padding: 0 5%; margin-bottom: 8rem; }
+        .misc-grid { display: flex; gap: 24px; overflow-x: auto; padding: 20px 0; }
+        .misc-card {
+            min-width: 320px;
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            padding: 24px;
+            border-radius: 4px;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .misc-card:hover { transform: translateY(-4px); background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Assembly Timeline <span style="opacity:0.3; margin-left:10px;">90 MIN CUT</span></h1>
+        <div class="controls">
+            <div class="toggle-container">
+                <input type="checkbox" id="autoAdvance">
+                <label for="autoAdvance">Continuity Mode</label>
+            </div>
+            <div style="display: flex; gap: 8px;">
+                <button class="nav-btn" id="prevBtn" title="[ Key">Prev</button>
+                <button class="nav-btn" id="nextBtn" title="] Key">Next</button>
+            </div>
+            <a href="/pages/summer.html" style="color:var(--text-muted); font-size:0.7rem; text-decoration:none;">✕</a>
+        </div>
+    </header>
+
+    <div class="player-container">
+        <div class="main-player" id="playerContainer">
+            <div class="player-placeholder" id="noFootage">
+                <p>SILENCE. SELECT A FOOTAGE PIECE TO MOUNT.</p>
+            </div>
+            <video id="videoPlayer" style="display: none;"></video>
+        </div>
+        <div class="scene-info">
+            <div id="infoDetails">
+                <h2 id="currentTitle">Project Master</h2>
+                <div class="meta" id="currentMeta">Assembly Status: Pre-Production</div>
+            </div>
+            <div class="meta" style="text-align: right;">
+                <div id="currentDate">APR 2026</div>
+                <div id="currentDuration" style="color: var(--timeline-active); font-weight: 700;">--:--</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="timeline-section">
+        <div class="timeline-header">
+            <span class="timeline-label">Linear Visual Assembly</span>
+            <span class="timeline-label" id="timelineProgress">0% ASSEMBLED</span>
+        </div>
+        <div class="timeline-wrapper" id="timelineWrapper">
+            <div class="timeline-track" id="mainTimeline">
+                <!-- Data Driven -->
+            </div>
+        </div>
+    </section>
+
+    <div class="scrub-info">
+        <span id="shortcutHint">J-K-L TO CONTROL | [ ] TO NAVIGATE</span>
+    </div>
+
+    <section class="misc-section">
+        <span class="timeline-label">Misc Exports & Vibes</span>
+        <div class="misc-grid" id="miscTimeline"></div>
+    </section>
+
+    <script>
+        let currentSceneIndex = -1;
+        let timelineData = [];
+
+        async function init() {
+            try {
+                const response = await fetch('/pages/summer/exports-data.json');
+                const data = await response.json();
+                timelineData = data.timeline;
+                renderTimeline(data.timeline);
+                renderMisc(data.misc);
+                setupInteractions();
+            } catch (err) {
+                console.error("Assembly load error", err);
+            }
+        }
+
+        function renderTimeline(scenes) {
+            const container = document.getElementById('mainTimeline');
+            container.innerHTML = '';
+            
+            let totalDuration = 0;
+            let assembledDuration = 0;
+
+            scenes.forEach((scene, index) => {
+                const slot = document.createElement('div');
+                slot.className = 'timeline-slot';
+                if (scene.url) {
+                    slot.classList.add('has-footage');
+                    assembledDuration += (scene.durationMin || 1);
+                }
+                
+                // Duration scaling
+                const width = (scene.durationMin || 1) * 80;
+                slot.style.width = `${width}px`;
+
+                // Sub-scene markers
+                let markersHtml = '';
+                for(let i=0; i<(scene.subscenes || 1); i++) {
+                    markersHtml += '<div class="marker"></div>';
+                }
+
+                slot.innerHTML = `
+                    <div class="scene-tag">${scene.id.toUpperCase()}</div>
+                    <div class="scene-title">${scene.title}</div>
+                    <div class="subscene-markers">${markersHtml}</div>
+                `;
+
+                slot.addEventListener('click', () => selectScene(index));
+                container.appendChild(slot);
+                totalDuration += (scene.durationMin || 1);
+            });
+
+            const percent = Math.round((assembledDuration / totalDuration) * 100);
+            document.getElementById('timelineProgress').innerText = `${percent}% ASSEMBLED (${assembledDuration} / ${totalDuration} MIN)`;
+        }
+
+        function renderMisc(misc) {
+            const container = document.getElementById('miscTimeline');
+            misc.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'misc-card';
+                card.innerHTML = `<h3>${item.title}</h3><p>${item.description}</p>`;
+                container.appendChild(card);
+            });
+        }
+
+        function selectScene(index) {
+            if (index < 0 || index >= timelineData.length) return;
+            currentSceneIndex = index;
+            const scene = timelineData[index];
+
+            // UI feedback
+            const slots = document.querySelectorAll('.timeline-slot');
+            slots.forEach((s, i) => s.classList.toggle('active', i === index));
+
+            // Scroll to center
+            slots[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+            // Update Info
+            document.getElementById('currentTitle').innerText = scene.title;
+            document.getElementById('currentMeta').innerText = `ID: ${scene.sceneId} | ${scene.subscenes || 1} SUB-SCENES | ${scene.type.toUpperCase()}`;
+            document.getElementById('currentDuration').innerText = `${scene.durationMin || 0}:00`;
+
+            const video = document.getElementById('videoPlayer');
+            const placeholder = document.getElementById('noFootage');
+
+            if (scene.url) {
+                video.src = scene.url;
+                video.style.display = 'block';
+                placeholder.style.display = 'none';
+                video.play();
+            } else {
+                video.pause();
+                video.style.display = 'none';
+                placeholder.style.display = 'block';
+            }
+        }
+
+        function setupInteractions() {
+            const video = document.getElementById('videoPlayer');
+
+            // Keyboard Shortcuts
+            window.addEventListener('keydown', (e) => {
+                const key = e.key.toLowerCase();
+                if (key === 'l') video.play();
+                if (key === 'k') video.pause();
+                if (key === 'j') video.currentTime -= 5;
+                if (key === '[' || e.key === 'ArrowLeft') selectScene(currentSceneIndex - 1);
+                if (key === ']' || e.key === 'ArrowRight') selectScene(currentSceneIndex + 1);
+            });
+
+            // Nav Buttons
+            document.getElementById('prevBtn').onclick = () => selectScene(currentSceneIndex - 1);
+            document.getElementById('nextBtn').onclick = () => selectScene(currentSceneIndex + 1);
+
+            // Auto Advance
+            video.onended = () => {
+                if (document.getElementById('autoAdvance').checked) {
+                    // Look for next available footage
+                    for (let i = currentSceneIndex + 1; i < timelineData.length; i++) {
+                        if (timelineData[i].url) {
+                            selectScene(i);
+                            break;
+                        }
+                    }
+                }
+            };
+
+            // Horizontal wheel scroll
+            const wrapper = document.getElementById('timelineWrapper');
+            wrapper.addEventListener('wheel', (e) => {
+                if (Math.abs(e.deltaX) < Math.abs(e.deltaY)) {
+                    e.preventDefault();
+                    wrapper.scrollLeft += e.deltaY;
+                }
+            });
+        }
+
+        init();
+    </script>
+</body>
+</html>
