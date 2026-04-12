@@ -113,6 +113,34 @@
       }
     }
 
+    function uniq(arr) {
+      return Array.from(new Set(arr)).sort((a, b) => a.localeCompare(b));
+    }
+
+    function extractCharacters(markdown) {
+      if (!markdown) return [];
+      const lines = markdown.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+      const chars = [];
+      for (const line of lines) {
+        if (/^(INT\.|EXT\.)/i.test(line)) continue;
+        const base = line.replace(/\s*\((CONT'D|O\.S\.|V\.O\.|O\.C\.|VO|OS)\)\s*$/i, '').trim();
+        if (!base) continue;
+        const isAllCaps = base === base.toUpperCase();
+        const looksLikeName = /^[A-Z0-9][A-Z0-9\s\.'-]+$/.test(base) && base.length <= 35;
+        if (isAllCaps && looksLikeName) chars.push(base);
+      }
+      return uniq(chars);
+    }
+
+    function getCharColor(name) {
+      const colors = ['#ff7b72', '#79c0ff', '#d2a8ff', '#a5d6ff', '#f2cc60', '#ffb56b', '#7ee787'];
+      let hash = 0;
+      for (let i = 0; i < name.length; i++) {
+        hash = name.charCodeAt(i) + ((hash << 5) - hash);
+      }
+      return colors[Math.abs(hash) % colors.length];
+    }
+
     async function renderSceneList() {
       const listEl = document.getElementById('sceneList');
       try {
@@ -131,7 +159,7 @@
 
         const actNumbers = Array.from(acts.keys()).sort((a, b) => a - b);
 
-        actNumbers.forEach((actNumber) => {
+        for (const actNumber of actNumbers) {
           const { actTitle, scenes: actScenes } = acts.get(actNumber);
           const actLabel = actNumber ? `ACT ${toRoman(actNumber)}` : 'Unsorted';
 
@@ -140,24 +168,35 @@
           header.innerHTML = `<span class="dn-scene-num"></span><span class="dn-scene-title" style="font-weight:600;color:var(--dn-muted);">${actLabel} — ${actTitle}</span>`;
           listEl.appendChild(header);
 
-          actScenes.forEach((scene) => {
+          await Promise.all(actScenes.map(async (scene) => {
+            const fileUrl = `../script-system/scenes/${scene.file}`;
+            scene.mdContent = await loadMarkdown(fileUrl);
+          }));
+
+          for (const scene of actScenes) {
             const num = String(scene.sceneNumber).padStart(2, '0');
             const scriptUrl = `${SCRIPT_SCENE_URL}?id=${encodeURIComponent(scene.id)}`;
             const noteUrl = `note.html?type=scene&id=${encodeURIComponent(scene.id)}`;
+            
+            const chars = extractCharacters(scene.mdContent);
+            const charHtml = chars.map(c => {
+               const color = getCharColor(c);
+               return `<span style="display:inline-flex; align-items:center; margin-left:6px; padding:2px 8px; border-radius:12px; border:1px solid ${color}40; background:${color}15; color:${color}; font-size:0.7rem; font-weight:600; line-height:1; text-transform:uppercase;">${escapeHtml(c)}</span>`;
+            }).join('');
 
             const li = document.createElement('li');
             li.className = 'dn-scene-item';
             li.innerHTML = `
               <span class="dn-scene-num">${num}</span>
-              <span class="dn-scene-title">${escapeHtml(scene.title)}</span>
+              <span class="dn-scene-title" style="display:flex; align-items:center; flex-wrap:wrap;">${escapeHtml(scene.title)} ${charHtml}</span>
               <span class="dn-scene-links">
                 <a href="${scriptUrl}">Script</a>
                 <a href="${noteUrl}">Director's note</a>
               </span>
             `;
             listEl.appendChild(li);
-          });
-        });
+          }
+        }
       } catch (e) {
         listEl.innerHTML = '<li>Could not load scene list. Check that <code>../script-system/manifest.json</code> exists.</li>';
       }

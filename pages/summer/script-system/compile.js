@@ -567,6 +567,7 @@ function generateHTMLPage(markdown, scenes) {
           
           if (looksLikeDialogue || !prevP || prevP.classList.contains('action-line') || prevP.classList.contains('scene-heading')) {
             p.className = 'character-name';
+            p.setAttribute('data-character', text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''));
             inDialogueBlock = true;
             return;
           }

@@ -1002,3 +1002,16 @@ body {
     padding: 1.15rem 1.25rem;
   }
 }
+
+/* Character Color Tags - Screen Only */
+@media screen {
+  .character-name[data-character="dallas"] { color: #3b82f6; }
+  .character-name[data-character="makayla"] { color: #ec4899; }
+  .character-name[data-character="dominic"] { color: #10b981; }
+  .character-name[data-character="asher"] { color: #f59e0b; }
+  .character-name[data-character="janice"] { color: #8b5cf6; }
+  .character-name[data-character="mr--mike"] { color: #6366f1; }
+  .character-name[data-character="mr-mike"] { color: #6366f1; }
+  .character-name[data-character="howie"] { color: #14b8a6; }
+  .character-name[data-character="pat"] { color: #f43f5e; }
+}
