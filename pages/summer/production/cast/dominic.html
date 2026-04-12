@@ -169,129 +169,182 @@
                 body { overflow: visible; height: auto; }
             }
 
-            .main-content { padding: 40px; }
+            body { background: #0d1117; color: #c9d1d9; font-family: -apple-system, system-ui, sans-serif; margin:0; padding:0; }
+            .cast-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+            .cast-header { border-bottom: 1px solid var(--prod-border); padding-bottom: 30px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
+            .back-link { color: var(--prod-accent); text-decoration: none; font-size: 0.9rem; margin-bottom: 10px; display: inline-block; transition: opacity 0.2s; }
+            .back-link:hover { opacity: 0.7; }
+            .cast-stats { display: flex; gap: 40px; margin-bottom: 40px; }
+            .stat-box { border-left: 2px solid var(--prod-accent); padding-left: 15px; }
+            .stat-label { font-size: 0.75rem; text-transform: uppercase; color: #8b949e; letter-spacing: 0.05em; }
+            .stat-value { font-size: 1.5rem; font-weight: 600; color: #fff; }
+            .print-btn { background: var(--prod-tag-bg); border: 1px solid var(--prod-tag-border); color: var(--prod-accent); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
+            .print-btn:hover { background: var(--prod-row-hover); border-color: var(--prod-accent); }
+            @media print {
+                body { background: white; color: black; }
+                .cast-container { max-width: 100%; margin: 0; padding: 20px; }
+                .print-btn, .back-link { display: none; }
+                .cast-header { border-color: black; color: black; }
+                .cast-stats .stat-value { color: black; }
+                .production-table th { background: #f0f0f0; border-color: black; color: black; }
+                .production-table td { border-color: #ddd; color: black; }
+                .scene-number { color: black; }
+                .location-tag { border-color: #ccc; color: black; background: transparent; }
+            }
         </style>
     </head>
-    <body style="background:white; color:black;">
-        <div class="main-content">
-            <header style="margin-bottom: 40px; border-bottom: 2px solid black; padding-bottom: 20px;">
-                <h1 style="margin: 0;">Production Schedule: DOMINIC</h1>
-                <p>Generated Schedule — 4/12/2026</p>
+    <body>
+        <div class="cast-container">
+            <a href="../../production.html" class="back-link">← Back to Dashboard</a>
+            <header class="cast-header">
+                <div>
+                    <h1 style="margin:0; font-size:2.5rem; color:#fff;">DOMINIC</h1>
+                    <p style="margin:5px 0 0 0; opacity:0.6;">Individual Cast Schedule — Summer Production</p>
+                </div>
+                <button class="print-btn" onclick="window.print()">🖨️ Print for Set</button>
             </header>
-            <table class="production-table" style="background:white; border-color:black;">
+
+            <div class="cast-stats">
+                <div class="stat-box">
+                    <div class="stat-label">Total Shoot Days</div>
+                    <div class="stat-value">10</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Total Scenes</div>
+                    <div class="stat-value">14</div>
+                </div>
+            </div>
+
+            <table class="production-table" style="background:transparent; border-top:none;">
                 <thead>
-                    <tr style="background:#eee;">
-                        <th style="color:black;border-color:black;">Shoot Day</th>
-                        <th style="color:black;border-color:black;">Calendar Date</th>
-                        <th style="color:black;border-color:black;">#</th>
-                        <th style="color:black;border-color:black;">Scene Title</th>
-                        <th style="color:black;border-color:black;">Location</th>
+                    <tr>
+                        <th style="width:100px;">DAY</th>
+                        <th style="width:150px;">DATE</th>
+                        <th style="width:60px;">#</th>
+                        <th>SCENE DESCRIPTION</th>
+                        <th style="width:180px;">LOCATION</th>
+                        <th style="width:80px;">DUR</th>
                     </tr>
                 </thead>
-                <tbody style="color:black;">
+                <tbody>
                     
       <tr>
-        <td>Day 2</td>
-        <td>Jun 20, 2026</td>
-        <td>3</td>
-        <td>Meet The Neighbors</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 2</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jun 20, 2026</td>
+        <td><span class="scene-number">3</span></td>
+        <td style="font-style:italic;">Meet The Neighbors</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">2 min</td>
       </tr>
       <tr>
-        <td>Day 3</td>
-        <td>Jun 26, 2026</td>
-        <td>4</td>
-        <td>Fellowship</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 3</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jun 26, 2026</td>
+        <td><span class="scene-number">4</span></td>
+        <td style="font-style:italic;">Fellowship</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">3 min</td>
       </tr>
       <tr>
-        <td>Day 4</td>
-        <td>Jun 29, 2026</td>
-        <td>5</td>
-        <td>The Merlin App</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 4</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jun 29, 2026</td>
+        <td><span class="scene-number">5</span></td>
+        <td style="font-style:italic;">The Merlin App</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">3 min</td>
       </tr>
       <tr>
-        <td>Day 4</td>
-        <td>Jun 29, 2026</td>
-        <td>6</td>
-        <td>News Vans</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 4</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jun 29, 2026</td>
+        <td><span class="scene-number">6</span></td>
+        <td style="font-style:italic;">News Vans</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">2 min</td>
       </tr>
       <tr>
-        <td>Day 5</td>
-        <td>Jun 30, 2026</td>
-        <td>7</td>
-        <td>The Coordinates</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 5</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jun 30, 2026</td>
+        <td><span class="scene-number">7</span></td>
+        <td style="font-style:italic;">The Coordinates</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">4 min</td>
       </tr>
       <tr>
-        <td>Day 6</td>
-        <td>Jul 1, 2026</td>
-        <td>11</td>
-        <td>Kitchen Triage</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 6</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 1, 2026</td>
+        <td><span class="scene-number">11</span></td>
+        <td style="font-style:italic;">Kitchen Triage</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">2 min</td>
       </tr>
       <tr>
-        <td>Day 7</td>
-        <td>Jul 2, 2026</td>
-        <td>13</td>
-        <td>The Confrontation</td>
-        <td>DALLAS BEDROOM - Interior</td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 7</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 2, 2026</td>
+        <td><span class="scene-number">13</span></td>
+        <td style="font-style:italic;">The Confrontation</td>
+        <td><span class="location-tag">DALLAS BEDROOM - Interior</span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">2 min</td>
       </tr>
       <tr>
-        <td>Day 8</td>
-        <td>Jul 3, 2026</td>
-        <td>18</td>
-        <td>Life Group Arrives</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 8</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 3, 2026</td>
+        <td><span class="scene-number">18</span></td>
+        <td style="font-style:italic;">Life Group Arrives</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">3 min</td>
       </tr>
       <tr>
-        <td>Day 9</td>
-        <td>Jul 5, 2026</td>
-        <td>19</td>
-        <td>The Hymn</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 9</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 5, 2026</td>
+        <td><span class="scene-number">19</span></td>
+        <td style="font-style:italic;">The Hymn</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">2 min</td>
       </tr>
       <tr>
-        <td>Day 10</td>
-        <td>Jul 6, 2026</td>
-        <td>20</td>
-        <td>The Secret is Out</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 10</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 6, 2026</td>
+        <td><span class="scene-number">20</span></td>
+        <td style="font-style:italic;">The Secret is Out</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">2 min</td>
       </tr>
       <tr>
-        <td>Day 10</td>
-        <td>Jul 6, 2026</td>
-        <td>21</td>
-        <td>The Burn Marks</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 10</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 6, 2026</td>
+        <td><span class="scene-number">21</span></td>
+        <td style="font-style:italic;">The Burn Marks</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">3 min</td>
       </tr>
       <tr>
-        <td>Day 11</td>
-        <td>Jul 7, 2026</td>
-        <td>23</td>
-        <td>The Trench Run</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 11</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 7, 2026</td>
+        <td><span class="scene-number">23</span></td>
+        <td style="font-style:italic;">The Trench Run</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">3 min</td>
       </tr>
       <tr>
-        <td>Day 11</td>
-        <td>Jul 7, 2026</td>
-        <td>24</td>
-        <td>The Sanctuary &amp; The Siege</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 11</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 7, 2026</td>
+        <td><span class="scene-number">24</span></td>
+        <td style="font-style:italic;">The Sanctuary &amp; The Siege</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">5 min</td>
       </tr>
       <tr>
-        <td>Day 11</td>
-        <td>Jul 7, 2026</td>
-        <td>25</td>
-        <td>The Final Blast</td>
-        <td></td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY 11</td>
+        <td style="font-size:0.9rem; opacity:0.8;">Jul 7, 2026</td>
+        <td><span class="scene-number">25</span></td>
+        <td style="font-style:italic;">The Final Blast</td>
+        <td><span class="location-tag"></span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">2 min</td>
       </tr>
                 </tbody>
             </table>
-            <footer style="margin-top:40px; font-size:0.8rem; border-top:1px solid #ccc; padding-top:20px;">
-                Barnacle Film Studio — Production Sync
+
+            <footer style="margin-top:60px; padding-top:20px; border-top:1px solid var(--prod-border); font-size:0.8rem; opacity:0.4; text-align:center;">
+                Barnacle Film Studio — Generated Breakdown
             </footer>
         </div>
     </body>

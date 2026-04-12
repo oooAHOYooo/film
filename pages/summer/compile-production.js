@@ -584,23 +584,32 @@ function generateCastHtml(actor, rows, productionData) {
   const actorRows = rows.filter(r => r.characters.includes(actor));
   const calendar = productionData.calendar || {};
   
+  const totalDays = new Set(actorRows.map(r => {
+    let currentTotal = 0;
+    for (const row of rows) {
+      if (row.id === r.id) break;
+      currentTotal += Number(row.shootDays) || 0;
+    }
+    return Math.ceil(currentTotal + 0.001);
+  })).size;
+
   const scheduleRows = actorRows.map(r => {
-    // Determine the day number for this row
     let currentTotal = 0;
     let dayNum = 1;
     for (const row of rows) {
       if (row.id === r.id) break;
       currentTotal += Number(row.shootDays) || 0;
-      dayNum = Math.ceil(currentTotal + 0.001); // Avoid float drift
+      dayNum = Math.ceil(currentTotal + 0.001);
     }
     const dateStr = calendar[dayNum] || '—';
     return `
       <tr>
-        <td>Day ${dayNum}</td>
-        <td>${formatDate(dateStr)}</td>
-        <td>${r.n}</td>
-        <td>${escapeHtml(r.title)}</td>
-        <td>${escapeHtml(r.location)}</td>
+        <td style="font-weight:700; color:var(--prod-accent);">DAY ${dayNum}</td>
+        <td style="font-size:0.9rem; opacity:0.8;">${formatDate(dateStr)}</td>
+        <td><span class="scene-number">${r.n}</span></td>
+        <td style="font-style:italic;">${escapeHtml(r.title)}</td>
+        <td><span class="location-tag">${escapeHtml(r.location)}</span></td>
+        <td style="font-size:0.85rem; opacity:0.7;">${r.durationMin || '—'} min</td>
       </tr>`;
   }).join('');
 
@@ -611,31 +620,70 @@ function generateCastHtml(actor, rows, productionData) {
         <title>Schedule: ${actor} — Summer Production</title>
         <style>
             ${getProductionStyles()}
-            .main-content { padding: 40px; }
+            body { background: #0d1117; color: #c9d1d9; font-family: -apple-system, system-ui, sans-serif; margin:0; padding:0; }
+            .cast-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+            .cast-header { border-bottom: 1px solid var(--prod-border); padding-bottom: 30px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
+            .back-link { color: var(--prod-accent); text-decoration: none; font-size: 0.9rem; margin-bottom: 10px; display: inline-block; transition: opacity 0.2s; }
+            .back-link:hover { opacity: 0.7; }
+            .cast-stats { display: flex; gap: 40px; margin-bottom: 40px; }
+            .stat-box { border-left: 2px solid var(--prod-accent); padding-left: 15px; }
+            .stat-label { font-size: 0.75rem; text-transform: uppercase; color: #8b949e; letter-spacing: 0.05em; }
+            .stat-value { font-size: 1.5rem; font-weight: 600; color: #fff; }
+            .print-btn { background: var(--prod-tag-bg); border: 1px solid var(--prod-tag-border); color: var(--prod-accent); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 0.85rem; font-weight: 600; transition: all 0.2s; }
+            .print-btn:hover { background: var(--prod-row-hover); border-color: var(--prod-accent); }
+            @media print {
+                body { background: white; color: black; }
+                .cast-container { max-width: 100%; margin: 0; padding: 20px; }
+                .print-btn, .back-link { display: none; }
+                .cast-header { border-color: black; color: black; }
+                .cast-stats .stat-value { color: black; }
+                .production-table th { background: #f0f0f0; border-color: black; color: black; }
+                .production-table td { border-color: #ddd; color: black; }
+                .scene-number { color: black; }
+                .location-tag { border-color: #ccc; color: black; background: transparent; }
+            }
         </style>
     </head>
-    <body style="background:white; color:black;">
-        <div class="main-content">
-            <header style="margin-bottom: 40px; border-bottom: 2px solid black; padding-bottom: 20px;">
-                <h1 style="margin: 0;">Production Schedule: ${actor}</h1>
-                <p>Generated Schedule — ${new Date().toLocaleDateString()}</p>
+    <body>
+        <div class="cast-container">
+            <a href="../../production.html" class="back-link">← Back to Dashboard</a>
+            <header class="cast-header">
+                <div>
+                    <h1 style="margin:0; font-size:2.5rem; color:#fff;">${actor}</h1>
+                    <p style="margin:5px 0 0 0; opacity:0.6;">Individual Cast Schedule — Summer Production</p>
+                </div>
+                <button class="print-btn" onclick="window.print()">🖨️ Print for Set</button>
             </header>
-            <table class="production-table" style="background:white; border-color:black;">
+
+            <div class="cast-stats">
+                <div class="stat-box">
+                    <div class="stat-label">Total Shoot Days</div>
+                    <div class="stat-value">${totalDays}</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Total Scenes</div>
+                    <div class="stat-value">${actorRows.length}</div>
+                </div>
+            </div>
+
+            <table class="production-table" style="background:transparent; border-top:none;">
                 <thead>
-                    <tr style="background:#eee;">
-                        <th style="color:black;border-color:black;">Shoot Day</th>
-                        <th style="color:black;border-color:black;">Calendar Date</th>
-                        <th style="color:black;border-color:black;">#</th>
-                        <th style="color:black;border-color:black;">Scene Title</th>
-                        <th style="color:black;border-color:black;">Location</th>
+                    <tr>
+                        <th style="width:100px;">DAY</th>
+                        <th style="width:150px;">DATE</th>
+                        <th style="width:60px;">#</th>
+                        <th>SCENE DESCRIPTION</th>
+                        <th style="width:180px;">LOCATION</th>
+                        <th style="width:80px;">DUR</th>
                     </tr>
                 </thead>
-                <tbody style="color:black;">
+                <tbody>
                     ${scheduleRows}
                 </tbody>
             </table>
-            <footer style="margin-top:40px; font-size:0.8rem; border-top:1px solid #ccc; padding-top:20px;">
-                Barnacle Film Studio — Production Sync
+
+            <footer style="margin-top:60px; padding-top:20px; border-top:1px solid var(--prod-border); font-size:0.8rem; opacity:0.4; text-align:center;">
+                Barnacle Film Studio — Generated Breakdown
             </footer>
         </div>
     </body>
