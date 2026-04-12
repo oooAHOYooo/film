@@ -42,6 +42,13 @@
     "actTitle": "The Creature"
   },
   {
+    "id": "s15-sl",
+    "file": "S15 - SL.md",
+    "title": "Makayla's Lair",
+    "act": 2,
+    "actTitle": "The Creature"
+  },
+  {
     "id": "s17-sl",
     "file": "",
     "title": "Resonance",
