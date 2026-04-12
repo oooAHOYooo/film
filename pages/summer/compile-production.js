@@ -435,6 +435,59 @@ function generateLocationTable(locationRows, totalDays) {
     .join('');
 }
 
+function generateOverviewListHtml(rows, calendar, totalDays) {
+  let html = '<section id="schedule-overview" style="margin-bottom: 50px;">';
+  html += '<h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Schedule Overview <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px;">At a glance</span></h2>';
+  html += '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">';
+
+  const formatD = (dStr) => {
+    if (!dStr) return '';
+    const date = new Date(dStr + 'T12:00:00');
+    return date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  };
+
+  for (let dayNum = 1; dayNum <= totalDays; dayNum++) {
+    let currentTotal = 0;
+    const dayRows = rows.filter(r => {
+      const shootDays = Number(r.shootDays) || 0;
+      const startDay = Math.ceil(currentTotal + 0.001) || 1;
+      currentTotal += shootDays;
+      const endDay = Math.ceil(currentTotal);
+      return dayNum >= startDay && dayNum <= endDay;
+    });
+
+    const chars = new Set();
+    const locs = new Set();
+    dayRows.forEach(r => {
+      if (r.location && r.location !== '—') locs.add(r.location);
+      if (r.characters) r.characters.forEach(c => chars.add(c));
+    });
+
+    const dateStr = calendar[dayNum] || '';
+    const charList = Array.from(chars).sort().join(', ') || '—';
+    const locList = Array.from(locs).sort().join('<br>') || '—';
+
+    html += `
+      <div class="stats-card" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
+          Day ${dayNum} <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">${formatD(dateStr)}</span>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">${locList}</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Cast Needed</strong>
+          <div style="color: var(--prod-accent); line-height: 1.4;">${charList}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  html += '</div></section>';
+  return html;
+}
+
 const PICKUP_DAYS = 2;
 
 function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData) {
@@ -462,6 +515,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
 
   const breakdownRowsHtml = generateBreakdownRows(rows, calendar, holidays);
   const locationRowsHtml = generateLocationTable(locationRows, totalDays);
+  const overviewListHtml = generateOverviewListHtml(rows, calendar, totalDays);
 
   return `<!doctype html>
 <html lang="en">
@@ -524,6 +578,8 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                     <h1 style="margin: 0; font-size: 2.5rem; color: #fff;">Production Dashboard</h1>
                     <p style="opacity: 0.7;">Creatures in the Tall Grass — Official Breakdown</p>
                 </header>
+
+                ${overviewListHtml}
 
                 <section id="breakdown">
                     <table class="production-table">
