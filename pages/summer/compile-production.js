@@ -17,6 +17,18 @@ const MANIFEST_PATH = path.join(SCRIPT_SYSTEM, 'manifest.json');
 const PLOT_CARDS_PATH = path.join(SCRIPT_SYSTEM, 'plot-cards-data.json');
 const PRODUCTION_DATA_PATH = path.join(__dirname, 'production-data.json');
 const OUTPUT_HTML = path.join(__dirname, 'production.html');
+const PRODUCTION_DIR = path.join(__dirname, 'production');
+const CAST_DIR = path.join(PRODUCTION_DIR, 'cast');
+const DAYS_DIR = path.join(PRODUCTION_DIR, 'days');
+
+function ensureDirectoryExistence(filePath) {
+  const dirname = path.dirname(filePath);
+  if (fs.existsSync(dirname)) {
+    return true;
+  }
+  ensureDirectoryExistence(dirname);
+  fs.mkdirSync(dirname);
+}
 
 function loadManifest() {
   const raw = fs.readFileSync(MANIFEST_PATH, 'utf8');
@@ -382,7 +394,7 @@ function generateBreakdownRows(rows, calendar, holidays) {
           <td colspan="9">
             <div class="day-divider" id="day-${currentDayInt}">
               <span>Day ${currentDayInt} — ${dayName}, ${formattedDate} ${holiday ? `<span style="color:#ff7b72;margin-left:10px;">[${holiday}]</span>` : ''}</span>
-              <span style="font-size:0.8rem;opacity:0.7;">Scheduled Scenes</span>
+              <a href="production/days/${currentDayInt}.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
             </div>
           </td>
         </tr>`;
@@ -437,7 +449,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
   const sortedChars = Array.from(allCharacters).sort();
 
   const sidebarActorsHtml = sortedChars.map(c => `
-    <a href="#" class="sidebar-link" onclick="filterByActor('${c}')">${c}</a>
+    <a href="production/cast/${c.toLowerCase()}.html" class="sidebar-link">${c}</a>
   `).join('');
 
   const sidebarLocationsHtml = locationRows.map(l => `
@@ -445,7 +457,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
   `).join('');
 
   const sidebarDaysHtml = Object.keys(calendar).sort((a,b) => Number(a)-Number(b)).map(d => `
-    <a href="#day-${d}" class="sidebar-link">Day ${d} — ${getDayName(calendar[d])}</a>
+    <a href="production/days/${d}.html" class="sidebar-link">Day ${d} — ${getDayName(calendar[d])}</a>
   `).join('');
 
   const breakdownRowsHtml = generateBreakdownRows(rows, calendar, holidays);
@@ -568,6 +580,148 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
 `;
 }
 
+function generateCastHtml(actor, rows, productionData) {
+  const actorRows = rows.filter(r => r.characters.includes(actor));
+  const calendar = productionData.calendar || {};
+  
+  const scheduleRows = actorRows.map(r => {
+    // Determine the day number for this row
+    let currentTotal = 0;
+    let dayNum = 1;
+    for (const row of rows) {
+      if (row.id === r.id) break;
+      currentTotal += Number(row.shootDays) || 0;
+      dayNum = Math.ceil(currentTotal + 0.001); // Avoid float drift
+    }
+    const dateStr = calendar[dayNum] || '—';
+    return `
+      <tr>
+        <td>Day ${dayNum}</td>
+        <td>${formatDate(dateStr)}</td>
+        <td>${r.n}</td>
+        <td>${escapeHtml(r.title)}</td>
+        <td>${escapeHtml(r.location)}</td>
+      </tr>`;
+  }).join('');
+
+  return `<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Schedule: ${actor} — Summer Production</title>
+        <style>
+            ${getProductionStyles()}
+            .main-content { padding: 40px; }
+        </style>
+    </head>
+    <body style="background:white; color:black;">
+        <div class="main-content">
+            <header style="margin-bottom: 40px; border-bottom: 2px solid black; padding-bottom: 20px;">
+                <h1 style="margin: 0;">Production Schedule: ${actor}</h1>
+                <p>Generated Schedule — ${new Date().toLocaleDateString()}</p>
+            </header>
+            <table class="production-table" style="background:white; border-color:black;">
+                <thead>
+                    <tr style="background:#eee;">
+                        <th style="color:black;border-color:black;">Shoot Day</th>
+                        <th style="color:black;border-color:black;">Calendar Date</th>
+                        <th style="color:black;border-color:black;">#</th>
+                        <th style="color:black;border-color:black;">Scene Title</th>
+                        <th style="color:black;border-color:black;">Location</th>
+                    </tr>
+                </thead>
+                <tbody style="color:black;">
+                    ${scheduleRows}
+                </tbody>
+            </table>
+            <footer style="margin-top:40px; font-size:0.8rem; border-top:1px solid #ccc; padding-top:20px;">
+                Barnacle Film Studio — Production Sync
+            </footer>
+        </div>
+    </body>
+</html>`;
+}
+
+function generateDayHtml(dayNum, rows, productionData) {
+  const calendar = productionData.calendar || {};
+  const dateStr = calendar[dayNum] || '—';
+  const holidays = productionData.holidays || {};
+  const holiday = holidays[dateStr];
+
+  // Find scenes belonging to this day
+  let currentTotal = 0;
+  const dayRows = rows.filter(r => {
+    const shootDays = Number(r.shootDays) || 0;
+    const startDay = Math.ceil(currentTotal + 0.001) || 1;
+    currentTotal += shootDays;
+    const endDay = Math.ceil(currentTotal);
+    return dayNum >= startDay && dayNum <= endDay;
+  });
+
+  const sceneRows = dayRows.map(r => {
+    const chars = (r.characters || []).join(', ');
+    return `
+      <tr>
+        <td>${r.n}</td>
+        <td>${escapeHtml(r.location)} — ${escapeHtml(r.time)}</td>
+        <td>${escapeHtml(r.title)}</td>
+        <td>${chars || '—'}</td>
+        <td>${r.durationMin || '—'} min</td>
+      </tr>`;
+  }).join('');
+
+  return `<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Day ${dayNum} — Call Sheet — Summer</title>
+        <style>
+            ${getProductionStyles()}
+            .main-content { padding: 40px; }
+        </style>
+    </head>
+    <body style="background:white; color:black;">
+        <div class="main-content">
+            <header style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom:3px solid black; padding-bottom:10px; margin-bottom:20px;">
+                <div>
+                    <h1 style="margin:0;">DAILY CALL SHEET</h1>
+                    <h2 style="margin:0; font-size:1.5rem;">Day ${dayNum} of 15</h2>
+                </div>
+                <div style="text-align:right;">
+                    <div style="font-weight:700;">${getDayName(dateStr).toUpperCase()}</div>
+                    <div style="font-size:1.2rem;">${formatDate(dateStr)}</div>
+                    ${holiday ? `<div style="color:red; font-weight:700;">${holiday}</div>` : ''}
+                </div>
+            </header>
+
+            <section style="margin-bottom:30px;">
+                <h3 style="background:black; color:white; padding:5px 10px; margin:0;">GENERAL CREW CALL: 08:00 AM</h3>
+            </section>
+
+            <h3 style="margin:20px 0 10px 0; border-bottom:1px solid black;">SCENE SCHEDULE</h3>
+            <table class="production-table" style="background:white; border-color:black;">
+                <thead>
+                    <tr style="background:#eee;">
+                        <th style="color:black;border-color:black;">SCENE</th>
+                        <th style="color:black;border-color:black;">SLUGLINE</th>
+                        <th style="color:black;border-color:black;">DESCRIPTION</th>
+                        <th style="color:black;border-color:black;">CAST</th>
+                        <th style="color:black;border-color:black;">DUR</th>
+                    </tr>
+                </thead>
+                <tbody style="color:black;">
+                    ${sceneRows}
+                </tbody>
+            </table>
+
+            <footer style="margin-top:50px; text-align:center; font-size:0.8rem; border-top:1px solid black; padding-top:20px;">
+                THIS IS A GENERATED CALL SHEET FOR PRODUCTION USE ONLY. RE-SYNC WITH GOOGLE SHEET FOR LATEST CALL TIMES.
+            </footer>
+        </div>
+    </body>
+</html>`;
+}
+
 function compile() {
   console.log('Loading manifest...');
   const scenes = loadManifest();
@@ -594,6 +748,29 @@ function compile() {
   const html = generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData);
   fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
   console.log(`✓ Created ${path.relative(ROOT, OUTPUT_HTML)}`);
+
+  // --- SUBPAGE GENERATION ---
+  ensureDirectoryExistence(path.join(CAST_DIR, 'dummy.html'));
+  ensureDirectoryExistence(path.join(DAYS_DIR, 'dummy.html'));
+
+  // 1. Generate Cast Sheets
+  const allCharacters = new Set();
+  rows.forEach(r => r.characters.forEach(c => allCharacters.add(c)));
+  allCharacters.forEach(actor => {
+    const castHtml = generateCastHtml(actor, rows, productionData);
+    const castPath = path.join(CAST_DIR, `${actor.toLowerCase()}.html`);
+    fs.writeFileSync(castPath, castHtml, 'utf8');
+    console.log(`  ✓ Generated Cast Sheet: ${actor}`);
+  });
+
+  // 2. Generate Daily Call Sheets
+  const calendar = productionData.calendar || {};
+  Object.keys(calendar).forEach(dayNum => {
+    const dayHtml = generateDayHtml(Number(dayNum), rows, productionData);
+    const dayPath = path.join(DAYS_DIR, `${dayNum}.html`);
+    fs.writeFileSync(dayPath, dayHtml, 'utf8');
+    console.log(`  ✓ Generated Day ${dayNum} Call Sheet`);
+  });
 }
 
 if (require.main === module) {

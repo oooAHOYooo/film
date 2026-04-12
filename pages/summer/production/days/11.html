@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Day 11 — Call Sheet — Summer</title>
+        <style>
+                        :root {
+                --prod-accent: #79b8ff;
+                --prod-head: rgba(56, 139, 253, 0.12);
+                --prod-border: rgba(56, 139, 253, 0.18);
+                --prod-tag-bg: rgba(56, 139, 253, 0.1);
+                --prod-tag-border: rgba(56, 139, 253, 0.25);
+                --prod-row-hover: rgba(56, 139, 253, 0.06);
+                --sidebar-w: 260px;
+            }
+            body { 
+                margin: 0; 
+                display: flex; 
+                flex-direction: column; 
+                height: 100vh; 
+                overflow: hidden; 
+                background: #0d1117;
+                color: #c9d1d9;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            }
+            .dashboard-container {
+                display: flex;
+                flex: 1;
+                overflow: hidden;
+            }
+            .sidebar {
+                width: var(--sidebar-w);
+                background: #161b22;
+                border-right: 1px solid var(--prod-border);
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                overflow-y: auto;
+            }
+            .main-content {
+                flex: 1;
+                overflow-y: auto;
+                padding: 40px;
+                scroll-behavior: smooth;
+            }
+            .stats-card {
+                background: var(--prod-tag-bg);
+                border: 1px solid var(--prod-tag-border);
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+            .stats-title {
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: var(--text-secondary);
+                margin-bottom: 8px;
+            }
+            .stats-value {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: var(--prod-accent);
+            }
+            .sidebar-button {
+                display: block;
+                width: 100%;
+                padding: 14px;
+                background: #2ea44f;
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 600;
+                border-radius: 6px;
+                margin-bottom: 24px;
+                font-size: 0.9rem;
+                transition: background 0.2s;
+            }
+            .sidebar-button:hover {
+                background: #2c974b;
+            }
+            .sidebar-nav-title {
+                font-size: 0.85rem;
+                font-weight: 600;
+                margin: 20px 0 10px 0;
+                color: var(--prod-accent);
+            }
+            .sidebar-link {
+                display: block;
+                padding: 8px 12px;
+                color: var(--text-secondary);
+                text-decoration: none;
+                font-size: 0.9rem;
+                border-radius: 6px;
+                margin-bottom: 2px;
+                transition: all 0.2s;
+            }
+            .sidebar-link:hover {
+                background: var(--prod-row-hover);
+                color: var(--prod-accent);
+            }
+            .production-table {
+                width: 100%;
+                border-collapse: collapse;
+                background: #0d1117;
+                border: 1px solid var(--prod-border);
+                font-size: 0.9rem;
+            }
+            .production-table th {
+                text-align: left;
+                padding: 12px;
+                border-bottom: 2px solid var(--prod-border);
+                background: #161b22;
+                color: var(--prod-accent);
+                position: sticky;
+                top: -41px;
+                z-index: 10;
+            }
+            .production-table td {
+                padding: 12px;
+                border-bottom: 1px solid var(--prod-border);
+                vertical-align: top;
+            }
+            .day-divider {
+                background: var(--prod-head);
+                color: var(--prod-accent);
+                font-weight: 600;
+                padding: 12px 20px;
+                border-left: 4px solid var(--prod-accent);
+                margin: 40px 0 20px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .actor-chip {
+                display: inline-block;
+                padding: 2px 8px;
+                background: rgba(56, 139, 253, 0.15);
+                border: 1px solid rgba(56, 139, 253, 0.3);
+                border-radius: 12px;
+                font-size: 0.75rem;
+                margin-right: 4px;
+                margin-bottom: 4px;
+                color: #58a6ff;
+            }
+            .click-copy {
+                cursor: pointer;
+                border-bottom: 1px dashed transparent;
+            }
+            .click-copy:hover {
+                border-bottom-color: var(--prod-accent);
+                color: var(--prod-accent);
+            }
+            .sync-check {
+                cursor: pointer;
+                opacity: 0.4;
+                transition: opacity 0.2s;
+            }
+            .sync-check:checked {
+                opacity: 1;
+            }
+            .row-dimmed {
+                opacity: 0.4;
+            }
+            @media print {
+                .sidebar, .nav-bar, .back-to-top { display: none; }
+                .dashboard-container { display: block; }
+                .main-content { padding: 0; }
+                body { overflow: visible; height: auto; }
+            }
+
+            .main-content { padding: 40px; }
+        </style>
+    </head>
+    <body style="background:white; color:black;">
+        <div class="main-content">
+            <header style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom:3px solid black; padding-bottom:10px; margin-bottom:20px;">
+                <div>
+                    <h1 style="margin:0;">DAILY CALL SHEET</h1>
+                    <h2 style="margin:0; font-size:1.5rem;">Day 11 of 15</h2>
+                </div>
+                <div style="text-align:right;">
+                    <div style="font-weight:700;">TUESDAY</div>
+                    <div style="font-size:1.2rem;">Jul 7, 2026</div>
+                    
+                </div>
+            </header>
+
+            <section style="margin-bottom:30px;">
+                <h3 style="background:black; color:white; padding:5px 10px; margin:0;">GENERAL CREW CALL: 08:00 AM</h3>
+            </section>
+
+            <h3 style="margin:20px 0 10px 0; border-bottom:1px solid black;">SCENE SCHEDULE</h3>
+            <table class="production-table" style="background:white; border-color:black;">
+                <thead>
+                    <tr style="background:#eee;">
+                        <th style="color:black;border-color:black;">SCENE</th>
+                        <th style="color:black;border-color:black;">SLUGLINE</th>
+                        <th style="color:black;border-color:black;">DESCRIPTION</th>
+                        <th style="color:black;border-color:black;">CAST</th>
+                        <th style="color:black;border-color:black;">DUR</th>
+                    </tr>
+                </thead>
+                <tbody style="color:black;">
+                    
+      <tr>
+        <td>27</td>
+        <td> — </td>
+        <td>Little Aftermath</td>
+        <td>PAT CLENDENEN</td>
+        <td>2 min</td>
+      </tr>
+      <tr>
+        <td>28</td>
+        <td> — </td>
+        <td>Full Circle</td>
+        <td>—</td>
+        <td>— min</td>
+      </tr>
+                </tbody>
+            </table>
+
+            <footer style="margin-top:50px; text-align:center; font-size:0.8rem; border-top:1px solid black; padding-top:20px;">
+                THIS IS A GENERATED CALL SHEET FOR PRODUCTION USE ONLY. RE-SYNC WITH GOOGLE SHEET FOR LATEST CALL TIMES.
+            </footer>
+        </div>
+    </body>
+</html>
