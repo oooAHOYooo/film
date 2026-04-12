@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Schedule: TYLER — Summer Production</title>
+        <title>Day 19 — Call Sheet — Summer</title>
         <style>
                         :root {
                 --prod-accent: #79b8ff;
@@ -184,79 +184,48 @@
                 body { overflow: visible; height: auto; }
             }
 
-            body { background: white; color: black; font-family: -apple-system, system-ui, sans-serif; margin:0; padding:0; -webkit-print-color-adjust: exact; }
-            .cast-container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-            .cast-header { border-bottom: 3px solid black; padding-bottom: 20px; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: flex-end; }
-            .back-link { color: #0366d6; text-decoration: none; font-size: 0.9rem; margin-bottom: 10px; display: inline-block; }
-            .cast-stats { display: flex; gap: 40px; margin-bottom: 30px; }
-            .stat-box { border-left: 3px solid black; padding-left: 15px; }
-            .stat-label { font-size: 0.75rem; text-transform: uppercase; color: #666; font-weight: 700; }
-            .stat-value { font-size: 1.8rem; font-weight: 800; color: black; }
-            .print-btn { background: black; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; font-weight: 700; transition: opacity 0.2s; }
-            .print-btn:hover { opacity: 0.8; }
-            .production-table { width: 100%; border-collapse: collapse; background: transparent; border: none; }
-            .production-table th { text-align: left; padding: 12px; border-bottom: 2px solid black; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; background: transparent; color: black; }
-            .production-table td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: middle; }
-            .scene-number { font-weight: 800; font-family: ui-monospace, monospace; }
-            @media print {
-                .print-btn, .back-link { display: none; }
-                .cast-container { margin: 0; max-width: 100%; }
-            }
+            .main-content { padding: 40px; margin: 0 auto; max-width: 1000px; }
+            .production-table { background: transparent; border: none; }
+            .production-table th { background: transparent; color: black; border-bottom: 2px solid black; }
+            .production-table td { border-bottom: 1px solid #eee; }
         </style>
     </head>
-    <body onload="window.scrollTo(0, 0)">
-        <div class="cast-container">
-            <a href="../../production.html" class="back-link">← DASHBOARD</a>
-            <header class="cast-header">
+    <body style="background:white; color:black;">
+        <div class="main-content">
+            <header style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom:3px solid black; padding-bottom:10px; margin-bottom:20px;">
                 <div>
-                    <h1 style="margin:0; font-size:2.8rem; font-weight:900; letter-spacing:-0.02em;">TYLER</h1>
-                    <p style="margin:5px 0 0 0; font-weight:600; text-transform:uppercase; font-size:0.8rem; letter-spacing:0.1em; opacity:0.6;">Production Schedule • Summer Hub</p>
+                    <h1 style="margin:0;">DAILY CALL SHEET</h1>
+                    <h2 style="margin:0; font-size:1.5rem;">Day 19 of 15</h2>
                 </div>
-                <button class="print-btn" onclick="window.print()">PRINT / SHARE</button>
+                <div style="text-align:right;">
+                    <div style="font-weight:700;">SATURDAY</div>
+                    <div style="font-size:1.2rem;">Jul 11, 2026</div>
+                    
+                </div>
             </header>
 
-            <div class="cast-stats">
-                <div class="stat-box">
-                    <div class="stat-label">Shoot Days</div>
-                    <div class="stat-value">2</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">Scenes</div>
-                    <div class="stat-value">2</div>
-                </div>
-            </div>
+            <section style="margin-bottom:30px;">
+                <h3 style="background:black; color:white; padding:5px 10px; margin:0;">GENERAL CREW CALL: 08:00 AM</h3>
+            </section>
 
-            <table class="production-table">
+            <h3 style="margin:20px 0 10px 0; border-bottom:1px solid black;">SCENE SCHEDULE</h3>
+            <table class="production-table" style="background:white; border-color:black;">
                 <thead>
-                    <tr>
-                        <th style="width:100px;">DAY</th>
-                        <th style="width:160px;">CALENDAR DATE</th>
-                        <th style="width:60px;">ID</th>
-                        <th>SCENE DESCRIPTION</th>
-                        <th style="width:200px;">LOCATION</th>
+                    <tr style="background:#eee;">
+                        <th style="color:black;border-color:black;">SCENE</th>
+                        <th style="color:black;border-color:black;">SLUGLINE</th>
+                        <th style="color:black;border-color:black;">DESCRIPTION</th>
+                        <th style="color:black;border-color:black;">CAST</th>
+                        <th style="color:black;border-color:black;">DUR</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody style="color:black;">
                     
-      <tr>
-        <td style="font-weight:700; color:#0366d6; border-bottom:1px solid #eee;">DAY 11</td>
-        <td style="font-size:0.9rem; opacity:0.8; border-bottom:1px solid #eee;">Jul 2, 2026</td>
-        <td style="border-bottom:1px solid #eee;"><span class="scene-number" style="color:black;">18</span></td>
-        <td style="font-style:italic; border-bottom:1px solid #eee;">Life Group Arrives</td>
-        <td style="border-bottom:1px solid #eee;"><span class="location-tag" style="background:transparent; border-color:#ccc; color:black;">—</span></td>
-      </tr>
-      <tr>
-        <td style="font-weight:700; color:#0366d6; border-bottom:1px solid #eee;">DAY 12</td>
-        <td style="font-size:0.9rem; opacity:0.8; border-bottom:1px solid #eee;">Jul 3, 2026</td>
-        <td style="border-bottom:1px solid #eee;"><span class="scene-number" style="color:black;">19</span></td>
-        <td style="font-style:italic; border-bottom:1px solid #eee;">The Hymn</td>
-        <td style="border-bottom:1px solid #eee;"><span class="location-tag" style="background:transparent; border-color:#ccc; color:black;">—</span></td>
-      </tr>
                 </tbody>
             </table>
 
-            <footer style="margin-top:60px; padding-top:20px; border-top:1px solid black; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; text-align:center;">
-                Official Project Breakdown • Generated 4/12/2026
+            <footer style="margin-top:50px; text-align:center; font-size:0.8rem; border-top:1px solid black; padding-top:20px;">
+                THIS IS A GENERATED CALL SHEET FOR PRODUCTION USE ONLY. RE-SYNC WITH GOOGLE SHEET FOR LATEST CALL TIMES.
             </footer>
         </div>
     </body>

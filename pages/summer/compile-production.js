@@ -95,6 +95,9 @@ function escapeHtml(s) {
 function buildProductionRows(scenes, productionData, plotCards) {
   const useGallery = Array.isArray(plotCards) && plotCards.length === scenes.length;
   const rows = [];
+  let currentTotal = 0;
+  const chronoOffset = productionData.settings?.chronologicalStartDay ? productionData.settings.chronologicalStartDay - 1 : 0;
+
   scenes.forEach((scene, index) => {
     const card = useGallery ? plotCards[index] : null;
     const n = card ? card.n : index + 1;
@@ -113,6 +116,19 @@ function buildProductionRows(scenes, productionData, plotCards) {
     const pickup = !!data.pickup;
     const keyElements = data.keyElements || '';
     const productionNotes = data.productionNotes || '';
+
+    let scheduledDays = [];
+    if (data.assignedDay) {
+        scheduledDays = Array.isArray(data.assignedDay) ? data.assignedDay : [data.assignedDay];
+    } else if (Number(shootDays) > 0) {
+        const startDay = Math.ceil(currentTotal + 0.001) || 1;
+        currentTotal += Number(shootDays);
+        const endDay = Math.ceil(currentTotal);
+        for (let i = startDay; i <= endDay; i++) {
+            scheduledDays.push(i + chronoOffset);
+        }
+    }
+
     rows.push({
       n,
       id,
@@ -127,6 +143,7 @@ function buildProductionRows(scenes, productionData, plotCards) {
       act,
       actTitle,
       characters,
+      scheduledDays
     });
   });
   return rows;
@@ -168,8 +185,7 @@ function locationBreakdown(rows) {
 }
 
 function totalShootDays(rows) {
-  const sum = rows.reduce((acc, r) => acc + (Number(r.shootDays) || 0), 0);
-  return sum;
+  return Math.max(...rows.flatMap(r => r.scheduledDays || []), 0);
 }
 
 function totalDurationMin(rows) {
@@ -343,7 +359,22 @@ function getProductionStyles() {
                 margin-right: 4px;
                 margin-bottom: 4px;
                 color: #58a6ff;
+                text-decoration: none;
+                transition: transform 0.1s, filter 0.1s;
+                cursor: pointer;
             }
+            .actor-chip:hover {
+                transform: translateY(-1px);
+                filter: brightness(1.2);
+            }
+            .actor-chip[data-character="dallas"] { color: #eab308; border-color: rgba(234, 179, 8, 0.3); background: rgba(234, 179, 8, 0.15); }
+            .actor-chip[data-character="makayla"] { color: #ec4899; border-color: rgba(236, 72, 153, 0.3); background: rgba(236, 72, 153, 0.15); }
+            .actor-chip[data-character="dominic"] { color: #10b981; border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.15); }
+            .actor-chip[data-character="asher"] { color: #f59e0b; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.15); }
+            .actor-chip[data-character="janice"] { color: #8b5cf6; border-color: rgba(139, 92, 246, 0.3); background: rgba(139, 92, 246, 0.15); }
+            .actor-chip[data-character="mr-mike"] { color: #6366f1; border-color: rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.15); }
+            .actor-chip[data-character="howie"] { color: #14b8a6; border-color: rgba(20, 184, 166, 0.3); background: rgba(20, 184, 166, 0.15); }
+            .actor-chip[data-character="pat"] { color: #f43f5e; border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.15); }
             .click-copy {
                 cursor: pointer;
                 border-bottom: 1px dashed transparent;
@@ -374,17 +405,15 @@ function getProductionStyles() {
 
 function generateBreakdownRows(rows, calendar, holidays) {
   let html = '';
-  let currentTotalDays = 0;
-  let currentDayInt = 0;
+  let lastDayDivider = 0;
 
   rows.forEach((r, i) => {
-    const shootDays = Number(r.shootDays) || 0;
-    const oldDayInt = currentDayInt;
-    currentTotalDays += shootDays;
-    currentDayInt = Math.ceil(currentTotalDays);
+    const minDay = r.scheduledDays && r.scheduledDays.length > 0 ? Math.min(...r.scheduledDays) : null;
 
-    // If Day # changed, insert a day divider
-    if (currentDayInt > oldDayInt && !r.pickup) {
+    // If scene falls on a new day, insert divider
+    if (minDay !== null && minDay > lastDayDivider && !r.pickup) {
+      lastDayDivider = minDay;
+      const currentDayInt = minDay;
       const dateStr = calendar[currentDayInt];
       const dayName = getDayName(dateStr);
       const formattedDate = formatDate(dateStr);
@@ -400,7 +429,10 @@ function generateBreakdownRows(rows, calendar, holidays) {
         </tr>`;
     }
 
-    const charChips = (r.characters || []).map(c => `<span class="actor-chip">${c}</span>`).join('');
+    const charChips = (r.characters || []).map(c => {
+      const slug = c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return `<a href="production/cast/${c.toLowerCase()}.html" class="actor-chip" data-character="${slug}" target="_blank">${c}</a>`;
+    }).join('');
 
     html += `
                         <tr id="row-${r.n}">
@@ -447,25 +479,24 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
   };
 
   for (let dayNum = 1; dayNum <= totalDays; dayNum++) {
-    let currentTotal = 0;
-    const dayRows = rows.filter(r => {
-      const shootDays = Number(r.shootDays) || 0;
-      const startDay = Math.ceil(currentTotal + 0.001) || 1;
-      currentTotal += shootDays;
-      const endDay = Math.ceil(currentTotal);
-      return dayNum >= startDay && dayNum <= endDay;
-    });
+    const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(dayNum));
 
     const chars = new Set();
     const locs = new Set();
+    const sceneNums = [];
     dayRows.forEach(r => {
       if (r.location && r.location !== '—') locs.add(r.location);
       if (r.characters) r.characters.forEach(c => chars.add(c));
+      sceneNums.push('s' + r.n.toString().padStart(2, '0'));
     });
 
     const dateStr = calendar[dayNum] || '';
-    const charList = Array.from(chars).sort().join(', ') || '—';
+    const charChips = Array.from(chars).sort().map(c => {
+      const slug = c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+      return `<a href="production/cast/${c.toLowerCase()}.html" class="actor-chip" data-character="${slug}" target="_blank">${c}</a>`;
+    }).join(' ') || '—';
     const locList = Array.from(locs).sort().join('<br>') || '—';
+    const scenesList = sceneNums.length > 0 ? sceneNums.join(' + ') : '—';
 
     html += `
       <div class="stats-card" style="margin-bottom: 0;">
@@ -477,8 +508,9 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
           <div style="line-height: 1.4;">${locList}</div>
         </div>
         <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Cast Needed</strong>
-          <div style="color: var(--prod-accent); line-height: 1.4;">${charList}</div>
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">${scenesList}</div>
+          <div style="line-height: 1.5; margin-top: 6px;">${charChips}</div>
         </div>
       </div>
     `;
@@ -640,23 +672,10 @@ function generateCastHtml(actor, rows, productionData) {
   const actorRows = rows.filter(r => r.characters.includes(actor));
   const calendar = productionData.calendar || {};
   
-  const totalDays = new Set(actorRows.map(r => {
-    let currentTotal = 0;
-    for (const row of rows) {
-      if (row.id === r.id) break;
-      currentTotal += Number(row.shootDays) || 0;
-    }
-    return Math.ceil(currentTotal + 0.001);
-  })).size;
+  const totalDays = new Set(actorRows.flatMap(r => r.scheduledDays || [])).size;
 
   const scheduleRows = actorRows.map(r => {
-    let currentTotal = 0;
-    let dayNum = 1;
-    for (const row of rows) {
-      if (row.id === r.id) break;
-      currentTotal += Number(row.shootDays) || 0;
-      dayNum = Math.ceil(currentTotal + 0.001);
-    }
+    const dayNum = r.scheduledDays && r.scheduledDays.length > 0 ? r.scheduledDays[0] : '—';
     const dateStr = calendar[dayNum] || '—';
     return `
       <tr>
@@ -747,14 +766,7 @@ function generateDayHtml(dayNum, rows, productionData) {
   const holiday = holidays[dateStr];
 
   // Find scenes belonging to this day
-  let currentTotal = 0;
-  const dayRows = rows.filter(r => {
-    const shootDays = Number(r.shootDays) || 0;
-    const startDay = Math.ceil(currentTotal + 0.001) || 1;
-    currentTotal += shootDays;
-    const endDay = Math.ceil(currentTotal);
-    return dayNum >= startDay && dayNum <= endDay;
-  });
+  const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(dayNum));
 
   const sceneRows = dayRows.map(r => {
     const chars = (r.characters || []).join(', ');

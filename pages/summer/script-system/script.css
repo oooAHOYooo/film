@@ -717,9 +717,7 @@ body {
   writing-mode: horizontal-tb;
 }
 
-.no-print {
-  /* hidden in print media below */
-}
+
 
 @media (max-width: 720px) {
   .nav {
@@ -1005,7 +1003,7 @@ body {
 
 /* Character Color Tags - Screen Only */
 @media screen {
-  .character-name[data-character="dallas"] { color: #3b82f6; }
+  .character-name[data-character="dallas"] { color: #eab308; }
   .character-name[data-character="makayla"] { color: #ec4899; }
   .character-name[data-character="dominic"] { color: #10b981; }
   .character-name[data-character="asher"] { color: #f59e0b; }

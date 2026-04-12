@@ -142,7 +142,22 @@
                 margin-right: 4px;
                 margin-bottom: 4px;
                 color: #58a6ff;
+                text-decoration: none;
+                transition: transform 0.1s, filter 0.1s;
+                cursor: pointer;
             }
+            .actor-chip:hover {
+                transform: translateY(-1px);
+                filter: brightness(1.2);
+            }
+            .actor-chip[data-character="dallas"] { color: #eab308; border-color: rgba(234, 179, 8, 0.3); background: rgba(234, 179, 8, 0.15); }
+            .actor-chip[data-character="makayla"] { color: #ec4899; border-color: rgba(236, 72, 153, 0.3); background: rgba(236, 72, 153, 0.15); }
+            .actor-chip[data-character="dominic"] { color: #10b981; border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.15); }
+            .actor-chip[data-character="asher"] { color: #f59e0b; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.15); }
+            .actor-chip[data-character="janice"] { color: #8b5cf6; border-color: rgba(139, 92, 246, 0.3); background: rgba(139, 92, 246, 0.15); }
+            .actor-chip[data-character="mr-mike"] { color: #6366f1; border-color: rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.15); }
+            .actor-chip[data-character="howie"] { color: #14b8a6; border-color: rgba(20, 184, 166, 0.3); background: rgba(20, 184, 166, 0.15); }
+            .actor-chip[data-character="pat"] { color: #f43f5e; border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.15); }
             .click-copy {
                 cursor: pointer;
                 border-bottom: 1px dashed transparent;
@@ -224,8 +239,8 @@
                 <tbody>
                     
       <tr>
-        <td style="font-weight:700; color:#0366d6; border-bottom:1px solid #eee;">DAY 9</td>
-        <td style="font-size:0.9rem; opacity:0.8; border-bottom:1px solid #eee;">Jul 5, 2026</td>
+        <td style="font-weight:700; color:#0366d6; border-bottom:1px solid #eee;">DAY 12</td>
+        <td style="font-size:0.9rem; opacity:0.8; border-bottom:1px solid #eee;">Jul 3, 2026</td>
         <td style="border-bottom:1px solid #eee;"><span class="scene-number" style="color:black;">19</span></td>
         <td style="font-style:italic; border-bottom:1px solid #eee;">The Hymn</td>
         <td style="border-bottom:1px solid #eee;"><span class="location-tag" style="background:transparent; border-color:#ccc; color:black;">—</span></td>
