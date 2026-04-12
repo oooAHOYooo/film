@@ -472,8 +472,9 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 </a>
 
                 <div class="stats-card">
-                    <div class="stats-title">Shoot Window</div>
-                    <div class="stats-value">${formatDate(calendar["1"])} – ${formatDate(calendar["15"])}</div>
+                    <div class="stats-title">Current Status</div>
+                    <div class="stats-value" style="font-size:1.1rem;">${new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}</div>
+                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">${new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}</div>
                 </div>
 
                 <div class="stats-card">
