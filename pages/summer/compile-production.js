@@ -608,7 +608,7 @@ function generateCastHtml(actor, rows, productionData) {
         <td style="font-size:0.9rem; opacity:0.8; border-bottom:1px solid #eee;">${formatDate(dateStr)}</td>
         <td style="border-bottom:1px solid #eee;"><span class="scene-number" style="color:black;">${r.n}</span></td>
         <td style="font-style:italic; border-bottom:1px solid #eee;">${escapeHtml(r.title)}</td>
-        <td style="border-bottom:1px solid #eee;"><span class="location-tag" style="background:transparent; border-color:#ccc; color:black;">${escapeHtml(r.location)}</span></td>
+        <td style="border-bottom:1px solid #eee;"><span class="location-tag" style="background:transparent; border-color:#ccc; color:black;">${escapeHtml(r.location || '—')}</span></td>
       </tr>`;
   }).join('');
 
@@ -629,8 +629,8 @@ function generateCastHtml(actor, rows, productionData) {
             .stat-value { font-size: 1.8rem; font-weight: 800; color: black; }
             .print-btn { background: black; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; font-weight: 700; transition: opacity 0.2s; }
             .print-btn:hover { opacity: 0.8; }
-            .production-table { width: 100%; border-collapse: collapse; }
-            .production-table th { text-align: left; padding: 12px; border-bottom: 2px solid black; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+            .production-table { width: 100%; border-collapse: collapse; background: transparent; border: none; }
+            .production-table th { text-align: left; padding: 12px; border-bottom: 2px solid black; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; background: transparent; color: black; }
             .production-table td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: middle; }
             .scene-number { font-weight: 800; font-family: ui-monospace, monospace; }
             @media print {
@@ -705,7 +705,7 @@ function generateDayHtml(dayNum, rows, productionData) {
     return `
       <tr>
         <td>${r.n}</td>
-        <td>${escapeHtml(r.location)} — ${escapeHtml(r.time)}</td>
+        <td>${escapeHtml(r.location || '—')} — ${escapeHtml(r.time || '—')}</td>
         <td>${escapeHtml(r.title)}</td>
         <td>${chars || '—'}</td>
         <td>${r.durationMin || '—'} min</td>
@@ -719,7 +719,10 @@ function generateDayHtml(dayNum, rows, productionData) {
         <title>Day ${dayNum} — Call Sheet — Summer</title>
         <style>
             ${getProductionStyles()}
-            .main-content { padding: 40px; }
+            .main-content { padding: 40px; margin: 0 auto; max-width: 1000px; }
+            .production-table { background: transparent; border: none; }
+            .production-table th { background: transparent; color: black; border-bottom: 2px solid black; }
+            .production-table td { border-bottom: 1px solid #eee; }
         </style>
     </head>
     <body style="background:white; color:black;">
