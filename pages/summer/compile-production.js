@@ -108,6 +108,9 @@ function buildProductionRows(scenes, productionData, plotCards) {
     const content = loadScene(scene.file);
     const { location: parsedLocation, time: parsedTime } = parseSceneHeading(content);
     const characters = extractCharacters(content);
+    if (characters.length === 0 && /\b[Dd]allas\b/.test(content)) {
+        characters.push('DALLAS');
+    }
     const data = productionData[id] || {};
     const location = data.location != null && data.location !== '' ? data.location : parsedLocation;
     const time = data.time != null && data.time !== '' ? data.time : parsedTime;
