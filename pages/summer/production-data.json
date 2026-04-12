@@ -27,5 +27,32 @@
   "the-perimeter": { "durationMin": 5, "shootDays": 0, "pickup": true, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
   "the-last-dinner": { "durationMin": 2, "shootDays": 0, "pickup": true, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
   "final-echoes": { "durationMin": 2, "shootDays": 0, "pickup": true, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "aftermath": { "durationMin": 2, "shootDays": 0.5, "keyElements": "", "productionNotes": "" }
+  "aftermath": { "durationMin": 2, "shootDays": 0.5, "keyElements": "", "productionNotes": "" },
+  "calendar": {
+    "1": "2026-06-19",
+    "2": "2026-06-20",
+    "3": "2026-06-26",
+    "4": "2026-06-29",
+    "5": "2026-06-30",
+    "6": "2026-07-01",
+    "7": "2026-07-02",
+    "8": "2026-07-03",
+    "9": "2026-07-05",
+    "10": "2026-07-06",
+    "11": "2026-07-07",
+    "12": "2026-07-08",
+    "13": "2026-07-09",
+    "14": "2026-07-10",
+    "15": "2026-07-11"
+  },
+  "holidays": {
+    "2026-06-19": "Juneteenth",
+    "2026-07-03": "Independence Day (Observed)",
+    "2026-07-04": "Independence Day"
+  },
+  "offDates": {
+    "2026-07-13": "MOM BDAY",
+    "2026-07-14": "SUMMER STARTS _ PO"
+  }
 }
+

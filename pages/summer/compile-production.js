@@ -92,6 +92,7 @@ function buildProductionRows(scenes, productionData, plotCards) {
     const actTitle = card ? (card.actTitle || '') : (scene.actTitle || '');
     const content = loadScene(scene.file);
     const { location: parsedLocation, time: parsedTime } = parseSceneHeading(content);
+    const characters = extractCharacters(content);
     const data = productionData[id] || {};
     const location = data.location != null && data.location !== '' ? data.location : parsedLocation;
     const time = data.time != null && data.time !== '' ? data.time : parsedTime;
@@ -113,6 +114,7 @@ function buildProductionRows(scenes, productionData, plotCards) {
       productionNotes,
       act,
       actTitle,
+      characters,
     });
   });
   return rows;
@@ -163,255 +165,231 @@ function totalDurationMin(rows) {
   return sum;
 }
 
+function extractCharacters(content) {
+  if (!content || typeof content !== 'string') return [];
+  // Look for uppercase names at start of line or after (action) or in dialogue
+  const charRegex = /^[ \t]*([A-Z]{2,}(?:\s+[A-Z]{2,})*)(?:\s*\(.*?\))?\s*$/gm;
+  const matches = content.matchAll(charRegex);
+  const chars = new Set();
+  for (const match of matches) {
+    const name = match[1].trim();
+    if (name && !/^(INT\.|EXT\.|FADE|CUT|DISSOLVE|ACT|SCENE|DAY|NIGHT)/i.test(name)) {
+      chars.add(name);
+    }
+  }
+  return Array.from(chars).sort();
+}
+
+function getDayName(dateStr) {
+  if (!dateStr) return '';
+  const date = new Date(dateStr + 'T12:00:00'); // Midday to avoid timezone drift
+  return date.toLocaleDateString('en-US', { weekday: 'long' });
+}
+
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const date = new Date(dateStr + 'T12:00:00');
+  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
 function getProductionStyles() {
-  return `
-            .production-table-wrap {
-                margin: 16px 0;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
+  return `            :root {
+                --prod-accent: #79b8ff;
+                --prod-head: rgba(56, 139, 253, 0.12);
+                --prod-border: rgba(56, 139, 253, 0.18);
+                --prod-tag-bg: rgba(56, 139, 253, 0.1);
+                --prod-tag-border: rgba(56, 139, 253, 0.25);
+                --prod-row-hover: rgba(56, 139, 253, 0.06);
+                --sidebar-w: 260px;
+            }
+            body { 
+                margin: 0; 
+                display: flex; 
+                flex-direction: column; 
+                height: 100vh; 
+                overflow: hidden; 
+                background: #0d1117;
+                color: #c9d1d9;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            }
+            .dashboard-container {
+                display: flex;
+                flex: 1;
+                overflow: hidden;
+            }
+            .sidebar {
+                width: var(--sidebar-w);
+                background: #161b22;
+                border-right: 1px solid var(--prod-border);
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                overflow-y: auto;
+            }
+            .main-content {
+                flex: 1;
+                overflow-y: auto;
+                padding: 40px;
+                scroll-behavior: smooth;
+            }
+            .stats-card {
+                background: var(--prod-tag-bg);
+                border: 1px solid var(--prod-tag-border);
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+            .stats-title {
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: var(--text-secondary);
+                margin-bottom: 8px;
+            }
+            .stats-value {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: var(--prod-accent);
+            }
+            .sidebar-nav-title {
+                font-size: 0.85rem;
+                font-weight: 600;
+                margin: 20px 0 10px 0;
+                color: var(--prod-accent);
+            }
+            .sidebar-link {
+                display: block;
+                padding: 8px 12px;
+                color: var(--text-secondary);
+                text-decoration: none;
+                font-size: 0.9rem;
+                border-radius: 6px;
+                margin-bottom: 2px;
+                transition: all 0.2s;
+            }
+            .sidebar-link:hover {
+                background: var(--prod-row-hover);
+                color: var(--prod-accent);
             }
             .production-table {
                 width: 100%;
                 border-collapse: collapse;
-                margin: 0;
-                background: var(--glass-bg);
+                background: #0d1117;
                 border: 1px solid var(--prod-border);
-                border-radius: var(--soft);
                 font-size: 0.9rem;
             }
-            .production-table thead th {
-                position: sticky;
-                top: 52px;
-                z-index: 15;
-                padding: 10px 12px;
+            .production-table th {
                 text-align: left;
-                font-weight: 600;
-                font-size: 0.85rem;
-                color: var(--prod-accent);
+                padding: 12px;
                 border-bottom: 2px solid var(--prod-border);
                 background: #161b22;
-                box-shadow: 0 2px 0 0 var(--prod-border);
-            }
-            .production-table .duration-col { width: 80px; text-align: center; }
-            .production-table .act-col { width: 88px; text-align: center; }
-            .production-table .shoot-days-col { width: 88px; text-align: center; }
-            .production-table .scene-name-col { width: 200px; }
-            .production-table td {
-                padding: 8px 12px;
-                border-bottom: 1px solid var(--prod-border);
-                color: var(--text-primary);
-                vertical-align: top;
-                line-height: 1.4;
-            }
-            .production-table tbody tr:hover { background: var(--prod-row-hover); }
-            .production-table tbody tr:last-child td { border-bottom: none; }
-            .scene-number {
-                font-weight: 600;
                 color: var(--prod-accent);
-                font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-            }
-            .location-tag {
-                display: inline-block;
-                padding: 3px 8px;
-                background: var(--prod-tag-bg);
-                border: 1px solid var(--prod-tag-border);
-                border-radius: 4px;
-                font-size: 0.82rem;
-                color: var(--prod-accent);
-                margin: 2px 0;
-            }
-            .time-of-day { font-size: 0.85rem; color: var(--text-secondary); font-style: italic; }
-            .production-notes { font-size: 0.88rem; color: var(--text-secondary); line-height: 1.45; }
-            .key-elements { font-size: 0.88rem; line-height: 1.5; }
-            .key-elements strong { color: var(--prod-accent); }
-            .compact-table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 24px 0;
-                background: var(--glass-bg);
-                border: 1px solid var(--prod-border);
-                border-radius: var(--soft);
-                overflow: hidden;
-                font-size: 0.9rem;
-            }
-            .compact-table thead { background: var(--prod-head); }
-            .compact-table th {
-                padding: 12px 16px;
-                text-align: left;
-                font-weight: 600;
-                color: var(--prod-accent);
-                border-bottom: 2px solid var(--prod-border);
-                white-space: nowrap;
-            }
-            .compact-table td {
-                padding: 10px 16px;
-                border-bottom: 1px solid var(--prod-border);
-                color: var(--text-primary);
-                vertical-align: middle;
-            }
-            .compact-table tbody tr:hover { background: var(--prod-row-hover); }
-            .compact-table tbody tr:last-child td { border-bottom: none; }
-            .compact-table .scene-col { width: 60px; text-align: center; }
-            .compact-table .scene-name-col { width: 200px; }
-            .compact-table .location-col { width: 180px; }
-            .scene-name { font-size: 0.9rem; color: var(--text-primary); font-style: italic; opacity: 0.85; }
-            .scene-name:empty::before { content: '—'; color: var(--text-muted); }
-            .compact-table .time-col { width: 100px; }
-            .compact-table .duration-col { width: 80px; text-align: center; }
-            .compact-table .act-col { width: 100px; text-align: center; }
-            .compact-table .shoot-days-col { width: 90px; text-align: center; }
-            .shoot-days, .duration {
-                font-weight: 600;
-                color: var(--prod-accent);
-                font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-            }
-            .act-tag {
-                display: inline-block;
-                padding: 4px 8px;
-                border-radius: 4px;
-                font-size: 0.8rem;
-                font-weight: 600;
-            }
-            .act-tag.act1 {
-                background: rgba(63, 185, 80, 0.18);
-                border: 1px solid rgba(63, 185, 80, 0.35);
-                color: #7ee787;
-            }
-            .act-tag.act2 {
-                background: rgba(210, 153, 34, 0.18);
-                border: 1px solid rgba(210, 153, 34, 0.35);
-                color: #e3b341;
-            }
-            .act-tag.act3 {
-                background: rgba(248, 81, 73, 0.15);
-                border: 1px solid rgba(248, 81, 73, 0.3);
-                color: #ff7b72;
-            }
-            .act-tag.act4 {
-                background: var(--prod-tag-bg);
-                border: 1px solid var(--prod-tag-border);
-                color: var(--prod-accent);
-            }
-            .compact-summary { font-size: 0.9rem; line-height: 1.4; color: var(--text-primary); }
-            .compact-summary strong { color: var(--prod-accent); }
-            .nav-bar {
                 position: sticky;
-                top: 0;
-                z-index: 100;
-                background: rgba(13, 17, 23, 0.95);
-                backdrop-filter: blur(10px);
+                top: -41px;
+                z-index: 10;
+            }
+            .production-table td {
+                padding: 12px;
                 border-bottom: 1px solid var(--prod-border);
-                padding: 12px 0;
-                margin: 0;
+                vertical-align: top;
             }
-            .nav-bar-content {
-                max-width: var(--maxw);
-                margin: 0 auto;
-                padding: 0 var(--gap);
+            .day-divider {
+                background: var(--prod-head);
+                color: var(--prod-accent);
+                font-weight: 600;
+                padding: 12px 20px;
+                border-left: 4px solid var(--prod-accent);
+                margin: 40px 0 20px 0;
                 display: flex;
-                align-items: center;
                 justify-content: space-between;
-                flex-wrap: wrap;
-                gap: 16px;
-            }
-            .nav-links { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-            .nav-link {
-                padding: 6px 12px;
-                background: var(--prod-tag-bg);
-                border: 1px solid var(--prod-tag-border);
-                border-radius: 6px;
-                color: var(--prod-accent);
-                text-decoration: none;
-                font-size: 0.85rem;
-                transition: all 0.2s ease;
-                white-space: nowrap;
-            }
-            .nav-link:hover {
-                background: var(--prod-row-hover);
-                border-color: var(--prod-accent);
-                transform: translateY(-1px);
-            }
-            .nav-link.active {
-                background: var(--prod-row-hover);
-                border-color: var(--prod-accent);
-            }
-            .back-to-top {
-                position: fixed;
-                bottom: 24px;
-                right: 24px;
-                width: 48px;
-                height: 48px;
-                background: var(--glass-bg);
-                border: 1px solid var(--prod-border);
-                border-radius: 50%;
-                color: var(--prod-accent);
-                display: flex;
                 align-items: center;
-                justify-content: center;
+            }
+            .actor-chip {
+                display: inline-block;
+                padding: 2px 8px;
+                background: rgba(56, 139, 253, 0.15);
+                border: 1px solid rgba(56, 139, 253, 0.3);
+                border-radius: 12px;
+                font-size: 0.75rem;
+                margin-right: 4px;
+                margin-bottom: 4px;
+                color: #58a6ff;
+            }
+            .click-copy {
                 cursor: pointer;
-                font-size: 1.2rem;
-                transition: all 0.2s ease;
-                z-index: 50;
-                opacity: 0;
-                visibility: hidden;
-                backdrop-filter: blur(10px);
+                border-bottom: 1px dashed transparent;
             }
-            .back-to-top.visible { opacity: 1; visibility: visible; }
-            .back-to-top:hover {
-                background: var(--prod-row-hover);
-                border-color: var(--prod-accent);
-                transform: translateY(-2px);
+            .click-copy:hover {
+                border-bottom-color: var(--prod-accent);
+                color: var(--prod-accent);
             }
-            .section-anchor { scroll-margin-top: 80px; }
-            @media (max-width: 768px) {
-                .production-table { font-size: 0.85rem; }
-                .production-table th { padding: 8px 10px; }
-                .production-table td { padding: 6px 10px; }
-                .compact-table { font-size: 0.8rem; }
-                .compact-table th, .compact-table td { padding: 8px 12px; }
-                .compact-table .location-col { width: 150px; }
-                .compact-table .time-col { width: 80px; }
-                .compact-table .scene-name-col { width: 150px; }
-                .nav-bar { padding: 8px 0; }
-                .nav-bar-content { flex-direction: column; align-items: flex-start; }
-                .nav-links { width: 100%; justify-content: flex-start; }
-                .nav-link { font-size: 0.8rem; padding: 6px 10px; }
-                .back-to-top { bottom: 16px; right: 16px; width: 40px; height: 40px; font-size: 1rem; }
+            .sync-check {
+                cursor: pointer;
+                opacity: 0.4;
+                transition: opacity 0.2s;
+            }
+            .sync-check:checked {
+                opacity: 1;
+            }
+            .row-dimmed {
+                opacity: 0.4;
+            }
+            @media print {
+                .sidebar, .nav-bar, .back-to-top { display: none; }
+                .dashboard-container { display: block; }
+                .main-content { padding: 0; }
+                body { overflow: visible; height: auto; }
             }
 `;
 }
 
-function generateBreakdownRows(rows) {
-  return rows
-    .map(
-      (r) => `
-                        <tr>
-                            <td><span class="scene-number">${r.n}</span></td>
-                            <td class="scene-name-col"><span class="scene-name">${escapeHtml(r.title)}</span></td>
-                            <td><span class="location-tag">${escapeHtml(r.location || '—')}</span></td>
+function generateBreakdownRows(rows, calendar, holidays) {
+  let html = '';
+  let currentTotalDays = 0;
+  let currentDayInt = 0;
+
+  rows.forEach((r, i) => {
+    const shootDays = Number(r.shootDays) || 0;
+    const oldDayInt = currentDayInt;
+    currentTotalDays += shootDays;
+    currentDayInt = Math.ceil(currentTotalDays);
+
+    // If Day # changed, insert a day divider
+    if (currentDayInt > oldDayInt && !r.pickup) {
+      const dateStr = calendar[currentDayInt];
+      const dayName = getDayName(dateStr);
+      const formattedDate = formatDate(dateStr);
+      const holiday = holidays[dateStr];
+      html += `
+        <tr class="day-divider-row">
+          <td colspan="9">
+            <div class="day-divider" id="day-${currentDayInt}">
+              <span>Day ${currentDayInt} — ${dayName}, ${formattedDate} ${holiday ? `<span style="color:#ff7b72;margin-left:10px;">[${holiday}]</span>` : ''}</span>
+              <span style="font-size:0.8rem;opacity:0.7;">Scheduled Scenes</span>
+            </div>
+          </td>
+        </tr>`;
+    }
+
+    const charChips = (r.characters || []).map(c => `<span class="actor-chip">${c}</span>`).join('');
+
+    html += `
+                        <tr id="row-${r.n}">
+                            <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-${r.n}').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('${r.n}')">${r.n}</span></td>
+                            <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('${escapeHtml(r.title)}')">${escapeHtml(r.title)}</span></td>
+                            <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('${escapeHtml(r.location || '—')}')">${escapeHtml(r.location || '—')}</span></td>
                             <td><span class="time-of-day">${escapeHtml(r.time || '—')}</span></td>
                             <td class="duration-col"><span class="duration">${r.durationMin != null ? r.durationMin + ' min' : '—'}</span></td>
                             <td class="act-col"><span class="act-tag act${r.act}">Act ${r.act}</span></td>
                             <td class="shoot-days-col"><span class="shoot-days">${r.pickup ? 'pickup' : (r.shootDays != null ? r.shootDays : '—')}</span></td>
-                            <td class="key-elements">${r.keyElements ? r.keyElements.replace(/\n/g, ' ').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') : '—'}</td>
+                            <td class="key-elements">
+                                ${r.keyElements ? r.keyElements.replace(/\n/g, ' ').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') : '—'}
+                                <div style="margin-top:8px;">${charChips}</div>
+                            </td>
                             <td class="production-notes">${escapeHtml(r.productionNotes || '—')}</td>
-                        </tr>`
-    )
-    .join('');
-}
-
-function generateOverviewStats(rows, actRangesList, totalMin, totalDays) {
-  const totalScenes = rows.length;
-  return actRangesList
-    .map(
-      (a) => `
-                    <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">${a.act === 1 ? 'Act I' : a.act === 2 ? 'Act II' : a.act === 3 ? 'Act III' : 'Act IV'}${a.count ? ` (Scenes ${a.sceneRange})` : ''}</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">${a.durationMin != null ? '~' + a.durationMin + ' min' : a.count ? a.count + ' scenes' : '—'}</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">${a.count ? a.count + ' scenes' : ''}</div>
-                    </div>`
-    )
-    .join('');
+                        </tr>`;
+  });
+  return html;
 }
 
 function generateLocationTable(locationRows, totalDays) {
@@ -430,209 +408,137 @@ function generateLocationTable(locationRows, totalDays) {
 
 const PICKUP_DAYS = 2;
 
-function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays) {
+function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData) {
   const totalScenes = rows.length;
   const pickupSceneCount = rows.filter((r) => r.pickup).length;
-  const shootDaysLabel = totalDays != null && totalDays !== ''
-    ? (pickupSceneCount > 0 ? `${totalDays} shoot days + ${PICKUP_DAYS} pickup (SFX/action, Makayla + Dallas)` : `${totalDays} shoot days`)
-    : '';
-  const overviewStats = actRangesList
-    .map(
-      (a) => `
-                    <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">${a.act === 1 ? 'Act I' : a.act === 2 ? 'Act II' : a.act === 3 ? 'Act III' : 'Act IV'}${a.count ? ` (Scenes ${a.sceneRange})` : ''}</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">${a.durationMin != null ? '~' + a.durationMin + ' min' : a.count ? a.count + ' scenes' : '—'}</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">${a.count ? a.count + ' scenes' : ''}</div>
-                    </div>`
-    )
-    .join('');
+  const calendar = productionData.calendar || {};
+  const holidays = productionData.holidays || {};
+  const offDates = productionData.offDates || {};
 
-  const breakdownRowsHtml = generateBreakdownRows(rows);
+  const allCharacters = new Set();
+  rows.forEach(r => r.characters.forEach(c => allCharacters.add(c)));
+  const sortedChars = Array.from(allCharacters).sort();
+
+  const sidebarActorsHtml = sortedChars.map(c => `
+    <a href="#" class="sidebar-link" onclick="filterByActor('${c}')">${c}</a>
+  `).join('');
+
+  const sidebarLocationsHtml = locationRows.map(l => `
+    <a href="#" class="sidebar-link" onclick="filterByLocation('${escapeHtml(l.location)}')">${escapeHtml(l.location)}</a>
+  `).join('');
+
+  const sidebarDaysHtml = Object.keys(calendar).sort((a,b) => Number(a)-Number(b)).map(d => `
+    <a href="#day-${d}" class="sidebar-link">Day ${d} — ${getDayName(calendar[d])}</a>
+  `).join('');
+
+  const breakdownRowsHtml = generateBreakdownRows(rows, calendar, holidays);
   const locationRowsHtml = generateLocationTable(locationRows, totalDays);
 
   return `<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Production — Creatures in the Tall Grass</title>
+        <title>Dashboard — Summer Production</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="/styles/style.css">
         <style>
-            :root {
-                --prod-accent: #79b8ff;
-                --prod-head: rgba(56, 139, 253, 0.12);
-                --prod-border: rgba(56, 139, 253, 0.18);
-                --prod-tag-bg: rgba(56, 139, 253, 0.1);
-                --prod-tag-border: rgba(56, 139, 253, 0.25);
-                --prod-row-hover: rgba(56, 139, 253, 0.06);
-            }
             ${getProductionStyles()}
         </style>
     </head>
     <body>
-        <header class="header">
-            <h1><a href="/pages/summer.html">← Summer Film</a> / Production</h1>
-            <p>Scene breakdown and production notes for Creatures in the Tall Grass. Generated from script-system (manifest + scenes).</p>
-        </header>
-
-        <nav class="nav-bar">
-            <div class="nav-bar-content">
-                <div style="font-weight: 600; color: var(--prod-accent); font-size: 0.9rem;">Quick Navigation:</div>
-                <div class="nav-links">
-                    <a href="#overview" class="nav-link">Overview</a>
-                    <a href="#breakdown" class="nav-link">Scene Breakdown</a>
-                    <a href="#locations-scheduling" class="nav-link">Locations</a>
-                    <a href="#production-notes" class="nav-link">Production Notes</a>
-                    <a href="/pages/summer/script-system/full_script.html" class="nav-link">Full Script</a>
-                    <a href="/pages/summer.html" class="nav-link">← Back to Summer</a>
+        <div class="dashboard-container">
+            <aside class="sidebar no-print">
+                <div style="font-size: 1.2rem; font-weight: 700; color: var(--prod-accent); margin-bottom: 24px;">SUMMER HUB</div>
+                
+                <div class="stats-card">
+                    <div class="stats-title">Shoot Window</div>
+                    <div class="stats-value">${formatDate(calendar["1"])} – ${formatDate(calendar["15"])}</div>
                 </div>
-            </div>
-        </nav>
 
-        <div class="back-to-top" id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</div>
-
-        <section class="section section-anchor" id="overview" style="margin-top: 20px;">
-            <div class="card">
-                <h3 style="margin: 0 0 12px 0; color: var(--prod-accent);">Production Overview</h3>
-                <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
-                    This scene breakdown is generated from the script-system (manifest + scenes). Use it for
-                    scheduling, location scouting, and technical planning. Edit production-data.json to add
-                    duration, shoot days, key elements, and production notes per scene.
-                </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--prod-border);">
-                    <div>
-                        <div style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 4px;">Total</div>
-                        <div style="font-size: 1.5rem; font-weight: 600; color: var(--prod-accent);">${totalMin ? '~' + totalMin + ' min' : totalScenes + ' scenes'}</div>
-                        <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">${totalScenes} scenes${shootDaysLabel ? ' · ' + shootDaysLabel : ''}</div>
+                <div class="stats-card">
+                    <div class="stats-title">Vital Stats</div>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
+                        <div>
+                            <div style="font-size:0.7rem; opacity:0.6;">Scenes</div>
+                            <div style="font-size:1.1rem; font-weight:600;">${totalScenes}</div>
+                        </div>
+                        <div>
+                            <div style="font-size:0.7rem; opacity:0.6;">Days</div>
+                            <div style="font-size:1.1rem; font-weight:600;">${totalDays}</div>
+                        </div>
                     </div>
-                    ${overviewStats}
                 </div>
-            </div>
-        </section>
 
-        <section class="section section-anchor" id="breakdown">
-            <h2 style="margin: 0 0 16px 0;">Scene Breakdown</h2>
-            <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
-                Production-ready breakdown aligned with the script-system (scenes folder). ${totalScenes} scenes.
-                Location and time are parsed from INT/EXT headings; duration, shoot days, key elements, and notes come from production-data.json.
-            </p>
-            <div class="production-table-wrap">
-                <table class="production-table">
-                    <thead>
-                        <tr>
-                            <th style="width: 80px;">Scene</th>
-                            <th class="scene-name-col">Scene Name</th>
-                            <th style="width: 200px;">Location</th>
-                            <th style="width: 120px;">Time</th>
-                            <th class="duration-col">Duration</th>
-                            <th class="act-col">Act</th>
-                            <th class="shoot-days-col">Shoot Days</th>
-                            <th>Key Elements & Action</th>
-                            <th style="width: 250px;">Production Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-${breakdownRowsHtml}
-                    </tbody>
-                </table>
-            </div>
-        </section>
+                <div class="sidebar-nav-title">Timeline</div>
+                ${sidebarDaysHtml}
 
-        <section class="section section-anchor" id="locations-scheduling">
-            <h2>Locations & Scheduling</h2>
-            <div class="card" style="margin-bottom: 24px;">
-                <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Location Breakdown</h3>
-                <p style="margin: 0 0 20px 0; color: var(--text-secondary); line-height: 1.6;">
-                    Scenes grouped by location. Shoot days summed from production-data.json when set.
-                </p>
-                <div style="overflow-x: auto;">
-                    <table class="compact-table" style="margin: 0;">
+                <div class="sidebar-nav-title">Cast</div>
+                <a href="#" class="sidebar-link" onclick="filterByActor('')">Show All</a>
+                ${sidebarActorsHtml}
+
+                <div class="sidebar-nav-title">Locations</div>
+                <a href="#" class="sidebar-link" onclick="filterByLocation('')">Show All</a>
+                ${sidebarLocationsHtml}
+
+                <div style="margin-top:auto; padding-top:20px; font-size:0.75rem; opacity:0.5;">
+                    Last Compiled:<br>${new Date().toLocaleString()}
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <header style="margin-bottom: 40px;">
+                    <h1 style="margin: 0; font-size: 2.5rem; color: #fff;">Production Dashboard</h1>
+                    <p style="opacity: 0.7;">Creatures in the Tall Grass — Official Breakdown</p>
+                </header>
+
+                <section id="breakdown">
+                    <table class="production-table">
                         <thead>
                             <tr>
-                                <th style="width: 250px;">Location</th>
-                                <th style="width: 150px;">Scenes</th>
-                                <th style="width: 120px;">Total Shoot Days</th>
-                                <th>Notes</th>
+                                <th style="width: 60px;">ID</th>
+                                <th style="width: 200px;">Scene Name</th>
+                                <th style="width: 180px;">Location</th>
+                                <th style="width: 100px;">Time</th>
+                                <th style="width: 80px;">Dur.</th>
+                                <th style="width: 80px;">Act</th>
+                                <th style="width: 80px;">Day</th>
+                                <th>Elements & Action</th>
+                                <th style="width: 200px;">Notes</th>
                             </tr>
                         </thead>
-                        <tbody>
-${locationRowsHtml}
+                        <tbody id="production-body">
+                            ${breakdownRowsHtml}
                         </tbody>
                     </table>
-                </div>
-            </div>
-            <div class="card">
-                <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Scheduling Summary</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
-                    <div>
-                        <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Total Shoot Days</h4>
-                        <div style="font-size: 2rem; font-weight: 600; color: var(--prod-accent); margin-bottom: 8px;">${totalDays ?? '—'}${pickupSceneCount > 0 ? ' + ' + PICKUP_DAYS + ' pickup' : ''}</div>
-                        <div style="font-size: 0.9rem; color: var(--text-secondary);">${totalScenes} scenes (script-system)${pickupSceneCount > 0 ? ' · Pickup for SFX/action (Makayla + Dallas)' : ''}</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-anchor" id="production-notes">
-            <h2>Production Notes Summary</h2>
-            <div class="card">
-                <h3 style="margin: 0 0 16px 0; color: var(--prod-accent);">Key Production Considerations</h3>
-                <p style="margin: 0 0 16px 0; color: var(--text-secondary);">Add per-scene notes in production-data.json (keyElements, productionNotes). High-level categories below.</p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
-                    <div>
-                        <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Visual Effects</h4>
-                        <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
-                            <li>Creature design and animation</li>
-                            <li>Glowing effects, predator red eyes</li>
-                            <li>Burn marks and trails, weather</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Sound Design</h4>
-                        <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
-                            <li>Hum, creature cries, equipment</li>
-                            <li>Storm, wind, coyotes</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style="margin: 0 0 12px 0; color: var(--text-primary);">Locations</h4>
-                        <ul style="margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.8;">
-                            <li>Dallas' house, Dominic's house</li>
-                            <li>Branford streets, marsh, tall grass</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer><p>Barnacle Film Studio Company ©2025</p></footer>
+                </section>
+            </main>
+        </div>
 
         <script>
-            var backToTop = document.getElementById('backToTop');
-            window.addEventListener('scroll', function() {
-                backToTop.classList.toggle('visible', window.pageYOffset > 300);
-            });
-            document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-                anchor.addEventListener('click', function(e) {
-                    var href = this.getAttribute('href');
-                    if (href !== '#' && href !== '') {
-                        e.preventDefault();
-                        var target = document.querySelector(href);
-                        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            function filterByActor(actor) {
+                const rows = document.querySelectorAll('#production-body tr:not(.day-divider-row)');
+                rows.forEach(row => {
+                    if (!actor) {
+                        row.style.display = '';
+                    } else {
+                        const chips = row.querySelectorAll('.actor-chip');
+                        let found = false;
+                        chips.forEach(c => { if(c.textContent === actor) found = true; });
+                        row.style.display = found ? '' : 'none';
                     }
                 });
-            });
-            var sections = document.querySelectorAll('.section-anchor');
-            var navLinks = document.querySelectorAll('.nav-link[href^="#"]');
-            window.addEventListener('scroll', function() {
-                var current = '';
-                sections.forEach(function(section) {
-                    if (pageYOffset >= section.offsetTop - 100) current = section.getAttribute('id');
+            }
+
+            function filterByLocation(loc) {
+                const rows = document.querySelectorAll('#production-body tr:not(.day-divider-row)');
+                rows.forEach(row => {
+                    if (!loc) {
+                        row.style.display = '';
+                    } else {
+                        const tag = row.querySelector('.location-tag').textContent;
+                        row.style.display = tag === loc ? '' : 'none';
+                    }
                 });
-                navLinks.forEach(function(link) {
-                    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-                });
-            });
+            }
         </script>
     </body>
 </html>
@@ -662,7 +568,7 @@ function compile() {
   // Ensure act list is sorted by act number for display
   actRangesList.sort((a, b) => a.act - b.act);
 
-  const html = generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays);
+  const html = generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData);
   fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
   console.log(`✓ Created ${path.relative(ROOT, OUTPUT_HTML)}`);
 }
