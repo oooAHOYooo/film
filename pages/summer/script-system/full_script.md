@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/12/2026, 6:50:26 PM*
+*Compiled on 4/12/2026, 8:55:38 PM*
 
 ---
 
@@ -29,9 +29,17 @@ Dallas goes into the grass a little bit and as he does he notices that there is,
 
 As Dallas examines he hears a distinct bicycle ring.
 
-MAKAYLA, 22 and ASHER, 14 — approach on bikes. They watch Dallas for a while.
+MAKAYLA
+<!-- scene: 01 file: s01.md nickname: arrival -->
 
-They approach Dallas slowly as one of the boxes draws their curiousity. Makayla watches Dallas pull out a military grade Oscillator.
+(action)
+Makayla, 22, and Asher, 14 — approach on bikes. They watch Dallas for a while.
+
+ASHER
+<!-- scene: 01 file: s01.md nickname: arrival -->
+
+(action)
+They approach Dallas slowly as one of the boxes draws their curiosity. Makayla watches Dallas pull out a military grade Oscillator.
 
 MAKAYLA
 (to Asher but loud enough for Dallas to hear)
