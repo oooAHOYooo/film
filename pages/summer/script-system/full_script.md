@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/12/2026, 8:55:38 PM*
+*Compiled on 4/15/2026, 9:21:25 PM*
 
 ---
 
@@ -623,7 +623,7 @@ PAT CLENDENEN, MID 50s, is outside their house in front of news cameras.
 
 PAT CLENDENEN
 (to camera)
-Hey Rob, thanks for having me on. Out here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge....So in that spirit, today we'll see sun to clouds, breezy, warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores.... We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The european models are showing signings that we might be in for a big one and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
+Hey Micky, thanks for having me on. Out here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge....So in that spirit, today we'll see sun to clouds, breezy, warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores.... We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The european models are showing signings that we might be in for a big one and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
 
 <!-- scene: 06 file: s06.md nickname: news-vans -->
 
