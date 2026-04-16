@@ -1,0 +1,3 @@
+- [ ] Resolve merge conflict in `mge-smash.html`
+- [ ] Stage and commit the resolved changes
+- [ ] Pull latest changes from origin/main
