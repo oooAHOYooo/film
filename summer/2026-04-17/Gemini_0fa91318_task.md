@@ -1,0 +1,8 @@
+- [ ] Implement AudioSystem for procedural SFX
+- [ ] Improve Physics for ramp sticking and velocity projection
+- [ ] Redesign Level specifically as a linear course
+- [ ] Add Start/Finish lines and Timer logic
+- [ ] Move/Spawn Boss at the start
+- [ ] Enhance Hyper Speed effects (camera shake, post-processing, speed lines)
+- [ ] Add High Scores display and persistence
+- [ ] Final UI/HUD updates
