@@ -4,21 +4,20 @@ const path = require('path');
 const SYSTEM_DIR = __dirname;
 const FRAMES_DIR = path.join(SYSTEM_DIR, 'frames');
 const SCENES_DIR = path.join(SYSTEM_DIR, 'scenes');
+const PDFS_DIR = path.join(SYSTEM_DIR, 'pdfs');
 
 function compileStoryboardFrames() {
   console.log('Compiling storyboard frames...');
   const framesData = {};
 
   if (!fs.existsSync(FRAMES_DIR)) {
-    console.log('No frames directory found, skipping.');
-    return;
-  }
-
-  const folders = fs.readdirSync(FRAMES_DIR, { withFileTypes: true })
+    console.log('No frames directory found, will only update manifest.');
+  } else {
+    const frameFolders = fs.readdirSync(FRAMES_DIR, { withFileTypes: true })
     .filter(dirent => dirent.isDirectory())
     .map(dirent => dirent.name);
 
-  for (const folder of folders) {
+  for (const folder of frameFolders) {
     const folderPath = path.join(FRAMES_DIR, folder);
     const files = fs.readdirSync(folderPath);
 
@@ -125,10 +124,13 @@ function compileStoryboardFrames() {
 
     framesData[folder] = panels;
   }
+}
 
-  const outputPath = path.join(SYSTEM_DIR, 'frames-data.json');
-  fs.writeFileSync(outputPath, JSON.stringify(framesData, null, 2));
-  console.log(`Generated frames-data.json with ${Object.keys(framesData).length} scenes.`);
+  if (fs.existsSync(FRAMES_DIR)) {
+    const outputPath = path.join(SYSTEM_DIR, 'frames-data.json');
+    fs.writeFileSync(outputPath, JSON.stringify(framesData, null, 2));
+    console.log(`Generated frames-data.json with ${Object.keys(framesData).length} scenes.`);
+  }
 
   // Auto-generate manifest.json
   console.log('Generating manifest.json...');
@@ -137,7 +139,7 @@ function compileStoryboardFrames() {
   try {
     scriptData = JSON.parse(fs.readFileSync(SCRIPT_MANIFEST, 'utf-8'));
   } catch(e) {
-    console.warn('Could not read script manifest.');
+    console.warn('Could not read script manifest at', SCRIPT_MANIFEST);
   }
 
   const scLookup = {};
@@ -163,10 +165,15 @@ function compileStoryboardFrames() {
         file: f,
         title: sc.title || `Scene ${num}`,
         act: sc.act || 0,
-        actTitle: sc.actTitle || ''
+        actTitle: sc.actTitle || '',
+        scriptId: sc.id || ""
       });
     }
   }
+
+  const folders = fs.existsSync(FRAMES_DIR) ? fs.readdirSync(FRAMES_DIR, { withFileTypes: true })
+    .filter(dirent => dirent.isDirectory())
+    .map(dirent => dirent.name) : [];
 
   for (const folder of folders) {
     const m = folder.match(/s(\d+)/i);
@@ -180,7 +187,28 @@ function compileStoryboardFrames() {
           file: "", 
           title: sc.title || `Scene ${num}`,
           act: sc.act || 0,
-          actTitle: sc.actTitle || ''
+          actTitle: sc.actTitle || '',
+          scriptId: sc.id || ""
+        });
+      }
+    }
+  }
+
+  const pdfFiles = fs.existsSync(PDFS_DIR) ? fs.readdirSync(PDFS_DIR) : [];
+  for (const f of pdfFiles) {
+    const m = f.match(/s(\d+)/i);
+    if (m) {
+      const num = parseInt(m[1], 10);
+      if (!processedNums.has(num)) {
+        processedNums.add(num);
+        const sc = scLookup[num] || {};
+        builtManifest.push({
+          id: `s${m[1].padStart(2,'0')}-sl`,
+          file: "", 
+          title: sc.title || `Scene ${num}`,
+          act: sc.act || 0,
+          actTitle: sc.actTitle || '',
+          scriptId: sc.id || ""
         });
       }
     }

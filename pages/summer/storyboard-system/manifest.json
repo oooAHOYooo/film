@@ -1,93 +1,170 @@
 [
   {
+    "id": "s01-sl",
+    "file": "",
+    "title": "Arrival & Discovery",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "arrival"
+  },
+  {
+    "id": "s02-sl",
+    "file": "",
+    "title": "Sierra's Box",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "dallas-night"
+  },
+  {
+    "id": "s03-sl",
+    "file": "",
+    "title": "The Hum",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "the-hum"
+  },
+  {
+    "id": "s04-sl",
+    "file": "",
+    "title": "The Fellowship",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "fellowship"
+  },
+  {
+    "id": "s05-sl",
+    "file": "",
+    "title": "The Merlin App",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "marsh-walk-later"
+  },
+  {
+    "id": "s06-sl",
+    "file": "",
+    "title": "News Vans",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "news-vans"
+  },
+  {
+    "id": "s07-sl",
+    "file": "",
+    "title": "The Coordinates",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "the-coordinates"
+  },
+  {
     "id": "s08-sl",
     "file": "S08 - SL.md",
     "title": "The Trailcam",
     "act": 1,
-    "actTitle": "Arrival & Discovery"
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "dallas-marsh-walk"
   },
   {
     "id": "s09-sl",
     "file": "S09 - SL.md",
     "title": "The Injured One",
     "act": 1,
-    "actTitle": "Arrival & Discovery"
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "dallas-night-work"
   },
   {
     "id": "s10-sl",
     "file": "S10 - SL.md",
     "title": "The Chase",
     "act": 1,
-    "actTitle": "Arrival & Discovery"
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "shadows-in-wind"
   },
   {
     "id": "s11-sl",
     "file": "S11 - SL.md",
     "title": "Kitchen Triage",
     "act": 1,
-    "actTitle": "Arrival & Discovery"
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "howie-walk-2"
   },
   {
     "id": "s13-sl",
     "file": "S13 - SL.md",
     "title": "The Confrontation",
     "act": 2,
-    "actTitle": "The Creature"
+    "actTitle": "The Creature",
+    "scriptId": "entering-grass"
   },
   {
     "id": "s14-sl",
     "file": "S14 - SL.md",
     "title": "The Connection",
     "act": 2,
-    "actTitle": "The Creature"
+    "actTitle": "The Creature",
+    "scriptId": "creature-rescue"
   },
   {
     "id": "s15-sl",
     "file": "S15 - SL.md",
     "title": "Makayla's Lair",
     "act": 2,
-    "actTitle": "The Creature"
-  },
-  {
-    "id": "s17-sl",
-    "file": "",
-    "title": "Resonance",
-    "act": 2,
-    "actTitle": "The Creature"
+    "actTitle": "The Creature",
+    "scriptId": "the-burn-mark-2"
   },
   {
     "id": "s18-sl",
     "file": "S18 - SL.md",
     "title": "Life Group Arrives",
     "act": 2,
-    "actTitle": "The Creature"
+    "actTitle": "The Creature",
+    "scriptId": "life-group-arrives"
   },
   {
     "id": "s20-sl",
     "file": "S20 - SL.md",
     "title": "The Secret is Out",
     "act": 2,
-    "actTitle": "The Creature"
+    "actTitle": "The Creature",
+    "scriptId": "red-eyes"
   },
   {
     "id": "s21-sl",
     "file": "S21 - SL.md",
     "title": "The Burn Marks",
     "act": 2,
-    "actTitle": "The Creature"
+    "actTitle": "The Creature",
+    "scriptId": "creature-missing"
   },
   {
     "id": "s23-sl",
     "file": "S23 - SL.md",
     "title": "The Trench Run",
     "act": 3,
-    "actTitle": "The Return"
+    "actTitle": "The Return",
+    "scriptId": "predator-attack"
   },
   {
     "id": "s24-sl",
     "file": "S24 - SL.md",
     "title": "The Sanctuary & The Siege",
     "act": 3,
-    "actTitle": "The Return"
+    "actTitle": "The Return",
+    "scriptId": "the-perimeter"
+  },
+  {
+    "id": "s25-sl",
+    "file": "",
+    "title": "The Final Blast",
+    "act": 3,
+    "actTitle": "The Return",
+    "scriptId": "the-last-dinner"
+  },
+  {
+    "id": "s27-sl",
+    "file": "",
+    "title": "Aftermath",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "scriptId": "aftermath"
   }
 ]
