@@ -56,6 +56,14 @@
     "nickname": "the-coordinates"
   },
   {
+    "id": "mr-mikes-warning",
+    "file": "s07b.md",
+    "title": "Mr. Mike's Warning",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "mr-mikes-warning"
+  },
+  {
     "id": "dallas-marsh-walk",
     "file": "s08.md",
     "title": "The Trailcam",
@@ -110,6 +118,14 @@
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "creature-rescue"
+  },
+  {
+    "id": "the-field-journal",
+    "file": "s14b.md",
+    "title": "The Field Journal",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-field-journal"
   },
   {
     "id": "the-burn-mark-2",
