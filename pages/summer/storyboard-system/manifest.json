@@ -88,6 +88,14 @@
     "scriptId": "howie-walk-2"
   },
   {
+    "id": "s12-sl",
+    "file": "",
+    "title": "The Burn Mark & Costco",
+    "act": 2,
+    "actTitle": "The Creature",
+    "scriptId": "the-burn-mark"
+  },
+  {
     "id": "s13-sl",
     "file": "S13 - SL.md",
     "title": "The Confrontation",
