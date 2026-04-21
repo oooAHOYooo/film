@@ -6,8 +6,12 @@ The production schedule for "Creatures in the Tall Grass" needs to be updated to
 
 ## User Review Required
 
-> [!IMPORTANT]
-> The production calendar now includes **Saturday, June 27th as Day 8** based on your correction.
+> [!TIP]
+> **Subtle Design**: I will remove the heavy card borders/badges and apply the day-of-week colors only to the **date labels**.
+> 
+> **Day Filtering**: Users can filter the dashboard by Mon, Tue, etc. to see specific shoot patterns (e.g. "Fridays are always Dallas-only").
+> 
+> **Call Times**: I will add placeholders for **Start Time** and **End Call** on every card and list item.
 > I have also added **Sunday, June 28th as Day 9** to maximize weekend capacity.
 > This provides **9 weekend slots** (May 30, 31, June 6, 7, 20, 27, 28, July 5, 11), which fits all ensemble and Asher work (~8 days total).
 
@@ -36,6 +40,13 @@ The production schedule for "Creatures in the Tall Grass" needs to be updated to
 ### Automated Tests
 - Run a validation script to check every scene's assigned day against its character list and the calendar.
 - Verify that no Day contains more than 1.0 `shootDays` total.
+- **Style Overhaul**: Update `getProductionStyles()` for subtle date-branding.
+- **Temporal Metadata**: Update HTML generation to include labeled placeholders for **Start** and **End** times.
+- **Day Filtering**: 
+    - Add `data-day` attributes to all elements.
+    - Insert a "Day Filter" bar at the top of the content.
+- **Sync Logic**: Improve the JavaScript filter to work seamlessly across Card, List, and Table views.
+- **Deployment**: Finalize with a `git push`.
 - Ensure the production page compiles successfully using `node compile-production.js`.
 
 ### Manual Verification
