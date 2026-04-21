@@ -223,6 +223,22 @@ function formatDate(dateStr) {
   return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
 
+function getDayConfig(dateStr) {
+    if (!dateStr) return { color: '#8b949e', icon: '', class: 'day-none' };
+    const date = new Date(dateStr + 'T12:00:00');
+    const day = date.getDay(); // 0 (Sun) to 6 (Sat)
+    const configs = [
+        { name: 'Sunday',    icon: '☀️', color: '#0ea5e9', class: 'day-sun' },
+        { name: 'Monday',    icon: 'M',  color: '#6366f1', class: 'day-mon' },
+        { name: 'Tuesday',   icon: 'T',  color: '#10b981', class: 'day-tue' },
+        { name: 'Wednesday', icon: 'W',  color: '#8b5cf6', class: 'day-wed' },
+        { name: 'Thursday',  icon: 'T',  color: '#f59e0b', class: 'day-thu' },
+        { name: 'Friday',    icon: 'F',  color: '#f43f5e', class: 'day-fri' },
+        { name: 'Saturday',  icon: '🌟', color: '#eab308', class: 'day-sat' }
+    ];
+    return configs[day];
+}
+
 function getProductionStyles() {
   return `            :root {
                 --prod-accent: #79b8ff;
@@ -397,6 +413,95 @@ function getProductionStyles() {
             .row-dimmed {
                 opacity: 0.4;
             }
+            .day-badge {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                border-radius: 6px;
+                font-size: 0.7rem;
+                font-weight: 800;
+                margin-right: 8px;
+                color: #fff;
+                background: rgba(255,255,255,0.1);
+            }
+            .day-sun { background: rgba(14, 165, 233, 0.2); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.4); }
+            .day-mon { background: rgba(99, 102, 241, 0.2); color: #6366f1; border: 1px solid rgba(99, 102, 241, 0.4); }
+            .day-tue { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
+            .day-wed { background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); }
+            .day-thu { background: rgba(245, 158, 11, 0.2); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); }
+            .day-fri { background: rgba(244, 63, 94, 0.2); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.4); }
+            .day-sat { background: rgba(234, 179, 8, 0.2); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
+            
+            .day-filter-bar {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 24px;
+                flex-wrap: wrap;
+                background: rgba(255,255,255,0.03);
+                padding: 12px;
+                border-radius: 8px;
+                border: 1px solid rgba(255,255,255,0.05);
+            }
+            .filter-btn {
+                background: #21262d;
+                border: 1px solid var(--prod-border);
+                color: #8b949e;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+            .filter-btn:hover {
+                background: #30363d;
+                border-color: var(--prod-accent);
+                color: #fff;
+            }
+            .filter-btn.active {
+                background: var(--prod-accent);
+                color: #0d1117;
+                border-color: var(--prod-accent);
+                font-weight: 700;
+            }
+
+            .compact-list {
+                max-width: 800px;
+                margin-bottom: 50px;
+                display: none; /* Hidden by default, toggled via script if we add one, or just shown for now */
+            }
+            .compact-item {
+                display: flex;
+                align-items: center;
+                padding: 10px 16px;
+                background: #161b22;
+                border: 1px solid var(--prod-border);
+                border-radius: 6px;
+                margin-bottom: 8px;
+                transition: transform 0.2s;
+            }
+            .compact-item:hover {
+                transform: translateX(4px);
+                border-color: var(--prod-accent);
+            }
+            .compact-date {
+                font-size: 0.75rem;
+                opacity: 0.6;
+                width: 100px;
+            }
+            .compact-title {
+                flex: 1;
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+            .compact-scenes {
+                font-family: ui-monospace, monospace;
+                font-size: 0.75rem;
+                opacity: 0.5;
+                margin-left: 20px;
+            }
+
             @media print {
                 .sidebar, .nav-bar, .back-to-top { display: none; }
                 .dashboard-container { display: block; }
@@ -412,21 +517,24 @@ function generateBreakdownRows(rows, calendar, holidays) {
 
   rows.forEach((r, i) => {
     const minDay = r.scheduledDays && r.scheduledDays.length > 0 ? Math.min(...r.scheduledDays) : null;
+    const dateStr = minDay !== null ? calendar[minDay] : null;
+    const dayConfig = getDayConfig(dateStr);
 
     // If scene falls on a new day, insert divider
     if (minDay !== null && minDay > lastDayDivider && !r.pickup) {
       lastDayDivider = minDay;
-      const currentDayInt = minDay;
-      const dateStr = calendar[currentDayInt];
       const dayName = getDayName(dateStr);
       const formattedDate = formatDate(dateStr);
       const holiday = holidays[dateStr];
       html += `
-        <tr class="day-divider-row">
+        <tr class="day-divider-row" data-day-name="${dayConfig.name}">
           <td colspan="9">
-            <div class="day-divider" id="day-${currentDayInt}">
-              <span>Day ${currentDayInt} — ${dayName}, ${formattedDate} ${holiday ? `<span style="color:#ff7b72;margin-left:10px;">[${holiday}]</span>` : ''}</span>
-              <a href="production/days/${currentDayInt}.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            <div class="day-divider" id="day-${minDay}">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge ${dayConfig.class}">${dayConfig.icon}</span>
+                Day ${minDay} — ${dayName}, ${formattedDate} ${holiday ? `<span style="color:#ff7b72;margin-left:10px;">[${holiday}]</span>` : ''}
+              </span>
+              <a href="production/days/${minDay}.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
             </div>
           </td>
         </tr>`;
@@ -438,7 +546,7 @@ function generateBreakdownRows(rows, calendar, holidays) {
     }).join('');
 
     html += `
-                        <tr id="row-${r.n}">
+                        <tr id="row-${r.n}" data-day-name="${dayConfig.name}">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-${r.n}').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('${r.n}')">${r.n}</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('${escapeHtml(r.title)}')">${escapeHtml(r.title)}</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('${escapeHtml(r.location || '—')}')">${escapeHtml(r.location || '—')}</span></td>
@@ -495,6 +603,8 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
     });
 
     const dateStr = calendar[dayNum] || '';
+    const dayConfig = getDayConfig(dateStr);
+    const dayNameStr = getDayName(dateStr);
     const charChips = Array.from(chars).sort().map(c => {
       const slug = c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
       return `<a href="production/cast/${c.toLowerCase()}.html" class="actor-chip" data-character="${slug}" target="_blank">${c}</a>`;
@@ -506,10 +616,21 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
     const dallasTag = isJustDallas ? '<span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>' : '';
 
     html += `
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day ${dayNum} <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">${formatD(dateStr)}</span>
+      <div class="stats-card" data-day-name="${dayNameStr}" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge ${dayConfig.class}" style="width:20px; height:20px; font-size:0.6rem;">${dayConfig.icon}</span>
+          Day ${dayNum} <span style="flex:1; color: ${dayConfig.color}; font-weight: 700; font-size: 0.85rem; text-align: right;">${formatD(dateStr)}</span>
           ${dallasTag}
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -525,6 +646,39 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
   }
 
   html += '</div></section>';
+  return html;
+}
+
+function generateCompactListHtml(rows, calendar, totalDays) {
+  let html = '<section id="compact-list-view" class="compact-list" style="display: block;">';
+  html += '<h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem;">List View</h2>';
+
+  for (let dayNum = 1; dayNum <= totalDays; dayNum++) {
+    const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(dayNum));
+    const dateStr = calendar[dayNum] || '';
+    const dayNameStr = getDayName(dateStr);
+    const dayNameShort = dayNameStr.slice(0,3);
+    const dayConfig = getDayConfig(dateStr);
+    const sceneNums = dayRows.map(r => 's' + r.n.toString().padStart(2, '0')).join(', ');
+    
+    // Get unique locations for the day
+    const locs = Array.from(new Set(dayRows.map(r => r.location).filter(l => l && l !== '—'))).join(', ') || '—';
+
+    html += `
+      <div class="compact-item" data-day-name="${dayNameStr}">
+        <div class="compact-date" style="color: ${dayConfig.color}; font-weight: 700;">${dayNameShort}, ${formatDate(dateStr).split(',')[0]}</div>
+        <div class="day-badge ${dayConfig.class}" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">${dayConfig.icon}</div>
+        <div class="compact-title">Day ${dayNum} — ${locs}</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">${sceneNums}</div>
+      </div>
+    `;
+  }
+
+  html += '</section>';
   return html;
 }
 
@@ -549,13 +703,20 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
     <a href="#" class="sidebar-link" onclick="filterByLocation('${escapeHtml(l.location)}')">${escapeHtml(l.location)}</a>
   `).join('');
 
-  const sidebarDaysHtml = Object.keys(calendar).sort((a,b) => Number(a)-Number(b)).map(d => `
-    <a href="production/days/${d}.html" class="sidebar-link">Day ${d} — ${getDayName(calendar[d])}</a>
-  `).join('');
+  const sidebarDaysHtml = Object.keys(calendar).sort((a,b) => Number(a)-Number(b)).map(d => {
+    const dateStr = calendar[d];
+    const dateObj = new Date(dateStr + 'T12:00:00');
+    const displayDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    return `<a href="production/days/${d}.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day ${d}</span>
+      <span style="opacity:0.5; font-size:0.75rem;">${displayDate}</span>
+    </a>`;
+  }).join('');
 
   const breakdownRowsHtml = generateBreakdownRows(rows, calendar, holidays);
   const locationRowsHtml = generateLocationTable(locationRows, totalDays);
   const overviewListHtml = generateOverviewListHtml(rows, calendar, totalDays);
+  const compactListHtml = generateCompactListHtml(rows, calendar, totalDays);
 
   return `<!doctype html>
 <html lang="en">
@@ -621,6 +782,26 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
 
                 ${overviewListHtml}
 
+                <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('overview')">Card View</button>
+                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('list')">List View</button>
+                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('breakdown')">Detailed Breakdown</button>
+                </div>
+
+                <div class="day-filter-bar no-print">
+                    <span style="font-size: 0.7rem; color: #8b949e; align-self: center; margin-right: 8px; text-transform: uppercase; font-weight: 700;">Filter Day:</span>
+                    <button class="filter-btn active" onclick="filterByDay(null, this)">All</button>
+                    <button class="filter-btn" onclick="filterByDay('Monday', this)">Mon</button>
+                    <button class="filter-btn" onclick="filterByDay('Tuesday', this)">Tue</button>
+                    <button class="filter-btn" onclick="filterByDay('Wednesday', this)">Wed</button>
+                    <button class="filter-btn" onclick="filterByDay('Thursday', this)">Thu</button>
+                    <button class="filter-btn" onclick="filterByDay('Friday', this)">Fri</button>
+                    <button class="filter-btn" onclick="filterByDay('Saturday', this)">Sat</button>
+                    <button class="filter-btn" onclick="filterByDay('Sunday', this)">Sun</button>
+                </div>
+
+                ${compactListHtml}
+
                 <section id="breakdown">
                     <table class="production-table">
                         <thead>
@@ -670,6 +851,34 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                     }
                 });
             }
+
+            function toggleView(view) {
+                document.getElementById('schedule-overview').style.display = view === 'overview' ? 'block' : 'none';
+                document.getElementById('compact-list-view').style.display = view === 'list' ? 'block' : 'none';
+                document.getElementById('breakdown').style.display = view === 'breakdown' ? 'block' : 'none';
+                // Trigger refilter when view changes to ensure current filter is applied
+                const activeFilter = document.querySelector('.filter-btn.active');
+                if (activeFilter) activeFilter.click();
+            }
+
+            function filterByDay(day, btn) {
+                // Update buttons
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter cards
+                document.querySelectorAll('.stats-card, .compact-item, .day-divider-row, #production-body tr').forEach(el => {
+                    const elDay = el.getAttribute('data-day-name');
+                    if (!day || elDay === day) {
+                        el.style.display = '';
+                    } else {
+                        el.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Default view
+            window.onload = () => toggleView('overview');
         </script>
     </body>
 </html>

@@ -178,6 +178,95 @@
             .row-dimmed {
                 opacity: 0.4;
             }
+            .day-badge {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                border-radius: 6px;
+                font-size: 0.7rem;
+                font-weight: 800;
+                margin-right: 8px;
+                color: #fff;
+                background: rgba(255,255,255,0.1);
+            }
+            .day-sun { background: rgba(14, 165, 233, 0.2); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.4); }
+            .day-mon { background: rgba(99, 102, 241, 0.2); color: #6366f1; border: 1px solid rgba(99, 102, 241, 0.4); }
+            .day-tue { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
+            .day-wed { background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); }
+            .day-thu { background: rgba(245, 158, 11, 0.2); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); }
+            .day-fri { background: rgba(244, 63, 94, 0.2); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.4); }
+            .day-sat { background: rgba(234, 179, 8, 0.2); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
+            
+            .day-filter-bar {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 24px;
+                flex-wrap: wrap;
+                background: rgba(255,255,255,0.03);
+                padding: 12px;
+                border-radius: 8px;
+                border: 1px solid rgba(255,255,255,0.05);
+            }
+            .filter-btn {
+                background: #21262d;
+                border: 1px solid var(--prod-border);
+                color: #8b949e;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+            .filter-btn:hover {
+                background: #30363d;
+                border-color: var(--prod-accent);
+                color: #fff;
+            }
+            .filter-btn.active {
+                background: var(--prod-accent);
+                color: #0d1117;
+                border-color: var(--prod-accent);
+                font-weight: 700;
+            }
+
+            .compact-list {
+                max-width: 800px;
+                margin-bottom: 50px;
+                display: none; /* Hidden by default, toggled via script if we add one, or just shown for now */
+            }
+            .compact-item {
+                display: flex;
+                align-items: center;
+                padding: 10px 16px;
+                background: #161b22;
+                border: 1px solid var(--prod-border);
+                border-radius: 6px;
+                margin-bottom: 8px;
+                transition: transform 0.2s;
+            }
+            .compact-item:hover {
+                transform: translateX(4px);
+                border-color: var(--prod-accent);
+            }
+            .compact-date {
+                font-size: 0.75rem;
+                opacity: 0.6;
+                width: 100px;
+            }
+            .compact-title {
+                flex: 1;
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+            .compact-scenes {
+                font-family: ui-monospace, monospace;
+                font-size: 0.75rem;
+                opacity: 0.5;
+                margin-left: 20px;
+            }
+
             @media print {
                 .sidebar, .nav-bar, .back-to-top { display: none; }
                 .dashboard-container { display: block; }
@@ -199,8 +288,8 @@
 
                 <div class="stats-card">
                     <div class="stats-title">Current Status</div>
-                    <div class="stats-value" style="font-size:1.1rem;">Friday, Apr 17</div>
-                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">12:29 PM</div>
+                    <div class="stats-value" style="font-size:1.1rem;">Tuesday, Apr 21</div>
+                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">12:23 PM</div>
                 </div>
 
                 <div class="stats-card">
@@ -212,51 +301,88 @@
                         </div>
                         <div>
                             <div style="font-size:0.7rem; opacity:0.6;">Days</div>
-                            <div style="font-size:1.1rem; font-weight:600;">16</div>
+                            <div style="font-size:1.1rem; font-weight:600;">24</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="sidebar-nav-title">Timeline</div>
-                
-    <a href="production/days/1.html" class="sidebar-link">Day 1 — Saturday</a>
-  
-    <a href="production/days/2.html" class="sidebar-link">Day 2 — Sunday</a>
-  
-    <a href="production/days/3.html" class="sidebar-link">Day 3 — Saturday</a>
-  
-    <a href="production/days/4.html" class="sidebar-link">Day 4 — Sunday</a>
-  
-    <a href="production/days/5.html" class="sidebar-link">Day 5 — Friday</a>
-  
-    <a href="production/days/6.html" class="sidebar-link">Day 6 — Saturday</a>
-  
-    <a href="production/days/7.html" class="sidebar-link">Day 7 — Friday</a>
-  
-    <a href="production/days/8.html" class="sidebar-link">Day 8 — Monday</a>
-  
-    <a href="production/days/9.html" class="sidebar-link">Day 9 — Tuesday</a>
-  
-    <a href="production/days/10.html" class="sidebar-link">Day 10 — Wednesday</a>
-  
-    <a href="production/days/11.html" class="sidebar-link">Day 11 — Thursday</a>
-  
-    <a href="production/days/12.html" class="sidebar-link">Day 12 — Friday</a>
-  
-    <a href="production/days/13.html" class="sidebar-link">Day 13 — Sunday</a>
-  
-    <a href="production/days/14.html" class="sidebar-link">Day 14 — Monday</a>
-  
-    <a href="production/days/15.html" class="sidebar-link">Day 15 — Tuesday</a>
-  
-    <a href="production/days/16.html" class="sidebar-link">Day 16 — Wednesday</a>
-  
-    <a href="production/days/17.html" class="sidebar-link">Day 17 — Thursday</a>
-  
-    <a href="production/days/18.html" class="sidebar-link">Day 18 — Friday</a>
-  
-    <a href="production/days/19.html" class="sidebar-link">Day 19 — Saturday</a>
-  
+                <a href="production/days/1.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 1</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 12</span>
+    </a><a href="production/days/2.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 2</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 13</span>
+    </a><a href="production/days/3.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 3</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 14</span>
+    </a><a href="production/days/4.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 4</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 15</span>
+    </a><a href="production/days/5.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 5</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 16</span>
+    </a><a href="production/days/6.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 6</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 17</span>
+    </a><a href="production/days/7.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 7</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 18</span>
+    </a><a href="production/days/8.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 8</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 19</span>
+    </a><a href="production/days/9.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 9</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 20</span>
+    </a><a href="production/days/10.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 10</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 21</span>
+    </a><a href="production/days/11.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 11</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 22</span>
+    </a><a href="production/days/12.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 12</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 23</span>
+    </a><a href="production/days/13.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 13</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 24</span>
+    </a><a href="production/days/14.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 14</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 25</span>
+    </a><a href="production/days/15.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 15</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 26</span>
+    </a><a href="production/days/16.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 16</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 27</span>
+    </a><a href="production/days/17.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 17</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 28</span>
+    </a><a href="production/days/18.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 18</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 29</span>
+    </a><a href="production/days/19.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 19</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jun 30</span>
+    </a><a href="production/days/20.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 20</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jul 1</span>
+    </a><a href="production/days/21.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 21</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jul 2</span>
+    </a><a href="production/days/22.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 22</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jul 3</span>
+    </a><a href="production/days/23.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 23</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jul 4</span>
+    </a><a href="production/days/24.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 24</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jul 5</span>
+    </a><a href="production/days/25.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
+      <span>Day 25</span>
+      <span style="opacity:0.5; font-size:0.75rem;">Jul 6</span>
+    </a>
 
                 <div class="sidebar-nav-title">Cast</div>
                 <a href="#" class="sidebar-link" onclick="filterByActor('')">Show All</a>
@@ -301,7 +427,7 @@
   
 
                 <div style="margin-top:auto; padding-top:20px; font-size:0.75rem; opacity:0.5;">
-                    Last Compiled:<br>4/17/2026, 12:29:18 PM
+                    Last Compiled:<br>4/21/2026, 12:23:43 PM
                 </div>
             </aside>
 
@@ -312,74 +438,48 @@
                 </header>
 
                 <section id="schedule-overview" style="margin-bottom: 50px;"><h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Schedule Overview <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px;">At a glance</span></h2><div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 1 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Sat, May 30</span>
-          <span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>
-        </div>
-        <div style="font-size: 0.85rem; margin-bottom: 12px;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
-          <div style="line-height: 1.4;">—</div>
-        </div>
-        <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s02</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a></div>
-        </div>
-      </div>
-    
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 2 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Sun, May 31</span>
-          <span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>
-        </div>
-        <div style="font-size: 0.85rem; margin-bottom: 12px;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
-          <div style="line-height: 1.4;">—</div>
-        </div>
-        <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s08</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a></div>
-        </div>
-      </div>
-    
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 3 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Sat, Jun 6</span>
-          <span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>
-        </div>
-        <div style="font-size: 0.85rem; margin-bottom: 12px;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
-          <div style="line-height: 1.4;">—</div>
-        </div>
-        <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s09</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a></div>
-        </div>
-      </div>
-    
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 4 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Sun, Jun 7</span>
-          <span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>
-        </div>
-        <div style="font-size: 0.85rem; margin-bottom: 12px;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
-          <div style="line-height: 1.4;">—</div>
-        </div>
-        <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s12</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a></div>
-        </div>
-      </div>
-    
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 5 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Fri, Jun 19</span>
+      <div class="stats-card" data-day-name="Friday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-fri" style="width:20px; height:20px; font-size:0.6rem;">F</span>
+          Day 1 <span style="flex:1; color: #f43f5e; font-weight: 700; font-size: 0.85rem; text-align: right;">Fri, Jun 12</span>
           
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s02 + s03</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a></div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Saturday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-sat" style="width:20px; height:20px; font-size:0.6rem;">🌟</span>
+          Day 2 <span style="flex:1; color: #eab308; font-weight: 700; font-size: 0.85rem; text-align: right;">Sat, Jun 13</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -392,10 +492,21 @@
         </div>
       </div>
     
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 6 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Sat, Jun 20</span>
+      <div class="stats-card" data-day-name="Sunday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-sun" style="width:20px; height:20px; font-size:0.6rem;">☀️</span>
+          Day 3 <span style="flex:1; color: #0ea5e9; font-weight: 700; font-size: 0.85rem; text-align: right;">Sun, Jun 14</span>
           
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -403,15 +514,26 @@
         </div>
         <div style="font-size: 0.85rem;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s03 + s04</div>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s04</div>
           <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/janice.html" class="actor-chip" data-character="janice" target="_blank">JANICE</a> <a href="production/cast/mary.html" class="actor-chip" data-character="mary" target="_blank">MARY</a> <a href="production/cast/paul.html" class="actor-chip" data-character="paul" target="_blank">PAUL</a></div>
         </div>
       </div>
     
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 7 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Fri, Jun 26</span>
+      <div class="stats-card" data-day-name="Monday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-mon" style="width:20px; height:20px; font-size:0.6rem;">M</span>
+          Day 4 <span style="flex:1; color: #6366f1; font-weight: 700; font-size: 0.85rem; text-align: right;">Mon, Jun 15</span>
           
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -419,15 +541,134 @@
         </div>
         <div style="font-size: 0.85rem;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s04 + s05</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/janice.html" class="actor-chip" data-character="janice" target="_blank">JANICE</a> <a href="production/cast/mary.html" class="actor-chip" data-character="mary" target="_blank">MARY</a> <a href="production/cast/paul.html" class="actor-chip" data-character="paul" target="_blank">PAUL</a></div>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s05 + s08</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a></div>
         </div>
       </div>
     
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 8 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Mon, Jun 29</span>
+      <div class="stats-card" data-day-name="Tuesday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-tue" style="width:20px; height:20px; font-size:0.6rem;">T</span>
+          Day 5 <span style="flex:1; color: #10b981; font-weight: 700; font-size: 0.85rem; text-align: right;">Tue, Jun 16</span>
           
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s09 + s11</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a></div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Wednesday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-wed" style="width:20px; height:20px; font-size:0.6rem;">W</span>
+          Day 6 <span style="flex:1; color: #8b5cf6; font-weight: 700; font-size: 0.85rem; text-align: right;">Wed, Jun 17</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">DALLAS BEDROOM - Interior</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s12 + s13</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a></div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Thursday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-thu" style="width:20px; height:20px; font-size:0.6rem;">T</span>
+          Day 7 <span style="flex:1; color: #f59e0b; font-weight: 700; font-size: 0.85rem; text-align: right;">Thu, Jun 18</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s15</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a></div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Friday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-fri" style="width:20px; height:20px; font-size:0.6rem;">F</span>
+          Day 8 <span style="flex:1; color: #f43f5e; font-weight: 700; font-size: 0.85rem; text-align: right;">Fri, Jun 19</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">—</div>
+          <div style="line-height: 1.5; margin-top: 6px;">—</div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Saturday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-sat" style="width:20px; height:20px; font-size:0.6rem;">🌟</span>
+          Day 9 <span style="flex:1; color: #eab308; font-weight: 700; font-size: 0.85rem; text-align: right;">Sat, Jun 20</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -440,26 +681,21 @@
         </div>
       </div>
     
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 9 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Tue, Jun 30</span>
+      <div class="stats-card" data-day-name="Sunday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-sun" style="width:20px; height:20px; font-size:0.6rem;">☀️</span>
+          Day 10 <span style="flex:1; color: #0ea5e9; font-weight: 700; font-size: 0.85rem; text-align: right;">Sun, Jun 21</span>
           
         </div>
-        <div style="font-size: 0.85rem; margin-bottom: 12px;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
-          <div style="line-height: 1.4;">DALLAS BEDROOM - Interior</div>
-        </div>
-        <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s11 + s13</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a></div>
-        </div>
-      </div>
-    
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 10 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Wed, Jul 1</span>
-          
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -467,15 +703,161 @@
         </div>
         <div style="font-size: 0.85rem;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s15 + s16</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/asher.html" class="actor-chip" data-character="asher" target="_blank">ASHER</a> <a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/janice.html" class="actor-chip" data-character="janice" target="_blank">JANICE</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a></div>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s16 + s19</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/asher.html" class="actor-chip" data-character="asher" target="_blank">ASHER</a> <a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/janice.html" class="actor-chip" data-character="janice" target="_blank">JANICE</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a> <a href="production/cast/pat clendenen.html" class="actor-chip" data-character="pat-clendenen" target="_blank">PAT CLENDENEN</a> <a href="production/cast/sasha.html" class="actor-chip" data-character="sasha" target="_blank">SASHA</a> <a href="production/cast/tyler.html" class="actor-chip" data-character="tyler" target="_blank">TYLER</a> <a href="production/cast/woman.html" class="actor-chip" data-character="woman" target="_blank">WOMAN</a></div>
         </div>
       </div>
     
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 11 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Thu, Jul 2</span>
+      <div class="stats-card" data-day-name="Monday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-mon" style="width:20px; height:20px; font-size:0.6rem;">M</span>
+          Day 11 <span style="flex:1; color: #6366f1; font-weight: 700; font-size: 0.85rem; text-align: right;">Mon, Jun 22</span>
           
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s21 + s24</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a></div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Tuesday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-tue" style="width:20px; height:20px; font-size:0.6rem;">T</span>
+          Day 12 <span style="flex:1; color: #10b981; font-weight: 700; font-size: 0.85rem; text-align: right;">Tue, Jun 23</span>
+          <span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s28</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a></div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Wednesday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-wed" style="width:20px; height:20px; font-size:0.6rem;">W</span>
+          Day 13 <span style="flex:1; color: #8b5cf6; font-weight: 700; font-size: 0.85rem; text-align: right;">Wed, Jun 24</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">—</div>
+          <div style="line-height: 1.5; margin-top: 6px;">—</div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Thursday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-thu" style="width:20px; height:20px; font-size:0.6rem;">T</span>
+          Day 14 <span style="flex:1; color: #f59e0b; font-weight: 700; font-size: 0.85rem; text-align: right;">Thu, Jun 25</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s10 + s14</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a></div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Friday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-fri" style="width:20px; height:20px; font-size:0.6rem;">F</span>
+          Day 15 <span style="flex:1; color: #f43f5e; font-weight: 700; font-size: 0.85rem; text-align: right;">Fri, Jun 26</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">—</div>
+          <div style="line-height: 1.5; margin-top: 6px;">—</div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Saturday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-sat" style="width:20px; height:20px; font-size:0.6rem;">🌟</span>
+          Day 16 <span style="flex:1; color: #eab308; font-weight: 700; font-size: 0.85rem; text-align: right;">Sat, Jun 27</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -488,10 +870,21 @@
         </div>
       </div>
     
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 12 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Fri, Jul 3</span>
+      <div class="stats-card" data-day-name="Sunday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-sun" style="width:20px; height:20px; font-size:0.6rem;">☀️</span>
+          Day 17 <span style="flex:1; color: #0ea5e9; font-weight: 700; font-size: 0.85rem; text-align: right;">Sun, Jun 28</span>
           
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -499,47 +892,26 @@
         </div>
         <div style="font-size: 0.85rem;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s19 + s20</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/asher.html" class="actor-chip" data-character="asher" target="_blank">ASHER</a> <a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a> <a href="production/cast/pat clendenen.html" class="actor-chip" data-character="pat-clendenen" target="_blank">PAT CLENDENEN</a> <a href="production/cast/sasha.html" class="actor-chip" data-character="sasha" target="_blank">SASHA</a> <a href="production/cast/tyler.html" class="actor-chip" data-character="tyler" target="_blank">TYLER</a> <a href="production/cast/woman.html" class="actor-chip" data-character="woman" target="_blank">WOMAN</a></div>
-        </div>
-      </div>
-    
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 13 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Sun, Jul 5</span>
-          
-        </div>
-        <div style="font-size: 0.85rem; margin-bottom: 12px;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
-          <div style="line-height: 1.4;">—</div>
-        </div>
-        <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s21 + s22</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/asher.html" class="actor-chip" data-character="asher" target="_blank">ASHER</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a></div>
-        </div>
-      </div>
-    
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 14 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Mon, Jul 6</span>
-          
-        </div>
-        <div style="font-size: 0.85rem; margin-bottom: 12px;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
-          <div style="line-height: 1.4;">—</div>
-        </div>
-        <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s23 + s24</div>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s20 + s22</div>
           <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/asher.html" class="actor-chip" data-character="asher" target="_blank">ASHER</a> <a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a></div>
         </div>
       </div>
     
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 15 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Tue, Jul 7</span>
+      <div class="stats-card" data-day-name="Monday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-mon" style="width:20px; height:20px; font-size:0.6rem;">M</span>
+          Day 18 <span style="flex:1; color: #6366f1; font-weight: 700; font-size: 0.85rem; text-align: right;">Mon, Jun 29</span>
           
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -547,15 +919,26 @@
         </div>
         <div style="font-size: 0.85rem;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s25 + s26</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/asher.html" class="actor-chip" data-character="asher" target="_blank">ASHER</a> <a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/janice.html" class="actor-chip" data-character="janice" target="_blank">JANICE</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a></div>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">—</div>
+          <div style="line-height: 1.5; margin-top: 6px;">—</div>
         </div>
       </div>
     
-      <div class="stats-card" style="margin-bottom: 0;">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px;">
-          Day 16 <span style="color: var(--prod-accent); font-weight: 400; font-size: 0.85rem; float: right;">Wed, Jul 8</span>
+      <div class="stats-card" data-day-name="Tuesday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-tue" style="width:20px; height:20px; font-size:0.6rem;">T</span>
+          Day 19 <span style="flex:1; color: #10b981; font-weight: 700; font-size: 0.85rem; text-align: right;">Tue, Jun 30</span>
           
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
@@ -563,11 +946,430 @@
         </div>
         <div style="font-size: 0.85rem;">
           <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s27 + s28</div>
-          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/pat clendenen.html" class="actor-chip" data-character="pat-clendenen" target="_blank">PAT CLENDENEN</a></div>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">—</div>
+          <div style="line-height: 1.5; margin-top: 6px;">—</div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Wednesday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-wed" style="width:20px; height:20px; font-size:0.6rem;">W</span>
+          Day 20 <span style="flex:1; color: #8b5cf6; font-weight: 700; font-size: 0.85rem; text-align: right;">Wed, Jul 1</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">—</div>
+          <div style="line-height: 1.5; margin-top: 6px;">—</div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Thursday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-thu" style="width:20px; height:20px; font-size:0.6rem;">T</span>
+          Day 21 <span style="flex:1; color: #f59e0b; font-weight: 700; font-size: 0.85rem; text-align: right;">Thu, Jul 2</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">—</div>
+          <div style="line-height: 1.5; margin-top: 6px;">—</div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Friday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-fri" style="width:20px; height:20px; font-size:0.6rem;">F</span>
+          Day 22 <span style="flex:1; color: #f43f5e; font-weight: 700; font-size: 0.85rem; text-align: right;">Fri, Jul 3</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">—</div>
+          <div style="line-height: 1.5; margin-top: 6px;">—</div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Saturday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-sat" style="width:20px; height:20px; font-size:0.6rem;">🌟</span>
+          Day 23 <span style="flex:1; color: #eab308; font-weight: 700; font-size: 0.85rem; text-align: right;">Sat, Jul 4</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s23 + s25</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/asher.html" class="actor-chip" data-character="asher" target="_blank">ASHER</a> <a href="production/cast/dallas.html" class="actor-chip" data-character="dallas" target="_blank">DALLAS</a> <a href="production/cast/dominic.html" class="actor-chip" data-character="dominic" target="_blank">DOMINIC</a> <a href="production/cast/makayla.html" class="actor-chip" data-character="makayla" target="_blank">MAKAYLA</a></div>
+        </div>
+      </div>
+    
+      <div class="stats-card" data-day-name="Sunday" style="margin-bottom: 0;">
+        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+          <span class="day-badge day-sun" style="width:20px; height:20px; font-size:0.6rem;">☀️</span>
+          Day 24 <span style="flex:1; color: #0ea5e9; font-weight: 700; font-size: 0.85rem; text-align: right;">Sun, Jul 5</span>
+          
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+          <div>
+            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #fff;">—</span>
+          </div>
+        </div>
+        <div style="font-size: 0.85rem; margin-bottom: 12px;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <div style="line-height: 1.4;">—</div>
+        </div>
+        <div style="font-size: 0.85rem;">
+          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">s26 + s27</div>
+          <div style="line-height: 1.5; margin-top: 6px;"><a href="production/cast/janice.html" class="actor-chip" data-character="janice" target="_blank">JANICE</a> <a href="production/cast/pat clendenen.html" class="actor-chip" data-character="pat-clendenen" target="_blank">PAT CLENDENEN</a></div>
         </div>
       </div>
     </div></section>
+
+                <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('overview')">Card View</button>
+                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('list')">List View</button>
+                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('breakdown')">Detailed Breakdown</button>
+                </div>
+
+                <div class="day-filter-bar no-print">
+                    <span style="font-size: 0.7rem; color: #8b949e; align-self: center; margin-right: 8px; text-transform: uppercase; font-weight: 700;">Filter Day:</span>
+                    <button class="filter-btn active" onclick="filterByDay(null, this)">All</button>
+                    <button class="filter-btn" onclick="filterByDay('Monday', this)">Mon</button>
+                    <button class="filter-btn" onclick="filterByDay('Tuesday', this)">Tue</button>
+                    <button class="filter-btn" onclick="filterByDay('Wednesday', this)">Wed</button>
+                    <button class="filter-btn" onclick="filterByDay('Thursday', this)">Thu</button>
+                    <button class="filter-btn" onclick="filterByDay('Friday', this)">Fri</button>
+                    <button class="filter-btn" onclick="filterByDay('Saturday', this)">Sat</button>
+                    <button class="filter-btn" onclick="filterByDay('Sunday', this)">Sun</button>
+                </div>
+
+                <section id="compact-list-view" class="compact-list" style="display: block;"><h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem;">List View</h2>
+      <div class="compact-item" data-day-name="Friday">
+        <div class="compact-date" style="color: #f43f5e; font-weight: 700;">Fri, Jun 12</div>
+        <div class="day-badge day-fri" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">F</div>
+        <div class="compact-title">Day 1 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s02, s03</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Saturday">
+        <div class="compact-date" style="color: #eab308; font-weight: 700;">Sat, Jun 13</div>
+        <div class="day-badge day-sat" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">🌟</div>
+        <div class="compact-title">Day 2 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s01</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Sunday">
+        <div class="compact-date" style="color: #0ea5e9; font-weight: 700;">Sun, Jun 14</div>
+        <div class="day-badge day-sun" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">☀️</div>
+        <div class="compact-title">Day 3 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s04</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Monday">
+        <div class="compact-date" style="color: #6366f1; font-weight: 700;">Mon, Jun 15</div>
+        <div class="day-badge day-mon" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">M</div>
+        <div class="compact-title">Day 4 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s05, s08</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Tuesday">
+        <div class="compact-date" style="color: #10b981; font-weight: 700;">Tue, Jun 16</div>
+        <div class="day-badge day-tue" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">T</div>
+        <div class="compact-title">Day 5 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s09, s11</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Wednesday">
+        <div class="compact-date" style="color: #8b5cf6; font-weight: 700;">Wed, Jun 17</div>
+        <div class="day-badge day-wed" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">W</div>
+        <div class="compact-title">Day 6 — DALLAS BEDROOM - Interior</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s12, s13</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Thursday">
+        <div class="compact-date" style="color: #f59e0b; font-weight: 700;">Thu, Jun 18</div>
+        <div class="day-badge day-thu" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">T</div>
+        <div class="compact-title">Day 7 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s15</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Friday">
+        <div class="compact-date" style="color: #f43f5e; font-weight: 700;">Fri, Jun 19</div>
+        <div class="day-badge day-fri" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">F</div>
+        <div class="compact-title">Day 8 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes"></div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Saturday">
+        <div class="compact-date" style="color: #eab308; font-weight: 700;">Sat, Jun 20</div>
+        <div class="day-badge day-sat" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">🌟</div>
+        <div class="compact-title">Day 9 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s06, s07</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Sunday">
+        <div class="compact-date" style="color: #0ea5e9; font-weight: 700;">Sun, Jun 21</div>
+        <div class="day-badge day-sun" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">☀️</div>
+        <div class="compact-title">Day 10 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s16, s19</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Monday">
+        <div class="compact-date" style="color: #6366f1; font-weight: 700;">Mon, Jun 22</div>
+        <div class="day-badge day-mon" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">M</div>
+        <div class="compact-title">Day 11 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s21, s24</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Tuesday">
+        <div class="compact-date" style="color: #10b981; font-weight: 700;">Tue, Jun 23</div>
+        <div class="day-badge day-tue" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">T</div>
+        <div class="compact-title">Day 12 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s28</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Wednesday">
+        <div class="compact-date" style="color: #8b5cf6; font-weight: 700;">Wed, Jun 24</div>
+        <div class="day-badge day-wed" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">W</div>
+        <div class="compact-title">Day 13 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes"></div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Thursday">
+        <div class="compact-date" style="color: #f59e0b; font-weight: 700;">Thu, Jun 25</div>
+        <div class="day-badge day-thu" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">T</div>
+        <div class="compact-title">Day 14 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s10, s14</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Friday">
+        <div class="compact-date" style="color: #f43f5e; font-weight: 700;">Fri, Jun 26</div>
+        <div class="day-badge day-fri" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">F</div>
+        <div class="compact-title">Day 15 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes"></div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Saturday">
+        <div class="compact-date" style="color: #eab308; font-weight: 700;">Sat, Jun 27</div>
+        <div class="day-badge day-sat" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">🌟</div>
+        <div class="compact-title">Day 16 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s18</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Sunday">
+        <div class="compact-date" style="color: #0ea5e9; font-weight: 700;">Sun, Jun 28</div>
+        <div class="day-badge day-sun" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">☀️</div>
+        <div class="compact-title">Day 17 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s20, s22</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Monday">
+        <div class="compact-date" style="color: #6366f1; font-weight: 700;">Mon, Jun 29</div>
+        <div class="day-badge day-mon" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">M</div>
+        <div class="compact-title">Day 18 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes"></div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Tuesday">
+        <div class="compact-date" style="color: #10b981; font-weight: 700;">Tue, Jun 30</div>
+        <div class="day-badge day-tue" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">T</div>
+        <div class="compact-title">Day 19 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes"></div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Wednesday">
+        <div class="compact-date" style="color: #8b5cf6; font-weight: 700;">Wed, Jul 1</div>
+        <div class="day-badge day-wed" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">W</div>
+        <div class="compact-title">Day 20 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes"></div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Thursday">
+        <div class="compact-date" style="color: #f59e0b; font-weight: 700;">Thu, Jul 2</div>
+        <div class="day-badge day-thu" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">T</div>
+        <div class="compact-title">Day 21 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes"></div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Friday">
+        <div class="compact-date" style="color: #f43f5e; font-weight: 700;">Fri, Jul 3</div>
+        <div class="day-badge day-fri" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">F</div>
+        <div class="compact-title">Day 22 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes"></div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Saturday">
+        <div class="compact-date" style="color: #eab308; font-weight: 700;">Sat, Jul 4</div>
+        <div class="day-badge day-sat" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">🌟</div>
+        <div class="compact-title">Day 23 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s23, s25</div>
+      </div>
+    
+      <div class="compact-item" data-day-name="Sunday">
+        <div class="compact-date" style="color: #0ea5e9; font-weight: 700;">Sun, Jul 5</div>
+        <div class="day-badge day-sun" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">☀️</div>
+        <div class="compact-title">Day 24 — —</div>
+        <div style="display: flex; gap: 12px; margin-right: 20px; opacity: 0.6; font-size: 0.7rem;">
+          <span>Start: —</span>
+          <span>End: —</span>
+        </div>
+        <div class="compact-scenes">s26, s27</div>
+      </div>
+    </section>
 
                 <section id="breakdown">
                     <table class="production-table">
@@ -586,15 +1388,18 @@
                         </thead>
                         <tbody id="production-body">
                             
-        <tr class="day-divider-row">
+        <tr class="day-divider-row" data-day-name="Saturday">
           <td colspan="9">
-            <div class="day-divider" id="day-5">
-              <span>Day 5 — Friday, Jun 19, 2026 <span style="color:#ff7b72;margin-left:10px;">[Juneteenth]</span></span>
-              <a href="production/days/5.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            <div class="day-divider" id="day-2">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-sat">🌟</span>
+                Day 2 — Saturday, Jun 13, 2026 
+              </span>
+              <a href="production/days/2.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
             </div>
           </td>
         </tr>
-                        <tr id="row-1">
+                        <tr id="row-1" data-day-name="Saturday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-1').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('1')">1</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Arrival')">Arrival</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -609,14 +1414,14 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-2">
+                        <tr id="row-2" data-day-name="Friday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-2').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('2')">2</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Sierra's Box')">Sierra's Box</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
                             <td><span class="time-of-day">—</span></td>
                             <td class="duration-col"><span class="duration">2 min</span></td>
                             <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0</span></td>
+                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
                             <td class="key-elements">
                                 —
                                 <div style="margin-top:8px;"><span style="color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span></div>
@@ -624,15 +1429,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-        <tr class="day-divider-row">
-          <td colspan="9">
-            <div class="day-divider" id="day-6">
-              <span>Day 6 — Saturday, Jun 20, 2026 </span>
-              <a href="production/days/6.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
-            </div>
-          </td>
-        </tr>
-                        <tr id="row-3">
+                        <tr id="row-3" data-day-name="Friday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-3').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('3')">3</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Meet The Neighbors')">Meet The Neighbors</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -647,7 +1444,18 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-4">
+        <tr class="day-divider-row" data-day-name="Sunday">
+          <td colspan="9">
+            <div class="day-divider" id="day-3">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-sun">☀️</span>
+                Day 3 — Sunday, Jun 14, 2026 
+              </span>
+              <a href="production/days/3.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            </div>
+          </td>
+        </tr>
+                        <tr id="row-4" data-day-name="Sunday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-4').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('4')">4</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Fellowship')">Fellowship</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -662,15 +1470,18 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-        <tr class="day-divider-row">
+        <tr class="day-divider-row" data-day-name="Monday">
           <td colspan="9">
-            <div class="day-divider" id="day-7">
-              <span>Day 7 — Friday, Jun 26, 2026 </span>
-              <a href="production/days/7.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            <div class="day-divider" id="day-4">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-mon">M</span>
+                Day 4 — Monday, Jun 15, 2026 
+              </span>
+              <a href="production/days/4.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
             </div>
           </td>
         </tr>
-                        <tr id="row-5">
+                        <tr id="row-5" data-day-name="Monday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-5').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('5')">5</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Merlin App')">The Merlin App</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -685,15 +1496,18 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-        <tr class="day-divider-row">
+        <tr class="day-divider-row" data-day-name="Saturday">
           <td colspan="9">
-            <div class="day-divider" id="day-8">
-              <span>Day 8 — Monday, Jun 29, 2026 </span>
-              <a href="production/days/8.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            <div class="day-divider" id="day-9">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-sat">🌟</span>
+                Day 9 — Saturday, Jun 20, 2026 
+              </span>
+              <a href="production/days/9.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
             </div>
           </td>
         </tr>
-                        <tr id="row-6">
+                        <tr id="row-6" data-day-name="Saturday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-6').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('6')">6</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('News Vans')">News Vans</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -708,7 +1522,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-7">
+                        <tr id="row-7" data-day-name="Saturday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-7').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('7')">7</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Coordinates')">The Coordinates</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -723,14 +1537,14 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-8">
+                        <tr id="row-8" data-day-name="Monday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-8').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('8')">8</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Trailcam')">The Trailcam</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
                             <td><span class="time-of-day">—</span></td>
                             <td class="duration-col"><span class="duration">3 min</span></td>
                             <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0</span></td>
+                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
                             <td class="key-elements">
                                 —
                                 <div style="margin-top:8px;"><span style="color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span></div>
@@ -738,14 +1552,14 @@
                             </td>
                             <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
                         </tr>
-                        <tr id="row-9">
+                        <tr id="row-9" data-day-name="Tuesday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-9').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('9')">9</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Injured One')">The Injured One</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
                             <td><span class="time-of-day">—</span></td>
                             <td class="duration-col"><span class="duration">3 min</span></td>
                             <td class="act-col"><span class="act-tag act1">Act 1</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0</span></td>
+                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
                             <td class="key-elements">
                                 —
                                 <div style="margin-top:8px;"><span style="color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span></div>
@@ -753,7 +1567,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-10">
+                        <tr id="row-10" data-day-name="Thursday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-10').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('10')">10</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Creature Discovery')">Creature Discovery</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -768,15 +1582,7 @@
                             </td>
                             <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
                         </tr>
-        <tr class="day-divider-row">
-          <td colspan="9">
-            <div class="day-divider" id="day-9">
-              <span>Day 9 — Tuesday, Jun 30, 2026 </span>
-              <a href="production/days/9.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
-            </div>
-          </td>
-        </tr>
-                        <tr id="row-11">
+                        <tr id="row-11" data-day-name="Tuesday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-11').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('11')">11</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Kitchen Triage')">Kitchen Triage</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -791,14 +1597,14 @@
                             </td>
                             <td class="production-notes">Includes 4 new generated AI Storyboard sketches for referencing.</td>
                         </tr>
-                        <tr id="row-12">
+                        <tr id="row-12" data-day-name="Wednesday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-12').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('12')">12</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The First Night With Creature')">The First Night With Creature</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
                             <td><span class="time-of-day">—</span></td>
                             <td class="duration-col"><span class="duration">2 min</span></td>
                             <td class="act-col"><span class="act-tag act2">Act 2</span></td>
-                            <td class="shoot-days-col"><span class="shoot-days">0</span></td>
+                            <td class="shoot-days-col"><span class="shoot-days">0.5</span></td>
                             <td class="key-elements">
                                 —
                                 <div style="margin-top:8px;"><span style="color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span></div>
@@ -806,7 +1612,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-13">
+                        <tr id="row-13" data-day-name="Wednesday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-13').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('13')">13</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Confrontation')">The Confrontation</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('DALLAS BEDROOM - Interior')">DALLAS BEDROOM - Interior</span></td>
@@ -821,7 +1627,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-14">
+                        <tr id="row-14" data-day-name="Thursday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-14').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('14')">14</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Connection')">The Connection</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -836,15 +1642,7 @@
                             </td>
                             <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
                         </tr>
-        <tr class="day-divider-row">
-          <td colspan="9">
-            <div class="day-divider" id="day-10">
-              <span>Day 10 — Wednesday, Jul 1, 2026 </span>
-              <a href="production/days/10.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
-            </div>
-          </td>
-        </tr>
-                        <tr id="row-15">
+                        <tr id="row-15" data-day-name="Thursday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-15').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('15')">15</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Makayla's Lair')">Makayla's Lair</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -859,7 +1657,18 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-16">
+        <tr class="day-divider-row" data-day-name="Sunday">
+          <td colspan="9">
+            <div class="day-divider" id="day-10">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-sun">☀️</span>
+                Day 10 — Sunday, Jun 21, 2026 
+              </span>
+              <a href="production/days/10.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            </div>
+          </td>
+        </tr>
+                        <tr id="row-16" data-day-name="Sunday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-16').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('16')">16</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Back Home')">Back Home</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -874,7 +1683,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-17">
+                        <tr id="row-17" data-day-name="undefined">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-17').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('17')">17</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Resonance')">Resonance</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -889,15 +1698,18 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-        <tr class="day-divider-row">
+        <tr class="day-divider-row" data-day-name="Saturday">
           <td colspan="9">
-            <div class="day-divider" id="day-11">
-              <span>Day 11 — Thursday, Jul 2, 2026 </span>
-              <a href="production/days/11.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            <div class="day-divider" id="day-16">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-sat">🌟</span>
+                Day 16 — Saturday, Jun 27, 2026 
+              </span>
+              <a href="production/days/16.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
             </div>
           </td>
         </tr>
-                        <tr id="row-18">
+                        <tr id="row-18" data-day-name="Saturday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-18').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('18')">18</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Life Group Arrives')">Life Group Arrives</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -912,15 +1724,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-        <tr class="day-divider-row">
-          <td colspan="9">
-            <div class="day-divider" id="day-12">
-              <span>Day 12 — Friday, Jul 3, 2026 <span style="color:#ff7b72;margin-left:10px;">[Independence Day (Observed)]</span></span>
-              <a href="production/days/12.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
-            </div>
-          </td>
-        </tr>
-                        <tr id="row-19">
+                        <tr id="row-19" data-day-name="Sunday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-19').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('19')">19</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Hymn')">The Hymn</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -935,7 +1739,18 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-20">
+        <tr class="day-divider-row" data-day-name="Sunday">
+          <td colspan="9">
+            <div class="day-divider" id="day-17">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-sun">☀️</span>
+                Day 17 — Sunday, Jun 28, 2026 
+              </span>
+              <a href="production/days/17.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            </div>
+          </td>
+        </tr>
+                        <tr id="row-20" data-day-name="Sunday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-20').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('20')">20</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Secret is Out')">The Secret is Out</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -950,15 +1765,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-        <tr class="day-divider-row">
-          <td colspan="9">
-            <div class="day-divider" id="day-13">
-              <span>Day 13 — Sunday, Jul 5, 2026 </span>
-              <a href="production/days/13.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
-            </div>
-          </td>
-        </tr>
-                        <tr id="row-21">
+                        <tr id="row-21" data-day-name="Monday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-21').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('21')">21</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Burn Marks')">The Burn Marks</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -973,7 +1780,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-22">
+                        <tr id="row-22" data-day-name="Sunday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-22').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('22')">22</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Load-Out')">The Load-Out</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -988,15 +1795,18 @@
                             </td>
                             <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
                         </tr>
-        <tr class="day-divider-row">
+        <tr class="day-divider-row" data-day-name="Saturday">
           <td colspan="9">
-            <div class="day-divider" id="day-14">
-              <span>Day 14 — Monday, Jul 6, 2026 </span>
-              <a href="production/days/14.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            <div class="day-divider" id="day-23">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-sat">🌟</span>
+                Day 23 — Saturday, Jul 4, 2026 <span style="color:#ff7b72;margin-left:10px;">[Independence Day]</span>
+              </span>
+              <a href="production/days/23.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
             </div>
           </td>
         </tr>
-                        <tr id="row-23">
+                        <tr id="row-23" data-day-name="Saturday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-23').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('23')">23</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Trench Run')">The Trench Run</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -1011,7 +1821,7 @@
                             </td>
                             <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
                         </tr>
-                        <tr id="row-24">
+                        <tr id="row-24" data-day-name="Monday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-24').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('24')">24</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Sanctuary &amp; The Siege')">The Sanctuary &amp; The Siege</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -1026,15 +1836,7 @@
                             </td>
                             <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
                         </tr>
-        <tr class="day-divider-row">
-          <td colspan="9">
-            <div class="day-divider" id="day-15">
-              <span>Day 15 — Tuesday, Jul 7, 2026 </span>
-              <a href="production/days/15.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
-            </div>
-          </td>
-        </tr>
-                        <tr id="row-25">
+                        <tr id="row-25" data-day-name="Saturday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-25').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('25')">25</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Final Blast')">The Final Blast</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -1049,7 +1851,18 @@
                             </td>
                             <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
                         </tr>
-                        <tr id="row-26">
+        <tr class="day-divider-row" data-day-name="Sunday">
+          <td colspan="9">
+            <div class="day-divider" id="day-24">
+              <span style="display:flex; align-items:center;">
+                <span class="day-badge day-sun">☀️</span>
+                Day 24 — Sunday, Jul 5, 2026 
+              </span>
+              <a href="production/days/24.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
+            </div>
+          </td>
+        </tr>
+                        <tr id="row-26" data-day-name="Sunday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-26').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('26')">26</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('The Morning After')">The Morning After</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -1064,15 +1877,7 @@
                             </td>
                             <td class="production-notes">SFX/action pickup (Makayla + Dallas)</td>
                         </tr>
-        <tr class="day-divider-row">
-          <td colspan="9">
-            <div class="day-divider" id="day-16">
-              <span>Day 16 — Wednesday, Jul 8, 2026 </span>
-              <a href="production/days/16.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
-            </div>
-          </td>
-        </tr>
-                        <tr id="row-27">
+                        <tr id="row-27" data-day-name="Sunday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-27').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('27')">27</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Little Aftermath')">Little Aftermath</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -1087,7 +1892,7 @@
                             </td>
                             <td class="production-notes">—</td>
                         </tr>
-                        <tr id="row-28">
+                        <tr id="row-28" data-day-name="Tuesday">
                             <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-28').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('28')">28</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('Full Circle')">Full Circle</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('—')">—</span></td>
@@ -1134,6 +1939,34 @@
                     }
                 });
             }
+
+            function toggleView(view) {
+                document.getElementById('schedule-overview').style.display = view === 'overview' ? 'block' : 'none';
+                document.getElementById('compact-list-view').style.display = view === 'list' ? 'block' : 'none';
+                document.getElementById('breakdown').style.display = view === 'breakdown' ? 'block' : 'none';
+                // Trigger refilter when view changes to ensure current filter is applied
+                const activeFilter = document.querySelector('.filter-btn.active');
+                if (activeFilter) activeFilter.click();
+            }
+
+            function filterByDay(day, btn) {
+                // Update buttons
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Filter cards
+                document.querySelectorAll('.stats-card, .compact-item, .day-divider-row, #production-body tr').forEach(el => {
+                    const elDay = el.getAttribute('data-day-name');
+                    if (!day || elDay === day) {
+                        el.style.display = '';
+                    } else {
+                        el.style.display = 'none';
+                    }
+                });
+            }
+            
+            // Default view
+            window.onload = () => toggleView('overview');
         </script>
     </body>
 </html>

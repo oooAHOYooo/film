@@ -1,0 +1,6 @@
+- `[x]` Update `calendar` in `production-data.json` with corrected Day 8 and expanded slots.
+- `[x]` Reassign all scenes in `production-data.json` using `assignedDay` to follow talent rules.
+    - Weekends: Asher, Ensemble (>3), Janice, Pat, etc.
+    - Weekdays: Core Trio (Dallas, Dominic, Makayla) ONLY.
+- `[x]` Run `node pages/summer/compile-production.js` to regenerate the dashboard.
+- `[x]` Verify the schedule by reviewing the generated overview and cast pages.
