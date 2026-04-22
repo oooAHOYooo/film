@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/22/2026, 3:30:22 PM*
+*Compiled on 4/22/2026, 5:44:27 PM*
 
 ---
 
@@ -1200,10 +1200,11 @@ Dallas stops at the creek's edge right outside his property lines and gazes towa
 
 Dallas ties Howie to a nearby tree and walks into the marsh. 
 
-EXT. INTO THE MARSH (s08.4)
+s08.4 — EXT. INTO THE MARSH (s08.4)
+
 Receiver in hand, Dallas walks deeper into the marsh. 
 
-There in the distance he sees a distubrance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. 
+There in the distance he sees a disturbance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. 
 
 His equipment begins to beep. Dallas flips open his handheld scope and watches the waveform settle into an otherworldly pattern.
 
@@ -1211,21 +1212,193 @@ Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a 
 
 From the distance, a flicker of golden light pulses deep within the marsh. Dallas notices it—but it's gone.
 
-Dallas takes a step forward, then another. The reeds part before him, closing behind him as he disappears into the tall grass.
+Dallas takes a step forward, then another. The reeds part before him. 
 
-Howie whine and ties them up to a lone tree. Dallas bends down and pets Howie on the head, with a smile.
+A sharp, panicked YIP from Howie stops him. 
+
+Dallas turns. Howie is at the edge of the reeds, pulling the leash taut, his eyes wide and fixed on something Dallas can't see deeper in the grass. 
+
+Howie WHINES—a low, guttural sound of genuine fear. 
+
+DALLAS
+Howie? What is it? 
+
+<!-- scene: 09 file: s08.md nickname: dallas-marsh-walk -->
+
+(action)
+The Hum pulses—once, twice. A physical thrum against Dallas’s ribs. 
+
+Dallas looks back toward the flicker, then at the terrified dog. He hesitates, his hand tight on the recording equipment. 
+
+DALLAS
+Alright. Alright, let's go. 
+
+<!-- scene: 09 file: s08.md nickname: dallas-marsh-walk -->
+
+(action)
+Dallas turns back and retreats from the grass. Howie doesn't wait; he practically bolts back toward the boardwalk. 
+
+Dallas looks over his shoulder one last time. The tall grass is still. 
 
 
 ---
 
 
-### Scene 10: The Injured One
+### Scene 10: The Research Beat
+
+*ACT I — Arrival & Discovery | ID: the-research-beat | File: s08b.md*
+
+---
+
+<!-- scene: 10 file: s08b.md nickname: the-research-beat -->
+
+<!-- scene: 09b file: s08b.md nickname: the-research-beat -->
+
+# SCENE 9B: THE RESEARCH BEAT
+
+s08b.1 — INT. DALLAS HOUSE - DESK - NIGHT
+
+The house is quiet, save for the hum of a refrigerator and the soft, rhythmic scratching of Howie’s paws on the hardwood in the next room. 
+
+Dallas sits at his desk, bathed in the blue light of his laptop and the amber glow of the military oscillator. The trailcam’s memory card is plugged in. 
+
+On the screen, the "ladder of lines" waveform he recorded is frozen. 
+
+Dallas reaches into **Sierra's Box** and pulls out the folder: *FIELD NOTES — BRANFORD 2004*. 
+
+He flips through the sketches of butterflies and caterpillars until he reaches a page near the back. 
+
+His eyes widen. 
+
+On the page, in Sierra's handwriting: *Frequency stabilization at 115.3 MHz. The 'Ladder' isn't a bird. It's a response.* 
+
+Next to it is a crude sketch of the "perfect ladder" waveform. It matches his screen exactly. 
+
+Dallas leans back. He looks at the oscillator. He reaches out and slowly dials the frequency to **115.3**. 
+
+The needle doesn't just flutter; it *locks*. A pure, steady tone begins to resonate from the speakers—a sound so clean it feels like a physical presence in the room. 
+
+From the living room, Howie begins to HOWL. Not a bark—a long, mournful sound. 
+
+Dallas cuts the power. Silence. 
+
+DALLAS
+(whispering)
+You were hearing it too, weren't you? 
+
+
+---
+
+
+### Scene 11: The Threshold
+
+*ACT I — Arrival & Discovery | ID: the-threshold | File: s08c.md*
+
+---
+
+<!-- scene: 11 file: s08c.md nickname: the-threshold -->
+
+<!-- scene: 09c file: s08c.md nickname: the-threshold -->
+
+# SCENE 9C: THE THRESHOLD
+
+s08c.1 — EXT. DALLAS HOUSE - PORCH - NIGHT
+
+Dallas stands on the porch, holding a heavy flashlight. 
+
+The salt breeze is cold. The tall grass at the edge of the yard is a wall of moving shadows. 
+
+Howie sits at Dallas’s feet, shivering. He won't step off the porch. 
+
+Dallas clicks on the flashlight and sweeps it across the yard. 
+
+The beam hits the edge of the marsh. 
+
+Two small, **RED PINPRICKS** of light reflect back. 
+
+Dallas freezes. 
+
+DALLAS
+Dominic? 
+
+<!-- scene: 11 file: s08c.md nickname: the-threshold -->
+
+(action)
+No answer. The red eyes don't blink. They are low to the ground, spaced wide. 
+
+Dallas moves the beam slightly to get a better look. 
+
+The lights go out. A SOFT RUSTLE in the grass—heavy, fast—moving away from the house. 
+
+Howie retreats to the door, scratching to get inside. 
+
+Dallas stares into the dark. The "Pastoral Dread" is no longer just a feeling; something is out there, and it's watching him. 
+
+He doesn't go inside. Instead, he reaches into his pocket and feels the weight of the Oscillator. 
+
+DALLAS
+(to himself)
+It's not a coyote. 
+
+
+---
+
+
+### Scene 12: The Return
+
+*ACT I — Arrival & Discovery | ID: the-return | File: s08d.md*
+
+---
+
+<!-- scene: 12 file: s08d.md nickname: the-return -->
+
+<!-- scene: 09d file: s08d.md nickname: the-return -->
+
+# SCENE 9D: THE RETURN
+
+s08d.1 — EXT. EDGE OF THE MARSH - NIGHT
+
+The world is different at night. The boardwalk is a pale spine cutting through a sea of black reeds. 
+
+Dallas walks alone. Howie is back at the house, safe. 
+
+Dallas holds the Oscillator like a compass. The needle is pinned at 115.3. 
+
+The Hum is no longer just a sound; it’s a vibration in his skull. 
+
+He reaches the spot where he found the trailcam. The solar pack’s small green LED is the only light in the marsh. 
+
+Dallas turns off his flashlight. 
+
+Total darkness. 
+
+Then, the Hum shifts. It becomes melodic—a soft, pulsing trill. 
+
+A faint **GOLDEN GLOW** begins to bleed through the reeds a few yards ahead. 
+
+Dallas steps off the path. The reeds brush against his jacket with a sound like dry bones. 
+
+He doesn't look back. 
+
+DALLAS
+I'm here. 
+
+<!-- scene: 12 file: s08d.md nickname: the-return -->
+
+(action)
+He pushes through a dense thicket of grass and stops. 
+
+
+---
+
+
+### Scene 13: The Injured One
 
 *ACT I — Arrival & Discovery | ID: dallas-night-work | File: s09.md*
 
 ---
 
-<!-- scene: 10 file: s09.md nickname: dallas-night-work -->
+<!-- scene: 13 file: s09.md nickname: dallas-night-work -->
 
 # Scene 9: The Injured One
 <!-- summary: Dallas, as he ventures deeper and deeper into the marsh - finds a bioluminest creature -->
@@ -1260,13 +1433,13 @@ Suddenly, the wind returns. A violent gust. Shadows in the distance start to fil
 ---
 
 
-### Scene 11: The Chase
+### Scene 14: The Chase
 
 *ACT I — Arrival & Discovery | ID: shadows-in-wind | File: s10.md*
 
 ---
 
-<!-- scene: 11 file: s10.md nickname: shadows-in-wind -->
+<!-- scene: 14 file: s10.md nickname: shadows-in-wind -->
 
 # Scene 10: The Chase
 <!-- nickname: Creature discovery -->
@@ -1295,13 +1468,13 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 ---
 
 
-### Scene 12: Kitchen Triage
+### Scene 15: Kitchen Triage
 
 *ACT I — Arrival & Discovery | ID: howie-walk-2 | File: s11.md*
 
 ---
 
-<!-- scene: 12 file: s11.md nickname: howie-walk-2 -->
+<!-- scene: 15 file: s11.md nickname: howie-walk-2 -->
 
 # Scene 11: Kitchen Triage
 <!-- summary: Dallas at home with the creature. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
@@ -1365,7 +1538,7 @@ Dallas opens the door to find Dominic.
 DOMINIC
 Thank you for watching Howie - how did he do? 
 
-<!-- scene: 12 file: s11.md nickname: howie-walk-2 -->
+<!-- scene: 15 file: s11.md nickname: howie-walk-2 -->
 
 (action)
 Dallas looks over to Howie who is resting on the sofa, exhausted, sleeping. 
@@ -1373,7 +1546,7 @@ Dallas looks over to Howie who is resting on the sofa, exhausted, sleeping.
 DALLAS
 Good
 
-<!-- scene: 12 file: s11.md nickname: howie-walk-2 -->
+<!-- scene: 15 file: s11.md nickname: howie-walk-2 -->
 
 (action)
 Asher looks behind Dallas at all of the equipment. Dallas hands Howie over to Dominic. 
@@ -1381,7 +1554,7 @@ Asher looks behind Dallas at all of the equipment. Dallas hands Howie over to Do
 DOMINIC
 Okay - we'll - we'll be on our way. Hey - we're doing a lifegroup tomorrow night at our place - you should come. 
 
-<!-- scene: 12 file: s11.md nickname: howie-walk-2 -->
+<!-- scene: 15 file: s11.md nickname: howie-walk-2 -->
 
 (action)
 Dallas peers toward the kitchen.
@@ -1398,7 +1571,7 @@ Yeah - sorry - I'm just a little tired.
 DOMINIC
 Alright well rest well big guy. 
 
-<!-- scene: 12 file: s11.md nickname: howie-walk-2 -->
+<!-- scene: 15 file: s11.md nickname: howie-walk-2 -->
 
 (action)
 Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
@@ -1415,13 +1588,13 @@ Dallas rushes to the workstation and finds that the creature sleeping peacefully
 ---
 
 
-### Scene 13: The Burn Mark & Costco
+### Scene 16: The Burn Mark & Costco
 
 *ACT II — The Creature | ID: the-burn-mark | File: s12.md*
 
 ---
 
-<!-- scene: 13 file: s12.md nickname: the-burn-mark -->
+<!-- scene: 16 file: s12.md nickname: the-burn-mark -->
 
 <!-- nickname: THE FIRST NIGHT WITH CREATURE  -->
 
@@ -1440,13 +1613,13 @@ Dallas presses play on the recorder and goes to sleep.
 ---
 
 
-### Scene 14: The Confrontation
+### Scene 17: The Confrontation
 
 *ACT II — The Creature | ID: entering-grass | File: s13.md*
 
 ---
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 # Scene 13: The Confrontation
 
@@ -1467,7 +1640,7 @@ Dominic walks right up to Dallas' doorway and knocks loudly.
 MAKAYLA
 Asher, look.
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 (action)
 Towards the edge of the yard is a jagged, burn mark in the grass that resembles paint splatters on a canvas - scattered across the green grass. It looks as if a drip of yellow blood is around it - acreating a trail towards Dallas' window. At its center lies a small, translucent crystal.
@@ -1502,7 +1675,7 @@ Alright fine - but you owe me one. If your mother comes back before I do tell he
 MAKAYLA
 Okay.
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 (action)
 Dominic drives away. 
@@ -1522,7 +1695,7 @@ Yes.
 DALLAS
 Okay.
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 (action)
 Makayla turns and points to the burn marks. 
@@ -1530,7 +1703,7 @@ Makayla turns and points to the burn marks.
 MAKAYLA
 What is that outside your house?
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 (action)
 Dallas looks outside, towards the burn marks on the edge of 
@@ -1544,7 +1717,7 @@ A whimper is heard from the kitchen.
 MAKAYLA
 What is that?
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 (action)
 Makayla pushes past Dallas and runs to the kitchen. Asher and Dallas stand 
@@ -1556,7 +1729,7 @@ Dallas and Makayla hover around the table at the makeshift aquarium Dallas const
 
 Asher walks arounds and takes his headphones off and grabs the ruby red headphones on the kitchen table. He puts them on and listens to the recording. 
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 (action)
 Makayla pulls out her portable viewfinder and begins to inspect the creature further. 
@@ -1570,7 +1743,7 @@ Since last night.
 MAKAYLA
 Look at this, look how it breathes.
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 (action)
 The pair look closer at the creature - it seems to breath through its back. 
@@ -1612,7 +1785,7 @@ And you could fix it?
 DALLAS
 I think so. 
 
-<!-- scene: 14 file: s13.md nickname: entering-grass -->
+<!-- scene: 17 file: s13.md nickname: entering-grass -->
 
 (action)
 Dallas grabs a heat lamp and begins to examine the creature. Asher in the 
@@ -1622,13 +1795,13 @@ distance stands off, afraid to look at the creature.
 ---
 
 
-### Scene 15: The Connection
+### Scene 18: The Connection
 
 *ACT II — The Creature | ID: creature-rescue | File: s14.md*
 
 ---
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 # Scene 14: The Connection
 EXT. DALLAS BACKYARD - OLD PICNIC TABLE (s14.1)
@@ -1640,7 +1813,7 @@ Asher sits alone a few feet away—he begins to tap on his fingers, and then nod
 MAKAYLA
 What do you do when you are sad? 
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Dallas looks at Howie and then at Makayla.
@@ -1651,7 +1824,7 @@ I don't know.
 MAKAYLA
 Your wife was an Epistemologist? 
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Dallas looks at the sky and then at the ground and then at the burn marks at the edge of the property. 
@@ -1677,7 +1850,7 @@ How did you know that my wife was an Epistemologist.
 MAKAYLA
 I've read her papers. Read her book.
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Dallas nods and looks at the ground.
@@ -1694,7 +1867,7 @@ That habitat you built. What is that about?
 DALLAS
 I think it is senstivie to UV light. 
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Makayla nods. 
@@ -1705,12 +1878,12 @@ I'm not sure yet. I'll tell you when I find it.
 MAKAYLA
 Sounds good. Hopefully we all are still here...
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Dallas looks at Makayla with curisoity. 
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 A gentle breeze blows through the sky. Asher begins to pace around and bob his head a bit back and forth. Suddenly, he stops in his tracks and proceeds to walk slowly into the house. 
@@ -1718,7 +1891,7 @@ A gentle breeze blows through the sky. Asher begins to pace around and bob his h
 Makayla looks back and him and continues to fiddle with the Oscillator.
 
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Dallas and Makayla sit for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Makayla turns to look and then thinks for a moment. 
@@ -1741,14 +1914,14 @@ What do you mean?
 DALLAS
 I'm not sure. 
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 The breeze overwhelms them both in the distance they begin to hear the faint pulse of a dark deep hum. 
 
 INT. KITCHEN - CONTINUOUS (s14.2)
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 The room grows quiet.  Asher, alone, busies himself trying to connect wires up to the makeshift computer on the counter. He stops as, looks down at the cables and then far off in the distance, then on the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
@@ -1759,7 +1932,7 @@ Asher begins to tap and tap and tap, and his head begins to shake and shake and 
 
 EXT. DALLAS BACKYARD - OLD PICNIC TABLE - CONTINUOUS (s14.3)
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 A loud thump is heard from outside. Makayla runs into Dalla's kitchen.
@@ -1774,7 +1947,7 @@ Is he okay?
 MAKAYLA
 He's fine... He's just doing Asher stuff. I think he's just processing. 
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Makayla takes a deep breath as Asher relaxes. 
@@ -1782,7 +1955,7 @@ Makayla takes a deep breath as Asher relaxes.
 MAKAYLA
 Sit up.
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Makayla makes Asher sit up and brings him a glass of water. As she is pouring it - she notices the creature sleeping peacefully below the heat lamp. 
@@ -1790,7 +1963,7 @@ Makayla makes Asher sit up and brings him a glass of water. As she is pouring it
 MAKAYLA
 I find it interesting that your wife was an epistemologist - you know, they used to think that the sea was silent - but it's not. 
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Dallas looks around at his kitchen island - which has turned part into a triage hospital station. A portable oscilloscope is wired up to the creature.  The device pulses in a rhythmic, golden jagged line — in sync with the creature's heartbeat.
@@ -1813,7 +1986,7 @@ Why are you broadcasting?
 DALLAS
 I'm trying to get a response.
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 The two look at the creature on the table. 
@@ -1821,7 +1994,7 @@ The two look at the creature on the table.
 MAKAYLA
 It looks like the creature is responding to it.
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 Makayla looks at Dallas and then at the creature and pulls out a small prototype from her backpack. 
@@ -1834,7 +2007,7 @@ What is that?
 MAKAYLA
 An amplifier.
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 She turns to the creature and turns it on. The creature starts to wiggle.
@@ -1844,7 +2017,7 @@ Behind the creature's smooth sine wave, a second signal appears—jagged, arrhyt
 MAKAYLA
 That's not coming from the creature. That's drawing from outside.
 
-<!-- scene: 15 file: s14.md nickname: creature-rescue -->
+<!-- scene: 18 file: s14.md nickname: creature-rescue -->
 
 (action)
 The group looks at the creature and then at the oscilloscope and then at the sway of the tall grass outside. 
@@ -1856,13 +2029,13 @@ Dallas - I have to show you something.
 ---
 
 
-### Scene 16: The Field Journal
+### Scene 19: The Field Journal
 
 *ACT II — The Creature | ID: the-field-journal | File: s14b.md*
 
 ---
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 
 # SCENE 14B : #####
@@ -1878,7 +2051,7 @@ Makayla reaches into her backpack and pulls out a soft-covered field journal. Th
 MAKAYLA
 My mom's. 
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 She sets it on the picnic table between them. Dallas looks at it but doesn't touch it.
@@ -1886,28 +2059,28 @@ She sets it on the picnic table between them. Dallas looks at it but doesn't tou
 MAKAYLA
 You can look.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Dallas opens it. The first pages are careful — a woman's handwriting, pencil sketches of the marsh, dated entries. 
 Observations. Frequencies. 
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 A small drawing of a Golden creature in the margin — recognizable. Similar to the one in his kitchen.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Dallas turns the page. The handwriting changes. Younger. Messier. Makayla's. Then Asher's geometric doodles. The sketches get more detailed. Different Golden creatures at different sizes.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Dallas turns another page and stops.On the left side of the spread: a Golden creature, curled, peaceful. On the right side: the same body — same proportions, same ears, same frame — but wrong. Transparent fur. Black veins under the skin. Eyes, where there weren't eyes before. Red.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 An arrow between them. No words.
@@ -1919,7 +2092,7 @@ What am I looking at?
 MAKAYLA
 That's what I wanted to show you.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Dallas stares at the page. His thumb traces the arrow.
@@ -1930,7 +2103,7 @@ They're the same.
 MAKAYLA
 They're the same.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 A beat.
@@ -1938,7 +2111,7 @@ A beat.
 DALLAS
 One turns into the other?
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Makayla looks at Asher. He's stopped threading. He's listening, but not looking up.
@@ -1949,7 +2122,7 @@ Don't know for sure.
 DALLAS
 What's your guess?
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Makayla doesn't answer right away. She picks at a splinter on the picnic table.
@@ -1957,7 +2130,7 @@ Makayla doesn't answer right away. She picks at a splinter on the picnic table.
 MAKAYLA
 When they get hurt. They change.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Dallas looks toward the kitchen window. Toward the creature inside.
@@ -1968,12 +2141,12 @@ The one I found was injured.
 MAKAYLA
 I know.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 A gust of wind moves through the tall grass at the edge of the property. Asher's head turns toward it. Just slightly.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Dallas closes the journal carefully.
@@ -1981,13 +2154,13 @@ Dallas closes the journal carefully.
 DALLAS
 Your mom saw one? 
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Makayla doesn't answer.
 The wind picks up again. In the far distance, barely audible — not quite a howl, not quite a hum. Something in between.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Asher stops threading.
@@ -1996,12 +2169,12 @@ ASHER
 (quietly, to himself)
 They're listening.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Makayla and Dallas both turn to him. He doesn't elaborate. He goes back to his beads.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 Makayla picks up the journal and slides it back into her pack.
@@ -2009,7 +2182,7 @@ Makayla picks up the journal and slides it back into her pack.
 MAKAYLA
 We should go inside. Check on it.
 
-<!-- scene: 16 file: s14b.md nickname: the-field-journal -->
+<!-- scene: 19 file: s14b.md nickname: the-field-journal -->
 
 (action)
 They stand. Dallas glances back at the tall grass one more time before following her in.
@@ -2017,13 +2190,13 @@ They stand. Dallas glances back at the tall grass one more time before following
 ---
 
 
-### Scene 17: The Almost Discovery
+### Scene 20: The Almost Discovery
 
 *ACT II — The Creature | ID: the-almost-discovery | File: s14c.md*
 
 ---
 
-<!-- scene: 17 file: s14c.md nickname: the-almost-discovery -->
+<!-- scene: 20 file: s14c.md nickname: the-almost-discovery -->
 
 <!-- scene: 14c file: s14c.md nickname: the-almost-discovery -->
 
@@ -2203,13 +2376,13 @@ Makayla doesn’t answer. She stares at the towel—at the faint GOLDEN GLOW ble
 ---
 
 
-### Scene 18: The Failed Test
+### Scene 21: The Failed Test
 
 *ACT II — The Creature | ID: the-failed-test | File: s15a.md*
 
 ---
 
-<!-- scene: 18 file: s15a.md nickname: the-failed-test -->
+<!-- scene: 21 file: s15a.md nickname: the-failed-test -->
 
 <!-- scene: 15a file: s15a.md nickname: the-failed-test -->
 
@@ -2223,7 +2396,7 @@ Makayla adjusts the oscillator carefully.
 MAKAYLA  
 Low amplitude. No broadcast outside the room. And if it, reacts badly - we stop. 
 
-<!-- scene: 18 file: s15a.md nickname: the-failed-test -->
+<!-- scene: 21 file: s15a.md nickname: the-failed-test -->
 
 (action)
 Asher stands in the corner, tense.
@@ -2296,13 +2469,13 @@ Makayla finally understands.
 ---
 
 
-### Scene 19: Makayla's Tracking Box
+### Scene 22: Makayla's Tracking Box
 
 *ACT II — The Creature | ID: the-tracking-box | File: s15b.md*
 
 ---
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 # Scene 15: Makayla's Tracking Box
 
@@ -2318,7 +2491,7 @@ I've heard.
 MAKAYLA
 Everything does... which begs the question - what exactly is electricity? 
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 The crew walk into the field and find a small wooden chest on the ground, hidden beneath a field of tall grass. 
@@ -2338,7 +2511,7 @@ That's our attempt at a perpetual motion machine...
 MAKAYLA
 Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - they are going to change the world... He just needs to rest a bit. 
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Dallas looks at one of the inventions on the ground. 
@@ -2346,12 +2519,12 @@ Dallas looks at one of the inventions on the ground.
 MAKAYLA
 Do you believe in fate Mr. Dallas?
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Dallas shakes his head no. 
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Makayla picks up a small flower that looks planted. She begins to dig and unearth various alligator clips hooked up to the bottom roots. 
@@ -2359,7 +2532,7 @@ Makayla picks up a small flower that looks planted. She begins to dig and uneart
 MAKAYLA
 Uncle Dom would never understand what we happened today. What we have witnessed. 
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Makayla hands Dallas a small wooden box. Dallas opens it and finds a small translucent crystal inside—a crude pyramid-like stone. Dallas holds it, fascinated.
@@ -2371,12 +2544,12 @@ DALLAS
 Seems like a quartz. 
 
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Makayla walks over and puts the cystal on top of a little bay area device that is also hidden by a bunch of branches. Makayla grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. She points to the two metal rods that are coming out of the portable wooden device - and nudges Dallas to grip. 
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
@@ -2392,12 +2565,12 @@ What is it?
 MAKAYLA
 We don't know. But I wonder what would happen if we hook up the creature to it - and your oscillator. 
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 In the distance the howls are getting more ganrly. Makayla and Dallas stand silent in fear.
 
-<!-- scene: 19 file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 22 file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Dallas begins to record a bit on his pocket recorder. 
@@ -2411,13 +2584,13 @@ We should go.
 ---
 
 
-### Scene 20: Dominic's Confession
+### Scene 23: Dominic's Confession
 
 *ACT II — The Creature | ID: dominics-confession | File: s15c.md*
 
 ---
 
-<!-- scene: 20 file: s15c.md nickname: dominics-confession -->
+<!-- scene: 23 file: s15c.md nickname: dominics-confession -->
 
 <!-- scene: 15c file: s15c.md nickname: dominics-confession -->
 
@@ -2466,20 +2639,20 @@ Dallas does.
 ---
 
 
-### Scene 21: Back Home
+### Scene 24: Back Home
 
 *ACT II — The Creature | ID: the-escape | File: s16.md*
 
 ---
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 # Scene 16: Back Home
 
 EXT. DALLAS BACKYARD (s16.1)
 Makayla and Dallas hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 As the two walk, they begin to notice that the tall grass around them is acting universally restless. The two walk in uneasy silence as the summer glow lights their pace. 
@@ -2502,7 +2675,7 @@ ASHER
 (in trance)
 Leave us alone. Leave us alone. 
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 Asher begins to cry and shake. Dallas and Makayla rush to his side.
@@ -2510,7 +2683,7 @@ Asher begins to cry and shake. Dallas and Makayla rush to his side.
 MAKAYLA
 Asher!
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 Asher slowly wakes up. 
@@ -2518,7 +2691,7 @@ Asher slowly wakes up.
 MAKAYLA
 Breathe. 
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 Dallas looks at the tall grass. His spare handheld oscilloscope begins to beep. The crew, little by little, hear the distinct faint hum following them.
@@ -2526,7 +2699,7 @@ Dallas looks at the tall grass. His spare handheld oscilloscope begins to beep. 
 MAKAYLA
 Breathe. Breathe. 
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 Asher slowly lowers his breathing. A doorbell is heard off screen.
@@ -2539,7 +2712,7 @@ JANICE
 (yelling out the window)
 You kids! Howie my baby. Why is he in the backpack?
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 Dallas and Makayla look at each other in fear.
@@ -2554,7 +2727,7 @@ MAKAYLA
 (confused)
 We found an injured rabbit and Mr. Dallas has tools to help. 
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 Janice looks at Dallas dumbfounded. 
@@ -2565,7 +2738,7 @@ What?... Kid's get in the car - and leave Mr. Dallas alone - he's coming to our 
 DALLAS
 It's okay. 
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 Makayla hands Dallas the backpack and gently lets the creature in. She walks to the car with Asher.
@@ -2573,7 +2746,7 @@ Makayla hands Dallas the backpack and gently lets the creature in. She walks to 
 JANICE
 So you now I got to go home and clean this out before Howie gets in, is that what this means? 
 
-<!-- scene: 21 file: s16.md nickname: the-escape -->
+<!-- scene: 24 file: s16.md nickname: the-escape -->
 
 (action)
 Dominic comes out from the other side door and throws the minivan into drive. 
@@ -2581,13 +2754,13 @@ Dominic comes out from the other side door and throws the minivan into drive.
 ---
 
 
-### Scene 22: Resonance
+### Scene 25: Resonance
 
 *ACT II — The Creature | ID: resonance | File: s17.md*
 
 ---
 
-<!-- scene: 22 file: s17.md nickname: resonance -->
+<!-- scene: 25 file: s17.md nickname: resonance -->
 
 <!-- nickname: resonance -->
 
@@ -2621,13 +2794,13 @@ Dallas runs outside and looks around. But to no avail.
 ---
 
 
-### Scene 23: Life Group Arrives
+### Scene 26: Life Group Arrives
 
 *ACT II — The Creature | ID: life-group-arrives | File: s18.md*
 
 ---
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 <!-- nickname: life-group-arrives -->
 
@@ -2649,7 +2822,7 @@ It ran away.
 MAKAYLA
 It what?!
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Suddenly a loud bang is heard off screen. Makayla and Dallas turn to look. Mr Mike is heard off screen.
@@ -2657,14 +2830,14 @@ Suddenly a loud bang is heard off screen. Makayla and Dallas turn to look. Mr Mi
 MR. MIKE
 What the heck is that? Asher. 
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Makayla and Dallas hush downstairs to find the creature has made it somehow in the basement. Makayla quickly rushes to grab a box for it. 
 
 INT. DOMINIC's KITCHEN (S18.3)
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Makayla drifts through the kitchen. She opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word. She continues to look and finds a bunch of tupawear. She grabs a couple of them. 
@@ -2686,7 +2859,7 @@ He's downstairs. He... found a stray cat outside. It's really sick. He's nursing
 DOMINIC
 A cat? Alright. Well, tell him not to grow too attached - Howie is enough for us - okay? What you doing with that Tupawear - you going to put the cat in that?
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Makayla nods quickly and slips away.
@@ -2702,7 +2875,7 @@ If we keep broadcasting... maybe we can teach it. If it learns the frequency, it
 MAKAYLA
 We could to teach it.
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Makayla clicks a "Master" switch on the device. A small, protective green light flickers on.
@@ -2710,7 +2883,7 @@ Makayla clicks a "Master" switch on the device. A small, protective green light 
 MAKAYLA
 Come on. 
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 The glowing creature in the shoebox mimics the tone, its golden light flaring brighter with each successful note. But the louder it sings, the harder the walls of the basement shake. 
@@ -2729,7 +2902,7 @@ They are listening to the song. They don't like the song.
 DOMINIC
 We have brownies about to be ready.
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Makayla tries to shuffle past people who are hovering around a kitchen island grabbing popcorn and brownies. 
@@ -2740,7 +2913,7 @@ Makayla, how's your mom doing?
 MAKAYLA
 She's doing better thanks.
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Makayla darts past the crowd and heads for the stairs.
@@ -2759,7 +2932,7 @@ Do you think there will be flooding.
 PAT
 Definitely. 
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 The two eat carrots and dip. 
@@ -2792,13 +2965,13 @@ INT. DOMINIC'S LIVING ROOM - CONTINUOUS (s18.7)
 TYLER
 Alright crew, glad we are all here - gathered together. On this breezy summer night. 
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 The group giggle a bit as the wind picks up. The group in a circle all look at eacother. 
 
 INT. DOMINIC'S BASEMENT - CONTINOUS (s18.8)
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 The creature lays out a little whipmer. 
@@ -2810,7 +2983,7 @@ MR. MIKE walks in behind him. He takes one look at the room and freaks out—lik
 MR. MIKE
 What is here? What is going on downstairs?!
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Dominic steps between Mr. Mike and the stairs. He guides him back by the elbow.
@@ -2824,7 +2997,7 @@ There is something down here. DOMINIC DOMINIC
 MAKAYLA
 Mr. Mike what is wrong?
 
-<!-- scene: 23 file: s18.md nickname: life-group-arrives -->
+<!-- scene: 26 file: s18.md nickname: life-group-arrives -->
 
 (action)
 Makayla signals to Asher who drops a plate on purpose.  
@@ -2836,13 +3009,13 @@ What in the world?! Makayla - what is going on?!
 ---
 
 
-### Scene 24: The Hymn
+### Scene 27: The Hymn
 
 *ACT II — The Creature | ID: the-hymn | File: s19.md*
 
 ---
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 <!-- nickname: the-hymn -->
 <!-- summary:  -->
@@ -2875,17 +3048,17 @@ I'm a retired vet. I could take a look.
 DOMINIC
 I mean— no, that's okay. I think that cat's just sleeping. We could check after?
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 An elderly woman nods. Everyone agrees. Someone asks how Howie is doing—where is Howie.  BLAKE, one of the young couples, leads the group. 
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 SARAH, the vet, notices a physical reaction to her cup of tea - and watches it ripple in a strange way. 
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 Dominic closes the windows and blinds.
@@ -2893,7 +3066,7 @@ Dominic closes the windows and blinds.
 DOMINIC
 Getting rough out there.
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 TYLER, 32, a young man with a guitar, hands out music sheets.
@@ -2901,7 +3074,7 @@ TYLER, 32, a young man with a guitar, hands out music sheets.
 TYLER
 Would anyone like to say any words before we start?
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them.
@@ -2911,7 +3084,7 @@ MR. MIKE barges through the basement door. Visualablly agitated.
 TYLER
 Hello Mr. Mike - thank you for joining us!
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 Dallas joins behind Mr. Mike and sits down, Makayla and Asher pile next to him.
@@ -2925,7 +3098,7 @@ It's doing good.
 TYLER
 And Dallas is it? Everyone this is Dallas - he is new in town.
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 Dallas smiles a bit and rests nervously on the couch.
@@ -2934,7 +3107,7 @@ The overhead lights dim and then turn back.
 TYLER
 Yes, on this stormy day - we can still experience grace.
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 The outside window turns into a slow pulse that matches the rhythm of the room. Sarah's tea ripples in her cup, concentric rings expanding outward in perfect time.
@@ -2946,7 +3119,7 @@ Subtle at first. Then undeniable. The floorboards vibrate. The lights pulse lowe
 SASHA
 What was that?
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 The group listen in silence.
@@ -2954,7 +3127,7 @@ The group listen in silence.
 PAT CLENDENEN
 Must be the wind. The boys in the office just texted me that the pressure's dropping fast.
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 Dallas stares at the basement door. During a silent moment of reflection, the hum starts again. Everyone is unsettled. What was that noise? The group settles on the weird weather—the storm, the patterns plaguing Branford. 
@@ -2970,7 +3143,7 @@ Dominic shuts the door.
 DOMINIC
 Alright, let's see this cat. 
 
-<!-- scene: 24 file: s19.md nickname: the-hymn -->
+<!-- scene: 27 file: s19.md nickname: the-hymn -->
 
 (action)
 Dominic heads toward the basement alone. Dallas's stomach drops. He and Makayla exchange a panicked look. Asher starts bouncing his leg.
@@ -2979,13 +3152,13 @@ Dominic heads toward the basement alone. Dallas's stomach drops. He and Makayla 
 ---
 
 
-### Scene 25: The Secret is Out
+### Scene 28: The Secret is Out
 
 *ACT II — The Creature | ID: red-eyes | File: s20.md*
 
 ---
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 # Scene 20: The Secret is Out
 
@@ -3006,7 +3179,7 @@ Dallas! Where is it?
 DALLAS
 It's gone. 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 From the direction of the marsh—a cry emerges that sounds like the creature. 
@@ -3014,7 +3187,7 @@ From the direction of the marsh—a cry emerges that sounds like the creature.
 MAKAYLA
 It went back.
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Before Dallas can move, DOMINIC appears at the top of the basement stairs holding Sierra's folder of anatomical creature sketches. His face is pale. He looks at Dallas like he doesn't know him.
@@ -3022,7 +3195,7 @@ Before Dallas can move, DOMINIC appears at the top of the basement stairs holdin
 DOMINIC
 Dallas... what is this? 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Dallas makes eye contact with Dominic. Outside, the hum increases and Dallas' eyes fall toward the window. Out at the tall grass swaying in the dark. The Red-Eyes are pulsing at the edge of the property.
@@ -3033,7 +3206,7 @@ We have to get out there and find it before the Red-Eyes do.
 DOMINIC
 The what? Makayla what is going on? Where's the cat?
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla looks at Dominic with a serious expression.
@@ -3047,7 +3220,7 @@ Uncle, listen—
 DOMINIC
 Niece, I listen. 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla points hard at the window. Asher walks over to Dominic and hands him the device with the cystral on it.
@@ -3061,7 +3234,7 @@ It's to keep them at bay.
 DOMINIC
 Keep what at bay?
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Asher points to the window. Dominic glances out the window and sees the red eyes. He turns back to Asher and then to Makayla. 
@@ -3078,7 +3251,7 @@ We can't go out there.
 MAKAYLA
 We have to.
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Dominic looks defeated. From the corner of the room Mr. Mike rocks back and forth in his chair. Dominic rushes over to see him. 
@@ -3086,7 +3259,7 @@ Dominic looks defeated. From the corner of the room Mr. Mike rocks back and fort
 DOMINIC
 Mr. Mike, are you okay?
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Mr. Mike looks at Dominic with a blank expression. He points toward the window. 
@@ -3094,7 +3267,7 @@ Mr. Mike looks at Dominic with a blank expression. He points toward the window.
 MR. MIKE
 They're going to come. Look outside. The marks. 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla looks out the window and sees the burn marks on the grass. 
@@ -3117,12 +3290,12 @@ He looks up at the towering shadows at the edge of the property. The hum from th
 MAKAYLA
 Do you think this will work?
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Dallas nods. 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla drops to her knees, ripping open Dallas's gear bag. She scrambles out a portable speaker, slamming it onto the porch railing, aiming it directly at the creeping burn mark like a shotgun. 
@@ -3132,19 +3305,19 @@ Dallas rips the wire with his teeth and bridges the crystal into the circut.
 MAKAYLA
  Asher—the numbers!
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Asher's hands fly over the oscillator dial with  1-1-5-3. 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla hits the trigger. 
 
 A sound like thick glass cracking under pressure pierces the air. A high-pitched, localized frequency beam hits the lawn. 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 The grass at the edge of the yard sways rhythmically,in a direction opposit of  the wind. 
@@ -3153,17 +3326,17 @@ Dallas, Makayla, Asher and Dominic watch, stunned, as the "vein" burn mark physi
 
 It turns from a dark black—to a sickly brown—and back to a vibrant, natural green. The acoustic beam healed the earth.
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla looks back at the tree line.
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Dallas nods, his jaw tight. He looks at Dominic. 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Dominic looks at the fading burn mark on the grass. He looks at Asher, vibrating with anxiety in the cold. Finally, Dominic exhales sharply. 
@@ -3171,12 +3344,12 @@ Dominic looks at the fading burn mark on the grass. He looks at Asher, vibrating
 DOMINIC
 I think I am going to sit down, not feeling so good. 
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Dominic sits down on the outside porch.
 
-<!-- scene: 25 file: s20.md nickname: red-eyes -->
+<!-- scene: 28 file: s20.md nickname: red-eyes -->
 
 (action)
 Makayla lifts the sparking portable speaker. She sweeps the invisible acoustic beam across the yard like a lighthouse beam. The a small glint of a red eye - is glimmering in the distance.  A wall of Red-Eye shadows violently flinches, peeling back into the reeds and leaving a temporary, circular safe zone in the pouring rain. 
@@ -3191,13 +3364,13 @@ The crew turn and sprint back into the house, slamming the door.
 ---
 
 
-### Scene 26: The Burn Marks
+### Scene 29: The Burn Marks
 
 *ACT II — The Creature | ID: creature-missing | File: s21.md*
 
 ---
 
-<!-- scene: 26 file: s21.md nickname: creature-missing -->
+<!-- scene: 29 file: s21.md nickname: creature-missing -->
 
 # Scene 21: The Burn Marks
 
@@ -3207,7 +3380,7 @@ The crew hold the door down.
 DOMINIC
 Okay - what is happening. 
 
-<!-- scene: 26 file: s21.md nickname: creature-missing -->
+<!-- scene: 29 file: s21.md nickname: creature-missing -->
 
 (action)
 Makayla and Asher run towards the window. 
@@ -3236,13 +3409,13 @@ They look again. Closer. The eyes reappear. Swirling through the beating wind an
 ---
 
 
-### Scene 27: The Load-Out
+### Scene 30: The Load-Out
 
 *ACT III — The Return | ID: marsh-confrontation | File: s22.md*
 
 ---
 
-<!-- scene: 27 file: s22.md nickname: marsh-confrontation -->
+<!-- scene: 30 file: s22.md nickname: marsh-confrontation -->
 
 # Scene 22: The Load-Out
 
@@ -3259,12 +3432,12 @@ ASHER
 (pointing into the void)
 They're coming. 
 
-<!-- scene: 27 file: s22.md nickname: marsh-confrontation -->
+<!-- scene: 30 file: s22.md nickname: marsh-confrontation -->
 
 (action)
 Asher begins to pace nervously back and forth. Mr. Mike in the inside begins to call for him. He looks at Dallas, then outside, and puts the headphones on and goes inside with Mr. Mike. 
 
-<!-- scene: 27 file: s22.md nickname: marsh-confrontation -->
+<!-- scene: 30 file: s22.md nickname: marsh-confrontation -->
 
 (action)
 From the edge of their property, pairs of red eyes blink into existence. Two. Then four. Then a dozen. They drift back and forth, actively erasing the sound of the wind as they move closer to the yard. 
@@ -3293,13 +3466,13 @@ but Dallas is already sprinting toward the edge of the tall grass. He plunges in
 ---
 
 
-### Scene 28: The Trench Run
+### Scene 31: The Trench Run
 
 *ACT III — The Return | ID: predator-attack | File: s23.md*
 
 ---
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 # Scene 23: The Trench Run
 
@@ -3317,7 +3490,7 @@ Suddenly, Dominic appears and runs towards Dallas.
 DOMINIC
 Dallas have you seen her? I can't find her? What's that a tracker? Does it show where Makayla is? 
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 Dominic begins to pace around and hits his inhaler.  A giant roar is heard off in the distance.
@@ -3325,7 +3498,7 @@ Dominic begins to pace around and hits his inhaler.  A giant roar is heard off i
 DOMINIC
 MAKAYLA!  
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 Dallas and Dominic continue to make their way with the spaeker. Dallas drops to the ground.  
@@ -3333,7 +3506,7 @@ Dallas and Dominic continue to make their way with the spaeker. Dallas drops to 
 DOMINIC
 Dallas you okay?
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 Dallas grips his arm tightly and stoticly marches onward.  Dominic takes another big hit of his inhaler. 
@@ -3349,7 +3522,7 @@ Dallas catches up with Dominic and Makayla who are out of breath in the pitch bl
 DOMINIC
 Makayla, lets go back.
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 Makayla moves forward. 
@@ -3362,7 +3535,7 @@ Everybody moves quickly in single file. Makayla is leading, sweeping the handhel
 MAKAYLA
 Straight ahead. 
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 The air is thick, humid. Heavy. The "veins" of black rot are everywhere on the ground, hissing as the air hits them. 
@@ -3370,7 +3543,7 @@ The air is thick, humid. Heavy. The "veins" of black rot are everywhere on the g
 MAKAYLA
 They're above us. 
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 Dallas looks up. Above the swaying tops of the grass, massive, formless shadows drift lazily through the storm clouds like storm surges. They are hunting. Searching. Hundreds of glowing red eyes piercing the dark. 
@@ -3382,7 +3555,7 @@ The concussive force of its landing knocks Dominic to his knees. His speaker gro
 DOMINIC
 I'm slipping. 
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 Makayla freezes. The Red-Eye is directly in their path, thrashing through the reeds. Its black, rotting tendrils search the dirt in a wide arc. 
@@ -3391,7 +3564,7 @@ MAKAYLA
 (panic rising)
 It's patrolling. 
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 The shadow creeps closer. Forty feet. Thirty feet. The black rot spreads toward Dominic's boot. 
@@ -3420,7 +3593,7 @@ Makayla exhales slowly.
 MAKAYLA
 Asher... how did you do that?
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 Asher just points forward into the dark. 
@@ -3437,7 +3610,7 @@ DOMINIC
 (gritting teeth)
 Never better. Just a light hike in the country. Let's go. 
 
-<!-- scene: 28 file: s23.md nickname: predator-attack -->
+<!-- scene: 31 file: s23.md nickname: predator-attack -->
 
 (action)
 They push forward, deeper into the howling void.
@@ -3447,13 +3620,13 @@ They push forward, deeper into the howling void.
 ---
 
 
-### Scene 29: The Sanctuary & The Siege
+### Scene 32: The Sanctuary & The Siege
 
 *ACT III — The Return | ID: the-perimeter | File: s24.md*
 
 ---
 
-<!-- scene: 29 file: s24.md nickname: the-perimeter -->
+<!-- scene: 32 file: s24.md nickname: the-perimeter -->
 
 # Scene 24: The Sanctuary & The Siege
 
@@ -3498,7 +3671,7 @@ It’s a horrific clash of physics. The golden mist meets the black shadows in v
 DOMINIC
 What the heck is even that?
 
-<!-- scene: 29 file: s24.md nickname: the-perimeter -->
+<!-- scene: 32 file: s24.md nickname: the-perimeter -->
 
 (action)
 The massive Red-Eyes swarm the largest Golden Elder, ripping into its acoustic field with jagged, corrupted static. The Elder is pushed back toward the center of the ring, shielding the injured one. 
@@ -3515,13 +3688,13 @@ They wade through the chaotic crossfire of light and shadow, positioning the two
 ---
 
 
-### Scene 30: The Final Blast
+### Scene 33: The Final Blast
 
 *ACT III — The Return | ID: the-last-dinner | File: s25.md*
 
 ---
 
-<!-- scene: 30 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
 
 # Scene 25: The Final Blast
 
@@ -3537,7 +3710,7 @@ DALLAS
 (screaming over the chaos of frequencies)
 Makayla! The wires! Hurry!
 
-<!-- scene: 30 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Makayla drops to her knees in the mud. She is trembling, cold, covered in rain and ozone. She pulls the thick copper wires from the speakers toward the oscillator strapped to her chest. 
@@ -3550,7 +3723,7 @@ It won't catch! The humidity is destroying the connection!
 ASHER
 They're breaking through!
 
-<!-- scene: 30 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
 
 (action)
 The largest Elder groans, a deep sub-bass sound, as a massive Red-Eye slams into it, throwing it backward. The Elder falls to the mud, its golden fur dimming as the shadow begins to erase its frequency completely. 
@@ -3565,7 +3738,7 @@ MAKAYLA
 (frantically twisting bare wire)
 I'm trying. 
 
-<!-- scene: 30 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
 
 (action)
 She wraps the copper tight and bites down hard on the connection to crimp the cold wire against the crystal. The small screen on her chest flares green. The connection holds. 
@@ -3575,7 +3748,7 @@ Asher holds out his palm again and begins to trace his index finger along its ed
 ASHER
 Wait!
 
-<!-- scene: 30 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Asher runs over and adjusts the dial to 1154
@@ -3583,7 +3756,7 @@ Asher runs over and adjusts the dial to 1154
 MAKAYLA 
 Hit it! 
 
-<!-- scene: 30 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
 
 (action)
 As Makayla goes to fire the pulse from the speaker.
@@ -3595,7 +3768,7 @@ The heavy wooden frame groans, lifting dangerously out of the mud. It is tipping
 DOMINIC
 It’s tipping! 
 
-<!-- scene: 30 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Dominic throws himself entirely into the brutal, rotting mud. 
@@ -3603,7 +3776,7 @@ Dominic throws himself entirely into the brutal, rotting mud.
 He grabs the listing speaker stand, planting his boots deep into the dirt, using his own body weight to anchor the acoustic frame upright. The deafing sound begins to engulf him. He screams in agonizing pain but doesn't let go. 
 
 
-<!-- scene: 30 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Dallas grabs the oscillator dial on Makayla's chest and forces it perfectly onto **115.3**, reinforcing the signal with everything the battery has left. 
@@ -3646,16 +3819,16 @@ Makayla lets out a massive, shuddering breath.
 ---
 
 
-### Scene 31: The Morning After
+### Scene 34: The Morning After
 
 *ACT IV — Aftermath | ID: final-echoes | File: s26.md*
 
 ---
 
-<!-- scene: 31 file: s26.md nickname: final-echoes -->
+<!-- scene: 34 file: s26.md nickname: final-echoes -->
 
 # Scene 26: The Morning After
-<!-- scene: 31 file: s26.md nickname: final-echoes -->
+<!-- scene: 34 file: s26.md nickname: final-echoes -->
 
 (action)
 EXT. TALL GRASS (s26.1)
@@ -3669,7 +3842,7 @@ Janice makes her way through the door.
 JANICE
 Look at all of these sleeping beauties. 
 
-<!-- scene: 31 file: s26.md nickname: final-echoes -->
+<!-- scene: 34 file: s26.md nickname: final-echoes -->
 
 (action)
 MR. Mike walks in behind Janice and walks right over to Dallas - out for a good old fashion handshake. 
@@ -3690,13 +3863,13 @@ Thanks for letting everyone crash here Dallas. Dominic, Makayla, lets go.
 ---
 
 
-### Scene 32: Aftermath
+### Scene 35: Aftermath
 
 *ACT IV — Aftermath | ID: aftermath | File: s27.md*
 
 ---
 
-<!-- scene: 32 file: s27.md nickname: aftermath -->
+<!-- scene: 35 file: s27.md nickname: aftermath -->
 
 <!-- nickname: little aftermath -->
 
@@ -3738,13 +3911,13 @@ Dallas at his kitchen table and grabs a battery as he walks to his workbench. He
 ---
 
 
-### Scene 33: Full Circle
+### Scene 36: Full Circle
 
 *ACT IV — Aftermath | ID: full-circle | File: s28.md*
 
 ---
 
-<!-- scene: 33 file: s28.md nickname: full-circle -->
+<!-- scene: 36 file: s28.md nickname: full-circle -->
 
 # Scene 28: Full Circle
 <!-- summary: Makayla sets up her new Lair in the woods to listen to the creatures. Dallas finds his wife's specific hum out in the marsh. -->

@@ -39,5 +39,11 @@
 - [ ] **s22.md (Urgency)**: The decision to return to the marsh happens fast. Emphasize the burn marks *spreading* or pulsing on their arms to make the "we have to go back" decision feel like a medical necessity, not just a hero choice.
 - [ ] **s25.md (Formatting)**: There is a trailing "They " on line 9 that needs deletion or completion.
 
+## New Suspense Sequence (s08b - s08d)
+- [ ] **s08b.md**: Expand the research beat. Dallas should struggle with the Oscillator before it "locks" on the Sierra frequency.
+- [ ] **s08c.md**: Refine the "Red Eyes" moment. Make the rustle in the grass feel massive and fast to build the "Shadow" threat.
+- [ ] **s08d.md**: Enhance the atmosphere of the second walk. The "bone-like" sound of the reeds should be more prominent.
+
 ## Next Steps
 - Pick a block, fix the file, run `node compile-all.js`.
+- **Note**: The user still needs to officially "write" (refine) these new scenes.

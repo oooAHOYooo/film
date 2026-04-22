@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 4/22/2026, 3:30:23 PM*
+*Compiled on 4/22/2026, 5:44:28 PM*
 
 ---
 
@@ -161,19 +161,37 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 10: The Injured One
+#### Scene 10: The Research Beat
+
+*ID: the-research-beat*
+
+*No director's note for this scene.*
+
+#### Scene 11: The Threshold
+
+*ID: the-threshold*
+
+*No director's note for this scene.*
+
+#### Scene 12: The Return
+
+*ID: the-return*
+
+*No director's note for this scene.*
+
+#### Scene 13: The Injured One
 
 *ID: dallas-night-work*
 
 *No director's note for this scene.*
 
-#### Scene 11: The Chase
+#### Scene 14: The Chase
 
 *ID: shadows-in-wind*
 
 *No director's note for this scene.*
 
-#### Scene 12: Kitchen Triage
+#### Scene 15: Kitchen Triage
 
 *ID: howie-walk-2*
 
@@ -182,85 +200,85 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT II — The Creature
 
-#### Scene 13: The Burn Mark & Costco
+#### Scene 16: The Burn Mark & Costco
 
 *ID: the-burn-mark*
 
 *No director's note for this scene.*
 
-#### Scene 14: The Confrontation
+#### Scene 17: The Confrontation
 
 *ID: entering-grass*
 
 *No director's note for this scene.*
 
-#### Scene 15: The Connection
+#### Scene 18: The Connection
 
 *ID: creature-rescue*
 
 *No director's note for this scene.*
 
-#### Scene 16: The Field Journal
+#### Scene 19: The Field Journal
 
 *ID: the-field-journal*
 
 *No director's note for this scene.*
 
-#### Scene 17: The Almost Discovery
+#### Scene 20: The Almost Discovery
 
 *ID: the-almost-discovery*
 
 *No director's note for this scene.*
 
-#### Scene 18: The Failed Test
+#### Scene 21: The Failed Test
 
 *ID: the-failed-test*
 
 *No director's note for this scene.*
 
-#### Scene 19: Makayla's Tracking Box
+#### Scene 22: Makayla's Tracking Box
 
 *ID: the-tracking-box*
 
 *No director's note for this scene.*
 
-#### Scene 20: Dominic's Confession
+#### Scene 23: Dominic's Confession
 
 *ID: dominics-confession*
 
 *No director's note for this scene.*
 
-#### Scene 21: Back Home
+#### Scene 24: Back Home
 
 *ID: the-escape*
 
 *No director's note for this scene.*
 
-#### Scene 22: Resonance
+#### Scene 25: Resonance
 
 *ID: resonance*
 
 *No director's note for this scene.*
 
-#### Scene 23: Life Group Arrives
+#### Scene 26: Life Group Arrives
 
 *ID: life-group-arrives*
 
 *No director's note for this scene.*
 
-#### Scene 24: The Hymn
+#### Scene 27: The Hymn
 
 *ID: the-hymn*
 
 *No director's note for this scene.*
 
-#### Scene 25: The Secret is Out
+#### Scene 28: The Secret is Out
 
 *ID: red-eyes*
 
 *No director's note for this scene.*
 
-#### Scene 26: The Burn Marks
+#### Scene 29: The Burn Marks
 
 *ID: creature-missing*
 
@@ -269,25 +287,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT III — The Return
 
-#### Scene 27: The Load-Out
+#### Scene 30: The Load-Out
 
 *ID: marsh-confrontation*
 
 *No director's note for this scene.*
 
-#### Scene 28: The Trench Run
+#### Scene 31: The Trench Run
 
 *ID: predator-attack*
 
 *No director's note for this scene.*
 
-#### Scene 29: The Sanctuary & The Siege
+#### Scene 32: The Sanctuary & The Siege
 
 *ID: the-perimeter*
 
 *No director's note for this scene.*
 
-#### Scene 30: The Final Blast
+#### Scene 33: The Final Blast
 
 *ID: the-last-dinner*
 
@@ -316,19 +334,19 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT IV — Aftermath
 
-#### Scene 31: The Morning After
+#### Scene 34: The Morning After
 
 *ID: final-echoes*
 
 *No director's note for this scene.*
 
-#### Scene 32: Aftermath
+#### Scene 35: Aftermath
 
 *ID: aftermath*
 
 *No director's note for this scene.*
 
-#### Scene 33: Full Circle
+#### Scene 36: Full Circle
 
 *ID: full-circle*
 

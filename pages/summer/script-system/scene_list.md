@@ -12,6 +12,9 @@ This list contains all the scene and sub-scene identifiers found in the `pages/s
 - **s06**: s06.1, s06.2
 - **s07**: s07.1, s07.2, s07.3
 - **s08**: s08.1, s08.2, s08.3, s08.4
+- **s08b**: s08b.1
+- **s08c**: s08c.1
+- **s08d**: s08d.1
 - **s09**: s09.1
 - **s10**: s10.1, s10.2, s10.3
 - **s11**: s11.1, s11.2, s11.3, s11.4, s11.5, s11.6, s11.7, s11.8
@@ -60,6 +63,9 @@ This list contains all the scene and sub-scene identifiers found in the `pages/s
 - **s08.2** = EXT. BRANFORD ROCKS - EVENING
 - **s08.3** = EXT. EDGE OF THE MARSH
 - **s08.4** = EXT. INTO THE MARSH
+- **s08b.1** = INT. DALLAS HOUSE - DESK - NIGHT
+- **s08c.1** = EXT. DALLAS HOUSE - PORCH - NIGHT
+- **s08d.1** = EXT. EDGE OF THE MARSH - NIGHT
 - **s09.1** = EXT. DEEP INSIDE THE TALL MARSH
 - **s10.1** = EXT. TALL GRASS - MOMENTS LATER
 - **s10.2** = EXT. BRANFORD MONTAGE

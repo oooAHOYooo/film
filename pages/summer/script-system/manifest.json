@@ -72,6 +72,30 @@
     "nickname": "dallas-marsh-walk"
   },
   {
+    "id": "the-research-beat",
+    "file": "s08b.md",
+    "title": "The Research Beat",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "the-research-beat"
+  },
+  {
+    "id": "the-threshold",
+    "file": "s08c.md",
+    "title": "The Threshold",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "the-threshold"
+  },
+  {
+    "id": "the-return",
+    "file": "s08d.md",
+    "title": "The Return",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "the-return"
+  },
+  {
     "id": "dallas-night-work",
     "file": "s09.md",
     "title": "The Injured One",
