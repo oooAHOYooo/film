@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/22/2026, 11:23:07 AM*
+*Compiled on 4/22/2026, 3:30:22 PM*
 
 ---
 
@@ -2221,14 +2221,11 @@ The creature rests inside its enclosure, watching—alert now.
 Makayla adjusts the oscillator carefully.
 
 MAKAYLA  
-Low amplitude. No broadcast outside the room.
+Low amplitude. No broadcast outside the room. And if it, reacts badly - we stop. 
 
-DALLAS  
-And if it reacts badly?
+<!-- scene: 18 file: s15a.md nickname: the-failed-test -->
 
-MAKAYLA  
-Then we stop.
-
+(action)
 Asher stands in the corner, tense.
 
 Makayla nods—a count—and gently brings the signal online.
