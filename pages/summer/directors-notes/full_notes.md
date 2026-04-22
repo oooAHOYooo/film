@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 4/21/2026, 12:24:35 PM*
+*Compiled on 4/22/2026, 11:23:08 AM*
 
 ---
 
@@ -206,43 +206,61 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 17: Makayla's Lair
+#### Scene 17: The Almost Discovery
 
-*ID: the-burn-mark-2*
+*ID: the-almost-discovery*
 
 *No director's note for this scene.*
 
-#### Scene 18: Back Home
+#### Scene 18: The Failed Test
+
+*ID: the-failed-test*
+
+*No director's note for this scene.*
+
+#### Scene 19: Makayla's Tracking Box
+
+*ID: the-tracking-box*
+
+*No director's note for this scene.*
+
+#### Scene 20: Dominic's Confession
+
+*ID: dominics-confession*
+
+*No director's note for this scene.*
+
+#### Scene 21: Back Home
 
 *ID: the-escape*
 
 *No director's note for this scene.*
 
-#### Scene 19: Resonance
+#### Scene 22: Resonance
 
 *ID: resonance*
 
 *No director's note for this scene.*
 
-#### Scene 20: Life Group Arrives
+#### Scene 23: Life Group Arrives
 
 *ID: life-group-arrives*
 
 *No director's note for this scene.*
 
-#### Scene 21: The Hymn
+#### Scene 24: The Hymn
 
 *ID: the-hymn*
 
 *No director's note for this scene.*
 
-#### Scene 22: The Secret is Out
+#### Scene 25: The Secret is Out
 
 *ID: red-eyes*
 
 *No director's note for this scene.*
 
-#### Scene 23: The Burn Marks
+#### Scene 26: The Burn Marks
 
 *ID: creature-missing*
 
@@ -251,25 +269,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT III — The Return
 
-#### Scene 24: The Load-Out
+#### Scene 27: The Load-Out
 
 *ID: marsh-confrontation*
 
 *No director's note for this scene.*
 
-#### Scene 25: The Trench Run
+#### Scene 28: The Trench Run
 
 *ID: predator-attack*
 
 *No director's note for this scene.*
 
-#### Scene 26: The Sanctuary & The Siege
+#### Scene 29: The Sanctuary & The Siege
 
 *ID: the-perimeter*
 
 *No director's note for this scene.*
 
-#### Scene 27: The Final Blast
+#### Scene 30: The Final Blast
 
 *ID: the-last-dinner*
 
@@ -298,19 +316,19 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT IV — Aftermath
 
-#### Scene 28: The Morning After
+#### Scene 31: The Morning After
 
 *ID: final-echoes*
 
 *No director's note for this scene.*
 
-#### Scene 29: Aftermath
+#### Scene 32: Aftermath
 
 *ID: aftermath*
 
 *No director's note for this scene.*
 
-#### Scene 30: Full Circle
+#### Scene 33: Full Circle
 
 *ID: full-circle*
 

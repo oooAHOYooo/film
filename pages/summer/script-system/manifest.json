@@ -128,12 +128,36 @@
     "nickname": "the-field-journal"
   },
   {
-    "id": "the-burn-mark-2",
-    "file": "s15.md",
-    "title": "Makayla's Lair",
+    "id": "the-almost-discovery",
+    "file": "s14c.md",
+    "title": "The Almost Discovery",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "the-burn-mark-2"
+    "nickname": "the-almost-discovery"
+  },
+  {
+    "id": "the-failed-test",
+    "file": "s15a.md",
+    "title": "The Failed Test",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-failed-test"
+  },
+  {
+    "id": "the-tracking-box",
+    "file": "s15b.md",
+    "title": "Makayla's Tracking Box",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-tracking-box"
+  },
+  {
+    "id": "dominics-confession",
+    "file": "s15c.md",
+    "title": "Dominic's Confession",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "dominics-confession"
   },
   {
     "id": "the-escape",

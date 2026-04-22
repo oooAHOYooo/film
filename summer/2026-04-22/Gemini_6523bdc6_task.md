@@ -1,0 +1,7 @@
+- [x] Fix header in `s15c.md`
+- [x] Update `pages/summer/script-system/manifest.json`
+- [x] Update `pages/summer/storyboard-system/manifest.json`
+- [x] Update `pages/summer/bible-system/manifest.json`
+- [x] Update `pages/summer/script-system/compile.js`
+- [x] Verify compilation by running `node compile-all.js`
+- [x] Create walkthrough

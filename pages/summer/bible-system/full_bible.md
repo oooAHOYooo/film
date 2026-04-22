@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass - Production Bible
 
-*Compiled on 4/21/2026, 12:24:36 PM*
+*Compiled on 4/22/2026, 11:23:08 AM*
 
 ---
 
@@ -1064,7 +1064,46 @@ This keeps the gallery focused on build references and techniques for the produc
 ---
 
 
-<h2 id="entry-pr15">PE 15 — The Burn Mark (Lair)</h2>
+<h2 id="entry-pr14b">PE 14B — The Field Journal</h2>
+
+*Category: Practical Effects | File: *
+
+---
+
+
+[ENTRY FILE MISSING: ]
+
+
+---
+
+
+<h2 id="entry-pr14c">PE 14C — The Almost Discovery</h2>
+
+*Category: Practical Effects | File: *
+
+---
+
+
+[ENTRY FILE MISSING: ]
+
+
+---
+
+
+<h2 id="entry-pr15a">PE 15A — The Failed Test</h2>
+
+*Category: Practical Effects | File: *
+
+---
+
+
+[ENTRY FILE MISSING: ]
+
+
+---
+
+
+<h2 id="entry-pr15b">PE 15B — Makayla's Tracking Box</h2>
 
 *Category: Practical Effects | File: practical-effects/pr15.md*
 
@@ -1094,6 +1133,19 @@ This keeps the gallery focused on build references and techniques for the produc
 ## Notes
 
 - _Phase inverter; dome of silence concept._
+
+
+---
+
+
+<h2 id="entry-pr15c">PE 15C — Dominic's Confession</h2>
+
+*Category: Practical Effects | File: *
+
+---
+
+
+[ENTRY FILE MISSING: ]
 
 
 ---

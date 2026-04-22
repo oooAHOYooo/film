@@ -161,11 +161,39 @@
     "nickname": "pr14"
   },
   {
-    "id": "pr15",
+    "id": "pr14b",
+    "category": "Practical Effects",
+    "file": "",
+    "title": "PE 14B — The Field Journal",
+    "nickname": "pr14b"
+  },
+  {
+    "id": "pr14c",
+    "category": "Practical Effects",
+    "file": "",
+    "title": "PE 14C — The Almost Discovery",
+    "nickname": "pr14c"
+  },
+  {
+    "id": "pr15a",
+    "category": "Practical Effects",
+    "file": "",
+    "title": "PE 15A — The Failed Test",
+    "nickname": "pr15a"
+  },
+  {
+    "id": "pr15b",
     "category": "Practical Effects",
     "file": "practical-effects/pr15.md",
-    "title": "PE 15 — The Burn Mark (Lair)",
-    "nickname": "pr15"
+    "title": "PE 15B — Makayla's Tracking Box",
+    "nickname": "pr15b"
+  },
+  {
+    "id": "pr15c",
+    "category": "Practical Effects",
+    "file": "",
+    "title": "PE 15C — Dominic's Confession",
+    "nickname": "pr15c"
   },
   {
     "id": "pr16",
