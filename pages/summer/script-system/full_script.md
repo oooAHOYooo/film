@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/22/2026, 5:44:27 PM*
+*Compiled on 4/23/2026, 11:22:45 AM*
 
 ---
 
@@ -1188,57 +1188,26 @@ In the far distance, a single coyote barks. Then another. A chain reaction of do
 The winds pick up and Dallas and Howie march forward. 
 
 EXT. EDGE OF THE MARSH (s08.3)
-Dallas stands before the edge of the Marsh. As he gazes, everything increasingly becomes still. The winds lower. The waves begin to mute themselves. Then, the HUM begins.
 
-It starts as a vibration in Dallas's teeth, then moves to his chest. It is a deep, dense, multi-layered sound—a living reed being forced through a massive throat.
+Dallas ties Howie to a nearby tree. The dog isn't just whimpering; he's pulling at the leash, eyes fixed on the reeds. 
 
-Dallas stands in a daze, his hand tightening on Howie's leash. The tall grass pulses in time with the sound.
-
-The sun sets, casting long shadows across the tall grass. Dallas dials his recorder clicking softly as he adjusts the frequency.
-
-Dallas stops at the creek's edge right outside his property lines and gazes towards the distant outer marsh. The tall grass stretches endlessly before him, golden-yellow reeds swaying gently despite the lack of wind.
-
-Dallas ties Howie to a nearby tree and walks into the marsh. 
+Dallas walks into the marsh. The "Hum" is louder here, a dense vibration that makes his vision vibrate.
 
 s08.4 — EXT. INTO THE MARSH (s08.4)
 
-Receiver in hand, Dallas walks deeper into the marsh. 
+He finds the spot. A makeshift wooden trap, but it's been... compromised. A thick ring of oily black rot circles the wood, the grass within the circle dead and brittle.
 
-There in the distance he sees a disturbance. He walks over to a makeshift trap with a trailcam over it. He notices that it is wired to a solar pack and away from itself. 
+Dallas finds the trailcam. The lens is cracked, but the "Record" light is still blinking a faint, dying red. 
 
-His equipment begins to beep. Dallas flips open his handheld scope and watches the waveform settle into an otherworldly pattern.
+Suddenly, a heavy **CONCUSSIVE THUD** hits the mud thirty feet away. It's not a footstep; it's the sound of something heavy landing from a great height.
 
-Dallas clicks "Record," then checks the timestamp twice. The trace snaps into a perfect ladder of lines, and Dallas lowers the scope as if it's suddenly heavy.
+The Hum stops instantly. The silence is absolute.
 
-From the distance, a flicker of golden light pulses deep within the marsh. Dallas notices it—but it's gone.
+Dallas freezes. He doesn't look toward the sound. Every instinct screams *prey*. He rips the trailcam from its mounting, his fingers fumbling with the nylon straps.
 
-Dallas takes a step forward, then another. The reeds part before him. 
+A low, guttural chittering sound rises from the grass behind him.
 
-A sharp, panicked YIP from Howie stops him. 
-
-Dallas turns. Howie is at the edge of the reeds, pulling the leash taut, his eyes wide and fixed on something Dallas can't see deeper in the grass. 
-
-Howie WHINES—a low, guttural sound of genuine fear. 
-
-DALLAS
-Howie? What is it? 
-
-<!-- scene: 09 file: s08.md nickname: dallas-marsh-walk -->
-
-(action)
-The Hum pulses—once, twice. A physical thrum against Dallas’s ribs. 
-
-Dallas looks back toward the flicker, then at the terrified dog. He hesitates, his hand tight on the recording equipment. 
-
-DALLAS
-Alright. Alright, let's go. 
-
-<!-- scene: 09 file: s08.md nickname: dallas-marsh-walk -->
-
-(action)
-Dallas turns back and retreats from the grass. Howie doesn't wait; he practically bolts back toward the boardwalk. 
-
-Dallas looks over his shoulder one last time. The tall grass is still. 
+Dallas doesn't wait. He bolts. He grabs Howie's leash in a dead run, nearly pulling the dog off his feet as they scramble back toward the safety of the boardwalk.
 
 
 ---
@@ -1260,17 +1229,29 @@ s08b.1 — INT. DALLAS HOUSE - DESK - NIGHT
 
 The house is quiet, save for the hum of a refrigerator and the soft, rhythmic scratching of Howie’s paws on the hardwood in the next room. 
 
-Dallas sits at his desk, bathed in the blue light of his laptop and the amber glow of the military oscillator. The trailcam’s memory card is plugged in. 
+Dallas sits in the dark. He plugs the trailcam into his laptop. The screen flickers with grainy, infrared night-vision footage.
 
-On the screen, the "ladder of lines" waveform he recorded is frozen. 
+He presses PLAY.
 
-Dallas reaches into **Sierra's Box** and pulls out the folder: *FIELD NOTES — BRANFORD 2004*. 
+ON SCREEN: A cluster of four Golden Creatures are huddling in a circle. They are beautiful—pulsing with a soft, harmonic light. They are "singing" in a visible way, the air around them shimmering.
+
+Suddenly, a massive, formless shadow drops from the top of the frame. 
+
+It’s a **RED EYE**. It doesn't bite the first Golden One; it simply touches it. The golden light is instantly "overwritten" by a jagged, red-black corruption. The creature doesn't scream—it **disintegrates** into the marsh floor, leaving only a patch of black rot behind.
+
+The group scatters. The camera shakes as the Red Eye turns toward the lens.
+
+One Golden One—smaller than the others—is hit by a trailing tendril of rot. Its light flickers, turning a sickly amber. It limps toward a gnarled tree in the distance before the footage cuts to static.
+
+Dallas leans back, his face pale. He's not looking at "biology." He's looking at an execution.
+
+Dallas reaches into the box of his old things and pulls out the folder: *FIELD NOTES — BRANFORD 2004*. 
 
 He flips through the sketches of butterflies and caterpillars until he reaches a page near the back. 
 
 His eyes widen. 
 
-On the page, in Sierra's handwriting: *Frequency stabilization at 115.3 MHz. The 'Ladder' isn't a bird. It's a response.* 
+On the page, in Sierra's handwriting: *Response at 115.3 MHz.* 
 
 Next to it is a crude sketch of the "perfect ladder" waveform. It matches his screen exactly. 
 
@@ -1278,13 +1259,18 @@ Dallas leans back. He looks at the oscillator. He reaches out and slowly dials t
 
 The needle doesn't just flutter; it *locks*. A pure, steady tone begins to resonate from the speakers—a sound so clean it feels like a physical presence in the room. 
 
-From the living room, Howie begins to HOWL. Not a bark—a long, mournful sound. 
+From the living room, Howie begins to howl.
 
 Dallas cuts the power. Silence. 
 
-DALLAS
-(whispering)
-You were hearing it too, weren't you? 
+INT. MAKAYLA'S BEDROOM - SAME TIME (s08b.2)
+
+On a messy desk covered in birding guides and disassembled electronics, a small, translucent crystal sits in a petri dish.
+
+As the hum from Dallas's house resonates through the neighborhood, the crystal suddenly flares. A bright, predatory gold light bleeds from its center, scorching a small black ring into the wooden desk.
+
+Makayla reaches out, her fingers inches away, then pulls back as she feels the heat. Her eyes widen. It's the first time it has ever reacted.
+
 
 
 ---
@@ -1304,41 +1290,15 @@ You were hearing it too, weren't you?
 
 s08c.1 — EXT. DALLAS HOUSE - PORCH - NIGHT
 
-Dallas stands on the porch, holding a heavy flashlight. 
+Dallas stands on the porch, holding the trailcam in his hand like a weapon.
 
-The salt breeze is cold. The tall grass at the edge of the yard is a wall of moving shadows. 
+He looks at the yard. The two **RED PINPRICKS** of light are back, but they aren't in the marsh. They are at the edge of his driveway.
 
-Howie sits at Dallas’s feet, shivering. He won't step off the porch. 
+As Dallas watches, the red eyes pulse. In his hand, the trailcam’s "Record" light pulses back in the exact same rhythm. 
 
-Dallas clicks on the flashlight and sweeps it across the yard. 
+They aren't just watching him. They are "sniffing" the data he just stole. 
 
-The beam hits the edge of the marsh. 
-
-Two small, **RED PINPRICKS** of light reflect back. 
-
-Dallas freezes. 
-
-DALLAS
-Dominic? 
-
-<!-- scene: 11 file: s08c.md nickname: the-threshold -->
-
-(action)
-No answer. The red eyes don't blink. They are low to the ground, spaced wide. 
-
-Dallas moves the beam slightly to get a better look. 
-
-The lights go out. A SOFT RUSTLE in the grass—heavy, fast—moving away from the house. 
-
-Howie retreats to the door, scratching to get inside. 
-
-Dallas stares into the dark. The "Pastoral Dread" is no longer just a feeling; something is out there, and it's watching him. 
-
-He doesn't go inside. Instead, he reaches into his pocket and feels the weight of the Oscillator. 
-
-DALLAS
-(to himself)
-It's not a coyote. 
+A jagged line of black rot begins to crawl up the porch steps, hissing as it touches the treated wood. Dallas slams the door and locks it, but he can hear the rhythmic scratching of something "testing" the siding of the house.
 
 
 ---
@@ -1360,33 +1320,19 @@ s08d.1 — EXT. EDGE OF THE MARSH - NIGHT
 
 The world is different at night. The boardwalk is a pale spine cutting through a sea of black reeds. 
 
-Dallas walks alone. Howie is back at the house, safe. 
+Dallas walks alone. He isn't carrying just his oscillator; he has a heavy-duty spotlight and his wife's old medical kit.
 
-Dallas holds the Oscillator like a compass. The needle is pinned at 115.3. 
+He knows exactly where he's going. He saw the tree in the footage.
 
-The Hum is no longer just a sound; it’s a vibration in his skull. 
+The needle on the Oscillator is pinned at 115.3, but the sound coming through the headphones is different now—it’s a rhythmic, sobbing trill. The "Injured One."
 
-He reaches the spot where he found the trailcam. The solar pack’s small green LED is the only light in the marsh. 
-
-Dallas turns off his flashlight. 
-
-Total darkness. 
-
-Then, the Hum shifts. It becomes melodic—a soft, pulsing trill. 
-
-A faint **GOLDEN GLOW** begins to bleed through the reeds a few yards ahead. 
-
-Dallas steps off the path. The reeds brush against his jacket with a sound like dry bones. 
-
-He doesn't look back. 
+Dallas doesn't hesitate at the edge of the reeds. He knows the Red Eye is out there, somewhere in the sky, but he also knows the survivor won't last the night.
 
 DALLAS
-I'm here. 
+(whispering)
+Hold on. I’m coming.
 
-<!-- scene: 12 file: s08d.md nickname: the-return -->
-
-(action)
-He pushes through a dense thicket of grass and stops. 
+He plunges into the tall grass, the beam of his spotlight cutting through the "Pastoral Dread" like a blade.
 
 
 ---
@@ -1646,6 +1592,8 @@ Asher, look.
 Towards the edge of the yard is a jagged, burn mark in the grass that resembles paint splatters on a canvas - scattered across the green grass. It looks as if a drip of yellow blood is around it - acreating a trail towards Dallas' window. At its center lies a small, translucent crystal.
 
 Makayla kneels and touches it. Her hair flutters, static electricity pulling the strands toward the stone. She quickly pockets it.
+
+She pulls her hand back, staring at her palm. A faint, jagged red line—identical to the pattern in the grass—is etched into her skin like a ghost-vein. She rubs it, but it doesn't fade. It feels warm.
 
 Makayla notices a trail leading from the edge of the grass toward Dallas.
 
@@ -2554,7 +2502,13 @@ Makayla walks over and puts the cystal on top of a little bay area device that i
 (action)
 Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
 
-Dallas wakes up.
+Dallas wakes up. He gasps, clutching his hand. 
+
+He looks down. A jagged red line, matching the one on Makayla’s palm, is now etched into his own skin where he gripped the metal rods. It pulses once, then settles into a dull, heavy ache.
+
+MAKAYLA
+(whispering)
+It chose you too.
 
 MAKAYLA
 So, what do you think?
@@ -3116,6 +3070,10 @@ The hum starts to upset people as it becomes unbearable.
 
 Subtle at first. Then undeniable. The floorboards vibrate. The lights pulse lower and lower. People look at each other.
 
+Dallas and Makayla exchange a look across the circle. Dallas adjusts his sleeve, trying to hide his arm, but he can see Makayla doing the same.
+
+Under the skin of their forearms, the jagged lines are glowing. Not gold—but a sickly, rhythmic red that matches the concentric ripples in Sarah's tea. Each time the group hits a high note, the marks burn.
+
 SASHA
 What was that?
 
@@ -3404,18 +3362,95 @@ They look again. Closer. The eyes reappear. Swirling through the beating wind an
 ---
 
 
+### Scene 30: The Infection
+
+*ACT II — The Creature | ID: the-infection | File: s21b.md*
+
+---
+
+<!-- scene: 30 file: s21b.md nickname: the-infection -->
+
+# Scene 21b: The Infection
+
+INT. DALLAS KITCHEN - NIGHT (MOMENTS LATER) (s21b.1)
+
+Dallas slams the heavy oak door shut, throwing the bolt. Outside, the wind howls, a rhythmic, predatory sound that rattles the window panes.
+
+Dominic leans against the counter, breathing hard, his hand trembling as he grips his inhaler. Asher is already at the table, eyes fixed on the creature in its box.
+
+DALLAS
+(to Makayla)
+You saw them. How many?
+
+MAKAYLA
+(voice shaking)
+Too many. They’re circling the house, Dallas. They aren’t just looking for the creature anymore. They’re looking for—
+
+She stops. She gasps, clutching her right arm. 
+
+DALLAS
+Makayla?
+
+Makayla slowly peels back the sleeve of her windbreaker. The jagged "burn mark" on her palm has changed. It is no longer a faint scar; it is a vivid, pulsing crimson vein that has crawled up her wrist and is spider-webbing toward her elbow.
+
+The red light in the vein pulses in perfect synchronization with the rhythmic thrum of the storm outside.
+
+DOMINIC
+(horrified)
+What is that? Makayla, what is that on your arm?
+
+Makayla doesn't answer. She looks at Dallas.
+
+DALLAS
+(low voice)
+It’s in us.
+
+Dallas rolls up his own sleeve. The mark on his forearm is even worse—the skin around the jagged line is starting to look thin, almost waxy. The black rot from the marsh seems to be tracing his circulatory system.
+
+ASHER
+(without looking up)
+It’s writing over you.
+
+Everyone turns to Asher. He is tapping the table in the same rhythm as the pulses on their skin.
+
+ASHER
+The signal from the marsh... it’s not just sound. It’s a blueprint. If we don’t get the creature back to the center... if we don't sync the frequency...
+
+DALLAS
+(finishing the thought)
+...there won't be anything left of us to save.
+
+Dominic looks from the pulsing marks to the roaring storm outside the window. The "rescue mission" is gone. This is survival.
+
+DALLAS
+(to Dominic)
+Get the speakers. We’re going now.
+
+DOMINIC
+In this? Dallas, you'll die out there!
+
+DALLAS
+(staring at his arm)
+I’m dying in here, Dom.
+
+Dallas grabs his heavy coat. The "Trench Run" has begun.
+
+
+---
+
+
 ## ACT III — The Return
 
 ---
 
 
-### Scene 30: The Load-Out
+### Scene 31: The Load-Out
 
 *ACT III — The Return | ID: marsh-confrontation | File: s22.md*
 
 ---
 
-<!-- scene: 30 file: s22.md nickname: marsh-confrontation -->
+<!-- scene: 31 file: s22.md nickname: marsh-confrontation -->
 
 # Scene 22: The Load-Out
 
@@ -3432,12 +3467,12 @@ ASHER
 (pointing into the void)
 They're coming. 
 
-<!-- scene: 30 file: s22.md nickname: marsh-confrontation -->
+<!-- scene: 31 file: s22.md nickname: marsh-confrontation -->
 
 (action)
 Asher begins to pace nervously back and forth. Mr. Mike in the inside begins to call for him. He looks at Dallas, then outside, and puts the headphones on and goes inside with Mr. Mike. 
 
-<!-- scene: 30 file: s22.md nickname: marsh-confrontation -->
+<!-- scene: 31 file: s22.md nickname: marsh-confrontation -->
 
 (action)
 From the edge of their property, pairs of red eyes blink into existence. Two. Then four. Then a dozen. They drift back and forth, actively erasing the sound of the wind as they move closer to the yard. 
@@ -3466,13 +3501,13 @@ but Dallas is already sprinting toward the edge of the tall grass. He plunges in
 ---
 
 
-### Scene 31: The Trench Run
+### Scene 32: The Trench Run
 
 *ACT III — The Return | ID: predator-attack | File: s23.md*
 
 ---
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 # Scene 23: The Trench Run
 
@@ -3490,7 +3525,7 @@ Suddenly, Dominic appears and runs towards Dallas.
 DOMINIC
 Dallas have you seen her? I can't find her? What's that a tracker? Does it show where Makayla is? 
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 Dominic begins to pace around and hits his inhaler.  A giant roar is heard off in the distance.
@@ -3498,7 +3533,7 @@ Dominic begins to pace around and hits his inhaler.  A giant roar is heard off i
 DOMINIC
 MAKAYLA!  
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 Dallas and Dominic continue to make their way with the spaeker. Dallas drops to the ground.  
@@ -3506,7 +3541,7 @@ Dallas and Dominic continue to make their way with the spaeker. Dallas drops to 
 DOMINIC
 Dallas you okay?
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 Dallas grips his arm tightly and stoticly marches onward.  Dominic takes another big hit of his inhaler. 
@@ -3522,7 +3557,7 @@ Dallas catches up with Dominic and Makayla who are out of breath in the pitch bl
 DOMINIC
 Makayla, lets go back.
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 Makayla moves forward. 
@@ -3535,7 +3570,7 @@ Everybody moves quickly in single file. Makayla is leading, sweeping the handhel
 MAKAYLA
 Straight ahead. 
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 The air is thick, humid. Heavy. The "veins" of black rot are everywhere on the ground, hissing as the air hits them. 
@@ -3543,7 +3578,7 @@ The air is thick, humid. Heavy. The "veins" of black rot are everywhere on the g
 MAKAYLA
 They're above us. 
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 Dallas looks up. Above the swaying tops of the grass, massive, formless shadows drift lazily through the storm clouds like storm surges. They are hunting. Searching. Hundreds of glowing red eyes piercing the dark. 
@@ -3555,7 +3590,7 @@ The concussive force of its landing knocks Dominic to his knees. His speaker gro
 DOMINIC
 I'm slipping. 
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 Makayla freezes. The Red-Eye is directly in their path, thrashing through the reeds. Its black, rotting tendrils search the dirt in a wide arc. 
@@ -3564,7 +3599,7 @@ MAKAYLA
 (panic rising)
 It's patrolling. 
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 The shadow creeps closer. Forty feet. Thirty feet. The black rot spreads toward Dominic's boot. 
@@ -3593,7 +3628,7 @@ Makayla exhales slowly.
 MAKAYLA
 Asher... how did you do that?
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 Asher just points forward into the dark. 
@@ -3610,7 +3645,7 @@ DOMINIC
 (gritting teeth)
 Never better. Just a light hike in the country. Let's go. 
 
-<!-- scene: 31 file: s23.md nickname: predator-attack -->
+<!-- scene: 32 file: s23.md nickname: predator-attack -->
 
 (action)
 They push forward, deeper into the howling void.
@@ -3620,13 +3655,13 @@ They push forward, deeper into the howling void.
 ---
 
 
-### Scene 32: The Sanctuary & The Siege
+### Scene 33: The Sanctuary & The Siege
 
 *ACT III — The Return | ID: the-perimeter | File: s24.md*
 
 ---
 
-<!-- scene: 32 file: s24.md nickname: the-perimeter -->
+<!-- scene: 33 file: s24.md nickname: the-perimeter -->
 
 # Scene 24: The Sanctuary & The Siege
 
@@ -3671,7 +3706,7 @@ It’s a horrific clash of physics. The golden mist meets the black shadows in v
 DOMINIC
 What the heck is even that?
 
-<!-- scene: 32 file: s24.md nickname: the-perimeter -->
+<!-- scene: 33 file: s24.md nickname: the-perimeter -->
 
 (action)
 The massive Red-Eyes swarm the largest Golden Elder, ripping into its acoustic field with jagged, corrupted static. The Elder is pushed back toward the center of the ring, shielding the injured one. 
@@ -3688,13 +3723,13 @@ They wade through the chaotic crossfire of light and shadow, positioning the two
 ---
 
 
-### Scene 33: The Final Blast
+### Scene 34: The Final Blast
 
 *ACT III — The Return | ID: the-last-dinner | File: s25.md*
 
 ---
 
-<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 34 file: s25.md nickname: the-last-dinner -->
 
 # Scene 25: The Final Blast
 
@@ -3710,7 +3745,7 @@ DALLAS
 (screaming over the chaos of frequencies)
 Makayla! The wires! Hurry!
 
-<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 34 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Makayla drops to her knees in the mud. She is trembling, cold, covered in rain and ozone. She pulls the thick copper wires from the speakers toward the oscillator strapped to her chest. 
@@ -3723,7 +3758,7 @@ It won't catch! The humidity is destroying the connection!
 ASHER
 They're breaking through!
 
-<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 34 file: s25.md nickname: the-last-dinner -->
 
 (action)
 The largest Elder groans, a deep sub-bass sound, as a massive Red-Eye slams into it, throwing it backward. The Elder falls to the mud, its golden fur dimming as the shadow begins to erase its frequency completely. 
@@ -3738,7 +3773,7 @@ MAKAYLA
 (frantically twisting bare wire)
 I'm trying. 
 
-<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 34 file: s25.md nickname: the-last-dinner -->
 
 (action)
 She wraps the copper tight and bites down hard on the connection to crimp the cold wire against the crystal. The small screen on her chest flares green. The connection holds. 
@@ -3748,7 +3783,7 @@ Asher holds out his palm again and begins to trace his index finger along its ed
 ASHER
 Wait!
 
-<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 34 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Asher runs over and adjusts the dial to 1154
@@ -3756,7 +3791,7 @@ Asher runs over and adjusts the dial to 1154
 MAKAYLA 
 Hit it! 
 
-<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 34 file: s25.md nickname: the-last-dinner -->
 
 (action)
 As Makayla goes to fire the pulse from the speaker.
@@ -3768,7 +3803,7 @@ The heavy wooden frame groans, lifting dangerously out of the mud. It is tipping
 DOMINIC
 It’s tipping! 
 
-<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 34 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Dominic throws himself entirely into the brutal, rotting mud. 
@@ -3776,7 +3811,7 @@ Dominic throws himself entirely into the brutal, rotting mud.
 He grabs the listing speaker stand, planting his boots deep into the dirt, using his own body weight to anchor the acoustic frame upright. The deafing sound begins to engulf him. He screams in agonizing pain but doesn't let go. 
 
 
-<!-- scene: 33 file: s25.md nickname: the-last-dinner -->
+<!-- scene: 34 file: s25.md nickname: the-last-dinner -->
 
 (action)
 Dallas grabs the oscillator dial on Makayla's chest and forces it perfectly onto **115.3**, reinforcing the signal with everything the battery has left. 
@@ -3819,16 +3854,16 @@ Makayla lets out a massive, shuddering breath.
 ---
 
 
-### Scene 34: The Morning After
+### Scene 35: The Morning After
 
 *ACT IV — Aftermath | ID: final-echoes | File: s26.md*
 
 ---
 
-<!-- scene: 34 file: s26.md nickname: final-echoes -->
+<!-- scene: 35 file: s26.md nickname: final-echoes -->
 
 # Scene 26: The Morning After
-<!-- scene: 34 file: s26.md nickname: final-echoes -->
+<!-- scene: 35 file: s26.md nickname: final-echoes -->
 
 (action)
 EXT. TALL GRASS (s26.1)
@@ -3842,7 +3877,7 @@ Janice makes her way through the door.
 JANICE
 Look at all of these sleeping beauties. 
 
-<!-- scene: 34 file: s26.md nickname: final-echoes -->
+<!-- scene: 35 file: s26.md nickname: final-echoes -->
 
 (action)
 MR. Mike walks in behind Janice and walks right over to Dallas - out for a good old fashion handshake. 
@@ -3863,13 +3898,13 @@ Thanks for letting everyone crash here Dallas. Dominic, Makayla, lets go.
 ---
 
 
-### Scene 35: Aftermath
+### Scene 36: Aftermath
 
 *ACT IV — Aftermath | ID: aftermath | File: s27.md*
 
 ---
 
-<!-- scene: 35 file: s27.md nickname: aftermath -->
+<!-- scene: 36 file: s27.md nickname: aftermath -->
 
 <!-- nickname: little aftermath -->
 
@@ -3911,13 +3946,13 @@ Dallas at his kitchen table and grabs a battery as he walks to his workbench. He
 ---
 
 
-### Scene 36: Full Circle
+### Scene 37: Full Circle
 
 *ACT IV — Aftermath | ID: full-circle | File: s28.md*
 
 ---
 
-<!-- scene: 36 file: s28.md nickname: full-circle -->
+<!-- scene: 37 file: s28.md nickname: full-circle -->
 
 # Scene 28: Full Circle
 <!-- summary: Makayla sets up her new Lair in the woods to listen to the creatures. Dallas finds his wife's specific hum out in the marsh. -->

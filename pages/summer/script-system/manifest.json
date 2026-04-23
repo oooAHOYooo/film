@@ -232,6 +232,14 @@
     "nickname": "creature-missing"
   },
   {
+    "id": "the-infection",
+    "file": "s21b.md",
+    "title": "The Infection",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-infection"
+  },
+  {
     "id": "marsh-confrontation",
     "file": "s22.md",
     "title": "The Load-Out",

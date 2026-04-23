@@ -1,0 +1,8 @@
+- [x] Create `s21b.md` (The Infection)
+- [x] Update `manifest.json` to include `s21b.md`
+- [x] Create `infection-arc-proposals.md` with snippets for other scenes
+- [x] Run `node compile-all.js` to verify
+- [x] Update walkthrough
+- [x] Restructure Discovery Sequence (S08-S08d) for tension
+    - [x] Create `discovery-tension-updates-2026-04-23.md` with proposed rewrites
+    - [x] Apply rewrites to `s08.md`, `s08b.md`, `s08c.md`, `s08d.md`

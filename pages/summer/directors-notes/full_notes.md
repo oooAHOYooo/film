@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 4/22/2026, 5:44:28 PM*
+*Compiled on 4/23/2026, 11:22:45 AM*
 
 ---
 
@@ -284,28 +284,34 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
+#### Scene 30: The Infection
+
+*ID: the-infection*
+
+*No director's note for this scene.*
+
 
 ### ACT III — The Return
 
-#### Scene 30: The Load-Out
+#### Scene 31: The Load-Out
 
 *ID: marsh-confrontation*
 
 *No director's note for this scene.*
 
-#### Scene 31: The Trench Run
+#### Scene 32: The Trench Run
 
 *ID: predator-attack*
 
 *No director's note for this scene.*
 
-#### Scene 32: The Sanctuary & The Siege
+#### Scene 33: The Sanctuary & The Siege
 
 *ID: the-perimeter*
 
 *No director's note for this scene.*
 
-#### Scene 33: The Final Blast
+#### Scene 34: The Final Blast
 
 *ID: the-last-dinner*
 
@@ -334,19 +340,19 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT IV — Aftermath
 
-#### Scene 34: The Morning After
+#### Scene 35: The Morning After
 
 *ID: final-echoes*
 
 *No director's note for this scene.*
 
-#### Scene 35: Aftermath
+#### Scene 36: Aftermath
 
 *ID: aftermath*
 
 *No director's note for this scene.*
 
-#### Scene 36: Full Circle
+#### Scene 37: Full Circle
 
 *ID: full-circle*
 
