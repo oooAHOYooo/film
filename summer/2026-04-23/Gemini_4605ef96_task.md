@@ -6,3 +6,5 @@
 - [x] Restructure Discovery Sequence (S08-S08d) for tension
     - [x] Create `discovery-tension-updates-2026-04-23.md` with proposed rewrites
     - [x] Apply rewrites to `s08.md`, `s08b.md`, `s08c.md`, `s08d.md`
+- [x] Remove redundant trap from Scene 1
+- [x] Update Mr. Mike's 'Pastoral Fear' warnings (S07, S19)

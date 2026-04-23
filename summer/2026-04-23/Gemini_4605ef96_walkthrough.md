@@ -20,7 +20,13 @@ Restructured Scenes 8, 8b, 8c, and 8d to build maximum tension:
 - **Scene 8c**: The threat moves to the house, with Red Eyes "sniffing" the trailcam data.
 - **Scene 8d**: The return to the marsh is now a high-stakes rescue mission for the survivor seen on tape.
 
-### 4. Infection Arc Applied
+### 4. Scene 1 Polish
+Updated **Scene 1** to remove the redundant camera rig. Dallas now finds a **broken stake and a patch of black rot** in his yard. This sets up the mystery and makes the discovery of the working trailcam in Scene 8 much more rewarding.
+
+### 5. Mr. Mike's "Pastoral Fear"
+Grounded the supernatural threat in local history by updating **Mr. Mike's warnings** in Scenes 7 and 19. He now explicitly references the **Storm of '71**, warns that the "Red Eyes" are sniffing the house, and identifies the Golden One as a "target" that Dallas brought to the shore.
+
+### 6. Infection Arc Applied
 Successfully integrated all proposed snippets for earlier scenes (13, 15b, and 19) directly into the script. The infection now has a clear, visible progression from the first resonance to the final crisis in 21b.
 
 ## Verification Results

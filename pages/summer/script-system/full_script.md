@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/23/2026, 11:22:45 AM*
+*Compiled on 4/23/2026, 11:30:16 AM*
 
 ---
 
@@ -19,15 +19,15 @@
 <!-- scene: 01 file: s01.md nickname: arrival -->
 
 <!-- nickname: arrival -->
-<!-- summary: New house, tall grass. He finds a rig in the reeds. Makayla and Asher want his oscillator. -->
+<!-- summary: New house, tall grass. He finds a broken stake and black rot in the reeds. Makayla and Asher want his oscillator. -->
 
 EXT. DALLAS NEW HOUSE - DAY (s01.1)
 
 Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
 
-Dallas goes into the grass a little bit and as he does he notices that there is, what appears to be, a makeshift trap. That, upon further inspection reveals, a small camera rig on a stick. 
+Dallas goes into the grass a little bit. He stops. At the edge of the reeds is a jagged, dead patch of earth—a circle of black, oily rot where nothing grows. In the center of the rot, a single wooden stake has been driven into the ground, but it’s been snapped off, the top half gone. 
 
-As Dallas examines he hears a distinct bicycle ring.
+As Dallas examines the broken wood, he hears a distinct bicycle ring.
 
 MAKAYLA
 <!-- scene: 01 file: s01.md nickname: arrival -->
@@ -864,7 +864,7 @@ MAKAYLA
 Who is Javerias?
 
 MR. MIKE
-Javerias, Javerias, he told me. I miss him. He was good. Kind. Normal. He told me things when I was little - just a kid - important things. He told me that when you hurt one - even if it was by mistake and you had no reason to - they will eventually they will transform into the other one - the darker one - and they wont stay  kind forever. And some decided not to be kind - and are predators. Javerias. If the winds get them - they will take charge.
+Javerias, Javerias, he told me. I haven't seen them since the big blow in '71. The Red Eyes. They come when the pressure drops and the sky turns that bruised color. Back then, they took the whole center marsh—swallowed it whole. Javerias said if you hurt one—even if it was by mistake—they transform. They turn into the shadow ones. The predators. And when the wind picks up tonight, the Nidus will open, just like it did for the gold standard. They're coming back to finish the harvest.
 
 JANICE
 (from the Kitchen)
@@ -3033,10 +3033,17 @@ Would anyone like to say any words before we start?
 (action)
 They begin to sing a hymn. As the voices rise, the hum from the basement begins to rise with them.
 
-MR. MIKE barges through the basement door. Visualablly agitated. 
+MR. MIKE barges through the basement door. Visualablly agitated. He’s gripping a worn, leather-bound Bible, but he isn’t looking at it. He’s looking at the windows.
+
+MR. MIKE
+It’s happening again. The '71 wind. Do you hear it? The Red Eyes are in the eaves! They’re sniffing the house!
 
 TYLER
-Hello Mr. Mike - thank you for joining us!
+Hello Mr. Mike - thank you for joining us! We're just about to start the hymn.
+
+MR. MIKE
+(ignoring him, to Dallas)
+You brought it in here. The golden one. You brought the target to the shore!
 
 <!-- scene: 27 file: s19.md nickname: the-hymn -->
 
