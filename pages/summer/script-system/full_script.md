@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/24/2026, 10:37:50 AM*
+*Compiled on 4/24/2026, 12:24:57 PM*
 
 ---
 
@@ -1037,7 +1037,7 @@ Come here.
 Dallas glances toward the kitchen. Dominic is out of earshot. He walks over.
 
 MR. MIKE
-Closer.
+Closer. Come closer. 
 
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
@@ -1076,15 +1076,15 @@ DALLAS
 What?
 
 MR. MIKE
-You don't touch it. You d   on't take it. You don't try to help.
+You don't touch it. You don't take it. You don't try to help. You leave it. 
 
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
 (action)
-Mr. Mike looks at him for a long moment. His lip trembles — not from age, from something else.
+Mr. Mike looks at him for a long moment. His lip trembles.
 
 MR. MIKE
-If you touch the hurt one, you make the dark one.
+If you touch the hurt one, you make the dark one. And then you become the dark one. 
 
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
@@ -1113,7 +1113,7 @@ The dark one is still out there.
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
 (action)
-Dallas swallows. He doesn't say anything.
+Dallas stares out the window and on the floor. 
 
 From the kitchen:
 DOMINIC (O.S.)
