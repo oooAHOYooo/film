@@ -1,0 +1,6 @@
+- [x] Update Script System `compile.js` numbering logic
+- [x] Update Storyboard System `compile.js` manifest generator
+- [x] Create Storyboard Scene files (`S07B`, `S08B`, `S08C`, `S08D`)
+- [x] Update Bible System `manifest.json`
+- [x] Create Bible Practical Effects files (`pr08b`, `pr08c`, `pr08d`)
+- [x] Run `node compile-all.js` and verify

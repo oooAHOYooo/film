@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass - Production Bible
 
-*Compiled on 4/23/2026, 11:30:17 AM*
+*Compiled on 4/24/2026, 10:37:51 AM*
 
 ---
 
@@ -821,6 +821,23 @@ This keeps the gallery focused on build references and techniques for the produc
 ---
 
 
+<h2 id="entry-pr07b">PE 7B — Mr. Mike's Warning</h2>
+
+*Category: Practical Effects | File: practical-effects/pr07b.md*
+
+---
+
+# PE 7B — Mr. Mike's Warning
+
+## Practical Effects Needs
+- **Atmospheric**: Heavy basement shadows, dust motes in the light.
+- **Prop**: The photo frame Dallas holds must be aged/weathered.
+- **Performance**: High intensity for Mr. Mike; stillness for Dallas.
+
+
+---
+
+
 <h2 id="entry-pr08">PE 8 — Dallas Marsh Walk</h2>
 
 *Category: Practical Effects | File: practical-effects/pr08.md*
@@ -852,6 +869,57 @@ This keeps the gallery focused on build references and techniques for the produc
 
 - _Storm warning on phone; streetlights go dark then return._
 
+
+---
+
+
+<h2 id="entry-pr08b">PE 8B — The Research Beat</h2>
+
+*Category: Practical Effects | File: practical-effects/pr08b.md*
+
+---
+
+��#   P E   8 B      T h e   R e s e a r c h   B e a t 
+ 
+ # #   P r a c t i c a l   E f f e c t s   N e e d s 
+ -   * * L a p t o p   I n t e r f a c e * * :   C u s t o m   U I   f o r   t h e   i n f r a r e d   t r a i l c a m   f o o t a g e . 
+ -   * * L i g h t i n g * * :   D e e p   b l u e / o r a n g e   ' c o m p u t e r   l i g h t '   c a s t   o n   D a l l a s '   f a c e . 
+ -   * * C r e a t u r e * * :   T h e   f o o t a g e   s h o w s   t h e   G o l d e n   O n e   d i s i n t e g r a t i n g   ( V F X / P r a c t i c a l   c o m b o ) .  
+ 
+
+---
+
+
+<h2 id="entry-pr08c">PE 8C — The Threshold</h2>
+
+*Category: Practical Effects | File: practical-effects/pr08c.md*
+
+---
+
+��#   P E   8 C      T h e   T h r e s h o l d 
+ 
+ # #   P r a c t i c a l   E f f e c t s   N e e d s 
+ -   * * B l a c k   R o t * * :   H i s s i n g   e f f e c t   w h e n   t o u c h i n g   t h e   w o o d .   O i l y ,   b u b b l i n g   t e x t u r e . 
+ -   * * R e d   E y e s * * :   R e m o t e - c o n t r o l l e d   L E D s   a t   t h e   e d g e   o f   t h e   d r i v e w a y . 
+ -   * * S o u n d * * :   S c r a t c h i n g   a g a i n s t   t h e   h o u s e   s i d i n g .  
+ 
+
+---
+
+
+<h2 id="entry-pr08d">PE 8D — The Return</h2>
+
+*Category: Practical Effects | File: practical-effects/pr08d.md*
+
+---
+
+��#   P E   8 D      T h e   R e t u r n 
+ 
+ # #   P r a c t i c a l   E f f e c t s   N e e d s 
+ -   * * S p o t l i g h t * * :   H i g h - i n t e n s i t y   b e a m   c u t t i n g   t h r o u g h   f o g / m i s t . 
+ -   * * O s c i l l a t o r * * :   T h e   ' I n j u r e d   O n e '   f r e q u e n c y   ( 1 1 5 . 3 ) . 
+ -   * * E n v i r o n m e n t * * :   N i g h t   m a r s h ,   w e t   m u d ,   b i o l u m i n e s c e n t   f l i c k e r s   i n   t h e   r e e d s .  
+ 
 
 ---
 

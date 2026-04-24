@@ -144,9 +144,9 @@ function compileStoryboardFrames() {
 
   const scLookup = {};
   scriptData.forEach(s => {
-    const match = s.file.match(/s(\d+)\.md/i);
+    const match = s.file.match(/s(\d+[a-z]?)\.md/i);
     if(match) {
-      scLookup[parseInt(match[1], 10)] = s;
+      scLookup[match[1].toLowerCase()] = s;
     }
   });
 
@@ -155,15 +155,15 @@ function compileStoryboardFrames() {
   const scenesDirFiles = fs.existsSync(SCENES_DIR) ? fs.readdirSync(SCENES_DIR) : [];
 
   for (const f of scenesDirFiles) {
-    const m = f.match(/S(\d+).*?\.md/i);
+    const m = f.match(/S(\d+[a-z]?).*?\.md/i);
     if (m) {
-      const num = parseInt(m[1], 10);
-      processedNums.add(num);
-      const sc = scLookup[num] || {};
+      const idStr = m[1].toLowerCase();
+      processedNums.add(idStr);
+      const sc = scLookup[idStr] || {};
       builtManifest.push({
-        id: `s${m[1].padStart(2,'0')}-sl`,
+        id: `s${idStr.padStart(2,'0')}-sl`,
         file: f,
-        title: sc.title || `Scene ${num}`,
+        title: sc.title || `Scene ${idStr.toUpperCase()}`,
         act: sc.act || 0,
         actTitle: sc.actTitle || '',
         scriptId: sc.id || ""
@@ -176,16 +176,16 @@ function compileStoryboardFrames() {
     .map(dirent => dirent.name) : [];
 
   for (const folder of folders) {
-    const m = folder.match(/s(\d+)/i);
+    const m = folder.match(/s(\d+[a-z]?)/i);
     if (m) {
-      const num = parseInt(m[1], 10);
-      if (!processedNums.has(num)) {
-        processedNums.add(num);
-        const sc = scLookup[num] || {};
+      const idStr = m[1].toLowerCase();
+      if (!processedNums.has(idStr)) {
+        processedNums.add(idStr);
+        const sc = scLookup[idStr] || {};
         builtManifest.push({
-          id: `s${m[1].padStart(2,'0')}-sl`,
+          id: `s${idStr.padStart(2,'0')}-sl`,
           file: "", 
-          title: sc.title || `Scene ${num}`,
+          title: sc.title || `Scene ${idStr.toUpperCase()}`,
           act: sc.act || 0,
           actTitle: sc.actTitle || '',
           scriptId: sc.id || ""
@@ -196,16 +196,16 @@ function compileStoryboardFrames() {
 
   const pdfFiles = fs.existsSync(PDFS_DIR) ? fs.readdirSync(PDFS_DIR) : [];
   for (const f of pdfFiles) {
-    const m = f.match(/s(\d+)/i);
+    const m = f.match(/s(\d+[a-z]?)/i);
     if (m) {
-      const num = parseInt(m[1], 10);
-      if (!processedNums.has(num)) {
-        processedNums.add(num);
-        const sc = scLookup[num] || {};
+      const idStr = m[1].toLowerCase();
+      if (!processedNums.has(idStr)) {
+        processedNums.add(idStr);
+        const sc = scLookup[idStr] || {};
         builtManifest.push({
-          id: `s${m[1].padStart(2,'0')}-sl`,
+          id: `s${idStr.padStart(2,'0')}-sl`,
           file: "", 
-          title: sc.title || `Scene ${num}`,
+          title: sc.title || `Scene ${idStr.toUpperCase()}`,
           act: sc.act || 0,
           actTitle: sc.actTitle || '',
           scriptId: sc.id || ""
@@ -215,9 +215,17 @@ function compileStoryboardFrames() {
   }
 
   builtManifest.sort((a,b) => {
-    const aNum = parseInt((a.id.match(/\d+/) || [0])[0], 10);
-    const bNum = parseInt((b.id.match(/\d+/) || [0])[0], 10);
-    return aNum - bNum;
+    const aMatch = a.id.match(/s(\d+)([a-z])?/i);
+    const bMatch = b.id.match(/s(\d+)([a-z])?/i);
+    if (aMatch && bMatch) {
+      const aNum = parseInt(aMatch[1], 10);
+      const bNum = parseInt(bMatch[1], 10);
+      if (aNum !== bNum) return aNum - bNum;
+      const aSuff = aMatch[2] || '';
+      const bSuff = bMatch[2] || '';
+      return aSuff.localeCompare(bSuff);
+    }
+    return 0;
   });
 
   fs.writeFileSync(path.join(SYSTEM_DIR, 'manifest.json'), JSON.stringify(builtManifest, null, 2));

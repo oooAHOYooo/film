@@ -56,12 +56,44 @@
     "scriptId": "the-coordinates"
   },
   {
+    "id": "s07b-sl",
+    "file": "S07B - SL.md",
+    "title": "Mr. Mike's Warning",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "mr-mikes-warning"
+  },
+  {
     "id": "s08-sl",
     "file": "S08 - SL.md",
     "title": "The Trailcam",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "scriptId": "dallas-marsh-walk"
+  },
+  {
+    "id": "s08b-sl",
+    "file": "S08B - SL.md",
+    "title": "The Research Beat",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "the-research-beat"
+  },
+  {
+    "id": "s08c-sl",
+    "file": "S08C - SL.md",
+    "title": "The Threshold",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "the-threshold"
+  },
+  {
+    "id": "s08d-sl",
+    "file": "S08D - SL.md",
+    "title": "The Return",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "scriptId": "the-return"
   },
   {
     "id": "s09-sl",

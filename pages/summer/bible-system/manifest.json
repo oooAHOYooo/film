@@ -112,11 +112,39 @@
     "nickname": "pr07"
   },
   {
+    "id": "pr07b",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr07b.md",
+    "title": "PE 7B — Mr. Mike's Warning",
+    "nickname": "pr07b"
+  },
+  {
     "id": "pr08",
     "category": "Practical Effects",
     "file": "practical-effects/pr08.md",
     "title": "PE 8 — Dallas Marsh Walk",
     "nickname": "pr08"
+  },
+  {
+    "id": "pr08b",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr08b.md",
+    "title": "PE 8B — The Research Beat",
+    "nickname": "pr08b"
+  },
+  {
+    "id": "pr08c",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr08c.md",
+    "title": "PE 8C — The Threshold",
+    "nickname": "pr08c"
+  },
+  {
+    "id": "pr08d",
+    "category": "Practical Effects",
+    "file": "practical-effects/pr08d.md",
+    "title": "PE 8D — The Return",
+    "nickname": "pr08d"
   },
   {
     "id": "pr09",

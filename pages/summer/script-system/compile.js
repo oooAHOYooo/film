@@ -52,15 +52,86 @@ function toRoman(num) {
   return out;
 }
 
+function getSceneDisplayNumber(filename) {
+  if (!filename) return null;
+  const match = filename.match(/s(\d+)([a-z])?/i);
+  if (match) {
+    const num = parseInt(match[1], 10);
+    const suffix = match[2] ? match[2].toUpperCase() : '';
+    return `${num}${suffix}`;
+  }
+  return null;
+}
+
 // Read manifest
 function loadManifest() {
+  // Always sync before loading
+  return syncManifest();
+}
+
+function syncManifest() {
+  console.log('Syncing manifest with scenes directory...');
+  let manifest = [];
   try {
-    const manifestContent = fs.readFileSync(MANIFEST_PATH, 'utf8');
-    return JSON.parse(manifestContent);
-  } catch (error) {
-    console.error('Error reading manifest.json:', error.message);
-    process.exit(1);
+    if (fs.existsSync(MANIFEST_PATH)) {
+      manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
+    }
+  } catch (e) {
+    console.warn('Could not read existing manifest, starting fresh.');
   }
+
+  const files = fs.readdirSync(SCENES_DIR).filter(f => f.endsWith('.md'));
+  const manifestFiles = manifest.map(m => m.file);
+  
+  let changed = false;
+  
+  files.forEach(file => {
+    if (!manifestFiles.includes(file)) {
+      console.log(`- Adding new scene file to manifest: ${file}`);
+      const content = fs.readFileSync(path.join(SCENES_DIR, file), 'utf8');
+      const nickname = getNicknameFromScene(content) || file.replace('.md', '');
+      
+      // Improved title extraction: look for # SCENE X: TITLE or just # TITLE
+      const titleMatch = content.match(/^# (?:SCENE \d+[A-Z]?:\s*)?(.*)/mi);
+      const title = titleMatch ? titleMatch[1].trim() : nicknameToTitle(nickname);
+      
+      // Find the best act context
+      const lastScene = manifest[manifest.length - 1];
+      const act = lastScene ? lastScene.act : 1;
+      const actTitle = lastScene ? lastScene.actTitle : 'Arrival & Discovery';
+
+      manifest.push({
+        id: nickname,
+        file: file,
+        title: title,
+        act: act,
+        actTitle: actTitle,
+        nickname: nickname
+      });
+      changed = true;
+    }
+  });
+
+  if (changed) {
+    // Sort manifest by filename alphanumeric logic
+    manifest.sort((a, b) => {
+      const aMatch = a.file.match(/s(\d+)([a-z])?/i);
+      const bMatch = b.file.match(/s(\d+)([a-z])?/i);
+      if (aMatch && bMatch) {
+        const aNum = parseInt(aMatch[1], 10);
+        const bNum = parseInt(bMatch[1], 10);
+        if (aNum !== bNum) return aNum - bNum;
+        const aSuff = aMatch[2] || '';
+        const bSuff = bMatch[2] || '';
+        return aSuff.localeCompare(bSuff);
+      }
+      return a.file.localeCompare(b.file);
+    });
+
+    fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
+    console.log('✓ manifest.json updated with new scenes.');
+  }
+  return manifest;
 }
 
 // Read a scene file
@@ -109,11 +180,14 @@ function sceneContentWithVisibleMarkers(content) {
 function injectSceneComments(content, sceneNumber, scene) {
   const file = scene && scene.file ? String(scene.file) : '';
   const nickname = scene && (scene.nickname || scene.id) ? String(scene.nickname || scene.id) : '';
-  const num = String(sceneNumber).padStart(2, '0');
-  const header = `<!-- scene: ${num} file: ${file} nickname: ${nickname} -->`;
+  const displayNum = getSceneDisplayNumber(file) || String(sceneNumber).padStart(2, '0');
+  const header = `<!-- scene: ${displayNum} file: ${file} nickname: ${nickname} -->`;
 
-  // Ensure one header at top (even if the scene already has a nickname comment)
-  let out = `${header}\n\n${content}`;
+  // Remove any existing scene comments at the start of the file or after breaks
+  let out = content.replace(/<!-- scene:.*?-->/gi, '').trim();
+  
+  // Ensure one header at top
+  out = `${header}\n\n${out}`;
 
   // Before every explicit action-break marker, inject a scene header comment.
   // This helps when scanning raw markdown without affecting rendered output.
@@ -130,6 +204,7 @@ function compileMarkdown(scenes) {
   let currentAct = null;
   scenes.forEach((scene, index) => {
     const sceneNumber = index + 1;
+    const displayNum = getSceneDisplayNumber(scene.file) || sceneNumber;
 
     if (scene.act && scene.act !== currentAct) {
       currentAct = scene.act;
@@ -137,7 +212,7 @@ function compileMarkdown(scenes) {
       output += `\n## ACT ${toRoman(scene.act)}${actTitle}\n\n---\n\n`;
     }
 
-    output += `\n### Scene ${sceneNumber}: ${scene.title}\n\n`;
+    output += `\n### Scene ${displayNum}: ${scene.title}\n\n`;
     output += `*${scene.act ? `ACT ${toRoman(scene.act)}${scene.actTitle ? ` — ${scene.actTitle}` : ''} | ` : ''}ID: ${scene.id} | File: ${scene.file}*\n\n`;
     output += `---\n\n`;
 
@@ -175,8 +250,9 @@ function markdownToHTML(markdown) {
 function generateHTMLPage(markdown, scenes) {
   const sceneOptionsHtml = (scenes || []).map((s, i) => {
     const num = i + 1;
+    const displayNum = getSceneDisplayNumber(s.file) || num;
     const title = (s.title || '').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-    return `<option value="scene-${num}">${num}. ${title}</option>`;
+    return `<option value="scene-${num}">${displayNum}. ${title}</option>`;
   }).join('');
 
   const html = String.raw`
@@ -706,14 +782,16 @@ function writePlotCardsData(scenes, fullScriptMarkdown) {
     const derived = fullScriptBlock ? deriveSummary(fullScriptBlock) : deriveSummary(raw);
     // Priority: Inline comment > derived
     let summary = inlineSummary || derived;
+    const displayNum = getSceneDisplayNumber(scene.file) || n;
     // Removed automatic plot tag appending to clean up the display
     return {
       n,
+      displayNum,
       id,
       title,
       act: scene.act ?? 0,
       actTitle: scene.actTitle || '',
-      summary: summary || `Scene ${n} — ${title}`,
+      summary: summary || `Scene ${displayNum} — ${title}`,
     };
   });
   fs.writeFileSync(PLOT_CARDS_PATH, JSON.stringify(cards, null, 2) + '\n', 'utf8');

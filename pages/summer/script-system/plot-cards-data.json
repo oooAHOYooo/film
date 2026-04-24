@@ -1,6 +1,7 @@
 [
   {
     "n": 1,
+    "displayNum": "1",
     "id": "arrival",
     "title": "Arrival",
     "act": 1,
@@ -9,6 +10,7 @@
   },
   {
     "n": 2,
+    "displayNum": "2",
     "id": "dallas-night",
     "title": "Sierra's Box",
     "act": 1,
@@ -17,6 +19,7 @@
   },
   {
     "n": 3,
+    "displayNum": "3",
     "id": "the-hum",
     "title": "Meet The Neighbors",
     "act": 1,
@@ -25,6 +28,7 @@
   },
   {
     "n": 4,
+    "displayNum": "4",
     "id": "fellowship",
     "title": "Fellowship",
     "act": 1,
@@ -33,6 +37,7 @@
   },
   {
     "n": 5,
+    "displayNum": "5",
     "id": "marsh-walk-later",
     "title": "The Merlin App",
     "act": 1,
@@ -41,6 +46,7 @@
   },
   {
     "n": 6,
+    "displayNum": "6",
     "id": "news-vans",
     "title": "News Vans",
     "act": 1,
@@ -49,6 +55,7 @@
   },
   {
     "n": 7,
+    "displayNum": "7",
     "id": "the-coordinates",
     "title": "The Coordinates",
     "act": 1,
@@ -57,46 +64,52 @@
   },
   {
     "n": 8,
+    "displayNum": "7B",
     "id": "mr-mikes-warning",
     "title": "Mr. Mike's Warning",
-    "act": 1,
-    "actTitle": "Arrival & Discovery",
-    "summary": "s07B — INT. DOMINIC'S BASEMENT — CONTINUOUS Dallas stands near the table, holding the frame with the photo of Dominic's family. He sets it down gently. Mr. Mike rocks in his chair. He has stopped muttering. His eyes are…"
-  },
-  {
-    "n": 9,
-    "id": "dallas-marsh-walk",
-    "title": "The Trailcam",
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "summary": "Dallas tries to bring Howie inside but he won't go. He looks like he wants to go on a walk. So Dallas reasons with the creature and brings him on a walk. The Long Island Sound roars, the waves crashing violently against…"
   },
   {
+    "n": 9,
+    "displayNum": "8",
+    "id": "dallas-marsh-walk",
+    "title": "The Trailcam",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "summary": "Dallas stands slowly, scanning the reeds around him. Nothing much seems out there - just the gentle sway of grass and the disappointed sound of his own breathing. Dallas pushes through a dense curtain of reeds. Dust…"
+  },
+  {
     "n": 10,
+    "displayNum": "8B",
     "id": "the-research-beat",
     "title": "The Research Beat",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "s08b.1 — INT. DALLAS HOUSE - DESK - NIGHT The house is quiet, save for the hum of a refrigerator and the soft, rhythmic scratching of Howie’s paws on the hardwood in the next room. Dallas sits in the dark. He plugs the…"
+    "summary": "As Dallas walks out of the tall grass, he gets the sense that something is following him. The air changes and the hum faintly comes back. Then in the distant, more coyotes begin to howl. A heavy, crushing sound slices…"
   },
   {
     "n": 11,
+    "displayNum": "8C",
     "id": "the-threshold",
     "title": "The Threshold",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "s08c.1 — EXT. DALLAS HOUSE - PORCH - NIGHT Dallas stands on the porch, holding the trailcam in his hand like a weapon. He looks at the yard. The two RED PINPRICKS of light are back, but they aren't in the marsh. They…"
+    "summary": "Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines it with parchment paper. The creature seems to be asleep. Howie barks outside. Dallas rushes to grab him. Howie is in the living room couch…"
   },
   {
     "n": 12,
+    "displayNum": "8D",
     "id": "the-return",
     "title": "The Return",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "s08d.1 — EXT. EDGE OF THE MARSH - NIGHT The world is different at night. The boardwalk is a pale spine cutting through a sea of black reeds. Dallas walks alone. He isn't carrying just his oscillator; he has a heavy-duty…"
+    "summary": "Dallas is alone. He keeps peering through his late wife's old documents. On the desk is the recorder and all of the tapes next to it. Dallas presses play on the recorder and goes to sleep."
   },
   {
     "n": 13,
+    "displayNum": "9",
     "id": "dallas-night-work",
     "title": "The Injured One",
     "act": 1,
@@ -105,14 +118,16 @@
   },
   {
     "n": 14,
+    "displayNum": "10",
     "id": "shadows-in-wind",
     "title": "Creature Discovery",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "As Dallas walks out of the tall grass, he gets the sense that something is following him. The air changes and the hum faintly comes back. Then in the distant, more coyotes begin to howl. A heavy, crushing sound slices…"
+    "summary": "Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in…"
   },
   {
     "n": 15,
+    "displayNum": "11",
     "id": "howie-walk-2",
     "title": "Kitchen Triage",
     "act": 1,
@@ -121,102 +136,115 @@
   },
   {
     "n": 16,
+    "displayNum": "12",
     "id": "the-burn-mark",
     "title": "The First Night With Creature",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Dallas is alone. He keeps peering through his late wife's old documents. On the desk is the recorder and all of the tapes next to it. Dallas presses play on the recorder and goes to sleep."
-  },
-  {
-    "n": 17,
-    "id": "entering-grass",
-    "title": "The Confrontation",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Dallas awakes with the sunlight hitting his face. He gets up and walks over to his desk. Outside he hears a loud bang and someone cursing in the distance. Dominic''s minivan idles in the driveway. Dominic gets out and…"
-  },
-  {
-    "n": 18,
-    "id": "creature-rescue",
-    "title": "The Connection",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in…"
-  },
-  {
-    "n": 19,
-    "id": "the-field-journal",
-    "title": "The Field Journal",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "SCENE 14B: THE FIELD JOURNAL s14B.1 — EXT. DALLAS BACKYARD — OLD PICNIC TABLE — CONTINUOUS Makayla and Dallas sit in silence. Asher, a few feet off, threads beads onto string — the quantity matters, we just don't know…"
-  },
-  {
-    "n": 20,
-    "id": "the-almost-discovery",
-    "title": "The Almost Discovery",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Late-day light leaks through the kitchen blinds. The creature is hidden beneath a towel inside the makeshift enclosure. A SOFT, IRREGULAR HUM bleeds faintly into the room. Makayla stands rigid at the counter, tightening…"
-  },
-  {
-    "n": 21,
-    "id": "the-failed-test",
-    "title": "The Failed Test",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "The room is dim, controlled. Every light filtered red. The creature rests inside its enclosure, watching—alert now. Makayla adjusts the oscillator carefully."
-  },
-  {
-    "n": 22,
-    "id": "the-tracking-box",
-    "title": "Makayla's Tracking Box",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees.…"
-  },
-  {
-    "n": 23,
-    "id": "dominics-confession",
-    "title": "Dominic's Confession",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Crickets. Distant surf. Dominic and Dallas sit side by side. Dominic nurses a cooling mug of coffee."
-  },
-  {
-    "n": 24,
-    "id": "the-escape",
-    "title": "Back Home",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Makayla and Dallas hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. As the two walk, they begin to notice that the tall grass around them is acting…"
-  },
-  {
-    "n": 25,
-    "id": "resonance",
-    "title": "Resonance",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Dallas looks at the creature by himself for a long time. Dallas stares for a long time at the golden creature. The jagged red lines on his portable viewfinder match the erratic, panicked breathing of the tiny animal.…"
   },
   {
-    "n": 26,
-    "id": "life-group-arrives",
-    "title": "Life Group Arrives",
+    "n": 17,
+    "displayNum": "13",
+    "id": "entering-grass",
+    "title": "The Confrontation",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates. The doorbell is heard. Makayla answers the door and sees…"
   },
   {
-    "n": 27,
-    "id": "the-hymn",
-    "title": "The Hymn",
+    "n": 18,
+    "displayNum": "14",
+    "id": "creature-rescue",
+    "title": "The Connection",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Dallas shuffles through a pile of old equipment—mono cables, spare parts and arranges them all neatly on a desk. The creature doesn't look like it's doing much. It's breathing, slightly. Dallas struggles to find a bed…"
   },
   {
+    "n": 19,
+    "displayNum": "14B",
+    "id": "the-field-journal",
+    "title": "The Field Journal",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "Dominic descends the basement stairs, expecting a stray kitten. Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small…"
+  },
+  {
+    "n": 20,
+    "displayNum": "14C",
+    "id": "the-almost-discovery",
+    "title": "The Almost Discovery",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "The crew hold the door down. ACT II — The Creature | ID: the-infection | File: s21b.md Dallas slams the heavy oak door shut, throwing the bolt. Outside, the wind howls, a rhythmic, predatory sound that rattles the…"
+  },
+  {
+    "n": 21,
+    "displayNum": "15A",
+    "id": "the-failed-test",
+    "title": "The Failed Test",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. The wind drops, the howling stops. Then it…"
+  },
+  {
+    "n": 22,
+    "displayNum": "15B",
+    "id": "the-tracking-box",
+    "title": "Makayla's Tracking Box",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "Dallas enters the tall grass carrying the speaker. The nylon straps bite into Dallas' shoulders - straining the fabric. Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker, and…"
+  },
+  {
+    "n": 23,
+    "displayNum": "15C",
+    "id": "dominics-confession",
+    "title": "Dominic's Confession",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "The howling wind suddenly dies down. Makayla breaches through a thick wall of reeds and stops. Dallas, Dominic, and Asher break through behind her, collapsing to their knees in the mud under the weight of the speakers.…"
+  },
+  {
+    "n": 24,
+    "displayNum": "16",
+    "id": "the-escape",
+    "title": "Back Home",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "The golden dome of the Elders is failing. Red-Eye shadows are ripping through the barrier, violently canceling out the light. The black rot is spreading rapidly inward across the flattened grass floor. Dallas and…"
+  },
+  {
+    "n": 25,
+    "displayNum": "17",
+    "id": "resonance",
+    "title": "Resonance",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "The crew walk back through the tall grass, through neighborhoods, back and slow. The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. Janice makes her way through the door."
+  },
+  {
+    "n": 26,
+    "displayNum": "18",
+    "id": "life-group-arrives",
+    "title": "Life Group Arrives",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved. Dallas walks alone into the flattened ring of grass from…"
+  },
+  {
+    "n": 27,
+    "displayNum": "19",
+    "id": "the-hymn",
+    "title": "The Hymn",
+    "act": 2,
+    "actTitle": "The Creature",
+    "summary": "Makayla walks up to the wooden structure in the woods. Asher is already there, stringing up a new, much larger antenna between the trees. The trail cameras have been repositioned to face deeper into the marsh. Makayla…"
+  },
+  {
     "n": 28,
+    "displayNum": "20",
     "id": "red-eyes",
     "title": "The Secret is Out",
     "act": 2,
@@ -225,6 +253,7 @@
   },
   {
     "n": 29,
+    "displayNum": "21",
     "id": "creature-missing",
     "title": "The Burn Marks",
     "act": 2,
@@ -233,6 +262,7 @@
   },
   {
     "n": 30,
+    "displayNum": "21B",
     "id": "the-infection",
     "title": "The Infection",
     "act": 2,
@@ -241,6 +271,7 @@
   },
   {
     "n": 31,
+    "displayNum": "22",
     "id": "marsh-confrontation",
     "title": "The Load-Out",
     "act": 3,
@@ -249,6 +280,7 @@
   },
   {
     "n": 32,
+    "displayNum": "23",
     "id": "predator-attack",
     "title": "The Trench Run",
     "act": 3,
@@ -257,6 +289,7 @@
   },
   {
     "n": 33,
+    "displayNum": "24",
     "id": "the-perimeter",
     "title": "The Sanctuary & The Siege",
     "act": 3,
@@ -265,6 +298,7 @@
   },
   {
     "n": 34,
+    "displayNum": "25",
     "id": "the-last-dinner",
     "title": "The Final Blast",
     "act": 3,
@@ -273,6 +307,7 @@
   },
   {
     "n": 35,
+    "displayNum": "26",
     "id": "final-echoes",
     "title": "The Morning After",
     "act": 4,
@@ -281,6 +316,7 @@
   },
   {
     "n": 36,
+    "displayNum": "27",
     "id": "aftermath",
     "title": "Little Aftermath",
     "act": 4,
@@ -289,6 +325,7 @@
   },
   {
     "n": 37,
+    "displayNum": "28",
     "id": "full-circle",
     "title": "Full Circle",
     "act": 4,
