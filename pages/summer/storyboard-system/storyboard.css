@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --page-bg: #f8f7f5;
-  --card-bg: #fdfcfb;
-  --text: #2c2c2a;
-  --muted: #7a7976;
-  --border: #e2e1de;
-  --accent: #1f6feb;
-  --accent-soft: rgba(31, 111, 235, 0.12);
-  --frame-bg: #1c1b1a;
-  --frame-border: #3a3936;
+  --page-bg: #0d1017;
+  --card-bg: #11141d;
+  --text: #b3b1ad;
+  --muted: #5c6773;
+  --border: #1a1f29;
+  --accent: #ffcc66;
+  --accent-soft: rgba(255, 204, 102, 0.1);
+  --frame-bg: #080a0f;
+  --frame-border: #1a1f29;
+  --rail-bg: #0b0e14;
 }
 
 * {
@@ -23,6 +24,20 @@ body {
   background: var(--page-bg);
   color: var(--text);
   line-height: 1.6;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
 a {
@@ -39,7 +54,7 @@ a {
   width: 220px;
   padding: 28px 18px;
   border-right: 1px solid var(--border);
-  background: #f3f2f0;
+  background: var(--rail-bg);
   position: sticky;
   top: 0;
   align-self: flex-start;
@@ -71,8 +86,9 @@ a {
 
 .film-item.active {
   background: var(--card-bg);
-  border-color: var(--border);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: var(--accent);
 }
 
 .full-pdf-feature {
@@ -131,7 +147,7 @@ a {
 }
 
 .pdf-feature-btn:hover {
-  background: #1557c0;
+  background: #e6b85c;
 }
 
 .pdf-feature-timestamp {
@@ -233,7 +249,7 @@ a {
 .progress {
   height: 6px;
   width: 100%;
-  background: #e8e7e4;
+  background: #1a1f29;
 }
 
 .progress-fill {
@@ -293,8 +309,8 @@ a {
 }
 
 .scene-meta .scene-setting {
-  background: #f0efe9;
-  color: #4a4946;
+  background: #1a1f29;
+  color: var(--muted);
 }
 
 .shot-list {
@@ -310,7 +326,7 @@ a {
   padding: 16px;
   border: 1px solid var(--border);
   border-radius: 16px;
-  background: #faf9f7;
+  background: #0b0e14;
 }
 
 .shot-card {
@@ -320,7 +336,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  background: #fff;
+  background: var(--card-bg);
 }
 
 .shot-header {
@@ -338,7 +354,7 @@ a {
   padding: 4px 8px;
   border-radius: 6px;
   background: var(--accent-soft);
-  color: #1a3c6b;
+  color: var(--accent);
   font-size: 0.8rem;
   font-weight: 600;
 }
@@ -397,7 +413,7 @@ a {
 }
 
 .shot-meta span {
-  background: #f3f2ef;
+  background: #1a1f29;
   padding: 4px 8px;
   border-radius: 6px;
 }
