@@ -226,24 +226,42 @@
   },
   {
     "n": 26,
+    "displayNum": "17B",
+    "id": "normal-day",
+    "title": "Normal Day",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "summary": "The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved. Dallas walks alone into the flattened ring of grass from…"
+  },
+  {
+    "n": 27,
+    "displayNum": "17C",
+    "id": "mute-drive",
+    "title": "Mute Drive",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "summary": "Makayla walks up to the wooden structure in the woods. Asher is already there, but they aren't building—they are packing up. The trail cameras are being taken down. The massive array of wires is being rolled into neat…"
+  },
+  {
+    "n": 28,
     "displayNum": "18",
     "id": "life-group-arrives",
     "title": "Life Group Arrives",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved. Dallas walks alone into the flattened ring of grass from…"
+    "summary": "Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates. The doorbell is heard. Makayla answers the door and sees…"
   },
   {
-    "n": 27,
+    "n": 29,
     "displayNum": "19",
     "id": "the-hymn",
     "title": "The Hymn",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Makayla walks up to the wooden structure in the woods. Asher is already there, stringing up a new, much larger antenna between the trees. The trail cameras have been repositioned to face deeper into the marsh. Makayla…"
+    "summary": "Dallas shuffles through a pile of old equipment—mono cables, spare parts and arranges them all neatly on a desk. The creature doesn't look like it's doing much. It's breathing, slightly. Dallas struggles to find a bed…"
   },
   {
-    "n": 28,
+    "n": 30,
     "displayNum": "20",
     "id": "red-eyes",
     "title": "The Secret is Out",
@@ -252,7 +270,7 @@
     "summary": "Dominic descends the basement stairs, expecting a stray kitten. Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small…"
   },
   {
-    "n": 29,
+    "n": 31,
     "displayNum": "21",
     "id": "creature-missing",
     "title": "The Burn Marks",
@@ -261,7 +279,7 @@
     "summary": "The crew hold the door down."
   },
   {
-    "n": 30,
+    "n": 32,
     "displayNum": "21B",
     "id": "the-infection",
     "title": "The Infection",
@@ -270,7 +288,7 @@
     "summary": "Dallas slams the heavy oak door shut, throwing the bolt. Outside, the wind howls, a rhythmic, predatory sound that rattles the window panes. Dominic leans against the counter, breathing hard, his hand trembling as he…"
   },
   {
-    "n": 31,
+    "n": 33,
     "displayNum": "22",
     "id": "marsh-confrontation",
     "title": "The Load-Out",
@@ -279,7 +297,7 @@
     "summary": "The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. The wind drops, the howling stops. Then it…"
   },
   {
-    "n": 32,
+    "n": 34,
     "displayNum": "23",
     "id": "predator-attack",
     "title": "The Trench Run",
@@ -288,7 +306,7 @@
     "summary": "Dallas enters the tall grass carrying the speaker. The nylon straps bite into Dallas' shoulders - straining the fabric. Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker, and…"
   },
   {
-    "n": 33,
+    "n": 35,
     "displayNum": "24",
     "id": "the-perimeter",
     "title": "The Sanctuary & The Siege",
@@ -297,7 +315,7 @@
     "summary": "The howling wind suddenly dies down. Makayla breaches through a thick wall of reeds and stops. Dallas, Dominic, and Asher break through behind her, collapsing to their knees in the mud under the weight of the speakers.…"
   },
   {
-    "n": 34,
+    "n": 36,
     "displayNum": "25",
     "id": "the-last-dinner",
     "title": "The Final Blast",
@@ -306,7 +324,7 @@
     "summary": "The golden dome of the Elders is failing. Red-Eye shadows are ripping through the barrier, violently canceling out the light. The black rot is spreading rapidly inward across the flattened grass floor. Dallas and…"
   },
   {
-    "n": 35,
+    "n": 37,
     "displayNum": "26",
     "id": "final-echoes",
     "title": "The Morning After",
@@ -315,7 +333,7 @@
     "summary": "The crew walk back through the tall grass, through neighborhoods, back and slow. The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. Janice makes her way through the door."
   },
   {
-    "n": 36,
+    "n": 38,
     "displayNum": "27",
     "id": "aftermath",
     "title": "Little Aftermath",
@@ -324,7 +342,7 @@
     "summary": "The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved. Dallas walks alone into the flattened ring of grass from…"
   },
   {
-    "n": 37,
+    "n": 39,
     "displayNum": "28",
     "id": "full-circle",
     "title": "Full Circle",

@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 4/24/2026, 12:24:58 PM*
+*Compiled on 4/27/2026, 12:18:33 PM*
 
 ---
 
@@ -260,31 +260,49 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 26: Life Group Arrives
+
+### ACT IV — Aftermath
+
+#### Scene 26: Normal Day
+
+*ID: normal-day*
+
+*No director's note for this scene.*
+
+#### Scene 27: Mute Drive
+
+*ID: mute-drive*
+
+*No director's note for this scene.*
+
+
+### ACT II — The Creature
+
+#### Scene 28: Life Group Arrives
 
 *ID: life-group-arrives*
 
 *No director's note for this scene.*
 
-#### Scene 27: The Hymn
+#### Scene 29: The Hymn
 
 *ID: the-hymn*
 
 *No director's note for this scene.*
 
-#### Scene 28: The Secret is Out
+#### Scene 30: The Secret is Out
 
 *ID: red-eyes*
 
 *No director's note for this scene.*
 
-#### Scene 29: The Burn Marks
+#### Scene 31: The Burn Marks
 
 *ID: creature-missing*
 
 *No director's note for this scene.*
 
-#### Scene 30: The Infection
+#### Scene 32: The Infection
 
 *ID: the-infection*
 
@@ -293,25 +311,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT III — The Return
 
-#### Scene 31: The Load-Out
+#### Scene 33: The Load-Out
 
 *ID: marsh-confrontation*
 
 *No director's note for this scene.*
 
-#### Scene 32: The Trench Run
+#### Scene 34: The Trench Run
 
 *ID: predator-attack*
 
 *No director's note for this scene.*
 
-#### Scene 33: The Sanctuary & The Siege
+#### Scene 35: The Sanctuary & The Siege
 
 *ID: the-perimeter*
 
 *No director's note for this scene.*
 
-#### Scene 34: The Final Blast
+#### Scene 36: The Final Blast
 
 *ID: the-last-dinner*
 
@@ -340,19 +358,19 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT IV — Aftermath
 
-#### Scene 35: The Morning After
+#### Scene 37: The Morning After
 
 *ID: final-echoes*
 
 *No director's note for this scene.*
 
-#### Scene 36: Aftermath
+#### Scene 38: Aftermath
 
 *ID: aftermath*
 
 *No director's note for this scene.*
 
-#### Scene 37: Full Circle
+#### Scene 39: Full Circle
 
 *ID: full-circle*
 

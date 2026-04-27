@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/24/2026, 12:24:57 PM*
+*Compiled on 4/27/2026, 12:18:32 PM*
 
 ---
 
@@ -2127,18 +2127,7 @@ Another knock—cheerful, familiar.
 DOMINIC (O.S.)
 Dallas? You home? Janice said you might have our step ladder.
 
-Makayla and Dallas lock eyes.
-
-DALLAS
-(low)
-Stay quiet.
-
-Makayla shakes her head—already moving.
-
-MAKAYLA
-We can’t act weird.
-
-Asher begins tapping his fingers faster.
+Makayla and Dallas exchange a look. Asher begins tapping his fingers faster.
 
 ---
 
@@ -2700,6 +2689,179 @@ DALLAS sleeps next to the the setup. He hears a beep beep and looks at the works
 EXT. DALLAS BACKYARD - NIGHT (S17.3)
 
 Dallas runs outside and looks around. But to no avail.
+
+---
+
+
+## ACT IV — Aftermath
+
+---
+
+
+### Scene 17B: Normal Day
+
+*ACT IV — Aftermath | ID: normal-day | File: s17b.md*
+
+---
+
+<!-- scene: 17B file: s17b.md nickname: normal-day -->
+
+<!-- nickname: normal-day -->
+
+INT. GROCERY STORE / COSTCO - DAY (s17b.1)
+
+Dominic pushes an oversized shopping cart. The warehouse store is immense, bathed in fluorescent light, and buzzing with the banal energy of suburban errands. Janice walks beside him, scrolling through a grocery list on her phone.
+
+JANICE
+They said they were out of the Kirkland paper towels. We might have to settle for the off-brand.
+
+DOMINIC
+That's fine. Did you get the chicken? 
+
+JANICE
+(distracted)
+Got it. And I added those frozen pizzas Asher likes. I also need to call the dentist on Monday. His checkup is overdue.
+
+<!-- scene: 17B file: s17b.md nickname: normal-day -->
+
+(action)
+Dominic pauses near the bulk water aisle. A forklift Blares its reversing siren nearby. Over the PA system, a monotonous voice announces a special in aisle four. 
+
+But beneath it all—beneath the squeaking cart wheels, the chatter of families, the beep of the registers—Dominic hears the HUM. 
+
+It is distant. Ambient. Almost like the building's massive HVAC system, but too rhythmic. He stares down the long, artificially lit aisle, trying to isolate the sound. He shakes his head, actively gaslighting himself. Just the freezer compressors.
+
+JANICE
+(noticing his pause)
+Dom? You okay?
+
+DOMINIC
+Yeah. Just thought I heard... never mind. Water. We need water.
+
+(cross-cut)
+
+INT. DALLAS BASEMENT - DAY (s17b.2)
+
+Dallas is hunched over his makeshift receiver workstation, the heavy headphones clamped to his ears. The frequency is no longer ambient to him; it is clear, distinct, and terrifying. He frantically dials the knobs, trying to track the source, completely consumed.
+
+(cross-cut)
+
+INT. GROCERY STORE - DAY (s17b.3)
+
+Janice loads a massive pack of toilet paper into the cart. She seems perfectly at ease, navigating the normalcy like a protective shield. She chats pleasantly with a passing neighbor.
+
+JANICE
+Oh, you know, just stocking up before the weekend!
+
+<!-- scene: 17B file: s17b.md nickname: normal-day -->
+
+(action)
+Dominic watches her. Her comfort isn't ignorance; it's a practiced discipline. She is choosing the routine.
+
+(cross-cut)
+
+INT. MAKAYLA'S ROOM - DAY (s17b.4)
+
+Makayla has maps, meteorological data, and Sierra’s old drawings spread across her floor. She is tracing patterns with a red marker, aggressively connecting the dots between the anomalous sounds and the town's geography.
+
+(cross-cut)
+
+INT. ASHER'S ROOM - DAY (s17b.5)
+
+Asher sits perfectly still on the edge of his bed. The room is quiet, but his hands are clamped tightly over his ears. His eyes are squeezed shut. To him, the hum isn't a background noise—it's a roar of absolute clarity that the world refuses to acknowledge.
+
+(cross-cut)
+
+INT. GROCERY STORE - DAY (s17b.6)
+
+Dominic and Janice stand in line at the register. The cashier scans items with a rhythmic, piercing BEEP. 
+
+CASHIER
+Did you find everything okay today?
+
+JANICE
+Yes, thank you. 
+
+<!-- scene: 17B file: s17b.md nickname: normal-day -->
+
+(action)
+Dominic looks at the people around them. Families buying bulk snacks. A couple arguing over laundry detergent. The community's banal civic processes continuing uninterrupted. The world is spinning on its axis, completely unaware of the tectonic plates shifting beneath them. 
+
+Dominic grips the handle of the shopping cart tightly. He looks at Janice, who is warmly smiling at the cashier, securing their purchase. The denial is a mutual, unspoken choice. Right now, this false normal is the only thing holding them together.
+
+---
+
+
+### Scene 17C: Mute Drive
+
+*ACT IV — Aftermath | ID: mute-drive | File: s17c.md*
+
+---
+
+<!-- scene: 17C file: s17c.md nickname: mute-drive -->
+
+<!-- nickname: mute-drive -->
+
+INT. JANICE'S MINIVAN - DAY (s17c.1)
+
+Janice is driving through downtown Branford. The Nor'easter winds are picking up, rattling the windows of the minivan. Outside, the town is engaged in banal, civic storm preparation. Shop owners are taping windows. Public works employees are laying sandbags near the post office. 
+
+Makayla sits in the passenger seat. She is completely rigid, staring out the window. Asher is asleep in the back, his heavy noise-canceling headphones resting around his neck. 
+
+Janice glances at Makayla, trying to fill the oppressive silence in the car with maternal warmth. 
+
+JANICE
+I was talking to Uncle Dom last night... about how proud we both are of you. I know it hasn't been easy since your mom passed. It’s a lot to carry. But the way you’ve stepped up to take care of Asher... it shows real resilience. You're keeping this family together, Makayla. We just want you to know you don't have to carry it all by yourself. We're here. We're getting back to normal.
+
+<!-- scene: 17C file: s17c.md nickname: mute-drive -->
+
+(action)
+Makayla remains totally mute. She doesn't blink. She is watching the streetlights pulsing—a rhythmic, subtle dimming that matches a distant, ambient hum. Her eyes track a creeping, dark rot—a massive burn mark—snaking its way up the brick side of the Branford Town Hall. The public works employees walk right past it, completely oblivious.
+
+The silence in the car is deafening. Makayla's refusal to participate in the emotional buffering is a physical weight. 
+
+Janice looks away from the road, staring at Makayla's terrified, stoic profile. Then, Janice looks at what Makayla is looking at. 
+
+Janice's eyes land on the brick wall of the Town Hall. She sees the black veins of rot. She sees the streetlights pulse. She feels the unnatural rhythm of the wind. 
+
+The facade breaks. The "proud aunt" narrative dissolves instantly. 
+
+Janice hits the brakes, pulling the minivan hard onto the shoulder of the road. 
+
+She puts the car in park. She doesn't look at the town anymore. She looks directly at Makayla. 
+
+JANICE
+(quietly, dropping the buffer)
+You aren't just taking care of him. You're protecting him from something. 
+
+<!-- scene: 17C file: s17c.md nickname: mute-drive -->
+
+(action)
+Makayla finally turns her head to look at Janice. The silence between them shifts from resistance to grim understanding. 
+
+JANICE
+What is coming, Makayla?
+
+MAKAYLA
+Something they aren't ready for. 
+
+<!-- scene: 17C file: s17c.md nickname: mute-drive -->
+
+(action)
+Janice stares at her niece. She doesn't ask for proof. She doesn't rationalize the pulsing lights or the rot on the bricks. She chooses to believe. 
+
+JANICE
+Then we need to get home. And we need to lock the doors. 
+
+<!-- scene: 17C file: s17c.md nickname: mute-drive -->
+
+(action)
+Janice throws the car back into drive. The minivan speeds off as the first heavy drops of unnatural rain hit the windshield.
+
+---
+
+
+## ACT II — The Creature
 
 ---
 
@@ -3906,13 +4068,36 @@ Dallas at his kitchen table and grabs a battery as he walks to his workbench. He
 
 EXT. MAKAYLA'S LAIR - DAY (s28.1)
 
-Makayla walks up to the wooden structure in the woods. Asher is already there, stringing up a new, much larger antenna between the trees. The trail cameras have been repositioned to face deeper into the marsh.
+Makayla walks up to the wooden structure in the woods. Asher is already there, but they aren't building—they are packing up. The trail cameras are being taken down. The massive array of wires is being rolled into neat coils.
 
-Makayla pulls the small, translucent crystal out of her pocket.  She places it gently onto a newly built bay area device. 
+Makayla pulls the small, translucent crystal out of her pocket. She connects it to her portable oscillator one last time. 
 
-The screen flares to life, a clean, perfect, golden sine wave, emerges on screen. 
+The screen flares to life. Suddenly, the clean, perfect, golden sine wave spikes violently into a jagged red pattern. 
 
-Makayla puts on a pair of headphones. 
+Makayla tenses up instantly. Her hand hovers over the dial. The old instinct to control, to predict the danger, surges back. 
+
+MAKAYLA
+(panicked)
+It's a spike. They're coming back. Asher, we need to—
+
+<!-- scene: 28 file: s28.md nickname: full-circle -->
+
+(action)
+Asher walks over. He looks at the screen. He doesn't look panicked. He points at the wind whipping through the high branches of the trees, then points back at the screen. 
+
+ASHER
+It's just the wind in the reeds. The storm is passing. 
+
+<!-- scene: 28 file: s28.md nickname: full-circle -->
+
+(action)
+Makayla looks at the trees. She listens. The terrifying hum is gone. It is just normal, earthly weather. She misread it. 
+
+She looks at Asher, who is perfectly calm. 
+
+Makayla lets out a long, shuddering breath. She accepts the correction. The tension leaves her shoulders. She smiles, finally letting the interpretation go. 
+
+She reaches down and actively unplugs the machine. The screen goes dark. She drops the crystal into her pocket, zips her gear bag, and they walk out of the woods together.
 
 INT. DALLAS'S BEDROOM - NIGHT (s28.2)
 

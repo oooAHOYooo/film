@@ -1,0 +1,4 @@
+- [x] Update `script.css` with dropdown menu link styles and alignment support
+- [x] Update `index.html` navigation structure
+- [x] Add dropdown toggle logic to `index.html`
+- [x] Verify the Storyboard Hub link and dropdown functionality
