@@ -563,7 +563,8 @@ body {
   display: block;
 }
 
-.script-export-menu button {
+.script-export-menu button,
+.script-export-menu a {
   display: block;
   width: 100%;
   text-align: left;
@@ -573,11 +574,20 @@ body {
   font-family: inherit;
   font-size: 0.85rem;
   color: var(--text);
+  text-decoration: none;
   cursor: pointer;
 }
 
-.script-export-menu button:hover {
+.script-export-menu button:hover,
+.script-export-menu a:hover {
   background: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.script-export-menu--left {
+  right: auto;
+  left: 0;
 }
 
 /* Script stats row (status bar + scene dropdown) */
