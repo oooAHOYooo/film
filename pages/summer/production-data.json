@@ -1,71 +1,565 @@
 {
-  "arrival": { "durationMin": 3, "shootDays": 1, "assignedDay": 2, "keyElements": "", "productionNotes": "" },
-  "dallas-night": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 1, "keyElements": "", "productionNotes": "" },
-  "the-hum": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 1, "keyElements": "", "productionNotes": "" },
-  "fellowship": { "durationMin": 3, "shootDays": 1, "assignedDay": 3, "keyElements": "", "productionNotes": "" },
-  "marsh-walk-later": { "durationMin": 3, "shootDays": 0.5, "assignedDay": 4, "keyElements": "", "productionNotes": "" },
-  "news-vans": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 9, "keyElements": "", "productionNotes": "" },
-  "the-coordinates": { "durationMin": 4, "shootDays": 0.5, "assignedDay": 9, "keyElements": "", "productionNotes": "" },
-  "dallas-marsh-walk": { "durationMin": 3, "shootDays": 0.5, "assignedDay": 4, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "dallas-night-work": { "durationMin": 3, "shootDays": 0.5, "assignedDay": 5, "keyElements": "", "productionNotes": "" },
-  "shadows-in-wind": { "durationMin": 3, "shootDays": 0.5, "assignedDay": 14, "pickup": true, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "howie-walk-2": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 5, "keyElements": "Aluminum pan, macro monoculars, glowing marks, tech overload/golden static, red light bulb, makeshift habitat.", "productionNotes": "Includes 4 new generated AI Storyboard sketches for referencing." },
-  "the-burn-mark": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 6, "keyElements": "", "productionNotes": "" },
-  "entering-grass": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 6, "keyElements": "", "productionNotes": "" },
-  "creature-rescue": { "durationMin": 5, "shootDays": 0.5, "assignedDay": 14, "pickup": true, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "the-burn-mark-2": { "durationMin": 3, "shootDays": 0.5, "assignedDay": 7, "keyElements": "", "productionNotes": "" },
-  "the-escape": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 10, "keyElements": "", "productionNotes": "" },
-  "makeshift-hospital": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 7, "keyElements": "", "productionNotes": "" },
-  "entering-grass-2": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 8, "keyElements": "", "productionNotes": "" },
-  "life-group-arrives": { "durationMin": 3, "shootDays": 1, "assignedDay": 16, "keyElements": "", "productionNotes": "" },
-  "basement-huddle": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 8, "keyElements": "", "productionNotes": "" },
-  "the-hymn": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 10, "keyElements": "", "productionNotes": "" },
-  "red-eyes": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 17, "keyElements": "", "productionNotes": "" },
-  "creature-missing": { "durationMin": 3, "shootDays": 0.5, "assignedDay": 11, "keyElements": "", "productionNotes": "" },
-  "marsh-confrontation": { "durationMin": 6, "shootDays": 0.5, "assignedDay": 17, "pickup": false, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "predator-attack": { "durationMin": 3, "shootDays": 0.5, "assignedDay": 23, "pickup": false, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "the-perimeter": { "durationMin": 5, "shootDays": 0.5, "assignedDay": 11, "pickup": false, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "the-last-dinner": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 23, "pickup": false, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "final-echoes": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 24, "pickup": false, "keyElements": "", "productionNotes": "SFX/action pickup (Makayla + Dallas)" },
-  "aftermath": { "durationMin": 2, "shootDays": 0.5, "assignedDay": 24, "keyElements": "", "productionNotes": "" },
-  "full-circle": { "durationMin": 3, "shootDays": 0.5, "assignedDay": 12, "keyElements": "", "productionNotes": "" },
+  "s01": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 1,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher"
+    ]
+  },
+  "s02": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 2,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla"
+    ]
+  },
+  "s09b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 2,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla"
+    ]
+  },
+  "s09": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 3,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s10": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 3,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s04": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 4,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Makayla",
+      "Asher",
+      "Mr Mike"
+    ]
+  },
+  "s07b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 4,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Makayla",
+      "Asher",
+      "Mr Mike"
+    ]
+  },
+  "s26": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 15,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike",
+      "Janice"
+    ]
+  },
+  "s03": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 5,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Pat"
+    ]
+  },
+  "s05": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 5,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Pat"
+    ]
+  },
+  "s06": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 5,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Pat"
+    ]
+  },
+  "s11": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 6,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Asher"
+    ]
+  },
+  "s12": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 6,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Asher"
+    ]
+  },
+  "s27a": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 7,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s08": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 8,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Howie"
+    ]
+  },
+  "s13": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s07": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s14": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s14b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s14c": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s17": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s17b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s17c": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s09c": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 10,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s18": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 11,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike",
+      "Janice",
+      "Life Group Extras"
+    ]
+  },
+  "s19": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 11,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike",
+      "Janice",
+      "Life Group Extras"
+    ]
+  },
+  "s20": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 11,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike",
+      "Janice",
+      "Life Group Extras"
+    ]
+  },
+  "s15a": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice"
+    ]
+  },
+  "s15b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice"
+    ]
+  },
+  "s15c": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice"
+    ]
+  },
+  "s16": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice"
+    ]
+  },
+  "s21": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 13,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s21b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 13,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s22": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 17,
+    "keyElements": "",
+    "productionNotes": "Wraps",
+    "cast": [
+      "Asher",
+      "Mr. Mike",
+      "Dallas",
+      "Makayla",
+      "Dominic",
+      "Janice",
+      "Pat"
+    ]
+  },
+  "s23": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 16,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s24": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 16,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s25": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 16,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s26b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 17,
+    "keyElements": "",
+    "productionNotes": "Wraps",
+    "cast": [
+      "Asher",
+      "Mr. Mike",
+      "Dallas",
+      "Makayla",
+      "Dominic",
+      "Janice",
+      "Pat"
+    ]
+  },
+  "s27": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 17,
+    "keyElements": "",
+    "productionNotes": "Wraps",
+    "cast": [
+      "Asher",
+      "Mr. Mike",
+      "Dallas",
+      "Makayla",
+      "Dominic",
+      "Janice",
+      "Pat"
+    ]
+  },
+  "s28": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 17,
+    "keyElements": "",
+    "productionNotes": "Wraps",
+    "cast": [
+      "Asher",
+      "Mr. Mike",
+      "Dallas",
+      "Makayla",
+      "Dominic",
+      "Janice",
+      "Pat"
+    ]
+  },
   "settings": {
     "chronologicalStartDay": 1
   },
   "calendar": {
-    "1": "2026-06-12",
-    "2": "2026-06-13",
-    "3": "2026-06-14",
-    "4": "2026-06-15",
-    "5": "2026-06-16",
-    "6": "2026-06-17",
+    "1": "2026-06-07",
+    "2": "2026-06-09",
+    "3": "2026-06-12",
+    "4": "2026-06-13",
+    "5": "2026-06-14",
+    "6": "2026-06-16",
     "7": "2026-06-18",
     "8": "2026-06-19",
     "9": "2026-06-20",
-    "10": "2026-06-21",
-    "11": "2026-06-22",
-    "12": "2026-06-23",
-    "13": "2026-06-24",
-    "14": "2026-06-25",
-    "15": "2026-06-26",
-    "16": "2026-06-27",
-    "17": "2026-06-28",
-    "18": "2026-06-29",
-    "19": "2026-06-30",
-    "20": "2026-07-01",
-    "21": "2026-07-02",
-    "22": "2026-07-03",
-    "23": "2026-07-04",
-    "24": "2026-07-05",
-    "25": "2026-07-06"
-  },
-  "holidays": {
-    "2026-06-19": "Juneteenth",
-    "2026-07-03": "Independence Day (Observed)",
-    "2026-07-04": "Independence Day"
-  },
-  "offDates": {
-    "2026-07-13": "MOM BDAY",
-    "2026-07-14": "SUMMER STARTS _ PO"
+    "10": "2026-06-26",
+    "11": "2026-06-27",
+    "12": "2026-06-28",
+    "13": "2026-06-30",
+    "14": "2026-07-01",
+    "15": "2026-07-02",
+    "16": "2026-07-03",
+    "17": "2026-07-05"
   }
 }

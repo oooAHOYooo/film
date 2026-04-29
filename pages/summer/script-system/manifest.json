@@ -203,16 +203,16 @@
     "id": "normal-day",
     "file": "s17b.md",
     "title": "Normal Day",
-    "act": 4,
-    "actTitle": "Aftermath",
+    "act": 2,
+    "actTitle": "The Creature",
     "nickname": "normal-day"
   },
   {
     "id": "mute-drive",
     "file": "s17c.md",
     "title": "Mute Drive",
-    "act": 4,
-    "actTitle": "Aftermath",
+    "act": 2,
+    "actTitle": "The Creature",
     "nickname": "mute-drive"
   },
   {

@@ -1,0 +1,7 @@
+- [ ] Update `s08b.md` header and metadata (9B -> 8B)
+- [ ] Update `s08c.md` header and metadata (9C -> 8C)
+- [ ] Update `s08d.md` metadata (09d -> 08d)
+- [ ] Update `full_script.md` headers and metadata
+- [ ] Update `full_storyboard.md` numbering to eliminate shift
+- [ ] Verify alignment across all manifests
+- [ ] Run `compile.js` to refresh the full script

@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 4/27/2026, 12:18:33 PM*
+*Compiled on 4/29/2026, 11:44:10 AM*
 
 ---
 
@@ -260,9 +260,6 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-
-### ACT IV — Aftermath
-
 #### Scene 26: Normal Day
 
 *ID: normal-day*
@@ -274,9 +271,6 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 *ID: mute-drive*
 
 *No director's note for this scene.*
-
-
-### ACT II — The Creature
 
 #### Scene 28: Life Group Arrives
 

@@ -6,7 +6,7 @@
     "title": "Arrival",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "New house, tall grass. He finds a broken stake and black rot in the reeds. Makayla and Asher want his oscillator."
+    "summary": "Dallas takes the train to branford Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that…"
   },
   {
     "n": 2,
@@ -229,8 +229,8 @@
     "displayNum": "17B",
     "id": "normal-day",
     "title": "Normal Day",
-    "act": 4,
-    "actTitle": "Aftermath",
+    "act": 2,
+    "actTitle": "The Creature",
     "summary": "The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved. Dallas walks alone into the flattened ring of grass from…"
   },
   {
@@ -238,8 +238,8 @@
     "displayNum": "17C",
     "id": "mute-drive",
     "title": "Mute Drive",
-    "act": 4,
-    "actTitle": "Aftermath",
+    "act": 2,
+    "actTitle": "The Creature",
     "summary": "Makayla walks up to the wooden structure in the woods. Asher is already there, but they aren't building—they are packing up. The trail cameras are being taken down. The massive array of wires is being rolled into neat…"
   },
   {

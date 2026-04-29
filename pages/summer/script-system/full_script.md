@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/27/2026, 12:18:32 PM*
+*Compiled on 4/29/2026, 11:44:10 AM*
 
 ---
 
@@ -19,7 +19,12 @@
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 <!-- nickname: arrival -->
-<!-- summary: New house, tall grass. He finds a broken stake and black rot in the reeds. Makayla and Asher want his oscillator. -->
+
+##s00
+INT. TRAIN - DALLAS
+Dallas takes the train to branford
+
+##s01 - Arrival 
 
 EXT. DALLAS NEW HOUSE - DAY (s01.1)
 
@@ -1210,7 +1215,7 @@ Dallas doesn't wait. He bolts. He grabs Howie's leash in a dead run, nearly pull
 
 <!-- scene: 8B file: s08b.md nickname: the-research-beat -->
 
-# SCENE 9B: THE RESEARCH BEAT
+# SCENE 8B: THE RESEARCH BEAT
 
 s08b.1 — INT. DALLAS HOUSE - DESK - NIGHT
 
@@ -1269,7 +1274,7 @@ Makayla reaches out, her fingers inches away, then pulls back as she feels the h
 
 <!-- scene: 8C file: s08c.md nickname: the-threshold -->
 
-# SCENE 9C: THE THRESHOLD
+# SCENE 8C: THE THRESHOLD
 
 s08c.1 — EXT. DALLAS HOUSE - PORCH - NIGHT
 
@@ -2693,18 +2698,15 @@ Dallas runs outside and looks around. But to no avail.
 ---
 
 
-## ACT IV — Aftermath
-
----
-
-
 ### Scene 17B: Normal Day
 
-*ACT IV — Aftermath | ID: normal-day | File: s17b.md*
+*ACT II — The Creature | ID: normal-day | File: s17b.md*
 
 ---
 
 <!-- scene: 17B file: s17b.md nickname: normal-day -->
+
+# SCENE 17B: NORMAL DAY
 
 <!-- nickname: normal-day -->
 
@@ -2794,11 +2796,13 @@ Dominic grips the handle of the shopping cart tightly. He looks at Janice, who i
 
 ### Scene 17C: Mute Drive
 
-*ACT IV — Aftermath | ID: mute-drive | File: s17c.md*
+*ACT II — The Creature | ID: mute-drive | File: s17c.md*
 
 ---
 
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
+
+# SCENE 17C: MUTE DRIVE
 
 <!-- nickname: mute-drive -->
 
@@ -2857,11 +2861,6 @@ Then we need to get home. And we need to lock the doors.
 
 (action)
 Janice throws the car back into drive. The minivan speeds off as the first heavy drops of unnatural rain hit the windshield.
-
----
-
-
-## ACT II — The Creature
 
 ---
 

@@ -55,11 +55,11 @@
 - Setting: INT. DOMINIC'S LIVING ROOM - CONTINUOUS
 - Beat: Mr. Mike scratches numbers into the table.
 
-## Scene 8: Mr. Mike's Warning (s07b)
+## Scene 7B: Mr. Mike's Warning (s07b)
 - Setting: INT. DOMINIC'S BASEMENT - CONTINUOUS
 - Beat: Mr. Mike warns "She's here!"
 
-## Scene 9: The Trailcam - Trip 1 (s08)
+## Scene 8: The Trailcam - Trip 1 (s08)
 - Setting: EXT. MARSH TRAIL - EVENING
 - Beat: Dallas and Howie find the trailcam; Howie panics and they retreat.
 
@@ -69,39 +69,43 @@
 - Action: Howie pulls the leash taut, eyes wide.
 - Caption: Howie senses something in the deep grass that Dallas can't see.
 
-## Scene 9B: The Research Beat (s08b)
+## Scene 8B: The Research Beat (s08b)
 > [!IMPORTANT]
 > **STILL NEED TO WRITE**: Dallas connects the trailcam frequency to Sierra's notes.
 - Setting: INT. DALLAS'S DESK - NIGHT
 - Beat: Dallas finds the frequency match in Sierra's folder.
 
-## Scene 9C: The Threshold (s08c)
+## Scene 8C: The Threshold (s08c)
 > [!IMPORTANT]
 > **STILL NEED TO WRITE**: First sighting of the Red Eyes from the porch.
 - Setting: EXT. DALLAS'S PORCH - NIGHT
 - Beat: Dallas sweeps the yard with a flashlight; two red pinpricks reflect back.
 
-## Scene 9D: The Return - Trip 2 (s08d)
+## Scene 8D: The Return - Trip 2 (s08d)
 > [!IMPORTANT]
 > **STILL NEED TO WRITE**: Dallas goes back alone at night, guided by the Oscillator.
 - Setting: EXT. EDGE OF THE MARSH - NIGHT
 - Beat: Dallas pushes into the reeds alone; the golden glow begins.
 
-## Scene 10: The Injured One (s09)
+## Scene 9: The Injured One (s09)
 - Setting: EXT. DEEP INSIDE THE TALL MARSH - SUNSET HOUR
 - Beat: Dallas finds the injured cloud-like creature in the gnarled tree.
 
-## Scene 11: The Chase (s10)
+## Scene 10: The Chase (s10)
 - Setting: EXT. TALL GRASS - MOMENTS LATER
 - Beat: Something massive pursues Dallas as he carries the creature out.
 
-## Scene 12: Kitchen Triage (s11)
+## Scene 11: Kitchen Triage (s11)
 - Setting: INT. DALLAS KITCHEN - DUSK
 - Beat: Dallas builds a triage station for the creature.
 
-## Scene 13: The Burn Mark & Costco (s12)
+## Scene 12: The Burn Mark & Costco (s12)
 - Setting: EXT. DALLAS'S DRIVEWAY - MORNING
 - Beat: Burn marks appear; Dominic brings "Costco" supplies (or papers).
+
+## Scene 13: The Confrontation (s13)
+- Setting: EXT. DALLAS'S HOUSE - NEXT MORNING
+- Beat: Makayla finds the burn mark and the crystal; Dominic drops off Howie.
 
 ## Scene 14: The Connection (s14)
 - Setting: EXT. DALLAS BACKYARD / INT. DALLAS'S KITCHEN - DAY
