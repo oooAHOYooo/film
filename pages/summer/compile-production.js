@@ -335,6 +335,28 @@ function getProductionStyles() {
                 background: var(--prod-row-hover);
                 color: var(--prod-accent);
             }
+            .sidebar-dropdown {
+                width: 100%;
+                background: #1f242c;
+                color: #c9d1d9;
+                border: 1px solid var(--prod-border);
+                border-radius: 6px;
+                padding: 10px 12px;
+                font-size: 0.9rem;
+                margin-bottom: 20px;
+                outline: none;
+                cursor: pointer;
+                transition: border-color 0.2s, background-color 0.2s;
+                box-sizing: border-box;
+            }
+            .sidebar-dropdown:hover {
+                border-color: var(--prod-accent);
+                background: #232a34;
+            }
+            .sidebar-dropdown option {
+                background: #161b22;
+                color: #c9d1d9;
+            }
             .production-table {
                 width: 100%;
                 border-collapse: collapse;
@@ -695,23 +717,37 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
   rows.forEach(r => r.characters.forEach(c => allCharacters.add(c)));
   const sortedChars = Array.from(allCharacters).sort();
 
-  const sidebarActorsHtml = sortedChars.map(c => `
-    <a href="production/cast/${c.toLowerCase()}.html" class="sidebar-link">${c}</a>
-  `).join('');
+  const sidebarActorsHtml = `
+    <select class="sidebar-dropdown" onchange="if(this.value === 'all') { filterByActor(''); } else if(this.value) { window.location.href=this.value; }">
+      <option value="">Select an Actor...</option>
+      <option value="all">Show All</option>
+      ${sortedChars.map(c => `
+        <option value="production/cast/${c.toLowerCase()}.html">${c}</option>
+      `).join('')}
+    </select>
+  `;
 
-  const sidebarLocationsHtml = locationRows.map(l => `
-    <a href="#" class="sidebar-link" onclick="filterByLocation('${escapeHtml(l.location)}')">${escapeHtml(l.location)}</a>
-  `).join('');
+  const sidebarLocationsHtml = `
+    <select class="sidebar-dropdown" onchange="filterByLocation(this.value)">
+      <option value="">Select a Location...</option>
+      <option value="">Show All</option>
+      ${locationRows.map(l => `
+        <option value="${escapeHtml(l.location)}">${escapeHtml(l.location)}</option>
+      `).join('')}
+    </select>
+  `;
 
-  const sidebarDaysHtml = Object.keys(calendar).sort((a,b) => Number(a)-Number(b)).map(d => {
-    const dateStr = calendar[d];
-    const dateObj = new Date(dateStr + 'T12:00:00');
-    const displayDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-    return `<a href="production/days/${d}.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day ${d}</span>
-      <span style="opacity:0.5; font-size:0.75rem;">${displayDate}</span>
-    </a>`;
-  }).join('');
+  const sidebarDaysHtml = `
+    <select class="sidebar-dropdown" onchange="if(this.value) window.location.href=this.value">
+      <option value="">Select a Day...</option>
+      ${Object.keys(calendar).sort((a,b) => Number(a)-Number(b)).map(d => {
+        const dateStr = calendar[d];
+        const dateObj = new Date(dateStr + 'T12:00:00');
+        const displayDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        return `<option value="production/days/${d}.html">Day ${d} (${displayDate})</option>`;
+      }).join('')}
+    </select>
+  `;
 
   const breakdownRowsHtml = generateBreakdownRows(rows, calendar, holidays);
   const locationRowsHtml = generateLocationTable(locationRows, totalDays);
@@ -762,11 +798,9 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 ${sidebarDaysHtml}
 
                 <div class="sidebar-nav-title">Cast</div>
-                <a href="#" class="sidebar-link" onclick="filterByActor('')">Show All</a>
                 ${sidebarActorsHtml}
 
                 <div class="sidebar-nav-title">Locations</div>
-                <a href="#" class="sidebar-link" onclick="filterByLocation('')">Show All</a>
                 ${sidebarLocationsHtml}
 
                 <div style="margin-top:auto; padding-top:20px; font-size:0.75rem; opacity:0.5;">

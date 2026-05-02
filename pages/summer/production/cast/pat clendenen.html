@@ -99,6 +99,28 @@
                 background: var(--prod-row-hover);
                 color: var(--prod-accent);
             }
+            .sidebar-dropdown {
+                width: 100%;
+                background: #1f242c;
+                color: #c9d1d9;
+                border: 1px solid var(--prod-border);
+                border-radius: 6px;
+                padding: 10px 12px;
+                font-size: 0.9rem;
+                margin-bottom: 20px;
+                outline: none;
+                cursor: pointer;
+                transition: border-color 0.2s, background-color 0.2s;
+                box-sizing: border-box;
+            }
+            .sidebar-dropdown:hover {
+                border-color: var(--prod-accent);
+                background: #232a34;
+            }
+            .sidebar-dropdown option {
+                background: #161b22;
+                color: #c9d1d9;
+            }
             .production-table {
                 width: 100%;
                 border-collapse: collapse;
@@ -352,7 +374,7 @@
             </table>
 
             <footer style="margin-top:60px; padding-top:20px; border-top:1px solid black; font-size:0.75rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; text-align:center;">
-                Official Project Breakdown • Generated 4/29/2026
+                Official Project Breakdown • Generated 5/2/2026
             </footer>
         </div>
     </body>

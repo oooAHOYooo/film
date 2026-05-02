@@ -100,6 +100,28 @@
                 background: var(--prod-row-hover);
                 color: var(--prod-accent);
             }
+            .sidebar-dropdown {
+                width: 100%;
+                background: #1f242c;
+                color: #c9d1d9;
+                border: 1px solid var(--prod-border);
+                border-radius: 6px;
+                padding: 10px 12px;
+                font-size: 0.9rem;
+                margin-bottom: 20px;
+                outline: none;
+                cursor: pointer;
+                transition: border-color 0.2s, background-color 0.2s;
+                box-sizing: border-box;
+            }
+            .sidebar-dropdown:hover {
+                border-color: var(--prod-accent);
+                background: #232a34;
+            }
+            .sidebar-dropdown option {
+                background: #161b22;
+                color: #c9d1d9;
+            }
             .production-table {
                 width: 100%;
                 border-collapse: collapse;
@@ -288,8 +310,8 @@
 
                 <div class="stats-card">
                     <div class="stats-title">Current Status</div>
-                    <div class="stats-value" style="font-size:1.1rem;">Wednesday, Apr 29</div>
-                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">11:44 AM</div>
+                    <div class="stats-value" style="font-size:1.1rem;">Saturday, May 2</div>
+                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">11:53 AM</div>
                 </div>
 
                 <div class="stats-card">
@@ -307,107 +329,71 @@
                 </div>
 
                 <div class="sidebar-nav-title">Timeline</div>
-                <a href="production/days/1.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 1</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 7</span>
-    </a><a href="production/days/2.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 2</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 9</span>
-    </a><a href="production/days/3.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 3</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 12</span>
-    </a><a href="production/days/4.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 4</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 13</span>
-    </a><a href="production/days/5.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 5</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 14</span>
-    </a><a href="production/days/6.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 6</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 16</span>
-    </a><a href="production/days/7.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 7</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 18</span>
-    </a><a href="production/days/8.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 8</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 19</span>
-    </a><a href="production/days/9.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 9</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 20</span>
-    </a><a href="production/days/10.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 10</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 26</span>
-    </a><a href="production/days/11.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 11</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 27</span>
-    </a><a href="production/days/12.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 12</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 28</span>
-    </a><a href="production/days/13.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 13</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jun 30</span>
-    </a><a href="production/days/14.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 14</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jul 1</span>
-    </a><a href="production/days/15.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 15</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jul 2</span>
-    </a><a href="production/days/16.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 16</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jul 3</span>
-    </a><a href="production/days/17.html" class="sidebar-link" style="display:flex; justify-content:space-between;">
-      <span>Day 17</span>
-      <span style="opacity:0.5; font-size:0.75rem;">Jul 5</span>
-    </a>
+                
+    <select class="sidebar-dropdown" onchange="if(this.value) window.location.href=this.value">
+      <option value="">Select a Day...</option>
+      <option value="production/days/1.html">Day 1 (Jun 7)</option><option value="production/days/2.html">Day 2 (Jun 9)</option><option value="production/days/3.html">Day 3 (Jun 12)</option><option value="production/days/4.html">Day 4 (Jun 13)</option><option value="production/days/5.html">Day 5 (Jun 14)</option><option value="production/days/6.html">Day 6 (Jun 16)</option><option value="production/days/7.html">Day 7 (Jun 18)</option><option value="production/days/8.html">Day 8 (Jun 19)</option><option value="production/days/9.html">Day 9 (Jun 20)</option><option value="production/days/10.html">Day 10 (Jun 26)</option><option value="production/days/11.html">Day 11 (Jun 27)</option><option value="production/days/12.html">Day 12 (Jun 28)</option><option value="production/days/13.html">Day 13 (Jun 30)</option><option value="production/days/14.html">Day 14 (Jul 1)</option><option value="production/days/15.html">Day 15 (Jul 2)</option><option value="production/days/16.html">Day 16 (Jul 3)</option><option value="production/days/17.html">Day 17 (Jul 5)</option>
+    </select>
+  
 
                 <div class="sidebar-nav-title">Cast</div>
-                <a href="#" class="sidebar-link" onclick="filterByActor('')">Show All</a>
                 
-    <a href="production/cast/asher.html" class="sidebar-link">ASHER</a>
-  
-    <a href="production/cast/cashier.html" class="sidebar-link">CASHIER</a>
-  
-    <a href="production/cast/dallas.html" class="sidebar-link">DALLAS</a>
-  
-    <a href="production/cast/dominic.html" class="sidebar-link">DOMINIC</a>
-  
-    <a href="production/cast/janice.html" class="sidebar-link">JANICE</a>
-  
-    <a href="production/cast/josh.html" class="sidebar-link">JOSH</a>
-  
-    <a href="production/cast/makayla.html" class="sidebar-link">MAKAYLA</a>
-  
-    <a href="production/cast/mary.html" class="sidebar-link">MARY</a>
-  
-    <a href="production/cast/mr mike.html" class="sidebar-link">MR MIKE</a>
-  
-    <a href="production/cast/pat.html" class="sidebar-link">PAT</a>
-  
-    <a href="production/cast/pat clendenen.html" class="sidebar-link">PAT CLENDENEN</a>
-  
-    <a href="production/cast/paul.html" class="sidebar-link">PAUL</a>
-  
-    <a href="production/cast/sarah.html" class="sidebar-link">SARAH</a>
-  
-    <a href="production/cast/sasha.html" class="sidebar-link">SASHA</a>
-  
-    <a href="production/cast/tyler.html" class="sidebar-link">TYLER</a>
-  
-    <a href="production/cast/woman.html" class="sidebar-link">WOMAN</a>
+    <select class="sidebar-dropdown" onchange="if(this.value === 'all') { filterByActor(''); } else if(this.value) { window.location.href=this.value; }">
+      <option value="">Select an Actor...</option>
+      <option value="all">Show All</option>
+      
+        <option value="production/cast/asher.html">ASHER</option>
+      
+        <option value="production/cast/cashier.html">CASHIER</option>
+      
+        <option value="production/cast/dallas.html">DALLAS</option>
+      
+        <option value="production/cast/dominic.html">DOMINIC</option>
+      
+        <option value="production/cast/janice.html">JANICE</option>
+      
+        <option value="production/cast/josh.html">JOSH</option>
+      
+        <option value="production/cast/makayla.html">MAKAYLA</option>
+      
+        <option value="production/cast/mary.html">MARY</option>
+      
+        <option value="production/cast/mr mike.html">MR MIKE</option>
+      
+        <option value="production/cast/pat.html">PAT</option>
+      
+        <option value="production/cast/pat clendenen.html">PAT CLENDENEN</option>
+      
+        <option value="production/cast/paul.html">PAUL</option>
+      
+        <option value="production/cast/sarah.html">SARAH</option>
+      
+        <option value="production/cast/sasha.html">SASHA</option>
+      
+        <option value="production/cast/tyler.html">TYLER</option>
+      
+        <option value="production/cast/woman.html">WOMAN</option>
+      
+    </select>
   
 
                 <div class="sidebar-nav-title">Locations</div>
-                <a href="#" class="sidebar-link" onclick="filterByLocation('')">Show All</a>
                 
-    <a href="#" class="sidebar-link" onclick="filterByLocation('TRAIN - Interior')">TRAIN - Interior</a>
-  
-    <a href="#" class="sidebar-link" onclick="filterByLocation('—')">—</a>
-  
-    <a href="#" class="sidebar-link" onclick="filterByLocation('DALLAS BEDROOM - Interior')">DALLAS BEDROOM - Interior</a>
+    <select class="sidebar-dropdown" onchange="filterByLocation(this.value)">
+      <option value="">Select a Location...</option>
+      <option value="">Show All</option>
+      
+        <option value="TRAIN - Interior">TRAIN - Interior</option>
+      
+        <option value="—">—</option>
+      
+        <option value="DALLAS BEDROOM - Interior">DALLAS BEDROOM - Interior</option>
+      
+    </select>
   
 
                 <div style="margin-top:auto; padding-top:20px; font-size:0.75rem; opacity:0.5;">
-                    Last Compiled:<br>4/29/2026, 11:44:10 AM
+                    Last Compiled:<br>5/2/2026, 11:53:22 AM
                 </div>
             </aside>
 

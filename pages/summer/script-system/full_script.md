@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 4/29/2026, 11:44:10 AM*
+*Compiled on 5/2/2026, 11:53:22 AM*
 
 ---
 
@@ -1351,7 +1351,15 @@ Small round It skin is fluffy pulsing with a soft glow. Round. Covered in dense,
  
 Dallas reaches out. His hand trembles. He touches the creature's back. The creature flinches but doesn't move away. 
 
-Dallas hears his equipment beep louder and louder - the closer his hand gets to the creature. 
+The creature inch by inch begins to uncoil a tentacle from inside its body and wraps around Dallas' finger, and then hand.
+
+As the creature connects Dallas closes his eyes and appears to be having a vision. 
+
+He opens his eyes and gazes longingly at the creature. It has the body a bit like a turtle - but the face of a dove - and the tentacle of an octopus. 
+
+Dallas hears his equipment beep louder and louder.
+
+The creature reaches out its tiny octupus arm and gently wraps itself around Dalla's hand. Dallas picks it up and nestles it into his chest. 
 
 Suddenly, the wind returns. A violent gust. Shadows in the distance start to fill the sky and hover over Dallas and the creature. Dallas in a daze, slowly grabs the creature and gently places it in his jacket and begins to walk without looking back.
 
