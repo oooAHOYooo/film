@@ -25,7 +25,7 @@
   "s09b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 2,
+    "assignedDay": 1,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -84,7 +84,10 @@
   "s26": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 15,
+    "assignedDay": [
+      4,
+      14
+    ],
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -195,7 +198,7 @@
   "s07": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -255,7 +258,10 @@
   "s17": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": [
+      2,
+      9
+    ],
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -270,7 +276,10 @@
   "s17b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": [
+      9,
+      12
+    ],
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -285,7 +294,10 @@
   "s17c": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": [
+      9,
+      12
+    ],
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -414,7 +426,7 @@
   "s21": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 13,
+    "assignedDay": 14,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -427,7 +439,7 @@
   "s21b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 13,
+    "assignedDay": 14,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -440,7 +452,10 @@
   "s22": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 17,
+    "assignedDay": [
+      14,
+      16
+    ],
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -456,7 +471,7 @@
   "s23": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 16,
+    "assignedDay": 15,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -469,7 +484,7 @@
   "s24": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 16,
+    "assignedDay": 15,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -482,7 +497,7 @@
   "s25": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 16,
+    "assignedDay": 15,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -495,7 +510,7 @@
   "s26b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 17,
+    "assignedDay": 16,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -511,7 +526,7 @@
   "s27": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 17,
+    "assignedDay": 16,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -527,7 +542,7 @@
   "s28": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 17,
+    "assignedDay": 16,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -556,10 +571,12 @@
     "10": "2026-06-26",
     "11": "2026-06-27",
     "12": "2026-06-28",
-    "13": "2026-06-30",
-    "14": "2026-07-01",
-    "15": "2026-07-02",
-    "16": "2026-07-03",
-    "17": "2026-07-05"
+    "13": "2026-07-01",
+    "14": "2026-07-02",
+    "15": "2026-07-03",
+    "16": "2026-07-05",
+    "17": "2026-07-10",
+    "18": "2026-07-11",
+    "19": "2026-07-12"
   }
 }

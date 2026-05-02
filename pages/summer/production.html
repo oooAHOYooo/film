@@ -289,6 +289,109 @@
                 margin-left: 20px;
             }
 
+            .mobile-header {
+                display: none;
+                background: #161b22;
+                border-bottom: 1px solid var(--prod-border);
+                padding: 12px 20px;
+                justify-content: space-between;
+                align-items: center;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+            .mobile-title {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--prod-accent);
+            }
+            .hamburger-btn {
+                background: none;
+                border: none;
+                color: #c9d1d9;
+                font-size: 1.5rem;
+                cursor: pointer;
+                outline: none;
+                display: flex;
+                align-items: center;
+                transition: color 0.2s;
+                padding: 4px;
+            }
+            .hamburger-btn:hover {
+                color: var(--prod-accent);
+            }
+            .sidebar-backdrop {
+                display: none;
+                position: fixed;
+                top: 56px;
+                left: 0;
+                width: 100vw;
+                height: calc(100vh - 56px);
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 998;
+                backdrop-filter: blur(2px);
+            }
+            .sidebar-backdrop.show {
+                display: block;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    height: auto;
+                    overflow: auto;
+                }
+                .dashboard-container {
+                    flex-direction: column;
+                    overflow: visible;
+                }
+                .mobile-header {
+                    display: flex;
+                }
+                .sidebar {
+                    position: fixed;
+                    top: 56px;
+                    left: -100%;
+                    width: 280px;
+                    height: calc(100vh - 56px);
+                    z-index: 999;
+                    background: #161b22;
+                    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    border-right: 1px solid var(--prod-border);
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+                    box-sizing: border-box;
+                    padding-bottom: 80px;
+                }
+                .sidebar.open {
+                    left: 0;
+                }
+                .main-content {
+                    padding: 20px;
+                    overflow-y: visible;
+                }
+                .production-table {
+                    display: block;
+                    width: 100%;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
+                }
+                .production-table th, .production-table td {
+                    padding: 8px;
+                    font-size: 0.8rem;
+                }
+                .day-filter-bar {
+                    margin-bottom: 16px;
+                    padding: 8px;
+                }
+                .filter-btn {
+                    padding: 4px 10px;
+                }
+                .day-divider {
+                    margin: 20px 0 10px 0;
+                    padding: 8px 12px;
+                    font-size: 0.9rem;
+                }
+            }
+
             @media print {
                 .sidebar, .nav-bar, .back-to-top { display: none; }
                 .dashboard-container { display: block; }
@@ -299,6 +402,17 @@
         </style>
     </head>
     <body>
+        <header class="mobile-header no-print">
+            <span class="mobile-title">SUMMER HUB</span>
+            <button class="hamburger-btn" onclick="toggleMobileSidebar()" aria-label="Toggle Navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </header>
+        <div class="sidebar-backdrop" onclick="toggleMobileSidebar()"></div>
         <div class="dashboard-container">
             <aside class="sidebar no-print">
                 <div style="font-size: 1.2rem; font-weight: 700; color: var(--prod-accent); margin-bottom: 24px;">SUMMER HUB</div>
@@ -311,7 +425,7 @@
                 <div class="stats-card">
                     <div class="stats-title">Current Status</div>
                     <div class="stats-value" style="font-size:1.1rem;">Saturday, May 2</div>
-                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">11:53 AM</div>
+                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">11:56 AM</div>
                 </div>
 
                 <div class="stats-card">
@@ -332,7 +446,7 @@
                 
     <select class="sidebar-dropdown" onchange="if(this.value) window.location.href=this.value">
       <option value="">Select a Day...</option>
-      <option value="production/days/1.html">Day 1 (Jun 7)</option><option value="production/days/2.html">Day 2 (Jun 9)</option><option value="production/days/3.html">Day 3 (Jun 12)</option><option value="production/days/4.html">Day 4 (Jun 13)</option><option value="production/days/5.html">Day 5 (Jun 14)</option><option value="production/days/6.html">Day 6 (Jun 16)</option><option value="production/days/7.html">Day 7 (Jun 18)</option><option value="production/days/8.html">Day 8 (Jun 19)</option><option value="production/days/9.html">Day 9 (Jun 20)</option><option value="production/days/10.html">Day 10 (Jun 26)</option><option value="production/days/11.html">Day 11 (Jun 27)</option><option value="production/days/12.html">Day 12 (Jun 28)</option><option value="production/days/13.html">Day 13 (Jun 30)</option><option value="production/days/14.html">Day 14 (Jul 1)</option><option value="production/days/15.html">Day 15 (Jul 2)</option><option value="production/days/16.html">Day 16 (Jul 3)</option><option value="production/days/17.html">Day 17 (Jul 5)</option>
+      <option value="production/days/1.html">Day 1 (Jun 7)</option><option value="production/days/2.html">Day 2 (Jun 9)</option><option value="production/days/3.html">Day 3 (Jun 12)</option><option value="production/days/4.html">Day 4 (Jun 13)</option><option value="production/days/5.html">Day 5 (Jun 14)</option><option value="production/days/6.html">Day 6 (Jun 16)</option><option value="production/days/7.html">Day 7 (Jun 18)</option><option value="production/days/8.html">Day 8 (Jun 19)</option><option value="production/days/9.html">Day 9 (Jun 20)</option><option value="production/days/10.html">Day 10 (Jun 26)</option><option value="production/days/11.html">Day 11 (Jun 27)</option><option value="production/days/12.html">Day 12 (Jun 28)</option><option value="production/days/13.html">Day 13 (Jul 1)</option><option value="production/days/14.html">Day 14 (Jul 2)</option><option value="production/days/15.html">Day 15 (Jul 3)</option><option value="production/days/16.html">Day 16 (Jul 5)</option><option value="production/days/17.html">Day 17 (Jul 10)</option><option value="production/days/18.html">Day 18 (Jul 11)</option><option value="production/days/19.html">Day 19 (Jul 12)</option>
     </select>
   
 
@@ -393,7 +507,7 @@
   
 
                 <div style="margin-top:auto; padding-top:20px; font-size:0.75rem; opacity:0.5;">
-                    Last Compiled:<br>5/2/2026, 11:53:22 AM
+                    Last Compiled:<br>5/2/2026, 11:56:46 AM
                 </div>
             </aside>
 
@@ -1086,6 +1200,13 @@ Dallas takes the train to branford</span></td>
                 });
             }
             
+            function toggleMobileSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                const backdrop = document.querySelector('.sidebar-backdrop');
+                if (sidebar) sidebar.classList.toggle('open');
+                if (backdrop) backdrop.classList.toggle('show');
+            }
+
             // Default view
             window.onload = () => toggleView('overview');
         </script>

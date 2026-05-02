@@ -524,6 +524,109 @@ function getProductionStyles() {
                 margin-left: 20px;
             }
 
+            .mobile-header {
+                display: none;
+                background: #161b22;
+                border-bottom: 1px solid var(--prod-border);
+                padding: 12px 20px;
+                justify-content: space-between;
+                align-items: center;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+            .mobile-title {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--prod-accent);
+            }
+            .hamburger-btn {
+                background: none;
+                border: none;
+                color: #c9d1d9;
+                font-size: 1.5rem;
+                cursor: pointer;
+                outline: none;
+                display: flex;
+                align-items: center;
+                transition: color 0.2s;
+                padding: 4px;
+            }
+            .hamburger-btn:hover {
+                color: var(--prod-accent);
+            }
+            .sidebar-backdrop {
+                display: none;
+                position: fixed;
+                top: 56px;
+                left: 0;
+                width: 100vw;
+                height: calc(100vh - 56px);
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 998;
+                backdrop-filter: blur(2px);
+            }
+            .sidebar-backdrop.show {
+                display: block;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    height: auto;
+                    overflow: auto;
+                }
+                .dashboard-container {
+                    flex-direction: column;
+                    overflow: visible;
+                }
+                .mobile-header {
+                    display: flex;
+                }
+                .sidebar {
+                    position: fixed;
+                    top: 56px;
+                    left: -100%;
+                    width: 280px;
+                    height: calc(100vh - 56px);
+                    z-index: 999;
+                    background: #161b22;
+                    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    border-right: 1px solid var(--prod-border);
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+                    box-sizing: border-box;
+                    padding-bottom: 80px;
+                }
+                .sidebar.open {
+                    left: 0;
+                }
+                .main-content {
+                    padding: 20px;
+                    overflow-y: visible;
+                }
+                .production-table {
+                    display: block;
+                    width: 100%;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
+                }
+                .production-table th, .production-table td {
+                    padding: 8px;
+                    font-size: 0.8rem;
+                }
+                .day-filter-bar {
+                    margin-bottom: 16px;
+                    padding: 8px;
+                }
+                .filter-btn {
+                    padding: 4px 10px;
+                }
+                .day-divider {
+                    margin: 20px 0 10px 0;
+                    padding: 8px 12px;
+                    font-size: 0.9rem;
+                }
+            }
+
             @media print {
                 .sidebar, .nav-bar, .back-to-top { display: none; }
                 .dashboard-container { display: block; }
@@ -765,6 +868,17 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
         </style>
     </head>
     <body>
+        <header class="mobile-header no-print">
+            <span class="mobile-title">SUMMER HUB</span>
+            <button class="hamburger-btn" onclick="toggleMobileSidebar()" aria-label="Toggle Navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </header>
+        <div class="sidebar-backdrop" onclick="toggleMobileSidebar()"></div>
         <div class="dashboard-container">
             <aside class="sidebar no-print">
                 <div style="font-size: 1.2rem; font-weight: 700; color: var(--prod-accent); margin-bottom: 24px;">SUMMER HUB</div>
@@ -911,6 +1025,13 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 });
             }
             
+            function toggleMobileSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+                const backdrop = document.querySelector('.sidebar-backdrop');
+                if (sidebar) sidebar.classList.toggle('open');
+                if (backdrop) backdrop.classList.toggle('show');
+            }
+
             // Default view
             window.onload = () => toggleView('overview');
         </script>
