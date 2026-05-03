@@ -146,7 +146,8 @@ function buildProductionRows(scenes, productionData, plotCards) {
       act,
       actTitle,
       characters,
-      scheduledDays
+      scheduledDays,
+      content
     });
   });
   return rows;
@@ -1171,13 +1172,42 @@ function generateDayHtml(dayNum, rows, productionData) {
   // Find scenes belonging to this day
   const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(dayNum));
 
+  function extractSceneSnippet(content, n) {
+    if (!content || typeof content !== 'string') return '';
+    let text = content;
+    const regex = new RegExp(`##s0*${n}\\b`, 'i');
+    const match = content.match(regex);
+    if (match) {
+      const index = match.index + match[0].length;
+      const nextMatch = content.slice(index).match(/##s\d+\b/i);
+      text = nextMatch ? content.slice(index, index + nextMatch.index) : content.slice(index);
+    }
+
+    let clean = text
+      .replace(/<!--[\s\S]*?-->/g, '')
+      .replace(/^##.*$/gm, '')
+      .replace(/^(INT\.|EXT\.)\s.*$/gm, '')
+      .trim();
+    const lines = clean.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+    for (const l of lines) {
+      if (l.length > 15 && l !== l.toUpperCase()) {
+        return l.length > 120 ? l.slice(0, 117) + '...' : l;
+      }
+    }
+    return '';
+  }
+
   const sceneRows = dayRows.map(r => {
     const chars = (r.characters || []).join(', ');
+    const snippet = extractSceneSnippet(r.content, r.n);
     return `
       <tr>
         <td>${r.n}</td>
         <td>${escapeHtml(r.location || '—')} — ${escapeHtml(r.time || '—')}</td>
-        <td>${escapeHtml(r.title)}</td>
+        <td>
+          <div style="font-weight: 700; color: black;">${escapeHtml(r.title)}</div>
+          ${snippet ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(snippet)}</div>` : ''}
+        </td>
         <td>${chars || '—'}</td>
         <td>${r.durationMin || '—'} min</td>
       </tr>`;
