@@ -732,7 +732,7 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
     const dayNameStr = getDayName(dateStr);
     const charChips = Array.from(chars).sort().map(c => {
       const slug = c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      return `<a href="production/cast/${c.toLowerCase()}.html" class="actor-chip" data-character="${slug}" target="_blank">${c}</a>`;
+      return `<a onclick="event.stopPropagation()" href="production/cast/${c.toLowerCase()}.html" class="actor-chip" data-character="${slug}" target="_blank">${c}</a>`;
     }).join(' ') || '—';
     const locList = Array.from(locs).sort().join('<br>') || '—';
     const scenesList = sceneNums.length > 0 ? sceneNums.join(' + ') : '—';
@@ -741,7 +741,7 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
     const dallasTag = isJustDallas ? '<span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>' : '';
 
     html += `
-      <div class="stats-card" data-day-name="${dayNameStr}" style="margin-bottom: 0;">
+      <div class="stats-card" data-day-name="${dayNameStr}" style="margin-bottom: 0; cursor: pointer;" onclick="window.location.href='production/days/${dayNum}.html'">
         <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
           <span class="day-badge ${dayConfig.class}" style="width:20px; height:20px; font-size:0.6rem;">${dayConfig.icon}</span>
           Day ${dayNum} <span style="flex:1; color: ${dayConfig.color}; font-weight: 700; font-size: 0.85rem; text-align: right;">${formatD(dateStr)}</span>
@@ -790,7 +790,7 @@ function generateCompactListHtml(rows, calendar, totalDays) {
     const locs = Array.from(new Set(dayRows.map(r => r.location).filter(l => l && l !== '—'))).join(', ') || '—';
 
     html += `
-      <div class="compact-item" data-day-name="${dayNameStr}">
+      <div class="compact-item" data-day-name="${dayNameStr}" style="cursor: pointer;" onclick="window.location.href='production/days/${dayNum}.html'">
         <div class="compact-date" style="color: ${dayConfig.color}; font-weight: 700;">${dayNameShort}, ${formatDate(dateStr).split(',')[0]}</div>
         <div class="day-badge ${dayConfig.class}" style="width:18px; height:18px; font-size:0.5rem; margin-right:12px;">${dayConfig.icon}</div>
         <div class="compact-title">Day ${dayNum} — ${locs}</div>
