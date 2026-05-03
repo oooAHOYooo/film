@@ -111,7 +111,7 @@ function buildProductionRows(scenes, productionData, plotCards) {
     if (characters.length === 0 && /\b[Dd]allas\b/.test(content)) {
         characters.push('DALLAS');
     }
-    const data = productionData[id] || {};
+    const data = productionData[id] || (scene.file ? productionData[scene.file.replace('.md', '').toLowerCase()] : {}) || {};
     const location = data.location != null && data.location !== '' ? data.location : parsedLocation;
     const time = data.time != null && data.time !== '' ? data.time : parsedTime;
     const durationMin = data.durationMin;
@@ -1001,27 +1001,50 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
             }
 
             function toggleView(view) {
-                document.getElementById('schedule-overview').style.display = view === 'overview' ? 'block' : 'none';
-                document.getElementById('compact-list-view').style.display = view === 'list' ? 'block' : 'none';
-                document.getElementById('breakdown').style.display = view === 'breakdown' ? 'block' : 'none';
-                // Trigger refilter when view changes to ensure current filter is applied
+                const overviewSection = document.getElementById('schedule-overview');
+                const listViewSection = document.getElementById('compact-list-view');
+                const breakdownSection = document.getElementById('breakdown');
+                
+                if (overviewSection) overviewSection.style.display = view === 'overview' ? 'block' : 'none';
+                if (listViewSection) listViewSection.style.display = view === 'list' ? 'block' : 'none';
+                if (breakdownSection) breakdownSection.style.display = view === 'breakdown' ? 'block' : 'none';
+
+                // Re-apply filter on view change
                 const activeFilter = document.querySelector('.filter-btn.active');
-                if (activeFilter) activeFilter.click();
+                if (activeFilter) {
+                    const onclickAttr = activeFilter.getAttribute('onclick');
+                    const match = onclickAttr ? onclickAttr.match(/'([^']+)'/) : null;
+                    filterByDay(match ? match[1] : null, activeFilter);
+                }
             }
 
             function filterByDay(day, btn) {
-                // Update buttons
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
+                if (btn) btn.classList.add('active');
 
-                // Filter cards
-                document.querySelectorAll('.stats-card, .compact-item, .day-divider-row, #production-body tr').forEach(el => {
+                const overviewCards = document.querySelectorAll('#schedule-overview .stats-card');
+                const compactItems = document.querySelectorAll('#compact-list-view .compact-item');
+                const dividerRows = document.querySelectorAll('#breakdown .day-divider-row');
+                const breakdownRows = document.querySelectorAll('#production-body tr');
+
+                overviewCards.forEach(el => {
                     const elDay = el.getAttribute('data-day-name');
-                    if (!day || elDay === day) {
-                        el.style.display = '';
-                    } else {
-                        el.style.display = 'none';
-                    }
+                    el.style.display = (!day || elDay === day) ? 'block' : 'none';
+                });
+
+                compactItems.forEach(el => {
+                    const elDay = el.getAttribute('data-day-name');
+                    el.style.display = (!day || elDay === day) ? 'block' : 'none';
+                });
+
+                dividerRows.forEach(el => {
+                    const elDay = el.getAttribute('data-day-name');
+                    el.style.display = (!day || elDay === day) ? 'table-row' : 'none';
+                });
+
+                breakdownRows.forEach(el => {
+                    const elDay = el.getAttribute('data-day-name');
+                    el.style.display = (!day || elDay === day) ? 'table-row' : 'none';
                 });
             }
             
@@ -1032,11 +1055,19 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 if (backdrop) backdrop.classList.toggle('show');
             }
 
-            // Default view
-            window.onload = () => toggleView('overview');
+            function init() {
+                toggleView('overview');
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+            window.onload = init;
         </script>
     </body>
 </html>
+
 `;
 }
 
