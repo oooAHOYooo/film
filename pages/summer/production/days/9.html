@@ -398,15 +398,43 @@
                 body { overflow: visible; height: auto; }
             }
 
-            .main-content { padding: 40px; margin: 0 auto; max-width: 1000px; }
-            .production-table { background: transparent; border: none; }
-            .production-table th { background: transparent; color: black; border-bottom: 2px solid black; }
-            .production-table td { border-bottom: 1px solid #eee; }
+            .main-content { padding: 40px; margin: 0 auto; max-width: 1000px; box-sizing: border-box; }
+            .callsheet-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                border-bottom: 3px solid black;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+            .production-table { background: transparent; border: none; width: 100%; border-collapse: collapse; }
+            .production-table th { background: transparent; color: black !important; border-bottom: 2px solid black; font-weight: 700; text-align: left; padding: 8px; }
+            .production-table td { border-bottom: 1px solid #eee; padding: 12px 8px; color: black; vertical-align: top; }
+            
+            @media (max-width: 768px) {
+                .main-content { padding: 15px; }
+                .callsheet-header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    border-bottom-width: 2px;
+                }
+                .callsheet-header div:last-child {
+                    text-align: left !important;
+                }
+                .production-table {
+                    display: block;
+                    width: 100%;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
+                }
+            }
         </style>
     </head>
     <body style="background:white; color:black;">
         <div class="main-content">
-            <header style="display:flex; justify-content:space-between; align-items:flex-end; border-bottom:3px solid black; padding-bottom:10px; margin-bottom:20px;">
+            <header class="callsheet-header">
                 <div>
                     <h1 style="margin:0;">DAILY CALL SHEET</h1>
                     <h2 style="margin:0; font-size:1.5rem;">Day 9 of 15</h2>
