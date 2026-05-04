@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/2/2026, 11:53:22 AM*
+*Compiled on 5/4/2026, 11:33:44 AM*
 
 ---
 
@@ -1042,7 +1042,7 @@ Come here.
 Dallas glances toward the kitchen. Dominic is out of earshot. He walks over.
 
 MR. MIKE
-Closer. Come closer. 
+Come closer I can't hear you. 
 
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
@@ -1343,7 +1343,7 @@ As Dallas' eyes adjust to this new brightness - the world around him slowly blur
 
 There in the distance Dallas sees a gnarled tree that stands alone among the reeds.  
 
-Dallas approaches the tree and as he does - he notices that inside of the gnarl, curled up, tucked away,  lives a small orb shaped creature - slightly bioluminest - and clearly injured. 
+Dallas approaches the tall grass and the gnarly tree and as he does - he notices that inside of the gnarl, curled up, tucked away,  lives a small orb shaped creature - slightly bioluminest - and clearly injured. 
 
 The creature is a cloudlike - cottonball, powder-puff animal. 
 
@@ -1619,7 +1619,7 @@ DALLAS
 Yeah?
 
 MAKAYLA
-Yes. 
+Yeah
 
 DALLAS
 Okay.
@@ -1639,7 +1639,7 @@ Dallas looks outside, towards the burn marks on the edge of
 the tall grass. His eyes widen. 
 
 DALLAS
-I am not sure. 
+I don't know. 
 
 A whimper is heard from the kitchen. 
 
@@ -1664,7 +1664,7 @@ Asher walks arounds and takes his headphones off and grabs the ruby red headphon
 Makayla pulls out her portable viewfinder and begins to inspect the creature further. 
 
 MAKAYLA
-How long has it been here for?
+How long has it been here?
 
 DALLAS
 Since last night. 
@@ -1682,7 +1682,9 @@ it to spark.
 MAKAYLA
 We can't tell anyone about this.
 
-(action)walks over and
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+(action)
 Makayla turns to Dallas who nods in agreement. 
 
 EXT. DALLAS HOUSE - PICNIC BENCH (s13.4)
@@ -1693,8 +1695,7 @@ MAKAYLA
 Mr. Dallas, where did you find it?
 
 DALLAS
-A couple of miles away. I am not sure exactly. It was during my walk with 
-Howie.
+A couple of miles away. I am not sure exactly. I was walking Howie. 
 
 MAKAYLA
 How did Howie react to it?
@@ -1784,7 +1785,7 @@ I've read her papers. Read her book.
 Dallas nods and looks at the ground.
 
 MAKAYLA
-Our moms gone too. But we're still here and now we are here living with her baby brother - in Branford - - nextdoor to a bioacoustics engineer.... who found the creature I have been looking for my entire adult life... Dallas, what are we going to do? 
+Our moms gone too. But we're still here and now we are here living with her babybrother - in Branford - - down the street from a, supposed bio-acoustics engineer.... who found the creature I have been looking for my entire adult life... Dallas, what are we going to do? 
 
 DALLAS
 I'm not sure. 
@@ -1801,10 +1802,10 @@ I think it is senstivie to UV light.
 Makayla nods. 
 
 DALLAS
-I'm not sure yet. I'll tell you when I find it.
+I'm not sure yet. 
 
 MAKAYLA
-Sounds good. Hopefully we all are still here...
+Sounds good. Hopefully we're all still here...
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1818,11 +1819,10 @@ A gentle breeze blows through the sky. Asher begins to pace around and bob his h
 
 Makayla looks back and him and continues to fiddle with the Oscillator.
 
-
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas and Makayla sit for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Makayla turns to look and then thinks for a moment. 
+Dallas and Makayla sit for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Makayla turns to looks down at the burn mark. 
 
 MAKAYLA
 We need to document this... Dallas. We can't tell anyone, not until we document this. The sound it made. We should try to record that.
@@ -1834,27 +1834,25 @@ MAKAYLA
 You've been what?
 
 DALLAS
-I've been recording it's sound and... it seems to be recording back. 
-
-MAKAYLA
-What do you mean?
-
-DALLAS
-I'm not sure. 
+I've been recording it's sound.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
 The breeze overwhelms them both in the distance they begin to hear the faint pulse of a dark deep hum. 
 
-INT. KITCHEN - CONTINUOUS (s14.2)
+INT. DALLAS' ATTIC - CONTINUOUS (s14.1B)
+
+The crew huddle over machinery in Dallas attic. Asher gets a bit weirded out and heads downstairs.
+
+INT. DALLAS' KITCHEN - CONTINUOUS (s14.2)
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
 The room grows quiet.  Asher, alone, busies himself trying to connect wires up to the makeshift computer on the counter. He stops as, looks down at the cables and then far off in the distance, then on the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
 
-Outside the window, the wind picks up. 
+Outside the window, the wind picks up.  From the distance - what looks like a faint red light appears for a second and pulses away. 
 
 Asher begins to tap and tap and tap, and his head begins to shake and shake and shake. He crashes to the ground.
 
@@ -1878,7 +1876,7 @@ He's fine... He's just doing Asher stuff. I think he's just processing.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla takes a deep breath as Asher relaxes. 
+Makayla takes a deep breath as Asher shakes violently and stops shaking violently. 
 
 MAKAYLA
 Sit up.
@@ -2128,21 +2126,18 @@ INT. DALLAS HOUSE – LATE AFTERNOON (s14c.1)
 
 Late-day light leaks through the kitchen blinds. The creature is hidden beneath a towel inside the makeshift enclosure. A SOFT, IRREGULAR HUM bleeds faintly into the room.
 
-Makayla stands rigid at the counter, tightening a cable connection that doesn’t need tightening.  
-Asher sits cross‑legged on the floor, threading beads. His fingers pause.
+Makayla stands rigid at the counter, tightening a cable connection.Asher sits cross‑legged on the floor, threading beads. His fingers pause.
 
 A KNOCK at the door.
 
 All three freeze.
 
-Another knock—cheerful, familiar.
+Another knock—cheerful.
 
 DOMINIC (O.S.)
 Dallas? You home? Janice said you might have our step ladder.
 
 Makayla and Dallas exchange a look. Asher begins tapping his fingers faster.
-
----
 
 INT. DALLAS HOUSE – FRONT ENTRY – CONTINUOUS (s14c.2)
 
