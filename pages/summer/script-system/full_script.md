@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/4/2026, 2:58:46 PM*
+*Compiled on 5/4/2026, 3:13:38 PM*
 
 ---
 
@@ -1197,15 +1197,13 @@ He finds the spot. A makeshift wooden trap, but it's been... compromised. A thic
 
 Dallas finds the trailcam. The lens is cracked, but the "Record" light is still blinking a faint, dying red. 
 
-Suddenly, a heavy **CONCUSSIVE THUD** hits the mud thirty feet away. It's not a footstep; it's the sound of something heavy landing from a great height.
+Suddenly, a heavy **CONCUSSIVE THUD** hits the mud thirty feet away like something landing from a big height. 
 
-The Hum stops instantly. The silence is absolute.
-
-Dallas freezes. He doesn't look toward the sound. Every instinct screams *prey*. He rips the trailcam from its mounting, his fingers fumbling with the nylon straps.
+The Hum stops. Dallas freezes. He rips the trailcam from its mounting, his fingers fumbling with the nylon straps.
 
 A low, guttural chittering sound rises from the grass behind him.
 
-Dallas doesn't wait. He bolts. He grabs Howie's leash in a dead run, nearly pulling the dog off his feet as they scramble back toward the safety of the boardwalk.
+Dallas bolts. He grabs Howie's leash in a dead run, nearly pulling the dog off his feet as they scramble back toward the safety of the boardwalk.
 
 ---
 
@@ -1282,14 +1280,6 @@ Makayla reaches out, her fingers inches away, then pulls back as she feels the h
 s08c.1 — EXT. DALLAS HOUSE - PORCH - NIGHT
 
 Dallas stands on the porch, holding the trailcam in his hand like a weapon.
-
-He looks at the yard. The two **RED PINPRICKS** of light are back, but they aren't in the marsh. They are at the edge of his driveway.
-
-As Dallas watches, the red eyes pulse. In his hand, the trailcam’s "Record" light pulses back in the exact same rhythm. 
-
-They aren't just watching him. They are "sniffing" the data he just stole. 
-
-A jagged line of black rot begins to crawl up the porch steps, hissing as it touches the treated wood. Dallas slams the door and locks it, but he can hear the rhythmic scratching of something "testing" the siding of the house.
 
 ---
 
