@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/4/2026, 11:33:44 AM*
+*Compiled on 5/4/2026, 2:58:46 PM*
 
 ---
 
@@ -333,12 +333,15 @@ INT. HARDWARE STORE (s03.5)
 <!-- scene: 3 file: s03.md nickname: the-hum -->
 
 (action)
-Dominic waves to the unfriendly man at the counter and brings Dallas to the battery section. 
+Dominic waves to the unfriendly man at the counter and brings Dallas to the battery section. Dallas also buys some audio cassettes. 
 
 <!-- scene: 3 file: s03.md nickname: the-hum -->
 
 (action)
 Dallas finds the correct batteries and grabs it off the shelf. The two exit the shop.
+
+DOMINIC
+Cassetes? What are we doing here. 
 
 EXT. BRANFORD GREEN (s03.6)
 
@@ -377,7 +380,7 @@ Sure.
 Dominic drives towards the church. 
 
 DOMINIC
-Nice - yeah - it's nice to be the new guy in town - good old branford.
+Nice - yeah - it's nice to be the new guy in town - good old Branford.
 
 ---
 
@@ -1303,17 +1306,11 @@ A jagged line of black rot begins to crawl up the porch steps, hissing as it tou
 
 s08d.1 — EXT. EDGE OF THE MARSH - NIGHT
 
-The world is different at night. The boardwalk is a pale spine cutting through a sea of black reeds. 
+Dallas walks along the edge of the Long Island Sound. He takes a deep breath and looks at the coast for a while - as he does so - he hears a hum.
 
-Dallas walks alone. He isn't carrying just his oscillator; he has a heavy-duty spotlight and his wife's old medical kit.
+The needle on the Oscillator spikes back and forth. Dallas takes out his bag and reveals his wife's recorder that he has been avoiding. He puts in a new tape. 
 
-He knows exactly where he's going. He saw the tree in the footage.
-
-The needle on the Oscillator is pinned at 115.3, but the sound coming through the headphones is different now, it’s a rhythmic, sobbing trill. 
-
-Dallas doesn't hesitate at the edge of the reeds. He knows the Red Eye is out there, somewhere in the sky, but he also knows the survivor won't last the night.
-
-He plunges into the tall grass, the beam of his spotlight cutting through the tall grass like a blade.
+Dallas records the hum.
 
 ---
 
