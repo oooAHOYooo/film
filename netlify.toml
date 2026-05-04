@@ -1,5 +1,5 @@
 [build]
-  command = "node scripts/generate-inspo-manifests.js"
+  command = "node compile-all.js && node scripts/generate-inspo-manifests.js"
   publish = "."
 
 [functions]
