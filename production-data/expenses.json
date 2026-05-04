@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "project": "Creatures in the Tall Grass",
+    "created": "2026-05-04",
+    "lastUpdated": "2026-05-04T15:03:03.128964",
+    "currency": "USD",
+    "totalByCategory": {},
+    "totalByProject": {
+      "Summer": 1792.71
+    },
+    "grandTotal": 1792.71
+  },
+  "expenses": [
+    {
+      "id": 1,
+      "date": "2025-10-17",
+      "description": "FEELWORLD FW703 7 Inch On Camera Monitor",
+      "category": "Camera/Gear",
+      "project": "Summer",
+      "scene": null,
+      "amount": 212.69,
+      "vendor": "",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "date": "2025-10-17",
+      "description": "12G BNC-Coaxial-Cable (Alvin's Cables)",
+      "category": "Camera/Gear",
+      "project": "Summer",
+      "scene": null,
+      "amount": 31.89,
+      "vendor": "",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "date": "2025-09-12",
+      "description": "SIRUI 75mm F1.8 1.33X S35 Anamorphic Lens",
+      "category": "Camera/Gear",
+      "project": "Summer",
+      "scene": null,
+      "amount": 308.42,
+      "vendor": "",
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "date": "2025-09-12",
+      "description": "Gear Bundle (Sandisk CFast 512GB, Sirui 35mm/50mm, Tiltaing Komodo Cage, Sabrent Reader, Samsung T7 2TB)",
+      "category": "Camera/Gear",
+      "project": "Summer",
+      "scene": null,
+      "amount": 1239.71,
+      "vendor": "",
+      "notes": ""
+    }
+  ],
+  "categories": [
+    "Camera/Gear",
+    "Crew",
+    "Location",
+    "Props/Set",
+    "Post-Production",
+    "Transportation",
+    "Catering",
+    "Insurance",
+    "Permits",
+    "Other"
+  ]
+}

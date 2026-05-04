@@ -20,7 +20,11 @@
       "Bash(cp *)",
       "Bash(pip install *)",
       "Bash(film log *)",
-      "Bash(film expense *)"
+      "Bash(film expense *)",
+      "Read(//Users/agworkywork/.config/barnacle/**)",
+      "Read(//Users/agworkywork/**)",
+      "Bash(sqlite3 *)",
+      "Bash(film sync *)"
     ]
   }
 }

@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "project": "Creatures in the Tall Grass",
+    "created": "2026-05-04",
+    "lastUpdated": "2026-05-04T15:03:03.130553",
+    "totalStorage": "2000 GB",
+    "totalUsed": "0.0 GB",
+    "totalAvailable": "2000.0 GB"
+  },
+  "drives": [
+    {
+      "id": 1,
+      "name": "Samsung T7 2TB",
+      "capacity": 2000.0,
+      "used": 0.0,
+      "available": 2000.0,
+      "type": "External SSD",
+      "description": "External SSD from Sept 12 Gear Bundle",
+      "shootDays": [],
+      "lastUpdated": "2026-05-04T15:03:03.130565"
+    }
+  ],
+  "driveTypes": [
+    "External SSD",
+    "Internal HDD",
+    "RAID Array",
+    "Cloud Storage",
+    "Portable HD"
+  ]
+}

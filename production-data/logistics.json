@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "project": "Creatures in the Tall Grass",
+    "created": "2026-05-04",
+    "lastUpdated": "2026-05-04T15:03:03.130464",
+    "activeTaskCount": 3,
+    "completedTaskCount": 0
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "date": "2026-05-03",
+      "description": "Scene workshop with Charlotte (Makayla)",
+      "priority": "medium",
+      "status": "pending",
+      "project": "Summer",
+      "category": "General",
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "date": "2026-05-04",
+      "description": "Creature design work at Jerry's house",
+      "priority": "high",
+      "status": "pending",
+      "project": "Summer",
+      "category": "General",
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "date": "2026-05-04",
+      "description": "Meet with Jesse Alexander on creature design",
+      "priority": "high",
+      "status": "pending",
+      "project": "Summer",
+      "category": "General",
+      "notes": ""
+    }
+  ],
+  "categories": [
+    "Meeting",
+    "Workshop",
+    "Design",
+    "Pre-Production",
+    "Principal Photography",
+    "Post-Production",
+    "VFX",
+    "Sound",
+    "Location Scout",
+    "Equipment Test",
+    "Admin"
+  ]
+}
