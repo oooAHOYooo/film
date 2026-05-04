@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/4/2026, 4:31:09 PM*
+*Compiled on 5/4/2026, 4:47:59 PM*
 
 ---
 
@@ -1148,7 +1148,7 @@ No, I'm okay.
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
 (action)
-Mr. Mike starts humming to himself. Something tuneless. He's gone again.
+Mr. Mike starts humming. 
 
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
@@ -1314,7 +1314,9 @@ Dallas walks downstairs.
 
 Dominic is downstairs with Howie.
 
-DOMINIC
+The phone rings. It is Dominc
+
+DOMINIC (voiceover)
 Dallas, I am so sorry - do you mind watching Howie for a bit? Asher is not doing so well and we have to bring him to the hospital tonight.
 
 DALLAS
@@ -1326,10 +1328,6 @@ Thank you - I'll be back later.
 Dallas takes Howie up to his bedroom. Howie goes to sleep and Dallas continues his work. 
 
 Howie begins to cry. Dallas goes to sleep.
-
-EXT. DALLAS HOUSE
-
-Dallas takes howie for a walk. T
 
 ---
 
