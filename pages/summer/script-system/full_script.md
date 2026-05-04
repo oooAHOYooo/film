@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/4/2026, 3:13:38 PM*
+*Compiled on 5/4/2026, 4:31:09 PM*
 
 ---
 
@@ -1300,7 +1300,36 @@ Dallas walks along the edge of the Long Island Sound. He takes a deep breath and
 
 The needle on the Oscillator spikes back and forth. Dallas takes out his bag and reveals his wife's recorder that he has been avoiding. He puts in a new tape. 
 
-Dallas records the hum.
+Dallas records the hum. 
+
+INT. DALLAS HOUSE - NIGHT
+
+Dallas plays back the recording. It's the sound of the marsh at night - birds, bugs, the waves - but underneath it all, there's the faint sound of the hum. 
+
+He goes into the computer and begins to put ear marks on all of the certain peaks. 
+
+A ring at the door. 
+
+Dallas walks downstairs.
+
+Dominic is downstairs with Howie.
+
+DOMINIC
+Dallas, I am so sorry - do you mind watching Howie for a bit? Asher is not doing so well and we have to bring him to the hospital tonight.
+
+DALLAS
+Sure, of course.
+
+DOMINIC
+Thank you - I'll be back later. 
+
+Dallas takes Howie up to his bedroom. Howie goes to sleep and Dallas continues his work. 
+
+Howie begins to cry. Dallas goes to sleep.
+
+EXT. DALLAS HOUSE
+
+Dallas takes howie for a walk. T
 
 ---
 
@@ -1316,9 +1345,19 @@ Dallas records the hum.
 # Scene 9: The Injured One
 <!-- summary: Dallas, as he ventures deeper and deeper into the marsh - finds a bioluminest creature -->
 
+EXT. DALLAS HOUSE - NEXT DAY
+
+Dallas wakes up and Dallas goes to Howie's room. He doesn't see him.
+
+Dallas takes howie outside and begins to go on a walk down the neighborhood and the Branford rocks. 
+
+EXT. EDGE OF THE MARSH
+
+Dallas ties up Howie by a nearby marsh and enters an interesting field of tall bamboo like grass.
+
 EXT. DEEP INSIDE THE TALL MARSH (s09.1)
 
-Dallas stands slowly, scanning the reeds around him. Nothing much seems out there - just the gentle sway of grass and the disappointed sound of his own breathing.
+Dallas stands slowly, scanning the reeds around him. Nothing much seems out there - just the gentle sway of grass.
 
 Dallas pushes through a dense curtain of reeds. Dust motes dance in a whirlwind of color refracting the sunset into jagged prisms on his face. 
 

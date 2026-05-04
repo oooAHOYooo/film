@@ -1,6 +1,6 @@
 # Winter Film Script — Full Script
 
-*Compiled on 5/4/2026, 3:13:38 PM*
+*Compiled on 5/4/2026, 4:31:09 PM*
 
 ---
 
@@ -72,6 +72,11 @@ One could notice—something at the top. Long, curved shafts of wood, wrapped li
 
 An outpost.
 
+POLE KEEPER
+I don't understand why life is so full of grumbling. Grumbles. It just doesn't feel fair.
+
+(action)
+Trumpets sound and the king comes off of the throne. 
 
 ---
 
