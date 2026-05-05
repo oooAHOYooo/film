@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/4/2026, 7:07:24 PM*
+*Compiled on 5/5/2026, 11:16:19 AM*
 
 ---
 
@@ -242,13 +242,13 @@ DALLAS
 Oh yeah - nice to meet you. Dallas.   
 
 DOMINIC
-You here on some university position? Last guy who was here was here for 3 years and then moved on to better things up in Guilford. How is the house? Do they furnish it? 
+You here on some university position? Last guy who was here was here for 3 years and then moved on to better things up in Guilford. How is the house? Do they furnish it?  They gave you a house nice man. 
 
 DALLAS
 Yeah. 
 
 DOMINIC
-Dallas? Dallas, what a name - where you from? 
+You said your name was Dallas, Dallas? Dallas, what a name - where you from? 
 
 DALLAS
 Indiana.

@@ -472,7 +472,7 @@ function generateHTMLPage(markdown, scenes) {
       if (!content || !selectEl) return;
 
       const sceneHeadings = content.querySelectorAll('h3');
-      const sceneHeadingRe = /^Scene \d+:/i;
+      const sceneHeadingRe = /^Scene \d+[A-Z]*:/i;
       sceneHeadings.forEach((h3, i) => {
         const text = (h3.textContent || '').trim();
         if (sceneHeadingRe.test(text)) {
@@ -721,9 +721,11 @@ function deriveSummary(content) {
   const actionParts = [];
   let inDialogue = false;
   for (const line of lines) {
-    if (/^(INT\.|EXT\.|FADE|CUT\s|DISSOLVE|#)/i.test(line)) continue;
+    if (/^(?:[a-z]\d+[a-z]*(?:\.\d+)?\s*—\s*)?(?:INT\.|EXT\.|FADE|CUT|DISSOLVE|#|SCENE)/i.test(line)) continue;
     if (/^\(action\)$/i.test(line)) continue;
     if (/^\([^)]+\)$/.test(line)) continue; // parenthetical only
+    if (line.startsWith('---')) continue;
+    if (line.startsWith('*') && line.includes('ID:') && line.includes('File:')) continue; // Metadata line
     if (/^[A-Z][A-Za-z\s]{2,}$/.test(line) && line === line.toUpperCase()) {
       inDialogue = true;
       continue;
@@ -756,7 +758,7 @@ function formatPlotPointTag(plotNums) {
 function extractSceneBlocksFromFullScript(fullScriptMarkdown) {
   if (!fullScriptMarkdown || typeof fullScriptMarkdown !== 'string') return [];
   const blocks = [];
-  const segments = fullScriptMarkdown.split(/(?=^### Scene \d+:)/m);
+  const segments = fullScriptMarkdown.split(/(?=^### Scene \d+[A-Z]*:)/m);
   for (let i = 1; i < segments.length; i++) {
     const s = segments[i];
     const afterDivider = s.indexOf('\n\n---\n\n');
