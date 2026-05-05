@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/5/2026, 11:16:19 AM*
+*Compiled on 5/5/2026, 12:52:48 PM*
 
 ---
 
@@ -1197,13 +1197,13 @@ He finds the spot. A makeshift wooden trap, but it's been... compromised. A thic
 
 Dallas finds the trailcam. The lens is cracked, but the "Record" light is still blinking a faint, dying red. 
 
-Suddenly, a heavy **CONCUSSIVE THUD** hits the mud thirty feet away like something landing from a big height. 
+Suddenly, a heavy thud hits the mud thirty feet away like something landing from a big height. 
 
 The Hum stops. Dallas freezes. He rips the trailcam from its mounting, his fingers fumbling with the nylon straps.
 
 A low, guttural chittering sound rises from the grass behind him.
 
-Dallas bolts. He grabs Howie's leash in a dead run, nearly pulling the dog off his feet as they scramble back toward the safety of the boardwalk.
+Dallas walks faster, pulling Howie along. He scrambles back toward the boardwalk.
 
 ---
 

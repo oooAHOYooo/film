@@ -1,0 +1,4 @@
+- [x] Update `compile.js` regex for alphanumeric scene IDs
+- [x] Improve `deriveSummary` logic in `compile.js`
+- [x] Update `generateHTMLPage` embedded script in `compile.js`
+- [x] Run `node compile.js` and verify results
