@@ -398,6 +398,70 @@
                 body { overflow: visible; height: auto; }
             }
 
+            .stats-dropdown {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .stats-dropdown summary {
+                list-style: none;
+                background: #1f242c;
+                color: #c9d1d9;
+                border: 1px solid var(--prod-border);
+                border-radius: 6px;
+                padding: 10px 12px;
+                font-size: 0.9rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: border-color 0.2s, background-color 0.2s;
+                font-weight: 600;
+            }
+            .stats-dropdown summary:hover {
+                border-color: var(--prod-accent);
+                background: #232a34;
+            }
+            .stats-dropdown summary::-webkit-details-marker {
+                display: none;
+            }
+            .stats-dropdown summary::after {
+                content: '▼';
+                font-size: 0.7rem;
+                opacity: 0.6;
+            }
+            .stats-dropdown[open] summary::after {
+                content: '▲';
+            }
+            .stats-dropdown[open] summary {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom-color: transparent;
+            }
+            .stats-dropdown-content {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid var(--prod-border);
+                border-top: none;
+                border-radius: 0 0 6px 6px;
+                padding: 12px 16px;
+            }
+            .stat-row {
+                display: flex;
+                justify-content: space-between;
+                padding: 4px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+                font-size: 0.85rem;
+            }
+            .stat-row:last-child {
+                border-bottom: none;
+            }
+            .stat-label {
+                opacity: 0.6;
+            }
+            .stat-val {
+                font-weight: 600;
+                color: var(--prod-accent);
+            }
+
             .main-content { padding: 40px; margin: 0 auto; max-width: 1000px; box-sizing: border-box; }
             .callsheet-header {
                 display: flex;

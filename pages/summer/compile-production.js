@@ -634,6 +634,70 @@ function getProductionStyles() {
                 .main-content { padding: 0; }
                 body { overflow: visible; height: auto; }
             }
+
+            .stats-dropdown {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .stats-dropdown summary {
+                list-style: none;
+                background: #1f242c;
+                color: #c9d1d9;
+                border: 1px solid var(--prod-border);
+                border-radius: 6px;
+                padding: 10px 12px;
+                font-size: 0.9rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: border-color 0.2s, background-color 0.2s;
+                font-weight: 600;
+            }
+            .stats-dropdown summary:hover {
+                border-color: var(--prod-accent);
+                background: #232a34;
+            }
+            .stats-dropdown summary::-webkit-details-marker {
+                display: none;
+            }
+            .stats-dropdown summary::after {
+                content: '▼';
+                font-size: 0.7rem;
+                opacity: 0.6;
+            }
+            .stats-dropdown[open] summary::after {
+                content: '▲';
+            }
+            .stats-dropdown[open] summary {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom-color: transparent;
+            }
+            .stats-dropdown-content {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid var(--prod-border);
+                border-top: none;
+                border-radius: 0 0 6px 6px;
+                padding: 12px 16px;
+            }
+            .stat-row {
+                display: flex;
+                justify-content: space-between;
+                padding: 4px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+                font-size: 0.85rem;
+            }
+            .stat-row:last-child {
+                border-bottom: none;
+            }
+            .stat-label {
+                opacity: 0.6;
+            }
+            .stat-val {
+                font-weight: 600;
+                color: var(--prod-accent);
+            }
 `;
 }
 
@@ -889,25 +953,27 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                     <span style="font-size:0.7rem; font-weight:400; opacity:0.8;">(Google Sheet Sync)</span>
                 </a>
 
+                <a href="script-system/full_script.html" class="sidebar-button" style="background: #30363d; margin-bottom: 24px;">
+                    📜 View Full Script
+                </a>
+
                 <div class="stats-card">
                     <div class="stats-title">Current Status</div>
                     <div class="stats-value" style="font-size:1.1rem;">${new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}</div>
                     <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">${new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}</div>
                 </div>
 
-                <div class="stats-card">
-                    <div class="stats-title">Vital Stats</div>
-                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
-                        <div>
-                            <div style="font-size:0.7rem; opacity:0.6;">Scenes</div>
-                            <div style="font-size:1.1rem; font-weight:600;">${totalScenes}</div>
-                        </div>
-                        <div>
-                            <div style="font-size:0.7rem; opacity:0.6;">Days</div>
-                            <div style="font-size:1.1rem; font-weight:600;">${totalDays}</div>
-                        </div>
+                <div class="sidebar-nav-title">Vital Stats</div>
+                <details class="stats-dropdown">
+                    <summary>View Stats</summary>
+                    <div class="stats-dropdown-content">
+                        <div class="stat-row"><span class="stat-label">Scenes</span> <span class="stat-val">${totalScenes}</span></div>
+                        <div class="stat-row"><span class="stat-label">Shoot Days</span> <span class="stat-val">${totalDays}</span></div>
+                        <div class="stat-row"><span class="stat-label">Locations</span> <span class="stat-val">${locationRows.length}</span></div>
+                        <div class="stat-row"><span class="stat-label">Pickups</span> <span class="stat-val">${pickupSceneCount}</span></div>
+                        <div class="stat-row"><span class="stat-label">Est Run</span> <span class="stat-val">${totalMin}m</span></div>
                     </div>
-                </div>
+                </details>
 
                 <div class="sidebar-nav-title">Timeline</div>
                 ${sidebarDaysHtml}

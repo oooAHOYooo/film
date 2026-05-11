@@ -399,6 +399,70 @@
                 body { overflow: visible; height: auto; }
             }
 
+            .stats-dropdown {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .stats-dropdown summary {
+                list-style: none;
+                background: #1f242c;
+                color: #c9d1d9;
+                border: 1px solid var(--prod-border);
+                border-radius: 6px;
+                padding: 10px 12px;
+                font-size: 0.9rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: border-color 0.2s, background-color 0.2s;
+                font-weight: 600;
+            }
+            .stats-dropdown summary:hover {
+                border-color: var(--prod-accent);
+                background: #232a34;
+            }
+            .stats-dropdown summary::-webkit-details-marker {
+                display: none;
+            }
+            .stats-dropdown summary::after {
+                content: '▼';
+                font-size: 0.7rem;
+                opacity: 0.6;
+            }
+            .stats-dropdown[open] summary::after {
+                content: '▲';
+            }
+            .stats-dropdown[open] summary {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom-color: transparent;
+            }
+            .stats-dropdown-content {
+                background: rgba(255,255,255,0.02);
+                border: 1px solid var(--prod-border);
+                border-top: none;
+                border-radius: 0 0 6px 6px;
+                padding: 12px 16px;
+            }
+            .stat-row {
+                display: flex;
+                justify-content: space-between;
+                padding: 4px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+                font-size: 0.85rem;
+            }
+            .stat-row:last-child {
+                border-bottom: none;
+            }
+            .stat-label {
+                opacity: 0.6;
+            }
+            .stat-val {
+                font-weight: 600;
+                color: var(--prod-accent);
+            }
+
         </style>
     </head>
     <body>
@@ -422,25 +486,27 @@
                     <span style="font-size:0.7rem; font-weight:400; opacity:0.8;">(Google Sheet Sync)</span>
                 </a>
 
-                <div class="stats-card">
-                    <div class="stats-title">Current Status</div>
-                    <div class="stats-value" style="font-size:1.1rem;">Friday, May 8</div>
-                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">10:39 AM</div>
-                </div>
+                <a href="script-system/full_script.html" class="sidebar-button" style="background: #30363d; margin-bottom: 24px;">
+                    📜 View Full Script
+                </a>
 
                 <div class="stats-card">
-                    <div class="stats-title">Vital Stats</div>
-                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px;">
-                        <div>
-                            <div style="font-size:0.7rem; opacity:0.6;">Scenes</div>
-                            <div style="font-size:1.1rem; font-weight:600;">39</div>
-                        </div>
-                        <div>
-                            <div style="font-size:0.7rem; opacity:0.6;">Days</div>
-                            <div style="font-size:1.1rem; font-weight:600;">16</div>
-                        </div>
-                    </div>
+                    <div class="stats-title">Current Status</div>
+                    <div class="stats-value" style="font-size:1.1rem;">Monday, May 11</div>
+                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">12:22 PM</div>
                 </div>
+
+                <div class="sidebar-nav-title">Vital Stats</div>
+                <details class="stats-dropdown">
+                    <summary>View Stats</summary>
+                    <div class="stats-dropdown-content">
+                        <div class="stat-row"><span class="stat-label">Scenes</span> <span class="stat-val">39</span></div>
+                        <div class="stat-row"><span class="stat-label">Shoot Days</span> <span class="stat-val">16</span></div>
+                        <div class="stat-row"><span class="stat-label">Locations</span> <span class="stat-val">4</span></div>
+                        <div class="stat-row"><span class="stat-label">Pickups</span> <span class="stat-val">0</span></div>
+                        <div class="stat-row"><span class="stat-label">Est Run</span> <span class="stat-val">0m</span></div>
+                    </div>
+                </details>
 
                 <div class="sidebar-nav-title">Timeline</div>
                 
@@ -509,7 +575,7 @@
   
 
                 <div style="margin-top:auto; padding-top:20px; font-size:0.75rem; opacity:0.5;">
-                    Last Compiled:<br>5/8/2026, 10:39:00 AM
+                    Last Compiled:<br>5/11/2026, 12:22:04 PM
                 </div>
             </aside>
 
