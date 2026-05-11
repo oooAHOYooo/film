@@ -492,6 +492,14 @@ class App:
             self.push({'screen': 'guide', 'offset': 0})
         elif key == ord('z'):
             self.compact = not self.compact
+        elif ord('1') <= key <= ord('9'):
+            idx = key - ord('1')
+            if idx < len(items):
+                proj = items[idx]
+                self.push({'screen': 'project', 'proj': proj,
+                           'scenes': load_manifest(proj),
+                           'rows': [], 'sel': 0, 'offset': 0})
+                self._rebuild_rows()
 
     # ── PROJECT ───────────────────────────────────────────────────────────────
 
@@ -1011,18 +1019,24 @@ class App:
 
 # ── Entry ─────────────────────────────────────────────────────────────────────
 
+_direct_project = None
+
 def main(stdscr):
     cfg = load_config()
     app = App(stdscr, cfg)
+    if _direct_project and _direct_project in PROJECT_MAP:
+        proj = PROJECT_MAP[_direct_project]
+        app.stack[-1] = {'screen': 'project', 'proj': proj,
+                         'scenes': load_manifest(proj),
+                         'rows': [], 'sel': 0, 'offset': 0}
+        app._rebuild_rows()
     app.run()
 
 if __name__ == '__main__':
-    # Allow passing a project key as arg to open directly
     if len(sys.argv) > 1:
         key = sys.argv[1].lower()
         if key in PROJECT_MAP:
-            # We still run TUI but push project immediately after hub init
-            _direct = key
+            _direct_project = key
         else:
             print(f"Unknown project: {key}")
             print("Available: " + ' · '.join(p['key'] for p in PROJECTS))
