@@ -24,7 +24,8 @@
       "Read(//Users/agworkywork/.config/barnacle/**)",
       "Read(//Users/agworkywork/**)",
       "Bash(sqlite3 *)",
-      "Bash(film sync *)"
+      "Bash(film sync *)",
+      "Bash(film note *)"
     ]
   }
 }
