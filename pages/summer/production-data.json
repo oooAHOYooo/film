@@ -41,9 +41,10 @@
   },
   "s09": {
     "durationMin": 0,
+    "time": "6:30 PM",
+    "location": "On Location (East Haven Nursery)",
     "shootDays": 0.5,
     "assignedDay": 3,
-    "location": "East Haven Nursery",
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -52,9 +53,10 @@
   },
   "s10": {
     "durationMin": 0,
+    "time": "8:45 PM",
+    "location": "Jerry's House",
     "shootDays": 0.5,
     "assignedDay": 3,
-    "location": "East Haven Nursery",
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -145,6 +147,7 @@
   },
   "s11": {
     "durationMin": 0,
+    "time": "6:30 PM",
     "shootDays": 0.5,
     "assignedDay": 6,
     "keyElements": "",
@@ -157,6 +160,7 @@
   },
   "s12": {
     "durationMin": 0,
+    "time": "7:30 PM",
     "shootDays": 0.5,
     "assignedDay": 6,
     "keyElements": "",
@@ -659,6 +663,13 @@
         "s09",
         "s10"
       ],
+      "crewCall": "GENERAL CREW CALL: 05:00 PM — Alex's House (206 Saint John)",
+      "locationDetails": [
+        "Arrive on location: 5:30 PM",
+        "Location 1: East Haven Nursery — Film 6:30 PM to 8:30 PM (s09)",
+        "Location 2: Jerry's House — Film 8:45 PM to 10:00 PM (s10)",
+        "Wrap: 10:30 PM EST"
+      ],
       "wardrobe": [
         "Dallas: Outfit #2"
       ],
@@ -711,6 +722,13 @@
       "scenes": [
         "s11",
         "s12"
+      ],
+      "crewCall": "GENERAL CREW CALL: 05:00 PM",
+      "wardrobe": [
+        "Dallas: Outfit #3"
+      ],
+      "misc": [
+        "Wrap: 8:45 PM"
       ],
       "sourceNote": "Day 6 = 6.16.26 = Tues <s11 + s12>[D]"
     },
