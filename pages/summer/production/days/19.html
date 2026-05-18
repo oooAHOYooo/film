@@ -392,10 +392,101 @@
             }
 
             @media print {
-                .sidebar, .nav-bar, .back-to-top { display: none; }
+                @page { margin: 0.45in; }
+                :root {
+                    --prod-accent: #1f4f8a;
+                    --prod-head: rgba(31, 79, 138, 0.12);
+                    --prod-border: rgba(31, 79, 138, 0.28);
+                    --prod-tag-bg: rgba(31, 79, 138, 0.08);
+                    --prod-tag-border: rgba(31, 79, 138, 0.22);
+                    --prod-row-hover: transparent;
+                }
+                html, body {
+                    background: #fff !important;
+                    color: #111 !important;
+                    height: auto;
+                    overflow: visible;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .sidebar, .nav-bar, .back-to-top, .mobile-header, .day-filter-bar,
+                .sidebar-button, .sidebar-dropdown, .filter-btn, .hamburger-btn,
+                .stats-dropdown summary, .stats-dropdown-content .stat-row, .no-print {
+                    display: none !important;
+                }
                 .dashboard-container { display: block; }
-                .main-content { padding: 0; }
-                body { overflow: visible; height: auto; }
+                .sidebar-backdrop { display: none !important; }
+                .main-content {
+                    padding: 0;
+                    overflow: visible;
+                }
+                .stats-card, .production-table, .day-divider, .stats-dropdown-content {
+                    background: #fff !important;
+                    color: #111 !important;
+                }
+                .stats-card, .production-table, .day-divider, .stats-dropdown,
+                .stats-dropdown-content, .sidebar-link {
+                    border-color: #c7d0db !important;
+                }
+                .stats-card {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                .day-divider {
+                    color: var(--prod-accent) !important;
+                    border-left-color: var(--prod-accent) !important;
+                    border-bottom: 1px solid #c7d0db;
+                }
+                .production-table {
+                    border: 1px solid #c7d0db;
+                }
+                .production-table th {
+                    background: #f3f6fa !important;
+                    color: #111 !important;
+                    border-bottom: 2px solid #c7d0db !important;
+                    position: static;
+                }
+                .production-table td {
+                    border-bottom: 1px solid #e5eaf0 !important;
+                    color: #111 !important;
+                }
+                .main-content * {
+                    color: #111 !important;
+                    background-image: none !important;
+                    text-shadow: none !important;
+                    box-shadow: none !important;
+                }
+                .main-content .day-badge,
+                .main-content .day-divider,
+                .main-content .day-divider *,
+                .main-content .stats-value,
+                .main-content .actor-chip,
+                .main-content .actor-chip * {
+                    color: var(--prod-accent) !important;
+                }
+                .actor-chip {
+                    color: #123a66 !important;
+                    background: rgba(31, 79, 138, 0.08) !important;
+                    border-color: rgba(31, 79, 138, 0.25) !important;
+                    box-shadow: none !important;
+                    transform: none !important;
+                    filter: none !important;
+                }
+                .day-badge {
+                    border-color: currentColor !important;
+                    box-shadow: none !important;
+                }
+                .stats-card, .production-table tr, .production-table td, .production-table th {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                a {
+                    color: #123a66 !important;
+                    text-decoration: none !important;
+                }
+                h1, h2, h3, p, span, div {
+                    text-shadow: none !important;
+                }
             }
 
             .stats-dropdown {
