@@ -252,33 +252,35 @@ function getProductionStyles() {
             }
             body { 
                 margin: 0; 
-                display: flex; 
-                flex-direction: column; 
-                height: 100vh; 
-                overflow: hidden; 
+                display: block; 
+                min-height: 100vh; 
+                overflow-y: auto; 
                 background: #0d1117;
                 color: #c9d1d9;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             }
             .dashboard-container {
-                display: flex;
-                flex: 1;
+                display: block;
                 overflow: hidden;
             }
-            .sidebar {
-                width: var(--sidebar-w);
-                background: #161b22;
-                border-right: 1px solid var(--prod-border);
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-                overflow-y: auto;
+            .brand-title {
+                font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1.15;
+                letter-spacing: 0.02em;
+                color: #f5f7fb;
+            }
+            .brand-title-main {
+                font-size: 2.05rem;
+                line-height: 1.02;
             }
             .main-content {
                 flex: 1;
                 overflow-y: auto;
                 padding: 40px;
                 scroll-behavior: smooth;
+                position: relative;
             }
             .stats-card {
                 background: var(--prod-tag-bg);
@@ -299,64 +301,101 @@ function getProductionStyles() {
                 font-weight: 600;
                 color: var(--prod-accent);
             }
-            .sidebar-button {
-                display: block;
-                width: 100%;
-                padding: 14px;
-                background: #2ea44f;
-                color: #fff;
-                text-align: center;
-                text-decoration: none;
-                font-weight: 600;
-                border-radius: 6px;
-                margin-bottom: 24px;
-                font-size: 0.9rem;
-                transition: background 0.2s;
-            }
-            .sidebar-button:hover {
-                background: #2c974b;
-            }
-            .sidebar-nav-title {
-                font-size: 0.85rem;
-                font-weight: 600;
-                margin: 20px 0 10px 0;
-                color: var(--prod-accent);
-            }
-            .sidebar-link {
-                display: block;
-                padding: 8px 12px;
-                color: var(--text-secondary);
-                text-decoration: none;
-                font-size: 0.9rem;
-                border-radius: 6px;
-                margin-bottom: 2px;
-                transition: all 0.2s;
-            }
-            .sidebar-link:hover {
-                background: var(--prod-row-hover);
-                color: var(--prod-accent);
-            }
-            .sidebar-dropdown {
-                width: 100%;
-                background: #1f242c;
+            .quick-menu-btn {
+                position: sticky;
+                top: 18px;
+                left: 0;
+                width: 36px;
+                height: 36px;
+                border-radius: 10px;
+                background: rgba(255,255,255,0.05);
+                border: 1px solid rgba(255,255,255,0.08);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
                 color: #c9d1d9;
-                border: 1px solid var(--prod-border);
-                border-radius: 6px;
-                padding: 10px 12px;
-                font-size: 0.9rem;
-                margin-bottom: 20px;
-                outline: none;
                 cursor: pointer;
-                transition: border-color 0.2s, background-color 0.2s;
+                transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+                z-index: 30;
+            }
+            .quick-menu-btn:hover {
+                background: rgba(121,184,255,0.12);
+                border-color: rgba(121,184,255,0.28);
+                color: #fff;
+            }
+            .quick-menu-btn svg {
+                width: 17px;
+                height: 17px;
+            }
+            .quick-menu {
+                position: fixed;
+                top: 18px;
+                left: 18px;
+                width: 240px;
+                max-width: calc(100vw - 24px);
+                background: #161b22;
+                border: 1px solid var(--prod-border);
+                border-radius: 14px;
+                padding: 14px;
+                box-shadow: 0 18px 40px rgba(0,0,0,0.38);
+                z-index: 998;
+                display: none;
+                max-height: calc(100vh - 36px);
+                overflow-y: auto;
                 box-sizing: border-box;
             }
-            .sidebar-dropdown:hover {
-                border-color: var(--prod-accent);
-                background: #232a34;
+            .quick-menu.open {
+                display: block;
             }
-            .sidebar-dropdown option {
-                background: #161b22;
+            .quick-menu-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+                margin-bottom: 10px;
+            }
+            .quick-menu .brand-title {
+                margin: 0;
+            }
+            .quick-menu-close {
+                width: 26px;
+                height: 26px;
+                border: none;
+                border-radius: 8px;
+                background: rgba(255,255,255,0.05);
                 color: #c9d1d9;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                line-height: 1;
+                padding: 0;
+            }
+            .quick-menu-close:hover {
+                background: rgba(121,184,255,0.12);
+                color: #fff;
+            }
+            .quick-menu a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 12px;
+                border-radius: 8px;
+                background: rgba(255,255,255,0.04);
+                border: 1px solid rgba(255,255,255,0.06);
+                margin-bottom: 8px;
+                font-size: 0.88rem;
+            }
+            .quick-menu a:hover {
+                background: rgba(121,184,255,0.12);
+                border-color: rgba(121,184,255,0.28);
+            }
+            .quick-menu .quick-meta {
+                margin-top: 10px;
+                font-size: 0.72rem;
+                color: rgba(255,255,255,0.56);
+                line-height: 1.4;
             }
             .production-table {
                 width: 100%;
@@ -524,12 +563,97 @@ function getProductionStyles() {
                 opacity: 0.5;
                 margin-left: 20px;
             }
+            .shoot-plan {
+                margin-bottom: 50px;
+            }
+            .shoot-plan-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 14px;
+            }
+            .shoot-plan-card {
+                background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+                border: 1px solid var(--prod-border);
+                border-radius: 12px;
+                padding: 14px;
+                box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+                transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+                cursor: pointer;
+            }
+            .shoot-plan-card:hover {
+                transform: translateY(-2px);
+                border-color: rgba(121, 184, 255, 0.45);
+                box-shadow: 0 14px 28px rgba(0,0,0,0.24);
+            }
+            .shoot-plan-card.special {
+                border-color: rgba(234, 179, 8, 0.35);
+                background: linear-gradient(180deg, rgba(234,179,8,0.08), rgba(255,255,255,0.015));
+            }
+            .shoot-plan-head {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 12px;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid rgba(255,255,255,0.05);
+            }
+            .shoot-plan-title {
+                font-weight: 800;
+                color: #fff;
+                line-height: 1.1;
+            }
+            .shoot-plan-date {
+                font-size: 0.82rem;
+                color: var(--prod-accent);
+                margin-top: 4px;
+            }
+            .shoot-plan-note {
+                font-family: ui-monospace, monospace;
+                font-size: 0.74rem;
+                line-height: 1.35;
+                color: #c9d1d9;
+                margin-bottom: 10px;
+                opacity: 0.9;
+            }
+            .shoot-plan-label {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                border-radius: 999px;
+                padding: 3px 8px;
+                font-size: 0.68rem;
+                letter-spacing: 0.05em;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #0d1117;
+                background: var(--prod-accent);
+            }
+            .shoot-plan-chip-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                margin-top: 6px;
+            }
+            .shoot-plan-block {
+                margin-top: 10px;
+                font-size: 0.83rem;
+                line-height: 1.45;
+            }
+            .shoot-plan-block strong {
+                display: block;
+                margin-bottom: 4px;
+                font-size: 0.65rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: #8b949e;
+            }
 
             .mobile-header {
                 display: none;
                 background: #161b22;
                 border-bottom: 1px solid var(--prod-border);
-                padding: 12px 20px;
+                padding: 10px 16px;
                 justify-content: space-between;
                 align-items: center;
                 position: sticky;
@@ -537,72 +661,35 @@ function getProductionStyles() {
                 z-index: 1000;
             }
             .mobile-title {
-                font-size: 1.1rem;
-                font-weight: 700;
-                color: var(--prod-accent);
+                font-size: 0.95rem;
+                color: #f5f7fb;
             }
             .hamburger-btn {
                 background: none;
                 border: none;
-                color: #c9d1d9;
-                font-size: 1.5rem;
+                color: inherit;
                 cursor: pointer;
                 outline: none;
                 display: flex;
                 align-items: center;
-                transition: color 0.2s;
-                padding: 4px;
+                padding: 0;
             }
-            .hamburger-btn:hover {
-                color: var(--prod-accent);
-            }
-            .sidebar-backdrop {
-                display: none;
-                position: fixed;
-                top: 56px;
-                left: 0;
-                width: 100vw;
-                height: calc(100vh - 56px);
-                background: rgba(0, 0, 0, 0.5);
-                z-index: 998;
-                backdrop-filter: blur(2px);
-            }
-            .sidebar-backdrop.show {
-                display: block;
-            }
-
             @media (max-width: 768px) {
                 body {
                     height: auto;
                     overflow: auto;
                 }
-                .dashboard-container {
-                    flex-direction: column;
-                    overflow: visible;
-                }
-                .mobile-header {
-                    display: flex;
-                }
-                .sidebar {
-                    position: fixed;
-                    top: 56px;
-                    left: -100%;
-                    width: 280px;
-                    height: calc(100vh - 56px);
-                    z-index: 999;
-                    background: #161b22;
-                    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                    border-right: 1px solid var(--prod-border);
-                    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-                    box-sizing: border-box;
-                    padding-bottom: 80px;
-                }
-                .sidebar.open {
-                    left: 0;
-                }
                 .main-content {
                     padding: 20px;
                     overflow-y: visible;
+                }
+                .brand-title-main {
+                    font-size: 1.15rem;
+                }
+                .quick-menu {
+                    top: 58px;
+                    left: 12px;
+                    max-width: calc(100vw - 24px);
                 }
                 .production-table {
                     display: block;
@@ -629,10 +716,99 @@ function getProductionStyles() {
             }
 
             @media print {
-                .sidebar, .nav-bar, .back-to-top { display: none; }
-                .dashboard-container { display: block; }
-                .main-content { padding: 0; }
-                body { overflow: visible; height: auto; }
+                @page { margin: 0.45in; }
+                :root {
+                    --prod-accent: #1f4f8a;
+                    --prod-head: rgba(31, 79, 138, 0.12);
+                    --prod-border: rgba(31, 79, 138, 0.28);
+                    --prod-tag-bg: rgba(31, 79, 138, 0.08);
+                    --prod-tag-border: rgba(31, 79, 138, 0.22);
+                    --prod-row-hover: transparent;
+                }
+                html, body {
+                    background: #fff !important;
+                    color: #111 !important;
+                    height: auto;
+                    overflow: visible;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .quick-menu, .nav-bar, .back-to-top, .mobile-header, .day-filter-bar,
+                .filter-btn, .hamburger-btn, .quick-menu-btn,
+                .stats-dropdown summary, .stats-dropdown-content .stat-row, .no-print {
+                    display: none !important;
+                }
+                .main-content {
+                    padding: 0;
+                    overflow: visible;
+                }
+                .stats-card, .production-table, .day-divider, .stats-dropdown-content {
+                    background: #fff !important;
+                    color: #111 !important;
+                }
+                .stats-card, .production-table, .day-divider, .stats-dropdown,
+                .stats-dropdown-content, .sidebar-link {
+                    border-color: #c7d0db !important;
+                }
+                .stats-card {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                .day-divider {
+                    color: var(--prod-accent) !important;
+                    border-left-color: var(--prod-accent) !important;
+                    border-bottom: 1px solid #c7d0db;
+                }
+                .production-table {
+                    border: 1px solid #c7d0db;
+                }
+                .production-table th {
+                    background: #f3f6fa !important;
+                    color: #111 !important;
+                    border-bottom: 2px solid #c7d0db !important;
+                    position: static;
+                }
+                .production-table td {
+                    border-bottom: 1px solid #e5eaf0 !important;
+                    color: #111 !important;
+                }
+                .main-content * {
+                    color: #111 !important;
+                    background-image: none !important;
+                    text-shadow: none !important;
+                    box-shadow: none !important;
+                }
+                .main-content .day-badge,
+                .main-content .day-divider,
+                .main-content .day-divider *,
+                .main-content .stats-value,
+                .main-content .actor-chip,
+                .main-content .actor-chip * {
+                    color: var(--prod-accent) !important;
+                }
+                .actor-chip {
+                    color: #123a66 !important;
+                    background: rgba(31, 79, 138, 0.08) !important;
+                    border-color: rgba(31, 79, 138, 0.25) !important;
+                    box-shadow: none !important;
+                    transform: none !important;
+                    filter: none !important;
+                }
+                .day-badge {
+                    border-color: currentColor !important;
+                    box-shadow: none !important;
+                }
+                .stats-card, .production-table tr, .production-table td, .production-table th {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                a {
+                    color: #123a66 !important;
+                    text-decoration: none !important;
+                }
+                h1, h2, h3, p, span, div {
+                    text-shadow: none !important;
+                }
             }
 
             .stats-dropdown {
@@ -872,55 +1048,82 @@ function generateCompactListHtml(rows, calendar, totalDays) {
   return html;
 }
 
+function generateShootPlanHtml(rows, productionData) {
+  const plan = Array.isArray(productionData.shootPlan)
+    ? productionData.shootPlan.slice().sort((a, b) => Number(a.day) - Number(b.day))
+    : [];
+
+  if (!plan.length) return '';
+
+  const dayRowsFor = (day) => rows.filter((r) => r.scheduledDays && r.scheduledDays.includes(day));
+  const unique = (items) => Array.from(new Set(items.filter(Boolean)));
+  const toChipRow = (items, label) => {
+    if (!items.length) {
+      return `<div class="shoot-plan-block"><strong>${label}</strong>—</div>`;
+    }
+    const chips = items
+      .map((item) => `<span class="actor-chip" style="pointer-events:none; cursor:default;">${escapeHtml(item)}</span>`)
+      .join('');
+    return `<div class="shoot-plan-block"><strong>${label}</strong><div class="shoot-plan-chip-row">${chips}</div></div>`;
+  };
+
+  return `
+    <section id="shoot-plan" class="shoot-plan">
+      <h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
+      <div class="shoot-plan-grid">
+        ${plan.map((entry) => {
+          const dayValue = Number(entry.day);
+          const dayRows = Number.isFinite(dayValue) ? dayRowsFor(dayValue) : [];
+          const dayName = entry.weekday || getDayName(entry.date);
+          const dayConfig = getDayConfig(entry.date);
+          const hasExplicitScenes = Object.prototype.hasOwnProperty.call(entry, 'scenes');
+          const hasExplicitLocations = Object.prototype.hasOwnProperty.call(entry, 'locations');
+          const hasExplicitCast = Object.prototype.hasOwnProperty.call(entry, 'cast');
+          const scenes = unique(hasExplicitScenes ? (Array.isArray(entry.scenes) ? entry.scenes : [entry.scenes]) : dayRows.map((r) => `s${String(r.n).padStart(2, '0')}`));
+          const locations = unique(hasExplicitLocations ? (Array.isArray(entry.locations) ? entry.locations : [entry.locations]) : dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
+          const cast = unique(hasExplicitCast ? (Array.isArray(entry.cast) ? entry.cast : [entry.cast]) : dayRows.flatMap((r) => r.characters || []));
+          const callSheetHref = `production/days/${String(entry.day)}.html`;
+          const scenesHtml = scenes.length
+            ? scenes.map((scene) => `<a href="${callSheetHref}" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">${escapeHtml(scene)}</a>`).join('')
+            : '—';
+          const locationsText = locations.length ? locations.join(', ') : '—';
+          const dateLabel = new Date(entry.date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+          const cardClass = entry.special ? 'shoot-plan-card special' : 'shoot-plan-card';
+          const label = entry.special ? 'Note' : 'Shoot';
+
+          return `
+            <article class="${cardClass}" data-call-sheet-href="${callSheetHref}" role="link" tabindex="0" aria-label="Open call sheet for Day ${escapeHtml(entry.day)}">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day ${escapeHtml(entry.day)}</div>
+                  <div class="shoot-plan-date">${escapeHtml(dayName)}, ${escapeHtml(dateLabel)}</div>
+                </div>
+                <span class="shoot-plan-label" style="background:${dayConfig.color};">${label}</span>
+              </div>
+              <div class="shoot-plan-note">${escapeHtml(entry.sourceNote || '')}</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;">${scenesHtml}</div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>${escapeHtml(locationsText)}</div>
+              </div>
+              ${toChipRow(cast, 'Actors')}
+            </article>
+          `;
+        }).join('')}
+      </div>
+    </section>
+  `;
+}
+
 const PICKUP_DAYS = 2;
 
 function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData) {
   const totalScenes = rows.length;
   const pickupSceneCount = rows.filter((r) => r.pickup).length;
-  const calendar = productionData.calendar || {};
-  const holidays = productionData.holidays || {};
-  const offDates = productionData.offDates || {};
-
-  const allCharacters = new Set();
-  rows.forEach(r => r.characters.forEach(c => allCharacters.add(c)));
-  const sortedChars = Array.from(allCharacters).sort();
-
-  const sidebarActorsHtml = `
-    <select class="sidebar-dropdown" onchange="if(this.value === 'all') { filterByActor(''); } else if(this.value) { window.location.href=this.value; }">
-      <option value="">Select an Actor...</option>
-      <option value="all">Show All</option>
-      ${sortedChars.map(c => `
-        <option value="production/cast/${c.toLowerCase()}.html">${c}</option>
-      `).join('')}
-    </select>
-  `;
-
-  const sidebarLocationsHtml = `
-    <select class="sidebar-dropdown" onchange="filterByLocation(this.value)">
-      <option value="">Select a Location...</option>
-      <option value="">Show All</option>
-      ${locationRows.map(l => `
-        <option value="${escapeHtml(l.location)}">${escapeHtml(l.location)}</option>
-      `).join('')}
-    </select>
-  `;
-
-  const sidebarDaysHtml = `
-    <select class="sidebar-dropdown" onchange="if(this.value) window.location.href=this.value">
-      <option value="">Select a Day...</option>
-      ${Object.keys(calendar).sort((a,b) => Number(a)-Number(b)).map(d => {
-        const dateStr = calendar[d];
-        const dateObj = new Date(dateStr + 'T12:00:00');
-        const displayDate = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-        return `<option value="production/days/${d}.html">Day ${d} (${displayDate})</option>`;
-      }).join('')}
-    </select>
-  `;
-
-  const breakdownRowsHtml = generateBreakdownRows(rows, calendar, holidays);
-  const locationRowsHtml = generateLocationTable(locationRows, totalDays);
-  const overviewListHtml = generateOverviewListHtml(rows, calendar, totalDays);
-  const compactListHtml = generateCompactListHtml(rows, calendar, totalDays);
+  const shootPlanHtml = generateShootPlanHtml(rows, productionData);
 
   return `<!doctype html>
 <html lang="en">
@@ -933,197 +1136,81 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
         </style>
     </head>
     <body>
-        <header class="mobile-header no-print">
-            <span class="mobile-title">SUMMER HUB</span>
-            <button class="hamburger-btn" onclick="toggleMobileSidebar()" aria-label="Toggle Navigation">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="3" y1="12" x2="21" y2="12"></line>
-                    <line x1="3" y1="6" x2="21" y2="6"></line>
-                    <line x1="3" y1="18" x2="21" y2="18"></line>
-                </svg>
-            </button>
-        </header>
-        <div class="sidebar-backdrop" onclick="toggleMobileSidebar()"></div>
+        <button class="quick-menu-btn no-print" onclick="toggleQuickMenu()" aria-label="Open quick menu" style="position: fixed; top: 18px; left: 18px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <div class="quick-menu no-print" id="quick-menu">
+            <div class="quick-menu-header">
+                <div class="brand-title">Creatures in the Tall Grass</div>
+                <button class="quick-menu-close" type="button" onclick="toggleQuickMenu()" aria-label="Close quick menu">×</button>
+            </div>
+            <a href="https://docs.google.com/spreadsheets/d/1si2c5ahcv-MxEjdCnCVAq7QULCkY4I6Wj-JR7zKhFFg/edit?usp=sharing" target="_blank" rel="noreferrer">Open Master Schedule</a>
+            <a href="script-system/full_script.html">View Full Script</a>
+            <a href="storyboard.html">View Storyboards</a>
+            <a href="storyboard-system/full_storyboard.pdf" target="_blank" rel="noreferrer">Full Storyboard PDF</a>
+            <div class="quick-meta">
+                Scenes: ${totalScenes}<br>
+                Shoot days: ${totalDays}<br>
+                Last compiled: ${new Date().toLocaleString()}
+            </div>
+        </div>
         <div class="dashboard-container">
-            <aside class="sidebar no-print">
-                <div style="font-size: 1.2rem; font-weight: 700; color: var(--prod-accent); margin-bottom: 24px;">SUMMER HUB</div>
-                
-                <a href="https://docs.google.com/spreadsheets/d/1si2c5ahcv-MxEjdCnCVAq7QULCkY4I6Wj-JR7zKhFFg/edit?usp=sharing" target="_blank" class="sidebar-button">
-                    📊 Open Master Schedule<br>
-                    <span style="font-size:0.7rem; font-weight:400; opacity:0.8;">(Google Sheet Sync)</span>
-                </a>
-
-                <a href="script-system/full_script.html" class="sidebar-button" style="background: #30363d; margin-bottom: 24px;">
-                    📜 View Full Script
-                </a>
-
-                <div class="stats-card">
-                    <div class="stats-title">Current Status</div>
-                    <div class="stats-value" style="font-size:1.1rem;">${new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' })}</div>
-                    <div style="font-size:0.8rem; opacity:0.7; margin-top:4px;">${new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}</div>
-                </div>
-
-                <div class="sidebar-nav-title">Vital Stats</div>
-                <details class="stats-dropdown">
-                    <summary>View Stats</summary>
-                    <div class="stats-dropdown-content">
-                        <div class="stat-row"><span class="stat-label">Scenes</span> <span class="stat-val">${totalScenes}</span></div>
-                        <div class="stat-row"><span class="stat-label">Shoot Days</span> <span class="stat-val">${totalDays}</span></div>
-                        <div class="stat-row"><span class="stat-label">Locations</span> <span class="stat-val">${locationRows.length}</span></div>
-                        <div class="stat-row"><span class="stat-label">Pickups</span> <span class="stat-val">${pickupSceneCount}</span></div>
-                        <div class="stat-row"><span class="stat-label">Est Run</span> <span class="stat-val">${totalMin}m</span></div>
-                    </div>
-                </details>
-
-                <div class="sidebar-nav-title">Timeline</div>
-                ${sidebarDaysHtml}
-
-                <div class="sidebar-nav-title">Cast</div>
-                ${sidebarActorsHtml}
-
-                <div class="sidebar-nav-title">Locations</div>
-                ${sidebarLocationsHtml}
-
-                <div style="margin-top:auto; padding-top:20px; font-size:0.75rem; opacity:0.5;">
-                    Last Compiled:<br>${new Date().toLocaleString()}
-                </div>
-            </aside>
-
             <main class="main-content">
-                <header style="margin-bottom: 40px;">
-                    <h1 style="margin: 0; font-size: 2.5rem; color: #fff;">Production Dashboard</h1>
-                    <p style="opacity: 0.7;">Creatures in the Tall Grass — Official Breakdown</p>
+                <header style="margin: 8px 0 40px 0; padding-left: 54px;">
+                    <h1 class="brand-title brand-title-main" style="margin: 0; color: #fff;">Creatures in the Tall Grass</h1>
+                    <p style="opacity: 0.7; margin: 8px 0 0 0;">Production Dashboard · Official Shoot Plan</p>
                 </header>
 
-                ${overviewListHtml}
-
-                <div style="display: flex; gap: 20px; margin-bottom: 20px;">
-                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('overview')">Card View</button>
-                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('list')">List View</button>
-                    <button class="sidebar-button" style="width: auto; padding: 8px 16px; margin: 0; background: #30363d;" onclick="toggleView('breakdown')">Detailed Breakdown</button>
-                </div>
-
-                <div class="day-filter-bar no-print">
-                    <span style="font-size: 0.7rem; color: #8b949e; align-self: center; margin-right: 8px; text-transform: uppercase; font-weight: 700;">Filter Day:</span>
-                    <button class="filter-btn active" onclick="filterByDay(null, this)">All</button>
-                    <button class="filter-btn" onclick="filterByDay('Monday', this)">Mon</button>
-                    <button class="filter-btn" onclick="filterByDay('Tuesday', this)">Tue</button>
-                    <button class="filter-btn" onclick="filterByDay('Wednesday', this)">Wed</button>
-                    <button class="filter-btn" onclick="filterByDay('Thursday', this)">Thu</button>
-                    <button class="filter-btn" onclick="filterByDay('Friday', this)">Fri</button>
-                    <button class="filter-btn" onclick="filterByDay('Saturday', this)">Sat</button>
-                    <button class="filter-btn" onclick="filterByDay('Sunday', this)">Sun</button>
-                </div>
-
-                ${compactListHtml}
-
-                <section id="breakdown">
-                    <table class="production-table">
-                        <thead>
-                            <tr>
-                                <th style="width: 60px;">ID</th>
-                                <th style="width: 200px;">Scene Name</th>
-                                <th style="width: 180px;">Location</th>
-                                <th style="width: 100px;">Time</th>
-                                <th style="width: 80px;">Dur.</th>
-                                <th style="width: 80px;">Act</th>
-                                <th style="width: 80px;">Day</th>
-                                <th>Elements & Action</th>
-                                <th style="width: 200px;">Notes</th>
-                            </tr>
-                        </thead>
-                        <tbody id="production-body">
-                            ${breakdownRowsHtml}
-                        </tbody>
-                    </table>
-                </section>
+                ${shootPlanHtml}
             </main>
         </div>
 
         <script>
-            function filterByActor(actor) {
-                const rows = document.querySelectorAll('#production-body tr:not(.day-divider-row)');
-                rows.forEach(row => {
-                    if (!actor) {
-                        row.style.display = '';
-                    } else {
-                        const chips = row.querySelectorAll('.actor-chip');
-                        let found = false;
-                        chips.forEach(c => { if(c.textContent === actor) found = true; });
-                        row.style.display = found ? '' : 'none';
-                    }
-                });
-            }
-
-            function filterByLocation(loc) {
-                const rows = document.querySelectorAll('#production-body tr:not(.day-divider-row)');
-                rows.forEach(row => {
-                    if (!loc) {
-                        row.style.display = '';
-                    } else {
-                        const tag = row.querySelector('.location-tag').textContent;
-                        row.style.display = tag === loc ? '' : 'none';
-                    }
-                });
-            }
-
-            function toggleView(view) {
-                const overviewSection = document.getElementById('schedule-overview');
-                const listViewSection = document.getElementById('compact-list-view');
-                const breakdownSection = document.getElementById('breakdown');
-                
-                if (overviewSection) overviewSection.style.display = view === 'overview' ? 'block' : 'none';
-                if (listViewSection) listViewSection.style.display = view === 'list' ? 'block' : 'none';
-                if (breakdownSection) breakdownSection.style.display = view === 'breakdown' ? 'block' : 'none';
-
-                // Re-apply filter on view change
-                const activeFilter = document.querySelector('.filter-btn.active');
-                if (activeFilter) {
-                    const onclickAttr = activeFilter.getAttribute('onclick');
-                    const match = onclickAttr ? onclickAttr.match(/'([^']+)'/) : null;
-                    filterByDay(match ? match[1] : null, activeFilter);
-                }
-            }
-
-            function filterByDay(day, btn) {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                if (btn) btn.classList.add('active');
-
-                const overviewCards = document.querySelectorAll('#schedule-overview .stats-card');
-                const compactItems = document.querySelectorAll('#compact-list-view .compact-item');
-                const dividerRows = document.querySelectorAll('#breakdown .day-divider-row');
-                const breakdownRows = document.querySelectorAll('#production-body tr');
-
-                overviewCards.forEach(el => {
-                    const elDay = el.getAttribute('data-day-name');
-                    el.style.display = (!day || elDay === day) ? 'block' : 'none';
-                });
-
-                compactItems.forEach(el => {
-                    const elDay = el.getAttribute('data-day-name');
-                    el.style.display = (!day || elDay === day) ? 'block' : 'none';
-                });
-
-                dividerRows.forEach(el => {
-                    const elDay = el.getAttribute('data-day-name');
-                    el.style.display = (!day || elDay === day) ? 'table-row' : 'none';
-                });
-
-                breakdownRows.forEach(el => {
-                    const elDay = el.getAttribute('data-day-name');
-                    el.style.display = (!day || elDay === day) ? 'table-row' : 'none';
-                });
-            }
-            
-            function toggleMobileSidebar() {
-                const sidebar = document.querySelector('.sidebar');
-                const backdrop = document.querySelector('.sidebar-backdrop');
-                if (sidebar) sidebar.classList.toggle('open');
-                if (backdrop) backdrop.classList.toggle('show');
+            function toggleQuickMenu() {
+                const menu = document.getElementById('quick-menu');
+                if (menu) menu.classList.toggle('open');
             }
 
             function init() {
-                toggleView('overview');
+                document.addEventListener('click', (event) => {
+                    const menu = document.getElementById('quick-menu');
+                    const button = document.querySelector('.quick-menu-btn');
+                    if (!menu || !menu.classList.contains('open')) return;
+                    if (menu.contains(event.target) || (button && button.contains(event.target))) return;
+                    menu.classList.remove('open');
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        const menu = document.getElementById('quick-menu');
+                        if (menu) menu.classList.remove('open');
+                    }
+                });
+
+                document.querySelectorAll('.shoot-plan-card[data-call-sheet-href]').forEach((card) => {
+                    const href = card.getAttribute('data-call-sheet-href');
+                    if (!href) return;
+
+                    const openCallSheet = () => {
+                        window.location.href = href;
+                    };
+
+                    card.addEventListener('click', (event) => {
+                        if (event.target.closest('a, button, select, input, textarea, label')) return;
+                        openCallSheet();
+                    });
+
+                    card.addEventListener('keydown', (event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                            event.preventDefault();
+                            openCallSheet();
+                        }
+                    });
+                });
             }
             if (document.readyState === 'loading') {
                 document.addEventListener('DOMContentLoaded', init);
@@ -1234,9 +1321,25 @@ function generateDayHtml(dayNum, rows, productionData) {
   const dateStr = calendar[dayNum] || '—';
   const holidays = productionData.holidays || {};
   const holiday = holidays[dateStr];
+  const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+  const planEntry = shootPlan.find((entry) => Number(entry.day) === Number(dayNum));
+  const totalShootDays = shootPlan.filter((entry) => !entry.special).length || Object.keys(calendar).length;
 
-  // Find scenes belonging to this day
-  const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(dayNum));
+  const unique = (items) => Array.from(new Set((items || []).filter(Boolean)));
+  const sceneIds = planEntry && Array.isArray(planEntry.scenes) && planEntry.scenes.length
+    ? unique(planEntry.scenes)
+    : unique(rows.filter((r) => r.scheduledDays && r.scheduledDays.includes(dayNum)).map((r) => `s${String(r.n).padStart(2, '0')}`));
+  const dayRows = sceneIds
+    .map((sceneId) => rows.find((r) => String(r.n).toLowerCase() === String(sceneId).toLowerCase()))
+    .filter(Boolean);
+  const summaryLocations = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locations')
+    ? unique(Array.isArray(planEntry.locations) ? planEntry.locations : [planEntry.locations])
+    : unique(dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
+  const summaryCast = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
+    ? unique(Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
+    : unique(dayRows.flatMap((r) => r.characters || []));
+  const dayLabel = planEntry ? `Day ${planEntry.day}` : `Day ${dayNum}`;
+  const sourceNote = planEntry && planEntry.sourceNote ? planEntry.sourceNote : '';
 
   function extractSceneSnippet(content, n) {
     if (!content || typeof content !== 'string') return '';
@@ -1325,7 +1428,7 @@ function generateDayHtml(dayNum, rows, productionData) {
             <header class="callsheet-header">
                 <div>
                     <h1 style="margin:0;">DAILY CALL SHEET</h1>
-                    <h2 style="margin:0; font-size:1.5rem;">Day ${dayNum} of 15</h2>
+                    <h2 style="margin:0; font-size:1.5rem;">${dayLabel} of ${totalShootDays}</h2>
                 </div>
                 <div style="text-align:right;">
                     <div style="font-weight:700;">${getDayName(dateStr).toUpperCase()}</div>
@@ -1333,6 +1436,16 @@ function generateDayHtml(dayNum, rows, productionData) {
                     ${holiday ? `<div style="color:red; font-weight:700;">${holiday}</div>` : ''}
                 </div>
             </header>
+
+            <section style="margin-bottom:18px; padding:14px; border:1px solid #ddd; border-radius:8px; background:#fafafa;">
+                <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#666; margin-bottom:8px;">Shoot Plan Summary</div>
+                ${sourceNote ? `<div style="font-size:0.9rem; font-family: ui-monospace, monospace; margin-bottom:10px;">${escapeHtml(sourceNote)}</div>` : ''}
+                <div style="display:grid; gap:10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Scenes</div><div style="font-size:0.95rem;">${sceneIds.map(escapeHtml).join(', ') || '—'}</div></div>
+                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Locations</div><div style="font-size:0.95rem;">${summaryLocations.map(escapeHtml).join(', ') || '—'}</div></div>
+                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Cast</div><div style="font-size:0.95rem;">${summaryCast.map(escapeHtml).join(', ') || '—'}</div></div>
+                </div>
+            </section>
 
             <section style="margin-bottom:30px;">
                 <h3 style="background:black; color:white; padding:5px 10px; margin:0;">GENERAL CREW CALL: 08:00 AM</h3>

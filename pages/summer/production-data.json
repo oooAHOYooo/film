@@ -2,7 +2,7 @@
   "s01": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 1,
+    "assignedDay": 9.5,
     "location": "DALLAS HOUSE - Exterior",
     "time": "DAY",
     "keyElements": "",
@@ -60,7 +60,7 @@
   "s04": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 5,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -74,7 +74,7 @@
   "s07b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 5,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -89,7 +89,7 @@
     "durationMin": 0,
     "shootDays": 0.5,
     "assignedDay": [
-      4,
+      5,
       14
     ],
     "keyElements": "",
@@ -106,7 +106,7 @@
   "s03": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -118,7 +118,7 @@
   "s05": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -130,7 +130,7 @@
   "s06": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -572,15 +572,209 @@
     "7": "2026-06-18",
     "8": "2026-06-19",
     "9": "2026-06-20",
+    "9.5": "2026-06-21",
     "10": "2026-06-26",
     "11": "2026-06-27",
     "12": "2026-06-28",
     "13": "2026-07-01",
     "14": "2026-07-02",
     "15": "2026-07-03",
-    "16": "2026-07-05",
-    "17": "2026-07-10",
-    "18": "2026-07-11",
-    "19": "2026-07-12"
-  }
+    "16": "2026-07-05"
+  },
+  "shootPlan": [
+    {
+      "day": 1,
+      "date": "2026-06-07",
+      "weekday": "Sunday",
+      "scenes": [
+        "s00"
+      ],
+      "locations": [
+        "branford exterior"
+      ],
+      "cast": [
+        "Dallas"
+      ],
+      "sourceNote": "Day 1 = 6.7.26 - Sun <s00s> Branford montage"
+    },
+    {
+      "day": 2,
+      "date": "2026-06-09",
+      "weekday": "Tuesday",
+      "scenes": [
+        "s02",
+        "s17"
+      ],
+      "locations": [
+        "Jerry House"
+      ],
+      "sourceNote": "Day 2 = 6.9.26 = Tues [s02,s17][D]"
+    },
+    {
+      "day": 3,
+      "date": "2026-06-12",
+      "weekday": "Friday",
+      "scenes": [
+        "s09",
+        "s10"
+      ],
+      "sourceNote": "Day 3 = 6.12.26 - Fr <s09-s10>[D]"
+    },
+    {
+      "day": 4,
+      "date": "2026-06-13",
+      "weekday": "Saturday",
+      "scenes": [
+        "s03",
+        "s05",
+        "s06"
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Pat Clendenen"
+      ],
+      "sourceNote": "D4 = 6.13.26 - Sat <s03,s05,s06>"
+    },
+    {
+      "day": 5,
+      "date": "2026-06-14",
+      "weekday": "Sunday",
+      "scenes": [
+        "s04",
+        "s07b",
+        "s26"
+      ],
+      "locations": [
+        "CPC",
+        "Living Room"
+      ],
+      "sourceNote": "D5 = 6.14.26 = Sun <s04,s07b,s26>"
+    },
+    {
+      "day": 6,
+      "date": "2026-06-16",
+      "weekday": "Tuesday",
+      "scenes": [
+        "s11",
+        "s12"
+      ],
+      "sourceNote": "Day 6 = 6.16.26 = Tues <s11 + s12>[D]"
+    },
+    {
+      "day": 7,
+      "date": "2026-06-18",
+      "weekday": "Thursday",
+      "scenes": [
+        "s27"
+      ],
+      "sourceNote": "Day 7 = 6.18.26 = Thurs <s27>[D]"
+    },
+    {
+      "day": 8,
+      "date": "2026-06-19",
+      "weekday": "Friday",
+      "scenes": [
+        "s07",
+        "s08"
+      ],
+      "sourceNote": "Day 8 = 6.19.26 = Fri <s07,s08>[D][H]"
+    },
+    {
+      "day": 9,
+      "date": "2026-06-20",
+      "weekday": "Saturday",
+      "scenes": [
+        "s13",
+        "s14",
+        "s17"
+      ],
+      "sourceNote": "D9 = 6.20.26 = Sat<s13, s14s, s17 >"
+    },
+    {
+      "day": 9.5,
+      "date": "2026-06-21",
+      "weekday": "Sunday",
+      "scenes": [
+        "s01"
+      ],
+      "sourceNote": "D9.5 = 6.21.26 (Father's Day)",
+      "special": true
+    },
+    {
+      "day": 10,
+      "date": "2026-06-26",
+      "weekday": "Friday",
+      "scenes": [
+        "s00",
+        "s09c"
+      ],
+      "sourceNote": "D10 = 6.26.26 = Fri [D]<s00, s09c>"
+    },
+    {
+      "day": 11,
+      "date": "2026-06-27",
+      "weekday": "Saturday",
+      "scenes": [
+        "s28",
+        "s29",
+        "s30"
+      ],
+      "sourceNote": "D11 =6.27 = Sat <s28,s29,s30> [D, Dm,...]"
+    },
+    {
+      "day": 12,
+      "date": "2026-06-28",
+      "weekday": "Sunday",
+      "scenes": [
+        "s04"
+      ],
+      "locations": [
+        "Church"
+      ],
+      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04><s..."
+    },
+    {
+      "day": 13,
+      "date": "2026-07-01",
+      "weekday": "Wednesday",
+      "scenes": [
+        "s04",
+        "s07",
+        "s26"
+      ],
+      "sourceNote": "D13 = 7.1.26 = Wed <s04,s07, s26>"
+    },
+    {
+      "day": 14,
+      "date": "2026-07-02",
+      "weekday": "Thursday",
+      "scenes": [
+        "s21"
+      ],
+      "sourceNote": "Day 14 = 7.2.26 = Thursday <s21, >"
+    },
+    {
+      "day": 15,
+      "date": "2026-07-03",
+      "weekday": "Friday",
+      "scenes": [
+        "s15",
+        "s21",
+        "s22",
+        "s23"
+      ],
+      "sourceNote": "Day 15 = 15 7.3.26 Friday <s15,21,22,23>"
+    },
+    {
+      "day": 16,
+      "date": "2026-07-05",
+      "weekday": "Sunday",
+      "scenes": [
+        "s04",
+        "s15s"
+      ],
+      "sourceNote": "Day 16 = 16 7.5.26 <s04, s15s> Sunday"
+    }
+  ]
 }
