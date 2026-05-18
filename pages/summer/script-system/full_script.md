@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/11/2026, 2:49:28 PM*
+*Compiled on 5/18/2026, 12:15:04 PM*
 
 ---
 
@@ -21,11 +21,14 @@
 <!-- nickname: arrival -->
 
 ##s00
+<!-- FILMING ON 
+6.28.26 -->
 INT. TRAIN - DALLAS
 Dallas takes the train to branford
 
 ##s01 - Arrival 
-
+<!-- FILMING ON 
+6.7.26 -->
 EXT. DALLAS NEW HOUSE - DAY (s01.1)
 
 Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
@@ -159,6 +162,8 @@ Dallas looks down at a box of old equipment and stretches down to pick it up.
 # Scene 2: Sierra's Box
 <!-- summary: Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies. -->
 
+<!-- Filming On  6.9.26 -->
+
 INT. DALLAS KITCHEN - SUNSET (s02.1)
 Dallas looks at his new surroundings. He opens drawers and closes others. Cut to : Dallas looks at a gift basket - filled with fresh fruit and items. Cut to: He hasitly begins to put forth a frozen pizza. Cut to: Dallas hangs on the couch and begins to watch tv. On the screen a weatherman talks about the upcoming Branford weather.  
 
@@ -221,7 +226,7 @@ In the distance a thunderstorm.
 <!-- scene: 3 file: s03.md nickname: the-hum -->
 
 <!-- nickname: Meet the Neighbors -->
-
+<!-- FILMING ON - DAY 9 = 6.20.26 -->
 EXT. DALLAS HOUSE - NEXT DAY MORNING (s03.1)
 Dallas walks outside his house, towards the edge of the property. As he approaches the edge of his yard he watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the audio recorder in his hand. As he does so, he becomes dazed.
 
@@ -396,6 +401,9 @@ Nice - yeah - it's nice to be the new guy in town - good old Branford.
 <!-- nickname: fellowship -->
 EXT. CHURCH FELLOWSHIP LAWN - LATE AFTERNOON (s04.1)
 
+<!-- FILMING ON
+7.5.26 -->
+
 Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends down light summerwear as they play spike ball, and church goers find themselvees are on a long line for food. 
 
 Dallas looks around at all of the new faces but does not make great eye contact. Dominic takes a deep breath and approaches the long line. 
@@ -534,6 +542,8 @@ They finish eating. The group begins to disperse.
 # Scene 5: The Merlin App
 <!-- summary: Boardwalk through the reeds. They hear birds andSomething moving in the marsh. -->
 
+<!-- FILMING ON - DAY 9 = 6.20.26 -->
+
 EXT. MARSH TRAIL - LATER (s05.1)
 The sun is dipping. Dallas and Dominic walk back home - along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
 
@@ -612,6 +622,8 @@ Dallas and Dominic walk slowly and Dallas looks out to the tall grass for a whil
 
 # Scene 6: News Vans
 <!-- summary: News vans in the street. Pat on camera. Marks on Dominic's driveway. Dallas strays and stays. -->
+
+<!-- FILMING ON = DAY 9 = 6.20.26 -->
 
 EXT. BRANFORD NEIGHBORHOOD - CONTINUOUS (s06.1)
 
@@ -703,6 +715,8 @@ Sure.
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 <!-- nickname: the-coordinates -->
+<!-- FILMING ON - DAY 8 = 6.19.26 -->
+
 INT. JACE'S BASEMENT (s07.1)
 Dallas looks around in amazement. The basement is covered with normal basement things - but as his eyes scan the room he notices that there are two beds, room, and clutter. Around the corner there is a workstation filled with old CRT machines and what not.
 
@@ -1027,6 +1041,9 @@ Dallas begins to walk across the street to his house.
 
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
+<!-- FILMINIG ON =
+Day 4 - 6.13.26 -->
+
 s07B — INT. DOMINIC'S BASEMENT — CONTINUOUS
 (Slots in between Scene 7.2 and the end of Scene 7. After Mr. Mike has rambled about Javerias and Janice has gone outside for a smoke. Dominic is in the kitchen, out of frame. Dallas is alone with Mr. Mike and the dog.)
 
@@ -1168,6 +1185,9 @@ Dallas looks at his wrist one more time, then at the rocking chair. Then at the 
 
 # Scene 8: The Trailcam
 
+<!-- FILMING ON = 
+DAY 4 - EVENING - 6.13.26>
+
 EXT. DALLAS HOUSE - MOMENTS LATER (s08.1)
 
 Dallas tries to bring Howie inside but he won't go. He looks like he wants to go on a walk. So Dallas reasons with the creature and brings him on a walk. 
@@ -1218,9 +1238,13 @@ Dallas walks faster, pulling Howie along. He scrambles back toward the boardwalk
 
 # SCENE 8B: THE RESEARCH BEAT
 
-s08b.1 — INT. DALLAS HOUSE - DESK - NIGHT
+<!-- Filming on 6.13.26 - DAY 4 >
 
-The house is quiet, save for the hum of a refrigerator and the soft, rhythmic scratching of Howie’s paws on the hardwood in the next room. 
+s08b.1 — INT. DALLAS WORKSHOP - DESK - NIGHT
+
+The house is quiet. 
+
+Dallas sits in his workshop, it seems as if it is more decorated since last time but not by much 
 
 Dallas sits in the dark. He plugs the trailcam into his laptop. The screen flickers with grainy, infrared night-vision footage.
 
@@ -1343,6 +1367,8 @@ Howie begins to cry. Dallas goes to sleep.
 # Scene 9: The Injured One
 <!-- summary: Dallas, as he ventures deeper and deeper into the marsh - finds a bioluminest creature -->
 
+<!-- FILMING ON - DAY 3 = 6.12.26 -->
+
 EXT. DALLAS HOUSE - NEXT DAY
 
 Dallas wakes up and Dallas goes to Howie's room. He doesn't see him.
@@ -1400,6 +1426,8 @@ Suddenly, the wind returns. A violent gust. Shadows in the distance start to fil
 
 # Scene 10: The Chase
 <!-- nickname: Creature discovery -->
+<!-- FILMING ON 
+DAY 3 6.12.26 -->
 
 EXT. TALL GRASS - MOMENTS LATER (s10.1)
 
@@ -1434,6 +1462,10 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 
 # Scene 11: Kitchen Triage
 <!-- summary: Dallas at home with the creature. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
+
+<!-- FILMING ON DAY 6 -- 6.16.26>
+
+<!-- SCENE NOTES: - MAYBE KILL ASHER HERE -->
 
 INT. DALLAS KITCHEN - DUSK (s11.1)
 Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines it with parchment paper. The creature seems to be asleep. 
@@ -1552,6 +1584,7 @@ Dallas rushes to the workstation and finds that the creature sleeping peacefully
 
 <!-- nickname: THE FIRST NIGHT WITH CREATURE  -->
 
+<!-- Filming on = Day 6 = 6.16.26 -->
 
 INT. DALLAS DESK - NIGHT - MOMENTS LATER (s12.1)
 
@@ -1573,6 +1606,9 @@ Dallas presses play on the recorder and goes to sleep.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 # Scene 13: The Confrontation
+
+<!-- FILMING ON 
+DAY 4 = 6.13.26 -->
 
 INT. DALLAS BEDROOM - NEXT MORNING
 
@@ -1757,6 +1793,8 @@ distance stands off, afraid to look at the creature.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 # Scene 14: The Connection
+
+<!-- FILMING ON = DAY 4 = 6.13.26 -->
 EXT. DALLAS BACKYARD - OLD PICNIC TABLE (s14.1)
 
 Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. 
@@ -1987,7 +2025,7 @@ Dallas - I have to show you something.
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 # SCENE 14B : #####
-
+<!-- FILMING ON = DAY 4 = 6.13.26 -->
 SCENE 14B: THE FIELD JOURNAL
 
 
@@ -2146,6 +2184,7 @@ They stand. Dallas glances back at the tall grass one more time before following
 
 <!-- scene: 14C file: s14c.md nickname: the-almost-discovery -->
 
+<!-- FILMING ON = DAY 4 = 6.13.26 -->
 INT. DALLAS HOUSE – LATE AFTERNOON (s14c.1)
 
 Late-day light leaks through the kitchen blinds. The creature is hidden beneath a towel inside the makeshift enclosure. A SOFT, IRREGULAR HUM bleeds faintly into the room.
@@ -2316,6 +2355,8 @@ Makayla doesn’t answer. She stares at the towel—at the faint GOLDEN GLOW ble
 
 <!-- scene: 15A file: s15a.md nickname: the-failed-test -->
 
+<!-- FILMING ON - DAY 16 = 7.5.26 -->
+
 INT. DALLAS WORKSHOP – EVENING (s15a.1)
 
 The room is dim, controlled. Every light filtered red.  
@@ -2409,6 +2450,8 @@ Makayla finally understands.
 
 # Scene 15: Makayla's Tracking Box
 
+<!-- s15b -->
+<!-- FILMING ON DAY 15 -->
 EXT. NEIGHBORHOODS - EVENING (s15.1)
 The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
 
@@ -2526,6 +2569,8 @@ We should go.
 
 <!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
+<!-- GOING TO FILM ON Day 5 -->
+
 EXT. DALLAS BACK PORCH – NIGHT (s15c.1)
 
 Crickets. Distant surf.
@@ -2580,6 +2625,8 @@ Dallas does.
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 # Scene 16: Back Home
+
+<!-- GOING TO FILM ON Day 12 -->
 
 EXT. DALLAS BACKYARD (s16.1)
 Makayla and Dallas hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 
@@ -2695,6 +2742,7 @@ Dominic comes out from the other side door and throws the minivan into drive.
 <!-- scene: 17 file: s17.md nickname: resonance -->
 
 <!-- nickname: resonance -->
+<!-- GOING TO FILM ON Day 4 -->
 
 INT. DALLS BASEMENT (s17.1)
 
@@ -2736,6 +2784,7 @@ Dallas runs outside and looks around. But to no avail.
 # SCENE 17B: NORMAL DAY
 
 <!-- nickname: normal-day -->
+<!-- GOING TO FILM ON Day 12 -->
 
 INT. GROCERY STORE / COSTCO - DAY (s17b.1)
 
@@ -2765,17 +2814,17 @@ JANICE
 Dom? You okay?
 
 DOMINIC
-Yeah. Just thought I heard... never mind. Water. We need water.
+Yeah.
 
 (cross-cut)
 
-INT. DALLAS BASEMENT - DAY (s17b.2)
+INT. DALLAS ATTIC - DAY (s17b.2)
 
 Dallas is hunched over his makeshift receiver workstation, the heavy headphones clamped to his ears. The frequency is no longer ambient to him; it is clear, distinct, and terrifying. He frantically dials the knobs, trying to track the source, completely consumed.
 
 (cross-cut)
 
-INT. GROCERY STORE - DAY (s17b.3)
+EXT. GROCERY STORE - DAY (s17b.3)
 
 Janice loads a massive pack of toilet paper into the cart. She seems perfectly at ease, navigating the normalcy like a protective shield. She chats pleasantly with a passing neighbor.
 
@@ -2789,34 +2838,11 @@ Dominic watches her. Her comfort isn't ignorance; it's a practiced discipline. S
 
 (cross-cut)
 
-INT. MAKAYLA'S ROOM - DAY (s17b.4)
+INT. MAKAYLA'S LAIR - DAY (s17b.4)
 
 Makayla has maps, meteorological data, and Sierra’s old drawings spread across her floor. She is tracing patterns with a red marker, aggressively connecting the dots between the anomalous sounds and the town's geography.
 
 (cross-cut)
-
-INT. ASHER'S ROOM - DAY (s17b.5)
-
-Asher sits perfectly still on the edge of his bed. The room is quiet, but his hands are clamped tightly over his ears. His eyes are squeezed shut. To him, the hum isn't a background noise—it's a roar of absolute clarity that the world refuses to acknowledge.
-
-(cross-cut)
-
-INT. GROCERY STORE - DAY (s17b.6)
-
-Dominic and Janice stand in line at the register. The cashier scans items with a rhythmic, piercing BEEP. 
-
-CASHIER
-Did you find everything okay today?
-
-JANICE
-Yes, thank you. 
-
-<!-- scene: 17B file: s17b.md nickname: normal-day -->
-
-(action)
-Dominic looks at the people around them. Families buying bulk snacks. A couple arguing over laundry detergent. The community's banal civic processes continuing uninterrupted. The world is spinning on its axis, completely unaware of the tectonic plates shifting beneath them. 
-
-Dominic grips the handle of the shopping cart tightly. He looks at Janice, who is warmly smiling at the cashier, securing their purchase. The denial is a mutual, unspoken choice. Right now, this false normal is the only thing holding them together.
 
 ---
 
@@ -2832,7 +2858,9 @@ Dominic grips the handle of the shopping cart tightly. He looks at Janice, who i
 # SCENE 17C: MUTE DRIVE
 
 <!-- nickname: mute-drive -->
-
+<!-- GOING TO FILM ON 
+6.28.26 -->
+<!-- GOING TO FILM ON Day 12 -->
 INT. JANICE'S MINIVAN - DAY (s17c.1)
 
 Janice is driving through downtown Branford. The Nor'easter winds are picking up, rattling the windows of the minivan. Outside, the town is engaged in banal, civic storm preparation. Shop owners are taping windows. Public works employees are laying sandbags near the post office. 
@@ -2847,15 +2875,11 @@ I was talking to Uncle Dom last night... about how proud we both are of you. I k
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
 
 (action)
-Makayla remains totally mute. She doesn't blink. She is watching the streetlights pulsing—a rhythmic, subtle dimming that matches a distant, ambient hum. Her eyes track a creeping, dark rot—a massive burn mark—snaking its way up the brick side of the Branford Town Hall. The public works employees walk right past it, completely oblivious.
+Makayla remains  mute.  Her eyes track a creeping, dark rot—a massive burn mark—which looks like it was snaking its way up the brick side of the Branford Town Hall. The public works employees walk right past it, completely oblivious.
 
-The silence in the car is deafening. Makayla's refusal to participate in the emotional buffering is a physical weight. 
-
-Janice looks away from the road, staring at Makayla's terrified, stoic profile. Then, Janice looks at what Makayla is looking at. 
+The silence in the car is deafening. Janice looks away from the road, staring at Makayla's terrified, stoic profile. Then, Janice looks at what Makayla is looking at. 
 
 Janice's eyes land on the brick wall of the Town Hall. She sees the black veins of rot. She sees the streetlights pulse. She feels the unnatural rhythm of the wind. 
-
-The facade breaks. The "proud aunt" narrative dissolves instantly. 
 
 Janice hits the brakes, pulling the minivan hard onto the shoulder of the road. 
 
@@ -2868,12 +2892,22 @@ You aren't just taking care of him. You're protecting him from something.
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
 
 (action)
-Makayla finally turns her head to look at Janice. The silence between them shifts from resistance to grim understanding. 
+Makayla finally turns her head to look at Janice. The silence between them shifts.
 
 JANICE
-What is coming, Makayla?
+What is wrong, Makayla?
 
 MAKAYLA
+Everything.
+
+JANICE
+Everything?
+
+MAKAYLA
+I don't know. 
+
+JANICE
+Makayla, what is 
 Something they aren't ready for. 
 
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
@@ -2901,6 +2935,8 @@ Janice throws the car back into drive. The minivan speeds off as the first heavy
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 <!-- nickname: life-group-arrives -->
+
+<!-- GOING TO FILM ON DAY 11 -->
 
 INT. DOMINIC'S KITCHEN / LIVING ROOM - NIGHT (s18.1)
 
@@ -2964,7 +3000,7 @@ Makayla nods quickly and slips away.
 
 Downstairs, the volume of the creature frequency pulses rhythmically through the floorboards.
 
-INT. DALLAS BASEMENT - CONTINUOUS (s18.4)
+INT. DOMINIC's BASEMENT - CONTINUOUS (s18.4)
 Dallas is sweating. He turns the dial up. Dallas walks over to the small creature and gently rubs its furry head. 
 
 MAKAYLA 
@@ -3116,7 +3152,7 @@ What in the world?! Makayla - what is going on?!
 
 <!-- nickname: the-hymn -->
 <!-- summary:  -->
-
+<!-- GOING TO FILM ON DAY 11 - 6.27.26 -->
 INT. DOMINIC'S BASEMENT - SAME TIME (s19.1)
 
 Dallas shuffles through a pile of old equipment—mono cables, spare parts and arranges them all neatly on a desk.
@@ -3269,7 +3305,7 @@ Dominic heads toward the basement alone. Dallas's stomach drops. He and Makayla 
 
 # Scene 20: The Secret is Out
 
-
+<!-- GOING TO FILM ON DAY 11 - 6.27.26 -->
 INT. DOMINIC'S BASEMENT - CONTINUOUS (s20.1)
 
 Dominic descends the basement stairs, expecting a stray kitten. 
@@ -3480,6 +3516,8 @@ The crew turn and sprint back into the house, slamming the door.
 
 # Scene 21: The Burn Marks
 
+<!-- GOING TO FILM ON : Day 13 = Wednesday -->
+
 INT. DALLAS LIVING ROOM (s21.1)
 The crew hold the door down.
 
@@ -3518,6 +3556,9 @@ They look again. Closer. The eyes reappear. Swirling through the beating wind an
 <!-- scene: 21B file: s21b.md nickname: the-infection -->
 
 # Scene 21b: The Infection
+
+<!-- GOING TO FILM ON : Day 13 = Wednesday -->
+
 
 INT. DALLAS KITCHEN - NIGHT (MOMENTS LATER) (s21b.1)
 
@@ -3599,6 +3640,8 @@ Dallas grabs his heavy coat. The "Trench Run" has begun.
 <!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 
 # Scene 22: The Load-Out
+
+<!-- GOING TO FILM ON : Day 13 = Wednesday -->
 
 EXT. DALLAS'S BACKYARD - CONTINUOUS (s22.1)
 The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 

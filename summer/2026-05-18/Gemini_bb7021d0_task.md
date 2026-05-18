@@ -1,0 +1,5 @@
+- [x] Modify `production-data.json` scene days and shoot plan
+- [x] Modify scene script markdown file comments
+- [x] Compile the production dashboard and check daily call sheets
+- [x] Compile the script system and gallery index
+- [x] Verify the compiled files match the desired shoot schedule

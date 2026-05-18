@@ -14,7 +14,8 @@
     ]
   },
   "s02": {
-    "durationMin": 0,
+    "durationMin": 120,
+    "time": "06:00 PM - 08:00 PM",
     "shootDays": 0.5,
     "assignedDay": 2,
     "keyElements": "",
@@ -23,6 +24,9 @@
       "Dallas",
       "Makayla"
     ]
+  },
+  "s04": {
+    "time": "2:30pm"
   },
   "s09b": {
     "durationMin": 0,
@@ -106,7 +110,7 @@
   "s03": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 9,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -118,7 +122,7 @@
   "s05": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 9,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -130,7 +134,7 @@
   "s06": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 9,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -187,7 +191,7 @@
   "s13": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -202,7 +206,7 @@
   "s07": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -217,7 +221,7 @@
   "s14": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -232,7 +236,7 @@
   "s14b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -247,7 +251,7 @@
   "s14c": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -260,11 +264,12 @@
     ]
   },
   "s17": {
-    "durationMin": 0,
+    "durationMin": 120,
+    "time": "08:00 PM - 10:00 PM",
     "shootDays": 0.5,
     "assignedDay": [
-      2,
-      9
+      9,
+      4
     ],
     "keyElements": "",
     "productionNotes": "",
@@ -281,7 +286,7 @@
     "durationMin": 0,
     "shootDays": 0.5,
     "assignedDay": [
-      9,
+      4,
       12
     ],
     "keyElements": "",
@@ -299,7 +304,7 @@
     "durationMin": 0,
     "shootDays": 0.5,
     "assignedDay": [
-      9,
+      4,
       12
     ],
     "keyElements": "",
@@ -590,7 +595,28 @@
         "s00"
       ],
       "locations": [
-        "branford exterior"
+        "Town Green",
+        "Branford High School",
+        "Stony Creek",
+        "Supply Ponds"
+      ],
+      "crewCall": "GENERAL CREW CALL: 5pm - at Alex's House - 206 Saint John",
+      "locationDetails": [
+        "1. Town Green (1011 Main St) - Arrival 5:00 PM",
+        "   • Notes: Park near the gazebo",
+        "2. Branford High School (185 E Main St) - Arrival 6:30 PM",
+        "   • Notes: Use the east entrance",
+        "3. Stony Creek (Thimble Island Rd) - Arrival 8:00 PM",
+        "4. Supply Ponds (Chestnut St) - Arrival 9:30 PM"
+      ],
+      "wardrobe": [
+        "1. Dallas Outfit #1",
+        "   a. White Shirt",
+        "   b. Blue Shorts"
+      ],
+      "props": [
+        "1. Oscillator",
+        "2. Audio Headphones"
       ],
       "cast": [
         "Dallas"
@@ -602,11 +628,26 @@
       "date": "2026-06-09",
       "weekday": "Tuesday",
       "scenes": [
-        "s02",
-        "s17"
+        "s02"
       ],
       "locations": [
-        "Jerry House"
+        "72 lake street, hamden ct"
+      ],
+      "locationDetails": [
+        "72 lake street, hamden ct",
+        "arrival = 206 saint john at 5pm"
+      ],
+      "crewCall": "GENERAL CREW CALL: 05:00 PM",
+      "cast": [
+        "Dallas"
+      ],
+      "crew": [
+        "1. Alex Gonzalez (Director, DP)",
+        "2. Jerry (Owner of House)",
+        "3. Chris Batista (Audio + Lights)"
+      ],
+      "misc": [
+        "Alex's Phonenumber: [Insert Number Here]"
       ],
       "sourceNote": "Day 2 = 6.9.26 = Tues [s02,s17][D]"
     },
@@ -618,6 +659,22 @@
         "s09",
         "s10"
       ],
+      "wardrobe": [
+        "Dallas: Outfit #2"
+      ],
+      "props": [
+        "Good Creature",
+        "Bad Creature"
+      ],
+      "crew": [
+        "1. Alex",
+        "2. Chris",
+        "3. Aldo",
+        "4. Jerry"
+      ],
+      "misc": [
+        "Note: We also might need Howie the dog"
+      ],
       "sourceNote": "Day 3 = 6.12.26 - Fr <s09-s10>[D]"
     },
     {
@@ -625,16 +682,11 @@
       "date": "2026-06-13",
       "weekday": "Saturday",
       "scenes": [
-        "s03",
-        "s05",
-        "s06"
+        "s13",
+        "s14"
       ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Pat Clendenen"
-      ],
-      "sourceNote": "D4 = 6.13.26 - Sat <s03,s05,s06>"
+      "crewCall": "GENERAL CREW CALL: 09:00 AM",
+      "sourceNote": "D4 = 6.13.26 - Sat <s13, s14s, s17 >"
     },
     {
       "day": 5,
@@ -645,6 +697,7 @@
         "s07b",
         "s26"
       ],
+      "crewCall": "GENERAL CREW CALL: 01:00 PM",
       "locations": [
         "CPC",
         "Living Room"
@@ -685,11 +738,17 @@
       "date": "2026-06-20",
       "weekday": "Saturday",
       "scenes": [
-        "s13",
-        "s14",
+        "s03",
+        "s05",
+        "s06",
         "s17"
       ],
-      "sourceNote": "D9 = 6.20.26 = Sat<s13, s14s, s17 >"
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Pat Clendenen"
+      ],
+      "sourceNote": "D9 = 6.20.26 = Sat <s03,s05,s06>"
     },
     {
       "day": 9.5,

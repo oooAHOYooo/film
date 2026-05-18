@@ -143,6 +143,8 @@ function buildProductionRows(scenes, productionData, plotCards) {
       pickup,
       keyElements,
       productionNotes,
+      props: data.props || [],
+      wardrobe: data.wardrobe || [],
       act,
       actTitle,
       characters,
@@ -1321,6 +1323,12 @@ function generateDayHtml(dayNum, rows, productionData) {
   const dateStr = calendar[dayNum] || '—';
   const holidays = productionData.holidays || {};
   const holiday = holidays[dateStr];
+  
+  const sortedDays = Object.keys(calendar).map(Number).sort((a,b) => a - b);
+  const currentIndex = sortedDays.indexOf(Number(dayNum));
+  const prevDay = currentIndex > 0 ? sortedDays[currentIndex - 1] : null;
+  const nextDay = currentIndex >= 0 && currentIndex < sortedDays.length - 1 ? sortedDays[currentIndex + 1] : null;
+
   const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
   const planEntry = shootPlan.find((entry) => Number(entry.day) === Number(dayNum));
   const totalShootDays = shootPlan.filter((entry) => !entry.special).length || Object.keys(calendar).length;
@@ -1330,7 +1338,7 @@ function generateDayHtml(dayNum, rows, productionData) {
     ? unique(planEntry.scenes)
     : unique(rows.filter((r) => r.scheduledDays && r.scheduledDays.includes(dayNum)).map((r) => `s${String(r.n).padStart(2, '0')}`));
   const dayRows = sceneIds
-    .map((sceneId) => rows.find((r) => String(r.n).toLowerCase() === String(sceneId).toLowerCase()))
+    .map((sceneId) => rows.find((r) => r.id === sceneId || `s${String(r.n).padStart(2, '0')}`.toLowerCase() === String(sceneId).toLowerCase() || String(r.n).toLowerCase() === String(sceneId).toLowerCase()))
     .filter(Boolean);
   const summaryLocations = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locations')
     ? unique(Array.isArray(planEntry.locations) ? planEntry.locations : [planEntry.locations])
@@ -1338,8 +1346,30 @@ function generateDayHtml(dayNum, rows, productionData) {
   const summaryCast = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
     ? unique(Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
     : unique(dayRows.flatMap((r) => r.characters || []));
+    
+  const summaryProps = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'props')
+    ? (Array.isArray(planEntry.props) ? planEntry.props : [planEntry.props])
+    : unique(dayRows.flatMap((r) => r.props || []));
+    
+  const summaryWardrobe = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'wardrobe')
+    ? (Array.isArray(planEntry.wardrobe) ? planEntry.wardrobe : [planEntry.wardrobe])
+    : unique(dayRows.flatMap((r) => r.wardrobe || []));
+
+  const summaryLocationDetails = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locationDetails')
+    ? (Array.isArray(planEntry.locationDetails) ? planEntry.locationDetails : [planEntry.locationDetails])
+    : unique(dayRows.flatMap((r) => r.locationDetails || []));
+
+  const summaryCrew = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'crew')
+    ? (Array.isArray(planEntry.crew) ? planEntry.crew : [planEntry.crew])
+    : unique(dayRows.flatMap((r) => r.crew || []));
+
+  const summaryMisc = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'misc')
+    ? (Array.isArray(planEntry.misc) ? planEntry.misc : [planEntry.misc])
+    : unique(dayRows.flatMap((r) => r.misc || []));
+
   const dayLabel = planEntry ? `Day ${planEntry.day}` : `Day ${dayNum}`;
   const sourceNote = planEntry && planEntry.sourceNote ? planEntry.sourceNote : '';
+  const crewCall = planEntry && planEntry.crewCall ? planEntry.crewCall : 'GENERAL CREW CALL: 08:00 AM';
 
   function extractSceneSnippet(content, n) {
     if (!content || typeof content !== 'string') return '';
@@ -1372,13 +1402,12 @@ function generateDayHtml(dayNum, rows, productionData) {
     return `
       <tr>
         <td>${r.n}</td>
-        <td>${escapeHtml(r.location || '—')} — ${escapeHtml(r.time || '—')}</td>
+        <td>${escapeHtml(r.time || '—')}</td>
         <td>
           <div style="font-weight: 700; color: black;">${escapeHtml(r.title)}</div>
           ${snippet ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(snippet)}</div>` : ''}
         </td>
         <td>${chars || '—'}</td>
-        <td>${r.durationMin || '—'} min</td>
       </tr>`;
   }).join('');
 
@@ -1425,6 +1454,11 @@ function generateDayHtml(dayNum, rows, productionData) {
     </head>
     <body style="background:white; color:black;">
         <div class="main-content">
+            <div class="no-print" style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.7rem; text-transform:uppercase; font-weight:700; background:#f0f0f0; padding:6px 12px; border-radius:4px;">
+                ${prevDay ? `<a href="${prevDay}.html" style="color:#0366d6; text-decoration:none;">&larr; Day ${prevDay}</a>` : `<span></span>`}
+                <a href="../production.html" style="color:#666; text-decoration:none;">Dashboard</a>
+                ${nextDay ? `<a href="${nextDay}.html" style="color:#0366d6; text-decoration:none;">Day ${nextDay} &rarr;</a>` : `<span></span>`}
+            </div>
             <header class="callsheet-header">
                 <div>
                     <h1 style="margin:0;">DAILY CALL SHEET</h1>
@@ -1441,31 +1475,64 @@ function generateDayHtml(dayNum, rows, productionData) {
                 <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#666; margin-bottom:8px;">Shoot Plan Summary</div>
                 ${sourceNote ? `<div style="font-size:0.9rem; font-family: ui-monospace, monospace; margin-bottom:10px;">${escapeHtml(sourceNote)}</div>` : ''}
                 <div style="display:grid; gap:10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
-                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Scenes</div><div style="font-size:0.95rem;">${sceneIds.map(escapeHtml).join(', ') || '—'}</div></div>
-                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Locations</div><div style="font-size:0.95rem;">${summaryLocations.map(escapeHtml).join(', ') || '—'}</div></div>
-                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Cast</div><div style="font-size:0.95rem;">${summaryCast.map(escapeHtml).join(', ') || '—'}</div></div>
+                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Number of Scenes</div><div style="font-size:0.95rem;">${sceneIds.length}</div></div>
+                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Estimated Length of Day</div><div style="font-size:0.95rem;">${(() => {
+                        const totalMin = dayRows.reduce((sum, r) => sum + (Number(r.durationMin) || 0), 0);
+                        if (totalMin === 0) return 'TBD';
+                        const h = Math.floor(totalMin/60);
+                        const m = totalMin % 60;
+                        return (h > 0 ? h + 'h ' : '') + (m > 0 || h === 0 ? m + 'm' : '').trim();
+                    })()}</div></div>
                 </div>
             </section>
 
             <section style="margin-bottom:30px;">
-                <h3 style="background:black; color:white; padding:5px 10px; margin:0;">GENERAL CREW CALL: 08:00 AM</h3>
+                <h3 style="background:black; color:white; padding:5px 10px; margin:0;">${escapeHtml(crewCall)}</h3>
             </section>
+
+
 
             <h3 style="margin:20px 0 10px 0; border-bottom:1px solid black;">SCENE SCHEDULE</h3>
             <table class="production-table" style="background:white; border-color:black;">
                 <thead>
                     <tr style="background:#eee;">
                         <th style="color:black;border-color:black;">SCENE</th>
-                        <th style="color:black;border-color:black;">SLUGLINE</th>
+                        <th style="color:black;border-color:black;">TIME TO START</th>
                         <th style="color:black;border-color:black;">DESCRIPTION</th>
                         <th style="color:black;border-color:black;">CAST</th>
-                        <th style="color:black;border-color:black;">DUR</th>
                     </tr>
                 </thead>
                 <tbody style="color:black;">
                     ${sceneRows}
                 </tbody>
             </table>
+
+            <section style="margin-top:20px; display:flex; flex-direction:column; gap:20px;">
+                <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
+                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">LOCATION DETAILS & CALL TIMES</h3>
+                    <div style="font-size:0.9rem; min-height:40px; white-space: pre-wrap;">${summaryLocationDetails.length > 0 ? summaryLocationDetails.map(l => `<div style="margin-bottom: 4px;">${escapeHtml(l)}</div>`).join('') : '<div style="color:#666; font-style:italic;">1. Location Name (Address)\n   • Arrival: 08:00 AM\n   • Notes: Parking in rear</div>'}</div>
+                </div>
+                <div style="display:grid; gap:20px; grid-template-columns: 1fr 1fr;">
+                    <div style="padding:14px; border:2px solid black; border-radius:8px;">
+                        <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px;">WARDROBE</h3>
+                        <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;">${summaryWardrobe.length > 0 ? summaryWardrobe.map(w => `<div style="margin-bottom: 4px;">${escapeHtml(w)}</div>`).join('') : '<div style="color:#666; font-style:italic;">1. Dallas Outfit #1\n   a. White Shirt\n   b. Blue Shorts</div>'}</div>
+                    </div>
+                    <div style="padding:14px; border:2px solid black; border-radius:8px;">
+                        <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px;">PROPS</h3>
+                        <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;">${summaryProps.length > 0 ? summaryProps.map(p => `<div style="margin-bottom: 4px;">${escapeHtml(p)}</div>`).join('') : '<div style="color:#666; font-style:italic;">1. Oscillator\n2. Audio Headphones</div>'}</div>
+                    </div>
+                </div>
+                <div style="display:grid; gap:20px; grid-template-columns: 1fr 1fr;">
+                    <div style="padding:14px; border:2px solid black; border-radius:8px;">
+                        <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px;">CREW</h3>
+                        <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;">${summaryCrew.length > 0 ? summaryCrew.map(w => `<div style="margin-bottom: 4px;">${escapeHtml(w)}</div>`).join('') : '<div style="color:#666; font-style:italic;">Add crew involved...</div>'}</div>
+                    </div>
+                    <div style="padding:14px; border:2px solid black; border-radius:8px;">
+                        <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px;">MISC</h3>
+                        <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;">${summaryMisc.length > 0 ? summaryMisc.map(p => `<div style="margin-bottom: 4px;">${escapeHtml(p)}</div>`).join('') : '<div style="color:#666; font-style:italic;">Add miscellaneous notes...</div>'}</div>
+                    </div>
+                </div>
+            </section>
 
             <footer style="margin-top:50px; text-align:center; font-size:0.8rem; border-top:1px solid black; padding-top:20px;">
                 THIS IS A GENERATED CALL SHEET FOR PRODUCTION USE ONLY. RE-SYNC WITH GOOGLE SHEET FOR LATEST CALL TIMES.
