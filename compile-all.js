@@ -67,10 +67,12 @@ const tasks = [
   {
     name: 'Summer Storyboard Frames',
     script: path.join(ROOT, 'pages', 'summer', 'storyboard-system', 'compile.js'),
+    optional: true, // depends on local binary image assets; skip gracefully on Netlify
   },
   {
     name: 'Summer Storyboard PDFs',
     script: path.join(ROOT, 'pages', 'summer', 'storyboard-system', 'compile-pdfs.js'),
+    optional: true, // depends on local PDF assets; skip gracefully on Netlify
   },
 ];
 
@@ -84,11 +86,19 @@ function runTask(task) {
   });
 
   if (result.error) {
+    if (task.optional) {
+      console.warn(`⚠ ${task.name} skipped (optional): ${result.error.message}`);
+      return 'skipped';
+    }
     console.error(`Error running ${task.name}:`, result.error.message);
     return false;
   }
 
   if (typeof result.status === 'number' && result.status !== 0) {
+    if (task.optional) {
+      console.warn(`⚠ ${task.name} skipped (optional): exited with code ${result.status}`);
+      return 'skipped';
+    }
     console.error(`${task.name} failed with exit code ${result.status}.`);
     return false;
   }
@@ -103,7 +113,7 @@ function main() {
 
   for (const task of tasks) {
     const ok = runTask(task);
-    if (!ok) {
+    if (ok === false) {
       console.error('\nCompilation stopped due to an error.');
       process.exit(1);
     }
