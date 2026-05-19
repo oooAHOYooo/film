@@ -1073,6 +1073,28 @@ function generateShootPlanHtml(rows, productionData) {
     <section id="shoot-plan" class="shoot-plan">
       <h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
       <div class="shoot-plan-grid">
+        ${(() => {
+          const limboIds = Array.isArray(productionData.limbo) ? productionData.limbo : [];
+          if (!limboIds.length) return '';
+          const limboRows = limboIds.map((id) => rows.find((r) => r.id === id || `s${String(r.n).padStart(2, '0')}`.toLowerCase() === String(id).toLowerCase())).filter(Boolean);
+          if (!limboRows.length) return '';
+          const chips = limboRows.map((r) => `<span class="actor-chip" style="pointer-events:none; cursor:default; opacity:0.6;">${escapeHtml(`s${String(r.n).padStart(2, '0')} — ${r.title}`)}</span>`).join('');
+          return `
+            <article class="shoot-plan-card" style="opacity:0.5; border-style:dashed;">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Limbo</div>
+                  <div class="shoot-plan-date">Unscheduled scenes</div>
+                </div>
+                <span class="shoot-plan-label" style="background:#6b7280;">Limbo</span>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div class="shoot-plan-chip-row">${chips}</div>
+              </div>
+            </article>
+          `;
+        })()}
         ${plan.map((entry) => {
           const dayValue = Number(entry.day);
           const dayRows = Number.isFinite(dayValue) ? dayRowsFor(dayValue) : [];

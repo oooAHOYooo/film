@@ -697,6 +697,15 @@
         "s14"
       ],
       "crewCall": "GENERAL CREW CALL: 09:00 AM",
+      "wardrobe": [
+        "Dallas: Outfit #3"
+      ],
+      "props": [
+        "1. Good Creature",
+        "2. Bad Creature",
+        "3. Portable Oscillator",
+        "4. Howie"
+      ],
       "sourceNote": "D4 = 6.13.26 - Sat <s13, s14s, s17 >"
     },
     {
@@ -711,7 +720,12 @@
       "crewCall": "GENERAL CREW CALL: 01:00 PM",
       "locations": [
         "CPC",
-        "Living Room"
+        "Boles Residence"
+      ],
+      "props": [
+        "1. Tables + Chairs",
+        "2. Picnic",
+        "3. Foods"
       ],
       "sourceNote": "D5 = 6.14.26 = Sun <s04,s07b,s26>"
     },
@@ -746,8 +760,7 @@
       "date": "2026-06-19",
       "weekday": "Friday",
       "scenes": [
-        "s07",
-        "s08"
+        "s07"
       ],
       "sourceNote": "Day 8 = 6.19.26 = Fri <s07,s08>[D][H]"
     },
@@ -853,5 +866,8 @@
       ],
       "sourceNote": "Day 16 = 16 7.5.26 <s04, s15s> Sunday"
     }
+  ],
+  "limbo": [
+    "s08"
   ]
 }
