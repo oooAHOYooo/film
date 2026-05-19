@@ -588,6 +588,7 @@
     "13": "2026-07-01",
     "14": "2026-07-02",
     "15": "2026-07-03",
+    "15.5": "2026-07-04",
     "16": "2026-07-05"
   },
   "shootPlan": [
@@ -693,8 +694,32 @@
       "date": "2026-06-13",
       "weekday": "Saturday",
       "scenes": [
+        "s03",
+        "s05",
+        "s15a",
+        "s15b",
+        "s15c"
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic"
+      ],
+      "crewCall": "GENERAL CREW CALL: 01:00 PM",
+      "sourceNote": "D4 = 6.13.26 - Sat <s03,s05,s15a,s15b,s15c> [D, Dm walking + s15s]"
+    },
+    {
+      "day": 5,
+      "date": "2026-06-14",
+      "weekday": "Sunday",
+      "scenes": [
         "s13",
-        "s14"
+        "s14",
+        "s14b",
+        "s14c",
+        "s08",
+        "s08b",
+        "s08c",
+        "s08d"
       ],
       "crewCall": "GENERAL CREW CALL: 09:00 AM",
       "wardrobe": [
@@ -706,28 +731,7 @@
         "3. Portable Oscillator",
         "4. Howie"
       ],
-      "sourceNote": "D4 = 6.13.26 - Sat <s13, s14s, s17 >"
-    },
-    {
-      "day": 5,
-      "date": "2026-06-14",
-      "weekday": "Sunday",
-      "scenes": [
-        "s04",
-        "s07b",
-        "s26"
-      ],
-      "crewCall": "GENERAL CREW CALL: 01:00 PM",
-      "locations": [
-        "CPC",
-        "Boles Residence"
-      ],
-      "props": [
-        "1. Tables + Chairs",
-        "2. Picnic",
-        "3. Foods"
-      ],
-      "sourceNote": "D5 = 6.14.26 = Sun <s04,s07b,s26>"
+      "sourceNote": "D5 = 6.14.26 = Sun <s13,s14,s14b,s14c,s08,s08b,s08c,s08d>"
     },
     {
       "day": 6,
@@ -769,8 +773,6 @@
       "date": "2026-06-20",
       "weekday": "Saturday",
       "scenes": [
-        "s03",
-        "s05",
         "s06",
         "s17"
       ],
@@ -779,7 +781,7 @@
         "Dominic",
         "Pat Clendenen"
       ],
-      "sourceNote": "D9 = 6.20.26 = Sat <s03,s05,s06>"
+      "sourceNote": "D9 = 6.20.26 = Sat <s06,s17>"
     },
     {
       "day": 9.5,
@@ -806,23 +808,31 @@
       "date": "2026-06-27",
       "weekday": "Saturday",
       "scenes": [
+        "s18",
+        "s19",
+        "s20",
         "s28",
         "s29",
         "s30"
       ],
-      "sourceNote": "D11 =6.27 = Sat <s28,s29,s30> [D, Dm,...]"
+      "sourceNote": "D11 = 6.27 = Sat <s18,s19,s20,s28,s29,s30> [D, Dm,...]"
     },
     {
       "day": 12,
       "date": "2026-06-28",
       "weekday": "Sunday",
       "scenes": [
-        "s04"
+        "s04",
+        "s07b",
+        "s16",
+        "s17b",
+        "s17c",
+        "s26"
       ],
       "locations": [
         "Church"
       ],
-      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04><s..."
+      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04,s07b,s16,s17b,s17c,s26>"
     },
     {
       "day": 13,
@@ -831,9 +841,10 @@
       "scenes": [
         "s04",
         "s07",
+        "s21b",
         "s26"
       ],
-      "sourceNote": "D13 = 7.1.26 = Wed <s04,s07, s26>"
+      "sourceNote": "D13 = 7.1.26 = Wed <s04,s07,s21b,s26>"
     },
     {
       "day": 14,
@@ -849,12 +860,19 @@
       "date": "2026-07-03",
       "weekday": "Friday",
       "scenes": [
-        "s15",
-        "s21",
+        "s21"
+      ],
+      "sourceNote": "Day 15 = 15 7.3.26 Friday <s21>"
+    },
+    {
+      "day": 15.5,
+      "date": "2026-07-04",
+      "weekday": "Saturday",
+      "scenes": [
         "s22",
         "s23"
       ],
-      "sourceNote": "Day 15 = 15 7.3.26 Friday <s15,21,22,23>"
+      "sourceNote": "D15.5 = 7.4.26 = Sat <s22,s23> [action lead-in]"
     },
     {
       "day": 16,
@@ -862,9 +880,11 @@
       "weekday": "Sunday",
       "scenes": [
         "s04",
-        "s15s"
+        "s15s",
+        "s24",
+        "s25"
       ],
-      "sourceNote": "Day 16 = 16 7.5.26 <s04, s15s> Sunday"
+      "sourceNote": "Day 16 = 16 7.5.26 <s04,s15s,s24,s25> Sunday [finale + pickups]"
     }
   ],
   "limbo": [

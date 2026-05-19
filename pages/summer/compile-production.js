@@ -1107,8 +1107,15 @@ function generateShootPlanHtml(rows, productionData) {
           const locations = unique(hasExplicitLocations ? (Array.isArray(entry.locations) ? entry.locations : [entry.locations]) : dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
           const cast = unique(hasExplicitCast ? (Array.isArray(entry.cast) ? entry.cast : [entry.cast]) : dayRows.flatMap((r) => r.characters || []));
           const callSheetHref = `production/days/${String(entry.day)}.html`;
+          const manifestForChips = (() => { try { return JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')); } catch(e) { return []; } })();
           const scenesHtml = scenes.length
-            ? scenes.map((scene) => `<a href="${callSheetHref}" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">${escapeHtml(scene)}</a>`).join('')
+            ? scenes.map((scene) => {
+                const mEntry = manifestForChips.find(m => (m.file || '').replace('.md','') === scene);
+                const href = mEntry && mEntry.id
+                  ? `script-system/scene.html?id=${encodeURIComponent(mEntry.id)}`
+                  : callSheetHref;
+                return `<a href="${href}" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">${escapeHtml(scene)}</a>`;
+              }).join('')
             : '—';
           const locationsText = locations.length ? locations.join(', ') : '—';
           const dateLabel = new Date(entry.date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
@@ -1144,10 +1151,93 @@ function generateShootPlanHtml(rows, productionData) {
 
 const PICKUP_DAYS = 2;
 
+function generateCheatSheetHtml(rows, productionData) {
+  const shootPlan = productionData.shootPlan || [];
+
+  const schedule = {};
+  for (const day of shootPlan) {
+    for (const sid of (day.scenes || [])) {
+      schedule[sid] = { day: day.day, date: day.date, weekday: day.weekday };
+    }
+  }
+
+  let manifest = [];
+  try { manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')); } catch(e) {}
+
+  const weekdayShort = (wd) => wd ? wd.slice(0, 3) : '—';
+  const weekdayColor = (wd) => {
+    if (!wd) return '#666';
+    const w = wd.toLowerCase();
+    if (w === 'sunday') return '#f0a500';
+    if (w === 'saturday') return '#7ec8a0';
+    return '#666';
+  };
+  const formatDate = (iso) => {
+    if (!iso) return '—';
+    const [, m, d] = iso.split('-');
+    const months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${months[parseInt(m)]} ${parseInt(d)}`;
+  };
+
+  const actColors = { 1: '#4a9eff', 2: '#a78bfa', 3: '#f97316', 4: '#34d399' };
+  let lastAct = null;
+
+  const sceneRows = manifest.map((entry) => {
+    const sid = entry.file ? entry.file.replace('.md', '') : entry;
+    const title = entry.title || sid;
+    const act = entry.act || '';
+    const info = schedule[sid] || {};
+    const dayLink = info.day != null
+      ? `<a style="color:#4a9eff;text-decoration:none;" href="production/days/${info.day}.html">${info.day}</a>`
+      : '<span style="color:#444;">—</span>';
+
+    let groupRow = '';
+    if (act && act !== lastAct) {
+      const actTitles = { 1: 'Act 1', 2: 'Act 2', 3: 'Act 3', 4: 'Act 4' };
+      groupRow = `<tr><td colspan="5" style="padding:12px 10px 4px;color:${actColors[act] || '#888'};font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">${actTitles[act] || 'Act ' + act}</td></tr>`;
+      lastAct = act;
+    }
+
+    const sceneHref = entry.id ? `script-system/scene.html?id=${encodeURIComponent(entry.id)}` : null;
+    const sceneLink = sceneHref
+      ? `<a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="${sceneHref}">${escapeHtml(sid)}</a>`
+      : `<span style="color:#4a9eff;font-weight:bold;">${escapeHtml(sid)}</span>`;
+    const titleCell = sceneHref
+      ? `<a style="color:#e0e0e0;text-decoration:none;" href="${sceneHref}">${escapeHtml(title)}</a>`
+      : escapeHtml(title);
+
+    return groupRow + `<tr style="border-bottom:1px solid #1a1a1a;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;">${sceneLink}</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;">${titleCell}</td>
+      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;">${dayLink}</td>
+      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:${weekdayColor(info.weekday)}">${weekdayShort(info.weekday)}</span> ${formatDate(info.date)}</td>
+    </tr>`;
+  }).join('');
+
+  return `
+  <section style="margin-top:48px;">
+    <h2 style="color:#fff;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Scene Cheat Sheet</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
+        <thead>
+          <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Scene</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Title</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Day</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Date</th>
+          </tr>
+        </thead>
+        <tbody>${sceneRows}</tbody>
+      </table>
+    </div>
+  </section>`;
+}
+
 function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData) {
   const totalScenes = rows.length;
   const pickupSceneCount = rows.filter((r) => r.pickup).length;
   const shootPlanHtml = generateShootPlanHtml(rows, productionData);
+  const cheatSheetHtml = generateCheatSheetHtml(rows, productionData);
 
   return `<!doctype html>
 <html lang="en">
@@ -1189,6 +1279,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                     <p style="opacity: 0.7; margin: 8px 0 0 0;">Production Dashboard · Official Shoot Plan</p>
                 </header>
 
+                ${cheatSheetHtml}
                 ${shootPlanHtml}
             </main>
         </div>
