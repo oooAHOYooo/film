@@ -210,7 +210,7 @@
   "s07": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 12,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -465,10 +465,7 @@
   "s22": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": [
-      14,
-      16
-    ],
+    "assignedDay": 14,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -510,7 +507,7 @@
   "s25": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 15,
+    "assignedDay": 16,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -588,7 +585,6 @@
     "13": "2026-07-01",
     "14": "2026-07-02",
     "15": "2026-07-03",
-    "15.5": "2026-07-04",
     "16": "2026-07-05"
   },
   "shootPlan": [
@@ -763,9 +759,7 @@
       "day": 8,
       "date": "2026-06-19",
       "weekday": "Friday",
-      "scenes": [
-        "s07"
-      ],
+      "scenes": [],
       "sourceNote": "Day 8 = 6.19.26 = Fri <s07,s08>[D][H]"
     },
     {
@@ -823,6 +817,7 @@
       "weekday": "Sunday",
       "scenes": [
         "s04",
+        "s07",
         "s07b",
         "s16",
         "s17b",
@@ -832,7 +827,7 @@
       "locations": [
         "Church"
       ],
-      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04,s07b,s16,s17b,s17c,s26>"
+      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04,s07,s07b,s16,s17b,s17c,s26>"
     },
     {
       "day": 13,
@@ -840,39 +835,30 @@
       "weekday": "Wednesday",
       "scenes": [
         "s04",
-        "s07",
         "s21b",
         "s26"
       ],
-      "sourceNote": "D13 = 7.1.26 = Wed <s04,s07,s21b,s26>"
+      "sourceNote": "D13 = 7.1.26 = Wed <s04,s21b,s26>"
     },
     {
       "day": 14,
       "date": "2026-07-02",
       "weekday": "Thursday",
       "scenes": [
-        "s21"
+        "s21",
+        "s22"
       ],
-      "sourceNote": "Day 14 = 7.2.26 = Thursday <s21, >"
+      "sourceNote": "Day 14 = 7.2.26 = Thursday <s21,s22>"
     },
     {
       "day": 15,
       "date": "2026-07-03",
       "weekday": "Friday",
       "scenes": [
-        "s21"
+        "s23",
+        "s24"
       ],
-      "sourceNote": "Day 15 = 15 7.3.26 Friday <s21>"
-    },
-    {
-      "day": 15.5,
-      "date": "2026-07-04",
-      "weekday": "Saturday",
-      "scenes": [
-        "s22",
-        "s23"
-      ],
-      "sourceNote": "D15.5 = 7.4.26 = Sat <s22,s23> [action lead-in]"
+      "sourceNote": "Day 15 = 7.3.26 Friday <s23,s24>"
     },
     {
       "day": 16,
@@ -881,10 +867,9 @@
       "scenes": [
         "s04",
         "s15s",
-        "s24",
         "s25"
       ],
-      "sourceNote": "Day 16 = 16 7.5.26 <s04,s15s,s24,s25> Sunday [finale + pickups]"
+      "sourceNote": "Day 16 = 7.5.26 Sunday <s04,s15s,s25> [finale + pickups]"
     }
   ],
   "limbo": [
