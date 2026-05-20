@@ -776,9 +776,11 @@ function getProductionStyles() {
                 }
                 .main-content * {
                     color: #111 !important;
+                    background: transparent !important;
                     background-image: none !important;
                     text-shadow: none !important;
                     box-shadow: none !important;
+                    border-color: #d0d7de !important;
                 }
                 .main-content .day-badge,
                 .main-content .day-divider,
@@ -799,6 +801,20 @@ function getProductionStyles() {
                 .day-badge {
                     border-color: currentColor !important;
                     box-shadow: none !important;
+                }
+                .shoot-plan-card {
+                    background: #fff !important;
+                    border: 1px solid #d0d7de !important;
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                .shoot-plan-label {
+                    color: #fff !important;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .shoot-plan-grid {
+                    grid-template-columns: repeat(3, 1fr);
                 }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;
@@ -1157,7 +1173,8 @@ function generateCheatSheetHtml(rows, productionData) {
   const schedule = {};
   for (const day of shootPlan) {
     for (const sid of (day.scenes || [])) {
-      schedule[sid] = { day: day.day, date: day.date, weekday: day.weekday };
+      if (!schedule[sid]) schedule[sid] = [];
+      schedule[sid].push({ day: day.day, date: day.date, weekday: day.weekday });
     }
   }
 
@@ -1186,9 +1203,9 @@ function generateCheatSheetHtml(rows, productionData) {
     const sid = entry.file ? entry.file.replace('.md', '') : entry;
     const title = entry.title || sid;
     const act = entry.act || '';
-    const info = schedule[sid] || {};
-    const dayLink = info.day != null
-      ? `<a style="color:#4a9eff;text-decoration:none;" href="production/days/${info.day}.html">${info.day}</a>`
+    const infos = schedule[sid] || [];
+    const dayLink = infos.length
+      ? infos.map(i => `<a style="color:#4a9eff;text-decoration:none;" href="production/days/${i.day}.html">${i.day}</a>`).join('<span style="color:#444;"> · </span>')
       : '<span style="color:#444;">—</span>';
 
     let groupRow = '';
@@ -1210,7 +1227,7 @@ function generateCheatSheetHtml(rows, productionData) {
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;">${sceneLink}</td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;">${titleCell}</td>
       <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;">${dayLink}</td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:${weekdayColor(info.weekday)}">${weekdayShort(info.weekday)}</span> ${formatDate(info.date)}</td>
+      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;">${infos.map(i => `<span style="color:${weekdayColor(i.weekday)}">${weekdayShort(i.weekday)}</span> ${formatDate(i.date)}`).join('<span style="color:#333;"> · </span>') || '—'}</td>
     </tr>`;
   }).join('');
 
@@ -1280,6 +1297,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 </header>
 
                 ${cheatSheetHtml}
+                <!-- LOCATION_CHEAT_SHEET_START --><!-- LOCATION_CHEAT_SHEET_END -->
                 ${shootPlanHtml}
             </main>
         </div>
@@ -1678,7 +1696,20 @@ function compile() {
   // Ensure act list is sorted by act number for display
   actRangesList.sort((a, b) => a.act - b.act);
 
-  const html = generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData);
+  let html = generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData);
+
+  // Preserve the hand-edited location cheat sheet section across recompiles
+  const START_TAG = '<!-- LOCATION_CHEAT_SHEET_START -->';
+  const END_TAG = '<!-- LOCATION_CHEAT_SHEET_END -->';
+  let preserved = '';
+  try {
+    const existing = fs.readFileSync(OUTPUT_HTML, 'utf8');
+    const s = existing.indexOf(START_TAG);
+    const e = existing.indexOf(END_TAG);
+    if (s !== -1 && e !== -1) preserved = existing.slice(s + START_TAG.length, e);
+  } catch (_) {}
+  html = html.replace(START_TAG + END_TAG, START_TAG + preserved + END_TAG);
+
   fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
   console.log(`✓ Created ${path.relative(ROOT, OUTPUT_HTML)}`);
 

@@ -537,9 +537,11 @@
                 }
                 .main-content * {
                     color: #111 !important;
+                    background: transparent !important;
                     background-image: none !important;
                     text-shadow: none !important;
                     box-shadow: none !important;
+                    border-color: #d0d7de !important;
                 }
                 .main-content .day-badge,
                 .main-content .day-divider,
@@ -560,6 +562,20 @@
                 .day-badge {
                     border-color: currentColor !important;
                     box-shadow: none !important;
+                }
+                .shoot-plan-card {
+                    background: #fff !important;
+                    border: 1px solid #d0d7de !important;
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                .shoot-plan-label {
+                    color: #fff !important;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .shoot-plan-grid {
+                    grid-template-columns: repeat(3, 1fr);
                 }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;

@@ -25,7 +25,13 @@
       "Read(//Users/agworkywork/**)",
       "Bash(sqlite3 *)",
       "Bash(film sync *)",
-      "Bash(film note *)"
+      "Bash(film note *)",
+      "Bash(node compile-production.js)",
+      "Bash(node *)",
+      "Bash(awk -F: '{print $1}')",
+      "Bash(xargs -I{} basename {} .md)",
+      "Bash(kill 12243)",
+      "Bash(npm run *)"
     ]
   }
 }

@@ -537,9 +537,11 @@
                 }
                 .main-content * {
                     color: #111 !important;
+                    background: transparent !important;
                     background-image: none !important;
                     text-shadow: none !important;
                     box-shadow: none !important;
+                    border-color: #d0d7de !important;
                 }
                 .main-content .day-badge,
                 .main-content .day-divider,
@@ -560,6 +562,20 @@
                 .day-badge {
                     border-color: currentColor !important;
                     box-shadow: none !important;
+                }
+                .shoot-plan-card {
+                    background: #fff !important;
+                    border: 1px solid #d0d7de !important;
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                .shoot-plan-label {
+                    color: #fff !important;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .shoot-plan-grid {
+                    grid-template-columns: repeat(3, 1fr);
                 }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;
@@ -801,7 +817,7 @@
         <td style="font-weight:700; color:#0366d6; border-bottom:1px solid #eee;">DAY 6</td>
         <td style="font-size:0.9rem; opacity:0.8; border-bottom:1px solid #eee;">Jun 16, 2026</td>
         <td style="border-bottom:1px solid #eee;"><span class="scene-number" style="color:black;">16</span></td>
-        <td style="font-style:italic; border-bottom:1px solid #eee;">The First Night With Creature</td>
+        <td style="font-style:italic; border-bottom:1px solid #eee;">Alone With The Creature</td>
         <td style="border-bottom:1px solid #eee;"><span class="location-tag" style="background:transparent; border-color:#ccc; color:black;">—</span></td>
       </tr>
       <tr>

@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/18/2026, 2:53:33 PM*
+*Compiled on 5/20/2026, 4:39:16 PM*
 
 ---
 
@@ -567,7 +567,7 @@ Yeah.
 Dominic pulls out his phone, tapping an app.
 
 DOMINIC
-Hey check this - It listens to the chirps and tells you the species. They got a lot of offspree here - Coastal stuff mostly—Egret, Plover. You should get it if you're working at Quinnipiac.
+Hey check this - It listens to the chirps and tells you the species. Some nice sounds here - Egret, those little Piping Plovers, the mighty offspree, I love them - I love them all. it if you're working at Quinnipiac you should get this. 
 
 <!-- scene: 5 file: s05.md nickname: marsh-walk-later -->
 
@@ -575,7 +575,7 @@ Hey check this - It listens to the chirps and tells you the species. They got a 
 Dominic struggles to get the app to work and begins to pace a bit. 
 
 DOMINIC
-Yeah - I wanted to be a writer but it never really worked out - but I'm writing now - maybe one day I'll tell a story of these marlins.
+Yeah - I like the birds - I like the sounds they make - I thought about how to write them down. And then I never thought much past it. I'm 'writing now - but something else - I don't got much time. ' one day I'll tell a story of these marlins.
 
 <!-- scene: 5 file: s05.md nickname: marsh-walk-later -->
 
@@ -635,7 +635,7 @@ PAT CLENDENEN, MID 50s, is outside their house in front of news cameras.
 
 PAT CLENDENEN
 (to camera)
-Hey Micky, thanks for having me on. Out here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge....So in that spirit, today we'll see sun to clouds, breezy, warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores.... We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The european models are showing signings that we might be in for a big one and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
+Thanks Micky, Out here today in my hometown of Branford, CT. Pretty excited to be back home. So if you are in anywhere in costal connecticut, all the way up to Rhode Island today, some parts of southern mass all the way towards Boston. This is New England weather for you, always unpredictable - always on the bleeding edge....So in that spirit, today we'll see sun to clouds, breezy, warm with a late day shower possible. But the real attention - and the reason we are here - is to bring attention to a possible development along the shores.... We are staying on top of a trend through the rest of this week - as any shift could dramatically impose a threat - this costasl community. act the entire state. The european models are showing signings that we might be in for a big one and while we're all hoping the Nor'easter stays out at sea, the current models suggest a wild weekend for the shoreline. 
 
 <!-- scene: 6 file: s06.md nickname: news-vans -->
 
@@ -715,7 +715,7 @@ Sure.
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 <!-- nickname: the-coordinates -->
-<!-- FILMING ON - DAY 8 = 6.19.26 -->
+<!-- FILMING ON = Sun June 28 - Day 12 -->
 
 INT. JACE'S BASEMENT (s07.1)
 Dallas looks around in amazement. The basement is covered with normal basement things - but as his eyes scan the room he notices that there are two beds, room, and clutter. Around the corner there is a workstation filled with old CRT machines and what not.
@@ -1041,8 +1041,7 @@ Dallas begins to walk across the street to his house.
 
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
-<!-- FILMINIG ON =
-Day 4 - 6.13.26 -->
+<!-- FILMING ON = Sun June 28 - Day 12 -->
 
 s07B — INT. DOMINIC'S BASEMENT — CONTINUOUS
 (Slots in between Scene 7.2 and the end of Scene 7. After Mr. Mike has rambled about Javerias and Janice has gone outside for a smoke. Dominic is in the kitchen, out of frame. Dallas is alone with Mr. Mike and the dog.)
@@ -1582,17 +1581,19 @@ Dallas rushes to the workstation and finds that the creature sleeping peacefully
 
 <!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
-<!-- nickname: THE FIRST NIGHT WITH CREATURE  -->
+<!-- nickname: ALONE WITH THE CREATURE  -->
 
-<!-- Filming on = Day 6 = 6.16.26 -->
+<!-- Filming on = Day 3 = 6.12.26 -->
+<!-- LOCATION NOTE: Jerry's Attic - Shoot somewhere where Dallas is also alone -->
 
-INT. DALLAS DESK - NIGHT - MOMENTS LATER (s12.1)
+INT. DALLAS'S ATTIC - NIGHT (s12.1)
 
-Dallas is alone. He keeps peering through his late wife's old documents. 
+Dallas is completely alone in his attic. 
 
-On the desk is the recorder and all of the tapes next to it.  
+<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
-Dallas presses play on the recorder and goes to sleep.
+(action)
+The space is dimly lit and quiet. Dallas sits with the creature, observing it closely in the stillness of the night. He is alone with his thoughts and the strange being.
 
 ---
 

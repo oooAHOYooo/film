@@ -629,7 +629,8 @@
       "date": "2026-06-09",
       "weekday": "Tuesday",
       "scenes": [
-        "s02"
+        "s02",
+        "s12"
       ],
       "locations": [
         "72 lake street, hamden ct"
@@ -708,11 +709,11 @@
       "date": "2026-06-14",
       "weekday": "Sunday",
       "scenes": [
+        "s01",
         "s13",
         "s14",
         "s14b",
         "s14c",
-        "s08",
         "s08b",
         "s08c",
         "s08d"
@@ -727,15 +728,14 @@
         "3. Portable Oscillator",
         "4. Howie"
       ],
-      "sourceNote": "D5 = 6.14.26 = Sun <s13,s14,s14b,s14c,s08,s08b,s08c,s08d>"
+      "sourceNote": "D5 = 6.14.26 = Sun <s01,s13,s14,s14b,s14c,s08b,s08c,s08d>"
     },
     {
       "day": 6,
       "date": "2026-06-16",
       "weekday": "Tuesday",
       "scenes": [
-        "s11",
-        "s12"
+        "s11"
       ],
       "crewCall": "GENERAL CREW CALL: 05:00 PM",
       "wardrobe": [
@@ -781,9 +781,7 @@
       "day": 9.5,
       "date": "2026-06-21",
       "weekday": "Sunday",
-      "scenes": [
-        "s01"
-      ],
+      "scenes": [],
       "sourceNote": "D9.5 = 6.21.26 (Father's Day)",
       "special": true
     },
@@ -802,6 +800,7 @@
       "date": "2026-06-27",
       "weekday": "Saturday",
       "scenes": [
+        "s08",
         "s18",
         "s19",
         "s20",
@@ -809,7 +808,7 @@
         "s29",
         "s30"
       ],
-      "sourceNote": "D11 = 6.27 = Sat <s18,s19,s20,s28,s29,s30> [D, Dm,...]"
+      "sourceNote": "D11 = 6.27 = Sat <s08,s18,s19,s20,s28,s29,s30> [D, Dm,...]"
     },
     {
       "day": 12,
@@ -821,24 +820,22 @@
         "s07b",
         "s16",
         "s17b",
-        "s17c",
-        "s26"
+        "s17c"
       ],
       "locations": [
         "Church"
       ],
-      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04,s07,s07b,s16,s17b,s17c,s26>"
+      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04,s07,s07b,s16,s17b,s17c>"
     },
     {
       "day": 13,
       "date": "2026-07-01",
       "weekday": "Wednesday",
       "scenes": [
-        "s04",
         "s21b",
         "s26"
       ],
-      "sourceNote": "D13 = 7.1.26 = Wed <s04,s21b,s26>"
+      "sourceNote": "D13 = 7.1.26 = Wed <s21b,s26>"
     },
     {
       "day": 14,
@@ -865,14 +862,24 @@
       "date": "2026-07-05",
       "weekday": "Sunday",
       "scenes": [
-        "s04",
         "s15s",
         "s25"
       ],
-      "sourceNote": "Day 16 = 7.5.26 Sunday <s04,s15s,s25> [finale + pickups]"
+      "sourceNote": "Day 16 = 7.5.26 Sunday <s15s,s25> [finale + pickups]"
     }
   ],
-  "limbo": [
-    "s08"
+  "limbo": [],
+  "locationDirectory": [
+    { "fictional": "DALLAS HOUSE", "actual": "", "address": "72 Lake Street, Hamden, CT" },
+    { "fictional": "DOMINIC'S HOUSE", "actual": "", "address": "" },
+    { "fictional": "MAKAYLA'S BEDROOM / LAIR", "actual": "", "address": "" },
+    { "fictional": "JACE'S BASEMENT", "actual": "", "address": "" },
+    { "fictional": "THE TALL MARSH / TALL GRASS", "actual": "East Haven Nursery", "address": "" },
+    { "fictional": "CHURCH / CHURCH GROUNDS", "actual": "", "address": "" },
+    { "fictional": "BRANFORD TOWN GREEN", "actual": "Branford Green", "address": "Branford, CT 06405" },
+    { "fictional": "BRANFORD ROCKS", "actual": "Stony Creek / Supply Ponds", "address": "" },
+    { "fictional": "HARDWARE STORE", "actual": "", "address": "" },
+    { "fictional": "GROCERY STORE / COSTCO", "actual": "", "address": "" },
+    { "fictional": "TRAIN", "actual": "", "address": "" }
   ]
 }

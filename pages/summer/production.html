@@ -538,9 +538,11 @@
                 }
                 .main-content * {
                     color: #111 !important;
+                    background: transparent !important;
                     background-image: none !important;
                     text-shadow: none !important;
                     box-shadow: none !important;
+                    border-color: #d0d7de !important;
                 }
                 .main-content .day-badge,
                 .main-content .day-divider,
@@ -561,6 +563,20 @@
                 .day-badge {
                     border-color: currentColor !important;
                     box-shadow: none !important;
+                }
+                .shoot-plan-card {
+                    background: #fff !important;
+                    border: 1px solid #d0d7de !important;
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                .shoot-plan-label {
+                    color: #fff !important;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .shoot-plan-grid {
+                    grid-template-columns: repeat(3, 1fr);
                 }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;
@@ -661,7 +677,7 @@
             <div class="quick-meta">
                 Scenes: 39<br>
                 Shoot days: 16<br>
-                Last compiled: 5/20/2026, 10:32:43 AM
+                Last compiled: 5/20/2026, 4:39:16 PM
             </div>
         </div>
         <div class="dashboard-container">
@@ -687,8 +703,8 @@
         <tbody><tr><td colspan="5" style="padding:12px 10px 4px;color:#4a9eff;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 1</td></tr><tr style="border-bottom:1px solid #1a1a1a;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=arrival">s01</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=arrival">Arrival &amp; Discovery</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/9.5.html">9.5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 21</td>
+      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
+      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
     </tr><tr style="border-bottom:1px solid #1a1a1a;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-night">s02</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=dallas-night">Sierra's Box</a></td>
@@ -702,8 +718,8 @@
     </tr><tr style="border-bottom:1px solid #1a1a1a;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=fellowship">s04</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=fellowship">The Fellowship</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/16.html">16</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jul 5</td>
+      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/12.html">12</a></td>
+      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 28</td>
     </tr><tr style="border-bottom:1px solid #1a1a1a;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=marsh-walk-later">s05</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=marsh-walk-later">The Merlin App</a></td>
@@ -727,8 +743,8 @@
     </tr><tr style="border-bottom:1px solid #1a1a1a;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-marsh-walk">s08</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=dallas-marsh-walk">The Trailcam</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
+      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/11.html">11</a></td>
+      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 27</td>
     </tr><tr style="border-bottom:1px solid #1a1a1a;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-research-beat">s08b</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-research-beat">The Research Beat</a></td>
@@ -762,8 +778,8 @@
     </tr><tr><td colspan="5" style="padding:12px 10px 4px;color:#a78bfa;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 2</td></tr><tr style="border-bottom:1px solid #1a1a1a;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-burn-mark">s12</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-burn-mark">The Burn Mark &amp; Costco</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/6.html">6</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Tue</span> Jun 16</td>
+      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/2.html">2</a></td>
+      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Tue</span> Jun 9</td>
     </tr><tr style="border-bottom:1px solid #1a1a1a;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=entering-grass">s13</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=entering-grass">The Confrontation</a></td>
@@ -883,25 +899,39 @@
       </table>
     </div>
   </section>
+                <!-- LOCATION_CHEAT_SHEET_START --><section id="locations" style="margin-top:48px;">
+    <h2 style="color:#fff;margin:0 0 20px 0;font-size:1.5rem;display:flex;align-items:center;">Locations <span style="font-size:0.8rem;font-weight:normal;opacity:0.6;margin-left:12px;background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;">edit directly in production.html</span></h2>
+    <div style="overflow-x:auto;">
+      <table class="production-table">
+        <thead>
+          <tr>
+            <th>Fictional Location</th>
+            <th>Actual Location</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>DALLAS HOUSE</td><td></td><td>72 Lake Street, Hamden, CT</td></tr>
+          <tr><td>DOMINIC'S HOUSE — Interior</td><td>Boles Residence</td><td></td></tr>
+          <tr><td>DOMINIC'S HOUSE — Exterior</td><td>Kyle and Dave's</td><td></td></tr>
+          <tr><td>MAKAYLA'S BEDROOM / LAIR</td><td></td><td></td></tr>
+          <tr><td>JACE'S BASEMENT</td><td>Boles Residence</td><td></td></tr>
+          <tr><td>THE TALL MARSH / TALL GRASS</td><td>East Haven Nursery</td><td></td></tr>
+          <tr><td>CHURCH / CHURCH GROUNDS</td><td></td><td></td></tr>
+          <tr><td>BRANFORD TOWN GREEN</td><td>Branford Green</td><td>Branford, CT 06405</td></tr>
+          <tr><td>BRANFORD ROCKS</td><td>Stony Creek / Supply Ponds</td><td></td></tr>
+          <tr><td>HARDWARE STORE</td><td></td><td></td></tr>
+          <tr><td>GROCERY STORE / COSTCO</td><td></td><td></td></tr>
+          <tr><td>TRAIN</td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section><!-- LOCATION_CHEAT_SHEET_END -->
                 
     <section id="shoot-plan" class="shoot-plan">
       <h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
       <div class="shoot-plan-grid">
         
-            <article class="shoot-plan-card" style="opacity:0.5; border-style:dashed;">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Limbo</div>
-                  <div class="shoot-plan-date">Unscheduled scenes</div>
-                </div>
-                <span class="shoot-plan-label" style="background:#6b7280;">Limbo</span>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default; opacity:0.6;">s08 — Mr. Mike's Warning</span></div>
-              </div>
-            </article>
-          
         
             <article class="shoot-plan-card" data-call-sheet-href="production/days/1.html" role="link" tabindex="0" aria-label="Open call sheet for Day 1">
               <div class="shoot-plan-head">
@@ -934,7 +964,7 @@
               <div class="shoot-plan-note">Day 2 = 6.9.26 = Tues [s02,s17][D]</div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=dallas-night" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s02</a></div>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=dallas-night" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s02</a><a href="script-system/scene.html?id=the-burn-mark" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s12</a></div>
               </div>
               <div class="shoot-plan-block">
                 <strong>Locations</strong>
@@ -991,10 +1021,10 @@
                 </div>
                 <span class="shoot-plan-label" style="background:#0ea5e9;">Shoot</span>
               </div>
-              <div class="shoot-plan-note">D5 = 6.14.26 = Sun &lt;s13,s14,s14b,s14c,s08,s08b,s08c,s08d&gt;</div>
+              <div class="shoot-plan-note">D5 = 6.14.26 = Sun &lt;s01,s13,s14,s14b,s14c,s08b,s08c,s08d&gt;</div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=entering-grass" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s13</a><a href="script-system/scene.html?id=creature-rescue" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14</a><a href="script-system/scene.html?id=the-field-journal" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14b</a><a href="script-system/scene.html?id=the-almost-discovery" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14c</a><a href="script-system/scene.html?id=dallas-marsh-walk" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08</a><a href="script-system/scene.html?id=the-research-beat" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08b</a><a href="script-system/scene.html?id=the-threshold" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08c</a><a href="script-system/scene.html?id=the-return" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08d</a></div>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=arrival" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s01</a><a href="script-system/scene.html?id=entering-grass" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s13</a><a href="script-system/scene.html?id=creature-rescue" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14</a><a href="script-system/scene.html?id=the-field-journal" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14b</a><a href="script-system/scene.html?id=the-almost-discovery" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14c</a><a href="script-system/scene.html?id=the-research-beat" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08b</a><a href="script-system/scene.html?id=the-threshold" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08c</a><a href="script-system/scene.html?id=the-return" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08d</a></div>
               </div>
               <div class="shoot-plan-block">
                 <strong>Locations</strong>
@@ -1014,7 +1044,7 @@
               <div class="shoot-plan-note">Day 6 = 6.16.26 = Tues &lt;s11 + s12&gt;[D]</div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=howie-walk-2" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s11</a><a href="script-system/scene.html?id=the-burn-mark" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s12</a></div>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=howie-walk-2" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s11</a></div>
               </div>
               <div class="shoot-plan-block">
                 <strong>Locations</strong>
@@ -1094,7 +1124,7 @@
               <div class="shoot-plan-note">D9.5 = 6.21.26 (Father's Day)</div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=arrival" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s01</a></div>
+                <div style="font-family: ui-monospace, monospace;">—</div>
               </div>
               <div class="shoot-plan-block">
                 <strong>Locations</strong>
@@ -1131,10 +1161,10 @@
                 </div>
                 <span class="shoot-plan-label" style="background:#eab308;">Shoot</span>
               </div>
-              <div class="shoot-plan-note">D11 = 6.27 = Sat &lt;s18,s19,s20,s28,s29,s30&gt; [D, Dm,...]</div>
+              <div class="shoot-plan-note">D11 = 6.27 = Sat &lt;s08,s18,s19,s20,s28,s29,s30&gt; [D, Dm,...]</div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=life-group-arrives" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s18</a><a href="script-system/scene.html?id=the-hymn" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s19</a><a href="script-system/scene.html?id=red-eyes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s20</a><a href="script-system/scene.html?id=full-circle" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s28</a><a href="production/days/11.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s29</a><a href="production/days/11.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s30</a></div>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=dallas-marsh-walk" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08</a><a href="script-system/scene.html?id=life-group-arrives" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s18</a><a href="script-system/scene.html?id=the-hymn" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s19</a><a href="script-system/scene.html?id=red-eyes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s20</a><a href="script-system/scene.html?id=full-circle" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s28</a><a href="production/days/11.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s29</a><a href="production/days/11.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s30</a></div>
               </div>
               <div class="shoot-plan-block">
                 <strong>Locations</strong>
@@ -1151,10 +1181,10 @@
                 </div>
                 <span class="shoot-plan-label" style="background:#0ea5e9;">Shoot</span>
               </div>
-              <div class="shoot-plan-note">D12 = 6.28.26 = Sun [Church] &lt;s04,s07,s07b,s16,s17b,s17c,s26&gt;</div>
+              <div class="shoot-plan-note">D12 = 6.28.26 = Sun [Church] &lt;s04,s07,s07b,s16,s17b,s17c&gt;</div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=fellowship" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s04</a><a href="script-system/scene.html?id=the-coordinates" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s07</a><a href="script-system/scene.html?id=mr-mikes-warning" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s07b</a><a href="script-system/scene.html?id=the-escape" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s16</a><a href="script-system/scene.html?id=normal-day" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17b</a><a href="script-system/scene.html?id=mute-drive" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17c</a><a href="script-system/scene.html?id=final-echoes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s26</a></div>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=fellowship" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s04</a><a href="script-system/scene.html?id=the-coordinates" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s07</a><a href="script-system/scene.html?id=mr-mikes-warning" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s07b</a><a href="script-system/scene.html?id=the-escape" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s16</a><a href="script-system/scene.html?id=normal-day" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17b</a><a href="script-system/scene.html?id=mute-drive" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17c</a></div>
               </div>
               <div class="shoot-plan-block">
                 <strong>Locations</strong>
@@ -1171,10 +1201,10 @@
                 </div>
                 <span class="shoot-plan-label" style="background:#8b5cf6;">Shoot</span>
               </div>
-              <div class="shoot-plan-note">D13 = 7.1.26 = Wed &lt;s04,s21b,s26&gt;</div>
+              <div class="shoot-plan-note">D13 = 7.1.26 = Wed &lt;s21b,s26&gt;</div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=fellowship" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s04</a><a href="script-system/scene.html?id=the-infection" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s21b</a><a href="script-system/scene.html?id=final-echoes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s26</a></div>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=the-infection" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s21b</a><a href="script-system/scene.html?id=final-echoes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s26</a></div>
               </div>
               <div class="shoot-plan-block">
                 <strong>Locations</strong>
@@ -1231,10 +1261,10 @@
                 </div>
                 <span class="shoot-plan-label" style="background:#0ea5e9;">Shoot</span>
               </div>
-              <div class="shoot-plan-note">Day 16 = 7.5.26 Sunday &lt;s04,s15s,s25&gt; [finale + pickups]</div>
+              <div class="shoot-plan-note">Day 16 = 7.5.26 Sunday &lt;s15s,s25&gt; [finale + pickups]</div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=fellowship" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s04</a><a href="production/days/16.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15s</a><a href="script-system/scene.html?id=the-last-dinner" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s25</a></div>
+                <div style="font-family: ui-monospace, monospace;"><a href="production/days/16.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15s</a><a href="script-system/scene.html?id=the-last-dinner" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s25</a></div>
               </div>
               <div class="shoot-plan-block">
                 <strong>Locations</strong>
