@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/20/2026, 4:39:16 PM*
+*Compiled on 5/20/2026, 9:57:35 PM*
 
 ---
 
@@ -172,11 +172,11 @@ A noise is heard off screen.
 EXT. DALLAS DRIVEWAY (s02.2)
 Dallas goes outside and stares for a while at the edge of his property - along it a long fence of conneticut's finest natural tall grass. 
 
-Dallas looks back at his house - and begins to go on a walk. 
+Dallas looks back at his house - and begins to walk down the driveway. 
 
 EXT. BRANFORD AT NIGHT MONTAGES (s02.3)
 
-Dallas walks around at night with a recorder in his hand. As he walks along the different coastal - he takes a big deep breath and looks saddened at the coast. He records the sounds of the ocean. 
+Dallas walks around at night with a recorder in his hand. As he walks along the different coastal neighborhoods - as he stops by a particular puzzling patch of tall grass - he takes big deep breath and pulls out his recorder. He records the sounds of the ocean. 
 
 On the way home - he records the breeze of the tall grass. 
 
@@ -1185,7 +1185,7 @@ Dallas looks at his wrist one more time, then at the rocking chair. Then at the 
 # Scene 8: The Trailcam
 
 <!-- FILMING ON = 
-DAY 4 - EVENING - 6.13.26>
+DAY 4 - EVENING - 6.13.26 -->
 
 EXT. DALLAS HOUSE - MOMENTS LATER (s08.1)
 
@@ -1237,7 +1237,7 @@ Dallas walks faster, pulling Howie along. He scrambles back toward the boardwalk
 
 # SCENE 8B: THE RESEARCH BEAT
 
-<!-- Filming on 6.13.26 - DAY 4 >
+<!-- Filming on 6.13.26 - DAY 4 -->
 
 s08b.1 — INT. DALLAS WORKSHOP - DESK - NIGHT
 

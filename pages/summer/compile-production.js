@@ -1216,7 +1216,10 @@ function generateCheatSheetHtml(rows, productionData) {
       ? `<a style="color:#333;text-decoration:none;" href="${titleHref}">${escapeHtml(title)}</a>`
       : escapeHtml(title);
 
-    return groupRow + `<tr style="border-bottom:1px solid #ddd;">
+    const sceneNum = parseInt(sid.replace(/[^0-9]/g, '')) || 0;
+    const firstDay = infos.length ? infos[0].day : 9999;
+    const firstDate = infos.length ? (infos[0].date || '') : '';
+    return groupRow + `<tr data-scene="${sceneNum}" data-day="${firstDay}" data-date="${firstDate}" style="border-bottom:1px solid #ddd;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">${sceneLink}</td>
       <td style="padding:5px 10px;border-bottom:1px solid #ddd;">${titleCell}</td>
       <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">${dayLink}</td>
@@ -1226,9 +1229,15 @@ function generateCheatSheetHtml(rows, productionData) {
 
   return `
   <section style="margin-top:48px;">
-    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Scene Cheat Sheet</h2>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
+      <h2 style="color:#111;margin:0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Scene Cheat Sheet</h2>
+      <div style="display:flex;gap:8px;margin-left:auto;">
+        <button id="sort-btn-scene" onclick="cheatSort('scene')" style="font-family:ui-monospace,monospace;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:6px 14px;border:2px solid #999;border-radius:6px;background:#fff;color:#333;cursor:pointer;">Sort by Scene #</button>
+        <button id="sort-btn-day" onclick="cheatSort('day')" style="font-family:ui-monospace,monospace;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:6px 14px;border:2px solid #999;border-radius:6px;background:#fff;color:#333;cursor:pointer;">Sort by Day</button>
+      </div>
+    </div>
     <div style="overflow-x:auto;">
-      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
+      <table id="cheat-sheet-table" style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
         <thead>
           <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
             <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Scene</th>
@@ -1237,10 +1246,39 @@ function generateCheatSheetHtml(rows, productionData) {
             <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Date</th>
           </tr>
         </thead>
-        <tbody>${sceneRows}</tbody>
+        <tbody id="cheat-sheet-tbody">${sceneRows}</tbody>
       </table>
     </div>
-  </section>`;
+  </section>
+  <script>
+  var _cheatSortState = { key: null, asc: true };
+  function cheatSort(key) {
+    var tbody = document.getElementById('cheat-sheet-tbody');
+    if (_cheatSortState.key === key) { _cheatSortState.asc = !_cheatSortState.asc; }
+    else { _cheatSortState.key = key; _cheatSortState.asc = true; }
+    var rows = Array.from(tbody.querySelectorAll('tr[data-scene]'));
+    rows.sort(function(a, b) {
+      var av = parseFloat(a.getAttribute('data-' + key)) || 0;
+      var bv = parseFloat(b.getAttribute('data-' + key)) || 0;
+      return _cheatSortState.asc ? av - bv : bv - av;
+    });
+    rows.forEach(function(r) { tbody.appendChild(r); });
+    ['scene','day'].forEach(function(k) {
+      var btn = document.getElementById('sort-btn-' + k);
+      if (k === key) {
+        btn.style.background = '#111';
+        btn.style.color = '#fff';
+        btn.style.borderColor = '#111';
+        btn.textContent = (k === 'scene' ? 'Sort by Scene #' : 'Sort by Day') + (_cheatSortState.asc ? ' ↑' : ' ↓');
+      } else {
+        btn.style.background = '#fff';
+        btn.style.color = '#333';
+        btn.style.borderColor = '#999';
+        btn.textContent = k === 'scene' ? 'Sort by Scene #' : 'Sort by Day';
+      }
+    });
+  }
+  </script>`;
 }
 
 function generateCharacterCheatSheetHtml(rows, productionData) {

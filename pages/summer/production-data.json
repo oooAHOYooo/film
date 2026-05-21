@@ -203,7 +203,6 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Janice",
       "Mr. Mike"
     ]
   },
@@ -233,7 +232,6 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Janice",
       "Mr. Mike"
     ]
   },
@@ -248,7 +246,6 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Janice",
       "Mr. Mike"
     ]
   },
@@ -263,7 +260,6 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Janice",
       "Mr. Mike"
     ]
   },
@@ -508,6 +504,7 @@
     "durationMin": 0,
     "shootDays": 0.5,
     "assignedDay": 16,
+    "time": "7:00 PM – 9:00 PM",
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -537,8 +534,9 @@
     "durationMin": 0,
     "shootDays": 0.5,
     "assignedDay": 16,
+    "location": "EXT. Jerry's House — Afternoon",
     "keyElements": "",
-    "productionNotes": "Wraps",
+    "productionNotes": "Afternoon shoot before nursery run",
     "cast": [
       "Asher",
       "Mr. Mike",
@@ -750,10 +748,8 @@
       "day": 7,
       "date": "2026-06-18",
       "weekday": "Thursday",
-      "scenes": [
-        "s27"
-      ],
-      "sourceNote": "Day 7 = 6.18.26 = Thurs <s27>[D]"
+      "scenes": [],
+      "sourceNote": "Day 7 = 6.18.26 = Thurs [D]"
     },
     {
       "day": 8,
@@ -862,10 +858,11 @@
       "date": "2026-07-05",
       "weekday": "Sunday",
       "scenes": [
+        "s27",
         "s15s",
         "s25"
       ],
-      "sourceNote": "Day 16 = 7.5.26 Sunday <s15s,s25> [finale + pickups]"
+      "sourceNote": "Day 16 = 7.5.26 Sunday <s27,s15s,s25> [s27 afternoon @ Jerry's House, then finale]"
     }
   ],
   "limbo": [],

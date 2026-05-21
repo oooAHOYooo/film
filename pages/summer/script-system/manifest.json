@@ -1,5 +1,13 @@
 [
   {
+    "id": "branford-montage",
+    "file": "s00.md",
+    "title": "Branford Montage",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "branford-montage"
+  },
+  {
     "id": "arrival",
     "file": "s01.md",
     "title": "Arrival & Discovery",
@@ -122,7 +130,7 @@
   {
     "id": "the-burn-mark",
     "file": "s12.md",
-    "title": "The Burn Mark & Costco",
+    "title": "The Burn Mark",
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "the-burn-mark"
@@ -285,7 +293,8 @@
     "title": "The Final Blast",
     "act": 3,
     "actTitle": "The Return",
-    "nickname": "the-last-dinner"
+    "nickname": "the-last-dinner",
+    "time": "7:00 PM – 9:00 PM"
   },
   {
     "id": "final-echoes",
