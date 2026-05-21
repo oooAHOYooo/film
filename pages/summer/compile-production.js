@@ -1196,6 +1196,8 @@ function generateCheatSheetHtml(rows, productionData) {
     const title = entry.title || sid;
     const act = entry.act || '';
     const infos = schedule[sid] || [];
+    const dur = productionData[sid] && productionData[sid].durationMin ? productionData[sid].durationMin : null;
+    const durCell = dur ? `<span style="color:#555;font-size:0.8rem;">${dur}m</span>` : '<span style="color:#ccc;font-size:0.8rem;">—</span>';
     const dayLink = infos.length
       ? infos.map(i => `<a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/${i.day}.html">${i.day}</a>`).join('<span style="color:#999;"> · </span>')
       : '<span style="color:#444;">—</span>';
@@ -1203,7 +1205,7 @@ function generateCheatSheetHtml(rows, productionData) {
     let groupRow = '';
     if (act && act !== lastAct) {
       const actTitles = { 1: 'Act 1', 2: 'Act 2', 3: 'Act 3', 4: 'Act 4' };
-      groupRow = `<tr><td colspan="5" style="padding:12px 10px 4px;color:${actColors[act] || '#888'};font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">${actTitles[act] || 'Act ' + act}</td></tr>`;
+      groupRow = `<tr><td colspan="6" style="padding:12px 10px 4px;color:${actColors[act] || '#888'};font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">${actTitles[act] || 'Act ' + act}</td></tr>`;
       lastAct = act;
     }
 
@@ -1224,6 +1226,7 @@ function generateCheatSheetHtml(rows, productionData) {
       <td style="padding:5px 10px;border-bottom:1px solid #ddd;">${titleCell}</td>
       <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">${dayLink}</td>
       <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">${infos.map(i => `<a href="production/days/${i.day}.html" style="color:#555;text-decoration:none;"><span style="color:${weekdayColor(i.weekday)}">${weekdayShort(i.weekday)}</span> ${formatDate(i.date)}</a>`).join('<span style="color:#999;"> · </span>') || '—'}</td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">${durCell}</td>
     </tr>`;
   }).join('');
 
@@ -1244,6 +1247,7 @@ function generateCheatSheetHtml(rows, productionData) {
             <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Title</th>
             <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Day</th>
             <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Date</th>
+            <th style="text-align:right;padding:6px 10px;border-bottom:1px solid #999;">Est.</th>
           </tr>
         </thead>
         <tbody id="cheat-sheet-tbody">${sceneRows}</tbody>
