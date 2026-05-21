@@ -6,21 +6,21 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <style>
                         :root {
-                --prod-accent: #79b8ff;
-                --prod-head: rgba(56, 139, 253, 0.12);
-                --prod-border: rgba(56, 139, 253, 0.18);
-                --prod-tag-bg: rgba(56, 139, 253, 0.1);
-                --prod-tag-border: rgba(56, 139, 253, 0.25);
-                --prod-row-hover: rgba(56, 139, 253, 0.06);
+                --prod-accent: #000;
+                --prod-head: #f5f5f5;
+                --prod-border: #ccc;
+                --prod-tag-bg: #f9f9f9;
+                --prod-tag-border: #bbb;
+                --prod-row-hover: #f5f5f5;
                 --sidebar-w: 260px;
             }
-            body { 
-                margin: 0; 
-                display: block; 
-                min-height: 100vh; 
-                overflow-y: auto; 
-                background: #0d1117;
-                color: #c9d1d9;
+            body {
+                margin: 0;
+                display: block;
+                min-height: 100vh;
+                overflow-y: auto;
+                background: #fff;
+                color: #111;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             }
             .dashboard-container {
@@ -33,7 +33,7 @@
                 font-weight: 700;
                 line-height: 1.15;
                 letter-spacing: 0.02em;
-                color: #f5f7fb;
+                color: #111;
             }
             .brand-title-main {
                 font-size: 2.05rem;
@@ -72,20 +72,20 @@
                 width: 36px;
                 height: 36px;
                 border-radius: 10px;
-                background: rgba(255,255,255,0.05);
-                border: 1px solid rgba(255,255,255,0.08);
+                background: #f5f5f5;
+                border: 1px solid #ccc;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                color: #c9d1d9;
+                color: #111;
                 cursor: pointer;
                 transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
                 z-index: 30;
             }
             .quick-menu-btn:hover {
-                background: rgba(121,184,255,0.12);
-                border-color: rgba(121,184,255,0.28);
-                color: #fff;
+                background: #e0e0e0;
+                border-color: #999;
+                color: #000;
             }
             .quick-menu-btn svg {
                 width: 17px;
@@ -97,11 +97,11 @@
                 left: 18px;
                 width: 240px;
                 max-width: calc(100vw - 24px);
-                background: #161b22;
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 border-radius: 14px;
                 padding: 14px;
-                box-shadow: 0 18px 40px rgba(0,0,0,0.38);
+                box-shadow: 0 18px 40px rgba(0,0,0,0.15);
                 z-index: 998;
                 display: none;
                 max-height: calc(100vh - 36px);
@@ -126,8 +126,8 @@
                 height: 26px;
                 border: none;
                 border-radius: 8px;
-                background: rgba(255,255,255,0.05);
-                color: #c9d1d9;
+                background: #f0f0f0;
+                color: #111;
                 cursor: pointer;
                 display: inline-flex;
                 align-items: center;
@@ -137,43 +137,43 @@
                 padding: 0;
             }
             .quick-menu-close:hover {
-                background: rgba(121,184,255,0.12);
-                color: #fff;
+                background: #ddd;
+                color: #000;
             }
             .quick-menu a {
                 display: block;
-                color: #fff;
+                color: #111;
                 text-decoration: none;
                 padding: 10px 12px;
                 border-radius: 8px;
-                background: rgba(255,255,255,0.04);
-                border: 1px solid rgba(255,255,255,0.06);
+                background: #f9f9f9;
+                border: 1px solid #ddd;
                 margin-bottom: 8px;
                 font-size: 0.88rem;
             }
             .quick-menu a:hover {
-                background: rgba(121,184,255,0.12);
-                border-color: rgba(121,184,255,0.28);
+                background: #eee;
+                border-color: #999;
             }
             .quick-menu .quick-meta {
                 margin-top: 10px;
                 font-size: 0.72rem;
-                color: rgba(255,255,255,0.56);
+                color: #666;
                 line-height: 1.4;
             }
             .production-table {
                 width: 100%;
                 border-collapse: collapse;
-                background: #0d1117;
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 font-size: 0.9rem;
             }
             .production-table th {
                 text-align: left;
                 padding: 12px;
-                border-bottom: 2px solid var(--prod-border);
-                background: #161b22;
-                color: var(--prod-accent);
+                border-bottom: 2px solid #999;
+                background: #f5f5f5;
+                color: #111;
                 position: sticky;
                 top: -41px;
                 z-index: 10;
@@ -197,29 +197,21 @@
             .actor-chip {
                 display: inline-block;
                 padding: 2px 8px;
-                background: rgba(56, 139, 253, 0.15);
-                border: 1px solid rgba(56, 139, 253, 0.3);
+                background: #f0f0f0;
+                border: 1px solid #999;
                 border-radius: 12px;
                 font-size: 0.75rem;
                 margin-right: 4px;
                 margin-bottom: 4px;
-                color: #58a6ff;
+                color: #111;
                 text-decoration: none;
-                transition: transform 0.1s, filter 0.1s;
+                transition: transform 0.1s;
                 cursor: pointer;
             }
             .actor-chip:hover {
                 transform: translateY(-1px);
-                filter: brightness(1.2);
+                background: #e0e0e0;
             }
-            .actor-chip[data-character="dallas"] { color: #eab308; border-color: rgba(234, 179, 8, 0.3); background: rgba(234, 179, 8, 0.15); }
-            .actor-chip[data-character="makayla"] { color: #ec4899; border-color: rgba(236, 72, 153, 0.3); background: rgba(236, 72, 153, 0.15); }
-            .actor-chip[data-character="dominic"] { color: #10b981; border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.15); }
-            .actor-chip[data-character="asher"] { color: #f59e0b; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.15); }
-            .actor-chip[data-character="janice"] { color: #8b5cf6; border-color: rgba(139, 92, 246, 0.3); background: rgba(139, 92, 246, 0.15); }
-            .actor-chip[data-character="mr-mike"] { color: #6366f1; border-color: rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.15); }
-            .actor-chip[data-character="howie"] { color: #14b8a6; border-color: rgba(20, 184, 166, 0.3); background: rgba(20, 184, 166, 0.15); }
-            .actor-chip[data-character="pat"] { color: #f43f5e; border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.15); }
             .click-copy {
                 cursor: pointer;
                 border-bottom: 1px dashed transparent;
@@ -249,31 +241,28 @@
                 font-size: 0.7rem;
                 font-weight: 800;
                 margin-right: 8px;
-                color: #fff;
-                background: rgba(255,255,255,0.1);
+                color: #111;
+                background: #f0f0f0;
+                border: 1px solid #999;
             }
-            .day-sun { background: rgba(14, 165, 233, 0.2); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.4); }
-            .day-mon { background: rgba(99, 102, 241, 0.2); color: #6366f1; border: 1px solid rgba(99, 102, 241, 0.4); }
-            .day-tue { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
-            .day-wed { background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); }
-            .day-thu { background: rgba(245, 158, 11, 0.2); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); }
-            .day-fri { background: rgba(244, 63, 94, 0.2); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.4); }
-            .day-sat { background: rgba(234, 179, 8, 0.2); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
+            .day-sun, .day-mon, .day-tue, .day-wed, .day-thu, .day-fri, .day-sat {
+                background: #f0f0f0; color: #111; border: 1px solid #999;
+            }
             
             .day-filter-bar {
                 display: flex;
                 gap: 8px;
                 margin-bottom: 24px;
                 flex-wrap: wrap;
-                background: rgba(255,255,255,0.03);
+                background: #f9f9f9;
                 padding: 12px;
                 border-radius: 8px;
-                border: 1px solid rgba(255,255,255,0.05);
+                border: 1px solid #ddd;
             }
             .filter-btn {
-                background: #21262d;
-                border: 1px solid var(--prod-border);
-                color: #8b949e;
+                background: #fff;
+                border: 1px solid #ccc;
+                color: #555;
                 padding: 4px 12px;
                 border-radius: 20px;
                 font-size: 0.75rem;
@@ -281,14 +270,14 @@
                 transition: all 0.2s;
             }
             .filter-btn:hover {
-                background: #30363d;
-                border-color: var(--prod-accent);
-                color: #fff;
+                background: #eee;
+                border-color: #999;
+                color: #000;
             }
             .filter-btn.active {
-                background: var(--prod-accent);
-                color: #0d1117;
-                border-color: var(--prod-accent);
+                background: #111;
+                color: #fff;
+                border-color: #111;
                 font-weight: 700;
             }
 
@@ -301,8 +290,8 @@
                 display: flex;
                 align-items: center;
                 padding: 10px 16px;
-                background: #161b22;
-                border: 1px solid var(--prod-border);
+                background: #f9f9f9;
+                border: 1px solid #ccc;
                 border-radius: 6px;
                 margin-bottom: 8px;
                 transition: transform 0.2s;
@@ -336,22 +325,23 @@
                 gap: 14px;
             }
             .shoot-plan-card {
-                background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 border-radius: 12px;
                 padding: 14px;
-                box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
                 transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
                 cursor: pointer;
             }
             .shoot-plan-card:hover {
                 transform: translateY(-2px);
-                border-color: rgba(121, 184, 255, 0.45);
-                box-shadow: 0 14px 28px rgba(0,0,0,0.24);
+                border-color: #999;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             }
             .shoot-plan-card.special {
-                border-color: rgba(234, 179, 8, 0.35);
-                background: linear-gradient(180deg, rgba(234,179,8,0.08), rgba(255,255,255,0.015));
+                border-color: #999;
+                border-style: dashed;
+                background: #fafafa;
             }
             .shoot-plan-head {
                 display: flex;
@@ -360,23 +350,23 @@
                 gap: 12px;
                 margin-bottom: 10px;
                 padding-bottom: 10px;
-                border-bottom: 1px solid rgba(255,255,255,0.05);
+                border-bottom: 1px solid #eee;
             }
             .shoot-plan-title {
                 font-weight: 800;
-                color: #fff;
+                color: #111;
                 line-height: 1.1;
             }
             .shoot-plan-date {
                 font-size: 0.82rem;
-                color: var(--prod-accent);
+                color: #444;
                 margin-top: 4px;
             }
             .shoot-plan-note {
                 font-family: ui-monospace, monospace;
                 font-size: 0.74rem;
                 line-height: 1.35;
-                color: #c9d1d9;
+                color: #333;
                 margin-bottom: 10px;
                 opacity: 0.9;
             }
@@ -390,8 +380,8 @@
                 letter-spacing: 0.05em;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: #0d1117;
-                background: var(--prod-accent);
+                color: #fff;
+                background: #111;
             }
             .shoot-plan-chip-row {
                 display: flex;
@@ -410,13 +400,13 @@
                 font-size: 0.65rem;
                 text-transform: uppercase;
                 letter-spacing: 0.05em;
-                color: #8b949e;
+                color: #666;
             }
 
             .mobile-header {
                 display: none;
-                background: #161b22;
-                border-bottom: 1px solid var(--prod-border);
+                background: #fff;
+                border-bottom: 1px solid #ccc;
                 padding: 10px 16px;
                 justify-content: space-between;
                 align-items: center;
@@ -426,7 +416,7 @@
             }
             .mobile-title {
                 font-size: 0.95rem;
-                color: #f5f7fb;
+                color: #111;
             }
             .hamburger-btn {
                 background: none;
@@ -597,9 +587,9 @@
             }
             .stats-dropdown summary {
                 list-style: none;
-                background: #1f242c;
-                color: #c9d1d9;
-                border: 1px solid var(--prod-border);
+                background: #f9f9f9;
+                color: #111;
+                border: 1px solid #ccc;
                 border-radius: 6px;
                 padding: 10px 12px;
                 font-size: 0.9rem;
@@ -611,8 +601,8 @@
                 font-weight: 600;
             }
             .stats-dropdown summary:hover {
-                border-color: var(--prod-accent);
-                background: #232a34;
+                border-color: #999;
+                background: #eee;
             }
             .stats-dropdown summary::-webkit-details-marker {
                 display: none;
@@ -631,8 +621,8 @@
                 border-bottom-color: transparent;
             }
             .stats-dropdown-content {
-                background: rgba(255,255,255,0.02);
-                border: 1px solid var(--prod-border);
+                background: #fafafa;
+                border: 1px solid #ccc;
                 border-top: none;
                 border-radius: 0 0 6px 6px;
                 padding: 12px 16px;
@@ -641,7 +631,7 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 4px 0;
-                border-bottom: 1px solid rgba(255,255,255,0.05);
+                border-bottom: 1px solid #eee;
                 font-size: 0.85rem;
             }
             .stat-row:last-child {
@@ -677,228 +667,331 @@
             <div class="quick-meta">
                 Scenes: 39<br>
                 Shoot days: 16<br>
-                Last compiled: 5/20/2026, 4:39:16 PM
+                Last compiled: 5/20/2026, 9:13:08 PM
             </div>
         </div>
         <div class="dashboard-container">
             <main class="main-content">
                 <header style="margin: 8px 0 40px 0; padding-left: 54px;">
-                    <h1 class="brand-title brand-title-main" style="margin: 0; color: #fff;">Creatures in the Tall Grass</h1>
+                    <h1 class="brand-title brand-title-main" style="margin: 0; color: #111;">Creatures in the Tall Grass</h1>
                     <p style="opacity: 0.7; margin: 8px 0 0 0;">Production Dashboard · Official Shoot Plan</p>
                 </header>
 
                 
   <section style="margin-top:48px;">
-    <h2 style="color:#fff;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Scene Cheat Sheet</h2>
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Scene Cheat Sheet</h2>
     <div style="overflow-x:auto;">
       <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
         <thead>
           <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Scene</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Title</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Day</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Date</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Scene</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Title</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Day</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Date</th>
           </tr>
         </thead>
-        <tbody><tr><td colspan="5" style="padding:12px 10px 4px;color:#4a9eff;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 1</td></tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=arrival">s01</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=arrival">Arrival &amp; Discovery</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-night">s02</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=dallas-night">Sierra's Box</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/2.html">2</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Tue</span> Jun 9</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-hum">s03</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-hum">The Hum</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/4.html">4</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 13</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=fellowship">s04</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=fellowship">The Fellowship</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/12.html">12</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 28</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=marsh-walk-later">s05</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=marsh-walk-later">The Merlin App</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/4.html">4</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 13</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=news-vans">s06</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=news-vans">News Vans</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/9.html">9</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 20</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-coordinates">s07</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-coordinates">The Coordinates</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/12.html">12</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 28</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=mr-mikes-warning">s07b</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=mr-mikes-warning">Mr. Mike's Warning</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/12.html">12</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 28</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-marsh-walk">s08</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=dallas-marsh-walk">The Trailcam</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/11.html">11</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 27</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-research-beat">s08b</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-research-beat">The Research Beat</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-threshold">s08c</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-threshold">The Threshold</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-return">s08d</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-return">The Return</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-night-work">s09</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=dallas-night-work">The Injured One</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/3.html">3</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Fri</span> Jun 12</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=shadows-in-wind">s10</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=shadows-in-wind">The Chase</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/3.html">3</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Fri</span> Jun 12</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=howie-walk-2">s11</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=howie-walk-2">Kitchen Triage</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/6.html">6</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Tue</span> Jun 16</td>
-    </tr><tr><td colspan="5" style="padding:12px 10px 4px;color:#a78bfa;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 2</td></tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-burn-mark">s12</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-burn-mark">The Burn Mark &amp; Costco</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/2.html">2</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Tue</span> Jun 9</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=entering-grass">s13</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=entering-grass">The Confrontation</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=creature-rescue">s14</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=creature-rescue">The Connection</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-field-journal">s14b</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-field-journal">The Field Journal</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-almost-discovery">s14c</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-almost-discovery">The Almost Discovery</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/5.html">5</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 14</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-failed-test">s15a</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-failed-test">The Failed Test</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/4.html">4</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 13</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-tracking-box">s15b</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-tracking-box">Makayla's Tracking Box</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/4.html">4</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 13</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dominics-confession">s15c</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=dominics-confession">Dominic's Confession</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/4.html">4</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 13</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-escape">s16</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-escape">Back Home</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/12.html">12</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 28</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=resonance">s17</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=resonance">Resonance</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/9.html">9</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 20</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=normal-day">s17b</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=normal-day">Normal Day</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/12.html">12</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 28</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=mute-drive">s17c</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=mute-drive">Mute Drive</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/12.html">12</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jun 28</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=life-group-arrives">s18</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=life-group-arrives">Life Group Arrives</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/11.html">11</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 27</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-hymn">s19</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-hymn">The Hymn</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/11.html">11</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 27</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=red-eyes">s20</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=red-eyes">The Secret is Out</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/11.html">11</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 27</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=creature-missing">s21</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=creature-missing">The Burn Marks</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/14.html">14</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Thu</span> Jul 2</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-infection">s21b</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-infection">The Infection</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/13.html">13</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Wed</span> Jul 1</td>
-    </tr><tr><td colspan="5" style="padding:12px 10px 4px;color:#f97316;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 3</td></tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=marsh-confrontation">s22</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=marsh-confrontation">The Load-Out</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/14.html">14</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Thu</span> Jul 2</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=predator-attack">s23</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=predator-attack">The Trench Run</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/15.html">15</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Fri</span> Jul 3</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-perimeter">s24</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-perimeter">The Sanctuary &amp; The Siege</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/15.html">15</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Fri</span> Jul 3</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-last-dinner">s25</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=the-last-dinner">The Final Blast</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/16.html">16</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#f0a500">Sun</span> Jul 5</td>
-    </tr><tr><td colspan="5" style="padding:12px 10px 4px;color:#34d399;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 4</td></tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=final-echoes">s26</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=final-echoes">The Morning After</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/13.html">13</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Wed</span> Jul 1</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=aftermath">s27</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=aftermath">Aftermath</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/7.html">7</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#666">Thu</span> Jun 18</td>
-    </tr><tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=full-circle">s28</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#e0e0e0;text-decoration:none;" href="script-system/scene.html?id=full-circle">Full Circle</a></td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><a style="color:#4a9eff;text-decoration:none;" href="production/days/11.html">11</a></td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;"><span style="color:#7ec8a0">Sat</span> Jun 27</td>
+        <tbody><tr><td colspan="5" style="padding:12px 10px 4px;color:#111;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 1</td></tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=arrival">s01</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">Arrival &amp; Discovery</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-night">s02</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/2.html">Sierra's Box</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/2.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 9</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-hum">s03</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">The Hum</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=fellowship">s04</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">The Fellowship</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=marsh-walk-later">s05</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">The Merlin App</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=news-vans">s06</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/9.html">News Vans</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/9.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 20</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-coordinates">s07</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">The Coordinates</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=mr-mikes-warning">s07b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">Mr. Mike's Warning</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-marsh-walk">s08</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">The Trailcam</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-research-beat">s08b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Research Beat</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-threshold">s08c</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Threshold</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-return">s08d</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Return</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-night-work">s09</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/3.html">The Injured One</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/3.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jun 12</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=shadows-in-wind">s10</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/3.html">The Chase</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/3.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jun 12</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=howie-walk-2">s11</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/6.html">Kitchen Triage</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/6.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 16</a></td>
+    </tr><tr><td colspan="5" style="padding:12px 10px 4px;color:#333;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 2</td></tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-burn-mark">s12</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/2.html">The Burn Mark &amp; Costco</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/2.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 9</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=entering-grass">s13</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Confrontation</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=creature-rescue">s14</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Connection</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-field-journal">s14b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Field Journal</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-almost-discovery">s14c</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Almost Discovery</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-failed-test">s15a</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">The Failed Test</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-tracking-box">s15b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">Makayla's Tracking Box</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dominics-confession">s15c</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">Dominic's Confession</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-escape">s16</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">Back Home</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=resonance">s17</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/9.html">Resonance</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/9.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 20</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=normal-day">s17b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">Normal Day</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=mute-drive">s17c</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">Mute Drive</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=life-group-arrives">s18</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">Life Group Arrives</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-hymn">s19</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">The Hymn</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=red-eyes">s20</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">The Secret is Out</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=creature-missing">s21</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/14.html">The Burn Marks</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/14.html" style="color:#555;text-decoration:none;"><span style="color:#111">Thu</span> Jul 2</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-infection">s21b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/13.html">The Infection</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/13.html">13</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/13.html" style="color:#555;text-decoration:none;"><span style="color:#111">Wed</span> Jul 1</a></td>
+    </tr><tr><td colspan="5" style="padding:12px 10px 4px;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 3</td></tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=marsh-confrontation">s22</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/14.html">The Load-Out</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/14.html" style="color:#555;text-decoration:none;"><span style="color:#111">Thu</span> Jul 2</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=predator-attack">s23</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/15.html">The Trench Run</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/15.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jul 3</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-perimeter">s24</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/15.html">The Sanctuary &amp; The Siege</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/15.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jul 3</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-last-dinner">s25</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/16.html">The Final Blast</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/16.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jul 5</a></td>
+    </tr><tr><td colspan="5" style="padding:12px 10px 4px;color:#777;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 4</td></tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=final-echoes">s26</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/13.html">The Morning After</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/13.html">13</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/13.html" style="color:#555;text-decoration:none;"><span style="color:#111">Wed</span> Jul 1</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=aftermath">s27</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/7.html">Aftermath</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/7.html">7</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/7.html" style="color:#555;text-decoration:none;"><span style="color:#111">Thu</span> Jun 18</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=full-circle">s28</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">Full Circle</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
     </tr></tbody>
       </table>
     </div>
   </section>
+                
+  <section style="margin-top:48px;">
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Character Cheat Sheet</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
+        <thead>
+          <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Character</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Days</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Shoot Days</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Dates</th>
+          </tr>
+        </thead>
+        <tbody><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/asher.html">ASHER</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">7</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s14b, s14c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.5.html">9.5</a> <span style="color:#888;font-size:0.75em;">(s01)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s15a, s16)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s21b, s22)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25, s28)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/9.5.html" style="color:#555;text-decoration:none;">Jun 21</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/dallas.html">DALLAS</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">13</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a> <span style="color:#888;font-size:0.75em;">(s02)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a> <span style="color:#888;font-size:0.75em;">(s09, s10)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s13, s14, s14b, s14c, s17)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04, s07b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a> <span style="color:#888;font-size:0.75em;">(s11, s12)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/8.html">8</a> <span style="color:#888;font-size:0.75em;">(s08)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a> <span style="color:#888;font-size:0.75em;">(s03, s05, s06, s17)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.5.html">9.5</a> <span style="color:#888;font-size:0.75em;">(s01)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s15a, s15b, s15c, s16)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s21b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/2.html" style="color:#555;text-decoration:none;">Jun 9</a>, <a href="production/days/3.html" style="color:#555;text-decoration:none;">Jun 12</a>, <a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/6.html" style="color:#555;text-decoration:none;">Jun 16</a>, <a href="production/days/8.html" style="color:#555;text-decoration:none;">Jun 19</a>, <a href="production/days/9.html" style="color:#555;text-decoration:none;">Jun 20</a>, <a href="production/days/9.5.html" style="color:#555;text-decoration:none;">Jun 21</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/dominic.html">DOMINIC</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">9</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s13, s14c, s17b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04, s07b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a> <span style="color:#888;font-size:0.75em;">(s11)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a> <span style="color:#888;font-size:0.75em;">(s03, s05, s06)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18, s19, s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s15c, s17b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s21, s21b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23, s24)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/6.html" style="color:#555;text-decoration:none;">Jun 16</a>, <a href="production/days/9.html" style="color:#555;text-decoration:none;">Jun 20</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/janice.html">JANICE</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">4</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s17b, s17c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04, s26)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s16, s17b, s17c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s26)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/josh.html">JOSH</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/makayla.html">MAKAYLA</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">7</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s13, s14, s14b, s14c, s17c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.5.html">9.5</a> <span style="color:#888;font-size:0.75em;">(s01)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18, s19, s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s15a, s15b, s16, s17c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s21b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25, s28)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/9.5.html" style="color:#555;text-decoration:none;">Jun 21</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/mary.html">MARY</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/mr mike.html">MR MIKE</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">6</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s07b, s26)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18, s19, s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s26)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s27)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/pat.html">PAT</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/pat clendenen.html">PAT CLENDENEN</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">3</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a> <span style="color:#888;font-size:0.75em;">(s06)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s19)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s27)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/9.html" style="color:#555;text-decoration:none;">Jun 20</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/paul.html">PAUL</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/sarah.html">SARAH</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/sasha.html">SASHA</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s19)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/tyler.html">TYLER</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18, s19)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/woman.html">WOMAN</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s19)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr></tbody>
+      </table>
+    </div>
+  </section>
+                
+  <section style="margin-top:48px;">
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Calendar</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:12px;table-layout:fixed;">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Sun</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Mon</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Tue</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Wed</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Thu</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Fri</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Sat</th>
+          </tr>
+        </thead>
+        <tbody><tr><td onclick="window.location.href='production/days/1.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">7</div><div style="font-weight:800;font-size:11px;">Day 1</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">8</div></td><td onclick="window.location.href='production/days/2.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">9</div><div style="font-weight:800;font-size:11px;">Day 2</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s02</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">10</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">11</div></td><td onclick="window.location.href='production/days/3.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">12</div><div style="font-weight:800;font-size:11px;">Day 3</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s09, s10</div></td><td onclick="window.location.href='production/days/4.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">13</div><div style="font-weight:800;font-size:11px;">Day 4</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s13, s14, s14b, s14c, s17, s17b, s17c</div></td></tr><tr><td onclick="window.location.href='production/days/5.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">14</div><div style="font-weight:800;font-size:11px;">Day 5</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s04, s07b, s26</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">15</div></td><td onclick="window.location.href='production/days/6.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">16</div><div style="font-weight:800;font-size:11px;">Day 6</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s11, s12</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">17</div></td><td onclick="window.location.href='production/days/7.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">18</div><div style="font-weight:800;font-size:11px;">Day 7</div></td><td onclick="window.location.href='production/days/8.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">19</div><div style="font-weight:800;font-size:11px;">Day 8</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s08</div></td><td onclick="window.location.href='production/days/9.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">20</div><div style="font-weight:800;font-size:11px;">Day 9</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s03, s05, s06, s17</div></td></tr><tr><td onclick="window.location.href='production/days/9.5.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f5f5dc;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">21</div><div style="font-weight:800;font-size:11px;">Day 9.5</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s01</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">22</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">23</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">24</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">25</div></td><td onclick="window.location.href='production/days/10.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">26</div><div style="font-weight:800;font-size:11px;">Day 10</div></td><td onclick="window.location.href='production/days/11.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">27</div><div style="font-weight:800;font-size:11px;">Day 11</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s18, s19, s20</div></td></tr><tr><td onclick="window.location.href='production/days/12.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">28</div><div style="font-weight:800;font-size:11px;">Day 12</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s07, s15a, s15b, s15c, s16, s17b, s17c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">29</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">30</div></td><td onclick="window.location.href='production/days/13.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">Jul 1</div><div style="font-weight:800;font-size:11px;">Day 13</div></td><td onclick="window.location.href='production/days/14.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">2</div><div style="font-weight:800;font-size:11px;">Day 14</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s21, s21b, s22, s26</div></td><td onclick="window.location.href='production/days/15.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">3</div><div style="font-weight:800;font-size:11px;">Day 15</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s23, s24</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">4</div></td></tr><tr><td onclick="window.location.href='production/days/16.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">5</div><div style="font-weight:800;font-size:11px;">Day 16</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s25, s27, s28</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">6</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">7</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">8</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">9</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">10</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">11</div></td></tr></tbody></table></div></section>
                 <!-- LOCATION_CHEAT_SHEET_START --><section id="locations" style="margin-top:48px;">
     <h2 style="color:#fff;margin:0 0 20px 0;font-size:1.5rem;display:flex;align-items:center;">Locations <span style="font-size:0.8rem;font-weight:normal;opacity:0.6;margin-left:12px;background:rgba(255,255,255,0.1);padding:4px 8px;border-radius:4px;">edit directly in production.html</span></h2>
     <div style="overflow-x:auto;">
@@ -929,7 +1022,7 @@
   </section><!-- LOCATION_CHEAT_SHEET_END -->
                 
     <section id="shoot-plan" class="shoot-plan">
-      <h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
+      <h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Detailed Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
       <div class="shoot-plan-grid">
         
         
@@ -939,7 +1032,7 @@
                   <div class="shoot-plan-title">Day 1</div>
                   <div class="shoot-plan-date">Sunday, Jun 7, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#0ea5e9;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 1 = 6.7.26 - Sun &lt;s00s&gt; Branford montage</div>
               <div class="shoot-plan-block">
@@ -959,7 +1052,7 @@
                   <div class="shoot-plan-title">Day 2</div>
                   <div class="shoot-plan-date">Tuesday, Jun 9, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#10b981;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 2 = 6.9.26 = Tues [s02,s17][D]</div>
               <div class="shoot-plan-block">
@@ -979,7 +1072,7 @@
                   <div class="shoot-plan-title">Day 3</div>
                   <div class="shoot-plan-date">Friday, Jun 12, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#f43f5e;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 3 = 6.12.26 - Fr &lt;s09-s10&gt;[D]</div>
               <div class="shoot-plan-block">
@@ -999,7 +1092,7 @@
                   <div class="shoot-plan-title">Day 4</div>
                   <div class="shoot-plan-date">Saturday, Jun 13, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#eab308;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">D4 = 6.13.26 - Sat &lt;s03,s05,s15a,s15b,s15c&gt; [D, Dm walking + s15s]</div>
               <div class="shoot-plan-block">
@@ -1019,7 +1112,7 @@
                   <div class="shoot-plan-title">Day 5</div>
                   <div class="shoot-plan-date">Sunday, Jun 14, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#0ea5e9;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">D5 = 6.14.26 = Sun &lt;s01,s13,s14,s14b,s14c,s08b,s08c,s08d&gt;</div>
               <div class="shoot-plan-block">
@@ -1030,7 +1123,7 @@
                 <strong>Locations</strong>
                 <div>—</div>
               </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MARY</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAUL</span></div></div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MARY</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAUL</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
             </article>
           
             <article class="shoot-plan-card" data-call-sheet-href="production/days/6.html" role="link" tabindex="0" aria-label="Open call sheet for Day 6">
@@ -1039,7 +1132,7 @@
                   <div class="shoot-plan-title">Day 6</div>
                   <div class="shoot-plan-date">Tuesday, Jun 16, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#10b981;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 6 = 6.16.26 = Tues &lt;s11 + s12&gt;[D]</div>
               <div class="shoot-plan-block">
@@ -1059,7 +1152,7 @@
                   <div class="shoot-plan-title">Day 7</div>
                   <div class="shoot-plan-date">Thursday, Jun 18, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#f59e0b;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 7 = 6.18.26 = Thurs &lt;s27&gt;[D]</div>
               <div class="shoot-plan-block">
@@ -1079,7 +1172,7 @@
                   <div class="shoot-plan-title">Day 8</div>
                   <div class="shoot-plan-date">Friday, Jun 19, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#f43f5e;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 8 = 6.19.26 = Fri &lt;s07,s08&gt;[D][H]</div>
               <div class="shoot-plan-block">
@@ -1099,7 +1192,7 @@
                   <div class="shoot-plan-title">Day 9</div>
                   <div class="shoot-plan-date">Saturday, Jun 20, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#eab308;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">D9 = 6.20.26 = Sat &lt;s06,s17&gt;</div>
               <div class="shoot-plan-block">
@@ -1119,7 +1212,7 @@
                   <div class="shoot-plan-title">Day 9.5</div>
                   <div class="shoot-plan-date">Sunday, Jun 21, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#0ea5e9;">Note</span>
+                <span class="shoot-plan-label">Note</span>
               </div>
               <div class="shoot-plan-note">D9.5 = 6.21.26 (Father's Day)</div>
               <div class="shoot-plan-block">
@@ -1139,7 +1232,7 @@
                   <div class="shoot-plan-title">Day 10</div>
                   <div class="shoot-plan-date">Friday, Jun 26, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#f43f5e;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">D10 = 6.26.26 = Fri [D]&lt;s00, s09c&gt;</div>
               <div class="shoot-plan-block">
@@ -1159,7 +1252,7 @@
                   <div class="shoot-plan-title">Day 11</div>
                   <div class="shoot-plan-date">Saturday, Jun 27, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#eab308;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">D11 = 6.27 = Sat &lt;s08,s18,s19,s20,s28,s29,s30&gt; [D, Dm,...]</div>
               <div class="shoot-plan-block">
@@ -1170,7 +1263,7 @@
                 <strong>Locations</strong>
                 <div>—</div>
               </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JOSH</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT</span><span class="actor-chip" style="pointer-events:none; cursor:default;">SARAH</span><span class="actor-chip" style="pointer-events:none; cursor:default;">TYLER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT CLENDENEN</span><span class="actor-chip" style="pointer-events:none; cursor:default;">SASHA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">WOMAN</span><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span></div></div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JOSH</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT</span><span class="actor-chip" style="pointer-events:none; cursor:default;">SARAH</span><span class="actor-chip" style="pointer-events:none; cursor:default;">TYLER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT CLENDENEN</span><span class="actor-chip" style="pointer-events:none; cursor:default;">SASHA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">WOMAN</span><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span></div></div>
             </article>
           
             <article class="shoot-plan-card" data-call-sheet-href="production/days/12.html" role="link" tabindex="0" aria-label="Open call sheet for Day 12">
@@ -1179,7 +1272,7 @@
                   <div class="shoot-plan-title">Day 12</div>
                   <div class="shoot-plan-date">Sunday, Jun 28, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#0ea5e9;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">D12 = 6.28.26 = Sun [Church] &lt;s04,s07,s07b,s16,s17b,s17c&gt;</div>
               <div class="shoot-plan-block">
@@ -1199,7 +1292,7 @@
                   <div class="shoot-plan-title">Day 13</div>
                   <div class="shoot-plan-date">Wednesday, Jul 1, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#8b5cf6;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">D13 = 7.1.26 = Wed &lt;s21b,s26&gt;</div>
               <div class="shoot-plan-block">
@@ -1219,7 +1312,7 @@
                   <div class="shoot-plan-title">Day 14</div>
                   <div class="shoot-plan-date">Thursday, Jul 2, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#f59e0b;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 14 = 7.2.26 = Thursday &lt;s21,s22&gt;</div>
               <div class="shoot-plan-block">
@@ -1230,7 +1323,7 @@
                 <strong>Locations</strong>
                 <div>—</div>
               </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span></div></div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
             </article>
           
             <article class="shoot-plan-card" data-call-sheet-href="production/days/15.html" role="link" tabindex="0" aria-label="Open call sheet for Day 15">
@@ -1239,7 +1332,7 @@
                   <div class="shoot-plan-title">Day 15</div>
                   <div class="shoot-plan-date">Friday, Jul 3, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#f43f5e;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 15 = 7.3.26 Friday &lt;s23,s24&gt;</div>
               <div class="shoot-plan-block">
@@ -1250,7 +1343,7 @@
                 <strong>Locations</strong>
                 <div>—</div>
               </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span></div></div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
             </article>
           
             <article class="shoot-plan-card" data-call-sheet-href="production/days/16.html" role="link" tabindex="0" aria-label="Open call sheet for Day 16">
@@ -1259,7 +1352,7 @@
                   <div class="shoot-plan-title">Day 16</div>
                   <div class="shoot-plan-date">Sunday, Jul 5, 2026</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#0ea5e9;">Shoot</span>
+                <span class="shoot-plan-label">Shoot</span>
               </div>
               <div class="shoot-plan-note">Day 16 = 7.5.26 Sunday &lt;s15s,s25&gt; [finale + pickups]</div>
               <div class="shoot-plan-block">
@@ -1270,7 +1363,7 @@
                 <strong>Locations</strong>
                 <div>—</div>
               </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT CLENDENEN</span></div></div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT CLENDENEN</span></div></div>
             </article>
           
       </div>

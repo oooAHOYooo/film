@@ -101,6 +101,7 @@ function buildProductionRows(scenes, productionData, plotCards) {
   scenes.forEach((scene, index) => {
     const card = useGallery ? plotCards[index] : null;
     const n = card ? card.n : index + 1;
+    const fileId = scene.file ? scene.file.replace('.md', '') : `s${String(n).padStart(2, '0')}`;
     const id = scene.id || scene.nickname || `scene-${n}`;
     const title = card ? card.title : (scene.title || nicknameToTitle(scene.nickname || scene.id) || `Scene ${n}`);
     const act = card ? (card.act ?? 0) : (scene.act || 0);
@@ -134,6 +135,7 @@ function buildProductionRows(scenes, productionData, plotCards) {
 
     rows.push({
       n,
+      fileId,
       id,
       title,
       location,
@@ -201,13 +203,15 @@ function totalDurationMin(rows) {
 
 function extractCharacters(content) {
   if (!content || typeof content !== 'string') return [];
-  // Look for uppercase names at start of line or after (action) or in dialogue
-  const charRegex = /^[ \t]*([A-Z]{2,}(?:\s+[A-Z]{2,})*)(?:\s*\(.*?\))?\s*$/gm;
+  // Look for uppercase names at start of line (allows periods for names like MR. MIKE, PAT CLENDENEN)
+  const charRegex = /^[ \t]*([A-Z]{2,}\.?(?:\s+[A-Z]{2,}\.?)*)(?:\s*\(.*?\))?\s*$/gm;
   const matches = content.matchAll(charRegex);
   const chars = new Set();
   for (const match of matches) {
-    const name = match[1].trim();
-    if (name && !/^(INT\.|EXT\.|FADE|CUT|DISSOLVE|ACT|SCENE|DAY|NIGHT)/i.test(name)) {
+    const raw = match[1].trim();
+    // Normalize: remove trailing periods, collapse "MR." to "MR" so MR. MIKE and MR MIKE merge
+    const name = raw.replace(/\.(\s)/g, '$1').replace(/\.\s*$/, '').trim();
+    if (name && !/^(INT|EXT|FADE|CUT|DISSOLVE|ACT|SCENE|DAY|NIGHT)\b/i.test(name)) {
       chars.add(name);
     }
   }
@@ -231,34 +235,34 @@ function getDayConfig(dateStr) {
     const date = new Date(dateStr + 'T12:00:00');
     const day = date.getDay(); // 0 (Sun) to 6 (Sat)
     const configs = [
-        { name: 'Sunday',    icon: '☀️', color: '#0ea5e9', class: 'day-sun' },
-        { name: 'Monday',    icon: 'M',  color: '#6366f1', class: 'day-mon' },
-        { name: 'Tuesday',   icon: 'T',  color: '#10b981', class: 'day-tue' },
-        { name: 'Wednesday', icon: 'W',  color: '#8b5cf6', class: 'day-wed' },
-        { name: 'Thursday',  icon: 'T',  color: '#f59e0b', class: 'day-thu' },
-        { name: 'Friday',    icon: 'F',  color: '#f43f5e', class: 'day-fri' },
-        { name: 'Saturday',  icon: '🌟', color: '#eab308', class: 'day-sat' }
+        { name: 'Sunday',    icon: 'Su', color: '#000', class: 'day-sun' },
+        { name: 'Monday',    icon: 'M',  color: '#000', class: 'day-mon' },
+        { name: 'Tuesday',   icon: 'T',  color: '#000', class: 'day-tue' },
+        { name: 'Wednesday', icon: 'W',  color: '#000', class: 'day-wed' },
+        { name: 'Thursday',  icon: 'Th', color: '#000', class: 'day-thu' },
+        { name: 'Friday',    icon: 'F',  color: '#000', class: 'day-fri' },
+        { name: 'Saturday',  icon: 'Sa', color: '#000', class: 'day-sat' }
     ];
     return configs[day];
 }
 
 function getProductionStyles() {
   return `            :root {
-                --prod-accent: #79b8ff;
-                --prod-head: rgba(56, 139, 253, 0.12);
-                --prod-border: rgba(56, 139, 253, 0.18);
-                --prod-tag-bg: rgba(56, 139, 253, 0.1);
-                --prod-tag-border: rgba(56, 139, 253, 0.25);
-                --prod-row-hover: rgba(56, 139, 253, 0.06);
+                --prod-accent: #000;
+                --prod-head: #f5f5f5;
+                --prod-border: #ccc;
+                --prod-tag-bg: #f9f9f9;
+                --prod-tag-border: #bbb;
+                --prod-row-hover: #f5f5f5;
                 --sidebar-w: 260px;
             }
-            body { 
-                margin: 0; 
-                display: block; 
-                min-height: 100vh; 
-                overflow-y: auto; 
-                background: #0d1117;
-                color: #c9d1d9;
+            body {
+                margin: 0;
+                display: block;
+                min-height: 100vh;
+                overflow-y: auto;
+                background: #fff;
+                color: #111;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             }
             .dashboard-container {
@@ -271,7 +275,7 @@ function getProductionStyles() {
                 font-weight: 700;
                 line-height: 1.15;
                 letter-spacing: 0.02em;
-                color: #f5f7fb;
+                color: #111;
             }
             .brand-title-main {
                 font-size: 2.05rem;
@@ -310,20 +314,20 @@ function getProductionStyles() {
                 width: 36px;
                 height: 36px;
                 border-radius: 10px;
-                background: rgba(255,255,255,0.05);
-                border: 1px solid rgba(255,255,255,0.08);
+                background: #f5f5f5;
+                border: 1px solid #ccc;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                color: #c9d1d9;
+                color: #111;
                 cursor: pointer;
                 transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
                 z-index: 30;
             }
             .quick-menu-btn:hover {
-                background: rgba(121,184,255,0.12);
-                border-color: rgba(121,184,255,0.28);
-                color: #fff;
+                background: #e0e0e0;
+                border-color: #999;
+                color: #000;
             }
             .quick-menu-btn svg {
                 width: 17px;
@@ -335,11 +339,11 @@ function getProductionStyles() {
                 left: 18px;
                 width: 240px;
                 max-width: calc(100vw - 24px);
-                background: #161b22;
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 border-radius: 14px;
                 padding: 14px;
-                box-shadow: 0 18px 40px rgba(0,0,0,0.38);
+                box-shadow: 0 18px 40px rgba(0,0,0,0.15);
                 z-index: 998;
                 display: none;
                 max-height: calc(100vh - 36px);
@@ -364,8 +368,8 @@ function getProductionStyles() {
                 height: 26px;
                 border: none;
                 border-radius: 8px;
-                background: rgba(255,255,255,0.05);
-                color: #c9d1d9;
+                background: #f0f0f0;
+                color: #111;
                 cursor: pointer;
                 display: inline-flex;
                 align-items: center;
@@ -375,43 +379,43 @@ function getProductionStyles() {
                 padding: 0;
             }
             .quick-menu-close:hover {
-                background: rgba(121,184,255,0.12);
-                color: #fff;
+                background: #ddd;
+                color: #000;
             }
             .quick-menu a {
                 display: block;
-                color: #fff;
+                color: #111;
                 text-decoration: none;
                 padding: 10px 12px;
                 border-radius: 8px;
-                background: rgba(255,255,255,0.04);
-                border: 1px solid rgba(255,255,255,0.06);
+                background: #f9f9f9;
+                border: 1px solid #ddd;
                 margin-bottom: 8px;
                 font-size: 0.88rem;
             }
             .quick-menu a:hover {
-                background: rgba(121,184,255,0.12);
-                border-color: rgba(121,184,255,0.28);
+                background: #eee;
+                border-color: #999;
             }
             .quick-menu .quick-meta {
                 margin-top: 10px;
                 font-size: 0.72rem;
-                color: rgba(255,255,255,0.56);
+                color: #666;
                 line-height: 1.4;
             }
             .production-table {
                 width: 100%;
                 border-collapse: collapse;
-                background: #0d1117;
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 font-size: 0.9rem;
             }
             .production-table th {
                 text-align: left;
                 padding: 12px;
-                border-bottom: 2px solid var(--prod-border);
-                background: #161b22;
-                color: var(--prod-accent);
+                border-bottom: 2px solid #999;
+                background: #f5f5f5;
+                color: #111;
                 position: sticky;
                 top: -41px;
                 z-index: 10;
@@ -435,29 +439,21 @@ function getProductionStyles() {
             .actor-chip {
                 display: inline-block;
                 padding: 2px 8px;
-                background: rgba(56, 139, 253, 0.15);
-                border: 1px solid rgba(56, 139, 253, 0.3);
+                background: #f0f0f0;
+                border: 1px solid #999;
                 border-radius: 12px;
                 font-size: 0.75rem;
                 margin-right: 4px;
                 margin-bottom: 4px;
-                color: #58a6ff;
+                color: #111;
                 text-decoration: none;
-                transition: transform 0.1s, filter 0.1s;
+                transition: transform 0.1s;
                 cursor: pointer;
             }
             .actor-chip:hover {
                 transform: translateY(-1px);
-                filter: brightness(1.2);
+                background: #e0e0e0;
             }
-            .actor-chip[data-character="dallas"] { color: #eab308; border-color: rgba(234, 179, 8, 0.3); background: rgba(234, 179, 8, 0.15); }
-            .actor-chip[data-character="makayla"] { color: #ec4899; border-color: rgba(236, 72, 153, 0.3); background: rgba(236, 72, 153, 0.15); }
-            .actor-chip[data-character="dominic"] { color: #10b981; border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.15); }
-            .actor-chip[data-character="asher"] { color: #f59e0b; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.15); }
-            .actor-chip[data-character="janice"] { color: #8b5cf6; border-color: rgba(139, 92, 246, 0.3); background: rgba(139, 92, 246, 0.15); }
-            .actor-chip[data-character="mr-mike"] { color: #6366f1; border-color: rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.15); }
-            .actor-chip[data-character="howie"] { color: #14b8a6; border-color: rgba(20, 184, 166, 0.3); background: rgba(20, 184, 166, 0.15); }
-            .actor-chip[data-character="pat"] { color: #f43f5e; border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.15); }
             .click-copy {
                 cursor: pointer;
                 border-bottom: 1px dashed transparent;
@@ -487,31 +483,28 @@ function getProductionStyles() {
                 font-size: 0.7rem;
                 font-weight: 800;
                 margin-right: 8px;
-                color: #fff;
-                background: rgba(255,255,255,0.1);
+                color: #111;
+                background: #f0f0f0;
+                border: 1px solid #999;
             }
-            .day-sun { background: rgba(14, 165, 233, 0.2); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.4); }
-            .day-mon { background: rgba(99, 102, 241, 0.2); color: #6366f1; border: 1px solid rgba(99, 102, 241, 0.4); }
-            .day-tue { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
-            .day-wed { background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); }
-            .day-thu { background: rgba(245, 158, 11, 0.2); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); }
-            .day-fri { background: rgba(244, 63, 94, 0.2); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.4); }
-            .day-sat { background: rgba(234, 179, 8, 0.2); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
+            .day-sun, .day-mon, .day-tue, .day-wed, .day-thu, .day-fri, .day-sat {
+                background: #f0f0f0; color: #111; border: 1px solid #999;
+            }
             
             .day-filter-bar {
                 display: flex;
                 gap: 8px;
                 margin-bottom: 24px;
                 flex-wrap: wrap;
-                background: rgba(255,255,255,0.03);
+                background: #f9f9f9;
                 padding: 12px;
                 border-radius: 8px;
-                border: 1px solid rgba(255,255,255,0.05);
+                border: 1px solid #ddd;
             }
             .filter-btn {
-                background: #21262d;
-                border: 1px solid var(--prod-border);
-                color: #8b949e;
+                background: #fff;
+                border: 1px solid #ccc;
+                color: #555;
                 padding: 4px 12px;
                 border-radius: 20px;
                 font-size: 0.75rem;
@@ -519,14 +512,14 @@ function getProductionStyles() {
                 transition: all 0.2s;
             }
             .filter-btn:hover {
-                background: #30363d;
-                border-color: var(--prod-accent);
-                color: #fff;
+                background: #eee;
+                border-color: #999;
+                color: #000;
             }
             .filter-btn.active {
-                background: var(--prod-accent);
-                color: #0d1117;
-                border-color: var(--prod-accent);
+                background: #111;
+                color: #fff;
+                border-color: #111;
                 font-weight: 700;
             }
 
@@ -539,8 +532,8 @@ function getProductionStyles() {
                 display: flex;
                 align-items: center;
                 padding: 10px 16px;
-                background: #161b22;
-                border: 1px solid var(--prod-border);
+                background: #f9f9f9;
+                border: 1px solid #ccc;
                 border-radius: 6px;
                 margin-bottom: 8px;
                 transition: transform 0.2s;
@@ -574,22 +567,23 @@ function getProductionStyles() {
                 gap: 14px;
             }
             .shoot-plan-card {
-                background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 border-radius: 12px;
                 padding: 14px;
-                box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
                 transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
                 cursor: pointer;
             }
             .shoot-plan-card:hover {
                 transform: translateY(-2px);
-                border-color: rgba(121, 184, 255, 0.45);
-                box-shadow: 0 14px 28px rgba(0,0,0,0.24);
+                border-color: #999;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             }
             .shoot-plan-card.special {
-                border-color: rgba(234, 179, 8, 0.35);
-                background: linear-gradient(180deg, rgba(234,179,8,0.08), rgba(255,255,255,0.015));
+                border-color: #999;
+                border-style: dashed;
+                background: #fafafa;
             }
             .shoot-plan-head {
                 display: flex;
@@ -598,23 +592,23 @@ function getProductionStyles() {
                 gap: 12px;
                 margin-bottom: 10px;
                 padding-bottom: 10px;
-                border-bottom: 1px solid rgba(255,255,255,0.05);
+                border-bottom: 1px solid #eee;
             }
             .shoot-plan-title {
                 font-weight: 800;
-                color: #fff;
+                color: #111;
                 line-height: 1.1;
             }
             .shoot-plan-date {
                 font-size: 0.82rem;
-                color: var(--prod-accent);
+                color: #444;
                 margin-top: 4px;
             }
             .shoot-plan-note {
                 font-family: ui-monospace, monospace;
                 font-size: 0.74rem;
                 line-height: 1.35;
-                color: #c9d1d9;
+                color: #333;
                 margin-bottom: 10px;
                 opacity: 0.9;
             }
@@ -628,8 +622,8 @@ function getProductionStyles() {
                 letter-spacing: 0.05em;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: #0d1117;
-                background: var(--prod-accent);
+                color: #fff;
+                background: #111;
             }
             .shoot-plan-chip-row {
                 display: flex;
@@ -648,13 +642,13 @@ function getProductionStyles() {
                 font-size: 0.65rem;
                 text-transform: uppercase;
                 letter-spacing: 0.05em;
-                color: #8b949e;
+                color: #666;
             }
 
             .mobile-header {
                 display: none;
-                background: #161b22;
-                border-bottom: 1px solid var(--prod-border);
+                background: #fff;
+                border-bottom: 1px solid #ccc;
                 padding: 10px 16px;
                 justify-content: space-between;
                 align-items: center;
@@ -664,7 +658,7 @@ function getProductionStyles() {
             }
             .mobile-title {
                 font-size: 0.95rem;
-                color: #f5f7fb;
+                color: #111;
             }
             .hamburger-btn {
                 background: none;
@@ -835,9 +829,9 @@ function getProductionStyles() {
             }
             .stats-dropdown summary {
                 list-style: none;
-                background: #1f242c;
-                color: #c9d1d9;
-                border: 1px solid var(--prod-border);
+                background: #f9f9f9;
+                color: #111;
+                border: 1px solid #ccc;
                 border-radius: 6px;
                 padding: 10px 12px;
                 font-size: 0.9rem;
@@ -849,8 +843,8 @@ function getProductionStyles() {
                 font-weight: 600;
             }
             .stats-dropdown summary:hover {
-                border-color: var(--prod-accent);
-                background: #232a34;
+                border-color: #999;
+                background: #eee;
             }
             .stats-dropdown summary::-webkit-details-marker {
                 display: none;
@@ -869,8 +863,8 @@ function getProductionStyles() {
                 border-bottom-color: transparent;
             }
             .stats-dropdown-content {
-                background: rgba(255,255,255,0.02);
-                border: 1px solid var(--prod-border);
+                background: #fafafa;
+                border: 1px solid #ccc;
                 border-top: none;
                 border-radius: 0 0 6px 6px;
                 padding: 12px 16px;
@@ -879,7 +873,7 @@ function getProductionStyles() {
                 display: flex;
                 justify-content: space-between;
                 padding: 4px 0;
-                border-bottom: 1px solid rgba(255,255,255,0.05);
+                border-bottom: 1px solid #eee;
                 font-size: 0.85rem;
             }
             .stat-row:last-child {
@@ -916,7 +910,7 @@ function generateBreakdownRows(rows, calendar, holidays) {
             <div class="day-divider" id="day-${minDay}">
               <span style="display:flex; align-items:center;">
                 <span class="day-badge ${dayConfig.class}">${dayConfig.icon}</span>
-                Day ${minDay} — ${dayName}, ${formattedDate} ${holiday ? `<span style="color:#ff7b72;margin-left:10px;">[${holiday}]</span>` : ''}
+                Day ${minDay} — ${dayName}, ${formattedDate} ${holiday ? `<span style="color:#111;margin-left:10px;font-style:italic;">[${holiday}]</span>` : ''}
               </span>
               <a href="production/days/${minDay}.html" target="_blank" style="color:var(--prod-accent);font-size:0.85rem;text-decoration:none;">📄 View Call Sheet</a>
             </div>
@@ -930,8 +924,8 @@ function generateBreakdownRows(rows, calendar, holidays) {
     }).join('');
 
     html += `
-                        <tr id="row-${r.n}" data-day-name="${dayConfig.name}">
-                            <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-${r.n}').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('${r.n}')">${r.n}</span></td>
+                        <tr id="row-${r.fileId}" data-day-name="${dayConfig.name}">
+                            <td><input type="checkbox" class="sync-check" onclick="document.getElementById('row-${r.fileId}').classList.toggle('row-dimmed', this.checked)"> <span class="scene-number click-copy" onclick="navigator.clipboard.writeText('${r.fileId}')">${r.fileId}</span></td>
                             <td class="scene-name-col"><span class="scene-name click-copy" onclick="navigator.clipboard.writeText('${escapeHtml(r.title)}')">${escapeHtml(r.title)}</span></td>
                             <td><span class="location-tag click-copy" onclick="navigator.clipboard.writeText('${escapeHtml(r.location || '—')}')">${escapeHtml(r.location || '—')}</span></td>
                             <td><span class="time-of-day">${escapeHtml(r.time || '—')}</span></td>
@@ -940,7 +934,7 @@ function generateBreakdownRows(rows, calendar, holidays) {
                             <td class="shoot-days-col"><span class="shoot-days">${r.pickup ? 'pickup' : (r.shootDays != null ? r.shootDays : '—')}</span></td>
                             <td class="key-elements">
                                 ${r.keyElements ? r.keyElements.replace(/\n/g, ' ').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') : '—'}
-                                ${r.characters && r.characters.length === 1 && r.characters[0] === 'DALLAS' ? '<div style="margin-top:8px;"><span style="color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span></div>' : ''}
+                                ${r.characters && r.characters.length === 1 && r.characters[0] === 'DALLAS' ? '<div style="margin-top:8px;"><span style="color:#111; background:#f0f0f0; border:1px solid #999; padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span></div>' : ''}
                                 <div style="margin-top:8px;">${charChips}</div>
                             </td>
                             <td class="production-notes">${escapeHtml(r.productionNotes || '—')}</td>
@@ -965,7 +959,7 @@ function generateLocationTable(locationRows, totalDays) {
 
 function generateOverviewListHtml(rows, calendar, totalDays) {
   let html = '<section id="schedule-overview" style="margin-bottom: 50px;">';
-  html += '<h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Schedule Overview <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px;">At a glance</span></h2>';
+  html += '<h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Schedule Overview <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">At a glance</span></h2>';
   html += '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;">';
 
   const formatD = (dStr) => {
@@ -983,7 +977,7 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
     dayRows.forEach(r => {
       if (r.location && r.location !== '—') locs.add(r.location);
       if (r.characters) r.characters.forEach(c => chars.add(c));
-      sceneNums.push('s' + r.n.toString().padStart(2, '0'));
+      sceneNums.push(r.fileId);
     });
 
     const dateStr = calendar[dayNum] || '';
@@ -997,32 +991,32 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
     const scenesList = sceneNums.length > 0 ? sceneNums.join(' + ') : '—';
 
     const isJustDallas = chars.size === 1 && chars.has('DALLAS');
-    const dallasTag = isJustDallas ? '<span style="float: right; margin-right: 10px; margin-top: 2px; color:#eab308; background:rgba(234,179,8,0.1); border:1px solid rgba(234,179,8,0.3); padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>' : '';
+    const dallasTag = isJustDallas ? '<span style="float: right; margin-right: 10px; margin-top: 2px; color:#111; background:#f0f0f0; border:1px solid #999; padding:2px 6px; border-radius:4px; font-size:0.6rem; letter-spacing:0.05em; font-weight:700;">JUST DALLAS</span>' : '';
 
     html += `
       <div class="stats-card" data-day-name="${dayNameStr}" style="margin-bottom: 0; cursor: pointer;" onclick="window.location.href='production/days/${dayNum}.html'">
-        <div style="font-weight: 700; color: #fff; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid var(--prod-border); padding-bottom: 8px; display:flex; align-items:center;">
+        <div style="font-weight: 700; color: #111; margin-bottom: 12px; font-size: 1.1rem; border-bottom: 1px solid #ddd; padding-bottom: 8px; display:flex; align-items:center;">
           <span class="day-badge ${dayConfig.class}" style="width:20px; height:20px; font-size:0.6rem;">${dayConfig.icon}</span>
-          Day ${dayNum} <span style="flex:1; color: ${dayConfig.color}; font-weight: 700; font-size: 0.85rem; text-align: right;">${formatD(dateStr)}</span>
+          Day ${dayNum} <span style="flex:1; color: #111; font-weight: 700; font-size: 0.85rem; text-align: right;">${formatD(dateStr)}</span>
           ${dallasTag}
         </div>
-        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 8px;">
+        <div style="display: flex; gap: 20px; margin-bottom: 12px; border-bottom: 1px solid #eee; padding-bottom: 8px;">
           <div>
-            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
-            <span style="font-size: 0.85rem; color: #fff;">—</span>
+            <strong style="color: #888; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">Start Time</strong>
+            <span style="font-size: 0.85rem; color: #111;">—</span>
           </div>
           <div>
-            <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
-            <span style="font-size: 0.85rem; color: #fff;">—</span>
+            <strong style="color: #888; text-transform: uppercase; font-size: 0.6rem; display: block; letter-spacing: 0.05em;">End Call</strong>
+            <span style="font-size: 0.85rem; color: #111;">—</span>
           </div>
         </div>
         <div style="font-size: 0.85rem; margin-bottom: 12px;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
+          <strong style="color: #888; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Locations</strong>
           <div style="line-height: 1.4;">${locList}</div>
         </div>
         <div style="font-size: 0.85rem;">
-          <strong style="color: #8b949e; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
-          <div style="color: #fff; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">${scenesList}</div>
+          <strong style="color: #888; text-transform: uppercase; font-size: 0.7rem; display: block; letter-spacing: 0.05em; margin-bottom: 4px;">Scenes & Cast</strong>
+          <div style="color: #111; font-family: ui-monospace, monospace; font-size: 0.8rem; margin-bottom: 4px;">${scenesList}</div>
           <div style="line-height: 1.5; margin-top: 6px;">${charChips}</div>
         </div>
       </div>
@@ -1035,7 +1029,7 @@ function generateOverviewListHtml(rows, calendar, totalDays) {
 
 function generateCompactListHtml(rows, calendar, totalDays) {
   let html = '<section id="compact-list-view" class="compact-list" style="display: block;">';
-  html += '<h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem;">List View</h2>';
+  html += '<h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem;">List View</h2>';
 
   for (let dayNum = 1; dayNum <= totalDays; dayNum++) {
     const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(dayNum));
@@ -1043,7 +1037,7 @@ function generateCompactListHtml(rows, calendar, totalDays) {
     const dayNameStr = getDayName(dateStr);
     const dayNameShort = dayNameStr.slice(0,3);
     const dayConfig = getDayConfig(dateStr);
-    const sceneNums = dayRows.map(r => 's' + r.n.toString().padStart(2, '0')).join(', ');
+    const sceneNums = dayRows.map(r => r.fileId).join(', ');
     
     // Get unique locations for the day
     const locs = Array.from(new Set(dayRows.map(r => r.location).filter(l => l && l !== '—'))).join(', ') || '—';
@@ -1087,14 +1081,14 @@ function generateShootPlanHtml(rows, productionData) {
 
   return `
     <section id="shoot-plan" class="shoot-plan">
-      <h2 style="color: #fff; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
+      <h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Detailed Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
       <div class="shoot-plan-grid">
         ${(() => {
           const limboIds = Array.isArray(productionData.limbo) ? productionData.limbo : [];
           if (!limboIds.length) return '';
-          const limboRows = limboIds.map((id) => rows.find((r) => r.id === id || `s${String(r.n).padStart(2, '0')}`.toLowerCase() === String(id).toLowerCase())).filter(Boolean);
+          const limboRows = limboIds.map((id) => rows.find((r) => r.id === id || r.fileId.toLowerCase() === String(id).toLowerCase())).filter(Boolean);
           if (!limboRows.length) return '';
-          const chips = limboRows.map((r) => `<span class="actor-chip" style="pointer-events:none; cursor:default; opacity:0.6;">${escapeHtml(`s${String(r.n).padStart(2, '0')} — ${r.title}`)}</span>`).join('');
+          const chips = limboRows.map((r) => `<span class="actor-chip" style="pointer-events:none; cursor:default; opacity:0.6;">${escapeHtml(`${r.fileId} — ${r.title}`)}</span>`).join('');
           return `
             <article class="shoot-plan-card" style="opacity:0.5; border-style:dashed;">
               <div class="shoot-plan-head">
@@ -1102,7 +1096,7 @@ function generateShootPlanHtml(rows, productionData) {
                   <div class="shoot-plan-title">Limbo</div>
                   <div class="shoot-plan-date">Unscheduled scenes</div>
                 </div>
-                <span class="shoot-plan-label" style="background:#6b7280;">Limbo</span>
+                <span class="shoot-plan-label" style="background:#888;">Limbo</span>
               </div>
               <div class="shoot-plan-block">
                 <strong>Scenes</strong>
@@ -1119,7 +1113,7 @@ function generateShootPlanHtml(rows, productionData) {
           const hasExplicitScenes = Object.prototype.hasOwnProperty.call(entry, 'scenes');
           const hasExplicitLocations = Object.prototype.hasOwnProperty.call(entry, 'locations');
           const hasExplicitCast = Object.prototype.hasOwnProperty.call(entry, 'cast');
-          const scenes = unique(hasExplicitScenes ? (Array.isArray(entry.scenes) ? entry.scenes : [entry.scenes]) : dayRows.map((r) => `s${String(r.n).padStart(2, '0')}`));
+          const scenes = unique(hasExplicitScenes ? (Array.isArray(entry.scenes) ? entry.scenes : [entry.scenes]) : dayRows.map((r) => r.fileId));
           const locations = unique(hasExplicitLocations ? (Array.isArray(entry.locations) ? entry.locations : [entry.locations]) : dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
           const cast = unique(hasExplicitCast ? (Array.isArray(entry.cast) ? entry.cast : [entry.cast]) : dayRows.flatMap((r) => r.characters || []));
           const callSheetHref = `production/days/${String(entry.day)}.html`;
@@ -1145,7 +1139,7 @@ function generateShootPlanHtml(rows, productionData) {
                   <div class="shoot-plan-title">Day ${escapeHtml(entry.day)}</div>
                   <div class="shoot-plan-date">${escapeHtml(dayName)}, ${escapeHtml(dateLabel)}</div>
                 </div>
-                <span class="shoot-plan-label" style="background:${dayConfig.color};">${label}</span>
+                <span class="shoot-plan-label">${label}</span>
               </div>
               <div class="shoot-plan-note">${escapeHtml(entry.sourceNote || '')}</div>
               <div class="shoot-plan-block">
@@ -1185,9 +1179,7 @@ function generateCheatSheetHtml(rows, productionData) {
   const weekdayColor = (wd) => {
     if (!wd) return '#666';
     const w = wd.toLowerCase();
-    if (w === 'sunday') return '#f0a500';
-    if (w === 'saturday') return '#7ec8a0';
-    return '#666';
+    return '#111';
   };
   const formatDate = (iso) => {
     if (!iso) return '—';
@@ -1196,7 +1188,7 @@ function generateCheatSheetHtml(rows, productionData) {
     return `${months[parseInt(m)]} ${parseInt(d)}`;
   };
 
-  const actColors = { 1: '#4a9eff', 2: '#a78bfa', 3: '#f97316', 4: '#34d399' };
+  const actColors = { 1: '#111', 2: '#333', 3: '#555', 4: '#777' };
   let lastAct = null;
 
   const sceneRows = manifest.map((entry) => {
@@ -1205,7 +1197,7 @@ function generateCheatSheetHtml(rows, productionData) {
     const act = entry.act || '';
     const infos = schedule[sid] || [];
     const dayLink = infos.length
-      ? infos.map(i => `<a style="color:#4a9eff;text-decoration:none;" href="production/days/${i.day}.html">${i.day}</a>`).join('<span style="color:#444;"> · </span>')
+      ? infos.map(i => `<a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/${i.day}.html">${i.day}</a>`).join('<span style="color:#999;"> · </span>')
       : '<span style="color:#444;">—</span>';
 
     let groupRow = '';
@@ -1217,31 +1209,32 @@ function generateCheatSheetHtml(rows, productionData) {
 
     const sceneHref = entry.id ? `script-system/scene.html?id=${encodeURIComponent(entry.id)}` : null;
     const sceneLink = sceneHref
-      ? `<a style="color:#4a9eff;font-weight:bold;text-decoration:none;" href="${sceneHref}">${escapeHtml(sid)}</a>`
-      : `<span style="color:#4a9eff;font-weight:bold;">${escapeHtml(sid)}</span>`;
-    const titleCell = sceneHref
-      ? `<a style="color:#e0e0e0;text-decoration:none;" href="${sceneHref}">${escapeHtml(title)}</a>`
+      ? `<a style="color:#111;font-weight:bold;text-decoration:none;" href="${sceneHref}">${escapeHtml(sid)}</a>`
+      : `<span style="color:#111;font-weight:bold;">${escapeHtml(sid)}</span>`;
+    const titleHref = infos.length ? `production/days/${infos[0].day}.html` : sceneHref;
+    const titleCell = titleHref
+      ? `<a style="color:#333;text-decoration:none;" href="${titleHref}">${escapeHtml(title)}</a>`
       : escapeHtml(title);
 
-    return groupRow + `<tr style="border-bottom:1px solid #1a1a1a;">
-      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;">${sceneLink}</td>
-      <td style="padding:5px 10px;border-bottom:1px solid #1a1a1a;">${titleCell}</td>
-      <td style="color:#fff;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;">${dayLink}</td>
-      <td style="color:#666;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #1a1a1a;">${infos.map(i => `<span style="color:${weekdayColor(i.weekday)}">${weekdayShort(i.weekday)}</span> ${formatDate(i.date)}`).join('<span style="color:#333;"> · </span>') || '—'}</td>
+    return groupRow + `<tr style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">${sceneLink}</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">${titleCell}</td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">${dayLink}</td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">${infos.map(i => `<a href="production/days/${i.day}.html" style="color:#555;text-decoration:none;"><span style="color:${weekdayColor(i.weekday)}">${weekdayShort(i.weekday)}</span> ${formatDate(i.date)}</a>`).join('<span style="color:#999;"> · </span>') || '—'}</td>
     </tr>`;
   }).join('');
 
   return `
   <section style="margin-top:48px;">
-    <h2 style="color:#fff;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Scene Cheat Sheet</h2>
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Scene Cheat Sheet</h2>
     <div style="overflow-x:auto;">
       <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
         <thead>
           <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Scene</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Title</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Day</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #333;">Date</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Scene</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Title</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Day</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Date</th>
           </tr>
         </thead>
         <tbody>${sceneRows}</tbody>
@@ -1250,11 +1243,173 @@ function generateCheatSheetHtml(rows, productionData) {
   </section>`;
 }
 
+function generateCharacterCheatSheetHtml(rows, productionData) {
+  const calendar = productionData.calendar || {};
+
+  // Build character → { day → [scene ids] } mapping
+  const charMap = {};
+  rows.forEach(r => {
+    const sid = r.fileId;
+    (r.characters || []).forEach(c => {
+      if (!charMap[c]) charMap[c] = {};
+      (r.scheduledDays || []).forEach(d => {
+        if (!charMap[c][d]) charMap[c][d] = [];
+        charMap[c][d].push(sid);
+      });
+    });
+  });
+
+  const sortedChars = Object.keys(charMap).sort();
+  if (!sortedChars.length) return '';
+
+  const formatDate = (iso) => {
+    if (!iso) return '';
+    const [, m, d] = iso.split('-');
+    const months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${months[parseInt(m)]} ${parseInt(d)}`;
+  };
+
+  const charRows = sortedChars.map(c => {
+    const dayMap = charMap[c];
+    const days = Object.keys(dayMap).map(Number).sort((a, b) => a - b);
+    const dayLinks = days.map(d => {
+      const scenes = dayMap[d].join(', ');
+      return `<a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/${d}.html">${d}</a> <span style="color:#888;font-size:0.75em;">(${scenes})</span>`;
+    }).join('<span style="color:#999;"> &middot; </span>');
+    const dateLinks = days.map(d => {
+      const dateStr = calendar[d] || '';
+      const fd = formatDate(dateStr);
+      return fd ? `<a href="production/days/${d}.html" style="color:#555;text-decoration:none;">${fd}</a>` : '';
+    }).filter(Boolean).join(', ');
+    const castHref = `production/cast/${c.toLowerCase()}.html`;
+    return `<tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="${castHref}">${escapeHtml(c)}</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">${days.length}</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">${dayLinks}</td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;">${dateLinks}</td>
+    </tr>`;
+  }).join('');
+
+  return `
+  <section style="margin-top:48px;">
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Character Cheat Sheet</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
+        <thead>
+          <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Character</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Days</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Shoot Days</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Dates</th>
+          </tr>
+        </thead>
+        <tbody>${charRows}</tbody>
+      </table>
+    </div>
+  </section>`;
+}
+
+function generateCalendarCheatSheetHtml(rows, productionData) {
+  const calendar = productionData.calendar || {};
+  const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+
+  // Get the date range
+  const allDates = Object.values(calendar).filter(Boolean).sort();
+  if (!allDates.length) return '';
+
+  const startDate = new Date(allDates[0] + 'T12:00:00');
+  const endDate = new Date(allDates[allDates.length - 1] + 'T12:00:00');
+
+  // Rewind to Sunday of the start week
+  const calStart = new Date(startDate);
+  calStart.setDate(calStart.getDate() - calStart.getDay());
+
+  // Forward to Saturday of the end week
+  const calEnd = new Date(endDate);
+  calEnd.setDate(calEnd.getDate() + (6 - calEnd.getDay()));
+
+  // Build a lookup: date string → day number
+  const dateToDay = {};
+  for (const [dayNum, dateStr] of Object.entries(calendar)) {
+    dateToDay[dateStr] = dayNum;
+  }
+
+  // Build a lookup: day number → scenes + cast
+  const dayInfo = {};
+  for (const [dayNum, dateStr] of Object.entries(calendar)) {
+    const d = Number(dayNum);
+    const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(d));
+    const sceneIds = dayRows.map(r => r.fileId);
+    const planEntry = shootPlan.find(e => Number(e.day) === d);
+    const isSpecial = planEntry && planEntry.special;
+    dayInfo[dateStr] = { dayNum, sceneIds, isSpecial, planEntry };
+  }
+
+  const pad = (n) => String(n).padStart(2, '0');
+  const toIso = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  const monthNames = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  let weeks = [];
+  let current = new Date(calStart);
+  while (current <= calEnd) {
+    let week = [];
+    for (let i = 0; i < 7; i++) {
+      week.push(new Date(current));
+      current.setDate(current.getDate() + 1);
+    }
+    weeks.push(week);
+  }
+
+  const weekHeaders = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+  let html = `
+  <section style="margin-top:48px;">
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Calendar</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:12px;table-layout:fixed;">
+        <thead>
+          <tr>
+            ${weekHeaders.map(d => `<th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">${d}</th>`).join('')}
+          </tr>
+        </thead>
+        <tbody>`;
+
+  for (const week of weeks) {
+    html += '<tr>';
+    for (const day of week) {
+      const iso = toIso(day);
+      const info = dayInfo[iso];
+      const isInRange = day >= startDate && day <= endDate;
+      const opacity = isInRange ? '1' : '0.25';
+      const bg = info ? (info.isSpecial ? '#f5f5dc' : '#f0f0f0') : 'transparent';
+      const border = info ? '1px solid #999' : '1px solid #eee';
+      const dayLabel = day.getDate() === 1 ? `${monthNames[day.getMonth()]} ${day.getDate()}` : `${day.getDate()}`;
+
+      let cellContent = `<div style="font-weight:700;margin-bottom:2px;">${dayLabel}</div>`;
+      if (info) {
+        cellContent += `<div style="font-weight:800;font-size:11px;">Day ${info.dayNum}</div>`;
+        if (info.sceneIds.length > 0) {
+          cellContent += `<div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">${info.sceneIds.join(', ')}</div>`;
+        }
+      }
+
+      const clickAttr = info ? ` onclick="window.location.href='production/days/${info.dayNum}.html'" style="padding:6px 8px;border:${border};vertical-align:top;opacity:${opacity};background:${bg};min-height:60px;height:70px;cursor:pointer;"` : ` style="padding:6px 8px;border:${border};vertical-align:top;opacity:${opacity};background:${bg};min-height:60px;height:70px;"`;
+      html += `<td${clickAttr}>${cellContent}</td>`;
+    }
+    html += '</tr>';
+  }
+
+  html += `</tbody></table></div></section>`;
+  return html;
+}
+
 function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData) {
   const totalScenes = rows.length;
   const pickupSceneCount = rows.filter((r) => r.pickup).length;
   const shootPlanHtml = generateShootPlanHtml(rows, productionData);
   const cheatSheetHtml = generateCheatSheetHtml(rows, productionData);
+  const characterCheatSheetHtml = generateCharacterCheatSheetHtml(rows, productionData);
+  const calendarCheatSheetHtml = generateCalendarCheatSheetHtml(rows, productionData);
 
   return `<!doctype html>
 <html lang="en">
@@ -1292,11 +1447,13 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
         <div class="dashboard-container">
             <main class="main-content">
                 <header style="margin: 8px 0 40px 0; padding-left: 54px;">
-                    <h1 class="brand-title brand-title-main" style="margin: 0; color: #fff;">Creatures in the Tall Grass</h1>
+                    <h1 class="brand-title brand-title-main" style="margin: 0; color: #111;">Creatures in the Tall Grass</h1>
                     <p style="opacity: 0.7; margin: 8px 0 0 0;">Production Dashboard · Official Shoot Plan</p>
                 </header>
 
                 ${cheatSheetHtml}
+                ${characterCheatSheetHtml}
+                ${calendarCheatSheetHtml}
                 <!-- LOCATION_CHEAT_SHEET_START --><!-- LOCATION_CHEAT_SHEET_END -->
                 ${shootPlanHtml}
             </main>
@@ -1371,7 +1528,7 @@ function generateCastHtml(actor, rows, productionData) {
       <tr>
         <td style="font-weight:700; color:#0366d6; border-bottom:1px solid #eee;">DAY ${dayNum}</td>
         <td style="font-size:0.9rem; opacity:0.8; border-bottom:1px solid #eee;">${formatDate(dateStr)}</td>
-        <td style="border-bottom:1px solid #eee;"><span class="scene-number" style="color:black;">${r.n}</span></td>
+        <td style="border-bottom:1px solid #eee;"><span class="scene-number" style="color:black;">${r.fileId}</span></td>
         <td style="font-style:italic; border-bottom:1px solid #eee;">${escapeHtml(r.title)}</td>
         <td style="border-bottom:1px solid #eee;"><span class="location-tag" style="background:transparent; border-color:#ccc; color:black;">${escapeHtml(r.location || '—')}</span></td>
       </tr>`;
@@ -1467,9 +1624,9 @@ function generateDayHtml(dayNum, rows, productionData) {
   const unique = (items) => Array.from(new Set((items || []).filter(Boolean)));
   const sceneIds = planEntry && Array.isArray(planEntry.scenes) && planEntry.scenes.length
     ? unique(planEntry.scenes)
-    : unique(rows.filter((r) => r.scheduledDays && r.scheduledDays.includes(dayNum)).map((r) => `s${String(r.n).padStart(2, '0')}`));
+    : unique(rows.filter((r) => r.scheduledDays && r.scheduledDays.includes(dayNum)).map((r) => r.fileId));
   const dayRows = sceneIds
-    .map((sceneId) => rows.find((r) => r.id === sceneId || `s${String(r.n).padStart(2, '0')}`.toLowerCase() === String(sceneId).toLowerCase() || String(r.n).toLowerCase() === String(sceneId).toLowerCase()))
+    .map((sceneId) => rows.find((r) => r.id === sceneId || r.fileId.toLowerCase() === String(sceneId).toLowerCase() || String(r.n).toLowerCase() === String(sceneId).toLowerCase()))
     .filter(Boolean);
   const summaryLocations = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locations')
     ? unique(Array.isArray(planEntry.locations) ? planEntry.locations : [planEntry.locations])
@@ -1529,10 +1686,10 @@ function generateDayHtml(dayNum, rows, productionData) {
 
   const sceneRows = dayRows.map(r => {
     const chars = (r.characters || []).join(', ');
-    const snippet = extractSceneSnippet(r.content, r.n);
+    const snippet = extractSceneSnippet(r.content, r.fileId);
     return `
       <tr>
-        <td>${r.n}</td>
+        <td>${r.fileId}</td>
         <td>${escapeHtml(r.time || '—')}</td>
         <td>
           <div style="font-weight: 700; color: black;">${escapeHtml(r.title)}</div>
@@ -1587,7 +1744,7 @@ function generateDayHtml(dayNum, rows, productionData) {
         <div class="main-content">
             <div class="no-print" style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.7rem; text-transform:uppercase; font-weight:700; background:#f0f0f0; padding:6px 12px; border-radius:4px;">
                 ${prevDay ? `<a href="${prevDay}.html" style="color:#0366d6; text-decoration:none;">&larr; Day ${prevDay}</a>` : `<span></span>`}
-                <a href="../production.html" style="color:#666; text-decoration:none;">Dashboard</a>
+                <a href="../../production.html" style="color:#666; text-decoration:none;">Dashboard</a>
                 ${nextDay ? `<a href="${nextDay}.html" style="color:#0366d6; text-decoration:none;">Day ${nextDay} &rarr;</a>` : `<span></span>`}
             </div>
             <header class="callsheet-header">

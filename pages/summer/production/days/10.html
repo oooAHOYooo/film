@@ -5,21 +5,21 @@
         <title>Day 10 — Call Sheet — Summer</title>
         <style>
                         :root {
-                --prod-accent: #79b8ff;
-                --prod-head: rgba(56, 139, 253, 0.12);
-                --prod-border: rgba(56, 139, 253, 0.18);
-                --prod-tag-bg: rgba(56, 139, 253, 0.1);
-                --prod-tag-border: rgba(56, 139, 253, 0.25);
-                --prod-row-hover: rgba(56, 139, 253, 0.06);
+                --prod-accent: #000;
+                --prod-head: #f5f5f5;
+                --prod-border: #ccc;
+                --prod-tag-bg: #f9f9f9;
+                --prod-tag-border: #bbb;
+                --prod-row-hover: #f5f5f5;
                 --sidebar-w: 260px;
             }
-            body { 
-                margin: 0; 
-                display: block; 
-                min-height: 100vh; 
-                overflow-y: auto; 
-                background: #0d1117;
-                color: #c9d1d9;
+            body {
+                margin: 0;
+                display: block;
+                min-height: 100vh;
+                overflow-y: auto;
+                background: #fff;
+                color: #111;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             }
             .dashboard-container {
@@ -32,7 +32,7 @@
                 font-weight: 700;
                 line-height: 1.15;
                 letter-spacing: 0.02em;
-                color: #f5f7fb;
+                color: #111;
             }
             .brand-title-main {
                 font-size: 2.05rem;
@@ -71,20 +71,20 @@
                 width: 36px;
                 height: 36px;
                 border-radius: 10px;
-                background: rgba(255,255,255,0.05);
-                border: 1px solid rgba(255,255,255,0.08);
+                background: #f5f5f5;
+                border: 1px solid #ccc;
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                color: #c9d1d9;
+                color: #111;
                 cursor: pointer;
                 transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
                 z-index: 30;
             }
             .quick-menu-btn:hover {
-                background: rgba(121,184,255,0.12);
-                border-color: rgba(121,184,255,0.28);
-                color: #fff;
+                background: #e0e0e0;
+                border-color: #999;
+                color: #000;
             }
             .quick-menu-btn svg {
                 width: 17px;
@@ -96,11 +96,11 @@
                 left: 18px;
                 width: 240px;
                 max-width: calc(100vw - 24px);
-                background: #161b22;
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 border-radius: 14px;
                 padding: 14px;
-                box-shadow: 0 18px 40px rgba(0,0,0,0.38);
+                box-shadow: 0 18px 40px rgba(0,0,0,0.15);
                 z-index: 998;
                 display: none;
                 max-height: calc(100vh - 36px);
@@ -125,8 +125,8 @@
                 height: 26px;
                 border: none;
                 border-radius: 8px;
-                background: rgba(255,255,255,0.05);
-                color: #c9d1d9;
+                background: #f0f0f0;
+                color: #111;
                 cursor: pointer;
                 display: inline-flex;
                 align-items: center;
@@ -136,43 +136,43 @@
                 padding: 0;
             }
             .quick-menu-close:hover {
-                background: rgba(121,184,255,0.12);
-                color: #fff;
+                background: #ddd;
+                color: #000;
             }
             .quick-menu a {
                 display: block;
-                color: #fff;
+                color: #111;
                 text-decoration: none;
                 padding: 10px 12px;
                 border-radius: 8px;
-                background: rgba(255,255,255,0.04);
-                border: 1px solid rgba(255,255,255,0.06);
+                background: #f9f9f9;
+                border: 1px solid #ddd;
                 margin-bottom: 8px;
                 font-size: 0.88rem;
             }
             .quick-menu a:hover {
-                background: rgba(121,184,255,0.12);
-                border-color: rgba(121,184,255,0.28);
+                background: #eee;
+                border-color: #999;
             }
             .quick-menu .quick-meta {
                 margin-top: 10px;
                 font-size: 0.72rem;
-                color: rgba(255,255,255,0.56);
+                color: #666;
                 line-height: 1.4;
             }
             .production-table {
                 width: 100%;
                 border-collapse: collapse;
-                background: #0d1117;
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 font-size: 0.9rem;
             }
             .production-table th {
                 text-align: left;
                 padding: 12px;
-                border-bottom: 2px solid var(--prod-border);
-                background: #161b22;
-                color: var(--prod-accent);
+                border-bottom: 2px solid #999;
+                background: #f5f5f5;
+                color: #111;
                 position: sticky;
                 top: -41px;
                 z-index: 10;
@@ -196,29 +196,21 @@
             .actor-chip {
                 display: inline-block;
                 padding: 2px 8px;
-                background: rgba(56, 139, 253, 0.15);
-                border: 1px solid rgba(56, 139, 253, 0.3);
+                background: #f0f0f0;
+                border: 1px solid #999;
                 border-radius: 12px;
                 font-size: 0.75rem;
                 margin-right: 4px;
                 margin-bottom: 4px;
-                color: #58a6ff;
+                color: #111;
                 text-decoration: none;
-                transition: transform 0.1s, filter 0.1s;
+                transition: transform 0.1s;
                 cursor: pointer;
             }
             .actor-chip:hover {
                 transform: translateY(-1px);
-                filter: brightness(1.2);
+                background: #e0e0e0;
             }
-            .actor-chip[data-character="dallas"] { color: #eab308; border-color: rgba(234, 179, 8, 0.3); background: rgba(234, 179, 8, 0.15); }
-            .actor-chip[data-character="makayla"] { color: #ec4899; border-color: rgba(236, 72, 153, 0.3); background: rgba(236, 72, 153, 0.15); }
-            .actor-chip[data-character="dominic"] { color: #10b981; border-color: rgba(16, 185, 129, 0.3); background: rgba(16, 185, 129, 0.15); }
-            .actor-chip[data-character="asher"] { color: #f59e0b; border-color: rgba(245, 158, 11, 0.3); background: rgba(245, 158, 11, 0.15); }
-            .actor-chip[data-character="janice"] { color: #8b5cf6; border-color: rgba(139, 92, 246, 0.3); background: rgba(139, 92, 246, 0.15); }
-            .actor-chip[data-character="mr-mike"] { color: #6366f1; border-color: rgba(99, 102, 241, 0.3); background: rgba(99, 102, 241, 0.15); }
-            .actor-chip[data-character="howie"] { color: #14b8a6; border-color: rgba(20, 184, 166, 0.3); background: rgba(20, 184, 166, 0.15); }
-            .actor-chip[data-character="pat"] { color: #f43f5e; border-color: rgba(244, 63, 94, 0.3); background: rgba(244, 63, 94, 0.15); }
             .click-copy {
                 cursor: pointer;
                 border-bottom: 1px dashed transparent;
@@ -248,31 +240,28 @@
                 font-size: 0.7rem;
                 font-weight: 800;
                 margin-right: 8px;
-                color: #fff;
-                background: rgba(255,255,255,0.1);
+                color: #111;
+                background: #f0f0f0;
+                border: 1px solid #999;
             }
-            .day-sun { background: rgba(14, 165, 233, 0.2); color: #0ea5e9; border: 1px solid rgba(14, 165, 233, 0.4); }
-            .day-mon { background: rgba(99, 102, 241, 0.2); color: #6366f1; border: 1px solid rgba(99, 102, 241, 0.4); }
-            .day-tue { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
-            .day-wed { background: rgba(139, 92, 246, 0.2); color: #8b5cf6; border: 1px solid rgba(139, 92, 246, 0.4); }
-            .day-thu { background: rgba(245, 158, 11, 0.2); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.4); }
-            .day-fri { background: rgba(244, 63, 94, 0.2); color: #f43f5e; border: 1px solid rgba(244, 63, 94, 0.4); }
-            .day-sat { background: rgba(234, 179, 8, 0.2); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
+            .day-sun, .day-mon, .day-tue, .day-wed, .day-thu, .day-fri, .day-sat {
+                background: #f0f0f0; color: #111; border: 1px solid #999;
+            }
             
             .day-filter-bar {
                 display: flex;
                 gap: 8px;
                 margin-bottom: 24px;
                 flex-wrap: wrap;
-                background: rgba(255,255,255,0.03);
+                background: #f9f9f9;
                 padding: 12px;
                 border-radius: 8px;
-                border: 1px solid rgba(255,255,255,0.05);
+                border: 1px solid #ddd;
             }
             .filter-btn {
-                background: #21262d;
-                border: 1px solid var(--prod-border);
-                color: #8b949e;
+                background: #fff;
+                border: 1px solid #ccc;
+                color: #555;
                 padding: 4px 12px;
                 border-radius: 20px;
                 font-size: 0.75rem;
@@ -280,14 +269,14 @@
                 transition: all 0.2s;
             }
             .filter-btn:hover {
-                background: #30363d;
-                border-color: var(--prod-accent);
-                color: #fff;
+                background: #eee;
+                border-color: #999;
+                color: #000;
             }
             .filter-btn.active {
-                background: var(--prod-accent);
-                color: #0d1117;
-                border-color: var(--prod-accent);
+                background: #111;
+                color: #fff;
+                border-color: #111;
                 font-weight: 700;
             }
 
@@ -300,8 +289,8 @@
                 display: flex;
                 align-items: center;
                 padding: 10px 16px;
-                background: #161b22;
-                border: 1px solid var(--prod-border);
+                background: #f9f9f9;
+                border: 1px solid #ccc;
                 border-radius: 6px;
                 margin-bottom: 8px;
                 transition: transform 0.2s;
@@ -335,22 +324,23 @@
                 gap: 14px;
             }
             .shoot-plan-card {
-                background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
-                border: 1px solid var(--prod-border);
+                background: #fff;
+                border: 1px solid #ccc;
                 border-radius: 12px;
                 padding: 14px;
-                box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
                 transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
                 cursor: pointer;
             }
             .shoot-plan-card:hover {
                 transform: translateY(-2px);
-                border-color: rgba(121, 184, 255, 0.45);
-                box-shadow: 0 14px 28px rgba(0,0,0,0.24);
+                border-color: #999;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             }
             .shoot-plan-card.special {
-                border-color: rgba(234, 179, 8, 0.35);
-                background: linear-gradient(180deg, rgba(234,179,8,0.08), rgba(255,255,255,0.015));
+                border-color: #999;
+                border-style: dashed;
+                background: #fafafa;
             }
             .shoot-plan-head {
                 display: flex;
@@ -359,23 +349,23 @@
                 gap: 12px;
                 margin-bottom: 10px;
                 padding-bottom: 10px;
-                border-bottom: 1px solid rgba(255,255,255,0.05);
+                border-bottom: 1px solid #eee;
             }
             .shoot-plan-title {
                 font-weight: 800;
-                color: #fff;
+                color: #111;
                 line-height: 1.1;
             }
             .shoot-plan-date {
                 font-size: 0.82rem;
-                color: var(--prod-accent);
+                color: #444;
                 margin-top: 4px;
             }
             .shoot-plan-note {
                 font-family: ui-monospace, monospace;
                 font-size: 0.74rem;
                 line-height: 1.35;
-                color: #c9d1d9;
+                color: #333;
                 margin-bottom: 10px;
                 opacity: 0.9;
             }
@@ -389,8 +379,8 @@
                 letter-spacing: 0.05em;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: #0d1117;
-                background: var(--prod-accent);
+                color: #fff;
+                background: #111;
             }
             .shoot-plan-chip-row {
                 display: flex;
@@ -409,13 +399,13 @@
                 font-size: 0.65rem;
                 text-transform: uppercase;
                 letter-spacing: 0.05em;
-                color: #8b949e;
+                color: #666;
             }
 
             .mobile-header {
                 display: none;
-                background: #161b22;
-                border-bottom: 1px solid var(--prod-border);
+                background: #fff;
+                border-bottom: 1px solid #ccc;
                 padding: 10px 16px;
                 justify-content: space-between;
                 align-items: center;
@@ -425,7 +415,7 @@
             }
             .mobile-title {
                 font-size: 0.95rem;
-                color: #f5f7fb;
+                color: #111;
             }
             .hamburger-btn {
                 background: none;
@@ -596,9 +586,9 @@
             }
             .stats-dropdown summary {
                 list-style: none;
-                background: #1f242c;
-                color: #c9d1d9;
-                border: 1px solid var(--prod-border);
+                background: #f9f9f9;
+                color: #111;
+                border: 1px solid #ccc;
                 border-radius: 6px;
                 padding: 10px 12px;
                 font-size: 0.9rem;
@@ -610,8 +600,8 @@
                 font-weight: 600;
             }
             .stats-dropdown summary:hover {
-                border-color: var(--prod-accent);
-                background: #232a34;
+                border-color: #999;
+                background: #eee;
             }
             .stats-dropdown summary::-webkit-details-marker {
                 display: none;
@@ -630,8 +620,8 @@
                 border-bottom-color: transparent;
             }
             .stats-dropdown-content {
-                background: rgba(255,255,255,0.02);
-                border: 1px solid var(--prod-border);
+                background: #fafafa;
+                border: 1px solid #ccc;
                 border-top: none;
                 border-radius: 0 0 6px 6px;
                 padding: 12px 16px;
@@ -640,7 +630,7 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 4px 0;
-                border-bottom: 1px solid rgba(255,255,255,0.05);
+                border-bottom: 1px solid #eee;
                 font-size: 0.85rem;
             }
             .stat-row:last-child {
@@ -692,7 +682,7 @@
         <div class="main-content">
             <div class="no-print" style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.7rem; text-transform:uppercase; font-weight:700; background:#f0f0f0; padding:6px 12px; border-radius:4px;">
                 <a href="9.5.html" style="color:#0366d6; text-decoration:none;">&larr; Day 9.5</a>
-                <a href="../production.html" style="color:#666; text-decoration:none;">Dashboard</a>
+                <a href="../../production.html" style="color:#666; text-decoration:none;">Dashboard</a>
                 <a href="11.html" style="color:#0366d6; text-decoration:none;">Day 11 &rarr;</a>
             </div>
             <header class="callsheet-header">
