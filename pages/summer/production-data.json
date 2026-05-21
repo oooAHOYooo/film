@@ -1,6 +1,6 @@
 {
   "s01": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 9.5,
     "location": "DALLAS HOUSE - Exterior",
@@ -26,7 +26,18 @@
     ]
   },
   "s04": {
-    "time": "2:30pm"
+    "durationMin": 180,
+    "shootDays": 0.5,
+    "assignedDay": 5,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Makayla",
+      "Asher",
+      "Mr Mike"
+    ]
   },
   "s09b": {
     "durationMin": 0,
@@ -40,7 +51,7 @@
     ]
   },
   "s09": {
-    "durationMin": 0,
+    "durationMin": 90,
     "time": "6:30 PM",
     "location": "On Location (East Haven Nursery)",
     "shootDays": 0.5,
@@ -52,7 +63,7 @@
     ]
   },
   "s10": {
-    "durationMin": 0,
+    "durationMin": 75,
     "time": "8:45 PM",
     "location": "Jerry's House",
     "shootDays": 0.5,
@@ -63,22 +74,8 @@
       "Dallas"
     ]
   },
-  "s04": {
-    "durationMin": 0,
-    "shootDays": 0.5,
-    "assignedDay": 5,
-    "keyElements": "",
-    "productionNotes": "",
-    "cast": [
-      "Dallas",
-      "Dominic",
-      "Makayla",
-      "Asher",
-      "Mr Mike"
-    ]
-  },
   "s07b": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 5,
     "keyElements": "",
@@ -92,7 +89,7 @@
     ]
   },
   "s26": {
-    "durationMin": 0,
+    "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": [
       5,
@@ -110,7 +107,7 @@
     ]
   },
   "s03": {
-    "durationMin": 0,
+    "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 9,
     "keyElements": "",
@@ -122,7 +119,7 @@
     ]
   },
   "s05": {
-    "durationMin": 0,
+    "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": 9,
     "keyElements": "",
@@ -134,7 +131,7 @@
     ]
   },
   "s06": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 9,
     "keyElements": "",
@@ -146,7 +143,7 @@
     ]
   },
   "s11": {
-    "durationMin": 0,
+    "durationMin": 90,
     "time": "6:30 PM",
     "shootDays": 0.5,
     "assignedDay": 6,
@@ -159,7 +156,7 @@
     ]
   },
   "s12": {
-    "durationMin": 0,
+    "durationMin": 30,
     "time": "7:30 PM",
     "shootDays": 0.5,
     "assignedDay": 6,
@@ -182,7 +179,7 @@
     ]
   },
   "s08": {
-    "durationMin": 0,
+    "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": 8,
     "keyElements": "",
@@ -193,7 +190,7 @@
     ]
   },
   "s13": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 4,
     "keyElements": "",
@@ -207,7 +204,7 @@
     ]
   },
   "s07": {
-    "durationMin": 0,
+    "durationMin": 150,
     "shootDays": 0.5,
     "assignedDay": 12,
     "keyElements": "",
@@ -222,7 +219,7 @@
     ]
   },
   "s14": {
-    "durationMin": 0,
+    "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 4,
     "keyElements": "",
@@ -236,7 +233,7 @@
     ]
   },
   "s14b": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 4,
     "keyElements": "",
@@ -250,7 +247,7 @@
     ]
   },
   "s14c": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 4,
     "keyElements": "",
@@ -283,7 +280,7 @@
     ]
   },
   "s17b": {
-    "durationMin": 0,
+    "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": [
       4,
@@ -301,7 +298,7 @@
     ]
   },
   "s17c": {
-    "durationMin": 0,
+    "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": [
       4,
@@ -329,7 +326,7 @@
     ]
   },
   "s18": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 11,
     "keyElements": "",
@@ -345,7 +342,7 @@
     ]
   },
   "s19": {
-    "durationMin": 0,
+    "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 11,
     "keyElements": "",
@@ -361,7 +358,7 @@
     ]
   },
   "s20": {
-    "durationMin": 0,
+    "durationMin": 75,
     "shootDays": 0.5,
     "assignedDay": 11,
     "keyElements": "",
@@ -377,7 +374,7 @@
     ]
   },
   "s15a": {
-    "durationMin": 0,
+    "durationMin": 75,
     "shootDays": 0.5,
     "assignedDay": 12,
     "keyElements": "",
@@ -391,7 +388,7 @@
     ]
   },
   "s15b": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 12,
     "keyElements": "",
@@ -405,7 +402,7 @@
     ]
   },
   "s15c": {
-    "durationMin": 0,
+    "durationMin": 45,
     "shootDays": 0.5,
     "assignedDay": 12,
     "keyElements": "",
@@ -419,7 +416,7 @@
     ]
   },
   "s16": {
-    "durationMin": 0,
+    "durationMin": 75,
     "shootDays": 0.5,
     "assignedDay": 12,
     "keyElements": "",
@@ -433,7 +430,7 @@
     ]
   },
   "s21": {
-    "durationMin": 0,
+    "durationMin": 75,
     "shootDays": 0.5,
     "assignedDay": 14,
     "keyElements": "",
@@ -446,7 +443,7 @@
     ]
   },
   "s21b": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 14,
     "keyElements": "",
@@ -459,7 +456,7 @@
     ]
   },
   "s22": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 14,
     "keyElements": "",
@@ -475,7 +472,7 @@
     ]
   },
   "s23": {
-    "durationMin": 0,
+    "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 15,
     "keyElements": "",
@@ -488,7 +485,7 @@
     ]
   },
   "s24": {
-    "durationMin": 0,
+    "durationMin": 150,
     "shootDays": 0.5,
     "assignedDay": 15,
     "keyElements": "",
@@ -501,7 +498,7 @@
     ]
   },
   "s25": {
-    "durationMin": 0,
+    "durationMin": 150,
     "shootDays": 0.5,
     "assignedDay": 16,
     "time": "7:00 PM – 9:00 PM",
@@ -531,7 +528,7 @@
     ]
   },
   "s27": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 16,
     "location": "EXT. Jerry's House — Afternoon",
@@ -548,7 +545,7 @@
     ]
   },
   "s28": {
-    "durationMin": 0,
+    "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 16,
     "keyElements": "",
@@ -576,14 +573,14 @@
     "7": "2026-06-18",
     "8": "2026-06-19",
     "9": "2026-06-20",
-    "9.5": "2026-06-21",
     "10": "2026-06-26",
     "11": "2026-06-27",
     "12": "2026-06-28",
     "13": "2026-07-01",
     "14": "2026-07-02",
     "15": "2026-07-03",
-    "16": "2026-07-05"
+    "16": "2026-07-05",
+    "9.5": "2026-06-21"
   },
   "shootPlan": [
     {
@@ -867,16 +864,72 @@
   ],
   "limbo": [],
   "locationDirectory": [
-    { "fictional": "DALLAS HOUSE", "actual": "", "address": "72 Lake Street, Hamden, CT" },
-    { "fictional": "DOMINIC'S HOUSE", "actual": "", "address": "" },
-    { "fictional": "MAKAYLA'S BEDROOM / LAIR", "actual": "", "address": "" },
-    { "fictional": "JACE'S BASEMENT", "actual": "", "address": "" },
-    { "fictional": "THE TALL MARSH / TALL GRASS", "actual": "East Haven Nursery", "address": "" },
-    { "fictional": "CHURCH / CHURCH GROUNDS", "actual": "", "address": "" },
-    { "fictional": "BRANFORD TOWN GREEN", "actual": "Branford Green", "address": "Branford, CT 06405" },
-    { "fictional": "BRANFORD ROCKS", "actual": "Stony Creek / Supply Ponds", "address": "" },
-    { "fictional": "HARDWARE STORE", "actual": "", "address": "" },
-    { "fictional": "GROCERY STORE / COSTCO", "actual": "", "address": "" },
-    { "fictional": "TRAIN", "actual": "", "address": "" }
-  ]
+    {
+      "fictional": "DALLAS HOUSE",
+      "actual": "",
+      "address": "72 Lake Street, Hamden, CT"
+    },
+    {
+      "fictional": "DOMINIC'S HOUSE",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "MAKAYLA'S BEDROOM / LAIR",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "JACE'S BASEMENT",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "THE TALL MARSH / TALL GRASS",
+      "actual": "East Haven Nursery",
+      "address": ""
+    },
+    {
+      "fictional": "CHURCH / CHURCH GROUNDS",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "BRANFORD TOWN GREEN",
+      "actual": "Branford Green",
+      "address": "Branford, CT 06405"
+    },
+    {
+      "fictional": "BRANFORD ROCKS",
+      "actual": "Stony Creek / Supply Ponds",
+      "address": ""
+    },
+    {
+      "fictional": "HARDWARE STORE",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "GROCERY STORE / COSTCO",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "TRAIN",
+      "actual": "",
+      "address": ""
+    }
+  ],
+  "s00": {
+    "durationMin": 30
+  },
+  "s08b": {
+    "durationMin": 60
+  },
+  "s08c": {
+    "durationMin": 15
+  },
+  "s08d": {
+    "durationMin": 60
+  }
 }
