@@ -1,6 +1,15 @@
 [
   {
     "n": 1,
+    "displayNum": "0",
+    "id": "branford-montage",
+    "title": "Branford Montage",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "summary": "[SCENE FILE MISSING: s00.md]"
+  },
+  {
+    "n": 2,
     "displayNum": "1",
     "id": "arrival",
     "title": "Arrival",
@@ -9,7 +18,7 @@
     "summary": "Dallas takes the train to branford Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that…"
   },
   {
-    "n": 2,
+    "n": 3,
     "displayNum": "2",
     "id": "dallas-night",
     "title": "Sierra's Box",
@@ -18,7 +27,7 @@
     "summary": "Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies."
   },
   {
-    "n": 3,
+    "n": 4,
     "displayNum": "3",
     "id": "the-hum",
     "title": "Meet The Neighbors",
@@ -27,7 +36,7 @@
     "summary": "Dallas walks outside his house, towards the edge of the property. As he approaches the edge of his yard he watches the tall grass sway in the wind. He looks at the grass for a beat too long, as he nurses the audio…"
   },
   {
-    "n": 4,
+    "n": 5,
     "displayNum": "4",
     "id": "fellowship",
     "title": "Fellowship",
@@ -36,7 +45,7 @@
     "summary": "Dallas and Dominic arrive at CPC and find themselves in heat of a picnic. Children are running, friends down light summerwear as they play spike ball, and church goers find themselvees are on a long line for food.…"
   },
   {
-    "n": 5,
+    "n": 6,
     "displayNum": "5",
     "id": "marsh-walk-later",
     "title": "The Merlin App",
@@ -45,7 +54,7 @@
     "summary": "Boardwalk through the reeds. They hear birds andSomething moving in the marsh."
   },
   {
-    "n": 6,
+    "n": 7,
     "displayNum": "6",
     "id": "news-vans",
     "title": "News Vans",
@@ -54,7 +63,7 @@
     "summary": "News vans in the street. Pat on camera. Marks on Dominic's driveway. Dallas strays and stays."
   },
   {
-    "n": 7,
+    "n": 8,
     "displayNum": "7",
     "id": "the-coordinates",
     "title": "The Coordinates",
@@ -63,7 +72,7 @@
     "summary": "Dallas looks around in amazement. The basement is covered with normal basement things - but as his eyes scan the room he notices that there are two beds, room, and clutter. Around the corner there is a workstation…"
   },
   {
-    "n": 8,
+    "n": 9,
     "displayNum": "7B",
     "id": "mr-mikes-warning",
     "title": "Mr. Mike's Warning",
@@ -72,7 +81,7 @@
     "summary": "Dallas stands near the table, holding the frame with the photo of Dominic's family. He sets it down gently. Mr. Mike rocks in his chair. He has stopped muttering. His eyes are on Dallas now. Focused. Different. Dallas…"
   },
   {
-    "n": 9,
+    "n": 10,
     "displayNum": "8",
     "id": "dallas-marsh-walk",
     "title": "The Trailcam",
@@ -81,7 +90,7 @@
     "summary": "Dallas tries to bring Howie inside but he won't go. He looks like he wants to go on a walk. So Dallas reasons with the creature and brings him on a walk. The Long Island Sound roars, the waves crashing violently against…"
   },
   {
-    "n": 10,
+    "n": 11,
     "displayNum": "8B",
     "id": "the-research-beat",
     "title": "The Research Beat",
@@ -90,7 +99,7 @@
     "summary": "The house is quiet. Dallas sits in his workshop, it seems as if it is more decorated since last time but not by much Dallas sits in the dark. He plugs the trailcam into his laptop. The screen flickers with grainy,…"
   },
   {
-    "n": 11,
+    "n": 12,
     "displayNum": "8C",
     "id": "the-threshold",
     "title": "The Threshold",
@@ -99,7 +108,7 @@
     "summary": "Dallas stands on the porch, holding the trailcam in his hand like a weapon."
   },
   {
-    "n": 12,
+    "n": 13,
     "displayNum": "8D",
     "id": "the-return",
     "title": "The Return",
@@ -108,7 +117,7 @@
     "summary": "Dallas walks along the edge of the Long Island Sound. He takes a deep breath and looks at the coast for a while - as he does so - he hears a hum. The needle on the Oscillator spikes back and forth. Dallas takes out his…"
   },
   {
-    "n": 13,
+    "n": 14,
     "displayNum": "9",
     "id": "dallas-night-work",
     "title": "The Injured One",
@@ -117,7 +126,7 @@
     "summary": "Dallas, as he ventures deeper and deeper into the marsh - finds a bioluminest creature"
   },
   {
-    "n": 14,
+    "n": 15,
     "displayNum": "10",
     "id": "shadows-in-wind",
     "title": "Creature Discovery",
@@ -126,7 +135,7 @@
     "summary": "As Dallas walks out of the tall grass, he gets the sense that something is following him. The air changes and the hum faintly comes back. Then in the distant, more coyotes begin to howl. A heavy, crushing sound slices…"
   },
   {
-    "n": 15,
+    "n": 16,
     "displayNum": "11",
     "id": "howie-walk-2",
     "title": "Kitchen Triage",
@@ -135,7 +144,7 @@
     "summary": "Dallas at home with the creature. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold."
   },
   {
-    "n": 16,
+    "n": 17,
     "displayNum": "12",
     "id": "the-burn-mark",
     "title": "Alone With The Creature",
@@ -144,7 +153,7 @@
     "summary": "Dallas is completely alone in his attic. The space is dimly lit and quiet. Dallas sits with the creature, observing it closely in the stillness of the night. He is alone with his thoughts and the strange being."
   },
   {
-    "n": 17,
+    "n": 18,
     "displayNum": "13",
     "id": "entering-grass",
     "title": "The Confrontation",
@@ -153,7 +162,7 @@
     "summary": "Dallas awakes with the sunlight hitting his face. He gets up and walks over to his desk. Outside he hears a loud bang and someone cursing in the distance. Dominic''s minivan idles in the driveway. Dominic gets out and…"
   },
   {
-    "n": 18,
+    "n": 19,
     "displayNum": "14",
     "id": "creature-rescue",
     "title": "The Connection",
@@ -162,7 +171,7 @@
     "summary": "Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in…"
   },
   {
-    "n": 19,
+    "n": 20,
     "displayNum": "14B",
     "id": "the-field-journal",
     "title": "The Field Journal",
@@ -171,7 +180,7 @@
     "summary": "Makayla and Dallas sit in silence. Asher, a few feet off, threads beads onto string — the quantity matters, we just don't know why yet. Makayla reaches into her backpack and pulls out a soft-covered field journal. The…"
   },
   {
-    "n": 20,
+    "n": 21,
     "displayNum": "14C",
     "id": "the-almost-discovery",
     "title": "The Almost Discovery",
@@ -180,7 +189,7 @@
     "summary": "Late-day light leaks through the kitchen blinds. The creature is hidden beneath a towel inside the makeshift enclosure. A SOFT, IRREGULAR HUM bleeds faintly into the room. Makayla stands rigid at the counter, tightening…"
   },
   {
-    "n": 21,
+    "n": 22,
     "displayNum": "15A",
     "id": "the-failed-test",
     "title": "The Failed Test",
@@ -189,7 +198,7 @@
     "summary": "The room is dim, controlled. Every light filtered red. The creature rests inside its enclosure, watching—alert now. Makayla adjusts the oscillator carefully."
   },
   {
-    "n": 22,
+    "n": 23,
     "displayNum": "15B",
     "id": "the-tracking-box",
     "title": "Makayla's Tracking Box",
@@ -198,7 +207,7 @@
     "summary": "The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees.…"
   },
   {
-    "n": 23,
+    "n": 24,
     "displayNum": "15C",
     "id": "dominics-confession",
     "title": "Dominic's Confession",
@@ -207,7 +216,7 @@
     "summary": "Crickets. Distant surf. Dominic and Dallas sit side by side. Dominic nurses a cooling mug of coffee."
   },
   {
-    "n": 24,
+    "n": 25,
     "displayNum": "16",
     "id": "the-escape",
     "title": "Back Home",
@@ -216,7 +225,7 @@
     "summary": "Makayla and Dallas hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. As the two walk, they begin to notice that the tall grass around them is acting…"
   },
   {
-    "n": 25,
+    "n": 26,
     "displayNum": "17",
     "id": "resonance",
     "title": "Resonance",
@@ -225,7 +234,7 @@
     "summary": "Dallas looks at the creature by himself for a long time. Dallas stares for a long time at the golden creature. The jagged red lines on his portable viewfinder match the erratic, panicked breathing of the tiny animal.…"
   },
   {
-    "n": 26,
+    "n": 27,
     "displayNum": "17B",
     "id": "normal-day",
     "title": "Normal Day",
@@ -234,7 +243,7 @@
     "summary": "Dominic pushes an oversized shopping cart. The warehouse store is immense, bathed in fluorescent light, and buzzing with the banal energy of suburban errands. Janice walks beside him, scrolling through a grocery list on…"
   },
   {
-    "n": 27,
+    "n": 28,
     "displayNum": "17C",
     "id": "mute-drive",
     "title": "Mute Drive",
@@ -243,7 +252,7 @@
     "summary": "Janice is driving through downtown Branford. The Nor'easter winds are picking up, rattling the windows of the minivan. Outside, the town is engaged in banal, civic storm preparation. Shop owners are taping windows.…"
   },
   {
-    "n": 28,
+    "n": 29,
     "displayNum": "18",
     "id": "life-group-arrives",
     "title": "Life Group Arrives",
@@ -252,40 +261,31 @@
     "summary": "Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates. The doorbell is heard. Makayla answers the door and sees…"
   },
   {
-    "n": 29,
+    "n": 30,
     "displayNum": "19",
     "id": "the-hymn",
     "title": "The Hymn",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "-->\n<!-- GOING TO FILM ON DAY 11 - 6.27.26"
+    "summary": "-->\r\n<!-- GOING TO FILM ON DAY 11 - 6.27.26"
   },
   {
-    "n": 30,
+    "n": 31,
     "displayNum": "20",
     "id": "red-eyes",
     "title": "The Secret is Out",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Dominic descends the basement stairs, expecting a stray kitten. Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small…"
+    "summary": "Dominic descends the basement stairs. He gazes in a daze upon all of the military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small…"
   },
   {
-    "n": 31,
+    "n": 32,
     "displayNum": "21",
     "id": "creature-missing",
     "title": "The Burn Marks",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "The crew hold the door down."
-  },
-  {
-    "n": 32,
-    "displayNum": "21B",
-    "id": "the-infection",
-    "title": "The Infection",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Dallas slams the heavy oak door shut, throwing the bolt. Outside, the wind howls, a rhythmic, predatory sound that rattles the window panes. Dominic leans against the counter, breathing hard, his hand trembling as he…"
+    "summary": "Makayla bursts through the backyard towards the street, towards the neighborhood, looking at her tracker device - she sees that the creature is blinking. She makes her way to the field of no -man land - where they found…"
   },
   {
     "n": 33,
@@ -294,7 +294,7 @@
     "title": "The Load-Out",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. The wind drops, the howling stops. Then it…"
+    "summary": "Makayla follows the tracker into the woods - and sees it beep beep - as she approaches the place where Dallas found the creature."
   },
   {
     "n": 34,
@@ -303,7 +303,7 @@
     "title": "The Trench Run",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "Dallas enters the tall grass carrying the speaker. The nylon straps bite into Dallas' shoulders - straining the fabric. Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker, and…"
+    "summary": "Dallas enters the tall grass carrying the oscillator. The nylon straps bite into Dallas' shoulders - straining the fabric. Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker,…"
   },
   {
     "n": 35,

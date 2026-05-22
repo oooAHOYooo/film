@@ -122,7 +122,7 @@
   {
     "id": "s12-sl",
     "file": "",
-    "title": "The Burn Mark & Costco",
+    "title": "The Burn Mark",
     "act": 2,
     "actTitle": "The Creature",
     "scriptId": "the-burn-mark"
@@ -150,14 +150,6 @@
     "act": 0,
     "actTitle": "",
     "scriptId": ""
-  },
-  {
-    "id": "s17-sl",
-    "file": "",
-    "title": "Resonance",
-    "act": 2,
-    "actTitle": "The Creature",
-    "scriptId": "resonance"
   },
   {
     "id": "s18-sl",

@@ -442,19 +442,6 @@
       "Dominic"
     ]
   },
-  "s21b": {
-    "durationMin": 90,
-    "shootDays": 0.5,
-    "assignedDay": 14,
-    "keyElements": "",
-    "productionNotes": "",
-    "cast": [
-      "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic"
-    ]
-  },
   "s22": {
     "durationMin": 90,
     "shootDays": 0.5,
@@ -825,10 +812,9 @@
       "date": "2026-07-01",
       "weekday": "Wednesday",
       "scenes": [
-        "s21b",
         "s26"
       ],
-      "sourceNote": "D13 = 7.1.26 = Wed <s21b,s26>"
+      "sourceNote": "D13 = 7.1.26 = Wed <s26>"
     },
     {
       "day": 14,

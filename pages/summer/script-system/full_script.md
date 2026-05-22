@@ -1,11 +1,24 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/20/2026, 9:57:35 PM*
+*Compiled on 5/22/2026, 12:43:19 PM*
 
 ---
 
 
 ## ACT I — Arrival & Discovery
+
+---
+
+
+### Scene 0: Branford Montage
+
+*ACT I — Arrival & Discovery | ID: branford-montage | File: s00.md*
+
+---
+
+<!-- scene: 0 file: s00.md nickname: branford-montage -->
+
+[SCENE FILE MISSING: s00.md]
 
 ---
 
@@ -180,7 +193,7 @@ Dallas walks around at night with a recorder in his hand. As he walks along the 
 
 On the way home - he records the breeze of the tall grass. 
 
-INT. DALLAS NEW HOUSE - LIVINGROOM - Early NIGHT (s02.4)
+INT. DALLAS NEW HOUSE - ATTIC - NIGHT (s02.4)
 Dallas walks in again and looks again at his new place. He looks at the windows, he looks at the doors, he looks at the cielings. He walks towards a group of large moving boxes scaterred in the center of the living room. 
 
 Dallas opens up the box labelled "Field Notes - Branford" to find sketches of butterflies and caterpillars and scattered drawings of curious insects. As he turns the pages, the butterflies seem to morph into creatures with wings.  Angels.  He flips through some of the pages, some containing sketches of the grass and a golden creature. And a bunch of math. Dallas closes it.
@@ -1573,7 +1586,7 @@ Dallas rushes to the workstation and finds that the creature sleeping peacefully
 ---
 
 
-### Scene 12: The Burn Mark & Costco
+### Scene 12: The Burn Mark
 
 *ACT II — The Creature | ID: the-burn-mark | File: s12.md*
 
@@ -2475,12 +2488,26 @@ As they approach the structure, they can see that it is a small wooden structure
 
 Inside the structure there is a wooden box. Makayla opens it. Inside there are various trail cameras and recording equipment. On the bottom of the box, Makayla pulls out various cables and wires connected to a  small crystal. 
 
-One device in particular intrigues Dallas. It is an old cart that has a perptual motion machine on it. Dallas walks over to it and admires it.
+MAKAYLA
+Our goal is to create a network - Asher has been training the PTZ cameras to detect any anaomly based on other data - we're still in early stages.  And lately - as you've heard with the hum - i nthe future we're going to have microphones. 
+
+One device in particular intrigues Dallas. It is small device, made out of old breadboards and it seems like a perptual motion machine on it. Dallas walks over to it and admires it.
 
 MAKAYLA
 That's our attempt at a perpetual motion machine...
 
+<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
+(action)
+Makayla walks over and turns the device on. It lights up. 
+
+MAKAYLA
+Batteries will die soon.
+
+<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+
+(action)
+Dallas looks confused at the wiring. 
 
 MAKAYLA
 Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - they are going to change the world... He just needs to rest a bit. 
@@ -2491,12 +2518,12 @@ Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - th
 Dallas looks at one of the inventions on the ground. 
 
 MAKAYLA
-Do you believe in fate Mr. Dallas?
+Do you believe that things happen for a reason?
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
-Dallas shakes his head no. 
+Dallas reamins still, not making eye contact. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
@@ -3309,11 +3336,7 @@ Dominic heads toward the basement alone. Dallas's stomach drops. He and Makayla 
 <!-- GOING TO FILM ON DAY 11 - 6.27.26 -->
 INT. DOMINIC'S BASEMENT - CONTINUOUS (s20.1)
 
-Dominic descends the basement stairs, expecting a stray kitten. 
-
-Instead: military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small basement hopper window is busted open, rain blowing in from the outside.
-
-INT. DOMINIC'S LIVING ROOM - CONTINUOUS (s20.2)
+Dominic descends the basement stairs. He gazes in a daze upon all of the military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small basement hopper window is busted open, rain blowing in from the outside.
 
 Dallas frantically taps his receiver. The needle flickers back and forth between frequencies. 
 
@@ -3345,10 +3368,10 @@ Dallas... what is this?
 Dallas makes eye contact with Dominic. Outside, the hum increases and Dallas' eyes fall toward the window. Out at the tall grass swaying in the dark. The Red-Eyes are pulsing at the edge of the property.
 
 MAKAYLA
-We have to get out there and find it before the Red-Eyes do.
+We have to get out there and find it the other things do. 
 
 DOMINIC
-The what? Makayla what is going on? Where's the cat?
+What other things?
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
@@ -3356,13 +3379,13 @@ The what? Makayla what is going on? Where's the cat?
 Makayla looks at Dominic with a serious expression.
 
 DOMINIC
-Makayla! I told everybody we had a cat! You’ve got military weapons down there.  
+Makayla. 
 
 MAKAYLA
-Uncle, listen—
+Cousin, listen—
 
 DOMINIC
-Niece, I listen. 
+I listen. 
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
@@ -3372,64 +3395,47 @@ Makayla points hard at the window. Asher walks over to Dominic and hands him the
 DOMINIC
 I don't get it. What is this? 
 
+<!-- scene: 20 file: s20.md nickname: red-eyes -->
+
+(action)
+Asher turns on the device.
+
 ASHER
 It's to keep them at bay.
 
 DOMINIC
-Keep what at bay?
+Keep who at bay?
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Asher points to the window. Dominic glances out the window and sees the red eyes. He turns back to Asher and then to Makayla. 
+Asher points to the window. Dominic glances out the window. He slowly walks. In the distance as he looks a pair of red eyes glances back at him. 
 
 Suddenly, the lights in the house flicker and within a moment, the room plunges into pitch black. 
 
-INT. DOMINIC'S LIVING ROOM - CONTINUOUS (s20.3)
-
 Makayla reaches from her backpack and grabs a bunch of flashlights and starts to hand them out to everyone. 
 
-DOMINIC
-We can't go out there.
-
-MAKAYLA
-We have to.
+INT. LIVING ROOM (Continous) 
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Dominic looks defeated. From the corner of the room Mr. Mike rocks back and forth in his chair. Dominic rushes over to see him. 
+Dominic looks defeated. From the corner of the room Mr. Mike rocks back and forth in his chair. Asher rushes over to see him. 
 
-DOMINIC
+ASHER
 Mr. Mike, are you okay?
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Mr. Mike looks at Dominic with a blank expression. He points toward the window. 
+Mr. Mike looks at ASHER with a blank expression. He points toward the window. 
 
 MR. MIKE
-They're going to come. Look outside. The marks. 
-
-<!-- scene: 20 file: s20.md nickname: red-eyes -->
-
-(action)
-Makayla looks out the window and sees the burn marks on the grass. 
-
-MAKAYLA
-Dallas. Look. 
+They're going to come - just look outside - It's done - finished - Look outside. The marks. 
 
 EXT. DOMINIC'S BACKYARD - CONTINUOUS (s20.4)
 
-Dallas, Makayla and Asher walk outside in the backyard and witness the burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
-
-Makayla stares at the black veins on the wood. She slowly rolls up her wet sleeve. 
-
-Beneath her skin, identical black, twisting veins pulse faintly along her forearm. 
-
-Dallas sees it. He rips back his own jacket sleeve. His wrist is covered in the same creeping rot. 
-
-He looks up at the towering shadows at the edge of the property. The hum from the tall grass is deafening. 
+Dallas and Makayla walk outside in the backyard and listen to the hum that is now almost at a deafening row. 
 
 MAKAYLA
 Do you think this will work?
@@ -3442,17 +3448,14 @@ Dallas nods.
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla drops to her knees, ripping open Dallas's gear bag. She scrambles out a portable speaker, slamming it onto the porch railing, aiming it directly at the creeping burn mark like a shotgun. 
+Makayla drops to her knees, ripping open Dallas's gear bag. She scrambles out a portable speaker, slamming it onto the porch railing, aiming it directly at the creeping darkness like a shotgun. 
 
 Dallas rips the wire with his teeth and bridges the crystal into the circut. 
-
-MAKAYLA
- Asher—the numbers!
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Asher's hands fly over the oscillator dial with  1-1-5-3. 
+Makayla's hands fly over the oscillator dial with  1-1-5-3. 
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
@@ -3466,9 +3469,7 @@ A sound like thick glass cracking under pressure pierces the air. A high-pitched
 (action)
 The grass at the edge of the yard sways rhythmically,in a direction opposit of  the wind. 
 
-Dallas, Makayla, Asher and Dominic watch, stunned, as the "vein" burn mark physically recoils. 
-
-It turns from a dark black—to a sickly brown—and back to a vibrant, natural green. The acoustic beam healed the earth.
+Dallas and Makayla watch stunned as the hum disapaates. Dominic comes outside and is in a gaze. 
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
@@ -3479,11 +3480,6 @@ Makayla looks back at the tree line.
 
 (action)
 Dallas nods, his jaw tight. He looks at Dominic. 
-
-<!-- scene: 20 file: s20.md nickname: red-eyes -->
-
-(action)
-Dominic looks at the fading burn mark on the grass. He looks at Asher, vibrating with anxiety in the cold. Finally, Dominic exhales sharply. 
 
 DOMINIC
 I think I am going to sit down, not feeling so good. 
@@ -3502,7 +3498,7 @@ The orbs turn into red orb and then grow into a shadow which takes shape into a 
 
 But there are too many. Hundreds of red eyes begin to dot the tree line. The sheer numbers are overwhelming the small portable speaker.
 
-The crew turn and sprint back into the house, slamming the door.
+Makayla looks onward and sprints towards the darkness.
 
 ---
 
@@ -3517,112 +3513,20 @@ The crew turn and sprint back into the house, slamming the door.
 
 # Scene 21: The Burn Marks
 
-<!-- GOING TO FILM ON : Day 13 = Wednesday -->
-
-INT. DALLAS LIVING ROOM (s21.1)
-The crew hold the door down.
-
-DOMINIC
-Okay - what is happening. 
-
-<!-- scene: 21 file: s21.md nickname: creature-missing -->
-
-(action)
-Makayla and Asher run towards the window. 
-
-Makayla's eyes widen as she see the glow from the creature in the tall grass. 
-
-Makayla runs to the table and grabs the tracker. On the display it shows a tiny beep. 
-
-Makayla abruptly turns, grabs a flashlight and runs out the front door. 
+<!-- GOING TO FILM ON : Day 11 = Wednesday -->
 
 EXT. DALLAS'S BACKYARD - NIGHT (s21.2)
-Dominic bursts through the porch door after her. The wind whips his hair. Asher and Dallas follow close behind. 
+Makayla bursts through the backyard towards the street, towards the neighborhood, looking at her tracker device - she sees that the creature is blinking. She makes her way to the field of no -man land - where they found the creatures. 
 
-Makayla runs straight for the tall grass at the edge of their house. Dominic follows her.
+Dallas - watching her sprint - begins to chase after her.   Dominic - sitting down still in a daze, eventually stands up and follows her. 
 
+Makayla runs straight for the tall grass at the edge of their house. 
+
+EXT. TALL GRASS (S21.3)
+As Makayla runs through the tall grass - distance howls begin to flod the atmosphere 
 Dallas and Asher stop at the edge of the porch. In the distance: a pair of eyes. Bright. Dim. Bright. Red. And then gone. 
 
 They look again. Closer. The eyes reappear. Swirling through the beating wind and the tall grass. They seem like they following Makayla's flashlight.
-
----
-
-
-### Scene 21B: The Infection
-
-*ACT II — The Creature | ID: the-infection | File: s21b.md*
-
----
-
-<!-- scene: 21B file: s21b.md nickname: the-infection -->
-
-# Scene 21b: The Infection
-
-<!-- GOING TO FILM ON : Day 13 = Wednesday -->
-
-
-INT. DALLAS KITCHEN - NIGHT (MOMENTS LATER) (s21b.1)
-
-Dallas slams the heavy oak door shut, throwing the bolt. Outside, the wind howls, a rhythmic, predatory sound that rattles the window panes.
-
-Dominic leans against the counter, breathing hard, his hand trembling as he grips his inhaler. Asher is already at the table, eyes fixed on the creature in its box.
-
-DALLAS
-(to Makayla)
-You saw them. How many?
-
-MAKAYLA
-(voice shaking)
-Too many. They’re circling the house, Dallas. They aren’t just looking for the creature anymore. They’re looking for—
-
-She stops. She gasps, clutching her right arm. 
-
-DALLAS
-Makayla?
-
-Makayla slowly peels back the sleeve of her windbreaker. The jagged "burn mark" on her palm has changed. It is no longer a faint scar; it is a vivid, pulsing crimson vein that has crawled up her wrist and is spider-webbing toward her elbow.
-
-The red light in the vein pulses in perfect synchronization with the rhythmic thrum of the storm outside.
-
-DOMINIC
-(horrified)
-What is that? Makayla, what is that on your arm?
-
-Makayla doesn't answer. She looks at Dallas.
-
-DALLAS
-(low voice)
-It’s in us.
-
-Dallas rolls up his own sleeve. The mark on his forearm is even worse—the skin around the jagged line is starting to look thin, almost waxy. The black rot from the marsh seems to be tracing his circulatory system.
-
-ASHER
-(without looking up)
-It’s writing over you.
-
-Everyone turns to Asher. He is tapping the table in the same rhythm as the pulses on their skin.
-
-ASHER
-The signal from the marsh... it’s not just sound. It’s a blueprint. If we don’t get the creature back to the center... if we don't sync the frequency...
-
-DALLAS
-(finishing the thought)
-...there won't be anything left of us to save.
-
-Dominic looks from the pulsing marks to the roaring storm outside the window. The "rescue mission" is gone. This is survival.
-
-DALLAS
-(to Dominic)
-Get the speakers. We’re going now.
-
-DOMINIC
-In this? Dallas, you'll die out there!
-
-DALLAS
-(staring at his arm)
-I’m dying in here, Dom.
-
-Dallas grabs his heavy coat. The "Trench Run" has begun.
 
 ---
 
@@ -3644,48 +3548,9 @@ Dallas grabs his heavy coat. The "Trench Run" has begun.
 
 <!-- GOING TO FILM ON : Day 13 = Wednesday -->
 
-EXT. DALLAS'S BACKYARD - CONTINUOUS (s22.1)
-The burn marks lead from the driveway toward the house—crawling along the siding and spider-webbing up toward the windows. A corrupt vein system trying to infect the home. 
+EXT. MARSH
 
-The wind drops, the howling stops. Then it starts. The Hum. 
-
-It rises from the marsh, a dense, low-grade vibration that rattles Dallas’s teeth. Slowly, at the edge of the tall grass, the darkness itself seems to thicken. 
-
-Asher and Dallas look at each other. 
-
-ASHER
-(pointing into the void)
-They're coming. 
-
-<!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
-
-(action)
-Asher begins to pace nervously back and forth. Mr. Mike in the inside begins to call for him. He looks at Dallas, then outside, and puts the headphones on and goes inside with Mr. Mike. 
-
-<!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
-
-(action)
-From the edge of their property, pairs of red eyes blink into existence. Two. Then four. Then a dozen. They drift back and forth, actively erasing the sound of the wind as they move closer to the yard. 
-
-The house shudders violently. The rotting black veins creep on the grass towards the front door. The red glowing eyes bleed through the window panes.
-
-EXT. MARSH - CONTINOUS (s22.2)
-Makayla runs towards the golden light. Hums around her grow deafening. Dominic chases after her. 
-
-EXT. DALLAS HOUSE - CONTINOUS (s22.3)
-It’s a frantic, desperate load-out. Dallas heaves a massive speaker onto his shoulders, wrapping heavy nylon straps around his chest to distribute the weight. 
-
-The front door bows inward, the wood groaning and cracking under immense, unseen pressure. Black rot explodes across the grass towards the door. 
-
-Dallas signals for Asher. Asher flips a screen and the black forces repell. Dallas nods.  
-
-
-
-
-The massive, formless shadows pour into the house—
-
-
-but Dallas is already sprinting toward the edge of the tall grass. He plunges into the suffocating darkness of the marsh.
+Makayla follows the tracker into the woods - and sees it beep beep - as she approaches the place where Dallas found the creature.
 
 ---
 
@@ -3701,18 +3566,18 @@ but Dallas is already sprinting toward the edge of the tall grass. He plunges in
 # Scene 23: The Trench Run
 
 EXT. TALL GRASS - CONTINUOUS (s23.1)
-Dallas enters the tall grass carrying the speaker.  The nylon straps bite into Dallas' shoulders - straining the fabric. 
+Dallas enters the tall grass carrying the oscillator.  The nylon straps bite into Dallas' shoulders - straining the fabric. 
 
 Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker, and then looks down at his hand - the black veins pulse under his skin, Dallas in pain, drops the speaker into into the mud with a wet heavy thunk.
 
-Dallas looks at his arm it begins to look transulent. 
+Dallas stops in his tracks and begins to take out a little tracker. 
 
-In the distance Makayla begins to cry. 
+In the distance the creature begins to cry along with 
 
 Suddenly, Dominic appears and runs towards Dallas.
 
 DOMINIC
-Dallas have you seen her? I can't find her? What's that a tracker? Does it show where Makayla is? 
+Dallas have you seen her? MAKAYLA! I can't find her? Fix up your tracker - make it show where Makayla is. 
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
@@ -3728,7 +3593,7 @@ MAKAYLA!
 Dallas and Dominic continue to make their way with the spaeker. Dallas drops to the ground.  
 
 DOMINIC
-Dallas you okay?
+You okay?
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
