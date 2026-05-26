@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/22/2026, 2:40:23 PM*
+*Compiled on 5/26/2026, 11:26:33 AM*
 
 ---
 
@@ -175,10 +175,12 @@ Dallas looks down at a box of old equipment and stretches down to pick it up.
 # Scene 2: Sierra's Box
 <!-- summary: Can't sleep. Golden flicker in the grass. He opens Sierra's box; the hum starts; the battery dies. -->
 
-<!-- Filming On  6.9.26 -->
+<!-- Filming On  6.9.26 @ Jerry's House  -->
 
 INT. DALLAS KITCHEN - SUNSET (s02.1)
-Dallas looks at his new surroundings. He opens drawers and closes others. Cut to : Dallas looks at a gift basket - filled with fresh fruit and items. Cut to: He hasitly begins to put forth a frozen pizza. Cut to: Dallas hangs on the couch and begins to watch tv. On the screen a weatherman talks about the upcoming Branford weather.  
+Dallas looks at his new surroundings. He peers through the window outside. As he does a faint hum is heard - he takes out the oscillator and marks down the frequency - and then the hum stops. He stares for a while.
+
+Dallas hasiltly brings forth a frozen pizza. As Dallas eats, as the TV glares in the background - a weatherman on screen talks about the upcoming tropical storm season in Branford. 
 
 A noise is heard off screen. 
 
@@ -205,6 +207,7 @@ Dallas walks over to the ruby red casette player - he thumbs over the play butto
 Dallas gently closes the box of headphones and gear. He takes a deep breath and opens up another box laying adjacent. He carefully pulls out a heavy military-grade desktop audio recorder, another portable audio recorder, and a small portable Oscillator on his desk. 
 
 INT. DALLAS BATHROOM - NIGHT (s02.5)
+<!-- ANOTHER DAY than june 9th -->
 
 Dallas takes a shower - and as he zones out from the sounds of the hot water, a faint hum interrupts from the far outside. 
 
@@ -213,7 +216,9 @@ As he takes a shower the audio tape of the ruby red cassette player fills the ro
 Dallas dries off, stops the tape, and peers through the steam of the bathroom window. The hum grows louder. 
 
 INT. DALLAS DOWNSTAIRS - NIGHT (s02.6)
-Dallas rushes downstairs as the hum grows louder. Dallas, recorder in hand, scrambles toward the window and brings to record. The needle spikes. Dallas begins to adjust the dial - and begins to hear a whimpering faint, pure, harmonic tone. The sound abrutly stops. And then it starts up again. The sound abrutly stops. And then starts up again. This time in a pulsing pattern. Dallas looks at his watch and begins to time it. One Second. Stop. One second - top. Five seconds. Three seconds. 
+Dallas rushes downstairs as the hum grows louder. Dallas, recorder in hand, scrambles toward the window and brings to record. The needle spikes. 
+
+Dallas  begins to adjust the dial - and begins to hear a whimpering faint, pure, harmonic tone. The sound abrutly stops. And then it starts up again. The sound abrutly stops. And then starts up again. This time in a pulsing pattern. Dallas looks at his watch and begins to time it. One Second. Stop. One second - top. Five seconds. Three seconds. 
 
 Suddenly hum sounds like it is moving away and its loudness begins to grow faint. Looking down at the his recording, Dallas notes a spike in the waveform on the low frequency range. 
 
@@ -225,7 +230,7 @@ EXT. DALLAS HOUSE - NIGHT (s02.7)
 
 Dallas stands alone watching the tall grass sway agaisnt the salt breeze. Coyotes howl in the distance and the hum decreases in scale and size as the starry night disappears into the distance of the tall marsh grass. He sees a faint golden glow pulse once, twice, five times, three times. 
 
-In the distance a thunderstorm.
+In the distance a thunderstorm brews.
 
 ---
 
@@ -1383,13 +1388,13 @@ Howie begins to cry. Dallas goes to sleep.
 
 EXT. DALLAS HOUSE - NEXT DAY
 
-Dallas wakes up and Dallas goes to Howie's room. He doesn't see him.
-
 Dallas takes howie outside and begins to go on a walk down the neighborhood and the Branford rocks. 
 
 EXT. EDGE OF THE MARSH
 
-Dallas ties up Howie by a nearby marsh and enters an interesting field of tall bamboo like grass.
+Dallas ties up Howie by a nearby marsh and enters an interesting field of tall bamboo like grass. 
+
+Dallas looks at his portable Oscillator - it is acting crazy. 
 
 EXT. DEEP INSIDE THE TALL MARSH (s09.1)
 
@@ -1407,10 +1412,8 @@ There in the distance Dallas sees a gnarled tree that stands alone among the ree
 
 Dallas approaches the tall grass and the gnarly tree and as he does - he notices that inside of the gnarl, curled up, tucked away,  lives a small orb shaped creature - slightly bioluminest - and clearly injured. 
 
-The creature is a cloudlike - cottonball, powder-puff animal. 
+The creature is a cloudlike - cottonball, powder-puff animal with feathers all around it's body. 
 
-Small round It skin is fluffy pulsing with a soft glow. Round. Covered in dense, dirty white fur like a dandelion seed head. It looks like a small owl. Its large eyes are closed. With no visible mouth, it looks a bit like a living cotton ball with shivering, transulent ears. 
- 
 Dallas reaches out. His hand trembles. He touches the creature's back. The creature flinches but doesn't move away. 
 
 The creature inch by inch begins to uncoil a tentacle from inside its body and wraps around Dallas' finger, and then hand.
@@ -1447,7 +1450,9 @@ As Dallas walks out of the tall grass, he gets the sense that something is follo
 
 The air changes and the hum faintly comes back. Then in the distant, more coyotes begin to howl. 
 
-A heavy, crushing sound slices through the reeds—something massive rocketing toward him like an arrow.
+A heavy, crushing sound slices through the reeds—something massive rocketing toward him like an arrow. 
+
+Red eye's begin to circulate around him - pulsing as they inch closer as if Dallas' vision is on a blurry carpret ride. 
 
 Dallas breaks into a sprint. He reaches the stunted cedar tree— where Howie is tied, who is a blur of panic, barking at the wall of grass.
 
@@ -1484,7 +1489,7 @@ Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines 
 
 Howie barks outside. Dallas rushes to grab him.
 
-INT. DALLAS KITCHEN - MOMENTS LATER (s11.2)
+INT. DALLAS ATTIC - MOMENTS LATER (s11.2)
 Howie is in the living room couch nervously peering out the window. Dallas finds himself alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
 
 As Dallas peers closer, he notices that it has marks underneath its eye. As Dallas touches the marks the creature suddenly wakes up and lets out a cry.
