@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/26/2026, 11:26:33 AM*
+*Compiled on 5/26/2026, 12:16:11 PM*
 
 ---
 
@@ -1604,14 +1604,19 @@ Dallas rushes to the workstation and finds that the creature sleeping peacefully
 <!-- Filming on = Day 3 = 6.12.26 -->
 <!-- LOCATION NOTE: Jerry's Attic - Shoot somewhere where Dallas is also alone -->
 
-INT. DALLAS'S ATTIC - NIGHT (s12.1)
+INT. DALLAS'S ATTIC - NEXT MORNING  (s12.1)
 
-Dallas is completely alone in his attic. 
+Morning dawns and Dallas takes a deep breath as he sleeps on a cot near the desk. Dallas is completely alone in his attic. 
 
 <!-- scene: 12 file: s12.md nickname: the-burn-mark -->
 
 (action)
 The space is dimly lit and quiet. Dallas sits with the creature, observing it closely in the stillness of the night. He is alone with his thoughts and the strange being.
+
+
+Dallas awakes with the sunlight hitting his face. He gets up and walks over to his desk. Outside he hears a loud bang and someone cursing in the distance. 
+
+Dominic''s minivan idles in the driveway. Dominic gets out and checks the pressure on one of its tires.
 
 ---
 
@@ -1627,21 +1632,14 @@ The space is dimly lit and quiet. Dallas sits with the creature, observing it cl
 # Scene 13: The Confrontation
 
 <!-- FILMING ON 
-DAY 4 = 6.13.26 -->
+DAY 5 = 6.14.26 -->
 
-INT. DALLAS BEDROOM - NEXT MORNING
-
-Dallas awakes with the sunlight hitting his face. He gets up and walks over to his desk. Outside he hears a loud bang and someone cursing in the distance. 
-
-EXT. DALLAS HOUSE - NEXT MORNING (s13.1)
-
-Dominic''s minivan idles in the driveway. Dominic gets out and checks the pressure on one of its tires. 
+EXT. DALLAS BACKYARD - NEXT MORNING (s13.1)
 
 Dominic takes a deep breath and takes off his shoes. He finds a patch of grass and touches it. 
 
 Makayla and Asher wander toward the edge of Dallas's property, kneeling over when they get to the edge. 
 
-Dominic walks right up to Dallas' doorway and knocks loudly. 
 
 MAKAYLA
 Asher, look.
@@ -1649,7 +1647,9 @@ Asher, look.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Towards the edge of the yard is a jagged, burn mark in the grass that resembles paint splatters on a canvas - scattered across the green grass. It looks as if a drip of yellow blood is around it - acreating a trail towards Dallas' window. At its center lies a small, translucent crystal.
+Makayla points to a trailcam that seems to be behind Dallas' backyard gate . It is blinking. Asher unties it and gives Makayla the SD card, which she puts in her pocket. Meanwhile Dominc walks right up to Dallas' doorway and kocks.
+
+Dallas emerges. 
 
 Makayla kneels and touches it. Her hair flutters, static electricity pulling the strands toward the stone. She quickly pockets it.
 

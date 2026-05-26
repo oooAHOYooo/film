@@ -1,6 +1,6 @@
 # The Fall of Hibisicas — Full Script
 
-*Compiled on 5/26/2026, 11:26:33 AM*
+*Compiled on 5/26/2026, 12:16:11 PM*
 
 ## LOOSE NOTES
 
