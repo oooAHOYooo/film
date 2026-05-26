@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/26/2026, 12:16:11 PM*
+*Compiled on 5/26/2026, 2:49:54 PM*
 
 ---
 
@@ -1653,11 +1653,12 @@ Dallas emerges.
 
 Makayla kneels and touches it. Her hair flutters, static electricity pulling the strands toward the stone. She quickly pockets it.
 
-She pulls her hand back, staring at her palm. A faint, jagged red line—identical to the pattern in the grass—is etched into her skin like a ghost-vein. She rubs it, but it doesn't fade. It feels warm.
+Makayla notices a trail leading from the edge of the grass toward Dallas. Asher grabs beads from his pocket and begins to dangle them nervously. 
 
-Makayla notices a trail leading from the edge of the grass toward Dallas.
+Cut to. 
 
-Dallas walks outside and Dominic bangs his hand on the car door. As Do
+EXT. DALLAS DOORWAY
+Dallas walks outside and Dominic bangs his hand on the door. 
 
 DOMINIC
 Dallas! Gosh what a whirlwind. Listen, I know this is a lot but I'm wondering if you could watch Howie again? Listen, our church has a bible study - you should come. That okay?
@@ -1672,13 +1673,13 @@ MAKAYLA
 Dominic, no worries Mr. Dallas we'll watch Howie. 
 
 DOMINIC
-Yeah? You trying to get out of the ride to costco? 
+Yeah? You trying to get out an errand? 
 
 MAKAYLA
 Maybe. 
 
 DOMINIC
-Alright fine - but you owe me one. If your mother comes back before I do tell her I am at costco - and then I got to probably do another thousand things.
+Alright fine - but you owe me one. If your mother comes back before I do tell her I am at the store. 
 
 MAKAYLA
 Okay.
@@ -1720,6 +1721,20 @@ the tall grass. His eyes widen.
 DALLAS
 I don't know. 
 
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+(action)
+Makayla points to the trailcam. 
+
+MAKAYLA
+What is that outside your house? 
+
+DALLAS
+It looks like a trailcam. 
+
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+(action)
 A whimper is heard from the kitchen. 
 
 MAKAYLA
@@ -1728,10 +1743,13 @@ What is that?
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla pushes past Dallas and runs to the kitchen. Asher and Dallas stand 
-silent looking at each other for a beat too long. 
+Makayla rushes past Dallas and runs to the kitchen.  She takes out her portable oscillator and sees that it is spiking as she points it to the cieling. 
 
-INT. DALLAS KITCHEN - MOMENTS LATER (s13.3)
+Asher and Dallas stand silent looking at each other for a beat too long.
+
+Makayla ignores everyone and rushes out of the room, up the stares, towards the attic. 
+
+INT. DALLAS ATTIC - MOMENTS LATER (s13.3)
 
 Dallas and Makayla hover around the table at the makeshift aquarium Dallas constructed.
 
