@@ -7,7 +7,9 @@
     "generate": "node scripts/generate-inspo-manifests.js",
     "compile:all": "node compile-all.js",
     "compile:pdfs": "node pages/summer/storyboard-system/compile-pdfs.js",
-    "start up": "node start-summer.js"
+    "start up": "node start-summer.js",
+    "film": "node film.js",
+    "film:api": "node film-api.js"
   },
   "dependencies": {
     "pdf-lib": "^1.17.1"

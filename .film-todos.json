@@ -1,0 +1,45 @@
+{
+  "project": "Creatures in the Tall Grass",
+  "todos": [
+    {
+      "id": 1,
+      "task": "Scout forest location for scene 9",
+      "priority": "high",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-27"
+    },
+    {
+      "id": 2,
+      "task": "Design Dallas costume and props",
+      "priority": "medium",
+      "due": "2026-06-15",
+      "completed": false,
+      "createdAt": "2026-05-27"
+    },
+    {
+      "id": 3,
+      "task": "Test camera gear in forest",
+      "priority": "high",
+      "due": "2026-06-01",
+      "completed": true,
+      "createdAt": "2026-05-27"
+    },
+    {
+      "id": 4,
+      "task": "Finalize shot list for days 3-5",
+      "priority": "medium",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-27"
+    },
+    {
+      "id": 5,
+      "task": "Fill out leather notebook with creature designs while in PA",
+      "priority": "high",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-27"
+    }
+  ]
+}
