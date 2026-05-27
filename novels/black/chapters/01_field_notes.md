@@ -7,3 +7,8 @@ Start with fragments: where you are, what you notice, what you canâ€™t stop
 Focus:
 - Date the entry.
 - Anchor to a sensory detail.
+
+
+//
+
+What is this supposed to be? I forgot - I forgot what this all was supposed to be - I have such a system of organization that I believe I am loosing it a bit. 

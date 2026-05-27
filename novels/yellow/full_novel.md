@@ -66,6 +66,9 @@ Focus:
 - Note beauty as theological evidence.
 
 
+I was thinking about how the design of the world - how even fish have little hairs - I was reading this book on evolution but I don't know - something doesn't smell great in the water. It's like - it's like something I can't put my finger on - but need to fill a book to describe. It surprises me how little faith I have despite it all, despite it all. 
+
+
 ---
 
 

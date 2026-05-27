@@ -31,7 +31,13 @@
       "Bash(awk -F: '{print $1}')",
       "Bash(xargs -I{} basename {} .md)",
       "Bash(kill 12243)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(chmod +x *)",
+      "Bash(./film.js help *)",
+      "Bash(./film.js add *)",
+      "Bash(./film.js list *)",
+      "Bash(./film.js stats *)",
+      "Bash(./film.js todo *)"
     ]
   }
 }
