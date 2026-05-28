@@ -112,6 +112,30 @@
       "due": null,
       "completed": false,
       "createdAt": "2026-05-28"
+    },
+    {
+      "id": 15,
+      "task": "Update s15 in manifest - films on day 4",
+      "priority": "high",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 16,
+      "task": "Schedule ensemble days after filming day 7-8",
+      "priority": "high",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 17,
+      "task": "Order HDD solutions",
+      "priority": "high",
+      "due": "2026-06-02",
+      "completed": false,
+      "createdAt": "2026-05-28"
     }
   ]
 }
