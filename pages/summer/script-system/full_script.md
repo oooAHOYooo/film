@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/26/2026, 2:49:54 PM*
+*Compiled on 5/28/2026, 3:42:53 PM*
 
 ---
 
@@ -185,9 +185,10 @@ Dallas hasiltly brings forth a frozen pizza. As Dallas eats, as the TV glares in
 A noise is heard off screen. 
 
 EXT. DALLAS DRIVEWAY (s02.2)
-Dallas goes outside and stares for a while at the edge of his property - along it a long fence of conneticut's finest natural tall grass. 
+Dallas goes outside and stares for a while at the edge of his property. After this he walks down the street and stares for a good while - almost at an invisible spector - and then - faintly - the hum merges. 
 
-Dallas looks back at his house - and begins to walk down the driveway. 
+Dallas slowly walks backwards towards his house and then stops when the humm grows louder. Dallas takes out his portable audio recorder. 
+
 
 EXT. BRANFORD AT NIGHT MONTAGES (s02.3)
 
@@ -429,7 +430,7 @@ Dallas looks around at all of the new faces but does not make great eye contact.
 Dominic carries a package of water and puts it under one of the fold up tables. As he does so, people look at Dallas and begin to greet him. 
 
 DOMINIC
-Line is long today - they must got Nicas. Everyone's all downing what they can before the storm. 
+Line is long today - they must got Nicas. Everyone's downing what they can before the storm. 
 
 <!-- scene: 4 file: s04.md nickname: fellowship -->
 
@@ -539,12 +540,11 @@ Makayla and Asher don't make direct eye contact with Dallas but fake a polite sm
 
 The two leave the line walk over to a corner spot by the end of the church yard and huddle over a pile of brush.
 
-Dallas takes a bite of his chicken but doesn't eat much. He's distracted by what Makayla and Asher are looking at the distance. 
+Makayla takes out some cables out of Asher's backpack - and begins to assemble, what looks like an audio recorder on a boom pole. 
 
-<!-- scene: 4 file: s04.md nickname: fellowship -->
+Asher begins to point in the direction of the bushes and Makayla nods. 
 
-(action)
-They finish eating. The group begins to disperse.
+Dallas takes a bite of his chicken but doesn't eat much. He's distracted by what Makayla and Asher are pointing at the distance.
 
 ---
 
@@ -560,7 +560,7 @@ They finish eating. The group begins to disperse.
 # Scene 5: The Merlin App
 <!-- summary: Boardwalk through the reeds. They hear birds andSomething moving in the marsh. -->
 
-<!-- FILMING ON - DAY 9 = 6.20.26 -->
+<!-- FILMING ON - DAY 4 = 6.13.26 -->
 
 EXT. MARSH TRAIL - LATER (s05.1)
 The sun is dipping. Dallas and Dominic walk back home - along a wooden boardwalk that cuts through the tall, golden-yellow reeds.
@@ -1320,7 +1320,11 @@ Makayla reaches out, her fingers inches away, then pulls back as she feels the h
 
 s08c.1 — EXT. DALLAS HOUSE - PORCH - NIGHT
 
-Dallas stands on the porch, holding the trailcam in his hand like a weapon.
+Dallas stands on the porch, holding the audio recorder in his hand like a weapon.
+
+The sky is beginning to fade - and the sounds that he is hearing are getting more and more violent. 
+
+Dallas - on a
 
 ---
 
@@ -1601,22 +1605,26 @@ Dallas rushes to the workstation and finds that the creature sleeping peacefully
 
 <!-- nickname: ALONE WITH THE CREATURE  -->
 
-<!-- Filming on = Day 3 = 6.12.26 -->
-<!-- LOCATION NOTE: Jerry's Attic - Shoot somewhere where Dallas is also alone -->
+<!-- Filming on = Day 4 = 6.13.26 -->
+<!-- LOCATION: Jerry's Attic - Shoot somewhere where Dallas is also alone -->
 
 INT. DALLAS'S ATTIC - NEXT MORNING  (s12.1)
 
-Morning dawns and Dallas takes a deep breath as he sleeps on a cot near the desk. Dallas is completely alone in his attic. 
+Morning dawns and Dallas takes a deep breath as he awakes from a cot near the desk. 
 
-<!-- scene: 12 file: s12.md nickname: the-burn-mark -->
+He stares at the wall for a while and then at his bed post and the journal with the picture of the woman next to it. 
 
-(action)
-The space is dimly lit and quiet. Dallas sits with the creature, observing it closely in the stillness of the night. He is alone with his thoughts and the strange being.
+He hears a chirp and looks over at the creature.
+
+CUT TO:
+The creature is sound asleep in the makeshift aquarium that Dallas built for it. 
 
 
-Dallas awakes with the sunlight hitting his face. He gets up and walks over to his desk. Outside he hears a loud bang and someone cursing in the distance. 
+Dallas looks at his computer and begins to scan the records. 
 
-Dominic''s minivan idles in the driveway. Dominic gets out and checks the pressure on one of its tires.
+Outside he hears a loud bang and someone yelling in the distance. 
+
+Dominic's minivan idles in the driveway. Dominic gets out and checks the pressure on one of its tires.
 
 ---
 
@@ -1636,7 +1644,9 @@ DAY 5 = 6.14.26 -->
 
 EXT. DALLAS BACKYARD - NEXT MORNING (s13.1)
 
-Dominic takes a deep breath and takes off his shoes. He finds a patch of grass and touches it. 
+Dominic takes a deep breath and bends over to check the tire pressure.
+
+He finds a patch of grass and touches it. 
 
 Makayla and Asher wander toward the edge of Dallas's property, kneeling over when they get to the edge. 
 
@@ -1660,8 +1670,10 @@ Cut to.
 EXT. DALLAS DOORWAY
 Dallas walks outside and Dominic bangs his hand on the door. 
 
+Dallas answers. 
+
 DOMINIC
-Dallas! Gosh what a whirlwind. Listen, I know this is a lot but I'm wondering if you could watch Howie again? Listen, our church has a bible study - you should come. That okay?
+Dallas! Gosh what a whirlwind. Listen, I'm wondering if you could watch Howie again? Our church has a bible study - you should come. That okay?
 
 DALLAS
 Yeah that's fine. 
@@ -1670,19 +1682,22 @@ DOMINIC
 Good. 
 
 MAKAYLA
-Dominic, no worries Mr. Dallas we'll watch Howie. 
+Dominic, no worries Mr. Dallas we'll hang with you and show you the spots that Howie likes to go on. 
 
 DOMINIC
-Yeah? You trying to get out an errand? 
+Oh Yeah? You trying to get out an errand? 
 
 MAKAYLA
-Maybe. 
+Of course.  
 
 DOMINIC
-Alright fine - but you owe me one. If your mother comes back before I do tell her I am at the store. 
+Alright fine - it's settled - but hey, you owe me one Makayla. If your mother comes back before I do tell her I am at the store. 
 
 MAKAYLA
-Okay.
+Okay Uncle.
+
+DOMINIC
+Okay. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
@@ -1832,7 +1847,7 @@ distance stands off, afraid to look at the creature.
 # Scene 14: The Connection
 
 <!-- FILMING ON = DAY 4 = 6.13.26 -->
-EXT. DALLAS BACKYARD - OLD PICNIC TABLE (s14.1)
+EXT. DALLAS BACKYARD - OLD PORCH TABLE (s14.1)
 
 Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. 
 
@@ -1867,7 +1882,7 @@ MAKAYLA
 Sounds like a smart lady.
 
 DALLAS
-She was... How did you know that?
+She was (long beat) How did you know that?
 
 MAKAYLA
 How did I know what?
@@ -1876,7 +1891,13 @@ DALLAS
 How did you know that my wife was an Epistemologist. 
 
 MAKAYLA
-I've read her papers. Read her book.
+I've read her papers. Read her book. Watched her give that ted talk. And wondered what kind of woman she was. And now - here I am - with her husband. 
+
+DALLAS
+Yeah. 
+
+MAKAYLA
+Yeah... You're not really like who I thought you would be. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -1884,10 +1905,30 @@ I've read her papers. Read her book.
 Dallas nods and looks at the ground.
 
 MAKAYLA
-Our moms gone too. But we're still here and now we are here living with her babybrother - in Branford - - down the street from a, supposed bio-acoustics engineer.... who found the creature I have been looking for my entire adult life... Dallas, what are we going to do? 
+Our moms gone too. But we're still here and now we are here living with her babybrother - in Branford.
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Makayla looks down at her equipment and then up at the trees.
+
+MAKAYLA
+Where did you find it? 
 
 DALLAS
-I'm not sure. 
+I'm not where.
+
+MAKAYLA
+Not sure?
+
+DALLAS
+I was in a bit of a daze.
+
+MAKAYLA
+What kind of daze? 
+
+DALLAS
+Not sure. 
 
 MAKAYLA
 That habitat you built. What is that about?
@@ -1900,17 +1941,6 @@ I think it is senstivie to UV light.
 (action)
 Makayla nods. 
 
-DALLAS
-I'm not sure yet. 
-
-MAKAYLA
-Sounds good. Hopefully we're all still here...
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Dallas looks at Makayla with curisoity. 
-
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
@@ -1921,10 +1951,10 @@ Makayla looks back and him and continues to fiddle with the Oscillator.
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas and Makayla sit for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Makayla turns to looks down at the burn mark. 
+Dallas and Makayla sit for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Makayla turns to looks down at her trailcam in the distance. 
 
 MAKAYLA
-We need to document this... Dallas. We can't tell anyone, not until we document this. The sound it made. We should try to record that.
+We should go - we need to document this... Dallas. We can't tell anyone, not until we document this. The sound it makes. We should try to record that.
 
 DALLAS
 I've been.
@@ -2392,87 +2422,7 @@ Makayla doesn’t answer. She stares at the towel—at the faint GOLDEN GLOW ble
 
 <!-- scene: 15A file: s15a.md nickname: the-failed-test -->
 
-<!-- FILMING ON - DAY 16 = 7.5.26 -->
 
-INT. DALLAS WORKSHOP – EVENING (s15a.1)
-
-The room is dim, controlled. Every light filtered red.  
-The creature rests inside its enclosure, watching—alert now.
-
-Makayla adjusts the oscillator carefully.
-
-MAKAYLA  
-Low amplitude. No broadcast outside the room. And if it, reacts badly - we stop. 
-
-<!-- scene: 15A file: s15a.md nickname: the-failed-test -->
-
-(action)
-Asher stands in the corner, tense.
-
-Makayla nods—a count—and gently brings the signal online.
-
-A pure tone hums.
-
-The creature lifts its head.
-
-Its ears twitch—not in fear—but recognition.
-
-It emits a SOFT, QUESTIONING NOTE.
-
-The oscilloscope spikes—mirroring the sound.
-
-Makayla smiles.
-
-MAKAYLA  
-See? It’s—
-
-Suddenly the creature SHUDDERS.
-
-The golden light falters—fractures—echoing strangely.
-
-Not pain.
-
-Loneliness.
-
-Asher steps forward sharply and CUTS THE POWER.
-
-Silence.
-
-The creature curls in on itself.
-
-Makayla stares at the dead screen. Swallows.
-
-MAKAYLA  
-I… didn’t mean—
-
-ASHER  
-You interrupted it.
-
-Makayla looks at him.
-
-ASHER  
-It was talking to something else.
-
-Beat.
-
-DALLAS  
-Something outside?
-
-Asher nods.
-
-ASHER  
-You called it away.
-
-Makayla slowly kneels beside the enclosure—not touching.
-
-MAKAYLA  
-I thought we were helping.
-
-The creature peeks one eye open. The glow returns—dim, wary.
-
-Makayla finally understands.
-
-``
 
 ---
 
@@ -2488,18 +2438,9 @@ Makayla finally understands.
 # Scene 15: Makayla's Tracking Box
 
 <!-- s15b -->
-<!-- FILMING ON DAY 15 -->
+<!-- FILMING ON DAY 4 -->
 EXT. NEIGHBORHOODS - EVENING (s15.1)
 The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
-
-MAKAYLA
-Did you know that peptide crystals conduct electricity? 
-
-DALLAS
-I've heard. 
-
-MAKAYLA
-Everything does... which begs the question - what exactly is electricity? 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
@@ -2510,14 +2451,6 @@ EXT. MAKAYLA'S SPECIAL WOODED SPOT - CONTINUOUS (s15.2)
 As they approach the structure, they can see that it is a small wooden structure hidden by fallen trees and branches. 
 
 Inside the structure there is a wooden box. Makayla opens it. Inside there are various trail cameras and recording equipment. On the bottom of the box, Makayla pulls out various cables and wires connected to a  small crystal. 
-
-MAKAYLA
-Our goal is to create a network - Asher has been training the PTZ cameras to detect any anaomly based on other data - we're still in early stages.  And lately - as you've heard with the hum - i nthe future we're going to have microphones. 
-
-One device in particular intrigues Dallas. It is small device, made out of old breadboards and it seems like a perptual motion machine on it. Dallas walks over to it and admires it.
-
-MAKAYLA
-That's our attempt at a perpetual motion machine...
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
@@ -2548,13 +2481,16 @@ Do you believe that things happen for a reason?
 (action)
 Dallas reamins still, not making eye contact. 
 
+MAKAYLA
+Well they do... I mean - if i hit this button here - boom. 
+
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
-Makayla picks up a small flower that looks planted. She begins to dig and unearth various alligator clips hooked up to the bottom roots. 
+Makayla points her device at a small nearby flower. She nods and takes out a pocket tripod - and a pocket microphone - and begins to to record. 
 
 MAKAYLA
-Uncle Dom would never understand what we happened today. What we have witnessed. 
+Aunt Janice will never understand what happened today. Or what happens out here at all. Dominic might. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
@@ -2565,49 +2501,7 @@ MAKAYLA
 What do you think?
 
 DALLAS
-Seems like a quartz. 
-
-
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
-
-(action)
-Makayla walks over and puts the cystal on top of a little bay area device that is also hidden by a bunch of branches. Makayla grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. She points to the two metal rods that are coming out of the portable wooden device - and nudges Dallas to grip. 
-
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
-
-(action)
-Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
-
-Dallas wakes up. He gasps, clutching his hand. 
-
-He looks down. A jagged red line, matching the one on Makayla’s palm, is now etched into his own skin where he gripped the metal rods. It pulses once, then settles into a dull, heavy ache.
-
-MAKAYLA
-(whispering)
-It chose you too.
-
-MAKAYLA
-So, what do you think?
-
-DALLAS
-What is it?
-
-MAKAYLA
-We don't know. But I wonder what would happen if we hook up the creature to it - and your oscillator. 
-
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
-
-(action)
-In the distance the howls are getting more ganrly. Makayla and Dallas stand silent in fear.
-
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
-
-(action)
-Dallas begins to record a bit on his pocket recorder. 
-
-MAKAYLA
-(takes a deep breath and contemplates for a while)
-We should go.
+Seems like a quartz.
 
 ---
 
@@ -2622,47 +2516,43 @@ We should go.
 
 <!-- GOING TO FILM ON Day 5 -->
 
-EXT. DALLAS BACK PORCH – NIGHT (s15c.1)
 
-Crickets. Distant surf.
+`
+<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
-Dominic and Dallas sit side by side.  
-Dominic nurses a cooling mug of coffee.
+(action)
+Makayla walks over and puts the cystal on top of a little bay area device that is also hidden by a bunch of branches. Makayla grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. She points to the two metal rods that are coming out of the portable wooden device - and nudges Dallas to grip. 
 
-DOMINIC  
-Janice thinks I believe everything happens for a reason.
+<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
-DALLAS  
-Do you?
+(action)
+Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
 
-DOMINIC  
-(chuckles)
-No. I think things happen. And people try not to drown in them.
+Dallas wakes up. 
 
-He looks out at the tall grass.
 
-DOMINIC  
-Mr. Mike used to scare the hell out of me with his stories.  
-Then they stopped being stories.
+MAKAYLAA
+So, what do you think?
 
-He glances at Dallas—meaningful.
+DALLAS
+What is it?
 
-DOMINIC  
-If there’s something out there—something big—I hope it doesn’t need people like me.
+MAKAYLA
+We don't know. But I wonder what would happen if we hook up the creature to it - and your oscillator. That night you found the creature - it let out a big BOOM.
 
-DALLAS  
-Why not?
+<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
-DOMINIC  
-Because I’d want to help. 
+(action)
+In the distance the howls are getting more ganrly. Makayla and Dallas stand silent in fear.
 
-The distant HUM rolls through the ground—barely audible.
+<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
-Dominic doesn’t hear it.
+(action)
+Dallas begins to record a bit on his pocket recorder. 
 
-Dallas does.
-
-``
+MAKAYLA
+(takes a deep breath and contemplates for a while)
+We should go.
 
 ---
 
@@ -2677,7 +2567,7 @@ Dallas does.
 
 # Scene 16: Back Home
 
-<!-- GOING TO FILM ON Day 12 -->
+<!-- GOING TO FILM ON and on Day 4 - Day 12 -->
 
 EXT. DALLAS BACKYARD (s16.1)
 Makayla and Dallas hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 

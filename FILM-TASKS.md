@@ -1,15 +1,15 @@
 # Film Production Tasks
 
-Quick task list for Creatures in the Tall Grass production.
+Quick reference for Creatures in the Tall Grass production. Tasks are tracked via the CLI:
 
-## Upcoming
+```bash
+film todo list              # View all tasks
+film todo list --pending    # View pending tasks only
+film todo check <id>        # Mark task complete/incomplete
+film todo add "<task>"      # Add new task
+```
 
-- [ ] Coordinate with Dallas on his wardrobe — **Monday, June 2**
-- [ ] Purchase aquarium for creature
-- [ ] Gather other props
-- [ ] Clean Jerry's attic
-- [ ] Clean Jerry's room
-- [ ] Clean Jerry's backyard
+For more info: `film help`
 
-## Completed
+See `.film-todos.json` for the source data.
 

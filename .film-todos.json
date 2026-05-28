@@ -40,6 +40,78 @@
       "due": null,
       "completed": false,
       "createdAt": "2026-05-27"
+    },
+    {
+      "id": 6,
+      "task": "Coordinate with Dallas on his wardrobe",
+      "priority": "high",
+      "due": "2026-06-02",
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 7,
+      "task": "Purchase aquarium for creature",
+      "priority": "high",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 8,
+      "task": "Gather other props",
+      "priority": "medium",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 9,
+      "task": "Clean Jerry's attic",
+      "priority": "medium",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 10,
+      "task": "Clean Jerry's room",
+      "priority": "medium",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 11,
+      "task": "Clean Jerry's backyard",
+      "priority": "medium",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 12,
+      "task": "Reschedule larger ensemble scenes later in production",
+      "priority": "high",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 13,
+      "task": "Buy secondary microphone (for prop + backup in case of glitches)",
+      "priority": "medium",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
+    },
+    {
+      "id": 14,
+      "task": "Research audio recorder specs and behavior (for creature identification scenes)",
+      "priority": "high",
+      "due": null,
+      "completed": false,
+      "createdAt": "2026-05-28"
     }
   ]
 }
