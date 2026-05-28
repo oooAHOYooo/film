@@ -6,6 +6,7 @@ const { execSync } = require('child_process');
 
 const EXPENSES_FILE = path.join(process.cwd(), '.film-expenses.json');
 const TODOS_FILE = path.join(process.cwd(), '.film-todos.json');
+const DATA_LOCATIONS_FILE = path.join(process.cwd(), '.film-data-locations.json');
 const PROJECT = 'Creatures in the Tall Grass';
 
 // Initialize expenses file if it doesn't exist
@@ -34,6 +35,12 @@ function initFile() {
       todos: []
     }, null, 2));
   }
+  if (!fs.existsSync(DATA_LOCATIONS_FILE)) {
+    fs.writeFileSync(DATA_LOCATIONS_FILE, JSON.stringify({
+      project: PROJECT,
+      locations: []
+    }, null, 2));
+  }
 }
 
 function getExpenses() {
@@ -52,6 +59,15 @@ function getTodos() {
 
 function saveTodos(data) {
   fs.writeFileSync(TODOS_FILE, JSON.stringify(data, null, 2));
+}
+
+function getDataLocations() {
+  initFile();
+  return JSON.parse(fs.readFileSync(DATA_LOCATIONS_FILE, 'utf8'));
+}
+
+function saveDataLocations(data) {
+  fs.writeFileSync(DATA_LOCATIONS_FILE, JSON.stringify(data, null, 2));
 }
 
 function formatDate(dateStr) {
@@ -355,6 +371,94 @@ function removeTodo(args) {
   console.log(`✓ Removed: ${removed.task}`);
 }
 
+// ============ DATA LOCATIONS FUNCTIONS ============
+
+function addDataLocation(args) {
+  if (args.length < 2) {
+    console.error('Usage: film data add "<location>" "<description>" [--date YYYY-MM-DD]');
+    console.error('Example: film data add "Commercial Work" "Test footage from Jerry\'s" --date 2026-05-25');
+    process.exit(1);
+  }
+
+  const location = args[0];
+  const description = args[1];
+
+  let date = new Date().toISOString().split('T')[0];
+  for (let i = 2; i < args.length; i++) {
+    if (args[i] === '--date' && args[i + 1]) {
+      date = args[i + 1];
+      i++;
+    }
+  }
+
+  const data = getDataLocations();
+  const id = data.locations.length > 0 ? Math.max(...data.locations.map(l => l.id)) + 1 : 1;
+
+  const entry = {
+    id,
+    date,
+    location,
+    description,
+    addedAt: new Date().toISOString()
+  };
+
+  data.locations.push(entry);
+  saveDataLocations(data);
+
+  console.log(`✓ Added location: ${location} | ${description} (${date})`);
+}
+
+function listDataLocations(args) {
+  const data = getDataLocations();
+  let locations = [...data.locations];
+
+  if (locations.length === 0) {
+    console.log('No data locations recorded yet.');
+    return;
+  }
+
+  // Sort by date (newest first)
+  locations.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  console.log('\n' + PROJECT);
+  console.log('Where Is The Data');
+  console.log('─'.repeat(90));
+  console.log('Date       │ Location              │ Description');
+  console.log('─'.repeat(90));
+
+  locations.forEach(l => {
+    const pad = (str, len) => str.padEnd(len).substring(0, len);
+    const datePad = pad(l.date, 10);
+    const locPad = pad(l.location, 21);
+    const descPad = pad(l.description, 56);
+
+    console.log(`${datePad} │ ${locPad} │ ${descPad}`);
+  });
+
+  console.log('─'.repeat(90));
+  console.log(`${locations.length} location(s) recorded\n`);
+}
+
+function removeDataLocation(args) {
+  if (!args[0]) {
+    console.error('Usage: film data remove <id>');
+    process.exit(1);
+  }
+
+  const id = parseInt(args[0]);
+  const data = getDataLocations();
+  const index = data.locations.findIndex(l => l.id === id);
+
+  if (index === -1) {
+    console.error(`Location #${id} not found`);
+    process.exit(1);
+  }
+
+  const removed = data.locations.splice(index, 1)[0];
+  saveDataLocations(data);
+  console.log(`✓ Removed: ${removed.location} | ${removed.description}`);
+}
+
 function showHelp() {
   console.log(`
 ${PROJECT} · Production Tools
@@ -371,6 +475,11 @@ TODOS:
   film todo check <id>
   film todo remove <id>
 
+WHERE IS THE DATA:
+  film data add "<location>" "<description>" [--date YYYY-MM-DD]
+  film data list
+  film data remove <id>
+
 Examples:
   # Expenses
   film add 150.00 "Props/Set" "Fake blood and bandages"
@@ -382,6 +491,11 @@ Examples:
   film todo add "Design Dallas costume" --due 2026-06-15 --priority medium
   film todo list --pending
   film todo check 1
+
+  # Data Locations
+  film data add "Commercial Work" "Test footage from Jerry's" --date 2026-05-25
+  film data list
+  film data remove 1
 
 Expense Categories:
   Props/Set, Camera/Gear, Crew, Location, Post-Production,
@@ -430,6 +544,28 @@ switch (command) {
         break;
       default:
         console.error(`Unknown todo command: ${subcommand}`);
+        process.exit(1);
+    }
+    break;
+
+  // Data Locations
+  case 'data':
+    if (!subcommand) {
+      console.error('Usage: film data <add|list|remove>');
+      process.exit(1);
+    }
+    switch (subcommand) {
+      case 'add':
+        addDataLocation(args);
+        break;
+      case 'list':
+        listDataLocations(args);
+        break;
+      case 'remove':
+        removeDataLocation(args);
+        break;
+      default:
+        console.error(`Unknown data command: ${subcommand}`);
         process.exit(1);
     }
     break;
