@@ -1380,9 +1380,16 @@ function generateCalendarCheatSheetHtml(rows, productionData) {
   const dayInfo = {};
   for (const [dayNum, dateStr] of Object.entries(calendar)) {
     const d = Number(dayNum);
-    const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(d));
-    const sceneIds = dayRows.map(r => r.fileId);
     const planEntry = shootPlan.find(e => Number(e.day) === d);
+    let sceneIds = [];
+
+    if (planEntry && Array.isArray(planEntry.scenes) && planEntry.scenes.length > 0) {
+      sceneIds = planEntry.scenes;
+    } else {
+      const dayRows = rows.filter(r => r.scheduledDays && r.scheduledDays.includes(d));
+      sceneIds = dayRows.map(r => r.fileId);
+    }
+
     const isSpecial = planEntry && planEntry.special;
     dayInfo[dateStr] = { dayNum, sceneIds, isSpecial, planEntry };
   }
@@ -1483,7 +1490,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
             <div class="quick-meta">
                 Scenes: ${totalScenes}<br>
                 Shoot days: ${totalDays}<br>
-                Last compiled: ${new Date().toLocaleString()}
+                Last compiled: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}
             </div>
         </div>
         <div class="dashboard-container">
@@ -1491,7 +1498,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 <header style="margin: 8px 0 40px 0; padding-left: 54px;">
                     <h1 class="brand-title brand-title-main" style="margin: 0; color: #111;">Creatures in the Tall Grass</h1>
                     <p style="opacity: 0.7; margin: 8px 0 0 0;">Production Dashboard · Official Shoot Plan</p>
-                    <p style="opacity: 0.5; margin: 8px 0 0 0; font-size: 0.9rem;">Last updated: ${new Date().toLocaleString()}</p>
+                    <p style="opacity: 0.5; margin: 8px 0 0 0; font-size: 0.9rem;">Last updated: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}</p>
                 </header>
 
                 ${calendarCheatSheetHtml}
