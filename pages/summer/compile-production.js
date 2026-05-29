@@ -1491,11 +1491,12 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 <header style="margin: 8px 0 40px 0; padding-left: 54px;">
                     <h1 class="brand-title brand-title-main" style="margin: 0; color: #111;">Creatures in the Tall Grass</h1>
                     <p style="opacity: 0.7; margin: 8px 0 0 0;">Production Dashboard · Official Shoot Plan</p>
+                    <p style="opacity: 0.5; margin: 8px 0 0 0; font-size: 0.9rem;">Last updated: ${new Date().toLocaleString()}</p>
                 </header>
 
+                ${calendarCheatSheetHtml}
                 ${cheatSheetHtml}
                 ${characterCheatSheetHtml}
-                ${calendarCheatSheetHtml}
                 <!-- LOCATION_CHEAT_SHEET_START --><!-- LOCATION_CHEAT_SHEET_END -->
                 ${shootPlanHtml}
             </main>
