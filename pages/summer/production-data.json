@@ -604,8 +604,7 @@
       "scenes": [
         "s02",
         "s08",
-        "s08b",
-        "s12"
+        "s08b"
       ],
       "locations": [
         "72 lake street, hamden ct"
@@ -709,7 +708,8 @@
       "date": "2026-06-16",
       "weekday": "Tuesday",
       "scenes": [
-        "s11"
+        "s11",
+        "s12"
       ],
       "crewCall": "GENERAL CREW CALL: 05:00 PM",
       "wardrobe": [
