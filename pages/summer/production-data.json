@@ -688,7 +688,6 @@
         "s14",
         "s14b",
         "s14c",
-        "s08c",
         "s08d"
       ],
       "crewCall": "GENERAL CREW CALL: 09:00 AM",
@@ -709,7 +708,8 @@
       "weekday": "Tuesday",
       "scenes": [
         "s11",
-        "s12"
+        "s12",
+        "s08c"
       ],
       "crewCall": "GENERAL CREW CALL: 05:00 PM",
       "wardrobe": [
