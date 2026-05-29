@@ -566,7 +566,8 @@
       "date": "2026-06-07",
       "weekday": "Sunday",
       "scenes": [
-        "s00"
+        "s00",
+        "s09c"
       ],
       "locations": [
         "Town Green",
@@ -762,8 +763,7 @@
       "date": "2026-06-26",
       "weekday": "Friday",
       "scenes": [
-        "s00",
-        "s09c"
+        "s00"
       ],
       "sourceNote": "D10 = 6.26.26 = Fri [D]<s00, s09c>"
     },
