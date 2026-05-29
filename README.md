@@ -39,7 +39,7 @@ Welcome to the **Living Wiki** for *Creatures in the Tall Grass*. This repositor
 - [Script](file:///home/alexg/Dev/film/pages/summer/script-system/index.html)
 
 ## 🚀 Deployment
-This repository is connected to Netlify and automatically deploys on git push to the main branch. Deployments are triggered through the ahoy.mr.ag@gmail.com Netlify account.
+This repository is connected to Netlify and automatically deploys on git push to the main branch. Deployments are triggered through the alex@ahoy.ooo Netlify account.
 
 > [!IMPORTANT]
 > This is a scientific, "found-footage" research repository. All entries should maintain a highly technical and objective tone.
