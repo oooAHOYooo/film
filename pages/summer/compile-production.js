@@ -1505,6 +1505,7 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 ${cheatSheetHtml}
                 ${characterCheatSheetHtml}
                 <!-- LOCATION_CHEAT_SHEET_START --><!-- LOCATION_CHEAT_SHEET_END -->
+                <!-- WARDROBE_SECTION_START --><!-- WARDROBE_SECTION_END -->
                 ${shootPlanHtml}
             </main>
         </div>
@@ -1905,17 +1906,26 @@ function compile() {
 
   let html = generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData);
 
-  // Preserve the hand-edited location cheat sheet section across recompiles
+  // Preserve hand-edited sections across recompiles
   const START_TAG = '<!-- LOCATION_CHEAT_SHEET_START -->';
   const END_TAG = '<!-- LOCATION_CHEAT_SHEET_END -->';
-  let preserved = '';
+  const WRD_START = '<!-- WARDROBE_SECTION_START -->';
+  const WRD_END = '<!-- WARDROBE_SECTION_END -->';
   try {
     const existing = fs.readFileSync(OUTPUT_HTML, 'utf8');
     const s = existing.indexOf(START_TAG);
     const e = existing.indexOf(END_TAG);
-    if (s !== -1 && e !== -1) preserved = existing.slice(s + START_TAG.length, e);
+    if (s !== -1 && e !== -1) {
+      const preserved = existing.slice(s + START_TAG.length, e);
+      html = html.replace(START_TAG + END_TAG, START_TAG + preserved + END_TAG);
+    }
+    const ws = existing.indexOf(WRD_START);
+    const we = existing.indexOf(WRD_END);
+    if (ws !== -1 && we !== -1) {
+      const preservedWrd = existing.slice(ws + WRD_START.length, we);
+      html = html.replace(WRD_START + WRD_END, WRD_START + preservedWrd + WRD_END);
+    }
   } catch (_) {}
-  html = html.replace(START_TAG + END_TAG, START_TAG + preserved + END_TAG);
 
   fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
   console.log(`✓ Created ${path.relative(ROOT, OUTPUT_HTML)}`);
