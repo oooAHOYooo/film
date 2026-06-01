@@ -25,6 +25,30 @@
       "Makayla"
     ]
   },
+  "s02.3": {
+    "durationMin": 45,
+    "time": "NIGHT",
+    "location": "Branford - Various Exteriors",
+    "shootDays": 0.5,
+    "assignedDay": 1,
+    "keyElements": "",
+    "productionNotes": "Dallas discovers weirdness of neighborhood and tall grass",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "branford-night-discovery": {
+    "durationMin": 45,
+    "time": "NIGHT",
+    "location": "Branford - Various Exteriors",
+    "shootDays": 0.5,
+    "assignedDay": 1,
+    "keyElements": "",
+    "productionNotes": "Dallas discovers weirdness of neighborhood and tall grass",
+    "cast": [
+      "Dallas"
+    ]
+  },
   "s04": {
     "durationMin": 180,
     "shootDays": 0.5,
@@ -567,6 +591,7 @@
       "weekday": "Sunday",
       "scenes": [
         "s00",
+        "s02.3",
         "s09c"
       ],
       "locations": [
