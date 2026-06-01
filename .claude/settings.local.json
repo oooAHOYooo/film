@@ -39,7 +39,8 @@
       "Bash(./film.js stats *)",
       "Bash(./film.js todo *)",
       "Bash(start *)",
-      "Bash(py --version)"
+      "Bash(py --version)",
+      "Bash(del *)"
     ]
   }
 }
