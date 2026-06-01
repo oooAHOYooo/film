@@ -1848,8 +1848,8 @@ function generateDayHtml(dayNum, rows, productionData) {
 
             <section style="margin-top:20px; display:flex; flex-direction:column; gap:20px;">
                 <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
-                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">LOCATION DETAILS & CALL TIMES</h3>
-                    <div style="font-size:0.9rem; min-height:40px; white-space: pre-wrap;">${summaryLocationDetails.length > 0 ? summaryLocationDetails.map(l => `<div style="margin-bottom: 4px;">${escapeHtml(l)}</div>`).join('') : '<div style="color:#666; font-style:italic;">1. Location Name (Address)\n   • Arrival: 08:00 AM\n   • Notes: Parking in rear</div>'}</div>
+                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">LOCATION DETAILS</h3>
+                    <div style="font-size:0.9rem;">${summaryLocationDetails.length > 0 ? summaryLocationDetails.map(l => `<div>${escapeHtml(l)}</div>`).join('') : '<div style="color:#999; font-style:italic;">1. Location [Address]</div>'}</div>
                 </div>
                 <div style="display:grid; gap:20px; grid-template-columns: 1fr 1fr;">
                     <div style="padding:14px; border:2px solid black; border-radius:8px;">
