@@ -639,7 +639,21 @@
       ],
       "crewCall": "GENERAL CREW CALL: 05:00 PM",
       "cast": [
-        "Dallas"
+        "Dallas",
+        "Makayla"
+      ],
+      "wardrobe": [
+        "Dallas: Outfit #3 (casual)",
+        "Makayla: Outfit #1 (field gear)"
+      ],
+      "props": [
+        "Sierra's Box",
+        "Ruby-red headphones",
+        "Ruby-red cassette player",
+        "Laptop with trailcam footage",
+        "Translucent crystal in petri dish",
+        "Oscillator",
+        "Audio headphones"
       ],
       "crew": [
         "1. Alex Gonzalez (Director, DP)",
@@ -669,11 +683,14 @@
         "Wrap: 10:30 PM EST"
       ],
       "wardrobe": [
-        "Dallas: Outfit #2"
+        "Dallas: Outfit #2 (Blue Shirt, White Pants, Jacket)"
       ],
       "props": [
         "Good Creature",
-        "Bad Creature"
+        "Bad Creature",
+        "Oscillator",
+        "Audio Recorder",
+        "Audio Headphones"
       ],
       "crew": [
         "1. Alex",
@@ -699,12 +716,22 @@
       ],
       "cast": [
         "Dallas",
-        "Dominic"
+        "Dominic",
+        "Makayla"
       ],
       "crewCall": "GENERAL CREW CALL: 01:00 PM",
       "wardrobe": [
         "Dallas: Outfit #3 (s03, s05 — morning walk / marsh)",
         "Dallas: Outfit #5 (s15a, s15b, s15c — investigation scenes)"
+      ],
+      "props": [
+        "Oscillator",
+        "Military-style antenna",
+        "Custom glass elements",
+        "Translucent crystal",
+        "Soldering iron",
+        "Copper coils",
+        "Radio components"
       ],
       "sourceNote": "D4 = 6.13.26 - Sat <s03,s05,s15a,s15b,s15c> [D, Dm walking + s15s]"
     },

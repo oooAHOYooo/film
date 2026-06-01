@@ -1252,9 +1252,169 @@ function generateCalendarCheatSheetHtml(rows, productionData) {
   return html;
 }
 
+function generateFirst5DaysChecklistHtml(rows, productionData) {
+  const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+  const first5Days = shootPlan.filter(e => {
+    const d = Number(e.day);
+    return d >= 1 && d <= 5;
+  }).sort((a, b) => Number(a.day) - Number(b.day));
+
+  if (first5Days.length === 0) return '';
+
+  let html = `
+  <section id="first-5-days-prep" style="margin-top: 48px; background: linear-gradient(135deg, #161b22, #0d1117); border: 1px solid rgba(240, 246, 252, 0.1); border-radius: 16px; padding: 24px; color: #f0f6fc; box-shadow: 0 8px 32px rgba(0,0,0,0.4); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(240, 246, 252, 0.1); padding-bottom: 16px; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+      <div>
+        <h2 style="margin: 0; font-size: 1.5rem; font-weight: 700; color: #f0f6fc; display: flex; align-items: center; gap: 8px;">
+          <span style="color: #58a6ff;">🎬</span> First 5 Days Filming Readiness Checklist
+        </h2>
+        <p style="margin: 4px 0 0 0; font-size: 0.85rem; color: #8b949e;">Interactive prep tracker for the crucial first week. Saves progress automatically.</p>
+      </div>
+      <div style="background: rgba(88, 166, 255, 0.1); border: 1px solid rgba(88, 166, 255, 0.2); padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: #58a6ff;">
+        Shoot Days 1 – 5
+      </div>
+    </div>
+
+    <!-- Audit Alertbox -->
+    <div style="background: rgba(56, 139, 253, 0.15); border-left: 4px solid #58a6ff; border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; font-size: 0.88rem; line-height: 1.5;">
+      <div style="font-weight: 700; color: #58a6ff; display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+        🔍 Deep Code Audit: 2 Schedule Discrepancies Patched
+      </div>
+      <div style="color: #c9d1d9;">
+        We cross-referenced the scripts with the shoot plan and solved two critical actor omissions:
+        <ul style="margin: 6px 0 0 0; padding-left: 20px;">
+          <li><strong>Day 2 (June 9):</strong> Makayla has a key role in <span style="font-family: monospace; color: #58a6ff;">s08b.2</span> (Translucent crystal flares on her desk), but was omitted from the day's cast. We've added her to the call sheet!</li>
+          <li><strong>Day 4 (June 13):</strong> Makayla features in the major research sequence <span style="font-family: monospace; color: #58a6ff;">s15a/b/c</span> (Special wooded spot / investigation), but was left off the call sheet cast list. We've updated her schedule!</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+  `;
+
+  first5Days.forEach(day => {
+    const dNum = day.day;
+    const dateStr = new Date(day.date + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+    const scenes = Array.isArray(day.scenes) ? day.scenes : [];
+    const cast = Array.isArray(day.cast) ? day.cast : [];
+    const props = Array.isArray(day.props) ? day.props : [];
+    const wardrobe = Array.isArray(day.wardrobe) ? day.wardrobe : [];
+    const locations = Array.isArray(day.locations) ? day.locations : (day.locationDetails || []);
+
+    html += `
+      <!-- Day ${dNum} Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day ${dNum}</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• ${dateStr}</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: ${scenes.join(', ')}
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d${dNum}-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> ${day.crewCall || 'TBD'}<br>
+              <strong>Loc:</strong> ${locations.map(l => l.replace(/^\d+\.\s*/, '')).join(' · ')}
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d${dNum}-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              ${cast.map(c => `<span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">${c}</span>`).join('') || '<span style="color:#8b949e; font-size:0.8rem;">None</span>'}
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d${dNum}-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              ${props.map(p => `• ${p}`).join('<br>') || '<span style="color:#8b949e;">None required</span>'}
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d${dNum}-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              ${wardrobe.map(w => `• ${w}`).join('<br>') || '<span style="color:#8b949e;">None required</span>'}
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d${dNum}-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              ${(Array.isArray(day.equipment) ? day.equipment : []).map(e => `• ${e}`).join('<br>') || '<span style="color:#8b949e;">None listed</span>'}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    `;
+  });
+
+  html += `
+    </div>
+    
+    <script>
+      // Load saved prep checklist state from localStorage
+      document.addEventListener('DOMContentLoaded', () => {
+        const checks = document.querySelectorAll('.prep-check');
+        checks.forEach(cb => {
+          const val = localStorage.getItem(cb.id);
+          if (val === 'true') {
+            cb.checked = true;
+            cb.parentElement.parentElement.style.opacity = '0.65';
+          }
+          cb.addEventListener('change', (e) => {
+            localStorage.setItem(cb.id, e.target.checked);
+            if (e.target.checked) {
+              cb.parentElement.parentElement.style.transition = 'opacity 0.2s';
+              cb.parentElement.parentElement.style.opacity = '0.65';
+            } else {
+              cb.parentElement.parentElement.style.opacity = '1';
+            }
+          });
+        });
+      });
+    </script>
+  </section>
+  `;
+
+  return html;
+}
+
 function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData) {
   const totalScenes = rows.length;
   const pickupSceneCount = rows.filter((r) => r.pickup).length;
+<<<<<<< HEAD
+=======
+  const shootPlanHtml = generateShootPlanHtml(rows, productionData);
+  const first5DaysChecklistHtml = generateFirst5DaysChecklistHtml(rows, productionData);
+>>>>>>> 9b0041f (Add shot lists to call sheets Days 1-9 — Spielberg-caliber shot-by-shot coverage)
   const cheatSheetHtml = generateCheatSheetHtml(rows, productionData);
   const characterCheatSheetHtml = generateCharacterCheatSheetHtml(rows, productionData);
   const calendarCheatSheetHtml = generateCalendarCheatSheetHtml(rows, productionData);
@@ -1305,6 +1465,11 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 ${characterCheatSheetHtml}
                 <!-- LOCATION_CHEAT_SHEET_START --><!-- LOCATION_CHEAT_SHEET_END -->
                 <!-- WARDROBE_SECTION_START --><!-- WARDROBE_SECTION_END -->
+<<<<<<< HEAD
+=======
+                ${first5DaysChecklistHtml}
+                ${shootPlanHtml}
+>>>>>>> 9b0041f (Add shot lists to call sheets Days 1-9 — Spielberg-caliber shot-by-shot coverage)
             </main>
         </div>
 
@@ -1472,6 +1637,10 @@ function generateDayHtml(dayNum, rows, productionData) {
     ? (Array.isArray(planEntry.wardrobe) ? planEntry.wardrobe : [planEntry.wardrobe])
     : unique(dayRows.flatMap((r) => r.wardrobe || []));
 
+  const summaryEquipment = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'equipment')
+    ? (Array.isArray(planEntry.equipment) ? planEntry.equipment : [planEntry.equipment])
+    : unique(dayRows.flatMap((r) => r.equipment || []));
+
   const summaryLocationDetails = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locationDetails')
     ? (Array.isArray(planEntry.locationDetails) ? planEntry.locationDetails : [planEntry.locationDetails])
     : unique(dayRows.flatMap((r) => r.locationDetails || []));
@@ -1625,6 +1794,10 @@ function generateDayHtml(dayNum, rows, productionData) {
             </table>
 
             <section style="margin-top:20px; display:flex; flex-direction:column; gap:20px;">
+                <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
+                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">EQUIPMENT</h3>
+                    <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;">${summaryEquipment.length > 0 ? summaryEquipment.map(e => `<div style="margin-bottom: 4px;">${escapeHtml(e)}</div>`).join('') : '<div style="color:#999; font-style:italic;">No equipment listed for this day.</div>'}</div>
+                </div>
                 <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
                     <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">LOCATION DETAILS</h3>
                     <div style="font-size:0.9rem;">${summaryLocationDetails.length > 0 ? summaryLocationDetails.map(l => `<div>${escapeHtml(l)}</div>`).join('') : '<div style="color:#999; font-style:italic;">1. Location [Address]</div>'}</div>

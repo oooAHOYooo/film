@@ -316,6 +316,93 @@
                 opacity: 0.5;
                 margin-left: 20px;
             }
+            .shoot-plan {
+                margin-bottom: 50px;
+            }
+            .shoot-plan-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 14px;
+            }
+            .shoot-plan-card {
+                background: #fff;
+                border: 1px solid #ccc;
+                border-radius: 12px;
+                padding: 14px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+                transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+                cursor: pointer;
+            }
+            .shoot-plan-card:hover {
+                transform: translateY(-2px);
+                border-color: #999;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            }
+            .shoot-plan-card.special {
+                border-color: #999;
+                border-style: dashed;
+                background: #fafafa;
+            }
+            .shoot-plan-head {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 12px;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #eee;
+            }
+            .shoot-plan-title {
+                font-weight: 800;
+                color: #111;
+                line-height: 1.1;
+            }
+            .shoot-plan-date {
+                font-size: 0.82rem;
+                color: #444;
+                margin-top: 4px;
+            }
+            .shoot-plan-note {
+                font-family: ui-monospace, monospace;
+                font-size: 0.74rem;
+                line-height: 1.35;
+                color: #333;
+                margin-bottom: 10px;
+                opacity: 0.9;
+            }
+            .shoot-plan-label {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                border-radius: 999px;
+                padding: 3px 8px;
+                font-size: 0.68rem;
+                letter-spacing: 0.05em;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: #fff;
+                background: #111;
+            }
+            .shoot-plan-chip-row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4px;
+                margin-top: 6px;
+            }
+            .shoot-plan-block {
+                margin-top: 10px;
+                font-size: 0.83rem;
+                line-height: 1.45;
+            }
+            .shoot-plan-block strong {
+                display: block;
+                margin-bottom: 4px;
+                font-size: 0.65rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: #666;
+            }
+
             .mobile-header {
                 display: none;
                 background: #fff;
@@ -467,6 +554,20 @@
                     border-color: currentColor !important;
                     box-shadow: none !important;
                 }
+                .shoot-plan-card {
+                    background: #fff !important;
+                    border: 1px solid #d0d7de !important;
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                .shoot-plan-label {
+                    color: #fff !important;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .shoot-plan-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;
                     page-break-inside: avoid;
@@ -566,7 +667,11 @@
             <div class="quick-meta">
                 Scenes: 40<br>
                 Shoot days: 16<br>
+<<<<<<< HEAD
                 Last compiled: 6/1/2026, 1:53:19 PM
+=======
+                Last compiled: 6/1/2026, 2:27:36 PM
+>>>>>>> 9b0041f (Add shot lists to call sheets Days 1-9 — Spielberg-caliber shot-by-shot coverage)
             </div>
         </div>
         <div class="dashboard-container">
@@ -574,7 +679,11 @@
                 <header style="margin: 8px 0 40px 0; padding-left: 54px;">
                     <h1 class="brand-title brand-title-main" style="margin: 0; color: #111;">Creatures in the Tall Grass</h1>
                     <p style="opacity: 0.7; margin: 8px 0 0 0;">Production Dashboard · Official Shoot Plan</p>
+<<<<<<< HEAD
                     <p style="opacity: 0.5; margin: 8px 0 0 0; font-size: 0.9rem;">Last updated: 6/1/2026, 1:53:19 PM</p>
+=======
+                    <p style="opacity: 0.5; margin: 8px 0 0 0; font-size: 0.9rem;">Last updated: 6/1/2026, 2:27:36 PM</p>
+>>>>>>> 9b0041f (Add shot lists to call sheets Days 1-9 — Spielberg-caliber shot-by-shot coverage)
                 </header>
 
                 
@@ -1176,6 +1285,774 @@
     </table>
   </div>
 </section><!-- WARDROBE_SECTION_END -->
+<<<<<<< HEAD
+=======
+                
+  <section id="first-5-days-prep" style="margin-top: 48px; background: linear-gradient(135deg, #161b22, #0d1117); border: 1px solid rgba(240, 246, 252, 0.1); border-radius: 16px; padding: 24px; color: #f0f6fc; box-shadow: 0 8px 32px rgba(0,0,0,0.4); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(240, 246, 252, 0.1); padding-bottom: 16px; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+      <div>
+        <h2 style="margin: 0; font-size: 1.5rem; font-weight: 700; color: #f0f6fc; display: flex; align-items: center; gap: 8px;">
+          <span style="color: #58a6ff;">🎬</span> First 5 Days Filming Readiness Checklist
+        </h2>
+        <p style="margin: 4px 0 0 0; font-size: 0.85rem; color: #8b949e;">Interactive prep tracker for the crucial first week. Saves progress automatically.</p>
+      </div>
+      <div style="background: rgba(88, 166, 255, 0.1); border: 1px solid rgba(88, 166, 255, 0.2); padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: #58a6ff;">
+        Shoot Days 1 – 5
+      </div>
+    </div>
+
+    <!-- Audit Alertbox -->
+    <div style="background: rgba(56, 139, 253, 0.15); border-left: 4px solid #58a6ff; border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; font-size: 0.88rem; line-height: 1.5;">
+      <div style="font-weight: 700; color: #58a6ff; display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+        🔍 Deep Code Audit: 2 Schedule Discrepancies Patched
+      </div>
+      <div style="color: #c9d1d9;">
+        We cross-referenced the scripts with the shoot plan and solved two critical actor omissions:
+        <ul style="margin: 6px 0 0 0; padding-left: 20px;">
+          <li><strong>Day 2 (June 9):</strong> Makayla has a key role in <span style="font-family: monospace; color: #58a6ff;">s08b.2</span> (Translucent crystal flares on her desk), but was omitted from the day's cast. We've added her to the call sheet!</li>
+          <li><strong>Day 4 (June 13):</strong> Makayla features in the major research sequence <span style="font-family: monospace; color: #58a6ff;">s15a/b/c</span> (Special wooded spot / investigation), but was left off the call sheet cast list. We've updated her schedule!</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+  
+      <!-- Day 1 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 1</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Sun, Jun 7</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s00, s02.3, s09c
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d1-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 5pm - at Alex's House - 206 Saint John<br>
+              <strong>Loc:</strong> Town Green · Branford High School · Stony Creek · Supply Ponds
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d1-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Dallas</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d1-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • 1. Oscillator<br>• 2. Audio Headphones
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d1-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • 1. Dallas Outfit #1<br>•    a. White Shirt<br>•    b. Blue Shorts
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d1-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Day 2 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 2</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Tue, Jun 9</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s02, s08b
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d2-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 05:00 PM<br>
+              <strong>Loc:</strong> 72 lake street, hamden ct
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d2-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Dallas</span><span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Makayla</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d2-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Sierra's Box<br>• Ruby-red headphones<br>• Ruby-red cassette player<br>• Laptop with trailcam footage<br>• Translucent crystal in petri dish<br>• Oscillator<br>• Audio headphones
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d2-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Dallas: Outfit #3 (casual)<br>• Makayla: Outfit #1 (field gear)
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d2-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Day 3 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 3</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Fri, Jun 12</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s08, s09, s10
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d3-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 05:00 PM — Alex's House (206 Saint John)<br>
+              <strong>Loc:</strong> Arrive on location: 5:30 PM · Branford neighborhoods [s08 — approach walk] · East Haven Nursery [s09 — marsh] · Jerry's House [s10 — night pickup] · Wrap: 10:30 PM EST
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d3-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="color:#8b949e; font-size:0.8rem;">None</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d3-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Good Creature<br>• Bad Creature<br>• Oscillator<br>• Audio Recorder<br>• Audio Headphones
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d3-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Dallas: Outfit #2 (Blue Shirt, White Pants, Jacket)
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d3-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Day 4 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 4</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Sat, Jun 13</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s03, s05, s15a, s15b, s15c
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d4-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 01:00 PM<br>
+              <strong>Loc:</strong> 
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d4-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Dallas</span><span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Dominic</span><span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Makayla</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d4-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Oscillator<br>• Military-style antenna<br>• Custom glass elements<br>• Translucent crystal<br>• Soldering iron<br>• Copper coils<br>• Radio components
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d4-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Dallas: Outfit #3 (s03, s05 — morning walk / marsh)<br>• Dallas: Outfit #5 (s15a, s15b, s15c — investigation scenes)
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d4-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Day 5 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 5</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Sun, Jun 14</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s01, s13, s14, s14b, s14c, s08d
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d5-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 09:00 AM<br>
+              <strong>Loc:</strong> 
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d5-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="color:#8b949e; font-size:0.8rem;">None</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d5-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • 1. Good Creature<br>• 2. Bad Creature<br>• 3. Portable Oscillator<br>• 4. Howie
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d5-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Dallas: Outfit #3
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d5-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+    </div>
+    
+    <script>
+      // Load saved prep checklist state from localStorage
+      document.addEventListener('DOMContentLoaded', () => {
+        const checks = document.querySelectorAll('.prep-check');
+        checks.forEach(cb => {
+          const val = localStorage.getItem(cb.id);
+          if (val === 'true') {
+            cb.checked = true;
+            cb.parentElement.parentElement.style.opacity = '0.65';
+          }
+          cb.addEventListener('change', (e) => {
+            localStorage.setItem(cb.id, e.target.checked);
+            if (e.target.checked) {
+              cb.parentElement.parentElement.style.transition = 'opacity 0.2s';
+              cb.parentElement.parentElement.style.opacity = '0.65';
+            } else {
+              cb.parentElement.parentElement.style.opacity = '1';
+            }
+          });
+        });
+      });
+    </script>
+  </section>
+  
+                
+    <section id="shoot-plan" class="shoot-plan">
+      <h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Detailed Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
+      <div class="shoot-plan-grid">
+        
+        
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/1.html" role="link" tabindex="0" aria-label="Open call sheet for Day 1">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 1</div>
+                  <div class="shoot-plan-date">Sunday, Jun 7, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 1 = 6.7.26 - Sun &lt;s00s&gt; Branford montage</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=branford-montage" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s00</a><a href="script-system/scene.html?id=branford-night-discovery" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s02.3</a><a href="production/days/1.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s09c</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>Town Green, Branford High School, Stony Creek, Supply Ponds</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">Dallas</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/2.html" role="link" tabindex="0" aria-label="Open call sheet for Day 2">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 2</div>
+                  <div class="shoot-plan-date">Tuesday, Jun 9, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 2 = 6.9.26 = Tues [s02,s08b][D]</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=dallas-night" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s02</a><a href="script-system/scene.html?id=the-research-beat" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08b</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>72 lake street, hamden ct</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">Dallas</span><span class="actor-chip" style="pointer-events:none; cursor:default;">Makayla</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/3.html" role="link" tabindex="0" aria-label="Open call sheet for Day 3">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 3</div>
+                  <div class="shoot-plan-date">Friday, Jun 12, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 3 = 6.12.26 - Fr &lt;s08,s09,s10&gt;[D]</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=dallas-marsh-walk" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08</a><a href="script-system/scene.html?id=dallas-night-work" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s09</a><a href="script-system/scene.html?id=shadows-in-wind" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s10</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>On Location (East Haven Nursery), Jerry's House</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/4.html" role="link" tabindex="0" aria-label="Open call sheet for Day 4">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 4</div>
+                  <div class="shoot-plan-date">Saturday, Jun 13, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">D4 = 6.13.26 - Sat &lt;s03,s05,s15a,s15b,s15c&gt; [D, Dm walking + s15s]</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=the-hum" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s03</a><a href="script-system/scene.html?id=marsh-walk-later" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s05</a><a href="script-system/scene.html?id=the-failed-test" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15a</a><a href="script-system/scene.html?id=the-tracking-box" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15b</a><a href="script-system/scene.html?id=dominics-confession" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15c</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">Dallas</span><span class="actor-chip" style="pointer-events:none; cursor:default;">Dominic</span><span class="actor-chip" style="pointer-events:none; cursor:default;">Makayla</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/5.html" role="link" tabindex="0" aria-label="Open call sheet for Day 5">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 5</div>
+                  <div class="shoot-plan-date">Sunday, Jun 14, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">D5 = 6.14.26 = Sun &lt;s01,s13,s14,s14b,s14c,s08b,s08c,s08d&gt;</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=arrival" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s01</a><a href="script-system/scene.html?id=entering-grass" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s13</a><a href="script-system/scene.html?id=creature-rescue" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14</a><a href="script-system/scene.html?id=the-field-journal" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14b</a><a href="script-system/scene.html?id=the-almost-discovery" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14c</a><a href="script-system/scene.html?id=the-return" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08d</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MARY</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAUL</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/6.html" role="link" tabindex="0" aria-label="Open call sheet for Day 6">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 6</div>
+                  <div class="shoot-plan-date">Tuesday, Jun 16, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 6 = 6.16.26 = Tues &lt;s11 + s12&gt;[D]</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=howie-walk-2" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s11</a><a href="script-system/scene.html?id=the-burn-mark" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s12</a><a href="script-system/scene.html?id=the-threshold" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08c</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/7.html" role="link" tabindex="0" aria-label="Open call sheet for Day 7">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 7</div>
+                  <div class="shoot-plan-date">Thursday, Jun 18, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 7 = 6.18.26 = Thurs [D]</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;">—</div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong>—</div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/8.html" role="link" tabindex="0" aria-label="Open call sheet for Day 8">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 8</div>
+                  <div class="shoot-plan-date">Friday, Jun 19, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 8 = 6.19.26 = Fri [D][H]</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;">—</div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong>—</div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/9.html" role="link" tabindex="0" aria-label="Open call sheet for Day 9">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 9</div>
+                  <div class="shoot-plan-date">Saturday, Jun 20, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">D9 = 6.20.26 = Sat &lt;s06,s17&gt;</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=news-vans" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s06</a><a href="script-system/scene.html?id=resonance" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">Dallas</span><span class="actor-chip" style="pointer-events:none; cursor:default;">Dominic</span><span class="actor-chip" style="pointer-events:none; cursor:default;">Pat Clendenen</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card special" data-call-sheet-href="production/days/9.5.html" role="link" tabindex="0" aria-label="Open call sheet for Day 9.5">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 9.5</div>
+                  <div class="shoot-plan-date">Sunday, Jun 21, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Note</span>
+              </div>
+              <div class="shoot-plan-note">D9.5 = 6.21.26 (Father's Day)</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;">—</div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>DALLAS HOUSE - Exterior</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/10.html" role="link" tabindex="0" aria-label="Open call sheet for Day 10">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 10</div>
+                  <div class="shoot-plan-date">Friday, Jun 26, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">D10 = 6.26.26 = Fri [D]&lt;s00, s09c&gt;</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=branford-montage" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s00</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong>—</div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/11.html" role="link" tabindex="0" aria-label="Open call sheet for Day 11">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 11</div>
+                  <div class="shoot-plan-date">Saturday, Jun 27, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">D11 = 6.27 = Sat &lt;s18,s19,s20,s28,s29,s30&gt; [D, Dm,...]</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=life-group-arrives" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s18</a><a href="script-system/scene.html?id=the-hymn" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s19</a><a href="script-system/scene.html?id=red-eyes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s20</a><a href="script-system/scene.html?id=full-circle" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s28</a><a href="production/days/11.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s29</a><a href="production/days/11.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s30</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JOSH</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT</span><span class="actor-chip" style="pointer-events:none; cursor:default;">SARAH</span><span class="actor-chip" style="pointer-events:none; cursor:default;">TYLER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT CLENDENEN</span><span class="actor-chip" style="pointer-events:none; cursor:default;">SASHA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">WOMAN</span><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/12.html" role="link" tabindex="0" aria-label="Open call sheet for Day 12">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 12</div>
+                  <div class="shoot-plan-date">Sunday, Jun 28, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">D12 = 6.28.26 = Sun [Church] &lt;s04,s07,s07b,s16,s17b,s17c&gt;</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=fellowship" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s04</a><a href="script-system/scene.html?id=the-coordinates" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s07</a><a href="script-system/scene.html?id=mr-mikes-warning" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s07b</a><a href="script-system/scene.html?id=the-escape" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s16</a><a href="script-system/scene.html?id=normal-day" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17b</a><a href="script-system/scene.html?id=mute-drive" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17c</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>Church</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLAA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/13.html" role="link" tabindex="0" aria-label="Open call sheet for Day 13">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 13</div>
+                  <div class="shoot-plan-date">Wednesday, Jul 1, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">D13 = 7.1.26 = Wed &lt;s26&gt;</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=final-echoes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s26</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong>—</div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/14.html" role="link" tabindex="0" aria-label="Open call sheet for Day 14">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 14</div>
+                  <div class="shoot-plan-date">Thursday, Jul 2, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 14 = 7.2.26 = Thursday &lt;s21,s22&gt;</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=creature-missing" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s21</a><a href="script-system/scene.html?id=marsh-confrontation" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s22</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/15.html" role="link" tabindex="0" aria-label="Open call sheet for Day 15">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 15</div>
+                  <div class="shoot-plan-date">Friday, Jul 3, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 15 = 7.3.26 Friday &lt;s23,s24&gt;</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=predator-attack" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s23</a><a href="script-system/scene.html?id=the-perimeter" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s24</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>—</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
+            </article>
+          
+            <article class="shoot-plan-card" data-call-sheet-href="production/days/16.html" role="link" tabindex="0" aria-label="Open call sheet for Day 16">
+              <div class="shoot-plan-head">
+                <div>
+                  <div class="shoot-plan-title">Day 16</div>
+                  <div class="shoot-plan-date">Sunday, Jul 5, 2026</div>
+                </div>
+                <span class="shoot-plan-label">Shoot</span>
+              </div>
+              <div class="shoot-plan-note">Day 16 = 7.5.26 Sunday &lt;s27,s15s,s25&gt; [s27 afternoon @ Jerry's House, then finale]</div>
+              <div class="shoot-plan-block">
+                <strong>Scenes</strong>
+                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=aftermath" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s27</a><a href="production/days/16.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15s</a><a href="script-system/scene.html?id=the-last-dinner" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s25</a></div>
+              </div>
+              <div class="shoot-plan-block">
+                <strong>Locations</strong>
+                <div>EXT. Jerry's House — Afternoon</div>
+              </div>
+              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT CLENDENEN</span></div></div>
+            </article>
+          
+      </div>
+    </section>
+  
+>>>>>>> 9b0041f (Add shot lists to call sheets Days 1-9 — Spielberg-caliber shot-by-shot coverage)
             </main>
         </div>
 
@@ -1201,6 +2078,26 @@
                     }
                 });
 
+                document.querySelectorAll('.shoot-plan-card[data-call-sheet-href]').forEach((card) => {
+                    const href = card.getAttribute('data-call-sheet-href');
+                    if (!href) return;
+
+                    const openCallSheet = () => {
+                        window.location.href = href;
+                    };
+
+                    card.addEventListener('click', (event) => {
+                        if (event.target.closest('a, button, select, input, textarea, label')) return;
+                        openCallSheet();
+                    });
+
+                    card.addEventListener('keydown', (event) => {
+                        if (event.key === 'Enter' || event.key === ' ') {
+                            event.preventDefault();
+                            openCallSheet();
+                        }
+                    });
+                });
             }
             if (document.readyState === 'loading') {
                 document.addEventListener('DOMContentLoaded', init);
