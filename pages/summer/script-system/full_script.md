@@ -1203,7 +1203,7 @@ Dallas looks at his wrist one more time, then at the rocking chair. Then at the 
 # Scene 8: The Trailcam
 
 <!-- FILMING ON = 
-DAY 4 - EVENING - 6.13.26 -->
+DAY 3 - EVENING - 6.12.26 -->
 
 EXT. DALLAS HOUSE - MOMENTS LATER (s08.1)
 
@@ -1255,7 +1255,7 @@ Dallas walks faster, pulling Howie along. He scrambles back toward the boardwalk
 
 # SCENE 8B: THE RESEARCH BEAT
 
-<!-- Filming on 6.13.26 - DAY 4 -->
+<!-- Filming on 6.9.26 - DAY 2 -->
 
 s08b.1 — INT. DALLAS WORKSHOP - DESK - NIGHT
 
@@ -3962,4 +3962,3 @@ Dallas walks alone with his wife's receiver in hand. The place where the lawn be
 In the Tall Grass Dallas senses the creature - and plays the pure recording of their hum - and realizes that it matches the exact cadence of Sierra's song.
 
 ---
-

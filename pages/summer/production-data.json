@@ -205,12 +205,11 @@
   "s08": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 3,
     "keyElements": "",
-    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "productionNotes": "Dallas tracks the sound alone through Branford neighborhoods toward the marsh",
     "cast": [
-      "Dallas",
-      "Howie"
+      "Dallas"
     ]
   },
   "s13": {
@@ -629,7 +628,6 @@
       "weekday": "Tuesday",
       "scenes": [
         "s02",
-        "s08",
         "s08b"
       ],
       "locations": [
@@ -651,21 +649,23 @@
       "misc": [
         "Alex's Phonenumber: [Insert Number Here]"
       ],
-      "sourceNote": "Day 2 = 6.9.26 = Tues [s02,s17][D]"
+      "sourceNote": "Day 2 = 6.9.26 = Tues [s02,s08b][D]"
     },
     {
       "day": 3,
       "date": "2026-06-12",
       "weekday": "Friday",
       "scenes": [
+        "s08",
         "s09",
         "s10"
       ],
       "crewCall": "GENERAL CREW CALL: 05:00 PM — Alex's House (206 Saint John)",
       "locationDetails": [
         "Arrive on location: 5:30 PM",
-        "Location 1: East Haven Nursery — Film 6:30 PM to 8:30 PM (s09)",
-        "Location 2: Jerry's House — Film 8:45 PM to 10:00 PM (s10)",
+        "1. Branford neighborhoods [s08 — approach walk]",
+        "2. East Haven Nursery [s09 — marsh]",
+        "3. Jerry's House [s10 — night pickup]",
         "Wrap: 10:30 PM EST"
       ],
       "wardrobe": [
@@ -682,9 +682,9 @@
         "4. Jerry"
       ],
       "misc": [
-        "Note: We also might need Howie the dog"
+        "Trailcam walk into the marsh; keep sound coverage flexible."
       ],
-      "sourceNote": "Day 3 = 6.12.26 - Fr <s09-s10>[D]"
+      "sourceNote": "Day 3 = 6.12.26 - Fr <s08,s09,s10>[D]"
     },
     {
       "day": 4,
@@ -762,7 +762,7 @@
       "date": "2026-06-19",
       "weekday": "Friday",
       "scenes": [],
-      "sourceNote": "Day 8 = 6.19.26 = Fri <s07,s08>[D][H]"
+      "sourceNote": "Day 8 = 6.19.26 = Fri [D][H]"
     },
     {
       "day": 9,
@@ -808,7 +808,7 @@
         "s29",
         "s30"
       ],
-      "sourceNote": "D11 = 6.27 = Sat <s08,s18,s19,s20,s28,s29,s30> [D, Dm,...]"
+      "sourceNote": "D11 = 6.27 = Sat <s18,s19,s20,s28,s29,s30> [D, Dm,...]"
     },
     {
       "day": 12,
@@ -930,7 +930,8 @@
     "durationMin": 30
   },
   "s08b": {
-    "durationMin": 60
+    "durationMin": 60,
+    "assignedDay": 2
   },
   "s08c": {
     "durationMin": 15

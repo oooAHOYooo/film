@@ -316,93 +316,6 @@
                 opacity: 0.5;
                 margin-left: 20px;
             }
-            .shoot-plan {
-                margin-bottom: 50px;
-            }
-            .shoot-plan-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 14px;
-            }
-            .shoot-plan-card {
-                background: #fff;
-                border: 1px solid #ccc;
-                border-radius: 12px;
-                padding: 14px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-                transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-                cursor: pointer;
-            }
-            .shoot-plan-card:hover {
-                transform: translateY(-2px);
-                border-color: #999;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            }
-            .shoot-plan-card.special {
-                border-color: #999;
-                border-style: dashed;
-                background: #fafafa;
-            }
-            .shoot-plan-head {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                gap: 12px;
-                margin-bottom: 10px;
-                padding-bottom: 10px;
-                border-bottom: 1px solid #eee;
-            }
-            .shoot-plan-title {
-                font-weight: 800;
-                color: #111;
-                line-height: 1.1;
-            }
-            .shoot-plan-date {
-                font-size: 0.82rem;
-                color: #444;
-                margin-top: 4px;
-            }
-            .shoot-plan-note {
-                font-family: ui-monospace, monospace;
-                font-size: 0.74rem;
-                line-height: 1.35;
-                color: #333;
-                margin-bottom: 10px;
-                opacity: 0.9;
-            }
-            .shoot-plan-label {
-                display: inline-flex;
-                align-items: center;
-                gap: 6px;
-                border-radius: 999px;
-                padding: 3px 8px;
-                font-size: 0.68rem;
-                letter-spacing: 0.05em;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: #fff;
-                background: #111;
-            }
-            .shoot-plan-chip-row {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 4px;
-                margin-top: 6px;
-            }
-            .shoot-plan-block {
-                margin-top: 10px;
-                font-size: 0.83rem;
-                line-height: 1.45;
-            }
-            .shoot-plan-block strong {
-                display: block;
-                margin-bottom: 4px;
-                font-size: 0.65rem;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                color: #666;
-            }
-
             .mobile-header {
                 display: none;
                 background: #fff;
@@ -554,20 +467,6 @@
                     border-color: currentColor !important;
                     box-shadow: none !important;
                 }
-                .shoot-plan-card {
-                    background: #fff !important;
-                    border: 1px solid #d0d7de !important;
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                }
-                .shoot-plan-label {
-                    color: #fff !important;
-                    -webkit-print-color-adjust: exact;
-                    print-color-adjust: exact;
-                }
-                .shoot-plan-grid {
-                    grid-template-columns: repeat(3, 1fr);
-                }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;
                     page-break-inside: avoid;
@@ -688,7 +587,7 @@
             <th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Sun</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Mon</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Tue</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Wed</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Thu</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Fri</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Sat</th>
           </tr>
         </thead>
-        <tbody><tr><td onclick="window.location.href='production/days/1.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">7</div><div style="font-weight:800;font-size:11px;">Day 1</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s00, s02.3, s09c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">8</div></td><td onclick="window.location.href='production/days/2.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">9</div><div style="font-weight:800;font-size:11px;">Day 2</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s02, s08, s08b</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">10</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">11</div></td><td onclick="window.location.href='production/days/3.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">12</div><div style="font-weight:800;font-size:11px;">Day 3</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s09, s10</div></td><td onclick="window.location.href='production/days/4.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">13</div><div style="font-weight:800;font-size:11px;">Day 4</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s03, s05, s15a, s15b, s15c</div></td></tr><tr><td onclick="window.location.href='production/days/5.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">14</div><div style="font-weight:800;font-size:11px;">Day 5</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s01, s13, s14, s14b, s14c, s08d</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">15</div></td><td onclick="window.location.href='production/days/6.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">16</div><div style="font-weight:800;font-size:11px;">Day 6</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s11, s12, s08c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">17</div></td><td onclick="window.location.href='production/days/7.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">18</div><div style="font-weight:800;font-size:11px;">Day 7</div></td><td onclick="window.location.href='production/days/8.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">19</div><div style="font-weight:800;font-size:11px;">Day 8</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s08</div></td><td onclick="window.location.href='production/days/9.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">20</div><div style="font-weight:800;font-size:11px;">Day 9</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s06, s17</div></td></tr><tr><td onclick="window.location.href='production/days/9.5.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f5f5dc;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">21</div><div style="font-weight:800;font-size:11px;">Day 9.5</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s01</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">22</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">23</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">24</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">25</div></td><td onclick="window.location.href='production/days/10.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">26</div><div style="font-weight:800;font-size:11px;">Day 10</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s00</div></td><td onclick="window.location.href='production/days/11.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">27</div><div style="font-weight:800;font-size:11px;">Day 11</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s18, s19, s20, s28, s29, s30</div></td></tr><tr><td onclick="window.location.href='production/days/12.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">28</div><div style="font-weight:800;font-size:11px;">Day 12</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s04, s07, s07b, s16, s17b, s17c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">29</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">30</div></td><td onclick="window.location.href='production/days/13.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">Jul 1</div><div style="font-weight:800;font-size:11px;">Day 13</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s26</div></td><td onclick="window.location.href='production/days/14.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">2</div><div style="font-weight:800;font-size:11px;">Day 14</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s21, s22</div></td><td onclick="window.location.href='production/days/15.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">3</div><div style="font-weight:800;font-size:11px;">Day 15</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s23, s24</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">4</div></td></tr><tr><td onclick="window.location.href='production/days/16.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">5</div><div style="font-weight:800;font-size:11px;">Day 16</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s27, s15s, s25</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">6</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">7</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">8</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">9</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">10</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">11</div></td></tr></tbody></table></div></section>
+        <tbody><tr><td onclick="window.location.href='production/days/1.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">7</div><div style="font-weight:800;font-size:11px;">Day 1</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s00, s02.3, s09c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">8</div></td><td onclick="window.location.href='production/days/2.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">9</div><div style="font-weight:800;font-size:11px;">Day 2</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s02, s08b</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">10</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">11</div></td><td onclick="window.location.href='production/days/3.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">12</div><div style="font-weight:800;font-size:11px;">Day 3</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s08, s09, s10</div></td><td onclick="window.location.href='production/days/4.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">13</div><div style="font-weight:800;font-size:11px;">Day 4</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s03, s05, s15a, s15b, s15c</div></td></tr><tr><td onclick="window.location.href='production/days/5.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">14</div><div style="font-weight:800;font-size:11px;">Day 5</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s01, s13, s14, s14b, s14c, s08d</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">15</div></td><td onclick="window.location.href='production/days/6.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">16</div><div style="font-weight:800;font-size:11px;">Day 6</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s11, s12, s08c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">17</div></td><td onclick="window.location.href='production/days/7.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">18</div><div style="font-weight:800;font-size:11px;">Day 7</div></td><td onclick="window.location.href='production/days/8.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">19</div><div style="font-weight:800;font-size:11px;">Day 8</div></td><td onclick="window.location.href='production/days/9.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">20</div><div style="font-weight:800;font-size:11px;">Day 9</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s06, s17</div></td></tr><tr><td onclick="window.location.href='production/days/9.5.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f5f5dc;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">21</div><div style="font-weight:800;font-size:11px;">Day 9.5</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s01</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">22</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">23</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">24</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">25</div></td><td onclick="window.location.href='production/days/10.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">26</div><div style="font-weight:800;font-size:11px;">Day 10</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s00</div></td><td onclick="window.location.href='production/days/11.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">27</div><div style="font-weight:800;font-size:11px;">Day 11</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s18, s19, s20, s28, s29, s30</div></td></tr><tr><td onclick="window.location.href='production/days/12.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">28</div><div style="font-weight:800;font-size:11px;">Day 12</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s04, s07, s07b, s16, s17b, s17c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">29</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">30</div></td><td onclick="window.location.href='production/days/13.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">Jul 1</div><div style="font-weight:800;font-size:11px;">Day 13</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s26</div></td><td onclick="window.location.href='production/days/14.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">2</div><div style="font-weight:800;font-size:11px;">Day 14</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s21, s22</div></td><td onclick="window.location.href='production/days/15.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">3</div><div style="font-weight:800;font-size:11px;">Day 15</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s23, s24</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">4</div></td></tr><tr><td onclick="window.location.href='production/days/16.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">5</div><div style="font-weight:800;font-size:11px;">Day 16</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s27, s15s, s25</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">6</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">7</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">8</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">9</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">10</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">11</div></td></tr></tbody></table></div></section>
                 
   <section style="margin-top:48px;">
     <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
@@ -769,11 +668,11 @@
       <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
       <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
       <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
-    </tr><tr data-scene="8" data-day="2" data-date="2026-06-09" style="border-bottom:1px solid #ddd;">
+    </tr><tr data-scene="8" data-day="3" data-date="2026-06-12" style="border-bottom:1px solid #ddd;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-marsh-walk">s08</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/2.html">The Trailcam</a></td>
-      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a></td>
-      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/2.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 9</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/3.html">The Trailcam</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/3.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jun 12</a></td>
       <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">60m</span></td>
     </tr><tr data-scene="8" data-day="2" data-date="2026-06-09" style="border-bottom:1px solid #ddd;">
       <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-research-beat">s08b</a></td>
@@ -1002,9 +901,9 @@
       <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/9.5.html" style="color:#555;text-decoration:none;">Jun 21</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
     </tr><tr style="border-bottom:1px solid #ddd;">
       <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/dallas.html">DALLAS</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">14</td>
-      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/1.html">1</a> <span style="color:#888;font-size:0.75em;">(s02.3)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a> <span style="color:#888;font-size:0.75em;">(s02)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a> <span style="color:#888;font-size:0.75em;">(s09, s10)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s13, s14, s14b, s14c, s17)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04, s07b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a> <span style="color:#888;font-size:0.75em;">(s11, s12)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/8.html">8</a> <span style="color:#888;font-size:0.75em;">(s08)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a> <span style="color:#888;font-size:0.75em;">(s03, s05, s06, s17)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.5.html">9.5</a> <span style="color:#888;font-size:0.75em;">(s01)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s15b, s15c, s16)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s21, s22)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25)</span></td>
-      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/1.html" style="color:#555;text-decoration:none;">Jun 7</a>, <a href="production/days/2.html" style="color:#555;text-decoration:none;">Jun 9</a>, <a href="production/days/3.html" style="color:#555;text-decoration:none;">Jun 12</a>, <a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/6.html" style="color:#555;text-decoration:none;">Jun 16</a>, <a href="production/days/8.html" style="color:#555;text-decoration:none;">Jun 19</a>, <a href="production/days/9.html" style="color:#555;text-decoration:none;">Jun 20</a>, <a href="production/days/9.5.html" style="color:#555;text-decoration:none;">Jun 21</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">13</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/1.html">1</a> <span style="color:#888;font-size:0.75em;">(s02.3)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a> <span style="color:#888;font-size:0.75em;">(s02, s08b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a> <span style="color:#888;font-size:0.75em;">(s08, s09, s10)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s13, s14, s14b, s14c, s17)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04, s07b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a> <span style="color:#888;font-size:0.75em;">(s11, s12)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a> <span style="color:#888;font-size:0.75em;">(s03, s05, s06, s17)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.5.html">9.5</a> <span style="color:#888;font-size:0.75em;">(s01)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s15b, s15c, s16)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s21, s22)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/1.html" style="color:#555;text-decoration:none;">Jun 7</a>, <a href="production/days/2.html" style="color:#555;text-decoration:none;">Jun 9</a>, <a href="production/days/3.html" style="color:#555;text-decoration:none;">Jun 12</a>, <a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/6.html" style="color:#555;text-decoration:none;">Jun 16</a>, <a href="production/days/9.html" style="color:#555;text-decoration:none;">Jun 20</a>, <a href="production/days/9.5.html" style="color:#555;text-decoration:none;">Jun 21</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
     </tr><tr style="border-bottom:1px solid #ddd;">
       <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/dominic.html">DOMINIC</a></td>
       <td style="padding:5px 10px;border-bottom:1px solid #ddd;">8</td>
@@ -1141,9 +1040,9 @@
         <tr style="border-bottom:1px solid #eee;">
           <td style="padding:6px 10px;font-weight:700;white-space:nowrap;">Outfit #3</td>
           <td style="padding:6px 10px;color:#aaa;font-style:italic;">TBD</td>
-          <td style="padding:6px 10px;color:#555;font-size:0.85rem;">Daytime casual · morning walk with Dominic · town errands · outdoor investigation · creature care at home</td>
+          <td style="padding:6px 10px;color:#555;font-size:0.85rem;">Daytime casual · morning walk with Dominic · neighborhood track to the marsh · outdoor investigation · creature care at home</td>
           <td style="padding:6px 10px;color:#666;font-size:0.8rem;">s02, s03, s05, s08, s08b, s08d, s11, s12, s13, s14, s14b, s14c</td>
-          <td style="padding:6px 10px;color:#666;">Days 2, 4, 5, 6</td>
+          <td style="padding:6px 10px;color:#666;">Days 2, 3, 4, 5, 6</td>
         </tr>
         <tr style="border-bottom:1px solid #eee;">
           <td style="padding:6px 10px;font-weight:700;white-space:nowrap;">Outfit #4</td>
@@ -1278,354 +1177,6 @@
   </div>
 </section><!-- WARDROBE_SECTION_END -->
                 
-    <section id="shoot-plan" class="shoot-plan">
-      <h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Detailed Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
-      <div class="shoot-plan-grid">
-        
-        
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/1.html" role="link" tabindex="0" aria-label="Open call sheet for Day 1">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 1</div>
-                  <div class="shoot-plan-date">Sunday, Jun 7, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 1 = 6.7.26 - Sun &lt;s00s&gt; Branford montage</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=branford-montage" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s00</a><a href="script-system/scene.html?id=branford-night-discovery" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s02.3</a><a href="production/days/1.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s09c</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>Town Green, Branford High School, Stony Creek, Supply Ponds</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">Dallas</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/2.html" role="link" tabindex="0" aria-label="Open call sheet for Day 2">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 2</div>
-                  <div class="shoot-plan-date">Tuesday, Jun 9, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 2 = 6.9.26 = Tues [s02,s17][D]</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=dallas-night" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s02</a><a href="script-system/scene.html?id=dallas-marsh-walk" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08</a><a href="script-system/scene.html?id=the-research-beat" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08b</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>72 lake street, hamden ct</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">Dallas</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/3.html" role="link" tabindex="0" aria-label="Open call sheet for Day 3">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 3</div>
-                  <div class="shoot-plan-date">Friday, Jun 12, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 3 = 6.12.26 - Fr &lt;s09-s10&gt;[D]</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=dallas-night-work" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s09</a><a href="script-system/scene.html?id=shadows-in-wind" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s10</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>On Location (East Haven Nursery), Jerry's House</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/4.html" role="link" tabindex="0" aria-label="Open call sheet for Day 4">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 4</div>
-                  <div class="shoot-plan-date">Saturday, Jun 13, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">D4 = 6.13.26 - Sat &lt;s03,s05,s15a,s15b,s15c&gt; [D, Dm walking + s15s]</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=the-hum" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s03</a><a href="script-system/scene.html?id=marsh-walk-later" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s05</a><a href="script-system/scene.html?id=the-failed-test" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15a</a><a href="script-system/scene.html?id=the-tracking-box" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15b</a><a href="script-system/scene.html?id=dominics-confession" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15c</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">Dallas</span><span class="actor-chip" style="pointer-events:none; cursor:default;">Dominic</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/5.html" role="link" tabindex="0" aria-label="Open call sheet for Day 5">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 5</div>
-                  <div class="shoot-plan-date">Sunday, Jun 14, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">D5 = 6.14.26 = Sun &lt;s01,s13,s14,s14b,s14c,s08b,s08c,s08d&gt;</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=arrival" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s01</a><a href="script-system/scene.html?id=entering-grass" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s13</a><a href="script-system/scene.html?id=creature-rescue" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14</a><a href="script-system/scene.html?id=the-field-journal" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14b</a><a href="script-system/scene.html?id=the-almost-discovery" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s14c</a><a href="script-system/scene.html?id=the-return" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08d</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MARY</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAUL</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/6.html" role="link" tabindex="0" aria-label="Open call sheet for Day 6">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 6</div>
-                  <div class="shoot-plan-date">Tuesday, Jun 16, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 6 = 6.16.26 = Tues &lt;s11 + s12&gt;[D]</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=howie-walk-2" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s11</a><a href="script-system/scene.html?id=the-burn-mark" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s12</a><a href="script-system/scene.html?id=the-threshold" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s08c</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/7.html" role="link" tabindex="0" aria-label="Open call sheet for Day 7">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 7</div>
-                  <div class="shoot-plan-date">Thursday, Jun 18, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 7 = 6.18.26 = Thurs [D]</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;">—</div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong>—</div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/8.html" role="link" tabindex="0" aria-label="Open call sheet for Day 8">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 8</div>
-                  <div class="shoot-plan-date">Friday, Jun 19, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 8 = 6.19.26 = Fri &lt;s07,s08&gt;[D][H]</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;">—</div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/9.html" role="link" tabindex="0" aria-label="Open call sheet for Day 9">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 9</div>
-                  <div class="shoot-plan-date">Saturday, Jun 20, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">D9 = 6.20.26 = Sat &lt;s06,s17&gt;</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=news-vans" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s06</a><a href="script-system/scene.html?id=resonance" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">Dallas</span><span class="actor-chip" style="pointer-events:none; cursor:default;">Dominic</span><span class="actor-chip" style="pointer-events:none; cursor:default;">Pat Clendenen</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card special" data-call-sheet-href="production/days/9.5.html" role="link" tabindex="0" aria-label="Open call sheet for Day 9.5">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 9.5</div>
-                  <div class="shoot-plan-date">Sunday, Jun 21, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Note</span>
-              </div>
-              <div class="shoot-plan-note">D9.5 = 6.21.26 (Father's Day)</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;">—</div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>DALLAS HOUSE - Exterior</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/10.html" role="link" tabindex="0" aria-label="Open call sheet for Day 10">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 10</div>
-                  <div class="shoot-plan-date">Friday, Jun 26, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">D10 = 6.26.26 = Fri [D]&lt;s00, s09c&gt;</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=branford-montage" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s00</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong>—</div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/11.html" role="link" tabindex="0" aria-label="Open call sheet for Day 11">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 11</div>
-                  <div class="shoot-plan-date">Saturday, Jun 27, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">D11 = 6.27 = Sat &lt;s08,s18,s19,s20,s28,s29,s30&gt; [D, Dm,...]</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=life-group-arrives" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s18</a><a href="script-system/scene.html?id=the-hymn" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s19</a><a href="script-system/scene.html?id=red-eyes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s20</a><a href="script-system/scene.html?id=full-circle" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s28</a><a href="production/days/11.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s29</a><a href="production/days/11.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s30</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JOSH</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT</span><span class="actor-chip" style="pointer-events:none; cursor:default;">SARAH</span><span class="actor-chip" style="pointer-events:none; cursor:default;">TYLER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT CLENDENEN</span><span class="actor-chip" style="pointer-events:none; cursor:default;">SASHA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">WOMAN</span><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/12.html" role="link" tabindex="0" aria-label="Open call sheet for Day 12">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 12</div>
-                  <div class="shoot-plan-date">Sunday, Jun 28, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">D12 = 6.28.26 = Sun [Church] &lt;s04,s07,s07b,s16,s17b,s17c&gt;</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=fellowship" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s04</a><a href="script-system/scene.html?id=the-coordinates" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s07</a><a href="script-system/scene.html?id=mr-mikes-warning" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s07b</a><a href="script-system/scene.html?id=the-escape" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s16</a><a href="script-system/scene.html?id=normal-day" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17b</a><a href="script-system/scene.html?id=mute-drive" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s17c</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>Church</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLAA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/13.html" role="link" tabindex="0" aria-label="Open call sheet for Day 13">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 13</div>
-                  <div class="shoot-plan-date">Wednesday, Jul 1, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">D13 = 7.1.26 = Wed &lt;s26&gt;</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=final-echoes" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s26</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong>—</div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/14.html" role="link" tabindex="0" aria-label="Open call sheet for Day 14">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 14</div>
-                  <div class="shoot-plan-date">Thursday, Jul 2, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 14 = 7.2.26 = Thursday &lt;s21,s22&gt;</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=creature-missing" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s21</a><a href="script-system/scene.html?id=marsh-confrontation" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s22</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">JANICE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/15.html" role="link" tabindex="0" aria-label="Open call sheet for Day 15">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 15</div>
-                  <div class="shoot-plan-date">Friday, Jul 3, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 15 = 7.3.26 Friday &lt;s23,s24&gt;</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=predator-attack" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s23</a><a href="script-system/scene.html?id=the-perimeter" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s24</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>—</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span></div></div>
-            </article>
-          
-            <article class="shoot-plan-card" data-call-sheet-href="production/days/16.html" role="link" tabindex="0" aria-label="Open call sheet for Day 16">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day 16</div>
-                  <div class="shoot-plan-date">Sunday, Jul 5, 2026</div>
-                </div>
-                <span class="shoot-plan-label">Shoot</span>
-              </div>
-              <div class="shoot-plan-note">Day 16 = 7.5.26 Sunday &lt;s27,s15s,s25&gt; [s27 afternoon @ Jerry's House, then finale]</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;"><a href="script-system/scene.html?id=aftermath" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s27</a><a href="production/days/16.html" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s15s</a><a href="script-system/scene.html?id=the-last-dinner" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">s25</a></div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>EXT. Jerry's House — Afternoon</div>
-              </div>
-              <div class="shoot-plan-block"><strong>Actors</strong><div class="shoot-plan-chip-row"><span class="actor-chip" style="pointer-events:none; cursor:default;">ASHER</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DALLAS</span><span class="actor-chip" style="pointer-events:none; cursor:default;">DOMINIC</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MAKAYLA</span><span class="actor-chip" style="pointer-events:none; cursor:default;">MR MIKE</span><span class="actor-chip" style="pointer-events:none; cursor:default;">PAT CLENDENEN</span></div></div>
-            </article>
-          
-      </div>
-    </section>
-  
             </main>
         </div>
 
@@ -1651,26 +1202,6 @@
                     }
                 });
 
-                document.querySelectorAll('.shoot-plan-card[data-call-sheet-href]').forEach((card) => {
-                    const href = card.getAttribute('data-call-sheet-href');
-                    if (!href) return;
-
-                    const openCallSheet = () => {
-                        window.location.href = href;
-                    };
-
-                    card.addEventListener('click', (event) => {
-                        if (event.target.closest('a, button, select, input, textarea, label')) return;
-                        openCallSheet();
-                    });
-
-                    card.addEventListener('keydown', (event) => {
-                        if (event.key === 'Enter' || event.key === ' ') {
-                            event.preventDefault();
-                            openCallSheet();
-                        }
-                    });
-                });
             }
             if (document.readyState === 'loading') {
                 document.addEventListener('DOMContentLoaded', init);
@@ -1681,4 +1212,3 @@
         </script>
     </body>
 </html>
-
