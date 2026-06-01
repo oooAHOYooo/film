@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -315,93 +315,6 @@
                 opacity: 0.5;
                 margin-left: 20px;
             }
-            .shoot-plan {
-                margin-bottom: 50px;
-            }
-            .shoot-plan-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 14px;
-            }
-            .shoot-plan-card {
-                background: #fff;
-                border: 1px solid #ccc;
-                border-radius: 12px;
-                padding: 14px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-                transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-                cursor: pointer;
-            }
-            .shoot-plan-card:hover {
-                transform: translateY(-2px);
-                border-color: #999;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            }
-            .shoot-plan-card.special {
-                border-color: #999;
-                border-style: dashed;
-                background: #fafafa;
-            }
-            .shoot-plan-head {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                gap: 12px;
-                margin-bottom: 10px;
-                padding-bottom: 10px;
-                border-bottom: 1px solid #eee;
-            }
-            .shoot-plan-title {
-                font-weight: 800;
-                color: #111;
-                line-height: 1.1;
-            }
-            .shoot-plan-date {
-                font-size: 0.82rem;
-                color: #444;
-                margin-top: 4px;
-            }
-            .shoot-plan-note {
-                font-family: ui-monospace, monospace;
-                font-size: 0.74rem;
-                line-height: 1.35;
-                color: #333;
-                margin-bottom: 10px;
-                opacity: 0.9;
-            }
-            .shoot-plan-label {
-                display: inline-flex;
-                align-items: center;
-                gap: 6px;
-                border-radius: 999px;
-                padding: 3px 8px;
-                font-size: 0.68rem;
-                letter-spacing: 0.05em;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: #fff;
-                background: #111;
-            }
-            .shoot-plan-chip-row {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 4px;
-                margin-top: 6px;
-            }
-            .shoot-plan-block {
-                margin-top: 10px;
-                font-size: 0.83rem;
-                line-height: 1.45;
-            }
-            .shoot-plan-block strong {
-                display: block;
-                margin-bottom: 4px;
-                font-size: 0.65rem;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                color: #666;
-            }
-
             .mobile-header {
                 display: none;
                 background: #fff;
@@ -552,20 +465,6 @@
                 .day-badge {
                     border-color: currentColor !important;
                     box-shadow: none !important;
-                }
-                .shoot-plan-card {
-                    background: #fff !important;
-                    border: 1px solid #d0d7de !important;
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                }
-                .shoot-plan-label {
-                    color: #fff !important;
-                    -webkit-print-color-adjust: exact;
-                    print-color-adjust: exact;
-                }
-                .shoot-plan-grid {
-                    grid-template-columns: repeat(3, 1fr);
                 }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;
@@ -784,7 +683,7 @@
             <section style="margin-top:20px; display:flex; flex-direction:column; gap:20px;">
                 <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
                     <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">LOCATION DETAILS</h3>
-                    <div style="font-size:0.9rem;"><div>1. Church Fellowship Grounds [TBD]</div><div>2. Dominic's House [Basement]</div><div>3. Dallas's House / Branford Streets [72 Lake St &amp; Neighborhood]</div><div>4. Grocery Store / Costco [TBD]</div><div>5. Town Hall / Branford Downtown [Branford, CT]</div></div>
+                    <div style="font-size:0.9rem;"><div style="color:#999; font-style:italic;">1. Location [Address]</div></div>
                 </div>
                 <div style="display:grid; gap:20px; grid-template-columns: 1fr 1fr;">
                     <div style="padding:14px; border:2px solid black; border-radius:8px;">
@@ -811,198 +710,8 @@
                 </div>
             </section>
 
-
-            <section style="margin-top:36px;">
-                <h3 style="margin:0 0 14px 0; font-size:0.72rem; font-weight:800; letter-spacing:0.14em; text-transform:uppercase; color:#111; border-bottom:2px solid #111; padding-bottom:7px;">SHOT LIST</h3>
-                <div style="margin-bottom:14px; border-radius:10px; overflow:hidden; border:1px solid #e0e0e0; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-                    <div style="background:#111; color:#fff; padding:7px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">S04 — THE FELLOWSHIP</div>
-                    <table style="width:100%; border-collapse:collapse; font-size:0.81rem;">
-                        <thead><tr style="background:#f5f5f5;">
-                            <th style="width:50px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">SHOT</th>
-                            <th style="width:78px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">TYPE</th>
-                            <th style="padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">DESCRIPTION</th>
-                            <th style="width:150px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">NOTES</th>
-                        </tr></thead>
-                        <tbody>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">EXT. CHURCH FELLOWSHIP LAWN — AFTERNOON</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">1A</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Fellowship picnic in progress — paper plates, folding tables, kids running</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">1B</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Mary introducing Dallas to Paul — warm, effortful smiles</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">1C</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Makayla and Asher at edge of group — recording equipment concealed in bag</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">1D</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">CLOSE</td><td style="padding:6px 12px; color:#222;">Makayla pointing small microphone toward edge of woods; phone app graphs the frequency</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">1E</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">TWO SHOT</td><td style="padding:6px 12px; color:#222;">Dallas and Janice — first exchange; she studies him carefully</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">1F</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">A shared glance between Makayla and Asher — the hum is spiking</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div style="margin-bottom:14px; border-radius:10px; overflow:hidden; border:1px solid #e0e0e0; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-                    <div style="background:#111; color:#fff; padding:7px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">S07 — THE COORDINATES</div>
-                    <table style="width:100%; border-collapse:collapse; font-size:0.81rem;">
-                        <thead><tr style="background:#f5f5f5;">
-                            <th style="width:50px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">SHOT</th>
-                            <th style="width:78px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">TYPE</th>
-                            <th style="padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">DESCRIPTION</th>
-                            <th style="width:150px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">NOTES</th>
-                        </tr></thead>
-                        <tbody>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">INT. DOMINIC'S BASEMENT — NIGHT</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">2A</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Dallas descending stairs — Makayla's maps everywhere, cables, recording rigs</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">2B</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Makayla pointing to frequency map — range of numbers, coordinates pinned</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">2C</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">INSERT</td><td style="padding:6px 12px; color:#222;">Map detail — "115.3" circled in red ink, star beside it</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">2D</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">TWO SHOT</td><td style="padding:6px 12px; color:#222;">Makayla and Dallas — what do the coordinates mean</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">2E</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Mr. Mike in corner rocking chair — watching without speaking</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">2F</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">CLOSE</td><td style="padding:6px 12px; color:#222;">Mr. Mike's knuckles white on armrest</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div style="margin-bottom:14px; border-radius:10px; overflow:hidden; border:1px solid #e0e0e0; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-                    <div style="background:#111; color:#fff; padding:7px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">S07B — MR. MIKE'S WARNING</div>
-                    <table style="width:100%; border-collapse:collapse; font-size:0.81rem;">
-                        <thead><tr style="background:#f5f5f5;">
-                            <th style="width:50px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">SHOT</th>
-                            <th style="width:78px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">TYPE</th>
-                            <th style="padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">DESCRIPTION</th>
-                            <th style="width:150px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">NOTES</th>
-                        </tr></thead>
-                        <tbody>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">INT. DOMINIC'S BASEMENT — CONTINUOUS</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">3A</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Mr. Mike slowly rising from his chair; Makayla and Dallas turn</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">3B</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">CLOSE</td><td style="padding:6px 12px; color:#222;">Mr. Mike leaning close to Dallas — "You leave it"</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">3C</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Dallas holding his ground, voice steady — "We're not leaving it"</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">3D</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">CLOSE</td><td style="padding:6px 12px; color:#222;">Mr. Mike's eyes; something behind them that isn't warning — it's grief</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">3E</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Mr. Mike returning to his chair without another word</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div style="margin-bottom:14px; border-radius:10px; overflow:hidden; border:1px solid #e0e0e0; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-                    <div style="background:#111; color:#fff; padding:7px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">S16 — BACK HOME</div>
-                    <table style="width:100%; border-collapse:collapse; font-size:0.81rem;">
-                        <thead><tr style="background:#f5f5f5;">
-                            <th style="width:50px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">SHOT</th>
-                            <th style="width:78px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">TYPE</th>
-                            <th style="padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">DESCRIPTION</th>
-                            <th style="width:150px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">NOTES</th>
-                        </tr></thead>
-                        <tbody>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">EXT. BRANFORD STREETS — DUSK</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">4A</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Dallas, Dominic, Makayla, Asher emerging from woodland trail</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">4B</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Asher suddenly stumbling — holding his head, disoriented</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">4C</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Asher collapsing on the sidewalk — group rushing toward him</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">4D</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">CLOSE</td><td style="padding:6px 12px; color:#222;">Asher's hand gripping pavement — bead string looped in his fist</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">EXT. DALLAS STREET — MOMENTS LATER</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">4E</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Janice's minivan pulling up fast — she gets out before it stops</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">4F</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">TWO SHOT</td><td style="padding:6px 12px; color:#222;">Janice and Makayla — Makayla explaining; Janice's expression hardening</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">4G</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Asher in Janice's arms — eyes opening; a quiet reassurance</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div style="margin-bottom:14px; border-radius:10px; overflow:hidden; border:1px solid #e0e0e0; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-                    <div style="background:#111; color:#fff; padding:7px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">S17B — NORMAL DAY</div>
-                    <table style="width:100%; border-collapse:collapse; font-size:0.81rem;">
-                        <thead><tr style="background:#f5f5f5;">
-                            <th style="width:50px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">SHOT</th>
-                            <th style="width:78px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">TYPE</th>
-                            <th style="padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">DESCRIPTION</th>
-                            <th style="width:150px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">NOTES</th>
-                        </tr></thead>
-                        <tbody>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">INT. GROCERY STORE / COSTCO — DAY (CROSS-CUT)</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">5A</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Dominic pushing cart down fluorescent aisles — completely ordinary</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">5B</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Dominic picking up two kinds of cereal — comparing</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">5C</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Dominic on phone — voice low, urgent; hand shielding mouth</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">INT. DALLAS ATTIC — SAME TIME</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">5D</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Dallas at desk — maps, graphs, equations covering the walls</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">5E</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">CLOSE</td><td style="padding:6px 12px; color:#222;">Dallas's finger tracing a frequency line — it's going up</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">INT. MAKAYLA'S LAIR — SAME TIME</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">5F</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Makayla and Asher surrounded by pinned maps and tangled cables</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">5G</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">INSERT</td><td style="padding:6px 12px; color:#222;">Makayla's map — a ring of pins converging toward the marsh center</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div style="margin-bottom:14px; border-radius:10px; overflow:hidden; border:1px solid #e0e0e0; box-shadow:0 1px 6px rgba(0,0,0,0.06);">
-                    <div style="background:#111; color:#fff; padding:7px 14px; font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase;">S17C — MUTE DRIVE</div>
-                    <table style="width:100%; border-collapse:collapse; font-size:0.81rem;">
-                        <thead><tr style="background:#f5f5f5;">
-                            <th style="width:50px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">SHOT</th>
-                            <th style="width:78px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">TYPE</th>
-                            <th style="padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">DESCRIPTION</th>
-                            <th style="width:150px; padding:6px 12px; text-align:left; font-size:0.68rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:#555; border-bottom:1px solid #e0e0e0;">NOTES</th>
-                        </tr></thead>
-                        <tbody>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">INT. JANICE'S MINIVAN — DAY</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">6A</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">INT WIDE</td><td style="padding:6px 12px; color:#222;">Janice driving — Makayla and Asher in back seat; no one speaking</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">6B</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Makayla watching Janice's hands on the wheel</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">6C</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">CLOSE</td><td style="padding:6px 12px; color:#222;">Asher looking out the window — the burn marks passing</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr><td colspan="4" style="background:#f9f9f9; padding:5px 12px; font-size:0.65rem; font-weight:700; letter-spacing:0.09em; text-transform:uppercase; color:#888; border-bottom:1px solid #ebebeb;">EXT. BRANFORD DOWNTOWN — MOVING SHOT</td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">6D</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">WIDE</td><td style="padding:6px 12px; color:#222;">Minivan rolling slowly past Town Hall — burn marks scorched into the steps</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">6E</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">CLOSE</td><td style="padding:6px 12px; color:#222;">Janice's hand tightening on the wheel</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                            <tr style="border-bottom:1px solid #ebebeb;"><td style="padding:6px 12px; font-weight:600; color:#111;">6F</td><td style="padding:6px 12px; color:#666; font-size:0.78rem;">MED</td><td style="padding:6px 12px; color:#222;">Janice finally speaking — "Your mother knew, didn't she."</td><td style="padding:6px 12px; color:#ccc; font-style:italic; font-size:0.76rem;"></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <section style="margin-top:30px;">
-                <h3 style="margin:20px 0 10px 0; border-bottom:1px solid black;">EQUIPMENT</h3>
-                <div style="display:grid; gap:20px; grid-template-columns: 1fr 1fr 1fr;">
-                    <div style="padding:14px; border:2px solid black; border-radius:8px;">
-                        <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px;">CAMERA</h3>
-                        <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;"><div style="margin-bottom: 4px;">1. Red Komodo 6K</div><div style="margin-bottom: 4px;">2. Battery Kit</div><div style="margin-bottom: 4px;">3. Camera Card &mdash; 512GB</div></div>
-                    </div>
-                    <div style="padding:14px; border:2px solid black; border-radius:8px;">
-                        <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px;">AUDIO</h3>
-                        <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;"><div style="margin-bottom: 4px;">1. Boya Condenser Mic (Boom Pole)</div><div style="margin-bottom: 4px;">2. Battery Kit</div></div>
-                    </div>
-                    <div style="padding:14px; border:2px solid black; border-radius:8px;">
-                        <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px;">LIGHTING &amp; GRIP</h3>
-                        <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;"><div style="color:#666; font-style:italic;">Add lighting &amp; grip...</div></div>
-                    </div>
-                </div>
-            </section>
-
-            <section style="margin-top:20px;">
-                <div style="font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#666; margin-bottom:10px; padding-bottom:6px; border-bottom:1px dashed #ccc;">CAMERA SETTINGS + MISC GEAR INFO</div>
-                <div style="display:grid; gap:16px; grid-template-columns: 1fr 1fr;">
-                    <div style="padding:12px; border:1px solid #ccc; border-radius:6px; background:#fafafa;">
-                        <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; margin-bottom:8px; border-bottom:1px solid #e0e0e0; padding-bottom:4px;">RED KOMODO 6K</div>
-                        <table style="width:100%; font-size:0.78rem; border-collapse:collapse;">
-                            <tr><td style="padding:3px 0; color:#888; width:44%;">Codec</td><td style="padding:3px 0; font-weight:600; color:#111;">REDCODE RAW 5:1</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Resolution</td><td style="padding:3px 0; font-weight:600; color:#111;">6K (6064 &times; 3192)</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Frame Rate</td><td style="padding:3px 0; font-weight:600; color:#111;">23.976 fps</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Shutter Angle</td><td style="padding:3px 0; font-weight:600; color:#111;">180&deg; &rarr; 1/48s</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">ISO</td><td style="padding:3px 0; font-weight:600; color:#111;">800 (native)</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">White Balance</td><td style="padding:3px 0; font-weight:600; color:#111;">5600K day / 3200K int.</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Color Space</td><td style="padding:3px 0; font-weight:600; color:#111;">REDWideGamutRGB</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Gamma</td><td style="padding:3px 0; font-weight:600; color:#111;">Log3G10</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Monitor LUT</td><td style="padding:3px 0; font-weight:600; color:#111;">Rec.709 (on-set)</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Media</td><td style="padding:3px 0; font-weight:600; color:#111;">CFexpress Type B &mdash; 512GB</td></tr>
-                        </table>
-                    </div>
-                    <div style="padding:12px; border:1px solid #ccc; border-radius:6px; background:#fafafa;">
-                        <div style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.07em; margin-bottom:8px; border-bottom:1px solid #e0e0e0; padding-bottom:4px;">BOYA CONDENSER MIC &mdash; BOOM POLE</div>
-                        <table style="width:100%; font-size:0.78rem; border-collapse:collapse;">
-                            <tr><td style="padding:3px 0; color:#888; width:44%;">Pattern</td><td style="padding:3px 0; font-weight:600; color:#111;">Supercardioid (shotgun)</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Phantom Power</td><td style="padding:3px 0; font-weight:600; color:#111;">48V (required)</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Low-Cut Filter</td><td style="padding:3px 0; font-weight:600; color:#111;">80 Hz (wind + rumble)</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Sample Rate</td><td style="padding:3px 0; font-weight:600; color:#111;">48 kHz</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Bit Depth</td><td style="padding:3px 0; font-weight:600; color:#111;">24-bit WAV</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Record Level</td><td style="padding:3px 0; font-weight:600; color:#111;">&minus;18 dBFS (peaks &minus;12 dBFS)</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Pad</td><td style="padding:3px 0; font-weight:600; color:#111;">0 dB (&minus;10 dB if clipping)</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Boom Position</td><td style="padding:3px 0; font-weight:600; color:#111;">6&ndash;12&quot; above frame, angled &darr;</td></tr>
-                            <tr><td style="padding:3px 0; color:#888;">Connection</td><td style="padding:3px 0; font-weight:600; color:#111;">XLR &rarr; recorder / mixer</td></tr>
-                        </table>
-                    </div>
-                </div>
-            </section>
-            <footer style="margin-top:50px; border-top:1px solid black; padding-top:20px;">
-                <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
-                    <a href="../../production.html" style="display:inline-block; padding:6px 14px; background:#111; color:#fff; text-decoration:none; border-radius:4px; font-size:0.75rem; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;">Production Dashboard</a>
-                    <a href="../../script-system/full_script.html" style="display:inline-block; padding:6px 14px; background:#111; color:#fff; text-decoration:none; border-radius:4px; font-size:0.75rem; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;">Full Script</a>
-                    <a href="../../storyboard.html" style="display:inline-block; padding:6px 14px; background:#111; color:#fff; text-decoration:none; border-radius:4px; font-size:0.75rem; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;">Storyboard</a>
-                    <a href="../../storybook.html" style="display:inline-block; padding:6px 14px; background:#111; color:#fff; text-decoration:none; border-radius:4px; font-size:0.75rem; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;">Treatment</a>
-                    <a href="../../wardrobe.html" style="display:inline-block; padding:6px 14px; background:#111; color:#fff; text-decoration:none; border-radius:4px; font-size:0.75rem; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;">Wardrobe</a>
-                    <a href="../../gear-gallery.html" style="display:inline-block; padding:6px 14px; background:#111; color:#fff; text-decoration:none; border-radius:4px; font-size:0.75rem; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;">Gear Gallery</a>
-                    <a href="../../overview.html" style="display:inline-block; padding:6px 14px; background:#111; color:#fff; text-decoration:none; border-radius:4px; font-size:0.75rem; font-weight:700; letter-spacing:0.05em; text-transform:uppercase;">Overview</a>
-                </div>
+            <footer style="margin-top:50px; text-align:center; font-size:0.8rem; border-top:1px solid black; padding-top:20px;">
+                THIS IS A GENERATED CALL SHEET FOR PRODUCTION USE ONLY. RE-SYNC WITH GOOGLE SHEET FOR LATEST CALL TIMES.
             </footer>
         </div>
     </body>

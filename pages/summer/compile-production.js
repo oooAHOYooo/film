@@ -558,93 +558,6 @@ function getProductionStyles() {
                 opacity: 0.5;
                 margin-left: 20px;
             }
-            .shoot-plan {
-                margin-bottom: 50px;
-            }
-            .shoot-plan-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 14px;
-            }
-            .shoot-plan-card {
-                background: #fff;
-                border: 1px solid #ccc;
-                border-radius: 12px;
-                padding: 14px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-                transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-                cursor: pointer;
-            }
-            .shoot-plan-card:hover {
-                transform: translateY(-2px);
-                border-color: #999;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            }
-            .shoot-plan-card.special {
-                border-color: #999;
-                border-style: dashed;
-                background: #fafafa;
-            }
-            .shoot-plan-head {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                gap: 12px;
-                margin-bottom: 10px;
-                padding-bottom: 10px;
-                border-bottom: 1px solid #eee;
-            }
-            .shoot-plan-title {
-                font-weight: 800;
-                color: #111;
-                line-height: 1.1;
-            }
-            .shoot-plan-date {
-                font-size: 0.82rem;
-                color: #444;
-                margin-top: 4px;
-            }
-            .shoot-plan-note {
-                font-family: ui-monospace, monospace;
-                font-size: 0.74rem;
-                line-height: 1.35;
-                color: #333;
-                margin-bottom: 10px;
-                opacity: 0.9;
-            }
-            .shoot-plan-label {
-                display: inline-flex;
-                align-items: center;
-                gap: 6px;
-                border-radius: 999px;
-                padding: 3px 8px;
-                font-size: 0.68rem;
-                letter-spacing: 0.05em;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: #fff;
-                background: #111;
-            }
-            .shoot-plan-chip-row {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 4px;
-                margin-top: 6px;
-            }
-            .shoot-plan-block {
-                margin-top: 10px;
-                font-size: 0.83rem;
-                line-height: 1.45;
-            }
-            .shoot-plan-block strong {
-                display: block;
-                margin-bottom: 4px;
-                font-size: 0.65rem;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                color: #666;
-            }
-
             .mobile-header {
                 display: none;
                 background: #fff;
@@ -795,20 +708,6 @@ function getProductionStyles() {
                 .day-badge {
                     border-color: currentColor !important;
                     box-shadow: none !important;
-                }
-                .shoot-plan-card {
-                    background: #fff !important;
-                    border: 1px solid #d0d7de !important;
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                }
-                .shoot-plan-label {
-                    color: #fff !important;
-                    -webkit-print-color-adjust: exact;
-                    print-color-adjust: exact;
-                }
-                .shoot-plan-grid {
-                    grid-template-columns: repeat(3, 1fr);
                 }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;
@@ -1058,105 +957,6 @@ function generateCompactListHtml(rows, calendar, totalDays) {
 
   html += '</section>';
   return html;
-}
-
-function generateShootPlanHtml(rows, productionData) {
-  const plan = Array.isArray(productionData.shootPlan)
-    ? productionData.shootPlan.slice().sort((a, b) => Number(a.day) - Number(b.day))
-    : [];
-
-  if (!plan.length) return '';
-
-  const dayRowsFor = (day) => rows.filter((r) => r.scheduledDays && r.scheduledDays.includes(day));
-  const unique = (items) => Array.from(new Set(items.filter(Boolean)));
-  const toChipRow = (items, label) => {
-    if (!items.length) {
-      return `<div class="shoot-plan-block"><strong>${label}</strong>—</div>`;
-    }
-    const chips = items
-      .map((item) => `<span class="actor-chip" style="pointer-events:none; cursor:default;">${escapeHtml(item)}</span>`)
-      .join('');
-    return `<div class="shoot-plan-block"><strong>${label}</strong><div class="shoot-plan-chip-row">${chips}</div></div>`;
-  };
-
-  return `
-    <section id="shoot-plan" class="shoot-plan">
-      <h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Detailed Shoot Plan <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">16-day source of truth</span></h2>
-      <div class="shoot-plan-grid">
-        ${(() => {
-          const limboIds = Array.isArray(productionData.limbo) ? productionData.limbo : [];
-          if (!limboIds.length) return '';
-          const limboRows = limboIds.map((id) => rows.find((r) => r.id === id || r.fileId.toLowerCase() === String(id).toLowerCase())).filter(Boolean);
-          if (!limboRows.length) return '';
-          const chips = limboRows.map((r) => `<span class="actor-chip" style="pointer-events:none; cursor:default; opacity:0.6;">${escapeHtml(`${r.fileId} — ${r.title}`)}</span>`).join('');
-          return `
-            <article class="shoot-plan-card" style="opacity:0.5; border-style:dashed;">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Limbo</div>
-                  <div class="shoot-plan-date">Unscheduled scenes</div>
-                </div>
-                <span class="shoot-plan-label" style="background:#888;">Limbo</span>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div class="shoot-plan-chip-row">${chips}</div>
-              </div>
-            </article>
-          `;
-        })()}
-        ${plan.map((entry) => {
-          const dayValue = Number(entry.day);
-          const dayRows = Number.isFinite(dayValue) ? dayRowsFor(dayValue) : [];
-          const dayName = entry.weekday || getDayName(entry.date);
-          const dayConfig = getDayConfig(entry.date);
-          const hasExplicitScenes = Object.prototype.hasOwnProperty.call(entry, 'scenes');
-          const hasExplicitLocations = Object.prototype.hasOwnProperty.call(entry, 'locations');
-          const hasExplicitCast = Object.prototype.hasOwnProperty.call(entry, 'cast');
-          const scenes = unique(hasExplicitScenes ? (Array.isArray(entry.scenes) ? entry.scenes : [entry.scenes]) : dayRows.map((r) => r.fileId));
-          const locations = unique(hasExplicitLocations ? (Array.isArray(entry.locations) ? entry.locations : [entry.locations]) : dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
-          const cast = unique(hasExplicitCast ? (Array.isArray(entry.cast) ? entry.cast : [entry.cast]) : dayRows.flatMap((r) => r.characters || []));
-          const callSheetHref = `production/days/${String(entry.day)}.html`;
-          const manifestForChips = (() => { try { return JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8')); } catch(e) { return []; } })();
-          const scenesHtml = scenes.length
-            ? scenes.map((scene) => {
-                const mEntry = manifestForChips.find(m => (m.file || '').replace('.md','') === scene);
-                const href = mEntry && mEntry.id
-                  ? `script-system/scene.html?id=${encodeURIComponent(mEntry.id)}`
-                  : callSheetHref;
-                return `<a href="${href}" target="_blank" class="actor-chip" style="pointer-events:auto; cursor:pointer; margin-right:6px;">${escapeHtml(scene)}</a>`;
-              }).join('')
-            : '—';
-          const locationsText = locations.length ? locations.join(', ') : '—';
-          const dateLabel = new Date(entry.date + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-          const cardClass = entry.special ? 'shoot-plan-card special' : 'shoot-plan-card';
-          const label = entry.special ? 'Note' : 'Shoot';
-
-          return `
-            <article class="${cardClass}" data-call-sheet-href="${callSheetHref}" role="link" tabindex="0" aria-label="Open call sheet for Day ${escapeHtml(entry.day)}">
-              <div class="shoot-plan-head">
-                <div>
-                  <div class="shoot-plan-title">Day ${escapeHtml(entry.day)}</div>
-                  <div class="shoot-plan-date">${escapeHtml(dayName)}, ${escapeHtml(dateLabel)}</div>
-                </div>
-                <span class="shoot-plan-label">${label}</span>
-              </div>
-              <div class="shoot-plan-note">${escapeHtml(entry.sourceNote || '')}</div>
-              <div class="shoot-plan-block">
-                <strong>Scenes</strong>
-                <div style="font-family: ui-monospace, monospace;">${scenesHtml}</div>
-              </div>
-              <div class="shoot-plan-block">
-                <strong>Locations</strong>
-                <div>${escapeHtml(locationsText)}</div>
-              </div>
-              ${toChipRow(cast, 'Actors')}
-            </article>
-          `;
-        }).join('')}
-      </div>
-    </section>
-  `;
 }
 
 const PICKUP_DAYS = 2;
@@ -1455,7 +1255,6 @@ function generateCalendarCheatSheetHtml(rows, productionData) {
 function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData) {
   const totalScenes = rows.length;
   const pickupSceneCount = rows.filter((r) => r.pickup).length;
-  const shootPlanHtml = generateShootPlanHtml(rows, productionData);
   const cheatSheetHtml = generateCheatSheetHtml(rows, productionData);
   const characterCheatSheetHtml = generateCharacterCheatSheetHtml(rows, productionData);
   const calendarCheatSheetHtml = generateCalendarCheatSheetHtml(rows, productionData);
@@ -1506,7 +1305,6 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 ${characterCheatSheetHtml}
                 <!-- LOCATION_CHEAT_SHEET_START --><!-- LOCATION_CHEAT_SHEET_END -->
                 <!-- WARDROBE_SECTION_START --><!-- WARDROBE_SECTION_END -->
-                ${shootPlanHtml}
             </main>
         </div>
 
@@ -1532,26 +1330,6 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                     }
                 });
 
-                document.querySelectorAll('.shoot-plan-card[data-call-sheet-href]').forEach((card) => {
-                    const href = card.getAttribute('data-call-sheet-href');
-                    if (!href) return;
-
-                    const openCallSheet = () => {
-                        window.location.href = href;
-                    };
-
-                    card.addEventListener('click', (event) => {
-                        if (event.target.closest('a, button, select, input, textarea, label')) return;
-                        openCallSheet();
-                    });
-
-                    card.addEventListener('keydown', (event) => {
-                        if (event.key === 'Enter' || event.key === ' ') {
-                            event.preventDefault();
-                            openCallSheet();
-                        }
-                    });
-                });
             }
             if (document.readyState === 'loading') {
                 document.addEventListener('DOMContentLoaded', init);

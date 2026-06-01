@@ -315,93 +315,6 @@
                 opacity: 0.5;
                 margin-left: 20px;
             }
-            .shoot-plan {
-                margin-bottom: 50px;
-            }
-            .shoot-plan-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 14px;
-            }
-            .shoot-plan-card {
-                background: #fff;
-                border: 1px solid #ccc;
-                border-radius: 12px;
-                padding: 14px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-                transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
-                cursor: pointer;
-            }
-            .shoot-plan-card:hover {
-                transform: translateY(-2px);
-                border-color: #999;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            }
-            .shoot-plan-card.special {
-                border-color: #999;
-                border-style: dashed;
-                background: #fafafa;
-            }
-            .shoot-plan-head {
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-                gap: 12px;
-                margin-bottom: 10px;
-                padding-bottom: 10px;
-                border-bottom: 1px solid #eee;
-            }
-            .shoot-plan-title {
-                font-weight: 800;
-                color: #111;
-                line-height: 1.1;
-            }
-            .shoot-plan-date {
-                font-size: 0.82rem;
-                color: #444;
-                margin-top: 4px;
-            }
-            .shoot-plan-note {
-                font-family: ui-monospace, monospace;
-                font-size: 0.74rem;
-                line-height: 1.35;
-                color: #333;
-                margin-bottom: 10px;
-                opacity: 0.9;
-            }
-            .shoot-plan-label {
-                display: inline-flex;
-                align-items: center;
-                gap: 6px;
-                border-radius: 999px;
-                padding: 3px 8px;
-                font-size: 0.68rem;
-                letter-spacing: 0.05em;
-                font-weight: 700;
-                text-transform: uppercase;
-                color: #fff;
-                background: #111;
-            }
-            .shoot-plan-chip-row {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 4px;
-                margin-top: 6px;
-            }
-            .shoot-plan-block {
-                margin-top: 10px;
-                font-size: 0.83rem;
-                line-height: 1.45;
-            }
-            .shoot-plan-block strong {
-                display: block;
-                margin-bottom: 4px;
-                font-size: 0.65rem;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                color: #666;
-            }
-
             .mobile-header {
                 display: none;
                 background: #fff;
@@ -552,20 +465,6 @@
                 .day-badge {
                     border-color: currentColor !important;
                     box-shadow: none !important;
-                }
-                .shoot-plan-card {
-                    background: #fff !important;
-                    border: 1px solid #d0d7de !important;
-                    break-inside: avoid;
-                    page-break-inside: avoid;
-                }
-                .shoot-plan-label {
-                    color: #fff !important;
-                    -webkit-print-color-adjust: exact;
-                    print-color-adjust: exact;
-                }
-                .shoot-plan-grid {
-                    grid-template-columns: repeat(3, 1fr);
                 }
                 .stats-card, .production-table tr, .production-table td, .production-table th {
                     break-inside: avoid;
