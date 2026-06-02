@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 5/28/2026, 3:42:53 PM*
+*Compiled on 6/2/2026, 10:23:47 AM*
 
 ---
 
@@ -189,13 +189,6 @@ Dallas goes outside and stares for a while at the edge of his property. After th
 
 Dallas slowly walks backwards towards his house and then stops when the humm grows louder. Dallas takes out his portable audio recorder. 
 
-
-EXT. BRANFORD AT NIGHT MONTAGES (s02.3)
-
-Dallas walks around at night with a recorder in his hand. As he walks along the different coastal neighborhoods - as he stops by a particular puzzling patch of tall grass - he takes big deep breath and pulls out his recorder. He records the sounds of the ocean. 
-
-On the way home - he records the breeze of the tall grass. 
-
 INT. DALLAS NEW HOUSE - ATTIC - NIGHT (s02.4)
 Dallas walks in again and looks again at his new place. He looks at the windows, he looks at the doors, he looks at the cielings. He walks towards a group of large moving boxes scaterred in the center of the living room. 
 
@@ -232,6 +225,28 @@ EXT. DALLAS HOUSE - NIGHT (s02.7)
 Dallas stands alone watching the tall grass sway agaisnt the salt breeze. Coyotes howl in the distance and the hum decreases in scale and size as the starry night disappears into the distance of the tall marsh grass. He sees a faint golden glow pulse once, twice, five times, three times. 
 
 In the distance a thunderstorm brews.
+
+---
+
+
+### Scene 2: Branford at Night Montages
+
+*ACT I — Arrival & Discovery | ID: branford-night-discovery | File: s02.3.md*
+
+---
+
+<!-- scene: 2 file: s02.3.md nickname: branford-night-discovery -->
+
+# Scene 2.3: Branford at Night Montages
+<!-- summary: Dallas walks around Branford at night with a recorder, discovering the weirdness of the neighborhood and tall grass. -->
+
+<!-- Filming On  6.7.26 @ Branford  -->
+
+EXT. BRANFORD AT NIGHT MONTAGES (s02.3)
+
+Dallas walks around at night with a recorder in his hand. As he walks along the different coastal neighborhoods - as he stops by a particular puzzling patch of tall grass - he takes big deep breath and pulls out his recorder. He records the sounds of the ocean. 
+
+On the way home - he records the breeze of the tall grass.
 
 ---
 
@@ -3962,3 +3977,4 @@ Dallas walks alone with his wife's receiver in hand. The place where the lawn be
 In the Tall Grass Dallas senses the creature - and plays the pure recording of their hum - and realizes that it matches the exact cadence of Sierra's song.
 
 ---
+

@@ -40,7 +40,12 @@
       "Bash(./film.js todo *)",
       "Bash(start *)",
       "Bash(py --version)",
-      "Bash(del *)"
+      "Bash(del *)",
+      "Bash(Get-ChildItem -Path \"pages\" -Directory)",
+      "Bash(Select-Object -ExpandProperty Name)",
+      "Bash(Get-ChildItem -Path \"pages\" -Filter \"*.html\")",
+      "WebFetch(domain:ag-film.netlify.app)",
+      "Bash(awk *)"
     ]
   }
 }
