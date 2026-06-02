@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/2/2026, 12:05:25 PM*
+*Compiled on 6/2/2026, 2:52:49 PM*
 
 ---
 
@@ -18,7 +18,66 @@
 
 <!-- scene: 0 file: s00.md nickname: branford-montage -->
 
-[SCENE FILE MISSING: s00.md]
+INT. RENTAL HOUSE - FRONT DOOR - DAY (s00.1)
+
+The front door opens inward. A small foyer with scuffed hardwood. To the left, a living room where cheap furniture sits pushed against the walls in no particular order. A futon frame without a mattress leans in a corner. Empty beer cans on the floor by the baseboard — not swept up, not recent enough to matter. The smell of stale beer is baked into the air.
+
+The PROPERTY MANAGER, early 50s, stands in the doorway, holding a clipboard and keys. Her blazer is slightly wrinkled. She is apologizing before Dallas has even stepped inside.
+
+PROPERTY MANAGER
+I know. I know it's not... they left it in a state.
+
+Dallas enters. He is mid-30s, unremarkable to look at, all his presence internal. He wears a canvas jacket over a plain shirt. He doesn't remove his shoes. His eyes move across the room without lingering.
+
+DALLAS
+(quiet)
+It's fine.
+
+PROPERTY MANAGER
+The previous tenants were — well, they were here for the same reason you are. Not the research, obviously, but just... passing through. Both of them. They didn't treat it like home. I've had the carpets marked for cleaning. The smell will go.
+
+She moves deeper into the house. Dallas follows. She is filling silence the way some people fill a room.
+
+PROPERTY MANAGER (CONT'D)
+The kitchen is through here. Appliances are older but they work. The stove needs a minute to heat but it's reliable. Previous tenant left a mini-fridge in the corner I asked him to take three times. I apologize for that.
+
+Dallas stops at a window that faces the backyard. Through the glass, tall reeds and grass. The line where the yard ends and something else begins — marsh, or boundary, or both. His hand rises halfway, then stops. He looks at the grass.
+
+The property manager has continued talking. She realizes he's not behind her. She turns back.
+
+PROPERTY MANAGER (CONT'D)
+The yard is mostly unmanaged. Not my responsibility. Landlord says it's fine, so... it's fine.
+
+Dallas doesn't answer. He's still looking out.
+
+PROPERTY MANAGER (CONT'D)
+The upstairs has two bedrooms. One is larger. There's a bathroom — the light fixture flickers sometimes but it works. And then there's the attic access — I know it's not traditional, but the previous tenants never went up there so I'm not sure what the condition is. It might be storage space, might be just...
+
+She trails. Dallas has already moved past her, toward the stairs. He climbs without waiting.
+
+INT. ATTIC - CONTINUOUS (s00.3)
+
+Low wood joists. Bare plywood floor. Small window at one end throwing gray light across the space. The ceiling is higher than expected — not cramped. Quiet. The kind of quiet that has weight.
+
+Dallas stands in the center of the attic. His head tilts back slightly. He looks up at the underside of the roof. He listens.
+
+Below him, the property manager's voice reaches the bottom of the stairs.
+
+PROPERTY MANAGER (O.S.)
+(still talking, from below)
+I'm not sure if there's insulation or — are you seeing anything up there? We can get you the landlord's contact, he might have—
+
+Dallas doesn't move. Doesn't turn. Doesn't answer.
+
+A moment of silence. Then:
+
+PROPERTY MANAGER (CONT'D) (O.S.)
+(a beat, realizing)
+Well. I'll just... let me get you those keys.
+
+Dallas is still looking up.
+
+END SCENE 0
 
 ---
 
@@ -1222,26 +1281,24 @@ DAY 3 - EVENING - 6.12.26 -->
 
 EXT. DALLAS HOUSE - MOMENTS LATER (s08.1)
 
-Dallas tries to bring Howie inside but he won't go. He looks like he wants to go on a walk. So Dallas reasons with the creature and brings him on a walk. 
+Dallas grabs his portable Oscillator and heads toward the marsh, following a spike in the readings.
 
 EXT. BRANFORD ROCKS - EVENING (s08.2)
-The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks Howie along the edge of his neighborhood.
+The Long Island Sound roars, the waves crashing violently against the Branford rocks. Dallas walks along the edge of his neighborhood.
 
 Dallas steps off the boardwalk onto a narrow dirt path that runs behind the houses, where lawns thin into reeds and the creek bends toward the marsh.
 
-As Howie, Dallas holds his portable Oscillator out. The needle begins to flutter.
-
-Howie stops. His ears perk up and swivel like small radar dishes toward the dark reeds in the distance. 
+Dallas holds his portable Oscillator out. The needle begins to flutter with increasing intensity. 
 
 In the far distance, a single coyote barks. Then another. A chain reaction of domestic fear starts in the neighborhood, followed by the high, thin yip of coyotes further inland.
 
-The winds pick up and Dallas and Howie march forward. 
+The winds pick up. Dallas marches forward. 
 
 EXT. EDGE OF THE MARSH (s08.3)
 
-Dallas ties Howie to a nearby tree. The dog isn't just whimpering; he's pulling at the leash, eyes fixed on the reeds. 
+Dallas pauses at the edge. The Hum is louder here, a dense vibration that makes his vision vibrate.
 
-Dallas walks into the marsh. The "Hum" is louder here, a dense vibration that makes his vision vibrate.
+Dallas walks into the marsh.
 
 s08.4 — EXT. INTO THE MARSH (s08.4)
 
@@ -1255,7 +1312,7 @@ The Hum stops. Dallas freezes. He rips the trailcam from its mounting, his finge
 
 A low, guttural chittering sound rises from the grass behind him.
 
-Dallas walks faster, pulling Howie along. He scrambles back toward the boardwalk.
+Dallas walks faster. He scrambles back toward the boardwalk.
 
 ---
 
@@ -1407,11 +1464,11 @@ Howie begins to cry. Dallas goes to sleep.
 
 EXT. DALLAS HOUSE - NEXT DAY
 
-Dallas takes howie outside and begins to go on a walk down the neighborhood and the Branford rocks. 
+Dallas heads back toward the marsh, driven by last night's discovery.
 
 EXT. EDGE OF THE MARSH
 
-Dallas ties up Howie by a nearby marsh and enters an interesting field of tall bamboo like grass. 
+Dallas enters an interesting field of tall bamboo like grass. 
 
 Dallas looks at his portable Oscillator - it is acting crazy. 
 
@@ -1473,9 +1530,7 @@ A heavy, crushing sound slices through the reeds—something massive rocketing t
 
 Red eye's begin to circulate around him - pulsing as they inch closer as if Dallas' vision is on a blurry carpret ride. 
 
-Dallas breaks into a sprint. He reaches the stunted cedar tree— where Howie is tied, who is a blur of panic, barking at the wall of grass.
-
-Dallas grabs the leash and doesn't stop running until the marsh is far behind them.
+Dallas breaks into a sprint. He doesn't stop running until the marsh is far behind him.
 
 EXT. BRANFORD MONTAGE (s10.2)
 
@@ -1506,10 +1561,10 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 INT. DALLAS KITCHEN - DUSK (s11.1)
 Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines it with parchment paper. The creature seems to be asleep. 
 
-Howie barks outside. Dallas rushes to grab him.
+Dallas hears a sound from the other room.
 
 INT. DALLAS ATTIC - MOMENTS LATER (s11.2)
-Howie is in the living room couch nervously peering out the window. Dallas finds himself alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
+Dallas finds himself alone with the creature trying to understand it as he observes its features with thick macro monoculars. 
 
 As Dallas peers closer, he notices that it has marks underneath its eye. As Dallas touches the marks the creature suddenly wakes up and lets out a cry.
 
@@ -1560,23 +1615,7 @@ INT. DALLAS' HOUSE - HALLWAY - NIGHT (s11.4)
 Dallas opens the door to find Dominic.
 
 DOMINIC
-Thank you for watching Howie - how did he do? 
-
-<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
-
-(action)
-Dallas looks over to Howie who is resting on the sofa, exhausted, sleeping. 
-
-DALLAS
-Good
-
-<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
-
-(action)
-Asher looks behind Dallas at all of the equipment. Dallas hands Howie over to Dominic. 
-
-DOMINIC
-Okay - we'll - we'll be on our way. Hey - we're doing a lifegroup tomorrow night at our place - you should come. 
+Hey - we're doing a lifegroup tomorrow night at our place - you should come. 
 
 <!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
 
@@ -1598,7 +1637,7 @@ Alright well rest well big guy.
 <!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
 
 (action)
-Asher and Dominic and Howie leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
+Dominic and Asher leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
 
 Dallas rushes to the workstation and finds that the creature sleeping peacefully.
 

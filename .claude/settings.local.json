@@ -51,7 +51,10 @@
       "Bash(chromium-cli file://\"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\\\\summer\\\\production.html\" screenshot --output=\"/tmp/production-hub.png\")",
       "PowerShell(Invoke-Item *)",
       "Bash(Get-ChildItem -Directory \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\\\\summer\")",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\agonzalez7\\\\film\" -Recurse -Filter \"*shooting*\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object -Property FullName)",
+      "Bash(powershell *)"
     ]
   }
 }
