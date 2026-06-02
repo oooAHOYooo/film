@@ -45,7 +45,13 @@
       "Bash(Select-Object -ExpandProperty Name)",
       "Bash(Get-ChildItem -Path \"pages\" -Filter \"*.html\")",
       "WebFetch(domain:ag-film.netlify.app)",
-      "Bash(awk *)"
+      "Bash(awk *)",
+      "Bash(git show *)",
+      "Bash(cp /tmp/production.clean.html \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\\\\summer\\\\production.html\")",
+      "Bash(chromium-cli file://\"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\\\\summer\\\\production.html\" screenshot --output=\"/tmp/production-hub.png\")",
+      "PowerShell(Invoke-Item *)",
+      "Bash(Get-ChildItem -Directory \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\\\\summer\")",
+      "Bash(Select-Object Name)"
     ]
   }
 }

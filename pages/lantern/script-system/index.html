@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lantern — Winter Magical Realism Film - Scene Gallery</title>
+  <link rel="stylesheet" href="script.css?v=2026-06-02">
+</head>
+<body class="plot-cards-page">
+  <div class="gallery-container">
+    <header class="plot-cards-header">
+      <h1>Lantern — Winter Magical Realism Film</h1>
+      <p class="plot-cards-subtitle">Scene gallery — main beats per scene · <a href="full_script.html">Open Full Script</a> to jump to any scene</p>
+    </header>
+
+    <nav class="nav no-print plot-cards-nav">
+      <div class="nav-left">
+        <a class="nav-link" href="/pages/lantern.html" title="Lantern Hub">🔦 Lantern</a>
+        <a class="nav-link nav-link--active" href="index.html" title="Gallery">▦ Gallery</a>
+        <a class="nav-link" href="full_script.html" title="Full Script">Full Script</a>
+      </div>
+    </nav>
+
+    <div class="plot-cards-grid" id="plotCardsGrid" aria-label="Scene index cards">
+      <!-- Cards injected by JS -->
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const CARDS_DATA = [];
+      const grid = document.getElementById('plotCardsGrid');
+
+      function toRoman(num) {
+        const map = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+        let n = num, out = '';
+        for (const [v, s] of map) {
+          while (n >= v) { out += s; n -= v; }
+        }
+        return out;
+      }
+
+      function renderCards(cards) {
+        if (!cards || !cards.length) {
+          grid.innerHTML = '<p class="plot-cards-loading">No card data available.</p>';
+          return;
+        }
+
+        let currentAct = null;
+        cards.forEach(function(card) {
+          if (card.act !== currentAct) {
+            currentAct = card.act;
+            const actLabel = document.createElement('div');
+            actLabel.className = 'plot-cards-act-label';
+            actLabel.setAttribute('aria-hidden', 'true');
+            actLabel.textContent = 'ACT ' + toRoman(card.act) + ' — ' + (card.actTitle || '');
+            grid.appendChild(actLabel);
+          }
+          const cardDiv = document.createElement('div');
+          cardDiv.className = 'plot-card';
+          cardDiv.innerHTML =
+            '<span class="plot-card-number">' + card.n + '</span>' +
+            '<h2 class="plot-card-title">' + escapeHtml(card.title) + '</h2>' +
+            '<p class="plot-card-summary">' + escapeHtml(card.summary) + '</p>' +
+            '<div class="plot-card-links" style="margin-top: auto; display: flex; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 0.75rem; margin-top: 1rem; font-size: 0.8rem;">' +
+              '<a href="full_script.html#scene-' + card.n + '" class="plot-card-link" style="text-decoration: none; font-weight: 600;">Full Script</a>' +
+            '</div>';
+          grid.appendChild(cardDiv);
+        });
+      }
+
+      function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      renderCards(CARDS_DATA);
+    })();
+  </script>
+</body>
+</html>
