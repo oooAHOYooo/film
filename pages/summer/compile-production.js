@@ -1410,11 +1410,8 @@ function generateFirst5DaysChecklistHtml(rows, productionData) {
 function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays, productionData) {
   const totalScenes = rows.length;
   const pickupSceneCount = rows.filter((r) => r.pickup).length;
-<<<<<<< HEAD
-=======
-  const shootPlanHtml = generateShootPlanHtml(rows, productionData);
   const first5DaysChecklistHtml = generateFirst5DaysChecklistHtml(rows, productionData);
->>>>>>> 9b0041f (Add shot lists to call sheets Days 1-9 — Spielberg-caliber shot-by-shot coverage)
+  const shootPlanHtml = '';
   const cheatSheetHtml = generateCheatSheetHtml(rows, productionData);
   const characterCheatSheetHtml = generateCharacterCheatSheetHtml(rows, productionData);
   const calendarCheatSheetHtml = generateCalendarCheatSheetHtml(rows, productionData);
@@ -1465,11 +1462,8 @@ function generateFullHtml(rows, actRangesList, locationRows, totalMin, totalDays
                 ${characterCheatSheetHtml}
                 <!-- LOCATION_CHEAT_SHEET_START --><!-- LOCATION_CHEAT_SHEET_END -->
                 <!-- WARDROBE_SECTION_START --><!-- WARDROBE_SECTION_END -->
-<<<<<<< HEAD
-=======
                 ${first5DaysChecklistHtml}
                 ${shootPlanHtml}
->>>>>>> 9b0041f (Add shot lists to call sheets Days 1-9 — Spielberg-caliber shot-by-shot coverage)
             </main>
         </div>
 
