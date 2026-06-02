@@ -1,11 +1,11 @@
 [
   {
-    "id": "branford-montage",
+    "id": "property-manager",
     "file": "s00.md",
-    "title": "Branford Montage",
+    "title": "The Rental House",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "branford-montage"
+    "nickname": "property-manager"
   },
   {
     "id": "arrival",
