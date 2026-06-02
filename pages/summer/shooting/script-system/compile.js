@@ -278,34 +278,16 @@ function generateHTMLPage(markdown, scenes) {
     <div class="script-sticky-bar no-print" id="scriptStickyBar">
       <div class="nav">
         <div class="nav-left">
-          <a class="nav-link" href="/index.html" title="Home">
-            <span class="nav-icon" aria-hidden="true">⌂</span>
-            <span class="nav-text">Home</span>
+          <a class="nav-link" href="../index.html" title="Back">
+            <span class="nav-icon" aria-hidden="true">←</span>
+            <span class="nav-text">Back</span>
           </a>
-          <a class="nav-link" href="/pages/summer.html" title="Summer Hub">
-            <span class="nav-icon" aria-hidden="true">☀</span>
-            <span class="nav-text">Summer</span>
-          </a>
-          <a class="nav-link" href="index.html" title="Gallery">
-            <span class="nav-icon" aria-hidden="true">▦</span>
-            <span class="nav-text">Gallery</span>
-          </a>
-          <a class="nav-link" href="/pages/summer/directors-notes/index.html" title="Director's Notes (hub)">
-            <span class="nav-icon" aria-hidden="true">📝</span>
-            <span class="nav-text">Director's Notes</span>
-          </a>
-          <a class="nav-link" href="/pages/summer/directors-notes/full_notes.html" title="Director's Notes (compiled)">
-            <span class="nav-text">Full Notes</span>
-          </a>
-          <a class="nav-link" href="/pages/summer/characters/index.html" title="Character Sheets">
-            <span class="nav-icon" aria-hidden="true">👤</span>
-            <span class="nav-text">Characters</span>
-          </a>
-          <a class="nav-link" href="/pages/summer/production.html" title="Production plan">
-            <span class="nav-text">Production plan</span>
-          </a>
+          <span class="nav-text" style="margin-left: 1rem; font-weight: 600;">Shooting Script</span>
         </div>
         <div class="nav-right">
+          <a class="nav-link" href="/pages/summer/shooting/production.html" title="Production plan">
+            <span class="nav-text">Production plan</span>
+          </a>
           <div class="script-export-dropdown" id="scriptExportDropdown">
             <button type="button" class="print-button script-export-trigger" id="scriptExportTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="scriptExportMenu">
               Export / Print
@@ -340,7 +322,7 @@ function generateHTMLPage(markdown, scenes) {
 
     <div class="screenplay-container">
       <div class="full-script-header">
-        <div class="full-script-title">${SCRIPT_NAME} — Full Script</div>
+        <div class="full-script-title">Shooting Script</div>
         <div class="full-script-meta">Compiled on ${new Date().toLocaleString()}</div>
       </div>
       <div class="screenplay-content" id="scriptContent"></div>
