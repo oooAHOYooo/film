@@ -262,7 +262,7 @@ function generateHTMLPage(markdown, scenes) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Script - ${SCRIPT_NAME}</title>
-  <link rel="stylesheet" href="script.css?v=20260108-5">
+  <link rel="stylesheet" href="../../script-system/script.css?v=20260108-5">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body class="full-script-page">
