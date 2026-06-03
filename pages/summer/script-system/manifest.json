@@ -1,5 +1,13 @@
 [
   {
+    "id": "opening-montage",
+    "file": "prologue.md",
+    "title": "Opening Montage",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "opening-montage"
+  },
+  {
     "id": "property-manager",
     "file": "s00.md",
     "title": "The Rental House",

@@ -1,11 +1,70 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/2/2026, 12:45:45 PM*
+*Compiled on 6/2/2026, 10:10:59 PM*
 
 ---
 
 
 ## ACT I — Arrival & Discovery
+
+---
+
+
+### Scene 1: Opening Montage
+
+*ACT I — Arrival & Discovery | ID: opening-montage | File: prologue.md*
+
+---
+
+<!-- scene: 01 file: prologue.md nickname: opening-montage -->
+
+PROLOGUE - BRANFORD ARRIVAL MONTAGE
+
+EXT. TRAIN STATION - BRANFORD - DAY
+
+A figure on a platform. Dallas stands with a single suitcase. The platform is nearly empty. Salt air. The station is small, unremarkable.
+
+He walks.
+
+EXT. BRANFORD STREET - CONTINUOUS
+
+Dallas walks a quiet residential street. Wide shot. He is small in the frame. A residential street lined with modest homes. No one else visible. The street curves away behind him. He does not look around much. His eyes stay forward.
+
+EXT. MARSH FENCE - CONTINUOUS
+
+Dallas passes a weathered fence where marsh meets property line. Grasses beyond it. He pauses for a beat, looking at the boundary, then moves on.
+
+EXT. MARSH PATH - CONTINUOUS
+
+Dallas approaches the edge of Branford. The marsh opens up. Wide sky. Wide water. He is still a small figure. He doesn't belong here yet. He keeps walking.
+
+INTERCUT — EXT. TREE LINE - DAY
+
+Hands. Only hands. Close-up. Fingers placing a small black trail camera into the bark of a tree. The placement is precise. Practiced.
+
+EXT. MARSH FENCE RAIL - CONTINUOUS
+
+Different hands. A small audio recording device being wired carefully into a hollow post. The wiring is deliberate. These people know what they're doing.
+
+EXT. MARSH CLEARING - CONTINUOUS
+
+A boom pole being assembled. Click. Click. The pieces fitting together without hesitation. A third person's hands checking connections, adjusting. The work is methodical. They have been doing this for a while.
+
+BACK TO DALLAS
+
+EXT. BRANFORD RESIDENTIAL - DAY
+
+Dallas walking. Still alone. The neighborhood tightens around him. Houses. Mailboxes. A street sign. Normal life everywhere he looks.
+
+EXT. DALLAS'S HOUSE - EXTERIOR - DAY
+
+Dallas approaches from the sidewalk for the first time. He stops. He looks at the front of the house. Two-story. Weathered. A yard. He shifts his gaze to the backyard, where tall grass catches the light at the property line.
+
+He looks at the grass for a long moment.
+
+Then he continues to the front door.
+
+END PROLOGUE
 
 ---
 
@@ -27,6 +86,9 @@ The PROPERTY MANAGER, early 50s, stands in the doorway, holding a clipboard and 
 PROPERTY MANAGER
 I know. I know it's not... they left it in a state.
 
+<!-- scene: 0 file: s00.md nickname: property-manager -->
+
+(action)
 Dallas enters. He is mid-30s, unremarkable to look at, all his presence internal. He wears a canvas jacket over a plain shirt. He doesn't remove his shoes. His eyes move across the room without lingering.
 
 DALLAS
@@ -36,11 +98,17 @@ It's fine.
 PROPERTY MANAGER
 The previous tenants were — well, they were here for the same reason you are. Not the research, obviously, but just... passing through. Both of them. They didn't treat it like home. I've had the carpets marked for cleaning. The smell will go.
 
+<!-- scene: 0 file: s00.md nickname: property-manager -->
+
+(action)
 She moves deeper into the house. Dallas follows. She is filling silence the way some people fill a room.
 
 PROPERTY MANAGER (CONT'D)
 The kitchen is through here. Appliances are older but they work. The stove needs a minute to heat but it's reliable. Previous tenant left a mini-fridge in the corner I asked him to take three times. I apologize for that.
 
+<!-- scene: 0 file: s00.md nickname: property-manager -->
+
+(action)
 Dallas stops at a window that faces the backyard. Through the glass, tall reeds and grass. The line where the yard ends and something else begins — marsh, or boundary, or both. His hand rises halfway, then stops. He looks at the grass.
 
 The property manager has continued talking. She realizes he's not behind her. She turns back.
@@ -53,12 +121,18 @@ Dallas doesn't answer. He's still looking out.
 PROPERTY MANAGER (CONT'D)
 The upstairs has two bedrooms. One is larger. There's a bathroom — the light fixture flickers sometimes but it works. And then there's the attic access — I know it's not traditional, but the previous tenants never went up there so I'm not sure what the condition is. It might be storage space, might be just...
 
+<!-- scene: 0 file: s00.md nickname: property-manager -->
+
+(action)
 She trails. Dallas has already moved past her, toward the stairs. He climbs without waiting.
 
 INT. ATTIC - CONTINUOUS (s00.3)
 
 Low wood joists. Bare plywood floor. Small window at one end throwing gray light across the space. The ceiling is higher than expected — not cramped. Quiet. The kind of quiet that has weight.
 
+<!-- scene: 0 file: s00.md nickname: property-manager -->
+
+(action)
 Dallas stands in the center of the attic. His head tilts back slightly. He looks up at the underside of the roof. He listens.
 
 Below him, the property manager's voice reaches the bottom of the stairs.
@@ -67,6 +141,9 @@ PROPERTY MANAGER (O.S.)
 (still talking, from below)
 I'm not sure if there's insulation or — are you seeing anything up there? We can get you the landlord's contact, he might have—
 
+<!-- scene: 0 file: s00.md nickname: property-manager -->
+
+(action)
 Dallas doesn't move. Doesn't turn. Doesn't answer.
 
 A moment of silence. Then:
@@ -90,57 +167,47 @@ END SCENE 0
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
-<!-- nickname: arrival -->
+EXT. DALLAS’S HOUSE - BACKYARD - DAY (s01.1)
 
-##s00
-<!-- FILMING ON 
-6.28.26 -->
-INT. TRAIN - DALLAS
-Dallas takes the train to branford
+Dallas has been at this for hours. Boxes scattered across the grass. Some stacked on the weathered picnic table. The property manager’s car is gone. The house is still a mess inside — cheap furniture pushed against walls, the smell of previous tenants still hanging in the air.
 
-##s01 - Arrival 
-<!-- FILMING ON 
-6.7.26 -->
-EXT. DALLAS NEW HOUSE - DAY (s01.1)
+He carries a box toward the pile, his breath visible in the cool salt air. He sets it down, pauses, surveys what he’s done. Still more to go. He returns to the car for another box.
 
-Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
+The rhythm of this work—unload, stack, pause, repeat—is something he understands. Not interaction. Just the weight of objects moving from one place to another.
 
-Dallas goes into the grass a little bit. He stops. At the edge of the reeds is a jagged, dead patch of earth—a circle of black, oily rot where nothing grows. In the center of the rot, a single wooden stake has been driven into the ground, but it’s been snapped off, the top half gone. 
+He pulls out an oscillator from one of the open boxes. A military-grade device. He sets it down on the table, checking the connections. It still works.
 
-As Dallas examines the broken wood, he hears a distinct bicycle ring.
-
-MAKAYLA
-<!-- scene: 1 file: s01.md nickname: arrival -->
-
-(action)
-Makayla, 22, and Asher, 14 — approach on bikes. They watch Dallas for a while.
-
-ASHER
-<!-- scene: 1 file: s01.md nickname: arrival -->
-
-(action)
-They approach Dallas slowly as one of the boxes draws their curiosity. Makayla watches Dallas pull out a military grade Oscillator.
-
-MAKAYLA
-(to Asher but loud enough for Dallas to hear)
-You know that could be used to track the baseline between the cries of the Binzos and the howls of the Oragraph. They don't really know for sure though, and of course, none of it really matters if a Nidus is forming. That's an apex predator situation. 
+A bicycle ring. Close.
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Asher nods with his headphones on. Makayla approaches Dallas. 
+MAKAYLA and ASHER approach on bikes. Makayla is 22, focused. Asher is 14, withdrawn, wearing headphones. They slow as they pass. Not casual passers-by. They’ve been waiting for this—Dallas in the yard, equipment visible.
+
+Makayla’s eyes lock on the oscillator on the table. She taps Asher’s shoulder. They stop their bikes. They watch.
+
+MAKAYLA approaches Dallas slowly. Controlled. Not curious the way a neighbor would be—operational.
 
 MAKAYLA
+(to Asher, but loud enough for Dallas to hear)
+You know that could be used to track the baseline between the cries of the Binzos and the howls of the Oragraph. They don’t really know for sure though, and of course, none of it really matters if a Nidus is forming. That’s an apex predator situation.
+
+<!-- scene: 1 file: s01.md nickname: arrival -->
+
+(action)
+Asher nods, still tracing a pattern on his palm with one finger. Not looking up.
+
+MAKAYLA (CONT’D)
 Hello there.
 
 DALLAS
 Hello.
 
 MAKAYLA
-I'm Makayla.
+I’m Makayla.
 
 DALLAS
-Dallas. 
+Dallas.
 
 MAKAYLA
 Nice to meet you.
@@ -152,62 +219,59 @@ MAKAYLA
 Did you just move here?
 
 DALLAS
-Yes
+Yes.
 
 MAKAYLA
 Is that an Oscillator?
 
 DALLAS
-Yes. 
+Yes.
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Makayla looks at Asher and whispers something in his ear. He nods. She returns glances to Dallas and inches her bike closer. 
+Makayla looks at Asher. Something passes between them. She inches her bike closer to Dallas.
 
 MAKAYLA
-Do you think my brother Asher could borrow it some time? 
+Do you think my brother Asher could borrow it some time?
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Dallas looks at the Oscillator and then at Asher.
-
-MAKAYLA
-He'll need it. 
+Dallas looks at the oscillator, then at Asher.
 
 DALLAS
 What would he need it for?
 
 MAKAYLA
-Tell him Asher. 
+He’ll need it.
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Asher stands silent, still tracing a pattern on his palm. He doesn't look up.
+Asher stands silent, still not looking up. His finger taps a pattern—nearly morse code—against his other fingers.
 
-MAKAYLA
+MAKAYLA (CONT’D)
 Does it work?
 
 DALLAS
 It does.
 
 MAKAYLA
-What's the range on it?
+What’s the range on it?
 
 DALLAS
-I'm not sure.
+I’m not sure.
 
 MAKAYLA
-Well okay. Asher, do you have any more questions?
+Asher, do you have any more questions?
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Makayla turns to Asher. He shakes his head no—still not looking up, finger tapping his other fingers in an almost morse code type of way. 
+Asher shakes his head. No. Still silent. Still not looking up.
 
-MAKAYLA
+MAKAYLA (CONT’D)
 Okay then. Good to know. Can we borrow it?
 
 DALLAS
@@ -216,9 +280,11 @@ Sure.
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Makayla and Asher peddle their bikes away with their new oscilattor.     Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
+Makayla walks her bike to the oscillator, picks it up, nods to Asher. They pedal away together, the device secure in Makayla’s hands.
 
-Dallas looks down at a box of old equipment and stretches down to pick it up.
+Dallas watches them disappear around the corner. Then he turns back to the yard, to the boxes, to the tall grass at the property line moving in the wind.
+
+He goes back inside.
 
 ---
 
@@ -416,6 +482,9 @@ Yeah. Me neither - well I drive - for sure, but yeah, I share one with my sister
 
 EXT. TOWN BRANFORD MONTAGE (s03.3)
 
+<!-- scene: 3 file: s03.md nickname: the-hum -->
+
+(action)
 Dallas and Dominic through coastal sidewalks, neighborhoods, and natural marsh fences. As they approach one patch of tall marsh grass in particular, Dallas stops.
 
 Dallas, checks if Dominic is looking and when he isn't - he takes records a bit with the audio recorder and points it's microphone toward the grass. 
@@ -1939,47 +2008,28 @@ DALLAS
 I don't know.
 
 MAKAYLA
-Your wife was an Epistemologist? 
+I looked you up.
 
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Dallas looks at the sky and then at the ground and then at the burn marks at the edge of the property. 
+Dallas looks at the ground.
 
 MAKAYLA
-She studied how fish communicate underwater?
+Your wife's work came up.
 
 DALLAS
-She did.
+Yeah.
+
+A beat.
 
 MAKAYLA
 Sounds like a smart lady.
 
 DALLAS
-She was (long beat) How did you know that?
+She was.
+
+(long beat)
 
 MAKAYLA
-How did I know what?
-
-DALLAS
-How did you know that my wife was an Epistemologist. 
-
-MAKAYLA
-I've read her papers. Read her book. Watched her give that ted talk. And wondered what kind of woman she was. And now - here I am - with her husband. 
-
-DALLAS
-Yeah. 
-
-MAKAYLA
-Yeah... You're not really like who I thought you would be. 
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Dallas nods and looks at the ground.
-
-MAKAYLA
-Our moms gone too. But we're still here and now we are here living with her babybrother - in Branford.
+Our mom's gone too. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
