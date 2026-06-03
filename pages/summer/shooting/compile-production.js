@@ -273,6 +273,85 @@ function getProductionStyles() {
 `;
 }
 
+function generateCalendarHtml(productionData) {
+  const calendar = productionData.calendar || {};
+  const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+  const dayToScenes = {};
+  shootPlan.forEach(entry => {
+    if (Array.isArray(entry.scenes)) {
+      dayToScenes[entry.day] = entry.scenes.join(', ');
+    }
+  });
+
+  const dates = Object.values(calendar).sort((a, b) => new Date(a) - new Date(b));
+  const firstDate = dates.length > 0 ? new Date(dates[0] + 'T12:00:00') : new Date();
+  const startOfMonth = new Date(firstDate.getFullYear(), firstDate.getMonth(), 1);
+  const endOfMonth = new Date(firstDate.getFullYear(), firstDate.getMonth() + 1, 0);
+
+  let html = '<section style="margin-top:0;"><h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Calendar</h2><div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:12px;table-layout:fixed;"><thead><tr>';
+
+  const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  dayNames.forEach(day => {
+    html += `<th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">${day}</th>`;
+  });
+  html += '</tr></thead><tbody>';
+
+  let date = new Date(startOfMonth);
+  let row = '<tr>';
+  for (let i = 0; i < date.getDay(); i++) row += '<td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"></td>';
+
+  while (date <= endOfMonth) {
+    const day = date.getDate();
+    const dateStr = date.toISOString().split('T')[0];
+    const dayNum = Object.keys(calendar).find(k => calendar[k] === dateStr);
+    const dayClass = dayNum ? 'shooting-day' : '';
+    const bgColor = dayNum ? '#f0f0f0' : 'transparent';
+    const borderColor = dayNum ? '#999' : '#eee';
+    const scenes = dayNum && dayToScenes[dayNum] ? dayToScenes[dayNum] : '';
+    const opacity = dayNum ? 1 : 1;
+
+    const cellContent = dayNum
+      ? `<div style="font-weight:700;margin-bottom:2px;">${day}</div><div style="font-weight:800;font-size:11px;">Day ${dayNum}</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">${scenes}</div>`
+      : `<div style="font-weight:700;margin-bottom:2px;">${day}</div>`;
+
+    const onclick = dayNum ? `onclick="window.location.href='production/days/${dayNum}.html'"` : '';
+    const cursor = dayNum ? 'cursor:pointer;' : '';
+
+    row += `<td ${onclick} style="padding:6px 8px;border:1px solid ${borderColor};vertical-align:top;opacity:${opacity};background:${bgColor};min-height:60px;height:70px;${cursor}">${cellContent}</td>`;
+
+    if (date.getDay() === 6) {
+      row += '</tr><tr>';
+    }
+    date.setDate(date.getDate() + 1);
+  }
+  while (date.getDay() !== 0) {
+    row += '<td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">' + date.getDate() + '</div></td>';
+    date.setDate(date.getDate() + 1);
+  }
+  row += '</tr>';
+
+  html += row + '</tbody></table></div></section>';
+  return html;
+}
+
+function generateScheduleTableHtml(productionData) {
+  const calendar = productionData.calendar || {};
+  const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+
+  let html = '<section style="margin-top:48px; margin-bottom:48px;"><div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;"><h2 style="color:#111;margin:0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Shooting Schedule</h2></div><div style="overflow-x:auto;"><table id="schedule-table" style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;"><thead><tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;"><th id="col-day" style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Day</th><th id="col-date" style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Date</th><th id="col-scenes" style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Scenes</th></tr></thead><tbody id="schedule-tbody-day">';
+
+  shootPlan.forEach(entry => {
+    const dateStr = calendar[entry.day];
+    const date = dateStr ? new Date(dateStr + 'T12:00:00') : null;
+    const dateFormatted = date ? date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }) : '—';
+    const scenes = Array.isArray(entry.scenes) ? entry.scenes.join(', ') : '';
+    html += `<tr style="border-bottom:1px solid #ddd;cursor:pointer;" onclick="window.location.href='production/days/${entry.day}.html'"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>Day ${entry.day}</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">${dateFormatted}</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">${scenes}</td></tr>`;
+  });
+
+  html += '</tbody></table></div></section>';
+  return html;
+}
+
 function generateFullHtml(rows, totalDays, productionData) {
   const totalScenes = rows.length;
 
@@ -312,6 +391,10 @@ function generateFullHtml(rows, totalDays, productionData) {
                     <div class="stats-value">${totalDays}</div>
                   </div>
                 </div>
+
+                ${generateCalendarHtml(productionData)}
+
+                ${generateScheduleTableHtml(productionData)}
 
                 <section style="margin-bottom: 40px;">
                   <h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem;">Call Sheets</h2>
