@@ -9,48 +9,6 @@
       "price": 12.99
     },
     {
-      "id": 2,
-      "date": "2026-05-28",
-      "memo": "Glocusent 26 LED Rechargeable Book Light",
-      "category": "Camera/Gear",
-      "price": 9.99
-    },
-    {
-      "id": 3,
-      "date": "2026-05-18",
-      "memo": "RILIHO Leather Journal Notebook",
-      "category": "Props/Set",
-      "price": 14.98
-    },
-    {
-      "id": 4,
-      "date": "2026-05-09",
-      "memo": "Kastar 4-Pack 3.7V 2600mAh Battery + AC Charger",
-      "category": "Camera/Gear",
-      "price": 28.99
-    },
-    {
-      "id": 5,
-      "date": "2026-05-27",
-      "memo": "BOYA XLR Shotgun Microphone BY-BM6060",
-      "category": "Camera/Gear",
-      "price": 87.5
-    },
-    {
-      "id": 6,
-      "date": "2026-05-09",
-      "memo": "FNIRSI DST-201 Digital Multimeter/Oscilloscope",
-      "category": "Camera/Gear",
-      "price": 55.99
-    },
-    {
-      "id": 7,
-      "date": "2026-05-06",
-      "memo": "NEEWER NW-7000 Microphone Boom Arm",
-      "category": "Camera/Gear",
-      "price": 49.79
-    },
-    {
       "id": 8,
       "date": "2026-05-27",
       "memo": "Craft Foam Balls - 50 Pack (1-2.4 inches)",
@@ -72,32 +30,18 @@
       "price": 8.99
     },
     {
+      "id": 3,
+      "date": "2026-05-18",
+      "memo": "RILIHO Leather Journal Notebook",
+      "category": "Props/Set",
+      "price": 14.98
+    },
+    {
       "id": 11,
       "date": "2026-04-03",
       "memo": "Black Rooster Fringe Trim 2.15 Yard",
       "category": "Props/Set",
       "price": 11.99
-    },
-    {
-      "id": 12,
-      "date": "2026-04-03",
-      "memo": "NEEWER RGB Video Light with Battery",
-      "category": "Camera/Gear",
-      "price": 35.99
-    },
-    {
-      "id": 13,
-      "date": "2026-04-03",
-      "memo": "K&F CONCEPT 24x36 5-in-1 Oval Reflector",
-      "category": "Camera/Gear",
-      "price": 21.99
-    },
-    {
-      "id": 14,
-      "date": "2026-05-27",
-      "memo": "PHOTOOLEX RGB Tube Light Stick",
-      "category": "Camera/Gear",
-      "price": 47.99
     },
     {
       "id": 15,
@@ -114,11 +58,116 @@
       "price": 12.51
     },
     {
+      "id": 31,
+      "date": "2026-06-03",
+      "memo": "Universal Replacement Laptop Shoulder Strap",
+      "category": "Camera/Gear",
+      "price": 7.99
+    },
+    {
+      "id": 32,
+      "date": "2026-06-03",
+      "memo": "Ribvane Directors Clapboard",
+      "category": "Camera/Gear",
+      "price": 19.53
+    },
+    {
+      "id": 33,
+      "date": "2026-06-03",
+      "memo": "JJC H4n Protective Carrying Storage Pouch Case Bag",
+      "category": "Camera/Gear",
+      "price": 19.49
+    },
+    {
+      "id": 35,
+      "date": "2026-06-02",
+      "memo": "Freewell 67mm Threaded Hard Stop Variable ND Filter",
+      "category": "Camera/Gear",
+      "price": 109.99
+    },
+    {
+      "id": 34,
+      "date": "2026-06-01",
+      "memo": "PixelFlash 256GB CFast 2.0 Card",
+      "category": "Camera/Gear",
+      "price": 279.98
+    },
+    {
+      "id": 36,
+      "date": "2026-06-01",
+      "memo": "Zoom H4 Essential Handheld Recorder (Rewards Points applied)",
+      "category": "Camera/Gear",
+      "price": 173.3
+    },
+    {
+      "id": 37,
+      "date": "2026-06-01",
+      "memo": "Seagate Expansion 8TB External Hard Drive",
+      "category": "Camera/Gear",
+      "price": 239.99
+    },
+    {
+      "id": 2,
+      "date": "2026-05-28",
+      "memo": "Glocusent 26 LED Rechargeable Book Light",
+      "category": "Camera/Gear",
+      "price": 9.99
+    },
+    {
+      "id": 5,
+      "date": "2026-05-27",
+      "memo": "BOYA XLR Shotgun Microphone BY-BM6060",
+      "category": "Camera/Gear",
+      "price": 87.5
+    },
+    {
+      "id": 14,
+      "date": "2026-05-27",
+      "memo": "PHOTOOLEX RGB Tube Light Stick",
+      "category": "Camera/Gear",
+      "price": 47.99
+    },
+    {
       "id": 17,
       "date": "2026-05-27",
       "memo": "Canon Mount Adapter EF-EOS R",
       "category": "Camera/Gear",
       "price": 149
+    },
+    {
+      "id": 4,
+      "date": "2026-05-09",
+      "memo": "Kastar 4-Pack 3.7V 2600mAh Battery + AC Charger",
+      "category": "Camera/Gear",
+      "price": 28.99
+    },
+    {
+      "id": 6,
+      "date": "2026-05-09",
+      "memo": "FNIRSI DST-201 Digital Multimeter/Oscilloscope",
+      "category": "Camera/Gear",
+      "price": 55.99
+    },
+    {
+      "id": 7,
+      "date": "2026-05-06",
+      "memo": "NEEWER NW-7000 Microphone Boom Arm",
+      "category": "Camera/Gear",
+      "price": 49.79
+    },
+    {
+      "id": 12,
+      "date": "2026-04-03",
+      "memo": "NEEWER RGB Video Light with Battery",
+      "category": "Camera/Gear",
+      "price": 35.99
+    },
+    {
+      "id": 13,
+      "date": "2026-04-03",
+      "memo": "K&F CONCEPT 24x36 5-in-1 Oval Reflector",
+      "category": "Camera/Gear",
+      "price": 21.99
     },
     {
       "id": 18,
@@ -149,25 +198,18 @@
       "price": 199.99
     },
     {
-      "id": 22,
-      "date": "2025-09-12",
-      "memo": "Tilta Xeno Side Handle Filmmaker Black",
-      "category": "Camera/Gear",
-      "price": 36
-    },
-    {
-      "id": 23,
-      "date": "2025-09-12",
-      "memo": "SIRUI 75mm F1.8 1.33X S35 Anamorphic Lens RF Mount",
-      "category": "Camera/Gear",
-      "price": 290
-    },
-    {
       "id": 24,
       "date": "2025-09-16",
       "memo": "Tiltaing Full Camera Cage RED Komodo Tactical Gray",
       "category": "Camera/Gear",
       "price": 79
+    },
+    {
+      "id": 29,
+      "date": "2025-09-14",
+      "memo": "SanDisk 512GB Extreme PRO CFast 2.0 Memory Card",
+      "category": "Camera/Gear",
+      "price": 359.99
     },
     {
       "id": 25,
@@ -198,11 +240,18 @@
       "price": 129.99
     },
     {
-      "id": 29,
-      "date": "2025-09-14",
-      "memo": "SanDisk 512GB Extreme PRO CFast 2.0 Memory Card",
+      "id": 22,
+      "date": "2025-09-12",
+      "memo": "Tilta Xeno Side Handle Filmmaker Black",
       "category": "Camera/Gear",
-      "price": 359.99
+      "price": 36
+    },
+    {
+      "id": 23,
+      "date": "2025-09-12",
+      "memo": "SIRUI 75mm F1.8 1.33X S35 Anamorphic Lens RF Mount",
+      "category": "Camera/Gear",
+      "price": 290
     },
     {
       "id": 30,
