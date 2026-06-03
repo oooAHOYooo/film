@@ -24,7 +24,7 @@
   "s00b": {
     "durationMin": 30,
     "shootDays": 0.5,
-    "assignedDay": 1,
+    "assignedDay": 4,
     "location": "Rental House - Interior",
     "time": "Day",
     "keyElements": "Dallas meets property manager. First full view of Dallas's face in attic.",
@@ -45,7 +45,7 @@
   "s01": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 9.5,
+    "assignedDay": 1,
     "location": "DALLAS HOUSE - Exterior",
     "time": "DAY",
     "keyElements": "",
@@ -107,7 +107,7 @@
   "s04": {
     "durationMin": 180,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 13,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -156,7 +156,7 @@
   "s07b": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 12,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -170,10 +170,7 @@
   "s26": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": [
-      5,
-      14
-    ],
+    "assignedDay": 9,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -188,7 +185,7 @@
   "s03": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -200,7 +197,7 @@
   "s05": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -212,7 +209,7 @@
   "s06": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 13,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -270,7 +267,7 @@
   "s13": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -284,7 +281,7 @@
   "s07": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 11,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -299,7 +296,7 @@
   "s14": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -313,7 +310,7 @@
   "s14b": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 5,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -327,7 +324,7 @@
   "s14c": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 5,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -342,10 +339,7 @@
     "durationMin": 120,
     "time": "08:00 PM - 10:00 PM",
     "shootDays": 0.5,
-    "assignedDay": [
-      9,
-      4
-    ],
+    "assignedDay": 10,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -360,10 +354,7 @@
   "s17b": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": [
-      4,
-      12
-    ],
+    "assignedDay": 12,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -378,10 +369,7 @@
   "s17c": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": [
-      4,
-      12
-    ],
+    "assignedDay": 12,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -454,7 +442,7 @@
   "s15a": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -465,7 +453,7 @@
   "s15b": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -476,7 +464,7 @@
   "s15c": {
     "durationMin": 45,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -501,7 +489,7 @@
   "s21": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 14,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -514,7 +502,7 @@
   "s22": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 14,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -530,7 +518,7 @@
   "s23": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 15,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -543,7 +531,7 @@
   "s24": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 15,
+    "assignedDay": 9,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -556,7 +544,7 @@
   "s25": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 16,
+    "assignedDay": 9,
     "time": "7:00 PM – 9:00 PM",
     "keyElements": "",
     "productionNotes": "",
@@ -586,7 +574,7 @@
   "s27": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 16,
+    "assignedDay": 14,
     "location": "EXT. Jerry's House — Afternoon",
     "keyElements": "",
     "productionNotes": "Afternoon shoot before nursery run",
@@ -603,7 +591,7 @@
   "s28": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 16,
+    "assignedDay": 14,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -1041,9 +1029,11 @@
     ]
   },
   "s08c": {
-    "durationMin": 15
+    "durationMin": 15,
+    "assignedDay": 6
   },
   "s08d": {
-    "durationMin": 60
+    "durationMin": 60,
+    "assignedDay": 8
   }
 }
