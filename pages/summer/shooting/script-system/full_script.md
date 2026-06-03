@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/2/2026, 10:36:27 PM*
+*Compiled on 6/3/2026, 8:57:51 AM*
 
 ---
 
@@ -10,15 +10,118 @@
 ---
 
 
-### Scene 0: Branford Montage
+### Scene 0A: Opening Montage
 
-*ACT I — Arrival & Discovery | ID: branford-montage | File: s00.md*
+*ACT I — Arrival & Discovery | ID: opening-montage | File: s00a.md*
 
 ---
 
-<!-- scene: 0 file: s00.md nickname: branford-montage -->
+<!-- scene: 0A file: s00a.md nickname: opening-montage -->
 
-INT. RENTAL HOUSE - FRONT DOOR - DAY (s00.1)
+## OPENING MONTAGE
+
+EXT. BRANFORD TRAIN STATION - EARLY MORNING (s00a.1)
+
+An empty platform. The Long Island Sound visible beyond the station house — gray water, distant shoreline. A single train pulls away, its last car disappearing around the curve.
+
+Dallas stands alone on the platform. Mid-30s, worn canvas jacket, a single suitcase beside him. Not lost. Displaced. He's been displaced a lot. He picks up the suitcase and walks toward the station exit without looking back.
+
+EXT. BRANFORD STREETS - CONTINUOUS (s00a.2)
+
+Salt air. Low houses with white trim and weathered fences. Dallas walks through the neighborhood, suitcase in hand. His eyes take in the scale of the place — smaller than he expected. Quieter.
+
+He passes a street sign: Harbor View Lane.
+
+EXT. BRANFORD - MARSH FENCE - CONTINUOUS (s00a.3)
+
+Wide shot. Dallas approaches the rental house from the far side of the property. The house is visible through a gap in the tall grass. He stops at the fence line. His eye catches on the tall reeds that mark the edge of the yard.
+
+Something pulls his attention there. He doesn't know why yet.
+
+---
+
+INT. MARSH EDGE - CONTINUOUS (s00a.4)
+
+Tight close-up. Fingers pressing a trail camera into the bark of a dead oak. The fingers are careful, deliberate. Practiced.
+
+Pull back. MAKAYLA, 22, kneels at the base of the tree. Her eyes are focused on the camera placement. No wasted movement.
+
+ASHER, 14, stands a few feet away with his hands on a boom pole. He is assembling it piece by piece. Each segment seats with a small click. His movements are methodical. He has done this a hundred times.
+
+INT. MARSH EDGE - LATER (s00a.5)
+
+Makayla's hand traces a pattern through the soft ground. She is outlining a perimeter for a small hole. Asher crouches nearby with a folding trowel — small, military-issue, designed for digging in tight spaces.
+
+He hands it to her without being asked.
+
+She begins to dig. The blade cuts into the marsh soil. Asher watches the tree line.
+
+---
+
+EXT. BRANFORD STREETS - CONTINUOUS (s00a.6)
+
+Wide shot. Dallas walks through the residential streets. A parked car. A mailbox with the address he's been looking for. The house is getting closer.
+
+He is not thinking about the house yet.
+
+INT. MARSH EDGE - CONTINUOUS (s00a.7)
+
+Close-up. Makayla's hands work a piece of equipment into the hole she has dug. It is small, circular, with a microphone array. An acoustic trap. She covers it with damp soil, then with a thin layer of leaf litter and moss, troweled so carefully that the ground looks undisturbed.
+
+She sits back. Her hands are still.
+
+A beat.
+
+She stops. Her hand hovers over the next piece of equipment. Her head tilts.
+
+She is listening to something.
+
+---
+
+INT. MARSH EDGE - CONTINUOUS (s00a.8)
+
+Asher has frozen. His finger is mid-trace on his other palm. He is not looking at Makayla, but he knows she has stopped.
+
+A beat longer. He was listening first.
+
+They look at each other.
+
+No words. No names. No explanation.
+
+They have heard it before. Their bodies remember the sound without needing to hear it again.
+
+It is back.
+
+---
+
+EXT. RENTAL HOUSE - BACK YARD - CONTINUOUS (s00a.9)
+
+Wide shot. Dallas has arrived. He stands at the far edge of the property, looking at the front of the house. Taking in the scale, the condition, the fact of it.
+
+He sets down his suitcase.
+
+His eye drifts to the tall grass at the edge of the property. The reeds that border the marsh. The line where the yard ends.
+
+Something in the movement of the grass. Or the stillness of it.
+
+He watches for a moment without moving.
+
+Then he picks up his suitcase again and walks toward the front door.
+
+END SCENE 0a
+
+---
+
+
+### Scene 0B: Property Manager
+
+*ACT I — Arrival & Discovery | ID: property-manager | File: s00b.md*
+
+---
+
+<!-- scene: 0B file: s00b.md nickname: property-manager -->
+
+INT. RENTAL HOUSE - FRONT DOOR - DAY (s00b.1)
 
 The front door opens inward. A small foyer with scuffed hardwood. To the left, a living room where cheap furniture sits pushed against the walls in no particular order. A futon frame without a mattress leans in a corner. Empty beer cans on the floor by the baseboard — not swept up, not recent enough to matter. The smell of stale beer is baked into the air.
 
@@ -41,11 +144,13 @@ She moves deeper into the house. Dallas follows. She is filling silence the way 
 PROPERTY MANAGER (CONT'D)
 The kitchen is through here. Appliances are older but they work. The stove needs a minute to heat but it's reliable. Previous tenant left a mini-fridge in the corner I asked him to take three times. I apologize for that.
 
+INT. RENTAL HOUSE - KITCHEN / BACK WINDOW - CONTINUOUS (s00b.2)
+
 Dallas stops at a window that faces the backyard. Through the glass, tall reeds and grass. The line where the yard ends and something else begins — marsh, or boundary, or both. His hand rises halfway, then stops. He looks at the grass.
 
 The property manager has continued talking. She realizes he's not behind her. She turns back.
 
-PROPERTY MANAGER (CONT'D)
+PROPERTY MANAGER
 The yard is mostly unmanaged. Not my responsibility. Landlord says it's fine, so... it's fine.
 
 Dallas doesn't answer. He's still looking out.
@@ -55,9 +160,9 @@ The upstairs has two bedrooms. One is larger. There's a bathroom — the light f
 
 She trails. Dallas has already moved past her, toward the stairs. He climbs without waiting.
 
-INT. ATTIC - CONTINUOUS (s00.3)
+INT. RENTAL HOUSE - ATTIC - CONTINUOUS (s00b.3)
 
-Low wood joists. Bare plywood floor. Small window at one end throwing gray light across the space. The ceiling is higher than expected — not cramped. Quiet. The kind of quiet that has weight.
+Low wood joists. Bare plywood floor. A small window at one end throws gray light across the space. The ceiling is higher than expected — not cramped. Quiet. The kind of quiet that has weight.
 
 Dallas stands in the center of the attic. His head tilts back slightly. He looks up at the underside of the roof. He listens.
 
@@ -75,9 +180,9 @@ PROPERTY MANAGER (CONT'D) (O.S.)
 (a beat, realizing)
 Well. I'll just... let me get you those keys.
 
-Dallas is still looking up.
+Dallas is still looking up. His face is visible for the first time — calm, focused. Already somewhere else. Already home in this quiet place.
 
-END SCENE 0
+END SCENE 0b
 
 ---
 

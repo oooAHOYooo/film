@@ -1,11 +1,19 @@
 [
   {
-    "id": "branford-montage",
-    "file": "s00.md",
-    "title": "Branford Montage",
+    "id": "opening-montage",
+    "file": "s00a.md",
+    "title": "Opening Montage",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "branford-montage"
+    "nickname": "opening-montage"
+  },
+  {
+    "id": "property-manager",
+    "file": "s00b.md",
+    "title": "Property Manager",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "property-manager"
   },
   {
     "id": "arrival",
