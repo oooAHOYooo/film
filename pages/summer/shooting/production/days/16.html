@@ -180,5 +180,78 @@
                 </div>
             </section>
         </div>
+        <script>
+            // Convert scene numbers to clickable links to full script
+            function linkSceneNumbers() {
+              const fullScriptUrl = '../../script-system/full_script.html';
+              // Pattern to match scene numbers: s00, s01, s02.3, prologue, etc.
+              const scenePattern = /\b(prologue|s\d+(?:\.\d+)?(?:[a-z])?)/gi;
+
+              // Get all text nodes in the page
+              function makeLinksInElement(element) {
+                const childNodes = Array.from(element.childNodes);
+
+                childNodes.forEach(node => {
+                  if (node.nodeType === Node.TEXT_NODE) {
+                    const text = node.textContent;
+                    if (scenePattern.test(text)) {
+                      // Reset regex lastIndex since we tested it
+                      scenePattern.lastIndex = 0;
+
+                      // Create a fragment to hold the new content
+                      const fragment = document.createDocumentFragment();
+                      let lastIndex = 0;
+                      let match;
+
+                      scenePattern.lastIndex = 0;
+                      while ((match = scenePattern.exec(text)) !== null) {
+                        // Add text before the match
+                        if (match.index > lastIndex) {
+                          fragment.appendChild(
+                            document.createTextNode(text.substring(lastIndex, match.index))
+                          );
+                        }
+
+                        // Create link for the scene number
+                        const link = document.createElement('a');
+                        link.href = fullScriptUrl + '#scene-' + match[1].toLowerCase();
+                        link.textContent = match[1];
+                        link.style.color = '#0366d6';
+                        link.style.textDecoration = 'none';
+                        link.style.cursor = 'pointer';
+                        link.style.borderBottom = '1px dotted currentColor';
+                        link.title = 'Jump to scene ' + match[1] + ' in full script';
+
+                        fragment.appendChild(link);
+                        lastIndex = scenePattern.lastIndex;
+                      }
+
+                      // Add remaining text
+                      if (lastIndex < text.length) {
+                        fragment.appendChild(
+                          document.createTextNode(text.substring(lastIndex))
+                        );
+                      }
+
+                      // Replace the text node with the new content
+                      node.parentNode.replaceChild(fragment, node);
+                    }
+                  } else if (node.nodeType === Node.ELEMENT_NODE && !['SCRIPT', 'STYLE', 'A'].includes(node.tagName)) {
+                    // Recursively process child elements, except script, style, and existing links
+                    makeLinksInElement(node);
+                  }
+                });
+              }
+
+              // Only link scene numbers in the main content area
+              const mainContent = document.querySelector('.main-content') || document.body;
+              makeLinksInElement(mainContent);
+            }
+
+            // Run after page loads
+            document.addEventListener('DOMContentLoaded', linkSceneNumbers);
+            // Also run immediately in case DOM is already ready
+            linkSceneNumbers();
+        </script>
     </body>
 </html>

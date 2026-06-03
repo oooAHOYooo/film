@@ -252,7 +252,9 @@ function generateHTMLPage(markdown, scenes) {
     const num = i + 1;
     const displayNum = getSceneDisplayNumber(s.file) || num;
     const title = (s.title || '').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-    return `<option value="scene-${num}">${displayNum}. ${title}</option>`;
+    const filename = s.file.replace('.md', '');
+    const sceneId = `scene-${filename}`;
+    return `<option value="${sceneId}">${displayNum}. ${title}</option>`;
   }).join('');
 
   const html = String.raw`
@@ -476,7 +478,26 @@ function generateHTMLPage(markdown, scenes) {
       sceneHeadings.forEach((h3, i) => {
         const text = (h3.textContent || '').trim();
         if (sceneHeadingRe.test(text)) {
-          h3.id = 'scene-' + (i + 1);
+          // Try to extract scene filename from metadata that follows the h3
+          let sceneId = 'scene-' + (i + 1);
+          let node = h3.nextSibling;
+          while (node) {
+            if (node.nodeType === 1) {
+              const metaText = (node.textContent || '').trim();
+              // Look for "File: filename.md" in the metadata
+              const fileMatch = metaText.match(/File:\s*([a-zA-Z0-9\-_.]+\.md)/i);
+              if (fileMatch) {
+                const filename = fileMatch[1].replace('.md', '');
+                // Use the filename as the scene ID (prologue, s00, s01, etc.)
+                sceneId = 'scene-' + filename;
+                break;
+              }
+              // Stop searching if we hit another heading
+              if (node.tagName === 'H3' || node.tagName === 'H2' || node.tagName === 'H1') break;
+            }
+            node = node.nextSibling;
+          }
+          h3.id = sceneId;
         }
       });
 
@@ -501,11 +522,8 @@ function generateHTMLPage(markdown, scenes) {
 
       function getSceneHeadingsInOrder() {
         const h3s = content.querySelectorAll('h3[id^="scene-"]');
-        return Array.from(h3s).sort((a, b) => {
-          const nA = parseInt(a.id.replace('scene-', ''), 10);
-          const nB = parseInt(b.id.replace('scene-', ''), 10);
-          return nA - nB;
-        });
+        // Return in document order (already in correct order)
+        return Array.from(h3s);
       }
 
       function getSceneBlock(sceneH3, nextSceneH3) {
@@ -538,9 +556,9 @@ function generateHTMLPage(markdown, scenes) {
           if (top <= viewportThreshold) current = sceneHeadings[i];
         }
         const title = (current.textContent || '').trim();
-        const nextId = current.id.replace('scene-', '');
-        const nextNum = parseInt(nextId, 10) + 1;
-        const nextScene = document.getElementById('scene-' + nextNum);
+        const allHeadings = getSceneHeadingsInOrder();
+        const currentIndex = allHeadings.indexOf(current);
+        const nextScene = currentIndex >= 0 && currentIndex < allHeadings.length - 1 ? allHeadings[currentIndex + 1] : null;
         const block = getSceneBlock(current, nextScene || null);
         sceneEl.textContent = title || '—';
         charsEl.textContent = block.characters.length ? block.characters.join(', ') : '—';
