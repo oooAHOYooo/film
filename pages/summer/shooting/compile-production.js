@@ -525,6 +525,10 @@ function generateDayHtml(dayNum, rows, productionData) {
 
             <section style="margin-top:20px; display:flex; flex-direction:column; gap:20px;">
                 <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
+                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">PROPS</h3>
+                    <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;">${summaryProps.length > 0 ? summaryProps.map(p => `<div style="margin-bottom: 4px;">☐ ${escapeHtml(p)}</div>`).join('') : '<div style="color:#999; font-style:italic;">No props listed for this day.</div>'}</div>
+                </div>
+                <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
                     <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">EQUIPMENT</h3>
                     <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;">${summaryEquipment.length > 0 ? summaryEquipment.map(e => `<div style="margin-bottom: 4px;">${escapeHtml(e)}</div>`).join('') : '<div style="color:#999; font-style:italic;">No equipment listed for this day.</div>'}</div>
                 </div>

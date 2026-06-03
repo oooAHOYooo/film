@@ -23,6 +23,18 @@
     "cast": [
       "Dallas",
       "Makayla"
+    ],
+    "props": [
+      "Sierra's Box — cardboard, labeled 'Field Notes — Branford' (handwritten, worn)",
+      "Field journal — water-warped cover, rubber band closure, 2-3 pages with creature sketches & frequency notation",
+      "Ruby-red cassette player — small, retro; duct tape on back conceals photo",
+      "Ruby-red headphones — matching player, worn",
+      "Photo sticker (on cassette back) — Dallas & Sierra in audio headsets, laughing in field (~2\"×2\", matte, worn edges)",
+      "Assorted cables & audio equipment — texture, buried in box",
+      "Military-grade desktop audio recorder — heavy, serious; Sierra photo taped to it",
+      "Portable audio recorder — handheld",
+      "Portable oscillator — Dallas dials to 115.3",
+      "Frozen pizza — half-eaten or in oven (background texture)"
     ]
   },
   "s02.3": {
@@ -614,8 +626,12 @@
         "   b. Blue Shorts"
       ],
       "props": [
-        "1. Oscillator",
-        "2. Audio Headphones"
+        "Suitcase or worn travel bag — Dallas carries to front door (s00)",
+        "Moving boxes (3-4) — in background/porch, partially pre-positioned (s00)",
+        "Portable oscillator — tucked in bag or jacket, not used yet (s00)",
+        "Cheap/worn furniture (futon, pushed chairs) — pre-existing location dressing (s00)",
+        "Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.) — specific visual (s00)",
+        "Clipboard or folder (Property Manager) — keeps hands busy during walkthrough (s00)"
       ],
       "cast": [
         "Dallas"
@@ -647,13 +663,20 @@
         "Makayla: Outfit #1 (field gear)"
       ],
       "props": [
-        "Sierra's Box",
-        "Ruby-red headphones",
-        "Ruby-red cassette player",
-        "Laptop with trailcam footage",
-        "Translucent crystal in petri dish",
-        "Oscillator",
-        "Audio headphones"
+        "Sierra's Box — cardboard, labeled 'Field Notes — Branford' (handwritten, worn) (s02)",
+        "Field journal — water-warped cover, rubber band closure, 2-3 pages with creature sketches & frequency notation (s02)",
+        "Ruby-red cassette player — small, retro; duct tape on back conceals photo (s02)",
+        "Ruby-red headphones — matching player, worn (s02)",
+        "Photo sticker (on cassette back) — Dallas & Sierra in audio headsets, laughing in field (~2\"×2\", matte, worn edges) (s02)",
+        "Assorted cables & audio equipment — texture, buried in box (s02)",
+        "Military-grade desktop audio recorder — heavy, serious; Sierra photo taped to it (s02/s08b)",
+        "Portable audio recorder — handheld (s02/s08b)",
+        "Portable oscillator — Dallas dials to 115.3 (same unit from s00) (s08b)",
+        "Frozen pizza — half-eaten or in oven (background texture) (s02)",
+        "Laptop — for trailcam footage playback (creature footage, practical or VFX) (s08b)",
+        "Translucent crystal (petri dish) — pyramid-shaped quartz; glows gold at 115.3 Hz, scorches black ring on desk (s08b)",
+        "Birding guides — messy desk dressing (s08b)",
+        "Disassembled electronics — desk clutter (s08b)"
       ],
       "crew": [
         "1. Alex Gonzalez (Director, DP)",
@@ -954,11 +977,29 @@
     }
   ],
   "s00": {
-    "durationMin": 30
+    "durationMin": 30,
+    "assignedDay": 1,
+    "props": [
+      "Suitcase or worn travel bag — Dallas carries to front door",
+      "Moving boxes (3-4) — in background/porch, partially pre-positioned",
+      "Portable oscillator — tucked in bag or jacket (not used yet)",
+      "Cheap/worn furniture (futon, pushed chairs) — pre-existing location dressing",
+      "Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.) — specific visual",
+      "Clipboard or folder (Property Manager) — keeps hands busy during walkthrough"
+    ]
   },
   "s08b": {
     "durationMin": 60,
-    "assignedDay": 2
+    "assignedDay": 2,
+    "props": [
+      "Laptop — for trailcam footage playback (creature footage, practical or VFX)",
+      "Military-grade desktop audio recorder — with Sierra photo taped to it",
+      "Portable oscillator — Dallas dials to 115.3 (same unit from s00)",
+      "Translucent crystal (petri dish) — pyramid-shaped quartz; glows gold at 115.3 Hz, scorches black ring on desk",
+      "Birding guides — messy desk dressing",
+      "Disassembled electronics — desk clutter",
+      "Trailcam footage (practical/VFX) — plays on laptop screen"
+    ]
   },
   "s08c": {
     "durationMin": 15
