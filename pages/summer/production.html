@@ -1,0 +1,1456 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dashboard — Summer Production</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <style>
+                        :root {
+                --prod-accent: #000;
+                --prod-head: #f5f5f5;
+                --prod-border: #ccc;
+                --prod-tag-bg: #f9f9f9;
+                --prod-tag-border: #bbb;
+                --prod-row-hover: #f5f5f5;
+                --sidebar-w: 260px;
+            }
+            body {
+                margin: 0;
+                display: block;
+                min-height: 100vh;
+                overflow-y: auto;
+                background: #fff;
+                color: #111;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            }
+            .dashboard-container {
+                display: block;
+                overflow: hidden;
+            }
+            .brand-title {
+                font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+                font-size: 1rem;
+                font-weight: 700;
+                line-height: 1.15;
+                letter-spacing: 0.02em;
+                color: #111;
+            }
+            .brand-title-main {
+                font-size: 2.05rem;
+                line-height: 1.02;
+            }
+            .main-content {
+                flex: 1;
+                overflow-y: auto;
+                padding: 40px;
+                scroll-behavior: smooth;
+                position: relative;
+            }
+            .stats-card {
+                background: var(--prod-tag-bg);
+                border: 1px solid var(--prod-tag-border);
+                border-radius: 8px;
+                padding: 16px;
+                margin-bottom: 24px;
+            }
+            .stats-title {
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+                color: var(--text-secondary);
+                margin-bottom: 8px;
+            }
+            .stats-value {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: var(--prod-accent);
+            }
+            .quick-menu-btn {
+                position: sticky;
+                top: 18px;
+                left: 0;
+                width: 36px;
+                height: 36px;
+                border-radius: 10px;
+                background: #f5f5f5;
+                border: 1px solid #ccc;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                color: #111;
+                cursor: pointer;
+                transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+                z-index: 30;
+            }
+            .quick-menu-btn:hover {
+                background: #e0e0e0;
+                border-color: #999;
+                color: #000;
+            }
+            .quick-menu-btn svg {
+                width: 17px;
+                height: 17px;
+            }
+            .quick-menu {
+                position: fixed;
+                top: 18px;
+                left: 18px;
+                width: 240px;
+                max-width: calc(100vw - 24px);
+                background: #fff;
+                border: 1px solid #ccc;
+                border-radius: 14px;
+                padding: 14px;
+                box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+                z-index: 998;
+                display: none;
+                max-height: calc(100vh - 36px);
+                overflow-y: auto;
+                box-sizing: border-box;
+            }
+            .quick-menu.open {
+                display: block;
+            }
+            .quick-menu-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+                margin-bottom: 10px;
+            }
+            .quick-menu .brand-title {
+                margin: 0;
+            }
+            .quick-menu-close {
+                width: 26px;
+                height: 26px;
+                border: none;
+                border-radius: 8px;
+                background: #f0f0f0;
+                color: #111;
+                cursor: pointer;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                line-height: 1;
+                padding: 0;
+            }
+            .quick-menu-close:hover {
+                background: #ddd;
+                color: #000;
+            }
+            .quick-menu a {
+                display: block;
+                color: #111;
+                text-decoration: none;
+                padding: 10px 12px;
+                border-radius: 8px;
+                background: #f9f9f9;
+                border: 1px solid #ddd;
+                margin-bottom: 8px;
+                font-size: 0.88rem;
+            }
+            .quick-menu a:hover {
+                background: #eee;
+                border-color: #999;
+            }
+            .quick-menu .quick-meta {
+                margin-top: 10px;
+                font-size: 0.72rem;
+                color: #666;
+                line-height: 1.4;
+            }
+            .production-table {
+                width: 100%;
+                border-collapse: collapse;
+                background: #fff;
+                border: 1px solid #ccc;
+                font-size: 0.9rem;
+            }
+            .production-table th {
+                text-align: left;
+                padding: 12px;
+                border-bottom: 2px solid #999;
+                background: #f5f5f5;
+                color: #111;
+                position: sticky;
+                top: -41px;
+                z-index: 10;
+            }
+            .production-table td {
+                padding: 12px;
+                border-bottom: 1px solid var(--prod-border);
+                vertical-align: top;
+            }
+            .day-divider {
+                background: var(--prod-head);
+                color: var(--prod-accent);
+                font-weight: 600;
+                padding: 12px 20px;
+                border-left: 4px solid var(--prod-accent);
+                margin: 40px 0 20px 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .actor-chip {
+                display: inline-block;
+                padding: 2px 8px;
+                background: #f0f0f0;
+                border: 1px solid #999;
+                border-radius: 12px;
+                font-size: 0.75rem;
+                margin-right: 4px;
+                margin-bottom: 4px;
+                color: #111;
+                text-decoration: none;
+                transition: transform 0.1s;
+                cursor: pointer;
+            }
+            .actor-chip:hover {
+                transform: translateY(-1px);
+                background: #e0e0e0;
+            }
+            .click-copy {
+                cursor: pointer;
+                border-bottom: 1px dashed transparent;
+            }
+            .click-copy:hover {
+                border-bottom-color: var(--prod-accent);
+                color: var(--prod-accent);
+            }
+            .sync-check {
+                cursor: pointer;
+                opacity: 0.4;
+                transition: opacity 0.2s;
+            }
+            .sync-check:checked {
+                opacity: 1;
+            }
+            .row-dimmed {
+                opacity: 0.4;
+            }
+            .day-badge {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 24px;
+                height: 24px;
+                border-radius: 6px;
+                font-size: 0.7rem;
+                font-weight: 800;
+                margin-right: 8px;
+                color: #111;
+                background: #f0f0f0;
+                border: 1px solid #999;
+            }
+            .day-sun, .day-mon, .day-tue, .day-wed, .day-thu, .day-fri, .day-sat {
+                background: #f0f0f0; color: #111; border: 1px solid #999;
+            }
+            
+            .day-filter-bar {
+                display: flex;
+                gap: 8px;
+                margin-bottom: 24px;
+                flex-wrap: wrap;
+                background: #f9f9f9;
+                padding: 12px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+            }
+            .filter-btn {
+                background: #fff;
+                border: 1px solid #ccc;
+                color: #555;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+            .filter-btn:hover {
+                background: #eee;
+                border-color: #999;
+                color: #000;
+            }
+            .filter-btn.active {
+                background: #111;
+                color: #fff;
+                border-color: #111;
+                font-weight: 700;
+            }
+
+            .compact-list {
+                max-width: 800px;
+                margin-bottom: 50px;
+                display: none; /* Hidden by default, toggled via script if we add one, or just shown for now */
+            }
+            .compact-item {
+                display: flex;
+                align-items: center;
+                padding: 10px 16px;
+                background: #f9f9f9;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                margin-bottom: 8px;
+                transition: transform 0.2s;
+            }
+            .compact-item:hover {
+                transform: translateX(4px);
+                border-color: var(--prod-accent);
+            }
+            .compact-date {
+                font-size: 0.75rem;
+                opacity: 0.6;
+                width: 100px;
+            }
+            .compact-title {
+                flex: 1;
+                font-weight: 600;
+                font-size: 0.9rem;
+            }
+            .compact-scenes {
+                font-family: ui-monospace, monospace;
+                font-size: 0.75rem;
+                opacity: 0.5;
+                margin-left: 20px;
+            }
+            .mobile-header {
+                display: none;
+                background: #fff;
+                border-bottom: 1px solid #ccc;
+                padding: 10px 16px;
+                justify-content: space-between;
+                align-items: center;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+            .mobile-title {
+                font-size: 0.95rem;
+                color: #111;
+            }
+            .hamburger-btn {
+                background: none;
+                border: none;
+                color: inherit;
+                cursor: pointer;
+                outline: none;
+                display: flex;
+                align-items: center;
+                padding: 0;
+            }
+            @media (max-width: 768px) {
+                body {
+                    height: auto;
+                    overflow: auto;
+                }
+                .main-content {
+                    padding: 20px;
+                    overflow-y: visible;
+                }
+                .brand-title-main {
+                    font-size: 1.15rem;
+                }
+                .quick-menu {
+                    top: 58px;
+                    left: 12px;
+                    max-width: calc(100vw - 24px);
+                }
+                .production-table {
+                    display: block;
+                    width: 100%;
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
+                }
+                .production-table th, .production-table td {
+                    padding: 8px;
+                    font-size: 0.8rem;
+                }
+                .day-filter-bar {
+                    margin-bottom: 16px;
+                    padding: 8px;
+                }
+                .filter-btn {
+                    padding: 4px 10px;
+                }
+                .day-divider {
+                    margin: 20px 0 10px 0;
+                    padding: 8px 12px;
+                    font-size: 0.9rem;
+                }
+            }
+
+            @media print {
+                @page { margin: 0.45in; }
+                :root {
+                    --prod-accent: #1f4f8a;
+                    --prod-head: rgba(31, 79, 138, 0.12);
+                    --prod-border: rgba(31, 79, 138, 0.28);
+                    --prod-tag-bg: rgba(31, 79, 138, 0.08);
+                    --prod-tag-border: rgba(31, 79, 138, 0.22);
+                    --prod-row-hover: transparent;
+                }
+                html, body {
+                    background: #fff !important;
+                    color: #111 !important;
+                    height: auto;
+                    overflow: visible;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .quick-menu, .nav-bar, .back-to-top, .mobile-header, .day-filter-bar,
+                .filter-btn, .hamburger-btn, .quick-menu-btn,
+                .stats-dropdown summary, .stats-dropdown-content .stat-row, .no-print {
+                    display: none !important;
+                }
+                .main-content {
+                    padding: 0;
+                    overflow: visible;
+                }
+                .stats-card, .production-table, .day-divider, .stats-dropdown-content {
+                    background: #fff !important;
+                    color: #111 !important;
+                }
+                .stats-card, .production-table, .day-divider, .stats-dropdown,
+                .stats-dropdown-content, .sidebar-link {
+                    border-color: #c7d0db !important;
+                }
+                .stats-card {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                .day-divider {
+                    color: var(--prod-accent) !important;
+                    border-left-color: var(--prod-accent) !important;
+                    border-bottom: 1px solid #c7d0db;
+                }
+                .production-table {
+                    border: 1px solid #c7d0db;
+                }
+                .production-table th {
+                    background: #f3f6fa !important;
+                    color: #111 !important;
+                    border-bottom: 2px solid #c7d0db !important;
+                    position: static;
+                }
+                .production-table td {
+                    border-bottom: 1px solid #e5eaf0 !important;
+                    color: #111 !important;
+                }
+                .main-content * {
+                    color: #111 !important;
+                    background: transparent !important;
+                    background-image: none !important;
+                    text-shadow: none !important;
+                    box-shadow: none !important;
+                    border-color: #d0d7de !important;
+                }
+                .main-content .day-badge,
+                .main-content .day-divider,
+                .main-content .day-divider *,
+                .main-content .stats-value,
+                .main-content .actor-chip,
+                .main-content .actor-chip * {
+                    color: var(--prod-accent) !important;
+                }
+                .actor-chip {
+                    color: #123a66 !important;
+                    background: rgba(31, 79, 138, 0.08) !important;
+                    border-color: rgba(31, 79, 138, 0.25) !important;
+                    box-shadow: none !important;
+                    transform: none !important;
+                    filter: none !important;
+                }
+                .day-badge {
+                    border-color: currentColor !important;
+                    box-shadow: none !important;
+                }
+                .stats-card, .production-table tr, .production-table td, .production-table th {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                a {
+                    color: #123a66 !important;
+                    text-decoration: none !important;
+                }
+                h1, h2, h3, p, span, div {
+                    text-shadow: none !important;
+                }
+            }
+
+            .stats-dropdown {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .stats-dropdown summary {
+                list-style: none;
+                background: #f9f9f9;
+                color: #111;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                padding: 10px 12px;
+                font-size: 0.9rem;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                transition: border-color 0.2s, background-color 0.2s;
+                font-weight: 600;
+            }
+            .stats-dropdown summary:hover {
+                border-color: #999;
+                background: #eee;
+            }
+            .stats-dropdown summary::-webkit-details-marker {
+                display: none;
+            }
+            .stats-dropdown summary::after {
+                content: '▼';
+                font-size: 0.7rem;
+                opacity: 0.6;
+            }
+            .stats-dropdown[open] summary::after {
+                content: '▲';
+            }
+            .stats-dropdown[open] summary {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom-color: transparent;
+            }
+            .stats-dropdown-content {
+                background: #fafafa;
+                border: 1px solid #ccc;
+                border-top: none;
+                border-radius: 0 0 6px 6px;
+                padding: 12px 16px;
+            }
+            .stat-row {
+                display: flex;
+                justify-content: space-between;
+                padding: 4px 0;
+                border-bottom: 1px solid #eee;
+                font-size: 0.85rem;
+            }
+            .stat-row:last-child {
+                border-bottom: none;
+            }
+            .stat-label {
+                opacity: 0.6;
+            }
+            .stat-val {
+                font-weight: 600;
+                color: var(--prod-accent);
+            }
+
+        </style>
+    </head>
+    <body>
+        <button class="quick-menu-btn no-print" onclick="toggleQuickMenu()" aria-label="Open quick menu" style="position: fixed; top: 18px; left: 18px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+        <div class="quick-menu no-print" id="quick-menu">
+            <div class="quick-menu-header">
+                <div class="brand-title">Creatures in the Tall Grass</div>
+                <button class="quick-menu-close" type="button" onclick="toggleQuickMenu()" aria-label="Close quick menu">×</button>
+            </div>
+            <a href="https://docs.google.com/spreadsheets/d/1si2c5ahcv-MxEjdCnCVAq7QULCkY4I6Wj-JR7zKhFFg/edit?usp=sharing" target="_blank" rel="noreferrer">Open Master Schedule</a>
+            <a href="script-system/full_script.html">View Full Script</a>
+            <a href="storyboard.html">View Storyboards</a>
+            <a href="storyboard-system/full_storyboard.pdf" target="_blank" rel="noreferrer">Full Storyboard PDF</a>
+            <div class="quick-meta">
+                Scenes: 41<br>
+                Shoot days: 16<br>
+                Last compiled: 6/2/2026, 10:36:28 PM
+            </div>
+        </div>
+        <div class="dashboard-container">
+            <main class="main-content">
+                <header style="margin: 8px 0 40px 0; padding-left: 54px;">
+                    <h1 class="brand-title brand-title-main" style="margin: 0; color: #111;">Creatures in the Tall Grass</h1>
+                    <p style="opacity: 0.7; margin: 8px 0 0 0;">Production Dashboard · Official Shoot Plan</p>
+                    <p style="opacity: 0.5; margin: 8px 0 0 0; font-size: 0.9rem;">Last updated: 6/2/2026, 10:36:28 PM</p>
+                </header>
+
+                
+  <section style="margin-top:48px;">
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Calendar</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:12px;table-layout:fixed;">
+        <thead>
+          <tr>
+            <th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Sun</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Mon</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Tue</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Wed</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Thu</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Fri</th><th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">Sat</th>
+          </tr>
+        </thead>
+        <tbody><tr><td onclick="window.location.href='production/days/1.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">7</div><div style="font-weight:800;font-size:11px;">Day 1</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s00, s02.3, s09c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">8</div></td><td onclick="window.location.href='production/days/2.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">9</div><div style="font-weight:800;font-size:11px;">Day 2</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s02, s08b</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">10</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">11</div></td><td onclick="window.location.href='production/days/3.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">12</div><div style="font-weight:800;font-size:11px;">Day 3</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s08, s09, s10</div></td><td onclick="window.location.href='production/days/4.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">13</div><div style="font-weight:800;font-size:11px;">Day 4</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s03, s05, s15a, s15b, s15c</div></td></tr><tr><td onclick="window.location.href='production/days/5.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">14</div><div style="font-weight:800;font-size:11px;">Day 5</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s01, s13, s14, s14b, s14c, s08d</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">15</div></td><td onclick="window.location.href='production/days/6.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">16</div><div style="font-weight:800;font-size:11px;">Day 6</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s11, s12, s08c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">17</div></td><td onclick="window.location.href='production/days/7.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">18</div><div style="font-weight:800;font-size:11px;">Day 7</div></td><td onclick="window.location.href='production/days/8.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">19</div><div style="font-weight:800;font-size:11px;">Day 8</div></td><td onclick="window.location.href='production/days/9.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">20</div><div style="font-weight:800;font-size:11px;">Day 9</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s06, s17</div></td></tr><tr><td onclick="window.location.href='production/days/9.5.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f5f5dc;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">21</div><div style="font-weight:800;font-size:11px;">Day 9.5</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s01</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">22</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">23</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">24</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">25</div></td><td onclick="window.location.href='production/days/10.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">26</div><div style="font-weight:800;font-size:11px;">Day 10</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s00</div></td><td onclick="window.location.href='production/days/11.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">27</div><div style="font-weight:800;font-size:11px;">Day 11</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s18, s19, s20, s28, s29, s30</div></td></tr><tr><td onclick="window.location.href='production/days/12.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">28</div><div style="font-weight:800;font-size:11px;">Day 12</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s04, s07, s07b, s16, s17b, s17c</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">29</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">30</div></td><td onclick="window.location.href='production/days/13.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">Jul 1</div><div style="font-weight:800;font-size:11px;">Day 13</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s26</div></td><td onclick="window.location.href='production/days/14.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">2</div><div style="font-weight:800;font-size:11px;">Day 14</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s21, s22</div></td><td onclick="window.location.href='production/days/15.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">3</div><div style="font-weight:800;font-size:11px;">Day 15</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s23, s24</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">4</div></td></tr><tr><td onclick="window.location.href='production/days/16.html'" style="padding:6px 8px;border:1px solid #999;vertical-align:top;opacity:1;background:#f0f0f0;min-height:60px;height:70px;cursor:pointer;"><div style="font-weight:700;margin-bottom:2px;">5</div><div style="font-weight:800;font-size:11px;">Day 16</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">s27, s15s, s25</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">6</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">7</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">8</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">9</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">10</div></td><td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">11</div></td></tr></tbody></table></div></section>
+                
+  <section style="margin-top:48px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
+      <h2 style="color:#111;margin:0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Scene Cheat Sheet</h2>
+      <div style="display:flex;gap:8px;margin-left:auto;">
+        <button id="sort-btn-scene" onclick="cheatSort('scene')" style="font-family:ui-monospace,monospace;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:6px 14px;border:2px solid #999;border-radius:6px;background:#fff;color:#333;cursor:pointer;">Sort by Scene #</button>
+        <button id="sort-btn-day" onclick="cheatSort('day')" style="font-family:ui-monospace,monospace;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:6px 14px;border:2px solid #999;border-radius:6px;background:#fff;color:#333;cursor:pointer;">Sort by Day</button>
+      </div>
+    </div>
+    <div style="overflow-x:auto;">
+      <table id="cheat-sheet-table" style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
+        <thead>
+          <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Scene</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Title</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Day</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Date</th>
+            <th style="text-align:right;padding:6px 10px;border-bottom:1px solid #999;">Est.</th>
+          </tr>
+        </thead>
+        <tbody id="cheat-sheet-tbody"><tr><td colspan="6" style="padding:12px 10px 4px;color:#111;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 1</td></tr><tr data-scene="0" data-day="9999" data-date="" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=opening-montage">prologue</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="script-system/scene.html?id=opening-montage">Opening Montage</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#444;">—</span></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;">—</td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#ccc;font-size:0.8rem;">—</span></td>
+    </tr><tr data-scene="0" data-day="1" data-date="2026-06-07" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=property-manager">s00</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/1.html">The Rental House</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/1.html">1</a><span style="color:#999;"> · </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/10.html">10</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/1.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 7</a><span style="color:#999;"> · </span><a href="production/days/10.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jun 26</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">30m</span></td>
+    </tr><tr data-scene="1" data-day="5" data-date="2026-06-14" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=arrival">s01</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">Arrival &amp; Discovery</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="2" data-day="2" data-date="2026-06-09" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-night">s02</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/2.html">Sierra's Box</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/2.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 9</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">120m</span></td>
+    </tr><tr data-scene="23" data-day="1" data-date="2026-06-07" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=branford-night-discovery">s02.3</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/1.html">Branford at Night Montages</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/1.html">1</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/1.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 7</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">45m</span></td>
+    </tr><tr data-scene="3" data-day="4" data-date="2026-06-13" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-hum">s03</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">The Hum</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">120m</span></td>
+    </tr><tr data-scene="4" data-day="12" data-date="2026-06-28" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=fellowship">s04</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">The Fellowship</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">180m</span></td>
+    </tr><tr data-scene="5" data-day="4" data-date="2026-06-13" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=marsh-walk-later">s05</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">The Merlin App</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">60m</span></td>
+    </tr><tr data-scene="6" data-day="9" data-date="2026-06-20" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=news-vans">s06</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/9.html">News Vans</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/9.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 20</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="7" data-day="12" data-date="2026-06-28" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-coordinates">s07</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">The Coordinates</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">150m</span></td>
+    </tr><tr data-scene="7" data-day="12" data-date="2026-06-28" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=mr-mikes-warning">s07b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">Mr. Mike's Warning</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="8" data-day="3" data-date="2026-06-12" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-marsh-walk">s08</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/3.html">The Trailcam</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/3.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jun 12</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">60m</span></td>
+    </tr><tr data-scene="8" data-day="2" data-date="2026-06-09" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-research-beat">s08b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/2.html">The Research Beat</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/2.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 9</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">60m</span></td>
+    </tr><tr data-scene="8" data-day="6" data-date="2026-06-16" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-threshold">s08c</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/6.html">The Threshold</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/6.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 16</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">15m</span></td>
+    </tr><tr data-scene="8" data-day="5" data-date="2026-06-14" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-return">s08d</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Return</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">60m</span></td>
+    </tr><tr data-scene="9" data-day="3" data-date="2026-06-12" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dallas-night-work">s09</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/3.html">The Injured One</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/3.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jun 12</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="10" data-day="3" data-date="2026-06-12" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=shadows-in-wind">s10</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/3.html">The Chase</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/3.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jun 12</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">75m</span></td>
+    </tr><tr data-scene="11" data-day="6" data-date="2026-06-16" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=howie-walk-2">s11</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/6.html">Kitchen Triage</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/6.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 16</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr><td colspan="6" style="padding:12px 10px 4px;color:#333;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 2</td></tr><tr data-scene="12" data-day="6" data-date="2026-06-16" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-burn-mark">s12</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/6.html">The Burn Mark</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/6.html" style="color:#555;text-decoration:none;"><span style="color:#111">Tue</span> Jun 16</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">30m</span></td>
+    </tr><tr data-scene="13" data-day="5" data-date="2026-06-14" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=entering-grass">s13</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Confrontation</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="14" data-day="5" data-date="2026-06-14" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=creature-rescue">s14</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Connection</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">120m</span></td>
+    </tr><tr data-scene="14" data-day="5" data-date="2026-06-14" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-field-journal">s14b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Field Journal</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="14" data-day="5" data-date="2026-06-14" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-almost-discovery">s14c</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/5.html">The Almost Discovery</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 14</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="15" data-day="4" data-date="2026-06-13" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-failed-test">s15a</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">The Failed Test</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">75m</span></td>
+    </tr><tr data-scene="15" data-day="4" data-date="2026-06-13" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-tracking-box">s15b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">Makayla's Tracking Box</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="15" data-day="4" data-date="2026-06-13" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=dominics-confession">s15c</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/4.html">Dominic's Confession</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 13</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">45m</span></td>
+    </tr><tr data-scene="16" data-day="12" data-date="2026-06-28" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-escape">s16</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">Back Home</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">75m</span></td>
+    </tr><tr data-scene="17" data-day="9" data-date="2026-06-20" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=resonance">s17</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/9.html">Resonance</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/9.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 20</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">120m</span></td>
+    </tr><tr data-scene="17" data-day="12" data-date="2026-06-28" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=normal-day">s17b</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">Normal Day</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">60m</span></td>
+    </tr><tr data-scene="17" data-day="12" data-date="2026-06-28" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=mute-drive">s17c</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/12.html">Mute Drive</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jun 28</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">60m</span></td>
+    </tr><tr data-scene="18" data-day="11" data-date="2026-06-27" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=life-group-arrives">s18</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">Life Group Arrives</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="19" data-day="11" data-date="2026-06-27" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-hymn">s19</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">The Hymn</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">120m</span></td>
+    </tr><tr data-scene="20" data-day="11" data-date="2026-06-27" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=red-eyes">s20</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">The Secret is Out</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">75m</span></td>
+    </tr><tr data-scene="21" data-day="14" data-date="2026-07-02" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=creature-missing">s21</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/14.html">The Burn Marks</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/14.html" style="color:#555;text-decoration:none;"><span style="color:#111">Thu</span> Jul 2</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">75m</span></td>
+    </tr><tr><td colspan="6" style="padding:12px 10px 4px;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 3</td></tr><tr data-scene="22" data-day="14" data-date="2026-07-02" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=marsh-confrontation">s22</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/14.html">The Load-Out</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/14.html" style="color:#555;text-decoration:none;"><span style="color:#111">Thu</span> Jul 2</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="23" data-day="15" data-date="2026-07-03" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=predator-attack">s23</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/15.html">The Trench Run</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/15.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jul 3</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">120m</span></td>
+    </tr><tr data-scene="24" data-day="15" data-date="2026-07-03" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-perimeter">s24</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/15.html">The Sanctuary &amp; The Siege</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/15.html" style="color:#555;text-decoration:none;"><span style="color:#111">Fri</span> Jul 3</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">150m</span></td>
+    </tr><tr data-scene="25" data-day="16" data-date="2026-07-05" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=the-last-dinner">s25</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/16.html">The Final Blast</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/16.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jul 5</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">150m</span></td>
+    </tr><tr><td colspan="6" style="padding:12px 10px 4px;color:#777;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;border-bottom:none;">Act 4</td></tr><tr data-scene="26" data-day="13" data-date="2026-07-01" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=final-echoes">s26</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/13.html">The Morning After</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/13.html">13</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/13.html" style="color:#555;text-decoration:none;"><span style="color:#111">Wed</span> Jul 1</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">60m</span></td>
+    </tr><tr data-scene="27" data-day="16" data-date="2026-07-05" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=aftermath">s27</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/16.html">Aftermath</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/16.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sun</span> Jul 5</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr><tr data-scene="28" data-day="11" data-date="2026-06-27" style="border-bottom:1px solid #ddd;">
+      <td style="white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="script-system/scene.html?id=full-circle">s28</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#333;text-decoration:none;" href="production/days/11.html">Full Circle</a></td>
+      <td style="color:#111;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a></td>
+      <td style="color:#555;font-size:0.8rem;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;"><span style="color:#111">Sat</span> Jun 27</a></td>
+      <td style="text-align:right;white-space:nowrap;padding:5px 10px;border-bottom:1px solid #ddd;"><span style="color:#555;font-size:0.8rem;">90m</span></td>
+    </tr></tbody>
+      </table>
+    </div>
+  </section>
+  <script>
+  var _cheatSortState = { key: null, asc: true };
+  function cheatSort(key) {
+    var tbody = document.getElementById('cheat-sheet-tbody');
+    if (_cheatSortState.key === key) { _cheatSortState.asc = !_cheatSortState.asc; }
+    else { _cheatSortState.key = key; _cheatSortState.asc = true; }
+    var rows = Array.from(tbody.querySelectorAll('tr[data-scene]'));
+    rows.sort(function(a, b) {
+      var av = parseFloat(a.getAttribute('data-' + key)) || 0;
+      var bv = parseFloat(b.getAttribute('data-' + key)) || 0;
+      return _cheatSortState.asc ? av - bv : bv - av;
+    });
+    rows.forEach(function(r) { tbody.appendChild(r); });
+    ['scene','day'].forEach(function(k) {
+      var btn = document.getElementById('sort-btn-' + k);
+      if (k === key) {
+        btn.style.background = '#111';
+        btn.style.color = '#fff';
+        btn.style.borderColor = '#111';
+        btn.textContent = (k === 'scene' ? 'Sort by Scene #' : 'Sort by Day') + (_cheatSortState.asc ? ' ↑' : ' ↓');
+      } else {
+        btn.style.background = '#fff';
+        btn.style.color = '#333';
+        btn.style.borderColor = '#999';
+        btn.textContent = k === 'scene' ? 'Sort by Scene #' : 'Sort by Day';
+      }
+    });
+  }
+  </script>
+                
+  <section style="margin-top:48px;">
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Character Cheat Sheet</h2>
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
+        <thead>
+          <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Character</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Days</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Shoot Days</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Dates</th>
+          </tr>
+        </thead>
+        <tbody><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/asher.html">ASHER</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">5</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s14b, s14c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s16)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25, s28)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/back to dallas.html">BACK TO DALLAS</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">0</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/dallas.html">DALLAS</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">13</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/1.html">1</a> <span style="color:#888;font-size:0.75em;">(s02.3)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/2.html">2</a> <span style="color:#888;font-size:0.75em;">(s02, s08b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/3.html">3</a> <span style="color:#888;font-size:0.75em;">(s08, s09, s10)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s13, s14, s14b, s14c, s17)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04, s07b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a> <span style="color:#888;font-size:0.75em;">(s11, s12)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a> <span style="color:#888;font-size:0.75em;">(s03, s05, s06, s17)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.5.html">9.5</a> <span style="color:#888;font-size:0.75em;">(s01)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s15b, s15c, s16)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s21, s22)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/1.html" style="color:#555;text-decoration:none;">Jun 7</a>, <a href="production/days/2.html" style="color:#555;text-decoration:none;">Jun 9</a>, <a href="production/days/3.html" style="color:#555;text-decoration:none;">Jun 12</a>, <a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/6.html" style="color:#555;text-decoration:none;">Jun 16</a>, <a href="production/days/9.html" style="color:#555;text-decoration:none;">Jun 20</a>, <a href="production/days/9.5.html" style="color:#555;text-decoration:none;">Jun 21</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/dominic.html">DOMINIC</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">8</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s13, s14c, s17b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04, s07b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/6.html">6</a> <span style="color:#888;font-size:0.75em;">(s11)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a> <span style="color:#888;font-size:0.75em;">(s03, s05, s06)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18, s19, s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s17b)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23, s24)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/6.html" style="color:#555;text-decoration:none;">Jun 16</a>, <a href="production/days/9.html" style="color:#555;text-decoration:none;">Jun 20</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/end prologue.html">END PROLOGUE</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">0</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/janice.html">JANICE</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">4</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s17b, s17c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04, s26)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s16, s17b, s17c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s26)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/josh.html">JOSH</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/makayla.html">MAKAYLA</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">6</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/4.html">4</a> <span style="color:#888;font-size:0.75em;">(s13, s14, s14b, s14c, s17c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.5.html">9.5</a> <span style="color:#888;font-size:0.75em;">(s01)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18, s19, s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07, s15b, s15c, s16, s17c)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s25, s28)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/4.html" style="color:#555;text-decoration:none;">Jun 13</a>, <a href="production/days/9.5.html" style="color:#555;text-decoration:none;">Jun 21</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/makaylaa.html">MAKAYLAA</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s15c)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/mary.html">MARY</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/mr mike.html">MR MIKE</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">6</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s07b, s26)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18, s19, s20)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/12.html">12</a> <span style="color:#888;font-size:0.75em;">(s07)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/14.html">14</a> <span style="color:#888;font-size:0.75em;">(s26)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/15.html">15</a> <span style="color:#888;font-size:0.75em;">(s23)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s27)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/12.html" style="color:#555;text-decoration:none;">Jun 28</a>, <a href="production/days/14.html" style="color:#555;text-decoration:none;">Jul 2</a>, <a href="production/days/15.html" style="color:#555;text-decoration:none;">Jul 3</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/pat.html">PAT</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/pat clendenen.html">PAT CLENDENEN</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">3</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/9.html">9</a> <span style="color:#888;font-size:0.75em;">(s06)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s19)</span><span style="color:#999;"> &middot; </span><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/16.html">16</a> <span style="color:#888;font-size:0.75em;">(s27)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/9.html" style="color:#555;text-decoration:none;">Jun 20</a>, <a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a>, <a href="production/days/16.html" style="color:#555;text-decoration:none;">Jul 5</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/paul.html">PAUL</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/5.html">5</a> <span style="color:#888;font-size:0.75em;">(s04)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/5.html" style="color:#555;text-decoration:none;">Jun 14</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/property manager.html">PROPERTY MANAGER</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">0</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/sarah.html">SARAH</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/sasha.html">SASHA</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s19)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/tyler.html">TYLER</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s18, s19)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr><tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="production/cast/woman.html">WOMAN</a></td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">1</td>
+      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/11.html">11</a> <span style="color:#888;font-size:0.75em;">(s19)</span></td>
+      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;"><a href="production/days/11.html" style="color:#555;text-decoration:none;">Jun 27</a></td>
+    </tr></tbody>
+      </table>
+    </div>
+  </section>
+                <!-- LOCATION_CHEAT_SHEET_START --><!-- LOCATION_CHEAT_SHEET_END -->
+                <!-- WARDROBE_SECTION_START --><!-- WARDROBE_SECTION_END -->
+                
+  <section id="first-5-days-prep" style="margin-top: 48px; background: linear-gradient(135deg, #161b22, #0d1117); border: 1px solid rgba(240, 246, 252, 0.1); border-radius: 16px; padding: 24px; color: #f0f6fc; box-shadow: 0 8px 32px rgba(0,0,0,0.4); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+    <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(240, 246, 252, 0.1); padding-bottom: 16px; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+      <div>
+        <h2 style="margin: 0; font-size: 1.5rem; font-weight: 700; color: #f0f6fc; display: flex; align-items: center; gap: 8px;">
+          <span style="color: #58a6ff;">🎬</span> First 5 Days Filming Readiness Checklist
+        </h2>
+        <p style="margin: 4px 0 0 0; font-size: 0.85rem; color: #8b949e;">Interactive prep tracker for the crucial first week. Saves progress automatically.</p>
+      </div>
+      <div style="background: rgba(88, 166, 255, 0.1); border: 1px solid rgba(88, 166, 255, 0.2); padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; color: #58a6ff;">
+        Shoot Days 1 – 5
+      </div>
+    </div>
+
+    <!-- Audit Alertbox -->
+    <div style="background: rgba(56, 139, 253, 0.15); border-left: 4px solid #58a6ff; border-radius: 8px; padding: 14px 18px; margin-bottom: 24px; font-size: 0.88rem; line-height: 1.5;">
+      <div style="font-weight: 700; color: #58a6ff; display: flex; align-items: center; gap: 6px; margin-bottom: 4px;">
+        🔍 Deep Code Audit: 2 Schedule Discrepancies Patched
+      </div>
+      <div style="color: #c9d1d9;">
+        We cross-referenced the scripts with the shoot plan and solved two critical actor omissions:
+        <ul style="margin: 6px 0 0 0; padding-left: 20px;">
+          <li><strong>Day 2 (June 9):</strong> Makayla has a key role in <span style="font-family: monospace; color: #58a6ff;">s08b.2</span> (Translucent crystal flares on her desk), but was omitted from the day's cast. We've added her to the call sheet!</li>
+          <li><strong>Day 4 (June 13):</strong> Makayla features in the major research sequence <span style="font-family: monospace; color: #58a6ff;">s15a/b/c</span> (Special wooded spot / investigation), but was left off the call sheet cast list. We've updated her schedule!</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+  
+      <!-- Day 1 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 1</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Sun, Jun 7</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s00, s02.3, s09c
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d1-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 5pm - at Alex's House - 206 Saint John<br>
+              <strong>Loc:</strong> Town Green · Branford High School · Stony Creek · Supply Ponds
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d1-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Dallas</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d1-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • 1. Oscillator<br>• 2. Audio Headphones
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d1-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • 1. Dallas Outfit #1<br>•    a. White Shirt<br>•    b. Blue Shorts
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d1-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Day 2 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 2</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Tue, Jun 9</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s02, s08b
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d2-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 05:00 PM<br>
+              <strong>Loc:</strong> 72 lake street, hamden ct
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d2-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Dallas</span><span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Makayla</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d2-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Sierra's Box<br>• Ruby-red headphones<br>• Ruby-red cassette player<br>• Laptop with trailcam footage<br>• Translucent crystal in petri dish<br>• Oscillator<br>• Audio headphones
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d2-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Dallas: Outfit #3 (casual)<br>• Makayla: Outfit #1 (field gear)
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d2-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Day 3 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 3</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Fri, Jun 12</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s08, s09, s10
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d3-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 05:00 PM — Alex's House (206 Saint John)<br>
+              <strong>Loc:</strong> Arrive on location: 5:30 PM · Branford neighborhoods [s08 — approach walk] · East Haven Nursery [s09 — marsh] · Jerry's House [s10 — night pickup] · Wrap: 10:30 PM EST
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d3-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="color:#8b949e; font-size:0.8rem;">None</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d3-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Good Creature<br>• Bad Creature<br>• Oscillator<br>• Audio Recorder<br>• Audio Headphones
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d3-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Dallas: Outfit #2 (Blue Shirt, White Pants, Jacket)
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d3-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Day 4 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 4</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Sat, Jun 13</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s03, s05, s15a, s15b, s15c
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d4-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 01:00 PM<br>
+              <strong>Loc:</strong> 
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d4-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Dallas</span><span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Dominic</span><span style="background: rgba(88, 166, 255, 0.1); color: #58a6ff; border: 1px solid rgba(88, 166, 255, 0.2); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 600;">Makayla</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d4-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Oscillator<br>• Military-style antenna<br>• Custom glass elements<br>• Translucent crystal<br>• Soldering iron<br>• Copper coils<br>• Radio components
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d4-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Dallas: Outfit #3 (s03, s05 — morning walk / marsh)<br>• Dallas: Outfit #5 (s15a, s15b, s15c — investigation scenes)
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d4-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+      <!-- Day 5 Card -->
+      <div style="background: #161b22; border: 1px solid rgba(240, 246, 252, 0.05); border-radius: 12px; overflow: hidden; transition: border-color 0.2s;">
+        <div style="background: rgba(240, 246, 252, 0.03); padding: 12px 18px; border-bottom: 1px solid rgba(240, 246, 252, 0.05); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <span style="font-weight: 700; font-size: 1.05rem; color: #f0f6fc;">Day 5</span>
+            <span style="color: #8b949e; font-size: 0.85rem; margin-left: 8px;">• Sun, Jun 14</span>
+          </div>
+          <div style="font-size: 0.8rem; font-family: monospace; color: #8b949e;">
+            Scenes: s01, s13, s14, s14b, s14c, s08d
+          </div>
+        </div>
+        <div style="padding: 16px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+          
+          <!-- Locations & Crew Call -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              📍 Logistics
+              <input type="checkbox" id="prep-d5-logistics" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.85rem; color: #c9d1d9; line-height: 1.4;">
+              <strong>Call:</strong> GENERAL CREW CALL: 09:00 AM<br>
+              <strong>Loc:</strong> 
+            </div>
+          </div>
+
+          <!-- Cast -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👥 Cast Confirmed
+              <input type="checkbox" id="prep-d5-cast" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px;">
+              <span style="color:#8b949e; font-size:0.8rem;">None</span>
+            </div>
+          </div>
+
+          <!-- Props -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🧰 Props Ready
+              <input type="checkbox" id="prep-d5-props" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • 1. Good Creature<br>• 2. Bad Creature<br>• 3. Portable Oscillator<br>• 4. Howie
+            </div>
+          </div>
+
+          <!-- Wardrobe -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              👕 Wardrobe Prepped
+              <input type="checkbox" id="prep-d5-wardrobe" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              • Dallas: Outfit #3
+            </div>
+          </div>
+
+          <!-- Equipment -->
+          <div style="background: rgba(255,255,255,0.01); border: 1px solid rgba(240, 246, 252, 0.03); border-radius: 8px; padding: 12px;">
+            <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: #8b949e; font-weight: 700; margin-bottom: 8px; display: flex; justify-content: space-between;">
+              🎥 Equipment Packed
+              <input type="checkbox" id="prep-d5-equipment" class="prep-check" style="cursor: pointer;">
+            </div>
+            <div style="font-size: 0.8rem; color: #c9d1d9; line-height: 1.45;">
+              <span style="color:#8b949e;">None listed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    
+    </div>
+    
+    <script>
+      // Load saved prep checklist state from localStorage
+      document.addEventListener('DOMContentLoaded', () => {
+        const checks = document.querySelectorAll('.prep-check');
+        checks.forEach(cb => {
+          const val = localStorage.getItem(cb.id);
+          if (val === 'true') {
+            cb.checked = true;
+            cb.parentElement.parentElement.style.opacity = '0.65';
+          }
+          cb.addEventListener('change', (e) => {
+            localStorage.setItem(cb.id, e.target.checked);
+            if (e.target.checked) {
+              cb.parentElement.parentElement.style.transition = 'opacity 0.2s';
+              cb.parentElement.parentElement.style.opacity = '0.65';
+            } else {
+              cb.parentElement.parentElement.style.opacity = '1';
+            }
+          });
+        });
+      });
+    </script>
+  </section>
+  
+                
+            </main>
+        </div>
+
+        <script>
+            function toggleQuickMenu() {
+                const menu = document.getElementById('quick-menu');
+                if (menu) menu.classList.toggle('open');
+            }
+
+            function init() {
+                document.addEventListener('click', (event) => {
+                    const menu = document.getElementById('quick-menu');
+                    const button = document.querySelector('.quick-menu-btn');
+                    if (!menu || !menu.classList.contains('open')) return;
+                    if (menu.contains(event.target) || (button && button.contains(event.target))) return;
+                    menu.classList.remove('open');
+                });
+
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        const menu = document.getElementById('quick-menu');
+                        if (menu) menu.classList.remove('open');
+                    }
+                });
+
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+            window.onload = init;
+        </script>
+    </body>
+</html>
+

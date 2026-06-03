@@ -54,7 +54,8 @@
       "Bash(Select-Object Name)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\agonzalez7\\\\film\" -Recurse -Filter \"*shooting*\" -ErrorAction SilentlyContinue)",
       "Bash(Select-Object -Property FullName)",
-      "Bash(powershell *)"
+      "Bash(powershell *)",
+      "Read(//tmp/**)"
     ]
   }
 }
