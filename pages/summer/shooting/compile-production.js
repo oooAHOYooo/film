@@ -276,7 +276,7 @@ function getProductionStyles() {
 function generateFullHtml(rows, totalDays, productionData) {
   const totalScenes = rows.length;
 
-  return `<!doctype html>
+  let html = `<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
