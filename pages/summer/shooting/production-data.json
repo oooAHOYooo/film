@@ -617,332 +617,114 @@
   "shootPlan": [
     {
       "day": 1,
-      "date": "2026-06-07",
-      "weekday": "Sunday",
       "scenes": [
         "s00a",
-        "s00b",
-        "s02.3",
-        "s09c"
-      ],
-      "locations": [
-        "Town Green",
-        "Branford High School",
-        "Stony Creek",
-        "Supply Ponds"
-      ],
-      "crewCall": "GENERAL CREW CALL: 5pm - at Alex's House - 206 Saint John",
-      "locationDetails": [
-        "1. Town Green (1011 Main St) - Arrival 5:00 PM",
-        "   • Notes: Park near the gazebo",
-        "2. Branford High School (185 E Main St) - Arrival 6:30 PM",
-        "   • Notes: Use the east entrance",
-        "3. Stony Creek (Thimble Island Rd) - Arrival 8:00 PM",
-        "4. Supply Ponds (Chestnut St) - Arrival 9:30 PM"
-      ],
-      "wardrobe": [
-        "1. Dallas Outfit #1",
-        "   a. White Shirt",
-        "   b. Blue Shorts"
-      ],
-      "props": [
-        "Dallas's suitcase or worn travel bag (s00a)",
-        "Trail cameras - audio and visual (s00a)",
-        "Boom pole - assembled in pieces (s00a)",
-        "Acoustic trap equipment with microphone array (s00a)",
-        "Folding trowel - military-issue, small (s00a)",
-        "Leaf litter and moss for concealment (s00a)",
-        "Moving boxes (3-4) — in background/porch, partially pre-positioned (s00b)",
-        "Portable oscillator — tucked in bag or jacket, not used yet (s00b)",
-        "Cheap/worn furniture (futon, pushed chairs) — pre-existing location dressing (s00b)",
-        "Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.) — specific visual (s00b)",
-        "Clipboard or folder (Property Manager) — keeps hands busy during walkthrough (s00b)"
-      ],
-      "cast": [
-        "Dallas",
-        "Makayla",
-        "Asher"
-      ],
-      "sourceNote": "Day 1 = 2026-06-07 - Sun <s00a, s00b> Opening montage + property manager walkthrough"
+        "s01",
+        "s02.3"
+      ]
     },
     {
       "day": 2,
-      "date": "2026-06-09",
-      "weekday": "Tuesday",
       "scenes": [
         "s02",
         "s08b"
-      ],
-      "locations": [
-        "72 lake street, hamden ct"
-      ],
-      "locationDetails": [
-        "72 lake street, hamden ct",
-        "arrival = 206 saint john at 5pm"
-      ],
-      "crewCall": "GENERAL CREW CALL: 05:00 PM",
-      "cast": [
-        "Dallas",
-        "Makayla"
-      ],
-      "wardrobe": [
-        "Dallas: Outfit #3 (casual)",
-        "Makayla: Outfit #1 (field gear)"
-      ],
-      "props": [
-        "Sierra's Box — cardboard, labeled 'Field Notes — Branford' (handwritten, worn) (s02)",
-        "Field journal — water-warped cover, rubber band closure, 2-3 pages with creature sketches & frequency notation (s02)",
-        "Ruby-red cassette player — small, retro; duct tape on back conceals photo (s02)",
-        "Ruby-red headphones — matching player, worn (s02)",
-        "Photo sticker (on cassette back) — Dallas & Sierra in audio headsets, laughing in field (~2\"×2\", matte, worn edges) (s02)",
-        "Assorted cables & audio equipment — texture, buried in box (s02)",
-        "Military-grade desktop audio recorder — heavy, serious; Sierra photo taped to it (s02/s08b)",
-        "Portable audio recorder — handheld (s02/s08b)",
-        "Portable oscillator — Dallas dials to 115.3 (same unit from s00) (s08b)",
-        "Frozen pizza — half-eaten or in oven (background texture) (s02)",
-        "Laptop — for trailcam footage playback (creature footage, practical or VFX) (s08b)",
-        "Translucent crystal (petri dish) — pyramid-shaped quartz; glows gold at 115.3 Hz, scorches black ring on desk (s08b)",
-        "Birding guides — messy desk dressing (s08b)",
-        "Disassembled electronics — desk clutter (s08b)"
-      ],
-      "crew": [
-        "1. Alex Gonzalez (Director, DP)",
-        "2. Jerry (Owner of House)",
-        "3. Chris Batista (Audio + Lights)"
-      ],
-      "misc": [
-        "Alex's Phonenumber: [Insert Number Here]"
-      ],
-      "sourceNote": "Day 2 = 6.9.26 = Tues [s02,s08b][D]"
+      ]
     },
     {
       "day": 3,
-      "date": "2026-06-12",
-      "weekday": "Friday",
       "scenes": [
         "s08",
         "s09",
         "s10"
-      ],
-      "crewCall": "GENERAL CREW CALL: 05:00 PM — Alex's House (206 Saint John)",
-      "locationDetails": [
-        "Arrive on location: 5:30 PM",
-        "1. Branford neighborhoods [s08 — approach walk]",
-        "2. East Haven Nursery [s09 — marsh]",
-        "3. Jerry's House [s10 — night pickup]",
-        "Wrap: 10:30 PM EST"
-      ],
-      "wardrobe": [
-        "Dallas: Outfit #2 (Blue Shirt, White Pants, Jacket)"
-      ],
-      "props": [
-        "Good Creature",
-        "Bad Creature",
-        "Oscillator",
-        "Audio Recorder",
-        "Audio Headphones"
-      ],
-      "crew": [
-        "1. Alex",
-        "2. Chris",
-        "3. Aldo",
-        "4. Jerry"
-      ],
-      "misc": [
-        "Trailcam walk into the marsh; keep sound coverage flexible."
-      ],
-      "sourceNote": "Day 3 = 6.12.26 - Fr <s08,s09,s10>[D]"
+      ]
     },
     {
       "day": 4,
-      "date": "2026-06-13",
-      "weekday": "Saturday",
+      "scenes": [
+        "s00b"
+      ]
+    },
+    {
+      "day": 5,
+      "scenes": [
+        "s14b",
+        "s14c"
+      ]
+    },
+    {
+      "day": 6,
+      "scenes": [
+        "s08c",
+        "s11",
+        "s12"
+      ]
+    },
+    {
+      "day": 7,
       "scenes": [
         "s03",
         "s05",
         "s15a",
         "s15b",
         "s15c"
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Makayla"
-      ],
-      "crewCall": "GENERAL CREW CALL: 01:00 PM",
-      "wardrobe": [
-        "Dallas: Outfit #3 (s03, s05 — morning walk / marsh)",
-        "Dallas: Outfit #5 (s15a, s15b, s15c — investigation scenes)"
-      ],
-      "props": [
-        "Oscillator",
-        "Military-style antenna",
-        "Custom glass elements",
-        "Translucent crystal",
-        "Soldering iron",
-        "Copper coils",
-        "Radio components"
-      ],
-      "sourceNote": "D4 = 6.13.26 - Sat <s03,s05,s15a,s15b,s15c> [D, Dm walking + s15s]"
-    },
-    {
-      "day": 5,
-      "date": "2026-06-14",
-      "weekday": "Sunday",
-      "scenes": [
-        "s01",
-        "s13",
-        "s14",
-        "s14b",
-        "s14c",
-        "s08d"
-      ],
-      "crewCall": "GENERAL CREW CALL: 09:00 AM",
-      "wardrobe": [
-        "Dallas: Outfit #3"
-      ],
-      "props": [
-        "1. Good Creature",
-        "2. Bad Creature",
-        "3. Portable Oscillator",
-        "4. Howie"
-      ],
-      "sourceNote": "D5 = 6.14.26 = Sun <s01,s13,s14,s14b,s14c,s08b,s08c,s08d>"
-    },
-    {
-      "day": 6,
-      "date": "2026-06-16",
-      "weekday": "Tuesday",
-      "scenes": [
-        "s11",
-        "s12",
-        "s08c"
-      ],
-      "crewCall": "GENERAL CREW CALL: 05:00 PM",
-      "wardrobe": [
-        "Dallas: Outfit #3"
-      ],
-      "misc": [
-        "Wrap: 8:45 PM"
-      ],
-      "sourceNote": "Day 6 = 6.16.26 = Tues <s11 + s12>[D]"
-    },
-    {
-      "day": 7,
-      "date": "2026-06-18",
-      "weekday": "Thursday",
-      "scenes": [],
-      "sourceNote": "Day 7 = 6.18.26 = Thurs [D]"
+      ]
     },
     {
       "day": 8,
-      "date": "2026-06-19",
-      "weekday": "Friday",
-      "scenes": [],
-      "sourceNote": "Day 8 = 6.19.26 = Fri [D][H]"
+      "scenes": [
+        "s08d",
+        "s13",
+        "s14",
+        "s21",
+        "s22",
+        "s23"
+      ]
     },
     {
       "day": 9,
-      "date": "2026-06-20",
-      "weekday": "Saturday",
       "scenes": [
-        "s06",
-        "s17"
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Pat Clendenen"
-      ],
-      "sourceNote": "D9 = 6.20.26 = Sat <s06,s17>"
-    },
-    {
-      "day": 9.5,
-      "date": "2026-06-21",
-      "weekday": "Sunday",
-      "scenes": [],
-      "sourceNote": "D9.5 = 6.21.26 (Father's Day)",
-      "special": true
+        "s24",
+        "s25",
+        "s26"
+      ]
     },
     {
       "day": 10,
-      "date": "2026-06-26",
-      "weekday": "Friday",
       "scenes": [
-        "s09c"
-      ],
-      "sourceNote": "D10 = 6.26.26 = Fri [D]<s09c>"
+        "s17"
+      ]
     },
     {
       "day": 11,
-      "date": "2026-06-27",
-      "weekday": "Saturday",
       "scenes": [
+        "s07",
         "s18",
         "s19",
-        "s20",
-        "s28",
-        "s29",
-        "s30"
-      ],
-      "sourceNote": "D11 = 6.27 = Sat <s18,s19,s20,s28,s29,s30> [D, Dm,...]"
+        "s20"
+      ]
     },
     {
       "day": 12,
-      "date": "2026-06-28",
-      "weekday": "Sunday",
       "scenes": [
-        "s04",
-        "s07",
         "s07b",
         "s16",
         "s17b",
         "s17c"
-      ],
-      "locations": [
-        "Church"
-      ],
-      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04,s07,s07b,s16,s17b,s17c>"
+      ]
     },
     {
       "day": 13,
-      "date": "2026-07-01",
-      "weekday": "Wednesday",
       "scenes": [
-        "s26"
-      ],
-      "sourceNote": "D13 = 7.1.26 = Wed <s26>"
+        "s04",
+        "s06"
+      ]
     },
     {
       "day": 14,
-      "date": "2026-07-02",
-      "weekday": "Thursday",
-      "scenes": [
-        "s21",
-        "s22"
-      ],
-      "sourceNote": "Day 14 = 7.2.26 = Thursday <s21,s22>"
-    },
-    {
-      "day": 15,
-      "date": "2026-07-03",
-      "weekday": "Friday",
-      "scenes": [
-        "s23",
-        "s24"
-      ],
-      "sourceNote": "Day 15 = 7.3.26 Friday <s23,s24>"
-    },
-    {
-      "day": 16,
-      "date": "2026-07-05",
-      "weekday": "Sunday",
       "scenes": [
         "s27",
-        "s15s",
-        "s25"
-      ],
-      "sourceNote": "Day 16 = 7.5.26 Sunday <s27,s15s,s25> [s27 afternoon @ Jerry's House, then finale]"
+        "s28"
+      ]
     }
   ],
   "limbo": [],

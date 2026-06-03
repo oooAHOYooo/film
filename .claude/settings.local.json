@@ -55,7 +55,8 @@
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\agonzalez7\\\\film\" -Recurse -Filter \"*shooting*\" -ErrorAction SilentlyContinue)",
       "Bash(Select-Object -Property FullName)",
       "Bash(powershell *)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(bash /tmp/audit_sync.sh)"
     ]
   }
 }
