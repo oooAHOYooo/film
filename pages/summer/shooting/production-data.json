@@ -1,0 +1,969 @@
+{
+  "s01": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 9.5,
+    "location": "DALLAS HOUSE - Exterior",
+    "time": "DAY",
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher"
+    ]
+  },
+  "s02": {
+    "durationMin": 120,
+    "time": "06:00 PM - 08:00 PM",
+    "shootDays": 0.5,
+    "assignedDay": 2,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla"
+    ]
+  },
+  "s02.3": {
+    "durationMin": 45,
+    "time": "NIGHT",
+    "location": "Branford - Various Exteriors",
+    "shootDays": 0.5,
+    "assignedDay": 1,
+    "keyElements": "",
+    "productionNotes": "Dallas discovers weirdness of neighborhood and tall grass",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "branford-night-discovery": {
+    "durationMin": 45,
+    "time": "NIGHT",
+    "location": "Branford - Various Exteriors",
+    "shootDays": 0.5,
+    "assignedDay": 1,
+    "keyElements": "",
+    "productionNotes": "Dallas discovers weirdness of neighborhood and tall grass",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s04": {
+    "durationMin": 180,
+    "shootDays": 0.5,
+    "assignedDay": 5,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Makayla",
+      "Asher",
+      "Mr Mike"
+    ]
+  },
+  "s09b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 1,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla"
+    ]
+  },
+  "s09": {
+    "durationMin": 90,
+    "time": "6:30 PM",
+    "location": "On Location (East Haven Nursery)",
+    "shootDays": 0.5,
+    "assignedDay": 3,
+    "keyElements": "",
+    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s10": {
+    "durationMin": 75,
+    "time": "8:45 PM",
+    "location": "Jerry's House",
+    "shootDays": 0.5,
+    "assignedDay": 3,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s07b": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 5,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Makayla",
+      "Asher",
+      "Mr Mike"
+    ]
+  },
+  "s26": {
+    "durationMin": 60,
+    "shootDays": 0.5,
+    "assignedDay": [
+      5,
+      14
+    ],
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike",
+      "Janice"
+    ]
+  },
+  "s03": {
+    "durationMin": 120,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Pat"
+    ]
+  },
+  "s05": {
+    "durationMin": 60,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Pat"
+    ]
+  },
+  "s06": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 9,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Pat"
+    ]
+  },
+  "s11": {
+    "durationMin": 90,
+    "time": "6:30 PM",
+    "shootDays": 0.5,
+    "assignedDay": 6,
+    "keyElements": "",
+    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Asher"
+    ]
+  },
+  "s12": {
+    "durationMin": 30,
+    "time": "7:30 PM",
+    "shootDays": 0.5,
+    "assignedDay": 6,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Dominic",
+      "Asher"
+    ]
+  },
+  "s27a": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 7,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s08": {
+    "durationMin": 60,
+    "shootDays": 0.5,
+    "assignedDay": 3,
+    "keyElements": "",
+    "productionNotes": "Dallas tracks the sound alone through Branford neighborhoods toward the marsh",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s13": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 4,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike"
+    ]
+  },
+  "s07": {
+    "durationMin": 150,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s14": {
+    "durationMin": 120,
+    "shootDays": 0.5,
+    "assignedDay": 4,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike"
+    ]
+  },
+  "s14b": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 4,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike"
+    ]
+  },
+  "s14c": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 4,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike"
+    ]
+  },
+  "s17": {
+    "durationMin": 120,
+    "time": "08:00 PM - 10:00 PM",
+    "shootDays": 0.5,
+    "assignedDay": [
+      9,
+      4
+    ],
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s17b": {
+    "durationMin": 60,
+    "shootDays": 0.5,
+    "assignedDay": [
+      4,
+      12
+    ],
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s17c": {
+    "durationMin": 60,
+    "shootDays": 0.5,
+    "assignedDay": [
+      4,
+      12
+    ],
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice",
+      "Mr. Mike"
+    ]
+  },
+  "s09c": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 10,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas"
+    ]
+  },
+  "s18": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 11,
+    "keyElements": "",
+    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike",
+      "Janice",
+      "Life Group Extras"
+    ]
+  },
+  "s19": {
+    "durationMin": 120,
+    "shootDays": 0.5,
+    "assignedDay": 11,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike",
+      "Janice",
+      "Life Group Extras"
+    ]
+  },
+  "s20": {
+    "durationMin": 75,
+    "shootDays": 0.5,
+    "assignedDay": 11,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Mr. Mike",
+      "Janice",
+      "Life Group Extras"
+    ]
+  },
+  "s15a": {
+    "durationMin": 75,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla"
+    ]
+  },
+  "s15b": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla"
+    ]
+  },
+  "s15c": {
+    "durationMin": 45,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla"
+    ]
+  },
+  "s16": {
+    "durationMin": 75,
+    "shootDays": 0.5,
+    "assignedDay": 12,
+    "keyElements": "",
+    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic",
+      "Janice"
+    ]
+  },
+  "s21": {
+    "durationMin": 75,
+    "shootDays": 0.5,
+    "assignedDay": 14,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s22": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 14,
+    "keyElements": "",
+    "productionNotes": "Wraps",
+    "cast": [
+      "Asher",
+      "Mr. Mike",
+      "Dallas",
+      "Makayla",
+      "Dominic",
+      "Janice",
+      "Pat"
+    ]
+  },
+  "s23": {
+    "durationMin": 120,
+    "shootDays": 0.5,
+    "assignedDay": 15,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s24": {
+    "durationMin": 150,
+    "shootDays": 0.5,
+    "assignedDay": 15,
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s25": {
+    "durationMin": 150,
+    "shootDays": 0.5,
+    "assignedDay": 16,
+    "time": "7:00 PM – 9:00 PM",
+    "keyElements": "",
+    "productionNotes": "",
+    "cast": [
+      "Dallas",
+      "Makayla",
+      "Asher",
+      "Dominic"
+    ]
+  },
+  "s26b": {
+    "durationMin": 0,
+    "shootDays": 0.5,
+    "assignedDay": 16,
+    "keyElements": "",
+    "productionNotes": "Wraps",
+    "cast": [
+      "Asher",
+      "Mr. Mike",
+      "Dallas",
+      "Makayla",
+      "Dominic",
+      "Janice",
+      "Pat"
+    ]
+  },
+  "s27": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 16,
+    "location": "EXT. Jerry's House — Afternoon",
+    "keyElements": "",
+    "productionNotes": "Afternoon shoot before nursery run",
+    "cast": [
+      "Asher",
+      "Mr. Mike",
+      "Dallas",
+      "Makayla",
+      "Dominic",
+      "Janice",
+      "Pat"
+    ]
+  },
+  "s28": {
+    "durationMin": 90,
+    "shootDays": 0.5,
+    "assignedDay": 16,
+    "keyElements": "",
+    "productionNotes": "Wraps",
+    "cast": [
+      "Asher",
+      "Mr. Mike",
+      "Dallas",
+      "Makayla",
+      "Dominic",
+      "Janice",
+      "Pat"
+    ]
+  },
+  "settings": {
+    "chronologicalStartDay": 1
+  },
+  "calendar": {
+    "1": "2026-06-07",
+    "2": "2026-06-09",
+    "3": "2026-06-12",
+    "4": "2026-06-13",
+    "5": "2026-06-14",
+    "6": "2026-06-16",
+    "7": "2026-06-18",
+    "8": "2026-06-19",
+    "9": "2026-06-20",
+    "10": "2026-06-26",
+    "11": "2026-06-27",
+    "12": "2026-06-28",
+    "13": "2026-07-01",
+    "14": "2026-07-02",
+    "15": "2026-07-03",
+    "16": "2026-07-05",
+    "9.5": "2026-06-21"
+  },
+  "shootPlan": [
+    {
+      "day": 1,
+      "date": "2026-06-07",
+      "weekday": "Sunday",
+      "scenes": [
+        "s00",
+        "s02.3",
+        "s09c"
+      ],
+      "locations": [
+        "Town Green",
+        "Branford High School",
+        "Stony Creek",
+        "Supply Ponds"
+      ],
+      "crewCall": "GENERAL CREW CALL: 5pm - at Alex's House - 206 Saint John",
+      "locationDetails": [
+        "1. Town Green (1011 Main St) - Arrival 5:00 PM",
+        "   • Notes: Park near the gazebo",
+        "2. Branford High School (185 E Main St) - Arrival 6:30 PM",
+        "   • Notes: Use the east entrance",
+        "3. Stony Creek (Thimble Island Rd) - Arrival 8:00 PM",
+        "4. Supply Ponds (Chestnut St) - Arrival 9:30 PM"
+      ],
+      "wardrobe": [
+        "1. Dallas Outfit #1",
+        "   a. White Shirt",
+        "   b. Blue Shorts"
+      ],
+      "props": [
+        "1. Oscillator",
+        "2. Audio Headphones"
+      ],
+      "cast": [
+        "Dallas"
+      ],
+      "sourceNote": "Day 1 = 6.7.26 - Sun <s00s> Branford montage"
+    },
+    {
+      "day": 2,
+      "date": "2026-06-09",
+      "weekday": "Tuesday",
+      "scenes": [
+        "s02",
+        "s08b"
+      ],
+      "locations": [
+        "72 lake street, hamden ct"
+      ],
+      "locationDetails": [
+        "72 lake street, hamden ct",
+        "arrival = 206 saint john at 5pm"
+      ],
+      "crewCall": "GENERAL CREW CALL: 05:00 PM",
+      "cast": [
+        "Dallas",
+        "Makayla"
+      ],
+      "wardrobe": [
+        "Dallas: Outfit #3 (casual)",
+        "Makayla: Outfit #1 (field gear)"
+      ],
+      "props": [
+        "Sierra's Box",
+        "Ruby-red headphones",
+        "Ruby-red cassette player",
+        "Laptop with trailcam footage",
+        "Translucent crystal in petri dish",
+        "Oscillator",
+        "Audio headphones"
+      ],
+      "crew": [
+        "1. Alex Gonzalez (Director, DP)",
+        "2. Jerry (Owner of House)",
+        "3. Chris Batista (Audio + Lights)"
+      ],
+      "misc": [
+        "Alex's Phonenumber: [Insert Number Here]"
+      ],
+      "sourceNote": "Day 2 = 6.9.26 = Tues [s02,s08b][D]"
+    },
+    {
+      "day": 3,
+      "date": "2026-06-12",
+      "weekday": "Friday",
+      "scenes": [
+        "s08",
+        "s09",
+        "s10"
+      ],
+      "crewCall": "GENERAL CREW CALL: 05:00 PM — Alex's House (206 Saint John)",
+      "locationDetails": [
+        "Arrive on location: 5:30 PM",
+        "1. Branford neighborhoods [s08 — approach walk]",
+        "2. East Haven Nursery [s09 — marsh]",
+        "3. Jerry's House [s10 — night pickup]",
+        "Wrap: 10:30 PM EST"
+      ],
+      "wardrobe": [
+        "Dallas: Outfit #2 (Blue Shirt, White Pants, Jacket)"
+      ],
+      "props": [
+        "Good Creature",
+        "Bad Creature",
+        "Oscillator",
+        "Audio Recorder",
+        "Audio Headphones"
+      ],
+      "crew": [
+        "1. Alex",
+        "2. Chris",
+        "3. Aldo",
+        "4. Jerry"
+      ],
+      "misc": [
+        "Trailcam walk into the marsh; keep sound coverage flexible."
+      ],
+      "sourceNote": "Day 3 = 6.12.26 - Fr <s08,s09,s10>[D]"
+    },
+    {
+      "day": 4,
+      "date": "2026-06-13",
+      "weekday": "Saturday",
+      "scenes": [
+        "s03",
+        "s05",
+        "s15a",
+        "s15b",
+        "s15c"
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Makayla"
+      ],
+      "crewCall": "GENERAL CREW CALL: 01:00 PM",
+      "wardrobe": [
+        "Dallas: Outfit #3 (s03, s05 — morning walk / marsh)",
+        "Dallas: Outfit #5 (s15a, s15b, s15c — investigation scenes)"
+      ],
+      "props": [
+        "Oscillator",
+        "Military-style antenna",
+        "Custom glass elements",
+        "Translucent crystal",
+        "Soldering iron",
+        "Copper coils",
+        "Radio components"
+      ],
+      "sourceNote": "D4 = 6.13.26 - Sat <s03,s05,s15a,s15b,s15c> [D, Dm walking + s15s]"
+    },
+    {
+      "day": 5,
+      "date": "2026-06-14",
+      "weekday": "Sunday",
+      "scenes": [
+        "s01",
+        "s13",
+        "s14",
+        "s14b",
+        "s14c",
+        "s08d"
+      ],
+      "crewCall": "GENERAL CREW CALL: 09:00 AM",
+      "wardrobe": [
+        "Dallas: Outfit #3"
+      ],
+      "props": [
+        "1. Good Creature",
+        "2. Bad Creature",
+        "3. Portable Oscillator",
+        "4. Howie"
+      ],
+      "sourceNote": "D5 = 6.14.26 = Sun <s01,s13,s14,s14b,s14c,s08b,s08c,s08d>"
+    },
+    {
+      "day": 6,
+      "date": "2026-06-16",
+      "weekday": "Tuesday",
+      "scenes": [
+        "s11",
+        "s12",
+        "s08c"
+      ],
+      "crewCall": "GENERAL CREW CALL: 05:00 PM",
+      "wardrobe": [
+        "Dallas: Outfit #3"
+      ],
+      "misc": [
+        "Wrap: 8:45 PM"
+      ],
+      "sourceNote": "Day 6 = 6.16.26 = Tues <s11 + s12>[D]"
+    },
+    {
+      "day": 7,
+      "date": "2026-06-18",
+      "weekday": "Thursday",
+      "scenes": [],
+      "sourceNote": "Day 7 = 6.18.26 = Thurs [D]"
+    },
+    {
+      "day": 8,
+      "date": "2026-06-19",
+      "weekday": "Friday",
+      "scenes": [],
+      "sourceNote": "Day 8 = 6.19.26 = Fri [D][H]"
+    },
+    {
+      "day": 9,
+      "date": "2026-06-20",
+      "weekday": "Saturday",
+      "scenes": [
+        "s06",
+        "s17"
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Pat Clendenen"
+      ],
+      "sourceNote": "D9 = 6.20.26 = Sat <s06,s17>"
+    },
+    {
+      "day": 9.5,
+      "date": "2026-06-21",
+      "weekday": "Sunday",
+      "scenes": [],
+      "sourceNote": "D9.5 = 6.21.26 (Father's Day)",
+      "special": true
+    },
+    {
+      "day": 10,
+      "date": "2026-06-26",
+      "weekday": "Friday",
+      "scenes": [
+        "s00"
+      ],
+      "sourceNote": "D10 = 6.26.26 = Fri [D]<s00, s09c>"
+    },
+    {
+      "day": 11,
+      "date": "2026-06-27",
+      "weekday": "Saturday",
+      "scenes": [
+        "s18",
+        "s19",
+        "s20",
+        "s28",
+        "s29",
+        "s30"
+      ],
+      "sourceNote": "D11 = 6.27 = Sat <s18,s19,s20,s28,s29,s30> [D, Dm,...]"
+    },
+    {
+      "day": 12,
+      "date": "2026-06-28",
+      "weekday": "Sunday",
+      "scenes": [
+        "s04",
+        "s07",
+        "s07b",
+        "s16",
+        "s17b",
+        "s17c"
+      ],
+      "locations": [
+        "Church"
+      ],
+      "sourceNote": "D12 = 6.28.26 = Sun [Church] <s04,s07,s07b,s16,s17b,s17c>"
+    },
+    {
+      "day": 13,
+      "date": "2026-07-01",
+      "weekday": "Wednesday",
+      "scenes": [
+        "s26"
+      ],
+      "sourceNote": "D13 = 7.1.26 = Wed <s26>"
+    },
+    {
+      "day": 14,
+      "date": "2026-07-02",
+      "weekday": "Thursday",
+      "scenes": [
+        "s21",
+        "s22"
+      ],
+      "sourceNote": "Day 14 = 7.2.26 = Thursday <s21,s22>"
+    },
+    {
+      "day": 15,
+      "date": "2026-07-03",
+      "weekday": "Friday",
+      "scenes": [
+        "s23",
+        "s24"
+      ],
+      "sourceNote": "Day 15 = 7.3.26 Friday <s23,s24>"
+    },
+    {
+      "day": 16,
+      "date": "2026-07-05",
+      "weekday": "Sunday",
+      "scenes": [
+        "s27",
+        "s15s",
+        "s25"
+      ],
+      "sourceNote": "Day 16 = 7.5.26 Sunday <s27,s15s,s25> [s27 afternoon @ Jerry's House, then finale]"
+    }
+  ],
+  "limbo": [],
+  "locationDirectory": [
+    {
+      "fictional": "DALLAS HOUSE",
+      "actual": "",
+      "address": "72 Lake Street, Hamden, CT"
+    },
+    {
+      "fictional": "DOMINIC'S HOUSE",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "MAKAYLA'S BEDROOM / LAIR",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "JACE'S BASEMENT",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "THE TALL MARSH / TALL GRASS",
+      "actual": "East Haven Nursery",
+      "address": ""
+    },
+    {
+      "fictional": "CHURCH / CHURCH GROUNDS",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "BRANFORD TOWN GREEN",
+      "actual": "Branford Green",
+      "address": "Branford, CT 06405"
+    },
+    {
+      "fictional": "BRANFORD ROCKS",
+      "actual": "Stony Creek / Supply Ponds",
+      "address": ""
+    },
+    {
+      "fictional": "HARDWARE STORE",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "GROCERY STORE / COSTCO",
+      "actual": "",
+      "address": ""
+    },
+    {
+      "fictional": "TRAIN",
+      "actual": "",
+      "address": ""
+    }
+  ],
+  "s00": {
+    "durationMin": 30
+  },
+  "s08b": {
+    "durationMin": 60,
+    "assignedDay": 2
+  },
+  "s08c": {
+    "durationMin": 15
+  },
+  "s08d": {
+    "durationMin": 60
+  }
+}
