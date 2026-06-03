@@ -1,5 +1,5 @@
 {
-  "s00a": {
+  "opening-montage": {
     "durationMin": 45,
     "shootDays": 0.5,
     "assignedDay": 1,
@@ -21,7 +21,7 @@
       "Leaf litter and moss for concealment"
     ]
   },
-  "s00b": {
+  "property-manager": {
     "durationMin": 30,
     "shootDays": 0.5,
     "assignedDay": 4,
@@ -42,7 +42,7 @@
       "Clipboard or folder (Property Manager) — keeps hands busy during walkthrough"
     ]
   },
-  "s01": {
+  "arrival": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 1,
@@ -56,7 +56,7 @@
       "Asher"
     ]
   },
-  "s02": {
+  "dallas-night": {
     "durationMin": 120,
     "time": "06:00 PM - 08:00 PM",
     "shootDays": 0.5,
@@ -80,18 +80,6 @@
       "Frozen pizza — half-eaten or in oven (background texture)"
     ]
   },
-  "s02.3": {
-    "durationMin": 45,
-    "time": "NIGHT",
-    "location": "Branford - Various Exteriors",
-    "shootDays": 0.5,
-    "assignedDay": 1,
-    "keyElements": "",
-    "productionNotes": "Dallas discovers weirdness of neighborhood and tall grass",
-    "cast": [
-      "Dallas"
-    ]
-  },
   "branford-night-discovery": {
     "durationMin": 45,
     "time": "NIGHT",
@@ -104,7 +92,7 @@
       "Dallas"
     ]
   },
-  "s04": {
+  "fellowship": {
     "durationMin": 180,
     "shootDays": 0.5,
     "assignedDay": 13,
@@ -129,7 +117,7 @@
       "Makayla"
     ]
   },
-  "s09": {
+  "dallas-night-work": {
     "durationMin": 90,
     "time": "6:30 PM",
     "location": "On Location (East Haven Nursery)",
@@ -141,7 +129,7 @@
       "Dallas"
     ]
   },
-  "s10": {
+  "shadows-in-wind": {
     "durationMin": 75,
     "time": "8:45 PM",
     "location": "Jerry's House",
@@ -153,7 +141,7 @@
       "Dallas"
     ]
   },
-  "s07b": {
+  "mr-mikes-warning": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 12,
@@ -167,7 +155,7 @@
       "Mr Mike"
     ]
   },
-  "s26": {
+  "final-echoes": {
     "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": 9,
@@ -182,7 +170,7 @@
       "Janice"
     ]
   },
-  "s03": {
+  "the-hum": {
     "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 7,
@@ -194,7 +182,7 @@
       "Pat"
     ]
   },
-  "s05": {
+  "marsh-walk-later": {
     "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": 7,
@@ -206,7 +194,7 @@
       "Pat"
     ]
   },
-  "s06": {
+  "news-vans": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 13,
@@ -218,7 +206,7 @@
       "Pat"
     ]
   },
-  "s11": {
+  "howie-walk-2": {
     "durationMin": 90,
     "time": "6:30 PM",
     "shootDays": 0.5,
@@ -231,7 +219,7 @@
       "Asher"
     ]
   },
-  "s12": {
+  "the-burn-mark": {
     "durationMin": 30,
     "time": "7:30 PM",
     "shootDays": 0.5,
@@ -254,7 +242,7 @@
       "Dallas"
     ]
   },
-  "s08": {
+  "dallas-marsh-walk": {
     "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": 3,
@@ -264,7 +252,7 @@
       "Dallas"
     ]
   },
-  "s13": {
+  "entering-grass": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 8,
@@ -278,7 +266,7 @@
       "Mr. Mike"
     ]
   },
-  "s07": {
+  "the-coordinates": {
     "durationMin": 150,
     "shootDays": 0.5,
     "assignedDay": 11,
@@ -293,7 +281,7 @@
       "Mr. Mike"
     ]
   },
-  "s14": {
+  "creature-rescue": {
     "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 8,
@@ -307,7 +295,7 @@
       "Mr. Mike"
     ]
   },
-  "s14b": {
+  "the-field-journal": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 5,
@@ -321,7 +309,7 @@
       "Mr. Mike"
     ]
   },
-  "s14c": {
+  "the-almost-discovery": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 5,
@@ -335,7 +323,7 @@
       "Mr. Mike"
     ]
   },
-  "s17": {
+  "resonance": {
     "durationMin": 120,
     "time": "08:00 PM - 10:00 PM",
     "shootDays": 0.5,
@@ -351,7 +339,7 @@
       "Mr. Mike"
     ]
   },
-  "s17b": {
+  "normal-day": {
     "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": 12,
@@ -366,7 +354,7 @@
       "Mr. Mike"
     ]
   },
-  "s17c": {
+  "mute-drive": {
     "durationMin": 60,
     "shootDays": 0.5,
     "assignedDay": 12,
@@ -391,7 +379,7 @@
       "Dallas"
     ]
   },
-  "s18": {
+  "life-group-arrives": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 11,
@@ -407,7 +395,7 @@
       "Life Group Extras"
     ]
   },
-  "s19": {
+  "the-hymn": {
     "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 11,
@@ -423,7 +411,7 @@
       "Life Group Extras"
     ]
   },
-  "s20": {
+  "red-eyes": {
     "durationMin": 75,
     "shootDays": 0.5,
     "assignedDay": 11,
@@ -439,7 +427,7 @@
       "Life Group Extras"
     ]
   },
-  "s15a": {
+  "the-failed-test": {
     "durationMin": 75,
     "shootDays": 0.5,
     "assignedDay": 7,
@@ -450,7 +438,7 @@
       "Makayla"
     ]
   },
-  "s15b": {
+  "the-tracking-box": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 7,
@@ -461,7 +449,7 @@
       "Makayla"
     ]
   },
-  "s15c": {
+  "dominics-confession": {
     "durationMin": 45,
     "shootDays": 0.5,
     "assignedDay": 7,
@@ -472,7 +460,7 @@
       "Makayla"
     ]
   },
-  "s16": {
+  "the-escape": {
     "durationMin": 75,
     "shootDays": 0.5,
     "assignedDay": 12,
@@ -486,7 +474,7 @@
       "Janice"
     ]
   },
-  "s21": {
+  "creature-missing": {
     "durationMin": 75,
     "shootDays": 0.5,
     "assignedDay": 8,
@@ -499,7 +487,7 @@
       "Dominic"
     ]
   },
-  "s22": {
+  "marsh-confrontation": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 8,
@@ -515,7 +503,7 @@
       "Pat"
     ]
   },
-  "s23": {
+  "predator-attack": {
     "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 8,
@@ -528,7 +516,7 @@
       "Dominic"
     ]
   },
-  "s24": {
+  "the-perimeter": {
     "durationMin": 150,
     "shootDays": 0.5,
     "assignedDay": 9,
@@ -541,7 +529,7 @@
       "Dominic"
     ]
   },
-  "s25": {
+  "the-last-dinner": {
     "durationMin": 150,
     "shootDays": 0.5,
     "assignedDay": 9,
@@ -571,7 +559,7 @@
       "Pat"
     ]
   },
-  "s27": {
+  "aftermath": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 14,
@@ -588,7 +576,7 @@
       "Pat"
     ]
   },
-  "s28": {
+  "full-circle": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 14,
@@ -1015,7 +1003,7 @@
       "address": ""
     }
   ],
-  "s08b": {
+  "the-research-beat": {
     "durationMin": 60,
     "assignedDay": 2,
     "props": [
@@ -1028,11 +1016,11 @@
       "Trailcam footage (practical/VFX) — plays on laptop screen"
     ]
   },
-  "s08c": {
+  "the-threshold": {
     "durationMin": 15,
     "assignedDay": 6
   },
-  "s08d": {
+  "the-return": {
     "durationMin": 60,
     "assignedDay": 8
   }
