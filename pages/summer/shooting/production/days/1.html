@@ -7,9 +7,9 @@
                         :root {
                 --prod-accent: #000;
                 --prod-head: #f5f5f5;
-                --prod-border: #ccc;
-                --prod-tag-bg: #f9f9f9;
-                --prod-tag-border: #bbb;
+                --prod-border: #000;
+                --prod-tag-bg: #fff;
+                --prod-tag-border: #000;
                 --prod-row-hover: #f5f5f5;
                 --sidebar-w: 260px;
             }
@@ -19,7 +19,7 @@
                 min-height: 100vh;
                 overflow-y: auto;
                 background: #fff;
-                color: #111;
+                color: #000;
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             }
             .dashboard-container {
@@ -41,51 +41,152 @@
             .main-content {
                 flex: 1;
                 overflow-y: auto;
-                padding: 40px;
+                padding: 28px 24px 32px;
                 scroll-behavior: smooth;
                 position: relative;
             }
             .stats-card {
-                background: var(--prod-tag-bg);
-                border: 1px solid var(--prod-tag-border);
-                border-radius: 8px;
-                padding: 16px;
-                margin-bottom: 24px;
+                background: #fff;
+                border: 1px solid #000;
+                border-radius: 0;
+                padding: 10px 12px;
+                margin-bottom: 12px;
             }
             .stats-title {
-                font-size: 0.75rem;
+                font-size: 0.65rem;
                 text-transform: uppercase;
-                letter-spacing: 0.05em;
-                color: var(--text-secondary);
-                margin-bottom: 8px;
+                letter-spacing: 0.08em;
+                color: #555;
+                margin-bottom: 6px;
             }
             .stats-value {
-                font-size: 1.5rem;
+                font-size: 1rem;
                 font-weight: 600;
                 color: var(--prod-accent);
             }
+            a {
+                color: #000;
+            }
+            .stats-card a {
+                color: #000;
+                text-decoration: none;
+            }
+            .stats-card a:hover {
+                text-decoration: underline;
+            }
+            @media print {
+                @page { margin: 0.45in; }
+                body {
+                    background: #fff !important;
+                    color: #000 !important;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .main-content {
+                    padding: 0;
+                }
+                .stats-card {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                a {
+                    color: #000 !important;
+                    text-decoration: none !important;
+                }
+            }
 
-            .main-content { padding: 40px; margin: 0 auto; max-width: 1000px; box-sizing: border-box; }
+            .main-content { padding: 24px 22px 32px; margin: 0 auto; max-width: 920px; box-sizing: border-box; }
+            body { background: #fff; color: #000; }
             .callsheet-header {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
-                border-bottom: 3px solid black;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
+                border-bottom: 2px solid #000;
+                padding-bottom: 8px;
+                margin-bottom: 14px;
                 flex-wrap: wrap;
-                gap: 12px;
+                gap: 10px;
             }
-            .production-table { background: transparent; border: none; width: 100%; border-collapse: collapse; }
-            .production-table th { background: transparent; color: black !important; border-bottom: 2px solid black; font-weight: 700; text-align: left; padding: 8px; }
-            .production-table td { border-bottom: 1px solid #eee; padding: 12px 8px; color: black; vertical-align: top; }
+            .callsheet-kicker {
+                margin: 4px 0 0 0;
+                font-size: 0.78rem;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #555;
+            }
+            .compact-block {
+                margin: 12px 0 14px 0;
+                padding: 0;
+            }
+            .compact-label {
+                font-size: 0.7rem;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #555;
+                margin-bottom: 4px;
+            }
+            .compact-panel {
+                border: 1px solid #000;
+                padding: 8px 10px;
+            }
+            .production-table {
+                background: transparent;
+                border: none;
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 0.88rem;
+            }
+            .production-table th {
+                background: transparent;
+                color: #000 !important;
+                border-bottom: 2px solid #000;
+                font-weight: 700;
+                text-align: left;
+                padding: 6px 8px;
+                line-height: 1.1;
+            }
+            .production-table td {
+                border-bottom: 1px solid #ddd;
+                padding: 8px 8px;
+                color: #000;
+                vertical-align: top;
+                line-height: 1.25;
+            }
+            .production-table a {
+                color: #000 !important;
+                text-decoration: none;
+            }
+            .production-table a:hover {
+                text-decoration: underline;
+            }
+            .scene-snippet {
+                font-size: 0.72rem;
+                color: #666;
+                margin-top: 3px;
+                line-height: 1.25;
+                font-style: italic;
+            }
+            .scene-start {
+                white-space: nowrap;
+            }
+            .notice-bar {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 10px;
+                font-size: 0.68rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #333;
+            }
 
             @media (max-width: 768px) {
-                .main-content { padding: 15px; }
+                .main-content { padding: 16px 14px 22px; }
                 .callsheet-header {
                     flex-direction: column;
                     align-items: flex-start;
-                    border-bottom-width: 2px;
+                    border-bottom-width: 1px;
                 }
                 .callsheet-header div:last-child {
                     text-align: left !important;
@@ -97,11 +198,35 @@
                     -webkit-overflow-scrolling: touch;
                 }
             }
+
+            @media print {
+                @page { margin: 0.45in; }
+                body {
+                    background: #fff !important;
+                    color: #000 !important;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .notice-bar {
+                    display: flex;
+                }
+                .production-table th {
+                    background: #fff !important;
+                }
+                .compact-panel {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                a {
+                    color: #000 !important;
+                    text-decoration: none !important;
+                }
+            }
         </style>
     </head>
     <body style="background:white; color:black;">
         <div class="main-content">
-            <div class="no-print" style="display:flex; justify-content:space-between; margin-bottom:10px; font-size:0.7rem; text-transform:uppercase; font-weight:700; background:#f0f0f0; padding:6px 12px; border-radius:4px;">
+            <div class="notice-bar no-print">
                 <span></span>
                 <a href="../../shooting_production.html" style="color:#666; text-decoration:none;">Dashboard</a>
                 <a href="2.html" style="color:#0366d6; text-decoration:none;">Day 2 &rarr;</a>
@@ -110,7 +235,7 @@
                 <div>
                     <h1 style="margin:0;">DAILY CALL SHEET</h1>
                     <h2 style="margin:0; font-size:1.5rem;">Day 1 of 14</h2>
-                    <p style="margin:4px 0 0 0; font-size:0.85rem; opacity:0.6;">Shooting Script Version</p>
+                    <p class="callsheet-kicker">Shooting cut</p>
                 </div>
                 <div style="text-align:right;">
                     <div style="font-weight:700;">SUNDAY</div>
@@ -119,45 +244,48 @@
                 </div>
             </header>
 
-            <section style="margin-bottom:18px; padding:14px; border:1px solid #ddd; border-radius:8px; background:#fafafa;">
-                <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#666; margin-bottom:8px;">Shoot Plan Summary</div>
-                
-                <div style="display:grid; gap:10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
-                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Number of Scenes</div><div style="font-size:0.95rem;">2</div></div>
-                    <div><div style="font-size:0.7rem; text-transform:uppercase; color:#666; font-weight:700;">Estimated Length of Day</div><div style="font-size:0.95rem;">1h 30m</div></div>
+            <section class="compact-block">
+                <div class="compact-label">Shoot Plan Summary</div>
+                <div class="compact-panel">
+                    
+                    <div style="display:grid; gap:8px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Scenes</div><div style="font-size:0.92rem;">2</div></div>
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Est. Length</div><div style="font-size:0.92rem;">1h 30m</div></div>
+                    </div>
                 </div>
             </section>
 
-            <section style="margin-bottom:30px;">
-                <h3 style="background:black; color:white; padding:5px 10px; margin:0;">GENERAL CREW CALL: 08:00 AM</h3>
+            <section class="compact-block">
+                <div class="compact-label">Crew Call</div>
+                <div class="compact-panel" style="font-weight:700;">GENERAL CREW CALL: 08:00 AM</div>
             </section>
 
-            <h3 style="margin:20px 0 10px 0; border-bottom:1px solid black;">SCENE SCHEDULE</h3>
-            <table class="production-table" style="background:white; border-color:black;">
+            <h3 style="margin:18px 0 8px 0; border-bottom:1px solid #000; font-size:0.95rem; letter-spacing:0.04em;">SCENE SCHEDULE</h3>
+            <table class="production-table">
                 <thead>
-                    <tr style="background:#eee;">
-                        <th style="color:black;border-color:black;">SCENE</th>
-                        <th style="color:black;border-color:black;">TIME TO START</th>
-                        <th style="color:black;border-color:black;">DESCRIPTION</th>
-                        <th style="color:black;border-color:black;">CAST</th>
+                    <tr>
+                        <th>SCENE</th>
+                        <th>TIME</th>
+                        <th>DESCRIPTION</th>
+                        <th>CAST</th>
                     </tr>
                 </thead>
-                <tbody style="color:black;">
+                <tbody>
                     
       <tr>
-        <td>s00a</td>
+        <td><a href="../../script-system/full_script.html#scene-s00a" onclick="event.stopPropagation()" style="color:#111;text-decoration:none;font-weight:700;border-bottom:1px dotted currentColor;" title="Jump to s00a in the full script">s00a</a></td>
         <td>Early Morning / Continuous</td>
         <td>
-          <div style="font-weight: 700; color: black;">Opening Montage</div>
+          <div style="font-weight: 700; color: black;"><a href="../../script-system/full_script.html#scene-s00a" onclick="event.stopPropagation()" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;" title="Jump to Opening Montage in the full script">Opening Montage</a></div>
           <div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">An empty platform. The Long Island Sound visible beyond the station house — gray water, distant shoreline. A single t...</div>
         </td>
         <td>DALLAS</td>
       </tr>
       <tr>
-        <td>s02.3</td>
+        <td><a href="../../script-system/full_script.html#scene-s02.3" onclick="event.stopPropagation()" style="color:#111;text-decoration:none;font-weight:700;border-bottom:1px dotted currentColor;" title="Jump to s02.3 in the full script">s02.3</a></td>
         <td>NIGHT</td>
         <td>
-          <div style="font-weight: 700; color: black;">Branford at Night Montages</div>
+          <div style="font-weight: 700; color: black;"><a href="../../script-system/full_script.html#scene-s02.3" onclick="event.stopPropagation()" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;" title="Jump to Branford at Night Montages in the full script">Branford at Night Montages</a></div>
           <div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;"># Scene 2.3: Branford at Night Montages</div>
         </td>
         <td>DALLAS</td>
@@ -165,18 +293,18 @@
                 </tbody>
             </table>
 
-            <section style="margin-top:20px; display:flex; flex-direction:column; gap:20px;">
-                <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
-                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">PROPS</h3>
-                    <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;"><div style="margin-bottom: 4px;">☐ Dallas's suitcase or worn travel bag</div><div style="margin-bottom: 4px;">☐ Trail cameras (audio and visual)</div><div style="margin-bottom: 4px;">☐ Boom pole (assembled in pieces)</div><div style="margin-bottom: 4px;">☐ Acoustic trap equipment (small, microphone array)</div><div style="margin-bottom: 4px;">☐ Folding trowel (military-issue, small)</div><div style="margin-bottom: 4px;">☐ Leaf litter and moss for concealment</div></div>
+            <section style="margin-top:16px; display:flex; flex-direction:column; gap:12px;">
+                <div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">PROPS</h3>
+                    <div style="font-size:0.84rem; min-height:40px; white-space: pre-wrap;"><div style="margin-bottom: 2px;">☐ Dallas's suitcase or worn travel bag</div><div style="margin-bottom: 2px;">☐ Trail cameras (audio and visual)</div><div style="margin-bottom: 2px;">☐ Boom pole (assembled in pieces)</div><div style="margin-bottom: 2px;">☐ Acoustic trap equipment (small, microphone array)</div><div style="margin-bottom: 2px;">☐ Folding trowel (military-issue, small)</div><div style="margin-bottom: 2px;">☐ Leaf litter and moss for concealment</div></div>
                 </div>
-                <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
-                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">EQUIPMENT</h3>
-                    <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;"><div style="color:#999; font-style:italic;">No equipment listed for this day.</div></div>
+                <div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">EQUIPMENT</h3>
+                    <div style="font-size:0.84rem; min-height:40px; white-space: pre-wrap;"><div style="color:#666; font-style:italic;">No equipment listed for this day.</div></div>
                 </div>
-                <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
-                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">LOCATION DETAILS</h3>
-                    <div style="font-size:0.9rem;"><div style="color:#999; font-style:italic;">Location details TBD</div></div>
+                <div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">LOCATION DETAILS</h3>
+                    <div style="font-size:0.84rem;"><div style="color:#666; font-style:italic;">Location details TBD</div></div>
                 </div>
             </section>
         </div>
