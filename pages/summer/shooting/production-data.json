@@ -45,7 +45,7 @@
   "arrival": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 1,
+    "assignedDay": 4,
     "location": "DALLAS HOUSE - Exterior",
     "time": "DAY",
     "keyElements": "",
@@ -619,7 +619,6 @@
       "day": 1,
       "scenes": [
         "s00a",
-        "s01",
         "s02.3"
       ]
     },
@@ -641,7 +640,8 @@
     {
       "day": 4,
       "scenes": [
-        "s00b"
+        "s00b",
+        "s01"
       ]
     },
     {
