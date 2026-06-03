@@ -118,17 +118,21 @@
                 <section style="margin-top:48px; margin-bottom:48px;">
                     <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
                       <h2 style="color:#111;margin:0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Shooting Schedule</h2>
+                      <div style="display:flex;gap:8px;margin-left:auto;">
+                        <button id="view-btn-day" onclick="toggleView('day')" style="font-family:ui-monospace,monospace;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:6px 14px;border:2px solid #111;border-radius:6px;background:#111;color:#fff;cursor:pointer;">By Day</button>
+                        <button id="view-btn-scene" onclick="toggleView('scene')" style="font-family:ui-monospace,monospace;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:6px 14px;border:2px solid #999;border-radius:6px;background:#fff;color:#333;cursor:pointer;">By Scene</button>
+                      </div>
                     </div>
                     <div style="overflow-x:auto;">
                       <table id="schedule-table" style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
                         <thead>
                           <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
-                            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Day</th>
-                            <th class="sortable-header" onclick="sortTable('date')" style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Date</th>
-                            <th class="sortable-header" onclick="sortTable('scenes')" style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Scenes</th>
+                            <th id="col-day" style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Day</th>
+                            <th id="col-date" class="sortable-header" onclick="sortTable('date')" style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Date</th>
+                            <th id="col-scenes" class="sortable-header" onclick="sortTable('scenes')" style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Scenes</th>
                           </tr>
                         </thead>
-                        <tbody id="schedule-tbody">
+                        <tbody id="schedule-tbody-day">
                           <tr style="border-bottom:1px solid #ddd;cursor:pointer;" onclick="window.location.href='production/days/1.html'">
                             <td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>Day 1</strong></td>
                             <td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 7</td>
@@ -215,6 +219,54 @@
                             <td style="padding:8px 10px;border-bottom:1px solid #ddd;">s27 (Dallas scenes) + Pickups</td>
                           </tr>
                         </tbody>
+                        <tbody id="schedule-tbody-scene" style="display:none;">
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s00a</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 7</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 1</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s00</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 7</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 1</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s01</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 7</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 1</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s02</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Mon, Jun 8</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 2</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s08b</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Mon, Jun 8</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 2</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s08</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Fri, Jun 12</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 3</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s09</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Fri, Jun 12</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 3</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s10</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Fri, Jun 12</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 3</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s03</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 13</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 4</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s05</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 13</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 4</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s15a</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 13</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 4</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s15b</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 13</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 4</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s15c</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 13</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 4</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s01</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 14</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 5</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s13</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 14</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 5</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s14</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 14</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 5</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s14b</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 14</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 5</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s14c</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 14</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 5</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s08d</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 14</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 5</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s11</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Tue, Jun 16</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 6</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s12</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Tue, Jun 16</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 6</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s08c</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Tue, Jun 16</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 6</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s25</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Thu, Jun 18</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 7</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s25</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Fri, Jun 19</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 8</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s06</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 20</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 9</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s17</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 20</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 9</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s01</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 21</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 9.5</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s00</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Fri, Jun 26</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 10</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s18</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 27</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 11</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s19</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 27</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 11</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s20</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 27</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 11</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s28</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 27</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 11</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s29</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 27</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 11</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s30</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sat, Jun 27</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 11</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s04</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 28</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 12</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s07</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 28</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 12</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s07b</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 28</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 12</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s16</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 28</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 12</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s17b</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#55;">Sun, Jun 28</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 12</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s17c</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jun 28</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 12</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s26</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Wed, Jul 1</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 13</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s21</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Thu, Jul 2</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 14</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s22</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Thu, Jul 2</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 14</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s23</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Fri, Jul 3</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 15</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s24</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Fri, Jul 3</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 15</td></tr>
+                          <tr style="border-bottom:1px solid #ddd;cursor:pointer;"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>s27</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">Sun, Jul 5</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">Day 16</td></tr>
+                        </tbody>
                       </table>
                     </div>
                 </section>
@@ -227,10 +279,52 @@
         </div>
         <script>
             let sortState = { column: null, ascending: true };
+            let currentView = 'day';
+
+            function toggleView(view) {
+                currentView = view;
+                const dayBody = document.getElementById('schedule-tbody-day');
+                const sceneBody = document.getElementById('schedule-tbody-scene');
+                const dayBtn = document.getElementById('view-btn-day');
+                const sceneBtn = document.getElementById('view-btn-scene');
+                const colDay = document.getElementById('col-day');
+                const colDate = document.getElementById('col-date');
+                const colScenes = document.getElementById('col-scenes');
+
+                if (view === 'day') {
+                    dayBody.style.display = '';
+                    sceneBody.style.display = 'none';
+                    dayBtn.style.background = '#111';
+                    dayBtn.style.color = '#fff';
+                    dayBtn.style.borderColor = '#111';
+                    sceneBtn.style.background = '#fff';
+                    sceneBtn.style.color = '#333';
+                    sceneBtn.style.borderColor = '#999';
+                    colDay.textContent = 'Day';
+                    colScenes.textContent = 'Scenes';
+                    sortState = { column: null, ascending: true };
+                } else {
+                    dayBody.style.display = 'none';
+                    sceneBody.style.display = '';
+                    dayBtn.style.background = '#fff';
+                    dayBtn.style.color = '#333';
+                    dayBtn.style.borderColor = '#999';
+                    sceneBtn.style.background = '#111';
+                    sceneBtn.style.color = '#fff';
+                    sceneBtn.style.borderColor = '#111';
+                    colDay.textContent = 'Scene';
+                    colScenes.textContent = 'Day';
+                    sortState = { column: null, ascending: true };
+                }
+                document.querySelectorAll('.sortable-header').forEach(h => {
+                    h.classList.remove('sorted-asc', 'sorted-desc');
+                });
+            }
 
             function sortTable(column) {
                 const table = document.getElementById('schedule-table');
-                const tbody = document.getElementById('schedule-tbody');
+                const bodyId = currentView === 'day' ? 'schedule-tbody-day' : 'schedule-tbody-scene';
+                const tbody = document.getElementById(bodyId);
                 const rows = Array.from(tbody.querySelectorAll('tr'));
 
                 // Toggle sort direction if same column clicked
