@@ -1131,6 +1131,133 @@
     },
     {
       "day": 4,
+      "crewCall": "CALL TIME: 10:00 AM - DALLAS HOUSE",
+      "locationDetails": [
+        "Dallas House interior",
+        "Various group locations"
+      ],
+      "shotList": [
+        {
+          "scene": "s14b",
+          "beat": "s14b.1",
+          "title": "Field journal discovery",
+          "description": "The group gathers to examine Sierra's field journal closely - detailed notes and sketches about the hum.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Group seated around table with journal",
+            "MS - Dallas opening journal carefully",
+            "CU - Journal pages showing sketches and notes",
+            "Detail - Hand pointing to frequency notations",
+            "CU - Faces reacting to findings"
+          ]
+        },
+        {
+          "scene": "s14b",
+          "beat": "s14b.2",
+          "title": "Reading Sierra's notes",
+          "description": "Dallas reads passages aloud - Sierra's observations about the creature and the hum pattern.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "MS - Dallas reading from journal",
+            "CU - Dallas's face, emotion in reading",
+            "MS - Others listening intently",
+            "Detail - Journal page details visible",
+            "WS - Group absorbing information"
+          ]
+        },
+        {
+          "scene": "s14b",
+          "beat": "s14b.3",
+          "title": "Matching the frequency",
+          "description": "They use the oscillator to match the frequency noted in Sierra's journal - confirmation of the pattern.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "MS - Oscillator adjustment",
+            "Detail - Dial reaching specific frequency",
+            "CU - Group reactions as match occurs",
+            "WS - Equipment setup with group",
+            "Detail - Notebook comparing frequencies"
+          ]
+        },
+        {
+          "scene": "s14c",
+          "beat": "s14c.1",
+          "title": "Planning the investigation",
+          "description": "They devise a plan to explore the marsh more thoroughly based on Sierra's notes - mapping out grid search.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Group huddled over map on table",
+            "MS - Someone marking locations",
+            "Detail - Map showing marked grid sections",
+            "CU - Faces showing determination",
+            "MS - Discussion and gesturing at map"
+          ]
+        },
+        {
+          "scene": "s14c",
+          "beat": "s14c.2",
+          "title": "Equipment check",
+          "description": "They methodically check equipment - oscillators, recorders, safety gear - preparing for marsh expedition.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Equipment laid out on floor/table",
+            "MS - Each member testing equipment",
+            "Detail - Batteries, settings, connections",
+            "CU - Concentration on faces",
+            "WS - Readiness check, gear being assembled"
+          ]
+        },
+        {
+          "scene": "s14c",
+          "beat": "s14c.3",
+          "title": "Near encounter",
+          "description": "As they prepare to head out, something moves in the tall grass visible from the house - they almost discover the creature.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Group moving toward exit/window",
+            "MS - Seeing movement in grass",
+            "CU - Faces frozen with realization",
+            "WS - Tall grass undulating",
+            "Detail - Oscillator suddenly spiking"
+          ]
+        }
+      ],
       "scenes": [
         "s14b",
         "s14c"
@@ -1138,6 +1265,137 @@
     },
     {
       "day": 5,
+      "crewCall": "CALL TIME: 3:00 PM - EAST HAVEN NURSERY",
+      "locationDetails": [
+        "East Haven Nursery grounds",
+        "Marsh edge and surrounding areas"
+      ],
+      "shotList": [
+        {
+          "scene": "s08c",
+          "beat": "s08c.1",
+          "title": "The threshold moment",
+          "description": "Dallas stands at the boundary between civilization and the tall grass - hesitation and realization.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Dallas at marsh boundary in afternoon light",
+            "MS - Dallas facing the tall grass",
+            "CU - Dallas's face, contemplative/afraid",
+            "WS - Tall grass from Dallas's POV",
+            "Detail - Dallas's hand reaching toward grass"
+          ]
+        },
+        {
+          "scene": "s11",
+          "beat": "s11.1",
+          "title": "Evening arrival at location",
+          "description": "Dallas, Dominic, and Asher arrive at the evening location to explore - golden hour light.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Asher"
+          ],
+          "shots": [
+            "WS - Location in golden evening light",
+            "MS - Three approaching the area",
+            "CU - Dallas's determination",
+            "WS - Expansive view of where they'll search",
+            "MS - Setting up oscillator and recorders"
+          ]
+        },
+        {
+          "scene": "s11",
+          "beat": "s11.2",
+          "title": "Tracking the hum",
+          "description": "They move through the area with equipment, oscillator active, following frequency changes.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Asher"
+          ],
+          "shots": [
+            "MS - Dallas with oscillator leading",
+            "WS - All three moving through terrain",
+            "Detail - Oscillator dial responding",
+            "CU - Listening intently",
+            "MS - Adjusting course based on signal"
+          ]
+        },
+        {
+          "scene": "s11",
+          "beat": "s11.3",
+          "title": "Dominic's hesitation",
+          "description": "Dominic expresses doubt or fear about continuing deeper - tension within the group.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Asher"
+          ],
+          "shots": [
+            "MS - Dominic stopping, voicing concern",
+            "CU - Dominic's apprehension",
+            "MS - Dallas responding, reassuring",
+            "CU - Asher's face, picking a side",
+            "MS - Decision moment between them"
+          ]
+        },
+        {
+          "scene": "s12",
+          "beat": "s12.1",
+          "title": "The burn mark discovery",
+          "description": "They discover a distinctive burn mark on the ground or trees - evidence of the creature's presence.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Asher"
+          ],
+          "shots": [
+            "WS - The burn mark area visible on ground",
+            "MS - Group gathering around it",
+            "CU - Examining the burn pattern closely",
+            "Detail - Hand pointing to burn characteristics",
+            "CU - Reactions to what it means"
+          ]
+        },
+        {
+          "scene": "s12",
+          "beat": "s12.2",
+          "title": "Oscillator confirmation",
+          "description": "The oscillator shows maximum response at the burn mark - confirmation this is where the creature was.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Asher"
+          ],
+          "shots": [
+            "Detail - Oscillator spiking to maximum",
+            "CU - Dallas's face, confirmation and fear",
+            "MS - Dominic and Asher stepping back",
+            "WS - The burn mark with group around it",
+            "Detail - Frequency reading at peak"
+          ]
+        },
+        {
+          "scene": "s12",
+          "beat": "s12.3",
+          "title": "The realization",
+          "description": "They understand the creature is real, local, and active - the threat becomes tangible.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Asher"
+          ],
+          "shots": [
+            "CU - Each of their faces reacting",
+            "MS - Quiet moment of understanding",
+            "WS - Group in the darkening area",
+            "Detail - Oscillator still reading the presence",
+            "MS - Exchange of frightened looks"
+          ]
+        }
+      ],
       "scenes": [
         "s08c",
         "s11",
