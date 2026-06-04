@@ -616,6 +616,12 @@
     {
       "day": 1,
       "crewCall": "CALL TIME: 4:30 PM - ALEX'S HOUSE, 206 SAINT JOHN ST",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Alex's House",
         "206 Saint John St"
@@ -726,6 +732,12 @@
     {
       "day": 2,
       "crewCall": "CALL TIME: 4:00 PM - EAST HAVEN NURSERY",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "East Haven Nursery",
         "Main grounds and marsh access"
@@ -854,6 +866,12 @@
     {
       "day": 3,
       "crewCall": "CALL TIME: 6:00 AM - BRANFORD TRAIN STATION",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Branford Train Station",
         "Branford Streets and neighborhoods",
@@ -1132,6 +1150,12 @@
     {
       "day": 4,
       "crewCall": "CALL TIME: 10:00 AM - DALLAS HOUSE",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Dallas House interior",
         "Various group locations"
@@ -1266,6 +1290,12 @@
     {
       "day": 5,
       "crewCall": "CALL TIME: 4:30 PM - ALEX'S HOUSE",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Alex's House",
         "Surrounding areas and marsh edge"
@@ -1405,6 +1435,12 @@
     {
       "day": 6,
       "crewCall": "CALL TIME: 2:00 PM - DALLAS HOUSE",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Dallas House interior and exterior",
         "Various rooms and spaces"
@@ -1576,6 +1612,12 @@
     {
       "day": 7,
       "crewCall": "CALL TIME: 7:00 AM - EAST HAVEN NURSERY",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "East Haven Nursery",
         "Marsh entrance and tall grass field"
@@ -1693,6 +1735,12 @@
     {
       "day": 8,
       "crewCall": "CALL TIME: 5:00 PM - DALLAS HOUSE",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Dallas House interior",
         "Dining area and rooms"
@@ -1803,6 +1851,12 @@
     {
       "day": 8.5,
       "crewCall": "CALL TIME: 5:00 PM - DALLAS HOUSE",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Dallas House interior and exterior"
       ],
@@ -1871,6 +1925,12 @@
     {
       "day": 11.5,
       "crewCall": "CALL TIME: 8:00 AM - BRANFORD MARSH EDGE",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Marsh boundary",
         "Tall grass field"
@@ -1943,6 +2003,12 @@
     {
       "day": 9,
       "crewCall": "CALL TIME: 6:00 PM - DALLAS HOUSE",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Dallas House interior",
         "Various rooms"
@@ -2042,6 +2108,12 @@
     {
       "day": 10,
       "crewCall": "CALL TIME: 8:00 AM - BRANFORD TOWN GREEN",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Branford Town areas",
         "Church grounds",
@@ -2146,6 +2218,12 @@
     {
       "day": 11,
       "crewCall": "CALL TIME: 9:00 AM - VARIOUS LOCATIONS",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Marsh areas",
         "Forest locations",
@@ -2201,6 +2279,12 @@
     {
       "day": 12,
       "crewCall": "CALL TIME: 7:00 AM - BRANFORD TOWN GREEN",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Branford Town Green",
         "Branford streets and areas"
@@ -2275,6 +2359,12 @@
     {
       "day": 13,
       "crewCall": "CALL TIME: 6:00 AM - JERRY'S HOUSE / EXT. BRANFORD",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
       "locationDetails": [
         "Jerry's House exterior",
         "Branford landscape",

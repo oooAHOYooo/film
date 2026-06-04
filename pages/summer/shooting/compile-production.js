@@ -1007,6 +1007,18 @@ function generateDayHtml(dayNum, rows, productionData) {
                 <div class="compact-panel" style="font-weight:700;">${escapeHtml(crewCall)}</div>
             </section>
 
+            <section class="compact-block">
+                <div class="compact-label">Crew</div>
+                <div class="compact-panel">
+                    <div style="font-size:0.84rem;">
+                        ${planEntry && planEntry.crew && Array.isArray(planEntry.crew) && planEntry.crew.length > 0
+                          ? planEntry.crew.map(member => `<div style="margin-bottom: 8px;"><strong>${escapeHtml(member.role)}:</strong> ${escapeHtml(member.name)}</div>`).join('')
+                          : '<div style="color:#666; font-style:italic;">Crew TBD</div>'
+                        }
+                    </div>
+                </div>
+            </section>
+
             <h3 style="margin:18px 0 8px 0; border-bottom:1px solid #000; font-size:0.95rem; letter-spacing:0.04em;">SCENE SCHEDULE</h3>
             <table class="production-table">
                 <thead>

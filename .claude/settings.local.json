@@ -56,7 +56,9 @@
       "Bash(Select-Object -Property FullName)",
       "Bash(powershell *)",
       "Read(//tmp/**)",
-      "Bash(bash /tmp/audit_sync.sh)"
+      "Bash(bash /tmp/audit_sync.sh)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\" -Recurse -Filter \"*day*\" -Name)",
+      "PowerShell(head *)"
     ]
   }
 }
