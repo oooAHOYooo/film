@@ -1801,8 +1801,143 @@
       ]
     },
     {
-      "day": 11.5,
+      "day": 8.5,
+      "crewCall": "CALL TIME: 5:00 PM - DALLAS HOUSE",
+      "locationDetails": [
+        "Dallas House interior and exterior"
+      ],
       "pickup": true,
+      "shotList": [
+        {
+          "scene": "s26",
+          "beat": "s26.pickup.1",
+          "title": "Additional creature effects",
+          "description": "Pickup shots of the creature's arrival - additional angles and close coverage of destruction.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic"
+          ],
+          "shots": [
+            "CU - Glass vibrating and breaking",
+            "Detail - Door frame cracking",
+            "WS - Wide shot of house in assault",
+            "Detail - Objects flying or falling",
+            "CU - Reaction faces in close-up"
+          ]
+        },
+        {
+          "scene": "s26",
+          "beat": "s26.pickup.2",
+          "title": "Defensive positions",
+          "description": "Close coverage of the group defending themselves - intimate shots in shadows.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic"
+          ],
+          "shots": [
+            "CU - Hands gripping equipment",
+            "Detail - Oscillators in close-up",
+            "MS - Back to back in darkness",
+            "CU - Sweat and fear on faces",
+            "Detail - Equipment sparking or failing"
+          ]
+        },
+        {
+          "scene": "s26",
+          "beat": "s26.pickup.3",
+          "title": "The hum at maximum",
+          "description": "Extreme close-ups of the hum's effects - sensory overload captured intimately.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic"
+          ],
+          "shots": [
+            "Detail - Oscillator dial at maximum",
+            "CU - Someone screaming silently",
+            "Detail - Blood from ears",
+            "CU - Eyes wide with pain",
+            "Detail - Hands covering ears"
+          ]
+        }
+      ],
+      "scenes": []
+    },
+    {
+      "day": 11.5,
+      "crewCall": "CALL TIME: 8:00 AM - BRANFORD MARSH EDGE",
+      "locationDetails": [
+        "Marsh boundary",
+        "Tall grass field"
+      ],
+      "pickup": true,
+      "shotList": [
+        {
+          "scene": "s07b",
+          "beat": "s07b.pickup.1",
+          "title": "The warning additional coverage",
+          "description": "Pickup shots of Mr. Mike's crucial warning - wider angles and group reactions.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Full group with Mr. Mike in center",
+            "CU - Mr. Mike's face in profile",
+            "Detail - Hand gestures emphasizing point",
+            "MS - Each person's individual reaction",
+            "WS - Group dynamics shifting"
+          ]
+        },
+        {
+          "scene": "s16",
+          "beat": "s16.pickup.1",
+          "title": "Plan details captured",
+          "description": "Close coverage of the escape/defense plan being explained - technical detail shots.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "Detail - Map or sketch close-up",
+            "CU - Dallas pointing to locations",
+            "Detail - Hand-drawn notes or marks",
+            "MS - Two-shots of Dallas with others",
+            "CU - Understanding dawning on faces"
+          ]
+        },
+        {
+          "scene": "s16",
+          "beat": "s16.pickup.2",
+          "title": "Resolution and commitment",
+          "description": "Final commitment to the plan - intimate captures of determination and fear.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "Detail - Hands meeting in center",
+            "CU - Eyes closing in acceptance",
+            "MS - Final huddle moment",
+            "Detail - A nod or affirmation between two",
+            "WS - Group ready to move forward"
+          ]
+        }
+      ],
       "scenes": []
     },
     {
