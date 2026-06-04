@@ -2,6 +2,123 @@
   "project": "Creatures in the Tall Grass",
   "expenses": [
     {
+      "id": 38,
+      "date": "2026-06-04",
+      "memo": "LEVENIS KN95 Face Masks 50 Pack, Black",
+      "category": "Other",
+      "price": 15.99,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 39,
+      "date": "2026-06-04",
+      "memo": "MIDOLA Over-Ear Wired Headphones with Built-in Microphone, Red",
+      "category": "Camera/Gear",
+      "price": 14.98,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 40,
+      "date": "2026-06-04",
+      "memo": "Headphone Splitter, Syncwire Nylon-Braided 3.5mm Extension Cable",
+      "category": "Camera/Gear",
+      "price": 7.99,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 41,
+      "date": "2026-06-04",
+      "memo": "SmallRig Camera Tripod, 71\" Foldable Aluminum Tripod/Monopod",
+      "category": "Camera/Gear",
+      "price": 69.9,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 42,
+      "date": "2026-06-04",
+      "memo": "GOSYSONG 1/4 inch Extension Cable 10ft",
+      "category": "Camera/Gear",
+      "price": 10.99,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 43,
+      "date": "2026-06-04",
+      "memo": "DJI RS 4 Pro 3-Axis Gimbal Stabilizer",
+      "category": "Camera/Gear",
+      "price": 869,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 44,
+      "date": "2026-06-04",
+      "memo": "SANDISK 32GB Ultra SDHC UHS-I Memory Card",
+      "category": "Camera/Gear",
+      "price": 20.99,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 45,
+      "date": "2026-06-04",
+      "memo": "IFOOTAGE Monopod Cobra 3 A180T",
+      "category": "Camera/Gear",
+      "price": 99,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 46,
+      "date": "2026-06-04",
+      "memo": "Amazon Basics XLR Male to Female Microphone Cable, 25 Foot",
+      "category": "Camera/Gear",
+      "price": 10.49,
+      "vendor": "Amazon",
+      "orderNumber": "113-3511941-0641828"
+    },
+    {
+      "id": 47,
+      "date": "2026-06-03",
+      "memo": "Universal Replacement Laptop Shoulder Strap",
+      "category": "Camera/Gear",
+      "price": 7.99,
+      "vendor": "Amazon",
+      "orderNumber": "114-1412260-9067425"
+    },
+    {
+      "id": 48,
+      "date": "2026-06-03",
+      "memo": "Ribvane Directors Clapboard for Film",
+      "category": "Camera/Gear",
+      "price": 19.53,
+      "vendor": "Amazon",
+      "orderNumber": "114-1412260-9067425"
+    },
+    {
+      "id": 49,
+      "date": "2026-06-03",
+      "memo": "BETAZOOER Reptile Terrarium Breeding Tank Acrylic Reptile Feeding Box",
+      "category": "Props/Set",
+      "price": 16.99,
+      "vendor": "Amazon",
+      "orderNumber": "114-8977897-0423419"
+    },
+    {
+      "id": 50,
+      "date": "2026-06-03",
+      "memo": "JJC H4n Protective Carrying Storage Pouch Case Bag",
+      "category": "Camera/Gear",
+      "price": 19.49,
+      "vendor": "Amazon",
+      "orderNumber": "114-4215278-4117842"
+    },
+    {
       "id": 1,
       "date": "2026-05-28",
       "memo": "Mini LED Lights - Round, Multicolor Ball Light (100pcs)",

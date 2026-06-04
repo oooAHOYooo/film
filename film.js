@@ -8,6 +8,18 @@ const EXPENSES_FILE = path.join(process.cwd(), '.film-expenses.json');
 const TODOS_FILE = path.join(process.cwd(), '.film-todos.json');
 const DATA_LOCATIONS_FILE = path.join(process.cwd(), '.film-data-locations.json');
 const PROJECT = 'Creatures in the Tall Grass';
+const DEFAULT_EXPENSE_CATEGORIES = [
+  'Props/Set',
+  'Camera/Gear',
+  'Crew',
+  'Location',
+  'Post-Production',
+  'Transportation',
+  'Catering',
+  'Insurance',
+  'Permits',
+  'Other'
+];
 
 // Initialize expenses file if it doesn't exist
 function initFile() {
@@ -15,18 +27,7 @@ function initFile() {
     fs.writeFileSync(EXPENSES_FILE, JSON.stringify({
       project: PROJECT,
       expenses: [],
-      categories: [
-        'Props/Set',
-        'Camera/Gear',
-        'Crew',
-        'Location',
-        'Post-Production',
-        'Transportation',
-        'Catering',
-        'Insurance',
-        'Permits',
-        'Other'
-      ]
+      categories: DEFAULT_EXPENSE_CATEGORIES
     }, null, 2));
   }
   if (!fs.existsSync(TODOS_FILE)) {
@@ -75,9 +76,93 @@ function formatDate(dateStr) {
   return dateStr;
 }
 
+function readStdin() {
+  if (process.stdin.isTTY) {
+    return '';
+  }
+  return fs.readFileSync(0, 'utf8').trim();
+}
+
+function parseJsonArg(raw, context) {
+  try {
+    return JSON.parse(raw);
+  } catch (err) {
+    console.error(`Error: invalid JSON for ${context}`);
+    process.exit(1);
+  }
+}
+
+function nextExpenseId(expenses) {
+  return expenses.length > 0 ? Math.max(...expenses.map(e => e.id)) + 1 : 1;
+}
+
+function normalizeExpenseRecord(input) {
+  const price = Number(input.price);
+  if (!Number.isFinite(price)) {
+    console.error('Error: expense price must be a number');
+    process.exit(1);
+  }
+
+  const category = input.category;
+  if (!category) {
+    console.error('Error: expense category is required');
+    process.exit(1);
+  }
+
+  const memo = input.memo || input.description;
+  if (!memo) {
+    console.error('Error: expense memo/description is required');
+    process.exit(1);
+  }
+
+  const data = getExpenses();
+  const id = nextExpenseId(data.expenses);
+  const date = formatDate(input.date);
+
+  return {
+    id,
+    date,
+    memo,
+    category,
+    price: parseFloat(price.toFixed(2)),
+    ...(input.vendor ? { vendor: input.vendor } : {}),
+    ...(input.orderNumber ? { orderNumber: input.orderNumber } : {}),
+    ...(input.source ? { source: input.source } : {}),
+    ...(input.notes ? { notes: input.notes } : {})
+  };
+}
+
+function saveExpenseRecord(expense, silent = false) {
+  const data = getExpenses();
+  data.expenses.push(expense);
+  saveExpenses(data);
+
+  if (!silent) {
+    console.log(`✓ Added expense: $${expense.price.toFixed(2)} | ${expense.category} | ${expense.memo} (${expense.date})`);
+  }
+  return expense;
+}
+
 function addExpense(args) {
+  if (args.includes('--input-json')) {
+    const jsonIndex = args.indexOf('--input-json');
+    let payload = args[jsonIndex + 1];
+    if (!payload) {
+      payload = readStdin();
+    }
+    if (!payload) {
+      console.error('Usage: film expense add --input-json \'<json>\'');
+      process.exit(1);
+    }
+    const parsed = parseJsonArg(payload, 'expense input');
+    const record = normalizeExpenseRecord(parsed);
+    saveExpenseRecord(record);
+    return record;
+  }
+
   if (args.length < 3) {
     console.error('Usage: film add <price> <category> "<memo>" [--date YYYY-MM-DD]');
+    console.error('Usage: film expense add --input-json \'<json>\'');
     console.error('Example: film add 150.00 "Props/Set" "Fake blood and bandages" --date 2026-05-27');
     process.exit(1);
   }
@@ -94,31 +179,15 @@ function addExpense(args) {
     }
   }
 
-  if (isNaN(price)) {
-    console.error('Error: price must be a number');
-    process.exit(1);
-  }
-
-  const data = getExpenses();
-  const id = data.expenses.length > 0 ? Math.max(...data.expenses.map(e => e.id)) + 1 : 1;
-
-  const expense = {
-    id,
-    date,
-    memo,
-    category,
-    price: parseFloat(price.toFixed(2))
-  };
-
-  data.expenses.push(expense);
-  saveExpenses(data);
-
-  console.log(`✓ Added expense: $${price.toFixed(2)} | ${category} | ${memo} (${date})`);
+  const record = normalizeExpenseRecord({ price, category, memo, date });
+  saveExpenseRecord(record);
+  return record;
 }
 
 function listExpenses(args) {
   const data = getExpenses();
   let expenses = [...data.expenses];
+  const asJson = args.includes('--json');
 
   // Filter by category
   for (let i = 0; i < args.length; i++) {
@@ -129,19 +198,33 @@ function listExpenses(args) {
   }
 
   if (expenses.length === 0) {
-    console.log('No expenses found.');
+    if (asJson) {
+      console.log(JSON.stringify({ project: PROJECT, expenses: [], total: 0, count: 0 }, null, 2));
+    } else {
+      console.log('No expenses found.');
+    }
     return;
   }
 
   // Sort by date (newest first)
   expenses.sort((a, b) => new Date(b.date) - new Date(a.date));
+  const total = expenses.reduce((sum, e) => sum + e.price, 0);
+
+  if (asJson) {
+    console.log(JSON.stringify({
+      project: PROJECT,
+      count: expenses.length,
+      total: parseFloat(total.toFixed(2)),
+      expenses
+    }, null, 2));
+    return;
+  }
 
   console.log('\n' + PROJECT);
   console.log('─'.repeat(80));
   console.log('Date       │ Category        │ Memo                          │ Price');
   console.log('─'.repeat(80));
 
-  let total = 0;
   expenses.forEach(e => {
     const pad = (str, len) => str.padEnd(len).substring(0, len);
     const datePad = pad(e.date, 10);
@@ -192,6 +275,25 @@ function getStats(args) {
     stats.byCategory[e.category].total += e.price;
     stats.byCategory[e.category].count += 1;
   });
+
+  if (args.includes('--json')) {
+    console.log(JSON.stringify({
+      project: PROJECT,
+      filterCategory: filterCat,
+      totalExpenses: parseFloat(stats.totalExpenses.toFixed(2)),
+      count: stats.count,
+      byCategory: Object.fromEntries(
+        Object.entries(stats.byCategory).map(([cat, data]) => [
+          cat,
+          {
+            total: parseFloat(data.total.toFixed(2)),
+            count: data.count
+          }
+        ])
+      )
+    }, null, 2));
+    return;
+  }
 
   console.log('\n' + PROJECT);
   console.log('Expense Statistics');
@@ -464,9 +566,15 @@ function showHelp() {
 ${PROJECT} · Production Tools
 
 EXPENSES:
+  film expense add --input-json '<json>'
+  film expense list [--category <category>] [--json]
+  film expense stats [--category <category>] [--json]
+  film expense remove <id>
   film add <price> <category> "<memo>" [--date YYYY-MM-DD]
   film list [--category <category>]
+  film list [--category <category>] --json
   film stats [--category <category>]
+  film stats [--category <category>] --json
   film remove <id>
 
 TODOS:
@@ -483,7 +591,9 @@ WHERE IS THE DATA:
 Examples:
   # Expenses
   film add 150.00 "Props/Set" "Fake blood and bandages"
+  film expense add --input-json '{"price":150,"category":"Props/Set","memo":"Fake blood and bandages"}'
   film list --category "Props/Set"
+  film list --json
   film stats
 
   # Todos
@@ -508,6 +618,31 @@ const subcommand = process.argv[3];
 const args = process.argv.slice(4);
 
 switch (command) {
+  case 'expense':
+    if (!subcommand) {
+      console.error('Usage: film expense <add|list|stats|remove>');
+      process.exit(1);
+    }
+    switch (subcommand) {
+      case 'add':
+        addExpense(args);
+        break;
+      case 'list':
+        listExpenses(args);
+        break;
+      case 'stats':
+      case 'summary':
+        getStats(args);
+        break;
+      case 'remove':
+        remove(args);
+        break;
+      default:
+        console.error(`Unknown expense command: ${subcommand}`);
+        process.exit(1);
+    }
+    break;
+
   // Expenses
   case 'add':
     addExpense(process.argv.slice(3));
