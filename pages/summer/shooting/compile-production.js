@@ -1051,6 +1051,7 @@ function generateDayHtml(dayNum, rows, productionData) {
                 <div class="compact-panel">
                     ${sourceNote ? `<div style="font-size:0.82rem; font-family: ui-monospace, monospace; margin-bottom:8px;">${escapeHtml(sourceNote)}</div>` : ''}
                     <div style="display:grid; gap:8px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Production Day</div><div style="font-size:0.92rem;">12:45 PM - 5:30 PM</div></div>
                         <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Scenes</div><div style="font-size:0.92rem;">${sceneIds.length}</div></div>
                         <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Est. Length</div><div style="font-size:0.92rem;">${(() => {
                         const totalMin = dayRows.reduce((sum, r) => sum + (Number(r.durationMin) || 0), 0);
@@ -1079,11 +1080,57 @@ function generateDayHtml(dayNum, rows, productionData) {
             </table>
 
             <section class="compact-block">
-                <div class="compact-label">Crew Call</div>
-                <div class="compact-panel" style="padding: 12px 10px;">
-                    <div style="font-weight:700; font-size: 0.95rem; line-height: 1.6;">
-                        ${crewCall.split('\n').map(line => `<div style="margin-bottom: 4px;">${escapeHtml(line.trim())}</div>`).join('')}
-                    </div>
+                <div class="compact-label">Day Schedule</div>
+                <div class="compact-panel" style="padding: 0;">
+                    ${(() => {
+                        const lines = crewCall.split('\n').map(l => l.trim()).filter(l => l);
+                        if (lines.length === 0) return '<div style="padding: 12px 10px; color: #666;">Schedule TBD</div>';
+
+                        // Parse schedule items with times and time ranges
+                        const scheduleItems = [];
+
+                        lines.forEach(line => {
+                            // Extract time/time range from line (format: "12:45 PM" or "1:15 PM - 2:15 PM")
+                            // Looking for pattern: time = location or time - time = location
+                            const timeRangeMatch = line.match(/^([\d:APM\s\-]+)\s*=\s*(.+)$/i);
+
+                            if (timeRangeMatch) {
+                                const time = timeRangeMatch[1].trim();
+                                const location = timeRangeMatch[2].trim();
+
+                                if (location) {
+                                    scheduleItems.push({ time, location });
+                                }
+                            }
+                        });
+
+                        if (scheduleItems.length === 0) {
+                            return '<div style="padding: 12px 10px; color: #666;">Schedule TBD</div>';
+                        }
+
+                        return `
+                            <table style="width: 100%; border-collapse: collapse; font-size: 0.84rem;">
+                                <thead>
+                                    <tr style="background: #f5f5f5; border-bottom: 2px solid #000;">
+                                        <th style="padding: 10px 10px; text-align: left; font-weight: 700; color: #555; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; width: 25%;">Time</th>
+                                        <th style="padding: 10px 10px; text-align: left; font-weight: 700; color: #555; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em;">Location / Activity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${scheduleItems.map((item, idx) => `
+                                        <tr style="border-bottom: ${idx < scheduleItems.length - 1 ? '1px solid #ddd' : 'none'};">
+                                            <td style="padding: 10px 10px; font-weight: 600; color: #000; white-space: nowrap; font-size: 0.9rem;">
+                                                ${escapeHtml(item.time)}
+                                            </td>
+                                            <td style="padding: 10px 10px; color: #000; line-height: 1.4;">
+                                                ${escapeHtml(item.location)}
+                                            </td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        `;
+                    })()}
                 </div>
             </section>
 
