@@ -112,6 +112,11 @@ function normalizeSceneAnchor(sceneId, rows) {
   return lower.replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
+function daySortValue(day) {
+  const value = Number.parseFloat(day);
+  return Number.isFinite(value) ? value : 99999;
+}
+
 function sceneHref(sceneId, rows, prefix) {
   const anchor = normalizeSceneAnchor(sceneId, rows);
   return `${prefix}#scene-${anchor}`;
@@ -495,11 +500,7 @@ function generateScheduleTableHtml(rows, productionData) {
     return digits ? Number(digits[0]) : 99999;
   };
 
-  const sortedPlan = [...shootPlan].sort((a, b) => {
-    const aFirst = Array.isArray(a.scenes) && a.scenes.length ? sceneSortValue(a.scenes[0]) : Number(a.day) || 0;
-    const bFirst = Array.isArray(b.scenes) && b.scenes.length ? sceneSortValue(b.scenes[0]) : Number(b.day) || 0;
-    return aFirst - bFirst;
-  });
+  const sortedPlan = [...shootPlan].sort((a, b) => daySortValue(a.day) - daySortValue(b.day));
 
   let html = `
     <section style="margin-top:48px; margin-bottom:48px;">
@@ -555,10 +556,10 @@ function generateScheduleTableHtml(rows, productionData) {
         rows.sort(function(a, b) {
           var av = key === 'scene'
             ? parseFloat(a.getAttribute('data-scene-sort')) || 0
-            : parseFloat(a.getAttribute('data-day')) || 0;
+            : daySortValue(a.getAttribute('data-day'));
           var bv = key === 'scene'
             ? parseFloat(b.getAttribute('data-scene-sort')) || 0
-            : parseFloat(b.getAttribute('data-day')) || 0;
+            : daySortValue(b.getAttribute('data-day'));
           return state.asc ? av - bv : bv - av;
         });
         rows.forEach(function(row) { tbody.appendChild(row); });
@@ -589,7 +590,7 @@ function generateFullHtml(rows, totalDays, productionData) {
   const castDateSummaryHtml = renderCastDateSummaryHtml(buildCastDateSummary(rows, productionData));
   const calendar = productionData.calendar || {};
   const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
-  const callSheetDays = Object.keys(calendar).sort((a, b) => Number(a) - Number(b));
+  const callSheetDays = Object.keys(calendar).sort((a, b) => daySortValue(a) - daySortValue(b));
 
   let html = `<!doctype html>
 <html lang="en">
@@ -700,12 +701,19 @@ function generateDayHtml(dayNum, rows, productionData) {
   const summaryLocations = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locations')
     ? unique(Array.isArray(planEntry.locations) ? planEntry.locations : [planEntry.locations])
     : unique(dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
-  const summaryCast = unique([
-    ...(planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
-      ? (Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
-      : []),
-    ...dayRows.flatMap((r) => r.characters || []),
-  ]);
+  const summaryCast = Array.from(new Map(
+    [
+      ...(planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
+        ? (Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
+        : []),
+      ...dayRows.flatMap((r) => r.characters || []),
+    ]
+      .filter(Boolean)
+      .map((name) => {
+        const normalized = nicknameToTitle(name);
+        return [normalized.toLowerCase(), normalized];
+      })
+  ).values());
 
   const summaryProps = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'props')
     ? (Array.isArray(planEntry.props) ? planEntry.props : [planEntry.props])
