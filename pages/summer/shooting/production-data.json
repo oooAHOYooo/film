@@ -1575,6 +1575,113 @@
     },
     {
       "day": 7,
+      "crewCall": "CALL TIME: 7:00 AM - EAST HAVEN NURSERY",
+      "locationDetails": [
+        "East Haven Nursery",
+        "Marsh entrance and tall grass field"
+      ],
+      "shotList": [
+        {
+          "scene": "s13",
+          "beat": "s13.1",
+          "title": "Entering the grass",
+          "description": "The group enters the tall marsh for the first time - a coordinated expedition into the unknown.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Group at marsh edge at dawn",
+            "MS - Equipment check before entry",
+            "WS - Walking into tall grass",
+            "MS - Moving through the field",
+            "CU - Faces as they go deeper"
+          ]
+        },
+        {
+          "scene": "s13",
+          "beat": "s13.2",
+          "title": "The hum intensifies",
+          "description": "As they go deeper, the hum becomes overwhelming - their equipment goes wild.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Group stopped in tall grass",
+            "Detail - Oscillators and recorders at max",
+            "CU - Reactions to sound intensity",
+            "WS - Grass swaying around them",
+            "MS - Communication amid noise"
+          ]
+        },
+        {
+          "scene": "s14",
+          "beat": "s14.1",
+          "title": "The creature is there",
+          "description": "They encounter or sense the creature directly - a moment of terrible clarity.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Something moving in grass near them",
+            "CU - Dallas seeing it first",
+            "MS - Group frozen in fear",
+            "Detail - Oscillator reading off the charts",
+            "WS - Creature movement, tall grass displacement"
+          ]
+        },
+        {
+          "scene": "s14",
+          "beat": "s14.2",
+          "title": "The rescue",
+          "description": "Something goes wrong - someone in danger, the group mobilizes to rescue/protect.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Chaos in the field",
+            "MS - Someone in danger",
+            "CU - Rescue action",
+            "WS - Group protecting each other",
+            "MS - Getting to safety"
+          ]
+        },
+        {
+          "scene": "s14",
+          "beat": "s14.3",
+          "title": "Escape from grass",
+          "description": "They retreat from the grass, shaken and bloodied - barely making it out.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Running through tall grass",
+            "MS - Helping each other",
+            "Detail - Injuries visible",
+            "WS - Reaching the boundary",
+            "CU - Gasping, shocked faces"
+          ]
+        }
+      ],
       "scenes": [
         "s13",
         "s14",
@@ -1585,6 +1692,108 @@
     },
     {
       "day": 8,
+      "crewCall": "CALL TIME: 5:00 PM - DALLAS HOUSE",
+      "locationDetails": [
+        "Dallas House interior",
+        "Dining area and rooms"
+      ],
+      "shotList": [
+        {
+          "scene": "s24",
+          "beat": "s24.1",
+          "title": "The perimeter established",
+          "description": "The group sets up a defensive perimeter around the house with equipment and precautions.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic"
+          ],
+          "shots": [
+            "WS - House with group setting up",
+            "MS - Installing equipment at doors/windows",
+            "Detail - Oscillators placed strategically",
+            "CU - Dallas coordinating setup",
+            "WS - Perimeter complete"
+          ]
+        },
+        {
+          "scene": "s24",
+          "beat": "s24.2",
+          "title": "Waiting for night",
+          "description": "They prepare and wait as evening approaches - tension builds.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic"
+          ],
+          "shots": [
+            "MS - Checking equipment one more time",
+            "CU - Anxious faces",
+            "WS - House interior, guards in position",
+            "Detail - Clock or time passing",
+            "MS - Quiet conversations"
+          ]
+        },
+        {
+          "scene": "s25",
+          "beat": "s25.1",
+          "title": "The last dinner",
+          "description": "They gather for a meal - possibly their last normal moment before the final confrontation.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic"
+          ],
+          "shots": [
+            "WS - Dining table set",
+            "MS - Group seated at table",
+            "CU - Individual faces, tension and resignation",
+            "Detail - Food and drink",
+            "WS - All together, a final moment"
+          ]
+        },
+        {
+          "scene": "s25",
+          "beat": "s25.2",
+          "title": "Unspoken goodbyes",
+          "description": "Conversations between them - resolving tensions, saying important things.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic"
+          ],
+          "shots": [
+            "MS - Two person conversations",
+            "CU - Emotional exchange between Dallas and Makayla",
+            "CU - Dominic and Asher understanding",
+            "WS - Group moment",
+            "Detail - Hands touching or clasping"
+          ]
+        },
+        {
+          "scene": "s26",
+          "beat": "s26.1",
+          "title": "It arrives",
+          "description": "The creature reaches the house - the hum becomes deafening, the perimeter is tested.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic"
+          ],
+          "shots": [
+            "Detail - Oscillators spiking",
+            "WS - House lights flickering or failing",
+            "CU - Faces in fear",
+            "WS - Shadows or shapes at windows/doors",
+            "MS - Bracing for impact"
+          ]
+        }
+      ],
       "scenes": [
         "s24",
         "s25",
@@ -1598,6 +1807,97 @@
     },
     {
       "day": 9,
+      "crewCall": "CALL TIME: 6:00 PM - DALLAS HOUSE",
+      "locationDetails": [
+        "Dallas House interior",
+        "Various rooms"
+      ],
+      "shotList": [
+        {
+          "scene": "s17",
+          "beat": "s17.1",
+          "title": "Resonance begins",
+          "description": "The hum reaches a specific frequency that causes physical reaction - glasses vibrate, equipment resonates.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Janice",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "Detail - Objects vibrating on surfaces",
+            "WS - Interior shaking",
+            "CU - Faces reacting to vibration",
+            "Detail - Equipment oscillating",
+            "WS - The house under the hum's influence"
+          ]
+        },
+        {
+          "scene": "s17",
+          "beat": "s17.2",
+          "title": "Physical effects",
+          "description": "The resonance intensifies - people feel it in their bodies, some hurt, disorientation.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Janice",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "CU - Someone clutching their ears",
+            "MS - Group in pain or discomfort",
+            "WS - Chaos in the house",
+            "Detail - Blood from ears or nose",
+            "CU - Determination to endure"
+          ]
+        },
+        {
+          "scene": "s17b",
+          "beat": "s17b.1",
+          "title": "A normal day memory",
+          "description": "Amongst the chaos, someone recalls or experiences a flash of normal life - brief respite.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Janice",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "Flashback - Sunny day, laughter",
+            "CU - Face of person remembering",
+            "Transition back to present",
+            "MS - Group trying to hold on",
+            "CU - A moment of connection"
+          ]
+        },
+        {
+          "scene": "s17c",
+          "beat": "s17c.1",
+          "title": "Mute drive",
+          "description": "Without speaking, communicating through looks and gestures - all sound is overwhelmed.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Janice",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Group in silence, gesturing",
+            "CU - Eye contact and nods",
+            "MS - Hand signals and instructions",
+            "Detail - Mouths moving, no sound heard",
+            "WS - Coordinated silent action"
+          ]
+        }
+      ],
       "scenes": [
         "s17",
         "s17b",
@@ -1606,6 +1906,101 @@
     },
     {
       "day": 10,
+      "crewCall": "CALL TIME: 8:00 AM - BRANFORD TOWN GREEN",
+      "locationDetails": [
+        "Branford Town areas",
+        "Church grounds",
+        "Various locations"
+      ],
+      "shotList": [
+        {
+          "scene": "s07",
+          "beat": "s07.1",
+          "title": "The coordinates revealed",
+          "description": "Dallas and others discover specific coordinates from Sierra's notes - a location in the marsh.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike",
+            "Janice"
+          ],
+          "shots": [
+            "MS - Map being studied",
+            "Detail - Coordinates marked",
+            "CU - Recognition on faces",
+            "MS - Conversation about location",
+            "WS - Group understanding significance"
+          ]
+        },
+        {
+          "scene": "s18",
+          "beat": "s18.1",
+          "title": "Life group gathering",
+          "description": "A church life group arrives at the location - innocent people who have no idea what's coming.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike",
+            "Janice",
+            "Life Group Extras"
+          ],
+          "shots": [
+            "WS - Life group gathering with picnic/supplies",
+            "MS - Dallas and others arriving",
+            "CU - Introductions and greetings",
+            "WS - Full group assembling",
+            "Detail - Religious items or hymnal"
+          ]
+        },
+        {
+          "scene": "s19",
+          "beat": "s19.1",
+          "title": "The hymn begins",
+          "description": "The life group sings - their voices and the creature's hum begin to interact, resonate together.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike",
+            "Janice",
+            "Life Group Extras"
+          ],
+          "shots": [
+            "WS - Group singing, faces peaceful",
+            "Detail - Hum becoming audible beneath",
+            "CU - Someone noticing the sound",
+            "MS - Singing continuing, hum building",
+            "WS - The two sounds merging"
+          ]
+        },
+        {
+          "scene": "s20",
+          "beat": "s20.1",
+          "title": "Red eyes",
+          "description": "The creature appears - red eyes visible in the darkness or tall grass, watching the group.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher",
+            "Dominic",
+            "Mr. Mike",
+            "Janice",
+            "Life Group Extras"
+          ],
+          "shots": [
+            "Detail - Red glow in darkness",
+            "CU - First person seeing the eyes",
+            "WS - Life group unaware, singing",
+            "MS - Dallas noticing, warning others",
+            "Detail - Eyes moving, watching"
+          ]
+        }
+      ],
       "scenes": [
         "s07",
         "s18",
@@ -1615,6 +2010,54 @@
     },
     {
       "day": 11,
+      "crewCall": "CALL TIME: 9:00 AM - VARIOUS LOCATIONS",
+      "locationDetails": [
+        "Marsh areas",
+        "Forest locations",
+        "Open fields"
+      ],
+      "shotList": [
+        {
+          "scene": "s07b",
+          "beat": "s07b.1",
+          "title": "Mr. Mike's warning",
+          "description": "Mr. Mike reveals something crucial about the creature or warns the group of danger ahead.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "MS - Mr. Mike gathering them",
+            "CU - Mr. Mike speaking seriously",
+            "CU - Each person reacting",
+            "MS - Group processing warning",
+            "WS - Group moment of gravity"
+          ]
+        },
+        {
+          "scene": "s16",
+          "beat": "s16.1",
+          "title": "The escape plan",
+          "description": "They devise a plan to either trap, communicate with, or escape from the creature.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Group in huddle",
+            "Detail - Sketching or discussing plan",
+            "CU - Dallas deciding",
+            "MS - Mr. Mike providing wisdom",
+            "WS - Agreement and determination"
+          ]
+        }
+      ],
       "scenes": [
         "s07b",
         "s16"
@@ -1622,6 +2065,73 @@
     },
     {
       "day": 12,
+      "crewCall": "CALL TIME: 7:00 AM - BRANFORD TOWN GREEN",
+      "locationDetails": [
+        "Branford Town Green",
+        "Branford streets and areas"
+      ],
+      "shotList": [
+        {
+          "scene": "s04",
+          "beat": "s04.1",
+          "title": "The fellowship gathers",
+          "description": "All the main characters come together - Dallas, Dominic, Makayla, Asher, Mr. Mike - a final gathering.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - Open location, all arriving",
+            "MS - Greetings and reuniting",
+            "CU - Individual faces, bonds visible",
+            "WS - All five together",
+            "MS - Standing united"
+          ]
+        },
+        {
+          "scene": "s04",
+          "beat": "s04.2",
+          "title": "Before the finale",
+          "description": "Last moments before the final confrontation - memories shared, decisions confirmed.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "Detail - Hands coming together",
+            "CU - Eyes meeting",
+            "MS - Quiet conversations",
+            "WS - The group in stillness",
+            "Detail - A nod or affirmation"
+          ]
+        },
+        {
+          "scene": "s06",
+          "beat": "s06.1",
+          "title": "News vans arrive",
+          "description": "The outside world intrudes - media arrives in Branford, cameras and crew setting up.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "shots": [
+            "WS - News vans pulling up",
+            "MS - Reporters and camera crews setting up",
+            "CU - Group's reaction to media",
+            "Detail - Cameras and lights",
+            "WS - Town green overtaken by press"
+          ]
+        }
+      ],
       "scenes": [
         "s04",
         "s06"
@@ -1629,6 +2139,102 @@
     },
     {
       "day": 13,
+      "crewCall": "CALL TIME: 6:00 AM - JERRY'S HOUSE / EXT. BRANFORD",
+      "locationDetails": [
+        "Jerry's House exterior",
+        "Branford landscape",
+        "Marsh edges"
+      ],
+      "shotList": [
+        {
+          "scene": "s27",
+          "beat": "s27.1",
+          "title": "Final echoes",
+          "description": "The creature's presence lingers - the hum echoes across Branford, the aftermath unfolds.",
+          "cast": [
+            "Asher",
+            "Mr. Mike",
+            "Dallas",
+            "Makayla",
+            "Dominic",
+            "Janice",
+            "Pat"
+          ],
+          "shots": [
+            "WS - Branford landscape, still hum in air",
+            "CU - Individual faces processing aftermath",
+            "Detail - Equipment still recording",
+            "WS - Damage or signs of creature",
+            "MS - People moving through town"
+          ]
+        },
+        {
+          "scene": "s27",
+          "beat": "s27.2",
+          "title": "Gathering survivors",
+          "description": "The survivors come together at Jerry's house - counting losses, assessing what happened.",
+          "cast": [
+            "Asher",
+            "Mr. Mike",
+            "Dallas",
+            "Makayla",
+            "Dominic",
+            "Janice",
+            "Pat"
+          ],
+          "shots": [
+            "WS - Group at house, some missing",
+            "MS - Reuniting those who survived",
+            "CU - Tired and traumatized faces",
+            "Detail - Injuries and exhaustion visible",
+            "MS - Sitting together in shock"
+          ]
+        },
+        {
+          "scene": "s28",
+          "beat": "s28.1",
+          "title": "Aftermath",
+          "description": "Days or weeks later - the aftermath of the encounter, how life has changed.",
+          "cast": [
+            "Asher",
+            "Mr. Mike",
+            "Dallas",
+            "Makayla",
+            "Dominic",
+            "Janice",
+            "Pat"
+          ],
+          "shots": [
+            "WS - Jerry's house, recovery and rebuilding",
+            "MS - Characters changed by experience",
+            "CU - Reflective, haunted eyes",
+            "Detail - Evidence of what happened",
+            "MS - Conversations about what next"
+          ]
+        },
+        {
+          "scene": "s28",
+          "beat": "s28.2",
+          "title": "Full circle",
+          "description": "Return to the beginning - Dallas back where he started, but forever changed by Branford.",
+          "cast": [
+            "Asher",
+            "Mr. Mike",
+            "Dallas",
+            "Makayla",
+            "Dominic",
+            "Janice",
+            "Pat"
+          ],
+          "shots": [
+            "WS - Branford landscape, same but different",
+            "MS - Dallas reflecting",
+            "CU - Dallas's face, haunted wisdom",
+            "WS - The tall grass in distance",
+            "Detail - Oscillator still recording, still detecting hum"
+          ]
+        }
+      ],
       "scenes": [
         "s27",
         "s28"
