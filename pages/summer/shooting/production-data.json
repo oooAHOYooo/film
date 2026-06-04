@@ -617,7 +617,7 @@
     {
       "day": 0,
       "crewCall": "12:45 PM = Dallas Meets at Alexs\n1:15 PM - 2:15 PM = Branford Train Station (neighborhood walks)\n2:30 PM = Pickup: Matt Grant in Westville\n3:15 PM - 4:45 PM = 72 Lake St, Hamden (property manager scene)\n5:10 PM = Wrap",
-      "estLength": "12:45 PM - 5:10 PM",
+      "estLength": "4h 25m",
       "crew": [
         {
           "role": "Director / Camera",
@@ -1058,8 +1058,8 @@
     },
     {
       "day": 3,
-      "crewCall": "CALL TIME: 11:00 AM - BRANFORD TRAIN STATION\n8:00 PM = Wrap",
-      "estLength": "9h",
+      "crewCall": "11:00 AM = Meet at Alex's House (Dallas + Santiago)\n11:30 AM = Drive to Jerry's House (72 Lake St, Hamden)\n12:00 PM - 1:30 PM = Shoot scene (TBD)\n1:30 PM - 2:15 PM = Lunch\n2:15 PM - 4:00 PM = s01 (Makayla & Asher arrive, Dallas greets them, House and grounds tour)\n4:30 PM - 6:00 PM = s05 (Merlin app search & Dead ends)\n6:30 PM = Dinner\n7:00 PM - 9:00 PM = Final shoot block (TBD)\n9:00 PM = Wrap",
+      "estLength": "10h",
       "crew": [
         {
           "role": "Director",
@@ -1079,9 +1079,8 @@
         }
       ],
       "locationDetails": [
-        "Branford Train Station",
-        "Branford Streets and neighborhoods",
-        "Marsh edge areas"
+        "Alex's House (crew meet)",
+        "Jerry's House (72 Lake St, Hamden) - primary location"
       ],
       "shotList": [
         {
