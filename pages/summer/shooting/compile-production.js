@@ -735,6 +735,9 @@ function generateDayHtml(dayNum, rows, productionData) {
   const dayLabel = planEntry && planEntry.special ? 'Pickup Date' : (planEntry ? `Day ${planEntry.day}` : `Day ${dayNum}`);
   const sourceNote = planEntry && planEntry.sourceNote ? planEntry.sourceNote : '';
   const crewCall = planEntry && planEntry.crewCall ? planEntry.crewCall : 'GENERAL CREW CALL: 08:00 AM';
+  const customShotList = planEntry && Array.isArray(planEntry.shotList) && planEntry.shotList.length
+    ? planEntry.shotList
+    : null;
 
   function extractSceneSnippet(content, n) {
     if (!content || typeof content !== 'string') return '';
@@ -776,7 +779,31 @@ function generateDayHtml(dayNum, rows, productionData) {
         <td>${chars || '—'}</td>
       </tr>`;
   }).join('');
-  const shotListRows = dayScenes.map((scene, index) => {
+  const shotListRows = (customShotList || dayScenes).map((entry, index) => {
+    if (customShotList) {
+      const beat = entry.beat || entry.scene || entry.fileId || entry.id || `Shot ${index + 1}`;
+      const sceneId = entry.scene || entry.fileId || entry.id || '';
+      const title = entry.title || entry.name || '';
+      const description = entry.description || entry.note || entry.snippet || '';
+      const cast = Array.isArray(entry.cast) ? entry.cast : (entry.cast ? [entry.cast] : []);
+      const linkHref = sceneId ? sceneHref(sceneId, rows, '../../script-system/full_script.html') : '#';
+      return `
+      <li style="padding:10px 0; border-bottom:1px solid #ddd; display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+        <div style="min-width:0;">
+          <div style="font-weight:700;">
+            <span style="color:#555; font-size:0.78rem; margin-right:6px;">${index + 1}.</span>
+            ${sceneId ? `<a href="${linkHref}" onclick="event.stopPropagation()" style="color:#111;text-decoration:none;border-bottom:1px dotted currentColor;" title="Jump to ${escapeHtml(sceneId)} in the full script">${escapeHtml(beat)}</a>` : `<span style="color:#111;">${escapeHtml(beat)}</span>`}
+            ${title ? `<span style="color:#555; font-weight:600;"> - ${escapeHtml(title)}</span>` : ''}
+          </div>
+          ${description ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(description)}</div>` : ''}
+        </div>
+        <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">
+          ${cast.length ? escapeHtml(cast.map((name) => nicknameToTitle(name)).join(', ')) : '—'}
+        </div>
+      </li>`;
+    }
+
+    const scene = entry;
     const fullScriptHref = scene.fullScriptHref;
     const snippet = scene.resolved ? extractSceneSnippet(scene.content, scene.fileId) : '';
     const cast = (scene.characters || []).join(', ');
@@ -992,7 +1019,7 @@ function generateDayHtml(dayNum, rows, productionData) {
             <section class="compact-block" style="margin-top:16px;">
                 <div class="compact-label">Shot List</div>
                 <div class="compact-panel">
-                    ${dayScenes.length > 0 ? `<ol style="margin:0; padding-left:18px; list-style:none;">${shotListRows}</ol>` : '<div style="color:#666; font-style:italic;">No shot list entries for this day.</div>'}
+                    ${(customShotList ? customShotList.length : dayScenes.length) > 0 ? `<ol style="margin:0; padding-left:18px; list-style:none;">${shotListRows}</ol>` : '<div style="color:#666; font-style:italic;">No shot list entries for this day.</div>'}
                 </div>
             </section>
 

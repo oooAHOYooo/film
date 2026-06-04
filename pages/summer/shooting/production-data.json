@@ -615,10 +615,70 @@
   "shootPlan": [
     {
       "day": 1,
+      "crewCall": "CALL TIME: 4:30 PM - ALEX'S HOUSE, 206 SAINT JOHN ST",
+      "locationDetails": [
+        "Alex's House",
+        "206 Saint John St"
+      ],
+      "shotList": [
+        {
+          "scene": "s02",
+          "beat": "s02.1",
+          "title": "Kitchen hum",
+          "description": "Dallas settles into the kitchen, clocks the first faint hum, and marks the frequency before the sound cuts.",
+          "cast": [
+            "Dallas"
+          ]
+        },
+        {
+          "scene": "s02",
+          "beat": "s02.2",
+          "title": "Driveway edge",
+          "description": "Dallas steps outside, watches the driveway and the property line, and feels the hum merge out of the tall grass.",
+          "cast": [
+            "Dallas"
+          ]
+        },
+        {
+          "scene": "s02",
+          "beat": "s02.4",
+          "title": "Attic boxes",
+          "description": "In the attic, Dallas opens Sierra's box, finds the field notes, cassette player, headphones, and old recorder.",
+          "cast": [
+            "Dallas"
+          ]
+        },
+        {
+          "scene": "s02",
+          "beat": "s02.5",
+          "title": "Bathroom tape",
+          "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
+          "cast": [
+            "Dallas"
+          ]
+        },
+        {
+          "scene": "s02",
+          "beat": "s02.6",
+          "title": "Downstairs pulse",
+          "description": "Downstairs, Dallas records the pulsing tone, tracks the pattern, and loses the battery mid-read.",
+          "cast": [
+            "Dallas"
+          ]
+        },
+        {
+          "scene": "s02",
+          "beat": "s02.7",
+          "title": "House exterior glow",
+          "description": "Outside again, Dallas watches the grass sway as the golden glow pulses and a storm builds over Branford.",
+          "cast": [
+            "Dallas"
+          ]
+        }
+      ],
       "scenes": [
         "s02",
-        "s02.3",
-        "s08b"
+        "s02.3"
       ]
     },
     {

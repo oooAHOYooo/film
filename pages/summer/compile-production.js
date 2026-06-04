@@ -1645,12 +1645,19 @@ function generateDayHtml(dayNum, rows, productionData) {
   const summaryLocations = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locations')
     ? unique(Array.isArray(planEntry.locations) ? planEntry.locations : [planEntry.locations])
     : unique(dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
-  const summaryCast = unique([
-    ...(planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
-      ? (Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
-      : []),
-    ...dayRows.flatMap((r) => r.characters || []),
-  ]);
+  const summaryCast = Array.from(new Map(
+    [
+      ...(planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
+        ? (Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
+        : []),
+      ...dayRows.flatMap((r) => r.characters || []),
+    ]
+      .filter(Boolean)
+      .map((name) => {
+        const normalized = nicknameToTitle(name);
+        return [normalized.toLowerCase(), normalized];
+      })
+  ).values());
     
   const summaryProps = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'props')
     ? (Array.isArray(planEntry.props) ? planEntry.props : [planEntry.props])
