@@ -725,6 +725,125 @@
     },
     {
       "day": 2,
+      "crewCall": "CALL TIME: 4:00 PM - EAST HAVEN NURSERY",
+      "locationDetails": [
+        "East Haven Nursery",
+        "Main grounds and marsh access"
+      ],
+      "shotList": [
+        {
+          "scene": "s08",
+          "beat": "s08.1",
+          "title": "Into the neighborhoods",
+          "description": "Dallas tracks the pulsing hum through suburban streets and toward the marsh.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Branford street, dusk, Dallas walking with oscillator",
+            "MS - Dallas following the sound, oscillator raised",
+            "CU - Oscillator dial tracking frequency shift",
+            "WS - Residential block, Dallas navigating toward marsh",
+            "POV - Dallas's perspective, listening and moving"
+          ]
+        },
+        {
+          "scene": "s08",
+          "beat": "s08.2",
+          "title": "Marsh edge approach",
+          "description": "Dallas reaches the tall marsh, realizes the sound is intensifying from the grass itself.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Marsh perimeter, tall grass visible in distance",
+            "MS - Dallas at property edge, watching the grass",
+            "CU - Dallas's face, recognizing the source",
+            "WS - Tall grass field, undulating",
+            "Detail - Oscillator reading at peak frequency"
+          ]
+        },
+        {
+          "scene": "s08d",
+          "beat": "s08d.1",
+          "title": "Return through darkness",
+          "description": "Dallas makes his way back through the darkening neighborhoods, disoriented.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Suburban street at dusk, Dallas retracing path",
+            "MS - Dallas walking, checking oscillator periodically",
+            "CU - Dallas, confused or shaken",
+            "WS - Street lamp lighting as darkness falls",
+            "OTS - Dallas from behind, heading back"
+          ]
+        },
+        {
+          "scene": "s09",
+          "beat": "s09.1",
+          "title": "Nursery exploration",
+          "description": "Dallas searches the East Haven Nursery grounds with oscillator, tracking the frequency.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Nursery grounds, evening light",
+            "MS - Dallas moving through rows, listening",
+            "CU - Oscillator dial responding to location",
+            "WS - Dallas at center of grounds, sound peaking",
+            "Detail - Hand adjusting oscillator settings"
+          ]
+        },
+        {
+          "scene": "s09",
+          "beat": "s09.2",
+          "title": "The injured creature",
+          "description": "Dallas discovers something in the tall grass - evidence of an animal or disturbance.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Tall grass field, Dallas approaching",
+            "MS - Dallas stops, observing something",
+            "CU - Dallas's reaction to discovery",
+            "Detail - Close look at marks, matted grass, or damage",
+            "WS - Dallas standing over the spot"
+          ]
+        },
+        {
+          "scene": "s10",
+          "beat": "s10.1",
+          "title": "Jerry's house approach",
+          "description": "Dallas arrives at Jerry's house in evening darkness, oscillator still active.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Jerry's house exterior, lights on inside",
+            "MS - Dallas at front, oscillator in hand",
+            "CU - Oscillator still reading the hum",
+            "WS - House and surrounding darkness",
+            "MS - Dallas approaching front door"
+          ]
+        },
+        {
+          "scene": "s10",
+          "beat": "s10.2",
+          "title": "Something in the shadows",
+          "description": "Dallas hears movement or shadows around the house perimeter - the hum intensifies.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - House perimeter, shadows visible",
+            "MS - Dallas turning, listening intently",
+            "CU - Dallas's fear/awareness",
+            "WS - Shadows moving in yard or tall grass near house",
+            "Detail - Oscillator spiking at maximum"
+          ]
+        }
+      ],
       "scenes": [
         "s08",
         "s08d",
