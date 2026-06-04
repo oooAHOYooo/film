@@ -616,11 +616,21 @@
   "shootPlan": [
     {
       "day": 0,
-      "crewCall": "12:45 PM = Dallas Meets at Alexs\n1:15 PM - 2:15 PM = Branford Train Station (neighborhood walks)\n2:30 PM = Pickup: Matt Grant in Westville\n3:00 PM = 72 Lake St, Hamden (property manager scene)\n5:30 PM = Crew call and cleanup and departure",
+      "crewCall": "12:45 PM = Dallas Meets at Alexs\n1:15 PM - 2:15 PM = Branford Train Station (neighborhood walks)\n2:30 PM = Pickup: Matt Grant in Westville\n3:15 PM - 4:45 PM = 72 Lake St, Hamden (property manager scene)\n5:10 PM = Wrap",
+      "estLength": "12:45 PM - 5:10 PM",
       "crew": [
-        { "role": "Director / Camera", "name": "Alex Gonzalez" },
-        { "role": "Audio", "name": "Chris Battista" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director / Camera",
+          "name": "Alex Gonzalez"
+        },
+        {
+          "role": "Audio",
+          "name": "Christopher Battista"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Branford Train Station",
@@ -632,14 +642,14 @@
         "• Gimbal package - DJI RS 4 Pro, plate, quick release, tools, balance checklist",
         "• Tripod package - tripod, fluid head, quick release plate, camera mount",
         "• Monopod package",
-        "• Primary video lens for locked-off tripod shots",
-        "• Secondary lens or zoom option for gimbal moves",
+        "• Siriu 75mm lens",
+        "• Siriu 50mm lens",
+        "• Siriu 35mm lens",
         "• ND filter",
         "• On-camera monitor or viewfinder for framing",
         "• Audio recorder / field recorder",
         "• Shotgun mic with windscreen",
-        "• XLR cables, mic cables, and headphone extension",
-        "• Slates / clapboard for sync reference",
+        "• XLR cables, SDI cables",
         "• Gaffer tape, lens cloth, lens blower, and small toolkit",
         "• Power strip / battery charger / spare USB-C and camera power cables"
       ],
@@ -663,7 +673,9 @@
           "beat": "s00a.1",
           "title": "Train station arrival",
           "description": "Dallas exits train at Branford station, picks up suitcase, walks toward station exit. Long Island Sound visible beyond.",
-          "cast": ["Dallas"],
+          "cast": [
+            "Dallas"
+          ],
           "shots": [
             "WS - Train arriving at Branford station platform",
             "WS - Empty platform, Long Island Sound in background",
@@ -675,7 +687,11 @@
           "beat": "s00a.2-6",
           "title": "Walking through Branford streets (montage)",
           "description": "Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Makayla & Asher setting up equipment in marsh.",
-          "cast": ["Dallas", "Makayla", "Asher"],
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher"
+          ],
           "shots": [
             "WS - Branford street establishing, low houses with white trim and weathered fences",
             "MS - Dallas walking down sidewalk with suitcase",
@@ -691,7 +707,10 @@
           "beat": "s00b.1",
           "title": "Meeting property manager at front door",
           "description": "Front door opens. Property manager greets Dallas, apologizing about previous tenants' mess. Dallas enters, unfazed. She gives tour narration.",
-          "cast": ["Dallas", "Matt Grant"],
+          "cast": [
+            "Dallas",
+            "Matt Grant"
+          ],
           "shots": [
             "WS - Front door opening inward, foyer visible",
             "MS - Property manager in doorway with clipboard and keys",
@@ -711,7 +730,10 @@
           "beat": "s00b.2",
           "title": "Kitchen and backyard observation",
           "description": "Dallas stops at window facing backyard, watching tall reeds and grass. Property manager continues talking about yard and upstairs.",
-          "cast": ["Dallas", "Matt Grant"],
+          "cast": [
+            "Dallas",
+            "Matt Grant"
+          ],
           "shots": [
             "MS - Dallas at window facing backyard",
             "CU - His hand rising halfway, then stopping",
@@ -730,7 +752,10 @@
           "beat": "s00b.3",
           "title": "Attic discovery",
           "description": "Dallas climbs to attic. Low joists, bare plywood floor, small window. He stands in center looking up, listening. Property manager's voice from below fades.",
-          "cast": ["Dallas", "Matt Grant"],
+          "cast": [
+            "Dallas",
+            "Matt Grant"
+          ],
           "shots": [
             "WS - Attic space, Dallas climbing the stairs",
             "WS - Establishing attic - low joists, plywood floor",
@@ -751,9 +776,18 @@
       "day": 1,
       "crewCall": "5:00 PM = Meet at Alex's House\n5:30 PM = Arrive at Jerry's House (72 Lake St, Hamden)\n5:45 PM = Camera Preps\n6:15 PM = Start Filming\n8:45 PM = Wrap",
       "crew": [
-        { "role": "Director / Camera", "name": "Alex Gonzalez" },
-        { "role": "Audio", "name": "Chris Battista" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director / Camera",
+          "name": "Alex Gonzalez"
+        },
+        {
+          "role": "Audio",
+          "name": "Christopher Battista"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Alex's House",
@@ -881,11 +915,21 @@
     },
     {
       "day": 2,
-      "crewCall": "CALL TIME: 4:00 PM\nEast Haven Nursery",
+      "crewCall": "CALL TIME: 4:00 PM\nEast Haven Nursery\n10:00 PM = Wrap",
+      "estLength": "5h",
       "crew": [
-        { "role": "Director / Camera", "name": "Alex Gonzalez" },
-        { "role": "Audio", "name": "Chris Batista" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director / Camera",
+          "name": "Alex Gonzalez"
+        },
+        {
+          "role": "Audio",
+          "name": "Christopher Battista"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "East Haven Nursery",
@@ -1014,12 +1058,25 @@
     },
     {
       "day": 3,
-      "crewCall": "CALL TIME: 6:00 AM - BRANFORD TRAIN STATION",
+      "crewCall": "CALL TIME: 11:00 AM - BRANFORD TRAIN STATION\n8:00 PM = Wrap",
+      "estLength": "9h",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Branford Train Station",
@@ -1300,10 +1357,22 @@
       "day": 4,
       "crewCall": "CALL TIME: 10:00 AM - DALLAS HOUSE",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Dallas House interior",
@@ -1440,10 +1509,22 @@
       "day": 5,
       "crewCall": "CALL TIME: 4:30 PM - ALEX'S HOUSE",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Alex's House",
@@ -1585,10 +1666,22 @@
       "day": 6,
       "crewCall": "CALL TIME: 2:00 PM - DALLAS HOUSE",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Dallas House interior and exterior",
@@ -1762,10 +1855,22 @@
       "day": 7,
       "crewCall": "CALL TIME: 7:00 AM - EAST HAVEN NURSERY",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "East Haven Nursery",
@@ -1885,10 +1990,22 @@
       "day": 8,
       "crewCall": "CALL TIME: 5:00 PM - DALLAS HOUSE",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Dallas House interior",
@@ -2001,10 +2118,22 @@
       "day": 8.5,
       "crewCall": "CALL TIME: 5:00 PM - DALLAS HOUSE",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Dallas House interior and exterior"
@@ -2075,10 +2204,22 @@
       "day": 11.5,
       "crewCall": "CALL TIME: 8:00 AM - BRANFORD MARSH EDGE",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Marsh boundary",
@@ -2153,10 +2294,22 @@
       "day": 9,
       "crewCall": "CALL TIME: 6:00 PM - DALLAS HOUSE",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Dallas House interior",
@@ -2258,10 +2411,22 @@
       "day": 10,
       "crewCall": "CALL TIME: 8:00 AM - BRANFORD TOWN GREEN",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Branford Town areas",
@@ -2368,10 +2533,22 @@
       "day": 11,
       "crewCall": "CALL TIME: 9:00 AM - VARIOUS LOCATIONS",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Marsh areas",
@@ -2429,10 +2606,22 @@
       "day": 12,
       "crewCall": "CALL TIME: 7:00 AM - BRANFORD TOWN GREEN",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Branford Town Green",
@@ -2509,10 +2698,22 @@
       "day": 13,
       "crewCall": "CALL TIME: 6:00 AM - JERRY'S HOUSE / EXT. BRANFORD",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
-        { "role": "Clapper", "name": "TBD" }
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
       ],
       "locationDetails": [
         "Jerry's House exterior",

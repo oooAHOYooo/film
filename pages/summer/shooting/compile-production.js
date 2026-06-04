@@ -1052,7 +1052,7 @@ function generateDayHtml(dayNum, rows, productionData) {
                     <div style="display:grid; gap:8px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
                         <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Production Day</div><div style="font-size:0.92rem;">12:45 PM - 5:30 PM</div></div>
                         <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Scenes</div><div style="font-size:0.92rem;">${sceneIds.length}</div></div>
-                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Est. Length</div><div style="font-size:0.92rem;">${(() => {
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Est. Length</div><div style="font-size:0.92rem;">${planEntry && planEntry.estLength ? escapeHtml(planEntry.estLength) : (() => {
                         const totalMin = dayRows.reduce((sum, r) => sum + (Number(r.durationMin) || 0), 0);
                         if (totalMin === 0) return 'TBD';
                         const h = Math.floor(totalMin/60);
