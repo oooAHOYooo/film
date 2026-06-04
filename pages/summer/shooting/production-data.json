@@ -628,6 +628,36 @@
         "Branford Streets",
         "72 Lake St, Hamden (Jerry's House - Property Manager scene)"
       ],
+      "equipment": [
+        "Camera body + charged batteries + formatted media cards",
+        "Gimbal package - DJI RS 4 Pro, plate, quick release, tools, balance checklist",
+        "Tripod package - tripod, fluid head, quick release plate, camera mount",
+        "Primary video lens for locked-off tripod shots",
+        "Secondary lens or zoom option for gimbal moves",
+        "On-camera monitor or viewfinder for framing",
+        "Audio recorder / field recorder",
+        "Boom pole + shotgun mic",
+        "Lav mic or backup wired mic option",
+        "Headphones for monitoring sync, tone, and noise floor",
+        "XLR cable, mic cable, and headphone extension",
+        "Slates / clapboard for sync reference",
+        "Gaffer tape, lens cloth, lens blower, and small toolkit",
+        "Power strip / battery charger / spare USB-C and camera power cables"
+      ],
+      "props": [
+        "Dallas's suitcase or worn travel bag",
+        "Trail cameras (audio and visual)",
+        "Boom pole (assembled in pieces)",
+        "Acoustic trap equipment (small, microphone array)",
+        "Folding trowel (military-issue, small)",
+        "Portable oscillator tucked in bag or jacket (not used yet)",
+        "Leaf litter and moss for concealment",
+        "Suitcase or worn travel bag - Dallas carries to front door",
+        "Moving boxes (3-4) - in background/porch, partially pre-positioned",
+        "Cheap/worn furniture (futon, pushed chairs) - pre-existing location dressing",
+        "Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.) - specific visual",
+        "Clipboard or folder (Property Manager) - keeps hands busy during walkthrough"
+      ],
       "scenes": [
         "s00a",
         "s00b"
