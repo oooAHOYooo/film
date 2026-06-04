@@ -628,6 +628,13 @@
           "description": "Dallas settles into the kitchen, clocks the first faint hum, and marks the frequency before the sound cuts.",
           "cast": [
             "Dallas"
+          ],
+          "shots": [
+            "WS - Kitchen interior, Dallas enters from hallway",
+            "MS - Dallas at kitchen counter, listening",
+            "CU - Dallas's face, concentrating on the sound",
+            "CU - Hand marking frequency on portable recorder",
+            "WS - Kitchen, Dallas frozen as sound cuts"
           ]
         },
         {
@@ -637,6 +644,13 @@
           "description": "Dallas steps outside, watches the driveway and the property line, and feels the hum merge out of the tall grass.",
           "cast": [
             "Dallas"
+          ],
+          "shots": [
+            "WS - Dallas exits house, exterior establishing",
+            "MS - Dallas at property edge, listening",
+            "CU - Dallas's face, reacting to the distant sound",
+            "WS - Tall grass at driveway line, hum emerging",
+            "OTS - Dallas from behind, watching grass sway"
           ]
         },
         {
@@ -646,6 +660,13 @@
           "description": "In the attic, Dallas opens Sierra's box, finds the field notes, cassette player, headphones, and old recorder.",
           "cast": [
             "Dallas"
+          ],
+          "shots": [
+            "WS - Attic space, Dallas approaches boxes",
+            "MS - Dallas kneeling at cardboard box",
+            "CU - Box lid opening, 'Field Notes — Branford' visible",
+            "Detail - Hands pulling out cassette player, headphones",
+            "CU - Dallas's face, recognition/emotion at seeing Sierra's equipment"
           ]
         },
         {
@@ -655,6 +676,13 @@
           "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
           "cast": [
             "Dallas"
+          ],
+          "shots": [
+            "WS - Bathroom, Dallas enters with cassette player",
+            "MS - Dallas at sink counter, placing player down",
+            "WS - Shower spray, water running",
+            "CU - Cassette player speakers, tape hum bleeding through",
+            "CU - Dallas in shower, hearing the hum underneath the water"
           ]
         },
         {
@@ -664,6 +692,13 @@
           "description": "Downstairs, Dallas records the pulsing tone, tracks the pattern, and loses the battery mid-read.",
           "cast": [
             "Dallas"
+          ],
+          "shots": [
+            "WS - Downstairs room, Dallas with military recorder and oscillator",
+            "MS - Dallas at table, setting up equipment",
+            "CU - Oscillator dial, frequency readout at 115.3",
+            "Detail - Recording device LED blinking, then fading",
+            "CU - Dallas's frustration as battery dies"
           ]
         },
         {
@@ -673,6 +708,13 @@
           "description": "Outside again, Dallas watches the grass sway as the golden glow pulses and a storm builds over Branford.",
           "cast": [
             "Dallas"
+          ],
+          "shots": [
+            "WS - House exterior, golden glow from grass",
+            "MS - Dallas standing at house edge",
+            "WS - Tall grass undulating, golden light pulsing",
+            "CU - Dallas's face, watching the phenomenon",
+            "WS - Wide sky, storm clouds gathering over distant Branford"
           ]
         }
       ],

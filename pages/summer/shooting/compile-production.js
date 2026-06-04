@@ -787,19 +787,25 @@ function generateDayHtml(dayNum, rows, productionData) {
       const description = entry.description || entry.note || entry.snippet || '';
       const cast = Array.isArray(entry.cast) ? entry.cast : (entry.cast ? [entry.cast] : []);
       const linkHref = sceneId ? sceneHref(sceneId, rows, '../../script-system/full_script.html') : '#';
+      const shotsHtml = Array.isArray(entry.shots) && entry.shots.length
+        ? `<div style="margin-top:6px; padding-top:6px; border-top:1px solid #eee; font-size:0.72rem; color:#666;"><div style="font-weight:700; color:#555; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.03em;">Shots:</div>${entry.shots.map(shot => `<div style="margin-bottom:3px;">• ${escapeHtml(shot)}</div>`).join('')}</div>`
+        : '';
       return `
-      <li style="padding:10px 0; border-bottom:1px solid #ddd; display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
-        <div style="min-width:0;">
-          <div style="font-weight:700;">
-            <span style="color:#555; font-size:0.78rem; margin-right:6px;">${index + 1}.</span>
-            ${sceneId ? `<a href="${linkHref}" onclick="event.stopPropagation()" style="color:#111;text-decoration:none;border-bottom:1px dotted currentColor;" title="Jump to ${escapeHtml(sceneId)} in the full script">${escapeHtml(beat)}</a>` : `<span style="color:#111;">${escapeHtml(beat)}</span>`}
-            ${title ? `<span style="color:#555; font-weight:600;"> - ${escapeHtml(title)}</span>` : ''}
+      <li style="padding:10px 0; border-bottom:1px solid #ddd; display:block;">
+        <div style="display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+          <div style="min-width:0; flex:1;">
+            <div style="font-weight:700;">
+              <span style="color:#555; font-size:0.78rem; margin-right:6px;">${index + 1}.</span>
+              ${sceneId ? `<a href="${linkHref}" onclick="event.stopPropagation()" style="color:#111;text-decoration:none;border-bottom:1px dotted currentColor;" title="Jump to ${escapeHtml(sceneId)} in the full script">${escapeHtml(beat)}</a>` : `<span style="color:#111;">${escapeHtml(beat)}</span>`}
+              ${title ? `<span style="color:#555; font-weight:600;"> - ${escapeHtml(title)}</span>` : ''}
+            </div>
+            ${description ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(description)}</div>` : ''}
           </div>
-          ${description ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(description)}</div>` : ''}
+          <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">
+            ${cast.length ? escapeHtml(cast.map((name) => nicknameToTitle(name)).join(', ')) : '—'}
+          </div>
         </div>
-        <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">
-          ${cast.length ? escapeHtml(cast.map((name) => nicknameToTitle(name)).join(', ')) : '—'}
-        </div>
+        ${shotsHtml}
       </li>`;
     }
 
