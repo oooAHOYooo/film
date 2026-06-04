@@ -1002,6 +1002,21 @@ function generateDayHtml(dayNum, rows, productionData) {
                 </div>
             </section>
 
+            <h3 style="margin:18px 0 8px 0; border-bottom:1px solid #000; font-size:0.95rem; letter-spacing:0.04em;">SCENE SCHEDULE</h3>
+            <table class="production-table">
+                <thead>
+                    <tr>
+                        <th>SCENE</th>
+                        <th>TIME</th>
+                        <th>DESCRIPTION</th>
+                        <th>CAST</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${sceneRows}
+                </tbody>
+            </table>
+
             <section class="compact-block">
                 <div class="compact-label">Crew Call</div>
                 <div class="compact-panel" style="font-weight:700;">${escapeHtml(crewCall)}</div>
@@ -1018,21 +1033,6 @@ function generateDayHtml(dayNum, rows, productionData) {
                     </div>
                 </div>
             </section>
-
-            <h3 style="margin:18px 0 8px 0; border-bottom:1px solid #000; font-size:0.95rem; letter-spacing:0.04em;">SCENE SCHEDULE</h3>
-            <table class="production-table">
-                <thead>
-                    <tr>
-                        <th>SCENE</th>
-                        <th>TIME</th>
-                        <th>DESCRIPTION</th>
-                        <th>CAST</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    ${sceneRows}
-                </tbody>
-            </table>
 
             <section class="compact-block" style="margin-top:16px;">
                 <div class="compact-label">Shot List</div>

@@ -2,7 +2,7 @@
   "opening-montage": {
     "durationMin": 45,
     "shootDays": 0.5,
-    "assignedDay": 3,
+    "assignedDay": 0,
     "location": "Branford Train Station / Streets / Marsh Edge",
     "time": "Early Morning / Continuous",
     "keyElements": "Dallas arrival montage + M&A planting traps + hum reaction",
@@ -24,14 +24,14 @@
   "property-manager": {
     "durationMin": 30,
     "shootDays": 0.5,
-    "assignedDay": 3,
+    "assignedDay": 0,
     "location": "Rental House - Interior",
     "time": "Day",
     "keyElements": "Dallas meets property manager. First full view of Dallas's face in attic.",
     "productionNotes": "Kinetic tour with fragmented shots. Camera goes still in attic. Dallas does not say he'll take the house.",
     "cast": [
       "Dallas",
-      "Property Manager"
+      "Matt Grant"
     ],
     "props": [
       "Suitcase or worn travel bag — Dallas carries to front door",
@@ -596,6 +596,7 @@
     "chronologicalStartDay": 1
   },
   "calendar": {
+    "0": "2026-06-07",
     "1": "2026-06-08",
     "2": "2026-06-12",
     "3": "2026-06-13",
@@ -613,6 +614,123 @@
     "8.5": "2026-06-22"
   },
   "shootPlan": [
+    {
+      "day": 0,
+      "crewCall": "CALL TIME: 1:30 PM - BRANFORD TRAIN STATION (s00a montage) | PICKUP: Matt Grant in Westville at 2:30 PM | LOCATION 2: 72 Lake St, Hamden (Jerry's house) at 3:00 PM",
+      "crew": [
+        { "role": "Director", "name": "Alex" },
+        { "role": "Camera", "name": "Alex" },
+        { "role": "Audio", "name": "TBD" },
+        { "role": "Clapper", "name": "TBD" }
+      ],
+      "locationDetails": [
+        "Branford Train Station",
+        "Branford Streets",
+        "72 Lake St, Hamden (Jerry's House - Property Manager scene)"
+      ],
+      "scenes": [
+        "s00a",
+        "s00b"
+      ],
+      "shotList": [
+        {
+          "scene": "s00a",
+          "beat": "s00a.1",
+          "title": "Train station arrival",
+          "description": "Dallas exits train at Branford station, picks up suitcase, walks toward station exit. Long Island Sound visible beyond.",
+          "cast": ["Dallas"],
+          "shots": [
+            "WS - Train arriving at Branford station platform",
+            "MS - Dallas stepping out of train car",
+            "WS - Empty platform, Long Island Sound in background",
+            "MS - Dallas standing alone with suitcase",
+            "CU - Dallas's face, taking in his surroundings",
+            "MS - Dallas walking toward station exit"
+          ]
+        },
+        {
+          "scene": "s00a",
+          "beat": "s00a.2-6",
+          "title": "Walking through Branford streets (montage)",
+          "description": "Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Makayla & Asher setting up equipment in marsh.",
+          "cast": ["Dallas", "Makayla", "Asher"],
+          "shots": [
+            "WS - Branford street establishing, low houses with white trim and weathered fences",
+            "MS - Dallas walking down sidewalk with suitcase",
+            "CU - Harbor View Lane street sign",
+            "MS - Dallas's face, taking in the neighborhood scale and quietness",
+            "MS - Parked car on residential street",
+            "CU - Mailbox with address number visible",
+            "WS - Dallas getting closer to rental house",
+            "INSERT: Makayla placing trail camera on tree bark (marsh edge)",
+            "INSERT: Asher assembling boom pole piece by piece",
+            "INSERT: Makayla digging hole, installing acoustic trap",
+            "INSERT: Asher and Makayla freeze, listening to the hum",
+            "RETURN: Dallas at fence line, observing tall grass at property edge",
+            "WS - Dallas arriving at rental house, setting down suitcase"
+          ]
+        },
+        {
+          "scene": "s00b",
+          "beat": "s00b.1",
+          "title": "Meeting property manager at front door",
+          "description": "Front door opens. Property manager greets Dallas, apologizing about previous tenants' mess. Dallas enters, unfazed. She gives tour narration.",
+          "cast": ["Dallas", "Matt Grant"],
+          "shots": [
+            "WS - Front door opening inward, foyer visible",
+            "MS - Property manager in doorway with clipboard and keys",
+            "CU - Property manager's face, apologetic",
+            "MS - Dallas entering, not removing shoes",
+            "CU - Dallas's eyes moving across the room",
+            "WS - Living room with cheap furniture pushed against walls",
+            "CU - Futon frame without mattress",
+            "CU - Empty beer cans on floor",
+            "MS - Property manager moving deeper into house",
+            "MS - Dallas following, expressionless",
+            "MS - Two shot as she talks"
+          ]
+        },
+        {
+          "scene": "s00b",
+          "beat": "s00b.2",
+          "title": "Kitchen and backyard observation",
+          "description": "Dallas stops at window facing backyard, watching tall reeds and grass. Property manager continues talking about yard and upstairs.",
+          "cast": ["Dallas", "Matt Grant"],
+          "shots": [
+            "MS - Dallas at window facing backyard",
+            "CU - His hand rising halfway, then stopping",
+            "CU - Dallas looking out at the grass",
+            "WS - Through window: tall reeds and grass beyond",
+            "CU - The line where yard ends and marsh begins",
+            "MS - Property manager realizing Dallas isn't behind her",
+            "MS - She turns back, continuing explanation",
+            "CU - Dallas's face, still focused on window",
+            "MS - Property manager gesturing toward stairs",
+            "MS - Dallas already moving past her toward stairs"
+          ]
+        },
+        {
+          "scene": "s00b",
+          "beat": "s00b.3",
+          "title": "Attic discovery",
+          "description": "Dallas climbs to attic. Low joists, bare plywood floor, small window. He stands in center looking up, listening. Property manager's voice from below fades.",
+          "cast": ["Dallas", "Matt Grant"],
+          "shots": [
+            "WS - Attic space, Dallas climbing the stairs",
+            "WS - Establishing attic - low joists, plywood floor",
+            "CU - Small window throwing gray light",
+            "MS - Dallas standing in center of attic",
+            "CU - Dallas's head tilting back",
+            "CU - Looking up at underside of roof",
+            "CU - Dallas's face - calm, focused",
+            "WS - Dallas in attic, very still",
+            "MS - Property manager at bottom of stairs (O.S.)",
+            "CU - Dallas listening, undisturbed by her voice",
+            "WS - Wide shot of quiet attic space"
+          ]
+        }
+      ]
+    },
     {
       "day": 1,
       "crewCall": "CALL TIME: 4:30 PM - ALEX'S HOUSE, 206 SAINT JOHN ST",
