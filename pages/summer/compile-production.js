@@ -856,6 +856,90 @@ function generateLocationTable(locationRows, totalDays) {
     .join('');
 }
 
+function buildCastDateSummary(rows, productionData) {
+  const mainCast = ['Dallas', 'Dominic', 'Makayla', 'Asher'];
+  const mainCastLookup = new Map(mainCast.map((name) => [name.toLowerCase(), name]));
+  const calendar = productionData.calendar || {};
+
+  const actorDays = new Map(mainCast.map((name) => [name, new Set()]));
+  const group5Days = new Set();
+
+  const normalizeName = (name) => String(name || '')
+    .trim()
+    .replace(/\s+/g, ' ')
+    .replace(/\b\w/g, (m) => m.toUpperCase());
+
+  rows.forEach((r) => {
+    const days = Array.isArray(r.scheduledDays) ? Array.from(new Set(r.scheduledDays)) : [];
+    const cast = Array.isArray(r.characters) ? r.characters : [];
+
+    cast.forEach((character) => {
+      const canonical = mainCastLookup.get(normalizeName(character).toLowerCase());
+      if (canonical) {
+        days.forEach((dayNum) => actorDays.get(canonical).add(dayNum));
+        return;
+      }
+
+      days.forEach((dayNum) => group5Days.add(dayNum));
+    });
+  });
+
+  const formatDays = (days) => Array.from(new Set(days)).sort((a, b) => a - b).join(', ');
+  const formatDates = (days) => {
+    const sortedDays = Array.from(new Set(days)).sort((a, b) => a - b);
+    return sortedDays
+      .map((dayNum) => {
+        const dateStr = calendar[dayNum] || '';
+        if (!dateStr) return '';
+        return new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      })
+      .filter(Boolean)
+      .join(', ');
+  };
+
+  return [
+    ...mainCast.map((name) => ({
+      label: name,
+      days: Array.from(actorDays.get(name) || []),
+      note: '',
+    })),
+    {
+      label: 'Group 5',
+      days: Array.from(group5Days),
+      note: 'All other cast',
+    },
+  ].map((entry) => ({
+    ...entry,
+    daysText: formatDays(entry.days) || '—',
+    datesText: formatDates(entry.days) || '—',
+  }));
+}
+
+function renderCastDateSummaryHtml(summaryRows) {
+  const rowsHtml = (summaryRows || []).map((entry) => `
+    <tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:6px 10px;border-bottom:1px solid #ddd;font-weight:700;white-space:nowrap;">${escapeHtml(entry.label)}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #ddd;font-family:ui-monospace,monospace;white-space:nowrap;">${escapeHtml(entry.daysText)}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #ddd;white-space:nowrap;">${escapeHtml(entry.datesText)}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #ddd;color:#666;font-size:0.78rem;">${escapeHtml(entry.note || '')}</td>
+    </tr>`).join('');
+
+  return `
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;table-layout:fixed;">
+        <thead>
+          <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;width:18%;">Group</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;width:18%;">Days</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;width:52%;">Dates</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;width:12%;">Note</th>
+          </tr>
+        </thead>
+        <tbody>${rowsHtml}</tbody>
+      </table>
+    </div>`;
+}
+
 function generateOverviewListHtml(rows, calendar, totalDays) {
   let html = '<section id="schedule-overview" style="margin-bottom: 50px;">';
   html += '<h2 style="color: #111; margin: 0 0 20px 0; font-size: 1.5rem; display: flex; align-items: center;">Schedule Overview <span style="font-size: 0.8rem; font-weight: normal; opacity: 0.6; margin-left: 12px; background: #f0f0f0; padding: 4px 8px; border-radius: 4px;">At a glance</span></h2>';
@@ -1086,68 +1170,10 @@ function generateCheatSheetHtml(rows, productionData) {
 }
 
 function generateCharacterCheatSheetHtml(rows, productionData) {
-  const calendar = productionData.calendar || {};
-
-  // Build character → { day → [scene ids] } mapping
-  const charMap = {};
-  rows.forEach(r => {
-    const sid = r.fileId;
-    (r.characters || []).forEach(c => {
-      if (!charMap[c]) charMap[c] = {};
-      (r.scheduledDays || []).forEach(d => {
-        if (!charMap[c][d]) charMap[c][d] = [];
-        charMap[c][d].push(sid);
-      });
-    });
-  });
-
-  const sortedChars = Object.keys(charMap).sort();
-  if (!sortedChars.length) return '';
-
-  const formatDate = (iso) => {
-    if (!iso) return '';
-    const [, m, d] = iso.split('-');
-    const months = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    return `${months[parseInt(m)]} ${parseInt(d)}`;
-  };
-
-  const charRows = sortedChars.map(c => {
-    const dayMap = charMap[c];
-    const days = Object.keys(dayMap).map(Number).sort((a, b) => a - b);
-    const dayLinks = days.map(d => {
-      const scenes = dayMap[d].join(', ');
-      return `<a style="color:#111;text-decoration:none;font-weight:700;" href="production/days/${d}.html">${d}</a> <span style="color:#888;font-size:0.75em;">(${scenes})</span>`;
-    }).join('<span style="color:#999;"> &middot; </span>');
-    const dateLinks = days.map(d => {
-      const dateStr = calendar[d] || '';
-      const fd = formatDate(dateStr);
-      return fd ? `<a href="production/days/${d}.html" style="color:#555;text-decoration:none;">${fd}</a>` : '';
-    }).filter(Boolean).join(', ');
-    const castHref = `production/cast/${c.toLowerCase()}.html`;
-    return `<tr style="border-bottom:1px solid #ddd;">
-      <td style="padding:5px 10px;border-bottom:1px solid #ddd;"><a style="color:#111;font-weight:bold;text-decoration:none;" href="${castHref}">${escapeHtml(c)}</a></td>
-      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">${days.length}</td>
-      <td style="padding:5px 10px;border-bottom:1px solid #ddd;">${dayLinks}</td>
-      <td style="font-size:0.8rem;padding:5px 10px;border-bottom:1px solid #ddd;">${dateLinks}</td>
-    </tr>`;
-  }).join('');
-
   return `
   <section style="margin-top:48px;">
-    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Character Cheat Sheet</h2>
-    <div style="overflow-x:auto;">
-      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;">
-        <thead>
-          <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Character</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Days</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Shoot Days</th>
-            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;">Dates</th>
-          </tr>
-        </thead>
-        <tbody>${charRows}</tbody>
-      </table>
-    </div>
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Cast Dates</h2>
+    ${renderCastDateSummaryHtml(buildCastDateSummary(rows, productionData))}
   </section>`;
 }
 
@@ -1619,9 +1645,12 @@ function generateDayHtml(dayNum, rows, productionData) {
   const summaryLocations = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locations')
     ? unique(Array.isArray(planEntry.locations) ? planEntry.locations : [planEntry.locations])
     : unique(dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
-  const summaryCast = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
-    ? unique(Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
-    : unique(dayRows.flatMap((r) => r.characters || []));
+  const summaryCast = unique([
+    ...(planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
+      ? (Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
+      : []),
+    ...dayRows.flatMap((r) => r.characters || []),
+  ]);
     
   const summaryProps = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'props')
     ? (Array.isArray(planEntry.props) ? planEntry.props : [planEntry.props])
@@ -1689,6 +1718,24 @@ function generateDayHtml(dayNum, rows, productionData) {
         </td>
         <td>${chars || '—'}</td>
       </tr>`;
+  }).join('');
+  const shotListRows = dayRows.map((scene, index) => {
+    const snippet = extractSceneSnippet(scene.content, scene.fileId);
+    const cast = (scene.characters || []).join(', ');
+    return `
+      <li style="padding:10px 0; border-bottom:1px solid #ddd; display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+        <div style="min-width:0;">
+          <div style="font-weight:700;">
+            <span style="color:#555; font-size:0.78rem; margin-right:6px;">${index + 1}.</span>
+            <span style="color:#111;">${escapeHtml(scene.fileId)}</span>
+            <span style="color:#555; font-weight:600;">${scene.title && scene.title !== scene.fileId ? ` - ${escapeHtml(scene.title)}` : ''}</span>
+          </div>
+          ${snippet ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(snippet)}</div>` : ''}
+        </div>
+        <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">
+          ${cast ? escapeHtml(cast) : '—'}
+        </div>
+      </li>`;
   }).join('');
 
   return `<!doctype html>
@@ -1787,6 +1834,13 @@ function generateDayHtml(dayNum, rows, productionData) {
                 </tbody>
             </table>
 
+            <section style="margin-top:18px;">
+                <div style="font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#666; margin-bottom:8px;">Shot List</div>
+                <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
+                    ${dayRows.length > 0 ? `<ol style="margin:0; padding-left:18px; list-style:none;">${shotListRows}</ol>` : '<div style="color:#666; font-style:italic;">No shot list entries for this day.</div>'}
+                </div>
+            </section>
+
             <section style="margin-top:20px; display:flex; flex-direction:column; gap:20px;">
                 <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
                     <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">EQUIPMENT</h3>
@@ -1815,6 +1869,10 @@ function generateDayHtml(dayNum, rows, productionData) {
                         <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px;">MISC</h3>
                         <div style="font-size:0.9rem; min-height:60px; white-space: pre-wrap;">${summaryMisc.length > 0 ? summaryMisc.map(p => `<div style="margin-bottom: 4px;">${escapeHtml(p)}</div>`).join('') : '<div style="color:#666; font-style:italic;">Add miscellaneous notes...</div>'}</div>
                     </div>
+                </div>
+                <div style="padding:14px; border:2px solid black; border-radius:8px; background:transparent;">
+                    <h3 style="margin:0 0 10px 0; font-size:1rem; border-bottom:1px solid #ccc; padding-bottom:5px; color: black;">CAST NEEDED</h3>
+                    <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:0.82rem; min-height:28px;">${summaryCast.length > 0 ? summaryCast.map(c => `<span style="display:inline-block; border:1px solid #000; padding:3px 8px; border-radius:999px; font-weight:700;">${escapeHtml(c)}</span>`).join('') : '<div style="color:#666; font-style:italic;">No cast listed for this day.</div>'}</div>
                 </div>
             </section>
 

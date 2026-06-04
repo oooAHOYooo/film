@@ -330,6 +330,96 @@ function getProductionStyles() {
 `;
 }
 
+function buildCastDateSummary(rows, productionData) {
+  const mainCast = ['Dallas', 'Dominic', 'Makayla', 'Asher'];
+  const mainCastLookup = new Map(mainCast.map((name) => [name.toLowerCase(), name]));
+  const calendar = productionData.calendar || {};
+
+  const actorDays = new Map(mainCast.map((name) => [name, new Set()]));
+  const group5Days = new Set();
+
+  const normalizeName = (name) => String(name || '')
+    .trim()
+    .replace(/\s+/g, ' ')
+    .replace(/\b\w/g, (m) => m.toUpperCase());
+
+  rows.forEach((r) => {
+    const days = Array.isArray(r.scheduledDays) ? Array.from(new Set(r.scheduledDays)) : [];
+    const cast = Array.isArray(r.characters) ? r.characters : [];
+
+    cast.forEach((character) => {
+      const canonical = mainCastLookup.get(normalizeName(character).toLowerCase());
+      if (canonical) {
+        days.forEach((dayNum) => actorDays.get(canonical).add(dayNum));
+        return;
+      }
+
+      days.forEach((dayNum) => group5Days.add(dayNum));
+    });
+  });
+
+  const formatDays = (days) => Array.from(new Set(days)).sort((a, b) => a - b).join(', ');
+  const formatDates = (days) => {
+    const sortedDays = Array.from(new Set(days)).sort((a, b) => a - b);
+    return sortedDays
+      .map((dayNum) => {
+        const dateStr = calendar[dayNum] || '';
+        if (!dateStr) return '';
+        return new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      })
+      .filter(Boolean)
+      .join(', ');
+  };
+
+  return [
+    ...mainCast.map((name) => ({
+      label: name,
+      days: Array.from(actorDays.get(name) || []),
+      note: '',
+    })),
+    {
+      label: 'Group 5',
+      days: Array.from(group5Days),
+      note: 'All other cast',
+    },
+  ].map((entry) => ({
+    ...entry,
+    daysText: formatDays(entry.days) || '—',
+    dates: Array.from(new Set(entry.days))
+      .sort((a, b) => a - b)
+      .map((dayNum) => {
+        const dateStr = calendar[dayNum] || '';
+        return dateStr ? new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '';
+      })
+      .filter(Boolean),
+  }));
+}
+
+function renderCastDateSummaryHtml(summaryRows) {
+  const rowsHtml = (summaryRows || []).map((entry) => `
+    <tr style="border-bottom:1px solid #ddd;">
+      <td style="padding:6px 10px;border-bottom:1px solid #ddd;font-weight:700;white-space:nowrap;">${escapeHtml(entry.label)}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #ddd;font-family:ui-monospace,monospace;white-space:normal;word-break:break-word;line-height:1.35;">${escapeHtml(entry.daysText)}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #ddd;white-space:normal;line-height:1.35;">${(entry.dates && entry.dates.length > 0) ? entry.dates.map((date) => `<div>${escapeHtml(date)}</div>`).join('') : '<span style="color:#666;">—</span>'}</td>
+      <td style="padding:6px 10px;border-bottom:1px solid #ddd;color:#666;font-size:0.78rem;">${escapeHtml(entry.note || '')}</td>
+    </tr>`).join('');
+
+  return `
+    <div style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:13px;table-layout:fixed;">
+        <thead>
+          <tr style="color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;">
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;width:18%;">Group</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;width:16%;">Days</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;width:54%;">Dates</th>
+            <th style="text-align:left;padding:6px 10px;border-bottom:1px solid #999;width:12%;">Note</th>
+          </tr>
+        </thead>
+        <tbody>${rowsHtml}</tbody>
+      </table>
+    </div>`;
+}
+
 function generateCalendarHtml(productionData) {
   const calendar = productionData.calendar || {};
   const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
@@ -361,14 +451,16 @@ function generateCalendarHtml(productionData) {
     const day = date.getDate();
     const dateStr = date.toISOString().split('T')[0];
     const dayNum = Object.keys(calendar).find(k => calendar[k] === dateStr);
+    const dayPlan = dayNum ? shootPlan.find((entry) => String(entry.day) === String(dayNum)) : null;
     const dayClass = dayNum ? 'shooting-day' : '';
     const bgColor = dayNum ? '#f0f0f0' : 'transparent';
     const borderColor = dayNum ? '#999' : '#eee';
     const scenes = dayNum && dayToScenes[dayNum] ? dayToScenes[dayNum] : '';
     const opacity = dayNum ? 1 : 1;
 
+    const isPickup = !!(dayPlan && (dayPlan.special || dayPlan.pickup));
     const cellContent = dayNum
-      ? `<div style="font-weight:700;margin-bottom:2px;">${day}</div><div style="font-weight:800;font-size:11px;">Day ${dayNum}</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">${scenes}</div>`
+      ? `<div style="font-weight:700;margin-bottom:2px;">${day}</div><div style="font-weight:800;font-size:11px;">${isPickup ? 'Pickup' : `Day ${dayNum}`}</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">${scenes}</div>`
       : `<div style="font-weight:700;margin-bottom:2px;">${day}</div>`;
 
     const onclick = dayNum ? `onclick="window.location.href='production/days/${dayNum}.html'"` : '';
@@ -494,6 +586,10 @@ function generateScheduleTableHtml(rows, productionData) {
 
 function generateFullHtml(rows, totalDays, productionData) {
   const totalScenes = rows.length;
+  const castDateSummaryHtml = renderCastDateSummaryHtml(buildCastDateSummary(rows, productionData));
+  const calendar = productionData.calendar || {};
+  const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+  const callSheetDays = Object.keys(calendar).sort((a, b) => Number(a) - Number(b));
 
   let html = `<!doctype html>
 <html lang="en">
@@ -523,18 +619,29 @@ function generateFullHtml(rows, totalDays, productionData) {
                   <div style="display: flex; flex-direction: column; gap: 8px;">
 `;
 
-  for (let dayNum = 1; dayNum <= totalDays; dayNum++) {
+  for (const dayNum of callSheetDays) {
+    const planEntry = shootPlan.find((entry) => String(entry.day) === String(dayNum));
+    const isPickup = !!(planEntry && (planEntry.special || planEntry.pickup));
+    const dayDate = calendar[dayNum] || '';
+    const dateLabel = dayDate ? new Date(dayDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }) : '';
     html += `
                     <div class="stats-card" style="cursor: pointer; margin-bottom: 0;" onclick="window.location.href='production/days/${dayNum}.html'">
                       <div style="display:flex; justify-content:space-between; align-items:center; gap:12px;">
-                        <div style="font-weight: 700; color: #000; font-size: 0.95rem;">Day ${dayNum}</div>
-                        <a href="production/days/${dayNum}.html" style="color: #000; text-decoration: none; font-weight: 600;">Open call sheet</a>
+                        <div style="font-weight: 700; color: #000; font-size: 0.95rem;">${isPickup ? 'Pickup' : `Day ${dayNum}`}${dateLabel ? ` · ${dateLabel}` : ''}</div>
+                        <a href="production/days/${dayNum}.html" style="color: #000; text-decoration: none; font-weight: 600;">${isPickup ? 'Open pickup sheet' : 'Open call sheet'}</a>
                       </div>
                     </div>
 `;
   }
 
   html += `
+                  </div>
+                </section>
+
+                <section style="margin-bottom: 40px;">
+                  <h2 style="color: #000; margin: 0 0 12px 0; font-size: 1.2rem; letter-spacing: 0.04em; text-transform: uppercase;">Cast Dates</h2>
+                  <div class="compact-panel">
+                    ${castDateSummaryHtml}
                   </div>
                 </section>
             </main>
@@ -593,9 +700,12 @@ function generateDayHtml(dayNum, rows, productionData) {
   const summaryLocations = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locations')
     ? unique(Array.isArray(planEntry.locations) ? planEntry.locations : [planEntry.locations])
     : unique(dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
-  const summaryCast = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
-    ? unique(Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
-    : unique(dayRows.flatMap((r) => r.characters || []));
+  const summaryCast = unique([
+    ...(planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
+      ? (Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
+      : []),
+    ...dayRows.flatMap((r) => r.characters || []),
+  ]);
 
   const summaryProps = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'props')
     ? (Array.isArray(planEntry.props) ? planEntry.props : [planEntry.props])
@@ -612,8 +722,9 @@ function generateDayHtml(dayNum, rows, productionData) {
   const summaryLocationDetails = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locationDetails')
     ? (Array.isArray(planEntry.locationDetails) ? planEntry.locationDetails : [planEntry.locationDetails])
     : unique(dayRows.flatMap((r) => r.locationDetails || []));
+  const castDateSummaryHtml = renderCastDateSummaryHtml(buildCastDateSummary(rows, productionData));
 
-  const dayLabel = planEntry ? `Day ${planEntry.day}` : `Day ${dayNum}`;
+  const dayLabel = planEntry && planEntry.special ? 'Pickup Date' : (planEntry ? `Day ${planEntry.day}` : `Day ${dayNum}`);
   const sourceNote = planEntry && planEntry.sourceNote ? planEntry.sourceNote : '';
   const crewCall = planEntry && planEntry.crewCall ? planEntry.crewCall : 'GENERAL CREW CALL: 08:00 AM';
 
@@ -657,12 +768,31 @@ function generateDayHtml(dayNum, rows, productionData) {
         <td>${chars || '—'}</td>
       </tr>`;
   }).join('');
+  const shotListRows = dayScenes.map((scene, index) => {
+    const fullScriptHref = scene.fullScriptHref;
+    const snippet = scene.resolved ? extractSceneSnippet(scene.content, scene.fileId) : '';
+    const cast = (scene.characters || []).join(', ');
+    return `
+      <li style="padding:10px 0; border-bottom:1px solid #ddd; display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+        <div style="min-width:0;">
+          <div style="font-weight:700;">
+            <span style="color:#555; font-size:0.78rem; margin-right:6px;">${index + 1}.</span>
+            <a href="${fullScriptHref}" onclick="event.stopPropagation()" style="color:#111;text-decoration:none;border-bottom:1px dotted currentColor;" title="Jump to ${escapeHtml(scene.fileId)} in the full script">${escapeHtml(scene.fileId)}</a>
+            <span style="color:#555; font-weight:600;">${scene.title && scene.title !== scene.fileId ? ` - ${escapeHtml(scene.title)}` : ''}</span>
+          </div>
+          ${snippet ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(snippet)}</div>` : ''}
+        </div>
+        <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">
+          ${cast ? escapeHtml(cast) : '—'}
+        </div>
+      </li>`;
+  }).join('');
 
   return `<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Day ${dayNum} — Call Sheet — Shooting Script</title>
+        <title>${planEntry && planEntry.special ? 'Pickup Date' : `Day ${dayNum}`} — Call Sheet — Shooting Script</title>
         <style>
             ${getProductionStyles()}
             .main-content { padding: 24px 22px 32px; margin: 0 auto; max-width: 920px; box-sizing: border-box; }
@@ -804,7 +934,7 @@ function generateDayHtml(dayNum, rows, productionData) {
             <header class="callsheet-header">
                 <div>
                     <h1 style="margin:0;">DAILY CALL SHEET</h1>
-                    <h2 style="margin:0; font-size:1.5rem;">${dayLabel} of ${totalShootDays}</h2>
+                    <h2 style="margin:0; font-size:1.5rem;">${dayLabel}${planEntry && !planEntry.special ? ` of ${totalShootDays}` : ''}</h2>
                     <p class="callsheet-kicker">Shooting cut</p>
                 </div>
                 <div style="text-align:right;">
@@ -851,6 +981,13 @@ function generateDayHtml(dayNum, rows, productionData) {
                 </tbody>
             </table>
 
+            <section class="compact-block" style="margin-top:16px;">
+                <div class="compact-label">Shot List</div>
+                <div class="compact-panel">
+                    ${dayScenes.length > 0 ? `<ol style="margin:0; padding-left:18px; list-style:none;">${shotListRows}</ol>` : '<div style="color:#666; font-style:italic;">No shot list entries for this day.</div>'}
+                </div>
+            </section>
+
             <section style="margin-top:16px; display:flex; flex-direction:column; gap:12px;">
                 <div class="compact-panel">
                     <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">PROPS</h3>
@@ -863,6 +1000,10 @@ function generateDayHtml(dayNum, rows, productionData) {
                 <div class="compact-panel">
                     <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">LOCATION DETAILS</h3>
                     <div style="font-size:0.84rem;">${summaryLocationDetails.length > 0 ? summaryLocationDetails.map(l => `<div>${escapeHtml(l)}</div>`).join('') : '<div style="color:#666; font-style:italic;">Location details TBD</div>'}</div>
+                </div>
+                <div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">CAST NEEDED</h3>
+                    <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:0.84rem; min-height:28px;">${summaryCast.length > 0 ? summaryCast.map(c => `<span style="display:inline-block; border:1px solid #000; padding:3px 8px; border-radius:999px; font-weight:700;">${escapeHtml(c)}</span>`).join('') : '<div style="color:#666; font-style:italic;">No cast listed for this day.</div>'}</div>
                 </div>
             </section>
         </div>

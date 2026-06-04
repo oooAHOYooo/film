@@ -2,7 +2,7 @@
   "opening-montage": {
     "durationMin": 45,
     "shootDays": 0.5,
-    "assignedDay": 1,
+    "assignedDay": 3,
     "location": "Branford Train Station / Streets / Marsh Edge",
     "time": "Early Morning / Continuous",
     "keyElements": "Dallas arrival montage + M&A planting traps + hum reaction",
@@ -24,7 +24,7 @@
   "property-manager": {
     "durationMin": 30,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 3,
     "location": "Rental House - Interior",
     "time": "Day",
     "keyElements": "Dallas meets property manager. First full view of Dallas's face in attic.",
@@ -45,7 +45,7 @@
   "arrival": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 3,
     "location": "DALLAS HOUSE - Exterior",
     "time": "DAY",
     "keyElements": "",
@@ -60,7 +60,7 @@
     "durationMin": 120,
     "time": "06:00 PM - 08:00 PM",
     "shootDays": 0.5,
-    "assignedDay": 2,
+    "assignedDay": 1,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -95,7 +95,7 @@
   "fellowship": {
     "durationMin": 180,
     "shootDays": 0.5,
-    "assignedDay": 13,
+    "assignedDay": 12,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -122,7 +122,7 @@
     "time": "6:30 PM",
     "location": "On Location (East Haven Nursery)",
     "shootDays": 0.5,
-    "assignedDay": 3,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
     "cast": [
@@ -134,7 +134,7 @@
     "time": "8:45 PM",
     "location": "Jerry's House",
     "shootDays": 0.5,
-    "assignedDay": 3,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -144,7 +144,7 @@
   "mr-mikes-warning": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 11,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -158,7 +158,7 @@
   "final-echoes": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -173,7 +173,7 @@
   "the-hum": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 6,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -185,7 +185,7 @@
   "marsh-walk-later": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 6,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -197,7 +197,7 @@
   "news-vans": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 13,
+    "assignedDay": 12,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -210,7 +210,7 @@
     "durationMin": 90,
     "time": "6:30 PM",
     "shootDays": 0.5,
-    "assignedDay": 6,
+    "assignedDay": 5,
     "keyElements": "",
     "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
     "cast": [
@@ -223,7 +223,7 @@
     "durationMin": 30,
     "time": "7:30 PM",
     "shootDays": 0.5,
-    "assignedDay": 6,
+    "assignedDay": 5,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -245,7 +245,7 @@
   "dallas-marsh-walk": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 3,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "Dallas tracks the sound alone through Branford neighborhoods toward the marsh",
     "cast": [
@@ -255,7 +255,7 @@
   "entering-grass": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -269,7 +269,7 @@
   "the-coordinates": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 11,
+    "assignedDay": 10,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -284,7 +284,7 @@
   "creature-rescue": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -298,7 +298,7 @@
   "the-field-journal": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -312,7 +312,7 @@
   "the-almost-discovery": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 4,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -327,7 +327,7 @@
     "durationMin": 120,
     "time": "08:00 PM - 10:00 PM",
     "shootDays": 0.5,
-    "assignedDay": 10,
+    "assignedDay": 9,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -342,7 +342,7 @@
   "normal-day": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 9,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -357,7 +357,7 @@
   "mute-drive": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 9,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -382,7 +382,7 @@
   "life-group-arrives": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 11,
+    "assignedDay": 10,
     "keyElements": "",
     "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
     "cast": [
@@ -398,7 +398,7 @@
   "the-hymn": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 11,
+    "assignedDay": 10,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -414,7 +414,7 @@
   "red-eyes": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 11,
+    "assignedDay": 10,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -430,7 +430,7 @@
   "the-failed-test": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 6,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -441,7 +441,7 @@
   "the-tracking-box": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 6,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -452,7 +452,7 @@
   "dominics-confession": {
     "durationMin": 45,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 6,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -463,7 +463,7 @@
   "the-escape": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 11,
     "keyElements": "",
     "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
     "cast": [
@@ -477,7 +477,7 @@
   "creature-missing": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -490,7 +490,7 @@
   "marsh-confrontation": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -506,7 +506,7 @@
   "predator-attack": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -519,7 +519,7 @@
   "the-perimeter": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -532,7 +532,7 @@
   "the-last-dinner": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 8,
     "time": "7:00 PM – 9:00 PM",
     "keyElements": "",
     "productionNotes": "",
@@ -562,7 +562,7 @@
   "aftermath": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 14,
+    "assignedDay": 13,
     "location": "EXT. Jerry's House — Afternoon",
     "keyElements": "",
     "productionNotes": "Afternoon shoot before nursery run",
@@ -579,7 +579,7 @@
   "full-circle": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 14,
+    "assignedDay": 13,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -596,50 +596,44 @@
     "chronologicalStartDay": 1
   },
   "calendar": {
-    "1": "2026-06-07",
-    "2": "2026-06-09",
-    "3": "2026-06-12",
-    "4": "2026-06-13",
-    "5": "2026-06-14",
-    "6": "2026-06-16",
-    "7": "2026-06-18",
-    "8": "2026-06-19",
-    "9": "2026-06-20",
-    "10": "2026-06-26",
-    "11": "2026-06-27",
-    "12": "2026-06-28",
-    "13": "2026-07-01",
-    "14": "2026-07-02",
-    "15": "2026-07-03",
-    "16": "2026-07-05",
-    "9.5": "2026-06-21"
+    "1": "2026-06-08",
+    "2": "2026-06-12",
+    "3": "2026-06-13",
+    "4": "2026-06-14",
+    "5": "2026-06-15",
+    "6": "2026-06-18",
+    "7": "2026-06-19",
+    "8": "2026-06-20",
+    "9": "2026-06-26",
+    "10": "2026-06-27",
+    "11": "2026-06-28",
+    "12": "2026-07-01",
+    "13": "2026-07-02",
+    "11.5": "2026-06-29",
+    "8.5": "2026-06-22"
   },
   "shootPlan": [
     {
       "day": 1,
       "scenes": [
-        "s00a",
-        "s02.3"
+        "s02",
+        "s02.3",
+        "s08b"
       ]
     },
     {
       "day": 2,
       "scenes": [
-        "s02",
-        "s08b"
-      ]
-    },
-    {
-      "day": 3,
-      "scenes": [
         "s08",
+        "s08d",
         "s09",
         "s10"
       ]
     },
     {
-      "day": 4,
+      "day": 3,
       "scenes": [
+        "s00a",
         "s00b",
         "s01",
         "s03",
@@ -647,14 +641,14 @@
       ]
     },
     {
-      "day": 5,
+      "day": 4,
       "scenes": [
         "s14b",
         "s14c"
       ]
     },
     {
-      "day": 6,
+      "day": 5,
       "scenes": [
         "s08c",
         "s11",
@@ -662,7 +656,7 @@
       ]
     },
     {
-      "day": 7,
+      "day": 6,
       "scenes": [
         "s15a",
         "s15b",
@@ -670,9 +664,8 @@
       ]
     },
     {
-      "day": 8,
+      "day": 7,
       "scenes": [
-        "s08d",
         "s13",
         "s14",
         "s21",
@@ -681,7 +674,7 @@
       ]
     },
     {
-      "day": 9,
+      "day": 8,
       "scenes": [
         "s24",
         "s25",
@@ -689,13 +682,20 @@
       ]
     },
     {
-      "day": 10,
+      "day": 11.5,
+      "pickup": true,
+      "scenes": []
+    },
+    {
+      "day": 9,
       "scenes": [
-        "s17"
+        "s17",
+        "s17b",
+        "s17c"
       ]
     },
     {
-      "day": 11,
+      "day": 10,
       "scenes": [
         "s07",
         "s18",
@@ -704,23 +704,21 @@
       ]
     },
     {
-      "day": 12,
+      "day": 11,
       "scenes": [
         "s07b",
-        "s16",
-        "s17b",
-        "s17c"
+        "s16"
       ]
     },
     {
-      "day": 13,
+      "day": 12,
       "scenes": [
         "s04",
         "s06"
       ]
     },
     {
-      "day": 14,
+      "day": 13,
       "scenes": [
         "s27",
         "s28"
@@ -800,10 +798,10 @@
   },
   "the-threshold": {
     "durationMin": 15,
-    "assignedDay": 6
+    "assignedDay": 5
   },
   "the-return": {
     "durationMin": 60,
-    "assignedDay": 8
+    "assignedDay": 2
   }
 }
