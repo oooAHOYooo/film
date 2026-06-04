@@ -853,6 +853,274 @@
     },
     {
       "day": 3,
+      "crewCall": "CALL TIME: 6:00 AM - BRANFORD TRAIN STATION",
+      "locationDetails": [
+        "Branford Train Station",
+        "Branford Streets and neighborhoods",
+        "Marsh edge areas"
+      ],
+      "shotList": [
+        {
+          "scene": "s00a",
+          "beat": "s00a.1",
+          "title": "Train arrival",
+          "description": "Dallas arrives at Branford station by train early morning, stepping onto the platform.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Train pulling in, platform establishing",
+            "MS - Dallas exiting train with luggage",
+            "CU - Dallas on platform, first view of Branford",
+            "WS - Empty morning platform",
+            "MS - Dallas orientating himself with surroundings"
+          ]
+        },
+        {
+          "scene": "s00a",
+          "beat": "s00a.2",
+          "title": "Streets montage",
+          "description": "Dallas navigates through early morning Branford streets with his bag, arriving at the rental house.",
+          "cast": [
+            "Dallas"
+          ],
+          "shots": [
+            "WS - Branford street, morning light",
+            "MS - Dallas walking with suitcase",
+            "WS - Passing storefronts and town landmarks",
+            "MS - Dallas approaching the house",
+            "CU - Dallas at the front door"
+          ]
+        },
+        {
+          "scene": "s00a",
+          "beat": "s00a.3",
+          "title": "Makayla and Asher setup",
+          "description": "Meanwhile, Makayla and Asher are in the marsh setting up acoustic traps and equipment.",
+          "cast": [
+            "Makayla",
+            "Asher"
+          ],
+          "shots": [
+            "WS - Marsh at dawn, M&A setting up",
+            "MS - Makayla with trap equipment",
+            "Detail - Placing acoustic trap array",
+            "MS - Asher assembling boom pole",
+            "WS - Full setup of equipment in field"
+          ]
+        },
+        {
+          "scene": "s00a",
+          "beat": "s00a.4",
+          "title": "The hum reaction",
+          "description": "They react as the hum starts to emanate from the tall grass around them.",
+          "cast": [
+            "Makayla",
+            "Asher"
+          ],
+          "shots": [
+            "MS - Makayla and Asher stop, listening",
+            "CU - Makayla's recognition of the sound",
+            "WS - Grass around them beginning to sway",
+            "Detail - Oscillating frequency visible on equipment",
+            "CU - Asher's reaction/fear"
+          ]
+        },
+        {
+          "scene": "s00b",
+          "beat": "s00b.1",
+          "title": "Property manager greeting",
+          "description": "Dallas meets the property manager at the front door, beginning the house walkthrough.",
+          "cast": [
+            "Dallas",
+            "Property Manager"
+          ],
+          "shots": [
+            "WS - Front entrance, property manager greeting Dallas",
+            "MS - Handshake or greeting moment",
+            "CU - Dallas's face, polite introduction",
+            "MS - Property manager gesturing to house",
+            "WS - Front door opening to interior"
+          ]
+        },
+        {
+          "scene": "s00b",
+          "beat": "s00b.2",
+          "title": "Interior walkthrough",
+          "description": "Kinetic tour of the house interior - kitchen, living room, upstairs - moving through spaces quickly.",
+          "cast": [
+            "Dallas",
+            "Property Manager"
+          ],
+          "shots": [
+            "MS - Walking through kitchen",
+            "WS - Living room overview",
+            "MS - Dallas and PM navigating stairs",
+            "CU - Dallas examining rooms",
+            "WS - Hallway view of multiple spaces"
+          ]
+        },
+        {
+          "scene": "s00b",
+          "beat": "s00b.3",
+          "title": "Attic moment",
+          "description": "They enter the attic - first full view of Dallas's face in this space, reaction to emptiness.",
+          "cast": [
+            "Dallas",
+            "Property Manager"
+          ],
+          "shots": [
+            "WS - Attic space, dusty and empty",
+            "MS - Dallas entering attic",
+            "CU - Dallas's face, full view, contemplative",
+            "WS - Dallas looking around attic",
+            "Detail - Scattered items or past tenant detritus"
+          ]
+        },
+        {
+          "scene": "s01",
+          "beat": "s01.1",
+          "title": "Makayla and Asher arrive",
+          "description": "Makayla and Asher pull up to the Dallas house with equipment and gear.",
+          "cast": [
+            "Makayla",
+            "Asher"
+          ],
+          "shots": [
+            "WS - House exterior, vehicle arriving",
+            "MS - Car pulling into driveway",
+            "MS - Makayla and Asher stepping out",
+            "Detail - Equipment being unloaded",
+            "WS - Two of them approaching house"
+          ]
+        },
+        {
+          "scene": "s01",
+          "beat": "s01.2",
+          "title": "Dallas greets them",
+          "description": "Dallas emerges from house, first meeting with Makayla and Asher on the property.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher"
+          ],
+          "shots": [
+            "WS - Dallas at door, M&A in yard",
+            "MS - Greetings and handshakes",
+            "CU - Dallas's face meeting them",
+            "WS - All three at house entrance",
+            "MS - Conversation beginning"
+          ]
+        },
+        {
+          "scene": "s01",
+          "beat": "s01.3",
+          "title": "House and grounds tour",
+          "description": "Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher"
+          ],
+          "shots": [
+            "WS - Group entering house",
+            "MS - Quick interior shots",
+            "WS - Exiting to back or side",
+            "WS - Viewing the tall grass from property edge",
+            "MS - All three observing the marsh"
+          ]
+        },
+        {
+          "scene": "s03",
+          "beat": "s03.1",
+          "title": "The sound begins",
+          "description": "Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "shots": [
+            "WS - Group in location, stillness",
+            "MS - Dallas recognizing the sound",
+            "CU - Dominic and Pat's confused reactions",
+            "WS - Around them, hum intensifying",
+            "Detail - Portable oscillator responding"
+          ]
+        },
+        {
+          "scene": "s03",
+          "beat": "s03.2",
+          "title": "Attempt to track it",
+          "description": "They try to locate the source - moving with equipment, oscillator in hand.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "shots": [
+            "MS - Dallas with oscillator, searching",
+            "WS - All three moving through location",
+            "Detail - Oscillator dial tracking frequency",
+            "CU - Their faces as hum builds",
+            "MS - Triangulating direction"
+          ]
+        },
+        {
+          "scene": "s03",
+          "beat": "s03.3",
+          "title": "The revelation",
+          "description": "They narrow down that the sound is coming from the tall grass itself - the source becomes clear.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "shots": [
+            "WS - Tall grass, hum at maximum",
+            "CU - Each of their faces, realization",
+            "Detail - Equipment reading peak",
+            "WS - Group facing the grass",
+            "MS - Looking at each other in shock"
+          ]
+        },
+        {
+          "scene": "s05",
+          "beat": "s05.1",
+          "title": "Merlin app search",
+          "description": "They consult field guides and use the Merlin app to try identifying what could produce this sound.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "shots": [
+            "MS - Dallas holding app on phone/device",
+            "CU - Screen showing bird identification interface",
+            "MS - Dominic and Pat looking over",
+            "Detail - Flipping through field guide pages",
+            "WS - Group reviewing findings"
+          ]
+        },
+        {
+          "scene": "s05",
+          "beat": "s05.2",
+          "title": "Dead ends",
+          "description": "They realize no known bird species matches the frequency or pattern - confusion and concern.",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "shots": [
+            "CU - Dallas's concerned face",
+            "MS - Dominic shaking head",
+            "Detail - Pat pointing to field guide, uncertain",
+            "MS - Exchange of worried looks",
+            "WS - Three of them, perplexed"
+          ]
+        }
+      ],
       "scenes": [
         "s00a",
         "s00b",
