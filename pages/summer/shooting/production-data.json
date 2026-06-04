@@ -616,11 +616,10 @@
   "shootPlan": [
     {
       "day": 0,
-      "crewCall": "CALL TIME: 1:30 PM - BRANFORD TRAIN STATION (s00a montage) | PICKUP: Matt Grant in Westville at 2:30 PM | LOCATION 2: 72 Lake St, Hamden (Jerry's house) at 3:00 PM",
+      "crewCall": "CALL TIME: 1:30 PM\nBranford Train Station (s00a montage)\nPickup: Matt Grant in Westville at 2:30 PM\nLocation 2: 72 Lake St, Hamden (s00b) at 3:00 PM",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
+        { "role": "Director / Camera", "name": "Alex Gonzalez" },
+        { "role": "Audio", "name": "Chris Batista" },
         { "role": "Clapper", "name": "TBD" }
       ],
       "locationDetails": [
@@ -629,34 +628,30 @@
         "72 Lake St, Hamden (Jerry's House - Property Manager scene)"
       ],
       "equipment": [
-        "Camera body + charged batteries + formatted media cards",
-        "Gimbal package - DJI RS 4 Pro, plate, quick release, tools, balance checklist",
-        "Tripod package - tripod, fluid head, quick release plate, camera mount",
-        "Primary video lens for locked-off tripod shots",
-        "Secondary lens or zoom option for gimbal moves",
-        "On-camera monitor or viewfinder for framing",
-        "Audio recorder / field recorder",
-        "Boom pole + shotgun mic",
-        "Lav mic or backup wired mic option",
-        "Headphones for monitoring sync, tone, and noise floor",
-        "XLR cable, mic cable, and headphone extension",
-        "Slates / clapboard for sync reference",
-        "Gaffer tape, lens cloth, lens blower, and small toolkit",
-        "Power strip / battery charger / spare USB-C and camera power cables"
+        "• Camera body + charged batteries + formatted media cards",
+        "• Gimbal package - DJI RS 4 Pro, plate, quick release, tools, balance checklist",
+        "• Tripod package - tripod, fluid head, quick release plate, camera mount",
+        "• Primary video lens for locked-off tripod shots",
+        "• Secondary lens or zoom option for gimbal moves",
+        "• On-camera monitor or viewfinder for framing",
+        "• Audio recorder / field recorder",
+        "• Shotgun mic with windscreen",
+        "• Lav mic or backup wired mic option",
+        "• Headphones for monitoring",
+        "• XLR cables, mic cables, and headphone extension",
+        "• Slates / clapboard for sync reference",
+        "• Gaffer tape, lens cloth, lens blower, and small toolkit",
+        "• Power strip / battery charger / spare USB-C and camera power cables"
       ],
       "props": [
-        "Dallas's suitcase or worn travel bag",
-        "Trail cameras (audio and visual)",
-        "Boom pole (assembled in pieces)",
-        "Acoustic trap equipment (small, microphone array)",
-        "Folding trowel (military-issue, small)",
-        "Portable oscillator tucked in bag or jacket (not used yet)",
-        "Leaf litter and moss for concealment",
-        "Suitcase or worn travel bag - Dallas carries to front door",
-        "Moving boxes (3-4) - in background/porch, partially pre-positioned",
-        "Cheap/worn furniture (futon, pushed chairs) - pre-existing location dressing",
-        "Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.) - specific visual",
-        "Clipboard or folder (Property Manager) - keeps hands busy during walkthrough"
+        "• Dallas's suitcase or worn travel bag",
+        "• Folding trowel (military-issue, small)",
+        "• Portable oscillator tucked in bag or jacket (not used yet)",
+        "• Leaf litter and moss for concealment",
+        "• Moving boxes (3-4) - in background/porch, partially pre-positioned",
+        "• Cheap/worn furniture (futon, pushed chairs) - pre-existing location dressing",
+        "• Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.)",
+        "• Clipboard or folder (Property Manager)"
       ],
       "scenes": [
         "s00a",
@@ -754,11 +749,10 @@
     },
     {
       "day": 1,
-      "crewCall": "CALL TIME: 4:30 PM - ALEX'S HOUSE, 206 SAINT JOHN ST",
+      "crewCall": "CALL TIME: 4:30 PM\nAlex's House, 206 Saint John St",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
+        { "role": "Director / Camera", "name": "Alex Gonzalez" },
+        { "role": "Audio", "name": "Chris Batista" },
         { "role": "Clapper", "name": "TBD" }
       ],
       "locationDetails": [
@@ -870,11 +864,10 @@
     },
     {
       "day": 2,
-      "crewCall": "CALL TIME: 4:00 PM - EAST HAVEN NURSERY",
+      "crewCall": "CALL TIME: 4:00 PM\nEast Haven Nursery",
       "crew": [
-        { "role": "Director", "name": "Alex" },
-        { "role": "Camera", "name": "Alex" },
-        { "role": "Audio", "name": "TBD" },
+        { "role": "Director / Camera", "name": "Alex Gonzalez" },
+        { "role": "Audio", "name": "Chris Batista" },
         { "role": "Clapper", "name": "TBD" }
       ],
       "locationDetails": [

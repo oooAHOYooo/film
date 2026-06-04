@@ -90,6 +90,67 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;');
 }
 
+function groupEquipmentByCategory(equipmentList) {
+  const categories = {
+    'Camera': [],
+    'Lenses': [],
+    'Audio': [],
+    'Support / Rigging': [],
+    'Power / Batteries': [],
+    'Accessories': []
+  };
+
+  const categoryKeywords = {
+    'Camera': ['camera body', 'gimbal', 'monitor', 'viewfinder'],
+    'Lenses': ['lens', 'zoom'],
+    'Audio': ['audio recorder', 'field recorder', 'shotgun', 'lav mic', 'headphones', 'mic cable', 'xlr', 'boom'],
+    'Support / Rigging': ['tripod', 'fluid head', 'quick release', 'plate'],
+    'Power / Batteries': ['battery', 'charger', 'power', 'usb'],
+    'Accessories': ['gaffer', 'lens cloth', 'blower', 'toolkit', 'tape', 'slate', 'clapper']
+  };
+
+  equipmentList.forEach(item => {
+    const cleanItem = item.replace(/^•\s*/, '').trim();
+    let assigned = false;
+
+    for (const [category, keywords] of Object.entries(categoryKeywords)) {
+      if (keywords.some(kw => cleanItem.toLowerCase().includes(kw))) {
+        categories[category].push(cleanItem);
+        assigned = true;
+        break;
+      }
+    }
+
+    if (!assigned) {
+      categories['Accessories'].push(cleanItem);
+    }
+  });
+
+  return categories;
+}
+
+function renderEquipmentGroupsHtml(equipmentList) {
+  if (!equipmentList || equipmentList.length === 0) {
+    return '<div style="color:#666; font-style:italic;">No equipment listed for this day.</div>';
+  }
+
+  const groups = groupEquipmentByCategory(equipmentList);
+  let html = '';
+
+  for (const [category, items] of Object.entries(groups)) {
+    if (items.length === 0) continue;
+
+    html += `<div style="margin-bottom: 12px;">
+      <div style="font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #333; margin-bottom: 4px;">${category}</div>
+      <div style="margin-left: 8px;">
+        ${items.map(item => `<div style="margin-bottom: 2px; font-size: 0.84rem;">• ${escapeHtml(item)}</div>`).join('')}
+      </div>
+    </div>`;
+  }
+
+  return html;
+}
+
 function normalizeSceneAnchor(sceneId, rows) {
   const raw = String(sceneId || '').trim();
   const lower = raw.toLowerCase();
@@ -1019,18 +1080,27 @@ function generateDayHtml(dayNum, rows, productionData) {
 
             <section class="compact-block">
                 <div class="compact-label">Crew Call</div>
-                <div class="compact-panel" style="font-weight:700;">${escapeHtml(crewCall)}</div>
+                <div class="compact-panel" style="padding: 12px 10px;">
+                    <div style="font-weight:700; font-size: 0.95rem; line-height: 1.6;">
+                        ${crewCall.split('\n').map(line => `<div style="margin-bottom: 4px;">${escapeHtml(line.trim())}</div>`).join('')}
+                    </div>
+                </div>
             </section>
 
             <section class="compact-block">
                 <div class="compact-label">Crew</div>
                 <div class="compact-panel">
-                    <div style="font-size:0.84rem;">
-                        ${planEntry && planEntry.crew && Array.isArray(planEntry.crew) && planEntry.crew.length > 0
-                          ? planEntry.crew.map(member => `<div style="margin-bottom: 8px;"><strong>${escapeHtml(member.role)}:</strong> ${escapeHtml(member.name)}</div>`).join('')
-                          : '<div style="color:#666; font-style:italic;">Crew TBD</div>'
-                        }
-                    </div>
+                    ${planEntry && planEntry.crew && Array.isArray(planEntry.crew) && planEntry.crew.length > 0
+                      ? `<table style="width:100%; border-collapse:collapse; font-size:0.84rem;">
+                          ${planEntry.crew.map(member => `
+                            <tr style="border-bottom: 1px solid #ddd;">
+                              <td style="padding: 8px; font-weight: 700; width: 45%;">${escapeHtml(member.role)}</td>
+                              <td style="padding: 8px; text-align: left;">${escapeHtml(member.name)}</td>
+                            </tr>
+                          `).join('')}
+                        </table>`
+                      : '<div style="color:#666; font-style:italic; padding: 8px;">Crew TBD</div>'
+                    }
                 </div>
             </section>
 
@@ -1048,7 +1118,7 @@ function generateDayHtml(dayNum, rows, productionData) {
                 </div>
                 <div class="compact-panel">
                     <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">EQUIPMENT</h3>
-                    <div style="font-size:0.84rem; min-height:40px; white-space: pre-wrap;">${summaryEquipment.length > 0 ? summaryEquipment.map(e => `<div style="margin-bottom: 2px;">${escapeHtml(e)}</div>`).join('') : '<div style="color:#666; font-style:italic;">No equipment listed for this day.</div>'}</div>
+                    <div style="font-size:0.84rem; min-height:40px;">${renderEquipmentGroupsHtml(summaryEquipment)}</div>
                 </div>
                 <div class="compact-panel">
                     <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">LOCATION DETAILS</h3>
