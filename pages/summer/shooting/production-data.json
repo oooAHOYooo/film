@@ -1085,123 +1085,6 @@
       ],
       "shotList": [
         {
-          "scene": "s00a",
-          "beat": "s00a.1",
-          "title": "Train arrival",
-          "description": "Dallas arrives at Branford station by train early morning, stepping onto the platform.",
-          "cast": [
-            "Dallas"
-          ],
-          "shots": [
-            "WS - Train pulling in, platform establishing",
-            "MS - Dallas exiting train with luggage",
-            "CU - Dallas on platform, first view of Branford",
-            "WS - Empty morning platform",
-            "MS - Dallas orientating himself with surroundings"
-          ]
-        },
-        {
-          "scene": "s00a",
-          "beat": "s00a.2",
-          "title": "Streets montage",
-          "description": "Dallas navigates through early morning Branford streets with his bag, arriving at the rental house.",
-          "cast": [
-            "Dallas"
-          ],
-          "shots": [
-            "WS - Branford street, morning light",
-            "MS - Dallas walking with suitcase",
-            "WS - Passing storefronts and town landmarks",
-            "MS - Dallas approaching the house",
-            "CU - Dallas at the front door"
-          ]
-        },
-        {
-          "scene": "s00a",
-          "beat": "s00a.3",
-          "title": "Makayla and Asher setup",
-          "description": "Meanwhile, Makayla and Asher are in the marsh setting up acoustic traps and equipment.",
-          "cast": [
-            "Makayla",
-            "Asher"
-          ],
-          "shots": [
-            "WS - Marsh at dawn, M&A setting up",
-            "MS - Makayla with trap equipment",
-            "Detail - Placing acoustic trap array",
-            "MS - Asher assembling boom pole",
-            "WS - Full setup of equipment in field"
-          ]
-        },
-        {
-          "scene": "s00a",
-          "beat": "s00a.4",
-          "title": "The hum reaction",
-          "description": "They react as the hum starts to emanate from the tall grass around them.",
-          "cast": [
-            "Makayla",
-            "Asher"
-          ],
-          "shots": [
-            "MS - Makayla and Asher stop, listening",
-            "CU - Makayla's recognition of the sound",
-            "WS - Grass around them beginning to sway",
-            "Detail - Oscillating frequency visible on equipment",
-            "CU - Asher's reaction/fear"
-          ]
-        },
-        {
-          "scene": "s00b",
-          "beat": "s00b.1",
-          "title": "Property manager greeting",
-          "description": "Dallas meets the property manager at the front door, beginning the house walkthrough.",
-          "cast": [
-            "Dallas",
-            "Property Manager"
-          ],
-          "shots": [
-            "WS - Front entrance, property manager greeting Dallas",
-            "MS - Handshake or greeting moment",
-            "CU - Dallas's face, polite introduction",
-            "MS - Property manager gesturing to house",
-            "WS - Front door opening to interior"
-          ]
-        },
-        {
-          "scene": "s00b",
-          "beat": "s00b.2",
-          "title": "Interior walkthrough",
-          "description": "Kinetic tour of the house interior - kitchen, living room, upstairs - moving through spaces quickly.",
-          "cast": [
-            "Dallas",
-            "Property Manager"
-          ],
-          "shots": [
-            "MS - Walking through kitchen",
-            "WS - Living room overview",
-            "MS - Dallas and PM navigating stairs",
-            "CU - Dallas examining rooms",
-            "WS - Hallway view of multiple spaces"
-          ]
-        },
-        {
-          "scene": "s00b",
-          "beat": "s00b.3",
-          "title": "Attic moment",
-          "description": "They enter the attic - first full view of Dallas's face in this space, reaction to emptiness.",
-          "cast": [
-            "Dallas",
-            "Property Manager"
-          ],
-          "shots": [
-            "WS - Attic space, dusty and empty",
-            "MS - Dallas entering attic",
-            "CU - Dallas's face, full view, contemplative",
-            "WS - Dallas looking around attic",
-            "Detail - Scattered items or past tenant detritus"
-          ]
-        },
-        {
           "scene": "s01",
           "beat": "s01.1",
           "title": "Makayla and Asher arrive",
@@ -1346,8 +1229,6 @@
         }
       ],
       "scenes": [
-        "s00a",
-        "s00b",
         "s01",
         "s03",
         "s05"
