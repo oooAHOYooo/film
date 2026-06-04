@@ -619,7 +619,7 @@
       "crewCall": "12:45 PM = Dallas Meets at Alexs\n1:15 PM - 2:15 PM = Branford Train Station (neighborhood walks)\n2:30 PM = Pickup: Matt Grant in Westville\n3:00 PM = 72 Lake St, Hamden (property manager scene)\n5:30 PM = Crew call and cleanup and departure",
       "crew": [
         { "role": "Director / Camera", "name": "Alex Gonzalez" },
-        { "role": "Audio", "name": "Chris Batista" },
+        { "role": "Audio", "name": "Chris Battista" },
         { "role": "Clapper", "name": "TBD" }
       ],
       "locationDetails": [
@@ -631,13 +631,13 @@
         "• Camera body + charged batteries + formatted media cards",
         "• Gimbal package - DJI RS 4 Pro, plate, quick release, tools, balance checklist",
         "• Tripod package - tripod, fluid head, quick release plate, camera mount",
+        "• Monopod package",
         "• Primary video lens for locked-off tripod shots",
         "• Secondary lens or zoom option for gimbal moves",
+        "• ND filter",
         "• On-camera monitor or viewfinder for framing",
         "• Audio recorder / field recorder",
         "• Shotgun mic with windscreen",
-        "• Lav mic or backup wired mic option",
-        "• Headphones for monitoring",
         "• XLR cables, mic cables, and headphone extension",
         "• Slates / clapboard for sync reference",
         "• Gaffer tape, lens cloth, lens blower, and small toolkit",
@@ -749,15 +749,32 @@
     },
     {
       "day": 1,
-      "crewCall": "CALL TIME: 4:30 PM\nAlex's House, 206 Saint John St",
+      "crewCall": "5:00 PM = Meet at Alex's House\n5:30 PM = Arrive at Jerry's House (72 Lake St, Hamden)\n5:45 PM = Camera Preps\n6:15 PM = Start Filming\n8:45 PM = Wrap",
       "crew": [
         { "role": "Director / Camera", "name": "Alex Gonzalez" },
-        { "role": "Audio", "name": "Chris Batista" },
+        { "role": "Audio", "name": "Chris Battista" },
         { "role": "Clapper", "name": "TBD" }
       ],
       "locationDetails": [
         "Alex's House",
         "206 Saint John St"
+      ],
+      "equipment": [
+        "• Camera body + charged batteries + formatted media cards",
+        "• Gimbal package - DJI RS 4 Pro, plate, quick release, tools, balance checklist",
+        "• Tripod package - tripod, fluid head, quick release plate, camera mount",
+        "• Monopod package",
+        "• Primary video lens for locked-off tripod shots",
+        "• Secondary lens or zoom option for gimbal moves",
+        "• ND filter",
+        "• On-camera monitor or viewfinder for framing",
+        "• Audio recorder / field recorder",
+        "• Shotgun mic with windscreen",
+        "• XLR cables, mic cables, and headphone extension",
+        "• Slates / clapboard for sync reference",
+        "• Gaffer tape, lens cloth, lens blower, and small toolkit",
+        "• Lighting kit",
+        "• Power strip / battery charger / spare USB-C and camera power cables"
       ],
       "shotList": [
         {

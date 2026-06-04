@@ -102,9 +102,9 @@ function groupEquipmentByCategory(equipmentList) {
 
   const categoryKeywords = {
     'Camera': ['camera body', 'gimbal', 'monitor', 'viewfinder'],
-    'Lenses': ['lens', 'zoom'],
+    'Lenses': ['lens', 'zoom', 'filter'],
     'Audio': ['audio recorder', 'field recorder', 'shotgun', 'lav mic', 'headphones', 'mic cable', 'xlr', 'boom'],
-    'Support / Rigging': ['tripod', 'fluid head', 'quick release', 'plate'],
+    'Support / Rigging': ['tripod', 'fluid head', 'quick release', 'plate', 'monopod'],
     'Power / Batteries': ['battery', 'charger', 'power', 'usb'],
     'Accessories': ['gaffer', 'lens cloth', 'blower', 'toolkit', 'tape', 'slate', 'clapper']
   };
@@ -721,12 +721,11 @@ function generateDayHtml(dayNum, rows, productionData) {
   const holidays = productionData.holidays || {};
   const holiday = holidays[dateStr];
 
-  const sortedDays = Object.keys(calendar).map(Number).sort((a,b) => a - b);
+  const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+  const sortedDays = shootPlan.map(p => Number(p.day)).sort((a,b) => a - b);
   const currentIndex = sortedDays.indexOf(Number(dayNum));
   const prevDay = currentIndex > 0 ? sortedDays[currentIndex - 1] : null;
   const nextDay = currentIndex >= 0 && currentIndex < sortedDays.length - 1 ? sortedDays[currentIndex + 1] : null;
-
-  const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
   const planEntry = shootPlan.find((entry) => Number(entry.day) === Number(dayNum));
   const totalShootDays = shootPlan.filter((entry) => !entry.special).length || Object.keys(calendar).length;
 
@@ -1029,9 +1028,9 @@ function generateDayHtml(dayNum, rows, productionData) {
     <body style="background:white; color:black;">
         <div class="main-content">
             <div class="notice-bar no-print">
-                ${prevDay ? `<a href="${prevDay}.html" style="color:#0366d6; text-decoration:none;">&larr; Day ${prevDay}</a>` : `<span></span>`}
+                ${prevDay !== null ? `<a href="${prevDay}.html" style="color:#0366d6; text-decoration:none;">&larr; Day ${prevDay}</a>` : `<span></span>`}
                 <a href="../../shooting_production.html" style="color:#666; text-decoration:none;">Dashboard</a>
-                ${nextDay ? `<a href="${nextDay}.html" style="color:#0366d6; text-decoration:none;">Day ${nextDay} &rarr;</a>` : `<span></span>`}
+                ${nextDay !== null ? `<a href="${nextDay}.html" style="color:#0366d6; text-decoration:none;">Day ${nextDay} &rarr;</a>` : `<span></span>`}
             </div>
             <header class="callsheet-header">
                 <div>
