@@ -1265,10 +1265,10 @@
     },
     {
       "day": 5,
-      "crewCall": "CALL TIME: 3:00 PM - EAST HAVEN NURSERY",
+      "crewCall": "CALL TIME: 4:30 PM - ALEX'S HOUSE",
       "locationDetails": [
-        "East Haven Nursery grounds",
-        "Marsh edge and surrounding areas"
+        "Alex's House",
+        "Surrounding areas and marsh edge"
       ],
       "shotList": [
         {
