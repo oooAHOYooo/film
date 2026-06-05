@@ -142,7 +142,7 @@ cast: Dallas
 ### scene: mr-mikes-warning
 duration: 90
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 11
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Makayla, Asher, Mr Mike
@@ -150,7 +150,7 @@ cast: Dallas, Dominic, Makayla, Asher, Mr Mike
 ### scene: final-echoes
 duration: 60
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 7
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice
@@ -216,7 +216,7 @@ cast: Dallas
 ### scene: entering-grass
 duration: 90
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 7
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
@@ -224,7 +224,7 @@ cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 ### scene: the-coordinates
 duration: 150
 shoot-days: 0.5
-assigned-day: 10
+assigned-day: 8
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
@@ -232,7 +232,7 @@ cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
 ### scene: creature-rescue
 duration: 120
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 7
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
@@ -484,6 +484,65 @@ props:
   - Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.)
   - Clipboard or folder (Property Manager)
 
+#### CAMERA & AUDIO SETTINGS
+
+**CAMERA: RED Komodo 6K**
+- Mount: Canon RF
+- Native resolution: 6K DCI (6144 x 3160) with Super 35 sensor coverage
+- Codec: RED RAW (REDCODE)
+- Media: CFast 2.0 (512GB + 256GB cards) — format before each location, back up immediately after wrap
+- Frame rates: 24fps (primary), 23.976fps
+- Color science: RED default (adjust in post if needed)
+- White balance: Daylight (5600K) for exterior, adjust per location
+- ISO/Gain: Keep base ISO; use ND filters for exposure control in bright conditions
+- External monitor: FEELWORLD FW703 7" via 12G SDI — verify connection before rolling
+- Anamorphic lenses: SIRUI 1.33x S35 (35mm, 50mm, 75mm F1.8) — 1.33x squeeze, desqueeze to ~2.37:1 in post
+- Framing: Account for 1.33x horizontal squeeze in live view; characteristic anamorphic bokeh and horizontal flares
+- Record format: Verify CFast card status and space before each setup
+
+**AUDIO: Zoom H4n Essentials + Boom Pole**
+- Recorder: Zoom H4n Essentials
+- Input: XLR (mic input on H4n)
+- Microphone: Shotgun mic on boom pole with windscreen
+- Sample rate: 48kHz, 24-bit
+- Levels: Set to -12dB headroom; monitor throughout recording
+- Backup: Record locally on H4n SD card + sync timecode with camera if possible
+- Safety: Keep backup audio levels lower on second track as safety take
+- Wind protection: Windscreen always on boom pole for exterior work
+
+**Pre-Shoot Checklist:**
+- Verify RED Komodo battery charge and CFast card format/space before each location
+- Test H4n recorder and levels with boom pole at each location
+- Verify FEELWORLD monitor SDI connection and live view focus peaking
+- Confirm lens mount and anamorphic squeeze framing in live view
+- Backup all RED RAW media to external drive immediately after each wrap
+- Verify timecode sync between camera and audio if multi-camera
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
+
 #### Beat: s00a.1 — Train station arrival
 scene: s00a
 cast: Dallas
@@ -566,6 +625,31 @@ equipment:
   - Gaffer tape, lens cloth, lens blower, and small toolkit
   - Lighting kit
   - Power strip / battery charger / spare USB-C and camera power cables
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s02.1 — Kitchen hum
 scene: s02
@@ -656,6 +740,31 @@ crew:
 locations:
   - East Haven Nursery
   - Main grounds and marsh access
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s08.1 — Into the neighborhoods
 scene: s08
@@ -751,6 +860,31 @@ crew:
 locations:
   - Alex's House (crew meet)
   - Jerry's House (72 Lake St, Hamden) - primary location
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s01.1 — Makayla and Asher arrive
 scene: s01
@@ -865,6 +999,31 @@ locations:
   - Dallas House interior
   - Various group locations
 
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
+
 #### Beat: s14b.1 — Field journal discovery
 scene: s14b
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
@@ -956,6 +1115,31 @@ crew:
 locations:
   - Alex's House
   - Surrounding areas and marsh edge
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s08d.1 — Return through darkness
 scene: s08d
@@ -1058,6 +1242,31 @@ crew:
 locations:
   - Dallas House interior and exterior
   - Various rooms and spaces
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s15a.1 — Setting up the experiment
 scene: s15a
@@ -1183,6 +1392,31 @@ locations:
   - East Haven Nursery
   - Marsh entrance and tall grass field
 
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
+
 #### Beat: s13.1 — Entering the grass
 scene: s13
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
@@ -1263,60 +1497,118 @@ locations:
   - Dallas House interior
   - Dining area and rooms
 
-#### Beat: s24.1 — The perimeter established
-scene: s24
-cast: Dallas, Makayla, Asher, Dominic
-description: The group sets up a defensive perimeter around the house with equipment and precautions.
-shots:
-  - WS - House with group setting up
-  - MS - Installing equipment at doors/windows
-  - Detail - Oscillators placed strategically
-  - CU - Dallas coordinating setup
-  - WS - Perimeter complete
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
 
-#### Beat: s24.2 — Waiting for night
-scene: s24
-cast: Dallas, Makayla, Asher, Dominic
-description: They prepare and wait as evening approaches - tension builds.
-shots:
-  - MS - Checking equipment one more time
-  - CU - Anxious faces
-  - WS - House interior, guards in position
-  - Detail - Clock or time passing
-  - MS - Quiet conversations
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
 
-#### Beat: s25.1 — The last dinner
-scene: s25
-cast: Dallas, Makayla, Asher, Dominic
-description: They gather for a meal - possibly their last normal moment before the final confrontation.
-shots:
-  - WS - Dining table set
-  - MS - Group seated at table
-  - CU - Individual faces, tension and resignation
-  - Detail - Food and drink
-  - WS - All together, a final moment
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
 
-#### Beat: s25.2 — Unspoken goodbyes
-scene: s25
-cast: Dallas, Makayla, Asher, Dominic
-description: Conversations between them - resolving tensions, saying important things.
-shots:
-  - MS - Two person conversations
-  - CU - Emotional exchange between Dallas and Makayla
-  - CU - Dominic and Asher understanding
-  - WS - Group moment
-  - Detail - Hands touching or clasping
+FRAMING:
+• Frame guides: 2.39:1
 
-#### Beat: s26.1 — It arrives
-scene: s26
-cast: Dallas, Makayla, Asher, Dominic
-description: The creature reaches the house - the hum becomes deafening, the perimeter is tested.
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
+
+#### Beat: s07.1 — Coordinates discovered
+scene: s07
+cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+description: The group deciphers a coordinate pattern from Sierra's notes and the hum frequency, pinpointing a location deep in the marsh.
 shots:
-  - Detail - Oscillators spiking
-  - WS - House lights flickering or failing
-  - CU - Faces in fear
-  - WS - Shadows or shapes at windows/doors
-  - MS - Bracing for impact
+  - WS - Group gathered around desk with maps and journal
+  - MS - Dallas cross-referencing journal entries with oscillator readings
+  - CU - Coordinates being circled on map
+  - Detail - Frequency notation matching Sierra's field drawings
+  - CU - Faces as the location becomes clear
+
+#### Beat: s07.2 — The plan forms
+scene: s07
+cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+description: With coordinates identified, the group debates whether to act — tension between urgency and caution.
+shots:
+  - WS - Group around table, discussion heating up
+  - MS - Dallas making the case for going
+  - CU - Mr. Mike's skeptical reaction
+  - MS - Janice and Makayla exchanging looks
+  - WS - The group, divided but leaning toward action
+
+#### Beat: s18.1 — The life group arrives
+scene: s18
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+description: An unexpected crowd arrives — the Life Group, led by Janice, showing up for a scheduled gathering nobody cancelled.
+shots:
+  - WS - Cars pulling up, people filing out
+  - MS - Janice at front, leading the group in
+  - CU - Dallas's face, unprepared for this
+  - WS - Life Group moving into the house, filling the space
+  - MS - Makayla pulling Dallas aside
+
+#### Beat: s18.2 — Awkward coexistence
+scene: s18
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+description: The Life Group settles in while the core group scrambles to conceal their investigation and equipment.
+shots:
+  - WS - Living room crowded with Life Group and scattered gear
+  - MS - Someone hastily moving equipment out of view
+  - CU - A Life Group member noticing something strange
+  - MS - Dominic deflecting a question casually
+  - WS - Two worlds awkwardly sharing the same space
+
+#### Beat: s19.1 — The hymn begins
+scene: s19
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+description: The Life Group begins singing — a slow, resonant hymn with a frequency eerily close to the hum.
+shots:
+  - WS - Life Group arranged, Janice leading
+  - MS - Voices rising, hymn building
+  - Detail - Oscillator on shelf beginning to flicker
+  - CU - Dallas hearing it, registering the similarity
+  - WS - The room vibrating with sound
+
+#### Beat: s19.2 — Frequencies align
+scene: s19
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+description: As the hymn swells, the hum beneath it rises in response — the frequencies begin to mirror each other.
+shots:
+  - Detail - Oscillator reading climbing toward 115.3
+  - CU - Dallas's eyes going wide
+  - MS - Makayla clocking it, mouthing to Dallas
+  - WS - Life Group singing, unaware
+  - Detail - Glass on table beginning to vibrate
+
+#### Beat: s20.1 — Red eyes in the dark
+scene: s20
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+description: As the hymn peaks, someone near a window sees the creature — two red points of light in the dark grass.
+shots:
+  - WS - Window, Life Group in foreground, dark yard beyond
+  - CU - A Life Group member stopping mid-song, staring
+  - POV - Through window glass: two red glowing eyes at the grass line
+  - CU - Horror crossing their face
+  - WS - Moment before the room realizes
+
+#### Beat: s20.2 — The secret is out
+scene: s20
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+description: The Life Group member screams. The room erupts. Dallas can no longer contain what's been happening.
+shots:
+  - WS - Chaos, people scrambling
+  - MS - Dallas stepping forward, no longer hiding it
+  - CU - Janice's face — anger or fear at Dallas
+  - MS - Dallas addressing everyone, urgent
+  - WS - The room fractured — some running, some frozen
 
 ---
 
@@ -1338,6 +1630,31 @@ crew:
 
 locations:
   - Dallas House interior and exterior
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s26.pickup.1 — Additional creature effects
 scene: s26
@@ -1395,6 +1712,31 @@ locations:
   - Marsh boundary
   - Tall grass field
 
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
+
 #### Beat: s07b.pickup.1 — The warning additional coverage
 scene: s07b
 cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
@@ -1451,6 +1793,31 @@ crew:
 locations:
   - Dallas House interior
   - Various rooms
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s17.1 — Resonance begins
 scene: s17
@@ -1521,6 +1888,31 @@ locations:
   - Branford landscape
   - Marsh edges
 
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
+
 ---
 
 ### Day 11 — 2026-06-28
@@ -1546,6 +1938,31 @@ locations:
   - Marsh areas
   - Forest locations
   - Open fields
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s07b.1 — Mr. Mike's warning
 scene: s07b
@@ -1592,6 +2009,31 @@ crew:
 locations:
   - Branford Town Green
   - Branford streets and areas
+
+#### SETTINGS OVERVIEW
+**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+
+• Resolution: 6144x3240 (6K 17:9)
+• FPS: 23.976
+• Shutter: 180°
+• Codec: REDCODE RAW
+• Compression: 8:1
+• ISO: 800
+• Color: REDWideGamutRGB / Log3G10
+• White Balance: 5600K (or manual)
+
+ANAMORPHIC:
+• Lens squeeze: 1.33x
+• Camera desqueeze: OFF
+• Monitor desqueeze: 1.33x ✅
+
+FRAMING:
+• Frame guides: 2.39:1
+
+NOTES:
+• Do NOT use 1.5x or 2x
+• Do NOT bake desqueeze
+• Record full sensor, fix in post
 
 #### Beat: s04.1 — The fellowship gathers
 scene: s04
