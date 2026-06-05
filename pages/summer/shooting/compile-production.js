@@ -1089,16 +1089,27 @@ function generateDayHtml(dayNum, rows, productionData) {
                         const scheduleItems = [];
 
                         lines.forEach(line => {
-                            // Extract time/time range from line (format: "12:45 PM" or "1:15 PM - 2:15 PM")
-                            // Looking for pattern: time = location or time - time = location
-                            const timeRangeMatch = line.match(/^([\d:APM\s\-]+)\s*=\s*(.+)$/i);
+                            // Format: "LABEL: time — detail" or "LABEL: time - time — detail"
+                            const colonMatch = line.match(/^([A-Z]+):\s*(.+)$/);
 
-                            if (timeRangeMatch) {
-                                const time = timeRangeMatch[1].trim();
-                                const location = timeRangeMatch[2].trim();
+                            if (colonMatch) {
+                                const label = colonMatch[1];
+                                const content = colonMatch[2].trim();
 
-                                if (location) {
-                                    scheduleItems.push({ time, location });
+                                // Extract time (can be single "HH:MM AM/PM" or range "HH:MM AM/PM - HH:MM AM/PM")
+                                const timeMatch = content.match(/^([\d:]+\s*(?:AM|PM)(?:\s*-\s*[\d:]+\s*(?:AM|PM))?)/i);
+
+                                if (timeMatch) {
+                                    const time = timeMatch[1].trim();
+                                    // Get detail after time (remove leading — or dash if present)
+                                    const detail = content.replace(/^[\d:\s\-APM]+/i, '').replace(/^[—\-]\s*/, '').trim() || label;
+
+                                    if (time) {
+                                        scheduleItems.push({ time, location: detail || label });
+                                    }
+                                } else {
+                                    // No time found, just use the whole content
+                                    scheduleItems.push({ time: label, location: content });
                                 }
                             }
                         });
