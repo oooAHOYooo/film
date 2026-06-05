@@ -19,6 +19,7 @@ chronological-start-day: 1
 7: 2026-06-19
 8: 2026-06-20
 9: 2026-06-26
+10: 2026-06-27
 11: 2026-06-28
 12: 2026-07-01
 13: 2026-07-02
@@ -393,7 +394,7 @@ cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
 ### scene: aftermath
 duration: 90
 shoot-days: 0.5
-assigned-day: 13
+assigned-day: 10
 location: EXT. Jerry's House — Afternoon
 key-elements: 
 production-notes: Afternoon shoot before nursery run
@@ -402,7 +403,7 @@ cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
 ### scene: full-circle
 duration: 90
 shoot-days: 0.5
-assigned-day: 13
+assigned-day: 10
 key-elements: 
 production-notes: Wraps
 cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
@@ -1508,6 +1509,31 @@ shots:
 
 ---
 
+### Day 10 — 2026-06-27
+
+scenes: s27, s28
+
+crew-call:
+  CALL: 6:00 AM
+  MEET: Jerry's House (72 Lake St, Hamden)
+  SETUP: 6:30 AM — Camera preps
+  SHOOT: 7:00 AM — s27 · Aftermath & gathering survivors
+  SHOOT: 9:00 AM — s28 · Full circle
+  WRAP: 12:00 PM
+
+crew:
+  - Director: Alex
+  - Camera: Alex
+  - Audio: TBD
+  - Clapper: TBD
+
+locations:
+  - Jerry's House exterior
+  - Branford landscape
+  - Marsh edges
+
+---
+
 ### Day 11 — 2026-06-28
 
 scenes: s07b, s16
@@ -1613,72 +1639,16 @@ shots:
 
 ---
 
-### Day 13 — 2026-07-02
-
-scenes: s27, s28
+### Day 13 — 2026-07-02 (Pickup Day)
 
 crew-call:
-  CALL: 6:00 AM
-  MEET: Jerry's House (72 Lake St, Hamden)
-  SETUP: 6:30 AM — Camera preps
-  SHOOT: 7:00 AM — s27 · Aftermath & gathering survivors
-  SHOOT: 9:00 AM — s28 · Full circle
-  WRAP: 12:00 PM
+  Pickup and reshoots as needed
 
 crew:
   - Director: Alex
   - Camera: Alex
   - Audio: TBD
   - Clapper: TBD
-
-locations:
-  - Jerry's House exterior
-  - Branford landscape
-  - Marsh edges
-
-#### Beat: s27.1 — Final echoes
-scene: s27
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
-description: The creature's presence lingers - the hum echoes across Branford, the aftermath unfolds.
-shots:
-  - WS - Branford landscape, still hum in air
-  - CU - Individual faces processing aftermath
-  - Detail - Equipment still recording
-  - WS - Damage or signs of creature
-  - MS - People moving through town
-
-#### Beat: s27.2 — Gathering survivors
-scene: s27
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
-description: The survivors come together at Jerry's house - counting losses, assessing what happened.
-shots:
-  - WS - Group at house, some missing
-  - MS - Reuniting those who survived
-  - CU - Tired and traumatized faces
-  - Detail - Injuries and exhaustion visible
-  - MS - Sitting together in shock
-
-#### Beat: s28.1 — Aftermath
-scene: s28
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
-description: Days or weeks later - the aftermath of the encounter, how life has changed.
-shots:
-  - WS - Jerry's house, recovery and rebuilding
-  - MS - Characters changed by experience
-  - CU - Reflective, haunted eyes
-  - Detail - Evidence of what happened
-  - MS - Conversations about what next
-
-#### Beat: s28.2 — Full circle
-scene: s28
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
-description: Return to the beginning - Dallas back where he started, but forever changed by Branford.
-shots:
-  - WS - Branford landscape, same but different
-  - MS - Dallas reflecting
-  - CU - Dallas's face, haunted wisdom
-  - WS - The tall grass in distance
-  - Detail - Oscillator still recording, still detecting hum
 
 ---
 

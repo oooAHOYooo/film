@@ -13,6 +13,7 @@
     "7": "2026-06-19",
     "8": "2026-06-20",
     "9": "2026-06-26",
+    "10": "2026-06-27",
     "11": "2026-06-28",
     "12": "2026-07-01",
     "13": "2026-07-02",
@@ -582,7 +583,7 @@
   "aftermath": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 13,
+    "assignedDay": 10,
     "location": "EXT. Jerry's House — Afternoon",
     "keyElements": "",
     "productionNotes": "Afternoon shoot before nursery run",
@@ -599,7 +600,7 @@
   "full-circle": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 13,
+    "assignedDay": 10,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -2268,6 +2269,37 @@
       ]
     },
     {
+      "day": 10,
+      "scenes": [
+        "s27",
+        "s28"
+      ],
+      "crewCall": "CALL: 6:00 AM\nMEET: Jerry's House (72 Lake St, Hamden)\nSETUP: 6:30 AM — Camera preps\nSHOOT: 7:00 AM — s27 · Aftermath & gathering survivors\nSHOOT: 9:00 AM — s28 · Full circle\nWRAP: 12:00 PM",
+      "crew": [
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
+      ],
+      "locationDetails": [
+        "Jerry's House exterior",
+        "Branford landscape",
+        "Marsh edges"
+      ]
+    },
+    {
       "day": 11,
       "scenes": [
         "s07b",
@@ -2434,11 +2466,7 @@
     },
     {
       "day": 13,
-      "scenes": [
-        "s27",
-        "s28"
-      ],
-      "crewCall": "CALL: 6:00 AM\nMEET: Jerry's House (72 Lake St, Hamden)\nSETUP: 6:30 AM — Camera preps\nSHOOT: 7:00 AM — s27 · Aftermath & gathering survivors\nSHOOT: 9:00 AM — s28 · Full circle\nWRAP: 12:00 PM",
+      "crewCall": "Pickup and reshoots as needed",
       "crew": [
         {
           "role": "Director",
@@ -2455,101 +2483,6 @@
         {
           "role": "Clapper",
           "name": "TBD"
-        }
-      ],
-      "locationDetails": [
-        "Jerry's House exterior",
-        "Branford landscape",
-        "Marsh edges"
-      ],
-      "shotList": [
-        {
-          "beat": "s27.1",
-          "title": "Final echoes",
-          "scene": "s27",
-          "cast": [
-            "Asher",
-            "Mr. Mike",
-            "Dallas",
-            "Makayla",
-            "Dominic",
-            "Janice",
-            "Pat"
-          ],
-          "description": "The creature's presence lingers - the hum echoes across Branford, the aftermath unfolds.",
-          "shots": [
-            "WS - Branford landscape, still hum in air",
-            "CU - Individual faces processing aftermath",
-            "Detail - Equipment still recording",
-            "WS - Damage or signs of creature",
-            "MS - People moving through town"
-          ]
-        },
-        {
-          "beat": "s27.2",
-          "title": "Gathering survivors",
-          "scene": "s27",
-          "cast": [
-            "Asher",
-            "Mr. Mike",
-            "Dallas",
-            "Makayla",
-            "Dominic",
-            "Janice",
-            "Pat"
-          ],
-          "description": "The survivors come together at Jerry's house - counting losses, assessing what happened.",
-          "shots": [
-            "WS - Group at house, some missing",
-            "MS - Reuniting those who survived",
-            "CU - Tired and traumatized faces",
-            "Detail - Injuries and exhaustion visible",
-            "MS - Sitting together in shock"
-          ]
-        },
-        {
-          "beat": "s28.1",
-          "title": "Aftermath",
-          "scene": "s28",
-          "cast": [
-            "Asher",
-            "Mr. Mike",
-            "Dallas",
-            "Makayla",
-            "Dominic",
-            "Janice",
-            "Pat"
-          ],
-          "description": "Days or weeks later - the aftermath of the encounter, how life has changed.",
-          "shots": [
-            "WS - Jerry's house, recovery and rebuilding",
-            "MS - Characters changed by experience",
-            "CU - Reflective, haunted eyes",
-            "Detail - Evidence of what happened",
-            "MS - Conversations about what next"
-          ]
-        },
-        {
-          "beat": "s28.2",
-          "title": "Full circle",
-          "scene": "s28",
-          "cast": [
-            "Asher",
-            "Mr. Mike",
-            "Dallas",
-            "Makayla",
-            "Dominic",
-            "Janice",
-            "Pat"
-          ],
-          "description": "Return to the beginning - Dallas back where he started, but forever changed by Branford.",
-          "shots": [
-            "WS - Branford landscape, same but different",
-            "MS - Dallas reflecting",
-            "CU - Dallas's face, haunted wisdom",
-            "WS - The tall grass in distance",
-            "Detail - Oscillator still recording, still detecting hum"
-          ]
         }
       ]
     }
