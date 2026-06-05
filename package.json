@@ -9,7 +9,9 @@
     "compile:pdfs": "node pages/summer/storyboard-system/compile-pdfs.js",
     "start up": "node start-summer.js",
     "film": "node film.js",
-    "film:api": "node film-api.js"
+    "film:api": "node film-api.js",
+    "production:export": "node pages/summer/shooting/export-production.js",
+    "production:sync": "node pages/summer/shooting/sync-production.js"
   },
   "dependencies": {
     "pdf-lib": "^1.17.1"

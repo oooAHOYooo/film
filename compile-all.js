@@ -53,6 +53,14 @@ const tasks = [
     script: path.join(ROOT, 'pages', 'summer', 'compile-production.js'),
   },
   {
+    name: 'Sync Shooting Production Data (MD → JSON)',
+    script: path.join(ROOT, 'pages', 'summer', 'shooting', 'sync-production.js'),
+  },
+  {
+    name: 'Summer Shooting Production',
+    script: path.join(ROOT, 'pages', 'summer', 'shooting', 'compile-production.js'),
+  },
+  {
     name: "Summer Director's Notes",
     script: path.join(ROOT, 'pages', 'summer', 'directors-notes', 'compile.js'),
   },

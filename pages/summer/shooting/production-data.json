@@ -1,4 +1,25 @@
 {
+  "settings": {
+    "chronologicalStartDay": 1
+  },
+  "calendar": {
+    "0": "2026-06-07",
+    "1": "2026-06-08",
+    "2": "2026-06-12",
+    "3": "2026-06-13",
+    "4": "2026-06-14",
+    "5": "2026-06-15",
+    "6": "2026-06-18",
+    "7": "2026-06-19",
+    "8": "2026-06-20",
+    "9": "2026-06-26",
+    "10": "2026-06-27",
+    "11": "2026-06-28",
+    "12": "2026-07-01",
+    "13": "2026-07-02",
+    "11.5": "2026-06-29",
+    "8.5": "2026-06-22"
+  },
   "opening-montage": {
     "durationMin": 45,
     "shootDays": 0.5,
@@ -58,9 +79,9 @@
   },
   "dallas-night": {
     "durationMin": 120,
-    "time": "06:00 PM - 08:00 PM",
     "shootDays": 0.5,
     "assignedDay": 1,
+    "time": "06:00 PM - 08:00 PM",
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -82,10 +103,10 @@
   },
   "branford-night-discovery": {
     "durationMin": 45,
-    "time": "NIGHT",
-    "location": "Branford - Various Exteriors",
     "shootDays": 0.5,
     "assignedDay": 1,
+    "location": "Branford - Various Exteriors",
+    "time": "NIGHT",
     "keyElements": "",
     "productionNotes": "Dallas discovers weirdness of neighborhood and tall grass",
     "cast": [
@@ -119,10 +140,10 @@
   },
   "dallas-night-work": {
     "durationMin": 90,
-    "time": "6:30 PM",
-    "location": "On Location (East Haven Nursery)",
     "shootDays": 0.5,
     "assignedDay": 2,
+    "location": "On Location (East Haven Nursery)",
+    "time": "6:30 PM",
     "keyElements": "",
     "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
     "cast": [
@@ -131,10 +152,10 @@
   },
   "shadows-in-wind": {
     "durationMin": 75,
-    "time": "8:45 PM",
-    "location": "Jerry's House",
     "shootDays": 0.5,
     "assignedDay": 2,
+    "location": "Jerry's House",
+    "time": "8:45 PM",
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -208,9 +229,9 @@
   },
   "howie-walk-2": {
     "durationMin": 90,
-    "time": "6:30 PM",
     "shootDays": 0.5,
     "assignedDay": 5,
+    "time": "6:30 PM",
     "keyElements": "",
     "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
     "cast": [
@@ -221,9 +242,9 @@
   },
   "the-burn-mark": {
     "durationMin": 30,
-    "time": "7:30 PM",
     "shootDays": 0.5,
     "assignedDay": 5,
+    "time": "7:30 PM",
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -325,9 +346,9 @@
   },
   "resonance": {
     "durationMin": 120,
-    "time": "08:00 PM - 10:00 PM",
     "shootDays": 0.5,
     "assignedDay": 9,
+    "time": "08:00 PM - 10:00 PM",
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -592,32 +613,37 @@
       "Pat"
     ]
   },
-  "settings": {
-    "chronologicalStartDay": 1
+  "limbo": {},
+  "the-research-beat": {
+    "durationMin": 60,
+    "assignedDay": 2,
+    "props": [
+      "Laptop — for trailcam footage playback (creature footage, practical or VFX)",
+      "Military-grade desktop audio recorder — with Sierra photo taped to it",
+      "Portable oscillator — Dallas dials to 115.3 (same unit from s00)",
+      "Translucent crystal (petri dish) — pyramid-shaped quartz; glows gold at 115.3 Hz, scorches black ring on desk",
+      "Birding guides — messy desk dressing",
+      "Disassembled electronics — desk clutter",
+      "Trailcam footage (practical/VFX) — plays on laptop screen"
+    ]
   },
-  "calendar": {
-    "0": "2026-06-07",
-    "1": "2026-06-08",
-    "2": "2026-06-12",
-    "3": "2026-06-13",
-    "4": "2026-06-14",
-    "5": "2026-06-15",
-    "6": "2026-06-18",
-    "7": "2026-06-19",
-    "8": "2026-06-20",
-    "9": "2026-06-26",
-    "10": "2026-06-27",
-    "11": "2026-06-28",
-    "12": "2026-07-01",
-    "13": "2026-07-02",
-    "11.5": "2026-06-29",
-    "8.5": "2026-06-22"
+  "the-threshold": {
+    "durationMin": 15,
+    "assignedDay": 5
+  },
+  "the-return": {
+    "durationMin": 60,
+    "assignedDay": 2
   },
   "shootPlan": [
     {
       "day": 0,
-      "crewCall": "12:45 PM = Dallas Meets at Alexs\n1:15 PM - 2:15 PM = Branford Train Station (neighborhood walks)\n2:30 PM = Pickup: Matt Grant in Westville\n3:15 PM - 4:45 PM = 72 Lake St, Hamden (property manager scene)\n5:10 PM = Wrap",
       "estLength": "4h 25m",
+      "scenes": [
+        "s00a",
+        "s00b"
+      ],
+      "crewCall": "CALL: 12:45 PM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 1:15 PM — Branford Train Station\nSHOOT: 1:15 PM - 2:15 PM — s00a · Neighborhood walks & train station\nDRIVE: 2:30 PM — Pickup Matt Grant in Westville\nARRIVE: 3:15 PM — Dallas House (72 Lake St, Hamden)\nSHOOT: 3:15 PM - 4:45 PM — s00b · Property manager scene\nWRAP: 5:10 PM",
       "crew": [
         {
           "role": "Director / Camera",
@@ -663,19 +689,15 @@
         "• Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.)",
         "• Clipboard or folder (Property Manager)"
       ],
-      "scenes": [
-        "s00a",
-        "s00b"
-      ],
       "shotList": [
         {
-          "scene": "s00a",
           "beat": "s00a.1",
           "title": "Train station arrival",
-          "description": "Dallas exits train at Branford station, picks up suitcase, walks toward station exit. Long Island Sound visible beyond.",
+          "scene": "s00a",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas exits train at Branford station, picks up suitcase, walks toward station exit. Long Island Sound visible beyond.",
           "shots": [
             "WS — Train arriving at Branford station platform.",
             "WS — Empty platform, Long Island Sound in background.",
@@ -683,15 +705,15 @@
           ]
         },
         {
-          "scene": "s00a",
           "beat": "s00a.2-6",
           "title": "Walking through Branford streets (montage)",
-          "description": "Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Makayla & Asher setting up equipment in marsh.",
+          "scene": "s00a",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher"
           ],
+          "description": "Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Makayla & Asher setting up equipment in marsh.",
           "shots": [
             "WS — Branford street establishing, low houses with white trim and weathered fences.",
             "MS — Dallas walking down sidewalk with suitcase.",
@@ -703,14 +725,14 @@
           ]
         },
         {
-          "scene": "s00b",
           "beat": "s00b",
           "title": "Property Manager House Tour",
-          "description": "Dallas meets property manager at front door and tours rental house. Progresses from foyer through living room, kitchen, backyard observation, and attic.",
+          "scene": "s00b",
           "cast": [
             "Dallas",
             "Matt Grant"
           ],
+          "description": "Dallas meets property manager at front door and tours rental house. Progresses from foyer through living room, kitchen, backyard observation, and attic.",
           "shots": [
             "WS — Front door opening inward. Property manager in doorway, clipboard visible. Dallas entering, not removing shoes.",
             "CU — Dallas's eyes moving across the living room. Not lingering. Taking inventory.",
@@ -733,7 +755,11 @@
     },
     {
       "day": 1,
-      "crewCall": "5:00 PM = Meet at Alex's House\n5:30 PM = Arrive at Jerry's House (72 Lake St, Hamden)\n5:45 PM = Camera Preps\n6:15 PM = Start Filming\n8:45 PM = Wrap",
+      "scenes": [
+        "s02",
+        "s02.3"
+      ],
+      "crewCall": "CALL: 5:00 PM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 5:30 PM — Dallas House (72 Lake St, Hamden)\nSETUP: 5:45 PM — Camera preps\nSHOOT: 6:15 PM — s02 · Kitchen hum & exterior\nWRAP: 8:45 PM",
       "crew": [
         {
           "role": "Director / Camera",
@@ -771,13 +797,13 @@
       ],
       "shotList": [
         {
-          "scene": "s02",
           "beat": "s02.1",
           "title": "Kitchen hum",
-          "description": "Dallas settles into the kitchen, clocks the first faint hum, and marks the frequency before the sound cuts.",
+          "scene": "s02",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas settles into the kitchen, clocks the first faint hum, and marks the frequency before the sound cuts.",
           "shots": [
             "WS - Kitchen interior, Dallas enters from hallway",
             "MS - Dallas at kitchen counter, listening",
@@ -787,13 +813,13 @@
           ]
         },
         {
-          "scene": "s02",
           "beat": "s02.2",
           "title": "Driveway edge",
-          "description": "Dallas steps outside, watches the driveway and the property line, and feels the hum merge out of the tall grass.",
+          "scene": "s02",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas steps outside, watches the driveway and the property line, and feels the hum merge out of the tall grass.",
           "shots": [
             "WS - Dallas exits house, exterior establishing",
             "MS - Dallas at property edge, listening",
@@ -803,13 +829,13 @@
           ]
         },
         {
-          "scene": "s02",
           "beat": "s02.4",
           "title": "Attic boxes",
-          "description": "In the attic, Dallas opens Sierra's box, finds the field notes, cassette player, headphones, and old recorder.",
+          "scene": "s02",
           "cast": [
             "Dallas"
           ],
+          "description": "In the attic, Dallas opens Sierra's box, finds the field notes, cassette player, headphones, and old recorder.",
           "shots": [
             "WS - Attic space, Dallas approaches boxes",
             "MS - Dallas kneeling at cardboard box",
@@ -819,13 +845,13 @@
           ]
         },
         {
-          "scene": "s02",
           "beat": "s02.5",
           "title": "Bathroom tape",
-          "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
+          "scene": "s02",
           "cast": [
             "Dallas"
           ],
+          "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
           "shots": [
             "WS - Bathroom, Dallas enters with cassette player",
             "MS - Dallas at sink counter, placing player down",
@@ -835,13 +861,13 @@
           ]
         },
         {
-          "scene": "s02",
           "beat": "s02.6",
           "title": "Downstairs pulse",
-          "description": "Downstairs, Dallas records the pulsing tone, tracks the pattern, and loses the battery mid-read.",
+          "scene": "s02",
           "cast": [
             "Dallas"
           ],
+          "description": "Downstairs, Dallas records the pulsing tone, tracks the pattern, and loses the battery mid-read.",
           "shots": [
             "WS - Downstairs room, Dallas with military recorder and oscillator",
             "MS - Dallas at table, setting up equipment",
@@ -851,13 +877,13 @@
           ]
         },
         {
-          "scene": "s02",
           "beat": "s02.7",
           "title": "House exterior glow",
-          "description": "Outside again, Dallas watches the grass sway as the golden glow pulses and a storm builds over Branford.",
+          "scene": "s02",
           "cast": [
             "Dallas"
           ],
+          "description": "Outside again, Dallas watches the grass sway as the golden glow pulses and a storm builds over Branford.",
           "shots": [
             "WS - House exterior, golden glow from grass",
             "MS - Dallas standing at house edge",
@@ -866,16 +892,18 @@
             "WS - Wide sky, storm clouds gathering over distant Branford"
           ]
         }
-      ],
-      "scenes": [
-        "s02",
-        "s02.3"
       ]
     },
     {
       "day": 2,
-      "crewCall": "CALL TIME: 4:00 PM\nEast Haven Nursery\n10:00 PM = Wrap",
       "estLength": "5h",
+      "scenes": [
+        "s08",
+        "s08d",
+        "s09",
+        "s10"
+      ],
+      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08, s08d · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deeper marsh investigation\nWRAP: 10:00 PM",
       "crew": [
         {
           "role": "Director / Camera",
@@ -896,13 +924,13 @@
       ],
       "shotList": [
         {
-          "scene": "s08",
           "beat": "s08.1",
           "title": "Into the neighborhoods",
-          "description": "Dallas tracks the pulsing hum through suburban streets and toward the marsh.",
+          "scene": "s08",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas tracks the pulsing hum through suburban streets and toward the marsh.",
           "shots": [
             "WS - Branford street, dusk, Dallas walking with oscillator",
             "MS - Dallas following the sound, oscillator raised",
@@ -912,13 +940,13 @@
           ]
         },
         {
-          "scene": "s08",
           "beat": "s08.2",
           "title": "Marsh edge approach",
-          "description": "Dallas reaches the tall marsh, realizes the sound is intensifying from the grass itself.",
+          "scene": "s08",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas reaches the tall marsh, realizes the sound is intensifying from the grass itself.",
           "shots": [
             "WS - Marsh perimeter, tall grass visible in distance",
             "MS - Dallas at property edge, watching the grass",
@@ -928,13 +956,13 @@
           ]
         },
         {
-          "scene": "s08d",
           "beat": "s08d.1",
           "title": "Return through darkness",
-          "description": "Dallas makes his way back through the darkening neighborhoods, disoriented.",
+          "scene": "s08d",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas makes his way back through the darkening neighborhoods, disoriented.",
           "shots": [
             "WS - Suburban street at dusk, Dallas retracing path",
             "MS - Dallas walking, checking oscillator periodically",
@@ -944,13 +972,13 @@
           ]
         },
         {
-          "scene": "s09",
           "beat": "s09.1",
           "title": "Nursery exploration",
-          "description": "Dallas searches the East Haven Nursery grounds with oscillator, tracking the frequency.",
+          "scene": "s09",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas searches the East Haven Nursery grounds with oscillator, tracking the frequency.",
           "shots": [
             "WS - Nursery grounds, evening light",
             "MS - Dallas moving through rows, listening",
@@ -960,13 +988,13 @@
           ]
         },
         {
-          "scene": "s09",
           "beat": "s09.2",
           "title": "The injured creature",
-          "description": "Dallas discovers something in the tall grass - evidence of an animal or disturbance.",
+          "scene": "s09",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas discovers something in the tall grass - evidence of an animal or disturbance.",
           "shots": [
             "WS - Tall grass field, Dallas approaching",
             "MS - Dallas stops, observing something",
@@ -976,13 +1004,13 @@
           ]
         },
         {
-          "scene": "s10",
           "beat": "s10.1",
           "title": "Jerry's house approach",
-          "description": "Dallas arrives at Jerry's house in evening darkness, oscillator still active.",
+          "scene": "s10",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas arrives at Jerry's house in evening darkness, oscillator still active.",
           "shots": [
             "WS - Jerry's house exterior, lights on inside",
             "MS - Dallas at front, oscillator in hand",
@@ -992,13 +1020,13 @@
           ]
         },
         {
-          "scene": "s10",
           "beat": "s10.2",
           "title": "Something in the shadows",
-          "description": "Dallas hears movement or shadows around the house perimeter - the hum intensifies.",
+          "scene": "s10",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas hears movement or shadows around the house perimeter - the hum intensifies.",
           "shots": [
             "WS - House perimeter, shadows visible",
             "MS - Dallas turning, listening intently",
@@ -1007,18 +1035,17 @@
             "Detail - Oscillator spiking at maximum"
           ]
         }
-      ],
-      "scenes": [
-        "s08",
-        "s08d",
-        "s09",
-        "s10"
       ]
     },
     {
       "day": 3,
-      "crewCall": "11:00 AM = Meet at Alex's House (Dallas + Santiago)\n11:30 AM = Drive to Jerry's House (72 Lake St, Hamden)\n12:00 PM - 1:30 PM = Shoot scene (TBD)\n1:30 PM - 2:15 PM = Lunch\n2:15 PM - 4:00 PM = s01 (Makayla & Asher arrive, Dallas greets them, House and grounds tour)\n4:30 PM - 6:00 PM = s05 (Merlin app search & Dead ends)\n6:30 PM = Dinner\n7:00 PM - 9:00 PM = Final shoot block (TBD)\n9:00 PM = Wrap",
       "estLength": "10h",
+      "scenes": [
+        "s01",
+        "s03",
+        "s05"
+      ],
+      "crewCall": "CALL: 11:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 11:30 AM — Dallas House (72 Lake St, Hamden)\nSHOOT: 12:00 PM - 1:30 PM — TBD\nLUNCH: 1:30 PM\nSHOOT: 2:15 PM - 4:00 PM — s01 · Makayla & Asher arrive, house tour\nSHOOT: 4:30 PM - 6:00 PM — s05 · Merlin app search\nDINNER: 6:30 PM\nSHOOT: 7:00 PM - 9:00 PM — Final block (TBD)\nWRAP: 9:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1043,14 +1070,14 @@
       ],
       "shotList": [
         {
-          "scene": "s01",
           "beat": "s01.1",
           "title": "Makayla and Asher arrive",
-          "description": "Makayla and Asher pull up to the Dallas house with equipment and gear.",
+          "scene": "s01",
           "cast": [
             "Makayla",
             "Asher"
           ],
+          "description": "Makayla and Asher pull up to the Dallas house with equipment and gear.",
           "shots": [
             "WS - House exterior, vehicle arriving",
             "MS - Car pulling into driveway",
@@ -1060,15 +1087,15 @@
           ]
         },
         {
-          "scene": "s01",
           "beat": "s01.2",
           "title": "Dallas greets them",
-          "description": "Dallas emerges from house, first meeting with Makayla and Asher on the property.",
+          "scene": "s01",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher"
           ],
+          "description": "Dallas emerges from house, first meeting with Makayla and Asher on the property.",
           "shots": [
             "WS - Dallas at door, M&A in yard",
             "MS - Greetings and handshakes",
@@ -1078,15 +1105,15 @@
           ]
         },
         {
-          "scene": "s01",
           "beat": "s01.3",
           "title": "House and grounds tour",
-          "description": "Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.",
+          "scene": "s01",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher"
           ],
+          "description": "Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.",
           "shots": [
             "WS - Group entering house",
             "MS - Quick interior shots",
@@ -1096,15 +1123,15 @@
           ]
         },
         {
-          "scene": "s03",
           "beat": "s03.1",
           "title": "The sound begins",
-          "description": "Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.",
+          "scene": "s03",
           "cast": [
             "Dallas",
             "Dominic",
             "Pat"
           ],
+          "description": "Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.",
           "shots": [
             "WS - Group in location, stillness",
             "MS - Dallas recognizing the sound",
@@ -1114,15 +1141,15 @@
           ]
         },
         {
-          "scene": "s03",
           "beat": "s03.2",
           "title": "Attempt to track it",
-          "description": "They try to locate the source - moving with equipment, oscillator in hand.",
+          "scene": "s03",
           "cast": [
             "Dallas",
             "Dominic",
             "Pat"
           ],
+          "description": "They try to locate the source - moving with equipment, oscillator in hand.",
           "shots": [
             "MS - Dallas with oscillator, searching",
             "WS - All three moving through location",
@@ -1132,15 +1159,15 @@
           ]
         },
         {
-          "scene": "s03",
           "beat": "s03.3",
           "title": "The revelation",
-          "description": "They narrow down that the sound is coming from the tall grass itself - the source becomes clear.",
+          "scene": "s03",
           "cast": [
             "Dallas",
             "Dominic",
             "Pat"
           ],
+          "description": "They narrow down that the sound is coming from the tall grass itself - the source becomes clear.",
           "shots": [
             "WS - Tall grass, hum at maximum",
             "CU - Each of their faces, realization",
@@ -1150,15 +1177,15 @@
           ]
         },
         {
-          "scene": "s05",
           "beat": "s05.1",
           "title": "Merlin app search",
-          "description": "They consult field guides and use the Merlin app to try identifying what could produce this sound.",
+          "scene": "s05",
           "cast": [
             "Dallas",
             "Dominic",
             "Pat"
           ],
+          "description": "They consult field guides and use the Merlin app to try identifying what could produce this sound.",
           "shots": [
             "MS - Dallas holding app on phone/device",
             "CU - Screen showing bird identification interface",
@@ -1168,15 +1195,15 @@
           ]
         },
         {
-          "scene": "s05",
           "beat": "s05.2",
           "title": "Dead ends",
-          "description": "They realize no known bird species matches the frequency or pattern - confusion and concern.",
+          "scene": "s05",
           "cast": [
             "Dallas",
             "Dominic",
             "Pat"
           ],
+          "description": "They realize no known bird species matches the frequency or pattern - confusion and concern.",
           "shots": [
             "CU - Dallas's concerned face",
             "MS - Dominic shaking head",
@@ -1185,16 +1212,15 @@
             "WS - Three of them, perplexed"
           ]
         }
-      ],
-      "scenes": [
-        "s01",
-        "s03",
-        "s05"
       ]
     },
     {
       "day": 4,
-      "crewCall": "CALL TIME: 10:00 AM - DALLAS HOUSE",
+      "scenes": [
+        "s14b",
+        "s14c"
+      ],
+      "crewCall": "CALL: 10:00 AM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 10:30 AM — Camera preps\nSHOOT: 11:00 AM — s14b · Sierra's journal discovery & frequency match\nLUNCH: 1:00 PM\nSHOOT: 2:00 PM — s14c · Expedition planning & equipment check\nWRAP: 4:30 PM",
       "crew": [
         {
           "role": "Director",
@@ -1219,10 +1245,9 @@
       ],
       "shotList": [
         {
-          "scene": "s14b",
           "beat": "s14b.1",
           "title": "Field journal discovery",
-          "description": "The group gathers to examine Sierra's field journal closely - detailed notes and sketches about the hum.",
+          "scene": "s14b",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1230,6 +1255,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "The group gathers to examine Sierra's field journal closely - detailed notes and sketches about the hum.",
           "shots": [
             "WS - Group seated around table with journal",
             "MS - Dallas opening journal carefully",
@@ -1239,10 +1265,9 @@
           ]
         },
         {
-          "scene": "s14b",
           "beat": "s14b.2",
           "title": "Reading Sierra's notes",
-          "description": "Dallas reads passages aloud - Sierra's observations about the creature and the hum pattern.",
+          "scene": "s14b",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1250,6 +1275,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "Dallas reads passages aloud - Sierra's observations about the creature and the hum pattern.",
           "shots": [
             "MS - Dallas reading from journal",
             "CU - Dallas's face, emotion in reading",
@@ -1259,10 +1285,9 @@
           ]
         },
         {
-          "scene": "s14b",
           "beat": "s14b.3",
           "title": "Matching the frequency",
-          "description": "They use the oscillator to match the frequency noted in Sierra's journal - confirmation of the pattern.",
+          "scene": "s14b",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1270,6 +1295,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "They use the oscillator to match the frequency noted in Sierra's journal - confirmation of the pattern.",
           "shots": [
             "MS - Oscillator adjustment",
             "Detail - Dial reaching specific frequency",
@@ -1279,10 +1305,9 @@
           ]
         },
         {
-          "scene": "s14c",
           "beat": "s14c.1",
           "title": "Planning the investigation",
-          "description": "They devise a plan to explore the marsh more thoroughly based on Sierra's notes - mapping out grid search.",
+          "scene": "s14c",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1290,6 +1315,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "They devise a plan to explore the marsh more thoroughly based on Sierra's notes - mapping out grid search.",
           "shots": [
             "WS - Group huddled over map on table",
             "MS - Someone marking locations",
@@ -1299,10 +1325,9 @@
           ]
         },
         {
-          "scene": "s14c",
           "beat": "s14c.2",
           "title": "Equipment check",
-          "description": "They methodically check equipment - oscillators, recorders, safety gear - preparing for marsh expedition.",
+          "scene": "s14c",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1310,6 +1335,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "They methodically check equipment - oscillators, recorders, safety gear - preparing for marsh expedition.",
           "shots": [
             "WS - Equipment laid out on floor/table",
             "MS - Each member testing equipment",
@@ -1319,10 +1345,9 @@
           ]
         },
         {
-          "scene": "s14c",
           "beat": "s14c.3",
           "title": "Near encounter",
-          "description": "As they prepare to head out, something moves in the tall grass visible from the house - they almost discover the creature.",
+          "scene": "s14c",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1330,6 +1355,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "As they prepare to head out, something moves in the tall grass visible from the house - they almost discover the creature.",
           "shots": [
             "WS - Group moving toward exit/window",
             "MS - Seeing movement in grass",
@@ -1338,15 +1364,16 @@
             "Detail - Oscillator suddenly spiking"
           ]
         }
-      ],
-      "scenes": [
-        "s14b",
-        "s14c"
       ]
     },
     {
       "day": 5,
-      "crewCall": "CALL TIME: 4:30 PM - ALEX'S HOUSE",
+      "scenes": [
+        "s08c",
+        "s11",
+        "s12"
+      ],
+      "crewCall": "CALL: 4:30 PM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 5:00 PM — Marsh edge / surrounding areas\nSETUP: 5:00 PM — Camera preps\nSHOOT: 5:30 PM — s08c · Dallas at the threshold\nSHOOT: 6:30 PM — s11 · Evening trio investigation\nSHOOT: 8:00 PM — s12 · Burn mark discovery\nWRAP: 9:30 PM",
       "crew": [
         {
           "role": "Director",
@@ -1371,13 +1398,13 @@
       ],
       "shotList": [
         {
-          "scene": "s08c",
           "beat": "s08c.1",
           "title": "The threshold moment",
-          "description": "Dallas stands at the boundary between civilization and the tall grass - hesitation and realization.",
+          "scene": "s08c",
           "cast": [
             "Dallas"
           ],
+          "description": "Dallas stands at the boundary between civilization and the tall grass - hesitation and realization.",
           "shots": [
             "WS - Dallas at marsh boundary in afternoon light",
             "MS - Dallas facing the tall grass",
@@ -1387,15 +1414,15 @@
           ]
         },
         {
-          "scene": "s11",
           "beat": "s11.1",
           "title": "Evening arrival at location",
-          "description": "Dallas, Dominic, and Asher arrive at the evening location to explore - golden hour light.",
+          "scene": "s11",
           "cast": [
             "Dallas",
             "Dominic",
             "Asher"
           ],
+          "description": "Dallas, Dominic, and Asher arrive at the evening location to explore - golden hour light.",
           "shots": [
             "WS - Location in golden evening light",
             "MS - Three approaching the area",
@@ -1405,15 +1432,15 @@
           ]
         },
         {
-          "scene": "s11",
           "beat": "s11.2",
           "title": "Tracking the hum",
-          "description": "They move through the area with equipment, oscillator active, following frequency changes.",
+          "scene": "s11",
           "cast": [
             "Dallas",
             "Dominic",
             "Asher"
           ],
+          "description": "They move through the area with equipment, oscillator active, following frequency changes.",
           "shots": [
             "MS - Dallas with oscillator leading",
             "WS - All three moving through terrain",
@@ -1423,15 +1450,15 @@
           ]
         },
         {
-          "scene": "s11",
           "beat": "s11.3",
           "title": "Dominic's hesitation",
-          "description": "Dominic expresses doubt or fear about continuing deeper - tension within the group.",
+          "scene": "s11",
           "cast": [
             "Dallas",
             "Dominic",
             "Asher"
           ],
+          "description": "Dominic expresses doubt or fear about continuing deeper - tension within the group.",
           "shots": [
             "MS - Dominic stopping, voicing concern",
             "CU - Dominic's apprehension",
@@ -1441,15 +1468,15 @@
           ]
         },
         {
-          "scene": "s12",
           "beat": "s12.1",
           "title": "The burn mark discovery",
-          "description": "They discover a distinctive burn mark on the ground or trees - evidence of the creature's presence.",
+          "scene": "s12",
           "cast": [
             "Dallas",
             "Dominic",
             "Asher"
           ],
+          "description": "They discover a distinctive burn mark on the ground or trees - evidence of the creature's presence.",
           "shots": [
             "WS - The burn mark area visible on ground",
             "MS - Group gathering around it",
@@ -1459,15 +1486,15 @@
           ]
         },
         {
-          "scene": "s12",
           "beat": "s12.2",
           "title": "Oscillator confirmation",
-          "description": "The oscillator shows maximum response at the burn mark - confirmation this is where the creature was.",
+          "scene": "s12",
           "cast": [
             "Dallas",
             "Dominic",
             "Asher"
           ],
+          "description": "The oscillator shows maximum response at the burn mark - confirmation this is where the creature was.",
           "shots": [
             "Detail - Oscillator spiking to maximum",
             "CU - Dallas's face, confirmation and fear",
@@ -1477,15 +1504,15 @@
           ]
         },
         {
-          "scene": "s12",
           "beat": "s12.3",
           "title": "The realization",
-          "description": "They understand the creature is real, local, and active - the threat becomes tangible.",
+          "scene": "s12",
           "cast": [
             "Dallas",
             "Dominic",
             "Asher"
           ],
+          "description": "They understand the creature is real, local, and active - the threat becomes tangible.",
           "shots": [
             "CU - Each of their faces reacting",
             "MS - Quiet moment of understanding",
@@ -1494,16 +1521,16 @@
             "MS - Exchange of frightened looks"
           ]
         }
-      ],
-      "scenes": [
-        "s08c",
-        "s11",
-        "s12"
       ]
     },
     {
       "day": 6,
-      "crewCall": "CALL TIME: 2:00 PM - DALLAS HOUSE",
+      "scenes": [
+        "s15a",
+        "s15b",
+        "s15c"
+      ],
+      "crewCall": "CALL: 2:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 2:30 PM — Camera preps\nSHOOT: 3:00 PM — s15a · The failed experiment\nSHOOT: 4:30 PM — s15b · Tracking box\nSHOOT: 6:00 PM — s15c · Dominic's confession\nWRAP: 7:30 PM",
       "crew": [
         {
           "role": "Director",
@@ -1528,14 +1555,14 @@
       ],
       "shotList": [
         {
-          "scene": "s15a",
           "beat": "s15a.1",
           "title": "Setting up the experiment",
-          "description": "Dallas and Makayla carefully arrange equipment for a test - oscillator, resonance chamber, recording devices.",
+          "scene": "s15a",
           "cast": [
             "Dallas",
             "Makayla"
           ],
+          "description": "Dallas and Makayla carefully arrange equipment for a test - oscillator, resonance chamber, recording devices.",
           "shots": [
             "WS - Table with equipment being arranged",
             "MS - Dallas and Makayla working together",
@@ -1545,14 +1572,14 @@
           ]
         },
         {
-          "scene": "s15a",
           "beat": "s15a.2",
           "title": "The test begins",
-          "description": "They activate the oscillator and begin recording - waiting to see if it attracts the creature or proves something.",
+          "scene": "s15a",
           "cast": [
             "Dallas",
             "Makayla"
           ],
+          "description": "They activate the oscillator and begin recording - waiting to see if it attracts the creature or proves something.",
           "shots": [
             "Detail - Oscillator dial turning on",
             "MS - Dallas and Makayla waiting, listening",
@@ -1562,14 +1589,14 @@
           ]
         },
         {
-          "scene": "s15a",
           "beat": "s15a.3",
           "title": "Nothing happens",
-          "description": "The test fails - no response, no creature, no confirmation. Disappointment and concern.",
+          "scene": "s15a",
           "cast": [
             "Dallas",
             "Makayla"
           ],
+          "description": "The test fails - no response, no creature, no confirmation. Disappointment and concern.",
           "shots": [
             "MS - Silence, waiting",
             "CU - Dallas's disappointed face",
@@ -1579,14 +1606,14 @@
           ]
         },
         {
-          "scene": "s15b",
           "beat": "s15b.1",
           "title": "The tracking box explained",
-          "description": "Dallas shows Makayla a custom-built tracking device - Sierra's design notes form the basis.",
+          "scene": "s15b",
           "cast": [
             "Dallas",
             "Makayla"
           ],
+          "description": "Dallas shows Makayla a custom-built tracking device - Sierra's design notes form the basis.",
           "shots": [
             "MS - Dallas holding the tracking box",
             "Detail - Box mechanisms and components",
@@ -1596,14 +1623,14 @@
           ]
         },
         {
-          "scene": "s15b",
           "beat": "s15b.2",
           "title": "Building the device",
-          "description": "They work together building or calibrating the tracker - precision work, focused collaboration.",
+          "scene": "s15b",
           "cast": [
             "Dallas",
             "Makayla"
           ],
+          "description": "They work together building or calibrating the tracker - precision work, focused collaboration.",
           "shots": [
             "WS - Workspace with tools and parts",
             "MS - Both working on the box",
@@ -1613,14 +1640,14 @@
           ]
         },
         {
-          "scene": "s15b",
           "beat": "s15b.3",
           "title": "First calibration",
-          "description": "They calibrate the tracker to match the hum frequency - excitement as it responds.",
+          "scene": "s15b",
           "cast": [
             "Dallas",
             "Makayla"
           ],
+          "description": "They calibrate the tracker to match the hum frequency - excitement as it responds.",
           "shots": [
             "Detail - Frequency dial being adjusted",
             "CU - Dallas's face concentrating",
@@ -1630,15 +1657,15 @@
           ]
         },
         {
-          "scene": "s15c",
           "beat": "s15c.1",
           "title": "Dominic arrives",
-          "description": "Dominic shows up - he has something to say, something weighing on him.",
+          "scene": "s15c",
           "cast": [
             "Dallas",
             "Makayla",
             "Dominic"
           ],
+          "description": "Dominic shows up - he has something to say, something weighing on him.",
           "shots": [
             "MS - Dominic entering, serious",
             "CU - His troubled expression",
@@ -1648,15 +1675,15 @@
           ]
         },
         {
-          "scene": "s15c",
           "beat": "s15c.2",
           "title": "The confession",
-          "description": "Dominic reveals something he knows or has experienced - guilt, fear, or vital information about the creature.",
+          "scene": "s15c",
           "cast": [
             "Dallas",
             "Makayla",
             "Dominic"
           ],
+          "description": "Dominic reveals something he knows or has experienced - guilt, fear, or vital information about the creature.",
           "shots": [
             "CU - Dominic speaking, emotional",
             "MS - Dallas and Makayla listening intently",
@@ -1666,15 +1693,15 @@
           ]
         },
         {
-          "scene": "s15c",
           "beat": "s15c.3",
           "title": "Processing the revelation",
-          "description": "They process what Dominic has told them - silence, questions, dawning realization.",
+          "scene": "s15c",
           "cast": [
             "Dallas",
             "Makayla",
             "Dominic"
           ],
+          "description": "They process what Dominic has told them - silence, questions, dawning realization.",
           "shots": [
             "CU - Each face reacting",
             "MS - Quiet moment of shock",
@@ -1683,16 +1710,18 @@
             "MS - Beginning to formulate next steps"
           ]
         }
-      ],
-      "scenes": [
-        "s15a",
-        "s15b",
-        "s15c"
       ]
     },
     {
       "day": 7,
-      "crewCall": "CALL TIME: 7:00 AM - EAST HAVEN NURSERY",
+      "scenes": [
+        "s13",
+        "s14",
+        "s21",
+        "s22",
+        "s23"
+      ],
+      "crewCall": "CALL: 7:00 AM\nMEET: East Haven Nursery\nSETUP: 7:30 AM — Camera preps + equipment check\nSHOOT: 8:00 AM — s13 · Entering the marsh\nSHOOT: 9:30 AM — s14 · Creature encounter & escape\nLUNCH: 11:30 AM\nSHOOT: 12:30 PM — s21, s22, s23 · Marsh aftermath sequences\nWRAP: 4:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1717,10 +1746,9 @@
       ],
       "shotList": [
         {
-          "scene": "s13",
           "beat": "s13.1",
           "title": "Entering the grass",
-          "description": "The group enters the tall marsh for the first time - a coordinated expedition into the unknown.",
+          "scene": "s13",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1728,6 +1756,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "The group enters the tall marsh for the first time - a coordinated expedition into the unknown.",
           "shots": [
             "WS - Group at marsh edge at dawn",
             "MS - Equipment check before entry",
@@ -1737,10 +1766,9 @@
           ]
         },
         {
-          "scene": "s13",
           "beat": "s13.2",
           "title": "The hum intensifies",
-          "description": "As they go deeper, the hum becomes overwhelming - their equipment goes wild.",
+          "scene": "s13",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1748,6 +1776,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "As they go deeper, the hum becomes overwhelming - their equipment goes wild.",
           "shots": [
             "WS - Group stopped in tall grass",
             "Detail - Oscillators and recorders at max",
@@ -1757,10 +1786,9 @@
           ]
         },
         {
-          "scene": "s14",
           "beat": "s14.1",
           "title": "The creature is there",
-          "description": "They encounter or sense the creature directly - a moment of terrible clarity.",
+          "scene": "s14",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1768,6 +1796,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "They encounter or sense the creature directly - a moment of terrible clarity.",
           "shots": [
             "WS - Something moving in grass near them",
             "CU - Dallas seeing it first",
@@ -1777,10 +1806,9 @@
           ]
         },
         {
-          "scene": "s14",
           "beat": "s14.2",
           "title": "The rescue",
-          "description": "Something goes wrong - someone in danger, the group mobilizes to rescue/protect.",
+          "scene": "s14",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1788,6 +1816,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "Something goes wrong - someone in danger, the group mobilizes to rescue/protect.",
           "shots": [
             "WS - Chaos in the field",
             "MS - Someone in danger",
@@ -1797,10 +1826,9 @@
           ]
         },
         {
-          "scene": "s14",
           "beat": "s14.3",
           "title": "Escape from grass",
-          "description": "They retreat from the grass, shaken and bloodied - barely making it out.",
+          "scene": "s14",
           "cast": [
             "Dallas",
             "Makayla",
@@ -1808,6 +1836,7 @@
             "Dominic",
             "Mr. Mike"
           ],
+          "description": "They retreat from the grass, shaken and bloodied - barely making it out.",
           "shots": [
             "WS - Running through tall grass",
             "MS - Helping each other",
@@ -1816,18 +1845,16 @@
             "CU - Gasping, shocked faces"
           ]
         }
-      ],
-      "scenes": [
-        "s13",
-        "s14",
-        "s21",
-        "s22",
-        "s23"
       ]
     },
     {
       "day": 8,
-      "crewCall": "CALL TIME: 5:00 PM - DALLAS HOUSE",
+      "scenes": [
+        "s24",
+        "s25",
+        "s26"
+      ],
+      "crewCall": "CALL: 5:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 5:30 PM — Camera preps\nSHOOT: 6:00 PM — s24 · Establishing the perimeter\nSHOOT: 7:30 PM — s25 · Continued defense\nSHOOT: 9:00 PM — s26 · Creature attacks the house\nWRAP: 11:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1852,16 +1879,16 @@
       ],
       "shotList": [
         {
-          "scene": "s24",
           "beat": "s24.1",
           "title": "The perimeter established",
-          "description": "The group sets up a defensive perimeter around the house with equipment and precautions.",
+          "scene": "s24",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher",
             "Dominic"
           ],
+          "description": "The group sets up a defensive perimeter around the house with equipment and precautions.",
           "shots": [
             "WS - House with group setting up",
             "MS - Installing equipment at doors/windows",
@@ -1871,16 +1898,16 @@
           ]
         },
         {
-          "scene": "s24",
           "beat": "s24.2",
           "title": "Waiting for night",
-          "description": "They prepare and wait as evening approaches - tension builds.",
+          "scene": "s24",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher",
             "Dominic"
           ],
+          "description": "They prepare and wait as evening approaches - tension builds.",
           "shots": [
             "MS - Checking equipment one more time",
             "CU - Anxious faces",
@@ -1890,16 +1917,16 @@
           ]
         },
         {
-          "scene": "s25",
           "beat": "s25.1",
           "title": "The last dinner",
-          "description": "They gather for a meal - possibly their last normal moment before the final confrontation.",
+          "scene": "s25",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher",
             "Dominic"
           ],
+          "description": "They gather for a meal - possibly their last normal moment before the final confrontation.",
           "shots": [
             "WS - Dining table set",
             "MS - Group seated at table",
@@ -1909,16 +1936,16 @@
           ]
         },
         {
-          "scene": "s25",
           "beat": "s25.2",
           "title": "Unspoken goodbyes",
-          "description": "Conversations between them - resolving tensions, saying important things.",
+          "scene": "s25",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher",
             "Dominic"
           ],
+          "description": "Conversations between them - resolving tensions, saying important things.",
           "shots": [
             "MS - Two person conversations",
             "CU - Emotional exchange between Dallas and Makayla",
@@ -1928,16 +1955,16 @@
           ]
         },
         {
-          "scene": "s26",
           "beat": "s26.1",
           "title": "It arrives",
-          "description": "The creature reaches the house - the hum becomes deafening, the perimeter is tested.",
+          "scene": "s26",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher",
             "Dominic"
           ],
+          "description": "The creature reaches the house - the hum becomes deafening, the perimeter is tested.",
           "shots": [
             "Detail - Oscillators spiking",
             "WS - House lights flickering or failing",
@@ -1946,16 +1973,11 @@
             "MS - Bracing for impact"
           ]
         }
-      ],
-      "scenes": [
-        "s24",
-        "s25",
-        "s26"
       ]
     },
     {
       "day": 8.5,
-      "crewCall": "CALL TIME: 5:00 PM - DALLAS HOUSE",
+      "crewCall": "CALL: 5:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 5:30 PM — Camera preps\nSHOOT: 6:00 PM — s26 pickups · Creature effects & defensive positions\nWRAP: 9:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1977,19 +1999,18 @@
       "locationDetails": [
         "Dallas House interior and exterior"
       ],
-      "pickup": true,
       "shotList": [
         {
-          "scene": "s26",
           "beat": "s26.pickup.1",
           "title": "Additional creature effects",
-          "description": "Pickup shots of the creature's arrival - additional angles and close coverage of destruction.",
+          "scene": "s26",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher",
             "Dominic"
           ],
+          "description": "Pickup shots of the creature's arrival - additional angles and close coverage of destruction.",
           "shots": [
             "CU - Glass vibrating and breaking",
             "Detail - Door frame cracking",
@@ -1999,16 +2020,16 @@
           ]
         },
         {
-          "scene": "s26",
           "beat": "s26.pickup.2",
           "title": "Defensive positions",
-          "description": "Close coverage of the group defending themselves - intimate shots in shadows.",
+          "scene": "s26",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher",
             "Dominic"
           ],
+          "description": "Close coverage of the group defending themselves - intimate shots in shadows.",
           "shots": [
             "CU - Hands gripping equipment",
             "Detail - Oscillators in close-up",
@@ -2018,16 +2039,16 @@
           ]
         },
         {
-          "scene": "s26",
           "beat": "s26.pickup.3",
           "title": "The hum at maximum",
-          "description": "Extreme close-ups of the hum's effects - sensory overload captured intimately.",
+          "scene": "s26",
           "cast": [
             "Dallas",
             "Makayla",
             "Asher",
             "Dominic"
           ],
+          "description": "Extreme close-ups of the hum's effects - sensory overload captured intimately.",
           "shots": [
             "Detail - Oscillator dial at maximum",
             "CU - Someone screaming silently",
@@ -2036,12 +2057,11 @@
             "Detail - Hands covering ears"
           ]
         }
-      ],
-      "scenes": []
+      ]
     },
     {
       "day": 11.5,
-      "crewCall": "CALL TIME: 8:00 AM - BRANFORD MARSH EDGE",
+      "crewCall": "CALL: 8:00 AM\nMEET: Branford Marsh Edge\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07b pickups · Warning additional coverage\nSHOOT: 10:30 AM — s16 pickups · Plan detail shots\nWRAP: 12:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -2064,13 +2084,11 @@
         "Marsh boundary",
         "Tall grass field"
       ],
-      "pickup": true,
       "shotList": [
         {
-          "scene": "s07b",
           "beat": "s07b.pickup.1",
           "title": "The warning additional coverage",
-          "description": "Pickup shots of Mr. Mike's crucial warning - wider angles and group reactions.",
+          "scene": "s07b",
           "cast": [
             "Dallas",
             "Dominic",
@@ -2078,6 +2096,7 @@
             "Asher",
             "Mr. Mike"
           ],
+          "description": "Pickup shots of Mr. Mike's crucial warning - wider angles and group reactions.",
           "shots": [
             "WS - Full group with Mr. Mike in center",
             "CU - Mr. Mike's face in profile",
@@ -2087,10 +2106,9 @@
           ]
         },
         {
-          "scene": "s16",
           "beat": "s16.pickup.1",
           "title": "Plan details captured",
-          "description": "Close coverage of the escape/defense plan being explained - technical detail shots.",
+          "scene": "s16",
           "cast": [
             "Dallas",
             "Dominic",
@@ -2098,6 +2116,7 @@
             "Asher",
             "Mr. Mike"
           ],
+          "description": "Close coverage of the escape/defense plan being explained - technical detail shots.",
           "shots": [
             "Detail - Map or sketch close-up",
             "CU - Dallas pointing to locations",
@@ -2107,10 +2126,9 @@
           ]
         },
         {
-          "scene": "s16",
           "beat": "s16.pickup.2",
           "title": "Resolution and commitment",
-          "description": "Final commitment to the plan - intimate captures of determination and fear.",
+          "scene": "s16",
           "cast": [
             "Dallas",
             "Dominic",
@@ -2118,6 +2136,7 @@
             "Asher",
             "Mr. Mike"
           ],
+          "description": "Final commitment to the plan - intimate captures of determination and fear.",
           "shots": [
             "Detail - Hands meeting in center",
             "CU - Eyes closing in acceptance",
@@ -2126,12 +2145,16 @@
             "WS - Group ready to move forward"
           ]
         }
-      ],
-      "scenes": []
+      ]
     },
     {
       "day": 9,
-      "crewCall": "CALL TIME: 6:00 PM - DALLAS HOUSE",
+      "scenes": [
+        "s17",
+        "s17b",
+        "s17c"
+      ],
+      "crewCall": "CALL: 6:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 6:30 PM — Camera preps\nSHOOT: 7:00 PM — s17 · Resonance & physical effects\nSHOOT: 8:30 PM — s17b, s17c · Memory flash & silent communication\nWRAP: 10:30 PM",
       "crew": [
         {
           "role": "Director",
@@ -2156,10 +2179,9 @@
       ],
       "shotList": [
         {
-          "scene": "s17",
           "beat": "s17.1",
           "title": "Resonance begins",
-          "description": "The hum reaches a specific frequency that causes physical reaction - glasses vibrate, equipment resonates.",
+          "scene": "s17",
           "cast": [
             "Dallas",
             "Makayla",
@@ -2168,6 +2190,7 @@
             "Janice",
             "Mr. Mike"
           ],
+          "description": "The hum reaches a specific frequency that causes physical reaction - glasses vibrate, equipment resonates.",
           "shots": [
             "Detail - Objects vibrating on surfaces",
             "WS - Interior shaking",
@@ -2177,10 +2200,9 @@
           ]
         },
         {
-          "scene": "s17",
           "beat": "s17.2",
           "title": "Physical effects",
-          "description": "The resonance intensifies - people feel it in their bodies, some hurt, disorientation.",
+          "scene": "s17",
           "cast": [
             "Dallas",
             "Makayla",
@@ -2189,6 +2211,7 @@
             "Janice",
             "Mr. Mike"
           ],
+          "description": "The resonance intensifies - people feel it in their bodies, some hurt, disorientation.",
           "shots": [
             "CU - Someone clutching their ears",
             "MS - Group in pain or discomfort",
@@ -2198,10 +2221,9 @@
           ]
         },
         {
-          "scene": "s17b",
           "beat": "s17b.1",
           "title": "A normal day memory",
-          "description": "Amongst the chaos, someone recalls or experiences a flash of normal life - brief respite.",
+          "scene": "s17b",
           "cast": [
             "Dallas",
             "Makayla",
@@ -2210,6 +2232,7 @@
             "Janice",
             "Mr. Mike"
           ],
+          "description": "Amongst the chaos, someone recalls or experiences a flash of normal life - brief respite.",
           "shots": [
             "Flashback - Sunny day, laughter",
             "CU - Face of person remembering",
@@ -2219,10 +2242,9 @@
           ]
         },
         {
-          "scene": "s17c",
           "beat": "s17c.1",
           "title": "Mute drive",
-          "description": "Without speaking, communicating through looks and gestures - all sound is overwhelmed.",
+          "scene": "s17c",
           "cast": [
             "Dallas",
             "Makayla",
@@ -2231,6 +2253,7 @@
             "Janice",
             "Mr. Mike"
           ],
+          "description": "Without speaking, communicating through looks and gestures - all sound is overwhelmed.",
           "shots": [
             "WS - Group in silence, gesturing",
             "CU - Eye contact and nods",
@@ -2239,16 +2262,17 @@
             "WS - Coordinated silent action"
           ]
         }
-      ],
-      "scenes": [
-        "s17",
-        "s17b",
-        "s17c"
       ]
     },
     {
       "day": 10,
-      "crewCall": "CALL TIME: 8:00 AM - BRANFORD TOWN GREEN",
+      "scenes": [
+        "s07",
+        "s18",
+        "s19",
+        "s20"
+      ],
+      "crewCall": "CALL: 8:00 AM\nMEET: Branford Town Green\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07 · Coordinates discovered\nSHOOT: 10:30 AM — s18 · Life group gathering\nSHOOT: 12:00 PM — s19, s20 · Hymn meets the hum & red eyes\nWRAP: 3:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -2274,10 +2298,9 @@
       ],
       "shotList": [
         {
-          "scene": "s07",
           "beat": "s07.1",
           "title": "The coordinates revealed",
-          "description": "Dallas and others discover specific coordinates from Sierra's notes - a location in the marsh.",
+          "scene": "s07",
           "cast": [
             "Dallas",
             "Makayla",
@@ -2286,6 +2309,7 @@
             "Mr. Mike",
             "Janice"
           ],
+          "description": "Dallas and others discover specific coordinates from Sierra's notes - a location in the marsh.",
           "shots": [
             "MS - Map being studied",
             "Detail - Coordinates marked",
@@ -2295,10 +2319,9 @@
           ]
         },
         {
-          "scene": "s18",
           "beat": "s18.1",
           "title": "Life group gathering",
-          "description": "A church life group arrives at the location - innocent people who have no idea what's coming.",
+          "scene": "s18",
           "cast": [
             "Dallas",
             "Makayla",
@@ -2308,6 +2331,7 @@
             "Janice",
             "Life Group Extras"
           ],
+          "description": "A church life group arrives at the location - innocent people who have no idea what's coming.",
           "shots": [
             "WS - Life group gathering with picnic/supplies",
             "MS - Dallas and others arriving",
@@ -2317,10 +2341,9 @@
           ]
         },
         {
-          "scene": "s19",
           "beat": "s19.1",
           "title": "The hymn begins",
-          "description": "The life group sings - their voices and the creature's hum begin to interact, resonate together.",
+          "scene": "s19",
           "cast": [
             "Dallas",
             "Makayla",
@@ -2330,6 +2353,7 @@
             "Janice",
             "Life Group Extras"
           ],
+          "description": "The life group sings - their voices and the creature's hum begin to interact, resonate together.",
           "shots": [
             "WS - Group singing, faces peaceful",
             "Detail - Hum becoming audible beneath",
@@ -2339,10 +2363,9 @@
           ]
         },
         {
-          "scene": "s20",
           "beat": "s20.1",
           "title": "Red eyes",
-          "description": "The creature appears - red eyes visible in the darkness or tall grass, watching the group.",
+          "scene": "s20",
           "cast": [
             "Dallas",
             "Makayla",
@@ -2352,6 +2375,7 @@
             "Janice",
             "Life Group Extras"
           ],
+          "description": "The creature appears - red eyes visible in the darkness or tall grass, watching the group.",
           "shots": [
             "Detail - Red glow in darkness",
             "CU - First person seeing the eyes",
@@ -2360,17 +2384,15 @@
             "Detail - Eyes moving, watching"
           ]
         }
-      ],
-      "scenes": [
-        "s07",
-        "s18",
-        "s19",
-        "s20"
       ]
     },
     {
       "day": 11,
-      "crewCall": "CALL TIME: 9:00 AM - VARIOUS LOCATIONS",
+      "scenes": [
+        "s07b",
+        "s16"
+      ],
+      "crewCall": "CALL: 9:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 9:30 AM — Various locations\nSETUP: 9:30 AM — Camera preps\nSHOOT: 10:00 AM — s07b · Mr. Mike's warning\nSHOOT: 11:30 AM — s16 · Escape plan\nWRAP: 1:30 PM",
       "crew": [
         {
           "role": "Director",
@@ -2396,10 +2418,9 @@
       ],
       "shotList": [
         {
-          "scene": "s07b",
           "beat": "s07b.1",
           "title": "Mr. Mike's warning",
-          "description": "Mr. Mike reveals something crucial about the creature or warns the group of danger ahead.",
+          "scene": "s07b",
           "cast": [
             "Dallas",
             "Dominic",
@@ -2407,6 +2428,7 @@
             "Asher",
             "Mr. Mike"
           ],
+          "description": "Mr. Mike reveals something crucial about the creature or warns the group of danger ahead.",
           "shots": [
             "MS - Mr. Mike gathering them",
             "CU - Mr. Mike speaking seriously",
@@ -2416,10 +2438,9 @@
           ]
         },
         {
-          "scene": "s16",
           "beat": "s16.1",
           "title": "The escape plan",
-          "description": "They devise a plan to either trap, communicate with, or escape from the creature.",
+          "scene": "s16",
           "cast": [
             "Dallas",
             "Dominic",
@@ -2427,6 +2448,7 @@
             "Asher",
             "Mr. Mike"
           ],
+          "description": "They devise a plan to either trap, communicate with, or escape from the creature.",
           "shots": [
             "WS - Group in huddle",
             "Detail - Sketching or discussing plan",
@@ -2435,15 +2457,15 @@
             "WS - Agreement and determination"
           ]
         }
-      ],
-      "scenes": [
-        "s07b",
-        "s16"
       ]
     },
     {
       "day": 12,
-      "crewCall": "CALL TIME: 7:00 AM - BRANFORD TOWN GREEN",
+      "scenes": [
+        "s04",
+        "s06"
+      ],
+      "crewCall": "CALL: 7:00 AM\nMEET: Branford Town Green\nSETUP: 7:30 AM — Camera preps\nSHOOT: 8:00 AM — s04 · Final fellowship gathering\nSHOOT: 9:30 AM — s06 · News vans arrive\nWRAP: 12:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -2468,10 +2490,9 @@
       ],
       "shotList": [
         {
-          "scene": "s04",
           "beat": "s04.1",
           "title": "The fellowship gathers",
-          "description": "All the main characters come together - Dallas, Dominic, Makayla, Asher, Mr. Mike - a final gathering.",
+          "scene": "s04",
           "cast": [
             "Dallas",
             "Dominic",
@@ -2479,6 +2500,7 @@
             "Asher",
             "Mr. Mike"
           ],
+          "description": "All the main characters come together - Dallas, Dominic, Makayla, Asher, Mr. Mike - a final gathering.",
           "shots": [
             "WS - Open location, all arriving",
             "MS - Greetings and reuniting",
@@ -2488,10 +2510,9 @@
           ]
         },
         {
-          "scene": "s04",
           "beat": "s04.2",
           "title": "Before the finale",
-          "description": "Last moments before the final confrontation - memories shared, decisions confirmed.",
+          "scene": "s04",
           "cast": [
             "Dallas",
             "Dominic",
@@ -2499,6 +2520,7 @@
             "Asher",
             "Mr. Mike"
           ],
+          "description": "Last moments before the final confrontation - memories shared, decisions confirmed.",
           "shots": [
             "Detail - Hands coming together",
             "CU - Eyes meeting",
@@ -2508,10 +2530,9 @@
           ]
         },
         {
-          "scene": "s06",
           "beat": "s06.1",
           "title": "News vans arrive",
-          "description": "The outside world intrudes - media arrives in Branford, cameras and crew setting up.",
+          "scene": "s06",
           "cast": [
             "Dallas",
             "Dominic",
@@ -2519,6 +2540,7 @@
             "Asher",
             "Mr. Mike"
           ],
+          "description": "The outside world intrudes - media arrives in Branford, cameras and crew setting up.",
           "shots": [
             "WS - News vans pulling up",
             "MS - Reporters and camera crews setting up",
@@ -2527,15 +2549,15 @@
             "WS - Town green overtaken by press"
           ]
         }
-      ],
-      "scenes": [
-        "s04",
-        "s06"
       ]
     },
     {
       "day": 13,
-      "crewCall": "CALL TIME: 6:00 AM - JERRY'S HOUSE / EXT. BRANFORD",
+      "scenes": [
+        "s27",
+        "s28"
+      ],
+      "crewCall": "CALL: 6:00 AM\nMEET: Jerry's House (72 Lake St, Hamden)\nSETUP: 6:30 AM — Camera preps\nSHOOT: 7:00 AM — s27 · Aftermath & gathering survivors\nSHOOT: 9:00 AM — s28 · Full circle\nWRAP: 12:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -2561,10 +2583,9 @@
       ],
       "shotList": [
         {
-          "scene": "s27",
           "beat": "s27.1",
           "title": "Final echoes",
-          "description": "The creature's presence lingers - the hum echoes across Branford, the aftermath unfolds.",
+          "scene": "s27",
           "cast": [
             "Asher",
             "Mr. Mike",
@@ -2574,6 +2595,7 @@
             "Janice",
             "Pat"
           ],
+          "description": "The creature's presence lingers - the hum echoes across Branford, the aftermath unfolds.",
           "shots": [
             "WS - Branford landscape, still hum in air",
             "CU - Individual faces processing aftermath",
@@ -2583,10 +2605,9 @@
           ]
         },
         {
-          "scene": "s27",
           "beat": "s27.2",
           "title": "Gathering survivors",
-          "description": "The survivors come together at Jerry's house - counting losses, assessing what happened.",
+          "scene": "s27",
           "cast": [
             "Asher",
             "Mr. Mike",
@@ -2596,6 +2617,7 @@
             "Janice",
             "Pat"
           ],
+          "description": "The survivors come together at Jerry's house - counting losses, assessing what happened.",
           "shots": [
             "WS - Group at house, some missing",
             "MS - Reuniting those who survived",
@@ -2605,10 +2627,9 @@
           ]
         },
         {
-          "scene": "s28",
           "beat": "s28.1",
           "title": "Aftermath",
-          "description": "Days or weeks later - the aftermath of the encounter, how life has changed.",
+          "scene": "s28",
           "cast": [
             "Asher",
             "Mr. Mike",
@@ -2618,6 +2639,7 @@
             "Janice",
             "Pat"
           ],
+          "description": "Days or weeks later - the aftermath of the encounter, how life has changed.",
           "shots": [
             "WS - Jerry's house, recovery and rebuilding",
             "MS - Characters changed by experience",
@@ -2627,10 +2649,9 @@
           ]
         },
         {
-          "scene": "s28",
           "beat": "s28.2",
           "title": "Full circle",
-          "description": "Return to the beginning - Dallas back where he started, but forever changed by Branford.",
+          "scene": "s28",
           "cast": [
             "Asher",
             "Mr. Mike",
@@ -2640,6 +2661,7 @@
             "Janice",
             "Pat"
           ],
+          "description": "Return to the beginning - Dallas back where he started, but forever changed by Branford.",
           "shots": [
             "WS - Branford landscape, same but different",
             "MS - Dallas reflecting",
@@ -2648,14 +2670,9 @@
             "Detail - Oscillator still recording, still detecting hum"
           ]
         }
-      ],
-      "scenes": [
-        "s27",
-        "s28"
       ]
     }
   ],
-  "limbo": [],
   "locationDirectory": [
     {
       "fictional": "DALLAS HOUSE",
@@ -2712,26 +2729,5 @@
       "actual": "",
       "address": ""
     }
-  ],
-  "the-research-beat": {
-    "durationMin": 60,
-    "assignedDay": 2,
-    "props": [
-      "Laptop — for trailcam footage playback (creature footage, practical or VFX)",
-      "Military-grade desktop audio recorder — with Sierra photo taped to it",
-      "Portable oscillator — Dallas dials to 115.3 (same unit from s00)",
-      "Translucent crystal (petri dish) — pyramid-shaped quartz; glows gold at 115.3 Hz, scorches black ring on desk",
-      "Birding guides — messy desk dressing",
-      "Disassembled electronics — desk clutter",
-      "Trailcam footage (practical/VFX) — plays on laptop screen"
-    ]
-  },
-  "the-threshold": {
-    "durationMin": 15,
-    "assignedDay": 5
-  },
-  "the-return": {
-    "durationMin": 60,
-    "assignedDay": 2
-  }
+  ]
 }
