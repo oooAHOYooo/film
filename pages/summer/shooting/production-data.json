@@ -677,9 +677,9 @@
             "Dallas"
           ],
           "shots": [
-            "WS - Train arriving at Branford station platform",
-            "WS - Empty platform, Long Island Sound in background",
-            "WS - Dallas walking toward station exit"
+            "WS — Train arriving at Branford station platform.",
+            "WS — Empty platform, Long Island Sound in background.",
+            "WS — Dallas walking toward station exit."
           ]
         },
         {
@@ -693,81 +693,40 @@
             "Asher"
           ],
           "shots": [
-            "WS - Branford street establishing, low houses with white trim and weathered fences",
-            "MS - Dallas walking down sidewalk with suitcase",
-            "CU - Harbor View Lane street sign",
-            "MS - Dallas's face, taking in the neighborhood scale and quietness",
-            "WS - Dallas getting closer to rental house",
-            "RETURN: Dallas at fence line, observing tall grass at property edge",
-            "WS - Dallas arriving at rental house, setting down suitcase"
+            "WS — Branford street establishing, low houses with white trim and weathered fences.",
+            "MS — Dallas walking down sidewalk with suitcase.",
+            "CU — Harbor View Lane street sign.",
+            "MS — Dallas's face, taking in the neighborhood scale and quietness.",
+            "WS — Dallas getting closer to rental house.",
+            "RETURN: Dallas at fence line, observing tall grass at property edge.",
+            "WS — Dallas arriving at rental house, setting down suitcase."
           ]
         },
         {
           "scene": "s00b",
-          "beat": "s00b.1",
-          "title": "Meeting property manager at front door",
-          "description": "Front door opens. Property manager greets Dallas, apologizing about previous tenants' mess. Dallas enters, unfazed. She gives tour narration.",
+          "beat": "s00b",
+          "title": "Property Manager House Tour",
+          "description": "Dallas meets property manager at front door and tours rental house. Progresses from foyer through living room, kitchen, backyard observation, and attic.",
           "cast": [
             "Dallas",
             "Matt Grant"
           ],
           "shots": [
-            "WS - Front door opening inward, foyer visible",
-            "MS - Property manager in doorway with clipboard and keys",
-            "CU - Property manager's face, apologetic",
-            "MS - Dallas entering, not removing shoes",
-            "CU - Dallas's eyes moving across the room",
-            "WS - Living room with cheap furniture pushed against walls",
-            "CU - Futon frame without mattress",
-            "CU - Empty beer cans on floor",
-            "MS - Property manager moving deeper into house",
-            "MS - Dallas following, expressionless",
-            "MS - Two shot as she talks"
-          ]
-        },
-        {
-          "scene": "s00b",
-          "beat": "s00b.2",
-          "title": "Kitchen and backyard observation",
-          "description": "Dallas stops at window facing backyard, watching tall reeds and grass. Property manager continues talking about yard and upstairs.",
-          "cast": [
-            "Dallas",
-            "Matt Grant"
-          ],
-          "shots": [
-            "MS - Dallas at window facing backyard",
-            "CU - His hand rising halfway, then stopping",
-            "CU - Dallas looking out at the grass",
-            "WS - Through window: tall reeds and grass beyond",
-            "CU - The line where yard ends and marsh begins",
-            "MS - Property manager realizing Dallas isn't behind her",
-            "MS - She turns back, continuing explanation",
-            "CU - Dallas's face, still focused on window",
-            "MS - Property manager gesturing toward stairs",
-            "MS - Dallas already moving past her toward stairs"
-          ]
-        },
-        {
-          "scene": "s00b",
-          "beat": "s00b.3",
-          "title": "Attic discovery",
-          "description": "Dallas climbs to attic. Low joists, bare plywood floor, small window. He stands in center looking up, listening. Property manager's voice from below fades.",
-          "cast": [
-            "Dallas",
-            "Matt Grant"
-          ],
-          "shots": [
-            "WS - Attic space, Dallas climbing the stairs",
-            "WS - Establishing attic - low joists, plywood floor",
-            "CU - Small window throwing gray light",
-            "MS - Dallas standing in center of attic",
-            "CU - Dallas's head tilting back",
-            "CU - Looking up at underside of roof",
-            "CU - Dallas's face - calm, focused",
-            "WS - Dallas in attic, very still",
-            "MS - Property manager at bottom of stairs (O.S.)",
-            "CU - Dallas listening, undisturbed by her voice",
-            "WS - Wide shot of quiet attic space"
+            "WS — Front door opening inward. Property manager in doorway, clipboard visible. Dallas entering, not removing shoes.",
+            "CU — Dallas's eyes moving across the living room. Not lingering. Taking inventory.",
+            "MS — Property manager moving deeper into house, talking. Dallas following a beat behind.",
+            "CU — Futon frame with no mattress leaning against wall.",
+            "CU — Empty beer cans at the baseboard.",
+            "MS — Property manager in kitchen, gesturing at appliances. Talking.",
+            "MS — Dallas drifting toward the back window. Property manager not noticing yet.",
+            "CU — Dallas's hand rising halfway toward the glass, then stopping.",
+            "POV (Dallas) — Through kitchen window: tall reeds, marsh grass, the line where the yard ends and something else begins. Slightly obscured by glass.",
+            "MS — Property manager mid-sentence, realizing Dallas isn't behind him. He turns back.",
+            "MS — Dallas already at the foot of the stairs. Not waiting.",
+            "WS — Attic. Low joists. Plywood floor. Dallas climbing up into frame.",
+            "CU — Small attic window. Gray light falling across the floor.",
+            "MS — Dallas standing in the center of the attic. Head tilting back slightly.",
+            "WS — Dallas still and alone in the attic. Property manager's voice audible but distant below."
           ]
         }
       ]
