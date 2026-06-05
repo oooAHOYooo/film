@@ -13,7 +13,6 @@
     "7": "2026-06-19",
     "8": "2026-06-20",
     "9": "2026-06-26",
-    "10": "2026-06-27",
     "11": "2026-06-28",
     "12": "2026-07-01",
     "13": "2026-07-02",
@@ -567,7 +566,7 @@
   "s26b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 13,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -1719,9 +1718,12 @@
         "s14",
         "s21",
         "s22",
-        "s23"
+        "s23",
+        "s24",
+        "s25",
+        "s26"
       ],
-      "crewCall": "CALL: 7:00 AM\nMEET: East Haven Nursery\nSETUP: 7:30 AM — Camera preps + equipment check\nSHOOT: 8:00 AM — s13 · Entering the marsh\nSHOOT: 9:30 AM — s14 · Creature encounter & escape\nLUNCH: 11:30 AM\nSHOOT: 12:30 PM — s21, s22, s23 · Marsh aftermath sequences\nWRAP: 4:00 PM",
+      "crewCall": "CALL: 5:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 5:30 PM — Camera preps\nSHOOT: 6:00 PM — s24 · Establishing the perimeter\nSHOOT: 7:30 PM — s25 · Continued defense\nSHOOT: 9:00 PM — s26 · Creature attacks the house\nWRAP: 11:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1850,11 +1852,12 @@
     {
       "day": 8,
       "scenes": [
-        "s24",
-        "s25",
-        "s26"
+        "s07",
+        "s18",
+        "s19",
+        "s20"
       ],
-      "crewCall": "CALL: 5:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 5:30 PM — Camera preps\nSHOOT: 6:00 PM — s24 · Establishing the perimeter\nSHOOT: 7:30 PM — s25 · Continued defense\nSHOOT: 9:00 PM — s26 · Creature attacks the house\nWRAP: 11:00 PM",
+      "crewCall": "CALL: 8:00 AM\nMEET: Branford Town Green\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07 · Coordinates discovered\nSHOOT: 10:30 AM — s18 · Life group gathering\nSHOOT: 12:00 PM — s19, s20 · Hymn meets the hum & red eyes\nWRAP: 3:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -2260,128 +2263,6 @@
             "MS - Hand signals and instructions",
             "Detail - Mouths moving, no sound heard",
             "WS - Coordinated silent action"
-          ]
-        }
-      ]
-    },
-    {
-      "day": 10,
-      "scenes": [
-        "s07",
-        "s18",
-        "s19",
-        "s20"
-      ],
-      "crewCall": "CALL: 8:00 AM\nMEET: Branford Town Green\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07 · Coordinates discovered\nSHOOT: 10:30 AM — s18 · Life group gathering\nSHOOT: 12:00 PM — s19, s20 · Hymn meets the hum & red eyes\nWRAP: 3:00 PM",
-      "crew": [
-        {
-          "role": "Director",
-          "name": "Alex"
-        },
-        {
-          "role": "Camera",
-          "name": "Alex"
-        },
-        {
-          "role": "Audio",
-          "name": "TBD"
-        },
-        {
-          "role": "Clapper",
-          "name": "TBD"
-        }
-      ],
-      "locationDetails": [
-        "Branford Town areas",
-        "Church grounds",
-        "Various locations"
-      ],
-      "shotList": [
-        {
-          "beat": "s07.1",
-          "title": "The coordinates revealed",
-          "scene": "s07",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike",
-            "Janice"
-          ],
-          "description": "Dallas and others discover specific coordinates from Sierra's notes - a location in the marsh.",
-          "shots": [
-            "MS - Map being studied",
-            "Detail - Coordinates marked",
-            "CU - Recognition on faces",
-            "MS - Conversation about location",
-            "WS - Group understanding significance"
-          ]
-        },
-        {
-          "beat": "s18.1",
-          "title": "Life group gathering",
-          "scene": "s18",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike",
-            "Janice",
-            "Life Group Extras"
-          ],
-          "description": "A church life group arrives at the location - innocent people who have no idea what's coming.",
-          "shots": [
-            "WS - Life group gathering with picnic/supplies",
-            "MS - Dallas and others arriving",
-            "CU - Introductions and greetings",
-            "WS - Full group assembling",
-            "Detail - Religious items or hymnal"
-          ]
-        },
-        {
-          "beat": "s19.1",
-          "title": "The hymn begins",
-          "scene": "s19",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike",
-            "Janice",
-            "Life Group Extras"
-          ],
-          "description": "The life group sings - their voices and the creature's hum begin to interact, resonate together.",
-          "shots": [
-            "WS - Group singing, faces peaceful",
-            "Detail - Hum becoming audible beneath",
-            "CU - Someone noticing the sound",
-            "MS - Singing continuing, hum building",
-            "WS - The two sounds merging"
-          ]
-        },
-        {
-          "beat": "s20.1",
-          "title": "Red eyes",
-          "scene": "s20",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike",
-            "Janice",
-            "Life Group Extras"
-          ],
-          "description": "The creature appears - red eyes visible in the darkness or tall grass, watching the group.",
-          "shots": [
-            "Detail - Red glow in darkness",
-            "CU - First person seeing the eyes",
-            "WS - Life group unaware, singing",
-            "MS - Dallas noticing, warning others",
-            "Detail - Eyes moving, watching"
           ]
         }
       ]

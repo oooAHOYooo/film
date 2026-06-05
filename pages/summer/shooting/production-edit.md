@@ -19,7 +19,6 @@ chronological-start-day: 1
 7: 2026-06-19
 8: 2026-06-20
 9: 2026-06-26
-10: 2026-06-27
 11: 2026-06-28
 12: 2026-07-01
 13: 2026-07-02
@@ -386,7 +385,7 @@ cast: Dallas, Makayla, Asher, Dominic
 ### scene: s26b
 duration: 0
 shoot-days: 0.5
-assigned-day: 13
+assigned-day: 7
 key-elements: 
 production-notes: Wraps
 cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
@@ -1173,17 +1172,16 @@ shots:
 
 ### Day 7 — 2026-06-19
 
-scenes: s13, s14, s21, s22, s23
+scenes: s13, s14, s21, s22, s23, s24, s25, s26
 
 crew-call:
-  CALL: 7:00 AM
-  MEET: East Haven Nursery
-  SETUP: 7:30 AM — Camera preps + equipment check
-  SHOOT: 8:00 AM — s13 · Entering the marsh
-  SHOOT: 9:30 AM — s14 · Creature encounter & escape
-  LUNCH: 11:30 AM
-  SHOOT: 12:30 PM — s21, s22, s23 · Marsh aftermath sequences
-  WRAP: 4:00 PM
+  CALL: 5:00 PM
+  MEET: Dallas House (72 Lake St, Hamden)
+  SETUP: 5:30 PM — Camera preps
+  SHOOT: 6:00 PM — s24 · Establishing the perimeter
+  SHOOT: 7:30 PM — s25 · Continued defense
+  SHOOT: 9:00 PM — s26 · Creature attacks the house
+  WRAP: 11:00 PM
 
 crew:
   - Director: Alex
@@ -1254,16 +1252,16 @@ shots:
 
 ### Day 8 — 2026-06-20
 
-scenes: s24, s25, s26
+scenes: s07, s18, s19, s20
 
 crew-call:
-  CALL: 5:00 PM
-  MEET: Dallas House (72 Lake St, Hamden)
-  SETUP: 5:30 PM — Camera preps
-  SHOOT: 6:00 PM — s24 · Establishing the perimeter
-  SHOOT: 7:30 PM — s25 · Continued defense
-  SHOOT: 9:00 PM — s26 · Creature attacks the house
-  WRAP: 11:00 PM
+  CALL: 8:00 AM
+  MEET: Branford Town Green
+  SETUP: 8:30 AM — Camera preps
+  SHOOT: 9:00 AM — s07 · Coordinates discovered
+  SHOOT: 10:30 AM — s18 · Life group gathering
+  SHOOT: 12:00 PM — s19, s20 · Hymn meets the hum & red eyes
+  WRAP: 3:00 PM
 
 crew:
   - Director: Alex
@@ -1507,76 +1505,6 @@ shots:
   - MS - Hand signals and instructions
   - Detail - Mouths moving, no sound heard
   - WS - Coordinated silent action
-
----
-
-### Day 10 — 2026-06-27
-
-scenes: s07, s18, s19, s20
-
-crew-call:
-  CALL: 8:00 AM
-  MEET: Branford Town Green
-  SETUP: 8:30 AM — Camera preps
-  SHOOT: 9:00 AM — s07 · Coordinates discovered
-  SHOOT: 10:30 AM — s18 · Life group gathering
-  SHOOT: 12:00 PM — s19, s20 · Hymn meets the hum & red eyes
-  WRAP: 3:00 PM
-
-crew:
-  - Director: Alex
-  - Camera: Alex
-  - Audio: TBD
-  - Clapper: TBD
-
-locations:
-  - Branford Town areas
-  - Church grounds
-  - Various locations
-
-#### Beat: s07.1 — The coordinates revealed
-scene: s07
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice
-description: Dallas and others discover specific coordinates from Sierra's notes - a location in the marsh.
-shots:
-  - MS - Map being studied
-  - Detail - Coordinates marked
-  - CU - Recognition on faces
-  - MS - Conversation about location
-  - WS - Group understanding significance
-
-#### Beat: s18.1 — Life group gathering
-scene: s18
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
-description: A church life group arrives at the location - innocent people who have no idea what's coming.
-shots:
-  - WS - Life group gathering with picnic/supplies
-  - MS - Dallas and others arriving
-  - CU - Introductions and greetings
-  - WS - Full group assembling
-  - Detail - Religious items or hymnal
-
-#### Beat: s19.1 — The hymn begins
-scene: s19
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
-description: The life group sings - their voices and the creature's hum begin to interact, resonate together.
-shots:
-  - WS - Group singing, faces peaceful
-  - Detail - Hum becoming audible beneath
-  - CU - Someone noticing the sound
-  - MS - Singing continuing, hum building
-  - WS - The two sounds merging
-
-#### Beat: s20.1 — Red eyes
-scene: s20
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
-description: The creature appears - red eyes visible in the darkness or tall grass, watching the group.
-shots:
-  - Detail - Red glow in darkness
-  - CU - First person seeing the eyes
-  - WS - Life group unaware, singing
-  - MS - Dallas noticing, warning others
-  - Detail - Eyes moving, watching
 
 ---
 
