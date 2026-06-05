@@ -946,14 +946,13 @@ shots:
 
 ### Day 5 — 2026-06-15
 
-scenes: s08c, s11, s12
+scenes: s11, s12
 
 crew-call:
   CALL: 4:30 PM
   MEET: Alex's House (206 Saint John St)
   ARRIVE: 5:00 PM — Marsh edge / surrounding areas
   SETUP: 5:00 PM — Camera preps
-  SHOOT: 5:30 PM — s08c · Dallas at the threshold
   SHOOT: 6:30 PM — s11 · Evening trio investigation
   SHOOT: 8:00 PM — s12 · Burn mark discovery
   WRAP: 9:30 PM
@@ -967,17 +966,6 @@ crew:
 locations:
   - Alex's House
   - Surrounding areas and marsh edge
-
-#### Beat: s08c.1 — The threshold moment
-scene: s08c
-cast: Dallas
-description: Dallas stands at the boundary between civilization and the tall grass - hesitation and realization.
-shots:
-  - WS - Dallas at marsh boundary in afternoon light
-  - MS - Dallas facing the tall grass
-  - CU - Dallas's face, contemplative/afraid
-  - WS - Tall grass from Dallas's POV
-  - Detail - Dallas's hand reaching toward grass
 
 #### Beat: s11.1 — Evening arrival at location
 scene: s11
