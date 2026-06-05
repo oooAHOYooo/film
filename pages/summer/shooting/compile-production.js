@@ -151,6 +151,19 @@ function renderEquipmentGroupsHtml(equipmentList) {
   return html;
 }
 
+function markdownToHtml(md) {
+  if (!md) return '';
+  let html = escapeHtml(md);
+  // Convert bold markdown
+  html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  // Convert bullet points and dashes
+  html = html.replace(/^• (.+)$/gm, '<div style="margin-bottom: 2px;">• $1</div>');
+  html = html.replace(/^- (.+)$/gm, '<div style="margin-bottom: 2px;">• $1</div>');
+  // Convert line breaks
+  html = html.replace(/\n/g, '<br>');
+  return html;
+}
+
 function normalizeSceneAnchor(sceneId, rows) {
   const raw = String(sceneId || '').trim();
   const lower = raw.toLowerCase();
@@ -798,6 +811,8 @@ function generateDayHtml(dayNum, rows, productionData) {
   const customShotList = planEntry && Array.isArray(planEntry.shotList) && planEntry.shotList.length
     ? planEntry.shotList
     : null;
+  const cameraSettings = planEntry && planEntry.cameraSettings ? planEntry.cameraSettings : '';
+  const settingsOverview = planEntry && planEntry.settingsOverview ? planEntry.settingsOverview : '';
 
   function extractSceneSnippet(content, n) {
     if (!content || typeof content !== 'string') return '';
@@ -1185,6 +1200,14 @@ function generateDayHtml(dayNum, rows, productionData) {
                     <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">CAST NEEDED</h3>
                     <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:0.84rem; min-height:28px;">${summaryCast.length > 0 ? summaryCast.map(c => `<span style="display:inline-block; border:1px solid #000; padding:3px 8px; border-radius:999px; font-weight:700;">${escapeHtml(c)}</span>`).join('') : '<div style="color:#666; font-style:italic;">No cast listed for this day.</div>'}</div>
                 </div>
+                ${cameraSettings ? `<div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">CAMERA & AUDIO SETTINGS</h3>
+                    <div style="font-size:0.84rem; line-height:1.5;">${markdownToHtml(cameraSettings)}</div>
+                </div>` : ''}
+                ${settingsOverview ? `<div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">QUICK SETUP</h3>
+                    <div style="font-size:0.84rem; line-height:1.5;">${markdownToHtml(settingsOverview)}</div>
+                </div>` : ''}
             </section>
         </div>
         <script>

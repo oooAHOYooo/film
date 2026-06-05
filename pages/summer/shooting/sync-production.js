@@ -156,8 +156,8 @@ function parseDay(dayNum, dayLines) {
   const day = { day: dayNum };
   let i = 0;
 
-  // Parse day-level fields until first beat
-  while (i < dayLines.length && !dayLines[i].startsWith('#### Beat:')) {
+  // Parse day-level fields until first beat or settings section
+  while (i < dayLines.length && !dayLines[i].startsWith('#### Beat:') && !dayLines[i].startsWith('#### CAMERA') && !dayLines[i].startsWith('#### SETTINGS')) {
     const line = dayLines[i];
     if (!line.trim() || line === '---') { i++; continue; }
 
@@ -197,6 +197,30 @@ function parseDay(dayNum, dayLines) {
       i = next - 1;
     }
     i++;
+  }
+
+  // Parse camera/audio settings if present
+  while (i < dayLines.length && (dayLines[i].startsWith('#### CAMERA') || dayLines[i].startsWith('#### SETTINGS'))) {
+    const line = dayLines[i];
+    if (line.startsWith('#### CAMERA & AUDIO SETTINGS')) {
+      const settingsLines = [];
+      i++;
+      while (i < dayLines.length && !dayLines[i].startsWith('#### ')) {
+        settingsLines.push(dayLines[i]);
+        i++;
+      }
+      day.cameraSettings = settingsLines.join('\n').trim();
+    } else if (line.startsWith('#### SETTINGS OVERVIEW')) {
+      const settingsLines = [];
+      i++;
+      while (i < dayLines.length && !dayLines[i].startsWith('#### ')) {
+        settingsLines.push(dayLines[i]);
+        i++;
+      }
+      day.settingsOverview = settingsLines.join('\n').trim();
+    } else {
+      i++;
+    }
   }
 
   // Parse beats
