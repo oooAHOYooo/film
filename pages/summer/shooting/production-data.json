@@ -899,11 +899,10 @@
       "estLength": "5h",
       "scenes": [
         "s08",
-        "s08d",
         "s09",
         "s10"
       ],
-      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08, s08d · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery\nWRAP: 10:00 PM",
+      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08 · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery\nWRAP: 10:00 PM",
       "crew": [
         {
           "role": "Director / Camera",
@@ -953,22 +952,6 @@
             "CU - Dallas's face, recognizing the source",
             "WS - Tall grass field, undulating",
             "Detail - Oscillator reading at peak frequency"
-          ]
-        },
-        {
-          "beat": "s08d.1",
-          "title": "Return through darkness",
-          "scene": "s08d",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "Dallas makes his way back through the darkening neighborhoods, disoriented.",
-          "shots": [
-            "WS - Suburban street at dusk, Dallas retracing path",
-            "MS - Dallas walking, checking oscillator periodically",
-            "CU - Dallas, confused or shaken",
-            "WS - Street lamp lighting as darkness falls",
-            "OTS - Dallas from behind, heading back"
           ]
         },
         {
@@ -1369,10 +1352,11 @@
     {
       "day": 5,
       "scenes": [
+        "s08d",
         "s11",
         "s12"
       ],
-      "crewCall": "CALL: 4:30 PM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 5:00 PM — Marsh edge / surrounding areas\nSETUP: 5:00 PM — Camera preps\nSHOOT: 6:30 PM — s11 · Evening trio investigation\nSHOOT: 8:00 PM — s12 · Burn mark discovery\nWRAP: 9:30 PM",
+      "crewCall": "CALL: 4:30 PM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 5:00 PM — Marsh edge / surrounding areas\nSETUP: 5:00 PM — Camera preps\nSHOOT: 5:30 PM — s08d · Return through darkness\nSHOOT: 6:30 PM — s11 · Evening trio investigation\nSHOOT: 8:00 PM — s12 · Burn mark discovery\nWRAP: 9:30 PM",
       "crew": [
         {
           "role": "Director",
@@ -1396,6 +1380,22 @@
         "Surrounding areas and marsh edge"
       ],
       "shotList": [
+        {
+          "beat": "s08d.1",
+          "title": "Return through darkness",
+          "scene": "s08d",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas makes his way back through the darkening neighborhoods, disoriented.",
+          "shots": [
+            "WS - Suburban street at dusk, Dallas retracing path",
+            "MS - Dallas walking, checking oscillator periodically",
+            "CU - Dallas, confused or shaken",
+            "WS - Street lamp lighting as darkness falls",
+            "OTS - Dallas from behind, heading back"
+          ]
+        },
         {
           "beat": "s11.1",
           "title": "Evening arrival at location",

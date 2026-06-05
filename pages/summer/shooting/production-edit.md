@@ -638,13 +638,13 @@ shots:
 ### Day 2 — 2026-06-12
 
 est-length: 5h
-scenes: s08, s08d, s09, s10
+scenes: s08, s09, s10
 
 crew-call:
   CALL: 4:00 PM
   MEET: East Haven Nursery
   SETUP: 4:30 PM — Camera preps
-  SHOOT: 5:00 PM — s08, s08d · Marsh approach & exploration
+  SHOOT: 5:00 PM — s08 · Marsh approach & exploration
   SHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery
   WRAP: 10:00 PM
 
@@ -678,17 +678,6 @@ shots:
   - CU - Dallas's face, recognizing the source
   - WS - Tall grass field, undulating
   - Detail - Oscillator reading at peak frequency
-
-#### Beat: s08d.1 — Return through darkness
-scene: s08d
-cast: Dallas
-description: Dallas makes his way back through the darkening neighborhoods, disoriented.
-shots:
-  - WS - Suburban street at dusk, Dallas retracing path
-  - MS - Dallas walking, checking oscillator periodically
-  - CU - Dallas, confused or shaken
-  - WS - Street lamp lighting as darkness falls
-  - OTS - Dallas from behind, heading back
 
 #### Beat: s09.1 — Nursery exploration
 scene: s09
@@ -946,13 +935,14 @@ shots:
 
 ### Day 5 — 2026-06-15
 
-scenes: s11, s12
+scenes: s08d, s11, s12
 
 crew-call:
   CALL: 4:30 PM
   MEET: Alex's House (206 Saint John St)
   ARRIVE: 5:00 PM — Marsh edge / surrounding areas
   SETUP: 5:00 PM — Camera preps
+  SHOOT: 5:30 PM — s08d · Return through darkness
   SHOOT: 6:30 PM — s11 · Evening trio investigation
   SHOOT: 8:00 PM — s12 · Burn mark discovery
   WRAP: 9:30 PM
@@ -966,6 +956,17 @@ crew:
 locations:
   - Alex's House
   - Surrounding areas and marsh edge
+
+#### Beat: s08d.1 — Return through darkness
+scene: s08d
+cast: Dallas
+description: Dallas makes his way back through the darkening neighborhoods, disoriented.
+shots:
+  - WS - Suburban street at dusk, Dallas retracing path
+  - MS - Dallas walking, checking oscillator periodically
+  - CU - Dallas, confused or shaken
+  - WS - Street lamp lighting as darkness falls
+  - OTS - Dallas from behind, heading back
 
 #### Beat: s11.1 — Evening arrival at location
 scene: s11
