@@ -142,7 +142,7 @@ cast: Dallas
 ### scene: mr-mikes-warning
 duration: 90
 shoot-days: 0.5
-assigned-day: 11
+assigned-day: 8
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Makayla, Asher, Mr Mike
@@ -158,7 +158,7 @@ cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice
 ### scene: the-hum
 duration: 120
 shoot-days: 0.5
-assigned-day: 6
+assigned-day: 3
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Pat
@@ -166,7 +166,7 @@ cast: Dallas, Dominic, Pat
 ### scene: marsh-walk-later
 duration: 60
 shoot-days: 0.5
-assigned-day: 6
+assigned-day: 3
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Pat
@@ -216,7 +216,7 @@ cast: Dallas
 ### scene: entering-grass
 duration: 90
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 8
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
@@ -232,7 +232,7 @@ cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
 ### scene: creature-rescue
 duration: 120
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 8
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
@@ -289,7 +289,7 @@ cast: Dallas
 ### scene: life-group-arrives
 duration: 90
 shoot-days: 0.5
-assigned-day: 10
+assigned-day: 8
 key-elements: 
 production-notes: REWRITE: Remove Howie character - Dallas explores alone using oscillator
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
@@ -297,7 +297,7 @@ cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
 ### scene: the-hymn
 duration: 120
 shoot-days: 0.5
-assigned-day: 10
+assigned-day: 8
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
@@ -305,7 +305,7 @@ cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
 ### scene: red-eyes
 duration: 75
 shoot-days: 0.5
-assigned-day: 10
+assigned-day: 8
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
@@ -369,7 +369,7 @@ cast: Dallas, Makayla, Asher, Dominic
 ### scene: the-perimeter
 duration: 150
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 7
 key-elements: 
 production-notes: 
 cast: Dallas, Makayla, Asher, Dominic
@@ -377,7 +377,7 @@ cast: Dallas, Makayla, Asher, Dominic
 ### scene: the-last-dinner
 duration: 150
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 7
 time: 7:00 PM – 9:00 PM
 key-elements: 
 production-notes: 
@@ -386,7 +386,7 @@ cast: Dallas, Makayla, Asher, Dominic
 ### scene: s26b
 duration: 0
 shoot-days: 0.5
-assigned-day: 16
+assigned-day: 13
 key-elements: 
 production-notes: Wraps
 cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
@@ -645,7 +645,7 @@ crew-call:
   MEET: East Haven Nursery
   SETUP: 4:30 PM — Camera preps
   SHOOT: 5:00 PM — s08, s08d · Marsh approach & exploration
-  SHOOT: 7:30 PM — s09, s10 · Deeper marsh investigation
+  SHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery
   WRAP: 10:00 PM
 
 crew:
@@ -744,13 +744,13 @@ scenes: s01, s03, s05
 crew-call:
   CALL: 11:00 AM
   MEET: Alex's House (206 Saint John St)
-  ARRIVE: 11:30 AM — Dallas House (72 Lake St, Hamden)
-  SHOOT: 12:00 PM - 1:30 PM — TBD
-  LUNCH: 1:30 PM
-  SHOOT: 2:15 PM - 4:00 PM — s01 · Makayla & Asher arrive, house tour
-  SHOOT: 4:30 PM - 6:00 PM — s05 · Merlin app search
-  DINNER: 6:30 PM
-  SHOOT: 7:00 PM - 9:00 PM — Final block (TBD)
+  ARRIVE: 11:30 AM — Jerry's' House (72 Lake St, Hamden)
+  SHOOT: 11:50 AM - 12:30 PM — s01 · Makayla & Asher arrive
+  LUNCH: 12:30 PM
+  SHOOT: 1:15 PM - 3:00 PM — s01 · Makayla & Asher arrive
+  SHOOT: 4 PM - 5:30 PM — s05 · Merlin app search
+  DINNER: 5:30 PM
+  SHOOT: 6:00 PM - 8:45 PM — Final block (TBD)
   WRAP: 9:00 PM
 
 crew:
@@ -858,12 +858,12 @@ shots:
 scenes: s14b, s14c
 
 crew-call:
-  CALL: 10:00 AM
-  MEET: Dallas House (72 Lake St, Hamden)
-  SETUP: 10:30 AM — Camera preps
-  SHOOT: 11:00 AM — s14b · Sierra's journal discovery & frequency match
-  LUNCH: 1:00 PM
-  SHOOT: 2:00 PM — s14c · Expedition planning & equipment check
+  CALL: 12:45 PM
+  MEET: Alex's' House (206 Saint John ST)
+  SETUP: 1:10 PM — Camera preps
+  SHOOT: 1:30 PM — s14b · Sierra's journal discovery & frequency match
+  BREAK: 2:20 PM
+  SHOOT: 2:45 PM — s14c · Expedition planning & equipment check
   WRAP: 4:30 PM
 
 crew:

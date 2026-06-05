@@ -165,7 +165,7 @@
   "mr-mikes-warning": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 11,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -194,7 +194,7 @@
   "the-hum": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 6,
+    "assignedDay": 3,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -206,7 +206,7 @@
   "marsh-walk-later": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 6,
+    "assignedDay": 3,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -276,7 +276,7 @@
   "entering-grass": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -305,7 +305,7 @@
   "creature-rescue": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -403,7 +403,7 @@
   "life-group-arrives": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 10,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
     "cast": [
@@ -419,7 +419,7 @@
   "the-hymn": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 10,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -435,7 +435,7 @@
   "red-eyes": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 10,
+    "assignedDay": 8,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -540,7 +540,7 @@
   "the-perimeter": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 7,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -553,7 +553,7 @@
   "the-last-dinner": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 7,
     "time": "7:00 PM – 9:00 PM",
     "keyElements": "",
     "productionNotes": "",
@@ -567,7 +567,7 @@
   "s26b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 16,
+    "assignedDay": 13,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -903,7 +903,7 @@
         "s09",
         "s10"
       ],
-      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08, s08d · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deeper marsh investigation\nWRAP: 10:00 PM",
+      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08, s08d · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery\nWRAP: 10:00 PM",
       "crew": [
         {
           "role": "Director / Camera",
@@ -1045,7 +1045,7 @@
         "s03",
         "s05"
       ],
-      "crewCall": "CALL: 11:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 11:30 AM — Dallas House (72 Lake St, Hamden)\nSHOOT: 12:00 PM - 1:30 PM — TBD\nLUNCH: 1:30 PM\nSHOOT: 2:15 PM - 4:00 PM — s01 · Makayla & Asher arrive, house tour\nSHOOT: 4:30 PM - 6:00 PM — s05 · Merlin app search\nDINNER: 6:30 PM\nSHOOT: 7:00 PM - 9:00 PM — Final block (TBD)\nWRAP: 9:00 PM",
+      "crewCall": "CALL: 11:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 11:30 AM — Jerry's' House (72 Lake St, Hamden)\nSHOOT: 11:50 AM - 12:30 PM — s01 · Makayla & Asher arrive\nLUNCH: 12:30 PM\nSHOOT: 1:15 PM - 3:00 PM — s01 · Makayla & Asher arrive\nSHOOT: 4 PM - 5:30 PM — s05 · Merlin app search\nDINNER: 5:30 PM\nSHOOT: 6:00 PM - 8:45 PM — Final block (TBD)\nWRAP: 9:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1220,7 +1220,7 @@
         "s14b",
         "s14c"
       ],
-      "crewCall": "CALL: 10:00 AM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 10:30 AM — Camera preps\nSHOOT: 11:00 AM — s14b · Sierra's journal discovery & frequency match\nLUNCH: 1:00 PM\nSHOOT: 2:00 PM — s14c · Expedition planning & equipment check\nWRAP: 4:30 PM",
+      "crewCall": "CALL: 12:45 PM\nMEET: Alex's' House (206 Saint John ST)\nSETUP: 1:10 PM — Camera preps\nSHOOT: 1:30 PM — s14b · Sierra's journal discovery & frequency match\nBREAK: 2:20 PM\nSHOOT: 2:45 PM — s14c · Expedition planning & equipment check\nWRAP: 4:30 PM",
       "crew": [
         {
           "role": "Director",
