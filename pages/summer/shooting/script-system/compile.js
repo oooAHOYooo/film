@@ -271,6 +271,7 @@ function generateHTMLPage(markdown, scenes) {
   <title>Full Script - ${SCRIPT_NAME}</title>
   <link rel="stylesheet" href="../../script-system/script.css?v=20260108-5">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
     /* Modal styling */
     .print-scene-modal {
@@ -390,7 +391,7 @@ function generateHTMLPage(markdown, scenes) {
             <div class="script-export-menu" id="scriptExportMenu" role="menu" aria-label="Export and print options">
               <button type="button" role="menuitem" onclick="downloadMarkdown()">Download .md</button>
               <button type="button" role="menuitem" onclick="printMarkdownPdf()">PDF (Markdown)</button>
-              <button type="button" role="menuitem" onclick="document.getElementById('printSceneModal').showModal()">Print Scene</button>
+              <button type="button" role="menuitem" onclick="document.getElementById('printSceneModal').showModal()">Download Scene as PDF</button>
               <button type="button" role="menuitem" onclick="window.print()">Print All</button>
             </div>
           </div>
@@ -425,17 +426,17 @@ function generateHTMLPage(markdown, scenes) {
     </div>
   </div>
 
-  <!-- Modal for printing individual scenes -->
+  <!-- Modal for downloading individual scenes as PDF -->
   <dialog id="printSceneModal" class="print-scene-modal">
     <div class="modal-content">
-      <h2>Print Individual Scene</h2>
-      <p>Select a scene to isolate and print:</p>
+      <h2>Download Scene as PDF</h2>
+      <p>Select a scene to download:</p>
       <select id="printSceneSelect" class="print-scene-select">
         <option value="">— Select a scene —</option>
         ${printSceneOptionsHtml}
       </select>
       <div class="modal-buttons">
-        <button type="button" class="modal-btn modal-btn-primary" onclick="printSelectedScene()">Print Scene</button>
+        <button type="button" class="modal-btn modal-btn-primary" onclick="downloadScenePdf()">Download as PDF</button>
         <button type="button" class="modal-btn modal-btn-secondary" onclick="document.getElementById('printSceneModal').close()">Cancel</button>
       </div>
     </div>
@@ -649,8 +650,8 @@ function generateHTMLPage(markdown, scenes) {
       window.addEventListener('resize', updateStatusBar);
     })();
 
-    // Print individual scene functionality
-    function printSelectedScene() {
+    // Download individual scene as PDF
+    function downloadScenePdf() {
       const select = document.getElementById('printSceneSelect');
       const sceneNum = parseInt(select.value, 10);
       if (!sceneNum || isNaN(sceneNum)) {
@@ -658,28 +659,37 @@ function generateHTMLPage(markdown, scenes) {
         return;
       }
 
-      // Hide all scenes except the selected one
-      const wrappers = document.querySelectorAll('.scene-wrapper');
-      wrappers.forEach(wrapper => {
-        const num = parseInt(wrapper.getAttribute('data-scene-num'), 10);
-        if (num !== sceneNum) {
-          wrapper.classList.add('print-hidden');
-        }
-      });
+      const sceneWrapper = document.querySelector(\`[data-scene-num="\${sceneNum}"]\`);
+      if (!sceneWrapper) {
+        alert('Scene not found');
+        return;
+      }
+
+      // Get scene title from h3
+      const heading = sceneWrapper.querySelector('h3');
+      const sceneTitle = heading ? heading.textContent.trim() : \`Scene \${sceneNum}\`;
+
+      // Clone the scene for PDF generation (so we don't modify the original)
+      const element = sceneWrapper.cloneNode(true);
+
+      // Remove ID so it doesn't conflict
+      element.removeAttribute('id');
+      element.removeAttribute('data-scene-num');
+
+      // PDF options
+      const opt = {
+        margin: [0.5, 0.5, 0.5, 0.5],
+        filename: \`Scene_\${String(sceneNum).padStart(2, '0')}.pdf\`,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+
+      // Generate PDF
+      html2pdf().set(opt).from(element).save();
 
       // Close the modal
       document.getElementById('printSceneModal').close();
-
-      // Trigger print after a brief delay to ensure DOM is ready
-      setTimeout(() => {
-        window.print();
-        // Reset after printing
-        setTimeout(() => {
-          document.querySelectorAll('.scene-wrapper.print-hidden').forEach(el => {
-            el.classList.remove('print-hidden');
-          });
-        }, 500);
-      }, 100);
     }
 
     function looksLikeActionIntro(text) {
