@@ -518,9 +518,6 @@ function generateHTMLPage(markdown, scenes) {
     // Format screenplay elements
     formatScreenplay(document.querySelector('.screenplay-container'));
 
-    // Wrap each scene in a scene-wrapper div for print isolation
-    wrapScenes(document.getElementById('scriptContent'));
-
     // Filmmaking-style page length & runtime (1 page ≈ 1 minute; ~250 words/page)
     // Count from raw markdown so we get the full script (DOM textContent can undercount)
     (function initScriptStatsAndProgress() {
@@ -588,6 +585,10 @@ function generateHTMLPage(markdown, scenes) {
         this.value = '';
       });
     })();
+
+    // Wrap each scene in a scene-wrapper div for print isolation
+    // Must be called AFTER initSceneNav so scene headings have IDs
+    wrapScenes(document.getElementById('scriptContent'));
 
     // Status bar: current scene, who's in scene, production tags (updates on scroll)
     (function initStatusBar() {
