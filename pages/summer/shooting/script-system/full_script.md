@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/6/2026, 8:00:16 AM*
+*Compiled on 6/6/2026, 8:01:48 AM*
 
 ---
 
@@ -169,14 +169,16 @@ PROPERTY MANAGERDown and around.
 
 EXT. BACKYARD
 
-PROPERTY MANAGERCareful on the steps. They get slick when it rains.
+PROPERTY MANAGER
+Careful on the steps. They get slick when it rains.
 
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
 
 (action)
 The property manager and Dallas walk through the backyard up to the porch that doesn't connect to the kitchen. They look out to the distance for a beat. 
 
-PROPERTY MANAGERBranford’s got a little bit of everything. Water, woods, old houses. New Haven’s close when you need it... There’s water beyond the brush. Tidal stuff, mostly. Salt marsh, drainage, edge of the river, depends who’s asking. Egrets, herons, osprey. Herons sound terrible at night, but that’s normal. We get a couple of big storms in the season and we might have one on the way - but I think we’ll be okay. 
+PROPERTY MANAGER
+Branford’s got a little bit of everything. Water, woods, old houses. New Haven’s close when you need it... There’s water beyond the brush. Tidal stuff, mostly. Salt marsh, drainage, edge of the river, depends who’s asking. Egrets, herons, osprey. Herons sound terrible at night, but that’s normal. We get a couple of big storms in the season and we might have one on the way - but I think we’ll be okay. 
 
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
 
@@ -222,14 +224,16 @@ PROPERTY MANAGEROh. Right. Attic.
 (action)
 He checks the clipboard.
 
-PROPERTY MANAGERNot finished currently. Storage, only. Landlord approves use. I don't think the other tenants use it much. 
+PROPERTY MANAGER
+Not finished currently. Storage, only. Landlord approves use. I don't think the other tenants use it much. 
 
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
 
 (action)
 Dallas moves toward the door and up the stairs.
 
-PROPERTY MANAGEROkay. Yeah. There it is.
+PROPERTY MANAGER
+Okay. Yeah. There it is.
 
 INT. RENTAL HOUSE - ATTIC - CONTINUOUS
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
@@ -247,7 +251,7 @@ Dallas steps into the center of the attic.
 (action)
 The property manager stays below.
 
-PROPERTY MANAGER (O.S.)
+PROPERTY MANAGER
 I’m not sure if there’s insulation or — are you seeing anything up there? We can get you the landlord’s contact. I told him to let me know.
 
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
