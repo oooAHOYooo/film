@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/4/2026, 11:30:11 AM*
+*Compiled on 6/6/2026, 7:57:04 AM*
 
 ---
 
@@ -123,66 +123,89 @@ END SCENE 0a
 
 INT. RENTAL HOUSE - FRONT DOOR - DAY (s00b.1)
 
-The front door opens inward. A small foyer with scuffed hardwood. To the left, a living room where cheap furniture sits pushed against the walls in no particular order. A futon frame without a mattress leans in a corner. Empty beer cans on the floor by the baseboard — not swept up, not recent enough to matter. The smell of stale beer is baked into the air.
+The front door opens inward. A small foyer with scuffed hardwood. To the left, a living room where cheap furniture sits pushed against the walls in no particular order. A futon frame without a mattress leans in a corner. Empty beer cans on the floor by the baseboard.
 
-The PROPERTY MANAGER, early 50s, stands in the doorway, holding a clipboard and keys. Her blazer is slightly wrinkled. She is apologizing before Dallas has even stepped inside.
-
-PROPERTY MANAGER
-I know. I know it's not... they left it in a state.
-
-Dallas enters. He is mid-30s, unremarkable to look at, all his presence internal. He wears a canvas jacket over a plain shirt. He doesn't remove his shoes. His eyes move across the room without lingering.
-
-DALLAS
-(quiet)
-It's fine.
+The PROPERTY MANAGER, early 40s, stands in the doorway, holding a clipboard and keys. He is already talking before Dallas has fully stepped inside.
 
 PROPERTY MANAGER
-The previous tenants were — well, they were here for the same reason you are. Not the research, obviously, but just... passing through. Both of them. They didn't treat it like home. I've had the carpets marked for cleaning. The smell will go.
+Okay Branford rental unit #72 let's see what you got. Right, so— front door sticks a little in the winter, not enough to replace it. Heat works. Water works. Hot water takes, I don’t know, twenty seconds upstairs, thirty seconds down? Pressure’s good. Pipes are old but they work.
 
-She moves deeper into the house. Dallas follows. She is filling silence the way some people fill a room.
+Dallas enters.
 
-PROPERTY MANAGER (CONT'D)
-The kitchen is through here. Appliances are older but they work. The stove needs a minute to heat but it's reliable. Previous tenant left a mini-fridge in the corner I asked him to take three times. I apologize for that.
+The property manager nods, moving before Dallas has entered fully. 
+
+PROPERTY MANAGER
+Kitchen’s through here. Stove runs a little hot, refrigerator’s electric, older unit, holds temperature. Dishwasher works but I wouldn’t load it like a restaurant. Sink goes hot cold - cold hot - you know the deal. Previous tenant all of that in the corner I asked him to take it out before you came. I apologize for that.
 
 INT. RENTAL HOUSE - KITCHEN / BACK WINDOW - CONTINUOUS (s00b.2)
+They enter the kitchen. Dallas stops at a window that faces the backyard. Through the glass, tall reeds and grass. 
 
-Dallas stops at a window that faces the backyard. Through the glass, tall reeds and grass. The line where the yard ends and something else begins — marsh, or boundary, or both. His hand rises halfway, then stops. He looks at the grass.
-
-The property manager has continued talking. She realizes he's not behind her. She turns back.
+The property manager notices Dallas looking.
 
 PROPERTY MANAGER
-The yard is mostly unmanaged. Not my responsibility. Landlord says it's fine, so... it's fine.
+Backyard’s small but there's grass. You can see it from here, but there’s no direct access from the kitchen. You have to go around and down.
 
-Dallas doesn't answer. He's still looking out.
+He points toward a narrow back stairway.
 
 PROPERTY MANAGER (CONT'D)
-The upstairs has two bedrooms. One is larger. There's a bathroom — the light fixture flickers sometimes but it works. And then there's the attic access — I know it's not traditional, but the previous tenants never went up there so I'm not sure what the condition is. It might be storage space, might be just...
+Down and around. 
 
-She trails. Dallas has already moved past her, toward the stairs. He climbs without waiting.
+EXT. BACKYARD
 
-INT. RENTAL HOUSE - ATTIC - CONTINUOUS (s00b.3)
+PROPERTY MANAGER (CONT'D)
+Careful on the steps. They get slick when it rains.
 
-Low wood joists. Bare plywood floor. A small window at one end throws gray light across the space. The ceiling is higher than expected — not cramped. Quiet. The kind of quiet that has weight.
+<!-- scene: 0B file: s00b.md nickname: property-manager -->
 
-Dallas stands in the center of the attic. His head tilts back slightly. He looks up at the underside of the roof. He listens.
+(action)
+The property manager and Dallas walk through the backyard up to the porch that doesn't connect to the kitchen. They look out to the distance for a beat. 
 
-Below him, the property manager's voice reaches the bottom of the stairs.
+PROPERTY MANAGER (CONT'D)
+Branford’s got a little bit of everything. Water, woods, old houses. New Haven’s close when you need it... There’s water beyond the brush. Tidal stuff, mostly. Salt marsh, drainage, edge of the river, depends who’s asking. Egrets, herons, osprey. Herons sound terrible at night, but that’s normal. We get a couple of big storms in the season and we might have one on the way - but I think we'll be okay. 
+
+The property manager flips through his clipboard.
+
+PROPERTY MANAGER
+Roof’s not new-new, but it’s not a problem. Electrical should be okay. Upstairs has the three main bedrooms — one is yours. Other tenants are out of town, back home, I think. Should be back in September or October. You’d like these guys. Post-docs at Yale. Quiet. 
+
+A beat. The property manager lowers the clipboard slightly.
+
+INT. RENTAL HOUSE - UPSTAIRS HALLWAY - CONTINUOUS
+The hallway is narrow. Doors on either side. 
+
+The property manager points as they pass.
+
+PROPERTY MANAGER
+Bathroom there. Your room at the end. Other two are theirs. 
+
+Dallas stops walking and looks at one door in particular.  
+
+The property manager notices.
+
+PROPERTY MANAGER (CONT'D)
+Oh. Right. Attic.
+
+He checks the clipboard.
+
+PROPERTY MANAGER (CONT'D)
+Not finished currently. Storage, only. Landlord approves use. I don't think the other tenants use it much. 
+
+Dallas moves toward the door and up the stairs.
+
+PROPERTY MANAGER (CONT'D)
+Okay. Yeah. There it is.
+
+INT. RENTAL HOUSE - ATTIC - CONTINUOUS
+Low wood joists. Bare plywood floor. A small window at one end throws gray light across the space. The ceiling is higher than expected. Quiet. 
+
+Dallas steps into the center of the attic.
+
+The property manager stays below.
 
 PROPERTY MANAGER (O.S.)
-(still talking, from below)
-I'm not sure if there's insulation or — are you seeing anything up there? We can get you the landlord's contact, he might have—
+I’m not sure if there’s insulation or — are you seeing anything up there? We can get you the landlord’s contact. I told him to let me know.
 
-Dallas doesn't move. Doesn't turn. Doesn't answer.
-
-A moment of silence. Then:
-
-PROPERTY MANAGER (CONT'D) (O.S.)
-(a beat, realizing)
-Well. I'll just... let me get you those keys.
-
-Dallas is still looking up. His face is visible for the first time — calm, focused. Already somewhere else. Already home in this quiet place.
-
-END SCENE 0b
+Dallas doesn’t answer.
 
 ---
 
