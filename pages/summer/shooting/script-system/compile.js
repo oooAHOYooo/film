@@ -255,6 +255,13 @@ function generateHTMLPage(markdown, scenes) {
     return `<option value="scene-${num}">${displayNum}. ${title}</option>`;
   }).join('');
 
+  const printSceneOptionsHtml = (scenes || []).map((s, i) => {
+    const num = i + 1;
+    const displayNum = getSceneDisplayNumber(s.file) || num;
+    const title = (s.title || '').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    return `<option value="${num}">Scene ${displayNum} — ${title}</option>`;
+  }).join('');
+
   const html = String.raw`
 <!DOCTYPE html>
 <html lang="en">
@@ -264,6 +271,94 @@ function generateHTMLPage(markdown, scenes) {
   <title>Full Script - ${SCRIPT_NAME}</title>
   <link rel="stylesheet" href="../../script-system/script.css?v=20260108-5">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    /* Modal styling */
+    .print-scene-modal {
+      border: 1px solid var(--border, #ddd);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      padding: 0;
+      font-family: inherit;
+    }
+    .print-scene-modal::backdrop {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .modal-content h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    .modal-content p {
+      margin: 0 0 0.5rem 0;
+      font-size: 0.95rem;
+      color: var(--text-muted, #666);
+    }
+    .print-scene-select {
+      padding: 0.5rem;
+      border: 1px solid var(--border, #ddd);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: inherit;
+    }
+    .modal-buttons {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: flex-end;
+      margin-top: 0.5rem;
+    }
+    .modal-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border, #ddd);
+      border-radius: 4px;
+      background: var(--bg, #f5f5f5);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+    }
+    .modal-btn:hover {
+      background: var(--bg-hover, #efefef);
+    }
+    .modal-btn-primary {
+      background: var(--accent, #007bff);
+      color: white;
+      border-color: var(--accent, #007bff);
+    }
+    .modal-btn-primary:hover {
+      background: var(--accent-hover, #0056b3);
+    }
+
+    /* Scene wrapper divs for print isolation */
+    .scene-wrapper {
+      page-break-before: always;
+    }
+    .scene-wrapper:first-of-type {
+      page-break-before: avoid;
+    }
+    .scene-wrapper.print-hidden {
+      display: none !important;
+    }
+
+    /* Print styles: clean header and nav when printing scenes */
+    @media print {
+      .script-progress-rail,
+      .script-sticky-bar,
+      .full-script-header {
+        display: none !important;
+      }
+      .scene-wrapper {
+        page-break-before: always;
+      }
+      .scene-wrapper:first-of-type {
+        page-break-before: avoid;
+      }
+    }
+  </style>
 </head>
 <body class="full-script-page">
   <div class="gallery-container">
@@ -295,7 +390,8 @@ function generateHTMLPage(markdown, scenes) {
             <div class="script-export-menu" id="scriptExportMenu" role="menu" aria-label="Export and print options">
               <button type="button" role="menuitem" onclick="downloadMarkdown()">Download .md</button>
               <button type="button" role="menuitem" onclick="printMarkdownPdf()">PDF (Markdown)</button>
-              <button type="button" role="menuitem" onclick="window.print()">Print</button>
+              <button type="button" role="menuitem" onclick="document.getElementById('printSceneModal').showModal()">Print Scene</button>
+              <button type="button" role="menuitem" onclick="window.print()">Print All</button>
             </div>
           </div>
         </div>
@@ -328,6 +424,22 @@ function generateHTMLPage(markdown, scenes) {
       <div class="screenplay-content" id="scriptContent"></div>
     </div>
   </div>
+
+  <!-- Modal for printing individual scenes -->
+  <dialog id="printSceneModal" class="print-scene-modal">
+    <div class="modal-content">
+      <h2>Print Individual Scene</h2>
+      <p>Select a scene to isolate and print:</p>
+      <select id="printSceneSelect" class="print-scene-select">
+        <option value="">— Select a scene —</option>
+        ${printSceneOptionsHtml}
+      </select>
+      <div class="modal-buttons">
+        <button type="button" class="modal-btn modal-btn-primary" onclick="printSelectedScene()">Print Scene</button>
+        <button type="button" class="modal-btn modal-btn-secondary" onclick="document.getElementById('printSceneModal').close()">Cancel</button>
+      </div>
+    </div>
+  </dialog>
 
   <script>
     const markdown = ${JSON.stringify(markdown)};
@@ -404,6 +516,9 @@ function generateHTMLPage(markdown, scenes) {
 
     // Format screenplay elements
     formatScreenplay(document.querySelector('.screenplay-container'));
+
+    // Wrap each scene in a scene-wrapper div for print isolation
+    wrapScenes(document.getElementById('scriptContent'));
 
     // Filmmaking-style page length & runtime (1 page ≈ 1 minute; ~250 words/page)
     // Count from raw markdown so we get the full script (DOM textContent can undercount)
@@ -533,7 +648,40 @@ function generateHTMLPage(markdown, scenes) {
       window.addEventListener('scroll', updateStatusBar, { passive: true });
       window.addEventListener('resize', updateStatusBar);
     })();
-    
+
+    // Print individual scene functionality
+    function printSelectedScene() {
+      const select = document.getElementById('printSceneSelect');
+      const sceneNum = parseInt(select.value, 10);
+      if (!sceneNum || isNaN(sceneNum)) {
+        alert('Please select a scene');
+        return;
+      }
+
+      // Hide all scenes except the selected one
+      const wrappers = document.querySelectorAll('.scene-wrapper');
+      wrappers.forEach(wrapper => {
+        const num = parseInt(wrapper.getAttribute('data-scene-num'), 10);
+        if (num !== sceneNum) {
+          wrapper.classList.add('print-hidden');
+        }
+      });
+
+      // Close the modal
+      document.getElementById('printSceneModal').close();
+
+      // Trigger print after a brief delay to ensure DOM is ready
+      setTimeout(() => {
+        window.print();
+        // Reset after printing
+        setTimeout(() => {
+          document.querySelectorAll('.scene-wrapper.print-hidden').forEach(el => {
+            el.classList.remove('print-hidden');
+          });
+        }, 500);
+      }, 100);
+    }
+
     function looksLikeActionIntro(text) {
       if (!text || text.length < 15) return false;
       if (/^\(.+\)$/.test(text)) return false;
@@ -541,6 +689,34 @@ function generateHTMLPage(markdown, scenes) {
       if (/^[A-Z][a-z]+,\s*(?:Mid\s*\d+s|\d+s|[A-Za-z\s]+),/.test(text) && /[a-z]/.test(text)) return true;
       if (/^[A-Z][a-z]+,\s*(?:Mid\s*\d+s|\d+s)\s*[,.]/.test(text)) return true;
       return false;
+    }
+
+    // Wrap each scene in a divider for print isolation
+    function wrapScenes(container) {
+      if (!container) return;
+      const sceneHeadings = container.querySelectorAll('h3[id^="scene-"]');
+
+      sceneHeadings.forEach((heading, idx) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'scene-wrapper';
+        wrapper.setAttribute('data-scene-num', idx + 1);
+
+        // Insert wrapper before heading
+        heading.parentNode.insertBefore(wrapper, heading);
+
+        // Move heading into wrapper
+        wrapper.appendChild(heading);
+
+        // Move all siblings after heading until next scene heading into wrapper
+        const nextHeading = sceneHeadings[idx + 1];
+        let node = heading.nextSibling;
+
+        while (node && node !== nextHeading) {
+          const next = node.nextSibling;
+          wrapper.appendChild(node);
+          node = next;
+        }
+      });
     }
 
     function formatScreenplay(container) {
