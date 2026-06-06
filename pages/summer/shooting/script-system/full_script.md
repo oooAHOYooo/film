@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/6/2026, 7:59:10 AM*
+*Compiled on 6/6/2026, 8:00:16 AM*
 
 ---
 
@@ -165,21 +165,18 @@ Backyard’s small but there’s grass. You can see it from here, but there’s 
 (action)
 He points toward a narrow back stairway.
 
-PROPERTY MANAGER (CONT'D)
-Down and around. 
+PROPERTY MANAGERDown and around. 
 
 EXT. BACKYARD
 
-PROPERTY MANAGER (CONT'D)
-Careful on the steps. They get slick when it rains.
+PROPERTY MANAGERCareful on the steps. They get slick when it rains.
 
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
 
 (action)
 The property manager and Dallas walk through the backyard up to the porch that doesn't connect to the kitchen. They look out to the distance for a beat. 
 
-PROPERTY MANAGER (CONT'D)
-Branford’s got a little bit of everything. Water, woods, old houses. New Haven’s close when you need it... There’s water beyond the brush. Tidal stuff, mostly. Salt marsh, drainage, edge of the river, depends who’s asking. Egrets, herons, osprey. Herons sound terrible at night, but that’s normal. We get a couple of big storms in the season and we might have one on the way - but I think we’ll be okay. 
+PROPERTY MANAGERBranford’s got a little bit of everything. Water, woods, old houses. New Haven’s close when you need it... There’s water beyond the brush. Tidal stuff, mostly. Salt marsh, drainage, edge of the river, depends who’s asking. Egrets, herons, osprey. Herons sound terrible at night, but that’s normal. We get a couple of big storms in the season and we might have one on the way - but I think we’ll be okay. 
 
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
 
@@ -218,24 +215,21 @@ Dallas stops walking and looks at one door in particular.
 (action)
 The property manager notices.
 
-PROPERTY MANAGER (CONT'D)
-Oh. Right. Attic.
+PROPERTY MANAGEROh. Right. Attic.
 
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
 
 (action)
 He checks the clipboard.
 
-PROPERTY MANAGER (CONT'D)
-Not finished currently. Storage, only. Landlord approves use. I don't think the other tenants use it much. 
+PROPERTY MANAGERNot finished currently. Storage, only. Landlord approves use. I don't think the other tenants use it much. 
 
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
 
 (action)
 Dallas moves toward the door and up the stairs.
 
-PROPERTY MANAGER (CONT'D)
-Okay. Yeah. There it is.
+PROPERTY MANAGEROkay. Yeah. There it is.
 
 INT. RENTAL HOUSE - ATTIC - CONTINUOUS
 <!-- scene: 0B file: s00b.md nickname: property-manager -->
