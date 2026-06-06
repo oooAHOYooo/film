@@ -659,7 +659,7 @@ function generateHTMLPage(markdown, scenes) {
         return;
       }
 
-      const sceneWrapper = document.querySelector(\`[data-scene-num="\${sceneNum}"]\`);
+      const sceneWrapper = document.querySelector('[data-scene-num="' + sceneNum + '"]');
       if (!sceneWrapper) {
         alert('Scene not found');
         return;
@@ -667,7 +667,7 @@ function generateHTMLPage(markdown, scenes) {
 
       // Get scene title from h3
       const heading = sceneWrapper.querySelector('h3');
-      const sceneTitle = heading ? heading.textContent.trim() : \`Scene \${sceneNum}\`;
+      const sceneTitle = heading ? heading.textContent.trim() : 'Scene ' + sceneNum;
 
       // Clone the scene for PDF generation (so we don't modify the original)
       const element = sceneWrapper.cloneNode(true);
@@ -679,7 +679,7 @@ function generateHTMLPage(markdown, scenes) {
       // PDF options
       const opt = {
         margin: [0.5, 0.5, 0.5, 0.5],
-        filename: \`Scene_\${String(sceneNum).padStart(2, '0')}.pdf\`,
+        filename: 'Scene_' + String(sceneNum).padStart(2, '0') + '.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
