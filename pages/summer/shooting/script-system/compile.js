@@ -694,12 +694,19 @@ function generateHTMLPage(markdown, scenes) {
     // Wrap each scene in a divider for print isolation
     function wrapScenes(container) {
       if (!container) return;
-      const sceneHeadings = container.querySelectorAll('h3[id^="scene-"]');
+      // Create a static array copy so we don't have stale references as we modify DOM
+      const sceneHeadings = Array.from(container.querySelectorAll('h3[id^="scene-"]'));
 
       sceneHeadings.forEach((heading, idx) => {
         const wrapper = document.createElement('div');
         wrapper.className = 'scene-wrapper';
         wrapper.setAttribute('data-scene-num', idx + 1);
+
+        // Get the next heading reference (the boundary for this scene)
+        const nextHeading = sceneHeadings[idx + 1];
+
+        // Get the first sibling BEFORE we modify the DOM
+        let node = heading.nextSibling;
 
         // Insert wrapper before heading
         heading.parentNode.insertBefore(wrapper, heading);
@@ -707,14 +714,11 @@ function generateHTMLPage(markdown, scenes) {
         // Move heading into wrapper
         wrapper.appendChild(heading);
 
-        // Move all siblings after heading until next scene heading into wrapper
-        const nextHeading = sceneHeadings[idx + 1];
-        let node = heading.nextSibling;
-
+        // Move all content nodes after heading (until next heading) into wrapper
         while (node && node !== nextHeading) {
-          const next = node.nextSibling;
-          wrapper.appendChild(node);
-          node = next;
+          const next = node.nextSibling; // Save next before moving
+          wrapper.appendChild(node);     // This changes node's parent
+          node = next;                   // Move to the saved next
         }
       });
     }

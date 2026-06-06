@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/6/2026, 8:01:48 AM*
+*Compiled on 6/6/2026, 8:07:10 AM*
 
 ---
 
@@ -271,12 +271,6 @@ Dallas doesn’t answer.
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 <!-- nickname: arrival -->
-
-##s00
-<!-- FILMING ON 
-6.28.26 -->
-INT. TRAIN - DALLAS
-Dallas takes the train to branford
 
 ##s01 - Arrival 
 <!-- FILMING ON 
