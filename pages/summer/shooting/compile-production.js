@@ -156,9 +156,11 @@ function markdownToHtml(md) {
   let html = escapeHtml(md);
   // Convert bold markdown
   html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  // Convert italics markdown
+  html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
   // Convert bullet points and dashes
-  html = html.replace(/^• (.+)$/gm, '<div style="margin-bottom: 2px;">• $1</div>');
-  html = html.replace(/^- (.+)$/gm, '<div style="margin-bottom: 2px;">• $1</div>');
+  html = html.replace(/^• (.+)$/gm, '<div style="margin-bottom: 1px;">• $1</div>');
+  html = html.replace(/^- (.+)$/gm, '<div style="margin-bottom: 1px;">• $1</div>');
   // Convert line breaks
   html = html.replace(/\n/g, '<br>');
   return html;
@@ -863,7 +865,7 @@ function generateDayHtml(dayNum, rows, productionData) {
       const cast = Array.isArray(entry.cast) ? entry.cast : (entry.cast ? [entry.cast] : []);
       const linkHref = sceneId ? sceneHref(sceneId, rows, '../../script-system/full_script.html') : '#';
       const shotsHtml = Array.isArray(entry.shots) && entry.shots.length
-        ? `<div style="margin-top:6px; padding-top:6px; border-top:1px solid #eee; font-size:0.72rem; color:#666;"><div style="font-weight:700; color:#555; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.03em;">Shots:</div>${entry.shots.map(shot => `<div style="margin-bottom:3px;">• ${escapeHtml(shot)}</div>`).join('')}</div>`
+        ? `<div style="margin-top:6px; padding-top:6px; border-top:1px solid #eee; font-size:0.72rem; color:#666;"><div style="font-weight:700; color:#555; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.03em;">Shots:</div>${entry.shots.map(shot => `<div style="margin-bottom:2px;">• ${markdownToHtml(shot)}</div>`).join('')}</div>`
         : '';
       return `
       <li style="padding:10px 0; border-bottom:1px solid #ddd; display:block;">

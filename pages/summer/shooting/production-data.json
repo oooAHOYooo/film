@@ -701,9 +701,9 @@
           ],
           "description": "Dallas exits train at Branford station, picks up suitcase, walks toward station exit. Long Island Sound visible beyond.",
           "shots": [
-            "WS — Train arriving at Branford station platform.",
-            "WS — Empty platform, Long Island Sound in background.",
-            "WS — Dallas walking toward station exit."
+            "WS — Train arriving at Branford station platform. *[screen left arrival]*",
+            "WS — Empty platform, Long Island Sound in background. *[L background, Dallas exits right]*",
+            "WS — Dallas walking toward station exit. *[L→R, backs-to-camera, right of center]*"
           ]
         },
         {
@@ -717,13 +717,13 @@
           ],
           "description": "Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Makayla & Asher setting up equipment in marsh.",
           "shots": [
-            "WS — Branford street establishing, low houses with white trim and weathered fences.",
-            "MS — Dallas walking down sidewalk with suitcase.",
-            "CU — Harbor View Lane street sign.",
-            "MS — Dallas's face, taking in the neighborhood scale and quietness.",
-            "WS — Dallas getting closer to rental house.",
-            "RETURN: Dallas at fence line, observing tall grass at property edge.",
-            "WS — Dallas arriving at rental house, setting down suitcase."
+            "WS — Branford street establishing, low houses with white trim and weathered fences. *[L→R flow, destination right]*",
+            "MS — Dallas walking down sidewalk with suitcase. *[L→R, backs-to-camera]*",
+            "CU — Harbor View Lane street sign. *[reference point]*",
+            "MS — Dallas's face, taking in the neighborhood scale and quietness. *[exception: plays toward camera]*",
+            "WS — Dallas getting closer to rental house. *[L→R, screen right destination]*",
+            "RETURN: Dallas at fence line, observing tall grass at property edge. *[faces right into grass, motion stops]*",
+            "WS — Dallas arriving at rental house, setting down suitcase. *[right of center, journey end]*"
           ]
         },
         {
