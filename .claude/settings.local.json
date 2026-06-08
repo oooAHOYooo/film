@@ -58,7 +58,9 @@
       "Read(//tmp/**)",
       "Bash(bash /tmp/audit_sync.sh)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\" -Recurse -Filter \"*day*\" -Name)",
-      "PowerShell(head *)"
+      "PowerShell(head *)",
+      "Skill(run)",
+      "Bash(screencapture -x /tmp/shooting_production_screenshot.png)"
     ]
   }
 }
