@@ -15,9 +15,8 @@
     "9": "2026-06-26",
     "10": "2026-06-27",
     "11": "2026-06-28",
-    "12": "2026-07-01",
+    "12": "2026-06-29",
     "14": "2026-07-16",
-    "11.5": "2026-06-29",
     "8.5": "2026-06-22"
   },
   "opening-montage": {
@@ -2120,95 +2119,6 @@
             "Detail - Blood from ears",
             "CU - Eyes wide with pain",
             "Detail - Hands covering ears"
-          ]
-        }
-      ]
-    },
-    {
-      "day": 11.5,
-      "crewCall": "CALL: 8:00 AM\nMEET: Branford Marsh Edge\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07b pickups · Warning additional coverage\nSHOOT: 10:30 AM — s16 pickups · Plan detail shots\nWRAP: 12:00 PM",
-      "crew": [
-        {
-          "role": "Director",
-          "name": "Alex"
-        },
-        {
-          "role": "Camera",
-          "name": "Alex"
-        },
-        {
-          "role": "Audio",
-          "name": "TBD"
-        },
-        {
-          "role": "Clapper",
-          "name": "TBD"
-        }
-      ],
-      "locationDetails": [
-        "Marsh boundary",
-        "Tall grass field"
-      ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
-      "shotList": [
-        {
-          "beat": "s07b.pickup.1",
-          "title": "The warning additional coverage",
-          "scene": "s07b",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
-          ],
-          "description": "Pickup shots of Mr. Mike's crucial warning - wider angles and group reactions.",
-          "shots": [
-            "WS - Full group with Mr. Mike in center",
-            "CU - Mr. Mike's face in profile",
-            "Detail - Hand gestures emphasizing point",
-            "MS - Each person's individual reaction",
-            "WS - Group dynamics shifting"
-          ]
-        },
-        {
-          "beat": "s16.pickup.1",
-          "title": "Plan details captured",
-          "scene": "s16",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
-          ],
-          "description": "Close coverage of the escape/defense plan being explained - technical detail shots.",
-          "shots": [
-            "Detail - Map or sketch close-up",
-            "CU - Dallas pointing to locations",
-            "Detail - Hand-drawn notes or marks",
-            "MS - Two-shots of Dallas with others",
-            "CU - Understanding dawning on faces"
-          ]
-        },
-        {
-          "beat": "s16.pickup.2",
-          "title": "Resolution and commitment",
-          "scene": "s16",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
-          ],
-          "description": "Final commitment to the plan - intimate captures of determination and fear.",
-          "shots": [
-            "Detail - Hands meeting in center",
-            "CU - Eyes closing in acceptance",
-            "MS - Final huddle moment",
-            "Detail - A nod or affirmation between two",
-            "WS - Group ready to move forward"
           ]
         }
       ]
