@@ -758,9 +758,14 @@
       "day": 1,
       "scenes": [
         "s00b-pickup",
-        "s02"
+        "s02.1",
+        "s02.2",
+        "s02.4",
+        "s02.6",
+        "s02.7",
+        "s02.3"
       ],
-      "crewCall": "CALL: 5:45 PM\nMEET: 206 Saint John St (carpool to location)\nARRIVE: 6:10 PM — Jerry's House (72 Lake St, Hamden)\nSETUP: 6:10 PM — Camera preps begin\nSHOOT: 6:30 PM - 7:00 PM — s00b-pickup · Dallas upstairs / attic entry\nSHOOT: 7:00 PM - 7:30 PM — s02.1 · Kitchen hum\nSHOOT: 7:30 PM - 8:00 PM — s02.2 · Driveway edge\nSHOOT: 8:00 PM - 8:30 PM — s02.4 · Attic boxes\nBUFFER: 8:30 PM - 9:30 PM — Overflow / contingency\nWRAP: 9:30 PM",
+      "crewCall": "CALL: 5:45 PM\nMEET: 206 Saint John St (carpool to location)\nARRIVE: 6:10 PM — Jerry's House (72 Lake St, Hamden)\nSETUP: 6:10 PM — Camera preps begin\nSHOOT: 6:30 PM - 7:00 PM — s00b-pickup · Dallas upstairs / attic entry\nSHOOT: 7:00 PM - 7:30 PM — s02.1 · Kitchen hum\nSHOOT: 7:30 PM - 8:00 PM — s02.2 · Driveway edge\nSHOOT: 8:00 PM - 8:30 PM — s02.4 · Attic boxes\nSHOOT: 8:00 PM - 8:30 PM — s02.6 · Downstairs pulse\nSHOOT: 8:30 PM - 9:00 PM — s02.7 · House exterior glow\nSHOOT: 9:00 PM - 9:30 PM — s02.3 · Night exterior (requires dark)\nWRAP: 9:30 PM",
       "crew": [
         {
           "role": "Director / Camera",
@@ -960,40 +965,6 @@
       ],
       "overflow": [
         {
-          "beat": "s02.5",
-          "title": "Bathroom tape",
-          "scene": "s02",
-          "cast": ["Dallas"],
-          "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
-          "shots": [
-            {
-              "shot": "WS bathroom Dallas enters",
-              "description": "Camera at mirror/sink end facing door; Dallas enters screen-right, moves left toward sink; 35mm for tight space",
-              "stage_direction": "Camera at mirror/sink end facing door; Dallas enters screen-right, moves left toward sink; 35mm for tight space"
-            },
-            {
-              "shot": "MS Dallas at sink counter placing player",
-              "description": "Dallas center-left; mirror behind reflects back of head; player placed on counter center-frame; overhead bathroom light as key — unflattering on purpose",
-              "stage_direction": "Dallas center-left; mirror behind reflects back of head; player placed on counter center-frame; overhead bathroom light as key — unflattering on purpose"
-            },
-            {
-              "shot": "WS shower spray water running",
-              "description": "Camera outside shower at floor level; Dallas's legs visible inside; water spray fills upper frame; player visible on counter in background",
-              "stage_direction": "Camera outside shower at floor level; Dallas's legs visible inside; water spray fills upper frame; player visible on counter in background"
-            },
-            {
-              "shot": "CU cassette player speakers",
-              "description": "Camera inches from player face; speaker grille fills frame; very shallow DOF; steam blurs behind; static — no movement",
-              "stage_direction": "Camera inches from player face; speaker grille fills frame; very shallow DOF; steam blurs behind; static — no movement"
-            },
-            {
-              "shot": "CU Dallas in shower hearing hum",
-              "description": "Dallas center-frame through frosted or clear glass; water streaks across glass; eyes open, head tilted to listen; sidelit by window if available",
-              "stage_direction": "Dallas center-frame through frosted or clear glass; water streaks across glass; eyes open, head tilted to listen; sidelit by window if available"
-            }
-          ]
-        },
-        {
           "beat": "s02.6",
           "title": "Downstairs pulse",
           "scene": "s02",
@@ -1063,10 +1034,10 @@
         },
         {
           "beat": "s02.3",
-          "title": "Night exterior light unit",
+          "title": "Night exterior (light unit)",
           "scene": "s02",
           "cast": ["Dallas"],
-          "description": "Dallas walks with recorder in darkness, captures the hum on night exterior.",
+          "description": "Dallas outside post-attic — recorder walk, tall grass, ocean breeze. Requires dark. Kept lean — shoot what feels right, no pressure.",
           "shots": [
             {
               "shot": "OTS Dallas walking with recorder",
