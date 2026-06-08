@@ -590,15 +590,15 @@ shots:
 
 ### Day 1 — 2026-06-08
 
-scenes: s02, s02.3
+scenes: s00b-pickup, s02, s02.3
 
 crew-call:
-  CALL: 5:00 PM
+  CALL: 5:45 PM
   MEET: Alex's House (206 Saint John St)
-  ARRIVE: 5:30 PM — Dallas House (72 Lake St, Hamden)
-  SETUP: 5:45 PM — Camera preps
-  SHOOT: 6:15 PM — s02 · Kitchen hum & exterior
-  WRAP: 8:45 PM
+  ARRIVE: 6:10 PM — Jerry's House (72 Lake St, Hamden)
+  SETUP: 6:10 PM — Camera preps
+  SHOOT: 6:30 PM — s00b-pickup · Property manager scene pickups + s02 · Kitchen hum & exterior
+  WRAP: 9:15 PM
 
 crew:
   - Director / Camera: Alex Gonzalez
@@ -606,25 +606,44 @@ crew:
   - Clapper: TBD
 
 locations:
-  - Alex's House
-  - 206 Saint John St
+  - 72 Lake St, Hamden (Jerry's House - Dallas Rental)
+
+#### Beat: s00b-pickup — Property Manager Scene Pickups
+scene: s00b
+cast: Dallas, Matt Grant (if available)
+description: Pickup shots for the property manager house tour. Focus on close-ups, transitions, and alternate angles from Day 0 shoot.
+shots:
+  - CU — Property manager's clipboard details, papers, pen grip
+  - CU — Dallas's hand on doorframe as he enters
+  - CU — Details: light switch plate, doorknob texture, hinges
+  - MS — Alternative angle: Property manager mid-explanation in living room
+  - CU — Futon frame texture, wear patterns
+  - CU — Beer can label detail, floor weathering
+  - MS — Alternative take: Property manager at kitchen doorway, Dallas in background
+  - CU — Dallas's eyes, reaction shot (contemplative)
+  - CU — Kitchen window detail, glass reflection, window frame
+  - MS — Property manager ascending stairs (if available)
+  - CU — Attic window — light quality, dust motes
+  - CU — Dallas's boots on attic floor — texture, stepping forward
+  - WS — Attic space alternative angle, ceiling beams
 
 equipment:
   - Camera body + charged batteries + formatted media cards
   - Gimbal package - DJI RS 4 Pro, plate, quick release, tools, balance checklist
   - Tripod package - tripod, fluid head, quick release plate, camera mount
   - Monopod package
-  - Primary video lens for locked-off tripod shots
-  - Secondary lens or zoom option for gimbal moves
-  - ND filter
+  - Siriu 75mm lens
+  - Siriu 50mm lens
+  - Siriu 35mm lens
   - On-camera monitor or viewfinder for framing
   - Audio recorder / field recorder
   - Shotgun mic with windscreen
-  - XLR cables, mic cables, and headphone extension
+  - XLR cables, SDI cables
   - Slates / clapboard for sync reference
   - Gaffer tape, lens cloth, lens blower, and small toolkit
-  - Lighting kit
+  - Lighting kit (tungsten for interior work)
   - Power strip / battery charger / spare USB-C and camera power cables
+  - Bounce boards / reflectors for interior fill
 
 #### SETTINGS OVERVIEW
 **RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
