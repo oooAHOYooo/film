@@ -758,10 +758,9 @@
       "day": 1,
       "scenes": [
         "s00b-pickup",
-        "s02",
-        "s02.3"
+        "s02"
       ],
-      "crewCall": "CALL: 5:45 PM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 6:10 PM — Jerry's House (72 Lake St, Hamden)\nSETUP: 6:10 PM — Camera preps\nSHOOT: 6:30 PM — s00b-pickup · Property manager scene pickups + s02 · Kitchen hum & exterior\nWRAP: 9:15 PM",
+      "crewCall": "CALL: 5:45 PM\nMEET: 206 Saint John St (carpool to location)\nARRIVE: 6:10 PM — Jerry's House (72 Lake St, Hamden)\nSETUP: 6:10 PM — Camera preps begin\nSHOOT: 6:30 PM - 7:00 PM — s00b-pickup · Dallas upstairs / attic entry\nSHOOT: 7:00 PM - 7:30 PM — s02.1 · Kitchen hum\nSHOOT: 7:30 PM - 8:00 PM — s02.2 · Driveway edge\nSHOOT: 8:00 PM - 8:30 PM — s02.4 · Attic boxes\nBUFFER: 8:30 PM - 9:30 PM — Overflow / contingency\nWRAP: 9:30 PM",
       "crew": [
         {
           "role": "Director / Camera",
@@ -773,7 +772,7 @@
         },
         {
           "role": "Clapper",
-          "name": "TBD"
+          "name": "Jerry"
         }
       ],
       "locationDetails": [
@@ -782,19 +781,58 @@
       "shotList": [
         {
           "beat": "s00b-pickup",
-          "title": "Dallas upstairs / attic entry (VO: Matt)",
+          "title": "Dallas upstairs / attic entry",
           "scene": "s00b",
           "cast": [
             "Dallas"
           ],
-          "description": "Dallas alone upstairs — wandering the hallway, stopping at the attic door, climbing into the attic in daylight. Matt's property manager VO plays over.",
+          "description": "Dallas alone upstairs — wandering the hallway, stopping at the attic door, climbing into the attic in daylight.",
           "shots": [
-            "MS — Dallas moving through upstairs hallway, taking in the space",
-            "MS — Dallas stopping at the attic door, hand on the handle",
-            "WS — Dallas climbing the attic stairs into frame",
-            "WS — Attic in daylight — Dallas steps into the center, looks around",
-            "CU — Dallas opens suitcase, pulls out the portable oscillator",
-            "CU — Dallas's face, still, listening"
+            {
+              "shot": "CU clipboard details",
+              "description": "Clipboard angled toward lens center-right; camera low 30°, shallow DOF, window light raking from left",
+              "stage_direction": "Clipboard angled toward lens center-right; camera low 30°, shallow DOF, window light raking from left"
+            },
+            {
+              "shot": "CU Dallas hand on doorframe",
+              "description": "Camera outside frame looking in; hand enters left edge; door edge natural frame right; warm interior light backlights fingers",
+              "stage_direction": "Camera outside frame looking in; hand enters left edge; door edge natural frame right; warm interior light backlights fingers"
+            },
+            {
+              "shot": "DETAIL light switch/doorknob/hinges",
+              "description": "Macro handheld; camera parallel to surface; no fill — let shadow reveal texture",
+              "stage_direction": "Macro handheld; camera parallel to surface; no fill — let shadow reveal texture"
+            },
+            {
+              "shot": "CU futon frame texture",
+              "description": "Camera near-floor level; frame runs bottom-left to upper-right diagonal; raking window light reveals wear",
+              "stage_direction": "Camera near-floor level; frame runs bottom-left to upper-right diagonal; raking window light reveals wear"
+            },
+            {
+              "shot": "CU beer can label / floor",
+              "description": "Top-down or 15° tilt; can centered; floor texture visible around it; ambient only, no fill",
+              "stage_direction": "Top-down or 15° tilt; can centered; floor texture visible around it; ambient only, no fill"
+            },
+            {
+              "shot": "CU kitchen window / reflection",
+              "description": "Camera exterior looking in or tight on glass; sky reflects in upper pane; window frame runs vertical center-frame",
+              "stage_direction": "Camera exterior looking in or tight on glass; sky reflects in upper pane; window frame runs vertical center-frame"
+            },
+            {
+              "shot": "CU attic window light quality",
+              "description": "Camera pointed into window from inside; backlight from exterior; keep exposure locked on interior to blow out window slightly",
+              "stage_direction": "Camera pointed into window from inside; backlight from exterior; keep exposure locked on interior to blow out window slightly"
+            },
+            {
+              "shot": "CU Dallas boots on attic floor",
+              "description": "Camera floor-level facing screen-right (L→R); boots enter left frame, step into beam of attic window light; 35mm",
+              "stage_direction": "Camera floor-level facing screen-right (L→R); boots enter left frame, step into beam of attic window light; 35mm"
+            },
+            {
+              "shot": "WS attic space alt angle",
+              "description": "Camera far corner facing diagonal; beams converge toward opposite corner; boxes scattered mid-ground center-right",
+              "stage_direction": "Camera far corner facing diagonal; beams converge toward opposite corner; boxes scattered mid-ground center-right"
+            }
           ]
         },
         {
@@ -806,12 +844,31 @@
           ],
           "description": "Dallas pulls something frozen from the fridge and starts prepping at the counter. Mid-task, the hum drifts in from the window. He picks up the oscillator sitting on the counter and points it curiously — then the sound cuts.",
           "shots": [
-            "WS - Kitchen, Dallas opens fridge, pulls out something frozen",
-            "MS - Dallas at counter, unwrapping, half-distracted",
-            "CU - Dallas's head turns toward the window",
-            "CU - Oscillator on the counter — Dallas picks it up",
-            "MS - Dallas points it toward the window, curious, still",
-            "CU - Oscillator needle, then it drops — sound gone"
+            {
+              "shot": "WS kitchen Dallas enters",
+              "description": "Camera at far kitchen wall facing screen-left; Dallas enters right-of-frame moving left; window on screen-left floods late daylight",
+              "stage_direction": "Camera at far kitchen wall facing screen-left; Dallas enters right-of-frame moving left; window on screen-left floods late daylight"
+            },
+            {
+              "shot": "MS Dallas at counter listening",
+              "description": "Dallas left-of-center facing screen-right toward window; counter horizontal behind him; camera shoulder height; window as key, room as fill",
+              "stage_direction": "Dallas left-of-center facing screen-right toward window; counter horizontal behind him; camera shoulder height; window as key, room as fill"
+            },
+            {
+              "shot": "CU Dallas face concentrating",
+              "description": "Dallas right-of-center, window screen-left as sidelight; camera eye level; shallow focus; hold stillness",
+              "stage_direction": "Dallas right-of-center, window screen-left as sidelight; camera eye level; shallow focus; hold stillness"
+            },
+            {
+              "shot": "CU hand marking frequency",
+              "description": "Camera looking down at 45°; hand enters bottom-frame; dial or display visible; shallow DOF on recorder face",
+              "stage_direction": "Camera looking down at 45°; hand enters bottom-frame; dial or display visible; shallow DOF on recorder face"
+            },
+            {
+              "shot": "WS Dallas frozen as sound cuts",
+              "description": "Return to opening WS; Dallas center-left, recorder raised, body still; hold wide — let silence land on the empty room around him",
+              "stage_direction": "Return to opening WS; Dallas center-left, recorder raised, body still; hold wide — let silence land on the empty room around him"
+            }
           ]
         },
         {
@@ -823,11 +880,31 @@
           ],
           "description": "Dallas steps outside, watches the driveway and the property line, and feels the hum merge out of the tall grass.",
           "shots": [
-            "WS - Dallas exits house, exterior establishing",
-            "MS - Dallas at property edge, listening",
-            "CU - Dallas's face, reacting to the distant sound",
-            "WS - Tall grass at driveway line, hum emerging",
-            "OTS - Dallas from behind, watching grass sway"
+            {
+              "shot": "WS Dallas exits house establishing",
+              "description": "Camera faces house at street level; Dallas exits screen-left door, walks toward screen-right toward grass; sky above",
+              "stage_direction": "Camera faces house at street level; Dallas exits screen-left door, walks toward screen-right toward grass; sky above"
+            },
+            {
+              "shot": "MS Dallas at property edge",
+              "description": "Dallas right-of-center facing screen-left toward grass; grass wall fills left half of frame; slight low angle reinforces grass scale",
+              "stage_direction": "Dallas right-of-center facing screen-left toward grass; grass wall fills left half of frame; slight low angle reinforces grass scale"
+            },
+            {
+              "shot": "CU Dallas face reacting",
+              "description": "Dallas center-frame, eyes directed slightly above lens into screen-left distance; ambient dusk light; hold long",
+              "stage_direction": "Dallas center-frame, eyes directed slightly above lens into screen-left distance; ambient dusk light; hold long"
+            },
+            {
+              "shot": "WS tall grass at driveway line",
+              "description": "Camera low near ground facing into grass; grass fills top 60% of frame; sky stripe above; no Dallas — pure environment; slow push if on gimbal",
+              "stage_direction": "Camera low near ground facing into grass; grass fills top 60% of frame; sky stripe above; no Dallas — pure environment; slow push if on gimbal"
+            },
+            {
+              "shot": "OTS Dallas from behind",
+              "description": "Camera behind Dallas slightly right; Dallas bottom-center to bottom-right; grass horizon ahead; wide enough to feel isolation; hold static",
+              "stage_direction": "Camera behind Dallas slightly right; Dallas bottom-center to bottom-right; grass horizon ahead; wide enough to feel isolation; hold static"
+            }
           ]
         },
         {
@@ -839,50 +916,31 @@
           ],
           "description": "In the attic, Dallas opens Sierra's box, finds the field notes, cassette player, headphones, and old recorder.",
           "shots": [
-            "WS - Attic space, Dallas approaches boxes",
-            "MS - Dallas kneeling at cardboard box",
-            "CU - Box lid opening, 'Field Notes — Branford' visible",
-            "Detail - Hands pulling out cassette player, headphones",
-            "CU - Dallas's face, recognition/emotion at seeing Sierra's equipment"
-          ]
-        },
-        {
-          "beat": "s02.4b",
-          "title": "Hum hits — attic to downstairs",
-          "scene": "s02",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "The hum rises in the attic. Dallas grabs the oscillator and moves fast — down the stairs, toward the source.",
-          "shots": [
-            "CU - Dallas's head lifting, hearing something shift",
-            "CU - Oscillator in his hand, needle jumping",
-            "MS - Dallas on his feet, moving toward the attic stairs",
-            "WS - Dallas descending stairs fast, oscillator out"
-          ]
-        },
-        {
-          "beat": "s02.6",
-          "title": "Backyard pulse (+ safety interior)",
-          "scene": "s02",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "PRIMARY: Dallas in the backyard at night — recorder and oscillator out, tracking the pulsing tone in the open air, battery dies. SAFETY: Same beat covered inside (downstairs room) in case we cut to interior.",
-          "shots": [
-            "— PRIMARY (BACKYARD) —",
-            "WS - Backyard at night, Dallas steps out with recorder and oscillator",
-            "MS - Dallas moving slowly across the yard, oscillator extended",
-            "CU - Oscillator dial climbing toward 115.3",
-            "MS - Dallas stops, timing the pulse pattern",
-            "Detail - Recording device LED blinking, then fading — battery dies",
-            "CU - Dallas's frustration, looks down at dead recorder",
-            "— SAFETY (INTERIOR) —",
-            "WS - Downstairs room, Dallas at table with recorder and oscillator",
-            "MS - Dallas adjusting dial, tracking the sound through the window",
-            "CU - Oscillator dial, frequency readout at 115.3",
-            "Detail - Recording device LED blinking, then fading",
-            "CU - Dallas's frustration as battery dies"
+            {
+              "shot": "WS attic Dallas approaches boxes",
+              "description": "Camera in back corner; boxes center-frame; Dallas enters screen-left, moves screen-right toward boxes; ceiling beams frame top",
+              "stage_direction": "Camera in back corner; boxes center-frame; Dallas enters screen-left, moves screen-right toward boxes; ceiling beams frame top"
+            },
+            {
+              "shot": "MS Dallas kneeling at box",
+              "description": "Camera at kneeling height slightly above; Dallas right-of-center; box fills bottom-center; attic window behind-left as soft key",
+              "stage_direction": "Camera at kneeling height slightly above; Dallas right-of-center; box fills bottom-center; attic window behind-left as soft key"
+            },
+            {
+              "shot": "CU box lid opening label visible",
+              "description": "Camera near top-down 80°; label faces up; Dallas's hands peel open from bottom-frame; writing centered and legible",
+              "stage_direction": "Camera near top-down 80°; label faces up; Dallas's hands peel open from bottom-frame; writing centered and legible"
+            },
+            {
+              "shot": "DETAIL hands extracting cassette/headphones",
+              "description": "Camera at box level looking in; hands reach in from top-frame; items extracted left to right; shallow focus on objects",
+              "stage_direction": "Camera at box level looking in; hands reach in from top-frame; items extracted left to right; shallow focus on objects"
+            },
+            {
+              "shot": "CU Dallas face recognition/emotion",
+              "description": "Dallas center-frame, head slightly bowed then raising; 75mm; attic window sidelight screen-left; hold on stillness after recognition lands",
+              "stage_direction": "Dallas center-frame, head slightly bowed then raising; 75mm; attic window sidelight screen-left; hold on stillness after recognition lands"
+            }
           ]
         }
       ],
@@ -913,11 +971,65 @@
           "cast": ["Dallas"],
           "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
           "shots": [
-            "WS - Bathroom, Dallas enters with cassette player",
-            "MS - Dallas at sink counter, placing player down",
-            "WS - Shower spray, water running",
-            "CU - Cassette player speakers, tape hum bleeding through",
-            "CU - Dallas in shower, hearing the hum underneath the water"
+            {
+              "shot": "WS bathroom Dallas enters",
+              "description": "Camera at mirror/sink end facing door; Dallas enters screen-right, moves left toward sink; 35mm for tight space",
+              "stage_direction": "Camera at mirror/sink end facing door; Dallas enters screen-right, moves left toward sink; 35mm for tight space"
+            },
+            {
+              "shot": "MS Dallas at sink counter placing player",
+              "description": "Dallas center-left; mirror behind reflects back of head; player placed on counter center-frame; overhead bathroom light as key — unflattering on purpose",
+              "stage_direction": "Dallas center-left; mirror behind reflects back of head; player placed on counter center-frame; overhead bathroom light as key — unflattering on purpose"
+            },
+            {
+              "shot": "WS shower spray water running",
+              "description": "Camera outside shower at floor level; Dallas's legs visible inside; water spray fills upper frame; player visible on counter in background",
+              "stage_direction": "Camera outside shower at floor level; Dallas's legs visible inside; water spray fills upper frame; player visible on counter in background"
+            },
+            {
+              "shot": "CU cassette player speakers",
+              "description": "Camera inches from player face; speaker grille fills frame; very shallow DOF; steam blurs behind; static — no movement",
+              "stage_direction": "Camera inches from player face; speaker grille fills frame; very shallow DOF; steam blurs behind; static — no movement"
+            },
+            {
+              "shot": "CU Dallas in shower hearing hum",
+              "description": "Dallas center-frame through frosted or clear glass; water streaks across glass; eyes open, head tilted to listen; sidelit by window if available",
+              "stage_direction": "Dallas center-frame through frosted or clear glass; water streaks across glass; eyes open, head tilted to listen; sidelit by window if available"
+            }
+          ]
+        },
+        {
+          "beat": "s02.6",
+          "title": "Downstairs pulse",
+          "scene": "s02",
+          "cast": ["Dallas"],
+          "description": "Dallas in downstairs room at night — recorder and oscillator out, tracking the pulsing tone in the open air, battery dies.",
+          "shots": [
+            {
+              "shot": "WS downstairs room with equipment",
+              "description": "Camera at room's far end; Dallas at table center-right; window screen-left; single practical lamp as key; equipment foreground-right",
+              "stage_direction": "Camera at room's far end; Dallas at table center-right; window screen-left; single practical lamp as key; equipment foreground-right"
+            },
+            {
+              "shot": "MS Dallas at table setting up",
+              "description": "Dallas right-of-center leaning toward table; camera at table height; equipment foreground fills bottom-left; moves screen-left as hum grows",
+              "stage_direction": "Dallas right-of-center leaning toward table; camera at table height; equipment foreground fills bottom-left; moves screen-left as hum grows"
+            },
+            {
+              "shot": "CU oscillator dial 115.3",
+              "description": "Camera top-down 60° on dial face; Dallas's thumb enters bottom-right; \"115.3\" legible and centered; shallow DOF on display",
+              "stage_direction": "Camera top-down 60° on dial face; Dallas's thumb enters bottom-right; \"115.3\" legible and centered; shallow DOF on display"
+            },
+            {
+              "shot": "DETAIL recording device LED blinking then fading",
+              "description": "Camera close on recorder face; LED blinks pulse pattern (1s–1s–5s–3s) then fades; static — no pan; let beat play out in full",
+              "stage_direction": "Camera close on recorder face; LED blinks pulse pattern (1s–1s–5s–3s) then fades; static — no pan; let beat play out in full"
+            },
+            {
+              "shot": "CU Dallas frustration battery dies",
+              "description": "Dallas right-of-center; jaw tightens; smacks recorder back entering bottom-frame; cut immediately after — 50mm",
+              "stage_direction": "Dallas right-of-center; jaw tightens; smacks recorder back entering bottom-frame; cut immediately after — 50mm"
+            }
           ]
         },
         {
@@ -927,11 +1039,55 @@
           "cast": ["Dallas"],
           "description": "Outside again, Dallas watches the grass sway as the golden glow pulses and a storm builds over Branford.",
           "shots": [
-            "WS - House exterior, golden glow from grass",
-            "MS - Dallas standing at house edge",
-            "WS - Tall grass undulating, golden light pulsing",
-            "CU - Dallas's face, watching the phenomenon",
-            "WS - Wide sky, storm clouds gathering over distant Branford"
+            {
+              "shot": "WS house exterior golden glow",
+              "description": "Camera at street/driveway facing house; grass screen-right; house left; glow mid-ground; keep exposure on ambient sky",
+              "stage_direction": "Camera at street/driveway facing house; grass screen-right; house left; glow mid-ground; keep exposure on ambient sky"
+            },
+            {
+              "shot": "MS Dallas at house edge",
+              "description": "Dallas center-left at house corner; grass stretches screen-right; backlit by interior practical through window behind him",
+              "stage_direction": "Dallas center-left at house corner; grass stretches screen-right; backlit by interior practical through window behind him"
+            },
+            {
+              "shot": "WS tall grass pulsing glow",
+              "description": "Camera low near ground facing into grass; glow behind grass creates backlit silhouette of stalks; pulse rhythm 1s–1s–5s–3s; slow push if stable",
+              "stage_direction": "Camera low near ground facing into grass; glow behind grass creates backlit silhouette of stalks; pulse rhythm 1s–1s–5s–3s; slow push if stable"
+            },
+            {
+              "shot": "CU Dallas face watching",
+              "description": "Dallas center-frame; golden glow as practical key from screen-right; pulsing light hits face in rhythm; eyes wide — hold, let light do the acting",
+              "stage_direction": "Dallas center-frame; golden glow as practical key from screen-right; pulsing light hits face in rhythm; eyes wide — hold, let light do the acting"
+            },
+            {
+              "shot": "WS wide sky storm clouds",
+              "description": "Camera tilted up ~30°; Dallas silhouetted bottom-center or absent; cloud movement visible; shoot what's there",
+              "stage_direction": "Camera tilted up ~30°; Dallas silhouetted bottom-center or absent; cloud movement visible; shoot what's there"
+            }
+          ]
+        },
+        {
+          "beat": "s02.3",
+          "title": "Night exterior light unit",
+          "scene": "s02",
+          "cast": ["Dallas"],
+          "description": "Dallas walks with recorder in darkness, captures the hum on night exterior.",
+          "shots": [
+            {
+              "shot": "OTS Dallas walking with recorder",
+              "description": "Camera behind Dallas at distance; moves screen-right into darkness; recorder visible at side; streetlight or moonlight only",
+              "stage_direction": "Camera behind Dallas at distance; moves screen-right into darkness; recorder visible at side; streetlight or moonlight only"
+            },
+            {
+              "shot": "WS Dallas stops at patch of tall grass",
+              "description": "Dallas center-small in frame; grass fills left half; camera static; let him breathe and record — don't rush the beat",
+              "stage_direction": "Dallas center-small in frame; grass fills left half; camera static; let him breathe and record — don't rush the beat"
+            },
+            {
+              "shot": "CU recorder capturing ocean breeze",
+              "description": "Camera close on recorder mic face; grass or water visible soft behind; keep this one short",
+              "stage_direction": "Camera close on recorder mic face; grass or water visible soft behind; keep this one short"
+            }
           ]
         }
       ]

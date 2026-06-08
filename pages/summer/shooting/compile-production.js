@@ -873,15 +873,18 @@ function generateDayHtml(dayNum, rows, productionData) {
 
   const sceneRows = dayScenes.map(r => {
     const chars = (r.characters || []).join(', ');
-    const snippet = r.resolved ? extractSceneSnippet(r.content, r.fileId) : '';
+    let snippet = r.resolved ? extractSceneSnippet(r.content, r.fileId) : '';
+    // Override description for s00b-pickup
+    if (r.fileId === 's00b') {
+      snippet = 'CU of dallas walking around new appt';
+    }
     const fullScriptHref = r.fullScriptHref;
     return `
       <tr>
         <td><a href="${fullScriptHref}" onclick="event.stopPropagation()" style="color:#111;text-decoration:none;font-weight:700;border-bottom:1px dotted currentColor;" title="Jump to ${escapeHtml(r.fileId)} in the full script">${escapeHtml(r.fileId)}</a></td>
-        <td>${escapeHtml(r.time || '—')}</td>
         <td>
           <div style="font-weight: 700; color: black;"><a href="${fullScriptHref}" onclick="event.stopPropagation()" style="color:inherit;text-decoration:none;border-bottom:1px dotted currentColor;" title="Jump to ${escapeHtml(r.title)} in the full script">${escapeHtml(r.title)}</a></div>
-          ${snippet ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(snippet)}</div>` : (!r.resolved ? '<div style="font-size:0.72rem; color:#999; margin-top:4px; font-style: italic;">Scene file not present in this build; linked to the closest full-script section.</div>' : '')}
+          ${snippet ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">${escapeHtml(snippet)}</div>` : ''}
         </td>
         <td>${chars || '—'}</td>
       </tr>`;
@@ -895,7 +898,14 @@ function generateDayHtml(dayNum, rows, productionData) {
       const cast = Array.isArray(entry.cast) ? entry.cast : (entry.cast ? [entry.cast] : []);
       const linkHref = sceneId ? sceneHref(sceneId, rows, '../../script-system/full_script.html') : '#';
       const shotsHtml = Array.isArray(entry.shots) && entry.shots.length
-        ? `<div style="margin-top:6px; padding-top:6px; border-top:1px solid #eee; font-size:0.72rem; color:#666;"><div style="font-weight:700; color:#555; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.03em;">Shots:</div>${entry.shots.map(shot => `<div style="margin-bottom:2px;">• ${markdownToHtml(shot)}</div>`).join('')}</div>`
+        ? `<div style="margin-top:6px; padding-top:6px; border-top:1px solid #eee; font-size:0.72rem; color:#666;"><div style="font-weight:700; color:#555; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.03em;">Shots:</div>${entry.shots.map(shot => {
+          if (typeof shot === 'string') {
+            return `<div style="margin-bottom:2px;">• ${markdownToHtml(shot)}</div>`;
+          } else if (typeof shot === 'object' && shot.shot) {
+            return `<div style="margin-bottom:2px;">• ${escapeHtml(shot.shot)}</div>`;
+          }
+          return '';
+        }).join('')}</div>`
         : '';
       return `
       <li style="padding:10px 0; border-bottom:1px solid #ddd; display:block;">
@@ -1100,9 +1110,39 @@ function generateDayHtml(dayNum, rows, productionData) {
                 <div class="compact-panel">
                     ${sourceNote ? `<div style="font-size:0.82rem; font-family: ui-monospace, monospace; margin-bottom:8px;">${escapeHtml(sourceNote)}</div>` : ''}
                     <div style="display:grid; gap:8px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
-                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Production Day</div><div style="font-size:0.92rem;">12:45 PM - 5:30 PM</div></div>
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Production Day</div><div style="font-size:0.92rem;">${(() => {
+                          const callMatch = crewCall.match(/CALL:\s*(.+?)(?:\n|$)/);
+                          const wrapMatch = crewCall.match(/WRAP:\s*(.+?)(?:\n|$)/);
+                          if (callMatch && wrapMatch) {
+                            return escapeHtml(callMatch[1].trim() + ' - ' + wrapMatch[1].trim());
+                          }
+                          return 'TBD';
+                        })()}</div></div>
                         <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Scenes</div><div style="font-size:0.92rem;">${sceneIds.length}</div></div>
                         <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Est. Length</div><div style="font-size:0.92rem;">${planEntry && planEntry.estLength ? escapeHtml(planEntry.estLength) : (() => {
+                        const callMatch = crewCall.match(/CALL:\s*(.+?)(?:\n|$)/);
+                        const wrapMatch = crewCall.match(/WRAP:\s*(.+?)(?:\n|$)/);
+                        if (callMatch && wrapMatch) {
+                          // Simple time calculation: just count hours/minutes from CALL to WRAP
+                          const callStr = callMatch[1].trim();
+                          const wrapStr = wrapMatch[1].trim();
+                          const timeRegex = /(\d{1,2}):(\d{2})\s*(AM|PM)/i;
+                          const callTime = timeRegex.exec(callStr);
+                          const wrapTime = timeRegex.exec(wrapStr);
+                          if (callTime && wrapTime) {
+                            let callHour = parseInt(callTime[1]);
+                            let callMin = parseInt(callTime[2]);
+                            let wrapHour = parseInt(wrapTime[1]);
+                            let wrapMin = parseInt(wrapTime[2]);
+                            if (callTime[3].toUpperCase() === 'PM' && callHour !== 12) callHour += 12;
+                            if (wrapTime[3].toUpperCase() === 'PM' && wrapHour !== 12) wrapHour += 12;
+                            let totalMin = (wrapHour * 60 + wrapMin) - (callHour * 60 + callMin);
+                            if (totalMin < 0) totalMin += 24 * 60;
+                            const h = Math.floor(totalMin / 60);
+                            const m = totalMin % 60;
+                            return (h > 0 ? h + 'h ' : '') + (m > 0 || h === 0 ? m + 'm' : '').trim();
+                          }
+                        }
                         const totalMin = dayRows.reduce((sum, r) => sum + (Number(r.durationMin) || 0), 0);
                         if (totalMin === 0) return 'TBD';
                         const h = Math.floor(totalMin/60);
@@ -1118,7 +1158,6 @@ function generateDayHtml(dayNum, rows, productionData) {
                 <thead>
                     <tr>
                         <th>SCENE</th>
-                        <th>TIME</th>
                         <th>DESCRIPTION</th>
                         <th>CAST</th>
                     </tr>
@@ -1358,7 +1397,14 @@ function generateOverflowHtml(dayNum, planEntry, productionData) {
     const shotsHtml = Array.isArray(entry.shots) && entry.shots.length
       ? `<div style="margin-top:6px; padding-top:6px; border-top:1px solid #eee; font-size:0.72rem; color:#666;">
           <div style="font-weight:700; color:#555; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.03em;">Shots:</div>
-          ${entry.shots.map(shot => `<div style="margin-bottom:2px;">• ${markdownToHtml(shot)}</div>`).join('')}
+          ${entry.shots.map(shot => {
+            if (typeof shot === 'string') {
+              return `<div style="margin-bottom:2px;">• ${markdownToHtml(shot)}</div>`;
+            } else if (typeof shot === 'object' && shot.shot) {
+              return `<div style="margin-bottom:2px;">• ${escapeHtml(shot.shot)}</div>`;
+            }
+            return '';
+          }).join('')}
         </div>`
       : '';
     return `
