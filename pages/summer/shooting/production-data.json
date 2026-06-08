@@ -2,6 +2,7 @@
   "settings": {
     "chronologicalStartDay": 1
   },
+  "completedDays": [0],
   "calendar": {
     "0": "2026-06-07",
     "1": "2026-06-08",
@@ -15,7 +16,7 @@
     "10": "2026-06-27",
     "11": "2026-06-28",
     "12": "2026-07-01",
-    "13": "2026-07-02",
+    "14": "2026-07-16",
     "11.5": "2026-06-29",
     "8.5": "2026-06-22"
   },
@@ -863,15 +864,23 @@
         },
         {
           "beat": "s02.6",
-          "title": "Downstairs pulse",
+          "title": "Backyard pulse (+ safety interior)",
           "scene": "s02",
           "cast": [
             "Dallas"
           ],
-          "description": "Downstairs, Dallas records the pulsing tone, tracks the pattern, and loses the battery mid-read.",
+          "description": "PRIMARY: Dallas in the backyard at night — recorder and oscillator out, tracking the pulsing tone in the open air, battery dies. SAFETY: Same beat covered inside (downstairs room) in case we cut to interior.",
           "shots": [
-            "WS - Downstairs room, Dallas with military recorder and oscillator",
-            "MS - Dallas at table, setting up equipment",
+            "— PRIMARY (BACKYARD) —",
+            "WS - Backyard at night, Dallas steps out with recorder and oscillator",
+            "MS - Dallas moving slowly across the yard, oscillator extended",
+            "CU - Oscillator dial climbing toward 115.3",
+            "MS - Dallas stops, timing the pulse pattern",
+            "Detail - Recording device LED blinking, then fading — battery dies",
+            "CU - Dallas's frustration, looks down at dead recorder",
+            "— SAFETY (INTERIOR) —",
+            "WS - Downstairs room, Dallas at table with recorder and oscillator",
+            "MS - Dallas adjusting dial, tracking the sound through the window",
             "CU - Oscillator dial, frequency readout at 115.3",
             "Detail - Recording device LED blinking, then fading",
             "CU - Dallas's frustration as battery dies"
@@ -2431,10 +2440,9 @@
     {
       "day": 12,
       "scenes": [
-        "s04",
         "s06"
       ],
-      "crewCall": "CALL: 7:00 AM\nMEET: Branford Town Green\nSETUP: 7:30 AM — Camera preps\nSHOOT: 8:00 AM — s04 · Final fellowship gathering\nSHOOT: 9:30 AM — s06 · News vans arrive\nWRAP: 12:00 PM",
+      "crewCall": "CALL: 7:00 AM\nMEET: Branford Town Green\nSETUP: 7:30 AM — Camera preps\nSHOOT: 8:00 AM — s06 · News vans arrive\nWRAP: 10:30 AM",
       "crew": [
         {
           "role": "Director",
@@ -2460,6 +2468,56 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
+          "beat": "s06.1",
+          "title": "News vans arrive",
+          "scene": "s06",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "description": "The outside world intrudes - media arrives in Branford, cameras and crew setting up.",
+          "shots": [
+            "WS - News vans pulling up",
+            "MS - Reporters and camera crews setting up",
+            "CU - Group's reaction to media",
+            "Detail - Cameras and lights",
+            "WS - Town green overtaken by press"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 14,
+      "scenes": [
+        "s04"
+      ],
+      "crewCall": "CALL: 10:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 10:30 AM — BBQ location (TBD)\nSETUP: 10:30 AM — Camera preps\nSHOOT: 11:00 AM - 1:30 PM — s04 · BBQ scene\nLUNCH/WRAP: 1:30 PM",
+      "crew": [
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
+      ],
+      "locationDetails": [
+        "BBQ location (TBD)"
+      ],
+      "shotList": [
+        {
           "beat": "s04.1",
           "title": "The fellowship gathers",
           "scene": "s04",
@@ -2470,7 +2528,7 @@
             "Asher",
             "Mr. Mike"
           ],
-          "description": "All the main characters come together - Dallas, Dominic, Makayla, Asher, Mr. Mike - a final gathering.",
+          "description": "All the main characters come together at the BBQ — Dallas, Dominic, Makayla, Asher, Mr. Mike.",
           "shots": [
             "WS - Open location, all arriving",
             "MS - Greetings and reuniting",
@@ -2498,48 +2556,6 @@
             "WS - The group in stillness",
             "Detail - A nod or affirmation"
           ]
-        },
-        {
-          "beat": "s06.1",
-          "title": "News vans arrive",
-          "scene": "s06",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
-          ],
-          "description": "The outside world intrudes - media arrives in Branford, cameras and crew setting up.",
-          "shots": [
-            "WS - News vans pulling up",
-            "MS - Reporters and camera crews setting up",
-            "CU - Group's reaction to media",
-            "Detail - Cameras and lights",
-            "WS - Town green overtaken by press"
-          ]
-        }
-      ]
-    },
-    {
-      "day": 13,
-      "crewCall": "Pickup and reshoots as needed",
-      "crew": [
-        {
-          "role": "Director",
-          "name": "Alex"
-        },
-        {
-          "role": "Camera",
-          "name": "Alex"
-        },
-        {
-          "role": "Audio",
-          "name": "TBD"
-        },
-        {
-          "role": "Clapper",
-          "name": "TBD"
         }
       ]
     }

@@ -504,6 +504,7 @@ function renderCastDateSummaryHtml(summaryRows) {
 function generateCalendarHtml(productionData) {
   const calendar = productionData.calendar || {};
   const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+  const completedDays = Array.isArray(productionData.completedDays) ? productionData.completedDays.map(String) : [];
   const dayToScenes = {};
   shootPlan.forEach(entry => {
     if (Array.isArray(entry.scenes)) {
@@ -511,57 +512,103 @@ function generateCalendarHtml(productionData) {
     }
   });
 
-  const dates = Object.values(calendar).sort((a, b) => new Date(a) - new Date(b));
-  const firstDate = dates.length > 0 ? new Date(dates[0] + 'T12:00:00') : new Date();
-  const startOfMonth = new Date(firstDate.getFullYear(), firstDate.getMonth(), 1);
-  const endOfMonth = new Date(firstDate.getFullYear(), firstDate.getMonth() + 1, 0);
+  function renderMonthGrid(year, month) {
+    const startOfMonth = new Date(year, month, 1);
+    const endOfMonth = new Date(year, month + 1, 0);
+    const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-  let html = '<section style="margin-top:0;"><h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Calendar</h2><div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:12px;table-layout:fixed;"><thead><tr>';
+    let html = '<div style="overflow-x:auto;"><table style="width:100%;border-collapse:collapse;font-family:ui-monospace,monospace;font-size:12px;table-layout:fixed;"><thead><tr>';
+    dayNames.forEach(d => {
+      html += `<th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">${d}</th>`;
+    });
+    html += '</tr></thead><tbody>';
 
-  const dayNames = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-  dayNames.forEach(day => {
-    html += `<th style="text-align:left;padding:6px 8px;border-bottom:1px solid #999;color:#555;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;width:14.28%;">${day}</th>`;
-  });
-  html += '</tr></thead><tbody>';
+    let date = new Date(startOfMonth);
+    let row = '<tr>';
+    for (let i = 0; i < date.getDay(); i++) row += '<td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;background:transparent;min-height:60px;height:70px;"></td>';
 
-  let date = new Date(startOfMonth);
-  let row = '<tr>';
-  for (let i = 0; i < date.getDay(); i++) row += '<td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:1;background:transparent;min-height:60px;height:70px;"></td>';
+    while (date <= endOfMonth) {
+      const day = date.getDate();
+      const dateStr = date.toISOString().split('T')[0];
+      const dayNum = Object.keys(calendar).find(k => calendar[k] === dateStr);
+      const dayPlan = dayNum ? shootPlan.find((entry) => String(entry.day) === String(dayNum)) : null;
+      const isPickup = !!(dayPlan && (dayPlan.special || dayPlan.pickup));
+      const isCompleted = dayNum ? completedDays.includes(String(dayNum)) : false;
+      const scenes = dayNum && dayToScenes[dayNum] ? dayToScenes[dayNum] : '';
 
-  while (date <= endOfMonth) {
-    const day = date.getDate();
-    const dateStr = date.toISOString().split('T')[0];
-    const dayNum = Object.keys(calendar).find(k => calendar[k] === dateStr);
-    const dayPlan = dayNum ? shootPlan.find((entry) => String(entry.day) === String(dayNum)) : null;
-    const dayClass = dayNum ? 'shooting-day' : '';
-    const bgColor = dayNum ? '#f0f0f0' : 'transparent';
-    const borderColor = dayNum ? '#999' : '#eee';
-    const scenes = dayNum && dayToScenes[dayNum] ? dayToScenes[dayNum] : '';
-    const opacity = dayNum ? 1 : 1;
+      const cellBg = dayNum ? (isCompleted ? '#d4edda' : '#f0f0f0') : 'transparent';
+      const cellBorder = dayNum ? (isCompleted ? '#7fbf8f' : '#999') : '#eee';
+      const completedBadge = isCompleted ? `<div style="font-size:9px;font-weight:700;color:#2d6a4f;text-transform:uppercase;letter-spacing:0.04em;margin-top:2px;">✓ Done</div>` : '';
+      const cellContent = dayNum
+        ? `<div style="font-weight:700;margin-bottom:2px;">${day}</div><div style="font-weight:800;font-size:11px;">${isPickup ? 'Pickup' : `Day ${dayNum}`}</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">${scenes}</div>${completedBadge}`
+        : `<div style="font-weight:700;margin-bottom:2px;">${day}</div>`;
 
-    const isPickup = !!(dayPlan && (dayPlan.special || dayPlan.pickup));
-    const cellContent = dayNum
-      ? `<div style="font-weight:700;margin-bottom:2px;">${day}</div><div style="font-weight:800;font-size:11px;">${isPickup ? 'Pickup' : `Day ${dayNum}`}</div><div style="color:#666;font-size:10px;line-height:1.3;margin-top:2px;">${scenes}</div>`
-      : `<div style="font-weight:700;margin-bottom:2px;">${day}</div>`;
+      const onclick = dayNum ? `onclick="window.location.href='production/days/${dayNum}.html'"` : '';
+      const cursor = dayNum ? 'cursor:pointer;' : '';
 
-    const onclick = dayNum ? `onclick="window.location.href='production/days/${dayNum}.html'"` : '';
-    const cursor = dayNum ? 'cursor:pointer;' : '';
+      row += `<td ${onclick} style="padding:6px 8px;border:1px solid ${cellBorder};vertical-align:top;background:${cellBg};min-height:60px;height:70px;${cursor}">${cellContent}</td>`;
 
-    row += `<td ${onclick} style="padding:6px 8px;border:1px solid ${borderColor};vertical-align:top;opacity:${opacity};background:${bgColor};min-height:60px;height:70px;${cursor}">${cellContent}</td>`;
-
-    if (date.getDay() === 6) {
-      row += '</tr><tr>';
+      if (date.getDay() === 6) { row += '</tr><tr>'; }
+      date.setDate(date.getDate() + 1);
     }
-    date.setDate(date.getDate() + 1);
+    while (date.getDay() !== 0) {
+      row += `<td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">${date.getDate()}</div></td>`;
+      date.setDate(date.getDate() + 1);
+    }
+    row += '</tr>';
+    html += row + '</tbody></table></div>';
+    return html;
   }
-  while (date.getDay() !== 0) {
-    row += '<td style="padding:6px 8px;border:1px solid #eee;vertical-align:top;opacity:0.25;background:transparent;min-height:60px;height:70px;"><div style="font-weight:700;margin-bottom:2px;">' + date.getDate() + '</div></td>';
-    date.setDate(date.getDate() + 1);
-  }
-  row += '</tr>';
 
-  html += row + '</tbody></table></div></section>';
-  return html;
+  // Collect all months that appear in the calendar, always include June and July 2026
+  const monthSet = new Set(['2026-5', '2026-6']);
+  Object.values(calendar).forEach(d => {
+    const dt = new Date(d + 'T12:00:00');
+    monthSet.add(`${dt.getFullYear()}-${dt.getMonth()}`);
+  });
+
+  const monthList = Array.from(monthSet)
+    .map(k => { const [y, m] = k.split('-').map(Number); return { key: k, year: y, month: m }; })
+    .sort((a, b) => a.year !== b.year ? a.year - b.year : a.month - b.month);
+
+  const defaultKey = monthList[0].key;
+
+  const buttonsHtml = monthList.map((g, i) => {
+    const label = new Date(g.year, g.month, 1).toLocaleDateString('en-US', { month: 'long' });
+    const isActive = i === 0;
+    return `<button id="cal-btn-${g.key}" type="button" onclick="showCalMonth('${g.key}')" style="font-family:ui-monospace,monospace;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:6px 14px;border:2px solid ${isActive ? '#111' : '#999'};border-radius:6px;background:${isActive ? '#111' : '#fff'};color:${isActive ? '#fff' : '#333'};cursor:pointer;">${label}</button>`;
+  }).join('');
+
+  const gridsHtml = monthList.map((g, i) => {
+    return `<div id="cal-month-${g.key}" style="${i !== 0 ? 'display:none;' : ''}">${renderMonthGrid(g.year, g.month)}</div>`;
+  }).join('');
+
+  const allKeysJson = JSON.stringify(monthList.map(g => g.key));
+
+  return `<section style="margin-top:0;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
+      <h2 style="color:#111;margin:0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Calendar</h2>
+      <div style="display:flex;gap:8px;margin-left:auto;">${buttonsHtml}</div>
+    </div>
+    ${gridsHtml}
+  </section>
+  <script>
+    (function() {
+      var allCalKeys = ${allKeysJson};
+      window.showCalMonth = function(key) {
+        allCalKeys.forEach(function(k) {
+          var div = document.getElementById('cal-month-' + k);
+          var btn = document.getElementById('cal-btn-' + k);
+          if (!div || !btn) return;
+          var active = k === key;
+          div.style.display = active ? 'block' : 'none';
+          btn.style.background = active ? '#111' : '#fff';
+          btn.style.color = active ? '#fff' : '#333';
+          btn.style.borderColor = active ? '#111' : '#999';
+        });
+      };
+    })();
+  </script>`;
 }
 
 function generateScheduleTableHtml(rows, productionData) {
@@ -696,15 +743,20 @@ function generateFullHtml(rows, totalDays, productionData) {
                   <div style="display: flex; flex-direction: column; gap: 8px;">
 `;
 
+  const completedDaysSet = new Set((Array.isArray(productionData.completedDays) ? productionData.completedDays : []).map(String));
   for (const dayNum of callSheetDays) {
     const planEntry = shootPlan.find((entry) => String(entry.day) === String(dayNum));
     const isPickup = !!(planEntry && (planEntry.special || planEntry.pickup));
     const dayDate = calendar[dayNum] || '';
     const dateLabel = dayDate ? new Date(dayDate + 'T12:00:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' }) : '';
+    const isDone = completedDaysSet.has(String(dayNum));
+    const cardBg = isDone ? '#d4edda' : '#fff';
+    const cardBorder = isDone ? '1px solid #7fbf8f' : '1px solid #000';
+    const doneTag = isDone ? `<span style="font-size:0.72rem;font-weight:700;color:#2d6a4f;text-transform:uppercase;letter-spacing:0.04em;border:1px solid #7fbf8f;padding:2px 6px;border-radius:3px;background:#c3e6cb;">✓ Complete</span>` : '';
     html += `
-                    <div class="stats-card" style="cursor: pointer; margin-bottom: 0;" onclick="window.location.href='production/days/${dayNum}.html'">
+                    <div class="stats-card" style="cursor: pointer; margin-bottom: 0; background: ${cardBg}; border: ${cardBorder};" onclick="window.location.href='production/days/${dayNum}.html'">
                       <div style="display:flex; justify-content:space-between; align-items:center; gap:12px;">
-                        <div style="font-weight: 700; color: #000; font-size: 0.95rem;">${isPickup ? 'Pickup' : `Day ${dayNum}`}${dateLabel ? ` · ${dateLabel}` : ''}</div>
+                        <div style="font-weight: 700; color: #000; font-size: 0.95rem; display:flex; align-items:center; gap:8px;">${isPickup ? 'Pickup' : `Day ${dayNum}`}${dateLabel ? ` · ${dateLabel}` : ''} ${doneTag}</div>
                         <a href="production/days/${dayNum}.html" style="color: #000; text-decoration: none; font-weight: 600;">${isPickup ? 'Open pickup sheet' : 'Open call sheet'}</a>
                       </div>
                     </div>
@@ -806,6 +858,10 @@ function generateDayHtml(dayNum, rows, productionData) {
     ? (Array.isArray(planEntry.locationDetails) ? planEntry.locationDetails : [planEntry.locationDetails])
     : unique(dayRows.flatMap((r) => r.locationDetails || []));
   const castDateSummaryHtml = renderCastDateSummaryHtml(buildCastDateSummary(rows, productionData));
+
+  const completedDaysList = Array.isArray(productionData.completedDays) ? productionData.completedDays.map(String) : [];
+  const isDayComplete = completedDaysList.includes(String(dayNum));
+  const dayBg = isDayComplete ? '#e8f5e9' : '#fff';
 
   const dayLabel = planEntry && planEntry.special ? 'Pickup Date' : (planEntry ? `Day ${planEntry.day}` : `Day ${dayNum}`);
   const sourceNote = planEntry && planEntry.sourceNote ? planEntry.sourceNote : '';
@@ -914,7 +970,7 @@ function generateDayHtml(dayNum, rows, productionData) {
         <style>
             ${getProductionStyles()}
             .main-content { padding: 24px 22px 32px; margin: 0 auto; max-width: 920px; box-sizing: border-box; }
-            body { background: #fff; color: #000; }
+            body { background: ${dayBg}; color: #000; }
             .callsheet-header {
                 display: flex;
                 justify-content: space-between;
@@ -1042,7 +1098,7 @@ function generateDayHtml(dayNum, rows, productionData) {
             }
         </style>
     </head>
-    <body style="background:white; color:black;">
+    <body style="background:${dayBg}; color:black;">
         <div class="main-content">
             <div class="notice-bar no-print">
                 ${prevDay !== null ? `<a href="${prevDay}.html" style="color:#0366d6; text-decoration:none;">&larr; Day ${prevDay}</a>` : `<span></span>`}
