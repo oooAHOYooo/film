@@ -789,19 +789,14 @@
           "description": "Dallas alone upstairs — wandering the hallway, stopping at the attic door, climbing into the attic in daylight.",
           "shots": [
             {
-              "shot": "CU clipboard details",
-              "description": "Clipboard angled toward lens center-right; camera low 30°, shallow DOF, window light raking from left",
-              "stage_direction": "Clipboard angled toward lens center-right; camera low 30°, shallow DOF, window light raking from left"
+              "shot": "CU of racoon",
+              "description": "Close-up of racoon in apartment, caught by surprise",
+              "stage_direction": "Close-up of racoon in apartment, caught by surprise"
             },
             {
-              "shot": "CU Dallas hand on doorframe",
-              "description": "Camera outside frame looking in; hand enters left edge; door edge natural frame right; warm interior light backlights fingers",
-              "stage_direction": "Camera outside frame looking in; hand enters left edge; door edge natural frame right; warm interior light backlights fingers"
-            },
-            {
-              "shot": "DETAIL light switch/doorknob/hinges",
-              "description": "Macro handheld; camera parallel to surface; no fill — let shadow reveal texture",
-              "stage_direction": "Macro handheld; camera parallel to surface; no fill — let shadow reveal texture"
+              "shot": "Medium shot of dallas reveal",
+              "description": "Dallas reveals himself, reaction to seeing the racoon",
+              "stage_direction": "Dallas reveals himself, reaction to seeing the racoon"
             },
             {
               "shot": "CU futon frame texture",
