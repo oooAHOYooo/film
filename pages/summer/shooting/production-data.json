@@ -804,13 +804,14 @@
           "cast": [
             "Dallas"
           ],
-          "description": "Dallas settles into the kitchen, clocks the first faint hum, and marks the frequency before the sound cuts.",
+          "description": "Dallas pulls something frozen from the fridge and starts prepping at the counter. Mid-task, the hum drifts in from the window. He picks up the oscillator sitting on the counter and points it curiously — then the sound cuts.",
           "shots": [
-            "WS - Kitchen interior, Dallas enters from hallway",
-            "MS - Dallas at kitchen counter, listening",
-            "CU - Dallas's face, concentrating on the sound",
-            "CU - Hand marking frequency on portable recorder",
-            "WS - Kitchen, Dallas frozen as sound cuts"
+            "WS - Kitchen, Dallas opens fridge, pulls out something frozen",
+            "MS - Dallas at counter, unwrapping, half-distracted",
+            "CU - Dallas's head turns toward the window",
+            "CU - Oscillator on the counter — Dallas picks it up",
+            "MS - Dallas points it toward the window, curious, still",
+            "CU - Oscillator needle, then it drops — sound gone"
           ]
         },
         {
@@ -959,146 +960,71 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s01.1",
-          "title": "Makayla and Asher arrive",
-          "scene": "s01",
+          "beat": "s00a.M1",
+          "title": "Makayla and Asher in the marsh",
+          "scene": "s00a",
           "cast": [
             "Makayla",
             "Asher"
           ],
-          "description": "Makayla and Asher pull up to the Dallas house with equipment and gear.",
+          "description": "Makayla and Asher move through the marsh edge, carrying acoustic trap equipment and folding trowels.",
           "shots": [
-            "WS - House exterior, vehicle arriving",
-            "MS - Car pulling into driveway",
-            "MS - Makayla and Asher stepping out",
-            "Detail - Equipment being unloaded",
-            "WS - Two of them approaching house"
+            "WS - Marsh edge, Makayla and Asher entering frame from street",
+            "MS - Both moving through low reeds and tall grass",
+            "Detail - Equipment bags and trowels in hand",
+            "CU - Makayla scanning the terrain",
+            "WS - Wide marsh establishing — sense of isolation"
           ]
         },
         {
-          "beat": "s01.2",
-          "title": "Dallas greets them",
-          "scene": "s01",
+          "beat": "s00a.M2",
+          "title": "Planting the first device",
+          "scene": "s00a",
           "cast": [
-            "Dallas",
             "Makayla",
             "Asher"
           ],
-          "description": "Dallas emerges from house, first meeting with Makayla and Asher on the property.",
+          "description": "They find a concealed position and plant the first acoustic trap — precise, practiced movements.",
           "shots": [
-            "WS - Dallas at door, M&A in yard",
-            "MS - Greetings and handshakes",
-            "CU - Dallas's face meeting them",
-            "WS - All three at house entrance",
-            "MS - Conversation beginning"
+            "MS - Asher crouching at the base of tall grass",
+            "CU - Trowel breaking soil, small and deliberate",
+            "Detail - Acoustic trap being set into the ground",
+            "CU - Makayla covering it with leaf litter and moss",
+            "MS - Both stepping back to assess concealment"
           ]
         },
         {
-          "beat": "s01.3",
-          "title": "House and grounds tour",
-          "scene": "s01",
+          "beat": "s00a.M3",
+          "title": "Trail camera setup",
+          "scene": "s00a",
           "cast": [
-            "Dallas",
             "Makayla",
             "Asher"
           ],
-          "description": "Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.",
+          "description": "They mount a trail camera on a post, angled toward the interior of the tall grass. Silent communication between them.",
           "shots": [
-            "WS - Group entering house",
-            "MS - Quick interior shots",
-            "WS - Exiting to back or side",
-            "WS - Viewing the tall grass from property edge",
-            "MS - All three observing the marsh"
+            "MS - Asher with trail camera, finding mounting point",
+            "Detail - Camera clicking into bracket",
+            "CU - Makayla checking sight line through the grass",
+            "Detail - LED indicator confirming record mode",
+            "WS - Camera mounted, facing deep into marsh"
           ]
         },
         {
-          "beat": "s03.1",
-          "title": "The sound begins",
-          "scene": "s03",
+          "beat": "s00a.M4",
+          "title": "Second position",
+          "scene": "s00a",
           "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
+            "Makayla",
+            "Asher"
           ],
-          "description": "Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.",
+          "description": "They move to a second location further along the marsh — same sequence, same silence.",
           "shots": [
-            "WS - Group in location, stillness",
-            "MS - Dallas recognizing the sound",
-            "CU - Dominic and Pat's confused reactions",
-            "WS - Around them, hum intensifying",
-            "Detail - Portable oscillator responding"
-          ]
-        },
-        {
-          "beat": "s03.2",
-          "title": "Attempt to track it",
-          "scene": "s03",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They try to locate the source - moving with equipment, oscillator in hand.",
-          "shots": [
-            "MS - Dallas with oscillator, searching",
-            "WS - All three moving through location",
-            "Detail - Oscillator dial tracking frequency",
-            "CU - Their faces as hum builds",
-            "MS - Triangulating direction"
-          ]
-        },
-        {
-          "beat": "s03.3",
-          "title": "The revelation",
-          "scene": "s03",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They narrow down that the sound is coming from the tall grass itself - the source becomes clear.",
-          "shots": [
-            "WS - Tall grass, hum at maximum",
-            "CU - Each of their faces, realization",
-            "Detail - Equipment reading peak",
-            "WS - Group facing the grass",
-            "MS - Looking at each other in shock"
-          ]
-        },
-        {
-          "beat": "s05.1",
-          "title": "Merlin app search",
-          "scene": "s05",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They consult field guides and use the Merlin app to try identifying what could produce this sound.",
-          "shots": [
-            "MS - Dallas holding app on phone/device",
-            "CU - Screen showing bird identification interface",
-            "MS - Dominic and Pat looking over",
-            "Detail - Flipping through field guide pages",
-            "WS - Group reviewing findings"
-          ]
-        },
-        {
-          "beat": "s05.2",
-          "title": "Dead ends",
-          "scene": "s05",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They realize no known bird species matches the frequency or pattern - confusion and concern.",
-          "shots": [
-            "CU - Dallas's concerned face",
-            "MS - Dominic shaking head",
-            "Detail - Pat pointing to field guide, uncertain",
-            "MS - Exchange of worried looks",
-            "WS - Three of them, perplexed"
+            "WS - Makayla and Asher moving deeper along the marsh line",
+            "MS - Second planting location selected",
+            "Detail - Boom pole assembly laid flat in reeds",
+            "CU - Asher's hands burying the second trap",
+            "WS - They finish, glance at each other, move on"
           ]
         }
       ]
@@ -1746,12 +1672,15 @@
     {
       "day": 8,
       "scenes": [
+        "s01",
+        "s03",
+        "s05",
         "s07",
         "s18",
         "s19",
         "s20"
       ],
-      "crewCall": "CALL: 8:00 AM\nMEET: Branford Town Green\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07 · Coordinates discovered\nSHOOT: 10:30 AM — s18 · Life group gathering\nSHOOT: 12:00 PM — s19, s20 · Hymn meets the hum & red eyes\nWRAP: 3:00 PM",
+      "crewCall": "CALL: 9:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 9:30 AM — Jerry's House (72 Lake St, Hamden)\nSHOOT: 9:30 AM - 11:00 AM — s01 · Makayla & Asher arrive\nLUNCH: 11:00 AM\nSHOOT: 11:45 AM - 1:15 PM — s03 · The hum & marsh walk\nSHOOT: 1:30 PM - 2:30 PM — s05 · Merlin app search\nBREAK: 2:30 PM\nSHOOT: 3:00 PM — s07 · Coordinates discovered\nSHOOT: 4:30 PM — s18 · Life group gathering\nSHOOT: 6:00 PM — s19, s20 · Hymn meets the hum & red eyes\nWRAP: 9:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1776,6 +1705,149 @@
       ],
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
+        {
+          "beat": "s01.1",
+          "title": "Makayla and Asher arrive",
+          "scene": "s01",
+          "cast": [
+            "Makayla",
+            "Asher"
+          ],
+          "description": "Makayla and Asher pull up to the Dallas house with equipment and gear.",
+          "shots": [
+            "WS - House exterior, vehicle arriving",
+            "MS - Car pulling into driveway",
+            "MS - Makayla and Asher stepping out",
+            "Detail - Equipment being unloaded",
+            "WS - Two of them approaching house"
+          ]
+        },
+        {
+          "beat": "s01.2",
+          "title": "Dallas greets them",
+          "scene": "s01",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher"
+          ],
+          "description": "Dallas emerges from house, first meeting with Makayla and Asher on the property.",
+          "shots": [
+            "WS - Dallas at door, M&A in yard",
+            "MS - Greetings and handshakes",
+            "CU - Dallas's face meeting them",
+            "WS - All three at house entrance",
+            "MS - Conversation beginning"
+          ]
+        },
+        {
+          "beat": "s01.3",
+          "title": "House and grounds tour",
+          "scene": "s01",
+          "cast": [
+            "Dallas",
+            "Makayla",
+            "Asher"
+          ],
+          "description": "Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.",
+          "shots": [
+            "WS - Group entering house",
+            "MS - Quick interior shots",
+            "WS - Exiting to back or side",
+            "WS - Viewing the tall grass from property edge",
+            "MS - All three observing the marsh"
+          ]
+        },
+        {
+          "beat": "s03.1",
+          "title": "The sound begins",
+          "scene": "s03",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.",
+          "shots": [
+            "WS - Group in location, stillness",
+            "MS - Dallas recognizing the sound",
+            "CU - Dominic and Pat's confused reactions",
+            "WS - Around them, hum intensifying",
+            "Detail - Portable oscillator responding"
+          ]
+        },
+        {
+          "beat": "s03.2",
+          "title": "Attempt to track it",
+          "scene": "s03",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "They try to locate the source - moving with equipment, oscillator in hand.",
+          "shots": [
+            "MS - Dallas with oscillator, searching",
+            "WS - All three moving through location",
+            "Detail - Oscillator dial tracking frequency",
+            "CU - Their faces as hum builds",
+            "MS - Triangulating direction"
+          ]
+        },
+        {
+          "beat": "s03.3",
+          "title": "The revelation",
+          "scene": "s03",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "They narrow down that the sound is coming from the tall grass itself - the source becomes clear.",
+          "shots": [
+            "WS - Tall grass, hum at maximum",
+            "CU - Each of their faces, realization",
+            "Detail - Equipment reading peak",
+            "WS - Group facing the grass",
+            "MS - Looking at each other in shock"
+          ]
+        },
+        {
+          "beat": "s05.1",
+          "title": "Merlin app search",
+          "scene": "s05",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "They consult field guides and use the Merlin app to try identifying what could produce this sound.",
+          "shots": [
+            "MS - Dallas holding app on phone/device",
+            "CU - Screen showing bird identification interface",
+            "MS - Dominic and Pat looking over",
+            "Detail - Flipping through field guide pages",
+            "WS - Group reviewing findings"
+          ]
+        },
+        {
+          "beat": "s05.2",
+          "title": "Dead ends",
+          "scene": "s05",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "They realize no known bird species matches the frequency or pattern - confusion and concern.",
+          "shots": [
+            "CU - Dallas's concerned face",
+            "MS - Dominic shaking head",
+            "Detail - Pat pointing to field guide, uncertain",
+            "MS - Exchange of worried looks",
+            "WS - Three of them, perplexed"
+          ]
+        },
         {
           "beat": "s07.1",
           "title": "Coordinates discovered",
