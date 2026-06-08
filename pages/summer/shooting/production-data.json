@@ -794,44 +794,44 @@
           "description": "Dallas alone upstairs — wandering the hallway, stopping at the attic door, climbing into the attic in daylight.",
           "shots": [
             {
-              "shot": "CU of racoon",
-              "description": "Close-up of racoon in apartment, caught by surprise",
-              "stage_direction": "Close-up of racoon in apartment, caught by surprise"
+              "shot": "CU of raccoon",
+              "description": "Camera at floor level or low angle; raccoon centered or slightly left; shoot through doorframe or gap in boxes as natural frame; no Dallas — pure discovery shot",
+              "stage_direction": "Camera at floor level or low angle; raccoon centered or slightly left; shoot through doorframe or gap in boxes as natural frame; no Dallas — pure discovery shot"
             },
             {
-              "shot": "Medium shot of dallas reveal",
-              "description": "Dallas reveals himself, reaction to seeing the racoon",
-              "stage_direction": "Dallas reveals himself, reaction to seeing the racoon"
+              "shot": "Medium shot of Dallas reveal",
+              "description": "Dallas center-frame at top of attic stairs or in hallway; camera at chest height looking up slightly; ceiling or attic space visible above him; hold before he moves",
+              "stage_direction": "Dallas center-frame at top of attic stairs or in hallway; camera at chest height looking up slightly; ceiling or attic space visible above him; hold before he moves"
             },
             {
               "shot": "CU futon frame texture",
-              "description": "Camera near-floor level; frame runs bottom-left to upper-right diagonal; raking window light reveals wear",
-              "stage_direction": "Camera near-floor level; frame runs bottom-left to upper-right diagonal; raking window light reveals wear"
+              "description": "Camera near-floor level; frame runs bottom-left to upper-right diagonal; raking window light reveals surface wear; no Dallas",
+              "stage_direction": "Camera near-floor level; frame runs bottom-left to upper-right diagonal; raking window light reveals surface wear; no Dallas"
             },
             {
               "shot": "CU beer can label / floor",
-              "description": "Top-down or 15° tilt; can centered; floor texture visible around it; ambient only, no fill",
-              "stage_direction": "Top-down or 15° tilt; can centered; floor texture visible around it; ambient only, no fill"
+              "description": "Top-down or 15° tilt; can centered; floor texture visible around it; ambient only, no fill; no Dallas",
+              "stage_direction": "Top-down or 15° tilt; can centered; floor texture visible around it; ambient only, no fill; no Dallas"
             },
             {
               "shot": "CU kitchen window / reflection",
-              "description": "Camera exterior looking in or tight on glass; sky reflects in upper pane; window frame runs vertical center-frame",
-              "stage_direction": "Camera exterior looking in or tight on glass; sky reflects in upper pane; window frame runs vertical center-frame"
+              "description": "Camera exterior looking in or tight on glass; sky reflects in upper pane; window frame runs vertical center-frame; no Dallas",
+              "stage_direction": "Camera exterior looking in or tight on glass; sky reflects in upper pane; window frame runs vertical center-frame; no Dallas"
             },
             {
               "shot": "CU attic window light quality",
-              "description": "Camera pointed into window from inside; backlight from exterior; keep exposure locked on interior to blow out window slightly",
-              "stage_direction": "Camera pointed into window from inside; backlight from exterior; keep exposure locked on interior to blow out window slightly"
+              "description": "Camera pointed into window from inside; backlight from exterior; keep exposure locked on interior to blow out window slightly; dust motes visible in beam if present",
+              "stage_direction": "Camera pointed into window from inside; backlight from exterior; keep exposure locked on interior to blow out window slightly; dust motes visible in beam if present"
             },
             {
               "shot": "CU Dallas boots on attic floor",
-              "description": "Camera floor-level facing screen-right (L→R); boots enter left frame, step into beam of attic window light; 35mm",
-              "stage_direction": "Camera floor-level facing screen-right (L→R); boots enter left frame, step into beam of attic window light; 35mm"
+              "description": "Camera floor-level facing screen-right (L→R movement); boots enter left frame, step into beam of attic window light; 35mm; floor texture visible around feet",
+              "stage_direction": "Camera floor-level facing screen-right (L→R movement); boots enter left frame, step into beam of attic window light; 35mm; floor texture visible around feet"
             },
             {
               "shot": "WS attic space alt angle",
-              "description": "Camera far corner facing diagonal; beams converge toward opposite corner; boxes scattered mid-ground center-right",
-              "stage_direction": "Camera far corner facing diagonal; beams converge toward opposite corner; boxes scattered mid-ground center-right"
+              "description": "Camera in far corner facing diagonal into space; beams converge toward opposite corner; Dallas small in frame center or right; boxes scattered mid-ground; ceiling height visible",
+              "stage_direction": "Camera in far corner facing diagonal into space; beams converge toward opposite corner; Dallas small in frame center or right; boxes scattered mid-ground; ceiling height visible"
             }
           ]
         },
@@ -846,28 +846,28 @@
           "shots": [
             {
               "shot": "WS kitchen Dallas enters",
-              "description": "Camera at far kitchen wall facing screen-left; Dallas enters right-of-frame moving left; window on screen-left floods late daylight",
-              "stage_direction": "Camera at far kitchen wall facing screen-left; Dallas enters right-of-frame moving left; window on screen-left floods late daylight"
+              "description": "Camera at far kitchen wall facing screen-left; Dallas enters right-of-frame moving left; window on screen-left wall floods late daylight; establish room depth before he reaches counter",
+              "stage_direction": "Camera at far kitchen wall facing screen-left; Dallas enters right-of-frame moving left; window on screen-left wall floods late daylight; establish room depth before he reaches counter"
             },
             {
               "shot": "MS Dallas at counter listening",
-              "description": "Dallas left-of-center facing screen-right toward window; counter horizontal behind him; camera shoulder height; window as key, room as fill",
-              "stage_direction": "Dallas left-of-center facing screen-right toward window; counter horizontal behind him; camera shoulder height; window as key, room as fill"
+              "description": "Dallas left-of-center facing screen-right toward window; counter runs horizontal behind him; camera shoulder height; window as key light, room as fill",
+              "stage_direction": "Dallas left-of-center facing screen-right toward window; counter runs horizontal behind him; camera shoulder height; window as key light, room as fill"
             },
             {
               "shot": "CU Dallas face concentrating",
-              "description": "Dallas right-of-center, window screen-left as sidelight; camera eye level; shallow focus; hold stillness",
-              "stage_direction": "Dallas right-of-center, window screen-left as sidelight; camera eye level; shallow focus; hold stillness"
+              "description": "Dallas right-of-center, window on screen-left creating sidelight; camera eye level; shallow focus; no movement — hold stillness",
+              "stage_direction": "Dallas right-of-center, window on screen-left creating sidelight; camera eye level; shallow focus; no movement — hold stillness"
             },
             {
               "shot": "CU hand marking frequency",
-              "description": "Camera looking down at 45°; hand enters bottom-frame; dial or display visible; shallow DOF on recorder face",
-              "stage_direction": "Camera looking down at 45°; hand enters bottom-frame; dial or display visible; shallow DOF on recorder face"
+              "description": "Camera looking down at recorder from 45°; Dallas's hand enters bottom-frame; dial or display visible and legible; shallow DOF on recorder face",
+              "stage_direction": "Camera looking down at recorder from 45°; Dallas's hand enters bottom-frame; dial or display visible and legible; shallow DOF on recorder face"
             },
             {
               "shot": "WS Dallas frozen as sound cuts",
-              "description": "Return to opening WS; Dallas center-left, recorder raised, body still; hold wide — let silence land on the empty room around him",
-              "stage_direction": "Return to opening WS; Dallas center-left, recorder raised, body still; hold wide — let silence land on the empty room around him"
+              "description": "Return to opening WS framing; Dallas has moved to center-left, recorder raised, body still; hold wide — let silence land on the empty room around him",
+              "stage_direction": "Return to opening WS framing; Dallas has moved to center-left, recorder raised, body still; hold wide — let silence land on the empty room around him"
             }
           ]
         },
@@ -882,18 +882,18 @@
           "shots": [
             {
               "shot": "WS Dallas exits house establishing",
-              "description": "Camera faces house at street level; Dallas exits screen-left door, walks toward screen-right toward grass; sky above",
-              "stage_direction": "Camera faces house at street level; Dallas exits screen-left door, walks toward screen-right toward grass; sky above"
+              "description": "Camera faces house from street level; Dallas exits screen-left door and walks toward screen-right toward grass; house fills left two-thirds; sky above; establish geography before he reaches grass",
+              "stage_direction": "Camera faces house from street level; Dallas exits screen-left door and walks toward screen-right toward grass; house fills left two-thirds; sky above; establish geography before he reaches grass"
             },
             {
               "shot": "MS Dallas at property edge",
-              "description": "Dallas right-of-center facing screen-left toward grass; grass wall fills left half of frame; slight low angle reinforces grass scale",
-              "stage_direction": "Dallas right-of-center facing screen-left toward grass; grass wall fills left half of frame; slight low angle reinforces grass scale"
+              "description": "Dallas right-of-center facing screen-left toward grass; grass wall fills left half of frame; camera shoulder height with slight low angle to reinforce grass scale",
+              "stage_direction": "Dallas right-of-center facing screen-left toward grass; grass wall fills left half of frame; camera shoulder height with slight low angle to reinforce grass scale"
             },
             {
               "shot": "CU Dallas face reacting",
-              "description": "Dallas center-frame, eyes directed slightly above lens into screen-left distance; ambient dusk light; hold long",
-              "stage_direction": "Dallas center-frame, eyes directed slightly above lens into screen-left distance; ambient dusk light; hold long"
+              "description": "Dallas center-frame; eyes directed slightly above lens into screen-left distance; ambient dusk light; soft breeze movement in hair or clothes; hold long — don't cut early",
+              "stage_direction": "Dallas center-frame; eyes directed slightly above lens into screen-left distance; ambient dusk light; soft breeze movement in hair or clothes; hold long — don't cut early"
             },
             {
               "shot": "WS tall grass at driveway line",
@@ -902,8 +902,8 @@
             },
             {
               "shot": "OTS Dallas from behind",
-              "description": "Camera behind Dallas slightly right; Dallas bottom-center to bottom-right; grass horizon ahead; wide enough to feel isolation; hold static",
-              "stage_direction": "Camera behind Dallas slightly right; Dallas bottom-center to bottom-right; grass horizon ahead; wide enough to feel isolation; hold static"
+              "description": "Camera behind Dallas slightly right; Dallas occupies bottom-center to bottom-right; grass horizon fills upper frame; wide enough to feel isolation; hold static",
+              "stage_direction": "Camera behind Dallas slightly right; Dallas occupies bottom-center to bottom-right; grass horizon fills upper frame; wide enough to feel isolation; hold static"
             }
           ]
         },
@@ -918,28 +918,28 @@
           "shots": [
             {
               "shot": "WS attic Dallas approaches boxes",
-              "description": "Camera in back corner; boxes center-frame; Dallas enters screen-left, moves screen-right toward boxes; ceiling beams frame top",
-              "stage_direction": "Camera in back corner; boxes center-frame; Dallas enters screen-left, moves screen-right toward boxes; ceiling beams frame top"
+              "description": "Camera in back corner of attic facing diagonal into space; boxes center-frame in scattered cluster; Dallas enters screen-left and moves screen-right toward boxes; ceiling beams frame top of shot",
+              "stage_direction": "Camera in back corner of attic facing diagonal into space; boxes center-frame in scattered cluster; Dallas enters screen-left and moves screen-right toward boxes; ceiling beams frame top of shot"
             },
             {
               "shot": "MS Dallas kneeling at box",
-              "description": "Camera at kneeling height slightly above; Dallas right-of-center; box fills bottom-center; attic window behind-left as soft key",
-              "stage_direction": "Camera at kneeling height slightly above; Dallas right-of-center; box fills bottom-center; attic window behind-left as soft key"
+              "description": "Camera at kneeling height slightly above Dallas; Dallas right-of-center; box fills bottom-center frame; attic window behind and left provides soft key light",
+              "stage_direction": "Camera at kneeling height slightly above Dallas; Dallas right-of-center; box fills bottom-center frame; attic window behind and left provides soft key light"
             },
             {
-              "shot": "CU box lid opening label visible",
-              "description": "Camera near top-down 80°; label faces up; Dallas's hands peel open from bottom-frame; writing centered and legible",
-              "stage_direction": "Camera near top-down 80°; label faces up; Dallas's hands peel open from bottom-frame; writing centered and legible"
+              "shot": "CU box lid opening — label visible",
+              "description": "Camera near top-down at 80°; label faces up and is centered and legible; Dallas's hands peel lid open from bottom-frame; nothing else in frame",
+              "stage_direction": "Camera near top-down at 80°; label faces up and is centered and legible; Dallas's hands peel lid open from bottom-frame; nothing else in frame"
             },
             {
               "shot": "DETAIL hands extracting cassette/headphones",
-              "description": "Camera at box level looking in; hands reach in from top-frame; items extracted left to right; shallow focus on objects",
-              "stage_direction": "Camera at box level looking in; hands reach in from top-frame; items extracted left to right; shallow focus on objects"
+              "description": "Camera at box-level looking in; hands reach in from top-frame; cassette player and headphones extracted left to right; shallow focus on objects; cables and gear visible in box around them",
+              "stage_direction": "Camera at box-level looking in; hands reach in from top-frame; cassette player and headphones extracted left to right; shallow focus on objects; cables and gear visible in box around them"
             },
             {
               "shot": "CU Dallas face recognition/emotion",
-              "description": "Dallas center-frame, head slightly bowed then raising; 75mm; attic window sidelight screen-left; hold on stillness after recognition lands",
-              "stage_direction": "Dallas center-frame, head slightly bowed then raising; 75mm; attic window sidelight screen-left; hold on stillness after recognition lands"
+              "description": "Dallas center-frame, head slightly bowed then raising; 75mm; attic window sidelight from screen-left; hold on stillness after recognition lands — don't cut until the beat is complete",
+              "stage_direction": "Dallas center-frame, head slightly bowed then raising; 75mm; attic window sidelight from screen-left; hold on stillness after recognition lands — don't cut until the beat is complete"
             }
           ]
         }

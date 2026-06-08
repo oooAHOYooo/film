@@ -902,7 +902,8 @@ function generateDayHtml(dayNum, rows, productionData) {
           if (typeof shot === 'string') {
             return `<div style="margin-bottom:2px;">• ${markdownToHtml(shot)}</div>`;
           } else if (typeof shot === 'object' && shot.shot) {
-            return `<div style="margin-bottom:2px;">• ${escapeHtml(shot.shot)}</div>`;
+            const dir = shot.stage_direction ? `<div style="margin-left:12px; margin-top:2px; color:#888; font-style:italic; line-height:1.35;">${escapeHtml(shot.stage_direction)}</div>` : '';
+            return `<div style="margin-bottom:4px;">• ${escapeHtml(shot.shot)}${dir}</div>`;
           }
           return '';
         }).join('')}</div>`
