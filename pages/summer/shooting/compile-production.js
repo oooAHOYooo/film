@@ -571,44 +571,18 @@ function generateCalendarHtml(productionData) {
     .map(k => { const [y, m] = k.split('-').map(Number); return { key: k, year: y, month: m }; })
     .sort((a, b) => a.year !== b.year ? a.year - b.year : a.month - b.month);
 
-  const defaultKey = monthList[0].key;
-
-  const buttonsHtml = monthList.map((g, i) => {
-    const label = new Date(g.year, g.month, 1).toLocaleDateString('en-US', { month: 'long' });
-    const isActive = i === 0;
-    return `<button id="cal-btn-${g.key}" type="button" onclick="showCalMonth('${g.key}')" style="font-family:ui-monospace,monospace;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:6px 14px;border:2px solid ${isActive ? '#111' : '#999'};border-radius:6px;background:${isActive ? '#111' : '#fff'};color:${isActive ? '#fff' : '#333'};cursor:pointer;">${label}</button>`;
+  const gridsHtml = monthList.map(g => {
+    const label = new Date(g.year, g.month, 1).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    return `<div style="margin-bottom:32px;">
+      <div style="font-size:0.85rem;font-weight:700;font-family:ui-monospace,monospace;text-transform:uppercase;letter-spacing:0.06em;color:#555;margin-bottom:8px;">${label}</div>
+      ${renderMonthGrid(g.year, g.month)}
+    </div>`;
   }).join('');
-
-  const gridsHtml = monthList.map((g, i) => {
-    return `<div id="cal-month-${g.key}" style="${i !== 0 ? 'display:none;' : ''}">${renderMonthGrid(g.year, g.month)}</div>`;
-  }).join('');
-
-  const allKeysJson = JSON.stringify(monthList.map(g => g.key));
 
   return `<section style="margin-top:0;">
-    <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
-      <h2 style="color:#111;margin:0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Calendar</h2>
-      <div style="display:flex;gap:8px;margin-left:auto;">${buttonsHtml}</div>
-    </div>
+    <h2 style="color:#111;margin:0 0 16px 0;font-size:1.2rem;font-family:ui-monospace,monospace;letter-spacing:0.05em;">Calendar</h2>
     ${gridsHtml}
-  </section>
-  <script>
-    (function() {
-      var allCalKeys = ${allKeysJson};
-      window.showCalMonth = function(key) {
-        allCalKeys.forEach(function(k) {
-          var div = document.getElementById('cal-month-' + k);
-          var btn = document.getElementById('cal-btn-' + k);
-          if (!div || !btn) return;
-          var active = k === key;
-          div.style.display = active ? 'block' : 'none';
-          btn.style.background = active ? '#111' : '#fff';
-          btn.style.color = active ? '#fff' : '#333';
-          btn.style.borderColor = active ? '#111' : '#999';
-        });
-      };
-    })();
-  </script>`;
+  </section>`;
 }
 
 function generateScheduleTableHtml(rows, productionData) {
