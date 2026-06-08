@@ -846,6 +846,21 @@
           ]
         },
         {
+          "beat": "s02.4b",
+          "title": "Hum hits — attic to downstairs",
+          "scene": "s02",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "The hum rises in the attic. Dallas grabs the oscillator and moves fast — down the stairs, toward the source.",
+          "shots": [
+            "CU - Dallas's head lifting, hearing something shift",
+            "CU - Oscillator in his hand, needle jumping",
+            "MS - Dallas on his feet, moving toward the attic stairs",
+            "WS - Dallas descending stairs fast, oscillator out"
+          ]
+        },
+        {
           "beat": "s02.6",
           "title": "Downstairs pulse",
           "scene": "s02",
@@ -860,22 +875,6 @@
             "Detail - Recording device LED blinking, then fading",
             "CU - Dallas's frustration as battery dies"
           ]
-        },
-        {
-          "beat": "s02.7",
-          "title": "House exterior glow",
-          "scene": "s02",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "Outside again, Dallas watches the grass sway as the golden glow pulses and a storm builds over Branford.",
-          "shots": [
-            "WS - House exterior, golden glow from grass",
-            "MS - Dallas standing at house edge",
-            "WS - Tall grass undulating, golden light pulsing",
-            "CU - Dallas's face, watching the phenomenon",
-            "WS - Wide sky, storm clouds gathering over distant Branford"
-          ]
         }
       ],
       "plotPoints": [
@@ -885,7 +884,6 @@
         "Dallas can't press play on the tape. (s02.4)",
         "Hum returns as a timed pulse — Dallas clocks the pattern. (s02.6)",
         "Battery dies. Dallas abandons the equipment and heads outside. (s02.6)",
-        "Tall grass pulses gold. Storm builds on the horizon. (s02.7)",
         "Dallas stands still in the attic while the property manager's voice fades below. (s00b pickup)"
       ],
       "directorNotes": [
@@ -912,18 +910,30 @@
             "CU - Cassette player speakers, tape hum bleeding through",
             "CU - Dallas in shower, hearing the hum underneath the water"
           ]
+        },
+        {
+          "beat": "s02.7",
+          "title": "House exterior glow",
+          "scene": "s02",
+          "cast": ["Dallas"],
+          "description": "Outside again, Dallas watches the grass sway as the golden glow pulses and a storm builds over Branford.",
+          "shots": [
+            "WS - House exterior, golden glow from grass",
+            "MS - Dallas standing at house edge",
+            "WS - Tall grass undulating, golden light pulsing",
+            "CU - Dallas's face, watching the phenomenon",
+            "WS - Wide sky, storm clouds gathering over distant Branford"
+          ]
         }
       ]
     },
     {
       "day": 3,
-      "estLength": "10h",
+      "estLength": "3h",
       "scenes": [
-        "s01",
-        "s03",
-        "s05"
+        "s00a"
       ],
-      "crewCall": "CALL: 11:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 11:30 AM — Jerry's' House (72 Lake St, Hamden)\nSHOOT: 11:50 AM - 12:30 PM — s01 · Makayla & Asher arrive\nLUNCH: 12:30 PM\nSHOOT: 1:15 PM - 3:00 PM — s01 · Makayla & Asher arrive\nSHOOT: 4 PM - 5:30 PM — s05 · Merlin app search\nDINNER: 5:30 PM\nSHOOT: 6:00 PM - 8:45 PM — Final block (TBD)\nWRAP: 9:00 PM",
+      "crewCall": "CALL: 9:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 9:30 AM — Branford Marsh / Neighborhood\nSHOOT: 9:30 AM - 12:00 PM — s00a · Makayla & Asher planting devices\nWRAP: 12:30 PM",
       "crew": [
         {
           "role": "Director",
