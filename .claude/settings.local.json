@@ -60,7 +60,9 @@
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\" -Recurse -Filter \"*day*\" -Name)",
       "PowerShell(head *)",
       "Skill(run)",
-      "Bash(screencapture -x /tmp/shooting_production_screenshot.png)"
+      "Bash(screencapture -x /tmp/shooting_production_screenshot.png)",
+      "Bash(Start-Process *)",
+      "PowerShell(Start-Process \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\\\\summer\\\\shooting\\\\production\\\\days\\\\1.html\")"
     ]
   }
 }
