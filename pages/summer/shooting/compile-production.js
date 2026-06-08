@@ -1047,7 +1047,10 @@ function generateDayHtml(dayNum, rows, productionData) {
             <div class="notice-bar no-print">
                 ${prevDay !== null ? `<a href="${prevDay}.html" style="color:#0366d6; text-decoration:none;">&larr; Day ${prevDay}</a>` : `<span></span>`}
                 <a href="../../shooting_production.html" style="color:#666; text-decoration:none;">Dashboard</a>
+                <span style="display:flex;gap:12px;align-items:center;">
+                ${planEntry && Array.isArray(planEntry.overflow) && planEntry.overflow.length ? `<a href="${dayNum}-overflow.html" style="color:#c07000; text-decoration:none; font-weight:700;">Overflow &rarr;</a>` : ''}
                 ${nextDay !== null ? `<a href="${nextDay}.html" style="color:#0366d6; text-decoration:none;">Day ${nextDay} &rarr;</a>` : `<span></span>`}
+                </span>
             </div>
             <header class="callsheet-header">
                 <div>
@@ -1178,6 +1181,16 @@ function generateDayHtml(dayNum, rows, productionData) {
                 </div>
             </section>
 
+            ${planEntry && Array.isArray(planEntry.plotPoints) && planEntry.plotPoints.length ? `
+            <section class="compact-block" style="margin-top:16px;">
+                <div class="compact-label">Plot Points Needed</div>
+                <div class="compact-panel">
+                    <ol style="margin:0; padding-left:20px; list-style:decimal;">
+                        ${planEntry.plotPoints.map(pt => `<li style="padding:1px 0; font-size:0.76rem; line-height:1.3; color:#222;">${escapeHtml(pt)}</li>`).join('')}
+                    </ol>
+                </div>
+            </section>` : ''}
+
             <section class="compact-block" style="margin-top:16px;">
                 <div class="compact-label">Shot List</div>
                 <div class="compact-panel">
@@ -1211,6 +1224,18 @@ function generateDayHtml(dayNum, rows, productionData) {
                     <div style="font-size:0.84rem; line-height:1.5;">${markdownToHtml(settingsOverview)}</div>
                 </div>` : ''}
             </section>
+
+            ${planEntry && Array.isArray(planEntry.directorNotes) && planEntry.directorNotes.length ? `
+            <section class="compact-block" style="margin-top:16px;">
+                <div class="compact-label">Director's Notes</div>
+                <div class="compact-panel" style="display:flex; flex-direction:column; gap:10px;">
+                    ${planEntry.directorNotes.map(n => `
+                    <div>
+                        ${n.heading ? `<div style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#555; margin-bottom:3px;">${escapeHtml(n.heading)}</div>` : ''}
+                        <div style="font-size:0.82rem; line-height:1.45; color:#111;">${escapeHtml(n.note)}</div>
+                    </div>`).join('<hr style="border:none; border-top:1px solid #eee; margin:2px 0;">')}
+                </div>
+            </section>` : ''}
         </div>
         <script>
             // Convert scene numbers to clickable links to full script
@@ -1289,6 +1314,81 @@ function generateDayHtml(dayNum, rows, productionData) {
 </html>`;
 }
 
+function generateOverflowHtml(dayNum, planEntry, productionData) {
+  const calendar = productionData.calendar || {};
+  const dateStr = calendar[dayNum] || '—';
+  const overflow = planEntry.overflow || [];
+  const dayLabel = `Day ${dayNum}`;
+
+  const shotRows = overflow.map((entry, index) => {
+    const beat = entry.beat || `Shot ${index + 1}`;
+    const title = entry.title || '';
+    const description = entry.description || '';
+    const cast = Array.isArray(entry.cast) ? entry.cast : [];
+    const shotsHtml = Array.isArray(entry.shots) && entry.shots.length
+      ? `<div style="margin-top:6px; padding-top:6px; border-top:1px solid #eee; font-size:0.72rem; color:#666;">
+          <div style="font-weight:700; color:#555; margin-bottom:4px; text-transform:uppercase; letter-spacing:0.03em;">Shots:</div>
+          ${entry.shots.map(shot => `<div style="margin-bottom:2px;">• ${markdownToHtml(shot)}</div>`).join('')}
+        </div>`
+      : '';
+    return `
+      <li style="padding:10px 0; border-bottom:1px solid #ddd; display:block;">
+        <div style="display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+          <div style="min-width:0; flex:1;">
+            <div style="font-weight:700;">
+              <span style="color:#555; font-size:0.78rem; margin-right:6px;">${index + 1}.</span>
+              <span style="color:#111;">${escapeHtml(beat)}</span>
+              ${title ? `<span style="color:#555; font-weight:600;"> — ${escapeHtml(title)}</span>` : ''}
+            </div>
+            ${description ? `<div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style:italic;">${escapeHtml(description)}</div>` : ''}
+          </div>
+          <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">
+            ${cast.length ? escapeHtml(cast.map(n => nicknameToTitle(n)).join(', ')) : '—'}
+          </div>
+        </div>
+        ${shotsHtml}
+      </li>`;
+  }).join('');
+
+  return `<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>${dayLabel} Overflow — Shooting Script</title>
+        <style>
+            ${getProductionStyles()}
+            .main-content { padding: 24px 22px 32px; margin: 0 auto; max-width: 920px; box-sizing: border-box; }
+            body { background: #fff; color: #000; }
+            .notice-bar { display:flex; justify-content:space-between; gap:10px; margin-bottom:10px; font-size:0.68rem; text-transform:uppercase; font-weight:700; color:#333; }
+            .compact-panel { border: 1px solid #000; padding: 8px 10px; }
+            .compact-label { font-size:0.7rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#555; margin-bottom:4px; }
+        </style>
+    </head>
+    <body>
+        <div class="main-content">
+            <div class="notice-bar">
+                <a href="${dayNum}.html" style="color:#0366d6; text-decoration:none;">&larr; Back to ${dayLabel}</a>
+                <a href="../../shooting_production.html" style="color:#666; text-decoration:none;">Dashboard</a>
+                <span></span>
+            </div>
+            <header style="border-bottom:2px solid #000; padding-bottom:8px; margin-bottom:14px;">
+                <h1 style="margin:0;">OVERFLOW — ${dayLabel.toUpperCase()}</h1>
+                <p style="margin:4px 0 0 0; font-size:0.78rem; letter-spacing:0.04em; text-transform:uppercase; color:#555;">${formatDate(dateStr)} · Shooting cut</p>
+            </header>
+
+            <section style="margin-top:8px;">
+                <div class="compact-label">Overflow Shots</div>
+                <div class="compact-panel">
+                    <ol style="margin:0; padding-left:18px; list-style:none;">
+                        ${shotRows}
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>`;
+}
+
 function compile() {
   console.log('Loading shooting script manifest...');
   const scenes = loadManifest();
@@ -1314,6 +1414,14 @@ function compile() {
     const dayPath = path.join(DAYS_DIR, `${dayNum}.html`);
     fs.writeFileSync(dayPath, dayHtml, 'utf8');
     console.log(`  ✓ Generated Day ${dayNum} Call Sheet`);
+
+    const planEntry = (productionData.shootPlan || []).find(p => String(p.day) === String(dayNum));
+    if (planEntry && Array.isArray(planEntry.overflow) && planEntry.overflow.length) {
+      const overflowHtml = generateOverflowHtml(Number(dayNum), planEntry, productionData);
+      const overflowPath = path.join(DAYS_DIR, `${dayNum}-overflow.html`);
+      fs.writeFileSync(overflowPath, overflowHtml, 'utf8');
+      console.log(`  ✓ Generated Day ${dayNum} Overflow Sheet`);
+    }
   });
 }
 

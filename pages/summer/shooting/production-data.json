@@ -782,27 +782,19 @@
       "shotList": [
         {
           "beat": "s00b-pickup",
-          "title": "Property Manager Scene Pickups",
+          "title": "Dallas upstairs / attic entry (VO: Matt)",
           "scene": "s00b",
           "cast": [
-            "Dallas",
-            "Matt Grant (if available)"
+            "Dallas"
           ],
-          "description": "Pickup shots for the property manager house tour. Focus on close-ups, transitions, and alternate angles from Day 0 shoot.",
+          "description": "Dallas alone upstairs — wandering the hallway, stopping at the attic door, climbing into the attic in daylight. Matt's property manager VO plays over.",
           "shots": [
-            "CU — Property manager's clipboard details, papers, pen grip",
-            "CU — Dallas's hand on doorframe as he enters",
-            "CU — Details: light switch plate, doorknob texture, hinges",
-            "MS — Alternative angle: Property manager mid-explanation in living room",
-            "CU — Futon frame texture, wear patterns",
-            "CU — Beer can label detail, floor weathering",
-            "MS — Alternative take: Property manager at kitchen doorway, Dallas in background",
-            "CU — Dallas's eyes, reaction shot (contemplative)",
-            "CU — Kitchen window detail, glass reflection, window frame",
-            "MS — Property manager ascending stairs (if available)",
-            "CU — Attic window — light quality, dust motes",
-            "CU — Dallas's boots on attic floor — texture, stepping forward",
-            "WS — Attic space alternative angle, ceiling beams"
+            "MS — Dallas moving through upstairs hallway, taking in the space",
+            "MS — Dallas stopping at the attic door, hand on the handle",
+            "WS — Dallas climbing the attic stairs into frame",
+            "WS — Attic in daylight — Dallas steps into the center, looks around",
+            "CU — Dallas opens suitcase, pulls out the portable oscillator",
+            "CU — Dallas's face, still, listening"
           ]
         },
         {
@@ -854,22 +846,6 @@
           ]
         },
         {
-          "beat": "s02.5",
-          "title": "Bathroom tape",
-          "scene": "s02",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
-          "shots": [
-            "WS - Bathroom, Dallas enters with cassette player",
-            "MS - Dallas at sink counter, placing player down",
-            "WS - Shower spray, water running",
-            "CU - Cassette player speakers, tape hum bleeding through",
-            "CU - Dallas in shower, hearing the hum underneath the water"
-          ]
-        },
-        {
           "beat": "s02.6",
           "title": "Downstairs pulse",
           "scene": "s02",
@@ -899,6 +875,38 @@
             "WS - Tall grass undulating, golden light pulsing",
             "CU - Dallas's face, watching the phenomenon",
             "WS - Wide sky, storm clouds gathering over distant Branford"
+          ]
+        }
+      ],
+      "plotPoints": [
+        "First hum — Dallas marks the frequency, then it cuts. (s02.1)",
+        "Sierra's journal: butterfly sketches morphing into winged creatures. Dallas closes it. (s02.4)",
+        "Ruby-red cassette + headphones — photo of Dallas & Sierra hidden under duct tape. (s02.4)",
+        "Dallas can't press play on the tape. (s02.4)",
+        "Hum returns as a timed pulse — Dallas clocks the pattern. (s02.6)",
+        "Battery dies. Dallas abandons the equipment and heads outside. (s02.6)",
+        "Tall grass pulses gold. Storm builds on the horizon. (s02.7)",
+        "Dallas stands still in the attic while the property manager's voice fades below. (s00b pickup)"
+      ],
+      "directorNotes": [
+        {
+          "heading": "Continuity: Moving Boxes",
+          "note": "The moving boxes in s02.4 (filming today) arrive on screen in s01 — which shoots in ~2 weeks. Today's boxes need to match whatever s01 establishes. Lock in the box count, placement, and labeling now so s01 can replicate it. Key box: cardboard, handwritten label 'Field Notes — Branford', worn edges. Dress the attic with 3–4 boxes total, loosely scattered, not stacked neat."
+        }
+      ],
+      "overflow": [
+        {
+          "beat": "s02.5",
+          "title": "Bathroom tape",
+          "scene": "s02",
+          "cast": ["Dallas"],
+          "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
+          "shots": [
+            "WS - Bathroom, Dallas enters with cassette player",
+            "MS - Dallas at sink counter, placing player down",
+            "WS - Shower spray, water running",
+            "CU - Cassette player speakers, tape hum bleeding through",
+            "CU - Dallas in shower, hearing the hum underneath the water"
           ]
         }
       ]
