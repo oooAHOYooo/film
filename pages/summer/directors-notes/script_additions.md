@@ -4,8 +4,32 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 
 ---
 
+# CHANGE LOG — Dominic's inhaler removed + s23 line fixes
+*Applied 2026-06-09 14:51 EDT · SHOOTING version only (`pages/summer/shooting/`).*
+
+## Dominic loses the inhaler (calm, cool, Pedro-Pascal energy — not anxious/wheezing)
+Removed every asthma/inhaler reference (8 across 5 scenes). The s09 "powder-puff" creature description is NOT an inhaler — left alone.
+| Scene | Was → Now |
+|---|---|
+| **s03** | parking ticket: "takes out an inhaler… massive rip" → **"He exhales slow, shakes his head, and lets it go."** |
+| **s05** | "grabs his Asmatha inhaler and takes a deep breath" → **"He takes a slow, deep breath, collecting himself."** |
+| **s06** | "takes a deep breath and takes a hit of his inhaler" → **"Dominic takes a slow breath."** |
+| **s07** | "takes a hit of his inhaler. And reaches out for a handshake" → **"Dominic reaches out for a handshake."** |
+| **s23** (search for Makayla) | "begins to pace around and hits his inhaler" → **"begins to pace around."** (pacing + roar kept) |
+| **s23** (march) | "takes another big hit of his inhaler" → **"wipes the rain from his face and pushes forward."** |
+| **s23** (after Asher's save) | "re-shoulders the backpack… and hits his inhaler" → **"re-shoulders the backpack with the baby."** |
+
+## s23 line fixes
+- **"I'm slipping." → "It's right on us."** — the old line was written for sliding under a heavy speaker; with no heavy gear, Dominic is knocked to his knees shielding the baby, so the line now fits the Red-Eye closing in.
+- **Removed the redundant tracker beat** — Dallas already enters "carrying the tracker, watching the green light," so the later "begins to take out a little tracker" (and a duplicate "stops") was deleted; reads continuously now.
+
+## Deliverable
+- Saved a fresh full-script snapshot: **`pages/summer/shooting/script-system/creatures_in_the_tall_grass_full_script__9_.md`** (new file, not an overwrite). `full_script.md` was also rebuilt from the edited scene sources to stay in sync; prior version preserved in git.
+
+---
+
 # CHANGE LOG — Firefly Network climax + continuity fixes
-*Applied 2026-06-09 · SHOOTING version only (`pages/summer/shooting/`). Committed `900e399` on `main`.*
+*Applied 2026-06-09 13:41 EDT · SHOOTING version only (`pages/summer/shooting/`). Committed `900e399` on `main`.*
 
 ## Continuity fixes (surgical)
 | Scene | Fix |
@@ -37,7 +61,7 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 ---
 
 # CHANGE LOG — Janice & Howie removed, Dominic recast as sibling
-*Applied 2026-06-09 · SHOOTING version only (`pages/summer/shooting/`). The original `script-system/` was not touched.*
+*Applied 2026-06-09 12:23 EDT · SHOOTING version only (`pages/summer/shooting/`). The original `script-system/` was not touched.*
 
 ## What changed (the four directives)
 
