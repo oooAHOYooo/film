@@ -91,3 +91,55 @@ Action: As they leave, the atmospheric pressure changes, causing the predicted "
 [ ] Scene 20: The Aftermath
 
 Action: The "Storm is missed." The neighborhood is safe, and the tall grass returns to being just grass, though Dallas and Makayla still bear the marks of what happened.
+
+
+---
+---
+
+# CHANGE LOG — Janice & Howie removed, Dominic recast as sibling
+*Applied 2026-06-09 · SHOOTING version only (`pages/summer/shooting/`). The original `script-system/` was not touched.*
+
+## What changed (the four directives)
+
+1. **DELETE Janice Amaranto** — removed entirely. Where her presence drove a beat, the beat folds into **Dominic** (who was already in most of those scenes).
+2. **DELETE Howie (the dog)** — removed entirely, no replacement. Where the dog was the *reason* a character acted, I used the next simplest motivation already present (Dallas walking/recording alone; Dominic just checking on the house; cut the animal-senses-danger beats).
+3. **Dominic replaces Janice** on her key beats (see per-scene below).
+4. **Family relationships** — Makayla & Asher are no longer Dominic's *niece/nephew*; they are his **sister and brother**. "Uncle Dom" / "Uncle" → "Dom". **Mr. Mike stays the uncle** of all three.
+
+**New family structure:** Dominic (oldest sibling, early 40s) · Makayla (22) · Asher (14) · Mr. Mike (their uncle, mid-70s, the one they care for).
+
+## Scenes affected (18 scene files)
+
+| Scene | What I changed |
+|---|---|
+| **s03** | Dominic's coyote line "…when I was walking Howie" → "…when I was out walking." |
+| **s04** (Fellowship) | Cut Janice's entire entrance (her + the dog "Howie" greeting, the medication/sprouts nag, the "watch the car" exit). Dominic: "my niece and nephew" → **"my sister and brother — Makayla and Asher."** |
+| **s06** | Dominic: "before Janice has her women's group" → "before **life group** tonight." |
+| **s07** (The Coordinates) | "my niece and nephew" → "my brother and sister." Dominic's confession: "Just the niece and nephew. Janice and Mr. Mike." → **"Just my brother and sister. And Mr. Mike."** Mr. Mike's "Your sister. Makayla. Asher" → **"Dominic. Makayla. Asher."** "In pops Janice with Makayla and Asher" → "In pop Makayla and Asher." Mr. Mike's "…Janice is here…" → "…Makayla's here…". **Janice's whole grocery sequence** (boat-anchor recorder bit + dinner invite) reassigned to **Dominic**. **Entire Howie adoption thread removed** (the dog handoff that set up Dallas dog-sitting). "Janice from the Kitchen: calm down" → Dominic. "Janice: give it back" → Dominic. Ending: Janice's smoke-break exit → **Dominic steps out to the patio**, Dallas follows him. |
+| **s07b** (Mr. Mike's Warning) | Slug note updated: removed "Janice has gone outside for a smoke" and "Dallas is alone with Mr. Mike **and the dog**." |
+| **s08d** (The Return) | Removed "Dominic is downstairs with Howie" and the **dog-sitting phone call** ("do you mind watching Howie?"). Now Dominic just calls to say Asher's going to the hospital and asks Dallas to keep an eye on the place. Cut Howie sleeping/crying. |
+| **s11** (Kitchen Triage) | No narrative change — fixed the stale scene id `howie-walk-2` → `kitchen-triage` (it was mislabeled; title was already "Kitchen Triage"). |
+| **s13** (The Confrontation) | "could you watch Howie again?" → just the bible-study invite. Makayla: "show you the spots that Howie likes" → "show you around." "Okay Uncle." → **"Okay Dom."** Found-the-creature exchange: "I was walking Howie / How did Howie react?" → "I was out walking / Was anyone with you?" → "No — I was alone." |
+| **s14** (The Connection) | Cut "Howie sleeps peacefully near Dallas' feet." "Dallas looks at Howie" → "looks at the ground." "living with her babybrother" → **"living with our uncle"** (Mr. Mike). |
+| **s14c** (The Almost Discovery) | "Janice said you might have our step ladder" → "I think you might have…". Cut "holding Howie's leash" + the dog pulling/"won't stop staring at your backyard" beat. "Hey Uncle Dom." → **"Hey Dom."** "Janice said you were fixing the porch light?" → "weren't you fixing…". Cut "Howie WHINES softly." |
+| **s15b** (Tracking Box) | "Aunt Janice will never understand…" → **"Most people will never understand…"** (kept "Dominic might"). |
+| **s16** (Back Home) | Rewrote the curb beat: **no Janice in the window, no Howie panic.** Dominic pulls up alone, calm welfare check ("You kids alright?"), **quietly clocks the backpack as off and lets it go**, tells them to get in / leave Dallas to rest for life group. |
+| **s17b** (Normal Day) | **Replaced the Costco cross-cut** (Dominic + Janice shopping) **with Dominic at Branford Harbor** — checking boats, signing slip paperwork, hearing the hum low over the water. Same "normal life vs. the hum" function, new location. Janice's "Dom? You okay?" → a passing **boat owner.** |
+| **s17c** (Mute Drive) | **Janice → Dominic driving.** Her maternal monologue rewritten in his voice — a cool, quiet older brother, not maternal ("…since Mom passed… you don't have to carry it all by yourself. I'm here."). He delivers the key line: **"You're not just taking care of him. You're protecting him from something."** "stares at her niece" → "stares at his sister." Makayla's lines unchanged; Asher still asleep in back. |
+| **s18** (Life Group Arrives) | Dominic: "Howie is enough for us" → cut. Removed "HOWIE stays curled in the corner… whimpering." |
+| **s19** (The Hymn) | Cut "Someone asks how Howie is doing — where is Howie." |
+| **s26** (The Morning After) | **Dominic** gets the "Look at all these sleeping beauties" line (dry, quiet). Mr. Mike now walks in behind Dominic. Closing line reassigned to Dominic ("…Makayla, lets go."). |
+| **s28** (Full Circle) | Driveway beat: **Janice + Howie removed.** Dominic pulls up, brief morning hug; **Dallas himself** catches something out in the tall grass and is drawn toward the creek (the dog used to be the trigger). |
+
+## Production plan (also updated, shooting version only)
+- `production-edit.md`: removed **Janice** from every cast list and from shot/beat descriptions (e.g. "Life Group led by Janice" → Dominic; "Janice's face — anger or fear" → Dominic's). Cleaned stale "REWRITE: Remove Howie" notes. Renamed stale `howie-walk-2` scene → `marsh-walk-2`.
+- Re-synced `production-data.json` and regenerated all day call sheets; the new schedule runs Day 0–13 (+ 8.5 / 11.5). Orphaned stale sheets (old Day 14/15/16, 8.75, 1-overflow) were removed.
+- `shooting/README.md` updated with the new family structure.
+
+## Committed
+`da897de` on `main` — "Shooting script: remove Janice & Howie, recast Dominic as sibling".
+
+## Open judgment calls (flag if you want them different)
+- **s17b**: gave the harbor "you okay?" prompt to a passing boat owner.
+- **s07**: Mr. Mike's line is now plainly "Dominic. Makayla. Asher."
+- **s14 / s14c**: "our uncle" and "Mr. Mike stays the uncle" — confirm that's the intended read of who they live with.
