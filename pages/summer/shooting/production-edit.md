@@ -352,16 +352,16 @@ cast: Dallas, Makayla, Asher, Dominic
 duration: 90
 shoot-days: 0.5
 assigned-day: 7
-key-elements: The Load-Out — crew shoulders the MASTER RIG (amplifier pack + deep-cycle battery bank) at the tree line; Asher loops on his bead-string map. Heavy hero prop.
-production-notes: Wraps. REVISED for firefly-network climax — the heavy load is the master rig, NOT the old eighty-pound wooden speakers.
+key-elements: The Load-Out — crew gears up LIGHT at the tree line: Makayla in her chest rig (oscillator/crystal/master-node trigger), Dominic with the backpack + baby, Dallas with the handheld tracker; Asher loops on his bead-string map. No heavy gear — the node field is already planted and the master node is already staked at the sanctuary center.
+production-notes: Wraps. REVISED for firefly-network climax — crew moves LIGHT; nothing heavy hauled into the marsh (no master rig, no eighty-pound speakers).
 cast: Dallas, Makayla, Asher, Dominic
 
 ### scene: predator-attack
 duration: 120
 shoot-days: 0.5
 assigned-day: 7
-key-elements: The Trench Run — hauling the master rig through 10ft grass in the storm; Makayla sweeps her handheld speaker like a flashlight; Red-Eye patrol; Asher throws his voice to misdirect it.
-production-notes: Heavy hero prop = master rig (amp + battery bank), not speakers. Practical: blinking green LED on Makayla's chest rig as sole light source.
+key-elements: The Trench Run — crew moves LIGHT through 10ft grass in the storm (no heavy load); Makayla sweeps her handheld speaker like a flashlight; Red-Eye patrol; Asher throws his voice to misdirect it; Dominic shields the baby in the backpack.
+production-notes: No heavy rig/speakers. Dominic's strain is from being unfit + scared, not weight. Practical: blinking green LED on Makayla's chest rig as sole light source.
 cast: Dallas, Makayla, Asher, Dominic
 
 ### scene: the-perimeter

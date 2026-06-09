@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 6/9/2026, 1:50:37 PM*
+*Compiled on 6/9/2026, 2:24:25 PM*
 
 ---
 
@@ -31,16 +31,16 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
   - **s14b** — "the quantity matters" now ties **each bead to a planted listening post**.
   - **s15b** — NEW dusk **planting beat**: Makayla & Asher stake blinking nodes, Dallas: "Fireflies?", Makayla: "Listening posts," Asher threads a bead per node. *(The single most important plant.)*
   - **s28** — the lair pack-up now shows them **collecting the nodes** / un-threading beads (closes the loop).
-- **s22 (The Load-Out) & s23 (The Trench Run)** reworked so the crew hauls the **MASTER RIG** (amplifier pack + deep-cycle battery bank — "the heart that will wake the whole field") to stake at the ring's dead center, instead of the eighty-pound speakers. All the storm / mud / exhaustion / Asher-throws-his-voice danger beats are intact. Makayla's small handheld speaker survives as the "one won't ever be enough" device.
+- **s22 (The Load-Out) & s23 (The Trench Run)** — the crew moves **LIGHT** into the marsh. The weapon is the distributed node field that's *already in the ground*, and the master node is *already staked* at the sanctuary center — they go TO it, they don't haul it. The crew carries only: the baby (Dominic's backpack), the handheld tracker, Makayla's wearable chest rig (oscillator + crystal + master-node trigger), and the small handheld speaker. All the storm / mud / fear / Asher-throws-his-voice danger beats are intact — Dominic's strain is from being unfit and scared, not from carrying weight. *(Earlier draft hauled a "master rig" — that has been removed.)*
 
 ## Production plan updated (shooting version)
 - `production-edit.md` `key-elements` / `production-notes` updated for **the-tracking-box (s15b)**, **marsh-confrontation (s22)**, **predator-attack (s23)**, **the-perimeter (s24)**, **the-last-dinner (s25)** — flagged "REVISED — firefly-network climax (no eighty-pound speakers)", master-rig hero prop, practical blinking nodes + Asher's bead string, and the VFX needs (golden dome, swarm ignition). Re-synced to `production-data.json` and regenerated the call sheets.
 
 ## Open items / watch-fors
-- **Practical props to build:** blinking amber listening-post nodes (need a field's worth for the wide shots / VFX plates), the master rig (amp + battery case as a believable heavy load), Asher's bead string (continuity from s07 → s28).
+- **Practical props to build:** blinking amber listening-post nodes (need a field's worth for the wide shots / VFX plates) + one hero master node staked at the ring center, Makayla's wearable chest rig (oscillator + crystal + trigger), the handheld tracker, the small handheld speaker, and Asher's bead string (continuity from s07 → s28). No heavy hauled gear.
 - **VFX scope grew** at the climax: hundreds of node lights firing in unison + a rising swarm, vs. the old single golden BOOM. Budget/plan accordingly.
 - **Done:** cleaned the marsh cast lists — removed the stale Mr. Mike/Pat roster from **s22 (marsh-confrontation)**, **s26b (wrap)**, and **s28 (full-circle)** → now Dallas/Makayla/Asher/Dominic. Left **s27 (aftermath)** intact, where Pat (weather wrap) and Mr. Mike (church) legitimately appear.
-- **Also fixed:** s27.2 climax continuity — Dallas now finds the toppled **master rig** + still-blinking master node in the marsh, not the old "speakers knocked face-down in the mud."
+- **Also fixed:** s27.2 climax continuity — Dallas now finds the small **master node still staked** in the mud (oscillator on its side, screen cracked, node still blinking with the clean recording), not the old "speakers knocked face-down in the mud."
 
 ---
 

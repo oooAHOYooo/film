@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/9/2026, 1:50:36 PM*
+*Compiled on 6/9/2026, 2:20:39 PM*
 
 ---
 
@@ -3529,9 +3529,9 @@ They look again. Closer. The eyes reappear. Swirling through the beating wind an
 
 EXT. MARSH - EDGE (s22.1)
 
-The crew rigs up at the tree line. Makayla straps on her chest rig — oscillator, crystal, and the master node, all of it cabled back to a heavy amplifier pack and a brick of deep-cycle batteries. Dallas and Dominic heave the rig up between them. It's brutally heavy.
+The crew gears up light. Makayla straps on her chest rig — oscillator, crystal, the master-node trigger, light enough to wear. Dominic shoulders the backpack with the baby creature. Dallas takes the handheld tracker.
 
-This is the heart of it. Every blinking node they ever planted is out there in the dark, waiting. The rig is the thing that will wake the whole field at once — if they can get it to the center and stake it down.
+This is it. Every blinking node they ever planted is already out there in the dark, waiting — and the master node that wakes the whole field is staked at the center of the sanctuary. They don't have to carry it. They just have to reach it.
 
 Asher loops the long bead string over his neck and runs it once through his fingers, counting. He doesn't say anything. He just nods.
 
@@ -3554,9 +3554,9 @@ Makayla follows the tracker into the woods - and sees it beep beep - as she appr
 # Scene 23: The Trench Run
 
 EXT. TALL GRASS - CONTINUOUS (s23.1)
-Dallas enters the tall grass carrying the oscillator.  The nylon straps bite into Dallas' shoulders - straining the fabric. 
+Dallas enters the tall grass carrying the tracker, watching the green light. 
 
-Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker, and then looks down at his hand - the black veins pulse under his skin, Dallas in pain, drops the heavy master rig into the mud with a wet heavy thunk.
+Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker, and then looks down at his hand - the black veins pulse under his skin, Dallas in pain, stumbles and grips his forearm.
 
 Dallas stops in his tracks and begins to take out a little tracker. 
 
@@ -3578,7 +3578,7 @@ MAKAYLA!
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-Dallas and Dominic continue to make their way with the master rig. Dallas drops to the ground.  
+Dallas and Dominic continue to make their way deeper in. Dallas drops to the ground.  
 
 DOMINIC
 You okay?
@@ -3607,7 +3607,7 @@ Makayla moves forward.
 MAKAYLA
 I saw the creature but it vanished. Dallas, those things are after it. 
 
-Everybody moves quickly in single file. Makayla is leading, sweeping the handheld speaker back and forth like a flashlight. Behind her is Dominic, hunched low, clutching the backpack with the golden creature. Dallas takes up the rear, breathing heavily, his boots sinking deep into the marsh mud under the crushing weight of the master rig — the amplifier pack and its battery bank, the heart that will wake the whole field. 
+Everybody moves quickly in single file. Makayla is leading, sweeping the handheld speaker back and forth like a flashlight. Behind her is Dominic, hunched low, clutching the backpack with the golden creature. Dallas takes up the rear, breathing heavily, watching the tracker and the tree line behind them, his boots sinking deep into the marsh mud. 
 
 MAKAYLA
 Straight ahead. 
@@ -3627,7 +3627,7 @@ Dallas looks up. Above the swaying tops of the grass, massive, formless shadows 
 
 Suddenly, a massive shadow drops down into the grass fifty feet ahead of them. 
 
-The concussive force of its landing knocks Dominic to his knees. The rig groans, the heavy battery case sliding dangerously on his shoulder. 
+The concussive force of its landing knocks Dominic to his knees. He clutches the backpack with the baby to his chest, shielding it. 
 
 DOMINIC
 I'm slipping. 
@@ -3655,7 +3655,7 @@ Come on, come on, come on...
 
 EXT. MARSH - CONTINUOUS (s23.3)
 
-It stops. Its massive red eyes scan the area. It senses something. The silence stretches. Dallas tightens his grip on the nylon strap holding the rig. 
+It stops. Its massive red eyes scan the area. It senses something. The silence stretches. Dallas freezes, holding his breath, gripping the tracker. 
 
 Asher steps forward from behind Makayla. He closes his eyes and reaches his hand out toward the swaying grass. He taps his leg twice. He begins to hum. 
 
@@ -3678,7 +3678,7 @@ Asher just points forward into the dark.
 ASHER
 We have to keep moving. The center is close. 
 
-Dominic groans, pulling his boot out of a foot of thick, sucking mud. He adjusts the dead weight of the rig on his shoulder. Dallas grabs his arm, helping him up. 
+Dominic groans, pulling his boot out of a foot of thick, sucking mud. He re-shoulders the backpack with the baby and hits his inhaler. Dallas grabs his arm, helping him up. 
 
 DALLAS
 You good?
@@ -4031,7 +4031,7 @@ EXT. BRANFORD - DAY (s27.1)
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
 
 EXT. CENTER OF THE MARSH - DAY (s27.2)
-Dallas walks alone into the flattened ring of grass from the night before. The storm is gone. He finds his heavy equipment where they left it—the master rig toppled in the mud, the oscillator on its side, screen cracked. But the little master node Makayla wired into it is still blinking. He picks it up. The screen shows a saved file: one clean recording.
+Dallas walks alone into the flattened ring of grass from the night before. The storm is gone. He finds the gear they left at the center — the small master node still staked in the mud, the oscillator on its side, screen cracked, but the node still blinking. He picks it up. The screen shows a saved file: one clean recording.
 
 He presses play. The sound fills the quiet marsh— it is the tune from the golden furry creatures, captured clean. 
 
