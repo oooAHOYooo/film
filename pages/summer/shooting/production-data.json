@@ -2,10 +2,10 @@
   "settings": {
     "chronologicalStartDay": 1
   },
-  "completedDays": [0],
   "calendar": {
     "0": "2026-06-07",
     "1": "2026-06-08",
+    "2": "2026-06-12",
     "3": "2026-06-13",
     "4": "2026-06-14",
     "5": "2026-06-15",
@@ -15,8 +15,9 @@
     "9": "2026-06-26",
     "10": "2026-06-27",
     "11": "2026-06-28",
-    "12": "2026-06-29",
-    "14": "2026-07-16",
+    "12": "2026-07-01",
+    "13": "2026-07-02",
+    "11.5": "2026-06-29",
     "8.5": "2026-06-22"
   },
   "opening-montage": {
@@ -144,7 +145,7 @@
     "location": "On Location (East Haven Nursery)",
     "time": "6:30 PM",
     "keyElements": "",
-    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "productionNotes": "Dallas explores alone using oscillator",
     "cast": [
       "Dallas"
     ]
@@ -186,8 +187,7 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Mr. Mike",
-      "Janice"
+      "Mr. Mike"
     ]
   },
   "the-hum": {
@@ -226,13 +226,13 @@
       "Pat"
     ]
   },
-  "howie-walk-2": {
+  "marsh-walk-2": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 5,
     "time": "6:30 PM",
     "keyElements": "",
-    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "productionNotes": "Dallas explores alone using oscillator",
     "cast": [
       "Dallas",
       "Dominic",
@@ -297,7 +297,6 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Janice",
       "Mr. Mike"
     ]
   },
@@ -355,7 +354,6 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Janice",
       "Mr. Mike"
     ]
   },
@@ -370,7 +368,6 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Janice",
       "Mr. Mike"
     ]
   },
@@ -385,7 +382,6 @@
       "Makayla",
       "Asher",
       "Dominic",
-      "Janice",
       "Mr. Mike"
     ]
   },
@@ -404,14 +400,13 @@
     "shootDays": 0.5,
     "assignedDay": 8,
     "keyElements": "",
-    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "productionNotes": "Dallas explores alone using oscillator",
     "cast": [
       "Dallas",
       "Makayla",
       "Asher",
       "Dominic",
       "Mr. Mike",
-      "Janice",
       "Life Group Extras"
     ]
   },
@@ -427,7 +422,6 @@
       "Asher",
       "Dominic",
       "Mr. Mike",
-      "Janice",
       "Life Group Extras"
     ]
   },
@@ -443,7 +437,6 @@
       "Asher",
       "Dominic",
       "Mr. Mike",
-      "Janice",
       "Life Group Extras"
     ]
   },
@@ -485,13 +478,12 @@
     "shootDays": 0.5,
     "assignedDay": 11,
     "keyElements": "",
-    "productionNotes": "REWRITE: Remove Howie character - Dallas explores alone using oscillator",
+    "productionNotes": "Dallas explores alone using oscillator",
     "cast": [
       "Dallas",
       "Makayla",
       "Asher",
-      "Dominic",
-      "Janice"
+      "Dominic"
     ]
   },
   "creature-missing": {
@@ -519,7 +511,6 @@
       "Dallas",
       "Makayla",
       "Dominic",
-      "Janice",
       "Pat"
     ]
   },
@@ -575,7 +566,6 @@
       "Dallas",
       "Makayla",
       "Dominic",
-      "Janice",
       "Pat"
     ]
   },
@@ -592,7 +582,6 @@
       "Dallas",
       "Makayla",
       "Dominic",
-      "Janice",
       "Pat"
     ]
   },
@@ -608,7 +597,6 @@
       "Dallas",
       "Makayla",
       "Dominic",
-      "Janice",
       "Pat"
     ]
   },
@@ -758,14 +746,10 @@
       "day": 1,
       "scenes": [
         "s00b-pickup",
-        "s02.1",
-        "s02.2",
-        "s02.4",
-        "s02.6",
-        "s02.7",
+        "s02",
         "s02.3"
       ],
-      "crewCall": "CALL: 5:45 PM\nMEET: 206 Saint John St (carpool to location)\nARRIVE: 6:10 PM — Jerry's House (72 Lake St, Hamden)\nSETUP: 6:10 PM — Camera preps begin\nSHOOT: 6:30 PM - 7:00 PM — s00b-pickup · Dallas upstairs / attic entry\nSHOOT: 7:00 PM - 7:30 PM — s02.1 · Kitchen hum\nSHOOT: 7:30 PM - 8:00 PM — s02.2 · Driveway edge\nSHOOT: 8:00 PM - 8:30 PM — s02.4 · Attic boxes\nSHOOT: 8:00 PM - 8:30 PM — s02.6 · Downstairs pulse\nSHOOT: 8:30 PM - 9:00 PM — s02.7 · House exterior glow\nSHOOT: 9:00 PM - 9:30 PM — s02.3 · Night exterior (requires dark)\nWRAP: 9:30 PM",
+      "crewCall": "CALL: 5:45 PM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 6:10 PM — Jerry's House (72 Lake St, Hamden)\nSETUP: 6:10 PM — Camera preps\nSHOOT: 6:30 PM — s00b-pickup · Property manager scene pickups + s02 · Kitchen hum & exterior\nWRAP: 9:15 PM",
       "crew": [
         {
           "role": "Director / Camera",
@@ -777,7 +761,7 @@
         },
         {
           "role": "Clapper",
-          "name": "Jerry"
+          "name": "TBD"
         }
       ],
       "locationDetails": [
@@ -786,53 +770,27 @@
       "shotList": [
         {
           "beat": "s00b-pickup",
-          "title": "Dallas upstairs / attic entry",
+          "title": "Property Manager Scene Pickups",
           "scene": "s00b",
           "cast": [
-            "Dallas"
+            "Dallas",
+            "Matt Grant (if available)"
           ],
-          "description": "Dallas alone upstairs — wandering the hallway, stopping at the attic door, climbing into the attic in daylight.",
+          "description": "Pickup shots for the property manager house tour. Focus on close-ups, transitions, and alternate angles from Day 0 shoot.",
           "shots": [
-            {
-              "shot": "CU of raccoon",
-              "description": "Camera at floor level or low angle; raccoon centered or slightly left; shoot through doorframe or gap in boxes as natural frame; no Dallas — pure discovery shot",
-              "stage_direction": "Camera at floor level or low angle; raccoon centered or slightly left; shoot through doorframe or gap in boxes as natural frame; no Dallas — pure discovery shot"
-            },
-            {
-              "shot": "Medium shot of Dallas reveal",
-              "description": "Dallas center-frame at top of attic stairs or in hallway; camera at chest height looking up slightly; ceiling or attic space visible above him; hold before he moves",
-              "stage_direction": "Dallas center-frame at top of attic stairs or in hallway; camera at chest height looking up slightly; ceiling or attic space visible above him; hold before he moves"
-            },
-            {
-              "shot": "CU futon frame texture",
-              "description": "Camera near-floor level; frame runs bottom-left to upper-right diagonal; raking window light reveals surface wear; no Dallas",
-              "stage_direction": "Camera near-floor level; frame runs bottom-left to upper-right diagonal; raking window light reveals surface wear; no Dallas"
-            },
-            {
-              "shot": "CU beer can label / floor",
-              "description": "Top-down or 15° tilt; can centered; floor texture visible around it; ambient only, no fill; no Dallas",
-              "stage_direction": "Top-down or 15° tilt; can centered; floor texture visible around it; ambient only, no fill; no Dallas"
-            },
-            {
-              "shot": "CU kitchen window / reflection",
-              "description": "Camera exterior looking in or tight on glass; sky reflects in upper pane; window frame runs vertical center-frame; no Dallas",
-              "stage_direction": "Camera exterior looking in or tight on glass; sky reflects in upper pane; window frame runs vertical center-frame; no Dallas"
-            },
-            {
-              "shot": "CU attic window light quality",
-              "description": "Camera pointed into window from inside; backlight from exterior; keep exposure locked on interior to blow out window slightly; dust motes visible in beam if present",
-              "stage_direction": "Camera pointed into window from inside; backlight from exterior; keep exposure locked on interior to blow out window slightly; dust motes visible in beam if present"
-            },
-            {
-              "shot": "CU Dallas boots on attic floor",
-              "description": "Camera floor-level facing screen-right (L→R movement); boots enter left frame, step into beam of attic window light; 35mm; floor texture visible around feet",
-              "stage_direction": "Camera floor-level facing screen-right (L→R movement); boots enter left frame, step into beam of attic window light; 35mm; floor texture visible around feet"
-            },
-            {
-              "shot": "WS attic space alt angle",
-              "description": "Camera in far corner facing diagonal into space; beams converge toward opposite corner; Dallas small in frame center or right; boxes scattered mid-ground; ceiling height visible",
-              "stage_direction": "Camera in far corner facing diagonal into space; beams converge toward opposite corner; Dallas small in frame center or right; boxes scattered mid-ground; ceiling height visible"
-            }
+            "CU — Property manager's clipboard details, papers, pen grip",
+            "CU — Dallas's hand on doorframe as he enters",
+            "CU — Details: light switch plate, doorknob texture, hinges",
+            "MS — Alternative angle: Property manager mid-explanation in living room",
+            "CU — Futon frame texture, wear patterns",
+            "CU — Beer can label detail, floor weathering",
+            "MS — Alternative take: Property manager at kitchen doorway, Dallas in background",
+            "CU — Dallas's eyes, reaction shot (contemplative)",
+            "CU — Kitchen window detail, glass reflection, window frame",
+            "MS — Property manager ascending stairs (if available)",
+            "CU — Attic window — light quality, dust motes",
+            "CU — Dallas's boots on attic floor — texture, stepping forward",
+            "WS — Attic space alternative angle, ceiling beams"
           ]
         },
         {
@@ -842,33 +800,13 @@
           "cast": [
             "Dallas"
           ],
-          "description": "Dallas pulls something frozen from the fridge and starts prepping at the counter. Mid-task, the hum drifts in from the window. He picks up the oscillator sitting on the counter and points it curiously — then the sound cuts.",
+          "description": "Dallas settles into the kitchen, clocks the first faint hum, and marks the frequency before the sound cuts.",
           "shots": [
-            {
-              "shot": "WS kitchen Dallas enters",
-              "description": "Camera at far kitchen wall facing screen-left; Dallas enters right-of-frame moving left; window on screen-left wall floods late daylight; establish room depth before he reaches counter",
-              "stage_direction": "Camera at far kitchen wall facing screen-left; Dallas enters right-of-frame moving left; window on screen-left wall floods late daylight; establish room depth before he reaches counter"
-            },
-            {
-              "shot": "MS Dallas at counter listening",
-              "description": "Dallas left-of-center facing screen-right toward window; counter runs horizontal behind him; camera shoulder height; window as key light, room as fill",
-              "stage_direction": "Dallas left-of-center facing screen-right toward window; counter runs horizontal behind him; camera shoulder height; window as key light, room as fill"
-            },
-            {
-              "shot": "CU Dallas face concentrating",
-              "description": "Dallas right-of-center, window on screen-left creating sidelight; camera eye level; shallow focus; no movement — hold stillness",
-              "stage_direction": "Dallas right-of-center, window on screen-left creating sidelight; camera eye level; shallow focus; no movement — hold stillness"
-            },
-            {
-              "shot": "CU hand marking frequency",
-              "description": "Camera looking down at recorder from 45°; Dallas's hand enters bottom-frame; dial or display visible and legible; shallow DOF on recorder face",
-              "stage_direction": "Camera looking down at recorder from 45°; Dallas's hand enters bottom-frame; dial or display visible and legible; shallow DOF on recorder face"
-            },
-            {
-              "shot": "WS Dallas frozen as sound cuts",
-              "description": "Return to opening WS framing; Dallas has moved to center-left, recorder raised, body still; hold wide — let silence land on the empty room around him",
-              "stage_direction": "Return to opening WS framing; Dallas has moved to center-left, recorder raised, body still; hold wide — let silence land on the empty room around him"
-            }
+            "WS - Kitchen interior, Dallas enters from hallway",
+            "MS - Dallas at kitchen counter, listening",
+            "CU - Dallas's face, concentrating on the sound",
+            "CU - Hand marking frequency on portable recorder",
+            "WS - Kitchen, Dallas frozen as sound cuts"
           ]
         },
         {
@@ -880,31 +818,11 @@
           ],
           "description": "Dallas steps outside, watches the driveway and the property line, and feels the hum merge out of the tall grass.",
           "shots": [
-            {
-              "shot": "WS Dallas exits house establishing",
-              "description": "Camera faces house from street level; Dallas exits screen-left door and walks toward screen-right toward grass; house fills left two-thirds; sky above; establish geography before he reaches grass",
-              "stage_direction": "Camera faces house from street level; Dallas exits screen-left door and walks toward screen-right toward grass; house fills left two-thirds; sky above; establish geography before he reaches grass"
-            },
-            {
-              "shot": "MS Dallas at property edge",
-              "description": "Dallas right-of-center facing screen-left toward grass; grass wall fills left half of frame; camera shoulder height with slight low angle to reinforce grass scale",
-              "stage_direction": "Dallas right-of-center facing screen-left toward grass; grass wall fills left half of frame; camera shoulder height with slight low angle to reinforce grass scale"
-            },
-            {
-              "shot": "CU Dallas face reacting",
-              "description": "Dallas center-frame; eyes directed slightly above lens into screen-left distance; ambient dusk light; soft breeze movement in hair or clothes; hold long — don't cut early",
-              "stage_direction": "Dallas center-frame; eyes directed slightly above lens into screen-left distance; ambient dusk light; soft breeze movement in hair or clothes; hold long — don't cut early"
-            },
-            {
-              "shot": "WS tall grass at driveway line",
-              "description": "Camera low near ground facing into grass; grass fills top 60% of frame; sky stripe above; no Dallas — pure environment; slow push if on gimbal",
-              "stage_direction": "Camera low near ground facing into grass; grass fills top 60% of frame; sky stripe above; no Dallas — pure environment; slow push if on gimbal"
-            },
-            {
-              "shot": "OTS Dallas from behind",
-              "description": "Camera behind Dallas slightly right; Dallas occupies bottom-center to bottom-right; grass horizon fills upper frame; wide enough to feel isolation; hold static",
-              "stage_direction": "Camera behind Dallas slightly right; Dallas occupies bottom-center to bottom-right; grass horizon fills upper frame; wide enough to feel isolation; hold static"
-            }
+            "WS - Dallas exits house, exterior establishing",
+            "MS - Dallas at property edge, listening",
+            "CU - Dallas's face, reacting to the distant sound",
+            "WS - Tall grass at driveway line, hum emerging",
+            "OTS - Dallas from behind, watching grass sway"
           ]
         },
         {
@@ -916,155 +834,199 @@
           ],
           "description": "In the attic, Dallas opens Sierra's box, finds the field notes, cassette player, headphones, and old recorder.",
           "shots": [
-            {
-              "shot": "WS attic Dallas approaches boxes",
-              "description": "Camera in back corner of attic facing diagonal into space; boxes center-frame in scattered cluster; Dallas enters screen-left and moves screen-right toward boxes; ceiling beams frame top of shot",
-              "stage_direction": "Camera in back corner of attic facing diagonal into space; boxes center-frame in scattered cluster; Dallas enters screen-left and moves screen-right toward boxes; ceiling beams frame top of shot"
-            },
-            {
-              "shot": "MS Dallas kneeling at box",
-              "description": "Camera at kneeling height slightly above Dallas; Dallas right-of-center; box fills bottom-center frame; attic window behind and left provides soft key light",
-              "stage_direction": "Camera at kneeling height slightly above Dallas; Dallas right-of-center; box fills bottom-center frame; attic window behind and left provides soft key light"
-            },
-            {
-              "shot": "CU box lid opening — label visible",
-              "description": "Camera near top-down at 80°; label faces up and is centered and legible; Dallas's hands peel lid open from bottom-frame; nothing else in frame",
-              "stage_direction": "Camera near top-down at 80°; label faces up and is centered and legible; Dallas's hands peel lid open from bottom-frame; nothing else in frame"
-            },
-            {
-              "shot": "DETAIL hands extracting cassette/headphones",
-              "description": "Camera at box-level looking in; hands reach in from top-frame; cassette player and headphones extracted left to right; shallow focus on objects; cables and gear visible in box around them",
-              "stage_direction": "Camera at box-level looking in; hands reach in from top-frame; cassette player and headphones extracted left to right; shallow focus on objects; cables and gear visible in box around them"
-            },
-            {
-              "shot": "CU Dallas face recognition/emotion",
-              "description": "Dallas center-frame, head slightly bowed then raising; 75mm; attic window sidelight from screen-left; hold on stillness after recognition lands — don't cut until the beat is complete",
-              "stage_direction": "Dallas center-frame, head slightly bowed then raising; 75mm; attic window sidelight from screen-left; hold on stillness after recognition lands — don't cut until the beat is complete"
-            }
+            "WS - Attic space, Dallas approaches boxes",
+            "MS - Dallas kneeling at cardboard box",
+            "CU - Box lid opening, 'Field Notes — Branford' visible",
+            "Detail - Hands pulling out cassette player, headphones",
+            "CU - Dallas's face, recognition/emotion at seeing Sierra's equipment"
           ]
-        }
-      ],
-      "plotPoints": [
-        "First hum — Dallas marks the frequency, then it cuts. (s02.1)",
-        "Sierra's journal: butterfly sketches morphing into winged creatures. Dallas closes it. (s02.4)",
-        "Ruby-red cassette + headphones — photo of Dallas & Sierra hidden under duct tape. (s02.4)",
-        "Dallas can't press play on the tape. (s02.4)",
-        "Hum returns as a timed pulse — Dallas clocks the pattern. (s02.6)",
-        "Battery dies. Dallas abandons the equipment and heads outside. (s02.6)",
-        "Dallas stands still in the attic while the property manager's voice fades below. (s00b pickup)"
-      ],
-      "directorNotes": [
-        {
-          "heading": "Sun Hours — Jun 8",
-          "note": "Sunrise 5:18 AM · Sunset 8:23 PM · 15h 5m of daylight. Crew call is 5:45 PM — that leaves ~38 minutes of usable daylight on arrival. All exterior and attic daylight shots (s00b-pickup) must be done by 8:23 PM. Prioritize those first on setup."
         },
         {
-          "heading": "Continuity: Moving Boxes",
-          "note": "The moving boxes in s02.4 (filming today) arrive on screen in s01 — which shoots in ~2 weeks. Today's boxes need to match whatever s01 establishes. Lock in the box count, placement, and labeling now so s01 can replicate it. Key box: cardboard, handwritten label 'Field Notes — Branford', worn edges. Dress the attic with 3–4 boxes total, loosely scattered, not stacked neat."
-        }
-      ],
-      "overflow": [
+          "beat": "s02.5",
+          "title": "Bathroom tape",
+          "scene": "s02",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "The shower drowns everything out until the cassette tape and the distant hum start bleeding into the bathroom.",
+          "shots": [
+            "WS - Bathroom, Dallas enters with cassette player",
+            "MS - Dallas at sink counter, placing player down",
+            "WS - Shower spray, water running",
+            "CU - Cassette player speakers, tape hum bleeding through",
+            "CU - Dallas in shower, hearing the hum underneath the water"
+          ]
+        },
         {
           "beat": "s02.6",
           "title": "Downstairs pulse",
           "scene": "s02",
-          "cast": ["Dallas"],
-          "description": "Dallas in downstairs room at night — recorder and oscillator out, tracking the pulsing tone in the open air, battery dies.",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Downstairs, Dallas records the pulsing tone, tracks the pattern, and loses the battery mid-read.",
           "shots": [
-            {
-              "shot": "WS downstairs room with equipment",
-              "description": "Camera at room's far end; Dallas at table center-right; window screen-left; single practical lamp as key; equipment foreground-right",
-              "stage_direction": "Camera at room's far end; Dallas at table center-right; window screen-left; single practical lamp as key; equipment foreground-right"
-            },
-            {
-              "shot": "MS Dallas at table setting up",
-              "description": "Dallas right-of-center leaning toward table; camera at table height; equipment foreground fills bottom-left; moves screen-left as hum grows",
-              "stage_direction": "Dallas right-of-center leaning toward table; camera at table height; equipment foreground fills bottom-left; moves screen-left as hum grows"
-            },
-            {
-              "shot": "CU oscillator dial 115.3",
-              "description": "Camera top-down 60° on dial face; Dallas's thumb enters bottom-right; \"115.3\" legible and centered; shallow DOF on display",
-              "stage_direction": "Camera top-down 60° on dial face; Dallas's thumb enters bottom-right; \"115.3\" legible and centered; shallow DOF on display"
-            },
-            {
-              "shot": "DETAIL recording device LED blinking then fading",
-              "description": "Camera close on recorder face; LED blinks pulse pattern (1s–1s–5s–3s) then fades; static — no pan; let beat play out in full",
-              "stage_direction": "Camera close on recorder face; LED blinks pulse pattern (1s–1s–5s–3s) then fades; static — no pan; let beat play out in full"
-            },
-            {
-              "shot": "CU Dallas frustration battery dies",
-              "description": "Dallas right-of-center; jaw tightens; smacks recorder back entering bottom-frame; cut immediately after — 50mm",
-              "stage_direction": "Dallas right-of-center; jaw tightens; smacks recorder back entering bottom-frame; cut immediately after — 50mm"
-            }
+            "WS - Downstairs room, Dallas with military recorder and oscillator",
+            "MS - Dallas at table, setting up equipment",
+            "CU - Oscillator dial, frequency readout at 115.3",
+            "Detail - Recording device LED blinking, then fading",
+            "CU - Dallas's frustration as battery dies"
           ]
         },
         {
           "beat": "s02.7",
           "title": "House exterior glow",
           "scene": "s02",
-          "cast": ["Dallas"],
+          "cast": [
+            "Dallas"
+          ],
           "description": "Outside again, Dallas watches the grass sway as the golden glow pulses and a storm builds over Branford.",
           "shots": [
-            {
-              "shot": "WS house exterior golden glow",
-              "description": "Camera at street/driveway facing house; grass screen-right; house left; glow mid-ground; keep exposure on ambient sky",
-              "stage_direction": "Camera at street/driveway facing house; grass screen-right; house left; glow mid-ground; keep exposure on ambient sky"
-            },
-            {
-              "shot": "MS Dallas at house edge",
-              "description": "Dallas center-left at house corner; grass stretches screen-right; backlit by interior practical through window behind him",
-              "stage_direction": "Dallas center-left at house corner; grass stretches screen-right; backlit by interior practical through window behind him"
-            },
-            {
-              "shot": "WS tall grass pulsing glow",
-              "description": "Camera low near ground facing into grass; glow behind grass creates backlit silhouette of stalks; pulse rhythm 1s–1s–5s–3s; slow push if stable",
-              "stage_direction": "Camera low near ground facing into grass; glow behind grass creates backlit silhouette of stalks; pulse rhythm 1s–1s–5s–3s; slow push if stable"
-            },
-            {
-              "shot": "CU Dallas face watching",
-              "description": "Dallas center-frame; golden glow as practical key from screen-right; pulsing light hits face in rhythm; eyes wide — hold, let light do the acting",
-              "stage_direction": "Dallas center-frame; golden glow as practical key from screen-right; pulsing light hits face in rhythm; eyes wide — hold, let light do the acting"
-            },
-            {
-              "shot": "WS wide sky storm clouds",
-              "description": "Camera tilted up ~30°; Dallas silhouetted bottom-center or absent; cloud movement visible; shoot what's there",
-              "stage_direction": "Camera tilted up ~30°; Dallas silhouetted bottom-center or absent; cloud movement visible; shoot what's there"
-            }
+            "WS - House exterior, golden glow from grass",
+            "MS - Dallas standing at house edge",
+            "WS - Tall grass undulating, golden light pulsing",
+            "CU - Dallas's face, watching the phenomenon",
+            "WS - Wide sky, storm clouds gathering over distant Branford"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "estLength": "5h",
+      "scenes": [
+        "s08",
+        "s09",
+        "s10"
+      ],
+      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08 · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery\nWRAP: 10:00 PM",
+      "crew": [
+        {
+          "role": "Director / Camera",
+          "name": "Alex Gonzalez"
+        },
+        {
+          "role": "Audio",
+          "name": "Christopher Battista"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
+      ],
+      "locationDetails": [
+        "East Haven Nursery",
+        "Main grounds and marsh access"
+      ],
+      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
+      "shotList": [
+        {
+          "beat": "s08.1",
+          "title": "Into the neighborhoods",
+          "scene": "s08",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas tracks the pulsing hum through suburban streets and toward the marsh.",
+          "shots": [
+            "WS - Branford street, dusk, Dallas walking with oscillator",
+            "MS - Dallas following the sound, oscillator raised",
+            "CU - Oscillator dial tracking frequency shift",
+            "WS - Residential block, Dallas navigating toward marsh",
+            "POV - Dallas's perspective, listening and moving"
           ]
         },
         {
-          "beat": "s02.3",
-          "title": "Night exterior (light unit)",
-          "scene": "s02",
-          "cast": ["Dallas"],
-          "description": "Dallas outside post-attic — recorder walk, tall grass, ocean breeze. Requires dark. Kept lean — shoot what feels right, no pressure.",
+          "beat": "s08.2",
+          "title": "Marsh edge approach",
+          "scene": "s08",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas reaches the tall marsh, realizes the sound is intensifying from the grass itself.",
           "shots": [
-            {
-              "shot": "OTS Dallas walking with recorder",
-              "description": "Camera behind Dallas at distance; moves screen-right into darkness; recorder visible at side; streetlight or moonlight only",
-              "stage_direction": "Camera behind Dallas at distance; moves screen-right into darkness; recorder visible at side; streetlight or moonlight only"
-            },
-            {
-              "shot": "WS Dallas stops at patch of tall grass",
-              "description": "Dallas center-small in frame; grass fills left half; camera static; let him breathe and record — don't rush the beat",
-              "stage_direction": "Dallas center-small in frame; grass fills left half; camera static; let him breathe and record — don't rush the beat"
-            },
-            {
-              "shot": "CU recorder capturing ocean breeze",
-              "description": "Camera close on recorder mic face; grass or water visible soft behind; keep this one short",
-              "stage_direction": "Camera close on recorder mic face; grass or water visible soft behind; keep this one short"
-            }
+            "WS - Marsh perimeter, tall grass visible in distance",
+            "MS - Dallas at property edge, watching the grass",
+            "CU - Dallas's face, recognizing the source",
+            "WS - Tall grass field, undulating",
+            "Detail - Oscillator reading at peak frequency"
+          ]
+        },
+        {
+          "beat": "s09.1",
+          "title": "Nursery exploration",
+          "scene": "s09",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas searches the East Haven Nursery grounds with oscillator, tracking the frequency.",
+          "shots": [
+            "WS - Nursery grounds, evening light",
+            "MS - Dallas moving through rows, listening",
+            "CU - Oscillator dial responding to location",
+            "WS - Dallas at center of grounds, sound peaking",
+            "Detail - Hand adjusting oscillator settings"
+          ]
+        },
+        {
+          "beat": "s09.2",
+          "title": "The injured creature",
+          "scene": "s09",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas discovers something in the tall grass - evidence of an animal or disturbance.",
+          "shots": [
+            "WS - Tall grass field, Dallas approaching",
+            "MS - Dallas stops, observing something",
+            "CU - Dallas's reaction to discovery",
+            "Detail - Close look at marks, matted grass, or damage",
+            "WS - Dallas standing over the spot"
+          ]
+        },
+        {
+          "beat": "s10.1",
+          "title": "Jerry's house approach",
+          "scene": "s10",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas arrives at Jerry's house in evening darkness, oscillator still active.",
+          "shots": [
+            "WS - Jerry's house exterior, lights on inside",
+            "MS - Dallas at front, oscillator in hand",
+            "CU - Oscillator still reading the hum",
+            "WS - House and surrounding darkness",
+            "MS - Dallas approaching front door"
+          ]
+        },
+        {
+          "beat": "s10.2",
+          "title": "Something in the shadows",
+          "scene": "s10",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas hears movement or shadows around the house perimeter - the hum intensifies.",
+          "shots": [
+            "WS - House perimeter, shadows visible",
+            "MS - Dallas turning, listening intently",
+            "CU - Dallas's fear/awareness",
+            "WS - Shadows moving in yard or tall grass near house",
+            "Detail - Oscillator spiking at maximum"
           ]
         }
       ]
     },
     {
       "day": 3,
-      "estLength": "3h",
+      "estLength": "10h",
       "scenes": [
-        "s00a"
+        "s01",
+        "s03",
+        "s05"
       ],
-      "crewCall": "CALL: 9:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 9:30 AM — Branford Marsh / Neighborhood\nSHOOT: 9:30 AM - 12:00 PM — s00a · Makayla & Asher planting devices\nWRAP: 12:30 PM",
+      "crewCall": "CALL: 11:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 11:30 AM — Jerry's' House (72 Lake St, Hamden)\nSHOOT: 11:50 AM - 12:30 PM — s01 · Makayla & Asher arrive\nLUNCH: 12:30 PM\nSHOOT: 1:15 PM - 3:00 PM — s01 · Makayla & Asher arrive\nSHOOT: 4 PM - 5:30 PM — s05 · Merlin app search\nDINNER: 5:30 PM\nSHOOT: 6:00 PM - 8:45 PM — Final block (TBD)\nWRAP: 9:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1090,71 +1052,146 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s00a.M1",
-          "title": "Makayla and Asher in the marsh",
-          "scene": "s00a",
+          "beat": "s01.1",
+          "title": "Makayla and Asher arrive",
+          "scene": "s01",
           "cast": [
             "Makayla",
             "Asher"
           ],
-          "description": "Makayla and Asher move through the marsh edge, carrying acoustic trap equipment and folding trowels.",
+          "description": "Makayla and Asher pull up to the Dallas house with equipment and gear.",
           "shots": [
-            "WS - Marsh edge, Makayla and Asher entering frame from street",
-            "MS - Both moving through low reeds and tall grass",
-            "Detail - Equipment bags and trowels in hand",
-            "CU - Makayla scanning the terrain",
-            "WS - Wide marsh establishing — sense of isolation"
+            "WS - House exterior, vehicle arriving",
+            "MS - Car pulling into driveway",
+            "MS - Makayla and Asher stepping out",
+            "Detail - Equipment being unloaded",
+            "WS - Two of them approaching house"
           ]
         },
         {
-          "beat": "s00a.M2",
-          "title": "Planting the first device",
-          "scene": "s00a",
+          "beat": "s01.2",
+          "title": "Dallas greets them",
+          "scene": "s01",
           "cast": [
+            "Dallas",
             "Makayla",
             "Asher"
           ],
-          "description": "They find a concealed position and plant the first acoustic trap — precise, practiced movements.",
+          "description": "Dallas emerges from house, first meeting with Makayla and Asher on the property.",
           "shots": [
-            "MS - Asher crouching at the base of tall grass",
-            "CU - Trowel breaking soil, small and deliberate",
-            "Detail - Acoustic trap being set into the ground",
-            "CU - Makayla covering it with leaf litter and moss",
-            "MS - Both stepping back to assess concealment"
+            "WS - Dallas at door, M&A in yard",
+            "MS - Greetings and handshakes",
+            "CU - Dallas's face meeting them",
+            "WS - All three at house entrance",
+            "MS - Conversation beginning"
           ]
         },
         {
-          "beat": "s00a.M3",
-          "title": "Trail camera setup",
-          "scene": "s00a",
+          "beat": "s01.3",
+          "title": "House and grounds tour",
+          "scene": "s01",
           "cast": [
+            "Dallas",
             "Makayla",
             "Asher"
           ],
-          "description": "They mount a trail camera on a post, angled toward the interior of the tall grass. Silent communication between them.",
+          "description": "Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.",
           "shots": [
-            "MS - Asher with trail camera, finding mounting point",
-            "Detail - Camera clicking into bracket",
-            "CU - Makayla checking sight line through the grass",
-            "Detail - LED indicator confirming record mode",
-            "WS - Camera mounted, facing deep into marsh"
+            "WS - Group entering house",
+            "MS - Quick interior shots",
+            "WS - Exiting to back or side",
+            "WS - Viewing the tall grass from property edge",
+            "MS - All three observing the marsh"
           ]
         },
         {
-          "beat": "s00a.M4",
-          "title": "Second position",
-          "scene": "s00a",
+          "beat": "s03.1",
+          "title": "The sound begins",
+          "scene": "s03",
           "cast": [
-            "Makayla",
-            "Asher"
+            "Dallas",
+            "Dominic",
+            "Pat"
           ],
-          "description": "They move to a second location further along the marsh — same sequence, same silence.",
+          "description": "Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.",
           "shots": [
-            "WS - Makayla and Asher moving deeper along the marsh line",
-            "MS - Second planting location selected",
-            "Detail - Boom pole assembly laid flat in reeds",
-            "CU - Asher's hands burying the second trap",
-            "WS - They finish, glance at each other, move on"
+            "WS - Group in location, stillness",
+            "MS - Dallas recognizing the sound",
+            "CU - Dominic and Pat's confused reactions",
+            "WS - Around them, hum intensifying",
+            "Detail - Portable oscillator responding"
+          ]
+        },
+        {
+          "beat": "s03.2",
+          "title": "Attempt to track it",
+          "scene": "s03",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "They try to locate the source - moving with equipment, oscillator in hand.",
+          "shots": [
+            "MS - Dallas with oscillator, searching",
+            "WS - All three moving through location",
+            "Detail - Oscillator dial tracking frequency",
+            "CU - Their faces as hum builds",
+            "MS - Triangulating direction"
+          ]
+        },
+        {
+          "beat": "s03.3",
+          "title": "The revelation",
+          "scene": "s03",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "They narrow down that the sound is coming from the tall grass itself - the source becomes clear.",
+          "shots": [
+            "WS - Tall grass, hum at maximum",
+            "CU - Each of their faces, realization",
+            "Detail - Equipment reading peak",
+            "WS - Group facing the grass",
+            "MS - Looking at each other in shock"
+          ]
+        },
+        {
+          "beat": "s05.1",
+          "title": "Merlin app search",
+          "scene": "s05",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "They consult field guides and use the Merlin app to try identifying what could produce this sound.",
+          "shots": [
+            "MS - Dallas holding app on phone/device",
+            "CU - Screen showing bird identification interface",
+            "MS - Dominic and Pat looking over",
+            "Detail - Flipping through field guide pages",
+            "WS - Group reviewing findings"
+          ]
+        },
+        {
+          "beat": "s05.2",
+          "title": "Dead ends",
+          "scene": "s05",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Pat"
+          ],
+          "description": "They realize no known bird species matches the frequency or pattern - confusion and concern.",
+          "shots": [
+            "CU - Dallas's concerned face",
+            "MS - Dominic shaking head",
+            "Detail - Pat pointing to field guide, uncertain",
+            "MS - Exchange of worried looks",
+            "WS - Three of them, perplexed"
           ]
         }
       ]
@@ -1802,15 +1839,12 @@
     {
       "day": 8,
       "scenes": [
-        "s01",
-        "s03",
-        "s05",
         "s07",
         "s18",
         "s19",
         "s20"
       ],
-      "crewCall": "CALL: 9:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 9:30 AM — Jerry's House (72 Lake St, Hamden)\nSHOOT: 9:30 AM - 11:00 AM — s01 · Makayla & Asher arrive\nLUNCH: 11:00 AM\nSHOOT: 11:45 AM - 1:15 PM — s03 · The hum & marsh walk\nSHOOT: 1:30 PM - 2:30 PM — s05 · Merlin app search\nBREAK: 2:30 PM\nSHOOT: 3:00 PM — s07 · Coordinates discovered\nSHOOT: 4:30 PM — s18 · Life group gathering\nSHOOT: 6:00 PM — s19, s20 · Hymn meets the hum & red eyes\nWRAP: 9:00 PM",
+      "crewCall": "CALL: 8:00 AM\nMEET: Branford Town Green\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07 · Coordinates discovered\nSHOOT: 10:30 AM — s18 · Life group gathering\nSHOOT: 12:00 PM — s19, s20 · Hymn meets the hum & red eyes\nWRAP: 3:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1836,149 +1870,6 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s01.1",
-          "title": "Makayla and Asher arrive",
-          "scene": "s01",
-          "cast": [
-            "Makayla",
-            "Asher"
-          ],
-          "description": "Makayla and Asher pull up to the Dallas house with equipment and gear.",
-          "shots": [
-            "WS - House exterior, vehicle arriving",
-            "MS - Car pulling into driveway",
-            "MS - Makayla and Asher stepping out",
-            "Detail - Equipment being unloaded",
-            "WS - Two of them approaching house"
-          ]
-        },
-        {
-          "beat": "s01.2",
-          "title": "Dallas greets them",
-          "scene": "s01",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher"
-          ],
-          "description": "Dallas emerges from house, first meeting with Makayla and Asher on the property.",
-          "shots": [
-            "WS - Dallas at door, M&A in yard",
-            "MS - Greetings and handshakes",
-            "CU - Dallas's face meeting them",
-            "WS - All three at house entrance",
-            "MS - Conversation beginning"
-          ]
-        },
-        {
-          "beat": "s01.3",
-          "title": "House and grounds tour",
-          "scene": "s01",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher"
-          ],
-          "description": "Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.",
-          "shots": [
-            "WS - Group entering house",
-            "MS - Quick interior shots",
-            "WS - Exiting to back or side",
-            "WS - Viewing the tall grass from property edge",
-            "MS - All three observing the marsh"
-          ]
-        },
-        {
-          "beat": "s03.1",
-          "title": "The sound begins",
-          "scene": "s03",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.",
-          "shots": [
-            "WS - Group in location, stillness",
-            "MS - Dallas recognizing the sound",
-            "CU - Dominic and Pat's confused reactions",
-            "WS - Around them, hum intensifying",
-            "Detail - Portable oscillator responding"
-          ]
-        },
-        {
-          "beat": "s03.2",
-          "title": "Attempt to track it",
-          "scene": "s03",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They try to locate the source - moving with equipment, oscillator in hand.",
-          "shots": [
-            "MS - Dallas with oscillator, searching",
-            "WS - All three moving through location",
-            "Detail - Oscillator dial tracking frequency",
-            "CU - Their faces as hum builds",
-            "MS - Triangulating direction"
-          ]
-        },
-        {
-          "beat": "s03.3",
-          "title": "The revelation",
-          "scene": "s03",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They narrow down that the sound is coming from the tall grass itself - the source becomes clear.",
-          "shots": [
-            "WS - Tall grass, hum at maximum",
-            "CU - Each of their faces, realization",
-            "Detail - Equipment reading peak",
-            "WS - Group facing the grass",
-            "MS - Looking at each other in shock"
-          ]
-        },
-        {
-          "beat": "s05.1",
-          "title": "Merlin app search",
-          "scene": "s05",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They consult field guides and use the Merlin app to try identifying what could produce this sound.",
-          "shots": [
-            "MS - Dallas holding app on phone/device",
-            "CU - Screen showing bird identification interface",
-            "MS - Dominic and Pat looking over",
-            "Detail - Flipping through field guide pages",
-            "WS - Group reviewing findings"
-          ]
-        },
-        {
-          "beat": "s05.2",
-          "title": "Dead ends",
-          "scene": "s05",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They realize no known bird species matches the frequency or pattern - confusion and concern.",
-          "shots": [
-            "CU - Dallas's concerned face",
-            "MS - Dominic shaking head",
-            "Detail - Pat pointing to field guide, uncertain",
-            "MS - Exchange of worried looks",
-            "WS - Three of them, perplexed"
-          ]
-        },
-        {
           "beat": "s07.1",
           "title": "Coordinates discovered",
           "scene": "s07",
@@ -1987,7 +1878,6 @@
             "Makayla",
             "Asher",
             "Dominic",
-            "Janice",
             "Mr. Mike"
           ],
           "description": "The group deciphers a coordinate pattern from Sierra's notes and the hum frequency, pinpointing a location deep in the marsh.",
@@ -2008,7 +1898,6 @@
             "Makayla",
             "Asher",
             "Dominic",
-            "Janice",
             "Mr. Mike"
           ],
           "description": "With coordinates identified, the group debates whether to act — tension between urgency and caution.",
@@ -2016,7 +1905,7 @@
             "WS - Group around table, discussion heating up",
             "MS - Dallas making the case for going",
             "CU - Mr. Mike's skeptical reaction",
-            "MS - Janice and Makayla exchanging looks",
+            "MS - Dominic and Makayla exchanging looks",
             "WS - The group, divided but leaning toward action"
           ]
         },
@@ -2030,13 +1919,12 @@
             "Asher",
             "Dominic",
             "Mr. Mike",
-            "Janice",
             "Life Group Extras"
           ],
-          "description": "An unexpected crowd arrives — the Life Group, led by Janice, showing up for a scheduled gathering nobody cancelled.",
+          "description": "An unexpected crowd arrives — the Life Group, led by Dominic, showing up for a scheduled gathering nobody cancelled.",
           "shots": [
             "WS - Cars pulling up, people filing out",
-            "MS - Janice at front, leading the group in",
+            "MS - Dominic at front, leading the group in",
             "CU - Dallas's face, unprepared for this",
             "WS - Life Group moving into the house, filling the space",
             "MS - Makayla pulling Dallas aside"
@@ -2052,7 +1940,6 @@
             "Asher",
             "Dominic",
             "Mr. Mike",
-            "Janice",
             "Life Group Extras"
           ],
           "description": "The Life Group settles in while the core group scrambles to conceal their investigation and equipment.",
@@ -2074,12 +1961,11 @@
             "Asher",
             "Dominic",
             "Mr. Mike",
-            "Janice",
             "Life Group Extras"
           ],
           "description": "The Life Group begins singing — a slow, resonant hymn with a frequency eerily close to the hum.",
           "shots": [
-            "WS - Life Group arranged, Janice leading",
+            "WS - Life Group arranged, Dominic leading",
             "MS - Voices rising, hymn building",
             "Detail - Oscillator on shelf beginning to flicker",
             "CU - Dallas hearing it, registering the similarity",
@@ -2096,7 +1982,6 @@
             "Asher",
             "Dominic",
             "Mr. Mike",
-            "Janice",
             "Life Group Extras"
           ],
           "description": "As the hymn swells, the hum beneath it rises in response — the frequencies begin to mirror each other.",
@@ -2118,7 +2003,6 @@
             "Asher",
             "Dominic",
             "Mr. Mike",
-            "Janice",
             "Life Group Extras"
           ],
           "description": "As the hymn peaks, someone near a window sees the creature — two red points of light in the dark grass.",
@@ -2140,14 +2024,13 @@
             "Asher",
             "Dominic",
             "Mr. Mike",
-            "Janice",
             "Life Group Extras"
           ],
           "description": "The Life Group member screams. The room erupts. Dallas can no longer contain what's been happening.",
           "shots": [
             "WS - Chaos, people scrambling",
             "MS - Dallas stepping forward, no longer hiding it",
-            "CU - Janice's face — anger or fear at Dallas",
+            "CU - Dominic's face — anger or fear at Dallas",
             "MS - Dallas addressing everyone, urgent",
             "WS - The room fractured — some running, some frozen"
           ]
@@ -2156,13 +2039,7 @@
     },
     {
       "day": 8.5,
-      "estLength": "5h",
-      "scenes": [
-        "s08",
-        "s09",
-        "s10"
-      ],
-      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08 · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery\nWRAP: 10:00 PM",
+      "crewCall": "CALL: 5:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 5:30 PM — Camera preps\nSHOOT: 6:00 PM — s26 pickups · Creature effects & defensive positions\nWRAP: 9:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -2246,6 +2123,95 @@
       ]
     },
     {
+      "day": 11.5,
+      "crewCall": "CALL: 8:00 AM\nMEET: Branford Marsh Edge\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07b pickups · Warning additional coverage\nSHOOT: 10:30 AM — s16 pickups · Plan detail shots\nWRAP: 12:00 PM",
+      "crew": [
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
+        }
+      ],
+      "locationDetails": [
+        "Marsh boundary",
+        "Tall grass field"
+      ],
+      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
+      "shotList": [
+        {
+          "beat": "s07b.pickup.1",
+          "title": "The warning additional coverage",
+          "scene": "s07b",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "description": "Pickup shots of Mr. Mike's crucial warning - wider angles and group reactions.",
+          "shots": [
+            "WS - Full group with Mr. Mike in center",
+            "CU - Mr. Mike's face in profile",
+            "Detail - Hand gestures emphasizing point",
+            "MS - Each person's individual reaction",
+            "WS - Group dynamics shifting"
+          ]
+        },
+        {
+          "beat": "s16.pickup.1",
+          "title": "Plan details captured",
+          "scene": "s16",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "description": "Close coverage of the escape/defense plan being explained - technical detail shots.",
+          "shots": [
+            "Detail - Map or sketch close-up",
+            "CU - Dallas pointing to locations",
+            "Detail - Hand-drawn notes or marks",
+            "MS - Two-shots of Dallas with others",
+            "CU - Understanding dawning on faces"
+          ]
+        },
+        {
+          "beat": "s16.pickup.2",
+          "title": "Resolution and commitment",
+          "scene": "s16",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "description": "Final commitment to the plan - intimate captures of determination and fear.",
+          "shots": [
+            "Detail - Hands meeting in center",
+            "CU - Eyes closing in acceptance",
+            "MS - Final huddle moment",
+            "Detail - A nod or affirmation between two",
+            "WS - Group ready to move forward"
+          ]
+        }
+      ]
+    },
+    {
       "day": 9,
       "scenes": [
         "s17",
@@ -2286,7 +2252,6 @@
             "Makayla",
             "Asher",
             "Dominic",
-            "Janice",
             "Mr. Mike"
           ],
           "description": "The hum reaches a specific frequency that causes physical reaction - glasses vibrate, equipment resonates.",
@@ -2307,7 +2272,6 @@
             "Makayla",
             "Asher",
             "Dominic",
-            "Janice",
             "Mr. Mike"
           ],
           "description": "The resonance intensifies - people feel it in their bodies, some hurt, disorientation.",
@@ -2328,7 +2292,6 @@
             "Makayla",
             "Asher",
             "Dominic",
-            "Janice",
             "Mr. Mike"
           ],
           "description": "Amongst the chaos, someone recalls or experiences a flash of normal life - brief respite.",
@@ -2349,7 +2312,6 @@
             "Makayla",
             "Asher",
             "Dominic",
-            "Janice",
             "Mr. Mike"
           ],
           "description": "Without speaking, communicating through looks and gestures - all sound is overwhelmed.",
@@ -2472,9 +2434,10 @@
     {
       "day": 12,
       "scenes": [
+        "s04",
         "s06"
       ],
-      "crewCall": "CALL: 7:00 AM\nMEET: Branford Town Green\nSETUP: 7:30 AM — Camera preps\nSHOOT: 8:00 AM — s06 · News vans arrive\nWRAP: 10:30 AM",
+      "crewCall": "CALL: 7:00 AM\nMEET: Branford Town Green\nSETUP: 7:30 AM — Camera preps\nSHOOT: 8:00 AM — s04 · Final fellowship gathering\nSHOOT: 9:30 AM — s06 · News vans arrive\nWRAP: 12:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -2500,56 +2463,6 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s06.1",
-          "title": "News vans arrive",
-          "scene": "s06",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
-          ],
-          "description": "The outside world intrudes - media arrives in Branford, cameras and crew setting up.",
-          "shots": [
-            "WS - News vans pulling up",
-            "MS - Reporters and camera crews setting up",
-            "CU - Group's reaction to media",
-            "Detail - Cameras and lights",
-            "WS - Town green overtaken by press"
-          ]
-        }
-      ]
-    },
-    {
-      "day": 14,
-      "scenes": [
-        "s04"
-      ],
-      "crewCall": "CALL: 10:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 10:30 AM — BBQ location (TBD)\nSETUP: 10:30 AM — Camera preps\nSHOOT: 11:00 AM - 1:30 PM — s04 · BBQ scene\nLUNCH/WRAP: 1:30 PM",
-      "crew": [
-        {
-          "role": "Director",
-          "name": "Alex"
-        },
-        {
-          "role": "Camera",
-          "name": "Alex"
-        },
-        {
-          "role": "Audio",
-          "name": "TBD"
-        },
-        {
-          "role": "Clapper",
-          "name": "TBD"
-        }
-      ],
-      "locationDetails": [
-        "BBQ location (TBD)"
-      ],
-      "shotList": [
-        {
           "beat": "s04.1",
           "title": "The fellowship gathers",
           "scene": "s04",
@@ -2560,7 +2473,7 @@
             "Asher",
             "Mr. Mike"
           ],
-          "description": "All the main characters come together at the BBQ — Dallas, Dominic, Makayla, Asher, Mr. Mike.",
+          "description": "All the main characters come together - Dallas, Dominic, Makayla, Asher, Mr. Mike - a final gathering.",
           "shots": [
             "WS - Open location, all arriving",
             "MS - Greetings and reuniting",
@@ -2588,6 +2501,48 @@
             "WS - The group in stillness",
             "Detail - A nod or affirmation"
           ]
+        },
+        {
+          "beat": "s06.1",
+          "title": "News vans arrive",
+          "scene": "s06",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Makayla",
+            "Asher",
+            "Mr. Mike"
+          ],
+          "description": "The outside world intrudes - media arrives in Branford, cameras and crew setting up.",
+          "shots": [
+            "WS - News vans pulling up",
+            "MS - Reporters and camera crews setting up",
+            "CU - Group's reaction to media",
+            "Detail - Cameras and lights",
+            "WS - Town green overtaken by press"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 13,
+      "crewCall": "Pickup and reshoots as needed",
+      "crew": [
+        {
+          "role": "Director",
+          "name": "Alex"
+        },
+        {
+          "role": "Camera",
+          "name": "Alex"
+        },
+        {
+          "role": "Audio",
+          "name": "TBD"
+        },
+        {
+          "role": "Clapper",
+          "name": "TBD"
         }
       ]
     }

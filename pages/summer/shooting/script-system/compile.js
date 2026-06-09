@@ -793,7 +793,7 @@ function generateHTMLPage(markdown, scenes) {
           return;
         }
 
-        // Action lines that introduce a character or describe action (e.g. "Janice, Mid 50s, puts her hand...")
+        // Action lines that introduce a character or describe action (e.g. "Dominic, early 40s, puts his hand...")
         // Never treat these as dialogue so they don't get wrapped with the previous speaker
         if (looksLikeActionIntro(text)) {
           p.className = 'action-line';

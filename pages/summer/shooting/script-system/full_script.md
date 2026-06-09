@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/6/2026, 8:14:06 AM*
+*Compiled on 6/9/2026, 12:17:46 PM*
 
 ---
 
@@ -295,10 +295,6 @@ ASHER
 (action)
 They approach Dallas slowly as one of the boxes draws their curiosity. Makayla watches Dallas pull out a military grade Oscillator.
 
-MAKAYLA
-(to Asher but loud enough for Dallas to hear)
-You know that could be used to track the baseline between the cries of the Binzos and the howls of the Oragraph. They don't really know for sure though, and of course, none of it really matters if a Nidus is forming. That's an apex predator situation. 
-
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
@@ -351,10 +347,10 @@ MAKAYLA
 He'll need it. 
 
 DALLAS
-What would he need it for?
+What will he need it for?
 
 MAKAYLA
-Tell him Asher. 
+Asher? 
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
@@ -368,31 +364,28 @@ DALLAS
 It does.
 
 MAKAYLA
-What's the range on it?
+Can we borrow it?
 
 DALLAS
-I'm not sure.
+For what?
 
 MAKAYLA
-Well okay. Asher, do you have any more questions?
+To track.
+
+DALLAS
+Track what?
+
+MAKAYLA
+Never mind. 
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Makayla turns to Asher. He shakes his head no—still not looking up, finger tapping his other fingers in an almost morse code type of way. 
+Makayla, disappointed, walks away slowly and Asher peddle their bikes away.
 
-MAKAYLA
-Okay then. Good to know. Can we borrow it?
+Dallas looks down at a box of old equipment and stretches down to pick it up. 
 
-DALLAS
-Sure.
-
-<!-- scene: 1 file: s01.md nickname: arrival -->
-
-(action)
-Makayla and Asher peddle their bikes away with their new oscilattor.     Dallas watches curiously and then peers at the swinging breeze of the tall grass. 
-
-Dallas looks down at a box of old equipment and stretches down to pick it up.
+END S01
 
 ---
 
@@ -596,7 +589,7 @@ Dallas, checks if Dominic is looking and when he isn't - he takes records a bit 
 
 DOMINIC
 (spotting Dallas)
-Be careful - I heard some coyotes up in that the other night when I was walking Howie. Some people say the noises are from owls - but I know its coyotes. 
+Be careful - I heard some coyotes up in that the other night when I was out walking. Some people say the noises are from owls - but I know its coyotes. 
 
 EXT. TOWN CENTER - DAY (s03.4)
 Dallas and Dominic walk toward a small hardware store. 
@@ -734,52 +727,13 @@ Thank you.
 (action)
 Dallas and Dominic sit in a circle of folded pull up chairs. 
 
-JANICE AMARANTO, Mid 50s, approaches the line holding a small dog in her arms. She taps Dominic's shoulder.
-
-DOMINIC
-(greeting the dog)
-Howie.
-
-JANICE
-(greeting Dominic)
-Yeah - he's doing much better. He's been having little scares hasn't heeeee - the thunder last night really scared him - he doesn't like the thunder. Dominic, listen, you all set for dinner? You got the brussel sprouts?
-
-DOMINIC
-Got them. Should be good to go. 
-
-JANICE
-Thanks again little brother. Listen - did you give Mr. Mike his mediciation? - He has to take them now at 4:30pm - an hour or so before dinner. Make sure he takes it with some cheese or something. 
-
-DOMINIC
-Yes.
-
-JANICE
-(noticing Dallas)
-What's wrong you for not introducing me to your friend Dominic  - who is this? 
-
-DOMINIC
-Dallas.
-
-<!-- scene: 4 file: s04.md nickname: fellowship -->
-
-(action)
-Dallas smiles and puts out his hand.
-
-JANICE
-Nice to meet you Dallas. Dominic hold Howie for a second I go to go make sure that I didn't lock the car. 
-
-<!-- scene: 4 file: s04.md nickname: fellowship -->
-
-(action)
-Janice abrutly leaves. 
-
 <!-- scene: 4 file: s04.md nickname: fellowship -->
 
 (action)
 Makayla and Asher approach from afar to the line. 
 
 DOMINIC
-Dallas, these are my niece and nephew - Makayla and Asher.
+Dallas, these are my sister and brother - Makayla and Asher.
 
 <!-- scene: 4 file: s04.md nickname: fellowship -->
 
@@ -950,7 +904,7 @@ I try to do the right thing and I keep getting kicked.
 Dominic kicks a stray milk carton. He looks at the garbage cans around his house, then at Dallas.
 
 DOMINIC
-Listen, I got to get the furniture before Janice has her women's group tonight. I got to go check on Mike and bring in another fan from the basement. You good? 
+Listen, I got to get the furniture before life group tonight. I got to go check on Mike and bring in another fan from the basement. You good? 
 
 <!-- scene: 6 file: s06.md nickname: news-vans -->
 
@@ -992,7 +946,7 @@ Dallas looks around in amazement. The basement is covered with normal basement t
 Dallas looks at all of the different audio and acoustic devices scattered across the room. On the cieling there are tiny beeds hung from strings - tiny with different colors. 
 
 DOMINIC
-This was formerly our shared basement - but, now, my niece and nephew live here have occupied. They just love this basement... Here, help me grab the fan. 
+This was formerly our shared basement - but, now, my brother and sister live here have occupied. They just love this basement... Here, help me grab the fan. 
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1031,7 +985,7 @@ I had a family once.
 Dallas falls mute. 
 
 DOMINIC
-No kid now, no wife now. Just the niece and nephew. Janice and Mr. Mike. My lot in life. I'll take it.
+No kid now, no wife now. Just my brother and sister. And Mr. Mike. My lot in life. I'll take it.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1070,17 +1024,17 @@ DOMINIC
 Whose here? Could you not scratch the table anymore? Whose here? 
 
 MR. MIKE
-Your sister. Makayla. Asher
+Dominic. Makayla. Asher
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dominic dashes for the door and opens it. In pops Janice with Makayla and Asher. 
+Dominic dashes for the door and opens it. In pop Makayla and Asher. 
 
 Asher runs straight towards Mr. Mike and kneels down before him. Makayla side eyes Dallas. 
 
 MR. MIKE 
-One one five three. One one five three. She's here - Dominic - Janice is here - ASHER! Is that you? Come here. Five five five five.  
+One one five three. One one five three. They're here - Dominic - Makayla's here - ASHER! Is that you? Come here. Five five five five.  
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1095,33 +1049,27 @@ Do you see?
 (action)
 Asher's eyes widen when he sees what Mr. Mike has been writing. He already has his sticky note out; he copies the numbers, taps the page twice, then runs to Makayla and shows her. She puts the note in her pocket. 
 
-JANICE (Early 50s) marches in, balancing two bags of groceries and a set of keys between her teeth. Makayla walks over and helps with a bag and hands Asher the keys. 
-
-JANICE
- I-95 you know how it is. Listen, Dominic, what's the status - how we doing on the sprouts? You need to boil them first and then sear them. Alright? Last time you just boiled them and it didn't work... Dallas, you got to teach your friend here how to cook. 
+Makayla walks over and sets two bags of groceries on the counter and hands Asher a set of keys. 
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Janice begins a frantic search for her keys, which she just put down. She stumbles upon Dallas's heavy audio recorder.
+Dominic moves toward the kitchen and stumbles upon Dallas's heavy audio recorder.
 
-JANICE 
+DOMINIC 
 What is this? A boat anchor?
 
 DALLAS
 It's a recorder. 
 
-JANICE
+DOMINIC
 A recorder? You taping this conversation? I'm kidding, you could, la la la la laaaa. Dallas do you want to have some dinner with us? 
 
 DALLAS
 Um, no - I should be going back. Thank you though.  
 
-JANICE
-You sure honey? 
-
 DOMINIC
-Yeah Janice, Dallas needs to settle a bit. 
+You sure? 
 
 DALLAS
 Yeah, I got some food back at home, so, I'll be okay.  
@@ -1145,9 +1093,9 @@ Who is Javerias?
 MR. MIKE
 Javerias, Javerias, he told me. I haven't seen them since the big blow in '71. The Red Eyes. They come when the pressure drops and the sky turns that bruised color. Back then, they took the whole center marsh—swallowed it whole. Javerias said if you hurt one—even if it was by mistake—they transform. They turn into the shadow ones. The predators. And when the wind picks up tonight, the Nidus will open, just like it did for the gold standard. They're coming back to finish the harvest.
 
-JANICE
+DOMINIC
 (from the Kitchen)
-Mr. Mike calm down my friend woof - dinner will be ready soon. 
+Mr. Mike, calm down my friend - dinner will be ready soon. 
 
 MR. MIKE
 Are you making the sprouts?
@@ -1155,51 +1103,7 @@ Are you making the sprouts?
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Janice walks over and grabs Howie from her doggie backpack and rests him on the floor. Howie rushes over to Dallas. 
-
-JANICE
-Howie, wait, no no - well, look at that. He likes you Dallas. 
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Dallas kneels down to meet the dog Howie. They embrace.  
-
-MR. MIKE
-When I was growing up we didn't have a dog, we had a cat - Misty - this dog is no good. 
-
-JANICE
-Stop it Michael. Mr. Dallas - would you like to watch him sometime? 
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Howie motions to Dallas like he wants to be held.
-
-DALLAS
-Sure. 
-
-MAKAYLA
-How about tomorrow? 
-
-JANICE
-Yeah - I mean - we could drop him off in the morning. What do you think Dallas?
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Dallas looks at Howie - and the dog looks back at him.
-
-JANICE
-Actually... Want to take him tonight? Do a little dry run? He'll sleep on the couch like a baby. I don't want you alone in that new house of yours - say how is it? Did they treat it nice? Dominic, where are you? Yeah, take him tonight sweetie - go on a big walk along the shore -  Lord knows I got can't walk him like I used to with my knees.
-
-DALLAS
-Sure. 
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Dallas looks at the dog - the dog Howie looks back at the man Dallas. Makayla walks over and places the portable Oscillator from Dallas' hand. 
+Makayla walks over and places the portable Oscillator from Dallas' hand. 
 
 MAKAYLA
 It didn't work.
@@ -1223,7 +1127,7 @@ B24FF
 MAKAYLA
 Okay, I've already copied them and don't think it worked. Thank you though. 
 
-JANICE
+DOMINIC
 Makayla whats that - give it back. 
 
 DALLAS
@@ -1284,11 +1188,11 @@ Asher, meanwhile, ignores the conversation, eyes fixed on the distant bushes at 
 
 (action)
 Dominic begins to light the gas to start boiling the brussels but the lighter doesnt work. 
-Janice throws up her hands and goes outside for a smoke. Dallas follows her with Howie.
+He throws up his hands and steps outside to the patio to get it going. Dallas follows him out.
 
 EXT. DOMINIC'S PATIO (s07.3)
 
-JANICE
+DOMINIC
 Thank you again Dallas.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
@@ -1310,7 +1214,7 @@ Dallas begins to walk across the street to his house.
 <!-- FILMING ON = Sun June 28 - Day 12 -->
 
 s07B — INT. DOMINIC'S BASEMENT — CONTINUOUS
-(Slots in between Scene 7.2 and the end of Scene 7. After Mr. Mike has rambled about Javerias and Janice has gone outside for a smoke. Dominic is in the kitchen, out of frame. Dallas is alone with Mr. Mike and the dog.)
+(Slots in between Scene 7.2 and the end of Scene 7. After Mr. Mike has rambled about Javerias. Dominic is in the kitchen, out of frame. Dallas is alone with Mr. Mike.)
 
 <!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
 
@@ -1540,12 +1444,10 @@ A ring at the door.
 
 Dallas walks downstairs.
 
-Dominic is downstairs with Howie.
-
 The phone rings. It is Dominc
 
 DOMINIC (voiceover)
-Dallas, I am so sorry - do you mind watching Howie for a bit? Asher is not doing so well and we have to bring him to the hospital tonight.
+Dallas, I am so sorry to call so late - Asher is not doing so well and we have to bring him to the hospital tonight. Keep an eye on the place for us.
 
 DALLAS
 Sure, of course.
@@ -1553,9 +1455,9 @@ Sure, of course.
 DOMINIC
 Thank you - I'll be back later. 
 
-Dallas takes Howie up to his bedroom. Howie goes to sleep and Dallas continues his work. 
+Dallas heads back up and continues his work. 
 
-Howie begins to cry. Dallas goes to sleep.
+Dallas goes to sleep.
 
 ---
 
@@ -1656,13 +1558,14 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 
 ### Scene 11: Kitchen Triage
 
-*ACT I — Arrival & Discovery | ID: howie-walk-2 | File: s11.md*
+*ACT I — Arrival & Discovery | ID: kitchen-triage | File: s11.md*
 
 ---
 
-<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
+<!-- scene: 11 file: s11.md nickname: kitchen-triage -->
 
 # Scene 11: Kitchen Triage
+<!-- nickname: kitchen-triage -->
 <!-- summary: Dallas at home with the creature. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
 
 <!-- FILMING ON DAY 6 -- 6.16.26>
@@ -1728,7 +1631,7 @@ Dallas opens the door to find Dominic.
 DOMINIC
 Hey - we're doing a lifegroup tomorrow night at our place - you should come. 
 
-<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
+<!-- scene: 11 file: s11.md nickname: kitchen-triage -->
 
 (action)
 Dallas peers toward the kitchen.
@@ -1745,7 +1648,7 @@ Yeah - sorry - I'm just a little tired.
 DOMINIC
 Alright well rest well big guy. 
 
-<!-- scene: 11 file: s11.md nickname: howie-walk-2 -->
+<!-- scene: 11 file: s11.md nickname: kitchen-triage -->
 
 (action)
 Dominic and Asher leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
@@ -1838,7 +1741,7 @@ Dallas walks outside and Dominic bangs his hand on the door.
 Dallas answers. 
 
 DOMINIC
-Dallas! Gosh what a whirlwind. Listen, I'm wondering if you could watch Howie again? Our church has a bible study - you should come. That okay?
+Dallas! Gosh what a whirlwind. Listen, our church has a bible study tonight - you should come. That okay?
 
 DALLAS
 Yeah that's fine. 
@@ -1847,7 +1750,7 @@ DOMINIC
 Good. 
 
 MAKAYLA
-Dominic, no worries Mr. Dallas we'll hang with you and show you the spots that Howie likes to go on. 
+Dominic, no worries Mr. Dallas we'll hang with you and show you around. 
 
 DOMINIC
 Oh Yeah? You trying to get out an errand? 
@@ -1859,7 +1762,7 @@ DOMINIC
 Alright fine - it's settled - but hey, you owe me one Makayla. If your mother comes back before I do tell her I am at the store. 
 
 MAKAYLA
-Okay Uncle.
+Okay Dom.
 
 DOMINIC
 Okay. 
@@ -1972,13 +1875,13 @@ MAKAYLA
 Mr. Dallas, where did you find it?
 
 DALLAS
-A couple of miles away. I am not sure exactly. I was walking Howie. 
+A couple of miles away. I am not sure exactly. I was out walking. 
 
 MAKAYLA
-How did Howie react to it?
+Was anyone with you?
 
 DALLAS
-He didn't really - I tied him up before I ventured off the trail. 
+No - I was alone. I ventured off the trail. 
 
 MAKAYLA
 Why did you take it?
@@ -2014,7 +1917,7 @@ distance stands off, afraid to look at the creature.
 <!-- FILMING ON = DAY 4 = 6.13.26 -->
 EXT. DALLAS BACKYARD - OLD PORCH TABLE (s14.1)
 
-Makayla and Dallas look on the ground for a while as they sit outside the patio. Howie sleeps peacefully near Dallas' feet nearby. 
+Makayla and Dallas look on the ground for a while as they sit outside the patio. 
 
 Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in approval. He takes some string from his pocket and begins to quietly thread various quanity of beads. 
 
@@ -2024,7 +1927,7 @@ What do you do when you are sad?
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas looks at Howie and then at Makayla.
+Dallas looks at the ground and then at Makayla.
 
 DALLAS
 I don't know.
@@ -2070,7 +1973,7 @@ Yeah... You're not really like who I thought you would be.
 Dallas nods and looks at the ground.
 
 MAKAYLA
-Our moms gone too. But we're still here and now we are here living with her babybrother - in Branford.
+Our moms gone too. But we're still here and now we are here living with our uncle - in Branford.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -2430,21 +2333,16 @@ All three freeze.
 Another knock—cheerful.
 
 DOMINIC (O.S.)
-Dallas? You home? Janice said you might have our step ladder.
+Dallas? You home? I think you might have our step ladder.
 
 Makayla and Dallas exchange a look. Asher begins tapping his fingers faster.
 
 INT. DALLAS HOUSE – FRONT ENTRY – CONTINUOUS (s14c.2)
 
-Dallas opens the door. Dominic stands there, winded, holding Howie’s leash.
+Dallas opens the door. Dominic stands there, winded.
 
 DOMINIC  
 There he is! Hey—sorry to bug you. The storm knocked something loose on our gutter.
-
-Howie tries to pull past Dominic—ears flat, tail stiff.
-
-DOMINIC  
-He’s been like this all afternoon. Won’t stop staring at your backyard.
 
 Dallas forces a smile.
 
@@ -2484,7 +2382,7 @@ Dominic steps inside. The HUM vibrates a glass of water on the counter—just en
 Makayla slides between Dominic and the enclosure casually.
 
 MAKAYLA  
-Hey Uncle Dom.
+Hey Dom.
 
 DOMINIC  
 Oh—hey kiddo.
@@ -2512,7 +2410,7 @@ Dominic steps once more toward the counter—toward the towel.
 Makayla moves **immediately**.
 
 MAKAYLA  
-So—uh—Janice said you were fixing the porch light too?
+So—uh—weren’t you fixing the porch light too?
 
 DOMINIC  
 Yeah—
@@ -2527,8 +2425,6 @@ DOMINIC
 Okay. That—
 
 Makayla reaches out and SLAMS a power switch. Darkness. Silence.
-
-Howie WHINES softly.
 
 A beat.
 
@@ -2655,7 +2551,7 @@ Well they do... I mean - if i hit this button here - boom.
 Makayla points her device at a small nearby flower. She nods and takes out a pocket tripod - and a pocket microphone - and begins to to record. 
 
 MAKAYLA
-Aunt Janice will never understand what happened today. Or what happens out here at all. Dominic might. 
+Most people will never understand what happened today. Or what happens out here at all. Dominic might. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
@@ -2791,34 +2687,27 @@ Asher slowly lowers his breathing. A doorbell is heard off screen.
 
 INT. DALLAS'S HOUSE - HALLWAY - DAY (s16.4)
 
-Before they can even touch the doorknob, Dominic pulls up in his minivan and honks the horn. Janice is aggressively leaning out the passenger window.
+Before they can even touch the doorknob, Dominic pulls up in his minivan and honks the horn. He rolls down the window, calm.
 
-JANICE
-(yelling out the window)
-You kids! Howie my baby. Why is he in the backpack?
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Dallas and Makayla look at each other in fear.
-
-MAKAYLA
-That's not Howie. 
-
-JANICE
-What?
-
-MAKAYLA
-(confused)
-We found an injured rabbit and Mr. Dallas has tools to help. 
+DOMINIC
+(easy)
+You kids alright?
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-Janice looks at Dallas dumbfounded. 
+Dallas and Makayla look at each other.
 
-JANICE
-What?... Kid's get in the car - and leave Mr. Dallas alone - he's coming to our life group tonight and I am sure he needs to get rest a bit and get ready. 
+MAKAYLA
+We're fine. 
+
+<!-- scene: 16 file: s16.md nickname: the-escape -->
+
+(action)
+Dominic's eyes drift to the backpack. Something about it doesn't sit right with him. He clocks it quietly—then lets it go.
+
+DOMINIC
+Get in the car - leave Mr. Dallas alone. He's coming to life group tonight, he needs to get some rest and get ready. 
 
 DALLAS
 It's okay. 
@@ -2828,13 +2717,10 @@ It's okay.
 (action)
 Makayla hands Dallas the backpack and gently lets the creature in. She walks to the car with Asher.
 
-JANICE
-So you now I got to go home and clean this out before Howie gets in, is that what this means? 
-
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-Dominic comes out from the other side door and throws the minivan into drive.
+Dominic gives the house one last look, then throws the minivan into drive.
 
 ---
 
@@ -2892,32 +2778,26 @@ Dallas runs outside and looks around. But to no avail.
 <!-- nickname: normal-day -->
 <!-- GOING TO FILM ON Day 12 -->
 
-INT. GROCERY STORE / COSTCO - DAY (s17b.1)
+EXT. BRANFORD HARBOR - DAY (s17b.1)
 
-Dominic pushes an oversized shopping cart. The warehouse store is immense, bathed in fluorescent light, and buzzing with the banal energy of suburban errands. Janice walks beside him, scrolling through a grocery list on her phone.
-
-JANICE
-They said they were out of the Kirkland paper towels. We might have to settle for the off-brand.
-
-DOMINIC
-That's fine. Did you get the chicken? 
-
-JANICE
-(distracted)
-Got it. And I added those frozen pizzas Asher likes. I also need to call the dentist on Monday. His checkup is overdue.
+Dominic walks the docks at the Branford town marina, a clipboard under his arm. The harbor is buzzing with the banal energy of pre-storm preparation—owners lashing extra lines, tying down tarps, hauling small craft up the ramp.
 
 <!-- scene: 17B file: s17b.md nickname: normal-day -->
 
 (action)
-Dominic pauses near the bulk water aisle. A forklift Blares its reversing siren nearby. Over the PA system, a monotonous voice announces a special in aisle four. 
+Dominic moves down the row of slips, checking each boat, signing off on slip paperwork as he goes. Routine. Calm.
 
-But beneath it all—beneath the squeaking cart wheels, the chatter of families, the beep of the registers—Dominic hears the HUM. 
+But beneath it all—beneath the slap of halyards against masts, the gulls, the chatter of the boatyard—Dominic hears the HUM. 
 
-It is distant. Ambient. Almost like the building's massive HVAC system, but too rhythmic. He stares down the long, artificially lit aisle, trying to isolate the sound. He shakes his head, actively gaslighting himself. Just the freezer compressors.
+It is distant. Ambient. It rides in low over the water, almost like the drone of a far-off outboard, but too rhythmic. He stops at the end of the dock and stares out across the chop, trying to isolate the sound. He shakes his head, actively gaslighting himself. Just the wind in the rigging.
 
-JANICE
-(noticing his pause)
-Dom? You okay?
+<!-- scene: 17B file: s17b.md nickname: normal-day -->
+
+(action)
+A boat owner passing on the dock calls over.
+
+OWNER
+Dom—you okay?
 
 DOMINIC
 Yeah.
@@ -2930,17 +2810,17 @@ Dallas is hunched over his makeshift receiver workstation, the heavy headphones 
 
 (cross-cut)
 
-EXT. GROCERY STORE - DAY (s17b.3)
+EXT. BRANFORD HARBOR - DAY (s17b.3)
 
-Janice loads a massive pack of toilet paper into the cart. She seems perfectly at ease, navigating the normalcy like a protective shield. She chats pleasantly with a passing neighbor.
+Dominic clips a signed form to a piling and moves to the next slip. He seems perfectly at ease, navigating the normalcy like a protective shield. He nods to the passing boat owner.
 
-JANICE
-Oh, you know, just stocking up before the weekend!
+DOMINIC
+Better get her tied down good - supposed to blow this weekend!
 
 <!-- scene: 17B file: s17b.md nickname: normal-day -->
 
 (action)
-Dominic watches her. Her comfort isn't ignorance; it's a practiced discipline. She is choosing the routine.
+He watches the man go. His comfort isn't ignorance; it's a practiced discipline. He is choosing the routine.
 
 (cross-cut)
 
@@ -2967,67 +2847,67 @@ Makayla has maps, meteorological data, and Sierra’s old drawings spread across
 <!-- GOING TO FILM ON 
 6.28.26 -->
 <!-- GOING TO FILM ON Day 12 -->
-INT. JANICE'S MINIVAN - DAY (s17c.1)
+INT. DOMINIC'S MINIVAN - DAY (s17c.1)
 
-Janice is driving through downtown Branford. The Nor'easter winds are picking up, rattling the windows of the minivan. Outside, the town is engaged in banal, civic storm preparation. Shop owners are taping windows. Public works employees are laying sandbags near the post office. 
+Dominic is driving through downtown Branford. The Nor'easter winds are picking up, rattling the windows of the minivan. Outside, the town is engaged in banal, civic storm preparation. Shop owners are taping windows. Public works employees are laying sandbags near the post office. 
 
 Makayla sits in the passenger seat. She is completely rigid, staring out the window. Asher is asleep in the back, his heavy noise-canceling headphones resting around his neck. 
 
-Janice glances at Makayla, trying to fill the oppressive silence in the car with maternal warmth. 
+Dominic glances at Makayla, finally breaking the oppressive silence in the car. He is not maternal. He is quiet, even. An older brother who has been watching. 
 
-JANICE
-I was talking to Uncle Dom last night... about how proud we both are of you. I know it hasn't been easy since your mom passed. It’s a lot to carry. But the way you’ve stepped up to take care of Asher... it shows real resilience. You're keeping this family together, Makayla. We just want you to know you don't have to carry it all by yourself. We're here. We're getting back to normal.
+DOMINIC
+I've been meaning to say something. I know it hasn't been easy since Mom passed. It’s a lot to carry. But the way you’ve stepped up to take care of Asher... that's not nothing, Makayla. You're keeping this family together. I just want you to know you don't have to carry it all by yourself. I'm here.
 
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
 
 (action)
 Makayla remains  mute.  Her eyes track a creeping, dark rot—a massive burn mark—which looks like it was snaking its way up the brick side of the Branford Town Hall. The public works employees walk right past it, completely oblivious.
 
-The silence in the car is deafening. Janice looks away from the road, staring at Makayla's terrified, stoic profile. Then, Janice looks at what Makayla is looking at. 
+The silence in the car is deafening. Dominic looks away from the road, studying Makayla's terrified, stoic profile. Then, Dominic looks at what Makayla is looking at. 
 
-Janice's eyes land on the brick wall of the Town Hall. She sees the black veins of rot. She sees the streetlights pulse. She feels the unnatural rhythm of the wind. 
+Dominic's eyes land on the brick wall of the Town Hall. He sees the black veins of rot. He sees the streetlights pulse. He feels the unnatural rhythm of the wind. 
 
-Janice hits the brakes, pulling the minivan hard onto the shoulder of the road. 
+Dominic hits the brakes, pulling the minivan hard onto the shoulder of the road. 
 
-She puts the car in park. She doesn't look at the town anymore. She looks directly at Makayla. 
+He puts the car in park. He doesn't look at the town anymore. He looks directly at Makayla. 
 
-JANICE
+DOMINIC
 (quietly, dropping the buffer)
-You aren't just taking care of him. You're protecting him from something. 
+You're not just taking care of him. You're protecting him from something. 
 
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
 
 (action)
-Makayla finally turns her head to look at Janice. The silence between them shifts.
+Makayla finally turns her head to look at Dominic. The silence between them shifts.
 
-JANICE
+DOMINIC
 What is wrong, Makayla?
 
 MAKAYLA
 Everything.
 
-JANICE
+DOMINIC
 Everything?
 
 MAKAYLA
 I don't know. 
 
-JANICE
+DOMINIC
 Makayla, what is 
 Something they aren't ready for. 
 
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
 
 (action)
-Janice stares at her niece. She doesn't ask for proof. She doesn't rationalize the pulsing lights or the rot on the bricks. She chooses to believe. 
+Dominic stares at his sister. He doesn't ask for proof. He doesn't rationalize the pulsing lights or the rot on the bricks. He chooses to believe. 
 
-JANICE
+DOMINIC
 Then we need to get home. And we need to lock the doors. 
 
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
 
 (action)
-Janice throws the car back into drive. The minivan speeds off as the first heavy drops of unnatural rain hit the windshield.
+Dominic throws the car back into drive. The minivan speeds off as the first heavy drops of unnatural rain hit the windshield.
 
 ---
 
@@ -3097,7 +2977,7 @@ MAKAYLA
 He's downstairs. He... found a stray cat outside. It's really sick. He's nursing it. I was getting it some sugar water.
 
 DOMINIC
-A cat? Alright. Well, tell him not to grow too attached - Howie is enough for us - okay? What you doing with that Tupawear - you going to put the cat in that?
+A cat? Alright. Well, tell him not to grow too attached - okay? What you doing with that Tupawear - you going to put the cat in that?
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
@@ -3127,8 +3007,6 @@ Come on.
 
 (action)
 The glowing creature in the shoebox mimics the tone, its golden light flaring brighter with each successful note. But the louder it sings, the harder the walls of the basement shake. 
-
-HOWIE stays curled in the corner of the stairs, disturbed, whimpering. 
 
 INT. DOMINIC's LIVING ROOM - UPSTAIRS CONTINUOUS (s18.5)
 The last family arrive late for life group: a young couple—JOSH and SARAH—with their newborn, JP. Dominic paces in the kitchen. Mr. Mike mutters in his chair, staring at the weather through the window. 
@@ -3290,7 +3168,7 @@ I mean— no, that's okay. I think that cat's just sleeping. We could check afte
 <!-- scene: 19 file: s19.md nickname: the-hymn -->
 
 (action)
-An elderly woman nods. Everyone agrees. Someone asks how Howie is doing—where is Howie.  BLAKE, one of the young couples, leads the group. 
+An elderly woman nods. Everyone agrees. BLAKE, one of the young couples, leads the group. 
 
 <!-- scene: 19 file: s19.md nickname: the-hymn -->
 
@@ -3997,15 +3875,16 @@ The crew walk back through the tall grass, through neighborhoods, back and slow.
 INT. DOMINICS HOUSE (s26.2)
 The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. 
 
-Janice makes her way through the door.
+Dominic makes his way through the door.
 
-JANICE
-Look at all of these sleeping beauties. 
+DOMINIC
+(dry, quiet)
+Look at all these sleeping beauties. 
 
 <!-- scene: 26 file: s26.md nickname: final-echoes -->
 
 (action)
-MR. Mike walks in behind Janice and walks right over to Dallas - out for a good old fashion handshake. 
+MR. Mike walks in behind Dominic and walks right over to Dallas - out for a good old fashion handshake. 
 
 MR. MIKE
 Dallas, wheres Dallas. Dallas my boy - you were spared from the storm. 
@@ -4015,8 +3894,8 @@ DALLASHow are you Mike.
 MR. MIKE
 Things are better - things are better than what they were. Yes. 
 
-JANICE
-Thanks for letting everyone crash here Dallas. Dominic, Makayla, lets go.
+DOMINIC
+Thanks for letting everyone crash here Dallas. Makayla, lets go.
 
 ---
 
@@ -4118,7 +3997,7 @@ Dallas goes to bed. The device sits on the nightstand. He hears echoes. Somethin
 
 EXT. DALLAS'S DRIVEWAY - MORNING (s28.3)
 
-JANICE pulls up. She gets out. She and Dallas hug. She hands him HOWIE's leash. Dallas greets the little dog with affection. Howie's ears twitch. He's disturbed by something out in the tall grass. Dallas looks toward the creek.
+Dominic pulls up. He gets out. He and Dallas hug. They share a quiet morning beat. As Dominic heads off, Dallas's eyes catch something out in the tall grass. He's drawn toward it. Dallas looks toward the creek.
 
 EXT. CREEK BEND - DAY (s28.4)
 

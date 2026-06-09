@@ -1,7 +1,7 @@
 # Shooting Script Version
 ## Creatures in the Tall Grass — Summer
 
-This folder contains a **complete parallel script system** for the shooting script version, where Dallas is driven by audio signals and curiosity rather than being asked to watch Howie (the dog).
+This folder contains a **complete parallel script system** for the shooting script version, where Dallas is driven by audio signals and curiosity rather than by a pet-sitting favor.
 
 ### Folder Structure
 
@@ -20,17 +20,17 @@ shooting/
 ### Key Changes from Original
 
 **Core narrative shift:**
-- **Original**: Dallas is asked to watch Howie (dog); dog ties him to Dominic's family; dog's reactions signal danger
-- **Shooting**: Dallas is compelled by audio signals and his wife's unfinished research; his curiosity drives him deeper; he's more active/culpable
-
-**Affected scenes** (16 total):
-- s03, s04, s07, s08, s08b, s08d, s09, s10, s11, s13, s14, s14c, s16, s18, s19, s28
-
-In each:
-- Howie mentions removed
-- Dallas's agency increased
-- Audio signal pursuit becomes his primary motivation
+- Dallas is compelled by audio signals and his wife's unfinished research; his curiosity drives him deeper; he's more active/culpable
+- No dog: the pet-sitting thread is gone; Dallas's agency and the audio-signal pursuit are his primary motivation
 - Relationships shift (less about pet-sitting, more about research collaboration)
+
+**Family structure:**
+- Dominic (oldest sibling, early 40s), Makayla (22), and Asher (14) are siblings
+- Mr. Mike (mid 70s) is their uncle — the one they care for
+- The standalone aunt character has been removed; her beats fold into Dominic
+
+**Affected scenes:**
+- s03, s04, s06, s07, s07b, s08d, s11, s13, s14, s14c, s15b, s16, s17b, s17c, s18, s19, s26, s28
 
 ### How to Use This Folder
 

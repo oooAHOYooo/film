@@ -126,7 +126,7 @@ assigned-day: 2
 location: On Location (East Haven Nursery)
 time: 6:30 PM
 key-elements: 
-production-notes: REWRITE: Remove Howie character - Dallas explores alone using oscillator
+production-notes: Dallas explores alone using oscillator
 cast: Dallas
 
 ### scene: shadows-in-wind
@@ -153,8 +153,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice
-
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 ### scene: the-hum
 duration: 120
 shoot-days: 0.5
@@ -179,13 +178,13 @@ key-elements:
 production-notes: 
 cast: Dallas, Dominic, Pat
 
-### scene: howie-walk-2
+### scene: marsh-walk-2
 duration: 90
 shoot-days: 0.5
 assigned-day: 5
 time: 6:30 PM
 key-elements: 
-production-notes: REWRITE: Remove Howie character - Dallas explores alone using oscillator
+production-notes: Dallas explores alone using oscillator
 cast: Dallas, Dominic, Asher
 
 ### scene: the-burn-mark
@@ -227,7 +226,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 
 ### scene: creature-rescue
 duration: 120
@@ -260,7 +259,7 @@ assigned-day: 9
 time: 08:00 PM - 10:00 PM
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 
 ### scene: normal-day
 duration: 60
@@ -268,7 +267,7 @@ shoot-days: 0.5
 assigned-day: 9
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 
 ### scene: mute-drive
 duration: 60
@@ -276,7 +275,7 @@ shoot-days: 0.5
 assigned-day: 9
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 
 ### scene: s09c
 duration: 0
@@ -291,8 +290,8 @@ duration: 90
 shoot-days: 0.5
 assigned-day: 8
 key-elements: 
-production-notes: REWRITE: Remove Howie character - Dallas explores alone using oscillator
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+production-notes: Dallas explores alone using oscillator
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
 
 ### scene: the-hymn
 duration: 120
@@ -300,7 +299,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
 
 ### scene: red-eyes
 duration: 75
@@ -308,7 +307,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
 
 ### scene: the-failed-test
 duration: 75
@@ -339,9 +338,8 @@ duration: 75
 shoot-days: 0.5
 assigned-day: 11
 key-elements: 
-production-notes: REWRITE: Remove Howie character - Dallas explores alone using oscillator
-cast: Dallas, Makayla, Asher, Dominic, Janice
-
+production-notes: Dallas explores alone using oscillator
+cast: Dallas, Makayla, Asher, Dominic
 ### scene: creature-missing
 duration: 75
 shoot-days: 0.5
@@ -356,7 +354,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: Wraps
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
+cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
 
 ### scene: predator-attack
 duration: 120
@@ -389,7 +387,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: Wraps
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
+cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
 
 ### scene: aftermath
 duration: 90
@@ -398,7 +396,7 @@ assigned-day: 10
 location: EXT. Jerry's House — Afternoon
 key-elements: 
 production-notes: Afternoon shoot before nursery run
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
+cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
 
 ### scene: full-circle
 duration: 90
@@ -406,7 +404,7 @@ shoot-days: 0.5
 assigned-day: 10
 key-elements: 
 production-notes: Wraps
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Janice, Pat
+cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
 
 ### scene: limbo
 
@@ -1543,7 +1541,7 @@ NOTES:
 
 #### Beat: s07.1 — Coordinates discovered
 scene: s07
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 description: The group deciphers a coordinate pattern from Sierra's notes and the hum frequency, pinpointing a location deep in the marsh.
 shots:
   - WS - Group gathered around desk with maps and journal
@@ -1554,29 +1552,29 @@ shots:
 
 #### Beat: s07.2 — The plan forms
 scene: s07
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 description: With coordinates identified, the group debates whether to act — tension between urgency and caution.
 shots:
   - WS - Group around table, discussion heating up
   - MS - Dallas making the case for going
   - CU - Mr. Mike's skeptical reaction
-  - MS - Janice and Makayla exchanging looks
+  - MS - Dominic and Makayla exchanging looks
   - WS - The group, divided but leaning toward action
 
 #### Beat: s18.1 — The life group arrives
 scene: s18
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
-description: An unexpected crowd arrives — the Life Group, led by Janice, showing up for a scheduled gathering nobody cancelled.
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+description: An unexpected crowd arrives — the Life Group, led by Dominic, showing up for a scheduled gathering nobody cancelled.
 shots:
   - WS - Cars pulling up, people filing out
-  - MS - Janice at front, leading the group in
+  - MS - Dominic at front, leading the group in
   - CU - Dallas's face, unprepared for this
   - WS - Life Group moving into the house, filling the space
   - MS - Makayla pulling Dallas aside
 
 #### Beat: s18.2 — Awkward coexistence
 scene: s18
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
 description: The Life Group settles in while the core group scrambles to conceal their investigation and equipment.
 shots:
   - WS - Living room crowded with Life Group and scattered gear
@@ -1587,10 +1585,10 @@ shots:
 
 #### Beat: s19.1 — The hymn begins
 scene: s19
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
 description: The Life Group begins singing — a slow, resonant hymn with a frequency eerily close to the hum.
 shots:
-  - WS - Life Group arranged, Janice leading
+  - WS - Life Group arranged, Dominic leading
   - MS - Voices rising, hymn building
   - Detail - Oscillator on shelf beginning to flicker
   - CU - Dallas hearing it, registering the similarity
@@ -1598,7 +1596,7 @@ shots:
 
 #### Beat: s19.2 — Frequencies align
 scene: s19
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
 description: As the hymn swells, the hum beneath it rises in response — the frequencies begin to mirror each other.
 shots:
   - Detail - Oscillator reading climbing toward 115.3
@@ -1609,7 +1607,7 @@ shots:
 
 #### Beat: s20.1 — Red eyes in the dark
 scene: s20
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
 description: As the hymn peaks, someone near a window sees the creature — two red points of light in the dark grass.
 shots:
   - WS - Window, Life Group in foreground, dark yard beyond
@@ -1620,12 +1618,12 @@ shots:
 
 #### Beat: s20.2 — The secret is out
 scene: s20
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Janice, Life Group Extras
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
 description: The Life Group member screams. The room erupts. Dallas can no longer contain what's been happening.
 shots:
   - WS - Chaos, people scrambling
   - MS - Dallas stepping forward, no longer hiding it
-  - CU - Janice's face — anger or fear at Dallas
+  - CU - Dominic's face — anger or fear at Dallas
   - MS - Dallas addressing everyone, urgent
   - WS - The room fractured — some running, some frozen
 
@@ -1840,7 +1838,7 @@ NOTES:
 
 #### Beat: s17.1 — Resonance begins
 scene: s17
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 description: The hum reaches a specific frequency that causes physical reaction - glasses vibrate, equipment resonates.
 shots:
   - Detail - Objects vibrating on surfaces
@@ -1851,7 +1849,7 @@ shots:
 
 #### Beat: s17.2 — Physical effects
 scene: s17
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 description: The resonance intensifies - people feel it in their bodies, some hurt, disorientation.
 shots:
   - CU - Someone clutching their ears
@@ -1862,7 +1860,7 @@ shots:
 
 #### Beat: s17b.1 — A normal day memory
 scene: s17b
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 description: Amongst the chaos, someone recalls or experiences a flash of normal life - brief respite.
 shots:
   - Flashback - Sunny day, laughter
@@ -1873,7 +1871,7 @@ shots:
 
 #### Beat: s17c.1 — Mute drive
 scene: s17c
-cast: Dallas, Makayla, Asher, Dominic, Janice, Mr. Mike
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 description: Without speaking, communicating through looks and gestures - all sound is overwhelmed.
 shots:
   - WS - Group in silence, gesturing
