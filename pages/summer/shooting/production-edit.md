@@ -354,7 +354,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: The Load-Out — crew shoulders the MASTER RIG (amplifier pack + deep-cycle battery bank) at the tree line; Asher loops on his bead-string map. Heavy hero prop.
 production-notes: Wraps. REVISED for firefly-network climax — the heavy load is the master rig, NOT the old eighty-pound wooden speakers.
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
+cast: Dallas, Makayla, Asher, Dominic
 
 ### scene: predator-attack
 duration: 120
@@ -387,7 +387,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: Wraps
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
+cast: Dallas, Makayla, Asher, Dominic
 
 ### scene: aftermath
 duration: 90
@@ -404,7 +404,7 @@ shoot-days: 0.5
 assigned-day: 10
 key-elements: 
 production-notes: Wraps
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
+cast: Dallas, Makayla, Asher, Dominic
 
 ### scene: limbo
 

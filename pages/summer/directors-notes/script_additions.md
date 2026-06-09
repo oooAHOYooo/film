@@ -31,7 +31,8 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 ## Open items / watch-fors
 - **Practical props to build:** blinking amber listening-post nodes (need a field's worth for the wide shots / VFX plates), the master rig (amp + battery case as a believable heavy load), Asher's bead string (continuity from s07 → s28).
 - **VFX scope grew** at the climax: hundreds of node lights firing in unison + a rising swarm, vs. the old single golden BOOM. Budget/plan accordingly.
-- Cast lists on the marsh beats (s22 etc.) still list Mr. Mike/Pat from an older schedule — left untouched; clean up if inaccurate.
+- **Done:** cleaned the marsh cast lists — removed the stale Mr. Mike/Pat roster from **s22 (marsh-confrontation)**, **s26b (wrap)**, and **s28 (full-circle)** → now Dallas/Makayla/Asher/Dominic. Left **s27 (aftermath)** intact, where Pat (weather wrap) and Mr. Mike (church) legitimately appear.
+- **Also fixed:** s27.2 climax continuity — Dallas now finds the toppled **master rig** + still-blinking master node in the marsh, not the old "speakers knocked face-down in the mud."
 
 ---
 
