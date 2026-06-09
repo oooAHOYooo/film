@@ -4,6 +4,37 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 
 ---
 
+# CHANGE LOG — Firefly Network climax + continuity fixes
+*Applied 2026-06-09 · SHOOTING version only (`pages/summer/shooting/`). Committed `900e399` on `main`.*
+
+## Continuity fixes (surgical)
+| Scene | Fix |
+|---|---|
+| **s20** | "Cousin, listen—" → **"Dominic, listen—"** (he's her brother, not cousin). |
+| **s18** | Dead-mother continuity error fixed. JOSH "how's your mom doing?" / "She's doing better" → **"how's the family holding up?"** / **"We're getting by. Thanks."** (mother is deceased; kept same length). |
+| **s17c** | Repaired a broken speaker attribution — the garbled `DOMINIC / Makayla, what is / Something they aren't ready for.` is now **DOMINIC: "Makayla, what is it?"** → **MAKAYLA: "Something they aren't ready for."** |
+| **s03 / s12 / s16 / s17c** | Car consistency: every **"minivan" → "car"** (incl. the s17c scene heading); **"INT. DOMINIC's SISTER's CAR" → "INT. DOMINIC'S CAR"** in s03. |
+
+## Climax rewrite — The Firefly Network (replaces the 80-lb speaker finale)
+- **s24 (The Sanctuary & The Siege)** and **s25 (The Final Blast)** fully rewritten. The two eighty-pound wooden speakers are gone. New mechanism: the baby reunites with its **mother Elder**; the Red-Eyes breach the ring; Makayla's **single portable speaker isn't enough**; she triggers the **distributed firefly node network** planted across the marsh, all firing one note (115.3) at once for a concussive purge. **Dominic shields Asher** with his body over the master node.
+- **Setup plants seeded earlier** so the climax pays off:
+  - **s05** — already foreshadowed it ("the kids are always out here planting down cameras… geotagging"); left as-is, now reads as deliberate.
+  - **s07** — the ceiling beads are reframed as **Asher's hanging node-map** ("Every bead's a spot out in the grass we've tagged").
+  - **s14b** — "the quantity matters" now ties **each bead to a planted listening post**.
+  - **s15b** — NEW dusk **planting beat**: Makayla & Asher stake blinking nodes, Dallas: "Fireflies?", Makayla: "Listening posts," Asher threads a bead per node. *(The single most important plant.)*
+  - **s28** — the lair pack-up now shows them **collecting the nodes** / un-threading beads (closes the loop).
+- **s22 (The Load-Out) & s23 (The Trench Run)** reworked so the crew hauls the **MASTER RIG** (amplifier pack + deep-cycle battery bank — "the heart that will wake the whole field") to stake at the ring's dead center, instead of the eighty-pound speakers. All the storm / mud / exhaustion / Asher-throws-his-voice danger beats are intact. Makayla's small handheld speaker survives as the "one won't ever be enough" device.
+
+## Production plan updated (shooting version)
+- `production-edit.md` `key-elements` / `production-notes` updated for **the-tracking-box (s15b)**, **marsh-confrontation (s22)**, **predator-attack (s23)**, **the-perimeter (s24)**, **the-last-dinner (s25)** — flagged "REVISED — firefly-network climax (no eighty-pound speakers)", master-rig hero prop, practical blinking nodes + Asher's bead string, and the VFX needs (golden dome, swarm ignition). Re-synced to `production-data.json` and regenerated the call sheets.
+
+## Open items / watch-fors
+- **Practical props to build:** blinking amber listening-post nodes (need a field's worth for the wide shots / VFX plates), the master rig (amp + battery case as a believable heavy load), Asher's bead string (continuity from s07 → s28).
+- **VFX scope grew** at the climax: hundreds of node lights firing in unison + a rising swarm, vs. the old single golden BOOM. Budget/plan accordingly.
+- Cast lists on the marsh beats (s22 etc.) still list Mr. Mike/Pat from an older schedule — left untouched; clean up if inaccurate.
+
+---
+
 # CHANGE LOG — Janice & Howie removed, Dominic recast as sibling
 *Applied 2026-06-09 · SHOOTING version only (`pages/summer/shooting/`). The original `script-system/` was not touched.*
 

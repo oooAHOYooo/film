@@ -321,9 +321,9 @@ cast: Dallas, Makayla
 duration: 90
 shoot-days: 0.5
 assigned-day: 6
-key-elements: 
-production-notes: 
-cast: Dallas, Makayla
+key-elements: Dusk planting beat — Makayla & Asher stake blinking listening-post nodes into the reeds (Dallas reads them as fireflies); Asher threads a bead per node. Plants the firefly-network climax.
+production-notes: Need practical blinking amber nodes + Asher's bead string (continuity props running through s24/s25/s28).
+cast: Dallas, Makayla, Asher
 
 ### scene: dominics-confession
 duration: 45
@@ -352,24 +352,24 @@ cast: Dallas, Makayla, Asher, Dominic
 duration: 90
 shoot-days: 0.5
 assigned-day: 7
-key-elements: 
-production-notes: Wraps
+key-elements: The Load-Out — crew shoulders the MASTER RIG (amplifier pack + deep-cycle battery bank) at the tree line; Asher loops on his bead-string map. Heavy hero prop.
+production-notes: Wraps. REVISED for firefly-network climax — the heavy load is the master rig, NOT the old eighty-pound wooden speakers.
 cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
 
 ### scene: predator-attack
 duration: 120
 shoot-days: 0.5
 assigned-day: 7
-key-elements: 
-production-notes: 
+key-elements: The Trench Run — hauling the master rig through 10ft grass in the storm; Makayla sweeps her handheld speaker like a flashlight; Red-Eye patrol; Asher throws his voice to misdirect it.
+production-notes: Heavy hero prop = master rig (amp + battery bank), not speakers. Practical: blinking green LED on Makayla's chest rig as sole light source.
 cast: Dallas, Makayla, Asher, Dominic
 
 ### scene: the-perimeter
 duration: 150
 shoot-days: 0.5
 assigned-day: 7
-key-elements: 
-production-notes: 
+key-elements: Sanctuary ring of flattened grass; Golden Elders + golden dome; baby reunites with mother Elder; Red-Eye siege breaches the ring; Makayla's single portable speaker isn't enough — reveal of the planted firefly node network across the marsh; Asher reads the bead map.
+production-notes: REVISED — firefly-network climax (no eighty-pound speakers). VFX: golden dome, red-eye shadows, distant blinking nodes scattered through the reeds.
 cast: Dallas, Makayla, Asher, Dominic
 
 ### scene: the-last-dinner
@@ -377,8 +377,8 @@ duration: 150
 shoot-days: 0.5
 assigned-day: 7
 time: 7:00 PM – 9:00 PM
-key-elements: 
-production-notes: 
+key-elements: Master node staked at dead center; Dallas matches the mother Elder's note (115.3); Asher hums + traces beads; Dominic shields Asher over the node; the whole-marsh firefly swarm ignites at once — concussive purge clears the Red-Eyes and the contagion; Elders + rising swarm depart.
+production-notes: REVISED — firefly-network climax (no eighty-pound speakers). VFX-heavy: hundreds of amber node lights firing in unison across hundreds of yards, then lifting into a rising swarm.
 cast: Dallas, Makayla, Asher, Dominic
 
 ### scene: s26b
