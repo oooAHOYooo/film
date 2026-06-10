@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/9/2026, 11:51:45 PM*
+*Compiled on 6/9/2026, 11:57:12 PM*
 
 ---
 
@@ -279,7 +279,7 @@ EXT. DALLAS NEW HOUSE - DAY (s01.1)
 
 Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
 
-Dallas goes into the grass a little bit. He stops. At the edge of the reeds is a jagged, dead patch of earth—a circle of black, oily rot where nothing grows. In the center of the rot, a single wooden stake has been driven into the ground, but it’s been snapped off, the top half gone. 
+Dallas goes into the grass a little bit. He stops. At the edge of the reeds is a jagged, dead patch of earth—a circle of brittle, colorless grass where nothing grows. In the center of it, a single wooden stake has been driven into the ground, but it’s been snapped off, the top half gone. 
 
 As Dallas examines the broken wood, he hears a distinct bicycle ring.
 
@@ -3490,7 +3490,7 @@ Makayla looks onward and sprints towards the darkness.
 
 <!-- scene: 21 file: s21.md nickname: creature-missing -->
 
-# Scene 21: The Burn Marks
+# Scene 21: Into the Grass
 
 <!-- GOING TO FILM ON : Day 11 = Wednesday -->
 
@@ -3531,18 +3531,18 @@ Asher backs toward the door. He stays with the old man.
 
 EXT. MARSH - EDGE (s22.1)
 
-The crew gears up. Dallas shoulders the directional emitter — a single horn-loaded speaker wired to the rig, light enough to carry but built to throw one overdriven pulse — and keeps the handheld tracker. He moves fast and sure; he knows exactly what this thing can do.
+The crew gears up. Dallas shoulders his broadcast rig — the oscillator, the spare Makayla gave him, a coil of cable — and keeps the handheld tracker. He moves fast and sure; he has the creature's call rebuilt and ready.
 
 Dominic carries no tech. He steps to the front, jaw set. He can feel it out there in the dark, and there's no version of this where he lets his family walk in without him. He shoulders the backpack with the baby creature and goes first.
 
-They have one device and one shot. If they can reach the center and get the pitch dead-on, they fire it once, right down the throat of whatever's waiting.
+The plan is thin and Dallas knows it. Reach the center, push the creature's own call out through every recorder they planted across the marsh, and call its kind home to it.
 
 Asher stayed back at the house with Mr. Mike. The old man is shaking, agitated, hates every second of this, and someone has to keep him calm. The three of them go in now.
 
 <!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 
 (action)
-Makayla reaches for her chest and comes up empty. Her whole rig is still at the lair — the oscillator, the crystal, the dial.
+Makayla reaches for her chest and comes up empty. Her whole rig is still at the lair — the oscillator, the dial, all of it.
 
 MAKAYLA
 My gear's back at the wigwam. Two minutes.
@@ -3556,7 +3556,7 @@ INT. MAKAYLA'S LAIR - CONTINUOUS (s22.2)
 
 Makayla ducks through the low opening of the wigwam, a wooden dome lashed together at the edge of the woods. Inside, her maps and Sierra's old drawings are still spread across the floor.
 
-She goes straight to the gear bench and straps on the chest rig. She seats the oscillator, clips the translucent crystal into place, and thumbs the dial until the screen wakes with a thin green line. She grabs the small portable speaker and pushes it into her bag.
+She goes straight to the gear bench and straps on the chest rig. She seats the oscillator and thumbs the dial until the screen wakes with a thin green line. She grabs the small portable speaker and pushes it into her bag.
 
 Makayla takes one last look at the maps on the floor, then ducks back out into the dark.
 
@@ -3847,88 +3847,77 @@ We're done shouting at them. I'm sending its own call back out, through every re
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
-# Scene 25: The Final Blast
+# Scene 25: The Answer
 
 EXT. CENTER OF THE MARSH - CONTINUOUS (s25.1)
 
-Everything happens at once — a swirl of light and shadow and rain.
+Dallas presses both thumbs to the oscillator and pushes the creature's call out into the storm — the pulse he rebuilt over all those nights, fed through the spare and out across every recorder staked in the marsh.
 
-Dallas drops flat behind the emitter and works the dial with both thumbs. He already knows the pitch — the number Mr. Mike has been screaming for days.
+For a moment the call rolls out over the grass, steady and clear under the howl of the wind.
 
-DALLAS
-(to himself)
-One-one-five-three.
-
-<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
-
-(action)
-The needle snaps to it. **115.3.**
-
-<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
-
-(action)
-The Red-Eyes pile onto the mother. She holds her note as long as she can, her golden fur dimming under the black rot, still curled around the baby and still singing.
-
-Makayla is close, on her knees, watching.
-
-MAKAYLA
-No — NO —
-
-<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
-
-(action)
-The mother gives one last, low, shuddering note — and the shadows tear her down. Her light goes out. The black rot swallows where she stood.
-
-The baby, knocked clear, tumbles into the flattened grass and goes still.
-
-<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
-
-(action)
-Dallas locks the emitter on the swarm.
+The Red-Eyes keep coming. The figures pour over the flattened ring, dragging their bramble arms through the mud toward the mother and the baby. Dallas grits his teeth and holds the call. It pushes them back a step, and then no further.
 
 DALLAS
-Get down!
+(straining)
+Come on. Come on. One source was never going to be enough —
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
-He fires.
-
-It is a single, concentrated lance of sound — a column of pure pressure that punches out of the horn and tears straight through the center of the swarm. The recoil throws Dallas backward into the mud.
-
-The wall of Red-Eyes in its path recoils, letting out a horrific gnashing shriek as the frequency literally burns them. The black rot peels off the ground and ignites into thin grey smoke.
-
-The beam holds for one long, screaming second — then every shadow in its cone caves inward and vaporizes, harmless smoke scattering on the wind. The rest break and flee into the storm.
-
-Everything goes silent. The wind stops.
+The mother is failing. The Red-Eyes pile onto her, and her golden light dims under the weight of them.
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
-Dallas slowly sits up, ears ringing. He looks at his wrist — the black, rotting veins under his skin are gone. Makayla stares at her own clean forearm. The pulse purged the contagion from the earth and from their blood.
+Then, far out in the dark, one of the spherical recorders tears up off its stake.
 
-<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
+It streams through the air toward the center of the ring, drawn as if something has reached out and pulled it. Another rips loose behind it. Then a dozen. Then the whole field.
 
-(action)
-Dominic stands frozen in the middle of it all, soaked, staring at the smoking ground where dozens of monsters just were. His mouth works. Nothing comes out. He cannot make this fit inside anything he believes.
+Across hundreds of yards of marsh, every recorder the crew ever planted pulls up out of the reeds and flies inward, homing on the creature. The crew built these to hunt it. Now they watch them become its voice.
 
 DOMINIC
-(barely)
-That's not... that's not possible. None of this is —
+(staring up)
+What is that... what are they doing...
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
-Then the protector in him snaps back online. He grabs Makayla by the arm, pulls Dallas up by the collar.
+The recorders converge on the baby and the mother, a streaming halo of small machines, and as they gather they pour the call back out a thousandfold — the creature's own voice, answered and amplified from every direction at once.
 
-DOMINIC
-We're not staying to find out. Up. Move. Go, go, GO —
+<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
+
+(action)
+The Red-Eye figures stop.
+
+The red eyes flicker. The brush that holds their shape loses its grip, and the tangles of grass and bramble come apart in the wind. One by one the figures collapse into ordinary piles of dead leaves and reeds, scattering low across the mud. The red eyes go dark.
+
+The wind drops. The marsh goes quiet.
+
+<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
+
+(action)
+In the calm, the mother lowers herself into the flattened grass with the baby still tucked against her. Her golden light is very faint now, guttering like a candle at the end of its wick.
+
+She presses her brow to the baby one last time. Then her light thins and lifts off her, gold rising into the night air, and she goes out softly and scatters on the breeze.
+
+Where she lay, only flattened grass remains.
 
 INT. DALLAS'S HOUSE - NIGHT (s25.2)
 
-The needle on Asher's machine falls still. Out the window, the rain thins.
+At the same moment, the hum outside climbs to a scream and the windows shudder in their frames. Mr. Mike comes up out of the rocking chair, his breath tearing, his hands clawing at the air. The words will not come. His eyes are wide and fixed on the black glass.
 
-Mr. Mike, who has been rocking and fighting all night, suddenly goes quiet. The agitation drains out of him. His clenched hands ease open. He gazes out at the dark marsh, and for the first time all night his face is calm.
+MR. MIKE
+(gasping)
+They're in the eaves — they're in the eaves — I can't — I can't —
+
+<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
+
+(action)
+Asher moves without thinking. He steps in front of the old man, takes him by the shoulders, and begins to sway, slow and side to side, the way Makayla does for him. He hums one low, steady note and presses Mr. Mike's hand flat against his own chest so the old man can feel it.
+
+Asher stays quiet, swaying and humming with his hand over Mr. Mike's.
+
+Slowly, Mr. Mike's breath finds the rhythm of the sway. His hands settle. The fight goes out of him, and he sags against the boy, calm at last.
 
 MR. MIKE
 (a whisper)
@@ -3937,15 +3926,15 @@ There. There they go.
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
-Asher holds onto him and follows his gaze toward the grass.
+Out the window, the rain begins to thin.
 
 EXT. CENTER OF THE MARSH - CONTINUOUS (s25.3)
 
-Dominic is herding them toward the gap in the reeds — and Dallas stops.
+Dominic is the first to move, herding them toward the gap in the reeds. Dallas stops.
 
-Out across the ruined clearing, in the settling smoke, something small moves in the flattened grass.
+Out across the ruined clearing, in the settling quiet, something small moves in the flattened grass.
 
-It is the baby, alive, pulling itself up out of the mud where the mother fell, its neck-glow flickering faint gold. It takes a few unsteady steps away from them, toward the open dark, then stops.
+It is the baby, alive, pulling itself up out of the spot where the mother lay, its neck-glow flickering faint gold. It takes a few unsteady steps away from them, toward the open dark, then stops.
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
@@ -3959,7 +3948,7 @@ For a long moment, none of them move. Dallas, who lost everything, Makayla, who 
 (action)
 The baby holds Dallas's eyes a beat longer. Something passes between them that feels like recognition, a thank you and a goodbye at once.
 
-Then its small body softens at the edges, gold light bleeding off it into the night air — and it dissolves, scattering into the ether like breath on a cold morning, until the grass where it stood is empty.
+Then its small body softens at the edges, gold light bleeding off it into the night air, and it dissolves, scattering into the ether like breath on a cold morning, until the grass where it stood is empty.
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
@@ -4038,7 +4027,7 @@ EXT. BRANFORD - DAY (s27.1)
 The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved.
 
 EXT. CENTER OF THE MARSH - DAY (s27.2)
-Dallas walks alone into the flattened ring of grass from the night before. The storm is gone. He finds the gear they left behind in the flight — the directional emitter knocked on its side, the oscillator screen cracked but still faintly glowing. He picks it up. The screen shows a saved file: one clean recording.
+Dallas walks alone into the flattened ring of grass from the night before. The storm is gone. He finds the gear they left behind in the flight — his oscillator and one of the spherical recorders, half-sunk in the mud, the screen cracked but still faintly glowing. He picks it up. The screen shows a saved file: one clean recording.
 
 He presses play. The sound fills the quiet marsh— it is the tune from the golden furry creatures, captured clean. 
 
@@ -4085,7 +4074,7 @@ EXT. MAKAYLA'S LAIR - DAY (s28.1)
 
 Makayla walks up to the wooden structure in the woods. Asher is already there, but they aren't building—they are packing up. The trail cameras are being taken down. The massive array of wires is being rolled into neat coils. Out in the reeds the little amber nodes are going dark one by one as Asher gathers them in — and for each one he collects, he slips a single bead off the string around his neck.
 
-Makayla pulls the small, translucent crystal out of her pocket. She connects it to her portable oscillator one last time. 
+Makayla pulls her portable oscillator out of her bag and powers it up one last time. 
 
 The screen flares to life. Suddenly, the clean, perfect, golden sine wave spikes violently into a jagged red pattern. 
 
@@ -4112,7 +4101,7 @@ She looks at Asher, who is perfectly calm.
 
 Makayla lets out a long, shuddering breath. She accepts the correction. The tension leaves her shoulders. She smiles, finally letting the interpretation go. 
 
-She reaches down and actively unplugs the machine. The screen goes dark. She drops the crystal into her pocket, zips her gear bag, and they walk out of the woods together.
+She reaches down and actively unplugs the machine. The screen goes dark. She drops her mom's small stone back into her pocket, zips her gear bag, and they walk out of the woods together.
 
 INT. DALLAS'S BEDROOM - NIGHT (s28.2)
 

@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 6/9/2026, 9:39:30 PM*
+*Compiled on 6/9/2026, 11:57:12 PM*
 
 ---
 
@@ -9,6 +9,44 @@
 # Script Additions
 
 Notes and ideas to add or change in the script. Use this as a running list; you can also add scene-specific additions in each scene’s director note.
+
+---
+
+# CHANGE LOG — Style pass + the climax becomes "The Answer" (call amplification, not a blast)
+*Applied 2026-06-09 23:57 EDT · SHOOTING version only (`pages/summer/shooting/`). **Supersedes the single-emitter climax logged below** — the weapon is no longer one destructive pulse; the recorder network returns, reframed as the creature's amplified voice. The Golden Elders are cut to a single mother. Leaf monsters replace the shadow-rot.*
+
+## Standing prose-style directive (all shooting-script writing from here on)
+Prose is plain and declarative. Banned: the "not X, but Y" antithesis, the "this isn't X, it's Y" reframe, the "not just X" intensifier, dramatic sentence fragments, and the rule-of-three rhythm. State what happens and let the image carry it. Full pass done over s21–s25 (e.g. "a pair of eyes. Bright. Dim. Bright. Red. And then gone." -> "a pair of red eyes flares bright, dims, and disappears"; "Silence. Total silence. The wind stops." -> "Everything goes silent. The wind stops").
+
+## The Golden Elders are gone — one mother and her child
+| Scene | Change |
+|---|---|
+| **s24** (retitled **"The Mother & The Swarm"**, was "The Sanctuary & The Siege") | Removed the circle of GOLDEN ELDERS, the woven-grass sanctuary wall, and the humming golden dome. The center is now a small flattened clearing with **a single mother creature** glowing faint gold. The reunion is witnessed up close by Makayla; the mother bows to her, then to Dallas. |
+| **s25** | All Elder / ring / sanctuary references removed. |
+
+## The monsters are "leaf monsters" — dead grass and bramble, not shadow-rot
+The Red-Eyes are recast as **car-sized tangles of dead leaves, grass, and bramble that lurch upright with red eyes burning inside**. The black-rot "veins" become matted dead leaves and brittle reeds (s23). When destroyed they **come apart into ordinary piles of leaves and reeds** (s25).
+
+## The weapon is the creature's own call, amplified by the whole recorder field
+The destructive single-pulse emitter is dropped. New plan, stated in **s22**: reach the center, push the creature's own call out through every recorder they planted across the marsh, and call its kind home to it.
+- **s22** — Dallas carries a **broadcast rig** (oscillator, the spare Makayla gave him, a coil of cable) — "he has the creature's call rebuilt and ready."
+- **s24** — Makayla's handheld speaker fires once and dies; Dallas commits: *"We're done shouting at them. I'm sending its own call back out, through every recorder we ever planted."*
+- **s25** (retitled **"The Answer"**, was "The Final Blast") — one source is not enough; then **every recorder the crew ever planted tears off its stake and flies inward**, converging on the mother and baby and pouring the call back **a thousandfold**. *"The crew built these to hunt it. Now they watch them become its voice."* The amplified call **un-makes the leaf monsters** — the brush loses its grip and collapses into dead leaves, the red eyes go dark, the wind drops.
+
+## Makayla gears up at her wigwam lair (new beat, s22)
+The men gear at the marsh edge; then **Makayla realizes her rig is still at her lair** — "My gear's back at the wigwam. Two minutes." New **INT. MAKAYLA'S LAIR (s22.2)**: she ducks into the wigwam (maps and Sierra's drawings still on the floor), straps on the chest rig, seats the oscillator, grabs the portable speaker, and runs back.
+
+## Getting lost in the grass (new beat, s23)
+After the three regroup in the pitch dark, **Dallas's tracker loses the creature's signal**; they double back, the grass swallows the path, and they end up turned around. Then **the red eyes flash on out in the grass** (one, then a dozen) — feeding into Makayla's "I saw the creature but it vanished… those things are after it." Makayla leads from here.
+
+## The mother dies softly; Asher calms Mr. Mike by mirroring
+- **s25** — with the monsters gone, the **exhausted mother lowers herself with the baby tucked against her, her light guttering like a candle**, presses her brow to it one last time, and **scatters on the breeze**. She is not torn apart now; she gives out. Only flattened grass remains.
+- **s25.2 (house)** — at the peak Mr. Mike panics ("they're in the eaves"); **Asher steps in, sways and hums the way Makayla does for him, hand pressed to the boy's chest**, until the old man's breath finds the rhythm and he goes calm: *"There. There they go."*
+- The **baby survives**, looks back at Dallas and Makayla, and **dissolves into the ether**. They saved the child and lost the mother; it leaves alone.
+
+## Recompiled
+- `node pages/summer/shooting/script-system/compile.js` — full_script.md/.html, plot cards, gallery (40 scenes).
+- `node pages/summer/directors-notes/compile.js` — full_notes.md/.html.
 
 ---
 
