@@ -9,7 +9,6 @@ or from this directory:
 
 - `dallas.md` — Dallas
 - `dominic.md` — Dominic
-- `makayla.md` — Makayla
 - `asher.md` — Asher
 - `mr-mike.md` — Mr. Mike
 - `janice.md` — Janice

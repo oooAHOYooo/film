@@ -19,7 +19,6 @@ const ACTORS_FILE = path.join(DIR, 'actors.json');
 const SHEETS = [
   { id: 'dallas', file: 'dallas', title: 'Dallas' },
   { id: 'dominic', file: 'dominic', title: 'Dominic' },
-  { id: 'makayla', file: 'makayla', title: 'Makayla' },
   { id: 'asher', file: 'asher', title: 'Asher' },
   { id: 'mr-mike', file: 'mr-mike', title: 'Mr. Mike' },
   { id: 'janice', file: 'janice', title: 'Janice' },
