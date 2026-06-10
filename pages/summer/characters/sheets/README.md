@@ -11,7 +11,6 @@ or from this directory:
 - `dominic.md` — Dominic
 - `asher.md` — Asher
 - `mr-mike.md` — Mr. Mike
-- `janice.md` — Janice
 
 Use a `# Name` heading at the top, then bullet points (`-` or `*`). The compile script supports headings, lists, and paragraphs.
 
