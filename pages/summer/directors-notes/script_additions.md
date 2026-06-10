@@ -4,6 +4,36 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 
 ---
 
+# CHANGE LOG — Family continuity patch: Makayla fully cut · "Blood matters less than who stayed"
+*Applied 2026-06-10 14:50 EDT · SHOOTING version only (`pages/summer/shooting/`). Locks the post-Makayla family continuity: Dominic and Asher are brothers (much older / much younger, possibly not blood), Mr. Mike is "uncle" because he took people in and stayed. Earlier change-log entries below still name Makayla; they are historical records of drafts that predate the cut.*
+
+## Script fixes (the last two Makayla traces)
+| Scene | Change |
+|---|---|
+| **s03** (The Hum, sidewalk walk) | Dominic's car line no longer points to a sister. Was *"…but yeah, I share one with my sister."* Now: *"…but the car's mostly for getting Mike around."* Plants the caretaker thread before Dallas ever meets Mike. |
+| **s07** (The Coordinates, basement photo beat) | One beat added inside Dominic's existing speech: *"No kid now, no wife now. Just my brother. And our uncle Mike. (beat) Not blood, maybe. But that's the house. My lot in life. I'll take it."* One private truth slips out; no family tree. |
+
+## Continuity verified, not changed
+- s14 keeps *"Our moms gone too. Me and Asher - and our uncle Mike. That's the house now."* — the "maybe" in s07 keeps the ambiguity honest, so the two scenes read as one family told in fragments.
+- Act 3 blocking confirmed: Dallas carries the rig and the plan, Dominic goes in because he won't let his family walk in without him, Asher stays home with Mr. Mike and matters through the recorder field he planted.
+- Greps across shooting scenes + compiled output: zero hits for Makayla, sister, nephew, niece, "the kids". Production data (cast lists, day pages) already clean.
+
+## Character sheets pruned to the actual cast
+- Deleted **makayla.md**, **howie.md**, **janice.md** (and their generated pages); none of the three appear in the shooting script.
+- Asher's sheet: "Makayla's younger brother" → **"Dominic's much younger brother."**
+- Roster is now exactly **Dallas · Dominic · Asher · Mr. Mike**.
+- `shooting/README.md` family-structure section rewritten to the patched-together-family continuity.
+
+## Still naming Makayla / Janice (left alone on purpose)
+The old base `script-system/` draft, `treatment.md` (own publish workflow), archives, and `props/wardrobes.md` — the wardrobes file is worth a manual pass.
+
+## Recompiled
+- `node pages/summer/shooting/script-system/compile.js` — full_script.md/.html, plot cards, gallery.
+- `node pages/summer/characters/compile.js` — character pages + index.
+- `node pages/summer/directors-notes/compile.js` — full_notes.md/.html.
+
+---
+
 # CHANGE LOG — Style pass + the climax becomes "The Answer" (call amplification, not a blast)
 *Applied 2026-06-09 23:57 EDT · SHOOTING version only (`pages/summer/shooting/`). **Supersedes the single-emitter climax logged below** — the weapon is no longer one destructive pulse; the recorder network returns, reframed as the creature's amplified voice. The Golden Elders are cut to a single mother. Leaf monsters replace the shadow-rot.*
 
