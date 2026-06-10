@@ -62,7 +62,17 @@
       "Skill(run)",
       "Bash(screencapture -x /tmp/shooting_production_screenshot.png)",
       "Bash(Start-Process *)",
-      "PowerShell(Start-Process \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\\\\summer\\\\shooting\\\\production\\\\days\\\\1.html\")"
+      "PowerShell(Start-Process \"C:\\\\Users\\\\agonzalez7\\\\film\\\\pages\\\\summer\\\\shooting\\\\production\\\\days\\\\1.html\")",
+      "Bash(head -40 README.md)",
+      "Bash(head -30 sync-production.js)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(echo \"final exit:$?\")",
+      "Bash(echo \"dash exit:$?\")",
+      "Bash(node script-system/compile.js)",
+      "Bash(cp script-system/full_script.md script-system/creatures_in_the_tall_grass_full_script__9_.md)",
+      "Bash(node pages/summer/shooting/script-system/compile.js)",
+      "Bash(node pages/summer/directors-notes/compile.js)",
+      "Bash(cp pages/summer/shooting/script-system/full_script.md pages/summer/shooting/script-system/creatures_in_the_tall_grass_full_script__10_.md)"
     ]
   }
 }
