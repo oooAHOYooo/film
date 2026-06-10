@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/10/2026, 12:36:08 PM*
+*Compiled on 6/10/2026, 2:11:47 PM*
 
 ---
 
@@ -520,7 +520,7 @@ DALLAS
 No - no car.
 
 DOMINIC
-Yeah. Me neither - well I drive - for sure, but yeah, I share one with my sister.
+Yeah. Me neither - well I drive - for sure, but the car's mostly for getting Mike around.
 
 EXT. TOWN BRANFORD MONTAGE (s03.3)
 
@@ -926,7 +926,9 @@ I had a family once.
 Dallas falls mute. 
 
 DOMINIC
-No kid now, no wife now. Just my brother. And our uncle Mike. My lot in life. I'll take it.
+No kid now, no wife now. Just my brother. And our uncle Mike.
+(beat)
+Not blood, maybe. But that's the house. My lot in life. I'll take it.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 

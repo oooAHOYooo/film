@@ -25,8 +25,10 @@ shooting/
 - Relationships shift (less about pet-sitting, more about research collaboration)
 
 **Family structure:**
-- Dominic (oldest sibling, early 40s), Makayla (22), and Asher (14) are siblings
-- Mr. Mike (mid 70s) is their uncle — the one they care for
+- Makayla has been cut from the film entirely
+- Dominic (early 40s) and Asher (14) are brothers — much older / much younger, possibly not blood; a patched-together, taken-in family
+- Mr. Mike (mid 70s) is "Uncle Mike" — the older figure they care for; "uncle" because he took people in and stayed, not necessarily blood
+- Dominic had a wife and child once; they are gone. Blood matters less than who stayed.
 - The standalone aunt character has been removed; her beats fold into Dominic
 
 **Affected scenes:**
