@@ -63,10 +63,11 @@ function loadProductionData() {
 
 function nicknameToTitle(nickname) {
   if (!nickname) return '';
-  return nickname
+  const title = nickname
     .split(/[\s-]+/)
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(' ');
+  return title.toLowerCase() === 'mr mike' ? 'Mr. Mike' : title;
 }
 
 // Parse first INT. / EXT. line in scene content → { location, time }
@@ -412,7 +413,7 @@ function getProductionStyles() {
 }
 
 function buildCastDateSummary(rows, productionData) {
-  const mainCast = ['Dallas', 'Dominic', 'Makayla', 'Asher'];
+  const mainCast = ['Dallas', 'Dominic', 'Asher'];
   const mainCastLookup = new Map(mainCast.map((name) => [name.toLowerCase(), name]));
   const calendar = productionData.calendar || {};
 
@@ -922,8 +923,7 @@ function generateDayHtml(dayNum, rows, productionData) {
           <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">
             ${cast.length ? escapeHtml(cast.map((name) => nicknameToTitle(name)).join(', ')) : '—'}
           </div>
-        </div>
-        ${shotsHtml}
+        </div>${shotsHtml}
       </li>`;
     }
 

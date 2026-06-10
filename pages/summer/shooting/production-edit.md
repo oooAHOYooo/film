@@ -35,8 +35,8 @@ shoot-days: 0.5
 assigned-day: 0
 location: Branford Train Station / Streets / Marsh Edge
 time: Early Morning / Continuous
-key-elements: Dallas arrival montage + M&A planting traps + hum reaction
-production-notes: No dialogue. Parallel intercutting. Introduce equipment: trail cameras, boom pole, acoustic traps, folding trowels.
+key-elements: Dallas arrival montage intercut with Asher planting acoustic traps and reacting to the hum
+production-notes: No dialogue. Preserve Asher’s woods equipment: trail cameras, boom pole, acoustic traps, folding trowel, and concealed microphone array.
 cast: Dallas, Asher
 props:
   - Dallas's suitcase or worn travel bag
@@ -109,7 +109,7 @@ shoot-days: 0.5
 assigned-day: 12
 key-elements: 
 production-notes: 
-cast: Dallas, Dominic, Asher, Mr Mike
+cast: Dallas, Dominic, Asher
 
 ### scene: s09b
 duration: 0
@@ -145,7 +145,7 @@ shoot-days: 0.5
 assigned-day: 11
 key-elements: 
 production-notes: 
-cast: Dallas, Dominic, Asher, Mr Mike
+cast: Dallas, Dominic, Mr. Mike
 
 ### scene: final-echoes
 duration: 60
@@ -153,14 +153,15 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+cast: Dallas, Dominic
+
 ### scene: the-hum
 duration: 120
 shoot-days: 0.5
 assigned-day: 3
 key-elements: 
 production-notes: 
-cast: Dallas, Dominic, Pat
+cast: Dallas, Dominic
 
 ### scene: marsh-walk-later
 duration: 60
@@ -168,7 +169,7 @@ shoot-days: 0.5
 assigned-day: 3
 key-elements: 
 production-notes: 
-cast: Dallas, Dominic, Pat
+cast: Dallas, Dominic
 
 ### scene: news-vans
 duration: 90
@@ -176,7 +177,7 @@ shoot-days: 0.5
 assigned-day: 12
 key-elements: 
 production-notes: 
-cast: Dallas, Dominic, Pat
+cast: Dallas, Dominic, Pat Clendenen
 
 ### scene: marsh-walk-2
 duration: 90
@@ -194,7 +195,7 @@ assigned-day: 5
 time: 7:30 PM
 key-elements: 
 production-notes: 
-cast: Dallas, Dominic, Asher
+cast: Dallas, Dominic
 
 ### scene: s27a
 duration: 0
@@ -218,7 +219,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+cast: Dallas, Dominic, Asher
 
 ### scene: the-coordinates
 duration: 150
@@ -226,7 +227,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+cast: Dallas, Dominic, Asher, Mr. Mike
 
 ### scene: creature-rescue
 duration: 120
@@ -234,15 +235,15 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+cast: Dallas, Dominic, Asher
 
 ### scene: the-field-journal
 duration: 90
 shoot-days: 0.5
 assigned-day: 4
-key-elements: 
-production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+key-elements: Dallas and Asher compare Sierra’s field journal, the creature drawings, the red-eye transformation, the marsh listening posts, and the repeating signal pattern.
+production-notes: Preserve the quiet Dallas/Asher triangulation beat at the picnic table: journal pages, bead string, listening-post map logic, and the warning that the creatures are listening.
+cast: Dallas, Asher
 
 ### scene: the-almost-discovery
 duration: 90
@@ -250,7 +251,7 @@ shoot-days: 0.5
 assigned-day: 4
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+cast: Dallas, Dominic
 
 ### scene: resonance
 duration: 120
@@ -259,7 +260,7 @@ assigned-day: 9
 time: 08:00 PM - 10:00 PM
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+cast: Dallas
 
 ### scene: normal-day
 duration: 60
@@ -267,7 +268,7 @@ shoot-days: 0.5
 assigned-day: 9
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+cast: Dallas, Dominic
 
 ### scene: mute-drive
 duration: 60
@@ -275,7 +276,7 @@ shoot-days: 0.5
 assigned-day: 9
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike
+cast: Dallas, Dominic
 
 ### scene: s09c
 duration: 0
@@ -291,7 +292,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: Dallas explores alone using oscillator
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Dominic, Mr. Mike, Life Group Extras
 
 ### scene: the-hymn
 duration: 120
@@ -299,7 +300,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Dominic, Mr. Mike, Life Group Extras
 
 ### scene: red-eyes
 duration: 75
@@ -307,7 +308,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Dominic
 
 ### scene: the-failed-test
 duration: 75
@@ -321,9 +322,9 @@ cast: Dallas
 duration: 90
 shoot-days: 0.5
 assigned-day: 6
-key-elements: Dusk planting beat — Asher stakes blinking listening-post nodes into the reeds (Dallas reads them as fireflies); Asher threads a bead per node. Establishes Asher's gift / the kid geotagging the marsh.
-production-notes: Practical blinking amber nodes + Asher's bead string (continuity props, s07→s28). NOTE: with the reworked single-emitter climax these no longer fire as a weapon — kept as worldbuilding pending a decision to trim.
-cast: Dallas, Asher
+key-elements: Asher leads Dallas and Dominic through his listening-post network to the hidden woods lair, demonstrating the amber nodes, bead count, trail cameras, recorders, cables, and spare oscillator.
+production-notes: Preserve Asher’s practical woods equipment and continuity: blinking amber listening posts, bead string, wooden chest, trail cameras, pocket tripod, pocket microphone, cables, contact transducers, and spare oscillator.
+cast: Dallas, Dominic, Asher
 
 ### scene: dominics-confession
 duration: 45
@@ -331,7 +332,7 @@ shoot-days: 0.5
 assigned-day: 6
 key-elements: 
 production-notes: 
-cast: Dallas
+cast: Dallas, Dominic, Asher
 
 ### scene: the-escape
 duration: 75
@@ -339,37 +340,38 @@ shoot-days: 0.5
 assigned-day: 11
 key-elements: 
 production-notes: Dallas explores alone using oscillator
-cast: Dallas, Asher, Dominic
+cast: Dallas, Dominic
+
 ### scene: creature-missing
 duration: 75
 shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Asher, Dominic
+cast: Dallas, Dominic
 
 ### scene: marsh-confrontation
 duration: 90
 shoot-days: 0.5
 assigned-day: 7
-key-elements: The Load-Out — the two men gear up at the tree line. Dallas shoulders the single directional emitter (built for one overdriven pulse) + handheld tracker + chest rig (oscillator/crystal/dial); Dominic — the protector — takes point with the backpack + baby. Asher does NOT go; he stayed at the house with a failing, agitated Mr. Mike.
-production-notes: Wraps. REVISED — single-emitter climax (no node field, no master rig, no eighty-pound speakers). One man-portable directional emitter is the hero weapon. Crew of three into the marsh.
+key-elements: Dallas and Dominic load out at the marsh edge. Dallas carries the oscillator, Asher’s spare, tracker, cable, and portable speaker from Asher’s woods lair; Dominic carries the baby creature and takes point.
+production-notes: Two-person marsh unit. Asher remains off screen; his established recorder network and woods equipment are essential to Dallas’s plan.
 cast: Dallas, Dominic
 
 ### scene: predator-attack
 duration: 120
 shoot-days: 0.5
 assigned-day: 7
-key-elements: The Trench Run — two men move through 10ft grass in the storm; Dallas sweeps his handheld speaker; Red-Eye patrol. Hide-and-pass: Dallas kills his chest-rig LED, both drop flat, the shadow sweeps over and loses them; Dominic shields the baby. INTERCUT house: Asher steadies an agitated Mr. Mike.
-production-notes: Asher's voice-throw decoy REMOVED (he's not in the marsh) — replaced by a hide-and-pass. Dominic's strain is from being unfit + scared, not weight. Practical: blinking green LED on Dallas's chest rig as sole light source. Separate house-interior unit for the Asher/Mr. Mike intercut (s23.2).
-cast: Dallas, Asher, Dominic, Mr. Mike
+key-elements: Dallas and Dominic cross ten-foot grass in the storm, lose the tracker signal, hide beneath a Red-Eye patrol, and continue toward the center with the baby.
+production-notes: Two principal actors in the marsh. Dallas leads with tracker, chest-rig LED, and handheld speaker; Dominic protects the creature.
+cast: Dallas, Dominic
 
 ### scene: the-perimeter
 duration: 150
 shoot-days: 0.5
 assigned-day: 7
-key-elements: Sanctuary ring of flattened grass; Golden Elders + golden dome; Dominic up close as the baby reunites with its mother Elder; Red-Eye siege breaches the ring; the mother curls around the baby and takes the assault; Dallas's single handheld speaker dies — Dallas swings the big directional emitter off his back ("the big one. Once.").
-production-notes: REVISED — single-emitter climax (no node field). VFX: golden dome, red-eye shadows. No distant blinking-node field.
+key-elements: Dallas and Dominic reunite the baby with its mother, then face the Red-Eye siege. Dallas’s handheld speaker fails and he begins routing the creature’s call through Asher’s recorder network.
+production-notes: Two principal actors plus creature effects. Preserve the recorder-network payoff established in Asher’s woods scenes.
 cast: Dallas, Dominic
 
 ### scene: the-last-dinner
@@ -377,9 +379,9 @@ duration: 150
 shoot-days: 0.5
 assigned-day: 7
 time: 7:00 PM – 9:00 PM
-key-elements: The swirl — Dallas dials the known pitch (115.3, Mr. Mike's number), aims and fires ONE concentrated pulse from the emitter: vaporizes the swarm, purges the contagion. The Red-Eyes tear the mother Elder down — she dies shielding the baby. Dominic: disbelief, then "Go, go, GO." INTERCUT house: Mr. Mike calms ("There they go"). The orphaned baby survives, locks eyes with Dallas & Dominic, and dissolves into the ether.
-production-notes: REVISED — single concentrated pulse from the directional emitter (no whole-marsh swarm ignition). VFX: emitter beam/blast, Red-Eye vaporization, the mother's death, the baby dissolving into the ether. Separate house-interior unit for the Mr. Mike/Asher intercut (s25.2).
-cast: Dallas, Asher, Dominic, Mr. Mike
+key-elements: Dallas broadcasts the rebuilt creature call through every recorder in the marsh. The network converges, the Red-Eyes collapse, the mother dies protecting the baby, and Dominic leads Dallas home.
+production-notes: Dallas and Dominic carry the climax. No house intercut and no additional family cast.
+cast: Dallas, Dominic
 
 ### scene: s26b
 duration: 0
@@ -396,7 +398,7 @@ assigned-day: 10
 location: EXT. Jerry's House — Afternoon
 key-elements: 
 production-notes: Afternoon shoot before nursery run
-cast: Asher, Mr. Mike, Dallas, Dominic, Pat
+cast: Dallas, Dominic, Mr. Mike, Pat Clendenen
 
 ### scene: full-circle
 duration: 90
@@ -404,7 +406,7 @@ shoot-days: 0.5
 assigned-day: 10
 key-elements: 
 production-notes: Wraps
-cast: Dallas, Asher, Dominic
+cast: Dallas, Dominic, Asher
 
 ### scene: limbo
 
@@ -423,10 +425,12 @@ props:
 ### scene: the-threshold
 duration: 15
 assigned-day: 5
+cast: Dallas
 
 ### scene: the-return
 duration: 60
 assigned-day: 2
+cast: Dallas, Dominic
 
 
 ## SHOOT PLAN
@@ -482,65 +486,6 @@ props:
   - Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.)
   - Clipboard or folder (Property Manager)
 
-#### CAMERA & AUDIO SETTINGS
-
-**CAMERA: RED Komodo 6K**
-- Mount: Canon RF
-- Native resolution: 6K DCI (6144 x 3160) with Super 35 sensor coverage
-- Codec: RED RAW (REDCODE)
-- Media: CFast 2.0 (512GB + 256GB cards) — format before each location, back up immediately after wrap
-- Frame rates: 24fps (primary), 23.976fps
-- Color science: RED default (adjust in post if needed)
-- White balance: Daylight (5600K) for exterior, adjust per location
-- ISO/Gain: Keep base ISO; use ND filters for exposure control in bright conditions
-- External monitor: FEELWORLD FW703 7" via 12G SDI — verify connection before rolling
-- Anamorphic lenses: SIRUI 1.33x S35 (35mm, 50mm, 75mm F1.8) — 1.33x squeeze, desqueeze to ~2.37:1 in post
-- Framing: Account for 1.33x horizontal squeeze in live view; characteristic anamorphic bokeh and horizontal flares
-- Record format: Verify CFast card status and space before each setup
-
-**AUDIO: Zoom H4n Essentials + Boom Pole**
-- Recorder: Zoom H4n Essentials
-- Input: XLR (mic input on H4n)
-- Microphone: Shotgun mic on boom pole with windscreen
-- Sample rate: 48kHz, 24-bit
-- Levels: Set to -12dB headroom; monitor throughout recording
-- Backup: Record locally on H4n SD card + sync timecode with camera if possible
-- Safety: Keep backup audio levels lower on second track as safety take
-- Wind protection: Windscreen always on boom pole for exterior work
-
-**Pre-Shoot Checklist:**
-- Verify RED Komodo battery charge and CFast card format/space before each location
-- Test H4n recorder and levels with boom pole at each location
-- Verify FEELWORLD monitor SDI connection and live view focus peaking
-- Confirm lens mount and anamorphic squeeze framing in live view
-- Backup all RED RAW media to external drive immediately after each wrap
-- Verify timecode sync between camera and audio if multi-camera
-
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
 #### Beat: s00a.1 — Train station arrival
 scene: s00a
 cast: Dallas
@@ -553,7 +498,7 @@ shots:
 #### Beat: s00a.2-6 — Walking through Branford streets (montage)
 scene: s00a
 cast: Dallas, Asher
-description: Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Asher setting up equipment in marsh.
+description: Dallas walks through residential Branford while Asher works alone in the marsh, planting trail cameras, a boom pole, and concealed acoustic traps.
 shots:
   - WS — Branford street establishing, low houses with white trim and weathered fences. *[L→R flow, destination right]*
   - MS — Dallas walking down sidewalk with suitcase. *[L→R, backs-to-camera]*
@@ -624,49 +569,6 @@ shots:
   - CU — Attic window — light quality, dust motes
   - CU — Dallas's boots on attic floor — texture, stepping forward
   - WS — Attic space alternative angle, ceiling beams
-
-equipment:
-  - Camera body + charged batteries + formatted media cards
-  - Gimbal package - DJI RS 4 Pro, plate, quick release, tools, balance checklist
-  - Tripod package - tripod, fluid head, quick release plate, camera mount
-  - Monopod package
-  - Siriu 75mm lens
-  - Siriu 50mm lens
-  - Siriu 35mm lens
-  - On-camera monitor or viewfinder for framing
-  - Audio recorder / field recorder
-  - Shotgun mic with windscreen
-  - XLR cables, SDI cables
-  - Slates / clapboard for sync reference
-  - Gaffer tape, lens cloth, lens blower, and small toolkit
-  - Lighting kit (tungsten for interior work)
-  - Power strip / battery charger / spare USB-C and camera power cables
-  - Bounce boards / reflectors for interior fill
-
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
 
 #### Beat: s02.1 — Kitchen hum
 scene: s02
@@ -758,31 +660,6 @@ locations:
   - East Haven Nursery
   - Main grounds and marsh access
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
 #### Beat: s08.1 — Into the neighborhoods
 scene: s08
 cast: Dallas
@@ -859,14 +736,11 @@ scenes: s01, s03, s05
 crew-call:
   CALL: 11:00 AM
   MEET: Alex's House (206 Saint John St)
-  ARRIVE: 11:30 AM — Jerry's' House (72 Lake St, Hamden)
-  SHOOT: 11:50 AM - 12:30 PM — s01 · Asher arrives
-  LUNCH: 12:30 PM
-  SHOOT: 1:15 PM - 3:00 PM — s01 · Asher arrives
-  SHOOT: 4 PM - 5:30 PM — s05 · Merlin app search
-  DINNER: 5:30 PM
-  SHOOT: 6:00 PM - 8:45 PM — Final block (TBD)
-  WRAP: 9:00 PM
+  ARRIVE: 11:30 AM — Jerry's House (72 Lake St, Hamden)
+  SHOOT: 11:50 AM - 2:00 PM — s01 · Asher meets Dallas and studies the oscillator
+  SHOOT: 2:15 PM - 4:00 PM — s03 · Dallas meets Dominic
+  SHOOT: 4:15 PM - 5:30 PM — s05 · Dallas and Dominic cross the marsh boardwalk
+  WRAP: 6:00 PM
 
 crew:
   - Director: Alex
@@ -878,118 +752,20 @@ locations:
   - Alex's House (crew meet)
   - Jerry's House (72 Lake St, Hamden) - primary location
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s01.1 — Asher arrives
-scene: s01
-cast: Asher
-description: Asher pulls up to the Dallas house on his bike.
-shots:
-  - WS - House exterior, vehicle arriving
-  - MS - Car pulling into driveway
-  - MS - Asher stopping at the edge of the driveway
-  - Detail - Equipment being unloaded
-  - WS - Two of them approaching house
-
-#### Beat: s01.2 — Dallas greets them
+#### Beat: s01 — Arrival
 scene: s01
 cast: Dallas, Asher
-description: Dallas emerges from house, first meeting with Asher on the property.
-shots:
-  - WS - Dallas at door, M&A in yard
-  - MS - Greetings and handshakes
-  - CU - Dallas's face meeting them
-  - WS - All three at house entrance
-  - MS - Conversation beginning
+description: Asher approaches Dallas on his bike, studies the military-grade oscillator, traces the signal pattern on his palm, and leaves without explaining what he tracks.
 
-#### Beat: s01.3 — House and grounds tour
-scene: s01
-cast: Dallas, Asher
-description: Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.
-shots:
-  - WS - Group entering house
-  - MS - Quick interior shots
-  - WS - Exiting to back or side
-  - WS - Viewing the tall grass from property edge
-  - MS - All three observing the marsh
-
-#### Beat: s03.1 — The sound begins
+#### Beat: s03 — Meet the Neighbors
 scene: s03
-cast: Dallas, Dominic, Pat
-description: Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.
-shots:
-  - WS - Group in location, stillness
-  - MS - Dallas recognizing the sound
-  - CU - Dominic and Pat's confused reactions
-  - WS - Around them, hum intensifying
-  - Detail - Portable oscillator responding
+cast: Dallas, Dominic
+description: Dallas meets Dominic and the two walk through Branford, establishing their friendship and shared curiosity about the marsh.
 
-#### Beat: s03.2 — Attempt to track it
-scene: s03
-cast: Dallas, Dominic, Pat
-description: They try to locate the source - moving with equipment, oscillator in hand.
-shots:
-  - MS - Dallas with oscillator, searching
-  - WS - All three moving through location
-  - Detail - Oscillator dial tracking frequency
-  - CU - Their faces as hum builds
-  - MS - Triangulating direction
-
-#### Beat: s03.3 — The revelation
-scene: s03
-cast: Dallas, Dominic, Pat
-description: They narrow down that the sound is coming from the tall grass itself - the source becomes clear.
-shots:
-  - WS - Tall grass, hum at maximum
-  - CU - Each of their faces, realization
-  - Detail - Equipment reading peak
-  - WS - Group facing the grass
-  - MS - Looking at each other in shock
-
-#### Beat: s05.1 — Merlin app search
+#### Beat: s05 — The Merlin App
 scene: s05
-cast: Dallas, Dominic, Pat
-description: They consult field guides and use the Merlin app to try identifying what could produce this sound.
-shots:
-  - MS - Dallas holding app on phone/device
-  - CU - Screen showing bird identification interface
-  - MS - Dominic and Pat looking over
-  - Detail - Flipping through field guide pages
-  - WS - Group reviewing findings
-
-#### Beat: s05.2 — Dead ends
-scene: s05
-cast: Dallas, Dominic, Pat
-description: They realize no known bird species matches the frequency or pattern - confusion and concern.
-shots:
-  - CU - Dallas's concerned face
-  - MS - Dominic shaking head
-  - Detail - Pat pointing to field guide, uncertain
-  - MS - Exchange of worried looks
-  - WS - Three of them, perplexed
+cast: Dallas, Dominic
+description: Dallas and Dominic cross the boardwalk, listen to the birds and marsh, and notice movement in the reeds.
 
 ---
 
@@ -999,11 +775,11 @@ scenes: s14b, s14c
 
 crew-call:
   CALL: 12:45 PM
-  MEET: Alex's' House (206 Saint John ST)
+  MEET: Alex's House (206 Saint John St)
   SETUP: 1:10 PM — Camera preps
-  SHOOT: 1:30 PM — s14b · Sierra's journal discovery & frequency match
+  SHOOT: 1:30 PM — s14b · Dallas and Asher triangulate Sierra's journal and listening-post pattern
   BREAK: 2:20 PM
-  SHOOT: 2:45 PM — s14c · Expedition planning & equipment check
+  SHOOT: 2:45 PM — s14c · Dominic nearly discovers the creature
   WRAP: 4:30 PM
 
 crew:
@@ -1016,96 +792,15 @@ locations:
   - Dallas House interior
   - Various group locations
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s14b.1 — Field journal discovery
+#### Beat: s14b — The Field Journal
 scene: s14b
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: The group gathers to examine Sierra's field journal closely - detailed notes and sketches about the hum.
-shots:
-  - WS - Group seated around table with journal
-  - MS - Dallas opening journal carefully
-  - CU - Journal pages showing sketches and notes
-  - Detail - Hand pointing to frequency notations
-  - CU - Faces reacting to findings
+cast: Dallas, Asher
+description: Dallas and Asher triangulate Sierra’s journal drawings, Asher’s bead-counted listening posts, and the bright-to-dark creature transformation.
 
-#### Beat: s14b.2 — Reading Sierra's notes
-scene: s14b
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: Dallas reads passages aloud - Sierra's observations about the creature and the hum pattern.
-shots:
-  - MS - Dallas reading from journal
-  - CU - Dallas's face, emotion in reading
-  - MS - Others listening intently
-  - Detail - Journal page details visible
-  - WS - Group absorbing information
-
-#### Beat: s14b.3 — Matching the frequency
-scene: s14b
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: They use the oscillator to match the frequency noted in Sierra's journal - confirmation of the pattern.
-shots:
-  - MS - Oscillator adjustment
-  - Detail - Dial reaching specific frequency
-  - CU - Group reactions as match occurs
-  - WS - Equipment setup with group
-  - Detail - Notebook comparing frequencies
-
-#### Beat: s14c.1 — Planning the investigation
+#### Beat: s14c — The Almost Discovery
 scene: s14c
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: They devise a plan to explore the marsh more thoroughly based on Sierra's notes - mapping out grid search.
-shots:
-  - WS - Group huddled over map on table
-  - MS - Someone marking locations
-  - Detail - Map showing marked grid sections
-  - CU - Faces showing determination
-  - MS - Discussion and gesturing at map
-
-#### Beat: s14c.2 — Equipment check
-scene: s14c
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: They methodically check equipment - oscillators, recorders, safety gear - preparing for marsh expedition.
-shots:
-  - WS - Equipment laid out on floor/table
-  - MS - Each member testing equipment
-  - Detail - Batteries, settings, connections
-  - CU - Concentration on faces
-  - WS - Readiness check, gear being assembled
-
-#### Beat: s14c.3 — Near encounter
-scene: s14c
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: As they prepare to head out, something moves in the tall grass visible from the house - they almost discover the creature.
-shots:
-  - WS - Group moving toward exit/window
-  - MS - Seeing movement in grass
-  - CU - Faces frozen with realization
-  - WS - Tall grass undulating
-  - Detail - Oscillator suddenly spiking
+cast: Dallas, Dominic
+description: Dallas hides the creature and equipment while Dominic nearly discovers the humming enclosure.
 
 ---
 
@@ -1133,122 +828,34 @@ locations:
   - Alex's House
   - Surrounding areas and marsh edge
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s08d.1 — Return through darkness
+#### Beat: s08d — The Return
 scene: s08d
-cast: Dallas
-description: Dallas makes his way back through the darkening neighborhoods, disoriented.
-shots:
-  - WS - Suburban street at dusk, Dallas retracing path
-  - MS - Dallas walking, checking oscillator periodically
-  - CU - Dallas, confused or shaken
-  - WS - Street lamp lighting as darkness falls
-  - OTS - Dallas from behind, heading back
+cast: Dallas, Dominic
+description: Dallas returns through the dark with the injured creature while Dominic checks on him.
 
-#### Beat: s11.1 — Evening arrival at location
+#### Beat: s11 — Kitchen Triage
 scene: s11
-cast: Dallas, Dominic, Asher
-description: Dallas, Dominic, and Asher arrive at the evening location to explore - golden hour light.
-shots:
-  - WS - Location in golden evening light
-  - MS - Three approaching the area
-  - CU - Dallas's determination
-  - WS - Expansive view of where they'll search
-  - MS - Setting up oscillator and recorders
+cast: Dallas, Dominic
+description: Dallas builds a makeshift habitat, studies the creature’s call, and deflects Dominic’s questions before Dominic leaves.
 
-#### Beat: s11.2 — Tracking the hum
-scene: s11
-cast: Dallas, Dominic, Asher
-description: They move through the area with equipment, oscillator active, following frequency changes.
-shots:
-  - MS - Dallas with oscillator leading
-  - WS - All three moving through terrain
-  - Detail - Oscillator dial responding
-  - CU - Listening intently
-  - MS - Adjusting course based on signal
-
-#### Beat: s11.3 — Dominic's hesitation
-scene: s11
-cast: Dallas, Dominic, Asher
-description: Dominic expresses doubt or fear about continuing deeper - tension within the group.
-shots:
-  - MS - Dominic stopping, voicing concern
-  - CU - Dominic's apprehension
-  - MS - Dallas responding, reassuring
-  - CU - Asher's face, picking a side
-  - MS - Decision moment between them
-
-#### Beat: s12.1 — The burn mark discovery
+#### Beat: s12 — Alone With the Creature
 scene: s12
-cast: Dallas, Dominic, Asher
-description: They discover a distinctive burn mark on the ground or trees - evidence of the creature's presence.
-shots:
-  - WS - The burn mark area visible on ground
-  - MS - Group gathering around it
-  - CU - Examining the burn pattern closely
-  - Detail - Hand pointing to burn characteristics
-  - CU - Reactions to what it means
-
-#### Beat: s12.2 — Oscillator confirmation
-scene: s12
-cast: Dallas, Dominic, Asher
-description: The oscillator shows maximum response at the burn mark - confirmation this is where the creature was.
-shots:
-  - Detail - Oscillator spiking to maximum
-  - CU - Dallas's face, confirmation and fear
-  - MS - Dominic and Asher stepping back
-  - WS - The burn mark with group around it
-  - Detail - Frequency reading at peak
-
-#### Beat: s12.3 — The realization
-scene: s12
-cast: Dallas, Dominic, Asher
-description: They understand the creature is real, local, and active - the threat becomes tangible.
-shots:
-  - CU - Each of their faces reacting
-  - MS - Quiet moment of understanding
-  - WS - Group in the darkening area
-  - Detail - Oscillator still reading the presence
-  - MS - Exchange of frightened looks
+cast: Dallas, Dominic
+description: Dallas wakes beside the creature and reviews his recordings while Dominic checks a tire outside.
 
 ---
 
 ### Day 6 — 2026-06-18
 
-scenes: s15a, s15b, s15c
+scenes: s15b, s15c
 
 crew-call:
   CALL: 2:00 PM
-  MEET: Dallas House (72 Lake St, Hamden)
-  SETUP: 2:30 PM — Camera preps
-  SHOOT: 3:00 PM — s15a · The failed experiment
-  SHOOT: 4:30 PM — s15b · Tracking box
-  SHOOT: 6:00 PM — s15c · Dominic's confession
-  WRAP: 7:30 PM
+  MEET: Woods / Asher's lair
+  SETUP: 2:30 PM — Camera and practical listening-post prep
+  SHOOT: 3:00 PM — s15b · Asher's tracking box, recorder network, and woods equipment
+  SHOOT: 5:00 PM — s15c · Contact-transducer signal and Dominic's confession
+  WRAP: 7:00 PM
 
 crew:
   - Director: Alex
@@ -1260,129 +867,15 @@ locations:
   - Dallas House interior and exterior
   - Various rooms and spaces
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s15a.1 — Setting up the experiment
-scene: s15a
-cast: Dallas
-description: Dallas and Asher carefully arrange equipment for a test - oscillator, resonance chamber, recording devices.
-shots:
-  - WS - Table with equipment being arranged
-  - MS - Dallas and Asher working together
-  - Detail - Oscillator being positioned
-  - CU - Concentration on their faces
-  - WS - Full setup ready for test
-
-#### Beat: s15a.2 — The test begins
-scene: s15a
-cast: Dallas
-description: They activate the oscillator and begin recording - waiting to see if it attracts the creature or proves something.
-shots:
-  - Detail - Oscillator dial turning on
-  - MS - Dallas and Asher waiting, listening
-  - CU - Equipment recording
-  - WS - Room with hum building
-  - CU - Their faces, anticipation
-
-#### Beat: s15a.3 — Nothing happens
-scene: s15a
-cast: Dallas
-description: The test fails - no response, no creature, no confirmation. Disappointment and concern.
-shots:
-  - MS - Silence, waiting
-  - CU - Dallas's disappointed face
-  - Detail - Oscillator showing normal readings
-  - CU - Asher's frustration
-  - MS - Looking at each other
-
-#### Beat: s15b.1 — The tracking box explained
+#### Beat: s15b — Asher’s Tracking Box
 scene: s15b
-cast: Dallas
-description: Dallas shows Asher a custom-built tracking device - Sierra's design notes form the basis.
-shots:
-  - MS - Dallas holding the tracking box
-  - Detail - Box mechanisms and components
-  - CU - Asher's interest
-  - MS - Dallas pointing out features
-  - Detail - Frequency dial and settings
+cast: Dallas, Dominic, Asher
+description: Asher demonstrates his listening posts, bead-count system, hidden woods lair, trail cameras, recorders, cables, and spare oscillator.
 
-#### Beat: s15b.2 — Building the device
-scene: s15b
-cast: Dallas
-description: They work together building or calibrating the tracker - precision work, focused collaboration.
-shots:
-  - WS - Workspace with tools and parts
-  - MS - Both working on the box
-  - Detail - Soldering or assembling
-  - CU - Hands working precisely
-  - MS - Testing components together
-
-#### Beat: s15b.3 — First calibration
-scene: s15b
-cast: Dallas
-description: They calibrate the tracker to match the hum frequency - excitement as it responds.
-shots:
-  - Detail - Frequency dial being adjusted
-  - CU - Dallas's face concentrating
-  - Detail - Device responding, light or sound indicator
-  - CU - Asher's recognition of success
-  - MS - Exchange of encouraged looks
-
-#### Beat: s15c.1 — Dominic arrives
+#### Beat: s15c — Dominic’s Confession
 scene: s15c
-cast: Dallas, Dominic
-description: Dominic shows up - he has something to say, something weighing on him.
-shots:
-  - MS - Dominic entering, serious
-  - CU - His troubled expression
-  - MS - Dallas and Asher reacting
-  - WS - Three of them in room
-  - MS - Dominic preparing to speak
-
-#### Beat: s15c.2 — The confession
-scene: s15c
-cast: Dallas, Dominic
-description: Dominic reveals something he knows or has experienced - guilt, fear, or vital information about the creature.
-shots:
-  - CU - Dominic speaking, emotional
-  - MS - Dallas and Asher listening intently
-  - CU - Asher's reaction
-  - CU - Dallas's reaction
-  - MS - Dominic vulnerable, sharing burden
-
-#### Beat: s15c.3 — Processing the revelation
-scene: s15c
-cast: Dallas, Dominic
-description: They process what Dominic has told them - silence, questions, dawning realization.
-shots:
-  - CU - Each face reacting
-  - MS - Quiet moment of shock
-  - WS - Three of them, the weight of new knowledge
-  - CU - Exchange of looks
-  - MS - Beginning to formulate next steps
+cast: Dallas, Dominic, Asher
+description: At Asher’s woods equipment station, Dallas grips the contact transducers, experiences the signal, and hears Dominic describe the night of the boom.
 
 ---
 
@@ -1409,85 +902,45 @@ locations:
   - East Haven Nursery
   - Marsh entrance and tall grass field
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s13.1 — Entering the grass
+#### Beat: s13 — The Confrontation
 scene: s13
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: The group enters the tall marsh for the first time - a coordinated expedition into the unknown.
-shots:
-  - WS - Group at marsh edge at dawn
-  - MS - Equipment check before entry
-  - WS - Walking into tall grass
-  - MS - Moving through the field
-  - CU - Faces as they go deeper
+cast: Dallas, Dominic, Asher
+description: Asher finds the trailcam path, discovers the creature in Dallas’s attic, tests it with his oscillator and viewfinder, and agrees to keep the secret.
 
-#### Beat: s13.2 — The hum intensifies
-scene: s13
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: As they go deeper, the hum becomes overwhelming - their equipment goes wild.
-shots:
-  - WS - Group stopped in tall grass
-  - Detail - Oscillators and recorders at max
-  - CU - Reactions to sound intensity
-  - WS - Grass swaying around them
-  - MS - Communication amid noise
-
-#### Beat: s14.1 — The creature is there
+#### Beat: s14 — The Connection
 scene: s14
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: They encounter or sense the creature directly - a moment of terrible clarity.
-shots:
-  - WS - Something moving in grass near them
-  - CU - Dallas seeing it first
-  - MS - Group frozen in fear
-  - Detail - Oscillator reading off the charts
-  - WS - Creature movement, tall grass displacement
+cast: Dallas, Dominic, Asher
+description: Dominic and Dallas discuss grief; Asher’s seizure and amplifier reveal a second signal coming from the marsh.
 
-#### Beat: s14.2 — The rescue
-scene: s14
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: Something goes wrong - someone in danger, the group mobilizes to rescue/protect.
-shots:
-  - WS - Chaos in the field
-  - MS - Someone in danger
-  - CU - Rescue action
-  - WS - Group protecting each other
-  - MS - Getting to safety
+#### Beat: s21 — Into the Grass
+scene: s21
+cast: Dallas, Dominic
+description: Dominic runs after the creature and Dallas follows with the tracker as red eyes flare at the grass line.
 
-#### Beat: s14.3 — Escape from grass
-scene: s14
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: They retreat from the grass, shaken and bloodied - barely making it out.
-shots:
-  - WS - Running through tall grass
-  - MS - Helping each other
-  - Detail - Injuries visible
-  - WS - Reaching the boundary
-  - CU - Gasping, shocked faces
+#### Beat: s22 — The Load-Out
+scene: s22
+cast: Dallas, Dominic
+description: Dallas loads Asher’s spare oscillator and retrieves the portable speaker from Asher’s woods lair while Dominic carries the baby and takes point.
+
+#### Beat: s23 — The Trench Run
+scene: s23
+cast: Dallas, Dominic
+description: Dallas and Dominic lose the tracker signal, hide beneath a Red-Eye patrol, and push deeper through the storm with the baby.
+
+#### Beat: s24 — The Mother and the Swarm
+scene: s24
+cast: Dallas, Dominic
+description: Dominic reunites the baby with its mother as Dallas detects the siege and routes the creature’s call toward Asher’s recorder network.
+
+#### Beat: s25 — The Answer
+scene: s25
+cast: Dallas, Dominic
+description: Dallas’s broadcast pulls every marsh recorder into an amplified halo, collapsing the Red-Eyes; Dominic guides Dallas home after the creatures disappear.
+
+#### Beat: s26 — The Morning After
+scene: s26
+cast: Dallas, Dominic
+description: Dallas and Dominic return through the grass and enter the house soaked and exhausted.
 
 ---
 
@@ -1514,123 +967,31 @@ locations:
   - Dallas House interior
   - Dining area and rooms
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s07.1 — Coordinates discovered
+#### Beat: s07 — The Coordinates
 scene: s07
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: The group deciphers a coordinate pattern from Sierra's notes and the hum frequency, pinpointing a location deep in the marsh.
-shots:
-  - WS - Group gathered around desk with maps and journal
-  - MS - Dallas cross-referencing journal entries with oscillator readings
-  - CU - Coordinates being circled on map
-  - Detail - Frequency notation matching Sierra's field drawings
-  - CU - Faces as the location becomes clear
+cast: Dallas, Dominic, Asher, Mr. Mike
+description: Dallas sees Asher’s basement map and equipment while Mr. Mike scratches the repeating coordinates and warns that the song has gone wrong.
 
-#### Beat: s07.2 — The plan forms
-scene: s07
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: With coordinates identified, the group debates whether to act — tension between urgency and caution.
-shots:
-  - WS - Group around table, discussion heating up
-  - MS - Dallas making the case for going
-  - CU - Mr. Mike's skeptical reaction
-  - MS - Dominic and Dallas exchanging looks
-  - WS - The group, divided but leaning toward action
-
-#### Beat: s18.1 — The life group arrives
+#### Beat: s18 — Life Group Arrives
 scene: s18
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
-description: An unexpected crowd arrives — the Life Group, led by Dominic, showing up for a scheduled gathering nobody cancelled.
-shots:
-  - WS - Cars pulling up, people filing out
-  - MS - Dominic at front, leading the group in
-  - CU - Dallas's face, unprepared for this
-  - WS - Life Group moving into the house, filling the space
-  - MS - Dallas pulling Asher aside
+cast: Dallas, Dominic, Mr. Mike, Life Group Extras
+description: Dallas and Dominic hide and stabilize the creature in the basement while life group fills the house and Mr. Mike senses the danger.
 
-#### Beat: s18.2 — Awkward coexistence
-scene: s18
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
-description: The Life Group settles in while the core group scrambles to conceal their investigation and equipment.
-shots:
-  - WS - Living room crowded with Life Group and scattered gear
-  - MS - Someone hastily moving equipment out of view
-  - CU - A Life Group member noticing something strange
-  - MS - Dominic deflecting a question casually
-  - WS - Two worlds awkwardly sharing the same space
-
-#### Beat: s19.1 — The hymn begins
+#### Beat: s19 — The Hymn
 scene: s19
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
-description: The Life Group begins singing — a slow, resonant hymn with a frequency eerily close to the hum.
-shots:
-  - WS - Life Group arranged, Dominic leading
-  - MS - Voices rising, hymn building
-  - Detail - Oscillator on shelf beginning to flicker
-  - CU - Dallas hearing it, registering the similarity
-  - WS - The room vibrating with sound
+cast: Dallas, Dominic, Mr. Mike, Life Group Extras
+description: The life-group hymn aligns with the creature’s hum; Mr. Mike identifies the golden target and the Red-Eyes outside.
 
-#### Beat: s19.2 — Frequencies align
-scene: s19
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
-description: As the hymn swells, the hum beneath it rises in response — the frequencies begin to mirror each other.
-shots:
-  - Detail - Oscillator reading climbing toward 115.3
-  - CU - Dallas's eyes going wide
-  - MS - Asher clocking it, eyes to Dallas
-  - WS - Life Group singing, unaware
-  - Detail - Glass on table beginning to vibrate
-
-#### Beat: s20.1 — Red eyes in the dark
+#### Beat: s20 — The Secret Is Out
 scene: s20
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
-description: As the hymn peaks, someone near a window sees the creature — two red points of light in the dark grass.
-shots:
-  - WS - Window, Life Group in foreground, dark yard beyond
-  - CU - A Life Group member stopping mid-song, staring
-  - POV - Through window glass: two red glowing eyes at the grass line
-  - CU - Horror crossing their face
-  - WS - Moment before the room realizes
-
-#### Beat: s20.2 — The secret is out
-scene: s20
-cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
-description: The Life Group member screams. The room erupts. Dallas can no longer contain what's been happening.
-shots:
-  - WS - Chaos, people scrambling
-  - MS - Dallas stepping forward, no longer hiding it
-  - CU - Dominic's face — anger or fear at Dallas
-  - MS - Dallas addressing everyone, urgent
-  - WS - The room fractured — some running, some frozen
+cast: Dallas, Dominic
+description: Dominic discovers Sierra’s creature files, sees the Red-Eyes, and joins Dallas in testing the portable speaker against them.
 
 ---
 
 ### Day 8.5 — 2026-06-22
 
+scenes: s26
 
 crew-call:
   CALL: 5:00 PM
@@ -1648,68 +1009,16 @@ crew:
 locations:
   - Dallas House interior and exterior
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s26.pickup.1 — Additional creature effects
+#### Beat: s26 — The Morning After
 scene: s26
-cast: Dallas, Asher, Dominic
-description: Pickup shots of the creature's arrival - additional angles and close coverage of destruction.
-shots:
-  - CU - Glass vibrating and breaking
-  - Detail - Door frame cracking
-  - WS - Wide shot of house in assault
-  - Detail - Objects flying or falling
-  - CU - Reaction faces in close-up
-
-#### Beat: s26.pickup.2 — Defensive positions
-scene: s26
-cast: Dallas, Asher, Dominic
-description: Close coverage of the group defending themselves - intimate shots in shadows.
-shots:
-  - CU - Hands gripping equipment
-  - Detail - Oscillators in close-up
-  - MS - Back to back in darkness
-  - CU - Sweat and fear on faces
-  - Detail - Equipment sparking or failing
-
-#### Beat: s26.pickup.3 — The hum at maximum
-scene: s26
-cast: Dallas, Asher, Dominic
-description: Extreme close-ups of the hum's effects - sensory overload captured intimately.
-shots:
-  - Detail - Oscillator dial at maximum
-  - CU - Someone screaming silently
-  - Detail - Blood from ears
-  - CU - Eyes wide with pain
-  - Detail - Hands covering ears
+cast: Dallas, Dominic
+description: Dallas and Dominic return through the grass and enter the house soaked and exhausted.
 
 ---
 
 ### Day 11.5 — 2026-06-29
 
+scenes: s07b, s16
 
 crew-call:
   CALL: 8:00 AM
@@ -1729,63 +1038,15 @@ locations:
   - Marsh boundary
   - Tall grass field
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s07b.pickup.1 — The warning additional coverage
+#### Beat: s07b — Mr. Mike’s Warning
 scene: s07b
-cast: Dallas, Dominic, Asher, Mr. Mike
-description: Pickup shots of Mr. Mike's crucial warning - wider angles and group reactions.
-shots:
-  - WS - Full group with Mr. Mike in center
-  - CU - Mr. Mike's face in profile
-  - Detail - Hand gestures emphasizing point
-  - MS - Each person's individual reaction
-  - WS - Group dynamics shifting
+cast: Dallas, Dominic, Mr. Mike
+description: Mr. Mike privately gives Dallas a lucid warning: touching an injured bright creature creates the dark one.
 
-#### Beat: s16.pickup.1 — Plan details captured
+#### Beat: s16 — Back Home
 scene: s16
-cast: Dallas, Dominic, Asher, Mr. Mike
-description: Close coverage of the escape/defense plan being explained - technical detail shots.
-shots:
-  - Detail - Map or sketch close-up
-  - CU - Dallas pointing to locations
-  - Detail - Hand-drawn notes or marks
-  - MS - Two-shots of Dallas with others
-  - CU - Understanding dawning on faces
-
-#### Beat: s16.pickup.2 — Resolution and commitment
-scene: s16
-cast: Dallas, Dominic, Asher, Mr. Mike
-description: Final commitment to the plan - intimate captures of determination and fear.
-shots:
-  - Detail - Hands meeting in center
-  - CU - Eyes closing in acceptance
-  - MS - Final huddle moment
-  - Detail - A nod or affirmation between two
-  - WS - Group ready to move forward
+cast: Dallas, Dominic
+description: Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group.
 
 ---
 
@@ -1811,74 +1072,20 @@ locations:
   - Dallas House interior
   - Various rooms
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s17.1 — Resonance begins
+#### Beat: s17 — Resonance
 scene: s17
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: The hum reaches a specific frequency that causes physical reaction - glasses vibrate, equipment resonates.
-shots:
-  - Detail - Objects vibrating on surfaces
-  - WS - Interior shaking
-  - CU - Faces reacting to vibration
-  - Detail - Equipment oscillating
-  - WS - The house under the hum's influence
+cast: Dallas
+description: Dallas tunes a soft frequency that calms the creature, then wakes to find it missing.
 
-#### Beat: s17.2 — Physical effects
-scene: s17
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: The resonance intensifies - people feel it in their bodies, some hurt, disorientation.
-shots:
-  - CU - Someone clutching their ears
-  - MS - Group in pain or discomfort
-  - WS - Chaos in the house
-  - Detail - Blood from ears or nose
-  - CU - Determination to endure
-
-#### Beat: s17b.1 — A normal day memory
+#### Beat: s17b — Normal Day
 scene: s17b
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: Amongst the chaos, someone recalls or experiences a flash of normal life - brief respite.
-shots:
-  - Flashback - Sunny day, laughter
-  - CU - Face of person remembering
-  - Transition back to present
-  - MS - Group trying to hold on
-  - CU - A moment of connection
+cast: Dallas, Dominic
+description: Dominic works the harbor while Dallas tracks the hum from his attic and the basement map points toward the marsh.
 
-#### Beat: s17c.1 — Mute drive
+#### Beat: s17c — The Drive
 scene: s17c
-cast: Dallas, Asher, Dominic, Mr. Mike
-description: Without speaking, communicating through looks and gestures - all sound is overwhelmed.
-shots:
-  - WS - Group in silence, gesturing
-  - CU - Eye contact and nods
-  - MS - Hand signals and instructions
-  - Detail - Mouths moving, no sound heard
-  - WS - Coordinated silent action
+cast: Dallas, Dominic
+description: Dominic sees the storm’s unnatural pattern in town and confronts Dallas over the phone.
 
 ---
 
@@ -1905,30 +1112,15 @@ locations:
   - Branford landscape
   - Marsh edges
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
+#### Beat: s27 — Little Aftermath
+scene: s27
+cast: Dallas, Dominic, Mr. Mike, Pat Clendenen
+description: Dallas recovers the clean creature recording, then shares a quiet church meal with Dominic as Mr. Mike hears that the song is finally right.
 
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
+#### Beat: s28 — Full Circle
+scene: s28
+cast: Dallas, Dominic, Asher
+description: Dallas helps Asher dismantle the woods listening network, accepts a harmless wind spike, reconnects with Dominic, and hears Sierra’s cadence in the creature’s hum.
 
 ---
 
@@ -1956,52 +1148,15 @@ locations:
   - Forest locations
   - Open fields
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s07b.1 — Mr. Mike's warning
+#### Beat: s07b — Mr. Mike’s Warning
 scene: s07b
-cast: Dallas, Dominic, Asher, Mr. Mike
-description: Mr. Mike reveals something crucial about the creature or warns the group of danger ahead.
-shots:
-  - MS - Mr. Mike gathering them
-  - CU - Mr. Mike speaking seriously
-  - CU - Each person reacting
-  - MS - Group processing warning
-  - WS - Group moment of gravity
+cast: Dallas, Dominic, Mr. Mike
+description: Mr. Mike privately gives Dallas a lucid warning: touching an injured bright creature creates the dark one.
 
-#### Beat: s16.1 — The escape plan
+#### Beat: s16 — Back Home
 scene: s16
-cast: Dallas, Dominic, Asher, Mr. Mike
-description: They devise a plan to either trap, communicate with, or escape from the creature.
-shots:
-  - WS - Group in huddle
-  - Detail - Sketching or discussing plan
-  - CU - Dallas deciding
-  - MS - Mr. Mike providing wisdom
-  - WS - Agreement and determination
+cast: Dallas, Dominic
+description: Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group.
 
 ---
 
@@ -2027,67 +1182,20 @@ locations:
   - Branford Town Green
   - Branford streets and areas
 
-#### SETTINGS OVERVIEW
-**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**
-
-• Resolution: 6144x3240 (6K 17:9)
-• FPS: 23.976
-• Shutter: 180°
-• Codec: REDCODE RAW
-• Compression: 8:1
-• ISO: 800
-• Color: REDWideGamutRGB / Log3G10
-• White Balance: 5600K (or manual)
-
-ANAMORPHIC:
-• Lens squeeze: 1.33x
-• Camera desqueeze: OFF
-• Monitor desqueeze: 1.33x ✅
-
-FRAMING:
-• Frame guides: 2.39:1
-
-NOTES:
-• Do NOT use 1.5x or 2x
-• Do NOT bake desqueeze
-• Record full sensor, fix in post
-
-#### Beat: s04.1 — The fellowship gathers
+#### Beat: s04 — Fellowship
 scene: s04
-cast: Dallas, Dominic, Asher, Mr. Mike
-description: All the main characters come together - Dallas, Dominic, Asher, Mr. Mike - a final gathering.
-shots:
-  - WS - Open location, all arriving
-  - MS - Greetings and reuniting
-  - CU - Individual faces, bonds visible
-  - WS - All five together
-  - MS - Standing united
+cast: Dallas, Dominic, Asher
+description: Dominic introduces Dallas to Asher at the fellowship; Asher quietly assembles recording equipment and aims it toward the bushes.
 
-#### Beat: s04.2 — Before the finale
-scene: s04
-cast: Dallas, Dominic, Asher, Mr. Mike
-description: Last moments before the final confrontation - memories shared, decisions confirmed.
-shots:
-  - Detail - Hands coming together
-  - CU - Eyes meeting
-  - MS - Quiet conversations
-  - WS - The group in stillness
-  - Detail - A nod or affirmation
-
-#### Beat: s06.1 — News vans arrive
+#### Beat: s06 — News Vans
 scene: s06
-cast: Dallas, Dominic, Asher, Mr. Mike
-description: The outside world intrudes - media arrives in Branford, cameras and crew setting up.
-shots:
-  - WS - News vans pulling up
-  - MS - Reporters and camera crews setting up
-  - CU - Group's reaction to media
-  - Detail - Cameras and lights
-  - WS - Town green overtaken by press
+cast: Dallas, Dominic, Pat Clendenen
+description: Dallas and Dominic pass Pat Clendenen’s storm coverage and discover strange marks near Dominic’s driveway.
 
 ---
 
-### Day 13 — 2026-07-02 (Pickup Day)
+### Day 13 — 2026-07-02
+
 
 crew-call:
   Pickup and reshoots as needed
@@ -2110,7 +1218,7 @@ address: 72 Lake Street, Hamden, CT
 actual: 
 address: 
 
-### MAKAYLA'S BEDROOM / LAIR
+### ASHER'S LAIR
 actual: 
 address: 
 

@@ -26,11 +26,10 @@
     "assignedDay": 0,
     "location": "Branford Train Station / Streets / Marsh Edge",
     "time": "Early Morning / Continuous",
-    "keyElements": "Dallas arrival montage + M&A planting traps + hum reaction",
-    "productionNotes": "No dialogue. Parallel intercutting. Introduce equipment: trail cameras, boom pole, acoustic traps, folding trowels.",
+    "keyElements": "Dallas arrival montage intercut with Asher planting acoustic traps and reacting to the hum",
+    "productionNotes": "No dialogue. Preserve Asher’s woods equipment: trail cameras, boom pole, acoustic traps, folding trowel, and concealed microphone array.",
     "cast": [
       "Dallas",
-      "Makayla",
       "Asher"
     ],
     "props": [
@@ -73,7 +72,6 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
       "Asher"
     ]
   },
@@ -85,8 +83,7 @@
     "keyElements": "",
     "productionNotes": "",
     "cast": [
-      "Dallas",
-      "Makayla"
+      "Dallas"
     ],
     "props": [
       "Sierra's Box — cardboard, labeled 'Field Notes — Branford' (handwritten, worn)",
@@ -122,9 +119,7 @@
     "cast": [
       "Dallas",
       "Dominic",
-      "Makayla",
-      "Asher",
-      "Mr Mike"
+      "Asher"
     ]
   },
   "s09b": {
@@ -134,8 +129,7 @@
     "keyElements": "",
     "productionNotes": "",
     "cast": [
-      "Dallas",
-      "Makayla"
+      "Dallas"
     ]
   },
   "dallas-night-work": {
@@ -171,9 +165,7 @@
     "cast": [
       "Dallas",
       "Dominic",
-      "Makayla",
-      "Asher",
-      "Mr Mike"
+      "Mr. Mike"
     ]
   },
   "final-echoes": {
@@ -184,10 +176,7 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike"
+      "Dominic"
     ]
   },
   "the-hum": {
@@ -198,8 +187,7 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Dominic",
-      "Pat"
+      "Dominic"
     ]
   },
   "marsh-walk-later": {
@@ -210,8 +198,7 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Dominic",
-      "Pat"
+      "Dominic"
     ]
   },
   "news-vans": {
@@ -223,7 +210,7 @@
     "cast": [
       "Dallas",
       "Dominic",
-      "Pat"
+      "Pat Clendenen"
     ]
   },
   "marsh-walk-2": {
@@ -248,8 +235,7 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Dominic",
-      "Asher"
+      "Dominic"
     ]
   },
   "s27a": {
@@ -280,10 +266,8 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
       "Dominic",
-      "Mr. Mike"
+      "Asher"
     ]
   },
   "the-coordinates": {
@@ -294,9 +278,8 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
       "Dominic",
+      "Asher",
       "Mr. Mike"
     ]
   },
@@ -308,24 +291,19 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
       "Dominic",
-      "Mr. Mike"
+      "Asher"
     ]
   },
   "the-field-journal": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 4,
-    "keyElements": "",
-    "productionNotes": "",
+    "keyElements": "Dallas and Asher compare Sierra’s field journal, the creature drawings, the red-eye transformation, the marsh listening posts, and the repeating signal pattern.",
+    "productionNotes": "Preserve the quiet Dallas/Asher triangulation beat at the picnic table: journal pages, bead string, listening-post map logic, and the warning that the creatures are listening.",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike"
+      "Asher"
     ]
   },
   "the-almost-discovery": {
@@ -336,10 +314,7 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike"
+      "Dominic"
     ]
   },
   "resonance": {
@@ -350,11 +325,7 @@
     "keyElements": "",
     "productionNotes": "",
     "cast": [
-      "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike"
+      "Dallas"
     ]
   },
   "normal-day": {
@@ -365,10 +336,7 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike"
+      "Dominic"
     ]
   },
   "mute-drive": {
@@ -379,10 +347,7 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike"
+      "Dominic"
     ]
   },
   "s09c": {
@@ -403,8 +368,6 @@
     "productionNotes": "Dallas explores alone using oscillator",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
       "Dominic",
       "Mr. Mike",
       "Life Group Extras"
@@ -418,8 +381,6 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
       "Dominic",
       "Mr. Mike",
       "Life Group Extras"
@@ -433,11 +394,7 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike",
-      "Life Group Extras"
+      "Dominic"
     ]
   },
   "the-failed-test": {
@@ -447,19 +404,18 @@
     "keyElements": "",
     "productionNotes": "",
     "cast": [
-      "Dallas",
-      "Makayla"
+      "Dallas"
     ]
   },
   "the-tracking-box": {
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 6,
-    "keyElements": "Dusk planting beat — Makayla & Asher stake blinking listening-post nodes into the reeds (Dallas reads them as fireflies); Asher threads a bead per node. Establishes Asher's gift / the kids geotagging the marsh.",
-    "productionNotes": "Practical blinking amber nodes + Asher's bead string (continuity props, s07→s28). NOTE: with the reworked single-emitter climax these no longer fire as a weapon — kept as worldbuilding pending a decision to trim.",
+    "keyElements": "Asher leads Dallas and Dominic through his listening-post network to the hidden woods lair, demonstrating the amber nodes, bead count, trail cameras, recorders, cables, and spare oscillator.",
+    "productionNotes": "Preserve Asher’s practical woods equipment and continuity: blinking amber listening posts, bead string, wooden chest, trail cameras, pocket tripod, pocket microphone, cables, contact transducers, and spare oscillator.",
     "cast": [
       "Dallas",
-      "Makayla",
+      "Dominic",
       "Asher"
     ]
   },
@@ -471,7 +427,8 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla"
+      "Dominic",
+      "Asher"
     ]
   },
   "the-escape": {
@@ -482,8 +439,6 @@
     "productionNotes": "Dallas explores alone using oscillator",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
       "Dominic"
     ]
   },
@@ -495,8 +450,6 @@
     "productionNotes": "",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
       "Dominic"
     ]
   },
@@ -504,11 +457,10 @@
     "durationMin": 90,
     "shootDays": 0.5,
     "assignedDay": 7,
-    "keyElements": "The Load-Out — the three adults gear up at the tree line. Dallas shoulders the single directional emitter (built for one overdriven pulse) + handheld tracker; Makayla in her chest rig (oscillator/crystal/dial); Dominic — the protector — takes point with the backpack + baby. Asher does NOT go; he stayed at the house with a failing, agitated Mr. Mike.",
-    "productionNotes": "Wraps. REVISED — single-emitter climax (no node field, no master rig, no eighty-pound speakers). One man-portable directional emitter is the hero weapon. Crew of three into the marsh.",
+    "keyElements": "Dallas and Dominic load out at the marsh edge. Dallas carries the oscillator, Asher’s spare, tracker, cable, and portable speaker from Asher’s woods lair; Dominic carries the baby creature and takes point.",
+    "productionNotes": "Two-person marsh unit. Asher remains off screen; his established recorder network and woods equipment are essential to Dallas’s plan.",
     "cast": [
       "Dallas",
-      "Makayla",
       "Dominic"
     ]
   },
@@ -516,25 +468,21 @@
     "durationMin": 120,
     "shootDays": 0.5,
     "assignedDay": 7,
-    "keyElements": "The Trench Run — three adults move through 10ft grass in the storm; Makayla sweeps her handheld speaker; Red-Eye patrol. Hide-and-pass: Makayla kills her chest-rig LED, all three drop flat, the shadow sweeps over and loses them; Dominic shields the baby. INTERCUT house: Asher steadies an agitated Mr. Mike.",
-    "productionNotes": "Asher's voice-throw decoy REMOVED (he's not in the marsh) — replaced by a hide-and-pass. Dominic's strain is from being unfit + scared, not weight. Practical: blinking green LED on Makayla's chest rig as sole light source. Separate house-interior unit for the Asher/Mr. Mike intercut (s23.2).",
+    "keyElements": "Dallas and Dominic cross ten-foot grass in the storm, lose the tracker signal, hide beneath a Red-Eye patrol, and continue toward the center with the baby.",
+    "productionNotes": "Two principal actors in the marsh. Dallas leads with tracker, chest-rig LED, and handheld speaker; Dominic protects the creature.",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike"
+      "Dominic"
     ]
   },
   "the-perimeter": {
     "durationMin": 150,
     "shootDays": 0.5,
     "assignedDay": 7,
-    "keyElements": "Sanctuary ring of flattened grass; Golden Elders + golden dome; Makayla up close as the baby reunites with its mother Elder; Red-Eye siege breaches the ring; the mother curls around the baby and takes the assault; Makayla's single handheld speaker dies — Dallas swings the big directional emitter off his back (\"the big one. Once.\").",
-    "productionNotes": "REVISED — single-emitter climax (no node field). VFX: golden dome, red-eye shadows. No distant blinking-node field.",
+    "keyElements": "Dallas and Dominic reunite the baby with its mother, then face the Red-Eye siege. Dallas’s handheld speaker fails and he begins routing the creature’s call through Asher’s recorder network.",
+    "productionNotes": "Two principal actors plus creature effects. Preserve the recorder-network payoff established in Asher’s woods scenes.",
     "cast": [
       "Dallas",
-      "Makayla",
       "Dominic"
     ]
   },
@@ -543,14 +491,11 @@
     "shootDays": 0.5,
     "assignedDay": 7,
     "time": "7:00 PM – 9:00 PM",
-    "keyElements": "The swirl — Dallas dials the known pitch (115.3, Mr. Mike's number), aims and fires ONE concentrated pulse from the emitter: vaporizes the swarm, purges the contagion. The Red-Eyes tear the mother Elder down — she dies shielding the baby. Dominic: disbelief, then \"Go, go, GO.\" INTERCUT house: Mr. Mike calms (\"There they go\"). The orphaned baby survives, locks eyes with Dallas & Makayla, and dissolves into the ether.",
-    "productionNotes": "REVISED — single concentrated pulse from the directional emitter (no whole-marsh swarm ignition). VFX: emitter beam/blast, Red-Eye vaporization, the mother's death, the baby dissolving into the ether. Separate house-interior unit for the Mr. Mike/Asher intercut (s25.2).",
+    "keyElements": "Dallas broadcasts the rebuilt creature call through every recorder in the marsh. The network converges, the Red-Eyes collapse, the mother dies protecting the baby, and Dominic leads Dallas home.",
+    "productionNotes": "Dallas and Dominic carry the climax. No house intercut and no additional family cast.",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic",
-      "Mr. Mike"
+      "Dominic"
     ]
   },
   "s26b": {
@@ -561,7 +506,6 @@
     "productionNotes": "Wraps",
     "cast": [
       "Dallas",
-      "Makayla",
       "Asher",
       "Dominic"
     ]
@@ -574,12 +518,10 @@
     "keyElements": "",
     "productionNotes": "Afternoon shoot before nursery run",
     "cast": [
-      "Asher",
-      "Mr. Mike",
       "Dallas",
-      "Makayla",
       "Dominic",
-      "Pat"
+      "Mr. Mike",
+      "Pat Clendenen"
     ]
   },
   "full-circle": {
@@ -590,9 +532,8 @@
     "productionNotes": "Wraps",
     "cast": [
       "Dallas",
-      "Makayla",
-      "Asher",
-      "Dominic"
+      "Dominic",
+      "Asher"
     ]
   },
   "limbo": {},
@@ -611,11 +552,18 @@
   },
   "the-threshold": {
     "durationMin": 15,
-    "assignedDay": 5
+    "assignedDay": 5,
+    "cast": [
+      "Dallas"
+    ]
   },
   "the-return": {
     "durationMin": 60,
-    "assignedDay": 2
+    "assignedDay": 2,
+    "cast": [
+      "Dallas",
+      "Dominic"
+    ]
   },
   "shootPlan": [
     {
@@ -694,10 +642,9 @@
           "scene": "s00a",
           "cast": [
             "Dallas",
-            "Makayla",
             "Asher"
           ],
-          "description": "Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Makayla & Asher setting up equipment in marsh.",
+          "description": "Dallas walks through residential Branford while Asher works alone in the marsh, planting trail cameras, a boom pole, and concealed acoustic traps.",
           "shots": [
             "WS — Branford street establishing, low houses with white trim and weathered fences. *[L→R flow, destination right]*",
             "MS — Dallas walking down sidewalk with suitcase. *[L→R, backs-to-camera]*",
@@ -735,6 +682,11 @@
             "WS — Dallas still and alone in the attic. Property manager's voice audible but distant below."
           ]
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Asher",
+        "Matt Grant"
       ]
     },
     {
@@ -884,6 +836,10 @@
             "WS - Wide sky, storm clouds gathering over distant Branford"
           ]
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Matt Grant (if available)"
       ]
     },
     {
@@ -1011,6 +967,9 @@
             "Detail - Oscillator spiking at maximum"
           ]
         }
+      ],
+      "cast": [
+        "Dallas"
       ]
     },
     {
@@ -1021,7 +980,7 @@
         "s03",
         "s05"
       ],
-      "crewCall": "CALL: 11:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 11:30 AM — Jerry's' House (72 Lake St, Hamden)\nSHOOT: 11:50 AM - 12:30 PM — s01 · Makayla & Asher arrive\nLUNCH: 12:30 PM\nSHOOT: 1:15 PM - 3:00 PM — s01 · Makayla & Asher arrive\nSHOOT: 4 PM - 5:30 PM — s05 · Merlin app search\nDINNER: 5:30 PM\nSHOOT: 6:00 PM - 8:45 PM — Final block (TBD)\nWRAP: 9:00 PM",
+      "crewCall": "CALL: 11:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 11:30 AM — Jerry's House (72 Lake St, Hamden)\nSHOOT: 11:50 AM - 2:00 PM — s01 · Asher meets Dallas and studies the oscillator\nSHOOT: 2:15 PM - 4:00 PM — s03 · Dallas meets Dominic\nSHOOT: 4:15 PM - 5:30 PM — s05 · Dallas and Dominic cross the marsh boardwalk\nWRAP: 6:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1047,148 +1006,40 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s01.1",
-          "title": "Makayla and Asher arrive",
-          "scene": "s01",
-          "cast": [
-            "Makayla",
-            "Asher"
-          ],
-          "description": "Makayla and Asher pull up to the Dallas house with equipment and gear.",
-          "shots": [
-            "WS - House exterior, vehicle arriving",
-            "MS - Car pulling into driveway",
-            "MS - Makayla and Asher stepping out",
-            "Detail - Equipment being unloaded",
-            "WS - Two of them approaching house"
-          ]
-        },
-        {
-          "beat": "s01.2",
-          "title": "Dallas greets them",
+          "beat": "s01",
+          "title": "Arrival",
           "scene": "s01",
           "cast": [
             "Dallas",
-            "Makayla",
             "Asher"
           ],
-          "description": "Dallas emerges from house, first meeting with Makayla and Asher on the property.",
-          "shots": [
-            "WS - Dallas at door, M&A in yard",
-            "MS - Greetings and handshakes",
-            "CU - Dallas's face meeting them",
-            "WS - All three at house entrance",
-            "MS - Conversation beginning"
-          ]
+          "description": "Asher approaches Dallas on his bike, studies the military-grade oscillator, traces the signal pattern on his palm, and leaves without explaining what he tracks."
         },
         {
-          "beat": "s01.3",
-          "title": "House and grounds tour",
-          "scene": "s01",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher"
-          ],
-          "description": "Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.",
-          "shots": [
-            "WS - Group entering house",
-            "MS - Quick interior shots",
-            "WS - Exiting to back or side",
-            "WS - Viewing the tall grass from property edge",
-            "MS - All three observing the marsh"
-          ]
-        },
-        {
-          "beat": "s03.1",
-          "title": "The sound begins",
+          "beat": "s03",
+          "title": "Meet the Neighbors",
           "scene": "s03",
           "cast": [
             "Dallas",
-            "Dominic",
-            "Pat"
+            "Dominic"
           ],
-          "description": "Dallas, Dominic, and Pat experience the hum directly for the first time - it starts low and builds.",
-          "shots": [
-            "WS - Group in location, stillness",
-            "MS - Dallas recognizing the sound",
-            "CU - Dominic and Pat's confused reactions",
-            "WS - Around them, hum intensifying",
-            "Detail - Portable oscillator responding"
-          ]
+          "description": "Dallas meets Dominic and the two walk through Branford, establishing their friendship and shared curiosity about the marsh."
         },
         {
-          "beat": "s03.2",
-          "title": "Attempt to track it",
-          "scene": "s03",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They try to locate the source - moving with equipment, oscillator in hand.",
-          "shots": [
-            "MS - Dallas with oscillator, searching",
-            "WS - All three moving through location",
-            "Detail - Oscillator dial tracking frequency",
-            "CU - Their faces as hum builds",
-            "MS - Triangulating direction"
-          ]
-        },
-        {
-          "beat": "s03.3",
-          "title": "The revelation",
-          "scene": "s03",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They narrow down that the sound is coming from the tall grass itself - the source becomes clear.",
-          "shots": [
-            "WS - Tall grass, hum at maximum",
-            "CU - Each of their faces, realization",
-            "Detail - Equipment reading peak",
-            "WS - Group facing the grass",
-            "MS - Looking at each other in shock"
-          ]
-        },
-        {
-          "beat": "s05.1",
-          "title": "Merlin app search",
+          "beat": "s05",
+          "title": "The Merlin App",
           "scene": "s05",
           "cast": [
             "Dallas",
-            "Dominic",
-            "Pat"
+            "Dominic"
           ],
-          "description": "They consult field guides and use the Merlin app to try identifying what could produce this sound.",
-          "shots": [
-            "MS - Dallas holding app on phone/device",
-            "CU - Screen showing bird identification interface",
-            "MS - Dominic and Pat looking over",
-            "Detail - Flipping through field guide pages",
-            "WS - Group reviewing findings"
-          ]
-        },
-        {
-          "beat": "s05.2",
-          "title": "Dead ends",
-          "scene": "s05",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Pat"
-          ],
-          "description": "They realize no known bird species matches the frequency or pattern - confusion and concern.",
-          "shots": [
-            "CU - Dallas's concerned face",
-            "MS - Dominic shaking head",
-            "Detail - Pat pointing to field guide, uncertain",
-            "MS - Exchange of worried looks",
-            "WS - Three of them, perplexed"
-          ]
+          "description": "Dallas and Dominic cross the boardwalk, listen to the birds and marsh, and notice movement in the reeds."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Asher"
       ]
     },
     {
@@ -1197,7 +1048,7 @@
         "s14b",
         "s14c"
       ],
-      "crewCall": "CALL: 12:45 PM\nMEET: Alex's' House (206 Saint John ST)\nSETUP: 1:10 PM — Camera preps\nSHOOT: 1:30 PM — s14b · Sierra's journal discovery & frequency match\nBREAK: 2:20 PM\nSHOOT: 2:45 PM — s14c · Expedition planning & equipment check\nWRAP: 4:30 PM",
+      "crewCall": "CALL: 12:45 PM\nMEET: Alex's House (206 Saint John St)\nSETUP: 1:10 PM — Camera preps\nSHOOT: 1:30 PM — s14b · Dallas and Asher triangulate Sierra's journal and listening-post pattern\nBREAK: 2:20 PM\nSHOOT: 2:45 PM — s14c · Dominic nearly discovers the creature\nWRAP: 4:30 PM",
       "crew": [
         {
           "role": "Director",
@@ -1223,125 +1074,30 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s14b.1",
-          "title": "Field journal discovery",
+          "beat": "s14b",
+          "title": "The Field Journal",
           "scene": "s14b",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
+            "Asher"
           ],
-          "description": "The group gathers to examine Sierra's field journal closely - detailed notes and sketches about the hum.",
-          "shots": [
-            "WS - Group seated around table with journal",
-            "MS - Dallas opening journal carefully",
-            "CU - Journal pages showing sketches and notes",
-            "Detail - Hand pointing to frequency notations",
-            "CU - Faces reacting to findings"
-          ]
+          "description": "Dallas and Asher triangulate Sierra’s journal drawings, Asher’s bead-counted listening posts, and the bright-to-dark creature transformation."
         },
         {
-          "beat": "s14b.2",
-          "title": "Reading Sierra's notes",
-          "scene": "s14b",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
-          ],
-          "description": "Dallas reads passages aloud - Sierra's observations about the creature and the hum pattern.",
-          "shots": [
-            "MS - Dallas reading from journal",
-            "CU - Dallas's face, emotion in reading",
-            "MS - Others listening intently",
-            "Detail - Journal page details visible",
-            "WS - Group absorbing information"
-          ]
-        },
-        {
-          "beat": "s14b.3",
-          "title": "Matching the frequency",
-          "scene": "s14b",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
-          ],
-          "description": "They use the oscillator to match the frequency noted in Sierra's journal - confirmation of the pattern.",
-          "shots": [
-            "MS - Oscillator adjustment",
-            "Detail - Dial reaching specific frequency",
-            "CU - Group reactions as match occurs",
-            "WS - Equipment setup with group",
-            "Detail - Notebook comparing frequencies"
-          ]
-        },
-        {
-          "beat": "s14c.1",
-          "title": "Planning the investigation",
+          "beat": "s14c",
+          "title": "The Almost Discovery",
           "scene": "s14c",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
+            "Dominic"
           ],
-          "description": "They devise a plan to explore the marsh more thoroughly based on Sierra's notes - mapping out grid search.",
-          "shots": [
-            "WS - Group huddled over map on table",
-            "MS - Someone marking locations",
-            "Detail - Map showing marked grid sections",
-            "CU - Faces showing determination",
-            "MS - Discussion and gesturing at map"
-          ]
-        },
-        {
-          "beat": "s14c.2",
-          "title": "Equipment check",
-          "scene": "s14c",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
-          ],
-          "description": "They methodically check equipment - oscillators, recorders, safety gear - preparing for marsh expedition.",
-          "shots": [
-            "WS - Equipment laid out on floor/table",
-            "MS - Each member testing equipment",
-            "Detail - Batteries, settings, connections",
-            "CU - Concentration on faces",
-            "WS - Readiness check, gear being assembled"
-          ]
-        },
-        {
-          "beat": "s14c.3",
-          "title": "Near encounter",
-          "scene": "s14c",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
-          ],
-          "description": "As they prepare to head out, something moves in the tall grass visible from the house - they almost discover the creature.",
-          "shots": [
-            "WS - Group moving toward exit/window",
-            "MS - Seeing movement in grass",
-            "CU - Faces frozen with realization",
-            "WS - Tall grass undulating",
-            "Detail - Oscillator suddenly spiking"
-          ]
+          "description": "Dallas hides the creature and equipment while Dominic nearly discovers the humming enclosure."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Asher"
       ]
     },
     {
@@ -1377,139 +1133,48 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s08d.1",
-          "title": "Return through darkness",
+          "beat": "s08d",
+          "title": "The Return",
           "scene": "s08d",
           "cast": [
-            "Dallas"
+            "Dallas",
+            "Dominic"
           ],
-          "description": "Dallas makes his way back through the darkening neighborhoods, disoriented.",
-          "shots": [
-            "WS - Suburban street at dusk, Dallas retracing path",
-            "MS - Dallas walking, checking oscillator periodically",
-            "CU - Dallas, confused or shaken",
-            "WS - Street lamp lighting as darkness falls",
-            "OTS - Dallas from behind, heading back"
-          ]
+          "description": "Dallas returns through the dark with the injured creature while Dominic checks on him."
         },
         {
-          "beat": "s11.1",
-          "title": "Evening arrival at location",
+          "beat": "s11",
+          "title": "Kitchen Triage",
           "scene": "s11",
           "cast": [
             "Dallas",
-            "Dominic",
-            "Asher"
+            "Dominic"
           ],
-          "description": "Dallas, Dominic, and Asher arrive at the evening location to explore - golden hour light.",
-          "shots": [
-            "WS - Location in golden evening light",
-            "MS - Three approaching the area",
-            "CU - Dallas's determination",
-            "WS - Expansive view of where they'll search",
-            "MS - Setting up oscillator and recorders"
-          ]
+          "description": "Dallas builds a makeshift habitat, studies the creature’s call, and deflects Dominic’s questions before Dominic leaves."
         },
         {
-          "beat": "s11.2",
-          "title": "Tracking the hum",
-          "scene": "s11",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Asher"
-          ],
-          "description": "They move through the area with equipment, oscillator active, following frequency changes.",
-          "shots": [
-            "MS - Dallas with oscillator leading",
-            "WS - All three moving through terrain",
-            "Detail - Oscillator dial responding",
-            "CU - Listening intently",
-            "MS - Adjusting course based on signal"
-          ]
-        },
-        {
-          "beat": "s11.3",
-          "title": "Dominic's hesitation",
-          "scene": "s11",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Asher"
-          ],
-          "description": "Dominic expresses doubt or fear about continuing deeper - tension within the group.",
-          "shots": [
-            "MS - Dominic stopping, voicing concern",
-            "CU - Dominic's apprehension",
-            "MS - Dallas responding, reassuring",
-            "CU - Asher's face, picking a side",
-            "MS - Decision moment between them"
-          ]
-        },
-        {
-          "beat": "s12.1",
-          "title": "The burn mark discovery",
+          "beat": "s12",
+          "title": "Alone With the Creature",
           "scene": "s12",
           "cast": [
             "Dallas",
-            "Dominic",
-            "Asher"
+            "Dominic"
           ],
-          "description": "They discover a distinctive burn mark on the ground or trees - evidence of the creature's presence.",
-          "shots": [
-            "WS - The burn mark area visible on ground",
-            "MS - Group gathering around it",
-            "CU - Examining the burn pattern closely",
-            "Detail - Hand pointing to burn characteristics",
-            "CU - Reactions to what it means"
-          ]
-        },
-        {
-          "beat": "s12.2",
-          "title": "Oscillator confirmation",
-          "scene": "s12",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Asher"
-          ],
-          "description": "The oscillator shows maximum response at the burn mark - confirmation this is where the creature was.",
-          "shots": [
-            "Detail - Oscillator spiking to maximum",
-            "CU - Dallas's face, confirmation and fear",
-            "MS - Dominic and Asher stepping back",
-            "WS - The burn mark with group around it",
-            "Detail - Frequency reading at peak"
-          ]
-        },
-        {
-          "beat": "s12.3",
-          "title": "The realization",
-          "scene": "s12",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Asher"
-          ],
-          "description": "They understand the creature is real, local, and active - the threat becomes tangible.",
-          "shots": [
-            "CU - Each of their faces reacting",
-            "MS - Quiet moment of understanding",
-            "WS - Group in the darkening area",
-            "Detail - Oscillator still reading the presence",
-            "MS - Exchange of frightened looks"
-          ]
+          "description": "Dallas wakes beside the creature and reviews his recordings while Dominic checks a tire outside."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic"
       ]
     },
     {
       "day": 6,
       "scenes": [
-        "s15a",
         "s15b",
         "s15c"
       ],
-      "crewCall": "CALL: 2:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 2:30 PM — Camera preps\nSHOOT: 3:00 PM — s15a · The failed experiment\nSHOOT: 4:30 PM — s15b · Tracking box\nSHOOT: 6:00 PM — s15c · Dominic's confession\nWRAP: 7:30 PM",
+      "crewCall": "CALL: 2:00 PM\nMEET: Woods / Asher's lair\nSETUP: 2:30 PM — Camera and practical listening-post prep\nSHOOT: 3:00 PM — s15b · Asher's tracking box, recorder network, and woods equipment\nSHOOT: 5:00 PM — s15c · Contact-transducer signal and Dominic's confession\nWRAP: 7:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1535,161 +1200,32 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s15a.1",
-          "title": "Setting up the experiment",
-          "scene": "s15a",
-          "cast": [
-            "Dallas",
-            "Makayla"
-          ],
-          "description": "Dallas and Makayla carefully arrange equipment for a test - oscillator, resonance chamber, recording devices.",
-          "shots": [
-            "WS - Table with equipment being arranged",
-            "MS - Dallas and Makayla working together",
-            "Detail - Oscillator being positioned",
-            "CU - Concentration on their faces",
-            "WS - Full setup ready for test"
-          ]
-        },
-        {
-          "beat": "s15a.2",
-          "title": "The test begins",
-          "scene": "s15a",
-          "cast": [
-            "Dallas",
-            "Makayla"
-          ],
-          "description": "They activate the oscillator and begin recording - waiting to see if it attracts the creature or proves something.",
-          "shots": [
-            "Detail - Oscillator dial turning on",
-            "MS - Dallas and Makayla waiting, listening",
-            "CU - Equipment recording",
-            "WS - Room with hum building",
-            "CU - Their faces, anticipation"
-          ]
-        },
-        {
-          "beat": "s15a.3",
-          "title": "Nothing happens",
-          "scene": "s15a",
-          "cast": [
-            "Dallas",
-            "Makayla"
-          ],
-          "description": "The test fails - no response, no creature, no confirmation. Disappointment and concern.",
-          "shots": [
-            "MS - Silence, waiting",
-            "CU - Dallas's disappointed face",
-            "Detail - Oscillator showing normal readings",
-            "CU - Makayla's frustration",
-            "MS - Looking at each other"
-          ]
-        },
-        {
-          "beat": "s15b.1",
-          "title": "The tracking box explained",
+          "beat": "s15b",
+          "title": "Asher’s Tracking Box",
           "scene": "s15b",
           "cast": [
             "Dallas",
-            "Makayla"
+            "Dominic",
+            "Asher"
           ],
-          "description": "Dallas shows Makayla a custom-built tracking device - Sierra's design notes form the basis.",
-          "shots": [
-            "MS - Dallas holding the tracking box",
-            "Detail - Box mechanisms and components",
-            "CU - Makayla's interest",
-            "MS - Dallas pointing out features",
-            "Detail - Frequency dial and settings"
-          ]
+          "description": "Asher demonstrates his listening posts, bead-count system, hidden woods lair, trail cameras, recorders, cables, and spare oscillator."
         },
         {
-          "beat": "s15b.2",
-          "title": "Building the device",
-          "scene": "s15b",
-          "cast": [
-            "Dallas",
-            "Makayla"
-          ],
-          "description": "They work together building or calibrating the tracker - precision work, focused collaboration.",
-          "shots": [
-            "WS - Workspace with tools and parts",
-            "MS - Both working on the box",
-            "Detail - Soldering or assembling",
-            "CU - Hands working precisely",
-            "MS - Testing components together"
-          ]
-        },
-        {
-          "beat": "s15b.3",
-          "title": "First calibration",
-          "scene": "s15b",
-          "cast": [
-            "Dallas",
-            "Makayla"
-          ],
-          "description": "They calibrate the tracker to match the hum frequency - excitement as it responds.",
-          "shots": [
-            "Detail - Frequency dial being adjusted",
-            "CU - Dallas's face concentrating",
-            "Detail - Device responding, light or sound indicator",
-            "CU - Makayla's recognition of success",
-            "MS - Exchange of encouraged looks"
-          ]
-        },
-        {
-          "beat": "s15c.1",
-          "title": "Dominic arrives",
+          "beat": "s15c",
+          "title": "Dominic’s Confession",
           "scene": "s15c",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Dominic"
+            "Dominic",
+            "Asher"
           ],
-          "description": "Dominic shows up - he has something to say, something weighing on him.",
-          "shots": [
-            "MS - Dominic entering, serious",
-            "CU - His troubled expression",
-            "MS - Dallas and Makayla reacting",
-            "WS - Three of them in room",
-            "MS - Dominic preparing to speak"
-          ]
-        },
-        {
-          "beat": "s15c.2",
-          "title": "The confession",
-          "scene": "s15c",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Dominic"
-          ],
-          "description": "Dominic reveals something he knows or has experienced - guilt, fear, or vital information about the creature.",
-          "shots": [
-            "CU - Dominic speaking, emotional",
-            "MS - Dallas and Makayla listening intently",
-            "CU - Makayla's reaction",
-            "CU - Dallas's reaction",
-            "MS - Dominic vulnerable, sharing burden"
-          ]
-        },
-        {
-          "beat": "s15c.3",
-          "title": "Processing the revelation",
-          "scene": "s15c",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Dominic"
-          ],
-          "description": "They process what Dominic has told them - silence, questions, dawning realization.",
-          "shots": [
-            "CU - Each face reacting",
-            "MS - Quiet moment of shock",
-            "WS - Three of them, the weight of new knowledge",
-            "CU - Exchange of looks",
-            "MS - Beginning to formulate next steps"
-          ]
+          "description": "At Asher’s woods equipment station, Dallas grips the contact transducers, experiences the signal, and hears Dominic describe the night of the boom."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Asher"
       ]
     },
     {
@@ -1730,105 +1266,92 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s13.1",
-          "title": "Entering the grass",
+          "beat": "s13",
+          "title": "The Confrontation",
           "scene": "s13",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
             "Dominic",
-            "Mr. Mike"
+            "Asher"
           ],
-          "description": "The group enters the tall marsh for the first time - a coordinated expedition into the unknown.",
-          "shots": [
-            "WS - Group at marsh edge at dawn",
-            "MS - Equipment check before entry",
-            "WS - Walking into tall grass",
-            "MS - Moving through the field",
-            "CU - Faces as they go deeper"
-          ]
+          "description": "Asher finds the trailcam path, discovers the creature in Dallas’s attic, tests it with his oscillator and viewfinder, and agrees to keep the secret."
         },
         {
-          "beat": "s13.2",
-          "title": "The hum intensifies",
-          "scene": "s13",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
-          ],
-          "description": "As they go deeper, the hum becomes overwhelming - their equipment goes wild.",
-          "shots": [
-            "WS - Group stopped in tall grass",
-            "Detail - Oscillators and recorders at max",
-            "CU - Reactions to sound intensity",
-            "WS - Grass swaying around them",
-            "MS - Communication amid noise"
-          ]
-        },
-        {
-          "beat": "s14.1",
-          "title": "The creature is there",
+          "beat": "s14",
+          "title": "The Connection",
           "scene": "s14",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
             "Dominic",
-            "Mr. Mike"
+            "Asher"
           ],
-          "description": "They encounter or sense the creature directly - a moment of terrible clarity.",
-          "shots": [
-            "WS - Something moving in grass near them",
-            "CU - Dallas seeing it first",
-            "MS - Group frozen in fear",
-            "Detail - Oscillator reading off the charts",
-            "WS - Creature movement, tall grass displacement"
-          ]
+          "description": "Dominic and Dallas discuss grief; Asher’s seizure and amplifier reveal a second signal coming from the marsh."
         },
         {
-          "beat": "s14.2",
-          "title": "The rescue",
-          "scene": "s14",
+          "beat": "s21",
+          "title": "Into the Grass",
+          "scene": "s21",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
+            "Dominic"
           ],
-          "description": "Something goes wrong - someone in danger, the group mobilizes to rescue/protect.",
-          "shots": [
-            "WS - Chaos in the field",
-            "MS - Someone in danger",
-            "CU - Rescue action",
-            "WS - Group protecting each other",
-            "MS - Getting to safety"
-          ]
+          "description": "Dominic runs after the creature and Dallas follows with the tracker as red eyes flare at the grass line."
         },
         {
-          "beat": "s14.3",
-          "title": "Escape from grass",
-          "scene": "s14",
+          "beat": "s22",
+          "title": "The Load-Out",
+          "scene": "s22",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
+            "Dominic"
           ],
-          "description": "They retreat from the grass, shaken and bloodied - barely making it out.",
-          "shots": [
-            "WS - Running through tall grass",
-            "MS - Helping each other",
-            "Detail - Injuries visible",
-            "WS - Reaching the boundary",
-            "CU - Gasping, shocked faces"
-          ]
+          "description": "Dallas loads Asher’s spare oscillator and retrieves the portable speaker from Asher’s woods lair while Dominic carries the baby and takes point."
+        },
+        {
+          "beat": "s23",
+          "title": "The Trench Run",
+          "scene": "s23",
+          "cast": [
+            "Dallas",
+            "Dominic"
+          ],
+          "description": "Dallas and Dominic lose the tracker signal, hide beneath a Red-Eye patrol, and push deeper through the storm with the baby."
+        },
+        {
+          "beat": "s24",
+          "title": "The Mother and the Swarm",
+          "scene": "s24",
+          "cast": [
+            "Dallas",
+            "Dominic"
+          ],
+          "description": "Dominic reunites the baby with its mother as Dallas detects the siege and routes the creature’s call toward Asher’s recorder network."
+        },
+        {
+          "beat": "s25",
+          "title": "The Answer",
+          "scene": "s25",
+          "cast": [
+            "Dallas",
+            "Dominic"
+          ],
+          "description": "Dallas’s broadcast pulls every marsh recorder into an amplified halo, collapsing the Red-Eyes; Dominic guides Dallas home after the creatures disappear."
+        },
+        {
+          "beat": "s26",
+          "title": "The Morning After",
+          "scene": "s26",
+          "cast": [
+            "Dallas",
+            "Dominic"
+          ],
+          "description": "Dallas and Dominic return through the grass and enter the house soaked and exhausted."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Asher"
       ]
     },
     {
@@ -1865,171 +1388,58 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s07.1",
-          "title": "Coordinates discovered",
+          "beat": "s07",
+          "title": "The Coordinates",
           "scene": "s07",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
             "Dominic",
+            "Asher",
             "Mr. Mike"
           ],
-          "description": "The group deciphers a coordinate pattern from Sierra's notes and the hum frequency, pinpointing a location deep in the marsh.",
-          "shots": [
-            "WS - Group gathered around desk with maps and journal",
-            "MS - Dallas cross-referencing journal entries with oscillator readings",
-            "CU - Coordinates being circled on map",
-            "Detail - Frequency notation matching Sierra's field drawings",
-            "CU - Faces as the location becomes clear"
-          ]
+          "description": "Dallas sees Asher’s basement map and equipment while Mr. Mike scratches the repeating coordinates and warns that the song has gone wrong."
         },
         {
-          "beat": "s07.2",
-          "title": "The plan forms",
-          "scene": "s07",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
-          ],
-          "description": "With coordinates identified, the group debates whether to act — tension between urgency and caution.",
-          "shots": [
-            "WS - Group around table, discussion heating up",
-            "MS - Dallas making the case for going",
-            "CU - Mr. Mike's skeptical reaction",
-            "MS - Dominic and Makayla exchanging looks",
-            "WS - The group, divided but leaning toward action"
-          ]
-        },
-        {
-          "beat": "s18.1",
-          "title": "The life group arrives",
+          "beat": "s18",
+          "title": "Life Group Arrives",
           "scene": "s18",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
             "Dominic",
             "Mr. Mike",
             "Life Group Extras"
           ],
-          "description": "An unexpected crowd arrives — the Life Group, led by Dominic, showing up for a scheduled gathering nobody cancelled.",
-          "shots": [
-            "WS - Cars pulling up, people filing out",
-            "MS - Dominic at front, leading the group in",
-            "CU - Dallas's face, unprepared for this",
-            "WS - Life Group moving into the house, filling the space",
-            "MS - Makayla pulling Dallas aside"
-          ]
+          "description": "Dallas and Dominic hide and stabilize the creature in the basement while life group fills the house and Mr. Mike senses the danger."
         },
         {
-          "beat": "s18.2",
-          "title": "Awkward coexistence",
-          "scene": "s18",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike",
-            "Life Group Extras"
-          ],
-          "description": "The Life Group settles in while the core group scrambles to conceal their investigation and equipment.",
-          "shots": [
-            "WS - Living room crowded with Life Group and scattered gear",
-            "MS - Someone hastily moving equipment out of view",
-            "CU - A Life Group member noticing something strange",
-            "MS - Dominic deflecting a question casually",
-            "WS - Two worlds awkwardly sharing the same space"
-          ]
-        },
-        {
-          "beat": "s19.1",
-          "title": "The hymn begins",
+          "beat": "s19",
+          "title": "The Hymn",
           "scene": "s19",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
             "Dominic",
             "Mr. Mike",
             "Life Group Extras"
           ],
-          "description": "The Life Group begins singing — a slow, resonant hymn with a frequency eerily close to the hum.",
-          "shots": [
-            "WS - Life Group arranged, Dominic leading",
-            "MS - Voices rising, hymn building",
-            "Detail - Oscillator on shelf beginning to flicker",
-            "CU - Dallas hearing it, registering the similarity",
-            "WS - The room vibrating with sound"
-          ]
+          "description": "The life-group hymn aligns with the creature’s hum; Mr. Mike identifies the golden target and the Red-Eyes outside."
         },
         {
-          "beat": "s19.2",
-          "title": "Frequencies align",
-          "scene": "s19",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike",
-            "Life Group Extras"
-          ],
-          "description": "As the hymn swells, the hum beneath it rises in response — the frequencies begin to mirror each other.",
-          "shots": [
-            "Detail - Oscillator reading climbing toward 115.3",
-            "CU - Dallas's eyes going wide",
-            "MS - Makayla clocking it, mouthing to Dallas",
-            "WS - Life Group singing, unaware",
-            "Detail - Glass on table beginning to vibrate"
-          ]
-        },
-        {
-          "beat": "s20.1",
-          "title": "Red eyes in the dark",
+          "beat": "s20",
+          "title": "The Secret Is Out",
           "scene": "s20",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike",
-            "Life Group Extras"
+            "Dominic"
           ],
-          "description": "As the hymn peaks, someone near a window sees the creature — two red points of light in the dark grass.",
-          "shots": [
-            "WS - Window, Life Group in foreground, dark yard beyond",
-            "CU - A Life Group member stopping mid-song, staring",
-            "POV - Through window glass: two red glowing eyes at the grass line",
-            "CU - Horror crossing their face",
-            "WS - Moment before the room realizes"
-          ]
-        },
-        {
-          "beat": "s20.2",
-          "title": "The secret is out",
-          "scene": "s20",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike",
-            "Life Group Extras"
-          ],
-          "description": "The Life Group member screams. The room erupts. Dallas can no longer contain what's been happening.",
-          "shots": [
-            "WS - Chaos, people scrambling",
-            "MS - Dallas stepping forward, no longer hiding it",
-            "CU - Dominic's face — anger or fear at Dallas",
-            "MS - Dallas addressing everyone, urgent",
-            "WS - The room fractured — some running, some frozen"
-          ]
+          "description": "Dominic discovers Sierra’s creature files, sees the Red-Eyes, and joins Dallas in testing the portable speaker against them."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Asher",
+        "Mr. Mike",
+        "Life Group Extras"
       ]
     },
     {
@@ -2059,62 +1469,22 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s26.pickup.1",
-          "title": "Additional creature effects",
+          "beat": "s26",
+          "title": "The Morning After",
           "scene": "s26",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
             "Dominic"
           ],
-          "description": "Pickup shots of the creature's arrival - additional angles and close coverage of destruction.",
-          "shots": [
-            "CU - Glass vibrating and breaking",
-            "Detail - Door frame cracking",
-            "WS - Wide shot of house in assault",
-            "Detail - Objects flying or falling",
-            "CU - Reaction faces in close-up"
-          ]
-        },
-        {
-          "beat": "s26.pickup.2",
-          "title": "Defensive positions",
-          "scene": "s26",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic"
-          ],
-          "description": "Close coverage of the group defending themselves - intimate shots in shadows.",
-          "shots": [
-            "CU - Hands gripping equipment",
-            "Detail - Oscillators in close-up",
-            "MS - Back to back in darkness",
-            "CU - Sweat and fear on faces",
-            "Detail - Equipment sparking or failing"
-          ]
-        },
-        {
-          "beat": "s26.pickup.3",
-          "title": "The hum at maximum",
-          "scene": "s26",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic"
-          ],
-          "description": "Extreme close-ups of the hum's effects - sensory overload captured intimately.",
-          "shots": [
-            "Detail - Oscillator dial at maximum",
-            "CU - Someone screaming silently",
-            "Detail - Blood from ears",
-            "CU - Eyes wide with pain",
-            "Detail - Hands covering ears"
-          ]
+          "description": "Dallas and Dominic return through the grass and enter the house soaked and exhausted."
         }
+      ],
+      "scenes": [
+        "s26"
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic"
       ]
     },
     {
@@ -2145,65 +1515,35 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s07b.pickup.1",
-          "title": "The warning additional coverage",
+          "beat": "s07b",
+          "title": "Mr. Mike’s Warning",
           "scene": "s07b",
           "cast": [
             "Dallas",
             "Dominic",
-            "Makayla",
-            "Asher",
             "Mr. Mike"
           ],
-          "description": "Pickup shots of Mr. Mike's crucial warning - wider angles and group reactions.",
-          "shots": [
-            "WS - Full group with Mr. Mike in center",
-            "CU - Mr. Mike's face in profile",
-            "Detail - Hand gestures emphasizing point",
-            "MS - Each person's individual reaction",
-            "WS - Group dynamics shifting"
-          ]
+          "description": "Mr. Mike privately gives Dallas a lucid warning: touching an injured bright creature creates the dark one."
         },
         {
-          "beat": "s16.pickup.1",
-          "title": "Plan details captured",
+          "beat": "s16",
+          "title": "Back Home",
           "scene": "s16",
           "cast": [
             "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
+            "Dominic"
           ],
-          "description": "Close coverage of the escape/defense plan being explained - technical detail shots.",
-          "shots": [
-            "Detail - Map or sketch close-up",
-            "CU - Dallas pointing to locations",
-            "Detail - Hand-drawn notes or marks",
-            "MS - Two-shots of Dallas with others",
-            "CU - Understanding dawning on faces"
-          ]
-        },
-        {
-          "beat": "s16.pickup.2",
-          "title": "Resolution and commitment",
-          "scene": "s16",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
-          ],
-          "description": "Final commitment to the plan - intimate captures of determination and fear.",
-          "shots": [
-            "Detail - Hands meeting in center",
-            "CU - Eyes closing in acceptance",
-            "MS - Final huddle moment",
-            "Detail - A nod or affirmation between two",
-            "WS - Group ready to move forward"
-          ]
+          "description": "Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group."
         }
+      ],
+      "scenes": [
+        "s07b",
+        "s16"
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Mr. Mike"
       ]
     },
     {
@@ -2239,85 +1579,38 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s17.1",
-          "title": "Resonance begins",
+          "beat": "s17",
+          "title": "Resonance",
           "scene": "s17",
           "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
+            "Dallas"
           ],
-          "description": "The hum reaches a specific frequency that causes physical reaction - glasses vibrate, equipment resonates.",
-          "shots": [
-            "Detail - Objects vibrating on surfaces",
-            "WS - Interior shaking",
-            "CU - Faces reacting to vibration",
-            "Detail - Equipment oscillating",
-            "WS - The house under the hum's influence"
-          ]
+          "description": "Dallas tunes a soft frequency that calms the creature, then wakes to find it missing."
         },
         {
-          "beat": "s17.2",
-          "title": "Physical effects",
-          "scene": "s17",
-          "cast": [
-            "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
-          ],
-          "description": "The resonance intensifies - people feel it in their bodies, some hurt, disorientation.",
-          "shots": [
-            "CU - Someone clutching their ears",
-            "MS - Group in pain or discomfort",
-            "WS - Chaos in the house",
-            "Detail - Blood from ears or nose",
-            "CU - Determination to endure"
-          ]
-        },
-        {
-          "beat": "s17b.1",
-          "title": "A normal day memory",
+          "beat": "s17b",
+          "title": "Normal Day",
           "scene": "s17b",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
+            "Dominic"
           ],
-          "description": "Amongst the chaos, someone recalls or experiences a flash of normal life - brief respite.",
-          "shots": [
-            "Flashback - Sunny day, laughter",
-            "CU - Face of person remembering",
-            "Transition back to present",
-            "MS - Group trying to hold on",
-            "CU - A moment of connection"
-          ]
+          "description": "Dominic works the harbor while Dallas tracks the hum from his attic and the basement map points toward the marsh."
         },
         {
-          "beat": "s17c.1",
-          "title": "Mute drive",
+          "beat": "s17c",
+          "title": "The Drive",
           "scene": "s17c",
           "cast": [
             "Dallas",
-            "Makayla",
-            "Asher",
-            "Dominic",
-            "Mr. Mike"
+            "Dominic"
           ],
-          "description": "Without speaking, communicating through looks and gestures - all sound is overwhelmed.",
-          "shots": [
-            "WS - Group in silence, gesturing",
-            "CU - Eye contact and nods",
-            "MS - Hand signals and instructions",
-            "Detail - Mouths moving, no sound heard",
-            "WS - Coordinated silent action"
-          ]
+          "description": "Dominic sees the storm’s unnatural pattern in town and confronts Dallas over the phone."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic"
       ]
     },
     {
@@ -2350,7 +1643,39 @@
         "Branford landscape",
         "Marsh edges"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post\n\n---"
+      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post\n\n---",
+      "shotList": [
+        {
+          "beat": "s27",
+          "title": "Little Aftermath",
+          "scene": "s27",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Mr. Mike",
+            "Pat Clendenen"
+          ],
+          "description": "Dallas recovers the clean creature recording, then shares a quiet church meal with Dominic as Mr. Mike hears that the song is finally right."
+        },
+        {
+          "beat": "s28",
+          "title": "Full Circle",
+          "scene": "s28",
+          "cast": [
+            "Dallas",
+            "Dominic",
+            "Asher"
+          ],
+          "description": "Dallas helps Asher dismantle the woods listening network, accepts a harmless wind spike, reconnects with Dominic, and hears Sierra’s cadence in the creature’s hum."
+        }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Asher",
+        "Mr. Mike",
+        "Pat Clendenen"
+      ]
     },
     {
       "day": 11,
@@ -2385,45 +1710,31 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s07b.1",
-          "title": "Mr. Mike's warning",
+          "beat": "s07b",
+          "title": "Mr. Mike’s Warning",
           "scene": "s07b",
           "cast": [
             "Dallas",
             "Dominic",
-            "Makayla",
-            "Asher",
             "Mr. Mike"
           ],
-          "description": "Mr. Mike reveals something crucial about the creature or warns the group of danger ahead.",
-          "shots": [
-            "MS - Mr. Mike gathering them",
-            "CU - Mr. Mike speaking seriously",
-            "CU - Each person reacting",
-            "MS - Group processing warning",
-            "WS - Group moment of gravity"
-          ]
+          "description": "Mr. Mike privately gives Dallas a lucid warning: touching an injured bright creature creates the dark one."
         },
         {
-          "beat": "s16.1",
-          "title": "The escape plan",
+          "beat": "s16",
+          "title": "Back Home",
           "scene": "s16",
           "cast": [
             "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
+            "Dominic"
           ],
-          "description": "They devise a plan to either trap, communicate with, or escape from the creature.",
-          "shots": [
-            "WS - Group in huddle",
-            "Detail - Sketching or discussing plan",
-            "CU - Dallas deciding",
-            "MS - Mr. Mike providing wisdom",
-            "WS - Agreement and determination"
-          ]
+          "description": "Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Mr. Mike"
       ]
     },
     {
@@ -2458,65 +1769,33 @@
       "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s04.1",
-          "title": "The fellowship gathers",
+          "beat": "s04",
+          "title": "Fellowship",
           "scene": "s04",
           "cast": [
             "Dallas",
             "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
+            "Asher"
           ],
-          "description": "All the main characters come together - Dallas, Dominic, Makayla, Asher, Mr. Mike - a final gathering.",
-          "shots": [
-            "WS - Open location, all arriving",
-            "MS - Greetings and reuniting",
-            "CU - Individual faces, bonds visible",
-            "WS - All five together",
-            "MS - Standing united"
-          ]
+          "description": "Dominic introduces Dallas to Asher at the fellowship; Asher quietly assembles recording equipment and aims it toward the bushes."
         },
         {
-          "beat": "s04.2",
-          "title": "Before the finale",
-          "scene": "s04",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
-          ],
-          "description": "Last moments before the final confrontation - memories shared, decisions confirmed.",
-          "shots": [
-            "Detail - Hands coming together",
-            "CU - Eyes meeting",
-            "MS - Quiet conversations",
-            "WS - The group in stillness",
-            "Detail - A nod or affirmation"
-          ]
-        },
-        {
-          "beat": "s06.1",
-          "title": "News vans arrive",
+          "beat": "s06",
+          "title": "News Vans",
           "scene": "s06",
           "cast": [
             "Dallas",
             "Dominic",
-            "Makayla",
-            "Asher",
-            "Mr. Mike"
+            "Pat Clendenen"
           ],
-          "description": "The outside world intrudes - media arrives in Branford, cameras and crew setting up.",
-          "shots": [
-            "WS - News vans pulling up",
-            "MS - Reporters and camera crews setting up",
-            "CU - Group's reaction to media",
-            "Detail - Cameras and lights",
-            "WS - Town green overtaken by press"
-          ]
+          "description": "Dallas and Dominic pass Pat Clendenen’s storm coverage and discover strange marks near Dominic’s driveway."
         }
+      ],
+      "cast": [
+        "Dallas",
+        "Dominic",
+        "Asher",
+        "Pat Clendenen"
       ]
     },
     {
@@ -2539,7 +1818,10 @@
           "role": "Clapper",
           "name": "TBD"
         }
-      ]
+      ],
+      "scenes": [],
+      "shotList": [],
+      "cast": []
     }
   ],
   "locationDirectory": [
@@ -2554,7 +1836,7 @@
       "address": ""
     },
     {
-      "fictional": "MAKAYLA'S BEDROOM / LAIR",
+      "fictional": "ASHER'S LAIR",
       "actual": "",
       "address": ""
     },
