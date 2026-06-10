@@ -37,7 +37,7 @@ location: Branford Train Station / Streets / Marsh Edge
 time: Early Morning / Continuous
 key-elements: Dallas arrival montage + M&A planting traps + hum reaction
 production-notes: No dialogue. Parallel intercutting. Introduce equipment: trail cameras, boom pole, acoustic traps, folding trowels.
-cast: Dallas, Makayla, Asher
+cast: Dallas, Asher
 props:
   - Dallas's suitcase or worn travel bag
   - Trail cameras (audio and visual)
@@ -71,7 +71,7 @@ location: DALLAS HOUSE - Exterior
 time: DAY
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher
+cast: Dallas, Asher
 
 ### scene: dallas-night
 duration: 120
@@ -80,7 +80,7 @@ assigned-day: 1
 time: 06:00 PM - 08:00 PM
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla
+cast: Dallas
 props:
   - Sierra's Box — cardboard, labeled 'Field Notes — Branford' (handwritten, worn)
   - Field journal — water-warped cover, rubber band closure, 2-3 pages with creature sketches & frequency notation
@@ -109,7 +109,7 @@ shoot-days: 0.5
 assigned-day: 12
 key-elements: 
 production-notes: 
-cast: Dallas, Dominic, Makayla, Asher, Mr Mike
+cast: Dallas, Dominic, Asher, Mr Mike
 
 ### scene: s09b
 duration: 0
@@ -117,7 +117,7 @@ shoot-days: 0.5
 assigned-day: 1
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla
+cast: Dallas
 
 ### scene: dallas-night-work
 duration: 90
@@ -145,7 +145,7 @@ shoot-days: 0.5
 assigned-day: 11
 key-elements: 
 production-notes: 
-cast: Dallas, Dominic, Makayla, Asher, Mr Mike
+cast: Dallas, Dominic, Asher, Mr Mike
 
 ### scene: final-echoes
 duration: 60
@@ -153,7 +153,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 ### scene: the-hum
 duration: 120
 shoot-days: 0.5
@@ -218,7 +218,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: the-coordinates
 duration: 150
@@ -226,7 +226,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: creature-rescue
 duration: 120
@@ -234,7 +234,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: the-field-journal
 duration: 90
@@ -242,7 +242,7 @@ shoot-days: 0.5
 assigned-day: 4
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: the-almost-discovery
 duration: 90
@@ -250,7 +250,7 @@ shoot-days: 0.5
 assigned-day: 4
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: resonance
 duration: 120
@@ -259,7 +259,7 @@ assigned-day: 9
 time: 08:00 PM - 10:00 PM
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: normal-day
 duration: 60
@@ -267,7 +267,7 @@ shoot-days: 0.5
 assigned-day: 9
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: mute-drive
 duration: 60
@@ -275,7 +275,7 @@ shoot-days: 0.5
 assigned-day: 9
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: s09c
 duration: 0
@@ -291,7 +291,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: Dallas explores alone using oscillator
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 
 ### scene: the-hymn
 duration: 120
@@ -299,7 +299,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 
 ### scene: red-eyes
 duration: 75
@@ -307,7 +307,7 @@ shoot-days: 0.5
 assigned-day: 8
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 
 ### scene: the-failed-test
 duration: 75
@@ -315,15 +315,15 @@ shoot-days: 0.5
 assigned-day: 6
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla
+cast: Dallas
 
 ### scene: the-tracking-box
 duration: 90
 shoot-days: 0.5
 assigned-day: 6
-key-elements: Dusk planting beat — Makayla & Asher stake blinking listening-post nodes into the reeds (Dallas reads them as fireflies); Asher threads a bead per node. Establishes Asher's gift / the kids geotagging the marsh.
+key-elements: Dusk planting beat — Asher stakes blinking listening-post nodes into the reeds (Dallas reads them as fireflies); Asher threads a bead per node. Establishes Asher's gift / the kid geotagging the marsh.
 production-notes: Practical blinking amber nodes + Asher's bead string (continuity props, s07→s28). NOTE: with the reworked single-emitter climax these no longer fire as a weapon — kept as worldbuilding pending a decision to trim.
-cast: Dallas, Makayla, Asher
+cast: Dallas, Asher
 
 ### scene: dominics-confession
 duration: 45
@@ -331,7 +331,7 @@ shoot-days: 0.5
 assigned-day: 6
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla
+cast: Dallas
 
 ### scene: the-escape
 duration: 75
@@ -339,47 +339,47 @@ shoot-days: 0.5
 assigned-day: 11
 key-elements: 
 production-notes: Dallas explores alone using oscillator
-cast: Dallas, Makayla, Asher, Dominic
+cast: Dallas, Asher, Dominic
 ### scene: creature-missing
 duration: 75
 shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: 
-cast: Dallas, Makayla, Asher, Dominic
+cast: Dallas, Asher, Dominic
 
 ### scene: marsh-confrontation
 duration: 90
 shoot-days: 0.5
 assigned-day: 7
-key-elements: The Load-Out — the three adults gear up at the tree line. Dallas shoulders the single directional emitter (built for one overdriven pulse) + handheld tracker; Makayla in her chest rig (oscillator/crystal/dial); Dominic — the protector — takes point with the backpack + baby. Asher does NOT go; he stayed at the house with a failing, agitated Mr. Mike.
+key-elements: The Load-Out — the two men gear up at the tree line. Dallas shoulders the single directional emitter (built for one overdriven pulse) + handheld tracker + chest rig (oscillator/crystal/dial); Dominic — the protector — takes point with the backpack + baby. Asher does NOT go; he stayed at the house with a failing, agitated Mr. Mike.
 production-notes: Wraps. REVISED — single-emitter climax (no node field, no master rig, no eighty-pound speakers). One man-portable directional emitter is the hero weapon. Crew of three into the marsh.
-cast: Dallas, Makayla, Dominic
+cast: Dallas, Dominic
 
 ### scene: predator-attack
 duration: 120
 shoot-days: 0.5
 assigned-day: 7
-key-elements: The Trench Run — three adults move through 10ft grass in the storm; Makayla sweeps her handheld speaker; Red-Eye patrol. Hide-and-pass: Makayla kills her chest-rig LED, all three drop flat, the shadow sweeps over and loses them; Dominic shields the baby. INTERCUT house: Asher steadies an agitated Mr. Mike.
-production-notes: Asher's voice-throw decoy REMOVED (he's not in the marsh) — replaced by a hide-and-pass. Dominic's strain is from being unfit + scared, not weight. Practical: blinking green LED on Makayla's chest rig as sole light source. Separate house-interior unit for the Asher/Mr. Mike intercut (s23.2).
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+key-elements: The Trench Run — two men move through 10ft grass in the storm; Dallas sweeps his handheld speaker; Red-Eye patrol. Hide-and-pass: Dallas kills his chest-rig LED, both drop flat, the shadow sweeps over and loses them; Dominic shields the baby. INTERCUT house: Asher steadies an agitated Mr. Mike.
+production-notes: Asher's voice-throw decoy REMOVED (he's not in the marsh) — replaced by a hide-and-pass. Dominic's strain is from being unfit + scared, not weight. Practical: blinking green LED on Dallas's chest rig as sole light source. Separate house-interior unit for the Asher/Mr. Mike intercut (s23.2).
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: the-perimeter
 duration: 150
 shoot-days: 0.5
 assigned-day: 7
-key-elements: Sanctuary ring of flattened grass; Golden Elders + golden dome; Makayla up close as the baby reunites with its mother Elder; Red-Eye siege breaches the ring; the mother curls around the baby and takes the assault; Makayla's single handheld speaker dies — Dallas swings the big directional emitter off his back ("the big one. Once.").
+key-elements: Sanctuary ring of flattened grass; Golden Elders + golden dome; Dominic up close as the baby reunites with its mother Elder; Red-Eye siege breaches the ring; the mother curls around the baby and takes the assault; Dallas's single handheld speaker dies — Dallas swings the big directional emitter off his back ("the big one. Once.").
 production-notes: REVISED — single-emitter climax (no node field). VFX: golden dome, red-eye shadows. No distant blinking-node field.
-cast: Dallas, Makayla, Dominic
+cast: Dallas, Dominic
 
 ### scene: the-last-dinner
 duration: 150
 shoot-days: 0.5
 assigned-day: 7
 time: 7:00 PM – 9:00 PM
-key-elements: The swirl — Dallas dials the known pitch (115.3, Mr. Mike's number), aims and fires ONE concentrated pulse from the emitter: vaporizes the swarm, purges the contagion. The Red-Eyes tear the mother Elder down — she dies shielding the baby. Dominic: disbelief, then "Go, go, GO." INTERCUT house: Mr. Mike calms ("There they go"). The orphaned baby survives, locks eyes with Dallas & Makayla, and dissolves into the ether.
+key-elements: The swirl — Dallas dials the known pitch (115.3, Mr. Mike's number), aims and fires ONE concentrated pulse from the emitter: vaporizes the swarm, purges the contagion. The Red-Eyes tear the mother Elder down — she dies shielding the baby. Dominic: disbelief, then "Go, go, GO." INTERCUT house: Mr. Mike calms ("There they go"). The orphaned baby survives, locks eyes with Dallas & Dominic, and dissolves into the ether.
 production-notes: REVISED — single concentrated pulse from the directional emitter (no whole-marsh swarm ignition). VFX: emitter beam/blast, Red-Eye vaporization, the mother's death, the baby dissolving into the ether. Separate house-interior unit for the Mr. Mike/Asher intercut (s25.2).
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 
 ### scene: s26b
 duration: 0
@@ -387,7 +387,7 @@ shoot-days: 0.5
 assigned-day: 7
 key-elements: 
 production-notes: Wraps
-cast: Dallas, Makayla, Asher, Dominic
+cast: Dallas, Asher, Dominic
 
 ### scene: aftermath
 duration: 90
@@ -396,7 +396,7 @@ assigned-day: 10
 location: EXT. Jerry's House — Afternoon
 key-elements: 
 production-notes: Afternoon shoot before nursery run
-cast: Asher, Mr. Mike, Dallas, Makayla, Dominic, Pat
+cast: Asher, Mr. Mike, Dallas, Dominic, Pat
 
 ### scene: full-circle
 duration: 90
@@ -404,7 +404,7 @@ shoot-days: 0.5
 assigned-day: 10
 key-elements: 
 production-notes: Wraps
-cast: Dallas, Makayla, Asher, Dominic
+cast: Dallas, Asher, Dominic
 
 ### scene: limbo
 
@@ -552,8 +552,8 @@ shots:
 
 #### Beat: s00a.2-6 — Walking through Branford streets (montage)
 scene: s00a
-cast: Dallas, Makayla, Asher
-description: Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Makayla & Asher setting up equipment in marsh.
+cast: Dallas, Asher
+description: Dallas walks through residential Branford neighborhood toward rental house. Intercurs with Asher setting up equipment in marsh.
 shots:
   - WS — Branford street establishing, low houses with white trim and weathered fences. *[L→R flow, destination right]*
   - MS — Dallas walking down sidewalk with suitcase. *[L→R, backs-to-camera]*
@@ -860,9 +860,9 @@ crew-call:
   CALL: 11:00 AM
   MEET: Alex's House (206 Saint John St)
   ARRIVE: 11:30 AM — Jerry's' House (72 Lake St, Hamden)
-  SHOOT: 11:50 AM - 12:30 PM — s01 · Makayla & Asher arrive
+  SHOOT: 11:50 AM - 12:30 PM — s01 · Asher arrives
   LUNCH: 12:30 PM
-  SHOOT: 1:15 PM - 3:00 PM — s01 · Makayla & Asher arrive
+  SHOOT: 1:15 PM - 3:00 PM — s01 · Asher arrives
   SHOOT: 4 PM - 5:30 PM — s05 · Merlin app search
   DINNER: 5:30 PM
   SHOOT: 6:00 PM - 8:45 PM — Final block (TBD)
@@ -903,21 +903,21 @@ NOTES:
 • Do NOT bake desqueeze
 • Record full sensor, fix in post
 
-#### Beat: s01.1 — Makayla and Asher arrive
+#### Beat: s01.1 — Asher arrives
 scene: s01
-cast: Makayla, Asher
-description: Makayla and Asher pull up to the Dallas house with equipment and gear.
+cast: Asher
+description: Asher pulls up to the Dallas house on his bike.
 shots:
   - WS - House exterior, vehicle arriving
   - MS - Car pulling into driveway
-  - MS - Makayla and Asher stepping out
+  - MS - Asher stopping at the edge of the driveway
   - Detail - Equipment being unloaded
   - WS - Two of them approaching house
 
 #### Beat: s01.2 — Dallas greets them
 scene: s01
-cast: Dallas, Makayla, Asher
-description: Dallas emerges from house, first meeting with Makayla and Asher on the property.
+cast: Dallas, Asher
+description: Dallas emerges from house, first meeting with Asher on the property.
 shots:
   - WS - Dallas at door, M&A in yard
   - MS - Greetings and handshakes
@@ -927,7 +927,7 @@ shots:
 
 #### Beat: s01.3 — House and grounds tour
 scene: s01
-cast: Dallas, Makayla, Asher
+cast: Dallas, Asher
 description: Dallas shows them around the property - house interior briefly, then focuses on the grounds and marsh views.
 shots:
   - WS - Group entering house
@@ -1043,7 +1043,7 @@ NOTES:
 
 #### Beat: s14b.1 — Field journal discovery
 scene: s14b
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: The group gathers to examine Sierra's field journal closely - detailed notes and sketches about the hum.
 shots:
   - WS - Group seated around table with journal
@@ -1054,7 +1054,7 @@ shots:
 
 #### Beat: s14b.2 — Reading Sierra's notes
 scene: s14b
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: Dallas reads passages aloud - Sierra's observations about the creature and the hum pattern.
 shots:
   - MS - Dallas reading from journal
@@ -1065,7 +1065,7 @@ shots:
 
 #### Beat: s14b.3 — Matching the frequency
 scene: s14b
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: They use the oscillator to match the frequency noted in Sierra's journal - confirmation of the pattern.
 shots:
   - MS - Oscillator adjustment
@@ -1076,7 +1076,7 @@ shots:
 
 #### Beat: s14c.1 — Planning the investigation
 scene: s14c
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: They devise a plan to explore the marsh more thoroughly based on Sierra's notes - mapping out grid search.
 shots:
   - WS - Group huddled over map on table
@@ -1087,7 +1087,7 @@ shots:
 
 #### Beat: s14c.2 — Equipment check
 scene: s14c
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: They methodically check equipment - oscillators, recorders, safety gear - preparing for marsh expedition.
 shots:
   - WS - Equipment laid out on floor/table
@@ -1098,7 +1098,7 @@ shots:
 
 #### Beat: s14c.3 — Near encounter
 scene: s14c
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: As they prepare to head out, something moves in the tall grass visible from the house - they almost discover the creature.
 shots:
   - WS - Group moving toward exit/window
@@ -1287,51 +1287,51 @@ NOTES:
 
 #### Beat: s15a.1 — Setting up the experiment
 scene: s15a
-cast: Dallas, Makayla
-description: Dallas and Makayla carefully arrange equipment for a test - oscillator, resonance chamber, recording devices.
+cast: Dallas
+description: Dallas and Asher carefully arrange equipment for a test - oscillator, resonance chamber, recording devices.
 shots:
   - WS - Table with equipment being arranged
-  - MS - Dallas and Makayla working together
+  - MS - Dallas and Asher working together
   - Detail - Oscillator being positioned
   - CU - Concentration on their faces
   - WS - Full setup ready for test
 
 #### Beat: s15a.2 — The test begins
 scene: s15a
-cast: Dallas, Makayla
+cast: Dallas
 description: They activate the oscillator and begin recording - waiting to see if it attracts the creature or proves something.
 shots:
   - Detail - Oscillator dial turning on
-  - MS - Dallas and Makayla waiting, listening
+  - MS - Dallas and Asher waiting, listening
   - CU - Equipment recording
   - WS - Room with hum building
   - CU - Their faces, anticipation
 
 #### Beat: s15a.3 — Nothing happens
 scene: s15a
-cast: Dallas, Makayla
+cast: Dallas
 description: The test fails - no response, no creature, no confirmation. Disappointment and concern.
 shots:
   - MS - Silence, waiting
   - CU - Dallas's disappointed face
   - Detail - Oscillator showing normal readings
-  - CU - Makayla's frustration
+  - CU - Asher's frustration
   - MS - Looking at each other
 
 #### Beat: s15b.1 — The tracking box explained
 scene: s15b
-cast: Dallas, Makayla
-description: Dallas shows Makayla a custom-built tracking device - Sierra's design notes form the basis.
+cast: Dallas
+description: Dallas shows Asher a custom-built tracking device - Sierra's design notes form the basis.
 shots:
   - MS - Dallas holding the tracking box
   - Detail - Box mechanisms and components
-  - CU - Makayla's interest
+  - CU - Asher's interest
   - MS - Dallas pointing out features
   - Detail - Frequency dial and settings
 
 #### Beat: s15b.2 — Building the device
 scene: s15b
-cast: Dallas, Makayla
+cast: Dallas
 description: They work together building or calibrating the tracker - precision work, focused collaboration.
 shots:
   - WS - Workspace with tools and parts
@@ -1342,40 +1342,40 @@ shots:
 
 #### Beat: s15b.3 — First calibration
 scene: s15b
-cast: Dallas, Makayla
+cast: Dallas
 description: They calibrate the tracker to match the hum frequency - excitement as it responds.
 shots:
   - Detail - Frequency dial being adjusted
   - CU - Dallas's face concentrating
   - Detail - Device responding, light or sound indicator
-  - CU - Makayla's recognition of success
+  - CU - Asher's recognition of success
   - MS - Exchange of encouraged looks
 
 #### Beat: s15c.1 — Dominic arrives
 scene: s15c
-cast: Dallas, Makayla, Dominic
+cast: Dallas, Dominic
 description: Dominic shows up - he has something to say, something weighing on him.
 shots:
   - MS - Dominic entering, serious
   - CU - His troubled expression
-  - MS - Dallas and Makayla reacting
+  - MS - Dallas and Asher reacting
   - WS - Three of them in room
   - MS - Dominic preparing to speak
 
 #### Beat: s15c.2 — The confession
 scene: s15c
-cast: Dallas, Makayla, Dominic
+cast: Dallas, Dominic
 description: Dominic reveals something he knows or has experienced - guilt, fear, or vital information about the creature.
 shots:
   - CU - Dominic speaking, emotional
-  - MS - Dallas and Makayla listening intently
-  - CU - Makayla's reaction
+  - MS - Dallas and Asher listening intently
+  - CU - Asher's reaction
   - CU - Dallas's reaction
   - MS - Dominic vulnerable, sharing burden
 
 #### Beat: s15c.3 — Processing the revelation
 scene: s15c
-cast: Dallas, Makayla, Dominic
+cast: Dallas, Dominic
 description: They process what Dominic has told them - silence, questions, dawning realization.
 shots:
   - CU - Each face reacting
@@ -1436,7 +1436,7 @@ NOTES:
 
 #### Beat: s13.1 — Entering the grass
 scene: s13
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: The group enters the tall marsh for the first time - a coordinated expedition into the unknown.
 shots:
   - WS - Group at marsh edge at dawn
@@ -1447,7 +1447,7 @@ shots:
 
 #### Beat: s13.2 — The hum intensifies
 scene: s13
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: As they go deeper, the hum becomes overwhelming - their equipment goes wild.
 shots:
   - WS - Group stopped in tall grass
@@ -1458,7 +1458,7 @@ shots:
 
 #### Beat: s14.1 — The creature is there
 scene: s14
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: They encounter or sense the creature directly - a moment of terrible clarity.
 shots:
   - WS - Something moving in grass near them
@@ -1469,7 +1469,7 @@ shots:
 
 #### Beat: s14.2 — The rescue
 scene: s14
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: Something goes wrong - someone in danger, the group mobilizes to rescue/protect.
 shots:
   - WS - Chaos in the field
@@ -1480,7 +1480,7 @@ shots:
 
 #### Beat: s14.3 — Escape from grass
 scene: s14
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: They retreat from the grass, shaken and bloodied - barely making it out.
 shots:
   - WS - Running through tall grass
@@ -1541,7 +1541,7 @@ NOTES:
 
 #### Beat: s07.1 — Coordinates discovered
 scene: s07
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: The group deciphers a coordinate pattern from Sierra's notes and the hum frequency, pinpointing a location deep in the marsh.
 shots:
   - WS - Group gathered around desk with maps and journal
@@ -1552,29 +1552,29 @@ shots:
 
 #### Beat: s07.2 — The plan forms
 scene: s07
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: With coordinates identified, the group debates whether to act — tension between urgency and caution.
 shots:
   - WS - Group around table, discussion heating up
   - MS - Dallas making the case for going
   - CU - Mr. Mike's skeptical reaction
-  - MS - Dominic and Makayla exchanging looks
+  - MS - Dominic and Dallas exchanging looks
   - WS - The group, divided but leaning toward action
 
 #### Beat: s18.1 — The life group arrives
 scene: s18
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 description: An unexpected crowd arrives — the Life Group, led by Dominic, showing up for a scheduled gathering nobody cancelled.
 shots:
   - WS - Cars pulling up, people filing out
   - MS - Dominic at front, leading the group in
   - CU - Dallas's face, unprepared for this
   - WS - Life Group moving into the house, filling the space
-  - MS - Makayla pulling Dallas aside
+  - MS - Dallas pulling Asher aside
 
 #### Beat: s18.2 — Awkward coexistence
 scene: s18
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 description: The Life Group settles in while the core group scrambles to conceal their investigation and equipment.
 shots:
   - WS - Living room crowded with Life Group and scattered gear
@@ -1585,7 +1585,7 @@ shots:
 
 #### Beat: s19.1 — The hymn begins
 scene: s19
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 description: The Life Group begins singing — a slow, resonant hymn with a frequency eerily close to the hum.
 shots:
   - WS - Life Group arranged, Dominic leading
@@ -1596,18 +1596,18 @@ shots:
 
 #### Beat: s19.2 — Frequencies align
 scene: s19
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 description: As the hymn swells, the hum beneath it rises in response — the frequencies begin to mirror each other.
 shots:
   - Detail - Oscillator reading climbing toward 115.3
   - CU - Dallas's eyes going wide
-  - MS - Makayla clocking it, mouthing to Dallas
+  - MS - Asher clocking it, eyes to Dallas
   - WS - Life Group singing, unaware
   - Detail - Glass on table beginning to vibrate
 
 #### Beat: s20.1 — Red eyes in the dark
 scene: s20
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 description: As the hymn peaks, someone near a window sees the creature — two red points of light in the dark grass.
 shots:
   - WS - Window, Life Group in foreground, dark yard beyond
@@ -1618,7 +1618,7 @@ shots:
 
 #### Beat: s20.2 — The secret is out
 scene: s20
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike, Life Group Extras
+cast: Dallas, Asher, Dominic, Mr. Mike, Life Group Extras
 description: The Life Group member screams. The room erupts. Dallas can no longer contain what's been happening.
 shots:
   - WS - Chaos, people scrambling
@@ -1675,7 +1675,7 @@ NOTES:
 
 #### Beat: s26.pickup.1 — Additional creature effects
 scene: s26
-cast: Dallas, Makayla, Asher, Dominic
+cast: Dallas, Asher, Dominic
 description: Pickup shots of the creature's arrival - additional angles and close coverage of destruction.
 shots:
   - CU - Glass vibrating and breaking
@@ -1686,7 +1686,7 @@ shots:
 
 #### Beat: s26.pickup.2 — Defensive positions
 scene: s26
-cast: Dallas, Makayla, Asher, Dominic
+cast: Dallas, Asher, Dominic
 description: Close coverage of the group defending themselves - intimate shots in shadows.
 shots:
   - CU - Hands gripping equipment
@@ -1697,7 +1697,7 @@ shots:
 
 #### Beat: s26.pickup.3 — The hum at maximum
 scene: s26
-cast: Dallas, Makayla, Asher, Dominic
+cast: Dallas, Asher, Dominic
 description: Extreme close-ups of the hum's effects - sensory overload captured intimately.
 shots:
   - Detail - Oscillator dial at maximum
@@ -1756,7 +1756,7 @@ NOTES:
 
 #### Beat: s07b.pickup.1 — The warning additional coverage
 scene: s07b
-cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
+cast: Dallas, Dominic, Asher, Mr. Mike
 description: Pickup shots of Mr. Mike's crucial warning - wider angles and group reactions.
 shots:
   - WS - Full group with Mr. Mike in center
@@ -1767,7 +1767,7 @@ shots:
 
 #### Beat: s16.pickup.1 — Plan details captured
 scene: s16
-cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
+cast: Dallas, Dominic, Asher, Mr. Mike
 description: Close coverage of the escape/defense plan being explained - technical detail shots.
 shots:
   - Detail - Map or sketch close-up
@@ -1778,7 +1778,7 @@ shots:
 
 #### Beat: s16.pickup.2 — Resolution and commitment
 scene: s16
-cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
+cast: Dallas, Dominic, Asher, Mr. Mike
 description: Final commitment to the plan - intimate captures of determination and fear.
 shots:
   - Detail - Hands meeting in center
@@ -1838,7 +1838,7 @@ NOTES:
 
 #### Beat: s17.1 — Resonance begins
 scene: s17
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: The hum reaches a specific frequency that causes physical reaction - glasses vibrate, equipment resonates.
 shots:
   - Detail - Objects vibrating on surfaces
@@ -1849,7 +1849,7 @@ shots:
 
 #### Beat: s17.2 — Physical effects
 scene: s17
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: The resonance intensifies - people feel it in their bodies, some hurt, disorientation.
 shots:
   - CU - Someone clutching their ears
@@ -1860,7 +1860,7 @@ shots:
 
 #### Beat: s17b.1 — A normal day memory
 scene: s17b
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: Amongst the chaos, someone recalls or experiences a flash of normal life - brief respite.
 shots:
   - Flashback - Sunny day, laughter
@@ -1871,7 +1871,7 @@ shots:
 
 #### Beat: s17c.1 — Mute drive
 scene: s17c
-cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
+cast: Dallas, Asher, Dominic, Mr. Mike
 description: Without speaking, communicating through looks and gestures - all sound is overwhelmed.
 shots:
   - WS - Group in silence, gesturing
@@ -1983,7 +1983,7 @@ NOTES:
 
 #### Beat: s07b.1 — Mr. Mike's warning
 scene: s07b
-cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
+cast: Dallas, Dominic, Asher, Mr. Mike
 description: Mr. Mike reveals something crucial about the creature or warns the group of danger ahead.
 shots:
   - MS - Mr. Mike gathering them
@@ -1994,7 +1994,7 @@ shots:
 
 #### Beat: s16.1 — The escape plan
 scene: s16
-cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
+cast: Dallas, Dominic, Asher, Mr. Mike
 description: They devise a plan to either trap, communicate with, or escape from the creature.
 shots:
   - WS - Group in huddle
@@ -2054,8 +2054,8 @@ NOTES:
 
 #### Beat: s04.1 — The fellowship gathers
 scene: s04
-cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
-description: All the main characters come together - Dallas, Dominic, Makayla, Asher, Mr. Mike - a final gathering.
+cast: Dallas, Dominic, Asher, Mr. Mike
+description: All the main characters come together - Dallas, Dominic, Asher, Mr. Mike - a final gathering.
 shots:
   - WS - Open location, all arriving
   - MS - Greetings and reuniting
@@ -2065,7 +2065,7 @@ shots:
 
 #### Beat: s04.2 — Before the finale
 scene: s04
-cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
+cast: Dallas, Dominic, Asher, Mr. Mike
 description: Last moments before the final confrontation - memories shared, decisions confirmed.
 shots:
   - Detail - Hands coming together
@@ -2076,7 +2076,7 @@ shots:
 
 #### Beat: s06.1 — News vans arrive
 scene: s06
-cast: Dallas, Dominic, Makayla, Asher, Mr. Mike
+cast: Dallas, Dominic, Asher, Mr. Mike
 description: The outside world intrudes - media arrives in Branford, cameras and crew setting up.
 shots:
   - WS - News vans pulling up

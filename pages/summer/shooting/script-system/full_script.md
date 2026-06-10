@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/9/2026, 11:57:12 PM*
+*Compiled on 6/10/2026, 12:36:08 PM*
 
 ---
 
@@ -44,17 +44,15 @@ INT. MARSH EDGE - CONTINUOUS (s00a.4)
 
 Tight close-up. Fingers pressing a trail camera into the bark of a dead oak. The fingers are careful, deliberate. Practiced.
 
-Pull back. MAKAYLA, 22, kneels at the base of the tree. Her eyes are focused on the camera placement. No wasted movement.
+Pull back. ASHER, 14, kneels at the base of the tree. His eyes are focused on the camera placement. No wasted movement.
 
-ASHER, 14, stands a few feet away with his hands on a boom pole. He is assembling it piece by piece. Each segment seats with a small click. His movements are methodical. He has done this a hundred times.
+A boom pole lies in the grass beside him. He picks it up and assembles it piece by piece. Each segment seats with a small click. His movements are methodical. He has done this a hundred times.
 
 INT. MARSH EDGE - LATER (s00a.5)
 
-Makayla's hand traces a pattern through the soft ground. She is outlining a perimeter for a small hole. Asher crouches nearby with a folding trowel — small, military-issue, designed for digging in tight spaces.
+Asher's hand traces a pattern through the soft ground. He is outlining a perimeter for a small hole. He takes a folding trowel from his pack — small, military-issue, designed for digging in tight spaces.
 
-He hands it to her without being asked.
-
-She begins to dig. The blade cuts into the marsh soil. Asher watches the tree line.
+He begins to dig. The blade cuts into the marsh soil. Every few strokes he stops and watches the tree line.
 
 ---
 
@@ -66,29 +64,27 @@ He is not thinking about the house yet.
 
 INT. MARSH EDGE - CONTINUOUS (s00a.7)
 
-Close-up. Makayla's hands work a piece of equipment into the hole she has dug. It is small, circular, with a microphone array. An acoustic trap. She covers it with damp soil, then with a thin layer of leaf litter and moss, troweled so carefully that the ground looks undisturbed.
+Close-up. Asher's hands work a piece of equipment into the hole he has dug. It is small, circular, with a microphone array. An acoustic trap. He covers it with damp soil, then with a thin layer of leaf litter and moss, troweled so carefully that the ground looks undisturbed.
 
-She sits back. Her hands are still.
+He sits back. His hands are still.
 
 A beat.
 
-She stops. Her hand hovers over the next piece of equipment. Her head tilts.
+He stops. His hand hovers over the next piece of equipment. His head tilts.
 
-She is listening to something.
+He is listening to something.
 
 ---
 
 INT. MARSH EDGE - CONTINUOUS (s00a.8)
 
-Asher has frozen. His finger is mid-trace on his other palm. He is not looking at Makayla, but he knows she has stopped.
+Asher has frozen. His finger is mid-trace on his other palm.
 
-A beat longer. He was listening first.
-
-They look at each other.
+A beat longer.
 
 No words. No names. No explanation.
 
-They have heard it before. Their bodies remember the sound without needing to hear it again.
+He has heard it before. His body remembers the sound without needing to hear it again.
 
 It is back.
 
@@ -283,105 +279,50 @@ Dallas goes into the grass a little bit. He stops. At the edge of the reeds is a
 
 As Dallas examines the broken wood, he hears a distinct bicycle ring.
 
-MAKAYLA
-<!-- scene: 1 file: s01.md nickname: arrival -->
-
-(action)
-Makayla, 22, and Asher, 14 — approach on bikes. They watch Dallas for a while.
-
 ASHER
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-They approach Dallas slowly as one of the boxes draws their curiosity. Makayla watches Dallas pull out a military grade Oscillator.
+Asher, 14, approaches on his bike. He stops at the edge of the driveway and watches Dallas for a while.
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Asher nods with his headphones on. Makayla approaches Dallas. 
+One of the boxes draws his curiosity. He inches his bike closer and watches Dallas pull out a military grade Oscillator.
 
-MAKAYLA
-Hello there.
+<!-- scene: 1 file: s01.md nickname: arrival -->
+
+(action)
+Asher stares at the device. His headphones are on. He doesn't move.
 
 DALLAS
 Hello.
 
-MAKAYLA
-I'm Makayla.
+<!-- scene: 1 file: s01.md nickname: arrival -->
+
+(action)
+Asher doesn't answer. His eyes stay on the Oscillator.
 
 DALLAS
-Dallas. 
-
-MAKAYLA
-Nice to meet you.
-
-DALLAS
-You too.
-
-MAKAYLA
-Did you just move here?
-
-DALLAS
-Yes
-
-MAKAYLA
-Is that an Oscillator?
-
-DALLAS
-Yes. 
+You like it? It's an Oscillator.
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Makayla looks at Asher and whispers something in his ear. He nods. She returns glances to Dallas and inches her bike closer. 
+Asher stands silent, tracing a pattern on his palm. He doesn't look up.
 
-MAKAYLA
-Do you think my brother Asher could borrow it some time? 
+DALLAS
+It works. If that's what you're wondering.
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Dallas looks at the Oscillator and then at Asher.
-
-MAKAYLA
-He'll need it. 
-
-DALLAS
-What will he need it for?
-
-MAKAYLA
-Asher? 
+Asher looks at the Oscillator a beat longer. Then he looks at the tall grass at the edge of the yard. Then back at the Oscillator.
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Asher stands silent, still tracing a pattern on his palm. He doesn't look up.
-
-MAKAYLA
-Does it work?
-
-DALLAS
-It does.
-
-MAKAYLA
-Can we borrow it?
-
-DALLAS
-For what?
-
-MAKAYLA
-To track.
-
-DALLAS
-Track what?
-
-MAKAYLA
-Never mind. 
-
-<!-- scene: 1 file: s01.md nickname: arrival -->
-
-(action)
-Makayla, disappointed, walks away slowly and Asher peddle their bikes away.
+He turns his bike around and pedals away.
 
 Dallas looks down at a box of old equipment and stretches down to pick it up. 
 
@@ -730,23 +671,23 @@ Dallas and Dominic sit in a circle of folded pull up chairs.
 <!-- scene: 4 file: s04.md nickname: fellowship -->
 
 (action)
-Makayla and Asher approach from afar to the line. 
+Asher approaches from afar to the line. 
 
 DOMINIC
-Dallas, these are my sister and brother - Makayla and Asher.
+Dallas, this is my little brother - Asher.
 
 <!-- scene: 4 file: s04.md nickname: fellowship -->
 
 (action)
-Makayla and Asher don't make direct eye contact with Dallas but fake a polite smile. Makayla taps Asher's headphones and nods toward the far end of the church lawn. Between the bushes and garden. 
+Asher doesn't make direct eye contact with Dallas but fakes a polite smile. He taps his headphones and looks toward the far end of the church lawn. Between the bushes and garden. 
 
-The two leave the line walk over to a corner spot by the end of the church yard and huddle over a pile of brush.
+He leaves the line and walks over to a corner spot by the end of the church yard and huddles over a pile of brush.
 
-Makayla takes out some cables out of Asher's backpack - and begins to assemble, what looks like an audio recorder on a boom pole. 
+Asher takes some cables out of his backpack - and begins to assemble, what looks like an audio recorder on a boom pole. 
 
-Asher begins to point in the direction of the bushes and Makayla nods. 
+He points the recorder in the direction of the bushes and holds it there. 
 
-Dallas takes a bite of his chicken but doesn't eat much. He's distracted by what Makayla and Asher are pointing at the distance.
+Dallas takes a bite of his chicken but doesn't eat much. He's distracted by what Asher is pointing at in the distance.
 
 ---
 
@@ -770,7 +711,7 @@ The sun is dipping. Dallas and Dominic walk back home - along a wooden boardwalk
 Dominic and Dallas walk quietly for a while. Dominic looks out to the tall grass.
 
 DOMINIC
-The kids are always out here planting down cameras. Makayla says that they are geotagging or something. I don't know. 
+My brother is always out here planting down cameras. Geotagging or something. I don't know. 
 
 <!-- scene: 5 file: s05.md nickname: marsh-walk-later -->
 
@@ -946,7 +887,7 @@ Dallas looks around in amazement. The basement is covered with normal basement t
 Dallas looks at all of the different audio and acoustic devices scattered across the room. On the cieling there are tiny beeds hung from strings - tiny with different colors. 
 
 DOMINIC
-This was formerly our shared basement - but, now, my brother and sister live here have occupied. They just love this basement... Here, help me grab the fan. 
+This was formerly our shared basement - but, now, my brother has occupied it. He just loves this basement... Here, help me grab the fan. 
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -985,7 +926,7 @@ I had a family once.
 Dallas falls mute. 
 
 DOMINIC
-No kid now, no wife now. Just my brother and sister. And Mr. Mike. My lot in life. I'll take it.
+No kid now, no wife now. Just my brother. And our uncle Mike. My lot in life. I'll take it.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1012,44 +953,22 @@ Mr. Mike! Mr. Mike, what are you doing?!
 Mr. Mike suddenly looks up, his eyes milky but sharp. He points a finger at the window.
 
 MR. MIKE
-Sorry, I had to write something down. It was important that I wrote something down. Dominic. Dominic! 
-
-DOMINIC
-Yes? 
-
-MR. MIKE
-She's here!
-
-DOMINIC
-Whose here? Could you not scratch the table anymore? Whose here? 
-
-MR. MIKE
-Dominic. Makayla. Asher
+It's starting again.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dominic dashes for the door and opens it. In pop Makayla and Asher. 
-
-Asher runs straight towards Mr. Mike and kneels down before him. Makayla side eyes Dallas. 
-
-MR. MIKE 
-They're here. They're here - Dominic - Makayla's here - ASHER! Is that you? Come here. Listen to it. It's starting again, the way it did before.  
+Dominic opens the door. Asher enters and kneels beside Mr. Mike.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Mr. Mike points to the window. 
 
-MR. MIKE
-Do you see? 
-
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Asher's eyes widen when he sees what Mr. Mike has scratched into the table. He already has his sticky note out; he copies the marks, taps the page twice, then runs to Makayla and shows her. She puts the note in her pocket. 
-
-Makayla walks over and sets two bags of groceries on the counter and hands Asher a set of keys. 
+Asher's eyes widen when he sees what Mr. Mike has scratched into the table. He already has his sticky note out; he copies the marks, taps the page twice, then folds the note and puts it in his pocket. 
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1080,107 +999,32 @@ Yeah, I got some food back at home, so, I'll be okay.
 Mr. Mike in the distance begins to get agitated. He rocks slowly in his rocking chair and taps his fingers. 
 
 MR. MIKE
-They are being hunted. Javerias told me. They are being hunted.
+The song's gone wrong.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Makayla walks over to Asher, who is still kneeling besides Mr. Mike, listening intently.
-
-MAKAYLA
-Who is Javerias?
-
-MR. MIKE
-Javerias, Javerias, he told me. I haven't seen them since the big blow in '71. The Red Eyes. They come when the pressure drops and the sky turns that bruised color. Back then, they took the whole center marsh—swallowed it whole. Javerias said if you hurt one—even if it was by mistake—they transform. They turn into the shadow ones. The predators. And when the wind picks up tonight, the Nidus will open, just like it did for the gold standard. They're coming back to finish the harvest.
+Asher is still kneeling beside Mr. Mike, listening intently. Dominic looks over from the kitchen.
 
 DOMINIC
 (from the Kitchen)
 Mr. Mike, calm down my friend - dinner will be ready soon. 
 
-MR. MIKE
-Are you making the sprouts?
+DOMINIC
+Asher, I showed Dallas your little basement dwelling.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Makayla walks over and places the portable Oscillator from Dallas' hand. 
+Asher looks over to Dallas for a beat, then back at Mr. Mike.
 
-MAKAYLA
-It didn't work.
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
-DALLAS
-No?
-
-MAKAYLA
-(thinking)
-Will it actually record the frequencies? Or does it just display? How do you record?
-
-DALLAS
-There's a memory card in there. But it writes in an old format. 
-
-MAKAYLA
-What format? 
-
-DALLAS
-B24FF
-
-MAKAYLA
-Okay, I've already copied them and don't think it worked. Thank you though. 
+(action)
+Dallas's eyes drift up to the strings of tiny colored beads hung across the ceiling — a hanging model of something, dozens of nodes on threads. Dominic follows his gaze.
 
 DOMINIC
-Makayla whats that - give it back. 
-
-DALLAS
-It's fine. 
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Dallas looks at Makayla and back at Asher who is still kneeling by Mr. Mike. 
-
-DOMINIC
-Makayla, I showed Dallas your little basement dwelling.
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Makayla looks over to Dallas with sus looks.  
-
-MAKAYLA
-Okay great.
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Mr. Mike from the living rooms gets agitated. He begins rocking back and forth in his chair. 
-
-
-MR MIKE
-The song's gone wrong. Asher knows. The song's gone wrong.
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Mr. Mike continues to rock - he looks over - ignores Makayala's gaze and locks eye contact with Asher.
-
-MR. MIKE
-The song is wrong. 
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Makayla walks over to Dallas.
-
-MAKAYLA
-Does it pick up frequencies below the human range? 
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Dallas nods. His eyes drift up to the strings of tiny colored beads hung across the ceiling — a hanging model of something, dozens of nodes on threads.
-
-MAKAYLA
-Asher's map. Every bead's a spot out in the grass we've tagged. He keeps the whole field up there — none of us can.
+Asher's map. Every bead's a spot out in the grass he's tagged. He keeps the whole field up there — none of us can.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1450,7 +1294,7 @@ Dallas walks downstairs.
 The phone rings. It is Dominc
 
 DOMINIC (voiceover)
-Dallas, I am so sorry to call so late - Asher is not doing so well and we have to bring him to the hospital tonight. Keep an eye on the place for us.
+Dallas, I am so sorry to call so late - we have a family emergency and need to run to the hospital. Keep an eye on the place for us.
 
 DALLAS
 Sure, of course.
@@ -1573,8 +1417,6 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 
 <!-- FILMING ON DAY 6 -- 6.16.26>
 
-<!-- SCENE NOTES: - MAYBE KILL ASHER HERE -->
-
 INT. DALLAS KITCHEN - DUSK (s11.1)
 Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines it with parchment paper. The creature seems to be asleep. 
 
@@ -1606,7 +1448,7 @@ The day has turned to night and Dallas is still tinkering with this habitat crea
 
 Dallas is peered over his computer and begins to scan a program between different spectrums. 
 
-Dallas tries dialing different frequencies to broadcast, and nothing answers. He pulls the day's recordings up on his computer and watches the spectrogram scroll past. Buried under the marsh rumble, the same shape keeps repeating — a structured pulse, the creature's own call, the same figure over and over. He thinks of the frequencies penciled into Makayla's mother's journal, the same shapes on the page, and he starts trying to rebuild the call himself, note by note. 
+Dallas tries dialing different frequencies to broadcast, and nothing answers. He pulls the day's recordings up on his computer and watches the spectrogram scroll past. Buried under the marsh rumble, the same shape keeps repeating — a structured pulse, the creature's own call, the same figure over and over. He thinks of the frequencies penciled into Sierra's field journal, the same shapes on the page, and he starts trying to rebuild the call himself, note by note. 
 
 He listens to the recording. At first, nothing but the usual low-grade rumble of the marsh. Then—a pulse. 
 
@@ -1654,7 +1496,7 @@ Alright well rest well big guy.
 <!-- scene: 11 file: s11.md nickname: kitchen-triage -->
 
 (action)
-Dominic and Asher leave and walk into the next side door. Dallas watches them - and then watches the tall grass sway in the wind. 
+Dominic leaves and walks into the next side door. Dallas watches him - and then watches the tall grass sway in the wind.
 
 Dallas rushes to the workstation and finds that the creature sleeping peacefully.
 
@@ -1719,22 +1561,16 @@ Dominic takes a deep breath and bends over to check the tire pressure.
 
 He finds a patch of grass and touches it. 
 
-Makayla and Asher wander toward the edge of Dallas's property, kneeling over when they get to the edge. 
-
-
-MAKAYLA
-Asher, look.
+Asher wanders toward the edge of Dallas's property, kneeling over when he gets to the edge. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla points to a trailcam that seems to be behind Dallas' backyard gate . It is blinking. Asher unties it and gives Makayla the SD card, which she puts in her pocket. Meanwhile Dominc walks right up to Dallas' doorway and kocks.
+Asher spots a trailcam that seems to be behind Dallas' backyard gate . It is blinking. He unties it and puts the SD card in his pocket. Meanwhile Dominc walks right up to Dallas' doorway and kocks.
 
 Dallas emerges. 
 
-Makayla kneels and touches it. Her hair flutters, static electricity pulling the strands toward the stone. She quickly pockets it.
-
-Makayla notices a trail leading from the edge of the grass toward Dallas. Asher grabs beads from his pocket and begins to dangle them nervously. 
+Asher notices a trail leading from the edge of the grass toward Dallas. He grabs beads from his pocket and begins to dangle them nervously. 
 
 Cut to. 
 
@@ -1752,23 +1588,21 @@ Yeah that's fine.
 DOMINIC
 Good. 
 
-MAKAYLA
-Dominic, no worries Mr. Dallas we'll hang with you and show you around. 
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+(action)
+Dominic looks back at Asher, who hasn't moved from the edge of the yard. His eyes are on the tall grass.
 
 DOMINIC
-Oh Yeah? You trying to get out an errand? 
+Asher, come on - I got to run to the store. 
 
-MAKAYLA
-Of course.  
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
-DOMINIC
-Alright fine - it's settled - but hey, you owe me one Makayla. If your mother comes back before I do tell her I am at the store. 
-
-MAKAYLA
-Okay Dom.
+(action)
+Asher doesn't move. He keeps his eyes on the grass.
 
 DOMINIC
-Okay. 
+Alright fine - stay. But you owe me one. Mr. Dallas, he's no trouble. I'll be back in twenty.
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
@@ -1776,33 +1610,18 @@ Okay.
 Dominic drives away. 
 
 EXT. DALLAS's HOUSE -  DOORWAY (s13.2)
-Makayla stares at Dallas for a good while - and reads his eyes.
-
-MAKAYLA
-I think we shoud talk.
-
-DALLAS
-Yeah?
-
-MAKAYLA
-Yeah
-
-DALLAS
-Okay.
+Asher stares at Dallas for a good while - and reads his eyes.
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla turns and points out the window. 
-
-MAKAYLA
-What is that outside your house?
+Asher turns and points at the dead, flattened patch of grass at the edge of 
+the tall grass. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Dallas looks outside, toward the dead, flattened patch of grass at the edge of 
-the tall grass. His eyes widen. 
+Dallas looks where he is pointing. His eyes widen. 
 
 DALLAS
 I don't know. 
@@ -1810,10 +1629,7 @@ I don't know.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla points to the trailcam. 
-
-MAKAYLA
-What is that outside your house? 
+Asher points to the trailcam. 
 
 DALLAS
 It looks like a trailcam. 
@@ -1823,80 +1639,66 @@ It looks like a trailcam.
 (action)
 A whimper is heard from the kitchen. 
 
-MAKAYLA
-What is that?
-
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla rushes past Dallas and runs to the kitchen.  She takes out her portable oscillator and sees that it is spiking as she points it to the cieling. 
+Asher's head snaps toward the sound. He rushes past Dallas and runs to the kitchen.  He takes out his portable oscillator and sees that it is spiking as he points it to the cieling. 
 
 Asher and Dallas stand silent looking at each other for a beat too long.
 
-Makayla ignores everyone and rushes out of the room, up the stares, towards the attic. 
+Asher rushes out of the room, up the stares, towards the attic. 
 
 INT. DALLAS ATTIC - MOMENTS LATER (s13.3)
 
-Dallas and Makayla hover around the table at the makeshift aquarium Dallas constructed.
+Dallas and Asher hover around the table at the makeshift aquarium Dallas constructed.
 
-Asher walks arounds and takes his headphones off and grabs the ruby red headphones on the kitchen table. He puts them on and listens to the recording. 
+Asher takes his headphones off and grabs the ruby red headphones on the kitchen table. He puts them on and listens to the recording. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla pulls out her portable viewfinder and begins to inspect the creature further. 
-
-MAKAYLA
-How long has it been here?
+Asher pulls out his portable viewfinder and begins to inspect the creature further. 
 
 DALLAS
-Since last night. 
-
-MAKAYLA
-Look at this, look how it breathes.
+It's been here since last night. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
 The pair look closer at the creature - it seems to breath through its back. 
-Makayla touches the creature gently - which causes the screen Oscillator around 
+Asher touches the creature gently - which causes the screen Oscillator around 
 it to spark.
 
-MAKAYLA
+DALLAS
 We can't tell anyone about this.
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Makayla turns to Dallas who nods in agreement. 
+Asher turns to Dallas and nods in agreement. 
 
 EXT. DALLAS HOUSE - PICNIC BENCH (s13.4)
 Dallas adjusts his position on the picnic bench and gently walks towards the 
-edge of the tall grass. 
-
-MAKAYLA
-Mr. Dallas, where did you find it?
+edge of the tall grass. Asher watches him, silent.
 
 DALLAS
-A couple of miles away. I am not sure exactly. I was out walking. 
+I found it a couple of miles away. I am not sure exactly. I was out walking. 
 
-MAKAYLA
-Was anyone with you?
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
 
-DALLAS
-No - I was alone. I ventured off the trail. 
-
-MAKAYLA
-Why did you take it?
+(action)
+Asher keeps watching. Dallas keeps talking, half to the kid, half to himself.
 
 DALLAS
-It looked like it was injured.
+I was alone. I ventured off the trail. It looked like it was injured. 
 
-MAKAYLA
-And you could fix it? 
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+(action)
+A beat.
 
 DALLAS
-I think so. 
+I thought I could fix it. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
@@ -1920,130 +1722,88 @@ distance stands off, afraid to look at the creature.
 <!-- FILMING ON = DAY 4 = 6.13.26 -->
 EXT. DALLAS BACKYARD - OLD PORCH TABLE (s14.1)
 
-Makayla and Dallas look on the ground for a while as they sit outside the patio. 
+Dominic and Dallas look on the ground for a while as they sit outside the patio. 
 
 Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in approval. He takes some string from his pocket and begins to quietly thread various quanity of beads. 
 
-MAKAYLA
+DOMINIC
 What do you do when you are sad? 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas looks at the ground and then at Makayla.
+Dallas looks at the ground and then at Dominic.
 
 DALLAS
 I don't know.
 
-MAKAYLA
-Your wife was an Epistemologist? 
+DOMINIC
+Your wife. What was she like?
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
 Dallas looks at the sky and then at the ground and then at the dead patch of grass at the edge of the property. 
 
-MAKAYLA
-She studied how fish communicate underwater?
-
 DALLAS
-She did.
+She studied how fish communicate underwater.
 
-MAKAYLA
+DOMINIC
 Sounds like a smart lady.
 
 DALLAS
-She was (long beat) How did you know that?
+She was.
 
-MAKAYLA
-How did I know what?
-
-DALLAS
-How did you know that my wife was an Epistemologist. 
-
-MAKAYLA
-I've read her papers. Read her book. Watched her give that ted talk. And wondered what kind of woman she was. And now - here I am - with her husband. 
-
-DALLAS
-Yeah. 
-
-MAKAYLA
-Yeah... You're not really like who I thought you would be. 
+DOMINIC
+Our moms gone too. Me and Asher - and our uncle Mike. That's the house now. But we're still here. Branford. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
 Dallas nods and looks at the ground.
 
-MAKAYLA
-Our moms gone too. But we're still here and now we are here living with our uncle - in Branford.
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Dominic stands and claps Dallas on the shoulder.
+
+DOMINIC
+I got to get Mr. Mike his dinner going. Asher - don't wear Mr. Dallas out. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla looks down at her equipment and then up at the trees.
-
-MAKAYLA
-Where did you find it? 
-
-DALLAS
-I'm not where.
-
-MAKAYLA
-Not sure?
-
-DALLAS
-I was in a bit of a daze.
-
-MAKAYLA
-What kind of daze? 
-
-DALLAS
-Not sure. 
-
-MAKAYLA
-That habitat you built. What is that about?
-
-DALLAS
-I think it is senstivie to UV light. 
-
-<!-- scene: 14 file: s14.md nickname: creature-rescue -->
-
-(action)
-Makayla nods. 
+Dominic walks back across the street. Asher stays, threading his beads.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
 A gentle breeze blows through the sky. Asher begins to pace around and bob his head a bit back and forth. Suddenly, he stops in his tracks and proceeds to walk slowly into the house. 
 
-Makayla looks back and him and continues to fiddle with the Oscillator.
+Dallas looks back at him and continues to fiddle with the Oscillator.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Dallas and Makayla sit for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Makayla turns to looks down at her trailcam in the distance. 
-
-MAKAYLA
-We should go - we need to document this... Dallas. We can't tell anyone, not until we document this. The sound it makes. We should try to record that.
+Dallas sits for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Dallas looks down at the trailcam in the distance. 
 
 DALLAS
-I've been.
-
-MAKAYLA
-You've been what?
-
-DALLAS
-I've been recording it's sound.
+(to himself)
+We can't tell anyone. Not until I document this. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-The breeze overwhelms them both in the distance they begin to hear the faint pulse of a dark deep hum. 
+He looks at the recorder in his hand. He has been recording its sound all along.
+
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+The breeze overwhelms him and in the distance he begins to hear the faint pulse of a dark deep hum. 
 
 INT. DALLAS' ATTIC - CONTINUOUS (s14.1B)
 
-The crew huddle over machinery in Dallas attic. Asher gets a bit weirded out and heads downstairs.
+Dallas and Asher huddle over machinery in Dallas attic. Asher gets a bit weirded out and heads downstairs.
 
 INT. DALLAS' KITCHEN - CONTINUOUS (s14.2)
 
@@ -2061,33 +1821,28 @@ EXT. DALLAS BACKYARD - OLD PICNIC TABLE - CONTINUOUS (s14.3)
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-A loud thump is heard from outside. Makayla runs into Dalla's kitchen.
+A loud thump is heard from inside. Dallas runs into his kitchen.
 
 INT. DALLAS' KITCHEN - MOMENTS LATER (s14.4)
 
-Makayla holds Asher by the head as he shakes on the ground. Makayla begins to sway and hum to him gently. She puts her hand on his chest and he breathes. 
+Dallas holds Asher by the head as he shakes on the ground. Dallas begins to sway and hum to him - clumsy, unpracticed, but he does it. He puts his hand on the boy's chest and Asher breathes. 
 
 DALLAS
-Is he okay? 
-
-MAKAYLA
-He's fine... He's just doing Asher stuff. I think he's just processing. 
+(under his breath)
+You're okay. You're okay. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla takes a deep breath as Asher shakes violently and stops shaking violently. 
+Dallas takes a deep breath as Asher shakes violently and stops shaking violently. 
 
-MAKAYLA
+DALLAS
 Sit up.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla makes Asher sit up and brings him a glass of water. As she is pouring it - she notices the creature sleeping peacefully below the heat lamp. 
-
-MAKAYLA
-I find it interesting that your wife was an epistemologist - you know, they used to think that the sea was silent - but it's not. 
+Dallas makes Asher sit up and brings him a glass of water. As he is pouring it - Asher's eyes find the creature sleeping peacefully below the heat lamp. 
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
@@ -2096,60 +1851,47 @@ Dallas looks around at his kitchen island - which has turned part into a triage 
 
 In the distance they hear howls - and then silence again. 
 
-The creature begins to fade - Dallas turns the dial into another frequency range and waits until it is asleep. 
-
-MAKAYLA
-(to Dallas)
-What does that do?
+The creature begins to fade - Dallas turns the dial into another frequency range and waits until it is asleep. Asher watches the dial, then watches Dallas. 
 
 DALLAS
 (whispering)
-It changes the frequency I am broadcasting.
-
-MAKAYLA
-Why are you broadcasting?
-
-DALLAS
-I'm trying to get a response.
+It changes the frequency I am broadcasting. I'm trying to get a response.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-The two look at the creature on the table. 
-
-MAKAYLA
-It looks like the creature is responding to it.
+The two look at the creature on the table. The creature seems to be responding to it.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-Makayla looks at Dallas and then at the creature and pulls out a small prototype from her backpack. 
+Asher looks at Dallas and then at the creature and pulls out a small prototype from his backpack. He holds it out.
 
 The two look at each other for a moment.
 
 DALLAS
 What is that?
 
-MAKAYLA
-An amplifier.
-
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-She turns to the creature and turns it on. The creature starts to wiggle.
+Asher turns to the creature and turns it on. An amplifier. The creature starts to wiggle.
 
 Behind the creature's smooth sine wave, a second signal appears—jagged, arrhythmic. It pulses in sharp, irregular bursts, riding underneath the creature's frequency like static beneath music.
 
-MAKAYLA
+DALLAS
+(quiet)
 That's not coming from the creature. That's drawing from outside.
 
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-The group looks at the creature and then at the oscilloscope and then at the sway of the tall grass outside. 
+The two look at the creature and then at the oscilloscope and then at the sway of the tall grass outside. 
 
-MAKAYLA
-Dallas - I have to show you something.
+<!-- scene: 14 file: s14.md nickname: creature-rescue -->
+
+(action)
+Asher tugs Dallas's sleeve. He points out the window, toward the marsh. He has something to show him.
 
 ---
 
@@ -2168,20 +1910,18 @@ SCENE 14B: THE FIELD JOURNAL
 
 
 s14B.1 — EXT. DALLAS BACKYARD — OLD PICNIC TABLE — CONTINUOUS
-Makayla and Dallas sit in silence. Asher, a few feet off, threads beads onto a long string — one bead for every listening post he and Makayla have staked out in the marsh. The quantity matters; we just don't know why yet.
+Dallas and Asher sit in silence. Asher, a few feet off, threads beads onto a long string — one bead for every listening post he has staked out in the marsh. The quantity matters; we just don't know why yet.
 
-Makayla reaches into her backpack and pulls out a soft-covered field journal. The cover is warped from water, held together with a rubber band. She doesn't open it right away. She holds it in her lap.
+Dallas reaches into his bag and pulls out a soft-covered field journal. Sierra's. The cover is warped from water, held together with a rubber band. The one from her folders he keeps pushing closed. He doesn't open it right away. He holds it in his lap.
 
-MAKAYLA
-My mom's. 
+DALLAS
+(quiet)
+Hers. 
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 (action)
-She sets it on the picnic table between them. Dallas looks at it but doesn't touch it.
-
-MAKAYLA
-You can look.
+He sets it on the picnic table. Asher looks at it but doesn't touch it.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
@@ -2197,7 +1937,7 @@ A small drawing of a Golden creature in the margin — recognizable. Similar to 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 (action)
-Dallas turns the page. The handwriting changes. Younger. Messier. Makayla's. Then Asher's geometric doodles. The sketches get more detailed. Different Golden creatures at different sizes.
+Dallas turns the page. The sketches get more detailed. Different Golden creatures at different sizes.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
@@ -2213,8 +1953,10 @@ DALLAS
 (quiet)
 What am I looking at?
 
-MAKAYLA
-That's what I wanted to show you.
+<!-- scene: 14B file: s14b.md nickname: the-field-journal -->
+
+(action)
+Asher has come around the table. He looks at the spread. He doesn't look surprised.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
@@ -2224,8 +1966,10 @@ Dallas stares at the page. His thumb traces the arrow.
 DALLAS  
 They're the same.
 
-MAKAYLA
-They're the same.
+<!-- scene: 14B file: s14b.md nickname: the-field-journal -->
+
+(action)
+Asher nods.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
@@ -2238,32 +1982,18 @@ One turns into the other?
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 (action)
-Makayla looks at Asher. He's stopped threading. He's listening, but not looking up.
-
-MAKAYLA
-Don't know for sure. 
+Asher stops threading. He puts one finger on the peaceful creature. Then he drags it slowly across the arrow to the red-eyed one. Then he points at the kitchen window. Toward the creature inside.
 
 DALLAS
-What's your guess?
-
-<!-- scene: 14B file: s14b.md nickname: the-field-journal -->
-
-(action)
-Makayla doesn't answer right away. She picks at a splinter on the picnic table.
-
-MAKAYLA
 When they get hurt. They change.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 (action)
-Dallas looks toward the kitchen window. Toward the creature inside.
+Asher goes still. That is the answer.
 
 DALLAS
 The one I found was injured.
-
-MAKAYLA
-I know.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
@@ -2276,12 +2006,11 @@ A gust of wind moves through the tall grass at the edge of the property. Asher's
 Dallas closes the journal carefully.
 
 DALLAS
-Your mom saw one? 
+She saw one. 
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 (action)
-Makayla doesn't answer.
 The wind picks up again. In the far distance, barely audible — not quite a howl, not quite a hum. Something in between.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
@@ -2296,20 +2025,20 @@ They're listening.
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 (action)
-Makayla and Dallas both turn to him. He doesn't elaborate. He goes back to his beads.
+Dallas turns to him. He doesn't elaborate. He goes back to his beads.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 (action)
-Makayla picks up the journal and slides it back into her pack.
+Dallas picks up the journal and slides it back into his bag.
 
-MAKAYLA
+DALLAS
 We should go inside. Check on it.
 
 <!-- scene: 14B file: s14b.md nickname: the-field-journal -->
 
 (action)
-They stand. Dallas glances back at the tall grass one more time before following her in.
+They stand. Dallas glances back at the tall grass one more time before going in.
 
 ---
 
@@ -2327,18 +2056,16 @@ INT. DALLAS HOUSE – LATE AFTERNOON (s14c.1)
 
 Late-day light leaks through the kitchen blinds. The creature is hidden beneath a towel inside the makeshift enclosure. A SOFT, IRREGULAR HUM bleeds faintly into the room.
 
-Makayla stands rigid at the counter, tightening a cable connection.Asher sits cross‑legged on the floor, threading beads. His fingers pause.
+Dallas stands rigid at the counter, tightening a cable connection.
 
 A KNOCK at the door.
 
-All three freeze.
+Dallas freezes.
 
 Another knock—cheerful.
 
 DOMINIC (O.S.)
 Dallas? You home? I think you might have our step ladder.
-
-Makayla and Dallas exchange a look. Asher begins tapping his fingers faster.
 
 INT. DALLAS HOUSE – FRONT ENTRY – CONTINUOUS (s14c.2)
 
@@ -2382,15 +2109,7 @@ INT. DALLAS KITCHEN – CONTINUOUS (s14c.3)
 
 Dominic steps inside. The HUM vibrates a glass of water on the counter—just enough to ripple.
 
-Makayla slides between Dominic and the enclosure casually.
-
-MAKAYLA  
-Hey Dom.
-
-DOMINIC  
-Oh—hey kiddo.
-
-He eyes the equipment scattered around.
+Dallas slides between Dominic and the enclosure casually.
 
 DOMINIC  
 Wow. Place looks like NASA threw up.
@@ -2401,18 +2120,11 @@ Work stuff.
 DOMINIC  
 You educators—always overprepared.
 
-Asher’s bead string slips from his fingers and CLATTERS to the floor.
-
-DOMINIC  
-Hey buddy.
-
-Asher doesn’t respond.
-
 Dominic steps once more toward the counter—toward the towel.
 
-Makayla moves **immediately**.
+Dallas moves **immediately**.
 
-MAKAYLA  
+DALLAS  
 So—uh—weren’t you fixing the porch light too?
 
 DOMINIC  
@@ -2427,16 +2139,16 @@ Dominic freezes.
 DOMINIC  
 Okay. That—
 
-Makayla reaches out and SLAMS a power switch. Darkness. Silence.
+Dallas reaches out and SLAMS a power switch. Darkness. Silence.
 
 A beat.
 
 DOMINIC  
 …Storm’s coming quick.
 
-Makayla smiles too fast.
+Dallas smiles too fast.
 
-MAKAYLA  
+DALLAS  
 We should all stay inside tonight.
 
 Dominic nods slowly. Something unsettled—but unspoken.
@@ -2467,13 +2179,7 @@ Dominic leaves.
 
 Silence.
 
-Asher finally exhales.
-
-ASHER  
-(quiet)
-That was close.
-
-Makayla doesn’t answer. She stares at the towel—at the faint GOLDEN GLOW bleeding through.
+Dallas stares at the towel—at the faint GOLDEN GLOW bleeding through.
 
 ---
 
@@ -2491,7 +2197,7 @@ Makayla doesn’t answer. She stares at the towel—at the faint GOLDEN GLOW ble
 ---
 
 
-### Scene 15B: Makayla's Tracking Box
+### Scene 15B: Asher's Tracking Box
 
 *ACT II — The Creature | ID: the-tracking-box | File: s15b.md*
 
@@ -2499,25 +2205,25 @@ Makayla doesn’t answer. She stares at the towel—at the faint GOLDEN GLOW ble
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
-# Scene 15: Makayla's Tracking Box
+# Scene 15: Asher's Tracking Box
 
 <!-- s15b -->
 <!-- FILMING ON DAY 4 -->
 EXT. NEIGHBORHOODS - EVENING (s15.1)
-The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
+Dallas, Dominic and Asher walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
-As they cut through the reeds, Makayla and Asher stop every so often to press small devices down into the mud at the base of the stalks. Each one blinks a slow, faint amber as it powers on. 
+As they cut through the reeds, Asher stops every so often to press small devices down into the mud at the base of the stalks. Each one blinks a slow, faint amber as it powers on. 
 
 Dallas watches a scatter of them pulse in the dusk.
 
 DALLAS
 Fireflies?
 
-MAKAYLA
-Listening posts. We've been seeding the whole marsh — every spot the hum has ever touched. 
+DOMINIC
+Listening posts. He's been seeding the whole marsh with them — for years now. Every spot that sound of his has ever touched. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
@@ -2527,35 +2233,38 @@ Asher trails a step behind. Each time one of the nodes blinks to life, he thread
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
-The crew walk into the field and find a small wooden chest on the ground, hidden beneath a field of tall grass. 
+The three walk into the field and find a small wooden chest on the ground, hidden beneath a field of tall grass. 
 
-EXT. MAKAYLA'S SPECIAL WOODED SPOT - CONTINUOUS (s15.2)
+EXT. ASHER'S SPECIAL WOODED SPOT - CONTINUOUS (s15.2)
 As they approach the structure, they can see that it is a small wooden structure hidden by fallen trees and branches. 
 
-Inside the structure there is a wooden box. Makayla opens it. Inside there are various trail cameras and recording equipment. On the bottom of the box, Makayla pulls out various cables and wires connected to a small portable oscillator. 
+DOMINIC
+Asher's been building out here for years. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
-Makayla walks over and turns the device on. It lights up. 
+Inside the structure there is a wooden box. Asher opens it. Inside there are various trail cameras and recording equipment. On the bottom of the box, Asher pulls out various cables and wires connected to a small portable oscillator. 
 
-MAKAYLA
-Batteries will die soon.
+<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+
+(action)
+Asher walks over and turns the device on. It lights up. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Dallas looks confused at the wiring. 
 
-MAKAYLA
-Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - they are going to change the world... He just needs to rest a bit. 
+DOMINIC
+Don't worry Mr. Dallas - one day you'll hear all about my brother's inventions - they are going to change the world... 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Dallas looks at one of the inventions on the ground. 
 
-MAKAYLA
+DOMINIC
 Do you believe that things happen for a reason?
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
@@ -2563,27 +2272,24 @@ Do you believe that things happen for a reason?
 (action)
 Dallas reamins still, not making eye contact. 
 
-MAKAYLA
-Well they do... I mean - if i hit this button here - boom. 
+DOMINIC
+Well they do. I do. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
-Makayla points her device at a small nearby flower. She nods and takes out a pocket tripod - and a pocket microphone - and begins to to record. 
-
-MAKAYLA
-Most people will never understand what happened today. Or what happens out here at all. Dominic might. 
+Asher takes out a pocket tripod - and a pocket microphone - and begins to to record. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
-Makayla hands Dallas a small wooden box. Dallas opens it and finds a spare oscillator inside, wrapped in cloth, the dial worn smooth from use. Dallas holds it, fascinated.
+Asher lifts a small wooden box and holds it out to Dallas without a word. Dallas opens it and finds a spare oscillator inside, wrapped in cloth, the dial worn smooth from use. Dallas holds it, fascinated.
 
-MAKAYLA
+DOMINIC
 What do you think?
 
 DALLAS
-Looks like one of yours.
+Looks like one of his.
 
 ---
 
@@ -2603,7 +2309,7 @@ Looks like one of yours.
 <!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
 (action)
-Makayla walks over to a little portable device, also hidden by a bunch of branches. She turns it on with a bunch of 9V batteries and points to the two metal rods — contact transducers — coming out of the portable wooden device, and nudges Dallas to grip. 
+Asher walks over to a little portable device, also hidden by a bunch of branches. He turns it on with a bunch of 9V batteries and points to the two metal rods — contact transducers — coming out of the portable wooden device, and nudges Dallas to grip. 
 
 <!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
@@ -2613,26 +2319,31 @@ Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the 
 Dallas wakes up. 
 
 
-MAKAYLAA
-So, what do you think?
+DOMINIC
+Dallas. Dallas! You alright? What did it do to you?
 
 DALLAS
 What is it?
 
-MAKAYLA
-We don't know. But I wonder what would happen if we hook up the creature to it - and your oscillator. That night you found the creature - it let out a big BOOM.
+<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+
+(action)
+Asher shrugs, slow. He doesn't know either. Dominic looks between the two of them, then out at the trees.
+
+DOMINIC
+That night you found— that night you moved in. Something out here let out a big BOOM. Whole street heard it.
 
 <!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
 (action)
-In the distance the howls are getting more ganrly. Makayla and Dallas stand silent in fear.
+In the distance the howls are getting more ganrly. The three of them stand silent in fear.
 
 <!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
 (action)
 Dallas begins to record a bit on his pocket recorder. 
 
-MAKAYLA
+DOMINIC
 (takes a deep breath and contemplates for a while)
 We should go.
 
@@ -2652,75 +2363,37 @@ We should go.
 <!-- GOING TO FILM ON and on Day 4 - Day 12 -->
 
 EXT. DALLAS BACKYARD (s16.1)
-Makayla and Dallas hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 
+Dallas hastily makes his way out of the woods, back toward the field, carrying all of the equipment from the wooden box. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-As the two walk, they begin to notice that the tall grass around them is acting universally restless. The two walk in uneasy silence as the summer glow lights their pace. 
+As he walks, he begins to notice that the tall grass around him is acting universally restless. He walks in uneasy silence as the summer glow lights his pace. 
 
 
 EXT. BRANFORD TOWN GREEN - DAY (s16.2)
 
-The two walk through the backstreets of Branford with the creature covered in a towel drapped over the dog backpack. 
+Dallas walks through the backstreets of Branford with the creature covered in a towel drapped over the dog backpack. 
 
 EXT. DALLAS'S HOUSE - DAY (s16.3)
 
-As they approach the driveway, the two look suspciously at the tall grass around Dallas's house. 
+As he approaches the driveway, he looks suspciously at the tall grass around his house. 
 
 INT. DALLAS' KITCHEN
-The crew find Asher in the kitchen, pacing back and forth. 
+Dallas sets the covered backpack on the table. His spare handheld oscilloscope begins to beep. The distinct faint hum has followed him home.
 
-Asher begins to shake and falls to the ground. His eyes look directly at the sky and he begins to cry.
-
-ASHER
-(in trance)
-Leave us alone. Leave us alone. 
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Asher begins to cry and shake. Dallas and Makayla rush to his side.
-
-MAKAYLA
-Asher!
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Asher slowly wakes up. 
-
-MAKAYLA
-Breathe. 
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Dallas looks at the tall grass. His spare handheld oscilloscope begins to beep. The crew, little by little, hear the distinct faint hum following them.
-
-MAKAYLA
-Breathe. Breathe. 
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Asher slowly lowers his breathing. A doorbell is heard off screen.
+The creature answers with a weak tone from inside the bag. Dallas steadies his breathing and checks the window.
 
 INT. DALLAS'S HOUSE - HALLWAY - DAY (s16.4)
 
-Before they can even touch the doorknob, Dominic pulls up in his car and honks the horn. He rolls down the window, calm.
+Dominic pulls up in his car and honks the horn. He rolls down the window, calm.
 
 DOMINIC
 (easy)
-You kids alright?
+You alright?
 
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Dallas and Makayla look at each other.
-
-MAKAYLA
-We're fine. 
+DALLAS
+I'm fine.
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
@@ -2728,15 +2401,10 @@ We're fine.
 Dominic's eyes drift to the backpack. Something about it doesn't sit right with him. He clocks it quietly—then lets it go.
 
 DOMINIC
-Get in the car - leave Mr. Dallas alone. He's coming to life group tonight, he needs to get some rest and get ready. 
+Life group tonight. You should come. Get out of this house for an hour.
 
 DALLAS
-It's okay. 
-
-<!-- scene: 16 file: s16.md nickname: the-escape -->
-
-(action)
-Makayla hands Dallas the backpack and gently lets the creature in. She walks to the car with Asher.
+Maybe.
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
@@ -2847,9 +2515,9 @@ He watches the man go. His comfort isn't ignorance; it's a practiced discipline.
 
 (cross-cut)
 
-INT. MAKAYLA'S LAIR - DAY (s17b.4)
+INT. DOMINIC'S BASEMENT - DAY (s17b.4)
 
-Makayla has maps, meteorological data, and Sierra’s old drawings spread across her floor. She is tracing patterns with a red marker, aggressively connecting the dots between the anomalous sounds and the town's geography.
+Maps, meteorological data, and bead strings cover the floor. A red line connects the anomalous sounds across the town's geography, ending at the marsh.
 
 (cross-cut)
 
@@ -2864,7 +2532,7 @@ Makayla has maps, meteorological data, and Sierra’s old drawings spread across
 
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
 
-# SCENE 17C: MUTE DRIVE
+# SCENE 17C: THE DRIVE
 
 <!-- nickname: mute-drive -->
 <!-- GOING TO FILM ON 
@@ -2874,60 +2542,31 @@ INT. DOMINIC'S CAR - DAY (s17c.1)
 
 Dominic is driving through downtown Branford. The Nor'easter winds are picking up, rattling the windows of the car. Outside, the town is engaged in banal, civic storm preparation. Shop owners are taping windows. Public works employees are laying sandbags near the post office. 
 
-Makayla sits in the passenger seat. She is completely rigid, staring out the window. Asher is asleep in the back, his heavy noise-canceling headphones resting around his neck. 
-
-Dominic glances at Makayla, finally breaking the oppressive silence in the car. He is not maternal. He is quiet, even. An older brother who has been watching. 
+Dominic talks to Dallas through the car's speakerphone as he drives.
 
 DOMINIC
-I've been meaning to say something. I know it hasn't been easy since Mom passed. It’s a lot to carry. But the way you’ve stepped up to take care of Asher... that's not nothing, Makayla. You're keeping this family together. I just want you to know you don't have to carry it all by yourself. I'm here.
+You keep saying weather. This isn't weather. The whole town feels like it's holding its breath.
 
-<!-- scene: 17C file: s17c.md nickname: mute-drive -->
+DALLAS (V.O.)
+I know.
 
-(action)
-Makayla remains  mute.  Her eyes track a thick mat of dead leaves and bramble snarled high up the brick side of the Branford Town Hall, climbing where no vine should reach. The public works employees walk right past it, completely oblivious.
-
-The silence in the car is deafening. Dominic looks away from the road, studying Makayla's terrified, stoic profile. Then, Dominic looks at what Makayla is looking at. 
+Dominic's eyes track a thick mat of dead leaves and bramble snarled high up the brick side of the Branford Town Hall, climbing where no vine should reach. The public works employees walk right past it, completely oblivious.
 
 Dominic's eyes land on the brick wall of the Town Hall and the dead brush snarled up it where nothing should grow. The streetlights pulse in time with it, and the wind carries a rhythm that turns his stomach. 
 
 Dominic hits the brakes, pulling the car hard onto the shoulder of the road. 
 
-He puts the car in park. He doesn't look at the town anymore. He looks directly at Makayla. 
+He puts the car in park and stares at the wall.
 
 DOMINIC
-(quietly, dropping the buffer)
-You're not just taking care of him. You're protecting him from something. 
+(quietly)
+Dallas. The streetlights are pulsing with it. The dead growth is climbing the building.
 
-<!-- scene: 17C file: s17c.md nickname: mute-drive -->
-
-(action)
-Makayla finally turns her head to look at Dominic. The silence between them shifts.
+DALLAS (V.O.)
+Get home. Lock the doors.
 
 DOMINIC
-What is wrong, Makayla?
-
-MAKAYLA
-Everything.
-
-DOMINIC
-Everything?
-
-MAKAYLA
-I don't know. 
-
-DOMINIC
-Makayla, what is it?
-
-MAKAYLA
-Something they aren't ready for. 
-
-<!-- scene: 17C file: s17c.md nickname: mute-drive -->
-
-(action)
-Dominic stares at his sister. He doesn't ask for proof. He doesn't rationalize the pulsing lights or the rot on the bricks. He chooses to believe. 
-
-DOMINIC
-Then we need to get home. And we need to lock the doors. 
+No. You keep telling me half of it and expecting me to stay out. I'm coming to you.
 
 <!-- scene: 17C file: s17c.md nickname: mute-drive -->
 
@@ -2956,76 +2595,63 @@ Families arrive in waves. The small kitchen and smaller living room fill. The cr
 The doorbell is heard.
 
 INT. DOMINIC'S HALLWAY (S18.2)
-Makayla answers the door and sees Dallas. She quietly hushes him to the corner. 
+Dominic answers the door and sees Dallas. Dallas quietly pulls him to the corner.
 
-MAKAYLA
-Dallas, what happened? How is it doing?
-
-DOMINIC
-It ran away. 
-
-MAKAYLA
-It what?!
+DALLAS
+(low)
+It got out. Last night. I can't find it. 
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-Suddenly a loud bang is heard off screen. Makayla and Dallas turn to look. Mr Mike is heard off screen.
+Dominic's eyes go wide. A loud bang is heard from the basement. Dominic and Dallas turn toward it.
 
-MR. MIKE
-What the heck is that? Asher. 
-
-<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
-
-(action)
-Makayla and Dallas hush downstairs to find the creature has made it somehow in the basement. Makayla quickly rushes to grab a box for it. 
+They hurry downstairs to find the creature has made it into the basement. Dallas grabs a box for it while Dominic shuts the door behind them.
 
 INT. DOMINIC's KITCHEN (S18.3)
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-Makayla drifts through the kitchen. She opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word. She continues to look and finds a bunch of tupawear. She grabs a couple of them. 
+Dallas drifts through the kitchen. He opens drawers quietly. Finds sugar cubes meant for coffee. Pockets one without a word. He continues to look and finds a bunch of tupawear. He grabs a couple of them. 
 
-Dominic catches her slipping the sugar into her pocket. He wipes his hands on a dish towel.
+Dominic catches him slipping the sugar into his pocket. He wipes his hands on a dish towel.
 
 DOMINIC
-What are you doing Makayla. 
+What are you doing Dallas. 
 
-MAKAYLA
+DALLAS
 Nothing. Just... getting sugar.
 
 DOMINIC
-For what? Where's Dallas? 
+For what?
 
-MAKAYLA
-He's downstairs. He... found a stray cat outside. It's really sick. He's nursing it. I was getting it some sugar water.
+DALLAS
+I... found a stray cat outside. It's really sick. I'm nursing it downstairs. I was getting it some sugar water.
 
 DOMINIC
-A cat? Alright. Well, tell him not to grow too attached - okay? What you doing with that Tupawear - you going to put the cat in that?
+A cat? Alright. Well, don't grow too attached - okay? What you doing with that Tupawear - you going to put the cat in that?
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-Makayla nods quickly and slips away.
+Dallas nods quickly and slips away.
 
 Downstairs, the volume of the creature frequency pulses rhythmically through the floorboards.
 
 INT. DOMINIC's BASEMENT - CONTINUOUS (s18.4)
 Dallas is sweating. He turns the dial up. Dallas walks over to the small creature and gently rubs its furry head. 
 
-MAKAYLA 
-If we keep broadcasting... maybe we can teach it. If it learns the frequency, it can return to the marsh and you know - avoid those red-eye demon things. 
-
-MAKAYLA
-We could to teach it.
+DALLAS
+(to himself, working)
+If I keep broadcasting... maybe I can teach it. If it learns the frequency, it can go back to the marsh and stay clear of those things. 
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-Makayla clicks a "Master" switch on the device. A small, protective green light flickers on.
+Dallas clicks a "Master" switch on the device. A small, protective green light flickers on.
 
-MAKAYLA
+DALLAS
 Come on. 
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
@@ -3048,18 +2674,18 @@ We have brownies about to be ready.
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-Makayla tries to shuffle past people who are hovering around a kitchen island grabbing popcorn and brownies. 
+Dallas tries to shuffle past people who are hovering around a kitchen island grabbing popcorn and brownies. 
 
 JOSH
-Makayla, how's the family holding up?
+Dominic, how's the family holding up?
 
-MAKAYLA
+DOMINIC
 We're getting by. Thanks.
 
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-Makayla darts past the crowd and heads for the stairs.
+Dallas darts past the crowd and heads for the stairs.
 
 A lifegroup member JOSH, 36, Tall and blonde, talks to PAT CLENDENEN, 60s. 
 
@@ -3092,13 +2718,16 @@ He knows we're here?
 DOMINIC
 Yeah - he should be up in a second.
 
-MAKAYLA
-I'll go and check on him.
-
 INT. DOMINIC'S BASEMENT - CONTIOUS (s18.6)
 Downstairs, the creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
 
-Makayla joins him and brings over some sugar cubes to thte table. The creature is unresponsive.
+Dominic joins Dallas and sets some sugar cubes on the table. The creature is unresponsive.
+
+DOMINIC
+Tell me what you need.
+
+DALLAS
+Keep them upstairs. Give me ten minutes.
 
 The sound of the LifeGroup singing "Great Is Thy Faithfulness" is muffled by the heavy basement door. Upstairs, the heavy footsteps of Dominic and the first LifeGroup guests begin to echo through the ceiling.
 
@@ -3117,36 +2746,11 @@ INT. DOMINIC'S BASEMENT - CONTINOUS (s18.8)
 <!-- scene: 18 file: s18.md nickname: life-group-arrives -->
 
 (action)
-The creature lays out a little whipmer. 
+The creature lets out a little whimper.
 
 Dallas adjusts the dial again. The creature quiets. The lights stabilize.
 
-MR. MIKE walks in behind him. He takes one look at the room and freaks out—like a dog afraid of thunder. He points at the basement door.
-
-MR. MIKE
-What is here? What is going on downstairs?!
-
-<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
-
-(action)
-Dominic steps between Mr. Mike and the stairs. He guides him back by the elbow.
-
-MAKAYLA
-Easy. Easy. Nothing. 
-
-MR. MIKE
-There is something down here. DOMINIC DOMINIC
-
-MAKAYLA
-Mr. Mike what is wrong?
-
-<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
-
-(action)
-Makayla signals to Asher who drops a plate on purpose.  
-
-MR MIKE. 
-What in the world?! Makayla - what is going on?!
+Dominic closes the basement door and returns upstairs before anyone notices.
 
 ---
 
@@ -3170,11 +2774,13 @@ Dallas shuffles through a pile of old equipment—mono cables, spare parts and a
 
 He finds a way to poke a hole in something so it can drink. The creature, laying beside him in the makeshift shoebox, begins to glow. 
 
-MAKAYLA and ASHER watch from the staircase. Makayla comes down and crouches by the shoebox. She doesn't touch the creature. She listens. The hum in the room rises, and she feels it settle in her chest and behind her teeth. The creature's glow strengthens as the sound swells around it. 
+Dominic watches from the staircase. The hum in the room rises, and the creature's glow strengthens with it.
 
-Makayla closes her hand around the small smooth stone in her pocket, her mom's, and steadies herself. 
+DOMINIC
+That's not random.
 
-She sits back. The hum eases, and the creature's glow dims.
+DALLAS
+No. It's answering.
 
 INT. DOMINIC'S LIVING ROOM - LATER (s19.2)
 People at lifegroup mill and talk. Someone asks where Dallas is.
@@ -3236,12 +2842,12 @@ You brought it in here. The golden one. You brought the target to the shore!
 <!-- scene: 19 file: s19.md nickname: the-hymn -->
 
 (action)
-Dallas joins behind Mr. Mike and sits down, Makayla and Asher pile next to him.
+Dallas joins behind Mr. Mike and sits beside Dominic.
 
 TYLER
 Oh - and some more friends. We hear there is a cat downstairs. How is it doing?
 
-MAKAYLA
+DALLAS
 It's doing good. 
 
 TYLER
@@ -3265,7 +2871,7 @@ The hum starts to upset people as it becomes unbearable.
 
 Subtle at first. Then undeniable. The floorboards vibrate. The lights pulse lower and lower. People look at each other.
 
-Dallas and Makayla exchange a look across the circle. The hum has crept under the hymn now, a low pressure that sits on the chest and presses behind the eyes, matching the concentric ripples in Sarah's tea. Each time the group hits a high note it swells, and the two of them flinch in the same instant, feeling it deep in their teeth.
+Dallas and Dominic exchange a look across the circle. The hum has crept under the hymn now, a low pressure that sits on the chest and presses behind the eyes, matching the concentric ripples in Sarah's tea. Each time the group hits a high note it swells.
 
 SASHA
 What was that?
@@ -3297,7 +2903,7 @@ Alright, let's see this cat.
 <!-- scene: 19 file: s19.md nickname: the-hymn -->
 
 (action)
-Dominic heads toward the basement alone. Dallas's stomach drops. He and Makayla exchange a panicked look. Asher starts bouncing his leg.
+Dominic heads toward the basement. Dallas's stomach drops and he follows.
 
 ---
 
@@ -3319,9 +2925,6 @@ Dominic descends the basement stairs. He gazes in a daze upon all of the militar
 
 Dallas frantically taps his receiver. The needle flickers back and forth between frequencies. 
 
-MAKAYLA
-Dallas! Where is it?
-
 DALLAS
 It's gone. 
 
@@ -3330,7 +2933,8 @@ It's gone.
 (action)
 From the direction of the marsh—a cry emerges that sounds like the creature. 
 
-MAKAYLA
+DALLAS
+(quiet)
 It went back.
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
@@ -3346,8 +2950,8 @@ Dallas... what is this?
 (action)
 Dallas makes eye contact with Dominic. Outside, the hum increases and Dallas' eyes fall toward the window. Out at the tall grass swaying in the dark. The Red-Eyes are pulsing at the edge of the property.
 
-MAKAYLA
-We have to get out there and find it the other things do. 
+DALLAS
+We have to get out there and find it before the other things do. 
 
 DOMINIC
 What other things?
@@ -3355,12 +2959,12 @@ What other things?
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla looks at Dominic with a serious expression.
+Dallas looks at Dominic with a serious expression.
 
 DOMINIC
-Makayla. 
+Dallas. 
 
-MAKAYLA
+DALLAS
 Dominic, listen—
 
 DOMINIC
@@ -3369,17 +2973,12 @@ I listen.
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla points hard at the window. Asher walks over to Dominic and hands him the device with the cystral on it.
+Dallas picks up the crystal device and hands it to Dominic.
 
 DOMINIC
 I don't get it. What is this? 
 
-<!-- scene: 20 file: s20.md nickname: red-eyes -->
-
-(action)
-Asher turns on the device.
-
-ASHER
+DALLAS
 It's to keep them at bay.
 
 DOMINIC
@@ -3388,35 +2987,30 @@ Keep who at bay?
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Asher points to the window. Dominic glances out the window. He slowly walks. In the distance as he looks a pair of red eyes glances back at him. 
+Dallas points to the window. Dominic looks. In the distance, a pair of red eyes looks back at him.
 
 Suddenly, the lights in the house flicker and within a moment, the room plunges into pitch black. 
 
-Makayla reaches from her backpack and grabs a bunch of flashlights and starts to hand them out to everyone. 
+Dominic opens a utility drawer, grabs the flashlights, and hands one to Dallas.
 
 INT. LIVING ROOM (Continous) 
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Dominic looks defeated. From the corner of the room Mr. Mike rocks back and forth in his chair. Asher rushes over to see him. 
+Dominic looks defeated. Dallas takes the flashlight from him.
 
-ASHER
-Mr. Mike, are you okay?
+DALLAS
+You can stay here.
 
-<!-- scene: 20 file: s20.md nickname: red-eyes -->
-
-(action)
-Mr. Mike looks at ASHER with a blank expression. He points toward the window. 
-
-MR. MIKE
-They're going to come - just look outside - It's done - finished - Look outside. The marks. 
+DOMINIC
+Not anymore.
 
 EXT. DOMINIC'S BACKYARD - CONTINUOUS (s20.4)
 
-Dallas and Makayla walk outside in the backyard and listen to the hum that is now almost at a deafening row. 
+Dallas and Dominic walk outside in the backyard and listen to the hum that is now almost at a deafening row. 
 
-MAKAYLA
+DOMINIC
 Do you think this will work?
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
@@ -3427,19 +3021,19 @@ Dallas nods.
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla drops to her knees, ripping open Dallas's gear bag. She scrambles out a portable speaker, slamming it onto the porch railing, aiming it directly at the creeping darkness like a shotgun. 
+Dallas drops to his knees, ripping open his gear bag. He scrambles out a portable speaker, slamming it onto the porch railing, aiming it directly at the creeping darkness like a shotgun. 
 
 Dallas rips the wire with his teeth and bridges the oscillator into the circuit. 
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla's hands fly over the oscillator dial, chasing the creature's pitch. 
+Dallas's hands fly over the oscillator dial, chasing the creature's pitch. 
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla keys the broadcast. 
+Dallas keys the broadcast. 
 
 A sound like thick glass cracking under pressure pierces the air. A high-pitched, localized frequency beam hits the lawn. 
 
@@ -3448,12 +3042,12 @@ A sound like thick glass cracking under pressure pierces the air. A high-pitched
 (action)
 The grass at the edge of the yard sways rhythmically,in a direction opposit of  the wind. 
 
-Dallas and Makayla watch stunned as the hum disapaates. Dominic comes outside and is in a gaze. 
+Dallas and Dominic watch stunned as the hum disapaates. 
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla looks back at the tree line.
+Dominic looks back at the tree line.
 
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
@@ -3471,13 +3065,13 @@ Dominic sits down on the outside porch.
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Makayla lifts the sparking portable speaker. She sweeps the invisible acoustic beam across the yard like a lighthouse beam. The a small glint of a red eye - is glimmering in the distance.  A wall of Red-Eye figures violently flinches, the brush of their bodies rustling as they peel back into the reeds, leaving a temporary, circular safe zone in the pouring rain. 
+Dallas lifts the sparking portable speaker. He sweeps the invisible acoustic beam across the yard like a lighthouse beam. The a small glint of a red eye - is glimmering in the distance.  A wall of Red-Eye figures violently flinches, the brush of their bodies rustling as they peel back into the reeds, leaving a temporary, circular safe zone in the pouring rain. 
 
 The orbs gather dead leaves and reeds to themselves, swelling and taking the shape of tall, ragged figures, scarecrows of brush and grass with two red eyes burning in the middle of each.
 
 But there are too many. Hundreds of red eyes begin to dot the tree line. The sheer numbers are overwhelming the small portable speaker.
 
-Makayla looks onward and sprints towards the darkness.
+From out in the grass, the creature's cry rises again. Dominic comes up off the porch. He looks onward and sprints towards the darkness.
 
 ---
 
@@ -3495,19 +3089,15 @@ Makayla looks onward and sprints towards the darkness.
 <!-- GOING TO FILM ON : Day 11 = Wednesday -->
 
 EXT. DALLAS'S BACKYARD - NIGHT (s21.2)
-Makayla bursts through the backyard towards the street, towards the neighborhood, looking at her tracker device - she sees that the creature is blinking. She makes her way to the field of no -man land - where they found the creatures. 
+Dominic bursts through the backyard towards the street, towards the neighborhood, flashlight in hand. He makes his way to the field of no -man land - where they found the creatures. 
 
-Dallas - watching her sprint - begins to chase after her.   Dominic - sitting down still in a daze, eventually stands up and follows her. 
+Dallas - watching him sprint - grabs his tracker device and begins to chase after him. On the screen the creature is blinking. 
 
-Makayla runs straight for the tall grass at the edge of their house. 
+Dominic runs straight for the tall grass at the edge of their house. 
 
 EXT. TALL GRASS (S21.3)
-As Makayla runs through the tall grass, distant howls flood the atmosphere. 
-Asher stops at the edge of the porch and looks back toward the house, toward Mr. Mike inside. In the distance a pair of red eyes flares bright, dims, and disappears. 
-
-Asher looks again, closer. The eyes reappear, swirling through the beating wind and the tall grass. They seem to be following Makayla's flashlight. 
-
-Asher backs toward the door. He stays with the old man.
+As Dominic runs through the tall grass, distant howls flood the atmosphere. 
+At the porch, the open door swings in the wind. In the distance a pair of red eyes flares bright, dims, and disappears behind Dominic's flashlight.
 
 ---
 
@@ -3531,43 +3121,43 @@ Asher backs toward the door. He stays with the old man.
 
 EXT. MARSH - EDGE (s22.1)
 
-The crew gears up. Dallas shoulders his broadcast rig — the oscillator, the spare Makayla gave him, a coil of cable — and keeps the handheld tracker. He moves fast and sure; he has the creature's call rebuilt and ready.
+The crew gears up. Dallas shoulders his broadcast rig — the oscillator, the spare Asher gave him, a coil of cable — and keeps the handheld tracker. He moves fast and sure; he has the creature's call rebuilt and ready.
 
 Dominic carries no tech. He steps to the front, jaw set. He can feel it out there in the dark, and there's no version of this where he lets his family walk in without him. He shoulders the backpack with the baby creature and goes first.
 
-The plan is thin and Dallas knows it. Reach the center, push the creature's own call out through every recorder they planted across the marsh, and call its kind home to it.
+The plan is thin and Dallas knows it. Reach the center, push the creature's own call out through every recorder Asher planted across the marsh, and call its kind home to it.
 
-Asher stayed back at the house with Mr. Mike. The old man is shaking, agitated, hates every second of this, and someone has to keep him calm. The three of them go in now.
-
-<!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
-
-(action)
-Makayla reaches for her chest and comes up empty. Her whole rig is still at the lair — the oscillator, the dial, all of it.
-
-MAKAYLA
-My gear's back at the wigwam. Two minutes.
+Asher stayed back at the house with Mr. Mike. The old man is shaking, agitated, hates every second of this, and someone has to keep him calm. The two of them go in now.
 
 <!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 
 (action)
-She breaks off from the men and runs into the trees.
+Dallas pats his bag and comes up empty. The portable speaker is still at Asher's lair.
 
-INT. MAKAYLA'S LAIR - CONTINUOUS (s22.2)
+DALLAS
+The speaker's back at the wigwam. Two minutes.
 
-Makayla ducks through the low opening of the wigwam, a wooden dome lashed together at the edge of the woods. Inside, her maps and Sierra's old drawings are still spread across the floor.
+<!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 
-She goes straight to the gear bench and straps on the chest rig. She seats the oscillator and thumbs the dial until the screen wakes with a thin green line. She grabs the small portable speaker and pushes it into her bag.
+(action)
+He breaks off from Dominic and runs into the trees.
 
-Makayla takes one last look at the maps on the floor, then ducks back out into the dark.
+INT. ASHER'S LAIR - CONTINUOUS (s22.2)
+
+Dallas ducks through the low opening of the wigwam, a wooden dome lashed together at the edge of the woods. Inside, Asher's maps and bead strings are still spread across the floor.
+
+He goes straight to the gear bench. He seats the oscillator and thumbs the dial until the screen wakes with a thin green line. He grabs the small portable speaker and pushes it into his bag.
+
+Dallas takes one last look at the maps on the floor, then ducks back out into the dark.
 
 EXT. MARSH - EDGE (s22.3)
 
-Makayla jogs back to the men, cinching the last strap as she comes. Dallas is already watching the tracker.
+Dallas jogs back to Dominic, cinching the last strap as he comes, already watching the tracker.
 
 <!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 
 (action)
-Makayla follows the tracker into the woods - and sees it beep beep - as she approaches the place where Dallas found the creature.
+Dallas follows the tracker into the woods - and sees it beep beep - as he approaches the place where he found the creature.
 
 ---
 
@@ -3592,15 +3182,12 @@ In the distance the creature begins to cry along with
 Suddenly, Dominic appears and runs towards Dallas.
 
 DOMINIC
-Dallas have you seen her? MAKAYLA! I can't find her? Fix up your tracker - make it show where Makayla is. 
+Dallas - I saw it. It was right there and then it was gone. Fix up your tracker - make it show where it went. 
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
 Dominic begins to pace around.  A giant roar is heard off in the distance.
-
-DOMINIC
-MAKAYLA!  
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
@@ -3619,9 +3206,9 @@ As they cross the threshold, they plunge into sensory deprivation.
 
 The tall grass towers over their heads, ten feet high and thick like jungle vines. The wind is howling, whipping the stalks in violent, unpredictable rhythms. 
 
-It is pitch black. The only light is the small, blinking green LED on Makayla’s chest rig. Dallas and Dominic follow it.
+It is pitch black. The only light is the small, blinking green LED on Dallas’s chest rig. Dominic follows it.
 
-Dallas catches up with Dominic and Makayla who are out of breath in the pitch black. 
+Dallas catches up with Dominic who is out of breath in the pitch black. 
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
@@ -3636,24 +3223,24 @@ The signal's gone. I lost it.
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-They push one way and double back, and the grass closes behind them and swallows the path. The three of them end up turned around in the dark, soaked and breathing hard.
+They push one way and double back, and the grass closes behind them and swallows the path. The two of them end up turned around in the dark, soaked and breathing hard.
 
 Then a red light blinks on far out in the grass, another opens beside it, and a dozen more spread through the black at different heights. The red eyes are flashing now.
 
 DOMINIC
-Makayla, lets go back.
+Dallas, lets go back.
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-Makayla moves forward. 
+Dallas moves forward. 
 
-MAKAYLA
-I saw the creature but it vanished. Dallas, those things are after it. 
+DALLAS
+Those things are after it. 
 
-Everybody moves quickly in single file. Makayla is leading, sweeping the handheld speaker back and forth like a flashlight. Behind her is Dominic, hunched low, clutching the backpack with the golden creature. Dallas takes up the rear, breathing heavily, watching the tracker and the tree line behind them, his boots sinking deep into the marsh mud. 
+The two move quickly in single file. Dallas is leading, sweeping the handheld speaker back and forth like a flashlight, watching the tracker. Behind him is Dominic, hunched low, clutching the backpack with the golden creature, breathing heavily, watching the tree line behind them, his boots sinking deep into the marsh mud. 
 
-MAKAYLA
+DALLAS
 Straight ahead. 
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
@@ -3661,13 +3248,13 @@ Straight ahead.
 (action)
 The air is thick, humid, and heavy. Dead leaves and brittle reeds are matted in tangles everywhere on the ground, dry and rustling as the wind moves through them. 
 
-MAKAYLA
+DALLAS
 They're above us. 
 
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-Dallas looks up. Above the swaying tops of the grass, massive ragged shapes move through the dark, tangles of grass and brush the size of cars, drifting and turning. Hundreds of red eyes pierce the dark, hunting. 
+Dominic looks up. Above the swaying tops of the grass, massive ragged shapes move through the dark, tangles of grass and brush the size of cars, drifting and turning. Hundreds of red eyes pierce the dark, hunting. 
 
 Suddenly, a massive figure drops down into the grass fifty feet ahead of them. 
 
@@ -3679,9 +3266,9 @@ It's right on us.
 <!-- scene: 23 file: s23.md nickname: predator-attack -->
 
 (action)
-Makayla freezes. The Red-Eye is directly in their path, thrashing through the reeds. Long arms of matted grass and bramble drag across the dirt in a wide arc. 
+Dallas freezes. The Red-Eye is directly in their path, thrashing through the reeds. Long arms of matted grass and bramble drag across the dirt in a wide arc. 
 
-MAKAYLA
+DOMINIC
 (panic rising)
 It's patrolling. 
 
@@ -3690,30 +3277,19 @@ It's patrolling.
 (action)
 The figure creeps closer, forty feet away, then thirty. Its bramble arms drag toward Dominic's boot. 
 
-INT. DALLAS'S HOUSE - NIGHT (CONTINOUS CUT TO) (s23.2)
-Asher kneels at Mr. Mike's chair. The old man is rocking hard, agitated, shaking his head — he hates this, hates that they're out there. Asher keeps both hands on his shoulders, holding him steady, watching the dials on the machine and the black window. 
-
-MR. MIKE
-(to himself, distressed)
-No, no — they shouldn't be out there — come on, come on...
-
-ASHER
-(low, steady)
-I know. I know. I've got you. They're almost there. Stay with me.
-
 EXT. MARSH - CONTINUOUS (s23.3)
 
 It stops. Its massive red eyes scan the area. It senses something. The silence stretches. Dallas freezes, holding his breath, gripping the tracker. 
 
-Makayla's hand shoots out and claps over the blinking green LED on her chest rig. Darkness swallows them. The three of them drop low into the mud, pressed flat against the reeds, not breathing. 
+Dallas's hand shoots out and claps over the blinking green LED on his chest rig. Darkness swallows them. The two of them drop low into the mud, pressed flat against the reeds, not breathing. 
 
 The Red-Eye drifts closer. Its bramble arms sweep the grass inches above their heads. Dry leaves spill down toward Dominic's hand. He holds completely still. 
 
 The figure hangs over them for one unbearable moment, then loses the thread. Its head swings away, and it turns and drifts off into the darkness, hunting something it can no longer find. 
 
-Makayla exhales slowly and uncovers the LED. 
+Dallas exhales slowly and uncovers the LED. 
 
-MAKAYLA
+DALLAS
 (whispering)
 Keep moving. The center is close. 
 
@@ -3748,9 +3324,9 @@ EXT. CENTER OF THE MARSH - LATER (s24.1)
 
 The howling wind dies down.
 
-Makayla breaches through a thick wall of reeds and stops. 
+Dominic breaches through a thick wall of reeds and stops. 
 
-Dallas and Dominic break through behind her and collapse to their knees in the mud.
+Dallas breaks through behind him and collapses to his knees in the mud.
 
 They are standing in a small clearing where the tall grass lies flattened in a rough circle, about fifty feet across. The storm rages overhead, but down here the air is calm and quiet.
 
@@ -3761,9 +3337,9 @@ A single creature waits there. She is much larger than the injured baby, covered
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
 (action)
-Dominic swings the backpack around and kneels. Makayla drops beside him, close, and lifts the small creature out with both hands. Its neck-glow, weak and erratic the whole way in, flares bright gold as it hears the hum.
+Dominic swings the backpack around and kneels. He lifts the small creature out with both hands. Its neck-glow, weak and erratic the whole way in, flares bright gold as it hears the hum.
 
-Makayla gently sets the baby down in the mud. The tiny being stumbles forward and lets out a high-pitched chirp.
+Dominic gently sets the baby down in the mud. The tiny being stumbles forward and lets out a high-pitched chirp.
 
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
@@ -3779,26 +3355,25 @@ The mother lowers her great head all the way to the ground and presses her brow 
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
 (action)
-Makayla watches from her knees, frozen, close enough to feel the heat of them. Her hand drifts to her mouth.
+Dominic watches from his knees, frozen, close enough to feel the heat of them. His hand drifts to his mouth.
 
-MAKAYLA
+DOMINIC
 (barely a whisper)
 That's its mother.
 
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
 (action)
-The mother lifts her head and looks at the crew. At Makayla. Then at Dallas. She bows once, a single low note that rattles Dallas's ribs in the best possible way.
+The mother lifts her head and looks at the two men. At Dominic. Then at Dallas. She bows once, a single low note that rattles Dallas's ribs in the best possible way.
 
 For one moment, everything is still.
 
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
 (action)
-Makayla looks down at the screen on her chest rig. The jagged red lines are spiking massively at the edge of the clearing.
+Dallas looks down at the screen on his chest rig. The jagged red lines are spiking massively at the edge of the clearing.
 
-MAKAYLA
-(panic returning)
+DALLAS
 They followed us in.
 
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
@@ -3823,10 +3398,10 @@ The massive Red-Eyes converge on the mother, their bramble arms tearing into her
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
 (action)
-Makayla rips the small portable speaker from her bag and fires it at the nearest figure. A thin acoustic beam hits it. The figure flinches, sheds a sheet of dead leaves, then keeps coming. The little device whines, overheats, and dies in her hands.
+Dallas rips the small portable speaker from his bag and fires it at the nearest figure. A thin acoustic beam hits it. The figure flinches, sheds a sheet of dead leaves, then keeps coming. The little device whines, overheats, and dies in his hands.
 
-MAKAYLA
-It's not enough — Dallas, one's never enough!
+DOMINIC
+Dallas - it's not enough!
 
 <!-- scene: 24 file: s24.md nickname: the-perimeter -->
 
@@ -3902,32 +3477,6 @@ She presses her brow to the baby one last time. Then her light thins and lifts o
 
 Where she lay, only flattened grass remains.
 
-INT. DALLAS'S HOUSE - NIGHT (s25.2)
-
-At the same moment, the hum outside climbs to a scream and the windows shudder in their frames. Mr. Mike comes up out of the rocking chair, his breath tearing, his hands clawing at the air. The words will not come. His eyes are wide and fixed on the black glass.
-
-MR. MIKE
-(gasping)
-They're in the eaves — they're in the eaves — I can't — I can't —
-
-<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
-
-(action)
-Asher moves without thinking. He steps in front of the old man, takes him by the shoulders, and begins to sway, slow and side to side, the way Makayla does for him. He hums one low, steady note and presses Mr. Mike's hand flat against his own chest so the old man can feel it.
-
-Asher stays quiet, swaying and humming with his hand over Mr. Mike's.
-
-Slowly, Mr. Mike's breath finds the rhythm of the sway. His hands settle. The fight goes out of him, and he sags against the boy, calm at last.
-
-MR. MIKE
-(a whisper)
-There. There they go.
-
-<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
-
-(action)
-Out the window, the rain begins to thin.
-
 EXT. CENTER OF THE MARSH - CONTINUOUS (s25.3)
 
 Dominic is the first to move, herding them toward the gap in the reeds. Dallas stops.
@@ -3939,9 +3488,9 @@ It is the baby, alive, pulling itself up out of the spot where the mother lay, i
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
-It turns its head and looks back. Across the whole ruined clearing, it finds Dallas. Then Makayla.
+It turns its head and looks back. Across the whole ruined clearing, it finds Dallas. Then Dominic.
 
-For a long moment, none of them move. Dallas, who lost everything, Makayla, who could never stop trying to control it, and the orphaned creature they carried this whole way look at each other across the silence.
+For a long moment, none of them move. Dallas, hollowed out by grief, Dominic, who kept reaching for him with words, and the orphaned creature they carried this whole way look at each other across the silence.
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
@@ -3953,9 +3502,9 @@ Then its small body softens at the edges, gold light bleeding off it into the ni
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 
 (action)
-Makayla lets out a massive, shuddering breath. Dallas keeps staring at the empty grass.
+Dominic lets out a massive, shuddering breath. Dallas keeps staring at the empty grass.
 
-Dominic, quiet now, puts a hand on each of their shoulders and gently turns them toward home.
+Dominic, quiet now, puts a hand on Dallas's shoulder and gently turns him toward home.
 
 DOMINIC
 (softly)
@@ -3984,30 +3533,15 @@ Come on. Let's go home.
 EXT. TALL GRASS (s26.1)
 The crew walk back through the tall grass, through neighborhoods, back and slow. 
 
-INT. DOMINICS HOUSE (s26.2)
-The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. 
-
-Dominic makes his way through the door.
+INT. DALLAS'S HOUSE (s26.2)
+Dallas and Dominic make their way through the door, soaked and exhausted.
 
 DOMINIC
 (dry, quiet)
-Look at all these sleeping beauties. 
-
-<!-- scene: 26 file: s26.md nickname: final-echoes -->
-
-(action)
-MR. Mike walks in behind Dominic and walks right over to Dallas - out for a good old fashion handshake. 
-
-MR. MIKE
-Dallas, wheres Dallas. Dallas my boy - you were spared from the storm. 
-
-DALLASHow are you Mike. 
-
-MR. MIKE
-Things are better - things are better than what they were. Yes. 
+Still got power.
 
 DOMINIC
-Thanks for letting everyone crash here Dallas. Makayla, lets go.
+Thanks for letting everyone crash here, Dallas.
 
 ---
 
@@ -4068,19 +3602,19 @@ Dallas at his kitchen table and grabs a battery as he walks to his workbench. He
 <!-- scene: 28 file: s28.md nickname: full-circle -->
 
 # Scene 28: Full Circle
-<!-- summary: Makayla sets up her new Lair in the woods to listen to the creatures. Dallas finds his wife's specific hum out in the marsh. -->
+<!-- summary: Dallas and Asher pack up the lair. Dallas misreads one last spike and lets it go. Dallas finds his wife's specific hum out in the marsh. -->
 
-EXT. MAKAYLA'S LAIR - DAY (s28.1)
+EXT. ASHER'S LAIR - DAY (s28.1)
 
-Makayla walks up to the wooden structure in the woods. Asher is already there, but they aren't building—they are packing up. The trail cameras are being taken down. The massive array of wires is being rolled into neat coils. Out in the reeds the little amber nodes are going dark one by one as Asher gathers them in — and for each one he collects, he slips a single bead off the string around his neck.
+Dallas walks up to the wooden structure in the woods. Asher is already there, but he isn't building—he is packing up. The trail cameras are being taken down. The massive array of wires is being rolled into neat coils. Out in the reeds the little amber nodes are going dark one by one as Asher gathers them in — and for each one he collects, he slips a single bead off the string around his neck.
 
-Makayla pulls her portable oscillator out of her bag and powers it up one last time. 
+Dallas pulls his portable oscillator out of his bag and powers it up one last time. 
 
 The screen flares to life. Suddenly, the clean, perfect, golden sine wave spikes violently into a jagged red pattern. 
 
-Makayla tenses up instantly. Her hand hovers over the dial. The old instinct to control, to predict the danger, surges back. 
+Dallas tenses up instantly. His hand hovers over the dial. The old instinct to control, to predict the danger, surges back. 
 
-MAKAYLA
+DALLAS
 (panicked)
 It's a spike. They're coming back. Asher, we need to—
 
@@ -4089,19 +3623,16 @@ It's a spike. They're coming back. Asher, we need to—
 (action)
 Asher walks over. He looks at the screen. He doesn't look panicked. He points at the wind whipping through the high branches of the trees, then points back at the screen. 
 
-ASHER
-It's just the wind in the reeds. The storm is passing. 
-
 <!-- scene: 28 file: s28.md nickname: full-circle -->
 
 (action)
-Makayla looks at the trees. She listens. The terrifying hum is gone. It is just normal, earthly weather. She misread it. 
+Dallas looks at the trees. He listens. The terrifying hum is gone. It is just the wind in the reeds. The storm is passing. He misread it. 
 
-She looks at Asher, who is perfectly calm. 
+He looks at Asher, who is perfectly calm. Asher nods once.
 
-Makayla lets out a long, shuddering breath. She accepts the correction. The tension leaves her shoulders. She smiles, finally letting the interpretation go. 
+Dallas lets out a long, shuddering breath. He accepts the correction. The tension leaves his shoulders. He smiles, finally letting the interpretation go. 
 
-She reaches down and actively unplugs the machine. The screen goes dark. She drops her mom's small stone back into her pocket, zips her gear bag, and they walk out of the woods together.
+He reaches down and actively unplugs the machine. The screen goes dark. He zips his gear bag, and they walk out of the woods together.
 
 INT. DALLAS'S BEDROOM - NIGHT (s28.2)
 
