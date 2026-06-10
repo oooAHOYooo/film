@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/9/2026, 9:38:16 PM*
+*Compiled on 6/9/2026, 9:19:48 PM*
 
 ---
 
@@ -3537,7 +3537,7 @@ Dominic doesn't gear up with tech. He just steps to the front, jaw set. He can f
 
 This is it. One device. One shot. If they can reach the center and get the pitch dead-on, they fire it once — right down the throat of whatever's waiting.
 
-Asher isn't with them. He stayed back at the house with Mr. Mike — the old man is shaking, agitated, hates every second of this, and someone has to keep him calm. It's just the three of them going in now.
+Asher isn't coming. He's staying with Mr. Mike — the old man is shaking, agitated, hates every second of this, and someone has to keep him calm. Asher catches Makayla's eye and nods. Go. I've got him.
 
 <!-- scene: 22 file: s22.md nickname: marsh-confrontation -->
 

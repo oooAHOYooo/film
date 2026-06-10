@@ -4,6 +4,40 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 
 ---
 
+# CHANGE LOG — Climax reworked: Asher stays home · single emitter · the mother dies
+*Applied 2026-06-09 21:16 EDT · SHOOTING version only (`pages/summer/shooting/`). **Supersedes the Firefly-Network climax logged below** — the distributed-node weapon and Asher's in-marsh role are removed.*
+
+## Asher is pulled out of the marsh entirely — he stays home with Mr. Mike
+The whole climax used to turn on Asher (voice-throw decoy in s23, reading the firefly map + humming the note in s24/s25). Per direction, **Asher never enters the marsh.** He stays at the house to care for **Mr. Mike, who is failing and agitated, and tries to calm him.** The three adults — Dallas, Makayla, Dominic — run the marsh.
+| Scene | Change |
+|---|---|
+| **s21.3** | Was the contradictory "Dallas and Asher stop at the edge of the porch" (Dallas was already chasing Makayla). Now **Asher** stops at the porch, looks back to the house/Mr. Mike, and **backs inside — "He's not going out there. He's staying with the old man."** |
+| **s22 (Load-Out)** | Asher no longer gears up. New beat: **"Asher isn't coming. He's staying with Mr. Mike… someone has to keep him calm."** Also reframes **Dominic as the protector** ("there's no version of this where he lets his family walk in without him") and **Dallas as decisive** ("he knows exactly what this thing can do"). |
+| **s23.2 (house cut)** | Strengthened: Asher kneels at Mr. Mike's chair, the old man **agitated and hating that they're out there**, Asher holding him steady — "I've got you… Stay with me." |
+| **s23.3 (the patrolling Red-Eye)** | **Asher's voice-throw decoy removed.** Replaced with a **hide-and-pass**: Makayla kills the chest-rig LED, the three drop flat in the mud, the shadow sweeps over them and loses the thread. Asher's "the center is close" line reassigned to **Makayla**. |
+
+## Single device, not a node field — Dallas fires one concentrated pulse
+The distributed firefly network is **dropped**. The weapon is now **one man-portable directional emitter** Dallas carries in.
+- **s22** — gear is now: Makayla's chest rig (oscillator/crystal/dial), **Dallas's directional emitter** ("built to throw one overdriven pulse") + handheld tracker, Dominic's backpack with the baby. "One device. One shot."
+- **s24** — the small handheld speaker fires once and **dies**; instead of triggering a field, **Dallas swings the emitter off his back** — "Then we use the big one. Once." (firefly-map / bead-counting / "they have to sing" beat all removed).
+- **s25** — Dallas **already knows the pitch** and dials straight to **115.3 — Mr. Mike's number**, finally paying off. He **aims and fires** a single concentrated lance of sound that vaporizes the swarm and purges the contagion (clean forearms). No field-wide ignition, no rising-firefly finale.
+
+## The mother dies; the baby survives and passes into the ether
+- **s24** — the reunion is now witnessed **up close by Makayla** (she's the one who lifts the baby out and sets it down; the mother bows to **Makayla**, not Asher). The mother **curls around the baby and takes the assault on her own back**; the other Elders are driven to the edges.
+- **s25** — in the swirl, the Red-Eyes **tear the mother down** as Makayla watches; the baby is knocked clear. After Dallas fires, **Dominic — the protector — is frozen in disbelief** ("That's not possible…") then snaps to and **gets everyone out ("Go, go, GO")**. In the smoke the **orphaned baby rises**, takes a few steps away, **looks back and locks eyes with Dallas and Makayla**, then **dissolves into the ether**. Bittersweet: they saved the baby but lost the mother; it leaves alone.
+- **Mr. Mike (s25.2 house intercut)** — as the marsh goes quiet, his agitation drains and he goes calm — *"There. There they go."* He **survives** (confirmed downstream: he's alive and well at the s27.4 church picnic, *"Quiet now. The numbers are finally right."*). Read as the storm passing out of him, not a death.
+
+## Continuity fix downstream (s27)
+- **s27.2 (aftermath)** — Dallas returning to the ring used to find "the small **master node still staked** in the mud" — leftover from the firefly version. Now he finds **the directional emitter they left behind in the flight** (oscillator screen cracked but still glowing, holding the one clean recording). Keeps the saved-recording payoff intact.
+
+## Recompiled
+- `node pages/summer/shooting/script-system/compile.js` — full_script.md/.html, plot cards, and gallery index all rebuilt (40 scenes).
+
+## Open items / watch-fors
+- **Dangling setup plants:** the earlier firefly-network seeds (**s07** Asher's bead-map line, **s14b** "a bead for every listening post," **s15b** the dusk planting beat, **s28** node collection) no longer pay off as a weapon. They still read as worldbuilding (the kids geotag/seed the marsh; Asher's gift), but if you want a clean payoff-free script say the word and I'll trim them.
+- **Production plan + call sheets updated.** Reworked `production-edit.md` for **marsh-confrontation (s22)**, **predator-attack (s23)**, **the-perimeter (s24)**, **the-last-dinner (s25)** → single directional emitter as the hero weapon (no node field / master rig / eighty-pound speakers), the mother's death + baby-into-the-ether beat, hide-and-pass instead of the voice-throw, and house-interior intercut units for the Asher/Mr. Mike beats. **Cast corrected:** Asher off the two pure-marsh scenes (s22, s24); kept (with Mr. Mike) on the house-intercut scenes (s23, s25). Softened **the-tracking-box (s15b)** note (nodes are worldbuilding now, not the weapon). Re-synced `production-data.json` and regenerated all call sheets.
+---
+
 # CHANGE LOG — Dominic's inhaler removed + s23 line fixes
 *Applied 2026-06-09 14:51 EDT · SHOOTING version only (`pages/summer/shooting/`).*
 

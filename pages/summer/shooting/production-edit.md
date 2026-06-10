@@ -321,8 +321,8 @@ cast: Dallas, Makayla
 duration: 90
 shoot-days: 0.5
 assigned-day: 6
-key-elements: Dusk planting beat — Makayla & Asher stake blinking listening-post nodes into the reeds (Dallas reads them as fireflies); Asher threads a bead per node. Plants the firefly-network climax.
-production-notes: Need practical blinking amber nodes + Asher's bead string (continuity props running through s24/s25/s28).
+key-elements: Dusk planting beat — Makayla & Asher stake blinking listening-post nodes into the reeds (Dallas reads them as fireflies); Asher threads a bead per node. Establishes Asher's gift / the kids geotagging the marsh.
+production-notes: Practical blinking amber nodes + Asher's bead string (continuity props, s07→s28). NOTE: with the reworked single-emitter climax these no longer fire as a weapon — kept as worldbuilding pending a decision to trim.
 cast: Dallas, Makayla, Asher
 
 ### scene: dominics-confession
@@ -352,34 +352,34 @@ cast: Dallas, Makayla, Asher, Dominic
 duration: 90
 shoot-days: 0.5
 assigned-day: 7
-key-elements: The Load-Out — crew gears up LIGHT at the tree line: Makayla in her chest rig (oscillator/crystal/master-node trigger), Dominic with the backpack + baby, Dallas with the handheld tracker; Asher loops on his bead-string map. No heavy gear — the node field is already planted and the master node is already staked at the sanctuary center.
-production-notes: Wraps. REVISED for firefly-network climax — crew moves LIGHT; nothing heavy hauled into the marsh (no master rig, no eighty-pound speakers).
-cast: Dallas, Makayla, Asher, Dominic
+key-elements: The Load-Out — the three adults gear up at the tree line. Dallas shoulders the single directional emitter (built for one overdriven pulse) + handheld tracker; Makayla in her chest rig (oscillator/crystal/dial); Dominic — the protector — takes point with the backpack + baby. Asher does NOT go; he stayed at the house with a failing, agitated Mr. Mike.
+production-notes: Wraps. REVISED — single-emitter climax (no node field, no master rig, no eighty-pound speakers). One man-portable directional emitter is the hero weapon. Crew of three into the marsh.
+cast: Dallas, Makayla, Dominic
 
 ### scene: predator-attack
 duration: 120
 shoot-days: 0.5
 assigned-day: 7
-key-elements: The Trench Run — crew moves LIGHT through 10ft grass in the storm (no heavy load); Makayla sweeps her handheld speaker like a flashlight; Red-Eye patrol; Asher throws his voice to misdirect it; Dominic shields the baby in the backpack.
-production-notes: No heavy rig/speakers. Dominic's strain is from being unfit + scared, not weight. Practical: blinking green LED on Makayla's chest rig as sole light source.
-cast: Dallas, Makayla, Asher, Dominic
+key-elements: The Trench Run — three adults move through 10ft grass in the storm; Makayla sweeps her handheld speaker; Red-Eye patrol. Hide-and-pass: Makayla kills her chest-rig LED, all three drop flat, the shadow sweeps over and loses them; Dominic shields the baby. INTERCUT house: Asher steadies an agitated Mr. Mike.
+production-notes: Asher's voice-throw decoy REMOVED (he's not in the marsh) — replaced by a hide-and-pass. Dominic's strain is from being unfit + scared, not weight. Practical: blinking green LED on Makayla's chest rig as sole light source. Separate house-interior unit for the Asher/Mr. Mike intercut (s23.2).
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 
 ### scene: the-perimeter
 duration: 150
 shoot-days: 0.5
 assigned-day: 7
-key-elements: Sanctuary ring of flattened grass; Golden Elders + golden dome; baby reunites with mother Elder; Red-Eye siege breaches the ring; Makayla's single portable speaker isn't enough — reveal of the planted firefly node network across the marsh; Asher reads the bead map.
-production-notes: REVISED — firefly-network climax (no eighty-pound speakers). VFX: golden dome, red-eye shadows, distant blinking nodes scattered through the reeds.
-cast: Dallas, Makayla, Asher, Dominic
+key-elements: Sanctuary ring of flattened grass; Golden Elders + golden dome; Makayla up close as the baby reunites with its mother Elder; Red-Eye siege breaches the ring; the mother curls around the baby and takes the assault; Makayla's single handheld speaker dies — Dallas swings the big directional emitter off his back ("the big one. Once.").
+production-notes: REVISED — single-emitter climax (no node field). VFX: golden dome, red-eye shadows. No distant blinking-node field.
+cast: Dallas, Makayla, Dominic
 
 ### scene: the-last-dinner
 duration: 150
 shoot-days: 0.5
 assigned-day: 7
 time: 7:00 PM – 9:00 PM
-key-elements: Master node staked at dead center; Dallas matches the mother Elder's note (115.3); Asher hums + traces beads; Dominic shields Asher over the node; the whole-marsh firefly swarm ignites at once — concussive purge clears the Red-Eyes and the contagion; Elders + rising swarm depart.
-production-notes: REVISED — firefly-network climax (no eighty-pound speakers). VFX-heavy: hundreds of amber node lights firing in unison across hundreds of yards, then lifting into a rising swarm.
-cast: Dallas, Makayla, Asher, Dominic
+key-elements: The swirl — Dallas dials the known pitch (115.3, Mr. Mike's number), aims and fires ONE concentrated pulse from the emitter: vaporizes the swarm, purges the contagion. The Red-Eyes tear the mother Elder down — she dies shielding the baby. Dominic: disbelief, then "Go, go, GO." INTERCUT house: Mr. Mike calms ("There they go"). The orphaned baby survives, locks eyes with Dallas & Makayla, and dissolves into the ether.
+production-notes: REVISED — single concentrated pulse from the directional emitter (no whole-marsh swarm ignition). VFX: emitter beam/blast, Red-Eye vaporization, the mother's death, the baby dissolving into the ether. Separate house-interior unit for the Mr. Mike/Asher intercut (s25.2).
+cast: Dallas, Makayla, Asher, Dominic, Mr. Mike
 
 ### scene: s26b
 duration: 0
