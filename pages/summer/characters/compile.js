@@ -22,7 +22,6 @@ const SHEETS = [
   { id: 'asher', file: 'asher', title: 'Asher' },
   { id: 'mr-mike', file: 'mr-mike', title: 'Mr. Mike' },
   { id: 'janice', file: 'janice', title: 'Janice' },
-  { id: 'howie', file: 'howie', title: 'Howie' },
 ];
 
 /** Simple markdown to HTML: # heading, - list items, escape rest */
