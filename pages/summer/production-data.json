@@ -396,31 +396,9 @@
       "Life Group Extras"
     ]
   },
-  "s15a": {
-    "durationMin": 75,
-    "shootDays": 0.5,
-    "assignedDay": 12,
-    "keyElements": "",
-    "productionNotes": "",
-    "cast": [
-      "Dallas",
-      "Makayla"
-    ]
-  },
-  "s15b": {
-    "durationMin": 90,
-    "shootDays": 0.5,
-    "assignedDay": 12,
-    "keyElements": "",
-    "productionNotes": "",
-    "cast": [
-      "Dallas",
-      "Makayla"
-    ]
-  },
-  "s15c": {
-    "durationMin": 45,
-    "shootDays": 0.5,
+  "s15": {
+    "durationMin": 210,
+    "shootDays": 1,
     "assignedDay": 12,
     "keyElements": "",
     "productionNotes": "",

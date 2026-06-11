@@ -208,16 +208,7 @@
   },
   {
     "n": 24,
-    "displayNum": "15A",
-    "id": "the-failed-test",
-    "title": "The Failed Test",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Scene 15A — The Failed Test"
-  },
-  {
-    "n": 25,
-    "displayNum": "15B",
+    "displayNum": "15",
     "id": "the-tracking-box",
     "title": "Makayla's Tracking Box",
     "act": 2,
@@ -225,16 +216,7 @@
     "summary": "The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees.…"
   },
   {
-    "n": 26,
-    "displayNum": "15C",
-    "id": "dominics-confession",
-    "title": "Dominic's Confession",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Makayla walks over and puts the cystal on top of a little bay area device that is also hidden by a bunch of branches. Makayla grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. She…"
-  },
-  {
-    "n": 27,
+    "n": 25,
     "displayNum": "16",
     "id": "the-escape",
     "title": "Back Home",
@@ -243,7 +225,7 @@
     "summary": "Makayla and Dallas hastily make their way out of the woods, back toward the field, carrying all of the equipment from the wooden box. As the two walk, they begin to notice that the tall grass around them is acting…"
   },
   {
-    "n": 28,
+    "n": 26,
     "displayNum": "17",
     "id": "resonance",
     "title": "Resonance",
@@ -252,7 +234,7 @@
     "summary": "Dallas looks at the creature by himself for a long time. Dallas stares for a long time at the golden creature. The jagged red lines on his portable viewfinder match the erratic, panicked breathing of the tiny animal.…"
   },
   {
-    "n": 29,
+    "n": 27,
     "displayNum": "17B",
     "id": "normal-day",
     "title": "Normal Day",
@@ -261,7 +243,7 @@
     "summary": "Dominic pushes an oversized shopping cart. The warehouse store is immense, bathed in fluorescent light, and buzzing with the banal energy of suburban errands. Janice walks beside him, scrolling through a grocery list on…"
   },
   {
-    "n": 30,
+    "n": 28,
     "displayNum": "17C",
     "id": "mute-drive",
     "title": "Mute Drive",
@@ -270,7 +252,7 @@
     "summary": "Janice is driving through downtown Branford. The Nor'easter winds are picking up, rattling the windows of the minivan. Outside, the town is engaged in banal, civic storm preparation. Shop owners are taping windows.…"
   },
   {
-    "n": 31,
+    "n": 29,
     "displayNum": "18",
     "id": "life-group-arrives",
     "title": "Life Group Arrives",
@@ -279,16 +261,16 @@
     "summary": "Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates. The doorbell is heard. Makayla answers the door and sees…"
   },
   {
-    "n": 32,
+    "n": 30,
     "displayNum": "19",
     "id": "the-hymn",
     "title": "The Hymn",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "-->\n<!-- GOING TO FILM ON DAY 11 - 6.27.26"
+    "summary": "-->\r\n<!-- GOING TO FILM ON DAY 11 - 6.27.26"
   },
   {
-    "n": 33,
+    "n": 31,
     "displayNum": "20",
     "id": "red-eyes",
     "title": "The Secret is Out",
@@ -297,7 +279,7 @@
     "summary": "Dominic descends the basement stairs. He gazes in a daze upon all of the military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small…"
   },
   {
-    "n": 34,
+    "n": 32,
     "displayNum": "21",
     "id": "creature-missing",
     "title": "The Burn Marks",
@@ -306,7 +288,7 @@
     "summary": "Makayla bursts through the backyard towards the street, towards the neighborhood, looking at her tracker device - she sees that the creature is blinking. She makes her way to the field of no -man land - where they found…"
   },
   {
-    "n": 35,
+    "n": 33,
     "displayNum": "22",
     "id": "marsh-confrontation",
     "title": "The Load-Out",
@@ -315,7 +297,7 @@
     "summary": "Makayla follows the tracker into the woods - and sees it beep beep - as she approaches the place where Dallas found the creature."
   },
   {
-    "n": 36,
+    "n": 34,
     "displayNum": "23",
     "id": "predator-attack",
     "title": "The Trench Run",
@@ -324,7 +306,7 @@
     "summary": "Dallas enters the tall grass carrying the oscillator. The nylon straps bite into Dallas' shoulders - straining the fabric. Dallas stops for a moment in pain. Dallas looks down at the little green light on the tracker,…"
   },
   {
-    "n": 37,
+    "n": 35,
     "displayNum": "24",
     "id": "the-perimeter",
     "title": "The Sanctuary & The Siege",
@@ -333,7 +315,7 @@
     "summary": "The howling wind suddenly dies down. Makayla breaches through a thick wall of reeds and stops. Dallas, Dominic, and Asher break through behind her, collapsing to their knees in the mud under the weight of the speakers.…"
   },
   {
-    "n": 38,
+    "n": 36,
     "displayNum": "25",
     "id": "the-last-dinner",
     "title": "The Final Blast",
@@ -342,7 +324,7 @@
     "summary": "The golden dome of the Elders is failing. Red-Eye shadows are ripping through the barrier, violently canceling out the light. The black rot is spreading rapidly inward across the flattened grass floor. Dallas and…"
   },
   {
-    "n": 39,
+    "n": 37,
     "displayNum": "26",
     "id": "final-echoes",
     "title": "The Morning After",
@@ -351,7 +333,7 @@
     "summary": "The crew walk back through the tall grass, through neighborhoods, back and slow. The crew huddle around Dallas' house and all sleep on the floor as Mr Mike watches a movie on TV. Janice makes her way through the door."
   },
   {
-    "n": 40,
+    "n": 38,
     "displayNum": "27",
     "id": "aftermath",
     "title": "Little Aftermath",
@@ -360,7 +342,7 @@
     "summary": "The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved. Dallas walks alone into the flattened ring of grass from…"
   },
   {
-    "n": 41,
+    "n": 39,
     "displayNum": "28",
     "id": "full-circle",
     "title": "Full Circle",

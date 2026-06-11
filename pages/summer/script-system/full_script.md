@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/6/2026, 7:02:11 AM*
+*Compiled on 6/11/2026, 11:58:53 AM*
 
 ---
 
@@ -2538,35 +2538,22 @@ Makayla doesn’t answer. She stares at the towel—at the faint GOLDEN GLOW ble
 ---
 
 
-### Scene 15A: The Failed Test
+### Scene 15: Makayla's Tracking Box
 
-*ACT II — The Creature | ID: the-failed-test | File: s15a.md*
-
----
-
-<!-- scene: 15A file: s15a.md nickname: the-failed-test -->
-
-
+*ACT II — The Creature | ID: the-tracking-box | File: s15.md*
 
 ---
 
-
-### Scene 15B: Makayla's Tracking Box
-
-*ACT II — The Creature | ID: the-tracking-box | File: s15b.md*
-
----
-
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 # Scene 15: Makayla's Tracking Box
 
-<!-- s15b -->
+<!-- s15 -->
 <!-- FILMING ON DAY 4 -->
 EXT. NEIGHBORHOODS - EVENING (s15.1)
 The crew walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 The crew walk into the field and find a small wooden chest on the ground, hidden beneath a field of tall grass. 
@@ -2576,7 +2563,7 @@ As they approach the structure, they can see that it is a small wooden structure
 
 Inside the structure there is a wooden box. Makayla opens it. Inside there are various trail cameras and recording equipment. On the bottom of the box, Makayla pulls out various cables and wires connected to a  small crystal. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Makayla walks over and turns the device on. It lights up. 
@@ -2584,7 +2571,7 @@ Makayla walks over and turns the device on. It lights up.
 MAKAYLA
 Batteries will die soon.
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas looks confused at the wiring. 
@@ -2592,7 +2579,7 @@ Dallas looks confused at the wiring.
 MAKAYLA
 Don't worry Mr. Dallas - soon you'll hear all about my brother's inventions - they are going to change the world... He just needs to rest a bit. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas looks at one of the inventions on the ground. 
@@ -2600,7 +2587,7 @@ Dallas looks at one of the inventions on the ground.
 MAKAYLA
 Do you believe that things happen for a reason?
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas reamins still, not making eye contact. 
@@ -2608,7 +2595,7 @@ Dallas reamins still, not making eye contact.
 MAKAYLA
 Well they do... I mean - if i hit this button here - boom. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Makayla points her device at a small nearby flower. She nods and takes out a pocket tripod - and a pocket microphone - and begins to to record. 
@@ -2616,7 +2603,7 @@ Makayla points her device at a small nearby flower. She nods and takes out a poc
 MAKAYLA
 Aunt Janice will never understand what happened today. Or what happens out here at all. Dominic might. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Makayla hands Dallas a small wooden box. Dallas opens it and finds a small translucent crystal inside—a crude pyramid-like stone. Dallas holds it, fascinated.
@@ -2625,29 +2612,14 @@ MAKAYLA
 What do you think?
 
 DALLAS
-Seems like a quartz.
+Seems like a quartz. 
 
----
-
-
-### Scene 15C: Dominic's Confession
-
-*ACT II — The Creature | ID: dominics-confession | File: s15c.md*
-
----
-
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
-
-<!-- GOING TO FILM ON Day 5 -->
-
-
-`
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
-Makayla walks over and puts the cystal on top of a little bay area device that is also hidden by a bunch of branches. Makayla grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. She points to the two metal rods that are coming out of the portable wooden device - and nudges Dallas to grip. 
+Makayla walks over and puts the crystal on top of a little bay area device that is also hidden by a bunch of branches. Makayla grabs the crystal - puts it in the center - and turns it on via a bunch of 9V batteries. She points to the two metal rods that are coming out of the portable wooden device - and nudges Dallas to grip. 
 
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
@@ -2664,12 +2636,12 @@ What is it?
 MAKAYLA
 We don't know. But I wonder what would happen if we hook up the creature to it - and your oscillator. That night you found the creature - it let out a big BOOM.
 
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 In the distance the howls are getting more ganrly. Makayla and Dallas stand silent in fear.
 
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas begins to record a bit on his pocket recorder. 

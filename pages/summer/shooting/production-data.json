@@ -1030,8 +1030,7 @@
       "scenes": [
         "s27",
         "s28",
-        "s15b",
-        "s15c"
+        "s15"
       ],
       "shotList": [
         {
@@ -1058,26 +1057,15 @@
           "description": "Dallas helps Asher dismantle the woods listening network, accepts a harmless wind spike, reconnects with Dominic, and hears Sierra’s cadence in the creature’s hum.\r"
         },
         {
-          "beat": "s15b",
+          "beat": "s15",
           "title": "Asher’s Tracking Box",
-          "scene": "s15b",
+          "scene": "s15",
           "cast": [
             "Dallas",
             "Dominic",
             "Asher"
           ],
-          "description": "Asher demonstrates his listening posts, bead-count system, hidden woods lair, trail cameras, recorders, cables, and spare oscillator.\r"
-        },
-        {
-          "beat": "s15c",
-          "title": "Dominic’s Confession",
-          "scene": "s15c",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Asher"
-          ],
-          "description": "At Asher’s woods equipment station, Dallas grips the contact transducers, experiences the signal, and hears Dominic describe the night of the boom.\r"
+          "description": "Asher demonstrates his listening posts, bead-count system, hidden woods lair, trail cameras, recorders, cables, spare oscillator, and contact transducers — Dallas grips in, trips on the signal, and hears Dominic describe the night of the boom.\r"
         }
       ]
     },

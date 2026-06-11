@@ -998,7 +998,7 @@ description: Dominic sees the storm’s unnatural pattern in town and confronts 
 
 ### Day 8 — 2026-06-27
 
-scenes: s27, s28, s15b, s15c
+scenes: s27, s28, s15
 
 crew-call:
   CALL: 6:00 AM
@@ -1009,8 +1009,7 @@ crew-call:
   BREAK: 11:30 AM
   MEET: 1:00 PM — Woods / Asher’s lair
   SETUP: 1:30 PM — Camera and practical listening-post prep
-  SHOOT: 2:00 PM — s15b · Asher’s tracking box, recorder network, and woods equipment
-  SHOOT: 4:00 PM — s15c · Contact-transducer signal and Dominic’s confession
+  SHOOT: 2:00 PM — s15 · Asher’s tracking box, contact transducers, and Dominic’s confession
   WRAP: 6:00 PM
 
 crew:
@@ -1035,15 +1034,10 @@ scene: s28
 cast: Dallas, Dominic, Asher
 description: Dallas helps Asher dismantle the woods listening network, accepts a harmless wind spike, reconnects with Dominic, and hears Sierra’s cadence in the creature’s hum.
 
-#### Beat: s15b — Asher’s Tracking Box
-scene: s15b
+#### Beat: s15 — Asher’s Tracking Box
+scene: s15
 cast: Dallas, Dominic, Asher
-description: Asher demonstrates his listening posts, bead-count system, hidden woods lair, trail cameras, recorders, cables, and spare oscillator.
-
-#### Beat: s15c — Dominic’s Confession
-scene: s15c
-cast: Dallas, Dominic, Asher
-description: At Asher’s woods equipment station, Dallas grips the contact transducers, experiences the signal, and hears Dominic describe the night of the boom.
+description: Asher demonstrates his listening posts, bead-count system, hidden woods lair, trail cameras, recorders, cables, spare oscillator, and contact transducers — Dallas grips in, trips on the signal, and hears Dominic describe the night of the boom.
 
 ---
 

@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/11/2026, 11:49:58 AM*
+*Compiled on 6/11/2026, 11:58:53 AM*
 
 ---
 
@@ -2164,35 +2164,22 @@ Dallas stares at the towel—at the faint GOLDEN GLOW bleeding through.
 ---
 
 
-### Scene 15A: The Failed Test
+### Scene 15: Asher's Tracking Box
 
-*ACT II — The Creature | ID: the-failed-test | File: s15a.md*
-
----
-
-<!-- scene: 15A file: s15a.md nickname: the-failed-test -->
-
-
+*ACT II — The Creature | ID: the-tracking-box | File: s15.md*
 
 ---
 
-
-### Scene 15B: Asher's Tracking Box
-
-*ACT II — The Creature | ID: the-tracking-box | File: s15b.md*
-
----
-
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 # Scene 15: Asher's Tracking Box
 
-<!-- s15b -->
+<!-- s15 -->
 <!-- FILMING ON DAY 4 -->
 EXT. NEIGHBORHOODS - EVENING (s15.1)
 Dallas, Dominic and Asher walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 As they cut through the reeds, Asher stops every so often to press small devices down into the mud at the base of the stalks. Each one blinks a slow, faint amber as it powers on. 
@@ -2202,12 +2189,12 @@ Dallas watches a scatter of them pulse in the dusk.
 DOMINIC
 Listening posts. He's been seeding the whole marsh with them — for years now. Every spot that sound of his has ever touched. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Asher trails a step behind. Each time one of the nodes blinks to life, he threads a single bead onto the string around his neck. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 The three walk into the field and find a small wooden chest on the ground, hidden beneath a field of tall grass. 
@@ -2215,17 +2202,17 @@ The three walk into the field and find a small wooden chest on the ground, hidde
 EXT. ASHER'S SPECIAL WOODED SPOT - CONTINUOUS (s15.2)
 As they approach the structure, they can see that it is a small wooden structure hidden by fallen trees and branches. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Inside the structure there is a wooden box. Asher opens it. Inside there are various trail cameras and recording equipment. On the bottom of the box, Asher pulls out various cables and wires connected to a small portable oscillator. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Asher walks over and turns the device on. It lights up. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas looks confused at the wiring. 
@@ -2233,7 +2220,7 @@ Dallas looks confused at the wiring.
 DOMINIC
 Don't worry Mr. Dallas - one day you'll hear all about my brother's inventions - they are going to change the world... 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas looks at one of the inventions on the ground. 
@@ -2241,7 +2228,7 @@ Dallas looks at one of the inventions on the ground.
 DOMINIC
 Do you believe that things happen for a reason?
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas reamins still, not making eye contact. 
@@ -2249,28 +2236,22 @@ Dallas reamins still, not making eye contact.
 DOMINIC
 Well they do. I do. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Asher takes out a pocket tripod - and a pocket microphone - and begins to to record. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Asher lifts a small wooden box and holds it out to Dallas without a word. Dallas opens it and finds a spare oscillator inside, wrapped in cloth, the dial worn smooth from use. Dallas holds it, fascinated.
 
-
-
-<!-- GOING TO FILM ON Day 5 -->
-
-
-`
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Asher walks over to a little portable device, also hidden by a bunch of branches. He turns it on with a bunch of 9V batteries and points to the two metal rods — contact transducers — coming out of the portable wooden device, and nudges Dallas to grip. 
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
@@ -2279,49 +2260,26 @@ Dallas wakes up.
 
 
 DOMINIC
-Dallas. Dallas! You alright? What did it do to you?
+Dallas. Dallas! You alright? 
 
-DALLAS
-What is it?
-
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
-Asher shrugs, slow. He doesn't know either. Dominic looks between the two of them, then out at the trees.
+Asher shrugs, slow. Dominic looks between the two of them, then out at the trees.
 
-DOMINIC
-That night you found— that night you moved in. Something out here let out a big BOOM. Whole street heard it.
-
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 In the distance the howls are getting more ganrly. The three of them stand silent in fear.
 
-<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
-Dallas begins to record a bit on his pocket recorder. 
+Dallas begins to record a bit on his pocket recorder. still out of breath. 
 
 DOMINIC
 (takes a deep breath and contemplates for a while)
-We should go. 
-
-
-
-End Scene 15b
-
----
-
-
-### Scene 15C: Dominic's Confession
-
-*ACT II — The Creature | ID: dominics-confession | File: s15c.md*
-
----
-
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
-
-
+We should go.
 
 ---
 

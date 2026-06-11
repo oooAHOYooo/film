@@ -1310,7 +1310,7 @@ function generateFirst5DaysChecklistHtml(rows, productionData) {
         We cross-referenced the scripts with the shoot plan and solved two critical actor omissions:
         <ul style="margin: 6px 0 0 0; padding-left: 20px;">
           <li><strong>Day 2 (June 9):</strong> Makayla has a key role in <span style="font-family: monospace; color: #58a6ff;">s08b.2</span> (Translucent crystal flares on her desk), but was omitted from the day's cast. We've added her to the call sheet!</li>
-          <li><strong>Day 4 (June 13):</strong> Makayla features in the major research sequence <span style="font-family: monospace; color: #58a6ff;">s15a/b/c</span> (Special wooded spot / investigation), but was left off the call sheet cast list. We've updated her schedule!</li>
+          <li><strong>Day 4 (June 13):</strong> Makayla features in the major research sequence <span style="font-family: monospace; color: #58a6ff;">s15</span> (Special wooded spot / investigation), but was left off the call sheet cast list. We've updated her schedule!</li>
         </ul>
       </div>
     </div>
