@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/11/2026, 9:39:13 AM*
+*Compiled on 6/11/2026, 11:34:00 AM*
 
 ---
 
@@ -275,7 +275,7 @@ EXT. DALLAS NEW HOUSE - DAY (s01.1)
 
 Dallas stares at the Tall Grass outside his house as he unloads boxes from a big pile. Dallas scans the new backyard, there are some old rusty lawn furtniture and a picnic table that seems to be adjacent to a fence of grass 
 
-Dallas goes into the grass a little bit. He stops. At the edge of the reeds is a jagged, dead patch of earth—a circle of brittle, colorless grass where nothing grows. In the center of it, a single wooden stake has been driven into the ground, but it’s been snapped off, the top half gone. 
+Dallas goes into the edge of his backyard a little bit. He stops. At the edge of the reeds is a jagged, dead patch of earth—a circle of brittle, colorless grass where nothing grows. In the center of it, a single wooden stake has been driven into the ground, but it’s been snapped off, the top half gone. 
 
 As Dallas examines the broken wood, he hears a distinct bicycle ring.
 
@@ -301,23 +301,15 @@ Hello.
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Asher doesn't answer. His eyes stay on the Oscillator.
+Asher doesn't answer. His eyes stay on the Oscillator. Asher stands silent, tracing a pattern on his palm. He doesn't look up.
 
 DALLAS
-You like it? It's an Oscillator.
+It works. 
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
 (action)
-Asher stands silent, tracing a pattern on his palm. He doesn't look up.
-
-DALLAS
-It works. If that's what you're wondering.
-
-<!-- scene: 1 file: s01.md nickname: arrival -->
-
-(action)
-Asher looks at the Oscillator a beat longer. Then he looks at the tall grass at the edge of the yard. Then back at the Oscillator.
+Dallas hold his hands out with the Oscillator for Asher to see. Asher looks at the Oscillator a beat longer. Then he looks at the tall grass at the edge of the yard. Then back at the Oscillator.
 
 <!-- scene: 1 file: s01.md nickname: arrival -->
 
@@ -436,16 +428,24 @@ As Dallas dazes onward, a man approaches him from the sidewalk near his house.
 DOMINIC AMARANTO, early 40s, wearing a bright salmon covered short sleeve button walks up to Dallas with vigor. 
 
 DOMINIC
-My neighbor!
+Neighbor!
 
-DALLAS
-What's that?
+<!-- scene: 3 file: s03.md nickname: the-hum -->
+
+(action)
+Dallas looks up at Dominic. 
 
 DOMINIC
-My beighbor, neighbor - you're my neighbor - I think we're neighbors - right? You just moved yeah? Dominic - I live nextdoor. Where you coming from?
+My beighbor, neighbor - you're my neighbor - I think we're neighbors - I saw the light on last night - my friends live here - how did they leave it? You a post doc at Yale? 
 
 DALLAS
-Oh yeah - nice to meet you. Dallas.   
+Quinnipiac.
+
+DOMINIC
+Okay - names Dominic. 
+
+DALLAS
+Dallas. 
 
 DOMINIC
 You here on some university position? Last guy who was here was here for 3 years and then moved on to better things up in Guilford. How is the house? Do they furnish it?  They gave you a house nice man. 
@@ -472,37 +472,19 @@ DALLAS
 Not much. 
 
 DOMINIC
-So what brings you to here?
-
-DALLAS
-Work.
-
-DOMINIC
-Oh yeah? What kind of work?
-
-DALLAS
-Research mostly. 
-
-DOMINIC
-Ooo - big guy - Yale? 
-
-DALLAS
-Quinnipiac 
-
-DOMINIC
-Oooo - right on - nice. What kind of research?  
+Well okay. What's your field?
 
 DALLAS
 Bioacoustics. 
 
 DOMINIC
-Bio-acoustics. That's the study of sound - yeah? Yeah. Right on. Alright listen - I'm about to head to the green right now - you up for a walk? My car is parked down in the center of town and I need to go get it... What's that in your hand?
+Bio-acoustics. Yeah.Right on. Alright listen - I'm about to head to the town green right now - you up for a walk? My car is parked down in the center of town and I need to go get it... What's that in your hand?
 
 DALLAS
-An audio recorder. I was going to go into town to get some new batteries.  
+An oscillator. I was going to go into town to get some new batteries.  
 
 DOMINIC
-Into town? Where you headed? Rudy's got that. Let's go - I'll buy you a coffee.
+Okay perfect - we'll go together. 
 
 <!-- scene: 3 file: s03.md nickname: the-hum -->
 
@@ -520,7 +502,7 @@ DALLAS
 No - no car.
 
 DOMINIC
-Yeah. Me neither - well I drive - for sure, but the car's mostly for getting Mike around.
+Yeah. Me neither - well I do, but it's not mine and mainly for getting Mr. Mike around. 
 
 EXT. TOWN BRANFORD MONTAGE (s03.3)
 
@@ -546,9 +528,6 @@ Dominic waves to the unfriendly man at the counter and brings Dallas to the batt
 (action)
 Dallas finds the correct batteries and grabs it off the shelf. The two exit the shop.
 
-DOMINIC
-Cassetes? What are we doing here. 
-
 EXT. BRANFORD GREEN (s03.6)
 
 Dallas and Dominic walk past the town green. The building looks closed. Dominic stops dead. A neon orange ticket flutters under his windshield wiper.
@@ -559,23 +538,22 @@ Oh, this is great. Cool.
 <!-- scene: 3 file: s03.md nickname: the-hum -->
 
 (action)
-He rips the ticket off and walks around to see if anyone is looking, he crumbles it up and puts it in his pocket. He exhales slow, shakes his head, and lets it go. 
+Dominic rips the ticket off and walks around to see if anyone is looking, he crumbles it up and puts it in his pocket. He exhales slow, shakes his head, and lets it go. 
 
-He bends downs and grabs a key from the bottom of the car and starts it up. 
+Dominic bends downs and grabs a key from the bottom of the car and starts it up. 
 
 INT. DOMINIC'S CAR (s03.7)
 
-Dominic opens the car and gestures Dallas to get in - non-chantanly the parking ticket in the glove box. 
+Dominic opens the car and gestures Dallas to get in - non-chalantly the parking ticket in the glove box. 
 
 DOMINIC
 You hungry?
 
 DALLAS
-(still in a daze)
-Yeah
+Yeah. 
 
 DOMINIC
-Good -  my church is doing a fellowship lunch - little picnic - I'm on cleanup duty and got to lock up when they are done. I could drop you off home first but it would be out of the way - You want to come for the ride? 
+Good -  my church is doing a picnic on the lawn series - we should go - I'm on cleanup duty and got to lock up when they are done. You want to come for the ride? 
 
 DALLAS
 Sure. 
@@ -583,7 +561,7 @@ Sure.
 <!-- scene: 3 file: s03.md nickname: the-hum -->
 
 (action)
-Dominic drives towards the church. 
+Dominic drives towards the church lawn. 
 
 DOMINIC
 Nice - yeah - it's nice to be the new guy in town - good old Branford.
