@@ -105,7 +105,7 @@ cast: Dallas
 ### scene: fellowship
 duration: 180
 shoot-days: 0.5
-assigned-day: 12
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Asher
@@ -141,7 +141,7 @@ cast: Dallas
 ### scene: mr-mikes-warning
 duration: 90
 shoot-days: 0.5
-assigned-day: 11
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Mr. Mike
@@ -149,7 +149,7 @@ cast: Dallas, Dominic, Mr. Mike
 ### scene: final-echoes
 duration: 60
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic
@@ -165,7 +165,7 @@ cast: Dallas, Dominic
 ### scene: marsh-walk-later
 duration: 60
 shoot-days: 0.5
-assigned-day: 3
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic
@@ -173,7 +173,7 @@ cast: Dallas, Dominic
 ### scene: news-vans
 duration: 90
 shoot-days: 0.5
-assigned-day: 12
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Pat Clendenen
@@ -181,7 +181,7 @@ cast: Dallas, Dominic, Pat Clendenen
 ### scene: marsh-walk-2
 duration: 90
 shoot-days: 0.5
-assigned-day: 5
+assigned-day: 2
 time: 6:30 PM
 key-elements: 
 production-notes: Dallas explores alone using oscillator
@@ -190,7 +190,7 @@ cast: Dallas, Dominic, Asher
 ### scene: the-burn-mark
 duration: 30
 shoot-days: 0.5
-assigned-day: 5
+assigned-day: 2
 time: 7:30 PM
 key-elements: 
 production-notes: 
@@ -199,7 +199,7 @@ cast: Dallas, Dominic
 ### scene: s27a
 duration: 0
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas
@@ -215,7 +215,7 @@ cast: Dallas
 ### scene: entering-grass
 duration: 90
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Asher
@@ -223,7 +223,7 @@ cast: Dallas, Dominic, Asher
 ### scene: the-coordinates
 duration: 150
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Asher, Mr. Mike
@@ -231,7 +231,7 @@ cast: Dallas, Dominic, Asher, Mr. Mike
 ### scene: creature-rescue
 duration: 120
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Asher
@@ -239,7 +239,7 @@ cast: Dallas, Dominic, Asher
 ### scene: the-field-journal
 duration: 90
 shoot-days: 0.5
-assigned-day: 4
+assigned-day: 2
 key-elements: Dallas and Asher compare Sierra’s field journal, the creature drawings, the red-eye transformation, the marsh listening posts, and the repeating signal pattern.
 production-notes: Preserve the quiet Dallas/Asher triangulation beat at the picnic table: journal pages, bead string, listening-post map logic, and the warning that the creatures are listening.
 cast: Dallas, Asher
@@ -247,7 +247,7 @@ cast: Dallas, Asher
 ### scene: the-almost-discovery
 duration: 90
 shoot-days: 0.5
-assigned-day: 4
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic
@@ -255,7 +255,7 @@ cast: Dallas, Dominic
 ### scene: resonance
 duration: 120
 shoot-days: 0.5
-assigned-day: 9
+assigned-day: 2
 time: 08:00 PM - 10:00 PM
 key-elements: 
 production-notes: 
@@ -264,7 +264,7 @@ cast: Dallas
 ### scene: normal-day
 duration: 60
 shoot-days: 0.5
-assigned-day: 9
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic
@@ -272,7 +272,7 @@ cast: Dallas, Dominic
 ### scene: mute-drive
 duration: 60
 shoot-days: 0.5
-assigned-day: 9
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic
@@ -280,7 +280,7 @@ cast: Dallas, Dominic
 ### scene: s09c
 duration: 0
 shoot-days: 0.5
-assigned-day: 10
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas
@@ -288,7 +288,7 @@ cast: Dallas
 ### scene: life-group-arrives
 duration: 90
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 2
 key-elements: 
 production-notes: Dallas explores alone using oscillator
 cast: Dallas, Dominic, Mr. Mike, Life Group Extras
@@ -296,7 +296,7 @@ cast: Dallas, Dominic, Mr. Mike, Life Group Extras
 ### scene: the-hymn
 duration: 120
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Mr. Mike, Life Group Extras
@@ -304,7 +304,7 @@ cast: Dallas, Dominic, Mr. Mike, Life Group Extras
 ### scene: red-eyes
 duration: 75
 shoot-days: 0.5
-assigned-day: 8
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic
@@ -312,7 +312,7 @@ cast: Dallas, Dominic
 ### scene: the-failed-test
 duration: 75
 shoot-days: 0.5
-assigned-day: 6
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas
@@ -320,7 +320,7 @@ cast: Dallas
 ### scene: the-tracking-box
 duration: 90
 shoot-days: 0.5
-assigned-day: 6
+assigned-day: 2
 key-elements: Asher leads Dallas and Dominic through his listening-post network to the hidden woods lair, demonstrating the amber nodes, bead count, trail cameras, recorders, cables, and spare oscillator.
 production-notes: Preserve Asher’s practical woods equipment and continuity: blinking amber listening posts, bead string, wooden chest, trail cameras, pocket tripod, pocket microphone, cables, contact transducers, and spare oscillator.
 cast: Dallas, Dominic, Asher
@@ -328,7 +328,7 @@ cast: Dallas, Dominic, Asher
 ### scene: dominics-confession
 duration: 45
 shoot-days: 0.5
-assigned-day: 6
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic, Asher
@@ -336,7 +336,7 @@ cast: Dallas, Dominic, Asher
 ### scene: the-escape
 duration: 75
 shoot-days: 0.5
-assigned-day: 11
+assigned-day: 2
 key-elements: 
 production-notes: Dallas explores alone using oscillator
 cast: Dallas, Dominic
@@ -344,7 +344,7 @@ cast: Dallas, Dominic
 ### scene: creature-missing
 duration: 75
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: 
 production-notes: 
 cast: Dallas, Dominic
@@ -352,7 +352,7 @@ cast: Dallas, Dominic
 ### scene: marsh-confrontation
 duration: 90
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: Dallas and Dominic load out at the marsh edge. Dallas carries the oscillator, Asher’s spare, tracker, cable, and portable speaker from Asher’s woods lair; Dominic carries the baby creature and takes point.
 production-notes: Two-person marsh unit. Asher remains off screen; his established recorder network and woods equipment are essential to Dallas’s plan.
 cast: Dallas, Dominic
@@ -360,7 +360,7 @@ cast: Dallas, Dominic
 ### scene: predator-attack
 duration: 120
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: Dallas and Dominic cross ten-foot grass in the storm, lose the tracker signal, hide beneath a Red-Eye patrol, and continue toward the center with the baby.
 production-notes: Two principal actors in the marsh. Dallas leads with tracker, chest-rig LED, and handheld speaker; Dominic protects the creature.
 cast: Dallas, Dominic
@@ -368,7 +368,7 @@ cast: Dallas, Dominic
 ### scene: the-perimeter
 duration: 150
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: Dallas and Dominic reunite the baby with its mother, then face the Red-Eye siege. Dallas’s handheld speaker fails and he begins routing the creature’s call through Asher’s recorder network.
 production-notes: Two principal actors plus creature effects. Preserve the recorder-network payoff established in Asher’s woods scenes.
 cast: Dallas, Dominic
@@ -376,7 +376,7 @@ cast: Dallas, Dominic
 ### scene: the-last-dinner
 duration: 150
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 time: 7:00 PM – 9:00 PM
 key-elements: Dallas broadcasts the rebuilt creature call through every recorder in the marsh. The network converges, the Red-Eyes collapse, the mother dies protecting the baby, and Dominic leads Dallas home.
 production-notes: Dallas and Dominic carry the climax. No house intercut and no additional family cast.
@@ -385,7 +385,7 @@ cast: Dallas, Dominic
 ### scene: s26b
 duration: 0
 shoot-days: 0.5
-assigned-day: 7
+assigned-day: 2
 key-elements: 
 production-notes: Wraps
 cast: Dallas, Asher, Dominic
@@ -393,7 +393,7 @@ cast: Dallas, Asher, Dominic
 ### scene: aftermath
 duration: 90
 shoot-days: 0.5
-assigned-day: 10
+assigned-day: 2
 location: EXT. Jerry's House — Afternoon
 key-elements: 
 production-notes: Afternoon shoot before nursery run
@@ -402,7 +402,7 @@ cast: Dallas, Dominic, Mr. Mike, Pat Clendenen
 ### scene: full-circle
 duration: 90
 shoot-days: 0.5
-assigned-day: 10
+assigned-day: 2
 key-elements: 
 production-notes: Wraps
 cast: Dallas, Dominic, Asher
@@ -423,7 +423,7 @@ props:
 
 ### scene: the-threshold
 duration: 15
-assigned-day: 5
+assigned-day: 2
 cast: Dallas
 
 ### scene: the-return
@@ -678,9 +678,9 @@ notes: First gimbal deployment; multiple location moving shots
 
 ---
 
-### Day 2 — 2026-06-14
+### Day 3 — 2026-06-14
 
-scenes: s14b, s14c
+scenes: s01, s03
 
 crew-call:
   CALL: 12:45 PM
@@ -713,7 +713,7 @@ description: Dallas hides the creature and equipment while Dominic nearly discov
 
 ---
 
-### Day 2 — 2026-06-15
+### Day 4 — 2026-06-15
 
 scenes: s08d, s11, s12
 
@@ -754,7 +754,7 @@ description: Dallas wakes beside the creature and reviews his recordings while D
 
 ---
 
-### Day 2 — 2026-06-18
+### Day 5 — 2026-06-18
 
 scenes: s15b, s15c
 
@@ -788,7 +788,7 @@ description: At Asher’s woods equipment station, Dallas grips the contact tran
 
 ---
 
-### Day 2 — 2026-06-19
+### Day 6 — 2026-06-19
 
 scenes: s13, s14, s21, s22, s23, s24, s25, s26
 
@@ -853,7 +853,7 @@ description: Dallas and Dominic return through the grass and enter the house soa
 
 ---
 
-### Day 2 — 2026-06-20
+### Day 7 — 2026-06-20
 
 scenes: s07, s18, s19, s20
 
@@ -985,7 +985,7 @@ description: Dallas carries the creature and recovered equipment home while Domi
 
 ---
 
-### Day 2 — 2026-06-26
+### Day 8 — 2026-06-26
 
 scenes: s17, s17b, s17c
 
@@ -1024,7 +1024,7 @@ description: Dominic sees the storm’s unnatural pattern in town and confronts 
 
 ---
 
-### Day 2 — 2026-06-27
+### Day 9 — 2026-06-27
 
 scenes: s27, s28
 
@@ -1059,7 +1059,7 @@ description: Dallas helps Asher dismantle the woods listening network, accepts a
 
 ---
 
-### Day 2 — 2026-06-28
+### Day 10 — 2026-06-28
 
 scenes: s07b, s16
 
@@ -1095,7 +1095,7 @@ description: Dallas carries the creature and recovered equipment home while Domi
 
 ---
 
-### Day 2 — 2026-07-01
+### Day 11 — 2026-07-01
 
 scenes: s04, s06
 
@@ -1129,7 +1129,7 @@ description: Dallas and Dominic pass Pat Clendenen’s storm coverage and discov
 
 ---
 
-### Day 2 — 2026-07-02
+### Day 12 — 2026-07-02
 
 
 crew-call:

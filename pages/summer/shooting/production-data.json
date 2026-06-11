@@ -5,19 +5,19 @@
   "calendar": {
     "0": "2026-06-07",
     "1": "2026-06-08",
-    "3": "2026-06-13",
-    "4": "2026-06-14",
-    "5": "2026-06-15",
-    "6": "2026-06-18",
-    "7": "2026-06-19",
-    "8": "2026-06-20",
-    "9": "2026-06-26",
-    "10": "2026-06-27",
-    "11": "2026-06-28",
-    "12": "2026-07-01",
-    "13": "2026-07-02",
-    "11.5": "2026-06-29",
-    "8.5": "2026-06-22"
+    "2": "2026-06-13",
+    "3": "2026-06-14",
+    "4": "2026-06-15",
+    "5": "2026-06-18",
+    "6": "2026-06-19",
+    "7": "2026-06-20",
+    "8": "2026-06-26",
+    "9": "2026-06-27",
+    "10": "2026-06-28",
+    "11": "2026-07-01",
+    "12": "2026-07-02",
+    "10.5": "2026-06-29",
+    "7.5": "2026-06-22"
   },
   "opening-montage": {
     "durationMin": 45,
@@ -112,7 +112,7 @@
   "fellowship": {
     "durationMin": 180,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -158,7 +158,7 @@
   "mr-mikes-warning": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 11,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -170,7 +170,7 @@
   "final-echoes": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -192,7 +192,7 @@
   "marsh-walk-later": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 3,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -203,7 +203,7 @@
   "news-vans": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 12,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -215,7 +215,7 @@
   "marsh-walk-2": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 2,
     "time": "6:30 PM",
     "keyElements": "",
     "productionNotes": "Dallas explores alone using oscillator",
@@ -228,7 +228,7 @@
   "the-burn-mark": {
     "durationMin": 30,
     "shootDays": 0.5,
-    "assignedDay": 5,
+    "assignedDay": 2,
     "time": "7:30 PM",
     "keyElements": "",
     "productionNotes": "",
@@ -240,7 +240,7 @@
   "s27a": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -260,7 +260,7 @@
   "entering-grass": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -272,7 +272,7 @@
   "the-coordinates": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -285,7 +285,7 @@
   "creature-rescue": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -297,7 +297,7 @@
   "the-field-journal": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 2,
     "keyElements": "Dallas and Asher compare Sierra’s field journal, the creature drawings, the red-eye transformation, the marsh listening posts, and the repeating signal pattern.",
     "productionNotes": "Preserve the quiet Dallas/Asher triangulation beat at the picnic table: journal pages, bead string, listening-post map logic, and the warning that the creatures are listening.",
     "cast": [
@@ -308,7 +308,7 @@
   "the-almost-discovery": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 4,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -319,7 +319,7 @@
   "resonance": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 2,
     "time": "08:00 PM - 10:00 PM",
     "keyElements": "",
     "productionNotes": "",
@@ -330,7 +330,7 @@
   "normal-day": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -341,7 +341,7 @@
   "mute-drive": {
     "durationMin": 60,
     "shootDays": 0.5,
-    "assignedDay": 9,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -352,7 +352,7 @@
   "s09c": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 10,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -362,7 +362,7 @@
   "life-group-arrives": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "Dallas explores alone using oscillator",
     "cast": [
@@ -375,7 +375,7 @@
   "the-hymn": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -388,7 +388,7 @@
   "red-eyes": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 8,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -399,7 +399,7 @@
   "the-failed-test": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 6,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -409,7 +409,7 @@
   "the-tracking-box": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 6,
+    "assignedDay": 2,
     "keyElements": "Asher leads Dallas and Dominic through his listening-post network to the hidden woods lair, demonstrating the amber nodes, bead count, trail cameras, recorders, cables, and spare oscillator.",
     "productionNotes": "Preserve Asher’s practical woods equipment and continuity: blinking amber listening posts, bead string, wooden chest, trail cameras, pocket tripod, pocket microphone, cables, contact transducers, and spare oscillator.",
     "cast": [
@@ -421,7 +421,7 @@
   "dominics-confession": {
     "durationMin": 45,
     "shootDays": 0.5,
-    "assignedDay": 6,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -433,7 +433,7 @@
   "the-escape": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 11,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "Dallas explores alone using oscillator",
     "cast": [
@@ -444,7 +444,7 @@
   "creature-missing": {
     "durationMin": 75,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "",
     "cast": [
@@ -455,7 +455,7 @@
   "marsh-confrontation": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "Dallas and Dominic load out at the marsh edge. Dallas carries the oscillator, Asher’s spare, tracker, cable, and portable speaker from Asher’s woods lair; Dominic carries the baby creature and takes point.",
     "productionNotes": "Two-person marsh unit. Asher remains off screen; his established recorder network and woods equipment are essential to Dallas’s plan.",
     "cast": [
@@ -466,7 +466,7 @@
   "predator-attack": {
     "durationMin": 120,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "Dallas and Dominic cross ten-foot grass in the storm, lose the tracker signal, hide beneath a Red-Eye patrol, and continue toward the center with the baby.",
     "productionNotes": "Two principal actors in the marsh. Dallas leads with tracker, chest-rig LED, and handheld speaker; Dominic protects the creature.",
     "cast": [
@@ -477,7 +477,7 @@
   "the-perimeter": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "Dallas and Dominic reunite the baby with its mother, then face the Red-Eye siege. Dallas’s handheld speaker fails and he begins routing the creature’s call through Asher’s recorder network.",
     "productionNotes": "Two principal actors plus creature effects. Preserve the recorder-network payoff established in Asher’s woods scenes.",
     "cast": [
@@ -488,7 +488,7 @@
   "the-last-dinner": {
     "durationMin": 150,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "time": "7:00 PM – 9:00 PM",
     "keyElements": "Dallas broadcasts the rebuilt creature call through every recorder in the marsh. The network converges, the Red-Eyes collapse, the mother dies protecting the baby, and Dominic leads Dallas home.",
     "productionNotes": "Dallas and Dominic carry the climax. No house intercut and no additional family cast.",
@@ -500,7 +500,7 @@
   "s26b": {
     "durationMin": 0,
     "shootDays": 0.5,
-    "assignedDay": 7,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -512,7 +512,7 @@
   "aftermath": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 10,
+    "assignedDay": 2,
     "location": "EXT. Jerry's House — Afternoon",
     "keyElements": "",
     "productionNotes": "Afternoon shoot before nursery run",
@@ -526,7 +526,7 @@
   "full-circle": {
     "durationMin": 90,
     "shootDays": 0.5,
-    "assignedDay": 10,
+    "assignedDay": 2,
     "keyElements": "",
     "productionNotes": "Wraps",
     "cast": [
@@ -551,7 +551,7 @@
   },
   "the-threshold": {
     "durationMin": 15,
-    "assignedDay": 5,
+    "assignedDay": 2,
     "cast": [
       "Dallas"
     ]
@@ -831,7 +831,7 @@
       ]
     },
     {
-      "day": 3,
+      "day": 2,
       "estLength": "2.5h",
       "scenes": [
         "s00a"
@@ -883,10 +883,10 @@
       ]
     },
     {
-      "day": 4,
+      "day": 3,
       "scenes": [
-        "s14b",
-        "s14c"
+        "s01",
+        "s03"
       ],
       "crewCall": "CALL: 12:45 PM\nMEET: Alex's House (206 Saint John St)\nSETUP: 1:10 PM — Camera preps\nSHOOT: 1:30 PM — s14b · Dallas and Asher triangulate Sierra's journal and listening-post pattern\nBREAK: 2:20 PM\nSHOOT: 2:45 PM — s14c · Dominic nearly discovers the creature\nWRAP: 4:30 PM",
       "crew": [
@@ -935,7 +935,7 @@
       ]
     },
     {
-      "day": 5,
+      "day": 4,
       "scenes": [
         "s08d",
         "s11",
@@ -998,7 +998,7 @@
       ]
     },
     {
-      "day": 6,
+      "day": 5,
       "scenes": [
         "s15b",
         "s15c"
@@ -1052,7 +1052,7 @@
       ]
     },
     {
-      "day": 7,
+      "day": 6,
       "scenes": [
         "s13",
         "s14",
@@ -1172,7 +1172,7 @@
       ]
     },
     {
-      "day": 8,
+      "day": 7,
       "scenes": [
         "s07",
         "s18",
@@ -1252,7 +1252,7 @@
       ]
     },
     {
-      "day": 8.5,
+      "day": 7.5,
       "scenes": [
         "s08",
         "s09",
@@ -1335,7 +1335,7 @@
       ]
     },
     {
-      "day": 11.5,
+      "day": 10.5,
       "scenes": [
         "s07b",
         "s16"
@@ -1388,7 +1388,7 @@
       ]
     },
     {
-      "day": 9,
+      "day": 8,
       "scenes": [
         "s17",
         "s17b",
@@ -1450,7 +1450,7 @@
       ]
     },
     {
-      "day": 10,
+      "day": 9,
       "scenes": [
         "s27",
         "s28"
@@ -1506,7 +1506,7 @@
       ]
     },
     {
-      "day": 11,
+      "day": 10,
       "scenes": [
         "s07b",
         "s16"
@@ -1560,7 +1560,7 @@
       ]
     },
     {
-      "day": 12,
+      "day": 11,
       "scenes": [
         "s04",
         "s06"
@@ -1614,7 +1614,7 @@
       ]
     },
     {
-      "day": 13,
+      "day": 12,
       "crewCall": "Pickup and reshoots as needed",
       "crew": [
         {

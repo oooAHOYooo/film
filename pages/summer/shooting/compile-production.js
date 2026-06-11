@@ -707,6 +707,7 @@ function generateFullHtml(rows, totalDays, productionData) {
                     <h1 class="brand-title brand-title-main" style="margin: 0; color: #111;">Creatures in the Tall Grass</h1>
                     <p style="opacity: 0.55; margin: 8px 0 0 0; font-size: 0.82rem; letter-spacing: 0.03em;">Shooting cut</p>
                     <p style="opacity: 0.5; margin: 8px 0 0 0; font-size: 0.9rem;">Last updated: ${new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}</p>
+                    <button onclick="location.reload(true)" style="margin-top: 12px; padding: 8px 16px; background: #000; color: #fff; border: none; border-radius: 4px; font-size: 0.9rem; font-weight: 600; cursor: pointer;">🔄 Hard Refresh</button>
                 </header>
 
                 ${generateCalendarHtml(productionData)}
