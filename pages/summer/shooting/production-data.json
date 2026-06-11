@@ -1,6 +1,7 @@
 {
   "settings": {
-    "chronologicalStartDay": 1
+    "chronologicalStartDay": 1,
+    "completedDays": [0, 1]
   },
   "calendar": {
     "0": "2026-06-07",

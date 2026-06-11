@@ -589,6 +589,7 @@ function generateCalendarHtml(productionData) {
 function generateScheduleTableHtml(rows, productionData) {
   const calendar = productionData.calendar || {};
   const shootPlan = Array.isArray(productionData.shootPlan) ? productionData.shootPlan : [];
+  const completedDays = Array.isArray(productionData.settings?.completedDays) ? productionData.settings.completedDays : [];
 
   const sceneSortValue = (sceneId) => {
     const anchor = normalizeSceneAnchor(sceneId, rows);
@@ -633,7 +634,10 @@ function generateScheduleTableHtml(rows, productionData) {
       : '';
     const firstScene = scenes.length ? normalizeSceneAnchor(scenes[0], rows) : '';
     const firstSceneSort = scenes.length ? sceneSortValue(scenes[0]) : Number(entry.day) || 0;
-    html += `<tr data-day="${entry.day}" data-scene-sort="${firstSceneSort}" data-first-scene="${escapeHtml(firstScene)}" style="border-bottom:1px solid #ddd;cursor:pointer;" onclick="window.location.href='production/days/${entry.day}.html'"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>Day ${entry.day}</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">${dateFormatted}</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">${scenesHtml}</td></tr>`;
+    const isCompleted = completedDays.includes(Number(entry.day)) || completedDays.includes(entry.day);
+    const completedStyle = isCompleted ? 'background-color:#f0f0f0;opacity:0.7;' : '';
+    const completedBadge = isCompleted ? ' ✓' : '';
+    html += `<tr data-day="${entry.day}" data-scene-sort="${firstSceneSort}" data-first-scene="${escapeHtml(firstScene)}" style="border-bottom:1px solid #ddd;cursor:pointer;${completedStyle}" onclick="window.location.href='production/days/${entry.day}.html'"><td style="padding:8px 10px;border-bottom:1px solid #ddd;"><strong>Day ${entry.day}${completedBadge}</strong></td><td style="padding:8px 10px;border-bottom:1px solid #ddd;color:#555;">${dateFormatted}</td><td style="padding:8px 10px;border-bottom:1px solid #ddd;">${scenesHtml}</td></tr>`;
   });
 
   html += `</tbody></table></div></section>
@@ -719,7 +723,7 @@ function generateFullHtml(rows, totalDays, productionData) {
                   <div style="display: flex; flex-direction: column; gap: 8px;">
 `;
 
-  const completedDaysSet = new Set((Array.isArray(productionData.completedDays) ? productionData.completedDays : []).map(String));
+  const completedDaysSet = new Set((Array.isArray(productionData.settings?.completedDays) ? productionData.settings.completedDays : []).map(String));
   for (const dayNum of callSheetDays) {
     const planEntry = shootPlan.find((entry) => String(entry.day) === String(dayNum));
     const isPickup = !!(planEntry && (planEntry.special || planEntry.pickup));
