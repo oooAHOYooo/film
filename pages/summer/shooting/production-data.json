@@ -5,7 +5,6 @@
   "calendar": {
     "0": "2026-06-07",
     "1": "2026-06-08",
-    "2": "2026-06-12",
     "3": "2026-06-13",
     "4": "2026-06-14",
     "5": "2026-06-15",
@@ -619,8 +618,6 @@
         "• Prop of previous tenants (bottle, hoodie, broken mini-fridge, etc.)",
         "• Clipboard or folder (Property Manager)"
       ],
-      "cameraSettings": "**CAMERA: RED Komodo 6K**\n- Mount: Canon RF\n- Native resolution: 6K DCI (6144 x 3160) with Super 35 sensor coverage\n- Codec: RED RAW (REDCODE)\n- Media: CFast 2.0 (512GB + 256GB cards) — format before each location, back up immediately after wrap\n- Frame rates: 24fps (primary), 23.976fps\n- Color science: RED default (adjust in post if needed)\n- White balance: Daylight (5600K) for exterior, adjust per location\n- ISO/Gain: Keep base ISO; use ND filters for exposure control in bright conditions\n- External monitor: FEELWORLD FW703 7\" via 12G SDI — verify connection before rolling\n- Anamorphic lenses: SIRUI 1.33x S35 (35mm, 50mm, 75mm F1.8) — 1.33x squeeze, desqueeze to ~2.37:1 in post\n- Framing: Account for 1.33x horizontal squeeze in live view; characteristic anamorphic bokeh and horizontal flares\n- Record format: Verify CFast card status and space before each setup\n\n**AUDIO: Zoom H4n Essentials + Boom Pole**\n- Recorder: Zoom H4n Essentials\n- Input: XLR (mic input on H4n)\n- Microphone: Shotgun mic on boom pole with windscreen\n- Sample rate: 48kHz, 24-bit\n- Levels: Set to -12dB headroom; monitor throughout recording\n- Backup: Record locally on H4n SD card + sync timecode with camera if possible\n- Safety: Keep backup audio levels lower on second track as safety take\n- Wind protection: Windscreen always on boom pole for exterior work\n\n**Pre-Shoot Checklist:**\n- Verify RED Komodo battery charge and CFast card format/space before each location\n- Test H4n recorder and levels with boom pole at each location\n- Verify FEELWORLD monitor SDI connection and live view focus peaking\n- Confirm lens mount and anamorphic squeeze framing in live view\n- Backup all RED RAW media to external drive immediately after each wrap\n- Verify timecode sync between camera and audio if multi-camera",
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s00a.1",
@@ -682,11 +679,6 @@
             "WS — Dallas still and alone in the attic. Property manager's voice audible but distant below."
           ]
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Asher",
-        "Matt Grant"
       ]
     },
     {
@@ -836,155 +828,19 @@
             "WS - Wide sky, storm clouds gathering over distant Branford"
           ]
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Matt Grant (if available)"
-      ]
-    },
-    {
-      "day": 2,
-      "estLength": "5h",
-      "scenes": [
-        "s08",
-        "s09",
-        "s10"
-      ],
-      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08 · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery\nWRAP: 10:00 PM",
-      "crew": [
-        {
-          "role": "Director / Camera",
-          "name": "Alex Gonzalez"
-        },
-        {
-          "role": "Audio",
-          "name": "Christopher Battista"
-        },
-        {
-          "role": "Clapper",
-          "name": "TBD"
-        }
-      ],
-      "locationDetails": [
-        "East Haven Nursery",
-        "Main grounds and marsh access"
-      ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
-      "shotList": [
-        {
-          "beat": "s08.1",
-          "title": "Into the neighborhoods",
-          "scene": "s08",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "Dallas tracks the pulsing hum through suburban streets and toward the marsh.",
-          "shots": [
-            "WS - Branford street, dusk, Dallas walking with oscillator",
-            "MS - Dallas following the sound, oscillator raised",
-            "CU - Oscillator dial tracking frequency shift",
-            "WS - Residential block, Dallas navigating toward marsh",
-            "POV - Dallas's perspective, listening and moving"
-          ]
-        },
-        {
-          "beat": "s08.2",
-          "title": "Marsh edge approach",
-          "scene": "s08",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "Dallas reaches the tall marsh, realizes the sound is intensifying from the grass itself.",
-          "shots": [
-            "WS - Marsh perimeter, tall grass visible in distance",
-            "MS - Dallas at property edge, watching the grass",
-            "CU - Dallas's face, recognizing the source",
-            "WS - Tall grass field, undulating",
-            "Detail - Oscillator reading at peak frequency"
-          ]
-        },
-        {
-          "beat": "s09.1",
-          "title": "Nursery exploration",
-          "scene": "s09",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "Dallas searches the East Haven Nursery grounds with oscillator, tracking the frequency.",
-          "shots": [
-            "WS - Nursery grounds, evening light",
-            "MS - Dallas moving through rows, listening",
-            "CU - Oscillator dial responding to location",
-            "WS - Dallas at center of grounds, sound peaking",
-            "Detail - Hand adjusting oscillator settings"
-          ]
-        },
-        {
-          "beat": "s09.2",
-          "title": "The injured creature",
-          "scene": "s09",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "Dallas discovers something in the tall grass - evidence of an animal or disturbance.",
-          "shots": [
-            "WS - Tall grass field, Dallas approaching",
-            "MS - Dallas stops, observing something",
-            "CU - Dallas's reaction to discovery",
-            "Detail - Close look at marks, matted grass, or damage",
-            "WS - Dallas standing over the spot"
-          ]
-        },
-        {
-          "beat": "s10.1",
-          "title": "Jerry's house approach",
-          "scene": "s10",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "Dallas arrives at Jerry's house in evening darkness, oscillator still active.",
-          "shots": [
-            "WS - Jerry's house exterior, lights on inside",
-            "MS - Dallas at front, oscillator in hand",
-            "CU - Oscillator still reading the hum",
-            "WS - House and surrounding darkness",
-            "MS - Dallas approaching front door"
-          ]
-        },
-        {
-          "beat": "s10.2",
-          "title": "Something in the shadows",
-          "scene": "s10",
-          "cast": [
-            "Dallas"
-          ],
-          "description": "Dallas hears movement or shadows around the house perimeter - the hum intensifies.",
-          "shots": [
-            "WS - House perimeter, shadows visible",
-            "MS - Dallas turning, listening intently",
-            "CU - Dallas's fear/awareness",
-            "WS - Shadows moving in yard or tall grass near house",
-            "Detail - Oscillator spiking at maximum"
-          ]
-        }
-      ],
-      "cast": [
-        "Dallas"
       ]
     },
     {
       "day": 3,
-      "estLength": "10h",
+      "estLength": "2.5h",
       "scenes": [
-        "s01",
-        "s03",
-        "s05"
+        "s00a"
       ],
-      "crewCall": "CALL: 11:00 AM\nMEET: Alex's House (206 Saint John St)\nARRIVE: 11:30 AM — Jerry's House (72 Lake St, Hamden)\nSHOOT: 11:50 AM - 2:00 PM — s01 · Asher meets Dallas and studies the oscillator\nSHOOT: 2:15 PM - 4:00 PM — s03 · Dallas meets Dominic\nSHOOT: 4:15 PM - 5:30 PM — s05 · Dallas and Dominic cross the marsh boardwalk\nWRAP: 6:00 PM",
+      "crewCall": "CALL: 1:00 PM\nMEET: CPC\nDRIVE: 1:15 PM — Depart for Branford\nSHOOT: 2:00 PM - 4:30 PM — s00a · Opening montage - multiple Branford locations\nWRAP: 4:45 PM",
       "crew": [
         {
-          "role": "Director",
-          "name": "Alex"
+          "role": "Cast",
+          "name": "Eli"
         },
         {
           "role": "Camera",
@@ -1000,46 +856,30 @@
         }
       ],
       "locationDetails": [
-        "Alex's House (crew meet)",
-        "Jerry's House (72 Lake St, Hamden) - primary location"
+        "5-10 Branford locations (to be detailed)"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
+      "equipment": [
+        "• Camera body + charged batteries + formatted media cards",
+        "• Gimbal package - DJI RS 4 Pro (first use), plate, quick release, tools, balance checklist",
+        "• Tripod package",
+        "• Siriu 75mm, 50mm, 35mm lenses",
+        "• ND filter",
+        "• On-camera monitor",
+        "• Audio recorder / field recorder",
+        "• Shotgun mic with windscreen",
+        "• XLR cables, SDI cables",
+        "• Gaffer tape, lens cloth, lens blower, toolkit"
+      ],
       "shotList": [
         {
-          "beat": "s01",
-          "title": "Arrival",
-          "scene": "s01",
+          "beat": "s00a",
+          "title": "Opening montage - Branford locations",
+          "scene": "s00a",
           "cast": [
-            "Dallas",
-            "Asher"
+            "Eli"
           ],
-          "description": "Asher approaches Dallas on his bike, studies the military-grade oscillator, traces the signal pattern on his palm, and leaves without explaining what he tracks."
-        },
-        {
-          "beat": "s03",
-          "title": "Meet the Neighbors",
-          "scene": "s03",
-          "cast": [
-            "Dallas",
-            "Dominic"
-          ],
-          "description": "Dallas meets Dominic and the two walk through Branford, establishing their friendship and shared curiosity about the marsh."
-        },
-        {
-          "beat": "s05",
-          "title": "The Merlin App",
-          "scene": "s05",
-          "cast": [
-            "Dallas",
-            "Dominic"
-          ],
-          "description": "Dallas and Dominic cross the boardwalk, listen to the birds and marsh, and notice movement in the reeds."
+          "description": "Montage coverage across 5-10 Branford locations with gimbal work"
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Asher"
       ]
     },
     {
@@ -1071,7 +911,6 @@
         "Dallas House interior",
         "Various group locations"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s14b",
@@ -1093,11 +932,6 @@
           ],
           "description": "Dallas hides the creature and equipment while Dominic nearly discovers the humming enclosure."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Asher"
       ]
     },
     {
@@ -1130,7 +964,6 @@
         "Alex's House",
         "Surrounding areas and marsh edge"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s08d",
@@ -1162,10 +995,6 @@
           ],
           "description": "Dallas wakes beside the creature and reviews his recordings while Dominic checks a tire outside."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic"
       ]
     },
     {
@@ -1197,7 +1026,6 @@
         "Dallas House interior and exterior",
         "Various rooms and spaces"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s15b",
@@ -1221,11 +1049,6 @@
           ],
           "description": "At Asher’s woods equipment station, Dallas grips the contact transducers, experiences the signal, and hears Dominic describe the night of the boom."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Asher"
       ]
     },
     {
@@ -1263,7 +1086,6 @@
         "East Haven Nursery",
         "Marsh entrance and tall grass field"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s13",
@@ -1347,11 +1169,6 @@
           ],
           "description": "Dallas and Dominic return through the grass and enter the house soaked and exhausted."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Asher"
       ]
     },
     {
@@ -1385,7 +1202,6 @@
         "Dallas House interior",
         "Dining area and rooms"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s07",
@@ -1433,30 +1249,24 @@
           ],
           "description": "Dominic discovers Sierra’s creature files, sees the Red-Eyes, and joins Dallas in testing the portable speaker against them."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Asher",
-        "Mr. Mike",
-        "Life Group Extras"
       ]
     },
     {
       "day": 8.5,
-      "crewCall": "CALL: 5:00 PM\nMEET: Dallas House (72 Lake St, Hamden)\nSETUP: 5:30 PM — Camera preps\nSHOOT: 6:00 PM — s26 pickups · Creature effects & defensive positions\nWRAP: 9:00 PM",
+      "scenes": [
+        "s08",
+        "s09",
+        "s10"
+      ],
+      "crewCall": "CALL: 4:00 PM\nMEET: East Haven Nursery\nSETUP: 4:30 PM — Camera preps\nSHOOT: 5:00 PM — s08 · Marsh approach & exploration\nSHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery\nWRAP: 10:00 PM",
       "crew": [
         {
-          "role": "Director",
-          "name": "Alex"
-        },
-        {
-          "role": "Camera",
-          "name": "Alex"
+          "role": "Director / Camera",
+          "name": "Alex Gonzalez"
         },
         {
           "role": "Audio",
-          "name": "TBD"
+          "name": "Christopher Battista"
         },
         {
           "role": "Clapper",
@@ -1464,31 +1274,72 @@
         }
       ],
       "locationDetails": [
-        "Dallas House interior and exterior"
+        "East Haven Nursery",
+        "Main grounds and marsh access"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
-          "beat": "s26",
-          "title": "The Morning After",
-          "scene": "s26",
+          "beat": "s08.1",
+          "title": "Into the neighborhoods",
+          "scene": "s08",
           "cast": [
-            "Dallas",
-            "Dominic"
+            "Dallas"
           ],
-          "description": "Dallas and Dominic return through the grass and enter the house soaked and exhausted."
+          "description": "Dallas tracks the pulsing hum through suburban streets and toward the marsh."
+        },
+        {
+          "beat": "s08.2",
+          "title": "Marsh edge approach",
+          "scene": "s08",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas reaches the tall marsh, realizes the sound is intensifying from the grass itself."
+        },
+        {
+          "beat": "s09.1",
+          "title": "Nursery exploration",
+          "scene": "s09",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas searches the East Haven Nursery grounds with oscillator, tracking the frequency."
+        },
+        {
+          "beat": "s09.2",
+          "title": "The injured creature",
+          "scene": "s09",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas discovers something in the tall grass - evidence of an animal or disturbance."
+        },
+        {
+          "beat": "s10.1",
+          "title": "Jerry's house approach",
+          "scene": "s10",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas arrives at Jerry's house in evening darkness, oscillator still active."
+        },
+        {
+          "beat": "s10.2",
+          "title": "Something in the shadows",
+          "scene": "s10",
+          "cast": [
+            "Dallas"
+          ],
+          "description": "Dallas hears movement or shadows around the house perimeter - the hum intensifies."
         }
-      ],
-      "scenes": [
-        "s26"
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic"
       ]
     },
     {
       "day": 11.5,
+      "scenes": [
+        "s07b",
+        "s16"
+      ],
       "crewCall": "CALL: 8:00 AM\nMEET: Branford Marsh Edge\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07b pickups · Warning additional coverage\nSHOOT: 10:30 AM — s16 pickups · Plan detail shots\nWRAP: 12:00 PM",
       "crew": [
         {
@@ -1512,7 +1363,6 @@
         "Marsh boundary",
         "Tall grass field"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s07b",
@@ -1535,15 +1385,6 @@
           ],
           "description": "Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group."
         }
-      ],
-      "scenes": [
-        "s07b",
-        "s16"
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Mr. Mike"
       ]
     },
     {
@@ -1576,7 +1417,6 @@
         "Dallas House interior",
         "Various rooms"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s17",
@@ -1607,10 +1447,6 @@
           ],
           "description": "Dominic sees the storm’s unnatural pattern in town and confronts Dallas over the phone."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic"
       ]
     },
     {
@@ -1643,7 +1479,6 @@
         "Branford landscape",
         "Marsh edges"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post\n\n---",
       "shotList": [
         {
           "beat": "s27",
@@ -1668,13 +1503,6 @@
           ],
           "description": "Dallas helps Asher dismantle the woods listening network, accepts a harmless wind spike, reconnects with Dominic, and hears Sierra’s cadence in the creature’s hum."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Asher",
-        "Mr. Mike",
-        "Pat Clendenen"
       ]
     },
     {
@@ -1707,7 +1535,6 @@
         "Forest locations",
         "Open fields"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s07b",
@@ -1730,11 +1557,6 @@
           ],
           "description": "Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Mr. Mike"
       ]
     },
     {
@@ -1766,7 +1588,6 @@
         "Branford Town Green",
         "Branford streets and areas"
       ],
-      "settingsOverview": "**RED KOMODO 6K (SIRUI 1.33x ANAMORPHIC) — QUICK SETUP**\n\n• Resolution: 6144x3240 (6K 17:9)\n• FPS: 23.976\n• Shutter: 180°\n• Codec: REDCODE RAW\n• Compression: 8:1\n• ISO: 800\n• Color: REDWideGamutRGB / Log3G10\n• White Balance: 5600K (or manual)\n\nANAMORPHIC:\n• Lens squeeze: 1.33x\n• Camera desqueeze: OFF\n• Monitor desqueeze: 1.33x ✅\n\nFRAMING:\n• Frame guides: 2.39:1\n\nNOTES:\n• Do NOT use 1.5x or 2x\n• Do NOT bake desqueeze\n• Record full sensor, fix in post",
       "shotList": [
         {
           "beat": "s04",
@@ -1790,12 +1611,6 @@
           ],
           "description": "Dallas and Dominic pass Pat Clendenen’s storm coverage and discover strange marks near Dominic’s driveway."
         }
-      ],
-      "cast": [
-        "Dallas",
-        "Dominic",
-        "Asher",
-        "Pat Clendenen"
       ]
     },
     {
@@ -1818,10 +1633,7 @@
           "role": "Clapper",
           "name": "TBD"
         }
-      ],
-      "scenes": [],
-      "shotList": [],
-      "cast": []
+      ]
     }
   ],
   "locationDirectory": [

@@ -77,7 +77,9 @@
       "Bash(mdfind -name \"CITG\")",
       "Bash(mdfind \"no-makayla\")",
       "Bash(mdfind -name \"no-makayla\")",
-      "Bash(echo \"\\(exit $?\\)\")"
+      "Bash(echo \"\\(exit $?\\)\")",
+      "Bash(cat)",
+      "Bash(/tmp/renumber-days.sh)"
     ]
   }
 }
