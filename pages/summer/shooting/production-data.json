@@ -1102,21 +1102,9 @@
     {
       "day": 10,
       "scenes": [
-        "s04",
         "s06"
       ],
       "shotList": [
-        {
-          "beat": "s04",
-          "title": "Fellowship",
-          "scene": "s04",
-          "cast": [
-            "Dallas",
-            "Dominic",
-            "Asher"
-          ],
-          "description": "Dominic introduces Dallas to Asher at the fellowship; Asher quietly assembles recording equipment and aims it toward the bushes.\r"
-        },
         {
           "beat": "s06",
           "title": "News Vans",
