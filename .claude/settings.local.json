@@ -79,7 +79,8 @@
       "Bash(mdfind -name \"no-makayla\")",
       "Bash(echo \"\\(exit $?\\)\")",
       "Bash(cat)",
-      "Bash(/tmp/renumber-days.sh)"
+      "Bash(/tmp/renumber-days.sh)",
+      "Bash(xargs -I {} mv {} omitted/)"
     ]
   }
 }
