@@ -1156,18 +1156,20 @@ function generateDayHtml(dayNum, rows, productionData) {
             </section>
 
             <h3 style="margin:18px 0 8px 0; border-bottom:1px solid #000; font-size:0.95rem; letter-spacing:0.04em;">SCENE SCHEDULE</h3>
+            <div style="${isDayComplete ? 'background:#d4edda; border:1px solid #7fbf8f; padding:4px 0; border-radius:2px;' : ''}">
             <table class="production-table">
                 <thead>
                     <tr>
-                        <th>SCENE</th>
-                        <th>DESCRIPTION</th>
-                        <th>CAST</th>
+                        <th style="${isDayComplete ? 'background:#c3e6cb;' : ''}">SCENE</th>
+                        <th style="${isDayComplete ? 'background:#c3e6cb;' : ''}">DESCRIPTION</th>
+                        <th style="${isDayComplete ? 'background:#c3e6cb;' : ''}">CAST</th>
                     </tr>
                 </thead>
                 <tbody>
                     ${sceneRows}
                 </tbody>
             </table>
+            </div>
 
             <section class="compact-block">
                 <div class="compact-label">Day Schedule</div>

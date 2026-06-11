@@ -14,16 +14,16 @@ chronological-start-day: 1
 2: 2026-06-13
 3: 2026-06-14
 4: 2026-06-15
-5: 2026-06-18
-6: 2026-06-19
-7: 2026-06-20
-8: 2026-06-26
-9: 2026-06-27
-10: 2026-06-28
-11: 2026-07-01
-12: 2026-07-02
-10.5: 2026-06-29
-7.5: 2026-06-22
+5: 2026-06-19
+6: 2026-06-20
+7: 2026-06-26
+8: 2026-06-27
+9: 2026-06-28
+10: 2026-07-01
+11: 2026-07-02
+9.5: 2026-06-29
+6.5: 2026-06-22
+12: 2026-07-16
 
 
 ## SCENES
@@ -715,16 +715,14 @@ description: Dallas hides the creature and equipment while Dominic nearly discov
 
 ### Day 4 — 2026-06-15
 
-scenes: s08d, s11, s12
+scenes: s02-continuation
 
 crew-call:
   CALL: 4:30 PM
-  MEET: Alex's House (206 Saint John St)
-  ARRIVE: 5:00 PM — Marsh edge / surrounding areas
+  MEET: Alex’s House (206 Saint John St)
+  ARRIVE: 5:00 PM — Jerry’s House (72 Lake St, Hamden)
   SETUP: 5:00 PM — Camera preps
-  SHOOT: 5:30 PM — s08d · Return through darkness
-  SHOOT: 6:30 PM — s11 · Evening trio investigation
-  SHOOT: 8:00 PM — s12 · Burn mark discovery
+  SHOOT: 5:30 PM — s02 continuation · Remaining beats from Day 1
   WRAP: 9:30 PM
 
 crew:
@@ -734,61 +732,16 @@ crew:
   - Clapper: TBD
 
 locations:
-  - Alex's House
-  - Surrounding areas and marsh edge
+  - 72 Lake St, Hamden (Jerry’s House - Dallas Rental)
 
-#### Beat: s08d — The Return
-scene: s08d
-cast: Dallas, Dominic
-description: Dallas returns through the dark with the injured creature while Dominic checks on him.
-
-#### Beat: s11 — Kitchen Triage
-scene: s11
-cast: Dallas, Dominic
-description: Dallas builds a makeshift habitat, studies the creature’s call, and deflects Dominic’s questions before Dominic leaves.
-
-#### Beat: s12 — Alone With the Creature
-scene: s12
-cast: Dallas, Dominic
-description: Dallas wakes beside the creature and reviews his recordings while Dominic checks a tire outside.
+#### Beat: s02 continuation — Remaining s02 coverage
+scene: s02
+cast: Dallas
+description: Continuation of s02 from Day 1 — pick up any remaining beats not completed.
 
 ---
 
-### Day 5 — 2026-06-18
-
-scenes: s15b, s15c
-
-crew-call:
-  CALL: 2:00 PM
-  MEET: Woods / Asher's lair
-  SETUP: 2:30 PM — Camera and practical listening-post prep
-  SHOOT: 3:00 PM — s15b · Asher's tracking box, recorder network, and woods equipment
-  SHOOT: 5:00 PM — s15c · Contact-transducer signal and Dominic's confession
-  WRAP: 7:00 PM
-
-crew:
-  - Director: Alex
-  - Camera: Alex
-  - Audio: TBD
-  - Clapper: TBD
-
-locations:
-  - Dallas House interior and exterior
-  - Various rooms and spaces
-
-#### Beat: s15b — Asher’s Tracking Box
-scene: s15b
-cast: Dallas, Dominic, Asher
-description: Asher demonstrates his listening posts, bead-count system, hidden woods lair, trail cameras, recorders, cables, and spare oscillator.
-
-#### Beat: s15c — Dominic’s Confession
-scene: s15c
-cast: Dallas, Dominic, Asher
-description: At Asher’s woods equipment station, Dallas grips the contact transducers, experiences the signal, and hears Dominic describe the night of the boom.
-
----
-
-### Day 6 — 2026-06-19
+### Day 5 — 2026-06-19
 
 scenes: s13, s14, s21, s22, s23, s24, s25, s26
 
@@ -853,7 +806,7 @@ description: Dallas and Dominic return through the grass and enter the house soa
 
 ---
 
-### Day 7 — 2026-06-20
+### Day 6 — 2026-06-20
 
 scenes: s07, s18, s19, s20
 
@@ -898,7 +851,7 @@ description: Dominic discovers Sierra’s creature files, sees the Red-Eyes, and
 
 ---
 
-### Day 7.5 — 2026-06-22
+### Day 6.5 — 2026-06-22
 
 scenes: s08, s09, s10
 
@@ -951,9 +904,9 @@ description: Dallas hears movement or shadows around the house perimeter - the h
 
 ---
 
-### Day 10.5 — 2026-06-29
+### Day 9.5 — 2026-06-29
 
-scenes: s07b, s16
+scenes: s07b, s16, s08d, s11, s12
 
 crew-call:
   CALL: 8:00 AM
@@ -961,7 +914,10 @@ crew-call:
   SETUP: 8:30 AM — Camera preps
   SHOOT: 9:00 AM — s07b pickups · Warning additional coverage
   SHOOT: 10:30 AM — s16 pickups · Plan detail shots
-  WRAP: 12:00 PM
+  SHOOT: 12:00 PM — s08d · Return through darkness
+  SHOOT: 1:00 PM — s11 · Kitchen triage
+  SHOOT: 2:30 PM — s12 · Alone with the creature
+  WRAP: 4:00 PM
 
 crew:
   - Director: Alex
@@ -972,6 +928,7 @@ crew:
 locations:
   - Marsh boundary
   - Tall grass field
+  - 72 Lake St, Hamden (Jerry’s House - Dallas Rental)
 
 #### Beat: s07b — Mr. Mike’s Warning
 scene: s07b
@@ -983,9 +940,24 @@ scene: s16
 cast: Dallas, Dominic
 description: Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group.
 
+#### Beat: s08d — The Return
+scene: s08d
+cast: Dallas, Dominic
+description: Dallas returns through the dark with the injured creature while Dominic checks on him.
+
+#### Beat: s11 — Kitchen Triage
+scene: s11
+cast: Dallas, Dominic
+description: Dallas builds a makeshift habitat, studies the creature’s call, and deflects Dominic’s questions before Dominic leaves.
+
+#### Beat: s12 — Alone With the Creature
+scene: s12
+cast: Dallas, Dominic
+description: Dallas wakes beside the creature and reviews his recordings while Dominic checks a tire outside.
+
 ---
 
-### Day 8 — 2026-06-26
+### Day 7 — 2026-06-26
 
 scenes: s17, s17b, s17c
 
@@ -1024,17 +996,22 @@ description: Dominic sees the storm’s unnatural pattern in town and confronts 
 
 ---
 
-### Day 9 — 2026-06-27
+### Day 8 — 2026-06-27
 
-scenes: s27, s28
+scenes: s27, s28, s15b, s15c
 
 crew-call:
   CALL: 6:00 AM
-  MEET: Jerry's House (72 Lake St, Hamden)
+  MEET: Jerry’s House (72 Lake St, Hamden)
   SETUP: 6:30 AM — Camera preps
   SHOOT: 7:00 AM — s27 · Aftermath & gathering survivors
   SHOOT: 9:00 AM — s28 · Full circle
-  WRAP: 12:00 PM
+  BREAK: 11:30 AM
+  MEET: 1:00 PM — Woods / Asher’s lair
+  SETUP: 1:30 PM — Camera and practical listening-post prep
+  SHOOT: 2:00 PM — s15b · Asher’s tracking box, recorder network, and woods equipment
+  SHOOT: 4:00 PM — s15c · Contact-transducer signal and Dominic’s confession
+  WRAP: 6:00 PM
 
 crew:
   - Director: Alex
@@ -1043,9 +1020,10 @@ crew:
   - Clapper: TBD
 
 locations:
-  - Jerry's House exterior
+  - Jerry’s House exterior
   - Branford landscape
   - Marsh edges
+  - Woods / Asher’s lair
 
 #### Beat: s27 — Little Aftermath
 scene: s27
@@ -1057,9 +1035,19 @@ scene: s28
 cast: Dallas, Dominic, Asher
 description: Dallas helps Asher dismantle the woods listening network, accepts a harmless wind spike, reconnects with Dominic, and hears Sierra’s cadence in the creature’s hum.
 
+#### Beat: s15b — Asher’s Tracking Box
+scene: s15b
+cast: Dallas, Dominic, Asher
+description: Asher demonstrates his listening posts, bead-count system, hidden woods lair, trail cameras, recorders, cables, and spare oscillator.
+
+#### Beat: s15c — Dominic’s Confession
+scene: s15c
+cast: Dallas, Dominic, Asher
+description: At Asher’s woods equipment station, Dallas grips the contact transducers, experiences the signal, and hears Dominic describe the night of the boom.
+
 ---
 
-### Day 10 — 2026-06-28
+### Day 9 — 2026-06-28
 
 scenes: s07b, s16
 
@@ -1095,7 +1083,7 @@ description: Dallas carries the creature and recovered equipment home while Domi
 
 ---
 
-### Day 11 — 2026-07-01
+### Day 10 — 2026-07-01
 
 scenes: s04, s06
 
@@ -1129,7 +1117,7 @@ description: Dallas and Dominic pass Pat Clendenen’s storm coverage and discov
 
 ---
 
-### Day 12 — 2026-07-02
+### Day 11 — 2026-07-02
 
 
 crew-call:
@@ -1140,6 +1128,32 @@ crew:
   - Camera: Alex
   - Audio: TBD
   - Clapper: TBD
+
+---
+
+### Day 12 — 2026-07-16
+
+scenes: s04
+
+crew-call:
+  CALL: TBD
+  MEET: TBD
+  SHOOT: TBD — s04 · Fellowship
+  WRAP: TBD
+
+crew:
+  - Director: Alex
+  - Camera: Alex
+  - Audio: TBD
+  - Clapper: TBD
+
+locations:
+  - TBD
+
+#### Beat: s04 — Fellowship
+scene: s04
+cast: Dallas, Dominic, Asher
+description: Dominic introduces Dallas to Asher at the fellowship; Asher quietly assembles recording equipment and aims it toward the bushes.
 
 ---
 

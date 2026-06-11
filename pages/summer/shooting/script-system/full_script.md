@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/11/2026, 11:34:00 AM*
+*Compiled on 6/11/2026, 11:49:58 AM*
 
 ---
 
@@ -2199,16 +2199,13 @@ As they cut through the reeds, Asher stops every so often to press small devices
 
 Dallas watches a scatter of them pulse in the dusk.
 
-DALLAS
-Fireflies?
-
 DOMINIC
 Listening posts. He's been seeding the whole marsh with them — for years now. Every spot that sound of his has ever touched. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
-Asher trails a step behind. Each time one of the nodes blinks to life, he threads a single bead onto the string around his neck. One bead, one node. He never miscounts. 
+Asher trails a step behind. Each time one of the nodes blinks to life, he threads a single bead onto the string around his neck. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
@@ -2217,9 +2214,6 @@ The three walk into the field and find a small wooden chest on the ground, hidde
 
 EXT. ASHER'S SPECIAL WOODED SPOT - CONTINUOUS (s15.2)
 As they approach the structure, they can see that it is a small wooden structure hidden by fallen trees and branches. 
-
-DOMINIC
-Asher's been building out here for years. 
 
 <!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
@@ -2265,33 +2259,18 @@ Asher takes out a pocket tripod - and a pocket microphone - and begins to to rec
 (action)
 Asher lifts a small wooden box and holds it out to Dallas without a word. Dallas opens it and finds a spare oscillator inside, wrapped in cloth, the dial worn smooth from use. Dallas holds it, fascinated.
 
-DOMINIC
-What do you think?
 
-DALLAS
-Looks like one of his.
-
----
-
-
-### Scene 15C: Dominic's Confession
-
-*ACT II — The Creature | ID: dominics-confession | File: s15c.md*
-
----
-
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
 
 <!-- GOING TO FILM ON Day 5 -->
 
 
 `
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Asher walks over to a little portable device, also hidden by a bunch of branches. He turns it on with a bunch of 9V batteries and points to the two metal rods — contact transducers — coming out of the portable wooden device, and nudges Dallas to grip. 
 
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
@@ -2305,7 +2284,7 @@ Dallas. Dallas! You alright? What did it do to you?
 DALLAS
 What is it?
 
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Asher shrugs, slow. He doesn't know either. Dominic looks between the two of them, then out at the trees.
@@ -2313,19 +2292,36 @@ Asher shrugs, slow. He doesn't know either. Dominic looks between the two of the
 DOMINIC
 That night you found— that night you moved in. Something out here let out a big BOOM. Whole street heard it.
 
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
 In the distance the howls are getting more ganrly. The three of them stand silent in fear.
 
-<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+<!-- scene: 15B file: s15b.md nickname: the-tracking-box -->
 
 (action)
 Dallas begins to record a bit on his pocket recorder. 
 
 DOMINIC
 (takes a deep breath and contemplates for a while)
-We should go.
+We should go. 
+
+
+
+End Scene 15b
+
+---
+
+
+### Scene 15C: Dominic's Confession
+
+*ACT II — The Creature | ID: dominics-confession | File: s15c.md*
+
+---
+
+<!-- scene: 15C file: s15c.md nickname: dominics-confession -->
+
+
 
 ---
 
