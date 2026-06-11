@@ -638,134 +638,44 @@ shots:
 
 ---
 
-### Day 2 — 2026-06-12
-
-est-length: 5h
-scenes: s08, s09, s10
-
-crew-call:
-  CALL: 4:00 PM
-  MEET: East Haven Nursery
-  SETUP: 4:30 PM — Camera preps
-  SHOOT: 5:00 PM — s08 · Marsh approach & exploration
-  SHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery
-  WRAP: 10:00 PM
-
-crew:
-  - Director / Camera: Alex Gonzalez
-  - Audio: Christopher Battista
-  - Clapper: TBD
-
-locations:
-  - East Haven Nursery
-  - Main grounds and marsh access
-
-#### Beat: s08.1 — Into the neighborhoods
-scene: s08
-cast: Dallas
-description: Dallas tracks the pulsing hum through suburban streets and toward the marsh.
-shots:
-  - WS - Branford street, dusk, Dallas walking with oscillator
-  - MS - Dallas following the sound, oscillator raised
-  - CU - Oscillator dial tracking frequency shift
-  - WS - Residential block, Dallas navigating toward marsh
-  - POV - Dallas's perspective, listening and moving
-
-#### Beat: s08.2 — Marsh edge approach
-scene: s08
-cast: Dallas
-description: Dallas reaches the tall marsh, realizes the sound is intensifying from the grass itself.
-shots:
-  - WS - Marsh perimeter, tall grass visible in distance
-  - MS - Dallas at property edge, watching the grass
-  - CU - Dallas's face, recognizing the source
-  - WS - Tall grass field, undulating
-  - Detail - Oscillator reading at peak frequency
-
-#### Beat: s09.1 — Nursery exploration
-scene: s09
-cast: Dallas
-description: Dallas searches the East Haven Nursery grounds with oscillator, tracking the frequency.
-shots:
-  - WS - Nursery grounds, evening light
-  - MS - Dallas moving through rows, listening
-  - CU - Oscillator dial responding to location
-  - WS - Dallas at center of grounds, sound peaking
-  - Detail - Hand adjusting oscillator settings
-
-#### Beat: s09.2 — The injured creature
-scene: s09
-cast: Dallas
-description: Dallas discovers something in the tall grass - evidence of an animal or disturbance.
-shots:
-  - WS - Tall grass field, Dallas approaching
-  - MS - Dallas stops, observing something
-  - CU - Dallas's reaction to discovery
-  - Detail - Close look at marks, matted grass, or damage
-  - WS - Dallas standing over the spot
-
-#### Beat: s10.1 — Jerry's house approach
-scene: s10
-cast: Dallas
-description: Dallas arrives at Jerry's house in evening darkness, oscillator still active.
-shots:
-  - WS - Jerry's house exterior, lights on inside
-  - MS - Dallas at front, oscillator in hand
-  - CU - Oscillator still reading the hum
-  - WS - House and surrounding darkness
-  - MS - Dallas approaching front door
-
-#### Beat: s10.2 — Something in the shadows
-scene: s10
-cast: Dallas
-description: Dallas hears movement or shadows around the house perimeter - the hum intensifies.
-shots:
-  - WS - House perimeter, shadows visible
-  - MS - Dallas turning, listening intently
-  - CU - Dallas's fear/awareness
-  - WS - Shadows moving in yard or tall grass near house
-  - Detail - Oscillator spiking at maximum
-
----
-
 ### Day 3 — 2026-06-13
 
-est-length: 10h
-scenes: s01, s03, s05
+est-length: 2.5h
+scenes: s00a
 
 crew-call:
-  CALL: 11:00 AM
-  MEET: Alex's House (206 Saint John St)
-  ARRIVE: 11:30 AM — Jerry's House (72 Lake St, Hamden)
-  SHOOT: 11:50 AM - 2:00 PM — s01 · Asher meets Dallas and studies the oscillator
-  SHOOT: 2:15 PM - 4:00 PM — s03 · Dallas meets Dominic
-  SHOOT: 4:15 PM - 5:30 PM — s05 · Dallas and Dominic cross the marsh boardwalk
-  WRAP: 6:00 PM
+  CALL: 1:00 PM
+  MEET: CPC
+  DRIVE: 1:15 PM — Depart for Branford
+  SHOOT: 2:00 PM - 4:30 PM — s00a · Opening montage - multiple Branford locations
+  WRAP: 4:45 PM
 
 crew:
-  - Director: Alex
+  - Cast: Eli
   - Camera: Alex
   - Audio: TBD
   - Clapper: TBD
 
 locations:
-  - Alex's House (crew meet)
-  - Jerry's House (72 Lake St, Hamden) - primary location
+  - 5-10 Branford locations (to be detailed)
 
-#### Beat: s01 — Arrival
-scene: s01
-cast: Dallas, Asher
-description: Asher approaches Dallas on his bike, studies the military-grade oscillator, traces the signal pattern on his palm, and leaves without explaining what he tracks.
+equipment:
+  - Camera body + charged batteries + formatted media cards
+  - Gimbal package - DJI RS 4 Pro (first use), plate, quick release, tools, balance checklist
+  - Tripod package
+  - Siriu 75mm, 50mm, 35mm lenses
+  - ND filter
+  - On-camera monitor
+  - Audio recorder / field recorder
+  - Shotgun mic with windscreen
+  - XLR cables, SDI cables
+  - Gaffer tape, lens cloth, lens blower, toolkit
 
-#### Beat: s03 — Meet the Neighbors
-scene: s03
-cast: Dallas, Dominic
-description: Dallas meets Dominic and the two walk through Branford, establishing their friendship and shared curiosity about the marsh.
-
-#### Beat: s05 — The Merlin App
-scene: s05
-cast: Dallas, Dominic
-description: Dallas and Dominic cross the boardwalk, listen to the birds and marsh, and notice movement in the reeds.
+#### Beat: s00a — Opening montage - Branford locations
+scene: s00a
+cast: Eli
+description: Montage coverage across 5-10 Branford locations with gimbal work
+notes: First gimbal deployment; multiple location moving shots
 
 ---
 
@@ -991,28 +901,54 @@ description: Dominic discovers Sierra’s creature files, sees the Red-Eyes, and
 
 ### Day 8.5 — 2026-06-22
 
-scenes: s26
+scenes: s08, s09, s10
 
 crew-call:
-  CALL: 5:00 PM
-  MEET: Dallas House (72 Lake St, Hamden)
-  SETUP: 5:30 PM — Camera preps
-  SHOOT: 6:00 PM — s26 pickups · Creature effects & defensive positions
-  WRAP: 9:00 PM
+  CALL: 4:00 PM
+  MEET: East Haven Nursery
+  SETUP: 4:30 PM — Camera preps
+  SHOOT: 5:00 PM — s08 · Marsh approach & exploration
+  SHOOT: 7:30 PM — s09, s10 · Deep Marsh Creature Discovery
+  WRAP: 10:00 PM
 
 crew:
-  - Director: Alex
-  - Camera: Alex
-  - Audio: TBD
+  - Director / Camera: Alex Gonzalez
+  - Audio: Christopher Battista
   - Clapper: TBD
 
 locations:
-  - Dallas House interior and exterior
+  - East Haven Nursery
+  - Main grounds and marsh access
 
-#### Beat: s26 — The Morning After
-scene: s26
-cast: Dallas, Dominic
-description: Dallas and Dominic return through the grass and enter the house soaked and exhausted.
+#### Beat: s08.1 — Into the neighborhoods
+scene: s08
+cast: Dallas
+description: Dallas tracks the pulsing hum through suburban streets and toward the marsh.
+
+#### Beat: s08.2 — Marsh edge approach
+scene: s08
+cast: Dallas
+description: Dallas reaches the tall marsh, realizes the sound is intensifying from the grass itself.
+
+#### Beat: s09.1 — Nursery exploration
+scene: s09
+cast: Dallas
+description: Dallas searches the East Haven Nursery grounds with oscillator, tracking the frequency.
+
+#### Beat: s09.2 — The injured creature
+scene: s09
+cast: Dallas
+description: Dallas discovers something in the tall grass - evidence of an animal or disturbance.
+
+#### Beat: s10.1 — Jerry's house approach
+scene: s10
+cast: Dallas
+description: Dallas arrives at Jerry's house in evening darkness, oscillator still active.
+
+#### Beat: s10.2 — Something in the shadows
+scene: s10
+cast: Dallas
+description: Dallas hears movement or shadows around the house perimeter - the hum intensifies.
 
 ---
 
