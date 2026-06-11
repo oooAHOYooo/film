@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Saturday — Call Sheet — Eli Audio Device Installation</title>
+        <style>
+            :root {
+                --prod-accent: #000;
+                --prod-head: #f5f5f5;
+                --prod-border: #000;
+                --prod-tag-bg: #fff;
+                --prod-tag-border: #000;
+                --prod-row-hover: #f5f5f5;
+                --sidebar-w: 260px;
+            }
+            body {
+                margin: 0;
+                display: block;
+                min-height: 100vh;
+                overflow-y: auto;
+                background: #fff;
+                color: #000;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            }
+            .main-content { padding: 24px 22px 32px; margin: 0 auto; max-width: 920px; box-sizing: border-box; }
+            body { background: #fff; color: #000; }
+            .callsheet-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                border-bottom: 2px solid #000;
+                padding-bottom: 8px;
+                margin-bottom: 14px;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .callsheet-kicker {
+                margin: 4px 0 0 0;
+                font-size: 0.78rem;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #555;
+            }
+            .compact-block {
+                margin: 12px 0 14px 0;
+                padding: 0;
+            }
+            .compact-label {
+                font-size: 0.7rem;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: #555;
+                margin-bottom: 4px;
+            }
+            .compact-panel {
+                border: 1px solid #000;
+                padding: 8px 10px;
+            }
+            .production-table {
+                background: transparent;
+                border: none;
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 0.88rem;
+            }
+            .production-table th {
+                background: transparent;
+                color: #000 !important;
+                border-bottom: 2px solid #000;
+                font-weight: 700;
+                text-align: left;
+                padding: 6px 8px;
+                line-height: 1.1;
+            }
+            .production-table td {
+                border-bottom: 1px solid #ddd;
+                padding: 8px 8px;
+                color: #000;
+                vertical-align: top;
+                line-height: 1.25;
+            }
+            .scene-snippet {
+                font-size: 0.72rem;
+                color: #666;
+                margin-top: 3px;
+                line-height: 1.25;
+                font-style: italic;
+            }
+            .notice-bar {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                margin-bottom: 10px;
+                font-size: 0.68rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #333;
+            }
+
+            @media (max-width: 768px) {
+                .main-content { padding: 16px 14px 22px; }
+                .callsheet-header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    border-bottom-width: 1px;
+                }
+            }
+
+            @media print {
+                @page { margin: 0.45in; }
+                body {
+                    background: #fff !important;
+                    color: #000 !important;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+                .notice-bar {
+                    display: flex;
+                }
+                .production-table th {
+                    background: #fff !important;
+                }
+                .compact-panel {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+                a {
+                    color: #000 !important;
+                    text-decoration: none !important;
+                }
+            }
+        </style>
+    </head>
+    <body style="background:#fff; color:black;">
+        <div class="main-content">
+            <div class="notice-bar no-print">
+                <span></span>
+                <a href="../../shooting_production.html" style="color:#666; text-decoration:none;">Dashboard</a>
+                <span></span>
+            </div>
+            <header class="callsheet-header">
+                <div>
+                    <h1 style="margin:0;">DAILY CALL SHEET</h1>
+                    <h2 style="margin:0; font-size:1.5rem;">Day 2 of 13</h2>
+                    <p class="callsheet-kicker">Shooting cut</p>
+                </div>
+                <div style="text-align:right;">
+                    <div style="font-weight:700;">SATURDAY</div>
+                    <div style="font-size:1.2rem;">Jun 13, 2026</div>
+                </div>
+            </header>
+
+            <section class="compact-block">
+                <div class="compact-label">Call Time & Schedule</div>
+                <div class="compact-panel">
+                    <div style="display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Call Time</div><div style="font-size:0.92rem;">1:00 PM</div></div>
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Wrap Time</div><div style="font-size:0.92rem;">4:30 PM</div></div>
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Est. Duration</div><div style="font-size:0.92rem;">3.5 hrs</div></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="compact-block">
+                <div class="compact-label">Shoot Plan Summary</div>
+                <div class="compact-panel">
+                    <div style="display:grid; gap:8px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));">
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Scenes</div><div style="font-size:0.92rem;">s00a.4–8</div></div>
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Primary Cast</div><div style="font-size:0.92rem;">Eli (Asher)</div></div>
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Locations</div><div style="font-size:0.92rem;">5</div></div>
+                    </div>
+                </div>
+            </section>
+
+            <h3 style="margin:18px 0 8px 0; border-bottom:1px solid #000; font-size:0.95rem; letter-spacing:0.04em;">SCENE SCHEDULE</h3>
+            <div style="">
+            <table class="production-table">
+                <thead>
+                    <tr>
+                        <th style="">BEAT</th>
+                        <th style="">DESCRIPTION</th>
+                        <th style="">CAST</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>s00a.4</strong></td>
+                        <td>
+                          <div style="font-weight: 700; color: black;">Trail Camera Placement</div>
+                          <div class="scene-snippet">Asher kneels at base of dead oak, places trail camera, assembles boom pole with methodical movements.</div>
+                        </td>
+                        <td>Eli</td>
+                    </tr>
+                    <tr>
+                        <td><strong>s00a.5</strong></td>
+                        <td>
+                          <div style="font-weight: 700; color: black;">Acoustic Trap Installation</div>
+                          <div class="scene-snippet">Asher outlines perimeter, digs hole with folding trowel, installs acoustic trap with microphone array.</div>
+                        </td>
+                        <td>Eli</td>
+                    </tr>
+                    <tr>
+                        <td><strong>s00a.7</strong></td>
+                        <td>
+                          <div style="font-weight: 700; color: black;">Equipment Covering</div>
+                          <div class="scene-snippet">Asher covers equipment with damp soil, leaf litter, and moss — careful trowel work to hide placement.</div>
+                        </td>
+                        <td>Eli</td>
+                    </tr>
+                    <tr>
+                        <td><strong>s00a.8</strong></td>
+                        <td>
+                          <div style="font-weight: 700; color: black;">The Listening</div>
+                          <div class="scene-snippet">Asher freezes mid-movement, listening to something only he can hear. A moment of realization.</div>
+                        </td>
+                        <td>Eli</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <section class="compact-block">
+                <div class="compact-label">Locations</div>
+                <div class="compact-panel" style="padding: 0;">
+                    <ol style="margin:0; padding-left:18px;">
+                        <li style="padding:8px 0; border-bottom:1px solid #ddd;"><strong>Location 1:</strong> <span style="color:#666;">TBD</span></li>
+                        <li style="padding:8px 0; border-bottom:1px solid #ddd;"><strong>Location 2:</strong> <span style="color:#666;">TBD</span></li>
+                        <li style="padding:8px 0; border-bottom:1px solid #ddd;"><strong>Location 3:</strong> <span style="color:#666;">TBD</span></li>
+                        <li style="padding:8px 0; border-bottom:1px solid #ddd;"><strong>Location 4:</strong> <span style="color:#666;">TBD</span></li>
+                        <li style="padding:8px 0;"><strong>Location 5:</strong> <span style="color:#666;">TBD</span></li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="compact-block">
+                <div class="compact-label">Crew</div>
+                <div class="compact-panel">
+                    <div style="display:grid; gap:8px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); font-size:0.84rem;">
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Camera</div><div style="margin-top:3px;">TBD</div></div>
+                        <div><div style="font-size:0.68rem; text-transform:uppercase; color:#555; font-weight:700;">Sound</div><div style="margin-top:3px;">TBD</div></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="compact-block" style="margin-top:16px;">
+                <div class="compact-label">Shot List</div>
+                <div class="compact-panel">
+                    <ol style="margin:0; padding-left:18px; list-style:none;">
+                        <li style="padding:10px 0; border-bottom:1px solid #ddd; display:block;">
+                            <div style="display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+                                <div style="min-width:0; flex:1;">
+                                    <div style="font-weight:700;">
+                                        <span style="color:#555; font-size:0.78rem; margin-right:6px;">1.</span>
+                                        Trail Camera Setup
+                                    </div>
+                                    <div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">CU of fingers placing camera • WS of Asher assembling boom pole • Methodical hand movements</div>
+                                </div>
+                                <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">Eli</div>
+                            </div>
+                        </li>
+                        <li style="padding:10px 0; border-bottom:1px solid #ddd; display:block;">
+                            <div style="display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+                                <div style="min-width:0; flex:1;">
+                                    <div style="font-weight:700;">
+                                        <span style="color:#555; font-size:0.78rem; margin-right:6px;">2.</span>
+                                        Acoustic Trap Installation
+                                    </div>
+                                    <div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">CU trowel digging • WS of perimeter outline • Equipment placement detail • Soil covering technique</div>
+                                </div>
+                                <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">Eli</div>
+                            </div>
+                        </li>
+                        <li style="padding:10px 0; border-bottom:1px solid #ddd; display:block;">
+                            <div style="display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+                                <div style="min-width:0; flex:1;">
+                                    <div style="font-weight:700;">
+                                        <span style="color:#555; font-size:0.78rem; margin-right:6px;">3.</span>
+                                        Concealment Work
+                                    </div>
+                                    <div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">Careful moss/leaf litter placement • Final trowel work • Ground appears undisturbed • Detail of hands</div>
+                                </div>
+                                <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">Eli</div>
+                            </div>
+                        </li>
+                        <li style="padding:10px 0; display:block;">
+                            <div style="display:flex; gap:12px; justify-content:space-between; align-items:flex-start;">
+                                <div style="min-width:0; flex:1;">
+                                    <div style="font-weight:700;">
+                                        <span style="color:#555; font-size:0.78rem; margin-right:6px;">4.</span>
+                                        The Listening
+                                    </div>
+                                    <div style="font-size:0.75rem; color:#666; margin-top:4px; line-height:1.3; font-style: italic;">Asher's face • Hand freeze mid-movement • Body tension • Point of view of sound • Quiet moment</div>
+                                </div>
+                                <div style="flex:0 0 32%; min-width:120px; text-align:right; font-size:0.78rem; color:#555; line-height:1.3;">Eli</div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section style="margin-top:16px; display:flex; flex-direction:column; gap:12px;">
+                <div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">EQUIPMENT & PROPS</h3>
+                    <div style="font-size:0.84rem; line-height:1.4;">
+                        <div style="margin-bottom:8px;"><strong>Required Equipment:</strong></div>
+                        <ul style="margin:0 0 8px 18px; padding:0;">
+                            <li>Trail cameras</li>
+                            <li>Boom pole (assembled)</li>
+                            <li>Acoustic traps / microphone array</li>
+                            <li>Folding trowel (military-issue, small)</li>
+                            <li>Leaf litter & moss for concealment</li>
+                            <li>Damp soil (marsh soil)</li>
+                        </ul>
+                        <div style="color:#666; font-style:italic; font-size:0.78rem;">Confirm all audio gear is functional before shoot</div>
+                    </div>
+                </div>
+                <div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">LOCATION DETAILS</h3>
+                    <div style="font-size:0.84rem;"><div style="color:#666; font-style:italic;">Location details and parking TBD</div></div>
+                </div>
+                <div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">CAST NEEDED</h3>
+                    <div style="display:flex; flex-wrap:wrap; gap:6px; font-size:0.84rem; min-height:28px;">
+                        <span style="display:inline-block; border:1px solid #000; padding:3px 8px; border-radius:999px; font-weight:700;">Eli (Asher)</span>
+                    </div>
+                </div>
+                <div class="compact-panel">
+                    <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">NOTES</h3>
+                    <div style="font-size:0.84rem; line-height:1.4;">
+                        <ul style="margin:0 0 8px 18px; padding:0;">
+                            <li><strong>No dialogue.</strong> Entirely physical/visual performance.</li>
+                            <li><strong>Methodical work:</strong> All movements deliberate and careful. Preserve rhythm of equipment assembly.</li>
+                            <li><strong>Listening moment:</strong> Critical beat — Asher's freeze and realization is the emotional pivot of the scene.</li>
+                            <li><strong>Marsh environment:</strong> Check for proper wet soil, natural ground cover available on location.</li>
+                            <li><strong>Safety:</strong> Scout location for uneven terrain, water hazards, trespassing concerns.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </body>
+</html>

@@ -644,19 +644,46 @@
     },
     {
       "day": 2,
-      "estLength": "2.5h",
+      "estLength": "3.5h",
       "scenes": [
         "s00a"
       ],
       "shotList": [
         {
-          "beat": "s00a",
-          "title": "Opening montage - Branford locations",
+          "beat": "s00a.4",
+          "title": "Trail Camera Placement",
           "scene": "s00a",
           "cast": [
             "Eli"
           ],
-          "description": "Montage coverage across 5-10 Branford locations with gimbal work\r"
+          "description": "Asher kneels at base of dead oak, places trail camera into bark, assembles boom pole piece by piece with practiced, methodical movements.\r"
+        },
+        {
+          "beat": "s00a.5",
+          "title": "Acoustic Trap Installation",
+          "scene": "s00a",
+          "cast": [
+            "Eli"
+          ],
+          "description": "Asher outlines perimeter with trowel, digs careful hole, installs concealed acoustic trap with microphone array into marsh soil.\r"
+        },
+        {
+          "beat": "s00a.7",
+          "title": "Equipment Covering",
+          "scene": "s00a",
+          "cast": [
+            "Eli"
+          ],
+          "description": "Asher covers installed equipment with damp soil, then leaf litter and moss, using trowel so carefully ground appears undisturbed.\r"
+        },
+        {
+          "beat": "s00a.8",
+          "title": "The Listening",
+          "scene": "s00a",
+          "cast": [
+            "Eli"
+          ],
+          "description": "Asher freezes mid-movement, hand hovers. His body remembers a sound. A beat of realization that 'it is back.'\r"
         }
       ]
     },
