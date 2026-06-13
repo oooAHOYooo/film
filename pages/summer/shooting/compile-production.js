@@ -757,6 +757,19 @@ function generateFullHtml(rows, totalDays, productionData) {
                     ${castDateSummaryHtml}
                   </div>
                 </section>
+
+                <section style="margin-bottom: 40px;">
+                  <h2 style="color: #000; margin: 0 0 12px 0; font-size: 1.2rem; letter-spacing: 0.04em; text-transform: uppercase;">Additional Resources</h2>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <div class="stats-card" style="cursor: pointer; margin-bottom: 0;" onclick="window.location.href='resources/film-grammar.html'">
+                      <div style="display:flex; justify-content:space-between; align-items:center; gap:12px;">
+                        <div style="font-weight: 700; color: #000; font-size: 0.95rem;">Film Grammar</div>
+                        <a href="resources/film-grammar.html" style="color: #000; text-decoration: none; font-weight: 600;">Open</a>
+                      </div>
+                      <div style="font-size: 0.78rem; color: #555; margin-top: 4px;">Rules and conventions for shot composition, camera movement, and visual storytelling.</div>
+                    </div>
+                  </div>
+                </section>
             </main>
         </div>
     </body>
