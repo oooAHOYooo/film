@@ -641,22 +641,27 @@ shots:
 
 est-length: 2.5h
 scenes: s00a
+cast: Asher
 
 crew-call:
   CALL: 1:00 PM
   MEET: CPC
   DRIVE: 1:15 PM — Depart for Branford
-  SHOOT: 2:00 PM - 4:30 PM — s00a · Opening montage - multiple Branford locations
+  SHOOT: 2:00 PM - 4:30 PM — s00a · Opening montage - Asher marsh-edge beats
   WRAP: 4:45 PM
 
 crew:
-  - Cast: Eli
+  - Cast: Eli (Asher)
   - Camera: Alex
   - Audio: TBD
   - Clapper: TBD
 
 locations:
-  - 5-10 Branford locations (to be detailed)
+  - Dead tree or fence post — trail camera placement
+  - Open grass patch — boom pole assembly
+  - Soft diggable marsh soil — trowel digging and sensor node burial
+  - Leafy or mossy patch — node concealment and ground dressing
+  - Dense reeds — listening and freeze performance beat
 
 equipment:
   - Camera body + charged batteries + formatted media cards
@@ -669,12 +674,48 @@ equipment:
   - Shotgun mic with windscreen
   - XLR cables, SDI cables
   - Gaffer tape, lens cloth, lens blower, toolkit
+  - Towel and wipes for dirt resets
+  - Plastic bag or bin for dirty props
 
-#### Beat: s00a — Opening montage - Branford locations
+props:
+  - Spherical sensor node
+  - Small backpack or field pouch
+  - Folding trowel
+  - Small notebook (for Asher to mark nodes)
+
+#### DIRECTOR NOTE
+Asher is not discovering the marsh. He has done this before. His movements should be quiet, practiced, and methodical. The nodes are part of a pre-existing system.
+Dallas is not needed today. Today's shots are s00a.4 through s00a.8 — Asher only.
+
+#### SHOOTING ORDER
+  - Trail camera hero setup
+  - Digging and spherical sensor node planting
+  - Boom pole and gear ritual inserts
+  - Listening and freeze performance beat
+  - Safety pickups: reeds, undisturbed ground, node close-ups, hands, pouch, trowel
+
+#### FRAMING NOTE
+For digging and node-planting close-ups, favor Asher frame-left with the hole, node, and marsh negative space frame-right. Dallas can remain frame-right in later dialogue scenes, but Asher should not visually match Dallas yet.
+
+#### Beat: s00a.4 — Trail Camera Placement
 scene: s00a
 cast: Eli
-description: Montage coverage across 5-10 Branford locations with gimbal work
-notes: First gimbal deployment; multiple location moving shots
+description: Asher kneels at the base of a dead oak, places a trail camera into the bark, and assembles a boom pole piece by piece with practiced, methodical movements.
+
+#### Beat: s00a.5 — Sensor Node Digging
+scene: s00a
+cast: Eli
+description: Asher traces a small perimeter in the marsh soil, digs a careful hole with a folding trowel, and checks the tree line between strokes.
+
+#### Beat: s00a.7 — Spherical Sensor Node Installation
+scene: s00a
+cast: Eli
+description: Asher lowers a small spherical sensor node into the hole, adjusts its angle, then covers it with damp soil, leaf litter, and moss until the ground looks undisturbed.
+
+#### Beat: s00a.8 — The Listening
+scene: s00a
+cast: Eli
+description: Asher freezes mid-movement. His hand hovers. His body recognizes a sound before he fully processes it. A beat of realization: it is back.
 
 ---
 

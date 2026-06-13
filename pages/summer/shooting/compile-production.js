@@ -216,10 +216,14 @@ function buildProductionRows(scenes, productionData, plotCards) {
     const content = loadScene(scene.file);
     const { location: parsedLocation, time: parsedTime } = parseSceneHeading(content);
     const characters = extractCharacters(content);
-    if (characters.length === 0 && /\b[Dd]allas\b/.test(content)) {
-        characters.push('DALLAS');
-    }
     const data = productionData[id] || (scene.file ? productionData[scene.file.replace('.md', '').toLowerCase()] : {}) || {};
+    if (characters.length === 0) {
+        if (Array.isArray(data.cast) && data.cast.length > 0) {
+            characters.push(...data.cast.map(c => c.toUpperCase()));
+        } else if (/\b[Dd]allas\b/.test(content)) {
+            characters.push('DALLAS');
+        }
+    }
     const location = data.location != null && data.location !== '' ? data.location : parsedLocation;
     const time = data.time != null && data.time !== '' ? data.time : parsedTime;
     const durationMin = data.durationMin;
@@ -808,13 +812,11 @@ function generateDayHtml(dayNum, rows, productionData) {
   const summaryLocations = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'locations')
     ? unique(Array.isArray(planEntry.locations) ? planEntry.locations : [planEntry.locations])
     : unique(dayRows.map((r) => r.location || '').filter((loc) => loc && loc !== '—'));
+  const castOverride = planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
+    ? (Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
+    : null;
   const summaryCast = Array.from(new Map(
-    [
-      ...(planEntry && Object.prototype.hasOwnProperty.call(planEntry, 'cast')
-        ? (Array.isArray(planEntry.cast) ? planEntry.cast : [planEntry.cast])
-        : []),
-      ...dayRows.flatMap((r) => r.characters || []),
-    ]
+    (castOverride !== null ? castOverride : dayRows.flatMap((r) => r.characters || []))
       .filter(Boolean)
       .map((name) => {
         const normalized = nicknameToTitle(name);
@@ -878,7 +880,7 @@ function generateDayHtml(dayNum, rows, productionData) {
   }
 
   const sceneRows = dayScenes.map(r => {
-    const chars = (r.characters || []).join(', ');
+    const chars = (castOverride !== null ? summaryCast : (r.characters || [])).join(', ');
     let snippet = r.resolved ? extractSceneSnippet(r.content, r.fileId) : '';
     // Override description for s00b-pickup
     if (r.fileId === 's00b') {
@@ -1278,7 +1280,7 @@ function generateDayHtml(dayNum, rows, productionData) {
             <section style="margin-top:16px; display:flex; flex-direction:column; gap:12px;">
                 <div class="compact-panel">
                     <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">PROPS</h3>
-                    <div style="font-size:0.84rem; min-height:40px; white-space: pre-wrap;">${summaryProps.length > 0 ? summaryProps.map(p => `<div style="margin-bottom: 2px;">☐ ${escapeHtml(p)}</div>`).join('') : '<div style="color:#666; font-style:italic;">No props listed for this day.</div>'}</div>
+                    <div style="font-size:0.84rem; min-height:40px; white-space: pre-wrap;">${summaryProps.length > 0 ? summaryProps.map(p => `<div style="margin-bottom: 2px;">☐ ${escapeHtml(p.replace(/^•\s*/, ''))}</div>`).join('') : '<div style="color:#666; font-style:italic;">No props listed for this day.</div>'}</div>
                 </div>
                 <div class="compact-panel">
                     <h3 style="margin:0 0 6px 0; font-size:0.9rem; border-bottom:1px solid #000; padding-bottom:4px; color:#000;">EQUIPMENT</h3>
@@ -1311,6 +1313,29 @@ function generateDayHtml(dayNum, rows, productionData) {
                         ${n.heading ? `<div style="font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:#555; margin-bottom:3px;">${escapeHtml(n.heading)}</div>` : ''}
                         <div style="font-size:0.82rem; line-height:1.45; color:#111;">${escapeHtml(n.note)}</div>
                     </div>`).join('<hr style="border:none; border-top:1px solid #eee; margin:2px 0;">')}
+                </div>
+            </section>` : ''}
+            ${planEntry && planEntry.directorNote ? `
+            <section class="compact-block" style="margin-top:16px;">
+                <div class="compact-label">Director Note</div>
+                <div class="compact-panel">
+                    <div style="font-size:0.84rem; line-height:1.55;">${markdownToHtml(planEntry.directorNote)}</div>
+                </div>
+            </section>` : ''}
+            ${planEntry && Array.isArray(planEntry.shootingOrder) && planEntry.shootingOrder.length ? `
+            <section class="compact-block" style="margin-top:16px;">
+                <div class="compact-label">Shooting Order</div>
+                <div class="compact-panel">
+                    <ol style="margin:0; padding-left:20px;">
+                        ${planEntry.shootingOrder.map((item) => `<li style="padding:3px 0; font-size:0.84rem; line-height:1.4;">${escapeHtml(item)}</li>`).join('')}
+                    </ol>
+                </div>
+            </section>` : ''}
+            ${planEntry && planEntry.framingNote ? `
+            <section class="compact-block" style="margin-top:16px;">
+                <div class="compact-label">Framing Note</div>
+                <div class="compact-panel">
+                    <div style="font-size:0.84rem; line-height:1.55; font-style:italic;">${markdownToHtml(planEntry.framingNote)}</div>
                 </div>
             </section>` : ''}
         </div>

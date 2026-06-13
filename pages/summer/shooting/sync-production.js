@@ -156,8 +156,8 @@ function parseDay(dayNum, dayLines) {
   const day = { day: dayNum };
   let i = 0;
 
-  // Parse day-level fields until first beat or settings section
-  while (i < dayLines.length && !dayLines[i].startsWith('#### Beat:') && !dayLines[i].startsWith('#### CAMERA') && !dayLines[i].startsWith('#### SETTINGS')) {
+  // Parse day-level fields until first #### section
+  while (i < dayLines.length && !dayLines[i].startsWith('#### ')) {
     const line = dayLines[i];
     if (!line.trim() || line === '---') { i++; continue; }
 
@@ -165,6 +165,10 @@ function parseDay(dayNum, dayLines) {
     else if (line.startsWith('scenes:')) {
       const v = val(line, 'scenes').trim();
       day.scenes = v ? v.split(',').map(s => s.trim()) : [];
+    }
+    else if (line.startsWith('cast:')) {
+      const v = val(line, 'cast').trim();
+      day.cast = v ? v.split(',').map(s => s.trim()) : [];
     }
     else if (line === 'crew-call:') {
       const { items, next } = collectIndented(dayLines, i + 1);
@@ -199,8 +203,8 @@ function parseDay(dayNum, dayLines) {
     i++;
   }
 
-  // Parse camera/audio settings if present
-  while (i < dayLines.length && (dayLines[i].startsWith('#### CAMERA') || dayLines[i].startsWith('#### SETTINGS'))) {
+  // Parse named #### sections (not beats)
+  while (i < dayLines.length && dayLines[i].startsWith('#### ') && !dayLines[i].startsWith('#### Beat:')) {
     const line = dayLines[i];
     if (line.startsWith('#### CAMERA & AUDIO SETTINGS')) {
       const settingsLines = [];
@@ -218,6 +222,26 @@ function parseDay(dayNum, dayLines) {
         i++;
       }
       day.settingsOverview = settingsLines.join('\n').trim();
+    } else if (line.startsWith('#### DIRECTOR NOTE')) {
+      const noteLines = [];
+      i++;
+      while (i < dayLines.length && !dayLines[i].startsWith('#### ')) {
+        noteLines.push(dayLines[i]);
+        i++;
+      }
+      day.directorNote = noteLines.join('\n').trim();
+    } else if (line.startsWith('#### SHOOTING ORDER')) {
+      const { items, next } = collectList(dayLines, i + 1);
+      day.shootingOrder = items;
+      i = next;
+    } else if (line.startsWith('#### FRAMING NOTE')) {
+      const noteLines = [];
+      i++;
+      while (i < dayLines.length && !dayLines[i].startsWith('#### ')) {
+        noteLines.push(dayLines[i]);
+        i++;
+      }
+      day.framingNote = noteLines.join('\n').trim();
     } else {
       i++;
     }
