@@ -4,6 +4,31 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 
 ---
 
+# CHANGE LOG — Cut crystal, seed recorder token (s15 / s20 / s25)
+*Applied 2026-06-15 12:40 EDT · SHOOTING version only (`pages/summer/shooting/`). Supersedes any earlier reference to the crystal device — that element is now fully removed from all shooting scenes.*
+
+## Changes applied
+
+| Scene | Change |
+|---|---|
+| **s20** (~line 48) | Crystal device cut. Dallas now grabs one of Asher's spherical recorders off the desk and presses it into Dominic's hands. Dominic's "Keep who at bay?" line preserved; scene continues unchanged into the red-eyes / blackout beat. |
+| **s15** (after oscillator handoff, ~line 38) | New two-beat insert: Asher pulls a smaller, scuffed recorder from the wooden box and holds it out to Dominic. "What am I supposed to do with this?" Asher shrugs; Dominic pockets it. Establishes the recorder as Dominic's personal token before the climax. |
+| **s25** (before "The recorders converge…", ~line 30) | New single beat: Dominic feels a tug at his jacket pocket; the scuffed recorder lifts free and joins the stream. Pays off the s15 token plant inside the existing swarm convergence passage. |
+
+## CSS fix (same session)
+- `compile.js` full_script template: `../../script-system/script.css` → `../../omitted/script-system/script.css`
+- `compile.js` gallery template: `script.css` → `../../omitted/script-system/script.css`
+- Both generated files (full_script.html, index.html) recompiled with corrected paths.
+
+## Crystal cleared
+- Full-text grep of `pages/summer/shooting/script-system/` after changes: zero hits for "crystal".
+- Old `creatures_in_the_tall_grass_full_script__9_.md` archive retains historical crystal references — left alone by design.
+
+## Recompiled
+- `node pages/summer/shooting/script-system/compile.js` — full_script.md/.html, plot cards, gallery.
+
+---
+
 # CHANGE LOG — Family continuity patch: Makayla fully cut · "Blood matters less than who stayed"
 *Applied 2026-06-10 14:50 EDT · SHOOTING version only (`pages/summer/shooting/`). Locks the post-Makayla family continuity: Dominic and Asher are brothers (much older / much younger, possibly not blood), Mr. Mike is "uncle" because he took people in and stayed. Earlier change-log entries below still name Makayla; they are historical records of drafts that predate the cut.*
 

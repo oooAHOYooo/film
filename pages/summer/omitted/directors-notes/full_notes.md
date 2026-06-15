@@ -1,6 +1,6 @@
 # Director's Notes — Creatures in the Tall Grass
 
-*Compiled on 6/11/2026, 11:49:59 AM*
+*Compiled on 6/15/2026, 12:42:20 PM*
 
 ---
 
@@ -9,6 +9,31 @@
 # Script Additions
 
 Notes and ideas to add or change in the script. Use this as a running list; you can also add scene-specific additions in each scene’s director note.
+
+---
+
+# CHANGE LOG — Cut crystal, seed recorder token (s15 / s20 / s25)
+*Applied 2026-06-15 12:40 EDT · SHOOTING version only (`pages/summer/shooting/`). Supersedes any earlier reference to the crystal device — that element is now fully removed from all shooting scenes.*
+
+## Changes applied
+
+| Scene | Change |
+|---|---|
+| **s20** (~line 48) | Crystal device cut. Dallas now grabs one of Asher's spherical recorders off the desk and presses it into Dominic's hands. Dominic's "Keep who at bay?" line preserved; scene continues unchanged into the red-eyes / blackout beat. |
+| **s15** (after oscillator handoff, ~line 38) | New two-beat insert: Asher pulls a smaller, scuffed recorder from the wooden box and holds it out to Dominic. "What am I supposed to do with this?" Asher shrugs; Dominic pockets it. Establishes the recorder as Dominic's personal token before the climax. |
+| **s25** (before "The recorders converge…", ~line 30) | New single beat: Dominic feels a tug at his jacket pocket; the scuffed recorder lifts free and joins the stream. Pays off the s15 token plant inside the existing swarm convergence passage. |
+
+## CSS fix (same session)
+- `compile.js` full_script template: `../../script-system/script.css` → `../../omitted/script-system/script.css`
+- `compile.js` gallery template: `script.css` → `../../omitted/script-system/script.css`
+- Both generated files (full_script.html, index.html) recompiled with corrected paths.
+
+## Crystal cleared
+- Full-text grep of `pages/summer/shooting/script-system/` after changes: zero hits for "crystal".
+- Old `creatures_in_the_tall_grass_full_script__9_.md` archive retains historical crystal references — left alone by design.
+
+## Recompiled
+- `node pages/summer/shooting/script-system/compile.js` — full_script.md/.html, plot cards, gallery.
 
 ---
 
@@ -456,67 +481,55 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 *No director's note for this scene.*
 
-#### Scene 24: The Failed Test
-
-*ID: the-failed-test*
-
-*No director's note for this scene.*
-
-#### Scene 25: Makayla's Tracking Box
+#### Scene 24: Makayla's Tracking Box
 
 *ID: the-tracking-box*
 
 *No director's note for this scene.*
 
-#### Scene 26: Dominic's Confession
-
-*ID: dominics-confession*
-
-*No director's note for this scene.*
-
-#### Scene 27: Back Home
+#### Scene 25: Back Home
 
 *ID: the-escape*
 
 *No director's note for this scene.*
 
-#### Scene 28: Resonance
+#### Scene 26: Resonance
 
 *ID: resonance*
 
 *No director's note for this scene.*
 
-#### Scene 29: Normal Day
+#### Scene 27: Normal Day
 
 *ID: normal-day*
 
 *No director's note for this scene.*
 
-#### Scene 30: Mute Drive
+#### Scene 28: Mute Drive
 
 *ID: mute-drive*
 
 *No director's note for this scene.*
 
-#### Scene 31: Life Group Arrives
+#### Scene 29: Life Group Arrives
 
 *ID: life-group-arrives*
 
 *No director's note for this scene.*
 
-#### Scene 32: The Hymn
+#### Scene 30: The Hymn
 
 *ID: the-hymn*
 
 *No director's note for this scene.*
 
-#### Scene 33: The Secret is Out
+#### Scene 31: The Secret is Out
 
 *ID: red-eyes*
 
 *No director's note for this scene.*
 
-#### Scene 34: The Burn Marks
+#### Scene 32: The Burn Marks
 
 *ID: creature-missing*
 
@@ -525,25 +538,25 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT III — The Return
 
-#### Scene 35: The Load-Out
+#### Scene 33: The Load-Out
 
 *ID: marsh-confrontation*
 
 *No director's note for this scene.*
 
-#### Scene 36: The Trench Run
+#### Scene 34: The Trench Run
 
 *ID: predator-attack*
 
 *No director's note for this scene.*
 
-#### Scene 37: The Sanctuary & The Siege
+#### Scene 35: The Sanctuary & The Siege
 
 *ID: the-perimeter*
 
 *No director's note for this scene.*
 
-#### Scene 38: The Final Blast
+#### Scene 36: The Final Blast
 
 *ID: the-last-dinner*
 
@@ -572,19 +585,19 @@ Action: The "Storm is missed." The neighborhood is safe, and the tall grass retu
 
 ### ACT IV — Aftermath
 
-#### Scene 39: The Morning After
+#### Scene 37: The Morning After
 
 *ID: final-echoes*
 
 *No director's note for this scene.*
 
-#### Scene 40: Aftermath
+#### Scene 38: Aftermath
 
 *ID: aftermath*
 
 *No director's note for this scene.*
 
-#### Scene 41: Full Circle
+#### Scene 39: Full Circle
 
 *ID: full-circle*
 

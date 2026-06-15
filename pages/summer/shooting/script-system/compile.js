@@ -269,7 +269,7 @@ function generateHTMLPage(markdown, scenes) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Script - ${SCRIPT_NAME}</title>
-  <link rel="stylesheet" href="../../script-system/script.css?v=20260108-5">
+  <link rel="stylesheet" href="../../omitted/script-system/script.css?v=20260108-5">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
@@ -1016,7 +1016,7 @@ function generateGalleryPage(cardsData) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creatures in the Tall Grass Script - Scene Gallery</title>
-  <link rel="stylesheet" href="script.css?v=${new Date().toISOString().split('T')[0]}">
+  <link rel="stylesheet" href="../../omitted/script-system/script.css?v=${new Date().toISOString().split('T')[0]}">
 </head>
 <body class="plot-cards-page">
   <div class="gallery-container">
