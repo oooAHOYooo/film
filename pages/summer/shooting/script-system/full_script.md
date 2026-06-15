@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/11/2026, 11:58:53 AM*
+*Compiled on 6/15/2026, 12:39:06 PM*
 
 ---
 
@@ -64,7 +64,7 @@ He is not thinking about the house yet.
 
 INT. MARSH EDGE - CONTINUOUS (s00a.7)
 
-Close-up. Asher's hands work a piece of equipment into the hole he has dug. It is small, circular, with a microphone array. An acoustic trap. He covers it with damp soil, then with a thin layer of leaf litter and moss, troweled so carefully that the ground looks undisturbed.
+Close-up. Asher's hands lower a small spherical device into the hole. It is matte black, about the size of a golf ball, with tiny recessed ports around its surface. Not a camera. Not exactly a microphone. A sensor node. He angles it carefully, then covers it with damp soil, leaf litter, and moss until the ground looks untouched.
 
 He sits back. His hands are still.
 
@@ -383,7 +383,14 @@ EXT. DALLAS HOUSE - NIGHT (s02.7)
 
 Dallas stands alone watching the tall grass sway agaisnt the salt breeze. Coyotes howl in the distance and the hum decreases in scale and size as the starry night disappears into the distance of the tall marsh grass. He sees a faint golden glow pulse once, twice, five times, three times. 
 
-In the distance a thunderstorm brews.
+In the distance a thunderstorm brews. 
+
+ 
+EXT. BRANFORD AT NIGHT MONTAGES (s02.3)
+
+Dallas walks around at night with a recorder in his hand. As he walks along the different coastal neighborhoods - as he stops by a particular puzzling patch of tall grass - he takes big deep breath and pulls out his recorder. He records the sounds of the ocean. 
+
+On the way home - he records the breeze of the tall grass.
 
 ---
 
@@ -396,16 +403,7 @@ In the distance a thunderstorm brews.
 
 <!-- scene: 2 file: s02.3.md nickname: branford-night-discovery -->
 
-# Scene 2.3: Branford at Night Montages
-<!-- summary: Dallas walks around Branford at night with a recorder, discovering the weirdness of the neighborhood and tall grass. -->
-
-<!-- Filming On  6.7.26 @ Branford  -->
-
-EXT. BRANFORD AT NIGHT MONTAGES (s02.3)
-
-Dallas walks around at night with a recorder in his hand. As he walks along the different coastal neighborhoods - as he stops by a particular puzzling patch of tall grass - he takes big deep breath and pulls out his recorder. He records the sounds of the ocean. 
-
-On the way home - he records the breeze of the tall grass.
+[SCENE FILE MISSING: s02.3.md]
 
 ---
 
@@ -1767,10 +1765,6 @@ Dallas looks back at him and continues to fiddle with the Oscillator.
 (action)
 Dallas sits for a while on the long old picnic table outside his house. In the distance the creature begins to cry and then it fades. Dallas looks down at the trailcam in the distance. 
 
-DALLAS
-(to himself)
-We can't tell anyone. Not until I document this. 
-
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
@@ -2177,17 +2171,14 @@ Dallas stares at the towel—at the faint GOLDEN GLOW bleeding through.
 <!-- s15 -->
 <!-- FILMING ON DAY 4 -->
 EXT. NEIGHBORHOODS - EVENING (s15.1)
-Dallas, Dominic and Asher walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
+Dallas and Asher walk towards the neighborhood and begin the long process of making their journey down golden hour filled woodland area - as they approach a big field open field. At the end of the field are some tall trees. Dallas stops and peers around. 
 
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 As they cut through the reeds, Asher stops every so often to press small devices down into the mud at the base of the stalks. Each one blinks a slow, faint amber as it powers on. 
 
-Dallas watches a scatter of them pulse in the dusk.
-
-DOMINIC
-Listening posts. He's been seeding the whole marsh with them — for years now. Every spot that sound of his has ever touched. 
+Dallas watches a scatter of them pulse in the dusk — listening posts, seeding the whole marsh, every spot that sound has ever touched.
 
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
@@ -2197,7 +2188,7 @@ Asher trails a step behind. Each time one of the nodes blinks to life, he thread
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
-The three walk into the field and find a small wooden chest on the ground, hidden beneath a field of tall grass. 
+The two walk into the field and find a small wooden chest on the ground, hidden beneath a field of tall grass. 
 
 EXT. ASHER'S SPECIAL WOODED SPOT - CONTINUOUS (s15.2)
 As they approach the structure, they can see that it is a small wooden structure hidden by fallen trees and branches. 
@@ -2217,24 +2208,10 @@ Asher walks over and turns the device on. It lights up.
 (action)
 Dallas looks confused at the wiring. 
 
-DOMINIC
-Don't worry Mr. Dallas - one day you'll hear all about my brother's inventions - they are going to change the world... 
-
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas looks at one of the inventions on the ground. 
-
-DOMINIC
-Do you believe that things happen for a reason?
-
-<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
-
-(action)
-Dallas reamins still, not making eye contact. 
-
-DOMINIC
-Well they do. I do. 
 
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
@@ -2244,7 +2221,24 @@ Asher takes out a pocket tripod - and a pocket microphone - and begins to to rec
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
-Asher lifts a small wooden box and holds it out to Dallas without a word. Dallas opens it and finds a spare oscillator inside, wrapped in cloth, the dial worn smooth from use. Dallas holds it, fascinated.
+Asher lifts a small wooden box and holds it out to Dallas without a word. Dallas opens it and finds a spare oscillator inside, wrapped in cloth, Dallas holds it, fascinated.
+
+
+
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
+
+(action)
+Asher reaches into the wooden box again and pulls out one of the spherical recorders — smaller than the others, scuffed, clearly an early build. He holds it out to Dominic.
+
+DOMINIC
+What am I supposed to do with this?
+
+
+
+<!-- scene: 15 file: s15.md nickname: the-tracking-box -->
+
+(action)
+Asher shrugs and turns back to his gear. Dominic turns the little sphere over in his hands, then pockets it.
 
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
@@ -2254,30 +2248,24 @@ Asher walks over to a little portable device, also hidden by a bunch of branches
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
-Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. 
-
-Dallas wakes up. 
-
-
-DOMINIC
-Dallas. Dallas! You alright? 
+Dallas grips - and has a wild trip.  As he does - a distant cry is heard in the distance. Dallas falls to the ground -head shaking. 
 
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
-Asher shrugs, slow. Dominic looks between the two of them, then out at the trees.
+Asher runs to Dallas. Dallas wakes up. 
 
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
-In the distance the howls are getting more ganrly. The three of them stand silent in fear.
+In the distance the howls are getting more ganrly. The two of them stand silent in fear.
 
 <!-- scene: 15 file: s15.md nickname: the-tracking-box -->
 
 (action)
 Dallas begins to record a bit on his pocket recorder. still out of breath. 
 
-DOMINIC
+DALLAS
 (takes a deep breath and contemplates for a while)
 We should go.
 
@@ -2689,6 +2677,338 @@ Dominic closes the basement door and returns upstairs before anyone notices.
 ---
 
 
+## ACT IV — Aftermath
+
+---
+
+
+### Scene 18: Life Group Arrives
+
+*ACT IV — Aftermath | ID: life-group-arrives | File: s18_REVISED.md*
+
+---
+
+<!-- scene: 18 file: s18_REVISED.md nickname: life-group-arrives -->
+
+<!-- nickname: life-group-arrives -->
+
+<!-- GOING TO FILM ON DAY 11 -->
+
+INT. DOMINIC'S KITCHEN / LIVING ROOM - NIGHT (s18.1)
+
+Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates. Conversation hums. Casual. Normal.
+
+The doorbell is heard.
+
+INT. DOMINIC'S HALLWAY (S18.2)
+
+Dominic answers the door and sees Dallas. Dallas quietly pulls him to the corner.
+
+DALLAS
+(low, urgent)
+It's getting agitated. The hum from outside—it's responding. I need to keep it calm or something's going to happen.
+
+DOMINIC
+(strained smile)
+You're going to have to manage downstairs. We have forty people up here.
+
+---
+
+INT. DOMINIC'S KITCHEN - MOMENTS LATER (s18.3)
+
+The kitchen island is crowded. Brownies, popcorn, drinks. Dominic moves through the crowd, greeting people, keeping things flowing.
+
+SARAH
+(warm, to Dominic)
+Where's your friend Dallas? He seemed nice.
+
+DOMINIC
+(quick)
+Oh, he's—downstairs. Not feeling the best. Stomach thing.
+
+JOSH
+(from across the island)
+Dominic! Is Dallas coming up? We wanted to meet the new guy.
+
+DOMINIC
+(louder, forced brightness)
+He'll be up soon, just—
+
+From the corner of the living room, ASHER stands motionless, watching the kitchen. His eyes are on the basement door. He has something small and white in his closed fist.
+
+MARY
+(noticing)
+Asher, honey, you want a brownie?
+
+Asher doesn't respond. He's tense. He slowly drifts toward the kitchen.
+
+Dominic notices. He follows Asher with his eyes.
+
+Asher reaches for the sugar bowl. He palms three cubes silently. Then he turns toward the basement door.
+
+Dominic intercepts him—smoothly, casually—puts a hand on his shoulder.
+
+DOMINIC
+(low)
+Asher. Not right now.
+
+Asher's jaw tightens. His finger traces something on his leg—a pattern, over and over. He's anxious.
+
+PAUL
+(calling from the living room)
+Dominic, where's Asher going?
+
+DOMINIC
+(turning back)
+He's just—getting some air. Storm's making him antsy.
+
+But Asher hasn't moved. He's still staring at the basement door. His hand is still closed around the sugar cubes.
+
+---
+
+INT. DOMINIC'S BASEMENT - CONTINUOUS (s18.4)
+
+Dallas sits hunched over his receiver, headphones clamped to his ears. The creature is in the shoebox under the heat lamp. Its breathing is rapid. Erratic.
+
+On the portable oscilloscope beside him, the creature's heartbeat pulses in jagged red lines—panicked, responding to something outside.
+
+Dallas adjusts the dial. Broadcasts a soothing frequency. But the creature doesn't calm. It thrashes.
+
+DALLAS
+(to himself, working)
+Come on. Come on. I'm here. You're safe.
+
+The oscillator screen flares suddenly—a massive spike in the background frequency. The creature CRIES OUT.
+
+Dallas rips off his headphones. That hum. It's not ambient. It's getting closer.
+
+He looks at the creature. Its glow is flickering—like it's panicking. Like it *knows* something is coming.
+
+---
+
+INT. DOMINIC'S LIVING ROOM - UPSTAIRS (s18.5)
+
+The group settles into a circle. TYLER, 32, with a guitar, hands out music sheets.
+
+TYLER
+Would anyone like to say any words before we start?
+
+MR. MIKE sits in his rocking chair at the edge of the circle, staring toward the window. His leg bounces. His fingers tap against the armrest in an anxious rhythm.
+
+MR. MIKE
+(quietly, to himself)
+The song's wrong again. The wrong frequency. They hear it. They're listening.
+
+DOMINIC
+(overloud, to cover)
+We're just grateful to be here. Let's sing.
+
+The group begins: *"Great Is Thy Faithfulness..."*
+
+---
+
+INT. DOMINIC'S BASEMENT - CONTINUOUS (s18.6)
+
+The creature lets out a CRY.
+
+Dallas whips around. The shoebox is still there. The creature is still there. But—
+
+His eyes snap to the small hopper window at the top of the basement wall.
+
+It's open. How long has it been open?
+
+Dallas scrambles up. He checks the creature—it's still alive, still here—but something's wrong. The oscillator is screaming. The background hum is at a fever pitch.
+
+He frantically powers up his laptop. Pulls up the tracker feed from the small GPS tag he embedded in the creature's fur.
+
+The screen shows TWO signals now.
+
+One is stationary—the creature in the box.
+
+The other is *moving*. Fast. Away from the house. Toward the marsh.
+
+The creature got out. Somehow it got out. And something—*something else*—is chasing it.
+
+---
+
+INT. DOMINIC'S LIVING ROOM - UPSTAIRS (s18.7)
+
+The group sings louder. Voices rising.
+
+But underneath the hymn, barely audible at first, a LOW HUM begins to resonate through the floorboards.
+
+Sarah, sitting closest to the floor, feels her teacup vibrate. The liquid ripples in concentric circles.
+
+SARAH
+(to Dominic, unsettled)
+Is that—
+
+DOMINIC
+(quickly)
+The storm. Wind in the house.
+
+But it's not wind. The hum is rhythmic. Structured. And it's getting louder.
+
+Mr. Mike's rocking stops. His head snaps toward the basement door.
+
+MR. MIKE
+(louder, agitated)
+No. No no no. The dark ones. They're coming. They can hear it calling them here!
+
+TYLER
+(still singing, gesturing for everyone to keep going)
+Mr. Mike, it's just the wind—
+
+MR. MIKE
+(standing, pointing)
+No! The golden one is calling them! You brought it into the house and now they KNOW!
+
+The group falters. People exchange nervous glances. The singing stops.
+
+DOMINIC
+(standing, to Mr. Mike)
+Mr. Mike, let's sit down—
+
+But the lights flicker. Once. Twice. The windows rattle.
+
+DOMINIC (CONT'D)
+(to the group, forced calm)
+Just the storm pressure. Happens all the time in Branford. Really, everyone, just—
+
+---
+
+INT. DOMINIC'S BASEMENT - SAME MOMENT (s18.8)
+
+Dallas stares at the tracker screen. The escaped signal is moving deeper into the marsh. And behind it—dozens of red blips appearing on the map. Converging.
+
+The dark ones. They're hunting it.
+
+Dallas's hand shakes. He reaches for the handheld oscillator. Grabs it. Then stops.
+
+His eyes unfocus. The screen blurs.
+
+Suddenly—a VISION. His vision fills with RED EYES in darkness. Grass thrashing. The creature's cry, desperate and high. And the dark things closing in, their bramble arms reaching—
+
+Dallas gasps. His hand goes to his head.
+
+The vision fades but doesn't fully break. He's half-present. Half-elsewhere.
+
+He stands, moving like a sleepwalker toward the basement stairs.
+
+---
+
+INT. DOMINIC'S LIVING ROOM - CONTINUOUS (s18.9)
+
+JOSH
+(to Dominic)
+Maybe we should head out. With the storm and—
+
+DOMINIC
+Yeah. Yeah, I think that's—
+
+The basement door OPENS.
+
+Dallas emerges. But something's wrong. His eyes are glassy. He's moving with a kind of automatic purpose, like his body is running on a frequency his conscious mind can't reach.
+
+He walks straight through the living room toward the front door.
+
+DOMINIC (CONT'D)
+Dallas? Dallas, where are you—
+
+DALLAS
+(hollow, dazed)
+It's calling me. They're going to take it. I have to—
+
+He reaches the front door.
+
+Asher's head snaps toward him. His eyes go wide.
+
+DOMINIC
+(following, urgent)
+Dallas, stop—
+
+But Dallas is already opening the door. The wind rushes in, carrying the smell of rain and marsh. That HUM is louder now. Unmistakable.
+
+DALLAS
+(in the doorway, staring into the dark)
+The dark ones. They're already in the grass.
+
+His hand hovers over the oscillator at his hip like it's a weapon.
+
+SARAH
+(standing, afraid)
+What is he talking about?
+
+DOMINIC
+(to the group, quick and final)
+Storm's getting bad. We need to clear out. Everyone to your cars. Now.
+
+He doesn't wait for a response. He grabs a jacket and moves after Dallas, who is now walking down the driveway into the rain, into the dark, into a daze the others can't see.
+
+The group begins to gather their things. Mary looks at Asher, who is standing completely still, watching Dallas disappear into the storm.
+
+MARY
+(to Asher)
+Honey, come on. Your brother will be back.
+
+But Asher knows better. Asher knows what Dallas heard. Asher knows what's out there in the marsh.
+
+---
+
+EXT. DOMINIC'S DRIVEWAY - CONTINUOUS (s18.10)
+
+Rain comes down hard. The wind is picking up toward hurricane strength.
+
+Dallas walks like he's in a trance, oscillator in hand, drawn toward the marsh like a compass needle.
+
+DOMINIC
+(catching up, grabbing his arm)
+Dallas! Dallas, look at me!
+
+DALLAS
+(not looking, voice distant)
+It's dying. They're taking it. I can feel it. In my head. The frequency—it's breaking down—
+
+Another vision hits him. The creature, surrounded by red eyes. The dark things closing in. Its golden light dimming—
+
+Dallas doubles over, hand to his temple.
+
+DOMINIC
+Come back inside. We can—
+
+DALLAS
+(urgent, terrified)
+No. We have to find it. We have to broadcast from the center. If we don't—
+
+He looks at Dominic. For a moment, his eyes focus. But they're not the same. They're wild. Seeing things.
+
+DALLAS (CONT'D)
+If we don't reach it in time, the dark ones will turn it. And then there will be two of them hunting. Two.
+
+He pulls away from Dominic and walks toward the tall grass at the edge of the property. The grass is moving violently in the wind. Or maybe something else is moving it.
+
+Dominic looks back at the house. The group is leaving, shaken. Mr. Mike stands in the doorway, watching Dallas. Asher is beside him, eyes fixed on the marsh.
+
+Then Dominic makes a choice.
+
+DOMINIC
+(to himself)
+Damn it.
+
+He follows Dallas into the darkness.
+
+---
+
+END SCENE 18 REVISED
+
+---
+
+
+## ACT II — The Creature
+
+---
+
+
 ### Scene 19: The Hymn
 
 *ACT II — The Creature | ID: the-hymn | File: s19.md*
@@ -2842,6 +3162,213 @@ Dominic heads toward the basement. Dallas's stomach drops and he follows.
 ---
 
 
+## ACT IV — Aftermath
+
+---
+
+
+### Scene 19: The Marsh Rescue
+
+*ACT IV — Aftermath | ID: the-marsh-rescue | File: s19_REVISED.md*
+
+---
+
+<!-- scene: 19 file: s19_REVISED.md nickname: the-marsh-rescue -->
+
+<!-- nickname: the-marsh-rescue -->
+
+<!-- REVISED -->
+
+INT. DALLAS'S LAPTOP - BASEMENT (s19.1)
+
+The tracker screen is still live. The escaped signal is deep in the marsh now, stationary again. The red blips—the dark ones—surround it in a slowly tightening circle.
+
+Distance: closing.
+
+---
+
+EXT. EDGE OF THE MARSH - NIGHT (s19.2)
+
+Dallas walks barefoot through the rain in a trance. He's not following a path. He's following a frequency only he can hear.
+
+His oscillator is in his hand, but he's not using it yet. He's *listening*.
+
+Behind him, Dominic splashes through the mud, soaked, trying to catch up.
+
+DOMINIC
+Dallas! Wait! We need a plan! We need—
+
+But Dallas doesn't stop. He's in the tall grass now, the reeds closing around him like a fist.
+
+DALLAS
+(hollow, walking deeper)
+The frequency is breaking. I can feel it breaking apart. When it goes dark, they'll remake it into something else. Something red.
+
+DOMINIC
+(grabbing his shoulder)
+Listen to me. We go back. We get Asher. We get the equipment. We do this right.
+
+But when Dominic touches him, Dallas's arm goes rigid. His head tilts. His eyes flutter closed.
+
+Another vision: RED EYES surrounding a small golden shape. The creature, confused, calling out. The dark things circling closer. Its light flickering—
+
+DALLAS
+(eyes still closed, voice breaking)
+It's already happening.
+
+He pulls away and keeps walking. Deeper.
+
+---
+
+EXT. DEEP MARSH - MOMENTS LATER (s19.3)
+
+The grass towers over them. The wind howls. It's almost pitch black except for the periodic flash of lightning.
+
+Dallas moves like he's underwater—slow, purposeful, guided by something Dominic can't perceive.
+
+Dominic stays close, watching the treeline, watching the grass move in patterns that don't match the wind.
+
+DOMINIC
+(breathless)
+How much further?
+
+Dallas doesn't answer. He stops. His head tilts again. Listening.
+
+DALLAS
+(soft)
+Do you hear it?
+
+Dominic listens. At first nothing. Then—a low, pulsing SOUND. Not quite a hum. Something between a cry and a frequency.
+
+And under it, another sound. Multiple sounds. Heavy things moving through the brush. Circling.
+
+DOMINIC
+We're surrounded.
+
+Dallas nods slowly, like he's known this the whole time. Because part of him *has*.
+
+DALLAS
+The dark ones.
+
+---
+
+EXT. CLEARING - CONTINUOUS (s19.4)
+
+Dallas breaks through a wall of reeds. Stops.
+
+In front of them: a small clearing. In the center, the baby creature. Alive. But its glow is flickering erratically. And around the clearing's edge, the GRASS is moving in unnatural ways.
+
+Shapes. Massive shapes made of tangled brush and dead leaves. Red eyes beginning to glow in the darkness.
+
+They're not attacking yet. They're watching. Waiting.
+
+DOMINIC
+(whisper)
+What are they?
+
+DALLAS
+(in his daze, almost a prayer)
+What happens when you hurt something that has no words to tell you it's in pain. What happens when the mercy dies but the creature lives.
+
+The shapes move closer. Stalking.
+
+The creature in the center lets out a CRY. Not a call for help. A CALL FOR SOMETHING ELSE. A frequency that makes the air feel thick.
+
+Dallas's eyes snap open. Focus RETURNS. Like ice water in the brain.
+
+He looks at the creature. He looks at the approaching shapes. He looks at Dominic.
+
+And his paralysis BREAKS.
+
+DALLAS (CONT'D)
+(urgent, present, commanding)
+Oscillator. Now.
+
+He pulls the device from his pocket. His hands fly over the dial.
+
+DOMINIC
+What do I do?
+
+DALLAS
+When I broadcast, you run. You get to the creature. You scoop it up and you run back the way we came. Don't stop. Don't look back.
+
+DOMINIC
+Dallas—
+
+DALLAS
+GO!
+
+Dallas keys the broadcast. A pure, high frequency pierces the rain—the creature's own call, rebuilt from memory, thrown back out into the storm.
+
+The nearest shape RECOILS. The red eyes flicker. Confused.
+
+In that split second of hesitation, Dominic bolts forward.
+
+He reaches the creature. It's tiny. So small. He scoops it up into his chest and turns to run—
+
+But the shapes are recovering. The nearest one LUNGES.
+
+Dallas shoves the broadcast speaker toward it like a weapon. The frequency hits it. It shrills and writhes—but it's not enough. There are too many.
+
+The creature in Dominic's arms glows brighter with each note Dallas broadcasts. Its cry rises, matching the frequency, doubling the output.
+
+Together—the creature's natural frequency and Dallas's broadcast amplifying each other—the signal becomes unbearable.
+
+The shapes RETREAT, screeching (if such things scream), falling back, collapsing into piles of ordinary dead leaves and reeds, the red eyes going dark.
+
+In the sudden silence, Dominic is halfway back through the grass, the creature still in his arms.
+
+Dallas follows, the oscillator still pressed to his chest, broadcasting as he goes. Protecting them. Creating a corridor through the dark.
+
+---
+
+EXT. EDGE OF MARSH - MOMENTS LATER (s19.5)
+
+They burst through the last wall of reeds.
+
+Dallas collapses to his knees. The oscillator dies in his hand—battery gone. He's breathing hard. His eyes are wild but clear again. The daze is gone.
+
+Dominic stands over him, the creature still in his arms. It's glowing softly now, almost peacefully. Its fear has passed.
+
+DOMINIC
+(breathing hard)
+What the hell was that? What are those *things*?
+
+DALLAS
+(gasping)
+The answer to what you asked. What becomes when you touch something golden that's already hurt.
+
+He looks at the creature in Dominic's arms.
+
+DALLAS (CONT'D)
+There's more than one. And if we don't find out how to seal this—how to keep them from spreading—
+
+Another HISS comes from the marsh behind them. Not an attack. A warning. Receding.
+
+The shapes are withdrawing. But Dallas knows—they're not gone. They're waiting. And they're multiplying.
+
+DOMINIC
+(looking at Dallas, then back at the creature)
+We go back inside. We end this.
+
+DALLAS
+(nods)
+We end this.
+
+They walk back toward the house in silence. Behind them, the marsh hums—a frequency neither of them built. A frequency that's becoming something new.
+
+---
+
+END SCENE 19 REVISED
+
+---
+
+
+## ACT II — The Creature
+
+---
+
+
 ### Scene 20: The Secret is Out
 
 *ACT II — The Creature | ID: red-eyes | File: s20.md*
@@ -2907,13 +3434,10 @@ I listen.
 <!-- scene: 20 file: s20.md nickname: red-eyes -->
 
 (action)
-Dallas picks up the crystal device and hands it to Dominic.
-
-DOMINIC
-I don't get it. What is this? 
+Dallas grabs one of the spherical recorders off the desk — one of Asher's, pulled from the marsh days ago — and presses it into Dominic's hands. The little device is still warm, faintly humming.
 
 DALLAS
-It's to keep them at bay.
+Keep this on you. Whatever's out there — it knows these. It'll know you're with it.
 
 DOMINIC
 Keep who at bay?
@@ -3387,6 +3911,13 @@ Across hundreds of yards of marsh, every recorder the crew ever planted pulls up
 DOMINIC
 (staring up)
 What is that... what are they doing...
+
+
+
+<!-- scene: 25 file: s25.md nickname: the-last-dinner -->
+
+(action)
+Dominic feels a tug at his jacket pocket. The little scuffed recorder Asher gave him in the marsh days ago pulls free and lifts into the air, joining the stream.
 
 <!-- scene: 25 file: s25.md nickname: the-last-dinner -->
 

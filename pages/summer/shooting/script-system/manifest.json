@@ -224,12 +224,28 @@
     "nickname": "life-group-arrives"
   },
   {
+    "id": "life-group-arrives",
+    "file": "s18_REVISED.md",
+    "title": "Life Group Arrives",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "life-group-arrives"
+  },
+  {
     "id": "the-hymn",
     "file": "s19.md",
     "title": "The Hymn",
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "the-hymn"
+  },
+  {
+    "id": "the-marsh-rescue",
+    "file": "s19_REVISED.md",
+    "title": "The Marsh Rescue",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "the-marsh-rescue"
   },
   {
     "id": "red-eyes",
