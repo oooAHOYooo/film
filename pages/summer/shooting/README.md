@@ -32,7 +32,7 @@ shooting/
 - The standalone aunt character has been removed; her beats fold into Dominic
 
 **Affected scenes:**
-- s03, s04, s06, s07, s07b, s08d, s11, s13, s14, s14c, s15b, s16, s17b, s17c, s18, s19, s26, s28
+- s03, s04, s06, s07, s07b, s08, s11, s13, s14, s14c, s15b, s16, s17b, s17c, s18, s19, s26, s28
 
 ### How to Use This Folder
 

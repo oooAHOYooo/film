@@ -1311,11 +1311,10 @@
       "scenes": [
         "s07b",
         "s16",
-        "s08d",
         "s11",
         "s12"
       ],
-      "crewCall": "CALL: 8:00 AM\nMEET: Branford Marsh Edge\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07b pickups · Warning additional coverage\nSHOOT: 10:30 AM — s16 pickups · Plan detail shots\nSHOOT: 12:00 PM — s08d · Return through darkness\nSHOOT: 1:00 PM — s11 · Kitchen triage\nSHOOT: 2:30 PM — s12 · Alone with the creature\nWRAP: 4:00 PM",
+      "crewCall": "CALL: 8:00 AM\nMEET: Branford Marsh Edge\nSETUP: 8:30 AM — Camera preps\nSHOOT: 9:00 AM — s07b pickups · Warning additional coverage\nSHOOT: 10:30 AM — s16 pickups · Plan detail shots\nSHOOT: 12:00 PM — s11 · Kitchen triage\nSHOOT: 1:30 PM — s12 · Alone with the creature\nWRAP: 3:00 PM",
       "crew": [
         {
           "role": "Director",
@@ -1360,16 +1359,6 @@
             "Dominic"
           ],
           "description": "Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group."
-        },
-        {
-          "beat": "s08d",
-          "title": "The Return",
-          "scene": "s08d",
-          "cast": [
-            "Dallas",
-            "Dominic"
-          ],
-          "description": "Dallas returns through the dark with the injured creature while Dominic checks on him."
         },
         {
           "beat": "s11",

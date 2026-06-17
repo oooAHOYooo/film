@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/17/2026, 7:08:49 AM*
+*Compiled on 6/17/2026, 9:00:06 AM*
 
 ---
 
@@ -1182,6 +1182,16 @@ Dallas looks at his wrist one more time, then at the rocking chair. Then at the 
 <!-- FILMING ON = 
 DAY 3 - EVENING - 6.12.26 -->
 
+INT. DALLAS ATTIC - EVENING (s08.0)
+
+Dallas is rearranging the workstation — coiling cables, repositioning the monitor, clamping a second antenna to the edge of the desk. The readings in front of him don't make sense: spikes with no source, patterns that loop and drop. He rewires a connection. Tries again. Still nothing clean.
+
+He sets the oscillator down. Rubs his face.
+
+Then the hum comes through the walls. Low. Directional. The needle swings hard to the right and holds.
+
+Dallas stares at it. Then he grabs his jacket.
+
 EXT. DALLAS HOUSE - MOMENTS LATER (s08.1)
 
 Dallas grabs his portable Oscillator and heads toward the marsh, following a spike in the readings.
@@ -1205,84 +1215,17 @@ Dallas walks into the marsh.
 
 s08.4 — EXT. INTO THE MARSH (s08.4)
 
-He finds the spot. A makeshift wooden trap, but it's been... compromised. The grass in a wide ring around the wood is dead and brittle, flattened into a perfect circle.
+The needle is pegged. Dallas holds the oscillator out in front of him, turning slowly, reading the signal like a compass. He moves deeper into the grass, following the strength of it.
 
-Dallas finds the trailcam. The lens is cracked, but the "Record" light is still blinking a faint, dying red. 
+He stops. The grass in a wide ring around him is dead and brittle, flattened into a perfect circle. The signal here is overwhelming — the oscillator buzzes against his palm.
 
-Suddenly, a heavy thud hits the mud thirty feet away like something landing from a big height. 
+Suddenly, a heavy thud hits the mud thirty feet away like something landing from a big height.
 
-The Hum stops. Dallas freezes. He rips the trailcam from its mounting, his fingers fumbling with the nylon straps.
+The Hum stops. Dallas freezes.
 
 A low, guttural chittering sound rises from the grass behind him.
 
 Dallas walks faster. He scrambles back toward the boardwalk.
-
----
-
-
-### Scene 8C: The Threshold
-
-*ACT I — Arrival & Discovery | ID: the-threshold | File: s08c.md*
-
----
-
-<!-- scene: 8C file: s08c.md nickname: the-threshold -->
-
-# SCENE 8C: THE THRESHOLD
-
-s08c.1 — EXT. DALLAS HOUSE - PORCH - NIGHT
-
-Dallas stands on the porch, holding the audio recorder in his hand like a weapon.
-
-The sky is beginning to fade - and the sounds that he is hearing are getting more and more violent. 
-
-Dallas - on a
-
----
-
-
-### Scene 8D: The Return
-
-*ACT I — Arrival & Discovery | ID: the-return | File: s08d.md*
-
----
-
-<!-- scene: 8D file: s08d.md nickname: the-return -->
-
-# SCENE 8D: THE RETURN
-
-s08d.1 — EXT. EDGE OF THE MARSH - NIGHT
-
-Dallas walks along the edge of the Long Island Sound. He takes a deep breath and looks at the coast for a while - as he does so - he hears a hum.
-
-The needle on the Oscillator spikes back and forth. Dallas takes out his bag and reveals his wife's recorder that he has been avoiding. He puts in a new tape. 
-
-Dallas records the hum. 
-
-INT. DALLAS HOUSE - NIGHT
-
-Dallas plays back the recording. It's the sound of the marsh at night - birds, bugs, the waves - but underneath it all, there's the faint sound of the hum. 
-
-He goes into the computer and begins to put ear marks on all of the certain peaks. 
-
-A ring at the door. 
-
-Dallas walks downstairs.
-
-The phone rings. It is Dominc
-
-DOMINIC (voiceover)
-Dallas, I am so sorry to call so late - we have a family emergency and need to run to the hospital. Keep an eye on the place for us.
-
-DALLAS
-Sure, of course.
-
-DOMINIC
-Thank you - I'll be back later. 
-
-Dallas heads back up and continues his work. 
-
-Dallas goes to sleep.
 
 ---
 

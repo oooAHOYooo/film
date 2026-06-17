@@ -947,7 +947,7 @@ description: Dallas hears movement or shadows around the house perimeter - the h
 
 ### Day 9.5 — 2026-06-29
 
-scenes: s07b, s16, s08d, s11, s12
+scenes: s07b, s16, s11, s12
 
 crew-call:
   CALL: 8:00 AM
@@ -955,10 +955,9 @@ crew-call:
   SETUP: 8:30 AM — Camera preps
   SHOOT: 9:00 AM — s07b pickups · Warning additional coverage
   SHOOT: 10:30 AM — s16 pickups · Plan detail shots
-  SHOOT: 12:00 PM — s08d · Return through darkness
-  SHOOT: 1:00 PM — s11 · Kitchen triage
-  SHOOT: 2:30 PM — s12 · Alone with the creature
-  WRAP: 4:00 PM
+  SHOOT: 12:00 PM — s11 · Kitchen triage
+  SHOOT: 1:30 PM — s12 · Alone with the creature
+  WRAP: 3:00 PM
 
 crew:
   - Director: Alex
@@ -980,11 +979,6 @@ description: Mr. Mike privately gives Dallas a lucid warning: touching an injure
 scene: s16
 cast: Dallas, Dominic
 description: Dallas carries the creature and recovered equipment home while Dominic notices the suspicious backpack and invites him to life group.
-
-#### Beat: s08d — The Return
-scene: s08d
-cast: Dallas, Dominic
-description: Dallas returns through the dark with the injured creature while Dominic checks on him.
 
 #### Beat: s11 — Kitchen Triage
 scene: s11
