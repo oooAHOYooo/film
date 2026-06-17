@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/17/2026, 9:08:18 AM*
+*Compiled on 6/17/2026, 11:05:10 AM*
 
 ---
 
@@ -1247,24 +1247,98 @@ Dallas plays back the recording. It's the sound of the marsh at night - birds, b
 
 He goes into the computer and begins to put ear marks on all of the certain peaks. 
 
-A ring at the door. 
+The phone rings. It is Dominic.
 
-Dallas walks downstairs.
-
-The phone rings. It is Dominc
-
-DOMINIC (voiceover)
-Dallas, I am so sorry to call so late - we have a family emergency and need to run to the hospital. Keep an eye on the place for us.
+DOMINIC (V.O.)
+Dallas. Sorry to call so late. We've got a family thing — heading to the hospital. Can you keep an eye on the place?
 
 DALLAS
-Sure, of course.
+Sure.
 
-DOMINIC
-Thank you - I'll be back later. 
+DOMINIC (V.O.)
+I'll check back when I can. Thank you.
 
-Dallas heads back up and continues his work. 
+<!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
 
-Dallas goes to sleep.
+(action)
+Dallas hangs up. He stands there with the phone in his hand.
+
+<!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
+
+(action)
+He looks toward the window. The marsh is dark. He doesn't make a connection.
+
+<!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
+
+(action)
+He goes back upstairs. Sits at the desk. Continues marking the recording on the computer.
+
+<!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
+
+(action)
+At some point he stops moving. Still in the chair, still dressed. Asleep.
+
+INT. DALLAS ATTIC — EARLY MORNING (s08.5)
+
+Dallas wakes in the chair. His head was tipped to one side. The desk lamp is still on.
+
+He looks at the oscillator. The needle sits at zero — battery dead.
+
+He pulls the battery pack from the back. Sets it on the desk.
+
+He picks up Sierra's cassette recorder. Rewinds it by hand until it catches. Clicks play.
+
+Through the small speaker: marsh sounds, wind, the distant water. Then underneath all of it — the hum. Low and directional. Unmistakable.
+
+Dallas listens without moving.
+
+He rewinds it. Listens again.
+
+He clips the recorder to his belt loop and goes downstairs.
+
+EXT. MARSH EDGE — AFTERNOON (s08.6)
+
+Dallas stands at the edge of the marsh. Regular shoes. No bag.
+
+He holds the portable oscillator out with both hands. The needle pulls slowly to the left. He rotates his body to track it. When it centers, he stops.
+
+He takes a small notebook from his shirt pocket and a pen from behind his ear. He draws two lines, an arrow, a rough sketch of the treeline from where he's standing. Marks the bearing.
+
+He looks at it. Looks up at the marsh.
+
+He doesn't go in.
+
+He turns and walks home.
+
+INT. DALLAS ATTIC — LATE AFTERNOON (s08.7)
+
+Dallas is at the desk with the notebook open. He's adding a second reference point to the bearing sketch — measuring the angle with his thumb and marking it.
+
+His phone buzzes. He picks up.
+
+DOMINIC (V.O.)
+Hey — Dallas. Sorry about last night. Everything's fine over here.
+
+DALLAS
+Glad to hear it.
+
+DOMINIC (V.O.)
+Listen — Asher's been watching that marsh of yours. He wants to show you something out there. You free day after tomorrow?
+
+DALLAS
+Yeah. Sure.
+
+DOMINIC (V.O.)
+Good man. He won't stop bugging me about it. I'll send him over.
+
+<!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
+
+(action)
+Dominic hangs up. Dallas sets the phone face-down on the desk.
+
+He looks at the notebook. The bearing line. The X at the end of it.
+
+He picks up his pencil and adds a small label to the X.
 
 ---
 
@@ -1278,35 +1352,33 @@ Dallas goes to sleep.
 <!-- scene: 9 file: s09.md nickname: dallas-night-work -->
 
 # Scene 9: The Injured One
-<!-- summary: Dallas, as he ventures deeper and deeper into the marsh - finds a bioluminest creature -->
+<!-- summary: Dallas enters the marsh at night with his bearing sketch and Sierra's recorder. He reads his oscillator through the reeds, deliberate and careful. Deep inside, a gnarled tree reveals an injured, bioluminescent creature curled inside the hollow. -->
 
-<!-- FILMING ON - DAY 3 = 6.12.26 -->
+<!-- FILMING ON = DAY 3 — NIGHT — 6.13.26 -->
 
-EXT. DALLAS HOUSE - NEXT DAY
+EXT. DALLAS HOUSE — NIGHT (DAY 3) (s09.0)
 
-Dallas heads back toward the marsh, driven by last night's discovery.
+Dallas comes out the back door. He has his small notebook in his shirt pocket and a fresh tape loaded in Sierra's recorder, already rolling.
 
-EXT. EDGE OF THE MARSH
+He knows where he's going.
 
-Dallas enters an interesting field of tall bamboo like grass. 
+EXT. EDGE OF THE MARSH — NIGHT (s09.1)
 
-Dallas looks at his portable Oscillator - it is acting crazy. 
+He enters where the reeds thicken. The portable oscillator is in one hand. He holds it level, reading the pull, turning his body to track it. The needle holds left. He adjusts and walks.
 
-EXT. DEEP INSIDE THE TALL MARSH (s09.1)
+EXT. DEEP INSIDE THE MARSH — NIGHT (s09.2)
 
-Dallas stands slowly, scanning the reeds around him. Nothing much seems out there - just the gentle sway of grass.
+The reeds close in. Dallas moves carefully, watching his footing. He adjusts the oscillator's gain, checks the needle, steps forward.
 
-Dallas pushes through a dense curtain of reeds. Dust motes dance in a whirlwind of color refracting the sunset into jagged prisms on his face. 
+A stillness here that's different from the perimeter. Less sound. The wind stops.
 
-Dallas steps deeper, following the fading glow. 
+The air goes warmer. Something bleeds through the reeds ahead — faint, sourceless, not quite color. His eye adjusts.
 
-All around him is light reeeds blowing in a whirlwind of light and color. 
+There: a gnarled tree, alone among the reeds. Trunk split from old weather, upper wood gone silver. Inside the hollow of the gnarl — tucked away — something.
 
-As Dallas' eyes adjust to this new brightness - the world around him slowly blurs. 
+Dallas crouches. He moves toward it.
 
-There in the distance Dallas sees a gnarled tree that stands alone among the reeds.  
-
-Dallas approaches the tall grass and the gnarly tree and as he does - he notices that inside of the gnarl, curled up, tucked away,  lives a small orb shaped creature - slightly bioluminest - and clearly injured. 
+Inside the gnarl, curled up, lives a small orb-shaped creature — slightly bioluminescent, and clearly injured.
 
 The creature is a cloudlike - cottonball, powder-puff animal with feathers all around it's body. 
 
@@ -1515,24 +1587,22 @@ Dominic's car idles in the driveway. Dominic gets out and checks the pressure on
 <!-- FILMING ON 
 DAY 5 = 6.14.26 -->
 
-EXT. DALLAS BACKYARD - NEXT MORNING (s13.1)
+EXT. DALLAS BACKYARD — MORNING (s13.1)
 
-Dominic takes a deep breath and bends over to check the tire pressure.
+Dominic pulls up and kills the engine. He gets out and bends over to check the tire pressure on the back wheel — unhurried, incidental. He's done this before.
 
-He finds a patch of grass and touches it. 
-
-Asher wanders toward the edge of Dallas's property, kneeling over when he gets to the edge. 
+Asher gets out on the passenger side and walks directly toward the edge of Dallas's property. Not wandering. He came here to look at something.
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Asher spots a trailcam that seems to be behind Dallas' backyard gate . It is blinking. He unties it and puts the SD card in his pocket. Meanwhile Dominc walks right up to Dallas' doorway and kocks.
+Asher reaches the back gate and spots a trailcam mounted in the reeds. It's his. He untethers it and pockets the SD card without looking back. Meanwhile Dominic straightens up and knocks on Dallas's door.
 
-Dallas emerges. 
+Dallas emerges.
 
-Asher notices a trail leading from the edge of the grass toward Dallas. He grabs beads from his pocket and begins to dangle them nervously. 
+Asher has moved to the edge of the tall grass. He stands there, still. His hand finds the beads in his pocket.
 
-Cut to. 
+Cut to.
 
 EXT. DALLAS DOORWAY
 Dallas walks outside and Dominic bangs his hand on the door. 
@@ -1602,7 +1672,7 @@ A whimper is heard from the kitchen.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Asher's head snaps toward the sound. He rushes past Dallas and runs to the kitchen.  He takes out his portable oscillator and sees that it is spiking as he points it to the cieling. 
+Asher goes still. He turns toward the sound, unhurried. He walks past Dallas and into the kitchen. He takes out his portable oscillator and sees that it is spiking as he points it to the ceiling.
 
 Asher and Dallas stand silent looking at each other for a beat too long.
 
@@ -1766,9 +1836,13 @@ INT. DALLAS' KITCHEN - CONTINUOUS (s14.2)
 <!-- scene: 14 file: s14.md nickname: creature-rescue -->
 
 (action)
-The room grows quiet.  Asher, alone, busies himself trying to connect wires up to the makeshift computer on the counter. He stops as, looks down at the cables and then far off in the distance, then on the ground, then the tall grass. His finger traces something on his leg—the same pattern, over and over. 
+The room grows quiet. Asher, alone, busies himself trying to connect wires up to the makeshift computer on the counter. He stops. He looks out the window toward the marsh.
 
-Outside the window, the wind picks up.  From the distance - what looks like a faint red light appears for a second and pulses away. 
+From the distance — a red light pulses once and disappears.
+
+His finger traces something on his leg—the same pattern, over and over.
+
+Outside the window, the wind picks up.
 
 Asher begins to tap and tap and tap, and his head begins to shake and shake and shake. He crashes to the ground.
 
@@ -1995,6 +2069,42 @@ We should go inside. Check on it.
 
 (action)
 They stand. Dallas glances back at the tall grass one more time before going in.
+
+INT. DALLAS KITCHEN — AFTERNOON (s14b.2)
+
+Asher is at the kitchen table, head down, pencil moving. Not doodling — working. The drawing has been going for a while.
+
+Dallas comes in from the back door. He sets Sierra's recorder on the counter and stops.
+
+He comes around behind Asher and looks at the paper.
+
+It's the marsh. The creek bends, the inlet, the far treeline — all rendered carefully. Bearing lines radiate from three separate points along the perimeter. Each labeled with a number. At the end of each: a small circle.
+
+<!-- scene: 14B file: s14b.md nickname: the-field-journal -->
+
+(action)
+Dallas goes to the counter drawer. He pulls out his small notebook and finds the bearing sketch from that morning — two lines, an arrow, the X.
+
+He holds his sketch next to Asher's map.
+
+His bearing line, extended, points directly at position four.
+
+<!-- scene: 14B file: s14b.md nickname: the-field-journal -->
+
+(action)
+Neither of them speaks.
+
+<!-- scene: 14B file: s14b.md nickname: the-field-journal -->
+
+(action)
+Asher sets down his pencil. He turns and points through the kitchen window — toward his house, across the street.
+
+<!-- scene: 14B file: s14b.md nickname: the-field-journal -->
+
+(action)
+Dallas looks at the house. Looks back at the map.
+
+He understands.
 
 ---
 
