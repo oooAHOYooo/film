@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/15/2026, 12:41:58 PM*
+*Compiled on 6/17/2026, 7:08:49 AM*
 
 ---
 
@@ -2336,6 +2336,100 @@ Dominic gives the house one last look, then throws the car into drive.
 ---
 
 
+### Scene 16B: The Soother
+
+*ACT II — The Creature | ID: the-soother | File: s16b.md*
+
+---
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+# SCENE 16B: THE SOOTHER
+
+<!-- GOING TO FILM ON Day 4 -->
+
+INT. DALLAS BASEMENT - EVENING (s16b.1)
+
+The creature is deteriorating. Its glow pulses erratically — dim, bright, dim — and its hum has
+turned ragged and high, filling the basement with an uneven, anxious tone. Dallas crouches over it,
+oscillator in hand, turning the dial. Nothing settles it.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+Dallas tries a lower frequency. The creature flinches. He tries higher. It shivers. He sets the
+oscillator down and presses his palms flat on the workbench, breathing.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+Footsteps on the porch. The door opens. Dominic enters first, says nothing, reads the room in one
+look. Asher follows — unhurried, backpack on, eyes going straight to the creature.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+Asher crouches down to the creature's level. He studies it for a long moment — not with alarm, with
+attention. Then he opens his backpack and pulls out the device from the wigwam. Compact, hand-built,
+breadboard and cassette deck wired together with jumper cables, a small VU meter mounted to the face.
+He sets it on the workbench.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+Asher turns the device on. A soft amber light comes up on the VU meter. He turns a single dial —
+slow, deliberate — and a low tone fills the basement. Not loud. Barely there.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+The creature's hum changes. The ragged edges smooth. Its glow steadies — dims to a warm, even gold.
+Its breathing slows.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+Dallas watches Asher's hand on the dial. Watches the VU needle settle. Watches the creature's glow
+lock in. He is very still.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+Asher looks up at Dallas. Holds the device out.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+Dallas takes it.
+
+
+
+<!-- scene: 16B file: s16b.md nickname: the-soother -->
+
+(action)
+Dominic stands in the doorway watching both of them. He doesn't ask what the device is. He doesn't
+ask what the creature is. He just watches Dallas hold the thing Asher built, and understands that
+something has just been passed.
+
+---
+
+
 ### Scene 17: Resonance
 
 *ACT II — The Creature | ID: resonance | File: s17.md*
@@ -2355,15 +2449,38 @@ Dallas stares for a long time at the golden creature. The jagged red lines on hi
 
 The creature is not doing so good - but seems to be glowing - and the distant hum perks up again. 
 
-Dallas walks over and then paces around the room; He taps various equipments and thinks and thinks. Dallas looks at the photo of Sierra taped to his receiver. 
+Dallas walks over to the workbench. Asher's device sits where he left it. He picks it up, turns it
+over in his hands — studies the wiring, the dial, the way the VU meter is mounted. Then he sets it
+back down and reaches for Sierra's cassette recorder beside it.
 
-Dallas connects the creature's shoebox to his receiver with the alligator clips and tunes a soft tone into it. The creature seems to interact with the sound somehow. 
+He presses RECORD. Points the microphone toward the creature.
 
-Dallas gently turns the dial on his receiver and dials the volume up just enough to create a soft, resonant hum in the basement. 
+The creature opens its mouth and emits a low, melodic tone — the same frequency Asher's device coaxed
+out of it. As it sings, the golden glow in its neck grows stronger, pushing back the shadows in the
+room.
 
-The creature's ears twitch. It stops its erratic movements. Slowly, it opens its mouth and emits a low, melodic tone, matching the frequency Dallas is broadcasting. As it sings, the golden glow in its neck grows stronger, pushing back the shadows in the room.
+Dallas watches the VU needle climb. He watches the glow rise and fall with the tone. He is not
+discovering this — he is documenting it. Writing it down in the only language that matters.
 
-Dallas watches the glow rise and fall with the tone. He keeps the sound soft, and the creature settles. He's soothing it without yet understanding what he's found. He only knows that the creature calms when he plays it something close to its own call.
+When the tape runs out he stops recording. Sits for a long time looking at the cassette in his hand.
+Sierra's recorder. Her tape. The creature's voice on it now.
+
+He goes upstairs to the attic.
+
+INT. DALLAS ATTIC - CONTINUOUS (s17.2)
+
+Dallas at his workstation. Headphones on. The cassette playing back through the spectrogram — the
+creature's call rendered as a waveform on his laptop screen. He studies the peaks. Isolates the
+fundamental frequency. Begins to process it — layering, amplifying, stripping the noise until what
+remains is clean and pure and loud enough to fill a marsh.
+
+He looks at the photo of Sierra taped to the receiver. Looks back at the waveform.
+
+He saves the file. Loads a blank cassette. Records the processed frequency back out.
+
+The new cassette goes into Asher's device. The dial turns. The VU needle pins.
+
+Dallas holds the blaster in both hands and looks at it for a long time.
 
 A doorbell is heard off screen. 
 
@@ -2498,6 +2615,72 @@ Dominic throws the car back into drive. It speeds off as the first heavy drops o
 ---
 
 
+### Scene 17D: The Handoff
+
+*ACT II — The Creature | ID: the-handoff | File: s17d.md*
+
+---
+
+<!-- scene: 17D file: s17d.md nickname: the-handoff -->
+
+# SCENE 17D: THE HANDOFF
+
+<!-- GOING TO FILM ON Day 11 -->
+
+INT. DALLAS ATTIC - EARLY EVENING (s17d.1)
+
+Dallas is dressed for the life group — cleaner than usual, jacket on. He stands at his workbench
+looking at the creature in its box. The device hums softly beside it, VU needle steady. The creature's
+glow is warm and even. It's calm.
+
+
+
+<!-- scene: 17D file: s17d.md nickname: the-handoff -->
+
+(action)
+Dallas opens his field bag. Inside: the blaster rig — Asher's device modified, Sierra's cassette
+loaded into the deck, alligator clips coiled, the toggle switch taped into place. He checks it once,
+closes the bag.
+
+
+
+<!-- scene: 17D file: s17d.md nickname: the-handoff -->
+
+(action)
+He lifts the creature's box carefully. Carries it downstairs.
+
+EXT. DALLAS HOUSE - CONTINUOUS (s17d.2)
+
+
+
+<!-- scene: 17D file: s17d.md nickname: the-handoff -->
+
+(action)
+Asher is already waiting on the porch steps — like he knew. Dallas sets the box down in front of him.
+
+DALLAS
+Just keep it calm.
+
+
+
+<!-- scene: 17D file: s17d.md nickname: the-handoff -->
+
+(action)
+Asher doesn't respond. He is already reaching into his jacket for a spare bead. He threads it onto
+the string around his neck — one more marker in a language Dallas doesn't speak — and picks up the
+box.
+
+
+
+<!-- scene: 17D file: s17d.md nickname: the-handoff -->
+
+(action)
+Dallas watches him carry it toward the wigwam. Then slings his bag over his shoulder and walks the
+other direction toward Dominic's house. The bag is heavy. He doesn't look back.
+
+---
+
+
 ### Scene 18: Life Group Arrives
 
 *ACT II — The Creature | ID: life-group-arrives | File: s18.md*
@@ -2511,6 +2694,14 @@ Dominic throws the car back into drive. It speeds off as the first heavy drops o
 <!-- GOING TO FILM ON DAY 11 -->
 
 INT. DOMINIC'S KITCHEN / LIVING ROOM - NIGHT (s18.1)
+
+
+
+<!-- scene: 18 file: s18.md nickname: life-group-arrives -->
+
+(action)
+Dallas arrives last. He sets his field bag down by the door — heavier than it looks. Nobody notices
+except Dominic, who clocks it once and looks away.
 
 Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates.
 
@@ -3141,7 +3332,23 @@ Must be the wind. The boys in the office just texted me that the pressure's drop
 <!-- scene: 19 file: s19.md nickname: the-hymn -->
 
 (action)
-Dallas stares at the basement door. During a silent moment of reflection, the hum starts again. Everyone is unsettled. What was that noise? The group settles on the weird weather—the storm, the patterns plaguing Branford. 
+Dallas stares at the basement door. During a silent moment of reflection, the hum starts again. Everyone is unsettled. What was that noise? The group settles on the weird weather—the storm, the patterns plaguing Branford.
+
+
+
+<!-- scene: 19 file: s19.md nickname: the-hymn -->
+
+(action)
+Dallas's hand goes to his jacket pocket. He pulls out the spherical recorder — Asher's early build,
+the scuffed one. It is warm. Blinking fast. Faster than it should be.
+
+He looks at it. Looks at the window. The hum outside has changed — it's not the creature's calm tone
+anymore. It's the hum of something unprotected, exposed, getting louder because the Red-Eyes are
+already moving toward it.
+
+DALLAS
+(barely audible)
+They're coming.
 
 In time, people leave. Hugs. Goodbyes. Dominic waves them out. He waits for the last person to leave. 
 

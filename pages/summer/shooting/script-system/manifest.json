@@ -192,6 +192,14 @@
     "nickname": "the-escape"
   },
   {
+    "id": "the-soother",
+    "file": "s16b.md",
+    "title": "The Soother",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-soother"
+  },
+  {
     "id": "resonance",
     "file": "s17.md",
     "title": "Resonance",
@@ -214,6 +222,14 @@
     "act": 2,
     "actTitle": "The Creature",
     "nickname": "mute-drive"
+  },
+  {
+    "id": "the-handoff",
+    "file": "s17d.md",
+    "title": "The Handoff",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-handoff"
   },
   {
     "id": "life-group-arrives",
