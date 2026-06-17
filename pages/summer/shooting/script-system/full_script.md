@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/17/2026, 9:00:06 AM*
+*Compiled on 6/17/2026, 9:08:18 AM*
 
 ---
 
@@ -1226,6 +1226,45 @@ The Hum stops. Dallas freezes.
 A low, guttural chittering sound rises from the grass behind him.
 
 Dallas walks faster. He scrambles back toward the boardwalk.
+
+EXT. MARSH ENTRANCE
+
+Dallas stands among the entrance off the side of the road of a giant marsh. He makes his way along the edge of it - following its read. 
+
+The sky is beginning to fade - and the sounds that he is hearing are getting more and more violent. 
+
+EXT. EDGE OF THE MARSH - NIGHT (s08d.1)
+
+Dallas walks along the edge of the Long Island Sound. He takes a deep breath and looks at the coast for a while - as he does so - he hears a hum.
+
+The needle on the Oscillator spikes back and forth. Dallas takes out his bag and reveals his wife's recorder that he has been avoiding. He puts in a new tape. 
+
+Dallas records the hum. 
+
+INT. DALLAS HOUSE - NIGHT
+
+Dallas plays back the recording. It's the sound of the marsh at night - birds, bugs, the waves - but underneath it all, there's the faint sound of the hum. 
+
+He goes into the computer and begins to put ear marks on all of the certain peaks. 
+
+A ring at the door. 
+
+Dallas walks downstairs.
+
+The phone rings. It is Dominc
+
+DOMINIC (voiceover)
+Dallas, I am so sorry to call so late - we have a family emergency and need to run to the hospital. Keep an eye on the place for us.
+
+DALLAS
+Sure, of course.
+
+DOMINIC
+Thank you - I'll be back later. 
+
+Dallas heads back up and continues his work. 
+
+Dallas goes to sleep.
 
 ---
 
