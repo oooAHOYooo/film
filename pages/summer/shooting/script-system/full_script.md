@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/17/2026, 11:05:10 AM*
+*Compiled on 6/17/2026, 11:48:17 AM*
 
 ---
 
@@ -1025,23 +1025,12 @@ Thank you again Dallas.
 (action)
 Dallas begins to walk across the street to his house.
 
----
-
-
-### Scene 7B: Mr. Mike's Warning
-
-*ACT I — Arrival & Discovery | ID: mr-mikes-warning | File: s07b.md*
-
----
-
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
-
 <!-- FILMING ON = Sun June 28 - Day 12 -->
 
 s07B — INT. DOMINIC'S BASEMENT — CONTINUOUS
 (Slots in between Scene 7.2 and the end of Scene 7. After Mr. Mike has rambled about Javerias. Dominic is in the kitchen, out of frame. Dallas is alone with Mr. Mike.)
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas stands near the table, holding the frame with the photo of Dominic's family. He sets it down gently.
@@ -1050,7 +1039,7 @@ Mr. Mike rocks in his chair. He has stopped muttering. His eyes are on Dallas no
 MR. MIKE
 Come here.
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas glances toward the kitchen. Dominic is out of earshot. He walks over.
@@ -1058,7 +1047,7 @@ Dallas glances toward the kitchen. Dominic is out of earshot. He walks over.
 MR. MIKE
 Come closer I can't hear you. 
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas crouches beside the rocking chair. Mr. Mike reaches out and takes Dallas's wrist. His grip is stronger than it should be.
@@ -1066,7 +1055,7 @@ Dallas crouches beside the rocking chair. Mr. Mike reaches out and takes Dallas'
 MR. MIKE
 You listen to me.   
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas doesn't move.
@@ -1074,7 +1063,7 @@ Dallas doesn't move.
 MR. MIKE
 Javerias told me this when I was seven. My father's age. I'm telling you now. You're going to need it.
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 A beat. Mr. Mike's eyes are clear. No fog. No wandering.
@@ -1082,7 +1071,7 @@ A beat. Mr. Mike's eyes are clear. No fog. No wandering.
 MR. MIKE
 If you find one of the bright ones. Hurt. Bleeding. Anything.
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 He tightens his grip on Dallas's wrist.
@@ -1097,7 +1086,7 @@ What?
 MR. MIKE
 You don't touch it. You don't take it. You don't try to help. You leave it. 
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Mr. Mike looks at him for a long moment. His lip trembles.
@@ -1105,7 +1094,7 @@ Mr. Mike looks at him for a long moment. His lip trembles.
 MR. MIKE
 If you touch the hurt one, you make the dark one. And then you become the dark one. 
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas stares at him.
@@ -1113,7 +1102,7 @@ Dallas stares at him.
 MR. MIKE
 Every time. Every single time.
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 He lets go of Dallas's wrist.
@@ -1121,7 +1110,7 @@ He lets go of Dallas's wrist.
 MR. MIKE
 I touched one. When I was a boy. I didn't know. Javerias came the next week. Told me what I did.
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 A pause. The rocker creaks once.
@@ -1129,7 +1118,7 @@ A pause. The rocker creaks once.
 MR. MIKE
 The dark one is still out there.
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas stares out the window and on the floor. 
@@ -1138,7 +1127,7 @@ From the kitchen:
 DOMINIC (O.S.)
 Dallas — you want water?
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 The spell breaks. Mr. Mike blinks. His eyes cloud over again. He looks at Dallas like he's not sure who he is.
@@ -1147,7 +1136,7 @@ MR. MIKE
 (confused, gentle)
 Who are you?
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas stands slowly. His hand goes to his own wrist — rubbing where Mr. Mike gripped it.
@@ -1156,15 +1145,28 @@ DALLAS
 (calling back)
 No, I'm okay.
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Mr. Mike starts humming. 
 
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas looks at his wrist one more time, then at the rocking chair. Then at the window, toward the tall grass.
+
+---
+
+
+### Scene 7B: Mr. Mike's Warning
+
+*ACT I — Arrival & Discovery | ID: mr-mikes-warning | File: s07b.md*
+
+---
+
+<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
+
+[SCENE FILE MISSING: s07b.md]
 
 ---
 
@@ -1247,27 +1249,6 @@ Dallas plays back the recording. It's the sound of the marsh at night - birds, b
 
 He goes into the computer and begins to put ear marks on all of the certain peaks. 
 
-The phone rings. It is Dominic.
-
-DOMINIC (V.O.)
-Dallas. Sorry to call so late. We've got a family thing — heading to the hospital. Can you keep an eye on the place?
-
-DALLAS
-Sure.
-
-DOMINIC (V.O.)
-I'll check back when I can. Thank you.
-
-<!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
-
-(action)
-Dallas hangs up. He stands there with the phone in his hand.
-
-<!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
-
-(action)
-He looks toward the window. The marsh is dark. He doesn't make a connection.
-
 <!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
 
 (action)
@@ -1288,27 +1269,21 @@ He pulls the battery pack from the back. Sets it on the desk.
 
 He picks up Sierra's cassette recorder. Rewinds it by hand until it catches. Clicks play.
 
-Through the small speaker: marsh sounds, wind, the distant water. Then underneath all of it — the hum. Low and directional. Unmistakable.
+Through the small speaker: marsh sounds, wind, the distant water. Then underneath all of it — the hum. Low and directional. 
 
-Dallas listens without moving.
+Dallas listens.
 
 He rewinds it. Listens again.
 
-He clips the recorder to his belt loop and goes downstairs.
-
 EXT. MARSH EDGE — AFTERNOON (s08.6)
 
-Dallas stands at the edge of the marsh. Regular shoes. No bag.
+Dallas stands at the edge of the marsh. 
 
 He holds the portable oscillator out with both hands. The needle pulls slowly to the left. He rotates his body to track it. When it centers, he stops.
 
 He takes a small notebook from his shirt pocket and a pen from behind his ear. He draws two lines, an arrow, a rough sketch of the treeline from where he's standing. Marks the bearing.
 
 He looks at it. Looks up at the marsh.
-
-He doesn't go in.
-
-He turns and walks home.
 
 INT. DALLAS ATTIC — LATE AFTERNOON (s08.7)
 
@@ -1317,19 +1292,10 @@ Dallas is at the desk with the notebook open. He's adding a second reference poi
 His phone buzzes. He picks up.
 
 DOMINIC (V.O.)
-Hey — Dallas. Sorry about last night. Everything's fine over here.
+Hey — Dallas. Sorry about last night. Everything's fine over here. 
 
 DALLAS
-Glad to hear it.
-
-DOMINIC (V.O.)
-Listen — Asher's been watching that marsh of yours. He wants to show you something out there. You free day after tomorrow?
-
-DALLAS
-Yeah. Sure.
-
-DOMINIC (V.O.)
-Good man. He won't stop bugging me about it. I'll send him over.
+No problem. 
 
 <!-- scene: 8 file: s08.md nickname: dallas-marsh-walk -->
 
@@ -1360,7 +1326,6 @@ EXT. DALLAS HOUSE — NIGHT (DAY 3) (s09.0)
 
 Dallas comes out the back door. He has his small notebook in his shirt pocket and a fresh tape loaded in Sierra's recorder, already rolling.
 
-He knows where he's going.
 
 EXT. EDGE OF THE MARSH — NIGHT (s09.1)
 
@@ -1370,9 +1335,9 @@ EXT. DEEP INSIDE THE MARSH — NIGHT (s09.2)
 
 The reeds close in. Dallas moves carefully, watching his footing. He adjusts the oscillator's gain, checks the needle, steps forward.
 
-A stillness here that's different from the perimeter. Less sound. The wind stops.
+A stillness. The wind stops.
 
-The air goes warmer. Something bleeds through the reeds ahead — faint, sourceless, not quite color. His eye adjusts.
+The air goes warmer. Something bleeds through the reeds ahead. His eye adjusts.
 
 There: a gnarled tree, alone among the reeds. Trunk split from old weather, upper wood gone silver. Inside the hollow of the gnarl — tucked away — something.
 
@@ -1392,7 +1357,7 @@ He opens his eyes and gazes longingly at the creature. It has the body a bit lik
 
 Dallas hears his equipment beep louder and louder.
 
-The creature reaches out its tiny octupus arm and gently wraps itself around Dalla's hand. Dallas picks it up and nestles it into his chest. 
+The creature reaches out its tiny octupus arm and gently wraps itself around Dalla's hand. Dallas' hand glows as he nestles it into his chest. 
 
 Suddenly, the wind returns. A violent gust. Shadows in the distance start to fill the sky and hover over Dallas and the creature. Dallas in a daze, slowly grabs the creature and gently places it in his jacket and begins to walk without looking back.
 
@@ -1447,7 +1412,7 @@ At the edge of his driveway, he finally stops—gasping. The creature is motionl
 <!-- nickname: kitchen-triage -->
 <!-- summary: Dallas at home with the creature. Kitchen triage—parchment, macro lens. The creature cries; the equipment flares gold. -->
 
-<!-- FILMING ON DAY 6 -- 6.16.26>
+<!-- FILMING ON DAY 6 -- 6.16.26-->
 
 INT. DALLAS KITCHEN - DUSK (s11.1)
 Dallas rushes to bring the creature inside. He grabs an aluminion pan and lines it with parchment paper. The creature seems to be asleep. 
@@ -1589,9 +1554,9 @@ DAY 5 = 6.14.26 -->
 
 EXT. DALLAS BACKYARD — MORNING (s13.1)
 
-Dominic pulls up and kills the engine. He gets out and bends over to check the tire pressure on the back wheel — unhurried, incidental. He's done this before.
+Dominic pulls up and kills the engine. He gets out and bends over to check the tire pressure on the back wheel — unhurried, incidental. 
 
-Asher gets out on the passenger side and walks directly toward the edge of Dallas's property. Not wandering. He came here to look at something.
+Asher gets out on the passenger side and walks directly toward the edge of Dallas's property. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
@@ -1610,7 +1575,12 @@ Dallas walks outside and Dominic bangs his hand on the door.
 Dallas answers. 
 
 DOMINIC
-Dallas! Gosh what a whirlwind. Listen, our church has a bible study tonight - you should come. That okay?
+Dallas - do you mind coming a bit earlier today to watch Asher? I have to run to the store for lifegroup tonight. 
+
+<!-- scene: 13 file: s13.md nickname: entering-grass -->
+
+(action)
+Dallas and Asher look at each other for a beat. 
 
 DALLAS
 Yeah that's fine. 
@@ -1621,18 +1591,15 @@ Good.
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Dominic looks back at Asher, who hasn't moved from the edge of the yard. His eyes are on the tall grass.
+Dominic looks back at Asher, who hasn't moved from the edge of the yard. His eyes are on the Dallas' upstairs attic window. 
 
 DOMINIC
-Asher, come on - I got to run to the store. 
+Alright Asher, don't cause Mr. Dallas any trouble. 
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
 (action)
-Asher doesn't move. He keeps his eyes on the grass.
-
-DOMINIC
-Alright fine - stay. But you owe me one. Mr. Dallas, he's no trouble. I'll be back in twenty.
+Asher doesn't move. He keeps his eyes on the window.
 
 <!-- scene: 13 file: s13.md nickname: entering-grass -->
 
@@ -2398,9 +2365,11 @@ Dallas sets the covered backpack on the table. His spare handheld oscilloscope b
 
 The creature answers with a weak tone from inside the bag. Dallas steadies his breathing and checks the window.
 
+Dallas runs outside to check out 
+
 INT. DALLAS'S HOUSE - HALLWAY - DAY (s16.4)
 
-Dominic pulls up in his car and honks the horn. He rolls down the window, calm.
+Dominic walks up to Dallas' house. 
 
 DOMINIC
 (easy)
@@ -2415,15 +2384,15 @@ I'm fine.
 Dominic's eyes drift to the backpack. Something about it doesn't sit right with him. He clocks it quietly—then lets it go.
 
 DOMINIC
-Life group tonight. You should come. Get out of this house for an hour.
-
-DALLAS
-Maybe.
+Life group tonight. Asher lets go. 
 
 <!-- scene: 16 file: s16.md nickname: the-escape -->
 
 (action)
-Dominic gives the house one last look, then throws the car into drive.
+Asher holds his backpack tightly to his chest.
+
+INT. DALLAS'S ATTIC - DAY (s16.5)
+Dallas looks up - the creature is gone.
 
 ---
 
