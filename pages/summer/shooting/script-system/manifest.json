@@ -32,14 +32,6 @@
     "nickname": "dallas-night"
   },
   {
-    "id": "branford-night-discovery",
-    "file": "s02.3.md",
-    "title": "Branford at Night Montages",
-    "act": 1,
-    "actTitle": "Arrival & Discovery",
-    "nickname": "branford-night-discovery"
-  },
-  {
     "id": "the-hum",
     "file": "s03.md",
     "title": "The Hum",
@@ -78,14 +70,6 @@
     "act": 1,
     "actTitle": "Arrival & Discovery",
     "nickname": "the-coordinates"
-  },
-  {
-    "id": "mr-mikes-warning",
-    "file": "s07b.md",
-    "title": "Mr. Mike's Warning",
-    "act": 1,
-    "actTitle": "Arrival & Discovery",
-    "nickname": "mr-mikes-warning"
   },
   {
     "id": "dallas-marsh-walk",

@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/17/2026, 11:48:17 AM*
+*Compiled on 6/17/2026, 12:09:26 PM*
 
 ---
 
@@ -386,24 +386,11 @@ Dallas stands alone watching the tall grass sway agaisnt the salt breeze. Coyote
 In the distance a thunderstorm brews. 
 
  
-EXT. BRANFORD AT NIGHT MONTAGES (s02.3)
+EXT. BRANFORD AT NIGHT MONTAGES
 
 Dallas walks around at night with a recorder in his hand. As he walks along the different coastal neighborhoods - as he stops by a particular puzzling patch of tall grass - he takes big deep breath and pulls out his recorder. He records the sounds of the ocean. 
 
 On the way home - he records the breeze of the tall grass.
-
----
-
-
-### Scene 2: Branford at Night Montages
-
-*ACT I — Arrival & Discovery | ID: branford-night-discovery | File: s02.3.md*
-
----
-
-<!-- scene: 2 file: s02.3.md nickname: branford-night-discovery -->
-
-[SCENE FILE MISSING: s02.3.md]
 
 ---
 
@@ -1013,39 +1000,23 @@ Asher, meanwhile, ignores the conversation, eyes fixed on the distant bushes at 
 
 (action)
 Dominic begins to light the gas to start boiling the brussels but the lighter doesnt work. 
-He throws up his hands and steps outside to the patio to get it going. Dallas follows him out.
-
-EXT. DOMINIC'S PATIO (s07.3)
-
-DOMINIC
-Thank you again Dallas.
+He throws up his hands and steps outside to the patio to get it going.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas begins to walk across the street to his house.
+Dallas stands near the table, holding the frame with the photo of Dominic's family. He sets it down gently. Mr. Mike rocks in his chair. He has stopped muttering. His eyes are on Dallas now. Focused. Different.
 
-<!-- FILMING ON = Sun June 28 - Day 12 -->
-
-s07B — INT. DOMINIC'S BASEMENT — CONTINUOUS
-(Slots in between Scene 7.2 and the end of Scene 7. After Mr. Mike has rambled about Javerias. Dominic is in the kitchen, out of frame. Dallas is alone with Mr. Mike.)
-
-<!-- scene: 7 file: s07.md nickname: the-coordinates -->
-
-(action)
-Dallas stands near the table, holding the frame with the photo of Dominic's family. He sets it down gently.
-Mr. Mike rocks in his chair. He has stopped muttering. His eyes are on Dallas now. Focused. Different.
-    
 MR. MIKE
 Come here.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas glances toward the kitchen. Dominic is out of earshot. He walks over.
+Dallas glances toward the patio. Dominic is out of earshot. He walks over.
 
 MR. MIKE
-Come closer I can't hear you. 
+Come closer I can't hear you.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1053,7 +1024,7 @@ Come closer I can't hear you.
 Dallas crouches beside the rocking chair. Mr. Mike reaches out and takes Dallas's wrist. His grip is stronger than it should be.
 
 MR. MIKE
-You listen to me.   
+You listen to me.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1084,7 +1055,7 @@ DALLAS
 What?
 
 MR. MIKE
-You don't touch it. You don't take it. You don't try to help. You leave it. 
+You don't touch it. You don't take it. You don't try to help. You leave it.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1092,7 +1063,7 @@ You don't touch it. You don't take it. You don't try to help. You leave it.
 Mr. Mike looks at him for a long moment. His lip trembles.
 
 MR. MIKE
-If you touch the hurt one, you make the dark one. And then you become the dark one. 
+If you touch the hurt one, you make the dark one. And then you become the dark one.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
@@ -1121,9 +1092,9 @@ The dark one is still out there.
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas stares out the window and on the floor. 
+Dallas stares out the window and on the floor.
 
-From the kitchen:
+From outside:
 DOMINIC (O.S.)
 Dallas — you want water?
 
@@ -1148,25 +1119,24 @@ No, I'm okay.
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Mr. Mike starts humming. 
+Mr. Mike starts humming.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
 Dallas looks at his wrist one more time, then at the rocking chair. Then at the window, toward the tall grass.
 
----
+EXT. DOMINIC'S PATIO (s07.3)
 
+DOMINIC
+Thank you again Dallas.
 
-### Scene 7B: Mr. Mike's Warning
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
-*ACT I — Arrival & Discovery | ID: mr-mikes-warning | File: s07b.md*
+(action)
+Dallas begins to walk across the street to his house.
 
----
-
-<!-- scene: 7B file: s07b.md nickname: mr-mikes-warning -->
-
-[SCENE FILE MISSING: s07b.md]
+<!-- FILMING ON = Sun June 28 - Day 12 -->
 
 ---
 
@@ -1518,23 +1488,35 @@ Dallas rushes to the workstation and finds that the creature sleeping peacefully
 <!-- Filming on = Day 4 = 6.13.26 -->
 <!-- LOCATION: Jerry's Attic - Shoot somewhere where Dallas is also alone -->
 
-INT. DALLAS'S ATTIC - NEXT MORNING  (s12.1)
+INT. DALLAS ATTIC - EARLY MORNING  (s12.1)
 
-Morning dawns and Dallas takes a deep breath as he awakes from a cot near the desk. 
+Dallas wakes in the chair at his desk. Not on the cot. He didn't mean to sleep there.
 
-He stares at the wall for a while and then at his bed post and the journal with the picture of the woman next to it. 
+The desk lamp is still on. Sierra's cassette recorder sits on the desk beside him — tape still loaded from the night before.
 
-He hears a chirp and looks over at the creature.
+He doesn't move right away. He looks at the wall. At the photo of Sierra taped to the receiver. At the creature in its habitat below the heat lamp — asleep, glow dim and even, breathing slowly through its back.
 
-CUT TO:
-The creature is sound asleep in the makeshift aquarium that Dallas built for it. 
+He watches it breathe for a while.
 
+Then he looks at his own hands. He has been holding the oscillator so long there's a red mark across his palm where the casing dug in.
 
-Dallas looks at his computer and begins to scan the records. 
+He sets it down.
 
-Outside he hears a loud bang and someone yelling in the distance. 
+INT. DALLAS ATTIC - MOMENTS LATER  (s12.2)
 
-Dominic's car idles in the driveway. Dominic gets out and checks the pressure on one of its tires.
+Dallas at the workstation. Headphones around his neck, not on. The spectrogram is open on the laptop — last night's recordings still scrolling. He studies the waveform without touching anything.
+
+The creature stirs. Its glow pulses once — warm, amber — and settles.
+
+Dallas watches it. Then he looks at Sierra's field journal on the corner of the desk. He doesn't open it. He just looks at it.
+
+EXT. DALLAS BACKYARD - MORNING  (s12.3)
+
+Dallas on the back porch with coffee. He looks at the tall grass at the edge of the property. The dead ring is still there — flattened, brittle, perfectly circular. He looks at it for a long time.
+
+From down the street: footsteps on pavement. Dominic and Asher come around the corner on foot. Dominic has a hand in his pocket. Asher is already looking toward the edge of the yard.
+
+Dallas watches them come.
 
 ---
 
@@ -2391,8 +2373,45 @@ Life group tonight. Asher lets go.
 (action)
 Asher holds his backpack tightly to his chest.
 
-INT. DALLAS'S ATTIC - DAY (s16.5)
-Dallas looks up - the creature is gone.
+INT. DALLAS KITCHEN - CONTINUOUS  (s16.5)
+
+After Dominic walks away, Asher stays. He is still holding his backpack to his chest. He looks at Dallas.
+
+Dallas goes inside. He doesn't think twice about leaving Asher in the yard — Asher is always out there.
+
+Dallas at the counter. He fills a glass of water. Looks out the window at the yard. Asher is standing at the back gate now, facing the marsh.
+
+Dallas goes upstairs.
+
+INT. DALLAS ATTIC - CONTINUOUS
+
+Dallas at the desk. He pulls up the spectrogram from last night. Starts working.
+
+Below him, through the floor, faint: the creature's habitat. The heat lamp. The glow.
+
+He works for a while.
+
+Then — something is different. He doesn't hear it at first. He just feels it. He pulls his headphones off.
+
+The hum from the basement is gone. Not quiet. Gone.
+
+Dallas goes still. Then he stands.
+
+INT. DALLAS BASEMENT - MOMENTS LATER
+
+The habitat is there. The heat lamp is on. The towel is folded back.
+
+Empty.
+
+Dallas stands in the doorway. He looks at the habitat. At the oscilloscope still wired to it — the golden line on the screen now flat. At the heat lamp warming nothing.
+
+He looks at the window. The yard is empty. Asher is gone.
+
+Dallas understands exactly what happened. He doesn't chase. He doesn't call out. He stands in the basement with the empty habitat and the flat line on the oscilloscope and the heat lamp still warm.
+
+Then he goes back upstairs and packs the blaster into his field bag.
+
+<!-- NOTE: s16b timing to be reconciled in next pass -->
 
 ---
 
@@ -2499,6 +2518,7 @@ something has just been passed.
 
 <!-- scene: 17 file: s17.md nickname: resonance -->
 
+<!-- NOTE: s17 discovery beat now redundant — trim in next pass -->
 <!-- nickname: resonance -->
 <!-- GOING TO FILM ON Day 4 -->
 
