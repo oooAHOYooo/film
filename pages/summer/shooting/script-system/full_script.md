@@ -1,6 +1,6 @@
 # Creatures in the Tall Grass Script — Full Script
 
-*Compiled on 6/17/2026, 12:09:26 PM*
+*Compiled on 6/22/2026, 11:22:22 AM*
 
 ---
 
@@ -1126,15 +1126,211 @@ Mr. Mike starts humming.
 (action)
 Dallas looks at his wrist one more time, then at the rocking chair. Then at the window, toward the tall grass.
 
-EXT. DOMINIC'S PATIO (s07.3)
+<!-- SATURDAY SHOOT (no Dominic needed) -->
 
-DOMINIC
-Thank you again Dallas.
+INT. BOLES RESIDENCE - LIVING ROOM (s07.2a)
+
+Makayla moves around the kitchen. Dallas stands near the doorway between rooms, recorder in hand.
+
+MAKAYLA
+He'll just be a second.
 
 <!-- scene: 7 file: s07.md nickname: the-coordinates -->
 
 (action)
-Dallas begins to walk across the street to his house.
+Dallas nods. His eyes drift to the living room. Mr. Mike sits in a rocking chair near the window, eyes closed, hands folded in his lap.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas takes a few steps in. A ceiling fan turns slowly overhead.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Mr. Mike opens his eyes. He stares at the table in front of him — then drags a jagged nail slowly across the wood.
+
+MAKAYLA
+(from the kitchen)
+Mr. Mike—
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Mr. Mike points at the window.
+
+MR. MIKE
+It's starting again.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas stays where he is.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Mr. Mike turns to look at him. His eyes are milky but focused.
+
+MR. MIKE
+Come here.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas glances toward the kitchen. Makayla is in the doorway, watching.
+
+MR. MIKE
+Come closer. I can't hear you.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas walks to the chair and crouches beside it. Mr. Mike reaches out and takes Dallas's wrist. His grip is firm.
+
+MR. MIKE
+You listen to me.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+MR. MIKE
+Javerias told me this when I was seven. My father's age. I'm telling you now. If you find one of the bright ones. Hurt. Bleeding. Anything.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+He tightens his grip.
+
+MR. MIKE
+You leave it.
+
+DALLAS
+(quiet)
+What?
+
+MR. MIKE
+You don't touch it. You don't take it. You don't try to help. You leave it. If you touch the hurt one, you make the dark one. And then you become the dark one.
+
+MR. MIKE
+Every time. Every single time.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+He lets go.
+
+MR. MIKE
+I touched one. When I was a boy. I didn't know. Javerias came the next week. Told me what I did.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+The rocker creaks once.
+
+MR. MIKE
+The dark one is still out there.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Makayla calls down the hall.
+
+MAKAYLA
+Dominic?
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+The sound of movement from below. Mr. Mike blinks. He looks at Dallas without recognition.
+
+MR. MIKE
+(confused, gentle)
+Who are you?
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas stands. He rubs his wrist.
+
+INT. BOLES RESIDENCE - KITCHEN (s07.2b)
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Makayla sets a glass of water on the counter near Dallas.
+
+MAKAYLA
+He does that sometimes.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas picks up the glass.
+
+DALLAS
+Does he remember it after?
+
+MAKAYLA
+No.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas sets the glass down. Makayla looks at the recorder in his hand.
+
+MAKAYLA
+You always carry that?
+
+DALLAS
+Yeah.
+
+MAKAYLA
+Is that your wife's?
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas goes still.
+
+DALLAS
+Yeah.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Makayla folds a dish towel. Sets it on the counter.
+
+MAKAYLA
+She must've been good at listening too.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas looks at the recorder. He doesn't answer.
+
+EXT. BOLES RESIDENCE - FRONT (s07.3)
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas comes out the front door. He stops on the step. He looks across the street at his house.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+He puts the recorder in his jacket pocket and starts walking.
+
+<!-- DOMINIC GOODBYE - FILM WITH DOMINIC (separate day) -->
+
+DOMINIC
+(from the doorway)
+Thank you again, Dallas.
+
+<!-- scene: 7 file: s07.md nickname: the-coordinates -->
+
+(action)
+Dallas raises a hand without turning back.
 
 <!-- FILMING ON = Sun June 28 - Day 12 -->
 
