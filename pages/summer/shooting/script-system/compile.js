@@ -1002,6 +1002,15 @@ function compile() {
   fs.writeFileSync(galleryPath, galleryHtml, 'utf8');
   console.log(`✓ Created ${galleryPath}`);
 
+  // Auto-snapshot: drop a dated copy in versions/ every compile
+  const now = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  const stamp = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}_${pad(now.getHours())}-${pad(now.getMinutes())}`;
+  const versionsDir = path.join(__dirname, 'versions');
+  fs.mkdirSync(versionsDir, { recursive: true });
+  fs.copyFileSync(OUTPUT_MD, path.join(versionsDir, `full_script_${stamp}.md`));
+  console.log(`  - Snapshot: versions/full_script_${stamp}.md`);
+
   console.log('\n✓ Compilation complete!');
   console.log(`  - Markdown: ${OUTPUT_MD}`);
   console.log(`  - HTML: ${OUTPUT_HTML}`);
