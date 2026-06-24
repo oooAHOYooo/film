@@ -1011,11 +1011,80 @@ function compile() {
   fs.copyFileSync(OUTPUT_MD, path.join(versionsDir, `full_script_${stamp}.md`));
   console.log(`  - Snapshot: versions/full_script_${stamp}.md`);
 
+  // Regenerate versions index page
+  const versionsIndexHtml = generateVersionsIndexPage(versionsDir, scenes.length);
+  fs.writeFileSync(path.join(versionsDir, 'index.html'), versionsIndexHtml, 'utf8');
+  console.log(`  - Versions index: versions/index.html`);
+
   console.log('\n✓ Compilation complete!');
   console.log(`  - Markdown: ${OUTPUT_MD}`);
   console.log(`  - HTML: ${OUTPUT_HTML}`);
   console.log(`  - Plot cards: ${PLOT_CARDS_PATH}`);
   console.log(`  - Gallery: ${galleryPath}`);
+}
+
+function generateVersionsIndexPage(versionsDir, sceneCount) {
+  const files = fs.readdirSync(versionsDir)
+    .filter(f => f.endsWith('.md'))
+    .sort()
+    .reverse();
+
+  const rows = files.map(f => {
+    const stat = fs.statSync(path.join(versionsDir, f));
+    const label = f.replace(/^full_script_/, '').replace(/\.md$/, '');
+    const dateStr = label.replace(/_/, ' ').replace(/-/g, (m, i) => i < 10 ? '-' : ':');
+    return `      <tr>
+        <td style="padding:10px 14px;border-bottom:1px solid #eee;font-family:ui-monospace,monospace;font-size:0.85rem;">${label}</td>
+        <td style="padding:10px 14px;border-bottom:1px solid #eee;font-size:0.85rem;color:#555;">${stat.mtime.toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })}</td>
+        <td style="padding:10px 14px;border-bottom:1px solid #eee;">
+          <a href="${f}" style="color:#000;font-weight:600;font-size:0.85rem;">Download .md</a>
+        </td>
+      </tr>`;
+  }).join('\n');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script Versions — Creatures in the Tall Grass</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #fff; color: #000; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    h1 { font-size: 1.6rem; font-weight: 700; margin: 0 0 4px 0; }
+    .sub { font-size: 0.85rem; color: #666; margin: 0 0 40px 0; }
+    .sub a { color: #000; }
+    table { width: 100%; border-collapse: collapse; }
+    thead th { text-align: left; padding: 6px 14px; border-bottom: 2px solid #000; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #555; }
+    tbody tr:hover { background: #f5f5f5; }
+    .badge { display: inline-block; font-size: 0.7rem; font-weight: 700; background: #000; color: #fff; padding: 2px 7px; border-radius: 3px; letter-spacing: 0.04em; margin-left: 10px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="sub" style="margin-bottom:16px;"><a href="../../../shooting_production.html">← Dashboard</a></p>
+    <h1>Script Versions</h1>
+    <p class="sub">Creatures in the Tall Grass · Summer shooting script · ${files.length} snapshot${files.length !== 1 ? 's' : ''} · current cut: ${sceneCount} scenes</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Saved</th>
+          <th>File</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #eee;font-family:ui-monospace,monospace;font-size:0.85rem;">current <span class="badge">LIVE</span></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #eee;font-size:0.85rem;color:#555;">Now</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #eee;"><a href="../full_script.html" style="color:#000;font-weight:600;font-size:0.85rem;">Open full script</a></td>
+        </tr>
+${rows}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>`;
 }
 
 function generateGalleryPage(cardsData) {

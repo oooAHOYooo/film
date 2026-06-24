@@ -128,22 +128,6 @@
     "nickname": "creature-rescue"
   },
   {
-    "id": "the-field-journal",
-    "file": "s14b.md",
-    "title": "The Field Journal",
-    "act": 2,
-    "actTitle": "The Creature",
-    "nickname": "the-field-journal"
-  },
-  {
-    "id": "the-almost-discovery",
-    "file": "s14c.md",
-    "title": "The Almost Discovery",
-    "act": 2,
-    "actTitle": "The Creature",
-    "nickname": "the-almost-discovery"
-  },
-  {
     "id": "the-tracking-box",
     "file": "s15.md",
     "title": "Asher's Tracking Box",
