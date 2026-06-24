@@ -247,7 +247,35 @@ function markdownToHTML(markdown) {
 }
 
 // Generate full HTML page
-function generateHTMLPage(markdown, scenes) {
+function generateHTMLPage(markdown, scenes, versionsData = [], currentVersionStamp = false) {
+  // When generating a page inside versions/, paths need one extra ../
+  const isVersion = !!currentVersionStamp;
+  const cssBase = isVersion ? '../../../' : '../../';
+  const backLink = isVersion ? '../index.html' : '../index.html';
+  const latestLink = isVersion ? '../full_script.html' : 'full_script.html';
+
+  // Build version dropdown items
+  const versionMenuItems = versionsData.map(v => {
+    const href = isVersion
+      ? (v.stamp === currentVersionStamp ? '#' : `full_script_${v.stamp}.html`)
+      : `versions/full_script_${v.stamp}.html`;
+    const isActive = v.stamp === currentVersionStamp;
+    return `<a role="menuitem" href="${href}" style="display:block;padding:6px 14px;font-size:0.82rem;text-decoration:none;color:${isActive ? '#999' : '#000'};cursor:${isActive ? 'default' : 'pointer'};" ${isActive ? '' : `onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='transparent'"`}>${v.stamp}${isActive ? ' ✓' : ''}</a>`;
+  }).join('');
+
+  const versionTriggerLabel = currentVersionStamp ? currentVersionStamp : 'Latest';
+  const versionDropdownHtml = versionsData.length === 0 ? '' : `
+          <div class="script-export-dropdown" id="scriptVersionDropdown" style="position:relative;">
+            <button type="button" class="print-button script-export-trigger" id="scriptVersionTrigger" aria-haspopup="true" aria-expanded="false" style="font-size:0.78rem;opacity:0.8;">
+              ${versionTriggerLabel}
+            </button>
+            <div class="script-export-menu" id="scriptVersionMenu" role="menu" aria-label="Script versions" style="min-width:220px;right:0;left:auto;">
+              <a role="menuitem" href="${latestLink}" style="display:block;padding:6px 14px;font-size:0.82rem;text-decoration:none;color:${!currentVersionStamp ? '#999' : '#000'};font-weight:600;cursor:${!currentVersionStamp ? 'default' : 'pointer'};" ${!currentVersionStamp ? '' : `onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='transparent'"`}>Latest${!currentVersionStamp ? ' ✓' : ''}</a>
+              <div style="border-top:1px solid #eee;margin:4px 0;"></div>
+              ${versionMenuItems}
+            </div>
+          </div>`;
+
   const sceneOptionsHtml = (scenes || []).map((s, i) => {
     const num = i + 1;
     const displayNum = getSceneDisplayNumber(s.file) || num;
@@ -268,8 +296,8 @@ function generateHTMLPage(markdown, scenes) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Script - ${SCRIPT_NAME}</title>
-  <link rel="stylesheet" href="../../omitted/script-system/script.css?v=20260108-5">
+  <title>${isVersion ? currentVersionStamp + ' — ' : ''}Full Script - ${SCRIPT_NAME}</title>
+  <link rel="stylesheet" href="${cssBase}omitted/script-system/script.css?v=20260108-5">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <style>
@@ -374,7 +402,7 @@ function generateHTMLPage(markdown, scenes) {
     <div class="script-sticky-bar no-print" id="scriptStickyBar">
       <div class="nav">
         <div class="nav-left">
-          <a class="nav-link" href="../index.html" title="Back">
+          <a class="nav-link" href="${backLink}" title="Back">
             <span class="nav-icon" aria-hidden="true">←</span>
             <span class="nav-text">Back</span>
           </a>
@@ -384,6 +412,7 @@ function generateHTMLPage(markdown, scenes) {
           <a class="nav-link" href="/pages/summer/shooting/production.html" title="Production plan">
             <span class="nav-text">Production plan</span>
           </a>
+          ${versionDropdownHtml}
           <div class="script-export-dropdown" id="scriptExportDropdown">
             <button type="button" class="print-button script-export-trigger" id="scriptExportTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="scriptExportMenu">
               Export / Print
@@ -511,6 +540,20 @@ function generateHTMLPage(markdown, scenes) {
       });
       menu.querySelectorAll('button').forEach(function(btn) {
         btn.addEventListener('click', function() { close(); });
+      });
+      document.addEventListener('click', function() { close(); });
+    })();
+
+    // Version dropdown
+    (function initVersionDropdown() {
+      var trigger = document.getElementById('scriptVersionTrigger');
+      var menu = document.getElementById('scriptVersionMenu');
+      if (!trigger || !menu) return;
+      function open() { menu.classList.add('is-open'); trigger.setAttribute('aria-expanded', 'true'); }
+      function close() { menu.classList.remove('is-open'); trigger.setAttribute('aria-expanded', 'false'); }
+      trigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (menu.classList.contains('is-open')) close(); else open();
       });
       document.addEventListener('click', function() { close(); });
     })();
@@ -986,11 +1029,6 @@ function compile() {
   fs.writeFileSync(OUTPUT_MD, markdown, 'utf8');
   console.log(`✓ Created ${OUTPUT_MD}`);
 
-  console.log('Generating full_script.html...');
-  const html = generateHTMLPage(markdown, scenes);
-  fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
-  console.log(`✓ Created ${OUTPUT_HTML}`);
-
   console.log('Updating plot cards (dynamic summaries from full script)...');
   writePlotCardsData(scenes, markdown);
 
@@ -1008,8 +1046,33 @@ function compile() {
   const stamp = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}_${pad(now.getHours())}-${pad(now.getMinutes())}`;
   const versionsDir = path.join(__dirname, 'versions');
   fs.mkdirSync(versionsDir, { recursive: true });
+
+  // Build versionsData: existing version stamps + the new one being created
+  const existingVersionStamps = fs.readdirSync(versionsDir)
+    .filter(f => /^full_script_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}.*\.md$/.test(f))
+    .map(f => f.replace(/^full_script_/, '').replace(/\.md$/, ''))
+    .sort()
+    .reverse();
+  const allStamps = [stamp, ...existingVersionStamps.filter(s => s !== stamp)];
+  const versionsData = allStamps.map(s => ({
+    stamp: s,
+    label: s.replace('_', ' ').replace(/-/g, (m, i) => i < 10 ? '-' : ':'),
+  }));
+
+  // Generate full_script.html with version dropdown
+  console.log('Generating full_script.html...');
+  const html = generateHTMLPage(markdown, scenes, versionsData, false);
+  fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
+  console.log(`✓ Created ${OUTPUT_HTML}`);
+
+  // Write snapshot .md
   fs.copyFileSync(OUTPUT_MD, path.join(versionsDir, `full_script_${stamp}.md`));
   console.log(`  - Snapshot: versions/full_script_${stamp}.md`);
+
+  // Generate snapshot .html (same content, version-aware paths and banner)
+  const snapshotHtml = generateHTMLPage(markdown, scenes, versionsData, stamp);
+  fs.writeFileSync(path.join(versionsDir, `full_script_${stamp}.html`), snapshotHtml, 'utf8');
+  console.log(`  - Snapshot HTML: versions/full_script_${stamp}.html`);
 
   // Regenerate versions index page
   const versionsIndexHtml = generateVersionsIndexPage(versionsDir, scenes.length);
