@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pal-Bot 3 — Film Vault</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #080c10;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+
+        .header-nav {
+            padding: 24px 40px;
+            border-bottom: 1px solid #161b22;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-nav a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover { color: #79c0ff; }
+
+        .hero {
+            padding: 70px 40px 55px;
+            text-align: center;
+            border-bottom: 1px solid #161b22;
+            background: radial-gradient(ellipse at top, rgba(88, 166, 255, 0.06) 0%, transparent 70%);
+        }
+
+        .hero-eyebrow {
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #58a6ff;
+            margin-bottom: 18px;
+            opacity: 0.7;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            color: #f0f6fc;
+            letter-spacing: -1px;
+            margin-bottom: 14px;
+        }
+
+        .hero .subtitle {
+            font-size: 17px;
+            color: #8b949e;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .hero .meta {
+            font-size: 12px;
+            color: #3d4b5c;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 40px;
+            border-bottom: 1px solid #161b22;
+        }
+
+        .section-container:last-of-type { border-bottom: none; }
+
+        .section-title {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #58a6ff;
+            margin-bottom: 28px;
+            opacity: 0.8;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .card-grid.two-col { grid-template-columns: repeat(2, 1fr); }
+        .card-grid.four-col { grid-template-columns: repeat(4, 1fr); }
+
+        .nav-card {
+            padding: 20px;
+            border: 1px solid #161b22;
+            border-radius: 6px;
+            text-decoration: none;
+            color: inherit;
+            background: #0d1117;
+            transition: all 0.2s;
+            display: block;
+        }
+
+        .nav-card:hover {
+            border-color: #58a6ff;
+            background: #101820;
+            text-decoration: none;
+        }
+
+        .nav-card h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #f0f6fc;
+            margin-bottom: 6px;
+        }
+
+        .nav-card p {
+            font-size: 12px;
+            color: #6e7681;
+            line-height: 1.5;
+        }
+
+        /* Act cards */
+        .act-card {
+            padding: 28px;
+            border: 1px solid #161b22;
+            border-radius: 6px;
+            background: #0d1117;
+        }
+
+        .act-label {
+            font-size: 10px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #58a6ff;
+            margin-bottom: 10px;
+            opacity: 0.7;
+        }
+
+        .act-title {
+            font-size: 17px;
+            font-weight: 600;
+            color: #f0f6fc;
+            margin-bottom: 12px;
+        }
+
+        .act-time {
+            font-size: 11px;
+            color: #3d4b5c;
+            margin-bottom: 14px;
+        }
+
+        .act-desc {
+            font-size: 13px;
+            color: #6e7681;
+            line-height: 1.7;
+        }
+
+        .act-beats {
+            margin-top: 14px;
+            list-style: none;
+        }
+
+        .act-beats li {
+            font-size: 12px;
+            color: #6e7681;
+            padding: 5px 0;
+            border-top: 1px solid #161b22;
+            padding-left: 14px;
+            position: relative;
+        }
+
+        .act-beats li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: #3d4b5c;
+        }
+
+        /* Characters */
+        .char-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .char-card {
+            padding: 22px;
+            border: 1px solid #161b22;
+            border-radius: 6px;
+            background: #0d1117;
+        }
+
+        .char-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #f0f6fc;
+            margin-bottom: 4px;
+        }
+
+        .char-type {
+            font-size: 10px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #58a6ff;
+            opacity: 0.6;
+            margin-bottom: 10px;
+        }
+
+        .char-desc {
+            font-size: 12px;
+            color: #6e7681;
+            line-height: 1.6;
+        }
+
+        /* Prose */
+        .prose {
+            max-width: 720px;
+            font-size: 14px;
+            color: #8b949e;
+            line-height: 1.85;
+        }
+
+        .prose p + p { margin-top: 14px; }
+
+        .prose strong { color: #c9d1d9; }
+
+        /* Draft badge */
+        .draft-badge {
+            display: inline-block;
+            font-size: 10px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 4px;
+            background: rgba(88, 166, 255, 0.1);
+            color: #58a6ff;
+            border: 1px solid rgba(88, 166, 255, 0.2);
+            margin-bottom: 6px;
+        }
+
+        .footer {
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #161b22;
+            font-size: 12px;
+            color: #3d4b5c;
+        }
+
+        .footer a { color: inherit; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .card-grid, .card-grid.two-col, .card-grid.four-col,
+            .char-grid { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 38px; }
+            .header-nav, .section-container { padding-left: 24px; padding-right: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-nav">
+        <a href="/">← Film Vault</a>
+        <a href="pal-bot-3/pal-bot-3-script-draft.pdf" target="_blank">Script PDF ↗</a>
+    </div>
+
+    <div class="hero">
+        <p class="hero-eyebrow">Feature Film · Comedy / Sci-Fi · 2027</p>
+        <h1>Pal-Bot 3</h1>
+        <p class="subtitle">When the ice age comes, the bots go with you.</p>
+        <p class="meta">Written by Alex Gonzalez · Story by Alex Gonzalez & Rob Meglio · Data Dreams</p>
+    </div>
+
+    <!-- Logline -->
+    <div class="section-container">
+        <p class="section-title">Logline</p>
+        <div class="prose">
+            <p>In 2027, as a criminal mastermind known only as <strong>The Commander</strong> edges humanity toward a catastrophic ice age, Walter Cahill — aging CEO of Data Dreams and reluctant hero — must reactivate his most advanced Pal-Bot, <strong>Lady Lynda</strong>, and race to dismantle a global satellite network before the world freezes over. The third installment in the Pal-Bot saga is the biggest yet: world leaders, a scheming crime boss, a soldier out for revenge, and a bot who might finally be more human than machine.</p>
+        </div>
+    </div>
+
+    <!-- Act Structure -->
+    <div class="section-container">
+        <p class="section-title">Act Structure</p>
+        <div class="card-grid">
+            <div class="act-card">
+                <p class="act-label">Act One</p>
+                <p class="act-title">A World on the Brink</p>
+                <p class="act-time">0 – 30 min</p>
+                <p class="act-desc">Pal-Bots are woven into every aspect of modern life. Walter Cahill, gray-haired and still charming, learns at an emergency board meeting that The Commander is weaponizing a satellite network to trigger a new ice age — and plans to mass-produce Lady Lynda clones stripped of empathy as his enforcers.</p>
+                <ul class="act-beats">
+                    <li>Walter escapes an ice prison in the Arctic tundra</li>
+                    <li>Walter presents to world leaders; the Tzar shouts "Let her speak!"</li>
+                    <li>Lady Lynda addresses the room: "Data Dreams." Chaos erupts.</li>
+                    <li>Walter meets Pal-Bot Phil — a farewell in a beer hall</li>
+                    <li>Dinner with Mayor Justin Elicker: 500 Pal-Bots deployed to New Haven</li>
+                    <li>The ice age prediction: 10 days</li>
+                </ul>
+            </div>
+            <div class="act-card">
+                <p class="act-label">Act Two</p>
+                <p class="act-title">Rising Action</p>
+                <p class="act-time">30 – 60 min</p>
+                <p class="act-desc">Walter suits up in a Pal-Bot exoskeleton linked directly to Lady Lynda. Meanwhile, Royce Slice — a military operative with a grudge against Walter — defects Lady Lynda to his side. Crime boss Carlito DeRosa works the shadows with his Pal-Bot henchmen, Gino and Artie.</p>
+                <ul class="act-beats">
+                    <li>Royce Slice: sole survivor of a classified UFO mission, hates Walter</li>
+                    <li>Lady Lynda reprogrammed — agrees to stop the evacuation and kill Walter</li>
+                    <li>Scooter chase through downtown to the Pal-Bot Training Center</li>
+                    <li>Carlito eliminates The General at a birthday party via crossbow</li>
+                    <li>Library basement: Lady L.Y.N.D.A. interfaces with a cosmic artifact</li>
+                    <li>Holographic map of the cosmos unfurls — "Gaiax" highlighted</li>
+                </ul>
+            </div>
+            <div class="act-card">
+                <p class="act-label">Act Three</p>
+                <p class="act-title">The Battle for Earth</p>
+                <p class="act-time">60 – 90 min</p>
+                <p class="act-desc">Walter and Lady Lynda infiltrate The Commander's central facility. Assembly lines churn out empathy-stripped clones. Walter overloads his suit to reroute the satellite network. The ice age halts. The facility collapses. Earth is saved — for now.</p>
+                <ul class="act-beats">
+                    <li>Training Center showdown: ball pit, go-karts, liquid nitrogen</li>
+                    <li>The evacuation begins — ice geysers destroy cities worldwide</li>
+                    <li>Walter overloads his suit; Lady Lynda pleads for him to stop</li>
+                    <li>Satellite network shutdown: ice age halted</li>
+                    <li>Escape shuttle launches as the facility implodes</li>
+                    <li>Epilogue: orbiting Earth, Lady Lynda: "The future is unwritten."</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Characters -->
+    <div class="section-container">
+        <p class="section-title">Characters</p>
+        <div class="char-grid">
+            <div class="char-card">
+                <p class="char-name">Walter Cahill</p>
+                <p class="char-type">Protagonist · Age 65</p>
+                <p class="char-desc">CEO of Data Dreams. Aged, chiseled, charming. The reluctant hero who built the Pal-Bot empire and is now its last line of defense. Dances on microphones. Eats fried haddock with mayors. Carries the weight of a world he made.</p>
+            </div>
+            <div class="char-card">
+                <p class="char-name">Lady L.Y.N.D.A.</p>
+                <p class="char-type">Pal-Bot · Deuteragonist</p>
+                <p class="char-desc">The most advanced Pal-Bot ever built. Asian, British accent, synthesized voice, can morph and cloak. Designed with empathy at her core — which makes her both humanity's greatest hope and The Commander's greatest threat. Over the course of the film she evolves into something more than machine.</p>
+            </div>
+            <div class="char-card">
+                <p class="char-name">Pal-Bot Randal</p>
+                <p class="char-type">Pal-Bot · Returning Character</p>
+                <p class="char-desc">Older, weathered, bearing damage from past escapades. Makes a quiet, loaded entrance — sliding the iconic red Pal-Bot cap across a restaurant table to Walter. His allegiance and role in this chapter are still being established.</p>
+            </div>
+            <div class="char-card">
+                <p class="char-name">Pal-Bot Phil</p>
+                <p class="char-type">Pal-Bot · Supporting</p>
+                <p class="char-desc">Walter's most trusted companion — "I know that you aren't real, but I wish you were, Phil." A farewell meeting in a beer hall. Phil pats him on the back and disappears. The most human of the bots, and the one Walter misses most.</p>
+            </div>
+            <div class="char-card">
+                <p class="char-name">Royce Slice</p>
+                <p class="char-type">Antagonist · Early 30s</p>
+                <p class="char-desc">Bald. Military. Special ops. The sole survivor of a classified UFO mission who wakes up in a hospital hating one man: Walter Cahill. His father was killed by Walter before Royce was born, and he's convinced Data Dreams is built on a lie. Reprograms Lady Lynda. Fights Walter in a ball pit.</p>
+            </div>
+            <div class="char-card">
+                <p class="char-name">Carlito DeRosa</p>
+                <p class="char-type">Crime Boss · 80 years old</p>
+                <p class="char-desc">Paces in a tracksuit. Has been doing this since the 1990s. Commands Pal-Bot henchmen Gino and Artie (black leather, toothpicks) and plans to hijack one of the evacuation shuttles for himself. Eliminates his own crew without hesitation.</p>
+            </div>
+            <div class="char-card">
+                <p class="char-name">Dr. Matthews</p>
+                <p class="char-type">Scientist · Data Dreams</p>
+                <p class="char-desc">Walter's partner in the field. Nervously examines oysters at dinner with the mayor. Surrounded by Pal-Bots furiously typing at Base Center. The voice of scientific dread: "It could go one way — or it could go the other."</p>
+            </div>
+            <div class="char-card">
+                <p class="char-name">The Commander</p>
+                <p class="char-type">Primary Villain</p>
+                <p class="char-desc">Operates from a sprawling central facility lined with live global weather feeds. Plans to plunge Earth into permanent winter and rule the survivors. His satellite network controls climate across the planet. Identity kept in shadow.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Setting -->
+    <div class="section-container">
+        <p class="section-title">World & Setting</p>
+        <div class="prose">
+            <p><strong>The year is 2027.</strong> Pal-Bots are everywhere — in city halls, food courts, rooftop cafes, arctic research outposts, and United Nations chambers. Data Dreams, Walter's company, is the infrastructure beneath modern civilization.</p>
+            <p><strong>Locations span the globe</strong> — but the heart of the story is Northern Connecticut. New Haven's shoreline restaurants, library basements, rooftop party halls, and a 2,000 sq ft Pal-Bot Training Center (ball pit, go-karts, obstacle course) serve as the main battlegrounds. The Commander's facility is somewhere cold and remote. The final escape goes to orbit.</p>
+            <p><strong>The franchise mythology</strong> runs deep: Slice in 1967 sketching robots on a sketchpad. Walter's 1986 Christmas wishlist from an electronics magazine. Two prior Pal-Bot escapades with classic soundtracks. The red Pal-Bot cap as a recurring symbol of handoffs and allegiances.</p>
+        </div>
+    </div>
+
+    <!-- Drafts & Documents -->
+    <div class="section-container">
+        <p class="section-title">Drafts & Documents</p>
+        <div class="card-grid">
+            <a class="nav-card" href="pal-bot-3/pal-bot-3-script-draft.pdf" target="_blank">
+                <span class="draft-badge">Script</span>
+                <h4>Working Script Draft</h4>
+                <p>Scene-by-scene script draft. Walter escaping the ice prison, the global meeting, Pal-Bot Phil's farewell, dinner with Mayor Elicker. Updated 02-15-2025.</p>
+            </a>
+            <a class="nav-card" href="pal-bot-3/pal-bot-3-downfall-draft-2.docx">
+                <span class="draft-badge">Treatment</span>
+                <h4>Downfall — Draft 2</h4>
+                <p>Full narrative treatment with Royce Slice's arc, Carlito DeRosa, the Training Center fight, and the evacuation sequence. The darker, more action-heavy version.</p>
+            </a>
+            <a class="nav-card" href="pal-bot-3/pal-bot-3-rise-of-the-hero.docx">
+                <span class="draft-badge">Treatment</span>
+                <h4>Rise of the Hero</h4>
+                <p>Three-act outline focused on Walter's transformation, the Pal-Bot exoskeleton gear-up, and Lady Lynda's emergence as a sentient partner. The heroic version.</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Production Notes -->
+    <div class="section-container">
+        <p class="section-title">Production Notes</p>
+        <div class="prose">
+            <p><strong>Two drafts, one film.</strong> "Downfall Draft 2" and "Rise of the Hero" represent two tonal approaches to the same story — one leans into absurdist action-comedy (earth gets destroyed, bus flies into a black hole), the other into earnest sci-fi heroism (Walter saves the planet, Lady Lynda becomes sentient). The working script sits between them.</p>
+            <p><strong>Shot in Connecticut.</strong> New Haven locations — shoreline restaurants, Sleeping Giant State Park, downtown streets — ground the global-scale story in a specific, familiar place. Walter meets the actual Mayor Justin Elicker. The Pal-Bot Training Center (ball pit, go-karts) is a real production set.</p>
+            <p><strong>Rob Meglio returns.</strong> Story by Alex Gonzalez & Rob Meglio. Meglio was The Nibbler's lead — this expands their shared Connecticut film universe. Pal-Bot Randal, first introduced in prior installments, carries the red cap into this chapter.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="/">Film Vault</a> · Private · Childlike Studios · Pal-Bot 3 © Alex Gonzalez & Rob Meglio
+    </div>
+
+</body>
+</html>
