@@ -10,7 +10,7 @@
  *
  * Seasonal scripts compiled:
  *   Spring  → pages/spring/script-system/compile.js
- *   Summer  → pages/summer/script-system/compile.js
+ *   Summer  → pages/summer/shooting/script-system/compile.js
  *   Autumn  → pages/autumn/script-system/compile.js
  *   Winter  → pages/winter/script-system/compile.js
  *   Nibbler → pages/nibbler/script-system/compile.js
@@ -26,10 +26,6 @@ const tasks = [
   {
     name: 'Spring Script System',
     script: path.join(ROOT, 'pages', 'spring', 'script-system', 'compile.js'),
-  },
-  {
-    name: 'Summer Script System',
-    script: path.join(ROOT, 'pages', 'summer', 'script-system', 'compile.js'),
   },
   {
     name: 'Summer Shooting Script System',
@@ -49,42 +45,12 @@ const tasks = [
   },
   // ── Summer Extras ──────────────────────────────────────────
   {
-    name: 'Summer Production',
-    script: path.join(ROOT, 'pages', 'summer', 'compile-production.js'),
-  },
-  {
     name: 'Sync Shooting Production Data (MD → JSON)',
     script: path.join(ROOT, 'pages', 'summer', 'shooting', 'sync-production.js'),
   },
   {
     name: 'Summer Shooting Production',
     script: path.join(ROOT, 'pages', 'summer', 'shooting', 'compile-production.js'),
-  },
-  {
-    name: "Summer Director's Notes",
-    script: path.join(ROOT, 'pages', 'summer', 'directors-notes', 'compile.js'),
-  },
-  {
-    name: 'Summer Character Sheets',
-    script: path.join(ROOT, 'pages', 'summer', 'characters', 'compile.js'),
-  },
-  {
-    name: 'Summer Production Bible',
-    script: path.join(ROOT, 'pages', 'summer', 'bible-system', 'compile.js'),
-  },
-  {
-    name: 'Summer Inspiration Gallery',
-    script: path.join(ROOT, 'pages', 'summer', 'inspiration', 'compile.js'),
-  },
-  {
-    name: 'Summer Storyboard Frames',
-    script: path.join(ROOT, 'pages', 'summer', 'storyboard-system', 'compile.js'),
-    optional: true, // depends on local binary image assets; skip gracefully on Netlify
-  },
-  {
-    name: 'Summer Storyboard PDFs',
-    script: path.join(ROOT, 'pages', 'summer', 'storyboard-system', 'compile-pdfs.js'),
-    optional: true, // depends on local PDF assets; skip gracefully on Netlify
   },
 ];
 
