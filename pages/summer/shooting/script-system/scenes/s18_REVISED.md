@@ -42,35 +42,41 @@ DOMINIC
 (louder, forced brightness)
 He'll be up soon, just—
 
-From the corner of the living room, ASHER stands motionless, watching the kitchen. His eyes are on the basement door. He has something small and white in his closed fist.
+From the corner of the living room, MAKAYLA stands apart from the crowd, watching the kitchen. Her eyes are on the basement door. One hand is in her jacket pocket, closed around her handheld tracker.
 
 MARY
 (noticing)
-Asher, honey, you want a brownie?
+Makayla, honey, you want a brownie?
 
-Asher doesn't respond. He's tense. He slowly drifts toward the kitchen.
+Makayla shakes her head, a polite smile that doesn't land. She's tense. She slowly drifts toward the kitchen.
 
-Dominic notices. He follows Asher with his eyes.
+Dominic notices. He follows her with his eyes.
 
-Asher reaches for the sugar bowl. He palms three cubes silently. Then he turns toward the basement door.
+Makayla eases the tracker halfway out of her pocket and checks it below the counter line. The light on it is blinking faster than it should. She turns toward the basement door.
 
-Dominic intercepts him—smoothly, casually—puts a hand on his shoulder.
+Dominic intercepts her—smoothly, casually—puts a hand on her shoulder.
 
 DOMINIC
 (low)
-Asher. Not right now.
+Not right now.
 
-Asher's jaw tightens. His finger traces something on his leg—a pattern, over and over. He's anxious.
+MAKAYLA
+(low, urgent)
+Something outside is answering it. He needs to know.
+
+DOMINIC
+(through a hosting smile)
+Not. Right. Now.
 
 PAUL
 (calling from the living room)
-Dominic, where's Asher going?
+Dominic, where's your sister going?
 
 DOMINIC
 (turning back)
-He's just—getting some air. Storm's making him antsy.
+She's just—getting some air. Storm's making her antsy.
 
-But Asher hasn't moved. He's still staring at the basement door. His hand is still closed around the sugar cubes.
+But Makayla hasn't moved. She's still staring at the basement door. Her hand is still closed around the tracker.
 
 ---
 
@@ -101,11 +107,11 @@ The group settles into a circle. TYLER, 32, with a guitar, hands out music sheet
 TYLER
 Would anyone like to say any words before we start?
 
-MR. MIKE sits in his rocking chair at the edge of the circle, staring toward the window. His leg bounces. His fingers tap against the armrest in an anxious rhythm.
+MAKAYLA stands at the edge of the circle, near the window. She isn't singing. Her leg bounces. Inside her pocket, the tracker pulses against her palm in a rhythm that has nothing to do with the hymn.
 
-MR. MIKE
-(quietly, to himself)
-The song's wrong again. The wrong frequency. They hear it. They're listening.
+MAKAYLA
+(quietly, to Dominic as she passes him)
+The frequency's wrong. Whatever he's broadcasting down there, something is listening to it.
 
 DOMINIC
 (overloud, to cover)
@@ -157,27 +163,23 @@ The storm. Wind in the house.
 
 But it's not wind. The hum is rhythmic. Structured. And it's getting louder.
 
-Mr. Mike's rocking stops. His head snaps toward the basement door.
+Makayla pulls the tracker from her pocket. The screen is a wall of jagged red spikes. Her head snaps toward the basement door.
 
-MR. MIKE
-(louder, agitated)
-No. No no no. The dark ones. They're coming. They can hear it calling them here!
+MAKAYLA
+(to Dominic, low and fast)
+It's not the storm. The signal's pulling them in. He has to stop broadcasting.
 
 TYLER
 (still singing, gesturing for everyone to keep going)
-Mr. Mike, it's just the wind—
-
-MR. MIKE
-(standing, pointing)
-No! The golden one is calling them! You brought it into the house and now they KNOW!
+Everyone, it's just the wind—
 
 The group falters. People exchange nervous glances. The singing stops.
 
 DOMINIC
-(standing, to Mr. Mike)
-Mr. Mike, let's sit down—
+(standing)
+Everybody just—stay put a second—
 
-But the lights flicker. Once. Twice. The windows rattle.
+The lights flicker. Once. Twice. The windows rattle.
 
 DOMINIC (CONT'D)
 (to the group, forced calm)
@@ -229,7 +231,7 @@ It's calling me. They're going to take it. I have to—
 
 He reaches the front door.
 
-Asher's head snaps toward him. His eyes go wide.
+Makayla's head snaps toward him. Her eyes go wide.
 
 DOMINIC
 (following, urgent)
@@ -253,13 +255,13 @@ Storm's getting bad. We need to clear out. Everyone to your cars. Now.
 
 He doesn't wait for a response. He grabs a jacket and moves after Dallas, who is now walking down the driveway into the rain, into the dark, into a daze the others can't see.
 
-The group begins to gather their things. Mary looks at Asher, who is standing completely still, watching Dallas disappear into the storm.
+The group begins to gather their things. Mary looks at Makayla, who is standing completely still, watching Dallas disappear into the storm.
 
 MARY
-(to Asher)
-Honey, come on. Your brother will be back.
+(to Makayla)
+Honey, come on. Your brother will get him.
 
-But Asher knows better. Asher knows what Dallas heard. Asher knows what's out there in the marsh.
+But Makayla knows what Dallas heard, and she knows what's out there in the marsh.
 
 ---
 
@@ -295,7 +297,7 @@ If we don't reach it in time, the dark ones will turn it. And then there will be
 
 He pulls away from Dominic and walks toward the tall grass at the edge of the property. The grass is moving violently in the wind. Or maybe something else is moving it.
 
-Dominic looks back at the house. The group is leaving, shaken. Mr. Mike stands in the doorway, watching Dallas. Asher is beside him, eyes fixed on the marsh.
+Dominic looks back at the house. The group is leaving, shaken. Makayla stands in the doorway, eyes fixed on the marsh, the tracker already in her hand.
 
 Then Dominic makes a choice.
 

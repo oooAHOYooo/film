@@ -78,7 +78,7 @@
     "title": "The Coordinates",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "summary": "Dallas looks around in amazement. The basement is covered with normal basement things - but as his eyes scan the room he notices that there are two beds, room, and clutter. Around the corner there is a workstation…"
+    "summary": "Dallas looks around in amazement. The basement is covered with normal basement things - but as his eyes scan the room he notices a workstation in the corner filled with old CRT machines, coiled cables, and rows of…"
   },
   {
     "n": 10,
@@ -132,7 +132,7 @@
     "title": "The Confrontation",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Makayla and Asher wander toward the edge of Dallas's property, kneeling over when they get to the edge."
+    "summary": "Makayla wanders toward the edge of Dallas's property, kneeling over when she gets to the edge. Makayla points to a trailcam that seems to be behind Dallas' backyard gate. It is blinking - fast, wrong. The casing is…"
   },
   {
     "n": 16,
@@ -141,13 +141,13 @@
     "title": "The Connection",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Makayla and Dallas sit outside the patio. Neither of them says anything for a while. Asher sits alone a few feet away—he begins to tap on his fingers, and then nods in approval."
+    "summary": "Makayla and Dallas sit outside the patio. Neither of them says anything for a while."
   },
   {
     "n": 17,
     "displayNum": "15",
     "id": "the-tracking-box",
-    "title": "Asher's Tracking Box",
+    "title": "The Tracking Network",
     "act": 2,
     "actTitle": "The Creature",
     "summary": "Dallas stands alone and looks at the creature. His phone rings. Makayla looks at Dallas and then at the creature and pulls out a small prototype from her backpack. She holds it out. The two look at each other for a…"
@@ -267,7 +267,7 @@
     "title": "The Load-Out",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "The crew gears up. Dallas shoulders his broadcast rig — the oscillator, the spare Asher gave him, a coil of cable — and keeps the handheld tracker. He moves fast and sure; he has the creature's call rebuilt and ready.…"
+    "summary": "The crew gears up. Dallas shoulders his broadcast rig — the oscillator, the spare Makayla gave him, a coil of cable. He moves fast and sure; he has the creature's call rebuilt and ready. Makayla takes point with the…"
   },
   {
     "n": 31,
@@ -285,7 +285,7 @@
     "title": "The Sanctuary & The Siege",
     "act": 3,
     "actTitle": "The Return",
-    "summary": "The howling wind dies down. Dominic breaches through a thick wall of reeds and stops. Dallas breaks through behind him and collapses to his knees in the mud. They are standing in a small clearing where the tall grass…"
+    "summary": "The howling wind dies down. Makayla breaches through a thick wall of reeds first, tracker in hand, and stops dead. Dominic breaches through behind her. Dallas breaks through last and collapses to his knees in the mud.…"
   },
   {
     "n": 33,
@@ -321,6 +321,6 @@
     "title": "Full Circle",
     "act": 4,
     "actTitle": "Aftermath",
-    "summary": "Dallas and Asher pack up the lair. Dallas misreads one last spike and lets it go. Dallas finds his wife's specific hum out in the marsh."
+    "summary": "Dallas goes alone to Makayla's wooded blind to pack up. He misreads one last spike, then listens with his own ears and lets it go. Dallas finds his wife's specific hum out in the marsh."
   }
 ]

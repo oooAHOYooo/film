@@ -4,6 +4,53 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 
 ---
 
+# CHANGE LOG — Asher & Mr. Mike cut: story runs on the trio (Dallas · Makayla · Dominic)
+*Applied 2026-07-01 17:50 EDT · SHOOTING version only (`pages/summer/shooting/`). Both actors/characters are officially out of the production. No replacement characters added; their story functions are redistributed into the central trio. Makayla's mother (offscreen, deceased) is the lore source through field journals, maps, labeled equipment, and a 1971 Branford storm reference. Supersedes the 2026-06-10 "Makayla fully cut" continuity below — Makayla is core again and the family is Dominic + Makayla, mom gone.*
+
+## New character structure
+- **Dallas** — grief, science, sound work, and the final interpretive lesson. In s28 he misreads the last spike alone, listens with his own ears, and unplugs the machine himself.
+- **Makayla** — absorbs the whole field-tech role: trailcams, sensor nodes, the tracking network, the wooded blind (was "Asher's lair"/wigwam), the soother, maps, and creature research. Inherited half of it from her mother's notes and gear.
+- **Dominic** — social/emotional engine; chooses to believe, protects Makayla, physically commits to the rescue.
+
+## Changes applied
+| Scene | Change |
+|---|---|
+| **s00a** | Asher inserts replaced with anonymous planted-gear close-ups (strapped trailcam, weighted waterproof notebook with bearing lines, buried node whose amber blink quickens at the hum). No planter revealed. |
+| **s01** | Asher's bike entrance cut. Dallas finds the dead circle, broken stake, plus a blinking node and orange field tape at the yard edge. |
+| **s03 / s06** | Dominic's car line → hauls his sister's gear; "check on Mike" → bring Makayla her dinner. |
+| **s04** | Asher intro replaced: Dallas notices Makayla recording toward the reeds at the church lawn edge; "She gets like this when the weather turns." |
+| **s05** | "My brother is always out here planting cameras" → Makayla, "says the marsh sounds different before storms." |
+| **s07** | Mr. Mike warning scene fully cut. Basement is Makayla's workstation (nodes, maps, mother's dated field journals); family line now "Just me and my sister. That's the house." Dallas glimpses an open journal page with bearing lines, underlined warning unread. |
+| **s12** | Dominic + Asher approach → Dominic + Makayla; she is already focused on the dead ring. |
+| **s13** | Makayla-only confrontation. Her damaged trailcam, her tracker spiking, she pushes past Dallas to the attic. Mother's-notebook rule voiced: "you leave the hurt ones." |
+| **s14** | Asher's spell cut. Reveal is "Our mom's gone too. So now it's me and Dominic. That's the house." The thump beat is now the creature reacting; Makayla soothes it by humming. |
+| **s15** | Kitchen-table Asher map scene (14B) deleted; the bearing-line match beat moved into Makayla's wooded blind, using her mother's map that she keeps current. |
+| **s16 / s16b** | Asher no longer takes the creature; it deteriorates and Dallas calls Makayla. She brings the soother ("My mom called it the soother. She built the first half. I built the rest."). Dominic witnesses the handoff and knows it's real. |
+| **s17 / s17d** | "Asher's device" → Makayla's soother/rig throughout. Handoff is to Makayla: "Keep it calm. If the line goes jagged, lower the gain." |
+| **s18 / s18_REVISED** | Mr. Mike perceiver beats replaced with environment (rattling panes, dimming lights, rippling tea) + Makayla's tracker readings; sugar-cube Asher beats → Makayla drifting toward the basement door, intercepted by Dominic. |
+| **s19** | Mr. Mike's barge-in replaced: Makayla slips up from the basement with her mother's notebook — 1971 sketch, "WRONG SONG BRINGS THE WRONG GUESTS." Scuffed recorder now Makayla's early build. |
+| **s19_REVISED** | "We get Asher. We get the equipment." → "We get Makayla. We get the rig. We do this right." |
+| **s20** | Recorder pressed into Dominic's hands is one of Makayla's scuffed field recorders. |
+| **s22** | Load-out is the trio: Makayla on point with tracker/speaker, Dallas with broadcast rig, Dominic with the baby. Makayla clips the scuffed recorder to Dominic's jacket. "Asher's lair" → the wooded blind (her maps over her mother's charts). Asher-stays-back paragraph cut. |
+| **s24** | Makayla restored to the clearing: breaches first, mother-creature acknowledges all three, she fires the portable speaker. |
+| **s25** | Recorder payoff: "the little scuffed recorder Makayla clipped there before they went in." Final look finds Dallas, then Makayla, then Dominic. |
+| **s27** | Mr. Mike cornbread beat → Makayla at the end of the table, watching the treeline, letting it go. |
+| **s28** | Dallas packs up the blind alone, misreads the spike with no one to correct him, listens with his own ears, and unplugs the machine himself. |
+| **manifest.json** | Scene 15 title "Asher's Tracking Box" → "The Tracking Network". |
+
+## Verified
+- Greps across `shooting/script-system/scenes/` + compiled output: zero story hits for Asher, Mr. Mike, uncle, pebbles, wigwam, lair, bead strings, "stayed back". Only remaining match is the word "Dishwasher" in s00b.
+- "Brother/sister" audit: every remaining use refers to Dominic↔Makayla.
+
+## Still naming Asher / Mr. Mike (left alone on purpose)
+- `pages/summer/omitted/` archives (character sheets, cast pages, storyboard image, ASHER-STAYS-BEHIND-PLAN.md) — historical.
+- `pages/summer/shooting/production-data.json`, `production-edit.md`, and generated `production/days/*.html` still carry Asher/Mr. Mike in cast/schedule data — needs a production-side pass (casting/scheduling decision, not script).
+
+## Recompiled
+- `node pages/summer/shooting/script-system/compile.js` — full_script.md/.html, plot cards, gallery, version snapshot 2026-07-01_17-49.
+
+---
+
 # CHANGE LOG — Cut crystal, seed recorder token (s15 / s20 / s25)
 *Applied 2026-06-15 12:40 EDT · SHOOTING version only (`pages/summer/shooting/`). Supersedes any earlier reference to the crystal device — that element is now fully removed from all shooting scenes.*
 

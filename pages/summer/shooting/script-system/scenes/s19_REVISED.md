@@ -29,7 +29,7 @@ The frequency is breaking. I can feel it breaking apart. When it goes dark, they
 
 DOMINIC
 (grabbing his shoulder)
-Listen to me. We go back. We get Asher. We get the equipment. We do this right.
+Listen to me. We go back. We get Makayla. We get the rig. We do this right.
 
 But when Dominic touches him, Dallas's arm goes rigid. His head tilts. His eyes flutter closed.
 
