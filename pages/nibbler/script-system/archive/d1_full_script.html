@@ -1,97 +1,9 @@
-#!/usr/bin/env node
-
-/**
- * Script Compiler — The Nibbler
- * Reads manifest.json and compiles all scenes into full_script.md and full_script.html
- */
-
-const fs = require('fs');
-const path = require('path');
-
-const SCENES_DIR = path.join(__dirname, 'scenes');
-const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
-const OUTPUT_MD = path.join(__dirname, 'full_script.md');
-const OUTPUT_HTML = path.join(__dirname, 'full_script.html');
-const SCRIPT_NAME = 'The Nibbler: Shadows of Deception';
-
-function toRoman(num) {
-  const map = [
-    [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
-    [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
-    [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I'],
-  ];
-  let n = num;
-  let out = '';
-  for (const [v, s] of map) {
-    while (n >= v) {
-      out += s;
-      n -= v;
-    }
-  }
-  return out;
-}
-
-function loadManifest() {
-  try {
-    const manifestContent = fs.readFileSync(MANIFEST_PATH, 'utf8');
-    return JSON.parse(manifestContent);
-  } catch (error) {
-    console.error('Error reading manifest.json:', error.message);
-    process.exit(1);
-  }
-}
-
-function loadScene(filename) {
-  const filePath = path.join(SCENES_DIR, filename);
-  try {
-    return fs.readFileSync(filePath, 'utf8');
-  } catch (error) {
-    console.warn(`Warning: Could not read scene file ${filename}: ${error.message}`);
-    return `\n[SCENE FILE MISSING: ${filename}]\n`;
-  }
-}
-
-function compileMarkdown(scenes) {
-  let output = `# ${SCRIPT_NAME} — Full Script\n\n`;
-  output += `*Compiled on ${new Date().toLocaleString()}*\n\n`;
-  output += `---\n\n`;
-
-  let currentAct = null;
-  scenes.forEach((scene, index) => {
-    const sceneNumber = index + 1;
-
-    if (scene.act && scene.act !== currentAct) {
-      currentAct = scene.act;
-      const actTitle = scene.actTitle ? ` — ${scene.actTitle}` : '';
-      output += `\n## EPISODE ${scene.act}${actTitle}\n\n---\n\n`;
-    }
-
-    output += `\n### Scene ${sceneNumber}: ${scene.title}\n\n`;
-    output += `*${scene.act ? `EPISODE ${scene.act}${scene.actTitle ? ` — ${scene.actTitle}` : ''} | ` : ''}ID: ${scene.id} | File: ${scene.file}*\n\n`;
-    output += `---\n\n`;
-
-    const sceneContent = loadScene(scene.file);
-    output += sceneContent;
-    output += `\n\n---\n\n`;
-  });
-
-  return output;
-}
-
-function generateHTMLPage(markdown, scenes) {
-  const sceneOptionsHtml = (scenes || []).map((s, i) => {
-    const num = i + 1;
-    const title = (s.title || '').replace(/</g, '&lt;').replace(/"/g, '&quot;');
-    return `<option value="scene-${num}">${num}. ${title}</option>`;
-  }).join('');
-
-  const html = String.raw`
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Script - ${SCRIPT_NAME}</title>
+  <title>Full Script - The Nibbler (Draft 1 Archive)</title>
   <link rel="stylesheet" href="/pages/summer/script-system/script.css?v=20260108-5">
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
@@ -119,7 +31,7 @@ function generateHTMLPage(markdown, scenes) {
           <label for="scriptSceneSelect" class="script-scene-nav-label">Jump to scene</label>
           <select id="scriptSceneSelect" class="script-scene-select" aria-label="Jump to scene">
             <option value="">—</option>
-            ${sceneOptionsHtml}
+            <option value="scene-1">1. Crime Scene & Voiceover</option><option value="scene-2">2. Post-It Trail</option><option value="scene-3">3. Shipyard — Weevil Encounter</option><option value="scene-4">4. Rudies Bar</option><option value="scene-5">5. Ghost Enters</option><option value="scene-6">6. Back of Rudies</option><option value="scene-7">7. Detective Office — Doubters</option><option value="scene-8">8. Rob's Office</option><option value="scene-9">9. Boss Confrontation</option><option value="scene-10">10. Outside Station — Pep Talk</option><option value="scene-11">11. Boatyard Surveillance</option><option value="scene-12">12. Seaside Pub — Lucy</option><option value="scene-13">13. City Hall — Grand Ballroom</option><option value="scene-14">14. Detective Office — Team Watches</option><option value="scene-15">15. City Hall — Backstage</option><option value="scene-16">16. Mayor's Office — Revelation</option><option value="scene-17">17. Boatyard — Trap</option><option value="scene-18">18. Mayor's Office — Alliance</option>
           </select>
         </div>
       </div>
@@ -133,15 +45,15 @@ function generateHTMLPage(markdown, scenes) {
 
     <div class="screenplay-container">
       <div class="full-script-header">
-        <div class="full-script-title">${SCRIPT_NAME} — Full Script</div>
-        <div class="full-script-meta">Compiled on ${new Date().toLocaleString()}</div>
+        <div class="full-script-title">The Nibbler — Full Script (Draft 1 Archive)</div>
+        <div class="full-script-meta">Compiled on 7/1/2026, 5:53:09 PM</div>
       </div>
       <div class="screenplay-content" id="scriptContent"></div>
     </div>
   </div>
 
   <script>
-    const markdown = ${JSON.stringify(markdown)};
+    const markdown = "# The Nibbler — Full Script (Draft 1 Archive)\n\n*Compiled on 7/1/2026, 5:53:09 PM*\n\n---\n\n\n## ACT I — Setup\n\n---\n\n\n### Scene 1: Crime Scene & Voiceover\n\n*ACT I — Setup | ID: crime-scene-voiceover | File: 01_crime_scene_voiceover.md*\n\n---\n\n\n[SCENE FILE MISSING: 01_crime_scene_voiceover.md]\n\n\n---\n\n\n### Scene 2: Post-It Trail\n\n*ACT I — Setup | ID: post-it-trail | File: 02_post_it_trail.md*\n\n---\n\n\n[SCENE FILE MISSING: 02_post_it_trail.md]\n\n\n---\n\n\n### Scene 3: Shipyard — Weevil Encounter\n\n*ACT I — Setup | ID: shipyard-weevil | File: 03_shipyard_weevil.md*\n\n---\n\n\n[SCENE FILE MISSING: 03_shipyard_weevil.md]\n\n\n---\n\n\n### Scene 4: Rudies Bar\n\n*ACT I — Setup | ID: rudies-bar | File: 04_rudies_bar.md*\n\n---\n\n\n[SCENE FILE MISSING: 04_rudies_bar.md]\n\n\n---\n\n\n### Scene 5: Ghost Enters\n\n*ACT I — Setup | ID: ghost-enters | File: 05_ghost_enters.md*\n\n---\n\n\n[SCENE FILE MISSING: 05_ghost_enters.md]\n\n\n---\n\n\n### Scene 6: Back of Rudies\n\n*ACT I — Setup | ID: back-of-rudies | File: 06_back_of_rudies.md*\n\n---\n\n\n[SCENE FILE MISSING: 06_back_of_rudies.md]\n\n\n---\n\n\n## ACT II — Investigation\n\n---\n\n\n### Scene 7: Detective Office — Doubters\n\n*ACT II — Investigation | ID: detective-office-doubters | File: 07_detective_office_doubters.md*\n\n---\n\n\n[SCENE FILE MISSING: 07_detective_office_doubters.md]\n\n\n---\n\n\n### Scene 8: Rob's Office\n\n*ACT II — Investigation | ID: robs-office | File: 08_robs_office.md*\n\n---\n\n\n[SCENE FILE MISSING: 08_robs_office.md]\n\n\n---\n\n\n### Scene 9: Boss Confrontation\n\n*ACT II — Investigation | ID: boss-confrontation | File: 09_boss_confrontation.md*\n\n---\n\n\n[SCENE FILE MISSING: 09_boss_confrontation.md]\n\n\n---\n\n\n### Scene 10: Outside Station — Pep Talk\n\n*ACT II — Investigation | ID: outside-station-pep-talk | File: 10_outside_station_pep_talk.md*\n\n---\n\n\n[SCENE FILE MISSING: 10_outside_station_pep_talk.md]\n\n\n---\n\n\n### Scene 11: Boatyard Surveillance\n\n*ACT II — Investigation | ID: boatyard-surveillance | File: 11_boatyard_surveillance.md*\n\n---\n\n\n[SCENE FILE MISSING: 11_boatyard_surveillance.md]\n\n\n---\n\n\n### Scene 12: Seaside Pub — Lucy\n\n*ACT II — Investigation | ID: seaside-pub-lucy | File: 12_seaside_pub_lucy.md*\n\n---\n\n\n[SCENE FILE MISSING: 12_seaside_pub_lucy.md]\n\n\n---\n\n\n## ACT III — Confrontation\n\n---\n\n\n### Scene 13: City Hall — Grand Ballroom\n\n*ACT III — Confrontation | ID: grand-ballroom | File: 13_grand_ballroom.md*\n\n---\n\n\n[SCENE FILE MISSING: 13_grand_ballroom.md]\n\n\n---\n\n\n### Scene 14: Detective Office — Team Watches\n\n*ACT III — Confrontation | ID: detective-office-watch | File: 14_detective_office_watch.md*\n\n---\n\n\n[SCENE FILE MISSING: 14_detective_office_watch.md]\n\n\n---\n\n\n### Scene 15: City Hall — Backstage\n\n*ACT III — Confrontation | ID: backstage-mayor | File: 15_backstage_mayor.md*\n\n---\n\n\n[SCENE FILE MISSING: 15_backstage_mayor.md]\n\n\n---\n\n\n### Scene 16: Mayor's Office — Revelation\n\n*ACT III — Confrontation | ID: mayors-office-revelation | File: 16_mayors_office_revelation.md*\n\n---\n\n\n[SCENE FILE MISSING: 16_mayors_office_revelation.md]\n\n\n---\n\n\n### Scene 17: Boatyard — Trap\n\n*ACT III — Confrontation | ID: boatyard-trap | File: 17_boatyard_trap.md*\n\n---\n\n\n[SCENE FILE MISSING: 17_boatyard_trap.md]\n\n\n---\n\n\n## ACT IV — Resolution\n\n---\n\n\n### Scene 18: Mayor's Office — Alliance\n\n*ACT IV — Resolution | ID: mayors-office-alliance | File: 18_mayors_office_alliance.md*\n\n---\n\n\n[SCENE FILE MISSING: 18_mayors_office_alliance.md]\n\n\n---\n\n";
     const container = document.getElementById('scriptContent');
     marked.setOptions({ breaks: true });
     container.innerHTML = marked.parse(markdown);
@@ -319,31 +231,3 @@ function generateHTMLPage(markdown, scenes) {
   </script>
 </body>
 </html>
-  `.trim();
-
-  return html;
-}
-
-function compile() {
-  console.log('Loading manifest...');
-  const scenes = loadManifest();
-  console.log(`Found ${scenes.length} scenes in manifest`);
-  console.log('Compiling scenes...');
-  const markdown = compileMarkdown(scenes);
-  console.log('Writing full_script.md...');
-  fs.writeFileSync(OUTPUT_MD, markdown, 'utf8');
-  console.log(`✓ Created ${OUTPUT_MD}`);
-  console.log('Generating full_script.html...');
-  const html = generateHTMLPage(markdown, scenes);
-  fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
-  console.log(`✓ Created ${OUTPUT_HTML}`);
-  console.log('\n✓ Compilation complete!');
-  console.log(`  - Markdown: ${OUTPUT_MD}`);
-  console.log(`  - HTML: ${OUTPUT_HTML}`);
-}
-
-if (require.main === module) {
-  compile();
-}
-
-module.exports = { compile, loadManifest, loadScene };
