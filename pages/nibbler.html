@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Nibbler — Film Vault</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #0d0d0d;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #d4c5a9;
+            line-height: 1.6;
+        }
+
+        .header-nav {
+            padding: 24px 40px;
+            border-bottom: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-nav a {
+            color: #a89070;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover { color: #d4c5a9; }
+
+        .hero {
+            padding: 70px 40px 50px;
+            text-align: center;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .hero-eyebrow {
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #665544;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 700;
+            color: #e8d9c0;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .hero .subtitle {
+            font-size: 16px;
+            color: #7a6a55;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        .hero .meta {
+            font-size: 13px;
+            color: #554433;
+            letter-spacing: 0.05em;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 40px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .section-container:last-of-type { border-bottom: none; }
+
+        .section-title {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #665544;
+            margin-bottom: 28px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .card-grid.two-col {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .nav-card {
+            padding: 22px;
+            border: 1px solid #1f1a15;
+            border-radius: 6px;
+            text-decoration: none;
+            color: inherit;
+            background: #111;
+            transition: all 0.2s;
+            display: block;
+        }
+
+        .nav-card:hover {
+            border-color: #554433;
+            background: #141210;
+        }
+
+        .nav-card h4 {
+            font-size: 13px;
+            font-weight: 600;
+            color: #d4c5a9;
+            margin-bottom: 6px;
+        }
+
+        .nav-card p {
+            font-size: 12px;
+            color: #665544;
+            line-height: 1.5;
+        }
+
+        .ep-card {
+            padding: 24px;
+            border: 1px solid #1f1a15;
+            border-radius: 6px;
+            background: #0f0e0c;
+        }
+
+        .ep-number {
+            font-size: 10px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #554433;
+            margin-bottom: 8px;
+        }
+
+        .ep-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #e8d9c0;
+            margin-bottom: 10px;
+        }
+
+        .ep-desc {
+            font-size: 13px;
+            color: #7a6a55;
+            margin-bottom: 18px;
+            line-height: 1.6;
+        }
+
+        .ep-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .ep-link {
+            font-size: 12px;
+            color: #a89070;
+            text-decoration: none;
+            padding: 5px 12px;
+            border: 1px solid #2a2018;
+            border-radius: 4px;
+            transition: all 0.15s;
+        }
+
+        .ep-link:hover {
+            border-color: #665544;
+            color: #d4c5a9;
+        }
+
+        .prose {
+            max-width: 700px;
+            font-size: 14px;
+            color: #7a6a55;
+            line-height: 1.8;
+        }
+
+        .prose p + p { margin-top: 14px; }
+
+        .cast-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            max-width: 600px;
+        }
+
+        .cast-table td {
+            padding: 10px 0;
+            border-bottom: 1px solid #1a1a1a;
+            color: #7a6a55;
+        }
+
+        .cast-table td:first-child {
+            color: #d4c5a9;
+            font-weight: 500;
+            width: 200px;
+        }
+
+        /* Beat outlines */
+        .outline-section {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 40px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .outline-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            align-items: start;
+        }
+
+        .outline-ep {
+            background: #0a0908;
+            border: 1px solid #1f1a15;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .outline-ep-header {
+            padding: 18px 20px 14px;
+            border-bottom: 1px solid #1a1510;
+        }
+
+        .outline-ep-num {
+            font-size: 10px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #554433;
+            margin-bottom: 4px;
+        }
+
+        .outline-ep-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #e8d9c0;
+            margin-bottom: 2px;
+        }
+
+        .outline-ep-act {
+            font-size: 11px;
+            color: #443322;
+            font-style: italic;
+        }
+
+        .beat-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .beat-item {
+            display: flex;
+            gap: 12px;
+            padding: 11px 20px;
+            border-bottom: 1px solid #111;
+            align-items: flex-start;
+        }
+
+        .beat-item:last-child { border-bottom: none; }
+
+        .beat-num {
+            font-size: 10px;
+            color: #443322;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            min-width: 18px;
+            padding-top: 2px;
+            font-family: monospace;
+        }
+
+        .beat-text {
+            font-size: 12px;
+            color: #7a6a55;
+            line-height: 1.55;
+        }
+
+        .beat-text strong {
+            color: #b09878;
+            font-weight: 500;
+        }
+
+        .beat-item.turn {
+            background: #0d0b09;
+        }
+
+        .beat-item.turn .beat-text {
+            color: #9a8060;
+        }
+
+        .beat-item.turn .beat-num {
+            color: #665544;
+        }
+
+        .footer {
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+            font-size: 12px;
+            color: #332211;
+        }
+
+        .footer a { color: inherit; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .card-grid, .card-grid.two-col { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 36px; }
+            .header-nav, .section-container { padding-left: 24px; padding-right: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-nav">
+        <a href="/">← Film Vault</a>
+        <a href="nibbler/treatment.md">Treatment ↗</a>
+    </div>
+
+    <div class="hero">
+        <p class="hero-eyebrow">Mini Series · 3 Episodes · 22 min each</p>
+        <h1>The Nibbler</h1>
+        <p class="subtitle">Shadows of Deception</p>
+        <p class="meta">Film Noir · New Haven · Childlike Studios</p>
+    </div>
+
+    <!-- Episode Outlines -->
+    <div class="outline-section">
+        <p class="section-title">Episode Outlines</p>
+        <div class="outline-grid">
+
+            <!-- EP 1 -->
+            <div class="outline-ep">
+                <div class="outline-ep-header">
+                    <p class="outline-ep-num">Episode 1</p>
+                    <p class="outline-ep-name">The Trail</p>
+                    <p class="outline-ep-act">Act 1 of the series · Setup &amp; character</p>
+                </div>
+                <ul class="beat-list">
+                    <li class="beat-item"><span class="beat-num">01</span><span class="beat-text"><strong>Crime scene.</strong> Dustin works a scene — magnifying glass, tweezers. Voiceover establishes who he is and what the Weevil case is. He pauses on the evidence bag. A figurine inside. Something crosses his face.</span></li>
+                    <li class="beat-item"><span class="beat-num">02</span><span class="beat-text"><strong>The trail.</strong> Outside the station — chewing tobacco, spits it immediately. Spots a pair of glasses on the sidewalk. Then another. Follows the trail. It ends at Rudie's Bar.</span></li>
+                    <li class="beat-item"><span class="beat-num">03</span><span class="beat-text"><strong>Rudie's.</strong> The regulars love him. He picks up the paper: <em>"Mayor's Japan Scandal Resurfaces."</em> Reads it. Voiceover circles a thought it doesn't finish.</span></li>
+                    <li class="beat-item turn"><span class="beat-num">04</span><span class="beat-text"><strong>Shipyard flashback.</strong> Dustin had Gael cornered. Drew his weapon. A half-second of recognition between them — then smoke, and Gael is gone. Dustin left holding cuffs, looking like a fool.</span></li>
+                    <li class="beat-item"><span class="beat-num">05</span><span class="beat-text"><strong>The Ghost walks in.</strong> Max arrives without announcement. The bar shifts. They drink. Dustin describes Gael's precision — the eyes. He almost says something more specific. He doesn't.</span></li>
+                    <li class="beat-item"><span class="beat-num">06</span><span class="beat-text"><strong>Back alley.</strong> Dustin tells the full story. Ghost listens. <em>Did he see you? — Yes. And then he was gone.</em> Ghost produces surveillance gear from his coat.</span></li>
+                    <li class="beat-item"><span class="beat-num">07</span><span class="beat-text"><strong>Detective office.</strong> Dustin presents his case. Jones and Miller laugh. The boss shuts them up but presses him. Dustin says he knows where the Weevil is moving. Long pause. <em>Go find him. Don't embarrass us.</em></span></li>
+                    <li class="beat-item"><span class="beat-num">08</span><span class="beat-text"><strong>Outside the station.</strong> Self-doubt. Ghost: <em>You're the reason I got into this.</em> Dustin looks at the gear. Nods.</span></li>
+                    <li class="beat-item turn"><span class="beat-num">09</span><span class="beat-text"><strong>Boatyard, night.</strong> Surveillance rig. A signal breaks through the noise. Ghost unscrambles it. Two words on screen: <strong>MAYOR GRAND BALLROOM.</strong> <em>I've got an idea.</em></span></li>
+                </ul>
+            </div>
+
+            <!-- EP 2 -->
+            <div class="outline-ep">
+                <div class="outline-ep-header">
+                    <p class="outline-ep-num">Episode 2</p>
+                    <p class="outline-ep-name">The Party</p>
+                    <p class="outline-ep-act">Act 2 of the series · The plan meets the night</p>
+                </div>
+                <ul class="beat-list">
+                    <li class="beat-item"><span class="beat-num">01</span><span class="beat-text"><strong>Find Lucy.</strong> They need inside the Mayor's gala. They need someone who knows catering, service entrances, staff rotations. They go to the seaside pub.</span></li>
+                    <li class="beat-item"><span class="beat-num">02</span><span class="beat-text"><strong>The pub.</strong> Shanties, noise, chaos. Lucy behind the bar — completely unbothered. They find a booth. Dustin explains. Lucy listens, then: <em>Alright. What do I have to do?</em> Dustin hesitates. Lucy: <em>Trust me.</em> Three hands clasp.</span></li>
+                    <li class="beat-item"><span class="beat-num">03</span><span class="beat-text"><strong>City Hall, night of the gala.</strong> Mayor Anderson takes the stage. Applause. Gael is already in the room — suit, no costume, just a man at a party. He moves to backstage, whispers to a technician.</span></li>
+                    <li class="beat-item turn"><span class="beat-num">04</span><span class="beat-text"><strong>The screens go live.</strong> Private footage of the Mayor: backroom deals, cash handoffs. The crowd goes silent. The Mayor stammers. Gael steps onto the stage — composed, almost serene. <em>"It seems your Mayor's true nature has been exposed."</em> Ballroom erupts.</span></li>
+                    <li class="beat-item"><span class="beat-num">05</span><span class="beat-text"><strong>Dustin sees his face.</strong> From somewhere in the crowd, Dustin sees Gael clearly for the first time since the shipyard. Voiceover, very quiet: <em>There he was. And I knew him. I had always known him.</em> He doesn't move for a beat too long.</span></li>
+                    <li class="beat-item"><span class="beat-num">06</span><span class="beat-text"><strong>Detective office.</strong> The team watches on screens. Lucy understands first: <em>This was never about robbery. He wanted to destroy the Mayor.</em> Dustin is already standing.</span></li>
+                    <li class="beat-item turn"><span class="beat-num">07</span><span class="beat-text"><strong>Backstage.</strong> The Mayor alone — pale, shaken. The team approaches. He was set up. He looks at Dustin. Something passes. <em>I've always trusted your team. And now I need you.</em> Then: <em>There's one more thing. Come to my office.</em></span></li>
+                </ul>
+            </div>
+
+            <!-- EP 3 -->
+            <div class="outline-ep">
+                <div class="outline-ep-header">
+                    <p class="outline-ep-num">Episode 3</p>
+                    <p class="outline-ep-name">Blood and Weevils</p>
+                    <p class="outline-ep-act">Act 3 of the series · The truth &amp; the trap</p>
+                </div>
+                <ul class="beat-list">
+                    <li class="beat-item"><span class="beat-num">01</span><span class="beat-text"><strong>Mayor's office.</strong> The Mayor tells Dustin the truth: the Weevil is his brother Mark. Sent to Maine, escaped, took the family fortune. <em>He was the smarter one. I was just the one people liked.</em> His voice breaks. He failed him.</span></li>
+                    <li class="beat-item"><span class="beat-num">02</span><span class="beat-text"><strong>Dustin absorbs it.</strong> Then, almost to himself: <em>I knew someone who worked for him. A long time ago.</em> He doesn't elaborate. The Mayor searches his face. Dustin is already standing.</span></li>
+                    <li class="beat-item"><span class="beat-num">03</span><span class="beat-text"><strong>The alliance.</strong> The four of them in the office. The Mayor proposes it formally: a team. A crew to take down the Weevil's network. Dustin is in before he finishes the sentence.</span></li>
+                    <li class="beat-item turn"><span class="beat-num">04</span><span class="beat-text"><strong>Boatyard, night.</strong> The team moves through the dark. Weevil henchmen step out — costumes, bats, a ring closing. Then Gael steps forward from the back. A suit. No costume. Calm.</span></li>
+                    <li class="beat-item"><span class="beat-num">05</span><span class="beat-text"><strong>The magnet.</strong> The team's guns fly from their hands. Gael looks at Dustin across the circle. <em>"You should have stayed out of this, Dustin."</em> Not Detective. Ghost looks at Dustin. Dustin doesn't look back.</span></li>
+                    <li class="beat-item"><span class="beat-num">06</span><span class="beat-text"><strong>The fight.</strong> Hand to hand. The team as a unit for the first time. Henchmen take damage. Gael slips the circle — unhurried — and is gone. His crew drags civilians toward the docks.</span></li>
+                    <li class="beat-item"><span class="beat-num">07</span><span class="beat-text"><strong>Hostages.</strong> Lucy: <em>We can't let them get away with innocent lives.</em> The team pivots, chases, frees them. Henchmen scatter. Gael is gone.</span></li>
+                    <li class="beat-item"><span class="beat-num">08</span><span class="beat-text"><strong>Aftermath.</strong> The Mayor, quietly: <em>We may not have captured him. But we saved lives.</em> Ghost to Dustin: <em>He called you by your first name.</em> Dustin says nothing.</span></li>
+                    <li class="beat-item turn"><span class="beat-num">09</span><span class="beat-text"><strong>The handshake.</strong> Mayor's office, daylight. The formal alliance. <em>Together, we'll be unstoppable.</em> Last shot: Dustin alone on the street. Voiceover closes the series.</span></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Episodes -->
+    <div class="section-container">
+        <p class="section-title">Episodes</p>
+        <div class="card-grid">
+            <div class="ep-card">
+                <p class="ep-number">Episode 1</p>
+                <p class="ep-title">The Trail</p>
+                <p class="ep-desc">Dustin follows a strange trail of glasses through New Haven. An old encounter at the shipyard. The case nobody believes. The Ghost walks in. Something bigger is moving.</p>
+                <div class="ep-links">
+                    <a class="ep-link" href="film-series-misc/the-nibbler/episode-1/index.html">Scene Gallery</a>
+                    <a class="ep-link" href="film-series-misc/the-nibbler/episode-1/full_script.html">Full Script</a>
+                </div>
+            </div>
+            <div class="ep-card">
+                <p class="ep-number">Episode 2</p>
+                <p class="ep-title">The Party</p>
+                <p class="ep-desc">Lucy gets them inside the Mayor's gala. The Weevil has been building toward one night. The screens come on. Everything changes. The Mayor says: come to my office.</p>
+                <div class="ep-links">
+                    <a class="ep-link" href="film-series-misc/the-nibbler/episode-2/index.html">Scene Gallery</a>
+                    <a class="ep-link" href="film-series-misc/the-nibbler/episode-2/full_script.html">Full Script</a>
+                </div>
+            </div>
+            <div class="ep-card">
+                <p class="ep-number">Episode 3</p>
+                <p class="ep-title">Blood and Weevils</p>
+                <p class="ep-desc">The Mayor names the Weevil. It's his brother. Dustin forms a team. The boatyard becomes a trap. Gael slips away again — but this time, Dustin doesn't feel so alone.</p>
+                <div class="ep-links">
+                    <a class="ep-link" href="film-series-misc/the-nibbler/episode-3/index.html">Scene Gallery</a>
+                    <a class="ep-link" href="film-series-misc/the-nibbler/episode-3/full_script.html">Full Script</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Resources -->
+    <div class="section-container">
+        <p class="section-title">Project Resources</p>
+        <div class="card-grid two-col">
+            <a class="nav-card" href="nibbler/treatment.md">
+                <h4>Series Treatment</h4>
+                <p>Loglines, act structure, character backgrounds, themes. The Shadows of Deception treatment doc.</p>
+            </a>
+            <a class="nav-card" href="nibbler/treatment-episodes.md">
+                <h4>Episode Treatment</h4>
+                <p>Three-episode narrative breakdown — scene-by-scene logic, act turns, and noir throughline.</p>
+            </a>
+            <a class="nav-card" href="nibbler/script-system/full_script.html">
+                <h4>Master Script</h4>
+                <p>Compiled 18-scene working script. Draft 1 with modifications — the full current draft.</p>
+            </a>
+            <a class="nav-card" href="nibbler/production.md">
+                <h4>Production</h4>
+                <p>Cast, crew, locations, equipment. Childlike Studios production plan.</p>
+            </a>
+            <a class="nav-card" href="film-series-misc/the-nibbler/index.html">
+                <h4>Episode Hub</h4>
+                <p>Per-episode scene galleries organized by act. 30 scenes per episode.</p>
+            </a>
+            <a class="nav-card" href="nibbler/treatment-versions/notes/">
+                <h4>Notes & Drafts</h4>
+                <p>Opening voiceover drafts, Episode 2 outline, working notes.</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Logline -->
+    <div class="section-container">
+        <p class="section-title">About</p>
+        <div class="prose">
+            <p>In New Haven's shadow economy of secrets and favors, detective Dustin Meglio — known on the streets as The Nibbler — follows a trail of small, baffling clues straight into the biggest conspiracy the city has seen: a mayoral scandal, a phantom criminal known as the Weevil, and a Colombian operative named Gael who runs the Weevil's operation on the ground.</p>
+            <p>Gael is not the Weevil. He works for him. But he moves through New Haven like he owns it — precise, unhurried, cultured. He places the weevil figurines. He runs the henchmen. He calls Dustin by his first name at the boatyard, in front of everyone, like it's the most natural thing in the world. Like they have history.</p>
+            <p>They do. Series One plants it. Series Two excavates it.</p>
+            <p>Three episodes. 22 minutes each. Shot in New Haven on BMPCC4K.</p>
+        </div>
+    </div>
+
+    <!-- Cast -->
+    <div class="section-container">
+        <p class="section-title">Cast</p>
+        <table class="cast-table">
+            <tr><td>Rob Meglio</td><td>Dustin (The Nibbler)</td></tr>
+            <tr><td>Pat Clenden</td><td>Mayor Anderson / The Weevil (Mark)</td></tr>
+            <tr><td>TBD</td><td>Gael</td></tr>
+            <tr><td>TBD</td><td>The Ghost (Max)</td></tr>
+            <tr><td>TBD</td><td>Lucy</td></tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <a href="/">Film Vault</a> · Private · Childlike Studios
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,1252 @@
+#!/usr/bin/env node
+
+/**
+ * Script Compiler
+ * Reads manifest.json and compiles all scenes into a single full_script.md
+ * and generates full_script.html for printing/viewing
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const SCENES_DIR = path.join(__dirname, 'scenes');
+const MANIFEST_PATH = path.join(__dirname, 'manifest.json');
+const OUTPUT_MD = path.join(__dirname, 'full_script.md');
+const OUTPUT_HTML = path.join(__dirname, 'full_script.html');
+const PLOT_CARDS_PATH = path.join(__dirname, 'plot-cards-data.json');
+const SCRIPT_NAME = 'Creatures in the Tall Grass Script';
+
+// Scene file → plot point number(s) for plot-cards summary tags (from plot-points-scene-map)
+const PLOT_POINT_BY_FILE = {
+  's08.md': [1],
+  's12.md': [2],
+  's13.md': [2],
+  's18.md': [3],
+  's19.md': [3],
+  's21.md': [4],
+  's22.md': [5, 6],
+  's23.md': [7],
+  's24.md': [8, 9, 10],
+  's25.md': [11],
+  's26.md': [12, 13],
+  's27.md': [14],
+};
+
+// Punchy one-line beats per scene (used for plot cards; fallback to deriveSummary if missing)
+// Summaries are now loaded from inline comments (<!-- summary: ... -->) or derived from content
+
+function toRoman(num) {
+  const map = [
+    [1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],
+    [100, 'C'], [90, 'XC'], [50, 'L'], [40, 'XL'],
+    [10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I'],
+  ];
+  let n = num;
+  let out = '';
+  for (const [v, s] of map) {
+    while (n >= v) {
+      out += s;
+      n -= v;
+    }
+  }
+  return out;
+}
+
+function getSceneDisplayNumber(filename) {
+  if (!filename) return null;
+  const match = filename.match(/s(\d+)([a-z])?/i);
+  if (match) {
+    const num = parseInt(match[1], 10);
+    const suffix = match[2] ? match[2].toUpperCase() : '';
+    return `${num}${suffix}`;
+  }
+  return null;
+}
+
+// Read manifest
+function loadManifest() {
+  // Always sync before loading
+  return syncManifest();
+}
+
+function syncManifest() {
+  console.log('Syncing manifest with scenes directory...');
+  let manifest = [];
+  try {
+    if (fs.existsSync(MANIFEST_PATH)) {
+      manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
+    }
+  } catch (e) {
+    console.warn('Could not read existing manifest, starting fresh.');
+  }
+
+  const files = fs.readdirSync(SCENES_DIR).filter(f => f.endsWith('.md'));
+  const manifestFiles = manifest.map(m => m.file);
+  
+  let changed = false;
+  
+  files.forEach(file => {
+    if (!manifestFiles.includes(file)) {
+      console.log(`- Adding new scene file to manifest: ${file}`);
+      const content = fs.readFileSync(path.join(SCENES_DIR, file), 'utf8');
+      const nickname = getNicknameFromScene(content) || file.replace('.md', '');
+      
+      // Improved title extraction: look for # SCENE X: TITLE or just # TITLE
+      const titleMatch = content.match(/^# (?:SCENE \d+[A-Z]?:\s*)?(.*)/mi);
+      const title = titleMatch ? titleMatch[1].trim() : nicknameToTitle(nickname);
+      
+      // Find the best act context
+      const lastScene = manifest[manifest.length - 1];
+      const act = lastScene ? lastScene.act : 1;
+      const actTitle = lastScene ? lastScene.actTitle : 'Arrival & Discovery';
+
+      manifest.push({
+        id: nickname,
+        file: file,
+        title: title,
+        act: act,
+        actTitle: actTitle,
+        nickname: nickname
+      });
+      changed = true;
+    }
+  });
+
+  if (changed) {
+    // Sort manifest by filename alphanumeric logic
+    manifest.sort((a, b) => {
+      const aMatch = a.file.match(/s(\d+)([a-z])?/i);
+      const bMatch = b.file.match(/s(\d+)([a-z])?/i);
+      if (aMatch && bMatch) {
+        const aNum = parseInt(aMatch[1], 10);
+        const bNum = parseInt(bMatch[1], 10);
+        if (aNum !== bNum) return aNum - bNum;
+        const aSuff = aMatch[2] || '';
+        const bSuff = bMatch[2] || '';
+        return aSuff.localeCompare(bSuff);
+      }
+      return a.file.localeCompare(b.file);
+    });
+
+    fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + '\n', 'utf8');
+    console.log('✓ manifest.json updated with new scenes.');
+  }
+  return manifest;
+}
+
+// Read a scene file
+function loadScene(filename) {
+  const filePath = path.join(SCENES_DIR, filename);
+  try {
+    return fs.readFileSync(filePath, 'utf8');
+  } catch (error) {
+    console.warn(`Warning: Could not read scene file ${filename}: ${error.message}`);
+    return `\n[SCENE FILE MISSING: ${filename}]\n`;
+  }
+}
+
+// Extract nickname from first line of scene content: <!-- nickname: foo-bar -->
+function getNicknameFromScene(content) {
+  if (!content || typeof content !== 'string') return null;
+  const match = content.match(/<!--\s*nickname:\s*([^>]+?)\s*-->/i);
+  return match ? match[1].trim() : null;
+}
+
+// Extract summary from scene content: <!-- summary: foo-bar -->
+function getSummaryFromScene(content) {
+  if (!content || typeof content !== 'string') return null;
+  const match = content.match(/<!--\s*summary:\s*([\s\S]+?)\s*-->/i);
+  return match ? match[1].trim() : null;
+}
+
+// Turn nickname into display title: "dallas-marsh-walk" → "Dallas Marsh Walk", "shadow walk" → "Shadow Walk"
+function nicknameToTitle(nickname) {
+  if (!nickname) return '';
+  return nickname
+    .split(/[\s-]+/)
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+}
+
+// Turn <!-- [ADDITION] --> / <!-- [DELETION] --> into wrapper divs + label; text inside gets colored
+function sceneContentWithVisibleMarkers(content) {
+  let out = content;
+  out = out.replace(/<!-- \[\/(?:ADDITION|DELETION)\] -->/g, '\n\n</div>\n\n');
+  out = out.replace(/<!-- \[ADDITION\][\s\S]*?-->/g, '\n\n<div class="script-addition">\n\n> addition\n\n');
+  out = out.replace(/<!-- \[DELETION\][\s\S]*?-->/g, '\n\n<div class="script-deletion">\n\n> deletion\n\n');
+  return out;
+}
+
+function injectSceneComments(content, sceneNumber, scene) {
+  const file = scene && scene.file ? String(scene.file) : '';
+  const nickname = scene && (scene.nickname || scene.id) ? String(scene.nickname || scene.id) : '';
+  const displayNum = getSceneDisplayNumber(file) || String(sceneNumber).padStart(2, '0');
+  const header = `<!-- scene: ${displayNum} file: ${file} nickname: ${nickname} -->`;
+
+  // Remove any existing scene comments at the start of the file or after breaks
+  let out = content.replace(/<!-- scene:.*?-->/gi, '').trim();
+  
+  // Ensure one header at top
+  out = `${header}\n\n${out}`;
+
+  // Before every explicit action-break marker, inject a scene header comment.
+  // This helps when scanning raw markdown without affecting rendered output.
+  out = out.replace(/^\(action\)\s*$/gim, `${header}\n\n(action)`);
+  return out;
+}
+
+// Compile all scenes into markdown
+function compileMarkdown(scenes) {
+  let output = `# ${SCRIPT_NAME} — Full Script\n\n`;
+  output += `*Compiled on ${new Date().toLocaleString()}*\n\n`;
+  output += `---\n\n`;
+
+  let currentAct = null;
+  scenes.forEach((scene, index) => {
+    const sceneNumber = index + 1;
+    const displayNum = getSceneDisplayNumber(scene.file) || sceneNumber;
+
+    if (scene.act && scene.act !== currentAct) {
+      currentAct = scene.act;
+      const actTitle = scene.actTitle ? ` — ${scene.actTitle}` : '';
+      output += `\n## ACT ${toRoman(scene.act)}${actTitle}\n\n---\n\n`;
+    }
+
+    output += `\n### Scene ${displayNum}: ${scene.title}\n\n`;
+    output += `*${scene.act ? `ACT ${toRoman(scene.act)}${scene.actTitle ? ` — ${scene.actTitle}` : ''} | ` : ''}ID: ${scene.id} | File: ${scene.file}*\n\n`;
+    output += `---\n\n`;
+
+    let sceneContent = loadScene(scene.file);
+    sceneContent = sceneContentWithVisibleMarkers(sceneContent);
+    sceneContent = injectSceneComments(sceneContent, sceneNumber, scene);
+    output += sceneContent;
+    output += `\n\n---\n\n`;
+  });
+
+  return output;
+}
+
+// Generate HTML from markdown (simple conversion)
+function markdownToHTML(markdown) {
+  // Simple markdown to HTML conversion
+  // For production, you might want to use a library like marked
+  let html = markdown
+    // Headers
+    .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+    .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+    .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+    // Bold
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    // Italic
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    // Line breaks
+    .replace(/\n\n/g, '</p><p>')
+    .replace(/\n/g, '<br>');
+
+  return `<p>${html}</p>`;
+}
+
+// Generate full HTML page
+function generateHTMLPage(markdown, scenes, versionsData = [], currentVersionStamp = false) {
+  // When generating a page inside versions/, paths need one extra ../
+  const isVersion = !!currentVersionStamp;
+  const cssBase = isVersion ? '../../../' : '../../';
+  const backLink = isVersion ? '../index.html' : '../index.html';
+  const latestLink = isVersion ? '../full_script.html' : 'full_script.html';
+
+  // Build version dropdown items
+  const versionMenuItems = versionsData.map(v => {
+    const href = isVersion
+      ? (v.stamp === currentVersionStamp ? '#' : `full_script_${v.stamp}.html`)
+      : `versions/full_script_${v.stamp}.html`;
+    const isActive = v.stamp === currentVersionStamp;
+    return `<a role="menuitem" href="${href}" style="display:block;padding:6px 14px;font-size:0.82rem;text-decoration:none;color:${isActive ? '#999' : '#000'};cursor:${isActive ? 'default' : 'pointer'};" ${isActive ? '' : `onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='transparent'"`}>${v.stamp}${isActive ? ' ✓' : ''}</a>`;
+  }).join('');
+
+  const versionTriggerLabel = currentVersionStamp ? currentVersionStamp : 'Latest';
+  const versionDropdownHtml = versionsData.length === 0 ? '' : `
+          <div class="script-export-dropdown" id="scriptVersionDropdown" style="position:relative;">
+            <button type="button" class="print-button script-export-trigger" id="scriptVersionTrigger" aria-haspopup="true" aria-expanded="false" style="font-size:0.78rem;opacity:0.8;">
+              ${versionTriggerLabel}
+            </button>
+            <div class="script-export-menu" id="scriptVersionMenu" role="menu" aria-label="Script versions" style="min-width:220px;right:0;left:auto;">
+              <a role="menuitem" href="${latestLink}" style="display:block;padding:6px 14px;font-size:0.82rem;text-decoration:none;color:${!currentVersionStamp ? '#999' : '#000'};font-weight:600;cursor:${!currentVersionStamp ? 'default' : 'pointer'};" ${!currentVersionStamp ? '' : `onmouseover="this.style.background='#f5f5f5'" onmouseout="this.style.background='transparent'"`}>Latest${!currentVersionStamp ? ' ✓' : ''}</a>
+              <div style="border-top:1px solid #eee;margin:4px 0;"></div>
+              ${versionMenuItems}
+            </div>
+          </div>`;
+
+  const sceneOptionsHtml = (scenes || []).map((s, i) => {
+    const num = i + 1;
+    const displayNum = getSceneDisplayNumber(s.file) || num;
+    const title = (s.title || '').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    return `<option value="scene-${num}">${displayNum}. ${title}</option>`;
+  }).join('');
+
+  const printSceneOptionsHtml = (scenes || []).map((s, i) => {
+    const num = i + 1;
+    const displayNum = getSceneDisplayNumber(s.file) || num;
+    const title = (s.title || '').replace(/</g, '&lt;').replace(/"/g, '&quot;');
+    return `<option value="${num}">Scene ${displayNum} — ${title}</option>`;
+  }).join('');
+
+  const html = String.raw`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${isVersion ? currentVersionStamp + ' — ' : ''}Full Script - ${SCRIPT_NAME}</title>
+  <link rel="stylesheet" href="${cssBase}omitted/script-system/script.css?v=20260108-5">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    /* Modal styling */
+    .print-scene-modal {
+      border: 1px solid var(--border, #ddd);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      padding: 0;
+      font-family: inherit;
+    }
+    .print-scene-modal::backdrop {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .modal-content h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    .modal-content p {
+      margin: 0 0 0.5rem 0;
+      font-size: 0.95rem;
+      color: var(--text-muted, #666);
+    }
+    .print-scene-select {
+      padding: 0.5rem;
+      border: 1px solid var(--border, #ddd);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: inherit;
+    }
+    .modal-buttons {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: flex-end;
+      margin-top: 0.5rem;
+    }
+    .modal-btn {
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border, #ddd);
+      border-radius: 4px;
+      background: var(--bg, #f5f5f5);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: inherit;
+    }
+    .modal-btn:hover {
+      background: var(--bg-hover, #efefef);
+    }
+    .modal-btn-primary {
+      background: var(--accent, #007bff);
+      color: white;
+      border-color: var(--accent, #007bff);
+    }
+    .modal-btn-primary:hover {
+      background: var(--accent-hover, #0056b3);
+    }
+
+    /* Scene wrapper divs for print isolation */
+    .scene-wrapper {
+      page-break-before: always;
+    }
+    .scene-wrapper:first-of-type {
+      page-break-before: avoid;
+    }
+    .scene-wrapper.print-hidden {
+      display: none !important;
+    }
+
+    /* Print styles: clean header and nav when printing scenes */
+    @media print {
+      .script-progress-rail,
+      .script-sticky-bar,
+      .full-script-header {
+        display: none !important;
+      }
+      .scene-wrapper {
+        page-break-before: always;
+      }
+      .scene-wrapper:first-of-type {
+        page-break-before: avoid;
+      }
+    }
+  </style>
+</head>
+<body class="full-script-page">
+  <div class="gallery-container">
+    <!-- Vertical progress rail: fixed left, timeline progression -->
+    <div class="script-progress-rail no-print" id="scriptProgressRail" aria-hidden="true">
+      <div class="script-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="script-progress-fill" id="scriptProgressFill"></div>
+      </div>
+      <div class="script-progress-label" id="scriptProgressLabel">0</div>
+    </div>
+
+    <div class="script-sticky-bar no-print" id="scriptStickyBar">
+      <div class="nav">
+        <div class="nav-left">
+          <a class="nav-link" href="${backLink}" title="Back">
+            <span class="nav-icon" aria-hidden="true">←</span>
+            <span class="nav-text">Back</span>
+          </a>
+          <span class="nav-text" style="margin-left: 1rem; font-weight: 600;">Shooting Script</span>
+        </div>
+        <div class="nav-right">
+          <a class="nav-link" href="/pages/summer/shooting/production.html" title="Production plan">
+            <span class="nav-text">Production plan</span>
+          </a>
+          ${versionDropdownHtml}
+          <div class="script-export-dropdown" id="scriptExportDropdown">
+            <button type="button" class="print-button script-export-trigger" id="scriptExportTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="scriptExportMenu">
+              Export / Print
+            </button>
+            <div class="script-export-menu" id="scriptExportMenu" role="menu" aria-label="Export and print options">
+              <button type="button" role="menuitem" onclick="downloadMarkdown()">Download .md</button>
+              <button type="button" role="menuitem" onclick="printMarkdownPdf()">PDF (Markdown)</button>
+              <button type="button" role="menuitem" onclick="document.getElementById('printSceneModal').showModal()">Download Scene as PDF</button>
+              <button type="button" role="menuitem" onclick="window.print()">Print All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="script-stats-row">
+        <div class="script-status-bar" id="scriptStatusBar" aria-hidden="true">
+          <div class="script-status-scene-block">
+            <span class="script-status-scene" id="scriptStatusScene">—</span>
+            <span class="script-status-characters" id="scriptStatusCharacters">—</span>
+          </div>
+          <span class="script-status-divider">|</span>
+          <span class="script-status-production" id="scriptStatusProduction">—</span>
+        </div>
+        <div class="script-scene-nav">
+          <label for="scriptSceneSelect" class="script-scene-nav-label">Jump to scene</label>
+          <select id="scriptSceneSelect" class="script-scene-select" aria-label="Jump to scene">
+            <option value="">—</option>
+            ${sceneOptionsHtml}
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="screenplay-container">
+      <div class="full-script-header">
+        <div class="full-script-title">Shooting Script</div>
+        <div class="full-script-meta">Compiled on ${new Date().toLocaleString()}</div>
+      </div>
+      <div class="screenplay-content" id="scriptContent"></div>
+    </div>
+  </div>
+
+  <!-- Modal for downloading individual scenes as PDF -->
+  <dialog id="printSceneModal" class="print-scene-modal">
+    <div class="modal-content">
+      <h2>Download Scene as PDF</h2>
+      <p>Select a scene to download:</p>
+      <select id="printSceneSelect" class="print-scene-select">
+        <option value="">— Select a scene —</option>
+        ${printSceneOptionsHtml}
+      </select>
+      <div class="modal-buttons">
+        <button type="button" class="modal-btn modal-btn-primary" onclick="downloadScenePdf()">Download as PDF</button>
+        <button type="button" class="modal-btn modal-btn-secondary" onclick="document.getElementById('printSceneModal').close()">Cancel</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const markdown = ${JSON.stringify(markdown)};
+    const MARKDOWN_FILE_NAME = 'creatures_in_the_tall_grass_full_script.md';
+
+    function downloadMarkdown() {
+      const blob = new Blob([markdown], { type: 'text/markdown;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = MARKDOWN_FILE_NAME;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function printMarkdownPdf() {
+      const printable = window.open('', '_blank', 'noopener,noreferrer');
+      if (!printable) return;
+      const escaped = String(markdown)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+      const title = document.title.replace(/<\/?[^>]+>/g, '');
+      printable.document.write([
+        '<!doctype html>',
+        '<html lang="en">',
+        '<head>',
+        '  <meta charset="UTF-8">',
+        '  <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+        '  <title>' + title + ' - Markdown</title>',
+        '  <style>',
+        '    body { margin: 1in; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }',
+        '    pre { white-space: pre-wrap; line-height: 1.35; font-size: 11pt; }',
+        '  </style>',
+        '</head>',
+        '<body>',
+        '  <pre>' + escaped + '</pre>',
+        '</body>',
+        '</html>',
+      ].join('\n'));
+      printable.document.close();
+      printable.focus();
+      printable.print();
+      printable.onafterprint = () => printable.close();
+    }
+    const container = document.getElementById('scriptContent');
+    marked.setOptions({ breaks: true });
+    container.innerHTML = marked.parse(markdown);
+
+    // Export dropdown: toggle on trigger click, close on outside click or menu action
+    (function initExportDropdown() {
+      var trigger = document.getElementById('scriptExportTrigger');
+      var menu = document.getElementById('scriptExportMenu');
+      if (!trigger || !menu) return;
+      function open() {
+        menu.classList.add('is-open');
+        trigger.setAttribute('aria-expanded', 'true');
+      }
+      function close() {
+        menu.classList.remove('is-open');
+        trigger.setAttribute('aria-expanded', 'false');
+      }
+      trigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (menu.classList.contains('is-open')) close(); else open();
+      });
+      menu.querySelectorAll('button').forEach(function(btn) {
+        btn.addEventListener('click', function() { close(); });
+      });
+      document.addEventListener('click', function() { close(); });
+    })();
+
+    // Version dropdown
+    (function initVersionDropdown() {
+      var trigger = document.getElementById('scriptVersionTrigger');
+      var menu = document.getElementById('scriptVersionMenu');
+      if (!trigger || !menu) return;
+      function open() { menu.classList.add('is-open'); trigger.setAttribute('aria-expanded', 'true'); }
+      function close() { menu.classList.remove('is-open'); trigger.setAttribute('aria-expanded', 'false'); }
+      trigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (menu.classList.contains('is-open')) close(); else open();
+      });
+      document.addEventListener('click', function() { close(); });
+    })();
+
+    // Format screenplay elements
+    formatScreenplay(document.querySelector('.screenplay-container'));
+
+    // Filmmaking-style page length & runtime (1 page ≈ 1 minute; ~250 words/page)
+    // Count from raw markdown so we get the full script (DOM textContent can undercount)
+    (function initScriptStatsAndProgress() {
+      const WORDS_PER_PAGE = 250;
+      const content = document.getElementById('scriptContent');
+      const progressFill = document.getElementById('scriptProgressFill');
+      const progressLabel = document.getElementById('scriptProgressLabel');
+      const progressBar = document.querySelector('.script-progress-bar');
+
+      if (!progressFill) return;
+
+      const wordCount = (typeof markdown === 'string' ? markdown : (content && content.textContent) || '')
+        .split(/\s+/)
+        .filter(Boolean)
+        .length;
+      const MIN_PAGES = 90;
+      const rawPages = Math.round((wordCount / WORDS_PER_PAGE) * 10) / 10;
+      const estimatedPages = Math.max(MIN_PAGES, rawPages);
+      const estimatedMinutes = Math.max(MIN_PAGES, Math.round(estimatedPages));
+
+      function updateProgress() {
+        const docEl = document.documentElement;
+        const scrollTop = docEl.scrollTop || document.body.scrollTop;
+        const scrollHeight = docEl.scrollHeight - docEl.clientHeight;
+        if (scrollHeight <= 0) {
+          progressFill.style.height = '0%';
+          progressLabel.textContent = '0 / ' + estimatedMinutes;
+          if (progressBar) progressBar.setAttribute('aria-valuenow', 0);
+          return;
+        }
+        const pct = Math.min(1, Math.max(0, scrollTop / scrollHeight));
+        const currentMinute = Math.min(estimatedMinutes, Math.floor(pct * estimatedMinutes));
+        progressFill.style.height = (pct * 100) + '%';
+        progressLabel.textContent = currentMinute + ' / ' + estimatedMinutes;
+        if (progressBar) progressBar.setAttribute('aria-valuenow', Math.round(pct * 100));
+      }
+
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+
+    // Scene nav: add ids to scene headings and wire dropdown to scroll
+    (function initSceneNav() {
+      const content = document.getElementById('scriptContent');
+      const selectEl = document.getElementById('scriptSceneSelect');
+      if (!content || !selectEl) return;
+
+      const sceneHeadings = content.querySelectorAll('h3');
+      const sceneHeadingRe = /^Scene \d+[A-Z]*:/i;
+      sceneHeadings.forEach((h3, i) => {
+        const text = (h3.textContent || '').trim();
+        if (sceneHeadingRe.test(text)) {
+          h3.id = 'scene-' + (i + 1);
+        }
+      });
+
+      selectEl.addEventListener('change', function() {
+        const value = this.value;
+        if (!value) return;
+        const el = document.getElementById(value);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        this.value = '';
+      });
+    })();
+
+    // Wrap each scene in a scene-wrapper div for print isolation
+    // Must be called AFTER initSceneNav so scene headings have IDs
+    wrapScenes(document.getElementById('scriptContent'));
+
+    // Status bar: current scene, who's in scene, production tags (updates on scroll)
+    (function initStatusBar() {
+      const content = document.getElementById('scriptContent');
+      const sceneEl = document.getElementById('scriptStatusScene');
+      const charsEl = document.getElementById('scriptStatusCharacters');
+      const prodEl = document.getElementById('scriptStatusProduction');
+      if (!content || !sceneEl) return;
+
+      function getSceneHeadingsInOrder() {
+        const h3s = content.querySelectorAll('h3[id^="scene-"]');
+        return Array.from(h3s).sort((a, b) => {
+          const nA = parseInt(a.id.replace('scene-', ''), 10);
+          const nB = parseInt(b.id.replace('scene-', ''), 10);
+          return nA - nB;
+        });
+      }
+
+      function getSceneBlock(sceneH3, nextSceneH3) {
+        const chars = new Set();
+        let firstSlug = '';
+        let node = sceneH3.nextSibling;
+        while (node) {
+          if (node === nextSceneH3) break;
+          if (node.nodeType === 1) {
+            if (node.classList && node.classList.contains('character-name')) {
+              const name = (node.textContent || '').trim();
+              if (name) chars.add(name);
+            }
+            if (!firstSlug && node.classList && node.classList.contains('scene-heading')) {
+              firstSlug = (node.textContent || '').trim();
+            }
+          }
+          node = node.nextSibling;
+        }
+        return { characters: Array.from(chars), production: firstSlug };
+      }
+
+      function updateStatusBar() {
+        const sceneHeadings = getSceneHeadingsInOrder();
+        if (sceneHeadings.length === 0) return;
+        const viewportThreshold = 160;
+        let current = sceneHeadings[0];
+        for (let i = 0; i < sceneHeadings.length; i++) {
+          const top = sceneHeadings[i].getBoundingClientRect().top;
+          if (top <= viewportThreshold) current = sceneHeadings[i];
+        }
+        const title = (current.textContent || '').trim();
+        const nextId = current.id.replace('scene-', '');
+        const nextNum = parseInt(nextId, 10) + 1;
+        const nextScene = document.getElementById('scene-' + nextNum);
+        const block = getSceneBlock(current, nextScene || null);
+        sceneEl.textContent = title || '—';
+        charsEl.textContent = block.characters.length ? block.characters.join(', ') : '—';
+        prodEl.textContent = block.production || '—';
+      }
+
+      updateStatusBar();
+      window.addEventListener('scroll', updateStatusBar, { passive: true });
+      window.addEventListener('resize', updateStatusBar);
+    })();
+
+    // Download individual scene as PDF
+    function downloadScenePdf() {
+      const select = document.getElementById('printSceneSelect');
+      const sceneNum = parseInt(select.value, 10);
+      if (!sceneNum || isNaN(sceneNum)) {
+        alert('Please select a scene');
+        return;
+      }
+
+      const sceneWrapper = document.querySelector('[data-scene-num="' + sceneNum + '"]');
+      if (!sceneWrapper) {
+        alert('Scene not found');
+        return;
+      }
+
+      // Get scene title from h3
+      const heading = sceneWrapper.querySelector('h3');
+      const sceneTitle = heading ? heading.textContent.trim() : 'Scene ' + sceneNum;
+
+      // Clone the scene for PDF generation (so we don't modify the original)
+      const element = sceneWrapper.cloneNode(true);
+
+      // Remove ID so it doesn't conflict
+      element.removeAttribute('id');
+      element.removeAttribute('data-scene-num');
+
+      // PDF options
+      const opt = {
+        margin: [0.5, 0.5, 0.5, 0.5],
+        filename: 'Scene_' + String(sceneNum).padStart(2, '0') + '.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+
+      // Generate PDF
+      html2pdf().set(opt).from(element).save();
+
+      // Close the modal
+      document.getElementById('printSceneModal').close();
+    }
+
+    function looksLikeActionIntro(text) {
+      if (!text || text.length < 15) return false;
+      if (/^\(.+\)$/.test(text)) return false;
+      if (/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(text)) return false;
+      if (/^[A-Z][a-z]+,\s*(?:Mid\s*\d+s|\d+s|[A-Za-z\s]+),/.test(text) && /[a-z]/.test(text)) return true;
+      if (/^[A-Z][a-z]+,\s*(?:Mid\s*\d+s|\d+s)\s*[,.]/.test(text)) return true;
+      return false;
+    }
+
+    // Wrap each scene in a divider for print isolation
+    function wrapScenes(container) {
+      if (!container) return;
+      // Create a static array copy so we don't have stale references as we modify DOM
+      const sceneHeadings = Array.from(container.querySelectorAll('h3[id^="scene-"]'));
+
+      sceneHeadings.forEach((heading, idx) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'scene-wrapper';
+        wrapper.setAttribute('data-scene-num', idx + 1);
+
+        // Get the next heading reference (the boundary for this scene)
+        const nextHeading = sceneHeadings[idx + 1];
+
+        // Get the first sibling BEFORE we modify the DOM
+        let node = heading.nextSibling;
+
+        // Insert wrapper before heading
+        heading.parentNode.insertBefore(wrapper, heading);
+
+        // Move heading into wrapper
+        wrapper.appendChild(heading);
+
+        // Move all content nodes after heading (until next heading) into wrapper
+        while (node && node !== nextHeading) {
+          const next = node.nextSibling; // Save next before moving
+          wrapper.appendChild(node);     // This changes node's parent
+          node = next;                   // Move to the saved next
+        }
+      });
+    }
+
+    function formatScreenplay(container) {
+      const content = container.querySelector('.screenplay-content');
+      if (!content) return;
+
+      normalizeParagraphBreaks(content);
+
+      const paragraphs = content.querySelectorAll('p');
+      let inDialogueBlock = false;
+      
+      paragraphs.forEach((p, index) => {
+        const text = p.textContent.trim();
+        const nextP = paragraphs[index + 1];
+        const prevP = paragraphs[index - 1];
+        
+        // Skip if already formatted (but allow normalizeParagraphBreaks output)
+        if (!text) return;
+        if (p.classList.length > 0 && !p.classList.contains('line-split')) return;
+        
+        // Scene headings (INT. or EXT. at start of line)
+        if (/^(INT\.|EXT\.)/i.test(text)) {
+          p.className = 'scene-heading';
+          
+          // Check for scene ID at the end: (s01.1)
+          const idMatch = text.match(/\((s\d+\.\d+)\)$/i);
+          if (idMatch) {
+            const id = idMatch[1].toLowerCase();
+            const cleanText = text.replace(idMatch[0], '').trim();
+            p.innerHTML = '<span class="scene-id">' + id + '</span>' + cleanText.toUpperCase();
+          } else {
+            p.textContent = text.toUpperCase();
+          }
+          
+          inDialogueBlock = false;
+          return;
+        }
+        
+        // Transitions (right-aligned, uppercase)
+        if (/^(FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text)) {
+          p.className = 'transition';
+          p.textContent = text.toUpperCase();
+          inDialogueBlock = false;
+          return;
+        }
+
+        // Action break: (action) on its own line — ends dialogue block, next line is action; line is hidden
+        if (/^\(action\)$/i.test(text)) {
+          p.className = 'action-break';
+          p.textContent = '';
+          inDialogueBlock = false;
+          return;
+        }
+        
+        // Parentheticals (text in parentheses, italic) - check before character names
+        if (/^\(.+\)$/.test(text)) {
+          p.className = 'parenthetical';
+          inDialogueBlock = true;
+          return;
+        }
+
+        // Action lines that introduce a character or describe action (e.g. "Dominic, early 40s, puts his hand...")
+        // Never treat these as dialogue so they don't get wrapped with the previous speaker
+        if (looksLikeActionIntro(text)) {
+          p.className = 'action-line';
+          inDialogueBlock = false;
+          return;
+        }
+        
+        // Character names (all caps, typically short, not scene headings)
+        const isAllCaps = /^[A-Z][A-Z\s\.'-]+$/.test(text) && text === text.toUpperCase();
+        const isReasonableLength = text.length > 2 && text.length < 35;
+        const isNotSceneHeading = !/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(text);
+        
+        if (isAllCaps && isReasonableLength && isNotSceneHeading) {
+          const nextText = nextP ? nextP.textContent.trim() : '';
+          const looksLikeDialogue = nextText && (
+            /^\(.+\)$/.test(nextText) ||
+            (!/^(INT\.|EXT\.|FADE|CUT|DISSOLVE)/i.test(nextText) && 
+             !/^[A-Z][A-Z\s\.'-]+$/.test(nextText))
+          );
+          
+          if (looksLikeDialogue || !prevP || prevP.classList.contains('action-line') || prevP.classList.contains('scene-heading')) {
+            p.className = 'character-name';
+            p.setAttribute('data-character', text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''));
+            inDialogueBlock = true;
+            return;
+          }
+        }
+        
+        // Dialogue (follows character name / parenthetical / dialogue)
+        const looksLikeNewBlock = /^(INT\.|EXT\.|FADE IN|FADE OUT|CUT TO|DISSOLVE TO|SMASH CUT|MATCH CUT)/i.test(text);
+        const looksLikeCharacter = isAllCaps && isReasonableLength && isNotSceneHeading;
+        if (!looksLikeNewBlock && !looksLikeActionIntro(text) && inDialogueBlock && prevP && (prevP.classList.contains('character-name') || prevP.classList.contains('parenthetical') || prevP.classList.contains('dialogue'))) {
+          p.className = 'dialogue';
+          inDialogueBlock = true;
+          return;
+        }
+        
+        // If we're in a dialogue block but this doesn't match, end the block
+        if (looksLikeCharacter || looksLikeNewBlock) {
+          inDialogueBlock = false;
+        }
+        
+        // Default: action line
+        p.className = 'action-line';
+        inDialogueBlock = false;
+      });
+
+      // Add markers for last line in dialogue / parenthetical blocks (spacing)
+      const ps = content.querySelectorAll('p');
+      ps.forEach((p, i) => {
+        if (!p.classList.contains('dialogue') && !p.classList.contains('parenthetical')) return;
+        const next = ps[i + 1];
+        if (!next || (!next.classList.contains('dialogue') && !next.classList.contains('parenthetical'))) {
+          if (p.classList.contains('dialogue')) p.classList.add('dialogue-last');
+          if (p.classList.contains('parenthetical')) p.classList.add('parenthetical-last');
+        }
+      });
+    }
+
+    // Split <p> blocks that contain <br> into separate <p>s per line.
+    // This lets screenplay formatting work even if the markdown uses single newlines.
+    function normalizeParagraphBreaks(content) {
+      const paragraphs = Array.from(content.querySelectorAll('p'));
+      paragraphs.forEach((p) => {
+        if (!p.querySelector('br')) return;
+        const parts = p.innerHTML
+          .split(/<br\s*\/?\s*>/i)
+          .map((s) => s.replace(/&nbsp;/g, ' ').trim())
+          .filter(Boolean);
+        if (parts.length <= 1) return;
+
+        const frag = document.createDocumentFragment();
+        parts.forEach((html) => {
+          const np = document.createElement('p');
+          np.innerHTML = html;
+          frag.appendChild(np);
+        });
+        p.replaceWith(frag);
+      });
+    }
+  </script>
+</body>
+</html>
+  `.trim();
+
+  return html;
+}
+
+// Derive a one-line summary from scene content (first substantial action)
+function deriveSummary(content) {
+  if (!content || typeof content !== 'string') return '';
+  const maxLen = 220;
+  const lines = content
+    .replace(/<!--[\s\S]*?-->/g, '\n')
+    .split(/\n/)
+    .map((l) => l.trim())
+    .filter(Boolean);
+  const actionParts = [];
+  let inDialogue = false;
+  for (const line of lines) {
+    if (/^(?:[a-z]\d+[a-z]*(?:\.\d+)?\s*—\s*)?(?:INT\.|EXT\.|FADE|CUT|DISSOLVE|#|SCENE)/i.test(line)) continue;
+    if (/^\(action\)$/i.test(line)) continue;
+    if (/^\([^)]+\)$/.test(line)) continue; // parenthetical only
+    if (line.startsWith('---')) continue;
+    if (line.startsWith('*') && line.includes('ID:') && line.includes('File:')) continue; // Metadata line
+    if (/^[A-Z][A-Za-z\s]{2,}$/.test(line) && line === line.toUpperCase()) {
+      inDialogue = true;
+      continue;
+    }
+    if (inDialogue) {
+      if (line.length < 2 || /^[A-Z]/.test(line)) continue;
+      inDialogue = false;
+    }
+    if (line.length > 10 && !/^[A-Z][A-ZA-Z\s]+\n?$/.test(line)) {
+      actionParts.push(line);
+      const soFar = actionParts.join(' ').length;
+      if (soFar >= maxLen) break;
+    }
+  }
+  let text = actionParts.join(' ').replace(/\s+/g, ' ').replace(/[#*_~`]/g, '').trim();
+  if (text.length > maxLen) {
+    const cut = text.slice(0, maxLen).lastIndexOf(' ');
+    text = (cut > 60 ? text.slice(0, cut) : text.slice(0, maxLen)) + '…';
+  }
+  return text || '';
+}
+
+function formatPlotPointTag(plotNums) {
+  if (!plotNums || plotNums.length === 0) return '';
+  if (plotNums.length === 1) return ` [Plot ${plotNums[0]}]`;
+  return ` [Plot ${plotNums[0]}–${plotNums[plotNums.length - 1]}]`;
+}
+
+// Extract each scene's body from the compiled full-script markdown (so summaries match what's in the script).
+function extractSceneBlocksFromFullScript(fullScriptMarkdown) {
+  if (!fullScriptMarkdown || typeof fullScriptMarkdown !== 'string') return [];
+  const blocks = [];
+  const segments = fullScriptMarkdown.split(/(?=^### Scene \d+[A-Z]*:)/m);
+  for (let i = 1; i < segments.length; i++) {
+    const s = segments[i];
+    const afterDivider = s.indexOf('\n\n---\n\n');
+    const content = afterDivider === -1 ? s : s.slice(afterDivider + '\n\n---\n\n'.length);
+    const endMark = content.lastIndexOf('\n\n---');
+    const body = endMark > 0 ? content.slice(0, endMark) : content;
+    blocks.push(body.trim());
+  }
+  return blocks;
+}
+
+// Write plot-cards-data.json from manifest; titles from scene nickname; punchy summaries or derived from full script
+function writePlotCardsData(scenes, fullScriptMarkdown) {
+  const sceneBlocks = fullScriptMarkdown ? extractSceneBlocksFromFullScript(fullScriptMarkdown) : [];
+  const cards = scenes.map((scene, index) => {
+    const n = index + 1;
+    const id = scene.id || scene.nickname || `scene-${n}`;
+    const raw = loadScene(scene.file);
+    const nickname = getNicknameFromScene(raw);
+    const inlineSummary = getSummaryFromScene(raw);
+    const title = nickname ? nicknameToTitle(nickname) : (scene.title || `Scene ${n}`);
+    const fullScriptBlock = sceneBlocks[index];
+    const derived = fullScriptBlock ? deriveSummary(fullScriptBlock) : deriveSummary(raw);
+    // Priority: Inline comment > derived
+    let summary = inlineSummary || derived;
+    const displayNum = getSceneDisplayNumber(scene.file) || n;
+    // Removed automatic plot tag appending to clean up the display
+    return {
+      n,
+      displayNum,
+      id,
+      title,
+      act: scene.act ?? 0,
+      actTitle: scene.actTitle || '',
+      summary: summary || `Scene ${displayNum} — ${title}`,
+    };
+  });
+  fs.writeFileSync(PLOT_CARDS_PATH, JSON.stringify(cards, null, 2) + '\n', 'utf8');
+  console.log(`✓ Updated ${PLOT_CARDS_PATH}`);
+}
+
+// Main compilation function
+function compile() {
+  console.log('Loading manifest...');
+  const scenes = loadManifest();
+  console.log(`Found ${scenes.length} scenes in manifest`);
+
+  console.log('Compiling scenes...');
+  const markdown = compileMarkdown(scenes);
+
+  console.log('Writing full_script.md...');
+  fs.writeFileSync(OUTPUT_MD, markdown, 'utf8');
+  console.log(`✓ Created ${OUTPUT_MD}`);
+
+  console.log('Updating plot cards (dynamic summaries from full script)...');
+  writePlotCardsData(scenes, markdown);
+
+  // Load the just-written plot cards data to embed in the gallery
+  console.log('Generating index.html (Gallery)...');
+  const plotCardsData = JSON.parse(fs.readFileSync(PLOT_CARDS_PATH, 'utf8'));
+  const galleryHtml = generateGalleryPage(plotCardsData);
+  const galleryPath = path.join(__dirname, 'index.html');
+  fs.writeFileSync(galleryPath, galleryHtml, 'utf8');
+  console.log(`✓ Created ${galleryPath}`);
+
+  // Auto-snapshot: drop a dated copy in versions/ every compile
+  const now = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  const stamp = `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}_${pad(now.getHours())}-${pad(now.getMinutes())}`;
+  const versionsDir = path.join(__dirname, 'versions');
+  fs.mkdirSync(versionsDir, { recursive: true });
+
+  // Build versionsData: existing version stamps + the new one being created
+  const existingVersionStamps = fs.readdirSync(versionsDir)
+    .filter(f => /^full_script_\d{4}-\d{2}-\d{2}_\d{2}-\d{2}.*\.md$/.test(f))
+    .map(f => f.replace(/^full_script_/, '').replace(/\.md$/, ''))
+    .sort()
+    .reverse();
+  const allStamps = [stamp, ...existingVersionStamps.filter(s => s !== stamp)];
+  const versionsData = allStamps.map(s => ({
+    stamp: s,
+    label: s.replace('_', ' ').replace(/-/g, (m, i) => i < 10 ? '-' : ':'),
+  }));
+
+  // Generate full_script.html with version dropdown
+  console.log('Generating full_script.html...');
+  const html = generateHTMLPage(markdown, scenes, versionsData, false);
+  fs.writeFileSync(OUTPUT_HTML, html, 'utf8');
+  console.log(`✓ Created ${OUTPUT_HTML}`);
+
+  // Write snapshot .md
+  fs.copyFileSync(OUTPUT_MD, path.join(versionsDir, `full_script_${stamp}.md`));
+  console.log(`  - Snapshot: versions/full_script_${stamp}.md`);
+
+  // Generate snapshot .html (same content, version-aware paths and banner)
+  const snapshotHtml = generateHTMLPage(markdown, scenes, versionsData, stamp);
+  fs.writeFileSync(path.join(versionsDir, `full_script_${stamp}.html`), snapshotHtml, 'utf8');
+  console.log(`  - Snapshot HTML: versions/full_script_${stamp}.html`);
+
+  // Regenerate versions index page
+  const versionsIndexHtml = generateVersionsIndexPage(versionsDir, scenes.length);
+  fs.writeFileSync(path.join(versionsDir, 'index.html'), versionsIndexHtml, 'utf8');
+  console.log(`  - Versions index: versions/index.html`);
+
+  console.log('\n✓ Compilation complete!');
+  console.log(`  - Markdown: ${OUTPUT_MD}`);
+  console.log(`  - HTML: ${OUTPUT_HTML}`);
+  console.log(`  - Plot cards: ${PLOT_CARDS_PATH}`);
+  console.log(`  - Gallery: ${galleryPath}`);
+}
+
+function generateVersionsIndexPage(versionsDir, sceneCount) {
+  const files = fs.readdirSync(versionsDir)
+    .filter(f => f.endsWith('.md'))
+    .sort()
+    .reverse();
+
+  const rows = files.map(f => {
+    const stat = fs.statSync(path.join(versionsDir, f));
+    const label = f.replace(/^full_script_/, '').replace(/\.md$/, '');
+    const dateStr = label.replace(/_/, ' ').replace(/-/g, (m, i) => i < 10 ? '-' : ':');
+    return `      <tr>
+        <td style="padding:10px 14px;border-bottom:1px solid #eee;font-family:ui-monospace,monospace;font-size:0.85rem;">${label}</td>
+        <td style="padding:10px 14px;border-bottom:1px solid #eee;font-size:0.85rem;color:#555;">${stat.mtime.toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })}</td>
+        <td style="padding:10px 14px;border-bottom:1px solid #eee;">
+          <a href="${f}" style="color:#000;font-weight:600;font-size:0.85rem;">Download .md</a>
+        </td>
+      </tr>`;
+  }).join('\n');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script Versions — Creatures in the Tall Grass</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #fff; color: #000; }
+    .wrap { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+    h1 { font-size: 1.6rem; font-weight: 700; margin: 0 0 4px 0; }
+    .sub { font-size: 0.85rem; color: #666; margin: 0 0 40px 0; }
+    .sub a { color: #000; }
+    table { width: 100%; border-collapse: collapse; }
+    thead th { text-align: left; padding: 6px 14px; border-bottom: 2px solid #000; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #555; }
+    tbody tr:hover { background: #f5f5f5; }
+    .badge { display: inline-block; font-size: 0.7rem; font-weight: 700; background: #000; color: #fff; padding: 2px 7px; border-radius: 3px; letter-spacing: 0.04em; margin-left: 10px; vertical-align: middle; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="sub" style="margin-bottom:16px;"><a href="../../../shooting_production.html">← Dashboard</a></p>
+    <h1>Script Versions</h1>
+    <p class="sub">Creatures in the Tall Grass · Summer shooting script · ${files.length} snapshot${files.length !== 1 ? 's' : ''} · current cut: ${sceneCount} scenes</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Saved</th>
+          <th>File</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding:10px 14px;border-bottom:1px solid #eee;font-family:ui-monospace,monospace;font-size:0.85rem;">current <span class="badge">LIVE</span></td>
+          <td style="padding:10px 14px;border-bottom:1px solid #eee;font-size:0.85rem;color:#555;">Now</td>
+          <td style="padding:10px 14px;border-bottom:1px solid #eee;"><a href="../full_script.html" style="color:#000;font-weight:600;font-size:0.85rem;">Open full script</a></td>
+        </tr>
+${rows}
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>`;
+}
+
+function generateGalleryPage(cardsData) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creatures in the Tall Grass Script - Scene Gallery</title>
+  <link rel="stylesheet" href="../../omitted/script-system/script.css?v=${new Date().toISOString().split('T')[0]}">
+</head>
+<body class="plot-cards-page">
+  <div class="gallery-container">
+    <header class="plot-cards-header">
+      <h1>Creatures in the Tall Grass Script</h1>
+      <p class="plot-cards-subtitle">Scene gallery — main beats per scene · <a href="full_script.html">Open Full Script</a> to jump to any scene</p>
+    </header>
+
+    <nav class="nav no-print plot-cards-nav">
+      <div class="nav-left">
+        <a class="nav-link" href="/pages/summer.html" title="Summer Hub">☀ Summer</a>
+        <a class="nav-link nav-link--active" href="index.html" title="Gallery">▦ Gallery</a>
+        <a class="nav-link" href="full_script.html" title="Full Script">Full Script</a>
+        <a class="nav-link" href="scene_outline.html" title="Scene Outline">Scene Outline</a>
+        <a class="nav-link" href="/pages/summer/directors-notes/index.html" title="Director's Notes">Director's Notes</a>
+        <a class="nav-link" href="/pages/summer/production.html" title="Production plan">Production plan</a>
+      </div>
+    </nav>
+
+    <div class="plot-cards-grid" id="plotCardsGrid" aria-label="Scene index cards">
+      <!-- Cards injected by JS -->
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      // Embedded data from compile.js
+      const CARDS_DATA = ${JSON.stringify(cardsData)};
+      
+      const grid = document.getElementById('plotCardsGrid');
+
+      function toRoman(num) {
+        const map = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+        let n = num, out = '';
+        for (const [v, s] of map) {
+          while (n >= v) { out += s; n -= v; }
+        }
+        return out;
+      }
+
+      function renderCards(cards) {
+        if (!cards || !cards.length) {
+          grid.innerHTML = '<p class="plot-cards-loading">No card data available.</p>';
+          return;
+        }
+        
+        let currentAct = null;
+        cards.forEach(function(card) {
+          if (card.act !== currentAct) {
+            currentAct = card.act;
+            const actLabel = document.createElement('div');
+            actLabel.className = 'plot-cards-act-label';
+            actLabel.setAttribute('aria-hidden', 'true');
+            actLabel.textContent = 'ACT ' + toRoman(card.act) + ' — ' + (card.actTitle || '');
+            grid.appendChild(actLabel);
+          }
+          const cardDiv = document.createElement('div');
+          cardDiv.className = 'plot-card';
+          cardDiv.innerHTML =
+            '<span class="plot-card-number">' + card.n + '</span>' +
+            '<h2 class="plot-card-title">' + escapeHtml(card.title) + '</h2>' +
+            '<p class="plot-card-summary">' + escapeHtml(card.summary) + '</p>' +
+            '<div class="plot-card-links" style="margin-top: auto; display: flex; gap: 0.75rem; border-top: 1px solid var(--border); padding-top: 0.75rem; margin-top: 1rem; font-size: 0.8rem;">' +
+              '<a href="full_script.html#scene-' + card.n + '" class="plot-card-link" style="text-decoration: none; font-weight: 600;">Full Script</a>' +
+              '<a href="scene.html?id=' + encodeURIComponent(card.id) + '" class="plot-card-link" style="text-decoration: none; color: var(--muted); border-left: 1px solid var(--border); padding-left: 0.75rem;">Preview</a>' +
+            '</div>';
+          grid.appendChild(cardDiv);
+
+        });
+      }
+
+      function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      // Render immediately
+      renderCards(CARDS_DATA);
+    })();
+  </script>
+</body>
+</html>`;
+}
+
+// Run if called directly
+if (require.main === module) {
+  compile();
+}
+
+module.exports = { compile, loadManifest, loadScene };

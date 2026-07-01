@@ -1,0 +1,291 @@
+[
+  {
+    "id": "opening-montage",
+    "file": "s00a.md",
+    "title": "Opening Montage",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "opening-montage"
+  },
+  {
+    "id": "property-manager",
+    "file": "s00b.md",
+    "title": "Property Manager",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "property-manager"
+  },
+  {
+    "id": "arrival",
+    "file": "s01.md",
+    "title": "Arrival & Discovery",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "arrival"
+  },
+  {
+    "id": "dallas-night",
+    "file": "s02.md",
+    "title": "Sierra's Box",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "dallas-night"
+  },
+  {
+    "id": "the-hum",
+    "file": "s03.md",
+    "title": "The Hum",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "the-hum"
+  },
+  {
+    "id": "fellowship",
+    "file": "s04.md",
+    "title": "The Fellowship",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "fellowship"
+  },
+  {
+    "id": "marsh-walk-later",
+    "file": "s05.md",
+    "title": "The Merlin App",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "marsh-walk-later"
+  },
+  {
+    "id": "news-vans",
+    "file": "s06.md",
+    "title": "News Vans",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "news-vans"
+  },
+  {
+    "id": "the-coordinates",
+    "file": "s07.md",
+    "title": "The Coordinates",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "the-coordinates"
+  },
+  {
+    "id": "dallas-marsh-walk",
+    "file": "s08.md",
+    "title": "The Trailcam",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "dallas-marsh-walk"
+  },
+  {
+    "id": "dallas-night-work",
+    "file": "s09.md",
+    "title": "The Injured One",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "dallas-night-work"
+  },
+  {
+    "id": "shadows-in-wind",
+    "file": "s10.md",
+    "title": "The Chase",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "shadows-in-wind"
+  },
+  {
+    "id": "kitchen-triage",
+    "file": "s11.md",
+    "title": "Kitchen Triage",
+    "act": 1,
+    "actTitle": "Arrival & Discovery",
+    "nickname": "kitchen-triage"
+  },
+  {
+    "id": "the-burn-mark",
+    "file": "s12.md",
+    "title": "The Burn Mark",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-burn-mark"
+  },
+  {
+    "id": "entering-grass",
+    "file": "s13.md",
+    "title": "The Confrontation",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "entering-grass"
+  },
+  {
+    "id": "creature-rescue",
+    "file": "s14.md",
+    "title": "The Connection",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "creature-rescue"
+  },
+  {
+    "id": "the-tracking-box",
+    "file": "s15.md",
+    "title": "Asher's Tracking Box",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-tracking-box"
+  },
+  {
+    "id": "the-escape",
+    "file": "s16.md",
+    "title": "Back Home",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-escape"
+  },
+  {
+    "id": "the-soother",
+    "file": "s16b.md",
+    "title": "The Soother",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-soother"
+  },
+  {
+    "id": "resonance",
+    "file": "s17.md",
+    "title": "Resonance",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "resonance"
+  },
+  {
+    "id": "normal-day",
+    "file": "s17b.md",
+    "title": "Normal Day",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "normal-day"
+  },
+  {
+    "id": "mute-drive",
+    "file": "s17c.md",
+    "title": "Mute Drive",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "mute-drive"
+  },
+  {
+    "id": "the-handoff",
+    "file": "s17d.md",
+    "title": "The Handoff",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-handoff"
+  },
+  {
+    "id": "life-group-arrives",
+    "file": "s18.md",
+    "title": "Life Group Arrives",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "life-group-arrives"
+  },
+  {
+    "id": "life-group-arrives",
+    "file": "s18_REVISED.md",
+    "title": "Life Group Arrives",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "life-group-arrives"
+  },
+  {
+    "id": "the-hymn",
+    "file": "s19.md",
+    "title": "The Hymn",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "the-hymn"
+  },
+  {
+    "id": "the-marsh-rescue",
+    "file": "s19_REVISED.md",
+    "title": "The Marsh Rescue",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "the-marsh-rescue"
+  },
+  {
+    "id": "red-eyes",
+    "file": "s20.md",
+    "title": "The Secret is Out",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "red-eyes"
+  },
+  {
+    "id": "creature-missing",
+    "file": "s21.md",
+    "title": "The Burn Marks",
+    "act": 2,
+    "actTitle": "The Creature",
+    "nickname": "creature-missing"
+  },
+  {
+    "id": "marsh-confrontation",
+    "file": "s22.md",
+    "title": "The Load-Out",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "marsh-confrontation"
+  },
+  {
+    "id": "predator-attack",
+    "file": "s23.md",
+    "title": "The Trench Run",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "predator-attack"
+  },
+  {
+    "id": "the-perimeter",
+    "file": "s24.md",
+    "title": "The Sanctuary & The Siege",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "the-perimeter"
+  },
+  {
+    "id": "the-last-dinner",
+    "file": "s25.md",
+    "title": "The Final Blast",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "the-last-dinner",
+    "time": "7:00 PM – 9:00 PM"
+  },
+  {
+    "id": "final-echoes",
+    "file": "s26.md",
+    "title": "The Morning After",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "final-echoes"
+  },
+  {
+    "id": "aftermath",
+    "file": "s27.md",
+    "title": "Aftermath",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "aftermath"
+  },
+  {
+    "id": "full-circle",
+    "file": "s28.md",
+    "title": "Full Circle",
+    "act": 4,
+    "actTitle": "Aftermath",
+    "nickname": "full-circle"
+  }
+]

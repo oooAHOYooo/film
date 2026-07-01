@@ -412,6 +412,9 @@ function generateHTMLPage(markdown, scenes, versionsData = [], currentVersionSta
           <a class="nav-link" href="/pages/summer/shooting/production.html" title="Production plan">
             <span class="nav-text">Production plan</span>
           </a>
+          <a class="nav-link" href="backups/index.html" title="Backups">
+            <span class="nav-text">Backups</span>
+          </a>
           ${versionDropdownHtml}
           <div class="script-export-dropdown" id="scriptExportDropdown">
             <button type="button" class="print-button script-export-trigger" id="scriptExportTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="scriptExportMenu">
@@ -1174,6 +1177,7 @@ function generateGalleryPage(cardsData) {
         <a class="nav-link" href="scene_outline.html" title="Scene Outline">Scene Outline</a>
         <a class="nav-link" href="/pages/summer/directors-notes/index.html" title="Director's Notes">Director's Notes</a>
         <a class="nav-link" href="/pages/summer/production.html" title="Production plan">Production plan</a>
+        <a class="nav-link" href="backups/index.html" title="Backups">Backups</a>
       </div>
     </nav>
 

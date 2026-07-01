@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shooting Script — Backups</title>
+  <link rel="stylesheet" href="../../../omitted/script-system/script.css?v=2026-07-01">
+</head>
+<body class="plot-cards-page">
+  <div class="gallery-container">
+    <header class="plot-cards-header">
+      <h1>Shooting Script — Backups</h1>
+      <p class="plot-cards-subtitle">Full point-in-time snapshots of the entire script-system folder (scenes, manifest, compiled outputs) — for restoring before/after heavy edits.</p>
+    </header>
+
+    <nav class="nav no-print plot-cards-nav">
+      <div class="nav-left">
+        <a class="nav-link" href="/pages/summer.html" title="Summer Hub">☀ Summer</a>
+        <a class="nav-link" href="../index.html" title="Gallery">▦ Gallery</a>
+        <a class="nav-link" href="../full_script.html" title="Full Script">Full Script</a>
+        <a class="nav-link nav-link--active" href="index.html" title="Backups">Backups</a>
+      </div>
+    </nav>
+
+    <table style="width:100%; border-collapse: collapse; margin-top: 1rem;">
+      <thead>
+        <tr style="text-align:left; border-bottom: 2px solid currentColor;">
+          <th style="padding: 0.5rem;">Snapshot</th>
+          <th style="padding: 0.5rem;">Date</th>
+          <th style="padding: 0.5rem;">Contents</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #ccc;">
+          <td style="padding: 0.5rem;"><a href="2026-07-01_17-11/">2026-07-01_17-11</a></td>
+          <td style="padding: 0.5rem;">2026-07-01 17:11</td>
+          <td style="padding: 0.5rem;">Full folder snapshot (scenes/, manifest.json, compile.js, versions/, compiled outputs) taken before heavy edits.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top: 1.5rem; opacity: 0.7;">
+      To make a new snapshot: from <code>pages/summer/shooting/script-system/</code>, run
+      <code>rsync -a --exclude 'backups' ./ "backups/$(date +%Y-%m-%d_%H-%M)/"</code>,
+      then add a row to this table.
+    </p>
+  </div>
+</body>
+</html>
