@@ -92,7 +92,8 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4455/pages/nibbler.html)",
       "Bash(mkdir -p backups/__TRACKED_VAR__)",
       "Bash(rsync -a --exclude backups ./ backups/__TRACKED_VAR__/)",
-      "Bash(echo \"diff exit: $?\")"
+      "Bash(echo \"diff exit: $?\")",
+      "Bash(echo \"---exit $?---\")"
     ]
   }
 }
