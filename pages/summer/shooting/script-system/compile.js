@@ -482,6 +482,7 @@ function generateHTMLPage(markdown, scenes, versionsData = [], currentVersionSta
 
   <script>
     const markdown = ${JSON.stringify(markdown)};
+    const scenesData = ${JSON.stringify(scenes)};
     const MARKDOWN_FILE_NAME = 'creatures_in_the_tall_grass_full_script.md';
 
     function downloadMarkdown() {
@@ -764,6 +765,11 @@ function generateHTMLPage(markdown, scenes, versionsData = [], currentVersionSta
         const wrapper = document.createElement('div');
         wrapper.className = 'scene-wrapper';
         wrapper.setAttribute('data-scene-num', idx + 1);
+
+        // Check if this scene is marked as completed
+        if (scenesData && scenesData[idx] && scenesData[idx].completed) {
+          wrapper.classList.add('scene-completed');
+        }
 
         // Get the next heading reference (the boundary for this scene)
         const nextHeading = sceneHeadings[idx + 1];
@@ -1088,11 +1094,257 @@ function compile() {
   fs.writeFileSync(path.join(versionsDir, 'index.html'), versionsIndexHtml, 'utf8');
   console.log(`  - Versions index: versions/index.html`);
 
+  // Generate scene outline
+  console.log('Generating scene_outline.html...');
+  const plotCardsDataForOutline = JSON.parse(fs.readFileSync(PLOT_CARDS_PATH, 'utf8'));
+  const sceneOutlineHtml = generateSceneOutlineHtml(plotCardsDataForOutline);
+  fs.writeFileSync(path.join(__dirname, 'scene_outline.html'), sceneOutlineHtml, 'utf8');
+  console.log(`  - Scene outline: scene_outline.html`);
+
   console.log('\n✓ Compilation complete!');
   console.log(`  - Markdown: ${OUTPUT_MD}`);
   console.log(`  - HTML: ${OUTPUT_HTML}`);
   console.log(`  - Plot cards: ${PLOT_CARDS_PATH}`);
   console.log(`  - Gallery: ${galleryPath}`);
+  console.log(`  - Scene outline: scene_outline.html`);
+}
+
+function generateSceneOutlineHtml(cardsData) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scene Outline - Creatures in the Tall Grass</title>
+  <link rel="stylesheet" href="../../omitted/script-system/script.css?v=${new Date().toISOString().split('T')[0]}">
+  <style>
+    body.scene-outline {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .outline-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+
+    .outline-header {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .outline-header h1 {
+      font-size: 1.8rem;
+      margin: 0 0 0.5rem 0;
+      font-weight: 600;
+    }
+
+    .outline-header p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+
+    .outline-nav {
+      margin: 2rem 0 3rem 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .outline-nav a {
+      padding: 0.5rem 1rem;
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 0.25rem;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+
+    .outline-nav a:hover {
+      background: var(--border);
+    }
+
+    .act-section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 2rem;
+    }
+
+    .act-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin: 0 0 1.5rem 0;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .scene-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .scene-item {
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      background: var(--bg-alt);
+      border-left: 3px solid var(--border);
+      border-radius: 0.125rem;
+      transition: all 0.2s;
+    }
+
+    .scene-item:hover {
+      border-left-color: var(--text);
+      transform: translateX(0.25rem);
+    }
+
+    .scene-number {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-right: 0.5rem;
+      font-family: ui-monospace, monospace;
+    }
+
+    .scene-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .scene-description {
+      font-size: 0.9rem;
+      color: var(--text);
+      margin: 0 0 0.75rem 0;
+      line-height: 1.5;
+    }
+
+    .scene-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+    }
+
+    .scene-link {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2px;
+      transition: all 0.2s;
+    }
+
+    .scene-link:hover {
+      border-bottom-color: var(--text);
+    }
+  </style>
+</head>
+<body class="scene-outline">
+  <div class="outline-container">
+    <nav class="nav no-print">
+      <div class="nav-left">
+        <a class="nav-link" href="/pages/summer.html" title="Summer Hub">☀ Summer</a>
+        <a class="nav-link" href="index.html" title="Gallery">▦ Gallery</a>
+        <a class="nav-link" href="full_script.html" title="Full Script">Full Script</a>
+        <a class="nav-link nav-link--active" href="scene_outline.html" title="Scene Outline">Scene Outline</a>
+        <a class="nav-link" href="/pages/summer/directors-notes/index.html" title="Director's Notes">Director's Notes</a>
+        <a class="nav-link" href="/pages/summer/production.html" title="Production plan">Production plan</a>
+      </div>
+    </nav>
+
+    <header class="outline-header">
+      <h1>Scene Outline</h1>
+      <p>Creatures in the Tall Grass · Complete scene index</p>
+    </header>
+
+    <div class="outline-nav">
+      <a href="#act-1">Act I: Arrival & Discovery</a>
+      <a href="#act-2">Act II: The Creature</a>
+      <a href="#act-3">Act III: The Return</a>
+      <a href="#act-4">Act IV: Aftermath</a>
+    </div>
+
+    <div id="outlineContent">
+      <!-- Scenes injected by JS -->
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const CARDS_DATA = ${JSON.stringify(cardsData)};
+      const container = document.getElementById('outlineContent');
+
+      // Unique acts in order
+      const acts = [1, 2, 3, 4];
+
+      acts.forEach(act => {
+        const scenesByAct = CARDS_DATA.filter(c => c.act === act);
+        if (scenesByAct.length === 0) return;
+
+        const actSection = document.createElement('section');
+        actSection.className = 'act-section';
+        actSection.id = 'act-' + act;
+
+        const actTitle = document.createElement('h2');
+        actTitle.className = 'act-title';
+        const actNum = ['I', 'II', 'III', 'IV'][act - 1];
+        actTitle.textContent = 'Act ' + actNum + ' — ' + scenesByAct[0].actTitle;
+
+        const sceneList = document.createElement('ul');
+        sceneList.className = 'scene-list';
+
+        scenesByAct.forEach(card => {
+          const listItem = document.createElement('li');
+          listItem.className = 'scene-item';
+
+          const title = document.createElement('div');
+          title.className = 'scene-title';
+          title.innerHTML = '<span class="scene-number">S' + escapeHtml(card.displayNum) + '</span>' + escapeHtml(card.title);
+
+          const desc = document.createElement('p');
+          desc.className = 'scene-description';
+          desc.textContent = card.summary;
+
+          const links = document.createElement('div');
+          links.className = 'scene-links';
+
+          const scriptLink = document.createElement('a');
+          scriptLink.className = 'scene-link';
+          scriptLink.href = 'full_script.html#scene-' + card.n;
+          scriptLink.textContent = 'Full Script';
+
+          links.appendChild(scriptLink);
+
+          listItem.appendChild(title);
+          listItem.appendChild(desc);
+          listItem.appendChild(links);
+          sceneList.appendChild(listItem);
+        });
+
+        actSection.appendChild(actTitle);
+        actSection.appendChild(sceneList);
+        container.appendChild(actSection);
+      });
+
+      function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+    })();
+  </script>
+</body>
+</html>`;
 }
 
 function generateVersionsIndexPage(versionsDir, sceneCount) {
