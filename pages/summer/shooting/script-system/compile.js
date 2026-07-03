@@ -159,6 +159,12 @@ function getSummaryFromScene(content) {
   return match ? match[1].trim() : null;
 }
 
+// Extract completed flag from scene content: <!-- ... completed: true ... -->
+function isSceneCompleted(content) {
+  if (!content || typeof content !== 'string') return false;
+  return /<!--\s*[^>]*completed:\s*true[^>]*-->/i.test(content);
+}
+
 // Turn nickname into display title: "dallas-marsh-walk" → "Dallas Marsh Walk", "shadow walk" → "Shadow Walk"
 function nicknameToTitle(nickname) {
   if (!nickname) return '';
@@ -212,11 +218,13 @@ function compileMarkdown(scenes) {
       output += `\n## ACT ${toRoman(scene.act)}${actTitle}\n\n---\n\n`;
     }
 
-    output += `\n### Scene ${displayNum}: ${scene.title}\n\n`;
+    let sceneContent = loadScene(scene.file);
+    const completed = isSceneCompleted(sceneContent) ? ' data-completed="true"' : '';
+
+    output += `\n### Scene ${displayNum}: ${scene.title}{#scene-heading-${sceneNumber}${completed}}\n\n`;
     output += `*${scene.act ? `ACT ${toRoman(scene.act)}${scene.actTitle ? ` — ${scene.actTitle}` : ''} | ` : ''}ID: ${scene.id} | File: ${scene.file}*\n\n`;
     output += `---\n\n`;
 
-    let sceneContent = loadScene(scene.file);
     sceneContent = sceneContentWithVisibleMarkers(sceneContent);
     sceneContent = injectSceneComments(sceneContent, sceneNumber, scene);
     output += sceneContent;
