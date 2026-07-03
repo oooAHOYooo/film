@@ -22,8 +22,7 @@ const PLOT_POINT_BY_FILE = {
   's12.md': [2],
   's13.md': [2],
   's18.md': [3],
-  's19.md': [3],
-  's21.md': [4],
+  's19.md': [3, 4],
   's22.md': [5, 6],
   's23.md': [7],
   's24.md': [8, 9, 10],
@@ -81,20 +80,22 @@ function syncManifest() {
   }
 
   const files = fs.readdirSync(SCENES_DIR).filter(f => f.endsWith('.md'));
-  const manifestFiles = manifest.map(m => m.file);
-  
+
   let changed = false;
-  
+
   files.forEach(file => {
-    if (!manifestFiles.includes(file)) {
+    const content = fs.readFileSync(path.join(SCENES_DIR, file), 'utf8');
+    const completed = isSceneCompleted(content);
+    const existingIdx = manifest.findIndex(m => m.file === file);
+
+    if (existingIdx === -1) {
       console.log(`- Adding new scene file to manifest: ${file}`);
-      const content = fs.readFileSync(path.join(SCENES_DIR, file), 'utf8');
       const nickname = getNicknameFromScene(content) || file.replace('.md', '');
-      
+
       // Improved title extraction: look for # SCENE X: TITLE or just # TITLE
       const titleMatch = content.match(/^# (?:SCENE \d+[A-Z]?:\s*)?(.*)/mi);
       const title = titleMatch ? titleMatch[1].trim() : nicknameToTitle(nickname);
-      
+
       // Find the best act context
       const lastScene = manifest[manifest.length - 1];
       const act = lastScene ? lastScene.act : 1;
@@ -106,9 +107,16 @@ function syncManifest() {
         title: title,
         act: act,
         actTitle: actTitle,
-        nickname: nickname
+        nickname: nickname,
+        completed: completed
       });
       changed = true;
+    } else {
+      // Update completed flag for existing scenes
+      if (manifest[existingIdx].completed !== completed) {
+        manifest[existingIdx].completed = completed;
+        changed = true;
+      }
     }
   });
 
@@ -377,6 +385,17 @@ function generateHTMLPage(markdown, scenes, versionsData = [], currentVersionSta
     }
     .scene-wrapper.print-hidden {
       display: none !important;
+    }
+
+    /* Completed scenes get a light green background */
+    .scene-wrapper.scene-completed {
+      background-color: #e8f5e9;
+      padding: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .scene-wrapper.scene-completed h3 {
+      color: #2e7d32;
+      font-weight: 600;
     }
 
     /* Print styles: clean header and nav when printing scenes */

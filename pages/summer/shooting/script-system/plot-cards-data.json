@@ -209,59 +209,23 @@
   {
     "n": 24,
     "displayNum": "18",
-    "id": "life-group-arrives",
-    "title": "Life Group Arrives",
+    "id": "life-group",
+    "title": "Life Group",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Dallas arrives last. He sets his field bag down by the door — heavier than it looks. Nobody notices except Dominic, who clocks it once and looks away. Families arrive in waves. The small kitchen and smaller living room…"
+    "summary": "Life group carries on upstairs while Dallas fights to keep the creature calm below; the hymn and the broadcast tangle, the creature escapes through the hopper window, and Dallas walks into the storm — Dominic and Makayla follow."
   },
   {
     "n": 25,
-    "displayNum": "18",
-    "id": "life-group-arrives",
-    "title": "Life Group Arrives",
-    "act": 4,
-    "actTitle": "Aftermath",
-    "summary": "Families arrive in waves. The small kitchen and smaller living room fill. The crowd tries Dominic's toasted Brussels sprouts, passed around on paper plates. Conversation hums. Casual. Normal. The doorbell is heard.…"
-  },
-  {
-    "n": 26,
-    "displayNum": "19",
-    "id": "the-hymn",
-    "title": "The Hymn",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "-->\n<!-- GOING TO FILM ON DAY 11 - 6.27.26"
-  },
-  {
-    "n": 27,
     "displayNum": "19",
     "id": "the-marsh-rescue",
     "title": "The Marsh Rescue",
-    "act": 4,
-    "actTitle": "Aftermath",
-    "summary": "The tracker screen is still live. The escaped signal is deep in the marsh now, stationary again. The red blips—the dark ones—surround it in a slowly tightening circle. Distance: closing. Dallas walks barefoot through…"
-  },
-  {
-    "n": 28,
-    "displayNum": "20",
-    "id": "red-eyes",
-    "title": "The Secret is Out",
     "act": 2,
     "actTitle": "The Creature",
-    "summary": "Dominic descends the basement stairs. He gazes in a daze upon all of the military-grade oscillators, tangles of thick coaxial wire, and Sierra's folder spread open. The shoebox under the heat lamp is empty. The small…"
+    "summary": "Dallas walks into the marsh in a trance following the creature's frequency; Dominic catches up; together they break the dark ones' circle with the oscillator and pull the creature out — Makayla meets them at the edge with the gear."
   },
   {
-    "n": 29,
-    "displayNum": "21",
-    "id": "creature-missing",
-    "title": "The Burn Marks",
-    "act": 2,
-    "actTitle": "The Creature",
-    "summary": "Makayla bursts through the backyard towards the street, tracker in hand. The creature's signal is blinking. Dallas — watching her sprint — grabs his gear and chases after her. Dominic, a beat behind, follows. Makayla…"
-  },
-  {
-    "n": 30,
+    "n": 26,
     "displayNum": "22",
     "id": "marsh-confrontation",
     "title": "The Load-Out",
@@ -270,7 +234,7 @@
     "summary": "The crew gears up. Dallas shoulders his broadcast rig — the oscillator, the spare Makayla gave him, a coil of cable. He moves fast and sure; he has the creature's call rebuilt and ready. Makayla takes point with the…"
   },
   {
-    "n": 31,
+    "n": 27,
     "displayNum": "23",
     "id": "predator-attack",
     "title": "The Trench Run",
@@ -279,7 +243,7 @@
     "summary": "Makayla enters the tall grass first, tracker in hand, watching the green light. Dallas follows close behind, carrying the oscillator and speaker. He presses a hand to his temple — the hum sits behind his eyes like a…"
   },
   {
-    "n": 32,
+    "n": 28,
     "displayNum": "24",
     "id": "the-perimeter",
     "title": "The Sanctuary & The Siege",
@@ -288,7 +252,7 @@
     "summary": "The howling wind dies down. Makayla breaches through a thick wall of reeds first, tracker in hand, and stops dead. Dominic breaches through behind her. Dallas breaks through last and collapses to his knees in the mud.…"
   },
   {
-    "n": 33,
+    "n": 29,
     "displayNum": "25",
     "id": "the-last-dinner",
     "title": "The Final Blast",
@@ -297,7 +261,7 @@
     "summary": "Dallas presses both thumbs to the oscillator and pushes the creature's call out into the storm — the pulse he rebuilt over all those nights, fed through the spare and out across every recorder staked in the marsh. For a…"
   },
   {
-    "n": 34,
+    "n": 30,
     "displayNum": "26",
     "id": "final-echoes",
     "title": "The Morning After",
@@ -306,7 +270,7 @@
     "summary": "The crew walk back through the tall grass, through neighborhoods, back and slow. Dallas and Dominic make their way through the door, soaked and exhausted."
   },
   {
-    "n": 35,
+    "n": 31,
     "displayNum": "27",
     "id": "aftermath",
     "title": "Little Aftermath",
@@ -315,7 +279,7 @@
     "summary": "The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved. Dallas walks alone into the flattened ring of grass from…"
   },
   {
-    "n": 36,
+    "n": 32,
     "displayNum": "28",
     "id": "full-circle",
     "title": "Full Circle",

@@ -5,7 +5,8 @@
     "title": "Opening Montage",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "opening-montage"
+    "nickname": "opening-montage",
+    "completed": false
   },
   {
     "id": "property-manager",
@@ -13,7 +14,8 @@
     "title": "Property Manager",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "property-manager"
+    "nickname": "property-manager",
+    "completed": true
   },
   {
     "id": "arrival",
@@ -21,7 +23,8 @@
     "title": "Arrival & Discovery",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "arrival"
+    "nickname": "arrival",
+    "completed": false
   },
   {
     "id": "dallas-night",
@@ -29,7 +32,8 @@
     "title": "Sierra's Box",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "dallas-night"
+    "nickname": "dallas-night",
+    "completed": false
   },
   {
     "id": "the-hum",
@@ -37,7 +41,8 @@
     "title": "The Hum",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "the-hum"
+    "nickname": "the-hum",
+    "completed": false
   },
   {
     "id": "fellowship",
@@ -45,7 +50,8 @@
     "title": "The Fellowship",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "fellowship"
+    "nickname": "fellowship",
+    "completed": false
   },
   {
     "id": "marsh-walk-later",
@@ -53,7 +59,8 @@
     "title": "The Merlin App",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "marsh-walk-later"
+    "nickname": "marsh-walk-later",
+    "completed": false
   },
   {
     "id": "news-vans",
@@ -61,7 +68,8 @@
     "title": "News Vans",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "news-vans"
+    "nickname": "news-vans",
+    "completed": false
   },
   {
     "id": "the-coordinates",
@@ -69,7 +77,8 @@
     "title": "The Coordinates",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "the-coordinates"
+    "nickname": "the-coordinates",
+    "completed": false
   },
   {
     "id": "dallas-marsh-walk",
@@ -77,7 +86,8 @@
     "title": "The Trailcam",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "dallas-marsh-walk"
+    "nickname": "dallas-marsh-walk",
+    "completed": false
   },
   {
     "id": "dallas-night-work",
@@ -85,7 +95,8 @@
     "title": "The Injured One",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "dallas-night-work"
+    "nickname": "dallas-night-work",
+    "completed": false
   },
   {
     "id": "shadows-in-wind",
@@ -93,7 +104,8 @@
     "title": "The Chase",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "shadows-in-wind"
+    "nickname": "shadows-in-wind",
+    "completed": false
   },
   {
     "id": "kitchen-triage",
@@ -101,7 +113,8 @@
     "title": "Kitchen Triage",
     "act": 1,
     "actTitle": "Arrival & Discovery",
-    "nickname": "kitchen-triage"
+    "nickname": "kitchen-triage",
+    "completed": false
   },
   {
     "id": "the-burn-mark",
@@ -109,7 +122,8 @@
     "title": "The Burn Mark",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "the-burn-mark"
+    "nickname": "the-burn-mark",
+    "completed": false
   },
   {
     "id": "entering-grass",
@@ -117,7 +131,8 @@
     "title": "The Confrontation",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "entering-grass"
+    "nickname": "entering-grass",
+    "completed": false
   },
   {
     "id": "creature-rescue",
@@ -125,7 +140,8 @@
     "title": "The Connection",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "creature-rescue"
+    "nickname": "creature-rescue",
+    "completed": false
   },
   {
     "id": "the-tracking-box",
@@ -133,7 +149,8 @@
     "title": "The Tracking Network",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "the-tracking-box"
+    "nickname": "the-tracking-box",
+    "completed": false
   },
   {
     "id": "the-escape",
@@ -141,7 +158,8 @@
     "title": "Back Home",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "the-escape"
+    "nickname": "the-escape",
+    "completed": false
   },
   {
     "id": "the-soother",
@@ -149,7 +167,8 @@
     "title": "The Soother",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "the-soother"
+    "nickname": "the-soother",
+    "completed": false
   },
   {
     "id": "resonance",
@@ -157,7 +176,8 @@
     "title": "Resonance",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "resonance"
+    "nickname": "resonance",
+    "completed": false
   },
   {
     "id": "normal-day",
@@ -165,7 +185,8 @@
     "title": "Normal Day",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "normal-day"
+    "nickname": "normal-day",
+    "completed": false
   },
   {
     "id": "mute-drive",
@@ -173,7 +194,8 @@
     "title": "Mute Drive",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "mute-drive"
+    "nickname": "mute-drive",
+    "completed": false
   },
   {
     "id": "the-handoff",
@@ -181,55 +203,26 @@
     "title": "The Handoff",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "the-handoff"
+    "nickname": "the-handoff",
+    "completed": false
   },
   {
-    "id": "life-group-arrives",
+    "id": "life-group",
     "file": "s18.md",
-    "title": "Life Group Arrives",
+    "title": "Life Group",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "life-group-arrives"
-  },
-  {
-    "id": "life-group-arrives",
-    "file": "s18_REVISED.md",
-    "title": "Life Group Arrives",
-    "act": 4,
-    "actTitle": "Aftermath",
-    "nickname": "life-group-arrives"
-  },
-  {
-    "id": "the-hymn",
-    "file": "s19.md",
-    "title": "The Hymn",
-    "act": 2,
-    "actTitle": "The Creature",
-    "nickname": "the-hymn"
+    "nickname": "life-group",
+    "completed": false
   },
   {
     "id": "the-marsh-rescue",
-    "file": "s19_REVISED.md",
+    "file": "s19.md",
     "title": "The Marsh Rescue",
-    "act": 4,
-    "actTitle": "Aftermath",
-    "nickname": "the-marsh-rescue"
-  },
-  {
-    "id": "red-eyes",
-    "file": "s20.md",
-    "title": "The Secret is Out",
     "act": 2,
     "actTitle": "The Creature",
-    "nickname": "red-eyes"
-  },
-  {
-    "id": "creature-missing",
-    "file": "s21.md",
-    "title": "The Burn Marks",
-    "act": 2,
-    "actTitle": "The Creature",
-    "nickname": "creature-missing"
+    "nickname": "the-marsh-rescue",
+    "completed": false
   },
   {
     "id": "marsh-confrontation",
@@ -237,7 +230,8 @@
     "title": "The Load-Out",
     "act": 3,
     "actTitle": "The Return",
-    "nickname": "marsh-confrontation"
+    "nickname": "marsh-confrontation",
+    "completed": false
   },
   {
     "id": "predator-attack",
@@ -245,7 +239,8 @@
     "title": "The Trench Run",
     "act": 3,
     "actTitle": "The Return",
-    "nickname": "predator-attack"
+    "nickname": "predator-attack",
+    "completed": false
   },
   {
     "id": "the-perimeter",
@@ -253,7 +248,8 @@
     "title": "The Sanctuary & The Siege",
     "act": 3,
     "actTitle": "The Return",
-    "nickname": "the-perimeter"
+    "nickname": "the-perimeter",
+    "completed": false
   },
   {
     "id": "the-last-dinner",
@@ -262,7 +258,8 @@
     "act": 3,
     "actTitle": "The Return",
     "nickname": "the-last-dinner",
-    "time": "7:00 PM – 9:00 PM"
+    "time": "7:00 PM – 9:00 PM",
+    "completed": false
   },
   {
     "id": "final-echoes",
@@ -270,7 +267,8 @@
     "title": "The Morning After",
     "act": 4,
     "actTitle": "Aftermath",
-    "nickname": "final-echoes"
+    "nickname": "final-echoes",
+    "completed": false
   },
   {
     "id": "aftermath",
@@ -278,7 +276,8 @@
     "title": "Aftermath",
     "act": 4,
     "actTitle": "Aftermath",
-    "nickname": "aftermath"
+    "nickname": "aftermath",
+    "completed": false
   },
   {
     "id": "full-circle",
@@ -286,6 +285,7 @@
     "title": "Full Circle",
     "act": 4,
     "actTitle": "Aftermath",
-    "nickname": "full-circle"
+    "nickname": "full-circle",
+    "completed": false
   }
 ]

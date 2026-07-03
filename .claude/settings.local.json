@@ -96,7 +96,8 @@
       "Bash(echo \"---exit $?---\")",
       "Bash(cp full_script.html archive/d1_full_script.html)",
       "Bash(cp full_script.md archive/d1_full_script.md)",
-      "Bash(sed -i '' 's/Full Script - The Nibbler/Full Script - The Nibbler \\(Draft 1 Archive\\)/; s/The Nibbler — Full Script/The Nibbler — Full Script \\(Draft 1 Archive\\)/g' archive/d1_full_script.html)"
+      "Bash(sed -i '' 's/Full Script - The Nibbler/Full Script - The Nibbler \\(Draft 1 Archive\\)/; s/The Nibbler — Full Script/The Nibbler — Full Script \\(Draft 1 Archive\\)/g' archive/d1_full_script.html)",
+      "Bash(chromium-cli *)"
     ]
   }
 }
