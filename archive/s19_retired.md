@@ -1,3 +1,4 @@
+<!-- RETIRED in restructure. Trance rescue removed; single-night chase replaces it. Material migrated: s19.1 laptop image → s18.7; "what happens when you hurt something..." line → s24. -->
 <!-- nickname: the-marsh-rescue -->
 <!-- summary: Dallas walks into the marsh in a trance following the creature's frequency; Dominic catches up; together they break the dark ones' circle with the oscillator and pull the creature out — Makayla meets them at the edge with the gear. -->
 

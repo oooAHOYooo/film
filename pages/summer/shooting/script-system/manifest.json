@@ -216,15 +216,6 @@
     "completed": false
   },
   {
-    "id": "the-marsh-rescue",
-    "file": "s19.md",
-    "title": "The Marsh Rescue",
-    "act": 2,
-    "actTitle": "The Creature",
-    "nickname": "the-marsh-rescue",
-    "completed": false
-  },
-  {
     "id": "marsh-confrontation",
     "file": "s22.md",
     "title": "The Load-Out",
@@ -258,7 +249,7 @@
     "act": 3,
     "actTitle": "The Return",
     "nickname": "the-last-dinner",
-    "time": "7:00 PM – 9:00 PM",
+    "time": "7:00 PM \u2013 9:00 PM",
     "completed": false
   },
   {
