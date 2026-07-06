@@ -4,6 +4,32 @@ Notes and ideas to add or change in the script. Use this as a running list; you 
 
 ---
 
+# CHANGE LOG — Pass 1 restructure: one continuous night (s15–s26)
+*Applied 2026-07-06 11:48 EDT · SHOOTING version only (`pages/summer/shooting/`). Structural pass executed from `CITG_handoff/CITG_RESTRUCTURE_BRIEF.md` (compile v24 spec). Supersedes the two-trip back half: the trance rescue (old s19) and the load-out (old s22) are retired to `/archive/`. Trance/possession mechanic removed — Dallas is attuned, not controlled. Nobody carries the baby; it self-delivers to the mother. s25 trigger = OPTION 1 (Dominic fires the blaster).*
+
+## Per-scene
+- **s07** — slug fixed: `INT. JACE'S BASEMENT` → `INT. DOMINIC'S BASEMENT`.
+- **s15** — Makayla is extending the node network toward Dallas's side ("These are for your side. The signal moved when you did."), not planting it for the first time.
+- **s17** — cassette reconciled per brief Section 4: the ORIGINAL Sierra cassette (creature's voice on it) loads into Makayla's rig. No processed copy.
+- **s18** — back half rewritten from reference draft: creature escapes through the hopper window on its own (the answering song), Makayla recognizes the converging red blips, shows Dominic their mother's notebook (he recognizes the handwriting), walks out mid-hymn; Dallas bursts up with the empty shoebox; Dominic breaks the party and runs down the street after her; Dallas follows with the field bag (blaster inside).
+- **s19** — RETIRED → `archive/s19_retired.md`. Laptop image migrated to s18.7; "what happens when you hurt something..." line migrated to s24.
+- **s22** — old Load-Out RETIRED → `archive/s22_loadout_retired.md`. NEW s22 "The Blind" installed: waypoint mid-chase; Dominic sees his sister's life's work for the first time; recorder-clip beat ("It stays on you") lives here now.
+- **s23** — reframed: Dallas and Dominic chase Makayla's green LED; no backpack; the men get lost WITHOUT her; she doubles back just before the patrol near-miss.
+- **s24** — Makayla breaches first and alone, witnesses the baby arrive on its own legs; the ring closes with her inside; the men break through into the forming siege; Dallas's migrated s19 line lands on first clear look at the massed Red-Eyes.
+- **s25** — Option 1 trigger spliced: Dallas can't spend Sierra's cassette; Dominic pulls the bag over, "She'd want to be loud," and flips the toggle. Everything from the first recorder tearing loose through the baby's dissolve unchanged. Unused Option 3 draft archived (`archive/s25_trigger_option3_unused.md`).
+- **s26** — "Thanks for letting everyone crash here" cut (life group dispersed home in new s18). The three of them walk back through the tall grass together.
+- **s27/s28** — untouched. With Option 1, s27.2's clean recording reads as the marsh giving Sierra's tape back.
+
+## Open items
+- Director wants a different s25 payload than Sierra's cassette: record the creature's voice back, play it backwards — it's a song — amplify that; Makayla explains the lore via a computer sequence at the blind, Dallas quietly accepts. NOT implemented (not in the locked spec); needs its own drafted spec — ripples into s16b/s17 build, s22 pacing, s25, s27/s28.
+- `production-edit.md` / `production-data.json` still carry `JACE'S BASEMENT` location name (production-side pass pending).
+- Pass 2 (humanize) not started.
+
+## Recompiled
+- `node pages/summer/shooting/script-system/compile.js` — 31 scenes, no duplicates, order verified s18 → s22 (The Blind) → s23–s28.
+
+---
+
 # CHANGE LOG — Asher & Mr. Mike cut: story runs on the trio (Dallas · Makayla · Dominic)
 *Applied 2026-07-01 17:50 EDT · SHOOTING version only (`pages/summer/shooting/`). Both actors/characters are officially out of the production. No replacement characters added; their story functions are redistributed into the central trio. Makayla's mother (offscreen, deceased) is the lore source through field journals, maps, labeled equipment, and a 1971 Branford storm reference. Supersedes the 2026-06-10 "Makayla fully cut" continuity below — Makayla is core again and the family is Dominic + Makayla, mom gone.*
 
