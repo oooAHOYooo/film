@@ -1,3 +1,4 @@
+<!-- RETIRED in restructure. Load-out scene removed (no second trip; one continuous night). Material migrated: recorder-clip beat ("It stays on you") and the blind interior (mother's charts under Makayla's newer lines) → new s22 (The Blind, waypoint mid-chase). -->
 # Scene 22: The Load-Out
 
 <!-- GOING TO FILM ON : Day 13 = Wednesday -->
