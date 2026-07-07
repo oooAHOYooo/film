@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 const SCRIPT_PATH = path.join(__dirname, 'pages/summer/shooting/script-system/full_script.md');
 const LINES_PER_PAGE = 24; // Adjust to terminal height - 4 for UI
@@ -71,7 +72,7 @@ class ScriptReader {
     const percentage = Math.round((this.currentPage / this.totalPages) * 100);
     const footer = ` ─ Page ${this.currentPage + 1}/${this.totalPages} (${percentage}%) ─`;
     console.log('\n\x1b[2m' + footer + '\x1b[0m');
-    console.log('\x1b[2mCommands: [↑/w]up [↓/s]down [space/n]ext [g]oto [/]search [?]help [q]uit\x1b[0m');
+    console.log('\x1b[2mCommands: [↑/w]up [↓/s]down [space/n]ext [e]dit [g]oto [/]search [?]help [q]uit\x1b[0m');
   }
 
   handleKey(key) {
@@ -121,6 +122,9 @@ class ScriptReader {
         break;
       case '/':
         this.promptSearch();
+        break;
+      case 'e':
+        this.promptEdit();
         break;
       case '?':
         this.showHelp();
@@ -188,6 +192,121 @@ class ScriptReader {
     });
   }
 
+  promptEdit() {
+    process.stdin.setRawMode(false);
+    process.stdout.write('\n\x1b[1mEdit line number (on this page): \x1b[0m');
+
+    const rl = require('readline').createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    rl.question('', (input) => {
+      rl.close();
+      const lineOffset = parseInt(input);
+      if (isNaN(lineOffset) || lineOffset < 1 || lineOffset > LINES_PER_PAGE) {
+        console.log('\x1b[31mInvalid line number\x1b[0m');
+        process.stdin.setRawMode(true);
+        setTimeout(() => this.showCurrentPage(), 200);
+        return;
+      }
+
+      const absoluteLineNum = this.currentPage * LINES_PER_PAGE + (lineOffset - 1);
+      const lineContent = this.lines[absoluteLineNum];
+
+      this.editLine(absoluteLineNum, lineContent, rl);
+    });
+  }
+
+  editLine(lineNum, content, previousRl) {
+    const rl = require('readline').createInterface({
+      input: process.stdin,
+      output: process.stdout,
+      terminal: true
+    });
+
+    console.clear();
+    console.log('\x1b[1;36m✏️  Text Editor\x1b[0m');
+    console.log('\x1b[2mCtrl+S to save, Ctrl+C to cancel\x1b[0m\n');
+    console.log('Original:');
+    console.log(`\x1b[2m${content}\x1b[0m\n`);
+    console.log('Edit below and press Ctrl+S to save:\n');
+
+    let editedContent = content;
+
+    const prompt = '\x1b[1m> \x1b[0m';
+    process.stdout.write(prompt);
+
+    rl.on('line', (input) => {
+      // This won't normally trigger with Ctrl+S, but handles normal enter
+      editedContent = input;
+      rl.close();
+    });
+
+    // Handle Ctrl+S and Ctrl+C
+    process.stdin.on('data', (key) => {
+      if (key === '') { // Ctrl+S
+        rl.close();
+        this.saveEditedLine(lineNum, editedContent);
+        return;
+      }
+      if (key === '') { // Ctrl+C
+        rl.close();
+        process.stdin.setRawMode(true);
+        setTimeout(() => this.showCurrentPage(), 200);
+      }
+    });
+  }
+
+  saveEditedLine(lineNum, newContent) {
+    this.lines[lineNum] = newContent;
+
+    // Rewrite the full_script.md with changes
+    fs.writeFileSync(SCRIPT_PATH, this.lines.join('\n'), 'utf-8');
+
+    console.log('\n\x1b[32m✓ Saved!\x1b[0m');
+    console.log('\x1b[1mRecompile script? (y/n): \x1b[0m');
+
+    process.stdin.setRawMode(false);
+    const rl = require('readline').createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+
+    rl.question('', (answer) => {
+      rl.close();
+      if (answer.toLowerCase() === 'y') {
+        this.recompile();
+      } else {
+        process.stdin.setRawMode(true);
+        setTimeout(() => this.showCurrentPage(), 200);
+      }
+    });
+  }
+
+  recompile() {
+    const { execSync } = require('child_process');
+    console.log('\n\x1b[33m⏳ Recompiling script...\x1b[0m');
+
+    try {
+      const compileScript = path.join(__dirname, 'pages/summer/shooting/script-system/compile.js');
+      execSync(`node ${compileScript}`, { stdio: 'inherit' });
+
+      // Reload the script
+      const content = fs.readFileSync(SCRIPT_PATH, 'utf-8');
+      this.lines = content.split('\n');
+      this.totalPages = Math.ceil(this.lines.length / LINES_PER_PAGE);
+
+      console.log('\x1b[32m✓ Recompiled!\x1b[0m');
+    } catch (error) {
+      console.log('\x1b[31m✗ Recompile failed\x1b[0m');
+      console.log(error.message);
+    }
+
+    process.stdin.setRawMode(true);
+    setTimeout(() => this.showCurrentPage(), 500);
+  }
+
   showHelp() {
     console.clear();
     console.log(`\x1b[1;36m📖 Script Reader Help\x1b[0m\n`);
@@ -196,8 +315,11 @@ class ScriptReader {
     console.log('  \x1b[33m↓ / S\x1b[0m          Page down');
     console.log('  \x1b[33mSPACE / N\x1b[0m     Next page');
     console.log('  \x1b[33mP\x1b[0m            Previous page');
-    console.log('  \x1b[33mG\x1b[0m            Go to specific page');
-    console.log('  \x1b[33m/\x1b[0m            Search for text');
+    console.log('  \x1b[33mG\x1b[0m            Go to specific page\n');
+    console.log('Editing:');
+    console.log('  \x1b[33mE\x1b[0m            Edit a line on current page');
+    console.log('  \x1b[33m/\x1b[0m            Search for text\n');
+    console.log('Other:');
     console.log('  \x1b[33mQ\x1b[0m            Quit\n');
     console.log('Info:');
     console.log(`  Total lines: ${this.lines.length}`);
