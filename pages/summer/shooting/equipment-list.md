@@ -11,6 +11,7 @@
 - SIRUI 75mm F1.8 1.33X S35 Anamorphic — RF Mount
 - Canon Mount Adapter EF-EOS R
 - Freewell 67mm Threaded Hard Stop Variable ND Filter
+- NiSi Close-Up Lens Kit NC 77mm — w/ 67mm & 72mm Step-Up Adapter Rings
 
 ## Support & Movement
 - DJI RS 4 Pro 3-Axis Gimbal Stabilizer
@@ -54,6 +55,10 @@
 ## Accessories
 - Ribvane Directors Clapboard
 - FNIRSI DST-201 Digital Multimeter / Oscilloscope
+
+## Props
+- Golden Yellow Craft Rooster Feathers — 240pcs, 5-7in Saddle Hackle
+- Mini LED Round Lights — 100pcs, Multicolor Ball Paper Lantern Lights, Warm White
 
 ## Still Needed
 - Boom pole (exterior audio — current boom arm is desk-mount only)

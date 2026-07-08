@@ -4,17 +4,23 @@
 
 ## Expenses Summary
 
-### Total Expenditure: $1,792.71
+### Total Expenditure: $1,980.23
 
 | Category | Amount | Items |
 |----------|--------|-------|
-| **Camera/Gear** | $1,792.71 | 4 items |
+| **Camera/Gear** | $1,957.55 | 5 items |
+| **Props/Set** | $22.68 | 2 items |
 
 ### Camera/Gear Breakdown
 - FEELWORLD FW703 Monitor: $212.69
 - BNC Coaxial Cable: $31.89
 - SIRUI Anamorphic Lens: $308.42
 - Gear Bundle (CFast, Sirui lenses, Cage, Reader, Samsung T7): $1,239.71
+- NiSi Close-Up Lens Kit NC 77mm w/ 67mm & 72mm Step-Up Rings: $164.84
+
+### Props/Set Breakdown
+- Golden Yellow Craft Rooster Feathers (240pcs): $9.56
+- Mini LED Round Lights (100pcs): $13.12
 
 ## Storage Inventory
 
@@ -32,7 +38,7 @@
 
 ## Budget Status
 
-**Year-to-Date Spend**: $1,792.71
+**Year-to-Date Spend**: $1,980.23
 **Budget Remaining**: TBD (no budget cap set)
 **Primary Focus**: Equipment procurement
 

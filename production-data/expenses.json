@@ -2,13 +2,13 @@
   "metadata": {
     "project": "Creatures in the Tall Grass",
     "created": "2026-05-04",
-    "lastUpdated": "2026-05-04T15:03:03.128964",
+    "lastUpdated": "2026-07-08T00:00:00.000000",
     "currency": "USD",
     "totalByCategory": {},
     "totalByProject": {
-      "Summer": 1792.71
+      "Summer": 1980.23
     },
-    "grandTotal": 1792.71
+    "grandTotal": 1980.23
   },
   "expenses": [
     {
@@ -54,6 +54,39 @@
       "amount": 1239.71,
       "vendor": "",
       "notes": ""
+    },
+    {
+      "id": 5,
+      "date": "2026-07-08",
+      "description": "Feathers for Crafting, 240pcs 5-7in Golden Yellow Craft Rooster Feathers (Saddle Hackle)",
+      "category": "Props/Set",
+      "project": "Summer",
+      "scene": null,
+      "amount": 9.56,
+      "vendor": "Amazon (whitefeatherstore)",
+      "notes": "Order #114-9817342-5470603; price incl. proportional tax"
+    },
+    {
+      "id": 6,
+      "date": "2026-07-08",
+      "description": "chzk 100pcs Mini LED Round Lights, Multicolor Ball Paper Lantern Lights, Warm White",
+      "category": "Props/Set",
+      "project": "Summer",
+      "scene": null,
+      "amount": 13.12,
+      "vendor": "Amazon (JILIN)",
+      "notes": "Order #114-9817342-5470603; price incl. proportional tax"
+    },
+    {
+      "id": 7,
+      "date": "2026-07-08",
+      "description": "NiSi Close-Up Lens Kit NC 77mm with 67 and 72mm Step-Up Adapter Rings",
+      "category": "Camera/Gear",
+      "project": "Summer",
+      "scene": null,
+      "amount": 164.84,
+      "vendor": "Adorama (via Amazon)",
+      "notes": "Order #114-4659099-3418664; price incl. tax"
     }
   ],
   "categories": [

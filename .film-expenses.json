@@ -376,6 +376,33 @@
       "memo": "RED Komodo Cinema Camera",
       "category": "Camera/Gear",
       "price": 3000
+    },
+    {
+      "id": 51,
+      "date": "2026-07-08",
+      "memo": "Feathers for Crafting, 240pcs 5-7in Golden Yellow Craft Rooster Feathers (Saddle Hackle)",
+      "category": "Props/Set",
+      "price": 8.99,
+      "vendor": "Amazon (whitefeatherstore)",
+      "orderNumber": "114-9817342-5470603"
+    },
+    {
+      "id": 52,
+      "date": "2026-07-08",
+      "memo": "chzk 100pcs Mini LED Round Lights, Multicolor Ball Paper Lantern Lights, Warm White",
+      "category": "Props/Set",
+      "price": 12.34,
+      "vendor": "Amazon (JILIN)",
+      "orderNumber": "114-9817342-5470603"
+    },
+    {
+      "id": 53,
+      "date": "2026-07-08",
+      "memo": "NiSi Close-Up Lens Kit NC 77mm with 67 and 72mm Step-Up Adapter Rings",
+      "category": "Camera/Gear",
+      "price": 155.00,
+      "vendor": "Amazon (Adorama)",
+      "orderNumber": "114-4659099-3418664"
     }
   ],
   "categories": [
