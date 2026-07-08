@@ -4,12 +4,12 @@
 
 ## Expenses Summary
 
-### Total Expenditure: $1,980.23
+### Total Expenditure: $2,000.41
 
 | Category | Amount | Items |
 |----------|--------|-------|
 | **Camera/Gear** | $1,957.55 | 5 items |
-| **Props/Set** | $22.68 | 2 items |
+| **Props/Set** | $42.86 | 4 items |
 
 ### Camera/Gear Breakdown
 - FEELWORLD FW703 Monitor: $212.69
@@ -21,6 +21,8 @@
 ### Props/Set Breakdown
 - Golden Yellow Craft Rooster Feathers (240pcs): $9.56
 - Mini LED Round Lights (100pcs): $13.12
+- L-Lweik Safety Eyes and Noses (360pcs): $10.62
+- Golden Yellow Craft Rooster Feathers, 2nd order (240pcs): $9.56
 
 ## Storage Inventory
 
@@ -38,7 +40,7 @@
 
 ## Budget Status
 
-**Year-to-Date Spend**: $1,980.23
+**Year-to-Date Spend**: $2,000.41
 **Budget Remaining**: TBD (no budget cap set)
 **Primary Focus**: Equipment procurement
 

@@ -59,6 +59,8 @@
 ## Props
 - Golden Yellow Craft Rooster Feathers — 240pcs, 5-7in Saddle Hackle
 - Mini LED Round Lights — 100pcs, Multicolor Ball Paper Lantern Lights, Warm White
+- L-Lweik Plastic Safety Eyes & Noses — 360pcs, 12-30mm Assorted, Black, w/ Washers
+- Golden Yellow Craft Rooster Feathers — 240pcs, 5-7in Saddle Hackle (2nd order)
 
 ## Still Needed
 - Boom pole (exterior audio — current boom arm is desk-mount only)

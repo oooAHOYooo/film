@@ -6,9 +6,9 @@
     "currency": "USD",
     "totalByCategory": {},
     "totalByProject": {
-      "Summer": 1980.23
+      "Summer": 2000.41
     },
-    "grandTotal": 1980.23
+    "grandTotal": 2000.41
   },
   "expenses": [
     {
@@ -87,6 +87,28 @@
       "amount": 164.84,
       "vendor": "Adorama (via Amazon)",
       "notes": "Order #114-4659099-3418664; price incl. tax"
+    },
+    {
+      "id": 8,
+      "date": "2026-07-08",
+      "description": "L-Lweik 360pcs Large Plastic Safety Eyes and Noses, 12-30mm Assorted w/ Washers, Black",
+      "category": "Props/Set",
+      "project": "Summer",
+      "scene": null,
+      "amount": 10.62,
+      "vendor": "Amazon (AXSOGAO Direct)",
+      "notes": "Order #114-4739570-8358647; price incl. proportional tax"
+    },
+    {
+      "id": 9,
+      "date": "2026-07-08",
+      "description": "Feathers for Crafting, 240pcs 5-7in Golden Yellow Craft Rooster Feathers (Saddle Hackle)",
+      "category": "Props/Set",
+      "project": "Summer",
+      "scene": null,
+      "amount": 9.56,
+      "vendor": "Amazon (whitefeatherstore)",
+      "notes": "Order #114-4739570-8358647; price incl. proportional tax"
     }
   ],
   "categories": [

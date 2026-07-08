@@ -403,6 +403,24 @@
       "price": 155.00,
       "vendor": "Amazon (Adorama)",
       "orderNumber": "114-4659099-3418664"
+    },
+    {
+      "id": 54,
+      "date": "2026-07-08",
+      "memo": "L-Lweik 360pcs Large Plastic Safety Eyes and Noses, 12-30mm Assorted w/ Washers, Black",
+      "category": "Props/Set",
+      "price": 9.99,
+      "vendor": "Amazon (AXSOGAO Direct)",
+      "orderNumber": "114-4739570-8358647"
+    },
+    {
+      "id": 55,
+      "date": "2026-07-08",
+      "memo": "Feathers for Crafting, 240pcs 5-7in Golden Yellow Craft Rooster Feathers (Saddle Hackle)",
+      "category": "Props/Set",
+      "price": 8.99,
+      "vendor": "Amazon (whitefeatherstore)",
+      "orderNumber": "114-4739570-8358647"
     }
   ],
   "categories": [
