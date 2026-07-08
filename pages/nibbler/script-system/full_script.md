@@ -1,6 +1,6 @@
 # The Nibbler: Shadows of Deception — Full Script
 
-*Compiled on 7/8/2026, 6:20:37 PM*
+*Compiled on 7/8/2026, 7:01:49 PM*
 
 ---
 
