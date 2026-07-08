@@ -216,6 +216,33 @@
     "completed": false
   },
   {
+    "id": "the-whole-truth",
+    "file": "s19.md",
+    "title": "The Whole Truth",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "the-whole-truth",
+    "completed": false
+  },
+  {
+    "id": "the-cry",
+    "file": "s20.md",
+    "title": "The Cry",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "the-cry",
+    "completed": false
+  },
+  {
+    "id": "into-the-marsh",
+    "file": "s21.md",
+    "title": "Into the Marsh",
+    "act": 3,
+    "actTitle": "The Return",
+    "nickname": "into-the-marsh",
+    "completed": false
+  },
+  {
     "id": "the-blind-waypoint",
     "file": "s22.md",
     "title": "The Blind",

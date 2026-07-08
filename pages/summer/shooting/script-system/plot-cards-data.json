@@ -217,6 +217,33 @@
   },
   {
     "n": 25,
+    "displayNum": "19",
+    "id": "the-whole-truth",
+    "title": "The Whole Truth",
+    "act": 3,
+    "actTitle": "The Return",
+    "summary": "Dallas and Dominic catch Makayla in the first band of tall grass; in the rain she finally comes clean — the injured baby, the mother waiting at the center, the red things converging, and the blaster Dallas finished from their mother's unfinished work. Dominic stops asking to go home and starts asking how to help."
+  },
+  {
+    "n": 26,
+    "displayNum": "20",
+    "id": "the-cry",
+    "title": "The Cry",
+    "act": 3,
+    "actTitle": "The Return",
+    "summary": "The creature's cry rolls over the field for the first time in the open — enormous, wounded, unmistakable. All conversation ends. Dallas checks the blaster once and locks it down, and the three of them run flat-out across the field toward the sound."
+  },
+  {
+    "n": 27,
+    "displayNum": "21",
+    "id": "into-the-marsh",
+    "title": "Into The Marsh",
+    "act": 3,
+    "actTitle": "The Return",
+    "summary": "The chase across the field — Makayla leading by green LED, Dallas protective at Dominic's shoulder, the ground turning from grass to mud as the marsh takes over. Dominic realizes he is trusting them with his life, and does. They hit the treeline and Dallas takes the lead toward the blind."
+  },
+  {
+    "n": 28,
     "displayNum": "22",
     "id": "the-blind-waypoint",
     "title": "The Blind Waypoint",
@@ -225,7 +252,7 @@
     "summary": "Chasing Makayla, Dallas and Dominic reach the blind — Dominic sees his sister's life's work for the first time. Makayla is there for seconds: she clips the scuffed recorder to Dominic's jacket, shows them the feed, and is gone again. They follow her in."
   },
   {
-    "n": 26,
+    "n": 29,
     "displayNum": "23",
     "id": "predator-attack",
     "title": "The Trench Run",
@@ -234,7 +261,7 @@
     "summary": "Dallas and Dominic push into the tall grass together. Ahead of them, glimpsed through the stalks, the small green LED on Makayla's chest rig — there, gone, there again. Dallas follows it, the field bag heavy on his…"
   },
   {
-    "n": 27,
+    "n": 30,
     "displayNum": "24",
     "id": "the-perimeter",
     "title": "The Sanctuary & The Siege",
@@ -243,7 +270,7 @@
     "summary": "The howling wind dies down. Makayla breaches through a thick wall of reeds first, alone, tracker in hand, and stops dead — thirty seconds ahead of the men. She is standing in a small clearing where the tall grass lies…"
   },
   {
-    "n": 28,
+    "n": 31,
     "displayNum": "25",
     "id": "the-last-dinner",
     "title": "The Final Blast",
@@ -252,7 +279,7 @@
     "summary": "Dallas presses both thumbs to the oscillator and pushes the creature's call out into the storm — the pulse he rebuilt over all those nights, fed through the spare and out across every recorder staked in the marsh. For a…"
   },
   {
-    "n": 29,
+    "n": 32,
     "displayNum": "26",
     "id": "final-echoes",
     "title": "The Morning After",
@@ -261,7 +288,7 @@
     "summary": "The three of them — Dallas, Dominic, Makayla — walk back through the tall grass, through neighborhoods, back and slow. Dallas and Dominic make their way through the door, soaked and exhausted."
   },
   {
-    "n": 30,
+    "n": 33,
     "displayNum": "27",
     "id": "aftermath",
     "title": "Little Aftermath",
@@ -270,7 +297,7 @@
     "summary": "The town is back to normal. People move through their routines. The strange occurrences of the last few days are still on everyone's lips—muted, half-disbelieved. Dallas walks alone into the flattened ring of grass from…"
   },
   {
-    "n": 31,
+    "n": 34,
     "displayNum": "28",
     "id": "full-circle",
     "title": "Full Circle",
