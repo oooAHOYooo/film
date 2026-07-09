@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MAKAYLA FIELD NETWORK — Inherited Marsh Array</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="particle-layer"></canvas>
+
+<div id="app">
+
+    <!-- ============ HEADER ============ -->
+    <header>
+        <div class="brand">
+            <h1>MAKAYLA FIELD NETWORK</h1>
+            <div class="sub">INHERITED MARSH ARRAY &nbsp;·&nbsp; BRANFORD, CONNECTICUT &nbsp;·&nbsp; RESEARCH CONTINUES.</div>
+        </div>
+        <div class="header-divider"></div>
+        <div class="header-stat">
+            <span class="led"></span>ARRAY <b id="hdr-array">8/8 NODES</b><br>
+            <span class="led" id="sync-led"></span>GPS SYNC <b id="hdr-sync">LOCKED ±14 µs</b>
+        </div>
+        <div class="header-divider"></div>
+        <div class="header-stat">
+            UPTIME <b id="hdr-uptime">412 d 06 h</b><br>
+            FIRMWARE <b>MFN-4.7.2 (mom's fork)</b>
+        </div>
+        <div class="header-divider"></div>
+        <div class="header-stat">
+            RECORDS SINCE 2009 <b>11,482,904</b><br>
+            STATION <b>M. HALLORAN / YALE F&amp;ES</b>
+        </div>
+        <div id="master-clock">
+            <span id="clock-time">18:41:07</span>
+            <div class="date" id="clock-date">TUE 08 JUL — LOCAL EDT — GPS DISCIPLINED</div>
+        </div>
+    </header>
+
+    <div id="mode-banner">MODE: <span id="mode-name">PASSIVE MONITORING</span></div>
+
+    <!-- ============ MAP ============ -->
+    <section class="panel" id="map-panel">
+        <div class="panel-title">MARSH ARRAY MAP <span class="tag">SHEET 3 OF 3 · TRACED FROM E.H. FIELD BOOK, 1998</span></div>
+        <svg id="marsh-map" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid meet">
+            <defs>
+                <filter id="paper" x="0" y="0" width="100%" height="100%">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" result="n"/>
+                    <feColorMatrix in="n" type="matrix" values="0 0 0 0 0.06  0 0 0 0 0.08 0 0 0 0 0.05  0 0 0 0.35 0"/>
+                    <feComposite operator="over" in2="SourceGraphic"/>
+                </filter>
+                <filter id="wobble">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="2" result="w"/>
+                    <feDisplacementMap in="SourceGraphic" in2="w" scale="6"/>
+                </filter>
+                <radialGradient id="stain" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#5a4a28" stop-opacity="0.14"/>
+                    <stop offset="70%" stop-color="#5a4a28" stop-opacity="0.10"/>
+                    <stop offset="100%" stop-color="#5a4a28" stop-opacity="0"/>
+                </radialGradient>
+            </defs>
+
+            <!-- notebook paper base -->
+            <rect x="0" y="0" width="600" height="640" fill="#131a10"/>
+            <rect x="0" y="0" width="600" height="640" fill="#131a10" filter="url(#paper)"/>
+            <!-- coffee stains -->
+            <circle cx="510" cy="90" r="42" fill="url(#stain)"/>
+            <circle cx="497" cy="82" r="30" fill="none" stroke="#5a4a28" stroke-opacity="0.13" stroke-width="2"/>
+            <circle cx="80" cy="560" r="30" fill="url(#stain)"/>
+
+            <g filter="url(#wobble)">
+                <!-- open water channel -->
+                <path d="M 40 640 C 60 520, 140 470, 170 380 C 200 290, 160 200, 210 120 C 240 70, 300 40, 340 0
+                         L 260 0 C 210 60, 170 110, 150 200 C 130 290, 150 360, 110 460 C 85 530, 55 580, 0 620 L 0 640 Z"
+                      fill="#16241f" stroke="#26382f" stroke-width="1.5"/>
+                <!-- marsh body -->
+                <path d="M 340 0 C 300 40, 240 70, 210 120 C 160 200, 200 290, 170 380 C 140 470, 60 520, 40 640
+                         L 600 640 L 600 0 Z" fill="#18220f" opacity="0.55"/>
+                <!-- tree line, east -->
+                <path d="M 470 0 C 480 120, 500 260, 480 400 C 465 500, 490 580, 500 640 L 600 640 L 600 0 Z"
+                      fill="#0f180a" stroke="#26331c" stroke-width="1.5" stroke-dasharray="1 4"/>
+            </g>
+
+            <!-- reed hatching -->
+            <g stroke="#3c4a2a" stroke-width="0.7" opacity="0.5" id="reeds"></g>
+
+            <!-- boardwalk -->
+            <g stroke="#7a6a45" stroke-width="1.4" opacity="0.75">
+                <path d="M 120 620 L 200 520 L 260 480 L 300 420" fill="none" stroke-dasharray="7 3"/>
+            </g>
+            <text x="150" y="590" class="map-label" fill="#9a8d68" font-size="9" font-style="italic" font-family="Georgia" transform="rotate(-38 150 590)">boardwalk</text>
+
+            <!-- old oak -->
+            <g transform="translate(388 180)">
+                <circle r="13" fill="none" stroke="#5e6b3f" stroke-width="1.2" stroke-dasharray="2 2"/>
+                <circle r="2.2" fill="#5e6b3f"/>
+                <text x="17" y="4" fill="#9a8d68" font-size="9" font-style="italic" font-family="Georgia">old oak</text>
+            </g>
+
+            <!-- Dallas's house -->
+            <g id="dallas-house" transform="translate(452 468)">
+                <rect x="-11" y="-8" width="22" height="16" fill="none" stroke="#b39a6a" stroke-width="1.3"/>
+                <path d="M -13 -8 L 0 -19 L 13 -8" fill="none" stroke="#b39a6a" stroke-width="1.3"/>
+                <text x="18" y="2" fill="#b39a6a" font-size="9.5" font-style="italic" font-family="Georgia">Dallas res.</text>
+                <circle id="house-halo" r="26" fill="none" stroke="#d9a441" stroke-width="1" opacity="0"/>
+            </g>
+
+            <!-- Position Four -->
+            <g transform="translate(255 250)">
+                <path d="M -5 -5 L 5 5 M -5 5 L 5 -5" stroke="#8fa671" stroke-width="1.4"/>
+                <text x="10" y="3" fill="#9a8d68" font-size="9" font-style="italic" font-family="Georgia">Position Four</text>
+            </g>
+
+            <!-- hidden research cache -->
+            <g transform="translate(500 560)">
+                <rect x="-4" y="-4" width="8" height="8" fill="none" stroke="#6d7a58" stroke-width="1.1" transform="rotate(45)"/>
+                <text x="-66" y="18" fill="#7d7358" font-size="8.5" font-style="italic" font-family="Georgia">cache (don't mark this — E.H.)</text>
+            </g>
+
+            <!-- trail cameras -->
+            <g fill="none" stroke="#6d7a58" stroke-width="1" id="trailcams">
+                <g transform="translate(330 540)"><path d="M -5 -3 h10 v6 h-10 z M 5 -1 l4 -2 v6 l-4 -2"/><text x="8" y="12" fill="#7d7358" font-size="7.5" font-family="Georgia" font-style="italic" stroke="none">cam 2</text></g>
+                <g transform="translate(420 300)"><path d="M -5 -3 h10 v6 h-10 z M 5 -1 l4 -2 v6 l-4 -2"/><text x="8" y="12" fill="#7d7358" font-size="7.5" font-family="Georgia" font-style="italic" stroke="none">cam 5</text></g>
+            </g>
+
+            <!-- bearing lines (drawn by JS) -->
+            <g id="bearing-lines"></g>
+
+            <!-- sensor nodes (drawn by JS) -->
+            <g id="node-layer"></g>
+
+            <!-- handwritten annotations -->
+            <text x="60" y="80" fill="#8d8266" font-size="10" font-family="Georgia" font-style="italic" transform="rotate(-6 60 80)">tide gate sticks in Aug. — check</text>
+            <text x="330" y="630" fill="#8d8266" font-size="10" font-family="Georgia" font-style="italic">herons roost here after dusk</text>
+            <text x="205" y="105" fill="#8d8266" font-size="10" font-family="Georgia" font-style="italic" transform="rotate(8 205 105)">40–44 Hz again? — E.H. '06</text>
+            <!-- compass rose -->
+            <g transform="translate(52 122)" stroke="#7d7358" fill="none" stroke-width="1">
+                <circle r="14"/><path d="M 0 -14 L 0 14 M -14 0 L 14 0"/>
+                <text x="-3" y="-18" fill="#9a8d68" font-size="9" font-family="Georgia" stroke="none">N</text>
+            </g>
+            <!-- scale bar -->
+            <g transform="translate(40 615)" stroke="#7d7358" stroke-width="1">
+                <path d="M 0 0 h60 M 0 -3 v6 M 60 -3 v6 M 30 -2 v4"/>
+                <text x="14" y="12" fill="#9a8d68" font-size="8" font-family="Georgia" stroke="none">100 m</text>
+            </g>
+        </svg>
+        <div id="map-note">traced from mom's field book · grid re-registered to WGS-84, spring 2023</div>
+        <div id="map-tooltip"></div>
+        <div id="source-estimate">
+            <div class="se-label">SOURCE ESTIMATE</div>
+            <div class="se-value" id="se-value">—</div>
+            <div class="se-conf" id="se-conf"></div>
+        </div>
+    </section>
+
+    <!-- ============ SIGNAL COLUMN ============ -->
+    <section id="signal-panel">
+        <div id="signal-readout">
+            <div class="readout-cell"><div class="rc-label">CLASSIFICATION</div><div class="rc-value" id="ro-class">Wind</div></div>
+            <div class="readout-cell"><div class="rc-label">DOMINANT FREQ</div><div class="rc-value amber" id="ro-freq">142.6 Hz</div></div>
+            <div class="readout-cell"><div class="rc-label">INTENSITY</div><div class="rc-value" id="ro-int">−61.2 dB</div></div>
+            <div class="readout-cell"><div class="rc-label">NOISE FLOOR</div><div class="rc-value" id="ro-floor">−78.4 dB</div></div>
+            <div class="readout-cell"><div class="rc-label">CONFIDENCE</div><div class="rc-value" id="ro-conf">88%</div></div>
+        </div>
+
+        <div class="panel" id="waveform-box">
+            <div class="panel-title">LIVE WAVEFORM — SUMMED ARRAY <span class="tag" id="wf-tag">NODE 03 PRIMARY</span></div>
+            <canvas class="scope" id="waveform"></canvas>
+        </div>
+
+        <div id="history-strip"></div>
+
+        <div class="panel" id="spectro-box">
+            <div class="panel-title">SPECTROGRAM 0–500 Hz <span class="tag">FFT 4096 · HANN · 50% OVERLAP</span></div>
+            <canvas class="scope" id="spectrogram"></canvas>
+        </div>
+    </section>
+
+    <!-- ============ NODES ============ -->
+    <section class="panel" id="nodes-panel">
+        <div class="panel-title">NODE HEALTH <span class="tag" id="nodes-tag">POLL 5 s</span></div>
+        <div id="node-list"></div>
+        <div id="env-summary">
+            AIR <b id="env-temp">24.1 °C</b> &nbsp; RH <b id="env-rh">71%</b> &nbsp; WIND <b id="env-wind">2.4 m/s SSW</b><br>
+            WATER <b id="env-water">22.7 °C</b> &nbsp; TIDE <b id="env-tide">EBB −0.3 m</b> &nbsp; BARO <b id="env-baro">1013.8 hPa</b>
+        </div>
+    </section>
+
+    <!-- ============ EVENT LOG ============ -->
+    <section class="panel" id="log-panel">
+        <div class="panel-title">EVENT LOG <span class="tag">KEYS: 1 IDLE · 2 ACTIVITY · 3 UNKNOWN SIGNAL · 4 NET FAIL · 5 RESTORE · 6 COMPARE · 7 TRIANGULATE · 8 STORM · 9 HISTORY · 0 RESET · L LOW-POWER</span></div>
+        <div id="event-log"></div>
+    </section>
+
+</div>
+
+<!-- ============ INSPECTOR ============ -->
+<div id="inspector" class="panel">
+    <div class="panel-title">SIGNAL INSPECTOR <span class="close-x" onclick="MFN.closeInspector()">[ close ]</span></div>
+    <div id="inspector-body"></div>
+</div>
+
+<!-- ============ SOLVER ============ -->
+<div id="solver-overlay">
+    <div id="solver-box">
+        <div class="sv-title">SOURCE SOLVER — TDOA / CROSS-CORRELATION</div>
+        <div class="sv-step" id="solver-step">Calculating…</div>
+        <div class="sv-bar"><div class="sv-fill" id="solver-fill"></div></div>
+    </div>
+</div>
+
+<script src="vendor/anime.min.js"></script>
+<script src="vendor/three.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
