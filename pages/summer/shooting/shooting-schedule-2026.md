@@ -26,7 +26,7 @@ ok# Summer Shooting Schedule 2026
 - **Note**: Scene placement - story beginning
 
 #### July 11 (Saturday) - Crew Marsh Prep
-- **Location**: The Marsh
+- **Location**: The Marsh - 9am-1pm
 
 #### July 12 (Sunday) - SHOOT DAY
 - **S05** - Dallas, Dominic @ East Haven
@@ -36,19 +36,21 @@ ok# Summer Shooting Schedule 2026
 
 #### July 13 (Monday) - NIGHT SHOOT
 - **S15** - Dallas and Makayla @ Marsh (Day 5PM-6:30PM)
+- **S16** - Dallas walks home from Marsh
 - **S09** - Dallas Alone @ Marsh (Night)(7:30PM-8:30PM)
 - **S10** - Dallas Alone @ Marsh (Night)(8:30PM-10:30PM)
 - **Crew**: Dallas, Makayla (later Dallas solo)
 - **Time**: 5pm - 10pm
 
 #### July 14 (Tuesday) - SHOOT DAY
-- **S16** - Dallas (location TBD)
-- **S17B** - Dallas and Dominic @ (Day)
-- **S17C** - Dallas and Dominic @ (Day)
+- **S16** - Dallas (WALK HOME)
+- **S16** - 
+
 - **Crew**: Dallas, Dominic
 - **Time**: Day
 
 #### July 15 (Wednesday) - NIGHT SHOOT
+- **S17** - Dallas and Dominic @ (MORNING)
 - **S23** - Dallas, Dominic and Makayla @ Marsh (Night)
 - **S24** - Dallas, Dominic and Makayla @ Marsh (Night)
 - **S25** - Dallas, Dominic and Makayla @ Marsh (Night)
@@ -66,7 +68,7 @@ ok# Summer Shooting Schedule 2026
 - **Time**: 5PM evening into night
 
 #### July 17 (Friday) - SHOOT DAY
-- **S04** - Fellowship Lunch @ CPC (Dallas, Dominic, Makayla)
+
 - **Crew**: Dallas, Dominic, Makayla
 - **Time**: Evening
 
@@ -82,11 +84,13 @@ ok# Summer Shooting Schedule 2026
 
 #### July 21 (Sunday) - SHOOT DAY
 - **S06** - Dallas, Dominic and Pat @ Marsh
-- **S13 Part 2** - Dallas and Makayla @ Attic
+
 - **Crew**: Dallas, Dominic, Makayla, Pat
 - **Locations**: Marsh, Attic
+- **S04** - Fellowship Lunch @ CPC (Dallas, Dominic, Makayla)(5pm)
 
 #### July 22 (Monday) - SHOOT DAY
+- **S13 Part 2** - Dallas and Makayla @ Attic (5pm)
 - **S08** - Dallas Alone @ Attic (Sunset)
 - **S11** - Dallas Alone @ Attic (Night)
 - **S12** - Dallas Alone @ Attic
@@ -95,7 +99,8 @@ ok# Summer Shooting Schedule 2026
 - **Time**: Sunset into night
 
 #### July 23 (Tuesday) - SHOOT DAY
-- **S17D** - Dallas Alone in Basement @ Boles
+- **S17A** - Dallas Alone in Basement @ Boles
+
 - **S16** - Dallas Alone @ Jerry's
 - **S16B** - Dallas Alone @ Attic
 - **S17** - Dallas Alone @ Jerry's
@@ -107,6 +112,7 @@ ok# Summer Shooting Schedule 2026
 - Hold for pickups or contingency
 
 #### July 25 (Thursday) - SHOOT DAY
+- **S17B** - DALLAS and MAKAYLA @ Boles
 - **S18** - Dallas, Dominic, Makayla and Lifegroup @ Boles
 - **Crew**: Dallas, Dominic, Makayla, Lifegroup
 - **Location**: Boles
@@ -116,7 +122,8 @@ ok# Summer Shooting Schedule 2026
 - Equipment check & prep for final shoot block
 
 #### July 27 (Saturday) - FINAL SHOOT DAY
-- **S27** - Dominic + Makayla + Dallas (Montage @ Branford)
+- **S17C** - Dominic + Makayla + Dallas (HARBOR)
+- **S27** - Dominic + Makayla + Dallas (Montage @ Branford Town)
 - **S28** - Dallas @ Marsh | Everyone @ Jerry's | Dallas @ Attic
 - **Crew**: Dallas, Dominic, Makayla
 - **Locations**: Branford, Marsh, Jerry's, Attic
