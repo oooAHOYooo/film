@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Nibbler Production — September 2026</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: #0d0d0d;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #d4c5a9;
+            line-height: 1.6;
+        }
+
+        .header-nav {
+            padding: 24px 40px;
+            border-bottom: 1px solid #222;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-nav a {
+            color: #a89070;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .header-nav a:hover { color: #d4c5a9; }
+
+        .hero {
+            padding: 70px 40px 50px;
+            text-align: center;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .hero-eyebrow {
+            font-size: 11px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #665544;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 700;
+            color: #e8d9c0;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+        }
+
+        .hero .subtitle {
+            font-size: 16px;
+            color: #7a6a55;
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        .hero .meta {
+            font-size: 13px;
+            color: #554433;
+            letter-spacing: 0.05em;
+        }
+
+        .section-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 40px;
+            border-bottom: 1px solid #1a1a1a;
+        }
+
+        .section-container:last-of-type { border-bottom: none; }
+
+        .section-title {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #665544;
+            margin-bottom: 28px;
+        }
+
+        .prose {
+            max-width: 800px;
+            font-size: 14px;
+            color: #7a6a55;
+            line-height: 1.8;
+        }
+
+        .prose p + p { margin-top: 14px; }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .card-grid.three-col {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card {
+            padding: 24px;
+            border: 1px solid #1f1a15;
+            border-radius: 6px;
+            background: #0f0e0c;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            border-color: #554433;
+            background: #141210;
+        }
+
+        .card-icon {
+            font-size: 28px;
+            margin-bottom: 12px;
+            opacity: 0.6;
+        }
+
+        .card h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #e8d9c0;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 12px;
+            color: #665544;
+            line-height: 1.6;
+            flex: 1;
+            margin-bottom: 12px;
+        }
+
+        .card-meta {
+            font-size: 11px;
+            color: #443322;
+            font-family: monospace;
+            letter-spacing: 0.05em;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .info-box {
+            padding: 20px;
+            border: 1px solid #1f1a15;
+            border-radius: 6px;
+            background: #0a0908;
+        }
+
+        .info-box h4 {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #665544;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            font-size: 13px;
+            color: #d4c5a9;
+            font-weight: 500;
+        }
+
+        .info-box .subtext {
+            font-size: 11px;
+            color: #7a6a55;
+            margin-top: 4px;
+            font-weight: normal;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+        }
+
+        .timeline-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: #665544;
+            letter-spacing: 0.05em;
+            min-width: 80px;
+            padding-top: 4px;
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding: 16px;
+            border-left: 2px solid #1f1a15;
+            border-radius: 0 6px 6px 0;
+            background: #0a0908;
+        }
+
+        .timeline-content p {
+            font-size: 13px;
+            color: #7a6a55;
+            margin-bottom: 6px;
+        }
+
+        .timeline-content p:last-child { margin-bottom: 0; }
+
+        .timeline-content strong {
+            color: #d4c5a9;
+            font-weight: 500;
+        }
+
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .stat {
+            padding: 20px;
+            border: 1px solid #1f1a15;
+            border-radius: 6px;
+            background: #0a0908;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 700;
+            color: #e8d9c0;
+            margin-bottom: 6px;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #665544;
+        }
+
+        .feature-banner {
+            padding: 28px;
+            border: 1px solid #1f1a15;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #0f0e0c 0%, #0a0908 100%);
+            margin-bottom: 28px;
+        }
+
+        .feature-banner h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #e8d9c0;
+            margin-bottom: 8px;
+        }
+
+        .feature-banner p {
+            font-size: 13px;
+            color: #7a6a55;
+            line-height: 1.7;
+        }
+
+        .footer {
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+            font-size: 12px;
+            color: #332211;
+        }
+
+        .footer a { color: inherit; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .card-grid, .card-grid.three-col, .info-grid, .stat-row { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 36px; }
+            .header-nav, .section-container { padding-left: 24px; padding-right: 24px; }
+            .timeline-item { flex-direction: column; gap: 8px; }
+            .timeline-label { min-width: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-nav">
+        <a href="../../nibbler.html">← Nibbler Hub</a>
+        <a href="../treatment.md">Treatment ↗</a>
+    </div>
+
+    <div class="hero">
+        <p class="hero-eyebrow">Production · September 2026</p>
+        <h1>Nibbler Production</h1>
+        <p class="subtitle">$500 Micro-Budget · All Volunteer Cast & Locations</p>
+        <p class="meta">14 Days · 3 Episodes · Guerrilla Noir</p>
+    </div>
+
+    <!-- Production Stats -->
+    <div class="section-container">
+        <p class="section-title">Overview</p>
+        <div class="stat-row">
+            <div class="stat">
+                <div class="stat-number">14</div>
+                <div class="stat-label">Shooting Days</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">25</div>
+                <div class="stat-label">Total Scenes</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">$500</div>
+                <div class="stat-label">Total Budget</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">8</div>
+                <div class="stat-label">Primary Locations</div>
+            </div>
+        </div>
+
+        <div class="feature-banner">
+            <h3>Micro-Budget Approach</h3>
+            <p>All actors are unpaid friends committed to the project. All locations are volunteer owners providing free access. Budget covers fuel, minimal catering, permits, and consumables only. Equipment is borrowed from friends. Post-production (editing, color, sound) is director-led using free/affordable software. This is a pure passion project and proof of concept for what's possible with commitment and practical cinematography.</p>
+        </div>
+    </div>
+
+    <!-- Production Documents -->
+    <div class="section-container">
+        <p class="section-title">Production Documents</p>
+        <div class="card-grid">
+            <a class="card" href="NIBBLER_SHOOTING_SCHEDULE_SEPT2026.md">
+                <div class="card-icon">📅</div>
+                <h3>14-Day Shooting Schedule</h3>
+                <p>Complete day-by-day breakdown. Scenes per day, locations, crew requirements, cinematography focus. Wide-shot emphasis, boatyard night work, ballroom crowd coordination.</p>
+                <div class="card-meta">25KB · Markdown</div>
+            </a>
+
+            <a class="card" href="NIBBLER_LOCATION_LIST.md">
+                <div class="card-icon">📍</div>
+                <h3>Location List & Scouting</h3>
+                <p>All 8 locations detailed: practical needs, cinematography specs, scout notes, budget, access hours. Police office, Rudie's Bar, boatyard docks, City Hall, shipyard flashback, streets, seaside pub.</p>
+                <div class="card-meta">30KB · Markdown</div>
+            </a>
+
+            <a class="card" href="NIBBLER_MICROBUDGET_PLAN.md">
+                <div class="card-icon">💰</div>
+                <h3>Micro-Budget Production Plan</h3>
+                <p>$500 budget breakdown. Crew structure (3-core + volunteers). What you can/cannot do. Realistic schedule adjustments. Equipment checklist (borrowed). Post-production approach. Essential recommendations.</p>
+                <div class="card-meta">24KB · Markdown</div>
+            </a>
+
+            <a class="card" href="NIBBLER_CAST_CREW.md">
+                <div class="card-icon">👥</div>
+                <h3>Cast & Crew (Reference)</h3>
+                <p>Complete cast descriptions and feature-level crew breakdown (reference). Includes actor requirements, screen time, availability. Core crew (3 people minimum), department heads, post-production roles.</p>
+                <div class="card-meta">37KB · Markdown</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Key Production Info -->
+    <div class="section-container">
+        <p class="section-title">Production Essentials</p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <h4>Schedule</h4>
+                <p>September 1-14, 2026</p>
+                <p class="subtext">Two weeks, excluding weekends. Tue-Tue shooting window.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Budget</h4>
+                <p>$500 Total</p>
+                <p class="subtext">Fuel ($150), Catering ($200), Permits ($75), Consumables ($50), Contingency ($25)</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Cast</h4>
+                <p>5 Principal Actors (Unpaid)</p>
+                <p class="subtext">Dustin, Gael, Ghost, Lucy, Mayor Anderson. All friends, committed to project.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Core Crew</h4>
+                <p>3 Full-Time (Minimum)</p>
+                <p class="subtext">Director, DP/Camera, Sound/1st AD. Guest volunteers as needed (makeup, lighting, safety).</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Locations</h4>
+                <p>8 Volunteer Sites</p>
+                <p class="subtext">Police office, bar, station exterior, streets, ballroom, boatyard, seaside pub, shipyard. All free access.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Equipment</h4>
+                <p>All Borrowed</p>
+                <p class="subtext">Camera (DSLR/mirrorless), lights (LED panels), audio (lav mic kit), support (tripod, monopod). Director's resources.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Scenes</h4>
+                <p>25 Total</p>
+                <p class="subtext">E1: 9 scenes · E2: 7 scenes · E3: 9 scenes. All three episodes, complete story.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Runtime</h4>
+                <p>~68 Minutes</p>
+                <p class="subtext">3 episodes × 22-23 minutes each. Full three-part mini-series.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Production Timeline -->
+    <div class="section-container">
+        <p class="section-title">Timeline</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-label">WEEK 1-2</div>
+                <div class="timeline-content">
+                    <p><strong>Pre-Production Prep:</strong> Lock cast availability, confirm location owner agreements, scout locations with DP, borrow equipment from friends, finalize shot list.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-label">WEEK 3-4</div>
+                <div class="timeline-content">
+                    <p><strong>Final Prep:</strong> Equipment tests, script table read with cast, fight choreography rehearsal (boatyard crew), distribute call sheets, safety briefings.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-label">SEP 1-14</div>
+                <div class="timeline-content">
+                    <p><strong>Principal Photography:</strong> 14 days of shooting across all 8 locations. Voiceover recording in final week (director's home with Dustin actor).</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-label">SEP 15-20</div>
+                <div class="timeline-content">
+                    <p><strong>Post-Production Prep:</strong> Organize footage, color-correct in-camera, complete voiceover recording session, begin editing assembly.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-label">SEP 21 - NOV 30</div>
+                <div class="timeline-content">
+                    <p><strong>Editing & Post:</strong> Rough cut, fine cut, color grading (DaVinci Resolve free), sound design, voiceover integration, music (royalty-free), final mix.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-label">DEC 1-15</div>
+                <div class="timeline-content">
+                    <p><strong>Delivery:</strong> Final color pass, sound mixing, export (1080p MP4), prepare for festival submission or YouTube premiere.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cast -->
+    <div class="section-container">
+        <p class="section-title">Cast</p>
+        <div class="prose">
+            <p><strong>Dustin Meglio (The Nibbler):</strong> Detective protagonist, voiceover narrator. Carries entire series on noir monologue. Must deliver strong voiceover performance (practice before shoot). Available all 14 days.</p>
+
+            <p><strong>Gael:</strong> Colombian operative, field commander for the Weevil. Precise, unhurried, dangerous. First-name moment with Dustin is emotional climax of Episode 3. Fight choreography capability required. Days 2, 4, 7-11.</p>
+
+            <p><strong>Max "The Ghost":</strong> Dustin's trusted partner. Minimalist presence-based performance (speaks rarely). Loyalty through observation. Most shoot days except boatyard-light periods.</p>
+
+            <p><strong>Lucy:</strong> Bartender/insider, sharp wit. Reads people faster than anyone. Team member by Episode 2. Fight choreography for boatyard rescue. Days 3-4, 7-11, 8-9.</p>
+
+            <p><strong>Mayor Anderson:</strong> Mayor, Gael's brother, revelation catalyst. Carries heavy emotional scene (office confession). Days 4, 7-11, 8-9.</p>
+        </div>
+    </div>
+
+    <!-- What Makes This Work -->
+    <div class="section-container">
+        <p class="section-title">Production Approach</p>
+        <div class="prose">
+            <p><strong>Strengths:</strong> Noir thrives on practical locations and available light (boatyard darkness, office fluorescents, bar neon, streetlights). Strong dialogue and voiceover carry DIY aesthetic. All-volunteer cast = genuine commitment. Simple locations = authentic authenticity. Script quality + editing > visual polish.</p>
+
+            <p><strong>Constraints:</strong> No reshoot budget (get it right on set). Friend availability matters (schedule across 14 days). Night shoots are exhausting (Days 2, 8-9). No massive crowd (20-30 friends max, not 500 extras). No professional color grading (in-camera white balance + minimal post). Audio is everything (clean dialogue, strong voiceover).</p>
+
+            <p><strong>Key Success Factors:</strong> (1) Lock cast + locations NOW with written confirmation. (2) Detailed shot list (max 15-20 shots/day). (3) Boatyard fight choreography rehearsal (2-3 times before shoot). (4) Good lav mic setup (production audio is critical). (5) Tight editorial discipline in post-production. (6) Trust the voiceover to carry limitations.</p>
+        </div>
+    </div>
+
+    <!-- Recommendations -->
+    <div class="section-container">
+        <p class="section-title">Critical Recommendations</p>
+        <div class="card-grid">
+            <div class="card" style="border-color: #554433; background: #0d0b0a;">
+                <div class="card-icon">🎬</div>
+                <h3>Lock Everything Early</h3>
+                <p>Contact cast + location owners immediately. Get written confirmation. No last-minute surprises. Boatyard access, bar hours, office availability must be confirmed now.</p>
+            </div>
+
+            <div class="card" style="border-color: #554433; background: #0d0b0a;">
+                <div class="card-icon">🧪</div>
+                <h3>Test Equipment First</h3>
+                <p>Borrow camera/audio/lights NOW. Test everything before shoot. Ensure SD cards work, batteries charge, microphone captures clean audio. No day-of surprises.</p>
+            </div>
+
+            <div class="card" style="border-color: #554433; background: #0d0b0a;">
+                <div class="card-icon">📋</div>
+                <h3>Detailed Shot List</h3>
+                <p>Director creates max 15-20 shots per day. Tight schedule requires no waste. Know exactly what you need before you shoot. Keeps energy high, prevents overthinking.</p>
+            </div>
+
+            <div class="card" style="border-color: #554433; background: #0d0b0a;">
+                <div class="card-icon">🥊</div>
+                <h3>Rehearse Fight Choreography</h3>
+                <p>Boatyard action (Days 8-9) requires 2-3 practice runs with henchmen friends. Know the dance before cameras roll. Safety first, then efficiency.</p>
+            </div>
+
+            <div class="card" style="border-color: #554433; background: #0d0b0a;">
+                <div class="card-icon">🎙️</div>
+                <h3>Protect Audio Quality</h3>
+                <p>Production audio is everything on low-budget. Good lav mic setup = less post-work. Clean dialogue takes = strong final mix. Audio carries what visuals cannot.</p>
+            </div>
+
+            <div class="card" style="border-color: #554433; background: #0d0b0a;">
+                <div class="card-icon">⚡</div>
+                <h3>Manage Energy</h3>
+                <p>14 days is exhausting. Build lighter days between intense ones. Night shoots are hardest (Days 2, 8-9). Feed your crew. Keep morale high. Friends take care of friends.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="../../nibbler.html">Nibbler Hub</a> · <a href="../../">Film Vault</a> · September 2026 · Childlike Studios
+    </div>
+
+</body>
+</html>
