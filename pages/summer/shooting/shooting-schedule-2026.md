@@ -1,7 +1,7 @@
-ok# Summer Shooting Schedule 2026
+
 **Production Status**: Active Shoot  
 **Updated**: July 9, 2026  
-**Shoot Window**: July 8 - July 31, 2026
+**Shoot Window**: July 8 - July 29th, 2026
 
 ---
 
@@ -42,10 +42,10 @@ ok# Summer Shooting Schedule 2026
 - **S09** - Dallas Alone @ Marsh (Night)(7:30PM-8:30PM)
 - **S10** - Dallas Alone @ Marsh (Night)(8:30PM-10:30PM)
 - **Crew**: Dallas, Dominic
-- **Time**: Day
+- **Time**: Night
 
 #### July 15 (Wednesday) - NIGHT SHOOT
-- **S17** - Dallas, Dominic and Makayla @ Habor (5pm)
+
 - **S19** - Dallas, Dominic and Makayla @ Marsh (Night)(7pm)
 - **S20** - Dallas, Dominic and Makayla @ Marsh (Night)(8pm)
 - **S21** - Dallas, Dominic and Makayla @ Marsh (Night)(9pm)
@@ -78,16 +78,18 @@ ok# Summer Shooting Schedule 2026
 
 #### July 20 (Monday) - SHOOT DAY
 - **S13 Part 2** - Dallas and Makayla @ Attic (5pm)
-- **S08** - Dallas Alone @ Attic (Sunset)
-- **S11** - Dallas Alone @ Attic (Night)
-- **S12** - Dallas Alone @ Attic
+- **S17** - Dallas, Dominic and Makayla @ Habor (5pm)
+
 - **Crew**: Dallas
 - **Location**: Attic
 - **Time**: Sunset into night
 
 #### July 21 (Tuesday) - SHOOT DAY
-- **S17A** - Dallas Alone in Basement @ Boles
+- **S17A** - Dallas Alone @ Boles
 - **S17** - Dallas Alone @ Jerry's
+- **S08** - Dallas Alone @ Attic (Sunset)
+- **S11** - Dallas Alone @ Attic (Night)
+- **S12** - Dallas Alone @ Attic
 - **Crew**: Dallas
 - **Locations**: Boles Basement, Jerry's, Attic
 
@@ -150,20 +152,3 @@ ok# Summer Shooting Schedule 2026
 - **Branford location**: S00b (opening), S27 (final montage)
 
 ---
-
-## Contingency Notes
-- July 24 (Wednesday) remains open for pickups/contingency
-- July 29-31 reserved for final pickups and wrap operations
-- Weather hold date: TBD (monitor forecast)
-
----
-
-## Status Tracking
-- [ ] July 8-12: Pre-production complete
-- [ ] July 13-19: Week 1 shooting complete
-- [ ] July 21-27: Week 2 shooting complete
-- [ ] July 28-31: Pickups & wrap
-
----
-
-*Last Updated: July 9, 2026 by Production*
