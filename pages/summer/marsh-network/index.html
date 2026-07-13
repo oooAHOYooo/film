@@ -10,7 +10,10 @@
 
 <canvas id="particle-layer"></canvas>
 
-<div id="app">
+<div id="viewport-container">
+    <!-- SCREEN 1: Normal Interface -->
+    <div class="viewport" id="screen1">
+        <div id="app">
 
     <!-- ============ HEADER ============ -->
     <header>
@@ -33,17 +36,17 @@
             RECORDS SINCE 2009 <b>11,482,904</b><br>
             STATION <b>M. HALLORAN / YALE F&amp;ES</b>
         </div>
+        <div id="mode-banner">MODE: <span id="mode-name">PASSIVE MONITORING</span></div>
         <div id="master-clock">
             <span id="clock-time">18:41:07</span>
             <div class="date" id="clock-date">TUE 08 JUL — LOCAL EDT — GPS DISCIPLINED</div>
         </div>
     </header>
 
-    <div id="mode-banner">MODE: <span id="mode-name">PASSIVE MONITORING</span></div>
-
     <!-- ============ MAP ============ -->
     <section class="panel" id="map-panel">
         <div class="panel-title">MARSH ARRAY MAP <span class="tag">SHEET 3 OF 3 · TRACED FROM E.H. FIELD BOOK, 1998</span></div>
+        <div id="map-holder">
         <svg id="marsh-map" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid meet">
             <defs>
                 <filter id="paper" x="0" y="0" width="100%" height="100%">
@@ -99,12 +102,21 @@
                 <text x="17" y="4" fill="#9a8d68" font-size="9" font-style="italic" font-family="Georgia">old oak</text>
             </g>
 
-            <!-- Dallas's house -->
-            <g id="dallas-house" transform="translate(452 468)">
+            <!-- D1 — Research Origin -->
+            <g id="d1-marker" transform="translate(452 468)">
+                <circle r="3" fill="#b39a6a"/>
                 <rect x="-11" y="-8" width="22" height="16" fill="none" stroke="#b39a6a" stroke-width="1.3"/>
                 <path d="M -13 -8 L 0 -19 L 13 -8" fill="none" stroke="#b39a6a" stroke-width="1.3"/>
-                <text x="18" y="2" fill="#b39a6a" font-size="9.5" font-style="italic" font-family="Georgia">Dallas res.</text>
+                <text x="18" y="2" fill="#b39a6a" font-size="9.5" font-style="italic" font-family="Georgia">D1</text>
                 <circle id="house-halo" r="26" fill="none" stroke="#d9a441" stroke-width="1" opacity="0"/>
+            </g>
+
+            <!-- Home — Research Base -->
+            <g id="home-marker" transform="translate(100 120)">
+                <circle r="3" fill="#b39a6a"/>
+                <rect x="-11" y="-8" width="22" height="16" fill="none" stroke="#b39a6a" stroke-width="1.3"/>
+                <path d="M -13 -8 L 0 -19 L 13 -8" fill="none" stroke="#b39a6a" stroke-width="1.3"/>
+                <text x="18" y="2" fill="#b39a6a" font-size="9.5" font-style="italic" font-family="Georgia">Home</text>
             </g>
 
             <!-- Position Four -->
@@ -146,6 +158,7 @@
                 <text x="14" y="12" fill="#9a8d68" font-size="8" font-family="Georgia" stroke="none">100 m</text>
             </g>
         </svg>
+        </div>
         <div id="map-note">traced from mom's field book · grid re-registered to WGS-84, spring 2023</div>
         <div id="map-tooltip"></div>
         <div id="source-estimate">
@@ -166,15 +179,28 @@
         </div>
 
         <div class="panel" id="waveform-box">
-            <div class="panel-title">LIVE WAVEFORM — SUMMED ARRAY <span class="tag" id="wf-tag">NODE 03 PRIMARY</span></div>
-            <canvas class="scope" id="waveform"></canvas>
+            <div class="panel-title">LIVE WAVEFORM ANALYSIS <span class="tag" id="wf-tag">MULTIBAND COMPARISON</span></div>
+            <div class="waveform-container">
+                <div class="waveform-subpanel">
+                    <div class="subpanel-label"><span class="trace-key nb"></span>CH A — NARROWBAND 30–60 Hz <span class="subpanel-tag">COHERENT</span></div>
+                    <div class="scope-wrap"><canvas class="scope" id="waveform-nb"></canvas></div>
+                </div>
+                <div class="waveform-subpanel">
+                    <div class="subpanel-label"><span class="trace-key bb"></span>CH B — BROADBAND AMBIENT <span class="subpanel-tag">REFERENCE</span></div>
+                    <div class="scope-wrap"><canvas class="scope" id="waveform-bb"></canvas></div>
+                </div>
+                <div class="waveform-subpanel">
+                    <div class="subpanel-label"><span class="trace-key an"></span>CH C — RESIDUAL (A − MODEL) <span class="subpanel-tag">LIVE</span></div>
+                    <div class="scope-wrap"><canvas class="scope" id="waveform-anomaly"></canvas></div>
+                </div>
+            </div>
         </div>
 
         <div id="history-strip"></div>
 
         <div class="panel" id="spectro-box">
             <div class="panel-title">SPECTROGRAM 0–500 Hz <span class="tag">FFT 4096 · HANN · 50% OVERLAP</span></div>
-            <canvas class="scope" id="spectrogram"></canvas>
+            <div class="scope-wrap"><canvas class="scope" id="spectrogram"></canvas></div>
         </div>
     </section>
 
@@ -190,26 +216,295 @@
 
     <!-- ============ EVENT LOG ============ -->
     <section class="panel" id="log-panel">
-        <div class="panel-title">EVENT LOG <span class="tag">KEYS: 1 IDLE · 2 ACTIVITY · 3 UNKNOWN SIGNAL · 4 NET FAIL · 5 RESTORE · 6 COMPARE · 7 TRIANGULATE · 8 STORM · 9 HISTORY · 0 RESET · L LOW-POWER</span></div>
+        <div class="panel-title">EVENT LOG <span class="tag">SCREENS 1–7 · A ACTIVITY · U UNKNOWN SIGNAL · F NET FAIL · R RESTORE · C COMPARE · T TRIANGULATE · 8 STORM · 9 HISTORY · 0 RESET · L LOW-POWER</span></div>
         <div id="event-log"></div>
     </section>
 
 </div>
 
-<!-- ============ INSPECTOR ============ -->
-<div id="inspector" class="panel">
-    <div class="panel-title">SIGNAL INSPECTOR <span class="close-x" onclick="MFN.closeInspector()">[ close ]</span></div>
-    <div id="inspector-body"></div>
-</div>
-
-<!-- ============ SOLVER ============ -->
-<div id="solver-overlay">
-    <div id="solver-box">
-        <div class="sv-title">SOURCE SOLVER — TDOA / CROSS-CORRELATION</div>
-        <div class="sv-step" id="solver-step">Calculating…</div>
-        <div class="sv-bar"><div class="sv-fill" id="solver-fill"></div></div>
+    <!-- ============ INSPECTOR ============ -->
+    <div id="inspector" class="panel">
+        <div class="panel-title">SIGNAL INSPECTOR <span class="close-x" onclick="MFN.closeInspector()">[ close ]</span></div>
+        <div id="inspector-body"></div>
     </div>
-</div>
+
+    <!-- ============ SOLVER ============ -->
+    <div id="solver-overlay">
+        <div id="solver-box">
+            <div class="sv-title">SOURCE SOLVER — TDOA / CROSS-CORRELATION</div>
+            <div class="sv-step" id="solver-step">Calculating…</div>
+            <div class="sv-bar"><div class="sv-fill" id="solver-fill"></div></div>
+        </div>
+    </div>
+    </div><!-- end screen1 -->
+
+    <!-- SCREEN 2: Calm Fullscreen Marsh -->
+    <div class="viewport" id="screen2">
+        <div class="map-container">
+            <svg id="marsh-map-2" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid slice"></svg>
+            <canvas id="map-noise-2" class="map-noise"></canvas>
+            <svg id="node-connections-2" class="node-connections" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid slice"></svg>
+        </div>
+        <div class="screen-hint">Screen 2 — Array Monitoring | Scroll to zoom | Drag to pan</div>
+    </div>
+
+    <!-- SCREEN 3: Creature Appears (Golden Corruption) -->
+    <div class="viewport" id="screen3">
+        <div class="map-container">
+            <svg id="marsh-map-3" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid slice"></svg>
+            <canvas id="map-noise-3" class="map-noise"></canvas>
+            <svg id="node-connections-3" class="node-connections" viewBox="0 0 600 640" preserveAspectRatio="xMidYMid slice"></svg>
+        </div>
+        <div class="screen-hint">Screen 3 — Anomaly Detected | Nodes Responding</div>
+    </div>
+
+    <!-- SCREEN 4: Audio Detection — The Hum Detected (Professional SETI) -->
+    <div class="viewport" id="screen4">
+        <div class="seti-screen">
+            <div class="seti-header">
+                <div class="seti-title">NARROWBAND SIGNAL ANALYSIS</div>
+                <div class="seti-subtitle">Array Observation Window: 2026-07-08 02:47 UTC</div>
+            </div>
+
+            <div class="seti-container">
+                <div class="seti-panel waterfall-panel">
+                    <div class="panel-label">Dynamic Spectrogram (0–500 Hz)</div>
+                    <canvas id="waterfall-4" class="waterfall-canvas"></canvas>
+                </div>
+
+                <div class="seti-panel spectrum-panel">
+                    <div class="panel-label">Frequency Domain Analysis</div>
+                    <canvas id="spectrum-4" class="spectrum-canvas"></canvas>
+                    <div class="freq-scale">
+                        <span class="freq">0 Hz</span>
+                        <span class="freq">125 Hz</span>
+                        <span class="freq">250 Hz</span>
+                        <span class="freq">375 Hz</span>
+                        <span class="freq">500 Hz</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seti-data">
+                <div class="data-column">
+                    <div class="data-label">SIGNAL METRICS</div>
+                    <div class="data-value">Peak Frequency: <span class="highlight">41.82 ± 0.03 Hz</span></div>
+                    <div class="data-value">SNR (dB): <span class="highlight">+18.4</span></div>
+                    <div class="data-value">Coherence: <span class="highlight">0.947</span></div>
+                    <div class="data-value">Drift Rate: <span class="highlight">−0.002 Hz/s</span></div>
+                </div>
+                <div class="data-column">
+                    <div class="data-label">DETECTION STATUS</div>
+                    <div class="data-value">Confidence: <span class="highlight">94.7%</span></div>
+                    <div class="data-value">Nodes Detecting: <span class="highlight">8/8</span></div>
+                    <div class="data-value">Observation Time: <span class="highlight">4m 32s</span></div>
+                    <div class="data-value">Source Bearing: <span class="highlight">N 38.2° E</span></div>
+                </div>
+            </div>
+
+            <div class="screen-hint">Screen 4 — Narrowband Detection | Press 1-7 to navigate</div>
+        </div>
+    </div>
+
+    <!-- SCREEN 5: Audio Corruption — The Hum Intensifies (Professional SETI) -->
+    <div class="viewport" id="screen5">
+        <div class="seti-screen alarm">
+            <div class="seti-header alarm-header">
+                <div class="seti-title">MULTIBAND INTERFERENCE DETECTED</div>
+                <div class="seti-subtitle">Anomalous Harmonic Series — 8 Coherent Lines Identified</div>
+            </div>
+
+            <div class="seti-container">
+                <div class="seti-panel waterfall-panel alarm">
+                    <div class="panel-label">Dynamic Spectrogram (0–500 Hz)</div>
+                    <canvas id="waterfall-5" class="waterfall-canvas"></canvas>
+                </div>
+
+                <div class="seti-panel spectrum-panel alarm">
+                    <div class="panel-label">Harmonic Analysis</div>
+                    <canvas id="spectrum-5" class="spectrum-canvas"></canvas>
+                    <div class="freq-scale">
+                        <span class="freq">0 Hz</span>
+                        <span class="freq">125 Hz</span>
+                        <span class="freq">250 Hz</span>
+                        <span class="freq">375 Hz</span>
+                        <span class="freq">500 Hz</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seti-data alarm-data">
+                <div class="data-column">
+                    <div class="data-label">SIGNAL METRICS</div>
+                    <div class="data-value">Fundamental: <span class="alarm-highlight">41.82 Hz</span></div>
+                    <div class="data-value">Harmonics Detected: <span class="alarm-highlight">8</span></div>
+                    <div class="data-value">Total SNR: <span class="alarm-highlight">+42.1 dB</span></div>
+                    <div class="data-value">Bandwidth (−3dB): <span class="alarm-highlight">2.14 Hz</span></div>
+                </div>
+                <div class="data-column">
+                    <div class="data-label">SYSTEM STATUS</div>
+                    <div class="data-value">Nodes Online: <span class="alarm-highlight">6/8</span></div>
+                    <div class="data-value">Packet Loss: <span class="alarm-highlight">↑ 34.2%</span></div>
+                    <div class="data-value">Network Sync: <span class="alarm-highlight">DEGRADED</span></div>
+                    <div class="data-value">Archive Status: <span class="alarm-highlight">INITIATED</span></div>
+                </div>
+            </div>
+
+            <div class="screen-hint">Screen 5 — Harmonic Anomaly | Press 1-7 to navigate</div>
+        </div>
+    </div>
+
+    <!-- SCREEN 6: Tactical Node Matrix (Independence Day Style) -->
+    <div class="viewport" id="screen6">
+        <div class="tactical-screen">
+            <!-- Top HUD Bar -->
+            <div class="hud-top">
+                <div class="hud-section">
+                    <span class="hud-label">SYSTEM STATUS</span>
+                    <span class="hud-value" id="tac-status">ARRAY ACTIVE</span>
+                </div>
+                <div class="hud-section center">
+                    <span class="hud-label">NETWORK INTEGRITY</span>
+                    <div class="hud-bar">
+                        <div class="hud-bar-fill" id="tac-integrity" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="hud-section">
+                    <span class="hud-label">THREAT LEVEL</span>
+                    <span class="hud-value alarm" id="tac-threat">CRITICAL</span>
+                </div>
+            </div>
+
+            <!-- Node Matrix Grid -->
+            <div class="node-matrix">
+                <div class="matrix-header">MARSH ARRAY NODE STATUS</div>
+                <div class="matrix-grid">
+                    <div class="node-box" id="node-box-0">
+                        <div class="node-id">NODE 01</div>
+                        <div class="node-type">GEO</div>
+                        <canvas class="node-display" id="node-display-0"></canvas>
+                        <div class="node-status online">● ONLINE</div>
+                        <div class="node-data">
+                            <span class="data-row">SIG: <span id="sig-0">−61 dB</span></span>
+                            <span class="data-row">FREQ: <span id="freq-0">142.6 Hz</span></span>
+                        </div>
+                    </div>
+                    <div class="node-box" id="node-box-1">
+                        <div class="node-id">NODE 02</div>
+                        <div class="node-type">MIC</div>
+                        <canvas class="node-display" id="node-display-1"></canvas>
+                        <div class="node-status online">● ONLINE</div>
+                        <div class="node-data">
+                            <span class="data-row">SIG: <span id="sig-1">−61 dB</span></span>
+                            <span class="data-row">FREQ: <span id="freq-1">142.6 Hz</span></span>
+                        </div>
+                    </div>
+                    <div class="node-box" id="node-box-2">
+                        <div class="node-id">NODE 03</div>
+                        <div class="node-type">MIC</div>
+                        <canvas class="node-display" id="node-display-2"></canvas>
+                        <div class="node-status online">● ONLINE</div>
+                        <div class="node-data">
+                            <span class="data-row">SIG: <span id="sig-2">−61 dB</span></span>
+                            <span class="data-row">FREQ: <span id="freq-2">142.6 Hz</span></span>
+                        </div>
+                    </div>
+                    <div class="node-box" id="node-box-3">
+                        <div class="node-id">NODE 04</div>
+                        <div class="node-type">HYD</div>
+                        <canvas class="node-display" id="node-display-3"></canvas>
+                        <div class="node-status online">● ONLINE</div>
+                        <div class="node-data">
+                            <span class="data-row">SIG: <span id="sig-3">−61 dB</span></span>
+                            <span class="data-row">FREQ: <span id="freq-3">142.6 Hz</span></span>
+                        </div>
+                    </div>
+                    <div class="node-box" id="node-box-4">
+                        <div class="node-id">NODE 05</div>
+                        <div class="node-type">MIC</div>
+                        <canvas class="node-display" id="node-display-4"></canvas>
+                        <div class="node-status online">● ONLINE</div>
+                        <div class="node-data">
+                            <span class="data-row">SIG: <span id="sig-4">−61 dB</span></span>
+                            <span class="data-row">FREQ: <span id="freq-4">142.6 Hz</span></span>
+                        </div>
+                    </div>
+                    <div class="node-box" id="node-box-5">
+                        <div class="node-id">NODE 06</div>
+                        <div class="node-type">GEO</div>
+                        <canvas class="node-display" id="node-display-5"></canvas>
+                        <div class="node-status online">● ONLINE</div>
+                        <div class="node-data">
+                            <span class="data-row">SIG: <span id="sig-5">−61 dB</span></span>
+                            <span class="data-row">FREQ: <span id="freq-5">142.6 Hz</span></span>
+                        </div>
+                    </div>
+                    <div class="node-box" id="node-box-6">
+                        <div class="node-id">NODE 07</div>
+                        <div class="node-type">MIC</div>
+                        <canvas class="node-display" id="node-display-6"></canvas>
+                        <div class="node-status online">● ONLINE</div>
+                        <div class="node-data">
+                            <span class="data-row">SIG: <span id="sig-6">−61 dB</span></span>
+                            <span class="data-row">FREQ: <span id="freq-6">142.6 Hz</span></span>
+                        </div>
+                    </div>
+                    <div class="node-box" id="node-box-7">
+                        <div class="node-id">NODE 08</div>
+                        <div class="node-type">HYD</div>
+                        <canvas class="node-display" id="node-display-7"></canvas>
+                        <div class="node-status online">● ONLINE</div>
+                        <div class="node-data">
+                            <span class="data-row">SIG: <span id="sig-7">−61 dB</span></span>
+                            <span class="data-row">FREQ: <span id="freq-7">142.6 Hz</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Status -->
+            <div class="hud-bottom">
+                <div class="status-line">TRIANGULATION: <span id="tac-bearing">ALL NODES LOCKED</span></div>
+                <div class="status-line">SIGNAL PERSISTENCE: <span id="tac-persistence">CONTINUOUS</span></div>
+                <div class="status-line">AUTONOMOUS ARCHIVE INITIATED — ALL SENSOR DATA SECURED</div>
+            </div>
+
+            <canvas id="tactical-scanlines" class="tactical-scanlines"></canvas>
+            <div class="screen-hint">Screen 6 — Tactical Array Matrix | Press 1-7 to navigate</div>
+        </div>
+    </div>
+
+    <!-- SCREEN 7: Dedicated Wideband Spectrum Monitor -->
+    <div class="viewport" id="screen7">
+        <div class="seti-screen">
+            <div class="seti-header">
+                <div class="seti-title">WIDEBAND SPECTRUM MONITOR</div>
+                <div class="seti-subtitle">0–500 Hz · FFT 4096 · HANN · 50% OVERLAP · ARRAY BEAMFORMED SUM · 8 CHANNELS</div>
+            </div>
+
+            <div class="spectrum-full">
+                <div class="seti-panel spectrum-full-panel">
+                    <div class="panel-label">Dynamic Spectrogram — Scrolling (0–500 Hz)</div>
+                    <div class="scope-wrap"><canvas id="waterfall-7"></canvas></div>
+                </div>
+                <div class="seti-panel spectrum-full-panel">
+                    <div class="panel-label">Frequency Domain — Instantaneous Power</div>
+                    <div class="scope-wrap"><canvas id="spectrum-7"></canvas></div>
+                    <div class="freq-scale">
+                        <span class="freq">0 Hz</span>
+                        <span class="freq">125 Hz</span>
+                        <span class="freq">250 Hz</span>
+                        <span class="freq">375 Hz</span>
+                        <span class="freq">500 Hz</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="screen-hint">Screen 7 — Spectrum Monitor | Press 1-7 to navigate</div>
+        </div>
+    </div>
+
+</div><!-- end viewport-container -->
 
 <script src="vendor/anime.min.js"></script>
 <script src="vendor/three.min.js"></script>

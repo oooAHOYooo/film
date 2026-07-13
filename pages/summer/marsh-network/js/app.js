@@ -22,6 +22,7 @@ const NODES = [
     { id: 'NODE 08', x: 300, y: 555, kind: 'hydrophone', fw: '4.7.2', installed: '2023-03-19', note: 'boardwalk cable run, packet loss in rain' },
 ];
 const HOUSE = { x: 452, y: 468 };
+const MARSH_MARK = { x: 252, y: 312 };   // predicted source — deep in the marsh body
 const SOUND_MS = 343 / 1000;              // metres per millisecond
 const MAP_M_PER_UNIT = 100 / 60;          // scale bar: 60 units = 100 m
 
@@ -39,6 +40,11 @@ const state = {
     history: [],               // captured signal events
     selected: null,
     t0: performance.now(),
+    screenMode: 1,             // 1=normal, 2=fullscreen calm, 3=creature appears, 4=golden corruption, 5=breakdown
+    corruption: 0,             // 0..1 corruption intensity
+    zoom: 1,
+    panX: 0,
+    panY: 0,
 };
 
 const AMBIENT = [
@@ -103,7 +109,7 @@ setInterval(() => {
     const d = now();
     document.getElementById('clock-time').textContent = `${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
     document.getElementById('clock-date').textContent =
-        `${DAYS[d.getDay()]} ${pad(d.getDate())} ${MONTHS[d.getMonth()]} — LOCAL EDT — GPS DISCIPLINED`;
+        `${DAYS[d.getDay()]} ${pad(d.getDate())} ${MONTHS[d.getMonth()]} — EDT · GPS`;
 }, 250);
 
 /* =========================================================================
@@ -273,19 +279,30 @@ setInterval(() => {
    WAVEFORM & SPECTROGRAM
    ========================================================================= */
 const wf = document.getElementById('waveform');
-const wfCtx = wf.getContext('2d');
+const wfCtx = wf ? wf.getContext('2d') : null;
 const sp = document.getElementById('spectrogram');
-const spCtx = sp.getContext('2d');
+const spCtx = sp ? sp.getContext('2d') : null;
 
 function sizeCanvas(c) {
+    if (!c) return;
     const r = c.getBoundingClientRect();
     if (c.width !== Math.floor(r.width) || c.height !== Math.floor(r.height)) {
         c.width = Math.floor(r.width); c.height = Math.floor(r.height);
     }
 }
-window.addEventListener('resize', () => { sizeCanvas(wf); sizeCanvas(sp); });
+
+function sizeAllCanvases() {
+    sizeCanvas(wf);
+    sizeCanvas(sp);
+    sizeCanvas(document.getElementById('waveform-nb'));
+    sizeCanvas(document.getElementById('waveform-bb'));
+    sizeCanvas(document.getElementById('waveform-anomaly'));
+}
+
+window.addEventListener('resize', sizeAllCanvases);
 
 let phase = 0;
+
 function sampleSignal(t) {
     // composite of ambient marsh sound; scenario changes character
     let v = 0;
@@ -302,32 +319,108 @@ function sampleSignal(t) {
     return v;
 }
 
-function drawWaveform() {
-    sizeCanvas(wf);
-    const W = wf.width, H = wf.height, mid = H / 2;
-    wfCtx.fillStyle = '#0d120d';
-    wfCtx.fillRect(0, 0, W, H);
-    // graticule
-    wfCtx.strokeStyle = 'rgba(58,72,48,0.35)';
-    wfCtx.lineWidth = 1;
-    wfCtx.beginPath();
-    for (let gx = 0; gx < W; gx += 60) { wfCtx.moveTo(gx, 0); wfCtx.lineTo(gx, H); }
-    for (let gy = 0; gy < H; gy += 24) { wfCtx.moveTo(0, gy); wfCtx.lineTo(W, gy); }
-    wfCtx.stroke();
-    wfCtx.strokeStyle = 'rgba(143,166,113,0.25)';
-    wfCtx.beginPath(); wfCtx.moveTo(0, mid); wfCtx.lineTo(W, mid); wfCtx.stroke();
+let waveformGlows = { narrowband: 0, broadband: 0, anomaly: 0 };
 
-    wfCtx.strokeStyle = state.unknownActive ? '#d9a441' : '#9db07c';
-    wfCtx.lineWidth = 1.3;
-    wfCtx.beginPath();
-    for (let x = 0; x < W; x++) {
-        const t = phase + x * 0.045;
-        const v = sampleSignal(t);
-        const y = mid - v * mid * 0.85;
-        x === 0 ? wfCtx.moveTo(x, y) : wfCtx.lineTo(x, y);
+// Initialize anime.js animations for waveform glows
+if (window.anime) {
+    anime.timeline({ loop: true })
+        .add({
+            targets: waveformGlows,
+            narrowband: [0, 1],
+            duration: 2000,
+            easing: 'easeInOutSine'
+        }, 0)
+        .add({
+            targets: waveformGlows,
+            broadband: [0, 1],
+            duration: 2400,
+            easing: 'easeInOutSine'
+        }, 0)
+        .add({
+            targets: waveformGlows,
+            anomaly: [0, 1],
+            duration: 1800,
+            easing: 'easeInOutSine'
+        }, 0);
+}
+
+function drawWaveformType(canvasId, type, phase) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height, mid = H / 2;
+
+    ctx.fillStyle = '#0d120d';
+    ctx.fillRect(0, 0, W, H);
+
+    // instrument graticule — same moss green everywhere
+    const glowIntensity = waveformGlows[type] || 0;
+    ctx.strokeStyle = 'rgba(143, 166, 113, 0.10)';
+    ctx.lineWidth = 0.5;
+    for (let gx = 0; gx < W; gx += 50) {
+        ctx.beginPath(); ctx.moveTo(gx, 0); ctx.lineTo(gx, H); ctx.stroke();
     }
-    wfCtx.stroke();
-    phase += 0.28;
+    for (let gy = 0; gy < H; gy += H / 4) {
+        ctx.beginPath(); ctx.moveTo(0, gy); ctx.lineTo(W, gy); ctx.stroke();
+    }
+    ctx.strokeStyle = 'rgba(143, 166, 113, 0.18)';
+    ctx.beginPath(); ctx.moveTo(0, mid); ctx.lineTo(W, mid); ctx.stroke();
+
+    // fixed channel colors (match .trace-key legend in the panel labels)
+    const TRACE = {
+        narrowband: '#5fb8a8',
+        broadband:  '#b07f9e',
+        anomaly:    state.unknownActive ? '#d9a441' : '#9a8fc0',
+    };
+
+    ctx.lineWidth = 1.2 + glowIntensity * 0.3;
+    ctx.strokeStyle = TRACE[type] || '#8fa671';
+    ctx.beginPath();
+
+    for (let x = 0; x < W; x++) {
+        let v = 0;
+        const t = phase + x * 0.04;
+
+        if (type === 'narrowband') {
+            v = Math.sin(t * 2.62) * 0.6;
+            v += Math.random() * 0.08;
+        } else if (type === 'broadband') {
+            v += Math.sin(t * 0.9) * 0.25;
+            v += Math.sin(t * 4.1) * 0.1;
+            v += Math.sin(t * 7.3) * 0.08;
+            v += (Math.random() - 0.5) * 0.35;
+        } else if (type === 'anomaly') {
+            const envelope = 0.6 + 0.4 * Math.sin(t * 0.3);
+            v = Math.sin(t * 2.62) * 0.5 * envelope;
+            v += Math.sin(t * 5.24) * 0.15 * envelope;
+            v += (Math.random() - 0.5) * 0.25;
+            v += Math.sin(t * 1.4) * 0.1;
+        }
+
+        const y = mid - v * mid * 0.75;
+        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // faint phosphor glow in the trace's own color
+    if (glowIntensity > 0.2) {
+        ctx.globalAlpha = glowIntensity * 0.18;
+        ctx.lineWidth = 3 + glowIntensity * 1.5;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.stroke();
+        ctx.globalAlpha = 1;
+    }
+}
+
+function drawWaveform() {
+    phase += 0.02;  // Very slow, deliberate waveform scroll
+
+    // Draw three different signal types
+    drawWaveformType('waveform-nb', 'narrowband', phase);
+    drawWaveformType('waveform-bb', 'broadband', phase);
+    drawWaveformType('waveform-anomaly', 'anomaly', phase);
 }
 
 function spectroColor(v) {
@@ -366,6 +459,7 @@ let frame = 0;
 function loop() {
     frame++;
     if (!state.lowPower || frame % 2 === 0) {
+        sizeAllCanvases();
         drawWaveform();
         if (frame % 2 === 0) drawSpectrogram();
     }
@@ -476,6 +570,595 @@ MFN.closeInspector = function () {
     document.getElementById('inspector').style.display = 'none';
     document.querySelectorAll('.hist-chip.selected').forEach(c => c.classList.remove('selected'));
 };
+
+/* =========================================================================
+   CINEMATIC SCREENS (keyboard 1–5) — Viewport System
+   ========================================================================= */
+let corruptionTimer = null;
+const screenMaps = {};
+
+function initializeScreen(screenNum) {
+    const screenId = `screen${screenNum}`;
+    const mapId = `marsh-map-${screenNum}`;
+    const svg = document.getElementById(mapId);
+
+    if (!svg || svg.innerHTML) return; // Already initialized
+
+    // Clone the original map SVG content
+    svg.innerHTML = mapSvg.innerHTML;
+    screenMaps[screenNum] = svg;
+
+    // Only enable zoom/pan for fullscreen map screens (2, 3)
+    if (screenNum === 2 || screenNum === 3) {
+        enableZoomPan(svg);
+
+        // Initialize noise canvas
+        const noiseCanvas = document.getElementById(`map-noise-${screenNum}`);
+        if (noiseCanvas) {
+            const rect = svg.getBoundingClientRect();
+            noiseCanvas.width = rect.width;
+            noiseCanvas.height = rect.height;
+        }
+    }
+}
+
+function enableZoomPan(svg) {
+    let isPanning = false;
+    let startX, startY;
+    let zoom = 1, panX = 0, panY = 0;
+
+    svg.addEventListener('wheel', (e) => {
+        e.preventDefault();
+        const zoomFactor = e.deltaY > 0 ? 0.9 : 1.1;
+        zoom = Math.max(1, Math.min(8, zoom * zoomFactor));
+        applyTransform();
+    });
+
+    svg.addEventListener('mousedown', (e) => {
+        if (e.button === 0 && zoom > 1) {
+            isPanning = true;
+            startX = e.clientX - panX;
+            startY = e.clientY - panY;
+        }
+    });
+
+    svg.addEventListener('mousemove', (e) => {
+        if (isPanning) {
+            panX = e.clientX - startX;
+            panY = e.clientY - startY;
+            applyTransform();
+        }
+    });
+
+    svg.addEventListener('mouseup', () => { isPanning = false; });
+    svg.addEventListener('mouseleave', () => { isPanning = false; });
+
+    function applyTransform() {
+        const w = svg.clientWidth, h = svg.clientHeight;
+        svg.style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+        svg.style.transformOrigin = '0 0';
+    }
+}
+
+function updateMapColors(svg, color) {
+    const nodes = svg.querySelectorAll('[data-node] .dot');
+    nodes.forEach(dot => {
+        dot.setAttribute('stroke', color);
+    });
+}
+
+function corruptMap(svg, intensity) {
+    const nodes = svg.querySelectorAll('[data-node] .dot');
+    const pulses = svg.querySelectorAll('[data-node] .pulse');
+    const bg = svg.querySelector('rect:first-of-type');
+
+    // Much subtler corruption effect
+    if (bg) {
+        const r = Math.floor(19 + intensity * 40);
+        const g = Math.floor(26 + intensity * 30);
+        const b = Math.floor(16 + intensity * 20);
+        bg.setAttribute('fill', `rgb(${r}, ${g}, ${b})`);
+    }
+
+    nodes.forEach((dot, i) => {
+        // Smaller radius variation
+        const r = 4.2 + Math.random() * intensity * 1;
+        dot.setAttribute('r', r);
+        const golden = Math.floor(217 + intensity * 15);
+        const greenish = Math.floor(164 + intensity * 25);
+        const warm = Math.floor(65 + intensity * 30);
+        dot.setAttribute('stroke', `rgb(${golden}, ${greenish}, ${warm})`);
+    });
+
+    if (intensity > 0.2) {
+        pulses.forEach(pulse => {
+            pulse.setAttribute('opacity', Math.min(0.6, intensity * 0.8));
+            pulse.setAttribute('stroke', `rgb(${217 + intensity * 15}, ${164 + intensity * 25}, ${65 + intensity * 30})`);
+        });
+    }
+}
+
+function oscillateMap(svg, intensity) {
+    const nodes = svg.querySelectorAll('[data-node]');
+    nodes.forEach((g, i) => {
+        // Much subtler oscillation — reduced amplitude
+        const shake = intensity * Math.sin(performance.now() * 0.005 + i) * 1.5;
+        const shakeY = intensity * Math.cos(performance.now() * 0.007 + i) * 1.5;
+        const nodeData = NODES[i];
+        g.setAttribute('transform', `translate(${nodeData.x + shake} ${nodeData.y + shakeY})`);
+    });
+}
+
+function heatmapColor(intensity) {
+    // same instrument ramp as the screen-1 spectrogram:
+    // near-black green → moss → amber → cream
+    return spectroColor(Math.max(0, Math.min(1, intensity)));
+}
+
+function drawWaterfall(canvasId, audioPhase, intensity, isAlarm) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width, h = canvas.height;
+
+    // Scroll existing content up faster (more active)
+    ctx.drawImage(canvas, 0, 6, w, h - 6, 0, 0, w, h - 6);
+
+    // Draw new bottom line (most recent) — 6 pixels per frame for faster scroll
+    const bands = 500;
+    const pixelsPerHz = w / bands;
+
+    for (let i = 0; i < bands; i++) {
+        const freq = i; // Hz
+        let amp = 0;
+
+        // 41.8 Hz peak — stronger
+        const peak41 = Math.exp(-Math.pow(freq - 41.8, 2) / 18) * (0.7 + intensity * 0.5);
+        amp += peak41;
+
+        // Harmonics (if alarm mode) — much more active
+        if (isAlarm) {
+            for (let h = 2; h <= 8; h++) {
+                const harmFreq = 41.8 * h;
+                if (harmFreq < bands) {
+                    const harmamp = Math.exp(-Math.pow(freq - harmFreq, 2) / (16 + h * 3)) * (0.4 / h);
+                    amp += harmamp;
+
+                    // Add dynamic jitter to harmonics
+                    amp += Math.sin(audioPhase * (0.3 + h * 0.08) + i * 0.04) * 0.1 * intensity;
+                }
+            }
+        }
+
+        // WHITE NOISE — aggressive (simulating capturing everything)
+        const whiteNoise = Math.random() * (0.15 + intensity * 0.2);
+        amp += whiteNoise;
+
+        // Random interference bursts
+        if (Math.random() < 0.015 * intensity) {
+            amp += Math.random() * 0.25;
+        }
+
+        amp = Math.max(0, Math.min(1, amp));
+
+        const color = heatmapColor(amp);
+        ctx.fillStyle = color;
+        ctx.fillRect(i * pixelsPerHz, h - 6, pixelsPerHz, 6);
+    }
+
+    // Add subtle vertical scan line effect
+    if (Math.random() > 0.85) {
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.02)';
+        ctx.fillRect(Math.random() * w, h - 8, 1, 8);
+    }
+}
+
+function drawSpectrum(canvasId, audioPhase, intensity, isAlarm) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width, h = canvas.height;
+
+    ctx.fillStyle = 'rgba(13, 18, 13, 0.5)';
+    ctx.fillRect(0, 0, w, h);
+
+    // Grid lines
+    ctx.strokeStyle = 'rgba(143, 166, 113, 0.08)';
+    ctx.lineWidth = 1;
+    for (let f = 0; f <= 500; f += 50) {
+        const x = (f / 500) * w;
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, h);
+        ctx.stroke();
+    }
+
+    const bands = 512;
+    const barWidth = w / bands;
+
+    // Draw spectrum bars with MUCH more activity
+    for (let i = 0; i < bands; i++) {
+        const freq = (i / bands) * 500; // 0-500 Hz
+        let amp = 0;
+
+        // 41.8 Hz fundamental — stronger and more active
+        const gaussian41 = Math.exp(-Math.pow(freq - 41.8, 2) / 16);
+        amp += gaussian41 * (0.8 + intensity * 0.4);
+
+        // Harmonics (if alarm) — more pronounced
+        if (isAlarm) {
+            for (let h = 2; h <= 8; h++) {
+                const harmFreq = 41.8 * h;
+                if (harmFreq < 500) {
+                    const harmGaussian = Math.exp(-Math.pow(freq - harmFreq, 2) / (14 + h * 2));
+                    // Higher amplitude harmonics
+                    amp += harmGaussian * (0.5 / h) * intensity;
+
+                    // Add some shimmer/jitter to harmonics
+                    amp += Math.sin(audioPhase * (0.5 + h * 0.1) + i * 0.05) * 0.08 * intensity;
+                }
+            }
+        }
+
+        // WHITE NOISE — much more aggressive
+        const whiteNoise = Math.random() * (0.12 + intensity * 0.18);
+        amp += whiteNoise;
+
+        // Occasional activity spikes (interference artifacts)
+        if (Math.random() < 0.02 * intensity) {
+            amp += Math.random() * 0.3;
+        }
+
+        amp = Math.max(0, Math.min(1, amp));
+
+        const height = amp * h * 0.85;
+        // lift bars off the black end of the ramp so the noise floor stays readable
+        const color = heatmapColor(0.28 + amp * 0.72);
+
+        ctx.fillStyle = color;
+        ctx.fillRect(i * barWidth, h - height, barWidth - 0.5, height);
+
+        // Add some visible grain/noise texture on top
+        if (Math.random() > 0.92) {
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.03)';
+            ctx.fillRect(i * barWidth, 0, barWidth, h);
+        }
+    }
+
+    // Peak frequency marker for fundamental
+    const peakX = (41.8 / 500) * w;
+    ctx.strokeStyle = 'rgba(143, 166, 113, 0.3)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([2, 2]);
+    ctx.beginPath();
+    ctx.moveTo(peakX, 0);
+    ctx.lineTo(peakX, h);
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Add horizontal scan lines for texture (very subtle)
+    ctx.strokeStyle = 'rgba(255, 255, 255, 0.01)';
+    ctx.lineWidth = 1;
+    for (let y = 0; y < h; y += 4) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(w, y);
+        ctx.stroke();
+    }
+}
+
+function drawMapNoise(canvasId, intensity) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width, h = canvas.height;
+    const imageData = ctx.createImageData(w, h);
+    const data = imageData.data;
+
+    for (let i = 0; i < data.length; i += 4) {
+        const noise = Math.random() * (30 + intensity * 40);
+        data[i] = noise;       // R
+        data[i + 1] = noise;   // G
+        data[i + 2] = noise;   // B
+        data[i + 3] = Math.max(8, 15 * intensity); // A - very subtle
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+}
+
+function drawNodeTacticalDisplay(nodeIdx, phase) {
+    const canvas = document.getElementById(`node-display-${nodeIdx}`);
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width, h = canvas.height;
+    const mid = h / 2;
+
+    // Clear
+    ctx.fillStyle = '#0d120d';
+    ctx.fillRect(0, 0, w, h);
+
+    // Grid
+    ctx.strokeStyle = 'rgba(143, 166, 113, 0.10)';
+    ctx.lineWidth = 0.5;
+    for (let i = 0; i <= 4; i++) {
+        const y = (i / 4) * h;
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(w, y);
+        ctx.stroke();
+    }
+
+    // Waveform - tactical style
+    ctx.strokeStyle = '#8fa671';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    for (let x = 0; x < w; x++) {
+        const t = phase + x * 0.05 + nodeIdx;
+        const v1 = Math.sin(t * 2.62) * 0.3;  // 41.8 Hz harmonic
+        const v2 = Math.sin(t * 0.9) * 0.15;  // ambient
+        const v3 = Math.random() * 0.08;      // noise
+
+        const y = mid - (v1 + v2 + v3) * mid * 0.7;
+        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+
+    // Center line
+    ctx.strokeStyle = 'rgba(143, 166, 113, 0.18)';
+    ctx.lineWidth = 0.5;
+    ctx.beginPath();
+    ctx.moveTo(0, mid);
+    ctx.lineTo(w, mid);
+    ctx.stroke();
+
+    // Peak indicators
+    ctx.fillStyle = 'rgba(217, 164, 65, 0.35)';
+    const peakX = (w / 2);
+    ctx.fillRect(peakX - 2, mid - 12, 4, 24);
+}
+
+function updateNodeTacticalData(nodeIdx) {
+    const n = NODES[nodeIdx];
+    const sigEl = document.getElementById(`sig-${nodeIdx}`);
+    const freqEl = document.getElementById(`freq-${nodeIdx}`);
+
+    if (sigEl) sigEl.textContent = `${(-60 + Math.random() * 20).toFixed(1)} dB`;
+    if (freqEl) freqEl.textContent = `${(41.8 + Math.random() * 0.1).toFixed(1)} Hz`;
+}
+
+function drawTacticalScanlines() {
+    const canvas = document.getElementById('tactical-scanlines');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width, h = canvas.height;
+
+    ctx.fillStyle = 'rgba(0, 0, 0, 0)';
+    ctx.fillRect(0, 0, w, h);
+
+    // Scanlines
+    ctx.strokeStyle = 'rgba(143, 166, 113, 0.03)';
+    ctx.lineWidth = 1;
+    for (let y = 0; y < h; y += 2) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(w, y);
+        ctx.stroke();
+    }
+}
+
+/* ---- tactical map overlay (screens 2 & 3) --------------------------------
+   Drawn INSIDE the cloned map svg so it pans/zooms with the map.
+   Static layer: WGS-84 graticule, node coordinates, baselines with ranges,
+   overlapping detection rings. Dynamic layer: propagation sweeps and, on
+   screen 3, triangulation bearings converging on the source.              */
+
+function mapLatLon(x, y) {
+    const lat = 41.2662 - (y / 640) * 0.0090;
+    const lon = -72.8235 + (x / 600) * 0.0119;
+    return { lat, lon, s: `${lat.toFixed(4)}°N ${Math.abs(lon).toFixed(4)}°W` };
+}
+
+function ensureTacticalOverlay(svg, screenNum) {
+    if (!svg || svg.querySelector('.ovl-static')) return;
+    let h = '';
+
+    // graticule — minor every 50 u, labeled major every 100 u
+    for (let gx = 0; gx <= 600; gx += 50) {
+        const major = gx % 100 === 0;
+        h += `<line x1="${gx}" y1="0" x2="${gx}" y2="640" stroke="#8fa671" stroke-opacity="${major ? 0.10 : 0.05}" stroke-width="0.5"/>`;
+        if (major && gx > 0 && gx < 600) {
+            const lon = Math.abs(-72.8235 + (gx / 600) * 0.0119).toFixed(4);
+            h += `<text x="${gx + 2}" y="9" font-size="5.5" font-family="monospace" fill="#6d7a58" fill-opacity="0.8">${lon}°W</text>`;
+        }
+    }
+    for (let gy = 0; gy <= 640; gy += 50) {
+        const major = gy % 100 === 0;
+        h += `<line x1="0" y1="${gy}" x2="600" y2="${gy}" stroke="#8fa671" stroke-opacity="${major ? 0.10 : 0.05}" stroke-width="0.5"/>`;
+        if (major && gy > 0 && gy < 640) {
+            const lat = (41.2662 - (gy / 640) * 0.0090).toFixed(4);
+            h += `<text x="2" y="${gy - 2}" font-size="5.5" font-family="monospace" fill="#6d7a58" fill-opacity="0.8">${lat}°N</text>`;
+        }
+    }
+    h += `<text x="598" y="636" text-anchor="end" font-size="6" font-family="monospace" fill="#6d7a58">DATUM WGS-84 · GRID 83 m · TDOA BASELINES ACTIVE</text>`;
+
+    // inter-node baselines with range labels
+    for (let i = 0; i < NODES.length; i++) {
+        for (let j = i + 1; j < NODES.length; j++) {
+            const a = NODES[i], b = NODES[j];
+            const d = Math.hypot(b.x - a.x, b.y - a.y);
+            if (d < 190) {
+                const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+                h += `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke="#8fa671" stroke-opacity="0.22" stroke-width="0.6" stroke-dasharray="2 3"/>`;
+                h += `<text x="${mx + 3}" y="${my - 2}" font-size="5.5" font-family="monospace" fill="#8fa671" fill-opacity="0.55">${(d * MAP_M_PER_UNIT).toFixed(0)} m</text>`;
+            }
+        }
+    }
+
+    // detection-range rings — overlapping coverage (the venn effect)
+    NODES.forEach(n => {
+        h += `<circle cx="${n.x}" cy="${n.y}" r="52" fill="#8fa671" fill-opacity="0.020" stroke="#8fa671" stroke-opacity="0.14" stroke-width="0.6"/>`;
+        h += `<circle cx="${n.x}" cy="${n.y}" r="86" fill="none" stroke="#8fa671" stroke-opacity="0.07" stroke-width="0.5" stroke-dasharray="1 3"/>`;
+        const c = mapLatLon(n.x, n.y);
+        h += `<text x="${n.x + 8}" y="${n.y + 10}" font-size="5" font-family="monospace" fill="#6d7a58" fill-opacity="0.9">${c.s}</text>`;
+    });
+
+    const gs = document.createElementNS(svgNS, 'g');
+    gs.setAttribute('class', 'ovl-static');
+    gs.innerHTML = h;
+    svg.appendChild(gs);
+
+    const gd = document.createElementNS(svgNS, 'g');
+    gd.setAttribute('class', 'ovl-dyn');
+    svg.appendChild(gd);
+}
+
+function updateTacticalOverlay(svg, screenNum, phase, intensity) {
+    const dyn = svg && svg.querySelector('.ovl-dyn');
+    if (!dyn) return;
+    let h = '';
+
+    // propagation sweeps — expanding rings staggered across the array
+    NODES.forEach((n, i) => {
+        const k = (phase * 0.25 + i / NODES.length) % 1;
+        const r = 8 + k * 80;
+        const op = (1 - k) * (0.20 + intensity * 0.25);
+        h += `<circle cx="${n.x}" cy="${n.y}" r="${r.toFixed(1)}" fill="none" stroke="#8fa671" stroke-opacity="${op.toFixed(3)}" stroke-width="0.8"/>`;
+    });
+
+    if (screenNum === 3) {
+        // prediction: amber bearings from every node converging on a mark
+        // deep in the marsh body
+        const M = MARSH_MARK;
+        const dash = ((phase * 20) % 8).toFixed(1);
+        NODES.forEach(n => {
+            const brg = (Math.atan2(M.x - n.x, -(M.y - n.y)) * 180 / Math.PI + 360) % 360;
+            const mx = n.x + (M.x - n.x) * 0.55, my = n.y + (M.y - n.y) * 0.55;
+            h += `<line x1="${n.x}" y1="${n.y}" x2="${M.x}" y2="${M.y}" stroke="#d9a441" stroke-opacity="${(0.25 + intensity * 0.5).toFixed(2)}" stroke-width="0.8" stroke-dasharray="5 3" stroke-dashoffset="-${dash}"/>`;
+            h += `<text x="${mx + 3}" y="${my - 3}" font-size="5.5" font-family="monospace" fill="#d9a441" fill-opacity="0.75">BRG ${brg.toFixed(1)}°</text>`;
+        });
+        // predicted-position mark: pulsing rings + crosshair, flagged PREDICTED
+        const c = mapLatLon(M.x, M.y);
+        const pr = 14 + Math.sin(phase * 3) * 3;
+        h += `<circle cx="${M.x}" cy="${M.y}" r="${pr.toFixed(1)}" fill="none" stroke="#d9a441" stroke-opacity="0.85" stroke-width="1"/>`;
+        h += `<circle cx="${M.x}" cy="${M.y}" r="30" fill="none" stroke="#d9a441" stroke-opacity="0.35" stroke-width="0.6" stroke-dasharray="2 3"/>`;
+        h += `<line x1="${M.x - 24}" y1="${M.y}" x2="${M.x + 24}" y2="${M.y}" stroke="#d9a441" stroke-opacity="0.6" stroke-width="0.6"/>`;
+        h += `<line x1="${M.x}" y1="${M.y - 24}" x2="${M.x}" y2="${M.y + 24}" stroke="#d9a441" stroke-opacity="0.6" stroke-width="0.6"/>`;
+        h += `<text x="${M.x}" y="${M.y - 34}" text-anchor="middle" font-size="7" font-family="monospace" fill="#d9a441" letter-spacing="2">PREDICTED</text>`;
+        const bx = M.x - 170, by = M.y - 92;
+        h += `<line x1="${M.x - 16}" y1="${M.y - 16}" x2="${bx + 126}" y2="${by + 34}" stroke="#8a6a2f" stroke-width="0.6"/>`;
+        h += `<g font-family="monospace" font-size="6" fill="#d9a441">
+                <rect x="${bx}" y="${by}" width="126" height="38" fill="#0d120d" fill-opacity="0.85" stroke="#8a6a2f" stroke-width="0.6"/>
+                <text x="${bx + 5}" y="${by + 9}">PREDICTED FIX ${c.s}</text>
+                <text x="${bx + 5}" y="${by + 17}" fill="#e8dfc8" fill-opacity="0.8">BEARING INTERSECT · 8/8 NODES</text>
+                <text x="${bx + 5}" y="${by + 25}" fill="#e8dfc8" fill-opacity="0.6">EST. ERROR ELLIPSE 4.6 × 2.1 m</text>
+                <text x="${bx + 5}" y="${by + 33}" fill="#e8dfc8" fill-opacity="0.6">41.8 Hz · CONF ${(88 + intensity * 10).toFixed(1)}% · TRACKING</text>
+              </g>`;
+    }
+
+    dyn.innerHTML = h;
+}
+
+function showScreen(screenNum) {
+    // Hide all screens
+    document.querySelectorAll('.viewport').forEach(v => v.classList.remove('active'));
+
+    // Clear any running corruption
+    if (corruptionTimer) clearInterval(corruptionTimer);
+    state.corruption = 0;
+
+    // Initialize and show target screen
+    const screen = document.getElementById(`screen${screenNum}`);
+    screen.classList.add('active');
+    state.screenMode = screenNum;
+
+    if (screenNum === 1) {
+        // Normal view - no special effects
+        return;
+    }
+
+    if (screenNum === 2) {
+        // Calm fullscreen - lighter green, with subtle noise and connections
+        initializeScreen(screenNum);
+        const svg = screenMaps[screenNum];
+        updateMapColors(svg, '#a4c684');
+        ensureTacticalOverlay(svg, 2);
+
+        let noisePhase = 0;
+        corruptionTimer = setInterval(() => {
+            noisePhase += 0.1;
+            drawMapNoise('map-noise-2', 0.3);
+            updateTacticalOverlay(svg, 2, noisePhase, 0.4);
+        }, 100);
+    } else if (screenNum === 3) {
+        // Creature appears - subtle golden corruption + node interactions
+        initializeScreen(screenNum);
+        const svg = screenMaps[screenNum];
+        ensureTacticalOverlay(svg, 3);
+        state.corruption = 0;
+        let interactionIntensity = 0;
+        let ovlPhase = 0;
+
+        corruptionTimer = setInterval(() => {
+            state.corruption = Math.min(0.4, state.corruption + 0.04);
+            interactionIntensity = Math.sin(performance.now() * 0.003) * 0.5 + 0.5;
+            ovlPhase += 0.08;
+
+            corruptMap(svg, state.corruption);
+            oscillateMap(svg, state.corruption * 0.15);
+            drawMapNoise('map-noise-3', state.corruption * 0.5);
+            updateTacticalOverlay(svg, 3, ovlPhase, state.corruption * 0.8 + interactionIntensity * 0.3);
+        }, 80);
+    } else if (screenNum === 4) {
+        // Professional SETI screen - The Hum Detected
+        let audioPhase = 0;
+        corruptionTimer = setInterval(() => {
+            audioPhase += 0.15;
+            drawWaterfall('waterfall-4', audioPhase, 0.5, false);
+            drawSpectrum('spectrum-4', audioPhase, 0.5, false);
+        }, 80);
+    } else if (screenNum === 5) {
+        // Professional SETI screen - The Hum Intensifies with Harmonics & WHITE NOISE
+        let audioPhase = 0;
+        corruptionTimer = setInterval(() => {
+            audioPhase += 0.35;
+            drawWaterfall('waterfall-5', audioPhase, 0.9, true);
+            drawSpectrum('spectrum-5', audioPhase, 0.9, true);
+        }, 50);
+    } else if (screenNum === 7) {
+        // Dedicated wideband spectrum monitor — reflects current array state:
+        // calm noise floor normally, harmonic stack when the signal is active
+        const wcan = document.getElementById('waterfall-7');
+        const scan = document.getElementById('spectrum-7');
+        setTimeout(() => { sizeCanvas(wcan); sizeCanvas(scan); }, 650); // after slide transition
+        let audioPhase = 0;
+        corruptionTimer = setInterval(() => {
+            audioPhase += 0.2;
+            const alarm = state.unknownActive;
+            drawWaterfall('waterfall-7', audioPhase, alarm ? 0.9 : 0.5, alarm);
+            drawSpectrum('spectrum-7', audioPhase, alarm ? 0.9 : 0.5, alarm);
+        }, 60);
+    } else if (screenNum === 6) {
+        // Tactical array matrix - Independence Day style
+        let tacticalPhase = 0;
+        corruptionTimer = setInterval(() => {
+            tacticalPhase += 0.15;
+
+            // Update each node display
+            for (let i = 0; i < 8; i++) {
+                drawNodeTacticalDisplay(i, tacticalPhase);
+                updateNodeTacticalData(i);
+            }
+
+            // Draw scanlines
+            drawTacticalScanlines();
+        }, 80);
+    }
+}
 
 /* =========================================================================
    SCENARIOS (keyboard 0–9)
@@ -710,14 +1393,41 @@ const SCENARIOS = {
     },
 };
 
+/* keys: 1–7 screens · letters + 8/9/0 drive scenarios on screen 1 */
+const SCENARIO_KEYS = { a: 2, u: 3, f: 4, r: 5, c: 6, t: 7 };
+
+function runScenario(num) {
+    if (state.screenMode > 1) showScreen(1);
+    SCENARIOS[num]();
+}
+
 document.addEventListener('keydown', e => {
-    if (e.key >= '0' && e.key <= '9') SCENARIOS[+e.key]();
-    if (e.key === 'l' || e.key === 'L') {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;  // don't hijack browser shortcuts
+    const k = e.key.toLowerCase();
+    // Screen navigation (1-7)
+    if (e.key >= '1' && e.key <= '7') {
+        showScreen(+e.key);
+    }
+    // Scenarios: 8 storm · 9 history · 0 reset
+    else if (e.key === '8' || e.key === '9' || e.key === '0') {
+        runScenario(+e.key);
+    }
+    // Scenarios: A activity · U unknown · F net fail · R restore · C compare · T triangulate
+    else if (SCENARIO_KEYS[k]) {
+        runScenario(SCENARIO_KEYS[k]);
+    }
+    else if (e.key === 'l' || e.key === 'L') {
         state.lowPower = !state.lowPower;
         document.getElementById('particle-layer').style.display = state.lowPower ? 'none' : 'block';
         log('SYSTEM', `Low Power Mode ${state.lowPower ? 'ENABLED' : 'DISABLED'}`, 'system');
     }
-    if (e.key === 'Escape') MFN.closeInspector();
+    else if (e.key === 'Escape') {
+        if (state.screenMode > 1) {
+            showScreen(1);
+        } else {
+            MFN.closeInspector();
+        }
+    }
 });
 
 /* =========================================================================
@@ -763,6 +1473,10 @@ document.addEventListener('keydown', e => {
 /* =========================================================================
    BOOT
    ========================================================================= */
+// Initialize viewport system
+document.getElementById('screen1').classList.add('active');
+state.screenMode = 1;
+
 renderNodes();
 loop();
 
@@ -770,6 +1484,7 @@ log('SYSTEM', 'MAKAYLA FIELD NETWORK v4.7.2 — cold start', 'system');
 log('SYSTEM', 'Loading array manifest · 8 nodes · 2 trail cameras · 1 tide gauge', 'system');
 log('SYSTEM', 'GPS discipline acquired · holdover cleared', 'system');
 log('ARRAY', 'Passive monitoring active. Research continues.', 'notable');
+log('SYSTEM', 'Screens 1–7 · scenarios A/U/F/R/C/T · 8 storm · 9 history · 0 reset', 'system');
 
 setInterval(() => { if (!state.netFail) pick(IDLE_LOGS)(); }, 1900);
 setInterval(() => {
