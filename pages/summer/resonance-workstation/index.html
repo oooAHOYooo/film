@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RESONANCE WORKSTATION — Branford Acoustic Study</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="crt-overlay"></div>
+<div id="bloom-overlay"></div>
+
+<div id="app">
+
+  <!-- ============ HEADER ============ -->
+  <header id="topbar">
+    <div class="tb-left">
+      <div class="app-title">RESONANCE&nbsp;WORKSTATION</div>
+      <div class="app-sub">FIELD RECORDING / SIGNAL COMPARISON / LIVE SUBJECT OBSERVATION</div>
+    </div>
+    <div class="tb-center">
+      <div id="session-label" class="session-label">SESSION: MARSH RECORDING REVIEW</div>
+      <div id="session-file" class="session-file">BRANFORD_EDGE_0714_1942.wav</div>
+    </div>
+    <div class="tb-right">
+      <div class="tb-meta">
+        <span class="proj-label">BRANFORD ACOUSTIC STUDY — D. VALE</span>
+        <span id="clock" class="mono">19:42:07</span>
+      </div>
+      <div class="tb-io">
+        <span id="input-source" class="io-chip">MIC 2 — ROOM</span>
+        <button id="mute-btn" class="ctl-btn" title="mute">SND</button>
+        <input id="master-vol" type="range" min="0" max="100" value="55" title="master volume">
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN GRID ============ -->
+  <main id="grid">
+
+    <!-- ---- LEFT: LIBRARY ---- -->
+    <section id="library" class="col">
+      <div class="col-head">
+        <span>RECORDING LIBRARY</span>
+        <span id="lib-count" class="dim mono">10 ITEMS</span>
+      </div>
+      <div id="lib-list"></div>
+      <div class="col-head log-head" id="log-toggle">
+        <span>OBSERVATION LOG</span>
+        <span class="dim" id="log-caret">▾</span>
+      </div>
+      <div id="obs-log"></div>
+      <div id="unsaved-note" class="unsaved-note hidden">unsaved note — First quiet night in months.</div>
+    </section>
+
+    <!-- ---- CENTER: WAVEFORM / SPECTROGRAM ---- -->
+    <section id="center" class="col">
+      <div id="wave-wrap">
+        <div id="wave-labels">
+          <span id="wave-mode-label">WAVEFORM — LINE MONITOR</span>
+          <span id="ab-label-l" class="ab-label hidden">A: BACKYARD_WEST.wav</span>
+          <span id="ab-label-r" class="ab-label hidden">B: MARSH_EDGE_NORTH.wav</span>
+        </div>
+        <canvas id="wave-canvas"></canvas>
+        <div id="amp-scale" class="mono">+1.0<br><br>0<br><br>−1.0</div>
+        <div id="marker-layer"></div>
+        <div id="overlay-msgs"></div>
+      </div>
+
+      <div id="spec-wrap">
+        <div id="spec-label">SPECTROGRAM — 0–2.0 kHz <span id="filter-readout" class="dim"></span></div>
+        <canvas id="spec-canvas"></canvas>
+        <div id="freq-scale" class="mono">2k<br>1k<br>500<br>250<br>86<br>41.8</div>
+      </div>
+
+      <div id="transport">
+        <button class="ctl-btn" id="btn-play">▶ PLAY</button>
+        <button class="ctl-btn" id="btn-loop">LOOP</button>
+        <button class="ctl-btn" id="btn-ab">A/B</button>
+        <span class="t-group mono" id="timecode">00:00:00.000</span>
+        <span class="t-group">
+          <label>SPEED</label>
+          <select id="speed-sel" class="ctl-sel">
+            <option>0.5×</option><option selected>1.0×</option><option>2.0×</option>
+          </select>
+        </span>
+        <span class="t-group">
+          <label>NOISE ISO</label>
+          <input id="noise-iso" type="range" min="0" max="100" value="0">
+        </span>
+        <span class="t-group mono">
+          <label>FUND.</label><span id="fund-readout">— Hz</span>
+        </span>
+        <span class="t-group mono">
+          <label>HARM.</label><span id="harm-readout">—</span>
+        </span>
+        <span class="t-group" id="proc-msg"></span>
+      </div>
+
+      <!-- interval analysis (mode 3) -->
+      <div id="interval-panel" class="float-panel hidden">
+        <div class="fp-title">INTERVAL ANALYSIS</div>
+        <div class="fp-row mono"><span>MEAN INTERVAL</span><span id="mean-int">—</span></div>
+        <div class="fp-row mono"><span>VARIANCE</span><span id="var-int">—</span></div>
+        <div class="fp-row mono confidence"><span>PATTERN CONFIDENCE</span><span id="conf-int">—</span></div>
+      </div>
+
+      <!-- bearing diagram (mode 4) -->
+      <div id="bearing-panel" class="float-panel hidden">
+        <div class="fp-title">ROUGH BEARING — NOTEBOOK</div>
+        <canvas id="bearing-canvas" width="220" height="170"></canvas>
+        <div class="fp-row mono"><span>REL. SOURCE BEARING</span><span>247° ± 11°</span></div>
+        <div class="hand-note">same place as the dead grass?</div>
+      </div>
+
+      <!-- match panel (mode 5) -->
+      <div id="match-panel" class="float-panel hidden">
+        <div class="fp-title">CROSS-RECORDING MATCH</div>
+        <div class="fp-row mono"><span class="match-found">MATCH FOUND</span></div>
+        <div class="fp-row mono"><span>REFERENCE</span><span class="sierra-tint">SIERRA_FIELD_NOTE_17.wav</span></div>
+        <div class="hand-note">Why did she keep this?</div>
+      </div>
+
+      <!-- correlation counter (mode 8) -->
+      <div id="corr-panel" class="float-panel hidden">
+        <div class="fp-title">SUBJECT / OPERATOR CORRELATION</div>
+        <div id="corr-value" class="corr-value mono">—</div>
+      </div>
+
+      <!-- phase panel (mode 9) -->
+      <div id="phase-panel" class="float-panel hidden">
+        <div class="fp-title">RESPIRATORY PHASE DIFFERENCE</div>
+        <div id="phase-value" class="corr-value mono">—</div>
+        <div id="phase-coherence" class="fp-row mono hidden"><span>PHASE COHERENCE</span><span class="warm">STABLE</span></div>
+      </div>
+
+      <!-- morning longitudinal graph (mode 0) -->
+      <div id="night-panel" class="wide-panel hidden">
+        <div class="fp-title">OVERNIGHT TIMELINE — 22:35 → 06:17</div>
+        <canvas id="night-canvas" height="150"></canvas>
+        <div class="night-legend mono">
+          <span class="lg gold">SUBJ VOCAL</span>
+          <span class="lg gold-dim">SUBJ RESP</span>
+          <span class="lg cream">OPER RESP</span>
+          <span class="lg envgrey">ROOM NOISE</span>
+          <span class="lg env">EXT HUM</span>
+        </div>
+        <div class="fp-row mono"><span>VOCAL ACTIVITY PRECEDES OPERATOR RESPIRATION CHANGE</span></div>
+        <div class="fp-row mono"><span>MEDIAN OFFSET</span><span>3.2 s</span></div>
+        <div class="fp-row mono"><span>CORRELATION</span><span>0.91</span></div>
+      </div>
+
+      <!-- presence comparison (Q) -->
+      <div id="presence-panel" class="wide-panel hidden">
+        <div class="fp-title">OBSERVATION PERIOD COMPARISON</div>
+        <div class="pp-cols">
+          <div class="pp-col">
+            <div class="pp-head">DALLAS PRESENT</div>
+            <canvas class="pp-canvas" id="pp-left" height="90"></canvas>
+            <div class="fp-row mono"><span>SUBJ VARIANCE</span><span>0.14</span></div>
+            <div class="fp-row mono"><span>OPER VARIANCE</span><span>0.19</span></div>
+          </div>
+          <div class="pp-col">
+            <div class="pp-head">DALLAS ABSENT</div>
+            <canvas class="pp-canvas" id="pp-right" height="90"></canvas>
+            <div class="fp-row mono"><span>SUBJ VARIANCE</span><span>0.47</span></div>
+            <div class="fp-row mono"><span>OPER VARIANCE</span><span>0.52</span></div>
+          </div>
+        </div>
+        <div class="fp-row mono"><span>MUTUAL STATE VARIATION</span></div>
+        <div class="fp-row mono"><span>DIRECTIONAL CAUSALITY</span><span>INCONCLUSIVE</span></div>
+        <div class="hand-note">not one-way</div>
+      </div>
+
+      <!-- sierra three-trace panel (E) -->
+      <div id="sierra-panel" class="wide-panel hidden">
+        <div class="fp-title">ARCHIVE COMPARISON — TAPE TRANSFER</div>
+        <canvas id="sierra-canvas" height="140"></canvas>
+        <div class="night-legend mono">
+          <span class="lg sierra">ARCHIVE / SIERRA</span>
+          <span class="lg gold">SUBJECT A</span>
+          <span class="lg cream">OPERATOR</span>
+        </div>
+        <div class="fp-row mono hidden" id="ratio-row"><span>SHARED INTERVAL DETECTED</span><span>RATIO 3:2</span></div>
+      </div>
+    </section>
+
+    <!-- ---- RIGHT: OBSERVATION MODULES ---- -->
+    <section id="modules" class="col">
+
+      <div class="module" id="mod-signal">
+        <div class="mod-head">SIGNAL PROFILE</div>
+        <div class="mod-rows mono">
+          <div class="m-row"><span>FUNDAMENTAL</span><span id="sp-fund">—</span></div>
+          <div class="m-row"><span>HARMONIC RATIO</span><span id="sp-harm">—</span></div>
+          <div class="m-row"><span>PULSE INTERVAL</span><span id="sp-pulse">—</span></div>
+          <div class="m-row"><span>STABILITY</span><span id="sp-stab">—</span></div>
+          <div class="m-row"><span>NOISE FLOOR</span><span id="sp-noise">—</span></div>
+          <div class="m-row"><span>PHASE DRIFT</span><span id="sp-drift">—</span></div>
+          <div class="m-row"><span>REP. CONFIDENCE</span><span id="sp-conf">—</span></div>
+        </div>
+      </div>
+
+      <div class="module" id="mod-env">
+        <div class="mod-head">ENVIRONMENT</div>
+        <div class="mod-rows mono">
+          <div class="m-row"><span>ROOM TEMP</span><span id="env-temp">21.4 °C</span></div>
+          <div class="m-row"><span>HUMIDITY</span><span id="env-hum">63 %</span></div>
+          <div class="m-row"><span>AMB. SPL</span><span id="env-spl">38 dB</span></div>
+          <div class="m-row"><span>EM NOISE</span><span id="env-em">LOW</span></div>
+          <div class="m-row"><span>LIGHT</span><span id="env-light">DIM</span></div>
+          <div class="m-row"><span>MIC DIST.</span><span id="env-mic">1.2 m</span></div>
+        </div>
+      </div>
+
+      <div class="module dormant" id="mod-subject">
+        <div class="mod-head">SUBJECT A <span id="subj-feed-tag" class="dim hidden">MIC 1 — ENCLOSURE</span></div>
+        <canvas id="feed-canvas" height="64"></canvas>
+        <div class="mod-rows mono">
+          <div class="m-row"><span>RESP. EST.</span><span id="sa-resp">—</span></div>
+          <div class="m-row"><span>MOVEMENT</span><span id="sa-move">—</span></div>
+          <div class="m-row"><span>VOCALIZATION</span><span id="sa-vocal">—</span></div>
+          <div class="m-row"><span>LUMINOSITY EST.</span><span id="sa-lum">—</span></div>
+          <div class="m-row"><span>REST STATE</span><span id="sa-rest">—</span></div>
+          <div class="m-row"><span>STRESS VAR.</span><span id="sa-stress">—</span></div>
+        </div>
+      </div>
+
+      <div class="module" id="mod-operator">
+        <div class="mod-head">OPERATOR <span class="dim patched">homemade — v0.3</span></div>
+        <canvas id="breath-canvas" height="72"></canvas>
+        <div class="mod-rows mono">
+          <div class="m-row"><span>RESP. EST.</span><span id="op-resp">14.2 /min</span></div>
+          <div class="m-row"><span>PULSE SENSOR</span><span id="op-pulse">74 bpm</span></div>
+          <div class="m-row"><span>MOTION</span><span id="op-motion">ACTIVE</span></div>
+          <div class="m-row"><span>SESSION TIME</span><span id="op-session">00:00</span></div>
+          <div class="m-row"><span>BASELINE VAR.</span><span id="op-var">0.31</span></div>
+          <div class="m-row"><span>HEADPHONES</span><span id="op-phones">ACTIVE</span></div>
+        </div>
+      </div>
+
+      <div class="module" id="mod-status">
+        <div class="mod-head">STATUS</div>
+        <div class="mod-rows mono" id="status-lines">
+          <div class="m-row"><span id="st-line-1">MONITORING</span><span id="st-line-1v"></span></div>
+          <div class="m-row"><span id="st-line-2"></span><span id="st-line-2v"></span></div>
+          <div class="m-row"><span id="st-line-3"></span><span id="st-line-3v"></span></div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ============ FOOTER / KEY GUIDE ============ -->
+  <footer id="keyguide">
+    <span class="kg-group">S08: <b>1</b> raw <b>2</b> isolate <b>3</b> intervals <b>4</b> bearing <b>5</b> match</span>
+    <span class="kg-group">S11: <b>6</b> live <b>7</b> distress <b>8</b> approach <b>9</b> soothe</span>
+    <span class="kg-group">S12: <b>0</b> morning <b>Q</b> presence <b>W</b> playback <b>E</b> sierra <b>R</b> ext.hum <b>T</b> calm</span>
+    <span class="kg-group"><b>Y</b> reset <b>H</b> hide <b>F</b> fullscreen <b>L</b> low-pwr <b>Esc</b> close</span>
+  </footer>
+</div>
+
+<script src="vendor/anime.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
