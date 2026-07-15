@@ -389,6 +389,74 @@ function selectRecording(i) {
 }
 
 /* ============================================================
+   TAPE ARCHIVE — generated catalog of ~90 wav files with ordered
+   SKU-style catalog numbers. None are real; the list is seeded so
+   it is identical every time the prop loads.
+   ============================================================ */
+function buildArchive() {
+  // deterministic RNG
+  let s = 20260715;
+  const rng = () => (s = (s * 1664525 + 1013904223) >>> 0, s / 4294967296);
+  const pick = (arr) => arr[Math.floor(rng() * arr.length)];
+
+  const prefixes = ["FIELD", "MARSH", "EDGE", "ROOMTONE", "HYDRO", "CONTACT", "OSC", "NIGHT", "TIDE", "WIND", "INSECT", "LINE", "CAL"];
+  const suffixes = ["", "", "", "_A", "_B", "_RAW", "_TRIM", "_LP", "_DUP"];
+  const srcs = ["MIC 1", "MIC 2", "LINE IN", "AUX", "TAPE", "TAPE"];
+  const months = ["03", "04", "04", "05", "05", "06", "06", "07"];
+
+  const rows = [];
+  let sku = 118; // catalog numbers ascend with believable gaps
+  for (let i = 0; i < 92; i++) {
+    sku += 1 + Math.floor(rng() * 4);
+    const yr = sku < 260 ? "24" : sku < 410 ? "25" : "26";
+    const sierra = rng() < 0.08;
+    const mm = pick(months), dd = pad2(1 + Math.floor(rng() * 28));
+    rows.push({
+      sku: `BAS-${yr}-${String(sku).padStart(4, "0")}`,
+      name: (sierra ? "SIERRA_" + pick(["TAPE", "FIELD", "NOTE"]) : pick(prefixes)) +
+            "_" + String(Math.floor(rng() * 900) + 100).padStart(3, "0") + pick(suffixes) + ".wav",
+      dur: pad2(Math.floor(rng() * 34)) + ":" + pad2(Math.floor(rng() * 60)),
+      date: mm + "/" + dd,
+      src: sierra ? "TAPE" : pick(srcs),
+      sierra,
+      flagged: rng() < 0.12, // Dallas marked a handful for a second listen
+      seed: 200 + i * 7,
+    });
+  }
+
+  const list = $("archive-list");
+  list.innerHTML = "";
+  rows.forEach((r) => {
+    const row = document.createElement("div");
+    row.className = "arc-row" + (r.sierra ? " sierra" : "") + (r.flagged ? " flagged" : "");
+    row.innerHTML =
+      `<span class="arc-sku">${r.sku}</span><span class="arc-name">${r.name}</span>` +
+      `<span>${r.dur}</span><span>${r.date}</span><span>${r.src}</span><canvas></canvas>`;
+    row.addEventListener("click", () => {
+      uiClick();
+      toggleArchive(false);
+      processing(r.src === "TAPE" ? "LOADING TAPE TRANSFER" : "ALIGNING RECORDINGS",
+        rand(400, 1200), () => { $("session-file").textContent = r.name; });
+    });
+    list.appendChild(row);
+    drawMiniWave(row.querySelector("canvas"), r.seed, r.sierra);
+  });
+  $("archive-count").textContent = rows.length + " ITEMS · " + rows[0].sku + " → " + rows[rows.length - 1].sku;
+}
+
+function toggleArchive(open) {
+  const m = $("archive-modal");
+  const show = open != null ? open : m.classList.contains("hidden");
+  if (show) {
+    m.classList.remove("hidden");
+    anime({ targets: m.querySelector(".modal-window"), opacity: [0, 1], translateY: [12, 0], duration: 500, easing: "easeOutQuad" });
+    processing("CHECKING CLOCK SOURCE", 700);
+  } else {
+    m.classList.add("hidden");
+  }
+}
+
+/* ============================================================
    OBSERVATION LOG
    ============================================================ */
 let logSceneShown = 0;
@@ -1339,8 +1407,11 @@ document.addEventListener("keydown", (ev) => {
       document.body.classList.toggle("low-power", S.lowPower);
       sizeAll(); specColReset();
       break;
+    case "a":
+      toggleArchive();
+      break;
     case "escape":
-      hidePanels(); clearMsgs();
+      toggleArchive(false); hidePanels(); clearMsgs();
       break;
     case "d":
       if (ev.shiftKey) document.body.classList.toggle("debug"); // Shift+D: allow text selection
@@ -1406,7 +1477,10 @@ function loop(now) {
 function boot() {
   if (window.anime) anime.suspendWhenDocumentHidden = false; // prop must keep moving even if window visibility flickers
   buildLibrary();
+  buildArchive();
   buildLog();
+  $("archive-btn").addEventListener("click", () => { uiClick(); toggleArchive(); });
+  $("archive-close").addEventListener("click", () => { uiClick(); toggleArchive(false); });
   sizeAll();
   specColReset();
   MODES["1"]();
@@ -1416,6 +1490,8 @@ function boot() {
   const start = new URLSearchParams(location.search).get("start");
   if (start && MODES[start.toLowerCase()] && start !== "1") {
     setTimeout(() => MODES[start.toLowerCase()](), 400);
+  } else if (start === "a") {
+    setTimeout(() => toggleArchive(true), 400);
   }
   requestAnimationFrame(loop);
 }

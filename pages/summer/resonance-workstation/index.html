@@ -42,7 +42,7 @@
     <section id="library" class="col">
       <div class="col-head">
         <span>RECORDING LIBRARY</span>
-        <span id="lib-count" class="dim mono">10 ITEMS</span>
+        <span><button id="archive-btn" class="ctl-btn tiny">ARCHIVE</button>&nbsp;<span id="lib-count" class="dim mono">10 ITEMS</span></span>
       </div>
       <div id="lib-list"></div>
       <div class="col-head log-head" id="log-toggle">
@@ -251,12 +251,28 @@
     </section>
   </main>
 
+  <!-- ============ TAPE ARCHIVE MODAL ============ -->
+  <div id="archive-modal" class="modal hidden">
+    <div class="modal-window">
+      <div class="modal-head">
+        <span>TAPE ARCHIVE — BRANFORD ACOUSTIC STUDY</span>
+        <span class="dim mono" id="archive-count"></span>
+        <button id="archive-close" class="ctl-btn tiny">CLOSE</button>
+      </div>
+      <div class="archive-cols mono">
+        <span>CAT. NO.</span><span>FILE</span><span>DUR</span><span>DATE</span><span>SRC</span><span>WAVEFORM</span>
+      </div>
+      <div id="archive-list"></div>
+      <div class="modal-foot mono dim">SORTED BY CATALOG NUMBER — ASC · LOCAL DISK + TAPE TRANSFERS · NO INDEX REBUILD SINCE 06/02</div>
+    </div>
+  </div>
+
   <!-- ============ FOOTER / KEY GUIDE ============ -->
   <footer id="keyguide">
     <span class="kg-group">S08: <b>1</b> raw <b>2</b> isolate <b>3</b> intervals <b>4</b> bearing <b>5</b> match</span>
     <span class="kg-group">S11: <b>6</b> live <b>7</b> distress <b>8</b> approach <b>9</b> soothe</span>
     <span class="kg-group">S12: <b>0</b> morning <b>Q</b> presence <b>W</b> playback <b>E</b> sierra <b>R</b> ext.hum <b>T</b> calm</span>
-    <span class="kg-group"><b>Y</b> reset <b>H</b> hide <b>F</b> fullscreen <b>L</b> low-pwr <b>Esc</b> close</span>
+    <span class="kg-group"><b>A</b> archive <b>Y</b> reset <b>H</b> hide <b>F</b> fullscreen <b>L</b> low-pwr <b>Esc</b> close</span>
   </footer>
 </div>
 

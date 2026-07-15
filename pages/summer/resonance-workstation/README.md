@@ -36,6 +36,7 @@ Open `index.html` directly in Chrome or Safari. No server, no internet, no build
 | **E** | S12 — Sierra tonal comparison (three traces align; shared interval, ratio 3:2) |
 | **R** | S12 — external hum returns (synchronization breaks) |
 | **T** | Complete calm state (long cinematic insert / background coverage) |
+| **A** | Tape archive browser (~92 catalogued .wav files, ordered `BAS-YY-NNNN` numbers; click a row to "load" it) |
 | **Y** | Full reset to the S08 raw state |
 | **H** | Hide/show the keyboard guide strip |
 | **F** | Toggle fullscreen |
