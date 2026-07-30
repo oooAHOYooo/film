@@ -242,6 +242,38 @@ body.wave-zoom #wave-canvas {
 body.wave-zoom #spec-canvas {
   opacity: 0.82;
 }
+body.ghost-mode #library,
+body.ghost-mode #modules,
+body.ghost-mode #topbar,
+body.ghost-mode #transport,
+body.ghost-mode #wave-labels,
+body.ghost-mode #spec-label,
+body.ghost-mode #amp-scale,
+body.ghost-mode #freq-scale,
+body.ghost-mode #overlay-msgs,
+body.ghost-mode #marker-layer,
+body.ghost-mode .float-panel,
+body.ghost-mode .wide-panel {
+  display: none !important;
+}
+body.ghost-mode #grid {
+  grid-template-columns: 1fr;
+}
+body.ghost-mode #center {
+  grid-column: 1 / -1;
+}
+body.ghost-mode #wave-wrap {
+  flex: 1 1 72%;
+}
+body.ghost-mode #spec-wrap {
+  flex: 0 0 22%;
+}
+body.ghost-mode #wave-canvas {
+  filter: contrast(1.02) saturate(0.92);
+}
+body.ghost-mode #spec-canvas {
+  opacity: 0.7;
+}
 
 #app {
   display: flex; flex-direction: column;

@@ -813,6 +813,26 @@ function drawSpec(now) {
       sctx.fillRect(x, y, 1, step);
     }
   }
+
+  if (document.body.classList.contains("ghost-mode")) {
+    const gx = w * 0.56;
+    const gy = h * 0.63;
+    const pulse = 0.06 + 0.03 * Math.max(0, Math.sin(S.t * 0.8));
+    sctx.save();
+    sctx.globalCompositeOperation = "screen";
+    sctx.globalAlpha = 0.08 + pulse;
+    sctx.fillStyle = "rgba(232,224,205,0.9)";
+    sctx.beginPath();
+    sctx.arc(gx, gy, 1.8 + pulse * 5, 0, Math.PI * 2);
+    sctx.fill();
+    sctx.globalAlpha = 0.04 + pulse * 0.45;
+    sctx.strokeStyle = "rgba(216,180,106,0.9)";
+    sctx.lineWidth = 1;
+    sctx.beginPath();
+    sctx.arc(gx, gy, 10 + pulse * 26, 0, Math.PI * 2);
+    sctx.stroke();
+    sctx.restore();
+  }
 }
 
 /* ============================================================
@@ -1090,6 +1110,7 @@ function enterMode(m) {
   resetModeTimers();
   clearMsgs();
   hidePanels();
+  document.body.classList.remove("ghost-mode");
   S.mode = m;
   S.ab = false;
   $("btn-ab").classList.remove("active");
@@ -1202,16 +1223,17 @@ const MODES = {
 /* ---- 5 · S08 match found / hunch ---- */
 "5": function () {
   enterMode("5");
+  document.body.classList.add("ghost-mode");
+  hidePanels();
   S.tgt.humVisible = 1; S.tgt.hum = 0.6;
   processing("COMPARING RECORDINGS", 1400, () => {
     // brief second harmonic pulse + sierra overlay
     anime({ targets: S.tgt, sierra: 0.85, duration: 2600, easing: "easeInOutQuad" });
-    later(() => showPanel("match-panel"), 1800);
     later(() => {
       // settle: sierra trace fades most of the way back down
       anime({ targets: S.tgt, sierra: 0.3, calm: 0.3, duration: 6000, easing: "easeInOutQuad" });
     }, 9000);
-    setStatus([["MATCH", "FOUND", "hot"], ["REF", "SIERRA_17"], ["FILTER", "LP 86 Hz"]]);
+    setStatus([["WAVE", "ONLY", "hot"], ["NODE", "GHOST"], ["FILTER", "—"]]);
   });
   revealLog(1);
 },
