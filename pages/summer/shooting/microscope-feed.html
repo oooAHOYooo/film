@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Microscope Feed — Creatures in the Tall Grass</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #111923;
+      --panel-2: #162131;
+      --text: #f2f6fb;
+      --muted: #9fb1c4;
+      --line: #2a3644;
+      --accent: #7ef0c2;
+      --warn: #ffcf5c;
+      --danger: #ff7b7b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, rgba(126, 240, 194, 0.08), transparent 35%),
+        linear-gradient(180deg, #0b0f14 0%, #070a0f 100%);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .shell {
+      display: grid;
+      grid-template-columns: minmax(280px, 360px) 1fr;
+      gap: 16px;
+      min-height: 100vh;
+      padding: 16px;
+    }
+    .panel, .viewer {
+      border: 1px solid var(--line);
+      background: rgba(17, 25, 35, 0.94);
+      backdrop-filter: blur(10px);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+    .panel {
+      padding: 18px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.45rem;
+      line-height: 1.05;
+    }
+    p { color: var(--muted); line-height: 1.45; }
+    .status {
+      margin: 16px 0;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .status strong { color: var(--text); }
+    .status.warn { border-color: rgba(255, 207, 92, 0.35); color: #ffe6a6; }
+    .status.error { border-color: rgba(255, 123, 123, 0.35); color: #ffc2c2; }
+    label {
+      display: block;
+      margin: 14px 0 8px;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+    select, button {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      color: var(--text);
+      font: inherit;
+      padding: 12px 14px;
+    }
+    button {
+      margin-top: 10px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    button.primary {
+      background: linear-gradient(180deg, #7ef0c2, #53cf9d);
+      color: #082014;
+      border-color: transparent;
+    }
+    button.secondary {
+      background: transparent;
+    }
+    .small {
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+      color: var(--muted);
+    }
+    li { margin: 6px 0; }
+    .viewer {
+      position: relative;
+      display: grid;
+      place-items: center;
+      min-height: calc(100vh - 32px);
+      background:
+        radial-gradient(circle at center, rgba(126, 240, 194, 0.05), transparent 30%),
+        #06080c;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #000;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      border: 1px solid rgba(126, 240, 194, 0.12);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.03);
+    }
+    .badge {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: rgba(11, 15, 20, 0.8);
+      border: 1px solid rgba(126, 240, 194, 0.22);
+      color: var(--accent);
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .corner {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(11, 15, 20, 0.85);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: var(--muted);
+      font-size: 0.84rem;
+      max-width: 300px;
+    }
+    @media (max-width: 880px) {
+      .shell { grid-template-columns: 1fr; }
+      .viewer { min-height: 54vh; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="panel">
+      <h1>Microscope Feed</h1>
+      <p>Use this page to preview the Ipevo2 or any other capture device and feed it into OBS, a browser window, or a full-screen monitor for the creature setup.</p>
+
+      <div id="status" class="status warn">
+        <strong>Ready.</strong> This page needs a secure context. Run it from <code>http://localhost</code> or another local server, not from <code>file://</code>.
+      </div>
+
+      <label for="deviceSelect">Camera source</label>
+      <select id="deviceSelect" disabled>
+        <option>Loading cameras...</option>
+      </select>
+
+      <button id="startBtn" class="primary">Start camera</button>
+      <button id="stopBtn" class="secondary" disabled>Stop camera</button>
+
+      <label for="mirrorToggle">Preview</label>
+      <select id="mirrorToggle">
+        <option value="contain">Contain</option>
+        <option value="cover">Cover</option>
+      </select>
+
+      <p class="small">OBS setup options:</p>
+      <ul>
+        <li>Window Capture this page, or use Browser Source if you host it locally.</li>
+        <li>Select the Ipevo2 camera from the dropdown if multiple devices appear.</li>
+        <li>Use full-screen on the Linux box if you just need the microscope image on set.</li>
+      </ul>
+      <p class="small">If the camera looks inverted, flip it in OBS with a vertical or horizontal transform.</p>
+    </aside>
+
+    <main class="viewer">
+      <div class="badge">Creature microscope feed</div>
+      <video id="video" autoplay playsinline muted></video>
+      <div class="overlay"></div>
+      <div class="corner">Tip: once the feed is up, keep this page on the Linux machine and let OBS capture the window. That is usually simpler than trying to manage two video apps at once.</div>
+    </main>
+  </div>
+
+  <script>
+    const statusEl = document.getElementById('status');
+    const deviceSelect = document.getElementById('deviceSelect');
+    const startBtn = document.getElementById('startBtn');
+    const stopBtn = document.getElementById('stopBtn');
+    const video = document.getElementById('video');
+    const mirrorToggle = document.getElementById('mirrorToggle');
+    let stream = null;
+
+    function setStatus(message, kind = 'warn') {
+      statusEl.className = `status ${kind}`;
+      statusEl.innerHTML = message;
+    }
+
+    function applySizing() {
+      video.style.objectFit = mirrorToggle.value;
+    }
+
+    mirrorToggle.addEventListener('change', applySizing);
+    applySizing();
+
+    async function loadDevices() {
+      if (!navigator.mediaDevices?.enumerateDevices) {
+        setStatus('<strong>Camera unavailable.</strong> This browser does not expose media devices.', 'error');
+        return;
+      }
+
+      const devices = await navigator.mediaDevices.enumerateDevices();
+      const cameras = devices.filter((d) => d.kind === 'videoinput');
+      deviceSelect.innerHTML = '';
+
+      cameras.forEach((camera, index) => {
+        const option = document.createElement('option');
+        option.value = camera.deviceId;
+        option.textContent = camera.label || `Camera ${index + 1}`;
+        deviceSelect.appendChild(option);
+      });
+
+      deviceSelect.disabled = cameras.length === 0;
+      if (cameras.length === 0) {
+        deviceSelect.innerHTML = '<option>No cameras found</option>';
+        setStatus('<strong>No cameras found.</strong> Check the USB connection for the Ipevo2 and try refreshing.', 'error');
+      } else {
+        setStatus(`<strong>${cameras.length} camera(s) ready.</strong> Pick the Ipevo2 if it is not the default source.`, 'warn');
+      }
+    }
+
+    async function startCamera() {
+      if (!window.isSecureContext && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+        setStatus('<strong>Secure context required.</strong> Serve this page from localhost before starting the camera.', 'error');
+        return;
+      }
+
+      try {
+        if (stream) {
+          stream.getTracks().forEach((track) => track.stop());
+        }
+
+        const constraints = {
+          video: deviceSelect.value ? { deviceId: { exact: deviceSelect.value } } : true,
+          audio: false
+        };
+
+        stream = await navigator.mediaDevices.getUserMedia(constraints);
+        video.srcObject = stream;
+        stopBtn.disabled = false;
+        setStatus('<strong>Camera live.</strong> Keep this page open and let OBS capture the window if needed.', 'warn');
+      } catch (error) {
+        console.error(error);
+        setStatus(`<strong>Could not start camera.</strong> ${error.message || error}`, 'error');
+      }
+    }
+
+    function stopCamera() {
+      if (stream) {
+        stream.getTracks().forEach((track) => track.stop());
+        stream = null;
+      }
+      video.srcObject = null;
+      stopBtn.disabled = true;
+      setStatus('<strong>Camera stopped.</strong> You can restart it any time.', 'warn');
+    }
+
+    startBtn.addEventListener('click', startCamera);
+    stopBtn.addEventListener('click', stopCamera);
+
+    loadDevices().catch((error) => {
+      console.error(error);
+      setStatus(`<strong>Could not enumerate cameras.</strong> ${error.message || error}`, 'error');
+    });
+  </script>
+</body>
+</html>

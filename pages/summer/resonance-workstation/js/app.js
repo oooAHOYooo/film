@@ -1,5 +1,5 @@
 /* ============================================================
-   RESONANCE WORKSTATION — Creatures in the Tall Grass
+   RECORDING — Creatures in the Tall Grass
    Screen prop for S08 / S11 / S12 (Dallas's workstation)
    Fully offline. No dependencies beyond bundled anime.min.js.
    ============================================================ */
@@ -71,6 +71,7 @@ const S = {
   ease: 0.02,         // easing speed (some modes slow it further)
   markers: [],        // {frac, label}
   liveWorkspace: false,
+  spikeUntil: 0,
 };
 for (const k in S.tgt) S.cur[k] = S.tgt[k];
 
@@ -113,8 +114,12 @@ const LOG_ENTRIES = [
    ============================================================ */
 const waveCanvas = $("wave-canvas"), specCanvas = $("spec-canvas");
 const feedCanvas = $("feed-canvas"), breathCanvas = $("breath-canvas");
+const phaseCanvas = $("phase-canvas");
+const inspectionCanvas = $("inspection-canvas");
 const wctx = waveCanvas.getContext("2d"), sctx = specCanvas.getContext("2d");
 const fctx = feedCanvas.getContext("2d"), bctx = breathCanvas.getContext("2d");
+const pctx = phaseCanvas ? phaseCanvas.getContext("2d") : null;
+const ictx = inspectionCanvas ? inspectionCanvas.getContext("2d") : null;
 let specCol = 0; // scroll position of spectrogram
 
 function sizeCanvas(c) {
@@ -125,7 +130,7 @@ function sizeCanvas(c) {
     c.height = Math.round(r.height * dpr);
   }
 }
-function sizeAll() { [waveCanvas, specCanvas, feedCanvas, breathCanvas].forEach(sizeCanvas); }
+function sizeAll() { [waveCanvas, specCanvas, feedCanvas, breathCanvas, phaseCanvas, inspectionCanvas].filter(Boolean).forEach(sizeCanvas); }
 window.addEventListener("resize", () => { sizeAll(); specColReset(); });
 function specColReset() { specCol = 0; sctx.fillStyle = "#0a0b0d"; sctx.fillRect(0, 0, specCanvas.width, specCanvas.height); }
 
@@ -295,6 +300,90 @@ function uiClick() {
     o.connect(g); g.connect(AU.master);
     o.start(); o.stop(c.currentTime + 0.04);
   } catch (e) {}
+}
+
+function playCreaturePing() {
+  if (!AU.started || AU.muted) return;
+  try {
+    const c = AU.ctx;
+    const o = c.createOscillator();
+    const g = c.createGain();
+    const f = c.createBiquadFilter();
+    o.type = "sine";
+    o.frequency.setValueAtTime(61.8, c.currentTime);
+    o.frequency.exponentialRampToValueAtTime(54.2, c.currentTime + 0.35);
+    f.type = "lowpass";
+    f.frequency.value = 900;
+    g.gain.setValueAtTime(0.0001, c.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.05, c.currentTime + 0.03);
+    g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + 0.45);
+    o.connect(f); f.connect(g); g.connect(AU.master);
+    o.start();
+    o.stop(c.currentTime + 0.5);
+  } catch (e) {}
+}
+
+function playCreatureReply() {
+  if (!AU.started || AU.muted) return;
+  try {
+    const c = AU.ctx;
+    const g = c.createGain();
+    const f = c.createBiquadFilter();
+    const o1 = c.createOscillator();
+    const o2 = c.createOscillator();
+    o1.type = "sine";
+    o2.type = "triangle";
+    o1.frequency.setValueAtTime(55.2, c.currentTime);
+    o1.frequency.exponentialRampToValueAtTime(61.7, c.currentTime + 0.28);
+    o2.frequency.setValueAtTime(82.4, c.currentTime);
+    o2.frequency.exponentialRampToValueAtTime(74.1, c.currentTime + 0.42);
+    f.type = "bandpass";
+    f.frequency.value = 640;
+    f.Q.value = 2.8;
+    g.gain.setValueAtTime(0.0001, c.currentTime);
+    g.gain.exponentialRampToValueAtTime(0.045, c.currentTime + 0.04);
+    g.gain.exponentialRampToValueAtTime(0.0001, c.currentTime + 0.62);
+    o1.connect(f);
+    o2.connect(f);
+    f.connect(g);
+    g.connect(AU.master);
+    o1.start();
+    o2.start();
+    o1.stop(c.currentTime + 0.66);
+    o2.stop(c.currentTime + 0.66);
+  } catch (e) {}
+}
+
+function triggerPeak() {
+  uiClick();
+  playCreaturePing();
+  document.body.classList.add("peak-communion");
+  document.body.classList.add("peak-flash");
+  showMsgs([
+    { text: "PEAK EVENT", cls: "subtle", delay: 0 },
+    { text: "DALLAS: CALLING OUT", cls: "subtle", delay: 220 },
+    { text: "SUBJECT: LISTENING", cls: "subtle", delay: 420 },
+  ], { ttl: 2600 });
+  setTimeout(() => document.body.classList.remove("peak-flash"), 220);
+  setTimeout(() => document.body.classList.remove("peak-communion"), 900);
+}
+
+function triggerReply() {
+  uiClick();
+  playCreatureReply();
+  document.body.classList.add("reply-flash");
+  showMsgs([
+    { text: "RESPONSE", cls: "subtle", delay: 0 },
+    { text: "CREATURE ANSWERS", cls: "warm", delay: 240 },
+  ], { ttl: 2200 });
+  setTimeout(() => document.body.classList.remove("reply-flash"), 240);
+}
+
+function triggerWaveSpike() {
+  S.spikeUntil = performance.now() + 1200;
+  triggerReply();
+  document.body.classList.add("wave-spike");
+  setTimeout(() => document.body.classList.remove("wave-spike"), 1300);
 }
 
 /* ============================================================
@@ -499,26 +588,26 @@ function waveSample(x, t, cur, channel) {
   let v = 0;
 
   // broadband marsh/room noise (multi-octave value noise)
-  const nx = x * 90 + t * 22 + ph;
+  const nx = x * 68 + t * 7.5 + ph;
   v += cur.envNoise * jitter * (
     n1(nx) * 0.45 + n2(nx * 2.7) * 0.28 + n3(nx * 7.1) * 0.16 + n4(nx * 19) * 0.09);
 
   // buried low hum — slow sine, only clearly visible once isolated
   const humAmp = cur.hum * (0.3 + 0.7 * cur.humVisible);
-  v += humAmp * Math.sin((x * 34 + t * 3.1 + ph * 0.4)) *
-       (0.85 + 0.15 * Math.sin(t * 0.47)); // 13.27 s swell
+  v += humAmp * Math.sin((x * 24 + t * 1.25 + ph * 0.4)) *
+       (0.85 + 0.15 * Math.sin(t * 0.18)); // slower swell
 
   // creature tone: rounded pulses, gold — raggedness follows distress
   if (cur.creature > 0.01) {
     const breathe = 0.5 + 0.5 * Math.sin(t * (cur.subjResp || 10) / 60 * 2 * Math.PI);
     const rag = cur.distress * (n3(x * 60 + t * 40) * 0.5);
-    const body = Math.sin(x * 26 + t * 2.2) * (0.55 + 0.25 * Math.sin(x * 39 + t * 3.3));
+    const body = Math.sin(x * 18 + t * 0.95) * (0.55 + 0.25 * Math.sin(x * 28 + t * 1.45));
     v += cur.creature * (body * (0.5 + 0.5 * breathe) * (1 - cur.distress * 0.4) + rag);
   }
 
   // external hostile component: jagged, low, unsteady
   if (cur.external > 0.01) {
-    v += cur.external * (n4(x * 140 + t * 60) * 0.5 + Math.sin(x * 52 + t * 9.7) * 0.3);
+    v += cur.external * (n4(x * 88 + t * 18) * 0.5 + Math.sin(x * 32 + t * 2.8) * 0.3);
   }
   return clamp(v, -1.15, 1.15);
 }
@@ -526,16 +615,19 @@ function waveSample(x, t, cur, channel) {
 function drawWave(now) {
   const w = waveCanvas.width, h = waveCanvas.height;
   const cur = S.cur;
+  const readout = document.body.classList.contains("readout-mode");
   wctx.fillStyle = "#0b0c0f";
   wctx.fillRect(0, 0, w, h);
 
-  // faint grid
-  wctx.strokeStyle = "rgba(58,61,68,0.25)";
-  wctx.lineWidth = 1;
-  wctx.beginPath();
-  for (let gy = 1; gy < 4; gy++) { wctx.moveTo(0, h * gy / 4); wctx.lineTo(w, h * gy / 4); }
-  for (let gx = 1; gx < 12; gx++) { wctx.moveTo(w * gx / 12, 0); wctx.lineTo(w * gx / 12, h); }
-  wctx.stroke();
+  if (!readout) {
+    // faint grid
+    wctx.strokeStyle = "rgba(58,61,68,0.25)";
+    wctx.lineWidth = 1;
+    wctx.beginPath();
+    for (let gy = 1; gy < 4; gy++) { wctx.moveTo(0, h * gy / 4); wctx.lineTo(w, h * gy / 4); }
+    for (let gx = 1; gx < 12; gx++) { wctx.moveTo(w * gx / 12, 0); wctx.lineTo(w * gx / 12, h); }
+    wctx.stroke();
+  }
 
   const mid = h / 2;
   const t = S.t;
@@ -554,7 +646,37 @@ function drawWave(now) {
     wctx.stroke();
   }
 
-  if (split) {
+  if (readout) {
+    const step = 2;
+    const flat = h * 0.004;
+    const pulseWindow = Math.max(0, Math.sin(t * 0.42) * 0.5 + Math.sin(t * 1.33 + 1.4) * 0.5);
+    const spikeStrength = cur.creature * (0.25 + 0.75 * pulseWindow) + (performance.now() < S.spikeUntil ? 0.65 : 0);
+    wctx.strokeStyle = "rgba(232,224,205,0.86)";
+    wctx.lineWidth = 1.1;
+    wctx.beginPath();
+    for (let px = 0; px <= w; px += step) {
+      const x = px / w;
+      const y = mid + Math.sin(x * 6 + t * 0.03) * flat;
+      px === 0 ? wctx.moveTo(px, y) : wctx.lineTo(px, y);
+    }
+    wctx.stroke();
+
+    if (spikeStrength > 0.02) {
+      wctx.strokeStyle = `rgba(216,180,106,${0.35 + 0.55 * spikeStrength})`;
+      wctx.lineWidth = 1.8;
+      wctx.beginPath();
+      const points = 4 + Math.floor(spikeStrength * 5);
+      for (let i = 0; i < points; i++) {
+        const px = w * (0.12 + i * (0.72 / Math.max(1, points - 1)));
+        const spike = h * (0.04 + spikeStrength * (0.12 + Math.abs(n1(t * 0.9 + i)) * 0.08));
+        wctx.moveTo(px, mid);
+        wctx.lineTo(px, mid - spike);
+        wctx.moveTo(px + 1, mid);
+        wctx.lineTo(px + 1, mid + spike * 0.18);
+      }
+      wctx.stroke();
+    }
+  } else if (split) {
     // two half-height channels
     const amp = h * 0.16;
     wctx.save();
@@ -576,39 +698,39 @@ function drawWave(now) {
       wctx.stroke();
     });
   } else {
-    const amp = h * 0.33;
-    // composite (cream)
-    trace("rgba(232,224,205,0.8)", 1.3, amp, (x) => waveSample(x, t, cur, "A"));
-    // isolated hum ghost (phosphor) once filtering begins
-    if (cur.humVisible > 0.05) {
-      trace(`rgba(143,174,138,${0.55 * cur.humVisible})`, 1, amp,
-        (x) => cur.hum * Math.sin(x * 34 + t * 3.1) * (0.85 + 0.15 * Math.sin(t * 0.47)));
+    const flat = h * 0.005;
+    const pulseWindow = Math.max(0, Math.sin(t * 0.42) * 0.5 + Math.sin(t * 1.33 + 1.4) * 0.5);
+    const spikeStrength = cur.creature * (0.2 + 0.8 * pulseWindow) + (performance.now() < S.spikeUntil ? 0.65 : 0);
+    wctx.strokeStyle = "rgba(232,224,205,0.82)";
+    wctx.lineWidth = 1.2;
+    wctx.beginPath();
+    const step = S.lowPower ? 4 : 2;
+    for (let px = 0; px <= w; px += step) {
+      const x = px / w;
+      const y = mid + Math.sin(x * 4 + t * 0.02) * flat;
+      px === 0 ? wctx.moveTo(px, y) : wctx.lineTo(px, y);
     }
-    // creature gold trace
-    if (cur.creature > 0.02) {
-      trace(`rgba(216,180,106,${0.35 + 0.55 * cur.creatureSmooth})`, 1.8, amp, (x) => {
-        const breathe = 0.5 + 0.5 * Math.sin(t * (cur.subjResp || 10) / 60 * 2 * Math.PI);
-        const rag = cur.distress * n3(x * 60 + t * 40) * 0.5;
-        return cur.creature * (Math.sin(x * 26 + t * 2.2) *
-          (0.55 + 0.25 * Math.sin(x * 39 + t * 3.3)) * (0.5 + 0.5 * breathe) *
-          (1 - cur.distress * 0.4) + rag);
-      });
-    }
-    // external component (muted green-gray, beneath)
-    if (cur.external > 0.02) {
-      trace(`rgba(111,125,108,${0.6 * cur.external})`, 1, amp,
-        (x) => n4(x * 140 + t * 60) * 0.5 + Math.sin(x * 52 + t * 9.7) * 0.3);
-    }
-    // sierra archive overlay (faded burgundy)
-    if (cur.sierra > 0.02) {
-      trace(`rgba(154,85,92,${0.7 * cur.sierra})`, 1.1, amp,
-        (x) => 0.4 * Math.sin(x * 26 + t * 2.2 + 0.35) * (0.6 + 0.4 * Math.sin(x * 8 + t * 0.9)));
+    wctx.stroke();
+
+    if (spikeStrength > 0.02) {
+      const spikeCount = 5 + Math.floor(spikeStrength * 8);
+      wctx.strokeStyle = `rgba(216,180,106,${0.34 + 0.58 * spikeStrength})`;
+      wctx.lineWidth = 1.8;
+      wctx.beginPath();
+      for (let i = 0; i < spikeCount; i++) {
+        const burst = 0.15 + i / Math.max(1, spikeCount - 1) * 0.7;
+        const px = w * burst;
+        const spike = h * (0.07 + spikeStrength * (0.17 + Math.abs(n1(t * 0.9 + i)) * 0.1));
+        wctx.moveTo(px, mid);
+        wctx.lineTo(px, mid - spike);
+      }
+      wctx.stroke();
     }
   }
 
   // playhead
-  if (S.playing && !split) {
-    const px = ((t * 0.03 * S.speed) % 1) * w;
+  if (S.playing && !split && !readout) {
+    const px = ((t * 0.012 * S.speed) % 1) * w;
     wctx.strokeStyle = "rgba(201,151,63,0.55)";
     wctx.beginPath(); wctx.moveTo(px, h * 0.06); wctx.lineTo(px, h * 0.94); wctx.stroke();
   }
@@ -845,7 +967,7 @@ function setStatus(lines) {
 /* ============================================================
    PANELS helpers
    ============================================================ */
-const ALL_PANELS = ["interval-panel","bearing-panel","match-panel","corr-panel",
+const ALL_PANELS = ["interval-panel","bearing-panel","match-panel","inspection-panel","corr-panel",
   "phase-panel","night-panel","presence-panel","sierra-panel"];
 function hidePanels() { ALL_PANELS.forEach(id => $(id).classList.add("hidden")); }
 function showPanel(id) {
@@ -858,16 +980,110 @@ function showPanel(id) {
 
 function clearMarkers() { S.markers = []; $("marker-layer").innerHTML = ""; }
 
+function drawInspection() {
+  if (!ictx || !inspectionCanvas) return;
+  const w = inspectionCanvas.width, h = inspectionCanvas.height;
+  ictx.clearRect(0, 0, w, h);
+  ictx.fillStyle = "#08090b";
+  ictx.fillRect(0, 0, w, h);
+
+  const cx = w * 0.51;
+  const cy = h * 0.48;
+  const outer = Math.min(w, h) * 0.38;
+  const grad = ictx.createRadialGradient(cx, cy, 8, cx, cy, outer);
+  grad.addColorStop(0, "rgba(255,235,170,0.92)");
+  grad.addColorStop(0.2, "rgba(216,180,106,0.72)");
+  grad.addColorStop(0.52, "rgba(91,71,34,0.42)");
+  grad.addColorStop(1, "rgba(0,0,0,0.94)");
+  ictx.fillStyle = grad;
+  ictx.beginPath();
+  ictx.arc(cx, cy, outer, 0, Math.PI * 2);
+  ictx.fill();
+
+  ictx.strokeStyle = "rgba(255,255,255,0.18)";
+  ictx.lineWidth = 1;
+  ictx.strokeRect(w * 0.08, h * 0.13, w * 0.84, h * 0.74);
+  ictx.beginPath();
+  ictx.moveTo(w * 0.08, h * 0.5);
+  ictx.lineTo(w * 0.92, h * 0.5);
+  ictx.moveTo(w * 0.5, h * 0.13);
+  ictx.lineTo(w * 0.5, h * 0.87);
+  ictx.stroke();
+
+  const t = S.t;
+  ictx.strokeStyle = `rgba(255,215,120,${0.55 + 0.25 * Math.sin(t * 1.4)})`;
+  ictx.lineWidth = 2;
+  for (let i = 0; i < 4; i++) {
+    const px = w * (0.37 + i * 0.1);
+    const py = h * (0.34 + (i % 2) * 0.08);
+    ictx.beginPath();
+    ictx.moveTo(px - 10, py);
+    ictx.lineTo(px + 10, py + Math.sin(t * 2 + i) * 2);
+    ictx.stroke();
+  }
+
+  ictx.fillStyle = "rgba(255,224,140,0.14)";
+  ictx.fillRect(w * 0.06, h * 0.58, w * 0.88, 1);
+  ictx.fillStyle = "rgba(232,224,205,0.8)";
+  ictx.font = "10px Menlo, monospace";
+  ictx.fillText("MARKS UNDER EYE / RESPONSE: TOUCH-SENSITIVE", 14, h - 14);
+}
+
+function drawPhase() {
+  if (!pctx || !phaseCanvas) return;
+  const w = phaseCanvas.width, h = phaseCanvas.height;
+  pctx.clearRect(0, 0, w, h);
+  pctx.fillStyle = "#08090b";
+  pctx.fillRect(0, 0, w, h);
+  pctx.strokeStyle = "rgba(58,61,68,0.35)";
+  pctx.beginPath();
+  pctx.moveTo(0, h / 2);
+  pctx.lineTo(w, h / 2);
+  pctx.stroke();
+
+  const t = S.t;
+  const cur = S.cur;
+  const opRate = cur.opResp / 60 * 2 * Math.PI;
+  const saRate = (cur.subjResp || 10) / 60 * 2 * Math.PI;
+  const phase = cur.phaseDiff * opRate;
+
+  function trace(color, cy, fn) {
+    pctx.strokeStyle = color;
+    pctx.lineWidth = 1.4;
+    pctx.beginPath();
+    for (let px = 0; px <= w; px += 2) {
+      const x = px / w;
+      const y = cy - fn(x) * h * 0.24;
+      px === 0 ? pctx.moveTo(px, y) : pctx.lineTo(px, y);
+    }
+    pctx.stroke();
+  }
+
+  trace("rgba(232,224,205,0.88)", h * 0.34, (x) =>
+    Math.sin((t - x * 8) * opRate) * (1 - 0.15 * cur.calm) +
+    n2(x * 30 + t * 6) * 0.16 * (1 - cur.calm));
+  trace("rgba(216,180,106,0.92)", h * 0.68, (x) =>
+    Math.sin((t - x * 8) * saRate + phase) * (1 - cur.distress * 0.2) +
+    n3(x * 44 + t * 9) * 0.24 * cur.distress);
+
+  const lock = clamp(1 - Math.abs(cur.phaseDiff) / 2.4, 0, 1);
+  pctx.fillStyle = `rgba(255,215,120,${0.15 + 0.45 * lock})`;
+  pctx.fillRect(w * 0.08, h * 0.13, w * 0.84 * lock, 2);
+  pctx.fillStyle = "rgba(232,224,205,0.7)";
+  pctx.font = "10px Menlo, monospace";
+  pctx.fillText("OPERATOR", 6, h * 0.34 - 10);
+  pctx.fillText("SUBJECT A", 6, h * 0.68 - 10);
+}
+
 /* mode housekeeping shared by every key */
 let modeTimers = [];
 function resetModeTimers() { modeTimers.forEach(clearTimeout); modeTimers = []; }
 function later(fn, ms) { modeTimers.push(setTimeout(fn, ms)); }
 
 function setSession(label, file, clock) {
-  $("session-label").textContent = label;
   if (file) $("session-file").textContent = file;
   if (clock != null) S.clockBase = clock; // seconds-of-day
-  anime({ targets: [$("session-label"), $("session-file")], opacity: [0, 1], duration: 800, easing: "linear" });
+  anime({ targets: [$("session-file")], opacity: [0, 1], duration: 800, easing: "linear" });
 }
 
 function enterMode(m) {
@@ -906,7 +1122,7 @@ const MODES = {
     phaseDiff: 2.4, corr: 0, filterHz: 2000, feed: 0, distress: 0,
   });
   S.ease = 0.03;
-  setSession("SESSION: MARSH RECORDING REVIEW", "BRANFORD_EDGE_0714_1942.wav", 19 * 3600 + 42 * 60);
+  setSession("RECORDING — BRANFORD 001", "BRANFORD_001.wav", 19 * 3600 + 42 * 60);
   $("wave-mode-label").textContent = "WAVEFORM — LINE MONITOR";
   $("filter-readout").textContent = "";
   $("input-source").textContent = "MIC 2 — ROOM";
@@ -1013,7 +1229,7 @@ const MODES = {
   });
   S.ease = 0.02;
   S.sessionStart = performance.now();
-  setSession("LIVE OBSERVATION — SUBJECT A", "MIC 1 — ENCLOSURE (LIVE)", 23 * 3600 + 4 * 60);
+  setSession("RECORDING — BRANFORD 007", "MIC 1 — ENCLOSURE (LIVE)", 23 * 3600 + 4 * 60);
   $("wave-mode-label").textContent = "LIVE INPUT — MIC 1 — ENCLOSURE";
   $("filter-readout").textContent = "LP 400 Hz";
   $("input-source").textContent = "MIC 1 — ENCLOSURE";
@@ -1026,11 +1242,21 @@ const MODES = {
 "7": function () {
   ensureLive();
   enterMode("7");
+  showPanel("inspection-panel");
+  drawInspection();
   anime({
     targets: S.tgt, external: 0.75, distress: 0.85, creatureSmooth: 0.05,
     creature: 0.6, subjResp: 26, calm: 0.1, opResp: 15.5, feed: 0.85,
     duration: 6500, easing: "easeInOutQuad",
   });
+  later(() => {
+    drawInspection();
+    showMsgs([
+      { text: "CLOSE INSPECTION MODE", cls: "subtle" },
+      { text: "MARKS RESPOND TO CONTACT" },
+      { text: "GOLD FLARE REPEATS ON TOUCH" },
+    ], { hold: true });
+  }, 700);
   later(() => showMsgs([
     { text: "EXTERNAL COMPONENT PRESENT", cls: "warn" },
     { text: "SOURCE: UNRESOLVED", cls: "warn" },
@@ -1073,11 +1299,13 @@ const MODES = {
     duration: 15000, easing: "easeInOutSine",
   });
   showPanel("phase-panel");
+  drawPhase();
   $("phase-coherence").classList.add("hidden");
   const seq = [2.4, 1.8, 1.1, 0.6, 0.2];
   seq.forEach((v, i) => later(() => {
     $("phase-value").textContent = v.toFixed(1) + " s";
     S.tgt.phaseDiff = v;
+    drawPhase();
   }, 1500 + i * 3200));
   later(() => {
     $("phase-value").textContent = "0.2 s";
@@ -1097,7 +1325,7 @@ const MODES = {
     external: 0, sierra: 0, calm: 0.85, subjResp: 9, opResp: 10, opPulse: 58,
     phaseDiff: 0.4, corr: 91, filterHz: 400, feed: 0.4, distress: 0,
   });
-  setSession("SESSION RESUMED — 06:17:42", "OVERNIGHT LOG — 07 h 42 m", 6 * 3600 + 17 * 60 + 42);
+  setSession("RECORDING — BRANFORD 012", "OVERNIGHT LOG — 07 h 42 m", 6 * 3600 + 17 * 60 + 42);
   $("wave-mode-label").textContent = "LIVE INPUT — MIC 1 — ENCLOSURE";
   showMsgs([
     { text: "SESSION DURATION: 07 h 42 m", cls: "subtle" },
@@ -1366,6 +1594,11 @@ $("btn-ab").addEventListener("click", () => {
     ["ab-label-l","ab-label-r"].forEach(id => $(id).classList.add("hidden")); }
   else MODES["4"]();
 });
+$("btn-vizfs").addEventListener("click", () => {
+  uiClick();
+  document.body.classList.toggle("viz-fullscreen");
+  $("btn-vizfs").classList.toggle("active", document.body.classList.contains("viz-fullscreen"));
+});
 $("speed-sel").addEventListener("change", (e) => {
   uiClick(); S.speed = parseFloat(e.target.value);
 });
@@ -1396,7 +1629,26 @@ document.addEventListener("keydown", (ev) => {
   if (MODES[k]) { MODES[k](); return; }
   switch (k) {
     case "h":
-      document.body.classList.toggle("guide-hidden");
+      document.body.classList.toggle("readout-mode");
+      document.body.classList.toggle("guide-hidden", document.body.classList.contains("readout-mode"));
+      break;
+    case " ":
+      if (document.body.classList.contains("readout-mode")) {
+        ev.preventDefault();
+        triggerPeak();
+      }
+      break;
+    case "p":
+      ev.preventDefault();
+      triggerWaveSpike();
+      break;
+    case "z":
+      ev.preventDefault();
+      document.body.classList.toggle("wave-zoom");
+      break;
+    case "v":
+      document.body.classList.toggle("viz-fullscreen");
+      $("btn-vizfs").classList.toggle("active", document.body.classList.contains("viz-fullscreen"));
       break;
     case "f":
       if (!document.fullscreenElement) document.documentElement.requestFullscreen().catch(() => {});
@@ -1454,6 +1706,8 @@ function loop(now) {
   drawSpec(now);
   drawFeed(now);
   drawBreath(now);
+  if (S.mode === "9") drawPhase();
+  if (S.mode === "7") drawInspection();
   updateReadouts(now);
   updateClock(now);
   audioUpdate();

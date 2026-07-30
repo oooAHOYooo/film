@@ -41,6 +41,7 @@ shooting/
 3. **View compiled output** — Open `script-system/full_script.html` in browser
 4. **Reference production** — Use `shooting_production.html` to check schedule/cast/logistics
 5. **Preserve originals** — Everything in `../script-system/` and `../production.html` stays untouched
+6. **Preview the microscope feed** — Open `microscope-feed.html` from a local server on the Linux computer, then capture that window in OBS if you want a stable live creature feed
 
 ### Workflow
 
@@ -61,6 +62,7 @@ open script-system/full_script.html
 - Modify scenes in `script-system/scenes/` as needed
 - Once happy with changes, copy back to `../script-system/scenes/` to commit
 - Run `npm run compile:all` from repo root to finalize
+- For the Ipevo2 setup, serve this folder locally first because browser camera access will not work from `file://`
 
 ---
 

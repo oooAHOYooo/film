@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RESONANCE WORKSTATION — Branford Acoustic Study</title>
+<title>BRANFORD_001.wav</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,17 +14,11 @@
 
   <!-- ============ HEADER ============ -->
   <header id="topbar">
-    <div class="tb-left">
-      <div class="app-title">RESONANCE&nbsp;WORKSTATION</div>
-      <div class="app-sub">FIELD RECORDING / SIGNAL COMPARISON / LIVE SUBJECT OBSERVATION</div>
-    </div>
     <div class="tb-center">
-      <div id="session-label" class="session-label">SESSION: MARSH RECORDING REVIEW</div>
-      <div id="session-file" class="session-file">BRANFORD_EDGE_0714_1942.wav</div>
+      <div id="session-file" class="session-file">BRANFORD_001.wav</div>
     </div>
     <div class="tb-right">
       <div class="tb-meta">
-        <span class="proj-label">BRANFORD ACOUSTIC STUDY — D. VALE</span>
         <span id="clock" class="mono">19:42:07</span>
       </div>
       <div class="tb-io">
@@ -41,12 +35,12 @@
     <!-- ---- LEFT: LIBRARY ---- -->
     <section id="library" class="col">
       <div class="col-head">
-        <span>RECORDING LIBRARY</span>
+        <span>RECORDINGS</span>
         <span><button id="archive-btn" class="ctl-btn tiny">ARCHIVE</button>&nbsp;<span id="lib-count" class="dim mono">10 ITEMS</span></span>
       </div>
       <div id="lib-list"></div>
-      <div class="col-head log-head" id="log-toggle">
-        <span>OBSERVATION LOG</span>
+        <div class="col-head log-head" id="log-toggle">
+        <span>BRANFORD LOG</span>
         <span class="dim" id="log-caret">▾</span>
       </div>
       <div id="obs-log"></div>
@@ -77,6 +71,7 @@
         <button class="ctl-btn" id="btn-play">▶ PLAY</button>
         <button class="ctl-btn" id="btn-loop">LOOP</button>
         <button class="ctl-btn" id="btn-ab">A/B</button>
+        <button class="ctl-btn" id="btn-vizfs" title="toggle visualization fullscreen">VIEW</button>
         <span class="t-group mono" id="timecode">00:00:00.000</span>
         <span class="t-group">
           <label>SPEED</label>
@@ -121,6 +116,18 @@
         <div class="hand-note">Why did she keep this?</div>
       </div>
 
+      <!-- inspection viewport (mode 7) -->
+      <div id="inspection-panel" class="wide-panel hidden">
+        <div class="fp-title">CLOSE INSPECTION — SUBJECT A</div>
+        <canvas id="inspection-canvas" height="178"></canvas>
+        <div class="inspect-grid mono">
+          <div class="fp-row"><span>FIELD OF VIEW</span><span id="insp-fov">28×</span></div>
+          <div class="fp-row"><span>STRUCTURE</span><span id="insp-structure">MARKS UNDER EYE</span></div>
+          <div class="fp-row"><span>RESPONSE</span><span id="insp-response">DISTRESS / PULSE</span></div>
+          <div class="fp-row"><span>NOTES</span><span id="insp-notes">touch-sensitive, gold flare on contact</span></div>
+        </div>
+      </div>
+
       <!-- correlation counter (mode 8) -->
       <div id="corr-panel" class="float-panel hidden">
         <div class="fp-title">SUBJECT / OPERATOR CORRELATION</div>
@@ -131,7 +138,9 @@
       <div id="phase-panel" class="float-panel hidden">
         <div class="fp-title">RESPIRATORY PHASE DIFFERENCE</div>
         <div id="phase-value" class="corr-value mono">—</div>
+        <canvas id="phase-canvas" height="92"></canvas>
         <div id="phase-coherence" class="fp-row mono hidden"><span>PHASE COHERENCE</span><span class="warm">STABLE</span></div>
+        <div class="hand-note">keep him with it, not just near it</div>
       </div>
 
       <!-- morning longitudinal graph (mode 0) -->
@@ -272,7 +281,7 @@
     <span class="kg-group">S08: <b>1</b> raw <b>2</b> isolate <b>3</b> intervals <b>4</b> bearing <b>5</b> match</span>
     <span class="kg-group">S11: <b>6</b> live <b>7</b> distress <b>8</b> approach <b>9</b> soothe</span>
     <span class="kg-group">S12: <b>0</b> morning <b>Q</b> presence <b>W</b> playback <b>E</b> sierra <b>R</b> ext.hum <b>T</b> calm</span>
-    <span class="kg-group"><b>A</b> archive <b>Y</b> reset <b>H</b> hide <b>F</b> fullscreen <b>L</b> low-pwr <b>Esc</b> close</span>
+    <span class="kg-group"><b>A</b> archive <b>Y</b> reset <b>H</b> hide <b>V</b> viz fullscreen <b>F</b> browser fullscreen <b>L</b> low-pwr <b>Esc</b> close</span>
   </footer>
 </div>
 
